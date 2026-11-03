@@ -1111,3 +1111,119 @@ def test_run_note_when_no_candidates(tmp_path, monkeypatch):
     setup_publish(monkeypatch, html=page(card("B000000071", "Cafetera", "20,00 €", "22,00 €")))
     assert deals.run_channel(channel(), state_dir=tmp_path, now=NOW_IN) == 0
     assert (tmp_path / "run_note.txt").read_text().strip() == "t: sin candidatos"
+
+
+# ---------------------------------------------------------------- avisos privados
+
+@pytest.fixture
+def alerts(monkeypatch):
+    sent = []
+    monkeypatch.setenv("TG_T", TOKEN)
+    monkeypatch.setenv("TG_ALERT_CHAT", "777")
+    monkeypatch.setattr(deals, "tg_call", lambda method, token, data, **kw: sent.append((method, data)))
+    return sent
+
+
+def test_alert_after_three_failures_then_throttled_then_recovery(tmp_path, alerts):
+    ch = channel()
+    path = tmp_path / "t.json"
+    for i in range(2):
+        deals.record_problem(ch, path, "fail", "Amazon no responde", NOW_IN + timedelta(minutes=10 * i))
+    assert alerts == []
+    deals.record_problem(ch, path, "fail", "Amazon no responde", NOW_IN + timedelta(minutes=20))
+    assert len(alerts) == 1 and alerts[0][1]["chat_id"] == "777" and "3 fallos seguidos" in alerts[0][1]["text"]
+    deals.record_problem(ch, path, "fail", "otra vez", NOW_IN + timedelta(minutes=30))  # dentro de 3 h: no repite
+    assert len(alerts) == 1
+    deals.record_problem(ch, path, "fail", "otra vez", NOW_IN + timedelta(hours=4))  # pasado el plazo: repite
+    assert len(alerts) == 2
+    deals.record_success(ch, path)
+    assert len(alerts) == 3 and "vuelve a publicar" in alerts[2][1]["text"]
+    assert deals.load_problem(path) == {}
+
+
+def test_no_recovery_message_if_never_alerted(tmp_path, alerts):
+    ch = channel()
+    path = tmp_path / "t.json"
+    deals.record_problem(ch, path, "fail", "x", NOW_IN)
+    deals.record_success(ch, path)
+    assert alerts == []
+
+
+def test_empty_attempts_alert_later_than_failures(tmp_path, alerts):
+    ch = channel()
+    path = tmp_path / "t.json"
+    for i in range(5):
+        deals.record_problem(ch, path, "empty", "sin candidatos", NOW_IN + timedelta(minutes=10 * i))
+    assert alerts == []
+    deals.record_problem(ch, path, "empty", "sin candidatos", NOW_IN + timedelta(minutes=50))
+    assert len(alerts) == 1 and "sin ningun producto" in alerts[0][1]["text"]
+
+
+def test_no_alert_without_alert_chat_secret(tmp_path, monkeypatch):
+    monkeypatch.setenv("TG_T", TOKEN)
+    monkeypatch.delenv("TG_ALERT_CHAT", raising=False)
+    calls = []
+    monkeypatch.setattr(deals, "tg_call", lambda *a, **k: calls.append(a))
+    for i in range(4):
+        deals.record_problem(channel(), tmp_path / "t.json", "fail", "x", NOW_IN + timedelta(minutes=i))
+    assert calls == []
+
+
+def test_alert_failure_never_raises(tmp_path, monkeypatch):
+    monkeypatch.setenv("TG_T", TOKEN)
+    monkeypatch.setenv("TG_ALERT_CHAT", "777")
+
+    def boom(*a, **k):
+        raise deals.TelegramError("sendMessage: HTTP 400")
+
+    monkeypatch.setattr(deals, "tg_call", boom)
+    assert deals.send_alert(channel(), "hola") is False
+
+
+def test_run_channel_counts_block_and_publish_resets(tmp_path, monkeypatch, alerts):
+    sent = setup_publish(monkeypatch)
+    monkeypatch.setenv("TG_T", TOKEN)
+
+    def blocked(ch, html_file=None, session=None):
+        raise deals.Blocked("captcha")
+
+    good = deals.collect
+    monkeypatch.setattr(deals, "collect", blocked)
+    for i in range(3):
+        with pytest.raises(deals.Blocked):
+            deals.run_channel(channel(), state_dir=tmp_path, now=NOW_IN + timedelta(minutes=10 * i))
+    assert len(alerts) == 1 and "captcha" in alerts[0][1]["text"]
+    monkeypatch.setattr(deals, "collect", lambda ch, html_file=None, session=None: deals.parse_results(HTML))
+    assert deals.run_channel(channel(), state_dir=tmp_path, now=NOW_IN + timedelta(hours=1)) == 1
+    assert len(alerts) == 2 and "vuelve a publicar" in alerts[1][1]["text"]
+
+
+def test_force_runs_do_not_count_as_failures(tmp_path, monkeypatch, alerts):
+    setup_publish(monkeypatch)
+
+    def blocked(ch, html_file=None, session=None):
+        raise deals.Blocked("captcha")
+
+    monkeypatch.setattr(deals, "collect", blocked)
+    for _ in range(4):
+        with pytest.raises(deals.Blocked):
+            deals.run_channel(channel(), state_dir=tmp_path, now=NOW_IN, force=True)
+    assert alerts == [] and deals.load_problem(tmp_path / "t.json") == {}
+
+
+def test_caption_header_with_category_emoji():
+    p = deals.Product("B000000001", "Auriculares X", 23.0, 40.0)
+    ch = channel()
+    cap = deals.build_caption(p, "https://x/", ch, {"nombre": "Auriculares", "emoji": "🎧"})
+    assert cap.splitlines()[0] == "🎧 Auriculares" and cap.splitlines()[1].startswith("🔥 <b>Auriculares X")
+    assert deals.build_caption(p, "https://x/", ch, {"nombre": "Lego"}).splitlines()[0] == "Lego"
+    assert deals.build_caption(p, "https://x/", ch).startswith("🔥")
+
+
+def test_run_channel_uses_category_header(tmp_path, monkeypatch):
+    html = page(card("B000000080", "Taladro percutor", "40,00 €", "80,00 €"))
+    sent = setup_publish(monkeypatch, html=html)
+    ch = channel(categories=[{"nombre": "Herramientas", "emoji": "🔧", "query": "taladro"}],
+                 min_discount=10, min_rating=0, min_reviews=0)
+    deals.run_channel(ch, state_dir=tmp_path, now=NOW_IN)
+    assert sent[0][2].startswith("🔧 Herramientas\n🔥")

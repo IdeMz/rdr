@@ -175,6 +175,11 @@ class Channel:
     interval_min: int = 30
     interval_max: int = 35
     retry_minutes: int = 10  # espera tras un intento sin candidatos o con bloqueo
+    # Avisos privados por Telegram cuando algo falla varias veces seguidas
+    alert_chat_env: str = "TG_ALERT_CHAT"  # secreto con tu ID de chat (si no existe, no se avisa)
+    alert_after: int = 3  # fallos seguidos (bloqueo, ubicacion, Telegram, error) antes de avisar
+    alert_after_empty: int = 6  # intentos seguidos sin ningun producto que publicar
+    alert_repeat_min: int = 180  # minutos entre avisos mientras siga el problema
 
 
 def load_channel(path: Path) -> Channel:
@@ -197,6 +202,8 @@ def load_channel(path: Path) -> Channel:
     if not ch.queries and not ch.urls and not ch.categories:
         raise ConfigError(f"{path.name}: hace falta 'queries', 'urls' o 'categories'")
     validate_categories(ch, path.name)
+    if min(ch.alert_after, ch.alert_after_empty, ch.alert_repeat_min) < 1:
+        raise ConfigError(f"{path.name}: los valores 'alert_*' deben ser al menos 1")
     if ch.searches_per_run < 1:
         raise ConfigError(f"{path.name}: 'searches_per_run' debe ser al menos 1")
     for url in ch.urls:
@@ -912,12 +919,31 @@ def load_cats(path: Path) -> dict:
     return {k: v for k, v in cats.items() if isinstance(v, str)} if isinstance(cats, dict) else {}
 
 
+def load_problem(path: Path) -> dict:
+    """Contadores de fallos seguidos y cuando se envio el ultimo aviso."""
+    problem = _read_state_file(path).get("problem")
+    return dict(problem) if isinstance(problem, dict) else {}
+
+
+def set_state_key(path: Path, key: str, value) -> None:
+    """Cambia una sola clave del archivo de estado sin tocar el resto."""
+    data = _read_state_file(path)
+    if "posted" not in data:  # formato antiguo (plano): se conserva como 'posted'
+        data = {"posted": data}
+    data[key] = value
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_suffix(".tmp")
+    tmp.write_text(json.dumps(data, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
+    tmp.replace(path)
+
+
 def save_state(
     path: Path,
     posted: dict,
     next_at: datetime | None = None,
     rejected: dict | None = None,
     cats: dict | None = None,
+    problem: dict | None = None,
 ) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     data = {
@@ -925,6 +951,7 @@ def save_state(
         "posted": posted,
         "rejected": rejected or {},
         "cats": load_cats(path) if cats is None else cats,
+        "problem": load_problem(path) if problem is None else problem,
     }
     tmp = path.with_suffix(".tmp")
     tmp.write_text(json.dumps(data, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
@@ -998,9 +1025,13 @@ def prepare_image(url: str | None) -> bytes | None:
         return None
 
 
-def build_caption(p: Product, url: str, ch: Channel) -> str:
+def build_caption(p: Product, url: str, ch: Channel, category: dict | None = None) -> str:
     title = p.title if len(p.title) <= 110 else p.title[:107].rstrip() + "…"
-    lines = [f"🔥 <b>{escape(title)}</b>", ""]
+    lines = []
+    if category:
+        header = " ".join(x for x in (category.get("emoji"), category["nombre"]) if x)
+        lines.append(escape(header))
+    lines += [f"🔥 <b>{escape(title)}</b>", ""]
     if p.old_price and p.discount:
         lines.append(f"PVPR: <s>{fmt_eur(p.old_price)}</s>")
         lines.append(f"Ahora: {fmt_eur(p.price)}")
@@ -1069,6 +1100,57 @@ def send_deal(
 # --------------------------------------------------------------------------
 
 
+def send_alert(ch: Channel, text: str) -> bool:
+    """Aviso privado por Telegram. Nunca lanza errores: un aviso que falla no debe parar el bot."""
+    token, chat = get_secret(ch.token_env), get_secret(ch.alert_chat_env)
+    if not token or not chat:
+        log.info("%s: sin %s definido; no se envia el aviso", ch.name, ch.alert_chat_env)
+        return False
+    try:
+        tg_call("sendMessage", token, {"chat_id": chat, "text": text}, retries=1)
+    except TelegramError as exc:
+        log.warning("%s: no se pudo enviar el aviso (%s)", ch.name, exc)
+        return False
+    return True
+
+
+def record_problem(ch: Channel, state_path: Path, kind: str, detail: str, now: datetime) -> None:
+    """Cuenta un fallo ('fail') o un intento sin candidatos ('empty') y avisa al llegar al umbral."""
+    problem = load_problem(state_path)
+    key = "fails" if kind == "fail" else "empties"
+    problem[key] = int(problem.get(key, 0)) + 1
+    problem["last"] = scrub(detail)[:200]
+    threshold = ch.alert_after if kind == "fail" else ch.alert_after_empty
+    alerted = None
+    if isinstance(problem.get("alerted_at"), str):
+        try:
+            alerted = datetime.fromisoformat(problem["alerted_at"])
+        except ValueError:
+            alerted = None
+    due = alerted is None or now - alerted >= timedelta(minutes=ch.alert_repeat_min)
+    if problem[key] >= threshold and due:
+        if kind == "fail":
+            text = f"⚠️ {ch.name}: {problem[key]} fallos seguidos. Ultimo: {problem['last']}. Sigo reintentando."
+        else:
+            text = (
+                f"⚠️ {ch.name}: {problem[key]} intentos seguidos sin ningun producto que publicar. "
+                "Puede que los filtros sean demasiado estrictos o que Amazon no devuelva resultados."
+            )
+        if send_alert(ch, text):
+            problem["alerted_at"] = now.isoformat()
+    set_state_key(state_path, "problem", problem)
+
+
+def record_success(ch: Channel, state_path: Path) -> None:
+    """Tras publicar: pone los contadores a cero y avisa de que todo ha vuelto a la normalidad."""
+    problem = load_problem(state_path)
+    if not problem:
+        return
+    if problem.get("alerted_at"):
+        send_alert(ch, f"✅ {ch.name}: vuelve a publicar con normalidad.")
+    set_state_key(state_path, "problem", {})
+
+
 def note(line: str) -> None:
     """Resumen de una linea: va al mensaje del commit de estado y al resumen de la ejecucion."""
     try:
@@ -1132,16 +1214,17 @@ def run_channel(
         targets = [None]
 
     chosen: list[Product] = []
-    chosen_cat: dict[str, str] = {}
+    chosen_cat: dict[str, dict | None] = {}
     rows: list[tuple[Product, str, str]] = []
     for cat in targets:
         cch = category_channel(ch, cat) if cat else ch
         label = f"{ch.name}/{cat['nombre']}" if cat else ch.name
         try:
             products = collect(cch, html_file, session)
-        except (Blocked, LocationError):
+        except (Blocked, LocationError) as exc:
             if publishing and not force:
                 save_state(state_path, state, next_at=retry_at, rejected=rejected, cats=cats)  # no insistir
+                record_problem(ch, state_path, "fail", str(exc), now)
             raise
         if cat:
             cats[cat["nombre"]] = now.isoformat()
@@ -1165,7 +1248,7 @@ def run_channel(
                     rejected[p.asin] = {"t": now.isoformat(), "why": why}
                     continue
             chosen.append(p)
-            chosen_cat[p.asin] = cat["nombre"] if cat else ""
+            chosen_cat[p.asin] = cat
         rows += [(p, why, cat["nombre"] if cat else "") for p, why in
                  explain(products, cch, state, skip=rejected, chosen=chosen)]
         if chosen:
@@ -1179,25 +1262,32 @@ def run_channel(
              else f"{ch.name}: sin candidatos")
     if publishing and not force and not chosen:
         save_state(state_path, state, next_at=retry_at, rejected=rejected, cats=cats)
+        record_problem(ch, state_path, "empty", "sin candidatos", now)
     elif publishing:
         save_state(state_path, state, next_at=load_next_at(state_path), rejected=rejected, cats=cats)
 
     next_post = now + timedelta(minutes=random.uniform(ch.interval_min, ch.interval_max))
     published = 0
     for p in chosen:
-        caption = build_caption(p, affiliate_url(p.asin, tag), ch)
+        caption = build_caption(p, affiliate_url(p.asin, tag), ch, chosen_cat.get(p.asin))
         if token is None:
             print(f"--- {ch.name} / {p.asin} ---\n{caption}\n")
             published += 1
             continue
         photo_url = full_size_image(p.image)
-        send_deal(token, chat_id, caption, prepare_image(photo_url), photo_url)
+        try:
+            send_deal(token, chat_id, caption, prepare_image(photo_url), photo_url)
+        except TelegramError as exc:
+            if not force:
+                record_problem(ch, state_path, "fail", str(exc), now)
+            raise
         state[p.asin] = {"t": datetime.now(timezone.utc).isoformat(), "title": p.title[:200]}
         save_state(state_path, state, next_at=next_post, rejected=rejected, cats=cats)
         published += 1
-        where = f"{chosen_cat[p.asin]}, " if chosen_cat.get(p.asin) else ""
+        where = f"{chosen_cat[p.asin]['nombre']}, " if chosen_cat.get(p.asin) else ""
         log.info("%s: publicada %s (%s-%d%%)", ch.name, p.asin, where, p.discount)
         note(f"{ch.name}: publicada {p.asin} ({where}-{p.discount}%)")
+        record_success(ch, state_path)
         if published < len(chosen):
             sleep(2)
     return published
@@ -1228,6 +1318,7 @@ def main(argv: list[str] | None = None) -> int:
 
     failed = 0
     for path in paths:
+        ch = None
         try:
             ch = load_channel(path)
             if args.all and not ch.enabled:
@@ -1245,6 +1336,14 @@ def main(argv: list[str] | None = None) -> int:
         except Exception as exc:  # sin traceback: podria llevar secretos
             log.error("%s: error inesperado %s: %s", path.stem, type(exc).__name__, scrub(str(exc)))
             failed += 1
+            if ch is not None and not (args.dry_run or args.html or force):
+                try:
+                    record_problem(
+                        ch, ROOT / "state" / f"{ch.name}.json", "fail",
+                        f"error inesperado {type(exc).__name__}", datetime.now(timezone.utc),
+                    )
+                except Exception:
+                    pass
     return 1 if failed else 0
 
 
