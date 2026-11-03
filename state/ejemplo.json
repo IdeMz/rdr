@@ -1,8 +1,9 @@
 {
  "cats": {
+  "Auriculares": "2026-11-03T20:50:44.557294+00:00",
   "Móviles": "2026-11-03T20:15:41.050553+00:00"
  },
- "next_at": "2026-11-03T20:48:30.351977+00:00",
+ "next_at": "2026-11-03T21:24:18.826104+00:00",
  "posted": {
   "B0BTJ8ZXG5": {
    "t": "2026-11-03T12:38:46.796406+00:00",
@@ -19,6 +20,10 @@
   "B0FJ8BRCZQ": {
    "t": "2026-11-03T18:31:39.548251+00:00",
    "title": "Auriculare Inalámbricos Deportivos, 75H Cascos Bluetooth 5.4 HiFi Estéreo"
+  },
+  "B0FNWCYLZN": {
+   "t": "2026-11-03T20:51:04.733450+00:00",
+   "title": "Soundcore P31i de Anker Auriculares Bluetooth con Cancelación de Ruido"
   },
   "B0FR4SMRXY": {
    "t": "2026-11-03T19:06:21.737291+00:00",
@@ -37,6 +42,7 @@
    "title": "Auriculares Inalambricos Deportivos, Auriculares Bluetooth 5.4 HiFi Estéreo con 4 HD Mic, 60H Cascos Inalambricos Bluetooth con Cancelacion Ruido ENC, Pantalla LED, Control App, IP7 Impermeable Cascos"
   }
  },
+ "problem": {},
  "rejected": {
   "B0HMLWVJ4S": {
    "t": "2026-11-03T19:05:40.773090+00:00",
