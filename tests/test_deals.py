@@ -49,7 +49,7 @@ def page(*cards):
 
 
 def channel(**kw):
-    base = dict(name="t", token_env="TG_T", chat_env="TG_C", queries=["x"], min_listing_days=0)
+    base = dict(name="t", token_env="TG_T", chat_env="TG_C", queries=["x"], min_listing_days=0, min_history_drop=0)
     base.update(kw)
     return deals.Channel(**base)
 
@@ -957,3 +957,49 @@ def test_explain_and_report(tmp_path):
     deals.write_report(out, deals.explain(products, ch, state, skip=skip, chosen=chosen))
     text = out.read_text(encoding="utf-8-sig")
     assert text.splitlines()[0].startswith("asin;motivo") and "B000000033" in text
+
+
+# ---------------------------------------------------------------- historial de precios de la ficha
+
+HISTORIAL = (
+    "<div>En los últimos 30 días, el precio de los <a>Auriculares Inalámbricos Drsaec J55</a> "
+    "ha variado entre 20,57 € y 23,99 €. El precio actual es 23,99 €, el más alto en los últimos 30 días.</div>"
+)
+
+
+def test_price_history_parsing():
+    assert deals.price_history(product_page(HISTORIAL)) == (20.57, 23.99, 30)
+    assert deals.price_history(product_page("nada")) is None
+
+
+def fake_product(asin="B000000040", price=23.99):
+    return deals.Product(asin=asin, title="Auriculares", price=price, old_price=49.99, rating=4.3, reviews=25920)
+
+
+def test_listing_ok_rejects_discount_contradicted_by_history(monkeypatch):
+    monkeypatch.setattr(deals, "sleep", lambda s: None)
+    monkeypatch.setattr(deals, "fetch", lambda session, url: product_page(HISTORIAL))
+    ch = channel(min_listing_days=0, min_history_drop=10)
+    ok, why = deals.listing_ok(None, fake_product(), ch, TODAY)
+    assert not ok and "20,57€" in why and "23,99€" in why and "0%" in why
+
+
+def test_listing_ok_accepts_real_drop_and_missing_history(monkeypatch):
+    monkeypatch.setattr(deals, "sleep", lambda s: None)
+    ch = channel(min_listing_days=0, min_history_drop=10)
+    monkeypatch.setattr(deals, "fetch", lambda session, url: product_page(HISTORIAL))
+    assert deals.listing_ok(None, fake_product(price=15.0), ch, TODAY)[0] is True  # -37 % sobre 23,99
+    monkeypatch.setattr(deals, "fetch", lambda session, url: product_page("sin historial"))
+    assert deals.listing_ok(None, fake_product(), ch, TODAY)[0] is True
+
+
+def test_min_history_drop_zero_skips_check(monkeypatch):
+    monkeypatch.setattr(deals, "sleep", lambda s: None)
+    monkeypatch.setattr(deals, "fetch", lambda session, url: product_page(HISTORIAL))
+    ch = channel(min_listing_days=0, min_history_drop=0)
+    assert deals.listing_ok(None, fake_product(), ch, TODAY)[0] is True
+
+
+def test_load_channel_validates_min_history_drop(tmp_path):
+    with pytest.raises(deals.ConfigError, match="min_history_drop"):
+        deals.load_channel(write_cfg(tmp_path, min_history_drop=95))

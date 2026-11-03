@@ -149,6 +149,7 @@ class Channel:
     min_discount: int = 20
     max_discount: int = 0  # 0 = sin tope; util contra precios recomendados inflados
     min_listing_days: int = 60  # dias minimos desde el alta del producto en Amazon.es (0 = no comprobar)
+    min_history_drop: int = 10  # % minimo por debajo del precio mas alto reciente de la ficha (0 = no comprobar)
     min_price: float = 0
     max_price: float = 0  # 0 = sin tope
     min_rating: float = 4.0
@@ -213,6 +214,8 @@ def load_channel(path: Path) -> Channel:
         raise ConfigError(f"{path.name}: 'retry_minutes' debe ser al menos 1")
     if ch.max_discount and ch.max_discount <= ch.min_discount:
         raise ConfigError(f"{path.name}: 'max_discount' debe ser mayor que 'min_discount' (o 0)")
+    if not 0 <= ch.min_history_drop <= 90:
+        raise ConfigError(f"{path.name}: 'min_history_drop' debe estar entre 0 y 90")
     if ch.min_listing_days < 0:
         raise ConfigError(f"{path.name}: 'min_listing_days' no puede ser negativo")
     return ch
@@ -612,19 +615,53 @@ def date_hints(html: str, limit: int = 4) -> list[str]:
     return hints
 
 
+HISTORY_RE = re.compile(
+    r"ha variado entre\s*([\d.,]+)\s*€\s*y\s*([\d.,]+)\s*€", re.I
+)
+HISTORY_DAYS_RE = re.compile(r"[ÚúUu]ltimos\s+(\d+)\s+d[ií]as", re.I)
+
+
+def price_history(html: str) -> tuple[float, float, int | None] | None:
+    """(minimo, maximo, dias) del bloque 'Historial de precios' de la ficha, o None si no esta."""
+    text = BeautifulSoup(html, "html.parser").get_text(" ", strip=True)
+    m = HISTORY_RE.search(text)
+    if not m:
+        return None
+    lo, hi = parse_price(m.group(1)), parse_price(m.group(2))
+    if lo is None or hi is None:
+        return None
+    before = text[max(0, m.start() - 160): m.start()]
+    days = HISTORY_DAYS_RE.findall(before)
+    return min(lo, hi), max(lo, hi), int(days[-1]) if days else None
+
+
 def listing_ok(session: requests.Session, p: Product, ch: Channel, today: date) -> tuple[bool, str]:
-    """Mira la ficha del producto. Si no encuentra la fecha, lo acepta y lo anota en el log."""
+    """Mira la ficha: descarta altas recientes y descuentos que el historial de precios desmiente.
+
+    Si la ficha no trae la informacion, acepta el producto y lo anota en el log.
+    """
     sleep(random.uniform(2, 4))
     html = fetch(session, f"{BASE}/dp/{p.asin}")
-    age = listing_age_days(html, today)
-    if age is None:
-        log.info(
-            "%s: %s sin fecha de alta en la ficha; se acepta (%d bytes, fechas vistas: %s)",
-            ch.name, p.asin, len(html), date_hints(html) or "ninguna",
-        )
-        return True, ""
-    if age < ch.min_listing_days:
-        return False, f"alta hace {age} dias"
+
+    if ch.min_listing_days > 0:
+        age = listing_age_days(html, today)
+        if age is not None and age < ch.min_listing_days:
+            return False, f"alta hace {age} dias"
+
+    if ch.min_history_drop > 0:
+        hist = price_history(html)
+        if hist is None:
+            log.info("%s: %s sin historial de precios en la ficha; se acepta (%d bytes)", ch.name, p.asin, len(html))
+        else:
+            lo, hi, days = hist
+            hi = max(hi, p.price)
+            drop = round((1 - p.price / hi) * 100)
+            span = f"{days} dias" if days else "el periodo"
+            if drop < ch.min_history_drop:
+                return False, (
+                    f"precio habitual: entre {fmt_eur(lo)} y {fmt_eur(hi)} en {span}; "
+                    f"hoy solo {drop}% menos que el maximo"
+                )
     return True, ""
 
 
@@ -1008,7 +1045,7 @@ def run_channel(
         if publishing and not force:
             save_state(state_path, state, next_at=retry_at, rejected=rejected)  # no insistir en cada ejecucion
         raise
-    check_pages = session is not None and ch.min_listing_days > 0
+    check_pages = session is not None and (ch.min_listing_days > 0 or ch.min_history_drop > 0)
     candidates = pick(
         products, ch, state, limit=MAX_PAGE_CHECKS if check_pages else None, skip=set(rejected)
     )
