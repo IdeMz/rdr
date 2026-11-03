@@ -1,0 +1,14 @@
+{
+  "name": "ejemplo",
+  "enabled": false,
+  "token_env": "TG_TOKEN_EJEMPLO",
+  "chat_env": "TG_CHAT_EJEMPLO",
+  "queries": ["auriculares bluetooth", "robot aspirador", "lego"],
+  "pages": 1,
+  "min_discount": 25,
+  "min_rating": 4.2,
+  "min_reviews": 100,
+  "max_posts": 1,
+  "repeat_days": 14,
+  "footer": "Enlace de afiliado"
+}
