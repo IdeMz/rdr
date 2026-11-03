@@ -1,9 +1,10 @@
 {
  "cats": {
   "Auriculares": "2026-11-03T20:50:44.557294+00:00",
-  "Móviles": "2026-11-03T20:15:41.050553+00:00"
+  "Móviles": "2026-11-03T20:15:41.050553+00:00",
+  "Portátiles": "2026-11-03T21:25:41.970831+00:00"
  },
- "next_at": "2026-11-03T21:24:18.826104+00:00",
+ "next_at": "2026-11-03T21:56:41.907332+00:00",
  "posted": {
   "B0BTJ8ZXG5": {
    "t": "2026-11-03T12:38:46.796406+00:00",
@@ -36,6 +37,10 @@
   "B0GGCDV1Q1": {
    "t": "2026-11-03T20:16:00.734199+00:00",
    "title": "Google Pixel 10a - 7 años de Nuevas actualizaciones y Funciones, más de 30 Horas de batería, Asistente de Cámara, Gemini Live, Seguridad de Pixel - Obsidiana, 128GB"
+  },
+  "B0H4ZJ6MD7": {
+   "t": "2026-11-03T21:26:03.787861+00:00",
+   "title": "HP 15 Ordenador portátil 15,6\" FHD, Ryzen 5, 16GB, 512SSD, Windows 11"
   },
   "B0HN6FPTF7": {
    "t": "2026-11-03T14:36:14.100969+00:00",
