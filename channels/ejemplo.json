@@ -10,5 +10,10 @@
   "min_reviews": 100,
   "max_posts": 1,
   "repeat_days": 14,
-  "footer": "Enlace de afiliado"
+  "postal_code": "28001",
+  "timezone": "Europe/Madrid",
+  "window_start": "08:00",
+  "window_end": "23:00",
+  "interval_min": 30,
+  "interval_max": 35
 }

@@ -2,7 +2,7 @@ name: run
 
 on:
   schedule:
-    - cron: '17,47 * * * *'
+    - cron: '*/5 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -28,6 +28,7 @@ jobs:
 
       - name: Ejecutar
         env:
+          FORCE_RUN: ${{ github.event_name == 'workflow_dispatch' && '1' || '0' }}
           AMAZON_TAG: ${{ secrets.AMAZON_TAG }}
           TG_TOKEN_EJEMPLO: ${{ secrets.TG_TOKEN_EJEMPLO }}
           TG_CHAT_EJEMPLO: ${{ secrets.TG_CHAT_EJEMPLO }}

@@ -6,6 +6,7 @@ Cada canal es un JSON en channels/. El estado anti-repeticion vive en state/.
     python deals.py --all
     python deals.py --channel NOMBRE [--dry-run]
     python deals.py --channel NOMBRE --html pagina.html     # prueba sin red
+    python deals.py --all --force                            # ignora horario e intervalo
 """
 from __future__ import annotations
 
@@ -20,9 +21,10 @@ import sys
 import time
 from dataclasses import dataclass, field, fields
 from datetime import datetime, timedelta, timezone
-from html import escape
+from html import escape, unescape
 from pathlib import Path
-from urllib.parse import quote_plus
+from urllib.parse import parse_qs, quote_plus, urljoin, urlparse
+from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
 import requests
 from bs4 import BeautifulSoup
@@ -72,17 +74,16 @@ def scrub(text: str) -> str:
     return text
 
 
-class _ScrubFilter(logging.Filter):
-    def filter(self, record: logging.LogRecord) -> bool:
-        record.msg = scrub(record.getMessage())
-        record.args = ()
-        return True
+class _ScrubFormatter(logging.Formatter):
+    """Tapa secretos en el texto final, incluidas excepciones, sin tocar el registro original."""
+
+    def format(self, record: logging.LogRecord) -> str:
+        return scrub(super().format(record))
 
 
 def setup_logging() -> None:
     handler = logging.StreamHandler(sys.stdout)
-    handler.addFilter(_ScrubFilter())
-    handler.setFormatter(logging.Formatter("%(asctime)s %(levelname)s %(message)s"))
+    handler.setFormatter(_ScrubFormatter("%(asctime)s %(levelname)s %(message)s"))
     root = logging.getLogger()
     root.handlers[:] = [handler]
     root.setLevel(logging.INFO)
@@ -147,8 +148,18 @@ class Channel:
     repeat_days: int = 14
     similarity: float = 0.7
     skip_sponsored: bool = True
-    footer: str = "Enlace de afiliado"
+    footer: str = ""
     enabled: bool = True
+    # Ubicacion de entrega: sin ella Amazon enseña precios sin IVA a los servidores de fuera de España
+    postal_code: str = "28001"
+    require_spain: bool = True
+    # Horario y ritmo de publicacion
+    timezone: str = "Europe/Madrid"
+    window_start: str = "08:00"
+    window_end: str = "23:00"
+    interval_min: int = 30
+    interval_max: int = 35
+    retry_minutes: int = 10  # espera tras un intento sin candidatos o con bloqueo
 
 
 def load_channel(path: Path) -> Channel:
@@ -175,7 +186,37 @@ def load_channel(path: Path) -> Channel:
             raise ConfigError(f"{path.name}: las urls deben empezar por {BASE}/")
     if ch.search_params and not ch.search_params.startswith("&"):
         raise ConfigError(f"{path.name}: 'search_params' debe empezar por &")
+    if not re.fullmatch(r"\d{5}", str(ch.postal_code)):
+        raise ConfigError(f"{path.name}: 'postal_code' debe tener 5 cifras")
+    try:
+        ZoneInfo(ch.timezone)
+    except (ZoneInfoNotFoundError, ValueError):
+        raise ConfigError(f"{path.name}: zona horaria desconocida: {ch.timezone}") from None
+    try:
+        start, end = hhmm(ch.window_start), hhmm(ch.window_end)
+    except ValueError:
+        raise ConfigError(f"{path.name}: 'window_start' y 'window_end' deben ser HH:MM") from None
+    if start >= end:
+        raise ConfigError(f"{path.name}: 'window_start' debe ser anterior a 'window_end'")
+    if not 0 < ch.interval_min <= ch.interval_max:
+        raise ConfigError(f"{path.name}: intervalo no valido (interval_min <= interval_max, mayores que 0)")
+    if ch.retry_minutes < 1:
+        raise ConfigError(f"{path.name}: 'retry_minutes' debe ser al menos 1")
     return ch
+
+
+def hhmm(value: str) -> int:
+    """'08:30' -> minutos desde medianoche."""
+    m = re.fullmatch(r"(\d{1,2}):(\d{2})", str(value))
+    if not m or int(m.group(1)) > 23 or int(m.group(2)) > 59:
+        raise ValueError(value)
+    return int(m.group(1)) * 60 + int(m.group(2))
+
+
+def in_window(now: datetime, ch: Channel) -> bool:
+    local = now.astimezone(ZoneInfo(ch.timezone))
+    minutes = local.hour * 60 + local.minute
+    return hhmm(ch.window_start) <= minutes <= hhmm(ch.window_end)
 
 
 # --------------------------------------------------------------------------
@@ -309,6 +350,10 @@ class Blocked(Exception):
     pass
 
 
+class LocationError(Exception):
+    """No se ha podido fijar la entrega en España: es mejor no publicar que publicar precios sin IVA."""
+
+
 def make_session() -> requests.Session:
     s = requests.Session()
     s.headers.update(
@@ -331,12 +376,105 @@ def fetch(session: requests.Session, url: str, retries: int = 3) -> str:
             last = f"error de red ({type(exc).__name__})"
         else:
             if r.status_code == 200:
-                return r.text
+                return follow_refresh(session, r.text, url)
             last = f"HTTP {r.status_code}"
         log.warning("Amazon: %s, intento %d/%d", last, attempt, retries)
         if attempt < retries:
             sleep(random.uniform(3, 7) * attempt)
     raise Blocked(last)
+
+
+REFRESH_RE = re.compile(r"""http-equiv=["']refresh["']\s+content="(\d+);\s*URL='?([^"']+)""", re.I)
+
+
+def follow_refresh(session: requests.Session, text: str, referer: str, hops: int = 3) -> str:
+    """Amazon a veces responde con una pagina corta que redirige a los pocos segundos."""
+    for _ in range(hops):
+        m = REFRESH_RE.search(text)
+        if not m or len(text) > 20000:
+            break
+        sleep(int(m.group(1)) + 1)
+        try:
+            r = session.get(
+                urljoin(BASE + "/", unescape(m.group(2))), headers={"Referer": referer}, timeout=20
+            )
+        except requests.RequestException as exc:
+            raise Blocked(f"error de red ({type(exc).__name__})") from None
+        if r.status_code != 200:
+            raise Blocked(f"HTTP {r.status_code}")
+        text = r.text
+    return text
+
+
+# --------------------------------------------------------------------------
+# Ubicacion de entrega (precios con IVA)
+# --------------------------------------------------------------------------
+
+LOCATION_MODAL = "#nav-global-location-data-modal-action"
+ADDRESS_CHANGE = BASE + "/portal-migration/hz/glow/address-change?actionSource=glow"
+
+
+def location_ok(html: str, postal_code: str) -> bool:
+    """True si el 'Enviar a' de la pagina muestra el codigo postal pedido."""
+    el = BeautifulSoup(html, "html.parser").find(id="glow-ingress-line2")
+    return bool(el and postal_code in el.get_text())
+
+
+def set_location(session: requests.Session, referer: str, page_html: str, postal_code: str) -> None:
+    """Fija el codigo postal de entrega en la sesion, como hace la ventana 'Enviar a' de la web."""
+    el = BeautifulSoup(page_html, "html.parser").select_one(LOCATION_MODAL)
+    if el is None or not el.get("data-a-modal"):
+        raise LocationError("no se encuentra el selector de ubicacion en la pagina")
+    try:
+        modal = json.loads(el["data-a-modal"])
+    except ValueError:
+        raise LocationError("selector de ubicacion ilegible") from None
+    token = (modal.get("ajaxHeaders") or {}).get("anti-csrftoken-a2z")
+    modal_url = modal.get("url")
+    if not token or not modal_url:
+        raise LocationError("faltan el token o la direccion de la ventana de ubicacion")
+
+    xhr = {
+        "Accept": "*/*",
+        "X-Requested-With": "XMLHttpRequest",
+        "Origin": BASE,
+        "Referer": referer,
+        "Sec-Fetch-Dest": "empty",
+        "Sec-Fetch-Mode": "cors",
+        "Sec-Fetch-Site": "same-origin",
+    }
+    try:
+        sleep(random.uniform(2, 4))
+        r = session.get(
+            urljoin(BASE + "/", modal_url),
+            headers={**xhr, "Accept": "text/html,*/*", "anti-csrftoken-a2z": token},
+            timeout=20,
+        )
+        r.raise_for_status()
+        m = re.search(r'"?CSRF_TOKEN"?\s*[:=]\s*"([^"]+)"', unescape(r.text))
+        post_token = m.group(1) if m else token
+
+        query = {k: v[0] for k, v in parse_qs(urlparse(modal_url).query).items()}
+        payload = {
+            "locationType": "LOCATION_INPUT",
+            "zipCode": postal_code,
+            "storeContext": query.get("storeContext", "generic"),
+            "deviceType": "web",
+            "pageType": query.get("pageType", "Gateway"),
+            "actionSource": "glow",
+        }
+        sleep(random.uniform(2, 4))
+        r2 = session.post(
+            ADDRESS_CHANGE, json=payload, headers={**xhr, "anti-csrftoken-a2z": post_token}, timeout=20
+        )
+        r2.raise_for_status()
+        data = r2.json()
+    except (requests.RequestException, ValueError) as exc:
+        raise LocationError(f"fallo al fijar la ubicacion ({type(exc).__name__})") from None
+    if not isinstance(data, dict) or data.get("isAddressUpdated") != 1:
+        raise LocationError("Amazon no confirmo el cambio de codigo postal")
+    if (data.get("address") or {}).get("countryCode") != "ES":
+        raise LocationError("Amazon no acepto el codigo postal como direccion de España")
 
 
 def search_urls(ch: Channel) -> list[str]:
@@ -365,7 +503,17 @@ def collect(ch: Channel, html_file: Path | None = None) -> list[Product]:
         results = parse_results(html)
         if is_blocked(html, len(results)):
             raise Blocked("captcha o bloqueo")
-        log.info("%s: %d productos en la pagina %d", ch.name, len(results), i + 1)
+        if ch.require_spain and not location_ok(html, ch.postal_code):
+            log.info("%s: la entrega no esta en España; fijando CP %s", ch.name, ch.postal_code)
+            set_location(session, url, html, ch.postal_code)
+            sleep(random.uniform(2, 4))
+            html = fetch(session, url)
+            results = parse_results(html)
+            if is_blocked(html, len(results)):
+                raise Blocked("captcha o bloqueo")
+            if not location_ok(html, ch.postal_code):
+                raise LocationError("tras fijar el codigo postal la pagina sigue sin mostrar España")
+        log.info("%s: %d productos en la busqueda %d de %d", ch.name, len(results), i + 1, len(search_urls(ch)))
         for p in results:
             found.setdefault(p.asin, p)
     return list(found.values())
@@ -431,21 +579,39 @@ def _ts(entry: dict) -> datetime:
     return dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
 
 
-def load_state(path: Path, repeat_days: int, now: datetime) -> dict:
+def _read_state_file(path: Path) -> dict:
     try:
         data = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, ValueError):
         return {}
-    if not isinstance(data, dict):
-        return {}
+    return data if isinstance(data, dict) else {}
+
+
+def load_state(path: Path, repeat_days: int, now: datetime) -> dict:
+    """Ofertas ya publicadas dentro de la ventana de repeticion (acepta el formato antiguo, plano)."""
+    data = _read_state_file(path)
+    posted = data["posted"] if isinstance(data.get("posted"), dict) else data
     cutoff = now - timedelta(days=repeat_days)
-    return {a: v for a, v in data.items() if isinstance(v, dict) and _ts(v) > cutoff}
+    return {a: v for a, v in posted.items() if isinstance(v, dict) and _ts(v) > cutoff}
 
 
-def save_state(path: Path, state: dict) -> None:
+def load_next_at(path: Path) -> datetime | None:
+    """Momento a partir del cual toca la siguiente publicacion."""
+    raw = _read_state_file(path).get("next_at")
+    if not isinstance(raw, str):
+        return None
+    try:
+        dt = datetime.fromisoformat(raw)
+    except ValueError:
+        return None
+    return dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
+
+
+def save_state(path: Path, posted: dict, next_at: datetime | None = None) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
+    data = {"next_at": next_at.isoformat() if next_at else None, "posted": posted}
     tmp = path.with_suffix(".tmp")
-    tmp.write_text(json.dumps(state, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
+    tmp.write_text(json.dumps(data, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
     tmp.replace(path)
 
 
@@ -455,10 +621,11 @@ def save_state(path: Path, state: dict) -> None:
 
 
 def fmt_eur(value: float) -> str:
+    """1299.9 -> '1.299,90€' ; 23.0 -> '23€'"""
     s = f"{value:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
     if s.endswith(",00"):
         s = s[:-3]
-    return f"{s} €"
+    return f"{s}€"
 
 
 def affiliate_url(asin: str, tag: str | None) -> str:
@@ -475,11 +642,14 @@ def full_size_image(url: str | None) -> str | None:
 def build_caption(p: Product, url: str, ch: Channel) -> str:
     title = p.title if len(p.title) <= 110 else p.title[:107].rstrip() + "…"
     lines = [f"🔥 <b>{escape(title)}</b>", ""]
-    price_line = f"💶 <b>{fmt_eur(p.price)}</b>"
     if p.old_price and p.discount:
-        price_line += f"  <s>{fmt_eur(p.old_price)}</s>  (-{p.discount}%)"
-    lines.append(price_line)
+        lines.append(f"PVPR: <s>{fmt_eur(p.old_price)}</s>")
+        lines.append(f"Ahora: {fmt_eur(p.price)}")
+        lines.append(f"−{p.discount} % · Diferencia {fmt_eur(round(p.old_price - p.price, 2))}")
+    else:
+        lines.append(f"Ahora: {fmt_eur(p.price)}")
     if p.rating:
+        lines.append("")
         rating_line = f"⭐ {str(p.rating).replace('.', ',')}/5"
         if p.reviews:
             rating_line += f" · {p.reviews:,}".replace(",", ".") + " valoraciones"
@@ -540,27 +710,53 @@ def run_channel(
     dry_run: bool = False,
     html_file: Path | None = None,
     state_dir: Path | None = None,
+    force: bool = False,
+    now: datetime | None = None,
 ) -> int:
-    """Devuelve cuantas ofertas se han publicado (o se habrian publicado)."""
+    """Devuelve cuantas ofertas se han publicado (o se habrian publicado).
+
+    Con publicacion real y sin 'force', respeta el horario del canal y el intervalo
+    entre ofertas; fuera de turno termina sin consultar Amazon.
+    """
     state_dir = state_dir or ROOT / "state"
-    now = datetime.now(timezone.utc)
+    now = now or datetime.now(timezone.utc)
     state_path = state_dir / f"{ch.name}.json"
     state = load_state(state_path, ch.repeat_days, now)
+    publishing = not dry_run and html_file is None
+
+    if publishing and not force:
+        if not in_window(now, ch):
+            log.info("%s: fuera de horario (%s-%s %s)", ch.name, ch.window_start, ch.window_end, ch.timezone)
+            return 0
+        next_at = load_next_at(state_path)
+        if next_at and now < next_at:
+            wait = int((next_at - now).total_seconds() // 60) + 1
+            log.info("%s: aun no toca (faltan unos %d min)", ch.name, wait)
+            return 0
 
     tag = get_secret("AMAZON_TAG")
     if not tag:
         log.warning("AMAZON_TAG no definido: los enlaces saldran sin tag de afiliado")
 
     token = chat_id = None
-    if not dry_run and html_file is None:
+    if publishing:
         token, chat_id = get_secret(ch.token_env), get_secret(ch.chat_env)
         if not token or not chat_id:
             raise ConfigError(f"{ch.name}: faltan los secretos {ch.token_env} / {ch.chat_env}")
 
-    products = collect(ch, html_file)
+    retry_at = now + timedelta(minutes=ch.retry_minutes)
+    try:
+        products = collect(ch, html_file)
+    except (Blocked, LocationError):
+        if publishing and not force:
+            save_state(state_path, state, next_at=retry_at)  # no insistir en cada ejecucion
+        raise
     chosen = pick(products, ch, state)
     log.info("%s: %d productos, %d candidatos nuevos", ch.name, len(products), len(chosen))
+    if publishing and not chosen and not force:
+        save_state(state_path, state, next_at=retry_at)
 
+    next_post = now + timedelta(minutes=random.uniform(ch.interval_min, ch.interval_max))
     published = 0
     for p in chosen:
         caption = build_caption(p, affiliate_url(p.asin, tag), ch)
@@ -570,7 +766,7 @@ def run_channel(
             continue
         send_deal(token, chat_id, caption, full_size_image(p.image))
         state[p.asin] = {"t": datetime.now(timezone.utc).isoformat(), "title": p.title[:120]}
-        save_state(state_path, state)
+        save_state(state_path, state, next_at=next_post)
         published += 1
         log.info("%s: publicada %s (-%d%%)", ch.name, p.asin, p.discount)
         if published < len(chosen):
@@ -585,7 +781,9 @@ def main(argv: list[str] | None = None) -> int:
     group.add_argument("--channel", help="nombre de un canal (aunque este desactivado)")
     ap.add_argument("--dry-run", action="store_true", help="no publica ni guarda estado")
     ap.add_argument("--html", type=Path, help="parsea este HTML en vez de consultar Amazon")
+    ap.add_argument("--force", action="store_true", help="ignora horario e intervalo (pruebas manuales)")
     args = ap.parse_args(argv)
+    force = args.force or os.environ.get("FORCE_RUN") == "1"
 
     setup_logging()
     load_dotenv()
@@ -601,10 +799,13 @@ def main(argv: list[str] | None = None) -> int:
             ch = load_channel(path)
             if args.all and not ch.enabled:
                 continue
-            run_channel(ch, dry_run=args.dry_run, html_file=args.html)
+            run_channel(ch, dry_run=args.dry_run, html_file=args.html, force=force)
         except Blocked as exc:
             print(f"::warning::Amazon no ha respondido ({scrub(str(exc))})")
             log.warning("%s: bloqueado (%s)", path.stem, exc)
+        except LocationError as exc:
+            print(f"::warning::No se pudo fijar la entrega en España; no se publica ({scrub(str(exc))})")
+            log.warning("%s: ubicacion no fijada (%s)", path.stem, exc)
         except (ConfigError, TelegramError) as exc:
             log.error("%s: %s", path.stem, exc)
             failed += 1
