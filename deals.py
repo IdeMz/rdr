@@ -530,20 +530,45 @@ def collect(ch: Channel, html_file: Path | None = None) -> list[Product]:
 # --------------------------------------------------------------------------
 
 
+def filter_steps(ch: Channel) -> list[tuple[str, callable]]:
+    """Filtros en orden. Los usan 'eligible' y el embudo del log, para que nunca se desincronicen."""
+    steps = [
+        ("con precio", lambda p: bool(p.title and p.price)),
+        ("no patrocinados", lambda p: not (ch.skip_sponsored and p.sponsored)),
+    ]
+    if ch.min_discount > 0:
+        steps.append(("con precio anterior", lambda p: p.discount > 0))
+    steps += [
+        (f"con >={ch.min_discount}% dto", lambda p: p.discount >= ch.min_discount),
+        (
+            "en rango de precio",
+            lambda p: p.price >= ch.min_price and not (ch.max_price and p.price > ch.max_price),
+        ),
+        (
+            f"con nota >={ch.min_rating}",
+            lambda p: not ch.min_rating or (p.rating is not None and p.rating >= ch.min_rating),
+        ),
+        (
+            f"con >={ch.min_reviews} valoraciones",
+            lambda p: not ch.min_reviews or (p.reviews is not None and p.reviews >= ch.min_reviews),
+        ),
+    ]
+    return steps
+
+
 def eligible(p: Product, ch: Channel) -> bool:
-    if not p.title or not p.price:
-        return False
-    if ch.skip_sponsored and p.sponsored:
-        return False
-    if p.discount < ch.min_discount:
-        return False
-    if p.price < ch.min_price or (ch.max_price and p.price > ch.max_price):
-        return False
-    if ch.min_rating and (p.rating is None or p.rating < ch.min_rating):
-        return False
-    if ch.min_reviews and (p.reviews is None or p.reviews < ch.min_reviews):
-        return False
-    return True
+    return all(keep(p) for _, keep in filter_steps(ch))
+
+
+def funnel(products: list[Product], ch: Channel, state: dict) -> str:
+    """Resume cuantos productos sobreviven a cada filtro: 'N leidos -> N con precio -> ...'."""
+    parts = [f"{len(products)} leidos"]
+    current = products
+    for label, keep in filter_steps(ch):
+        current = [p for p in current if keep(p)]
+        parts.append(f"{len(current)} {label}")
+    parts.append(f"{len(pick(current, ch, state, limit=len(current) or 1))} nuevos")
+    return " -> ".join(parts)
 
 
 def score(p: Product) -> float:
@@ -568,7 +593,9 @@ def similar(a: str, b: str, threshold: float) -> bool:
     return smaller >= 4 and common / smaller >= 0.8
 
 
-def pick(products: list[Product], ch: Channel, state: dict) -> list[Product]:
+def pick(products: list[Product], ch: Channel, state: dict, limit: int | None = None) -> list[Product]:
+    """Mejores ofertas que cumplen los filtros y no se han publicado (ni una variante parecida)."""
+    limit = ch.max_posts if limit is None else limit
     recent_titles = [v.get("title", "") for v in state.values()]
     chosen: list[Product] = []
     for p in sorted((p for p in products if eligible(p, ch)), key=score, reverse=True):
@@ -578,7 +605,7 @@ def pick(products: list[Product], ch: Channel, state: dict) -> list[Product]:
             continue
         chosen.append(p)
         recent_titles.append(p.title)
-        if len(chosen) >= ch.max_posts:
+        if len(chosen) >= limit:
             break
     return chosen
 
@@ -813,7 +840,7 @@ def run_channel(
             save_state(state_path, state, next_at=retry_at)  # no insistir en cada ejecucion
         raise
     chosen = pick(products, ch, state)
-    log.info("%s: %d productos, %d candidatos nuevos", ch.name, len(products), len(chosen))
+    log.info("%s: %s", ch.name, funnel(products, ch, state))
     if publishing and not chosen and not force:
         save_state(state_path, state, next_at=retry_at)
 

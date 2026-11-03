@@ -123,6 +123,52 @@ def test_eligible_filters():
     assert not deals.eligible(prod("A", "spons", 50, 100, sponsored=True), ch)
 
 
+FUNNEL_ITEMS = [
+    prod("A1", "Zapatillas running hombre", 50, 100),                     # pasa todo
+    prod("A2", "Robot aspirador inteligente", 100, 300, reviews=10),      # pocas valoraciones
+    prod("A3", "Cafetera de goteo", 20, 22),                              # solo 9 % de descuento
+    prod("A4", "Lampara de mesa", 20, None),                              # sin precio anterior
+    prod("A5", "Anuncio", 10, 50, sponsored=True),                        # patrocinado
+    prod("A6", "Sin precio", None, None),
+    prod("A7", "Altavoz portatil", 30, 60, rating=3.5),                   # mala nota
+    prod("A8", "Bicicleta estatica", 400, 800),                           # por encima del precio maximo
+]
+
+
+def test_funnel_counts_each_filter():
+    ch = channel(min_discount=10, min_rating=4.0, min_reviews=100, max_price=200)
+    assert deals.funnel(FUNNEL_ITEMS, ch, {}) == (
+        "8 leidos -> 7 con precio -> 6 no patrocinados -> 5 con precio anterior"
+        " -> 4 con >=10% dto -> 3 en rango de precio -> 2 con nota >=4.0"
+        " -> 1 con >=100 valoraciones -> 1 nuevos"
+    )
+
+
+def test_funnel_counts_already_posted_as_not_new():
+    ch = channel(min_discount=10, min_rating=4.0, min_reviews=100, max_price=200)
+    state = {"A1": {"t": "2026-11-03T12:00:00+00:00", "title": "Zapatillas running hombre"}}
+    assert deals.funnel(FUNNEL_ITEMS, ch, state).endswith("-> 1 con >=100 valoraciones -> 0 nuevos")
+
+
+def test_funnel_and_eligible_agree():
+    ch = channel(min_discount=10, min_rating=4.0, min_reviews=100, max_price=200)
+    survivors = [p for p in FUNNEL_ITEMS if deals.eligible(p, ch)]
+    assert [p.asin for p in survivors] == ["A1"]
+    assert deals.funnel(FUNNEL_ITEMS, ch, {}).split(" -> ")[-2].startswith(f"{len(survivors)} ")
+
+
+def test_funnel_with_zero_min_discount_skips_old_price_step():
+    text = deals.funnel(FUNNEL_ITEMS, channel(min_discount=0), {})
+    assert "precio anterior" not in text
+
+
+def test_run_channel_logs_funnel(tmp_path, monkeypatch, caplog):
+    setup_publish(monkeypatch)
+    with caplog.at_level(logging.INFO):
+        deals.run_channel(channel(), state_dir=tmp_path, now=NOW_IN)
+    assert any("leidos ->" in r.getMessage() and "nuevos" in r.getMessage() for r in caplog.records)
+
+
 def test_pick_orders_and_dedupes():
     ch = channel(min_discount=20, max_posts=2)
     items = [
