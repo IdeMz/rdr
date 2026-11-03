@@ -1092,3 +1092,22 @@ def test_save_state_keeps_categories_when_not_passed(tmp_path):
     deals.save_state(path, {}, cats={"Lego": "2026-11-03T10:00:00+00:00"})
     deals.save_state(path, {}, next_at=NOW_IN)
     assert deals.load_cats(path) == {"Lego": "2026-11-03T10:00:00+00:00"}
+
+
+def test_run_note_names_category_and_asin(tmp_path, monkeypatch):
+    monkeypatch.setattr(deals, "ROOT", tmp_path)
+    monkeypatch.setenv("GITHUB_STEP_SUMMARY", str(tmp_path / "summary.md"))
+    html = page(card("B000000070", "Taladro percutor", "40,00 €", "80,00 €"))
+    setup_publish(monkeypatch, html=html)
+    ch = channel(categories=[{"nombre": "Herramientas", "query": "taladro"}],
+                 min_discount=10, min_rating=0, min_reviews=0)
+    assert deals.run_channel(ch, state_dir=tmp_path, now=NOW_IN) == 1
+    assert (tmp_path / "run_note.txt").read_text().strip() == "t: publicada B000000070 (Herramientas, -50%)"
+    assert "B000000070" in (tmp_path / "summary.md").read_text()
+
+
+def test_run_note_when_no_candidates(tmp_path, monkeypatch):
+    monkeypatch.setattr(deals, "ROOT", tmp_path)
+    setup_publish(monkeypatch, html=page(card("B000000071", "Cafetera", "20,00 €", "22,00 €")))
+    assert deals.run_channel(channel(), state_dir=tmp_path, now=NOW_IN) == 0
+    assert (tmp_path / "run_note.txt").read_text().strip() == "t: sin candidatos"

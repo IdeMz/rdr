@@ -1069,6 +1069,19 @@ def send_deal(
 # --------------------------------------------------------------------------
 
 
+def note(line: str) -> None:
+    """Resumen de una linea: va al mensaje del commit de estado y al resumen de la ejecucion."""
+    try:
+        with (ROOT / "run_note.txt").open("a", encoding="utf-8") as f:
+            f.write(line + "\n")
+        summary = os.environ.get("GITHUB_STEP_SUMMARY")
+        if summary:
+            with open(summary, "a", encoding="utf-8") as f:
+                f.write(line + "\n\n")
+    except OSError:
+        pass
+
+
 def run_channel(
     ch: Channel,
     *,
@@ -1119,6 +1132,7 @@ def run_channel(
         targets = [None]
 
     chosen: list[Product] = []
+    chosen_cat: dict[str, str] = {}
     rows: list[tuple[Product, str, str]] = []
     for cat in targets:
         cch = category_channel(ch, cat) if cat else ch
@@ -1151,6 +1165,7 @@ def run_channel(
                     rejected[p.asin] = {"t": now.isoformat(), "why": why}
                     continue
             chosen.append(p)
+            chosen_cat[p.asin] = cat["nombre"] if cat else ""
         rows += [(p, why, cat["nombre"] if cat else "") for p, why in
                  explain(products, cch, state, skip=rejected, chosen=chosen)]
         if chosen:
@@ -1159,6 +1174,9 @@ def run_channel(
         write_report(ROOT / "reports" / f"{ch.name}.csv", rows)
     except OSError as exc:  # el informe es solo ayuda para revisar: nunca debe impedir publicar
         log.info("%s: no se pudo escribir el informe (%s)", ch.name, type(exc).__name__)
+    if publishing and not chosen:
+        note(f"{ch.name}: sin candidatos ({len(targets)} categorias probadas)" if ch.categories
+             else f"{ch.name}: sin candidatos")
     if publishing and not force and not chosen:
         save_state(state_path, state, next_at=retry_at, rejected=rejected, cats=cats)
     elif publishing:
@@ -1177,7 +1195,9 @@ def run_channel(
         state[p.asin] = {"t": datetime.now(timezone.utc).isoformat(), "title": p.title[:200]}
         save_state(state_path, state, next_at=next_post, rejected=rejected, cats=cats)
         published += 1
-        log.info("%s: publicada %s (-%d%%)", ch.name, p.asin, p.discount)
+        where = f"{chosen_cat[p.asin]}, " if chosen_cat.get(p.asin) else ""
+        log.info("%s: publicada %s (%s-%d%%)", ch.name, p.asin, where, p.discount)
+        note(f"{ch.name}: publicada {p.asin} ({where}-{p.discount}%)")
         if published < len(chosen):
             sleep(2)
     return published
@@ -1196,6 +1216,10 @@ def main(argv: list[str] | None = None) -> int:
 
     setup_logging()
     load_dotenv()
+    try:
+        (ROOT / "run_note.txt").unlink()
+    except OSError:
+        pass
 
     if args.channel:
         paths = [ROOT / "channels" / f"{args.channel}.json"]
