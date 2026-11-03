@@ -1,12 +1,31 @@
+import io
 import json
+import logging
 from datetime import datetime, timedelta, timezone
 
 import pytest
 import requests
+from PIL import Image
 
 import deals
 
 TOKEN = "123456789:AAH_fake-token_abcdefghijklmnopqrstuvwxyz0123"
+
+
+@pytest.fixture(autouse=True)
+def restore_logging():
+    """main() y setup_logging() cambian el logging global: lo dejamos como estaba."""
+    root = logging.getLogger()
+    handlers, level = root.handlers[:], root.level
+    yield
+    root.handlers[:] = handlers
+    root.setLevel(level)
+
+
+def png_bytes(size=(300, 600), color=(200, 30, 30), mode="RGB"):
+    out = io.BytesIO()
+    Image.new(mode, size, color).save(out, "PNG")
+    return out.getvalue()
 
 
 def card(asin, title, price, old=None, rating="4,5 de 5 estrellas", reviews="1.234", sponsored=False,
@@ -116,6 +135,27 @@ def test_pick_orders_and_dedupes():
     assert [p.asin for p in chosen] == ["A2", "A1"]
 
 
+@pytest.mark.parametrize("a,b,expected", [
+    ("Philips Avent Biberon Natural 260ml Azul", "Philips Avent Biberon Natural 260ml Rosa", True),
+    ("Smileat Tarrito Ecologico Guisito de Alubias 220 g", "Smileat Tarrito Ecologico Guisito de Alubias 220 g Pack 2", True),
+    ("Auriculares Bluetooth Sony WH-1000XM5 Negro", "Auriculares Bluetooth Sony WH-1000XM5 Plata", True),
+    ("Lego Technic Ferrari 42143", "Lego Technic Porsche 42176", False),
+    ("Robot aspirador Roborock Q Revo", "Cafetera de goteo Philips 1000W", False),
+    ("Camiseta", "Pantalon", False),
+])
+def test_similar_detects_color_variants(a, b, expected):
+    assert deals.similar(a, b, 0.5) is expected
+
+
+def test_pick_skips_color_variant_of_recent_post():
+    ch = channel()
+    state = {"B0BTJ8ZXG5": {"t": "2026-11-03T12:00:00+00:00",
+                             "title": "Philips Avent Biberon Natural 260ml Azul"}}
+    items = [prod("B0BTJ9WHL9", "Philips Avent Biberon Natural 260ml Rosa", 10, 30),
+             prod("B0OTRO0001", "Cafetera de goteo Philips 1000W", 20, 60)]
+    assert [p.asin for p in deals.pick(items, ch, state)] == ["B0OTRO0001"]
+
+
 def test_pick_skips_recent_and_similar():
     ch = channel(max_posts=5)
     state = {"A1": {"t": "2026-01-01T00:00:00+00:00", "title": "Zapatillas running hombre"}}
@@ -166,6 +206,82 @@ def test_affiliate_url_and_image():
     assert deals.full_size_image("https://m.media-amazon.com/images/I/71abc._AC_UY218_.jpg") == \
         "https://m.media-amazon.com/images/I/71abc.jpg"
     assert deals.full_size_image(None) is None
+
+
+def square_of(data):
+    with Image.open(io.BytesIO(data)) as im:
+        return im.format, im.size, im.convert("RGB")
+
+
+@pytest.mark.parametrize("size", [(300, 600), (900, 300), (50, 50), (4000, 2500)])
+def test_to_square_jpeg_always_1200(size):
+    fmt, dims, im = square_of(deals.to_square_jpeg(png_bytes(size)))
+    assert fmt == "JPEG" and dims == (1200, 1200)
+    assert im.getpixel((0, 0)) == (255, 255, 255) and im.getpixel((1199, 1199)) == (255, 255, 255)
+    r, g, b = im.getpixel((600, 600))
+    assert r > 150 and g < 90 and b < 90  # el producto queda centrado
+
+
+def test_to_square_jpeg_keeps_aspect_ratio_and_margin():
+    _, _, im = square_of(deals.to_square_jpeg(png_bytes((300, 600))))
+    # alto util 1200-2*40 = 1120 -> ancho 560; el producto no toca los bordes
+    assert im.getpixel((600, 30)) == (255, 255, 255)
+    assert im.getpixel((600, 60))[1] < 90
+    assert im.getpixel((600 - 290, 600)) == (255, 255, 255)
+    assert im.getpixel((600 - 270, 600))[1] < 90
+
+
+def test_to_square_jpeg_transparent_becomes_white():
+    _, _, im = square_of(deals.to_square_jpeg(png_bytes((200, 200), (0, 0, 0, 0), "RGBA")))
+    assert im.getpixel((600, 600)) == (255, 255, 255)
+
+
+def test_to_square_jpeg_rejects_garbage():
+    with pytest.raises(OSError):
+        deals.to_square_jpeg(b"no soy una imagen")
+
+
+class ImgResp:
+    def __init__(self, content, status=200):
+        self.content, self.status_code = content, status
+
+    def raise_for_status(self):
+        if self.status_code >= 400:
+            raise requests.HTTPError("x")
+
+
+def test_prepare_image(monkeypatch):
+    url = "https://m.media-amazon.com/images/I/71abc.jpg"
+    monkeypatch.setattr(deals.requests, "get", lambda u, **k: ImgResp(png_bytes((640, 480))))
+    out = deals.prepare_image(url)
+    assert square_of(out)[1] == (1200, 1200)
+
+
+@pytest.mark.parametrize("url", [
+    None, "", "http://m.media-amazon.com/x.jpg", "https://evil.example/x.jpg",
+    "https://media-amazon.com.evil.example/x.jpg", "file:///etc/passwd",
+])
+def test_prepare_image_rejects_foreign_urls(monkeypatch, url):
+    def boom(*a, **k):
+        raise AssertionError("no deberia descargar")
+    monkeypatch.setattr(deals.requests, "get", boom)
+    assert deals.prepare_image(url) is None
+
+
+def test_prepare_image_failures_return_none(monkeypatch):
+    url = "https://m.media-amazon.com/images/I/71abc.jpg"
+    monkeypatch.setattr(deals.requests, "get", lambda u, **k: ImgResp(b"", 404))
+    assert deals.prepare_image(url) is None
+    monkeypatch.setattr(deals.requests, "get", lambda u, **k: ImgResp(b"basura"))
+    assert deals.prepare_image(url) is None
+    monkeypatch.setattr(deals.requests, "get", lambda u, **k: ImgResp(b"x" * (deals.MAX_IMAGE_BYTES + 1)))
+    assert deals.prepare_image(url) is None
+
+    def net(u, **k):
+        raise requests.ConnectionError("caido")
+
+    monkeypatch.setattr(deals.requests, "get", net)
+    assert deals.prepare_image(url) is None
 
 
 def test_caption_escapes_html():
@@ -252,17 +368,35 @@ class FakeResp:
         return self._body
 
 
-def test_send_falls_back_to_text(monkeypatch):
+def test_send_falls_back_from_file_to_url_to_text(monkeypatch):
     calls = []
 
-    def fake_post(url, data=None, timeout=None):
+    def fake_post(url, data=None, files=None, timeout=None):
         method = url.rsplit("/", 1)[1]
-        calls.append(method)
+        calls.append((method, bool(files), (data or {}).get("photo")))
         return FakeResp(400, {"description": "wrong file identifier"}) if method == "sendPhoto" else FakeResp()
 
     monkeypatch.setattr(deals.requests, "post", fake_post)
-    deals.send_deal(TOKEN, "1", "hola", "https://x/img.jpg")
-    assert calls == ["sendPhoto", "sendMessage"]
+    deals.send_deal(TOKEN, "1", "hola", b"JPEG", "https://m.media-amazon.com/images/I/x.jpg")
+    assert calls == [
+        ("sendPhoto", True, None),
+        ("sendPhoto", False, "https://m.media-amazon.com/images/I/x.jpg"),
+        ("sendMessage", False, None),
+    ]
+
+
+def test_send_uploads_square_photo_as_file(monkeypatch):
+    seen = {}
+
+    def fake_post(url, data=None, files=None, timeout=None):
+        seen.update(url=url, data=data, files=files, timeout=timeout)
+        return FakeResp()
+
+    monkeypatch.setattr(deals.requests, "post", fake_post)
+    deals.send_deal(TOKEN, "@c", "pie", b"JPEGDATA", "https://m.media-amazon.com/x.jpg")
+    assert seen["url"].endswith("/sendPhoto")
+    assert seen["files"]["photo"] == ("oferta.jpg", b"JPEGDATA", "image/jpeg")
+    assert seen["data"]["caption"] == "pie" and "photo" not in seen["data"]
 
 
 def test_telegram_retries_on_429(monkeypatch):
@@ -331,11 +465,13 @@ def test_publish_saves_state_and_does_not_repeat(tmp_path, monkeypatch):
     monkeypatch.setenv("TG_T", TOKEN)
     monkeypatch.setenv("TG_C", "@canal")
     monkeypatch.setattr(deals, "collect", lambda ch, html_file=None: deals.parse_results(HTML))
-    monkeypatch.setattr(deals, "send_deal", lambda token, chat, caption, image: sent.append((chat, image)))
+    monkeypatch.setattr(deals, "prepare_image", lambda url: b"JPEG:" + url.encode())
+    monkeypatch.setattr(deals, "send_deal", lambda token, chat, caption, photo, url: sent.append((chat, photo, url)))
     monkeypatch.setattr(deals, "sleep", lambda s: None)
 
     assert deals.run_channel(channel(), state_dir=tmp_path, now=NOW_IN) == 1
-    assert sent == [("@canal", "https://m.media-amazon.com/images/I/71abcDEF.jpg")]
+    url = "https://m.media-amazon.com/images/I/71abcDEF.jpg"
+    assert sent == [("@canal", b"JPEG:" + url.encode(), url)]
     saved = json.loads((tmp_path / "t.json").read_text())
     assert list(saved["posted"]) == ["B000000001"]
     gap = datetime.fromisoformat(saved["next_at"]) - NOW_IN
@@ -404,6 +540,7 @@ def setup_publish(monkeypatch, html=HTML):
     monkeypatch.setenv("TG_T", TOKEN)
     monkeypatch.setenv("TG_C", "@canal")
     monkeypatch.setattr(deals, "collect", lambda ch, html_file=None: deals.parse_results(html))
+    monkeypatch.setattr(deals, "prepare_image", lambda url: b"JPEG")
     monkeypatch.setattr(deals, "send_deal", lambda *a: sent.append(a))
     monkeypatch.setattr(deals, "sleep", lambda s: None)
     return sent

@@ -11,6 +11,7 @@ Cada canal es un JSON en channels/. El estado anti-repeticion vive en state/.
 from __future__ import annotations
 
 import argparse
+import io
 import json
 import logging
 import math
@@ -28,10 +29,15 @@ from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
 import requests
 from bs4 import BeautifulSoup
+from PIL import Image, ImageOps
 
 ROOT = Path(__file__).resolve().parent
 BASE = "https://www.amazon.es"
 TELEGRAM_API = "https://api.telegram.org"
+PHOTO_SIZE = 1200  # lado del cuadrado: con fotos siempre cuadradas, todos los posts miden igual de ancho
+PHOTO_MARGIN = 40  # aire alrededor del producto, en pixeles
+MAX_IMAGE_BYTES = 12 * 1024 * 1024
+IMAGE_HOST_SUFFIXES = (".media-amazon.com", ".ssl-images-amazon.com")
 
 USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -146,7 +152,7 @@ class Channel:
     min_reviews: int = 50
     max_posts: int = 1
     repeat_days: int = 14
-    similarity: float = 0.7
+    similarity: float = 0.5
     skip_sponsored: bool = True
     footer: str = ""
     enabled: bool = True
@@ -550,10 +556,16 @@ def _tokens(title: str) -> set[str]:
 
 
 def similar(a: str, b: str, threshold: float) -> bool:
+    """True si dos titulos parecen el mismo producto (por ejemplo, en otro color o talla)."""
     ta, tb = _tokens(a), _tokens(b)
     if not ta or not tb:
         return False
-    return len(ta & tb) / len(ta | tb) >= threshold
+    common = len(ta & tb)
+    if common / len(ta | tb) >= threshold:
+        return True
+    # una variante suele ser el mismo titulo con una o dos palabras cambiadas
+    smaller = min(len(ta), len(tb))
+    return smaller >= 4 and common / smaller >= 0.8
 
 
 def pick(products: list[Product], ch: Channel, state: dict) -> list[Product]:
@@ -639,6 +651,49 @@ def full_size_image(url: str | None) -> str | None:
     return re.sub(r"\._[A-Za-z0-9_,%-]+_\.", ".", url)
 
 
+def to_square_jpeg(data: bytes, size: int = PHOTO_SIZE, margin: int = PHOTO_MARGIN) -> bytes:
+    """Centra la foto sobre un lienzo blanco size x size, sin recortarla ni deformarla."""
+    with Image.open(io.BytesIO(data)) as img:
+        img = ImageOps.exif_transpose(img)
+        if img.mode in ("RGBA", "LA", "P"):
+            img = img.convert("RGBA")
+            flat = Image.new("RGB", img.size, "white")
+            flat.paste(img, mask=img.getchannel("A"))
+            img = flat
+        else:
+            img = img.convert("RGB")
+        inner = size - 2 * margin
+        scale = min(inner / img.width, inner / img.height)
+        resized = img.resize(
+            (max(1, round(img.width * scale)), max(1, round(img.height * scale))), Image.LANCZOS
+        )
+    canvas = Image.new("RGB", (size, size), "white")
+    canvas.paste(resized, ((size - resized.width) // 2, (size - resized.height) // 2))
+    out = io.BytesIO()
+    canvas.save(out, "JPEG", quality=90, optimize=True)
+    return out.getvalue()
+
+
+def prepare_image(url: str | None) -> bytes | None:
+    """Descarga la foto del producto y la devuelve como JPEG cuadrado, o None si algo falla."""
+    if not url:
+        return None
+    host = urlparse(url).hostname or ""
+    if urlparse(url).scheme != "https" or not host.endswith(IMAGE_HOST_SUFFIXES):
+        log.warning("Imagen ignorada: servidor no permitido (%s)", host or "?")
+        return None
+    try:
+        r = requests.get(url, timeout=20, headers={"Referer": BASE + "/"})
+        r.raise_for_status()
+        data = r.content
+        if len(data) > MAX_IMAGE_BYTES:
+            raise ValueError("imagen demasiado grande")
+        return to_square_jpeg(data)
+    except (requests.RequestException, OSError, ValueError, Image.DecompressionBombError) as exc:
+        log.warning("No se pudo preparar la imagen (%s); se usara la original", type(exc).__name__)
+        return None
+
+
 def build_caption(p: Product, url: str, ch: Channel) -> str:
     title = p.title if len(p.title) <= 110 else p.title[:107].rstrip() + "…"
     lines = [f"🔥 <b>{escape(title)}</b>", ""]
@@ -664,11 +719,11 @@ class TelegramError(Exception):
     pass
 
 
-def tg_call(method: str, token: str, data: dict, retries: int = 2) -> None:
+def tg_call(method: str, token: str, data: dict, retries: int = 2, files: dict | None = None) -> None:
     url = f"{TELEGRAM_API}/bot{token}/{method}"
     for attempt in range(retries + 1):
         try:
-            r = requests.post(url, data=data, timeout=20)
+            r = requests.post(url, data=data, files=files, timeout=60 if files else 20)
         except requests.RequestException as exc:
             # 'from None': la excepcion original contiene la URL con el token
             raise TelegramError(f"{method}: error de red ({type(exc).__name__})") from None
@@ -685,17 +740,23 @@ def tg_call(method: str, token: str, data: dict, retries: int = 2) -> None:
         return
 
 
-def send_deal(token: str, chat_id: str, caption: str, image: str | None) -> None:
-    if image:
+def send_deal(
+    token: str, chat_id: str, caption: str, photo: bytes | None, photo_url: str | None = None
+) -> None:
+    """Prefiere la foto cuadrada subida como archivo; si falla, la URL original; si no, solo texto."""
+    base = {"chat_id": chat_id, "caption": caption, "parse_mode": "HTML"}
+    if photo:
         try:
-            tg_call(
-                "sendPhoto",
-                token,
-                {"chat_id": chat_id, "photo": image, "caption": caption, "parse_mode": "HTML"},
-            )
+            tg_call("sendPhoto", token, base, files={"photo": ("oferta.jpg", photo, "image/jpeg")})
             return
         except TelegramError as exc:
-            log.warning("sendPhoto fallo (%s); envio solo texto", exc)
+            log.warning("sendPhoto con archivo fallo (%s)", exc)
+    if photo_url:
+        try:
+            tg_call("sendPhoto", token, {**base, "photo": photo_url})
+            return
+        except TelegramError as exc:
+            log.warning("sendPhoto con URL fallo (%s); envio solo texto", exc)
     tg_call("sendMessage", token, {"chat_id": chat_id, "text": caption, "parse_mode": "HTML"})
 
 
@@ -764,8 +825,9 @@ def run_channel(
             print(f"--- {ch.name} / {p.asin} ---\n{caption}\n")
             published += 1
             continue
-        send_deal(token, chat_id, caption, full_size_image(p.image))
-        state[p.asin] = {"t": datetime.now(timezone.utc).isoformat(), "title": p.title[:120]}
+        photo_url = full_size_image(p.image)
+        send_deal(token, chat_id, caption, prepare_image(photo_url), photo_url)
+        state[p.asin] = {"t": datetime.now(timezone.utc).isoformat(), "title": p.title[:200]}
         save_state(state_path, state, next_at=next_post)
         published += 1
         log.info("%s: publicada %s (-%d%%)", ch.name, p.asin, p.discount)
