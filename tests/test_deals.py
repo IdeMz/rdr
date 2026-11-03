@@ -682,6 +682,7 @@ class Resp:
     def __init__(self, text="", body=None, status=200):
         self.text, self._body, self.status_code = text, body, status
         self.ok = status < 400
+        self.headers = {"content-type": "application/json" if body is not None else "text/html"}
 
     def raise_for_status(self):
         if self.status_code >= 400:
@@ -889,3 +890,45 @@ def test_rejected_expire(tmp_path):
     path.write_text(json.dumps({"next_at": None, "posted": {},
                                 "rejected": {"A": {"t": old}, "B": {"t": new}}}))
     assert set(deals.load_rejected(path, NOW_IN)) == {"B"}
+
+
+def test_collect_retries_location_when_first_post_is_not_json(monkeypatch):
+    class Flaky(FakeAmazon):
+        def post(self, url, json=None, headers=None, timeout=None):
+            if len([c for c in self.calls if c[0] == "POST"]) == 0:
+                self.calls.append(("POST", url.split("?")[0], json, headers))
+                return Resp(text="<html><body>Robot Check</body></html>")
+            return super().post(url, json=json, headers=headers, timeout=timeout)
+
+    fake = Flaky()
+    monkeypatch.setattr(deals, "make_session", lambda: fake)
+    monkeypatch.setattr(deals, "sleep", lambda s: None)
+    assert [p.asin for p in deals.collect(channel())] == ["B000000001"]
+    assert len([c for c in fake.calls if c[0] == "POST"]) == 2
+
+
+def test_set_location_non_json_error_is_descriptive(monkeypatch):
+    class Html(FakeAmazon):
+        def post(self, url, json=None, headers=None, timeout=None):
+            return Resp(text="<html><body>Robot Check</body></html>")
+
+    monkeypatch.setattr(deals, "sleep", lambda s: None)
+    fake = Html()
+    with pytest.raises(deals.LocationError, match="no JSON.*Robot Check"):
+        deals.set_location(fake, "https://www.amazon.es/s?k=x", fake.get("https://www.amazon.es/s?k=x").text, "28001")
+
+
+def test_collect_gives_up_after_three_location_attempts(monkeypatch):
+    fake = FakeAmazon(accepts=False)
+    monkeypatch.setattr(deals, "make_session", lambda: fake)
+    monkeypatch.setattr(deals, "sleep", lambda s: None)
+    with pytest.raises(deals.LocationError):
+        deals.collect(channel())
+    assert len([c for c in fake.calls if c[0] == "POST"]) == deals.LOCATION_ATTEMPTS
+
+
+def test_date_hints_show_label_context():
+    html = product_page("<span>Fecha de lanzamiento</span> <span>5 de mayo de 2022</span> y 3 de foo de 2020")
+    hints = deals.date_hints(html)
+    assert len(hints) == 1 and "Fecha de lanzamiento" in hints[0]
+    assert deals.date_hints(product_page("nada")) == []

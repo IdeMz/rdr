@@ -480,7 +480,15 @@ def set_location(session: requests.Session, referer: str, page_html: str, postal
             ADDRESS_CHANGE, json=payload, headers={**xhr, "anti-csrftoken-a2z": post_token}, timeout=20
         )
         r2.raise_for_status()
-        data = r2.json()
+        try:
+            data = r2.json()
+        except ValueError:
+            snippet = BeautifulSoup(r2.text, "html.parser").get_text(" ", strip=True)[:120]
+            ctype = r2.headers.get("content-type", "?")
+            raise LocationError(
+                f"respuesta no JSON al fijar la ubicacion (HTTP {r2.status_code}, {ctype}, "
+                f"{len(r2.text)} bytes: {snippet!r})"
+            ) from None
     except (requests.RequestException, ValueError) as exc:
         raise LocationError(f"fallo al fijar la ubicacion ({type(exc).__name__})") from None
     if not isinstance(data, dict) or data.get("isAddressUpdated") != 1:
@@ -503,6 +511,9 @@ def search_urls(ch: Channel) -> list[str]:
     return urls
 
 
+LOCATION_ATTEMPTS = 3  # veces que se intenta fijar el codigo postal antes de rendirse
+
+
 def collect(
     ch: Channel, html_file: Path | None = None, session: requests.Session | None = None
 ) -> list[Product]:
@@ -518,15 +529,24 @@ def collect(
         if is_blocked(html, len(results)):
             raise Blocked("captcha o bloqueo")
         if ch.require_spain and not location_ok(html, ch.postal_code):
-            log.info("%s: la entrega no esta en España; fijando CP %s", ch.name, ch.postal_code)
-            set_location(session, url, html, ch.postal_code)
-            sleep(random.uniform(2, 4))
-            html = fetch(session, url)
-            results = parse_results(html)
-            if is_blocked(html, len(results)):
-                raise Blocked("captcha o bloqueo")
-            if not location_ok(html, ch.postal_code):
-                raise LocationError("tras fijar el codigo postal la pagina sigue sin mostrar España")
+            for attempt in range(1, LOCATION_ATTEMPTS + 1):
+                log.info("%s: la entrega no esta en España; fijando CP %s (intento %d)", ch.name, ch.postal_code, attempt)
+                try:
+                    set_location(session, url, html, ch.postal_code)
+                    sleep(random.uniform(2, 4))
+                    html = fetch(session, url)
+                    results = parse_results(html)
+                    if is_blocked(html, len(results)):
+                        raise Blocked("captcha o bloqueo")
+                    if not location_ok(html, ch.postal_code):
+                        raise LocationError("tras fijar el codigo postal la pagina sigue sin mostrar España")
+                    break
+                except LocationError as exc:
+                    if attempt == LOCATION_ATTEMPTS:
+                        raise
+                    log.info("%s: intento %d fallido (%s); se reintenta", ch.name, attempt, exc)
+                    sleep(random.uniform(5, 10))
+                    html = fetch(session, url)
         log.info("%s: %d productos en la busqueda %d de %d", ch.name, len(results), i + 1, len(search_urls(ch)))
         for p in results:
             found.setdefault(p.asin, p)
@@ -576,13 +596,31 @@ def listing_age_days(html: str, today: date) -> int | None:
     return None
 
 
+DATE_RE = re.compile(r"\d{1,2}\s+(?:de\s+)?[A-Za-zÁÉÍÓÚáéíóú]{4,10}\s+(?:de\s+)?\d{4}")
+
+
+def date_hints(html: str, limit: int = 4) -> list[str]:
+    """Fechas que aparecen en la ficha con el texto que las precede (para ajustar las etiquetas)."""
+    text = BeautifulSoup(html, "html.parser").get_text(" ", strip=True)
+    hints = []
+    for m in DATE_RE.finditer(text):
+        if parse_spanish_date(m.group(0)):
+            hints.append(text[max(0, m.start() - 50): m.end()])
+        if len(hints) >= limit:
+            break
+    return hints
+
+
 def listing_ok(session: requests.Session, p: Product, ch: Channel, today: date) -> tuple[bool, str]:
     """Mira la ficha del producto. Si no encuentra la fecha, lo acepta y lo anota en el log."""
     sleep(random.uniform(2, 4))
     html = fetch(session, f"{BASE}/dp/{p.asin}")
     age = listing_age_days(html, today)
     if age is None:
-        log.info("%s: %s sin fecha de alta en la ficha; se acepta", ch.name, p.asin)
+        log.info(
+            "%s: %s sin fecha de alta en la ficha; se acepta (%d bytes, fechas vistas: %s)",
+            ch.name, p.asin, len(html), date_hints(html) or "ninguna",
+        )
         return True, ""
     if age < ch.min_listing_days:
         return False, f"alta hace {age} dias"
