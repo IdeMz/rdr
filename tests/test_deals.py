@@ -49,7 +49,7 @@ def page(*cards):
 
 
 def channel(**kw):
-    base = dict(name="t", token_env="TG_T", chat_env="TG_C", queries=["x"])
+    base = dict(name="t", token_env="TG_T", chat_env="TG_C", queries=["x"], min_listing_days=0)
     base.update(kw)
     return deals.Channel(**base)
 
@@ -510,7 +510,7 @@ def test_publish_saves_state_and_does_not_repeat(tmp_path, monkeypatch):
     sent = []
     monkeypatch.setenv("TG_T", TOKEN)
     monkeypatch.setenv("TG_C", "@canal")
-    monkeypatch.setattr(deals, "collect", lambda ch, html_file=None: deals.parse_results(HTML))
+    monkeypatch.setattr(deals, "collect", lambda ch, html_file=None, session=None: deals.parse_results(HTML))
     monkeypatch.setattr(deals, "prepare_image", lambda url: b"JPEG:" + url.encode())
     monkeypatch.setattr(deals, "send_deal", lambda token, chat, caption, photo, url: sent.append((chat, photo, url)))
     monkeypatch.setattr(deals, "sleep", lambda s: None)
@@ -585,7 +585,7 @@ def setup_publish(monkeypatch, html=HTML):
     sent = []
     monkeypatch.setenv("TG_T", TOKEN)
     monkeypatch.setenv("TG_C", "@canal")
-    monkeypatch.setattr(deals, "collect", lambda ch, html_file=None: deals.parse_results(html))
+    monkeypatch.setattr(deals, "collect", lambda ch, html_file=None, session=None: deals.parse_results(html))
     monkeypatch.setattr(deals, "prepare_image", lambda url: b"JPEG")
     monkeypatch.setattr(deals, "send_deal", lambda *a: sent.append(a))
     monkeypatch.setattr(deals, "sleep", lambda s: None)
@@ -617,7 +617,7 @@ def test_no_candidates_waits_before_retrying(tmp_path, monkeypatch):
 def test_block_or_location_failure_publishes_nothing_and_backs_off(tmp_path, monkeypatch, exc):
     sent = setup_publish(monkeypatch)
 
-    def fail(ch, html_file=None):
+    def fail(ch, html_file=None, session=None):
         raise exc
 
     monkeypatch.setattr(deals, "collect", fail)
@@ -796,3 +796,96 @@ def test_follow_refresh(monkeypatch):
     short = '<html><meta http-equiv="refresh" content="5; URL=/s?k=a&amp;page=1"></html>'
     assert len(deals.follow_refresh(S(), short, "https://www.amazon.es/s?k=a")) > 30000
     assert deals.follow_refresh(S(), "<html>normal</html>", "x") == "<html>normal</html>"
+
+
+# ---------------------------------------------------------------- antiguedad del producto
+
+def product_page(extra):
+    return f"<html><body><div id='detail'>{extra}</div></body></html>"
+
+
+TODAY = datetime(2026, 11, 3, tzinfo=timezone.utc).date()
+
+
+@pytest.mark.parametrize("text,expected", [
+    ("12 de octubre de 2026", (2026, 10, 12)),
+    ("3 noviembre 2025", (2025, 11, 3)),
+    ("1 de Setiembre de 2024", (2024, 9, 1)),
+    ("31 de febrero de 2025", None),
+    ("sin fecha", None),
+    ("12 de foo de 2026", None),
+])
+def test_parse_spanish_date(text, expected):
+    got = deals.parse_spanish_date(text)
+    assert (got and (got.year, got.month, got.day)) == (expected or None)
+
+
+def test_listing_age_from_label():
+    html = product_page("<span>Producto en Amazon.es desde</span><span>25 de octubre de 2026</span>")
+    assert deals.listing_age_days(html, TODAY) == 9
+
+
+def test_listing_age_from_new_badge():
+    html = product_page("<span>Nuevo en Amazon en el último mes</span>")
+    assert deals.listing_age_days(html, TODAY) == deals.NEW_BADGE_AGE_DAYS
+
+
+def test_listing_age_unknown():
+    assert deals.listing_age_days(product_page("nada"), TODAY) is None
+
+
+def test_listing_ok_rejects_recent_and_accepts_old_or_unknown(monkeypatch):
+    monkeypatch.setattr(deals, "sleep", lambda s: None)
+    ch = channel(min_listing_days=60)
+    pages = {
+        "B1": product_page("Nuevo en Amazon en el último mes"),
+        "B2": product_page("Producto en Amazon.es desde 1 de enero de 2024"),
+        "B3": product_page("sin datos"),
+    }
+    monkeypatch.setattr(deals, "fetch", lambda session, url: pages[url.rsplit("/", 1)[1]])
+
+    class P:
+        def __init__(self, asin):
+            self.asin = asin
+
+    assert deals.listing_ok(None, P("B1"), ch, TODAY)[0] is False
+    assert deals.listing_ok(None, P("B2"), ch, TODAY)[0] is True
+    assert deals.listing_ok(None, P("B3"), ch, TODAY)[0] is True
+
+
+def test_max_discount_filter():
+    ch = channel(min_discount=10, max_discount=70, min_rating=0, min_reviews=0)
+    ok = deals.parse_results(page(card("B000000010", "Algo bueno", "50,00 €", "100,00 €")))[0]
+    fake = deals.parse_results(page(card("B000000011", "Algo raro", "20,00 €", "100,00 €")))[0]
+    assert deals.eligible(ok, ch)
+    assert not deals.eligible(fake, ch)
+
+
+def test_run_channel_skips_recent_listing_and_remembers_it(tmp_path, monkeypatch):
+    html = page(
+        card("B000000020", "Auriculares nuevos falsos", "24,99 €", "99,99 €", reviews="5.000"),
+        card("B000000021", "Cafetera antigua buena", "40,00 €", "60,00 €", reviews="900"),
+    )
+    sent = setup_publish(monkeypatch, html=html)
+    # fuerza la comprobacion de fichas aunque collect este simulado
+    monkeypatch.setattr(deals, "make_session", lambda: object())
+    pages = {
+        "B000000020": product_page("Nuevo en Amazon en el último mes"),
+        "B000000021": product_page("Producto en Amazon.es desde 5 de mayo de 2022"),
+    }
+    monkeypatch.setattr(deals, "fetch", lambda session, url: pages[url.rsplit("/", 1)[1]])
+    ch = channel(min_listing_days=60, min_discount=10, min_rating=0, min_reviews=0)
+    assert deals.run_channel(ch, state_dir=tmp_path, now=NOW_IN) == 1
+    assert "B000000021" in sent[0][2]
+    saved = json.loads((tmp_path / "t.json").read_text())
+    assert "B000000020" in saved["rejected"]
+    assert "B000000021" in saved["posted"]
+
+
+def test_rejected_expire(tmp_path):
+    path = tmp_path / "t.json"
+    old = (NOW_IN - timedelta(days=deals.REJECT_DAYS + 1)).isoformat()
+    new = (NOW_IN - timedelta(days=1)).isoformat()
+    path.write_text(json.dumps({"next_at": None, "posted": {},
+                                "rejected": {"A": {"t": old}, "B": {"t": new}}}))
+    assert set(deals.load_rejected(path, NOW_IN)) == {"B"}

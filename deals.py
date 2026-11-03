@@ -21,7 +21,7 @@ import re
 import sys
 import time
 from dataclasses import dataclass, field, fields
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
 from html import escape, unescape
 from pathlib import Path
 from urllib.parse import parse_qs, quote_plus, urljoin, urlparse
@@ -146,6 +146,8 @@ class Channel:
     pages: int = 1
     search_params: str = ""
     min_discount: int = 20
+    max_discount: int = 0  # 0 = sin tope; util contra precios recomendados inflados
+    min_listing_days: int = 60  # dias minimos desde el alta del producto en Amazon.es (0 = no comprobar)
     min_price: float = 0
     max_price: float = 0  # 0 = sin tope
     min_rating: float = 4.0
@@ -208,6 +210,10 @@ def load_channel(path: Path) -> Channel:
         raise ConfigError(f"{path.name}: intervalo no valido (interval_min <= interval_max, mayores que 0)")
     if ch.retry_minutes < 1:
         raise ConfigError(f"{path.name}: 'retry_minutes' debe ser al menos 1")
+    if ch.max_discount and ch.max_discount <= ch.min_discount:
+        raise ConfigError(f"{path.name}: 'max_discount' debe ser mayor que 'min_discount' (o 0)")
+    if ch.min_listing_days < 0:
+        raise ConfigError(f"{path.name}: 'min_listing_days' no puede ser negativo")
     return ch
 
 
@@ -497,10 +503,12 @@ def search_urls(ch: Channel) -> list[str]:
     return urls
 
 
-def collect(ch: Channel, html_file: Path | None = None) -> list[Product]:
+def collect(
+    ch: Channel, html_file: Path | None = None, session: requests.Session | None = None
+) -> list[Product]:
     if html_file is not None:
         return parse_results(html_file.read_text(encoding="utf-8"))
-    session = make_session()
+    session = session or make_session()
     found: dict[str, Product] = {}
     for i, url in enumerate(search_urls(ch)):
         if i:
@@ -526,6 +534,62 @@ def collect(ch: Channel, html_file: Path | None = None) -> list[Product]:
 
 
 # --------------------------------------------------------------------------
+# Antiguedad del producto: descarta altas recientes con precio recomendado inflado
+# --------------------------------------------------------------------------
+
+SPANISH_MONTHS = {
+    "enero": 1, "febrero": 2, "marzo": 3, "abril": 4, "mayo": 5, "junio": 6, "julio": 7,
+    "agosto": 8, "septiembre": 9, "setiembre": 9, "octubre": 10, "noviembre": 11, "diciembre": 12,
+}
+LISTING_LABELS = ("Producto en Amazon.es desde", "Fecha de primera disponibilidad", "Disponible en Amazon.es desde")
+NEW_BADGE = "Nuevo en Amazon"  # etiqueta 'Nuevo en Amazon en el ultimo mes' de la ficha
+NEW_BADGE_AGE_DAYS = 29       # la etiqueta solo dice 'menos de un mes'
+MAX_PAGE_CHECKS = 6           # fichas que se miran como maximo en cada ejecucion
+REJECT_DAYS = 7               # cuanto se recuerda un descarte antes de volver a mirar el producto
+
+
+def parse_spanish_date(text: str) -> date | None:
+    """'12 de octubre de 2026' / '3 noviembre 2025' -> date"""
+    m = re.search(r"(\d{1,2})\s+(?:de\s+)?([A-Za-zÁÉÍÓÚáéíóú]+)\s+(?:de\s+)?(\d{4})", text)
+    if not m:
+        return None
+    month = SPANISH_MONTHS.get(m.group(2).lower())
+    if not month:
+        return None
+    try:
+        return date(int(m.group(3)), month, int(m.group(1)))
+    except ValueError:
+        return None
+
+
+def listing_age_days(html: str, today: date) -> int | None:
+    """Dias desde que el producto esta en Amazon.es segun su ficha, o None si no se puede saber."""
+    text = BeautifulSoup(html, "html.parser").get_text(" ", strip=True)
+    for label in LISTING_LABELS:
+        idx = text.find(label)
+        if idx >= 0:
+            listed = parse_spanish_date(text[idx + len(label): idx + len(label) + 60])
+            if listed:
+                return (today - listed).days
+    if NEW_BADGE in text:
+        return NEW_BADGE_AGE_DAYS
+    return None
+
+
+def listing_ok(session: requests.Session, p: Product, ch: Channel, today: date) -> tuple[bool, str]:
+    """Mira la ficha del producto. Si no encuentra la fecha, lo acepta y lo anota en el log."""
+    sleep(random.uniform(2, 4))
+    html = fetch(session, f"{BASE}/dp/{p.asin}")
+    age = listing_age_days(html, today)
+    if age is None:
+        log.info("%s: %s sin fecha de alta en la ficha; se acepta", ch.name, p.asin)
+        return True, ""
+    if age < ch.min_listing_days:
+        return False, f"alta hace {age} dias"
+    return True, ""
+
+
+# --------------------------------------------------------------------------
 # Seleccion y anti-duplicados
 # --------------------------------------------------------------------------
 
@@ -538,8 +602,10 @@ def filter_steps(ch: Channel) -> list[tuple[str, callable]]:
     ]
     if ch.min_discount > 0:
         steps.append(("con precio anterior", lambda p: p.discount > 0))
+    steps.append((f"con >={ch.min_discount}% dto", lambda p: p.discount >= ch.min_discount))
+    if ch.max_discount:
+        steps.append((f"con <={ch.max_discount}% dto", lambda p: p.discount <= ch.max_discount))
     steps += [
-        (f"con >={ch.min_discount}% dto", lambda p: p.discount >= ch.min_discount),
         (
             "en rango de precio",
             lambda p: p.price >= ch.min_price and not (ch.max_price and p.price > ch.max_price),
@@ -560,14 +626,14 @@ def eligible(p: Product, ch: Channel) -> bool:
     return all(keep(p) for _, keep in filter_steps(ch))
 
 
-def funnel(products: list[Product], ch: Channel, state: dict) -> str:
+def funnel(products: list[Product], ch: Channel, state: dict, skip: frozenset | set = frozenset()) -> str:
     """Resume cuantos productos sobreviven a cada filtro: 'N leidos -> N con precio -> ...'."""
     parts = [f"{len(products)} leidos"]
     current = products
     for label, keep in filter_steps(ch):
         current = [p for p in current if keep(p)]
         parts.append(f"{len(current)} {label}")
-    parts.append(f"{len(pick(current, ch, state, limit=len(current) or 1))} nuevos")
+    parts.append(f"{len(pick(current, ch, state, limit=len(current) or 1, skip=skip))} nuevos")
     return " -> ".join(parts)
 
 
@@ -593,13 +659,22 @@ def similar(a: str, b: str, threshold: float) -> bool:
     return smaller >= 4 and common / smaller >= 0.8
 
 
-def pick(products: list[Product], ch: Channel, state: dict, limit: int | None = None) -> list[Product]:
-    """Mejores ofertas que cumplen los filtros y no se han publicado (ni una variante parecida)."""
+def pick(
+    products: list[Product],
+    ch: Channel,
+    state: dict,
+    limit: int | None = None,
+    skip: frozenset | set = frozenset(),
+) -> list[Product]:
+    """Mejores ofertas que cumplen los filtros y no se han publicado (ni una variante parecida).
+
+    'skip' son los ASIN descartados hace poco (por ejemplo, por ser altas muy recientes).
+    """
     limit = ch.max_posts if limit is None else limit
     recent_titles = [v.get("title", "") for v in state.values()]
     chosen: list[Product] = []
     for p in sorted((p for p in products if eligible(p, ch)), key=score, reverse=True):
-        if p.asin in state:
+        if p.asin in state or p.asin in skip:
             continue
         if any(similar(p.title, t, ch.similarity) for t in recent_titles):
             continue
@@ -634,6 +709,15 @@ def load_state(path: Path, repeat_days: int, now: datetime) -> dict:
     return {a: v for a, v in posted.items() if isinstance(v, dict) and _ts(v) > cutoff}
 
 
+def load_rejected(path: Path, now: datetime) -> dict:
+    """Productos descartados hace menos de REJECT_DAYS dias."""
+    rejected = _read_state_file(path).get("rejected")
+    if not isinstance(rejected, dict):
+        return {}
+    cutoff = now - timedelta(days=REJECT_DAYS)
+    return {a: v for a, v in rejected.items() if isinstance(v, dict) and _ts(v) > cutoff}
+
+
 def load_next_at(path: Path) -> datetime | None:
     """Momento a partir del cual toca la siguiente publicacion."""
     raw = _read_state_file(path).get("next_at")
@@ -646,9 +730,15 @@ def load_next_at(path: Path) -> datetime | None:
     return dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
 
 
-def save_state(path: Path, posted: dict, next_at: datetime | None = None) -> None:
+def save_state(
+    path: Path, posted: dict, next_at: datetime | None = None, rejected: dict | None = None
+) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    data = {"next_at": next_at.isoformat() if next_at else None, "posted": posted}
+    data = {
+        "next_at": next_at.isoformat() if next_at else None,
+        "posted": posted,
+        "rejected": rejected or {},
+    }
     tmp = path.with_suffix(".tmp")
     tmp.write_text(json.dumps(data, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
     tmp.replace(path)
@@ -833,16 +923,39 @@ def run_channel(
             raise ConfigError(f"{ch.name}: faltan los secretos {ch.token_env} / {ch.chat_env}")
 
     retry_at = now + timedelta(minutes=ch.retry_minutes)
+    rejected = load_rejected(state_path, now)
+    session = make_session() if html_file is None else None
     try:
-        products = collect(ch, html_file)
+        products = collect(ch, html_file, session)
     except (Blocked, LocationError):
         if publishing and not force:
-            save_state(state_path, state, next_at=retry_at)  # no insistir en cada ejecucion
+            save_state(state_path, state, next_at=retry_at, rejected=rejected)  # no insistir en cada ejecucion
         raise
-    chosen = pick(products, ch, state)
-    log.info("%s: %s", ch.name, funnel(products, ch, state))
-    if publishing and not chosen and not force:
-        save_state(state_path, state, next_at=retry_at)
+    check_pages = session is not None and ch.min_listing_days > 0
+    candidates = pick(
+        products, ch, state, limit=MAX_PAGE_CHECKS if check_pages else None, skip=set(rejected)
+    )
+    log.info("%s: %s", ch.name, funnel(products, ch, state, skip=set(rejected)))
+
+    chosen: list[Product] = []
+    for p in candidates:
+        if len(chosen) >= ch.max_posts:
+            break
+        if check_pages:
+            try:
+                ok, why = listing_ok(session, p, ch, now.date())
+            except Exception as exc:  # una ficha que no carga no debe tumbar la ejecucion
+                log.info("%s: %s no se pudo comprobar la ficha (%s); se acepta", ch.name, p.asin, type(exc).__name__)
+                ok, why = True, ""
+            if not ok:
+                log.info("%s: descartado %s (%s)", ch.name, p.asin, why)
+                rejected[p.asin] = {"t": now.isoformat(), "why": why}
+                continue
+        chosen.append(p)
+    if publishing and not force and not chosen:
+        save_state(state_path, state, next_at=retry_at, rejected=rejected)
+    elif publishing and rejected:
+        save_state(state_path, state, next_at=load_next_at(state_path), rejected=rejected)
 
     next_post = now + timedelta(minutes=random.uniform(ch.interval_min, ch.interval_max))
     published = 0
@@ -855,7 +968,7 @@ def run_channel(
         photo_url = full_size_image(p.image)
         send_deal(token, chat_id, caption, prepare_image(photo_url), photo_url)
         state[p.asin] = {"t": datetime.now(timezone.utc).isoformat(), "title": p.title[:200]}
-        save_state(state_path, state, next_at=next_post)
+        save_state(state_path, state, next_at=next_post, rejected=rejected)
         published += 1
         log.info("%s: publicada %s (-%d%%)", ch.name, p.asin, p.discount)
         if published < len(chosen):
