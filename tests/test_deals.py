@@ -1215,8 +1215,9 @@ def test_caption_header_with_category_emoji():
     p = deals.Product("B000000001", "Auriculares X", 23.0, 40.0)
     ch = channel()
     cap = deals.build_caption(p, "https://x/", ch, {"nombre": "Auriculares", "emoji": "🎧"})
-    assert cap.splitlines()[0] == "🎧 Auriculares" and cap.splitlines()[1].startswith("🔥 <b>Auriculares X")
-    assert deals.build_caption(p, "https://x/", ch, {"nombre": "Lego"}).splitlines()[0] == "Lego"
+    lines = cap.splitlines()
+    assert lines[0] == "<b>🎧 Auriculares</b>" and lines[1] == "" and lines[2].startswith("🔥 <b>Auriculares X")
+    assert deals.build_caption(p, "https://x/", ch, {"nombre": "Lego"}).splitlines()[0] == "<b>Lego</b>"
     assert deals.build_caption(p, "https://x/", ch).startswith("🔥")
 
 
@@ -1226,4 +1227,4 @@ def test_run_channel_uses_category_header(tmp_path, monkeypatch):
     ch = channel(categories=[{"nombre": "Herramientas", "emoji": "🔧", "query": "taladro"}],
                  min_discount=10, min_rating=0, min_reviews=0)
     deals.run_channel(ch, state_dir=tmp_path, now=NOW_IN)
-    assert sent[0][2].startswith("🔧 Herramientas\n🔥")
+    assert sent[0][2].startswith("<b>🔧 Herramientas</b>\n\n🔥")

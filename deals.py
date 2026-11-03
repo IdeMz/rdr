@@ -1030,7 +1030,7 @@ def build_caption(p: Product, url: str, ch: Channel, category: dict | None = Non
     lines = []
     if category:
         header = " ".join(x for x in (category.get("emoji"), category["nombre"]) if x)
-        lines.append(escape(header))
+        lines += [f"<b>{escape(header)}</b>", ""]
     lines += [f"🔥 <b>{escape(title)}</b>", ""]
     if p.old_price and p.discount:
         lines.append(f"PVPR: <s>{fmt_eur(p.old_price)}</s>")
