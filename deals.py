@@ -21,7 +21,7 @@ import random
 import re
 import sys
 import time
-from dataclasses import dataclass, field, fields
+from dataclasses import dataclass, field, fields, replace
 from datetime import date, datetime, timedelta, timezone
 from html import escape, unescape
 from pathlib import Path
@@ -160,6 +160,11 @@ class Channel:
     skip_sponsored: bool = True
     footer: str = ""
     enabled: bool = True
+    # Categorias en rotacion: cada publicacion mira primero la que lleva mas tiempo sin visitarse.
+    # Cada una: {"nombre", "url" o "query", y opcionalmente min_discount, max_discount, min_price,
+    # max_price, min_rating, min_reviews, pages, search_params}. "emoji" se admite y se ignora.
+    categories: list = field(default_factory=list)
+    searches_per_run: int = 3  # categorias que se prueban como maximo en una ejecucion
     # Ubicacion de entrega: sin ella Amazon enseña precios sin IVA a los servidores de fuera de España
     postal_code: str = "28001"
     require_spain: bool = True
@@ -189,8 +194,11 @@ def load_channel(path: Path) -> Channel:
     if not re.fullmatch(r"[A-Za-z0-9_-]+", str(cfg["name"])):
         raise ConfigError(f"{path.name}: 'name' solo admite letras, numeros, _ y -")
     ch = Channel(**cfg)
-    if not ch.queries and not ch.urls:
-        raise ConfigError(f"{path.name}: hace falta 'queries' o 'urls'")
+    if not ch.queries and not ch.urls and not ch.categories:
+        raise ConfigError(f"{path.name}: hace falta 'queries', 'urls' o 'categories'")
+    validate_categories(ch, path.name)
+    if ch.searches_per_run < 1:
+        raise ConfigError(f"{path.name}: 'searches_per_run' debe ser al menos 1")
     for url in ch.urls:
         if not url.startswith(BASE + "/"):
             raise ConfigError(f"{path.name}: las urls deben empezar por {BASE}/")
@@ -219,6 +227,59 @@ def load_channel(path: Path) -> Channel:
     if ch.min_listing_days < 0:
         raise ConfigError(f"{path.name}: 'min_listing_days' no puede ser negativo")
     return ch
+
+
+CATEGORY_OVERRIDES = (
+    "min_discount", "max_discount", "min_price", "max_price", "min_rating", "min_reviews", "pages",
+    "search_params",
+)
+CATEGORY_KEYS = {"nombre", "emoji", "url", "query", *CATEGORY_OVERRIDES}
+
+
+def category_target(cat: dict) -> dict:
+    """Parte de la configuracion del canal que cambia para esta categoria."""
+    if cat.get("url"):
+        url = cat["url"]
+        return {"queries": [], "urls": [url if url.startswith("http") else BASE + url]}
+    return {"queries": [cat["query"]], "urls": []}
+
+
+def category_channel(ch: Channel, cat: dict) -> Channel:
+    """El canal con los ajustes propios de la categoria (descuentos, precios, paginas...)."""
+    over = {k: cat[k] for k in CATEGORY_OVERRIDES if k in cat}
+    return replace(ch, categories=[], **category_target(cat), **over)
+
+
+def validate_categories(ch: Channel, fname: str) -> None:
+    if not isinstance(ch.categories, list):
+        raise ConfigError(f"{fname}: 'categories' debe ser una lista")
+    seen = set()
+    for cat in ch.categories:
+        if not isinstance(cat, dict) or not cat.get("nombre"):
+            raise ConfigError(f"{fname}: cada categoria necesita 'nombre'")
+        name = cat["nombre"]
+        if name in seen:
+            raise ConfigError(f"{fname}: categoria repetida: {name}")
+        seen.add(name)
+        extra = set(cat) - CATEGORY_KEYS
+        if extra:
+            raise ConfigError(f"{fname}: categoria {name}: claves desconocidas: {', '.join(sorted(extra))}")
+        if bool(cat.get("url")) == bool(cat.get("query")):
+            raise ConfigError(f"{fname}: categoria {name}: indica 'url' o 'query' (solo una)")
+        url = cat.get("url")
+        if url and not (url.startswith("/") or url.startswith(BASE + "/")):
+            raise ConfigError(f"{fname}: categoria {name}: la url debe empezar por / o {BASE}/")
+        try:
+            cch = category_channel(ch, cat)
+        except TypeError:
+            raise ConfigError(f"{fname}: categoria {name}: ajustes no validos") from None
+        if cch.max_discount and cch.max_discount <= cch.min_discount:
+            raise ConfigError(f"{fname}: categoria {name}: 'max_discount' debe ser mayor que 'min_discount'")
+
+
+def category_order(ch: Channel, visited: dict) -> list[dict]:
+    """Las que nunca se han visitado primero (en el orden del archivo) y luego la visita mas antigua."""
+    return sorted(ch.categories, key=lambda c: visited.get(c["nombre"], ""))
 
 
 def hhmm(value: str) -> int:
@@ -741,14 +802,15 @@ def explain(products: list[Product], ch: Channel, state: dict, skip=frozenset(),
     return [(p, reasons[p.asin]) for p in products]
 
 
-def write_report(path: Path, rows: list[tuple[Product, str]]) -> None:
+def write_report(path: Path, rows: list[tuple]) -> None:
     """CSV con todos los productos leidos y su motivo; se abre con Excel."""
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f, delimiter=";")
-        w.writerow(["asin", "motivo", "descuento_%", "precio", "pvpr", "nota", "valoraciones", "titulo"])
-        for p, why in sorted(rows, key=lambda r: r[1]):
-            w.writerow([p.asin, why, p.discount, p.price, p.old_price, p.rating, p.reviews, p.title[:120]])
+        w.writerow(["asin", "categoria", "motivo", "descuento_%", "precio", "pvpr", "nota", "valoraciones", "titulo"])
+        for p, why, *cat in sorted(rows, key=lambda r: (r[2] if len(r) > 2 else "", r[1])):
+            w.writerow([p.asin, cat[0] if cat else "", why, p.discount, p.price, p.old_price, p.rating,
+                        p.reviews, p.title[:120]])
 
 
 def score(p: Product) -> float:
@@ -844,14 +906,25 @@ def load_next_at(path: Path) -> datetime | None:
     return dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
 
 
+def load_cats(path: Path) -> dict:
+    """Cuando se visito por ultima vez cada categoria (nombre -> ISO)."""
+    cats = _read_state_file(path).get("cats")
+    return {k: v for k, v in cats.items() if isinstance(v, str)} if isinstance(cats, dict) else {}
+
+
 def save_state(
-    path: Path, posted: dict, next_at: datetime | None = None, rejected: dict | None = None
+    path: Path,
+    posted: dict,
+    next_at: datetime | None = None,
+    rejected: dict | None = None,
+    cats: dict | None = None,
 ) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     data = {
         "next_at": next_at.isoformat() if next_at else None,
         "posted": posted,
         "rejected": rejected or {},
+        "cats": load_cats(path) if cats is None else cats,
     }
     tmp = path.with_suffix(".tmp")
     tmp.write_text(json.dumps(data, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
@@ -1038,42 +1111,58 @@ def run_channel(
 
     retry_at = now + timedelta(minutes=ch.retry_minutes)
     rejected = load_rejected(state_path, now)
+    cats = load_cats(state_path)
     session = make_session() if html_file is None else None
-    try:
-        products = collect(ch, html_file, session)
-    except (Blocked, LocationError):
-        if publishing and not force:
-            save_state(state_path, state, next_at=retry_at, rejected=rejected)  # no insistir en cada ejecucion
-        raise
-    check_pages = session is not None and (ch.min_listing_days > 0 or ch.min_history_drop > 0)
-    candidates = pick(
-        products, ch, state, limit=MAX_PAGE_CHECKS if check_pages else None, skip=set(rejected)
-    )
-    log.info("%s: %s", ch.name, funnel(products, ch, state, skip=set(rejected)))
+    if ch.categories:
+        targets = category_order(ch, cats)[: 1 if html_file else ch.searches_per_run]
+    else:
+        targets = [None]
 
     chosen: list[Product] = []
-    for p in candidates:
-        if len(chosen) >= ch.max_posts:
+    rows: list[tuple[Product, str, str]] = []
+    for cat in targets:
+        cch = category_channel(ch, cat) if cat else ch
+        label = f"{ch.name}/{cat['nombre']}" if cat else ch.name
+        try:
+            products = collect(cch, html_file, session)
+        except (Blocked, LocationError):
+            if publishing and not force:
+                save_state(state_path, state, next_at=retry_at, rejected=rejected, cats=cats)  # no insistir
+            raise
+        if cat:
+            cats[cat["nombre"]] = now.isoformat()
+        check_pages = session is not None and (cch.min_listing_days > 0 or cch.min_history_drop > 0)
+        candidates = pick(
+            products, cch, state, limit=MAX_PAGE_CHECKS if check_pages else None, skip=set(rejected)
+        )
+        log.info("%s: %s", label, funnel(products, cch, state, skip=set(rejected)))
+
+        for p in candidates:
+            if len(chosen) >= ch.max_posts:
+                break
+            if check_pages:
+                try:
+                    ok, why = listing_ok(session, p, cch, now.date())
+                except Exception as exc:  # una ficha que no carga no debe tumbar la ejecucion
+                    log.info("%s: %s no se pudo comprobar la ficha (%s); se acepta", label, p.asin, type(exc).__name__)
+                    ok, why = True, ""
+                if not ok:
+                    log.info("%s: descartado %s (%s)", label, p.asin, why)
+                    rejected[p.asin] = {"t": now.isoformat(), "why": why}
+                    continue
+            chosen.append(p)
+        rows += [(p, why, cat["nombre"] if cat else "") for p, why in
+                 explain(products, cch, state, skip=rejected, chosen=chosen)]
+        if chosen:
             break
-        if check_pages:
-            try:
-                ok, why = listing_ok(session, p, ch, now.date())
-            except Exception as exc:  # una ficha que no carga no debe tumbar la ejecucion
-                log.info("%s: %s no se pudo comprobar la ficha (%s); se acepta", ch.name, p.asin, type(exc).__name__)
-                ok, why = True, ""
-            if not ok:
-                log.info("%s: descartado %s (%s)", ch.name, p.asin, why)
-                rejected[p.asin] = {"t": now.isoformat(), "why": why}
-                continue
-        chosen.append(p)
     try:
-        write_report(ROOT / "reports" / f"{ch.name}.csv", explain(products, ch, state, skip=rejected, chosen=chosen))
+        write_report(ROOT / "reports" / f"{ch.name}.csv", rows)
     except OSError as exc:  # el informe es solo ayuda para revisar: nunca debe impedir publicar
         log.info("%s: no se pudo escribir el informe (%s)", ch.name, type(exc).__name__)
     if publishing and not force and not chosen:
-        save_state(state_path, state, next_at=retry_at, rejected=rejected)
-    elif publishing and rejected:
-        save_state(state_path, state, next_at=load_next_at(state_path), rejected=rejected)
+        save_state(state_path, state, next_at=retry_at, rejected=rejected, cats=cats)
+    elif publishing:
+        save_state(state_path, state, next_at=load_next_at(state_path), rejected=rejected, cats=cats)
 
     next_post = now + timedelta(minutes=random.uniform(ch.interval_min, ch.interval_max))
     published = 0
@@ -1086,7 +1175,7 @@ def run_channel(
         photo_url = full_size_image(p.image)
         send_deal(token, chat_id, caption, prepare_image(photo_url), photo_url)
         state[p.asin] = {"t": datetime.now(timezone.utc).isoformat(), "title": p.title[:200]}
-        save_state(state_path, state, next_at=next_post, rejected=rejected)
+        save_state(state_path, state, next_at=next_post, rejected=rejected, cats=cats)
         published += 1
         log.info("%s: publicada %s (-%d%%)", ch.name, p.asin, p.discount)
         if published < len(chosen):

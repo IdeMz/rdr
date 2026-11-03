@@ -956,7 +956,7 @@ def test_explain_and_report(tmp_path):
     out = tmp_path / "reports" / "t.csv"
     deals.write_report(out, deals.explain(products, ch, state, skip=skip, chosen=chosen))
     text = out.read_text(encoding="utf-8-sig")
-    assert text.splitlines()[0].startswith("asin;motivo") and "B000000033" in text
+    assert text.splitlines()[0].startswith("asin;categoria;motivo") and "B000000033" in text
 
 
 # ---------------------------------------------------------------- historial de precios de la ficha
@@ -1003,3 +1003,92 @@ def test_min_history_drop_zero_skips_check(monkeypatch):
 def test_load_channel_validates_min_history_drop(tmp_path):
     with pytest.raises(deals.ConfigError, match="min_history_drop"):
         deals.load_channel(write_cfg(tmp_path, min_history_drop=95))
+
+
+# ---------------------------------------------------------------- categorias en rotacion
+
+CATS = [
+    {"nombre": "Auriculares", "emoji": "🎧", "url": "/s?k=auriculares"},
+    {"nombre": "Perfumes", "query": "perfume", "max_discount": 40},
+    {"nombre": "Lego", "query": "lego"},
+]
+
+
+def test_load_channel_with_categories_only(tmp_path):
+    ch = deals.load_channel(write_cfg(tmp_path, queries=[], categories=CATS))
+    assert [c["nombre"] for c in ch.categories] == ["Auriculares", "Perfumes", "Lego"]
+
+
+@pytest.mark.parametrize("cats,msg", [
+    ([{"url": "/s?k=x"}], "nombre"),
+    ([{"nombre": "A", "query": "x"}, {"nombre": "A", "query": "y"}], "repetida"),
+    ([{"nombre": "A"}], "'url' o 'query'"),
+    ([{"nombre": "A", "url": "/s?k=x", "query": "x"}], "'url' o 'query'"),
+    ([{"nombre": "A", "query": "x", "color": "rojo"}], "claves desconocidas"),
+    ([{"nombre": "A", "url": "https://otra.com/s?k=x"}], "url debe empezar"),
+    ([{"nombre": "A", "query": "x", "min_discount": 50, "max_discount": 40}], "max_discount"),
+])
+def test_load_channel_validates_categories(tmp_path, cats, msg):
+    with pytest.raises(deals.ConfigError, match=msg):
+        deals.load_channel(write_cfg(tmp_path, queries=[], categories=cats))
+
+
+def test_category_channel_applies_overrides_and_target():
+    ch = channel(min_discount=10, max_discount=55)
+    perf = deals.category_channel(ch, CATS[1])
+    assert perf.max_discount == 40 and perf.min_discount == 10
+    assert perf.queries == ["perfume"] and perf.urls == [] and perf.categories == []
+    aur = deals.category_channel(ch, CATS[0])
+    assert aur.urls == ["https://www.amazon.es/s?k=auriculares"] and aur.queries == []
+
+
+def test_category_order_visits_oldest_first():
+    ch = channel(categories=CATS)
+    assert [c["nombre"] for c in deals.category_order(ch, {})] == ["Auriculares", "Perfumes", "Lego"]
+    visited = {"Auriculares": "2026-11-03T10:00:00+00:00", "Lego": "2026-11-03T09:00:00+00:00"}
+    assert [c["nombre"] for c in deals.category_order(ch, visited)] == ["Perfumes", "Lego", "Auriculares"]
+
+
+def test_run_channel_rotates_categories_and_skips_empty_ones(tmp_path, monkeypatch):
+    pages = {
+        "Auriculares": page(card("B000000050", "Auriculares malos", "20,00 €", "21,00 €")),  # sin descuento
+        "Perfumes": page(card("B000000051", "Perfume Eau", "30,00 €", "40,00 €")),
+        "Lego": page(card("B000000052", "Lego Ciudad", "30,00 €", "60,00 €")),
+    }
+    seen = []
+
+    def fake_collect(ch, html_file=None, session=None):
+        key = "Auriculares" if ch.urls else {"perfume": "Perfumes", "lego": "Lego"}[ch.queries[0]]
+        seen.append(key)
+        return deals.parse_results(pages[key])
+
+    sent = setup_publish(monkeypatch)
+    monkeypatch.setattr(deals, "collect", fake_collect)
+    ch = channel(categories=CATS, min_discount=10, min_rating=0, min_reviews=0)
+
+    # 1.a ejecucion: Auriculares no tiene candidatos, publica el de Perfumes y se detiene
+    assert deals.run_channel(ch, state_dir=tmp_path, now=NOW_IN) == 1
+    assert seen == ["Auriculares", "Perfumes"]
+    saved = json.loads((tmp_path / "t.json").read_text())
+    assert set(saved["cats"]) == {"Auriculares", "Perfumes"} and "B000000051" in saved["posted"]
+
+    # 2.a ejecucion (cuando toca): empieza por la que nunca se visito
+    seen.clear()
+    later = NOW_IN + timedelta(hours=1)
+    assert deals.run_channel(ch, state_dir=tmp_path, now=later) == 1
+    assert seen == ["Lego"]
+
+
+def test_category_max_discount_override_blocks_inflated_pvpr(tmp_path, monkeypatch):
+    html = page(card("B000000060", "Perfume Eau", "20,00 €", "100,00 €"))  # -80 %
+    sent = setup_publish(monkeypatch, html=html)
+    ch = channel(categories=[CATS[1]], min_discount=10, min_rating=0, min_reviews=0)
+    assert deals.run_channel(ch, state_dir=tmp_path, now=NOW_IN) == 0
+    assert sent == []
+
+
+def test_save_state_keeps_categories_when_not_passed(tmp_path):
+    path = tmp_path / "t.json"
+    deals.save_state(path, {}, cats={"Lego": "2026-11-03T10:00:00+00:00"})
+    deals.save_state(path, {}, next_at=NOW_IN)
+    assert deals.load_cats(path) == {"Lego": "2026-11-03T10:00:00+00:00"}
