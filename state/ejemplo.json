@@ -1,5 +1,5 @@
 {
- "next_at": "2026-11-03T19:05:30.321652+00:00",
+ "next_at": "2026-11-03T19:39:55.283841+00:00",
  "posted": {
   "B0BTJ8ZXG5": {
    "t": "2026-11-03T12:38:46.796406+00:00",
@@ -17,10 +17,19 @@
    "t": "2026-11-03T18:31:39.548251+00:00",
    "title": "Auriculare Inalámbricos Deportivos, 75H Cascos Bluetooth 5.4 HiFi Estéreo"
   },
+  "B0FR4SMRXY": {
+   "t": "2026-11-03T19:06:21.737291+00:00",
+   "title": "Auriculares Inalámbricos Bluetooth 5.4 HiFi Estéreo, Reducción de Ruido ENC"
+  },
   "B0HN6FPTF7": {
    "t": "2026-11-03T14:36:14.100969+00:00",
    "title": "Auriculares Inalambricos Deportivos, Auriculares Bluetooth 5.4 HiFi Estéreo con 4 HD Mic, 60H Cascos Inalambricos Bluetooth con Cancelacion Ruido ENC, Pantalla LED, Control App, IP7 Impermeable Cascos"
   }
  },
- "rejected": {}
+ "rejected": {
+  "B0HMLWVJ4S": {
+   "t": "2026-11-03T19:05:40.773090+00:00",
+   "why": "alta hace 29 dias"
+  }
+ }
 }
