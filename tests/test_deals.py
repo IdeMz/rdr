@@ -932,3 +932,28 @@ def test_date_hints_show_label_context():
     hints = deals.date_hints(html)
     assert len(hints) == 1 and "Fecha de lanzamiento" in hints[0]
     assert deals.date_hints(product_page("nada")) == []
+
+
+def test_explain_and_report(tmp_path):
+    html = page(
+        card("B000000030", "Barato sin dto", "10,00 €"),
+        card("B000000031", "Cafetera Delonghi negra", "50,00 €", "100,00 €"),
+        card("B000000032", "Cafetera Delonghi blanca", "50,00 €", "100,00 €"),
+        card("B000000033", "Taladro percutor", "40,00 €", "80,00 €"),
+        card("B000000034", "Aspirador viejo", "30,00 €", "60,00 €"),
+    )
+    ch = channel(min_discount=10, min_rating=0, min_reviews=0)
+    products = deals.parse_results(html)
+    state = {"B000000032": {"t": NOW_IN.isoformat(), "title": "Cafetera Delonghi blanca"}}
+    skip = {"B000000034": {"t": NOW_IN.isoformat(), "why": "alta hace 3 dias"}}
+    chosen = deals.pick(products, ch, state, skip=set(skip))
+    why = {p.asin: r for p, r in deals.explain(products, ch, state, skip=skip, chosen=chosen)}
+    assert why["B000000030"].startswith("no cumple")
+    assert why["B000000032"] == "ya publicado"
+    assert why["B000000031"] == "parecido a otro ya publicado"
+    assert why["B000000034"] == "descartado por la ficha: alta hace 3 dias"
+    assert why["B000000033"] == "elegido"
+    out = tmp_path / "reports" / "t.csv"
+    deals.write_report(out, deals.explain(products, ch, state, skip=skip, chosen=chosen))
+    text = out.read_text(encoding="utf-8-sig")
+    assert text.splitlines()[0].startswith("asin;motivo") and "B000000033" in text

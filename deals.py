@@ -11,6 +11,7 @@ Cada canal es un JSON en channels/. El estado anti-repeticion vive en state/.
 from __future__ import annotations
 
 import argparse
+import csv
 import io
 import json
 import logging
@@ -675,6 +676,44 @@ def funnel(products: list[Product], ch: Channel, state: dict, skip: frozenset | 
     return " -> ".join(parts)
 
 
+def explain(products: list[Product], ch: Channel, state: dict, skip=frozenset(), chosen=()) -> list[tuple[Product, str]]:
+    """Para cada producto leido, el motivo por el que se descarta (o 'candidato' / 'elegido')."""
+    steps = filter_steps(ch)
+    reasons: dict[str, str] = {}
+    survivors: list[Product] = []
+    for p in products:
+        for label, keep in steps:
+            if not keep(p):
+                reasons[p.asin] = f"no cumple: {label}"
+                break
+        else:
+            survivors.append(p)
+    fresh = {p.asin for p in pick(survivors, ch, state, limit=len(survivors) or 1, skip=skip)}
+    picked = {p.asin for p in chosen}
+    for p in survivors:
+        if p.asin in picked:
+            reasons[p.asin] = "elegido"
+        elif p.asin in state:
+            reasons[p.asin] = "ya publicado"
+        elif p.asin in skip:
+            reasons[p.asin] = f"descartado por la ficha: {skip[p.asin].get('why', '') if isinstance(skip, dict) else ''}".strip(": ")
+        elif p.asin not in fresh:
+            reasons[p.asin] = "parecido a otro ya publicado"
+        else:
+            reasons[p.asin] = "candidato (no elegido esta vez)"
+    return [(p, reasons[p.asin]) for p in products]
+
+
+def write_report(path: Path, rows: list[tuple[Product, str]]) -> None:
+    """CSV con todos los productos leidos y su motivo; se abre con Excel."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", newline="", encoding="utf-8-sig") as f:
+        w = csv.writer(f, delimiter=";")
+        w.writerow(["asin", "motivo", "descuento_%", "precio", "pvpr", "nota", "valoraciones", "titulo"])
+        for p, why in sorted(rows, key=lambda r: r[1]):
+            w.writerow([p.asin, why, p.discount, p.price, p.old_price, p.rating, p.reviews, p.title[:120]])
+
+
 def score(p: Product) -> float:
     rating = (p.rating or 4.0) / 5
     return p.discount * rating * (1 + math.log10(1 + (p.reviews or 0)))
@@ -990,6 +1029,10 @@ def run_channel(
                 rejected[p.asin] = {"t": now.isoformat(), "why": why}
                 continue
         chosen.append(p)
+    try:
+        write_report(ROOT / "reports" / f"{ch.name}.csv", explain(products, ch, state, skip=rejected, chosen=chosen))
+    except OSError as exc:  # el informe es solo ayuda para revisar: nunca debe impedir publicar
+        log.info("%s: no se pudo escribir el informe (%s)", ch.name, type(exc).__name__)
     if publishing and not force and not chosen:
         save_state(state_path, state, next_at=retry_at, rejected=rejected)
     elif publishing and rejected:
