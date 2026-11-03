@@ -1,5 +1,8 @@
 {
- "next_at": "2026-11-03T20:11:15.597145+00:00",
+ "cats": {
+  "Móviles": "2026-11-03T20:15:41.050553+00:00"
+ },
+ "next_at": "2026-11-03T20:48:30.351977+00:00",
  "posted": {
   "B0BTJ8ZXG5": {
    "t": "2026-11-03T12:38:46.796406+00:00",
@@ -24,6 +27,10 @@
   "B0GF1WDV3V": {
    "t": "2026-11-03T19:41:19.496336+00:00",
    "title": "Lefant  M210 Robot Aspirador, 2200Pa, 120min, Suelos Duros, Modo Silencioso"
+  },
+  "B0GGCDV1Q1": {
+   "t": "2026-11-03T20:16:00.734199+00:00",
+   "title": "Google Pixel 10a - 7 años de Nuevas actualizaciones y Funciones, más de 30 Horas de batería, Asistente de Cámara, Gemini Live, Seguridad de Pixel - Obsidiana, 128GB"
   },
   "B0HN6FPTF7": {
    "t": "2026-11-03T14:36:14.100969+00:00",
