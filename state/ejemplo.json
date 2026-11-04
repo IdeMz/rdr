@@ -6,6 +6,7 @@
   "Cámaras de seguridad": "2026-11-04T11:45:38.640819+00:00",
   "Fitness en casa": "2026-11-04T08:45:45.039704+00:00",
   "Herramientas": "2026-11-04T10:10:38.691433+00:00",
+  "Iluminación": "2026-11-04T12:20:40.803976+00:00",
   "Lego": "2026-11-04T10:45:39.733768+00:00",
   "Monitores": "2026-11-04T07:35:28.422892+00:00",
   "Móviles": "2026-11-03T20:15:41.050553+00:00",
@@ -14,7 +15,7 @@
   "Tablets": "2026-11-03T23:35:30.613324+00:00",
   "Videojuegos": "2026-11-04T09:20:49.508625+00:00"
  },
- "next_at": "2026-11-04T12:19:24.204439+00:00",
+ "next_at": "2026-11-04T12:51:37.995594+00:00",
  "posted": {
   "B07XLML2YS": {
    "c": "Cámaras de seguridad",
@@ -77,6 +78,16 @@
   "B0BTJ9WHL9": {
    "t": "2026-11-03T12:59:02.539412+00:00",
    "title": "Sony WH-CH520 Auriculares Bluetooth con 50 h de batería, sonido DSEE y micrófono integrado, Beige"
+  },
+  "B0CBPL4RKH": {
+   "c": "Iluminación",
+   "d": 38,
+   "e": "🪔",
+   "m": 33,
+   "p": 10.83,
+   "t": "2026-11-04T12:21:04.367581+00:00",
+   "title": "Gritin 19 LED Luz de Lectura, 360° Flexible Ajustable Lámpara de Lectura",
+   "v": []
   },
   "B0CFVYPKGB": {
    "c": "Lego",
