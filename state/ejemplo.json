@@ -11,6 +11,7 @@
   "Cámaras de seguridad": "2026-11-04T11:45:38.640819+00:00",
   "Domótica": "2026-11-04T15:01:13.856854+00:00",
   "Fitness en casa": "2026-11-04T08:45:45.039704+00:00",
+  "Freidoras de aire": "2026-11-04T21:10:40.675400+00:00",
   "Gatos": "2026-11-04T17:10:38.781784+00:00",
   "Herramientas": "2026-11-04T10:10:38.691433+00:00",
   "Iluminación": "2026-11-04T12:20:40.803976+00:00",
@@ -27,7 +28,7 @@
   "Videojuegos": "2026-11-04T09:20:49.508625+00:00",
   "Zapatillas": "2026-11-04T12:55:44.311669+00:00"
  },
- "next_at": "2026-11-04T21:06:57.604327+00:00",
+ "next_at": "2026-11-04T21:41:32.811432+00:00",
  "posted": {
   "B01L4N33DC": {
    "c": "Zapatillas",
@@ -196,6 +197,16 @@
    "v": [
     "94e93229fb06"
    ]
+  },
+  "B0DVLGQX5N": {
+   "c": "Freidoras de aire",
+   "d": 43,
+   "e": "🍟",
+   "m": 45,
+   "p": 39.99,
+   "t": "2026-11-04T21:11:09.106342+00:00",
+   "title": "Mellerware - Freidora sin aceite Crunchy Plus 5.5L 1500W | 11 Menús Predefinidos | Capacidad para 3-5 raciones | Temporizador Programable | Pantalla para controlar la temperatura | Air Fryer 80-200º",
+   "v": []
   },
   "B0F457M449": {
    "c": "Televisores",
