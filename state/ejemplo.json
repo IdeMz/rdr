@@ -2,6 +2,7 @@
  "cats": {
   "Aspiradoras": "2026-11-04T08:10:37.002731+00:00",
   "Auriculares": "2026-11-03T20:50:44.557294+00:00",
+  "Cafeteras": "2026-11-04T16:01:05.818600+00:00",
   "Climatización": "2026-11-04T07:01:02.789247+00:00",
   "Cuidado del cabello": "2026-11-04T13:30:58.387562+00:00",
   "Cámaras de seguridad": "2026-11-04T11:45:38.640819+00:00",
@@ -19,7 +20,7 @@
   "Videojuegos": "2026-11-04T09:20:49.508625+00:00",
   "Zapatillas": "2026-11-04T12:55:44.311669+00:00"
  },
- "next_at": "2026-11-04T15:55:36.501806+00:00",
+ "next_at": "2026-11-04T16:33:54.953187+00:00",
  "posted": {
   "B01L4N33DC": {
    "c": "Zapatillas",
@@ -39,6 +40,16 @@
    "p": 22.99,
    "t": "2026-11-04T11:46:02.514663+00:00",
    "title": "Tapo C200 - Cámara de Vigilancia WiFi Interior 360º, 1080p, Detección IA",
+   "v": []
+  },
+  "B0852K1QC4": {
+   "c": "Cafeteras",
+   "d": 26,
+   "e": "☕",
+   "m": 38,
+   "p": 282.98,
+   "t": "2026-11-04T16:01:29.708278+00:00",
+   "title": "PHILIPS EP2220/10 Cafetera superautomática, Acero Inoxidable, Negro Mate + CA6903/10 Filtro de Agua Aquaclean para Máquinas de Café Espresso Automáticas, Verde, 6x9.5x14.5 cm",
    "v": []
   },
   "B08GDC99PX": {
@@ -204,10 +215,7 @@
    "title": "Auriculares Inalambricos Deportivos, Auriculares Bluetooth 5.4 HiFi Estéreo con 4 HD Mic, 60H Cascos Inalambricos Bluetooth con Cancelacion Ruido ENC, Pantalla LED, Control App, IP7 Impermeable Cascos"
   }
  },
- "problem": {
-  "fails": 2,
-  "last": "HTTP 503"
- },
+ "problem": {},
  "rejected": {
   "B0HMLWVJ4S": {
    "t": "2026-11-03T19:05:40.773090+00:00",
