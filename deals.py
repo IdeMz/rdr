@@ -285,8 +285,17 @@ def validate_categories(ch: Channel, fname: str) -> None:
 
 
 def category_order(ch: Channel, visited: dict) -> list[dict]:
-    """Las que nunca se han visitado primero (en el orden del archivo) y luego la visita mas antigua."""
-    return sorted(ch.categories, key=lambda c: visited.get(c["nombre"], ""))
+    """Orden aleatorio por tramos: primero las nunca visitadas, luego las visitadas hace tiempo
+    y al final la mitad mas reciente, para que ninguna se repita pronto."""
+    cats = list(ch.categories)
+    never = [c for c in cats if c["nombre"] not in visited]
+    seen = sorted((c for c in cats if c["nombre"] in visited), key=lambda c: visited[c["nombre"]])
+    keep = min(len(seen), len(cats) // 2)  # cuantas se consideran "recientes"
+    recent = seen[len(seen) - keep:]
+    older = seen[: len(seen) - keep]
+    for tier in (never, older, recent):
+        random.shuffle(tier)
+    return never + older + recent
 
 
 def hhmm(value: str) -> int:

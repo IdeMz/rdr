@@ -1042,14 +1042,49 @@ def test_category_channel_applies_overrides_and_target():
     assert aur.urls == ["https://www.amazon.es/s?k=auriculares"] and aur.queries == []
 
 
-def test_category_order_visits_oldest_first():
-    ch = channel(categories=CATS)
-    assert [c["nombre"] for c in deals.category_order(ch, {})] == ["Auriculares", "Perfumes", "Lego"]
-    visited = {"Auriculares": "2026-11-03T10:00:00+00:00", "Lego": "2026-11-03T09:00:00+00:00"}
-    assert [c["nombre"] for c in deals.category_order(ch, visited)] == ["Perfumes", "Lego", "Auriculares"]
+@pytest.fixture
+def no_shuffle(monkeypatch):
+    monkeypatch.setattr(deals.random, "shuffle", lambda x: None)
 
 
-def test_run_channel_rotates_categories_and_skips_empty_ones(tmp_path, monkeypatch):
+def test_category_order_is_random_and_covers_all():
+    ch = channel(categories=[{"nombre": f"C{i}", "query": f"q{i}"} for i in range(40)])
+    orders = {tuple(c["nombre"] for c in deals.category_order(ch, {})) for _ in range(5)}
+    assert len(orders) > 1  # no sale siempre en el orden del archivo
+    assert all(len(o) == 40 and len(set(o)) == 40 for o in orders)
+
+
+def test_category_order_never_visited_come_first():
+    ch = channel(categories=[{"nombre": f"C{i}", "query": f"q{i}"} for i in range(10)])
+    visited = {"C0": "2026-11-03T10:00:00+00:00", "C1": "2026-11-03T11:00:00+00:00"}
+    for _ in range(20):
+        order = [c["nombre"] for c in deals.category_order(ch, visited)]
+        assert set(order[:8]) == {f"C{i}" for i in range(2, 10)}
+        assert set(order[8:]) == {"C0", "C1"}
+
+
+def test_category_order_puts_recently_visited_last():
+    ch = channel(categories=[{"nombre": f"C{i}", "query": f"q{i}"} for i in range(10)])
+    # C0..C4 visitadas, de la mas antigua (C0) a la mas reciente (C4)
+    visited = {f"C{i}": f"2026-11-03T1{i}:00:00+00:00" for i in range(5)}
+    for _ in range(20):
+        order = [c["nombre"] for c in deals.category_order(ch, visited)]
+        assert len(order) == 10 and set(order) == {f"C{i}" for i in range(10)}
+        # la mitad mas reciente de las visitadas (todas, aqui: 5 visitadas, tope 10//2=5) va al final
+        assert set(order[-5:]) == {f"C{i}" for i in range(5)}
+        assert set(order[:5]) == {f"C{i}" for i in range(5, 10)}
+
+
+def test_category_order_old_visits_return_to_pool():
+    ch = channel(categories=[{"nombre": f"C{i}", "query": f"q{i}"} for i in range(10)])
+    visited = {f"C{i}": f"2026-11-03T{10 + i}:00:00+00:00" for i in range(10)}  # todas visitadas
+    for _ in range(20):
+        order = [c["nombre"] for c in deals.category_order(ch, visited)]
+        assert set(order[-5:]) == {f"C{i}" for i in range(5, 10)}  # las 5 mas recientes, al final
+        assert set(order[:5]) == {f"C{i}" for i in range(5)}
+
+
+def test_run_channel_rotates_categories_and_skips_empty_ones(tmp_path, monkeypatch, no_shuffle):
     pages = {
         "Auriculares": page(card("B000000050", "Auriculares malos", "20,00 €", "21,00 €")),  # sin descuento
         "Perfumes": page(card("B000000051", "Perfume Eau", "30,00 €", "40,00 €")),
