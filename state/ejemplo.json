@@ -3,6 +3,7 @@
   "Aspiradoras": "2026-11-04T08:10:37.002731+00:00",
   "Auriculares": "2026-11-03T20:50:44.557294+00:00",
   "Climatización": "2026-11-04T07:01:02.789247+00:00",
+  "Cámaras de seguridad": "2026-11-04T11:45:38.640819+00:00",
   "Fitness en casa": "2026-11-04T08:45:45.039704+00:00",
   "Herramientas": "2026-11-04T10:10:38.691433+00:00",
   "Lego": "2026-11-04T10:45:39.733768+00:00",
@@ -13,8 +14,18 @@
   "Tablets": "2026-11-03T23:35:30.613324+00:00",
   "Videojuegos": "2026-11-04T09:20:49.508625+00:00"
  },
- "next_at": "2026-11-04T11:40:52.822337+00:00",
+ "next_at": "2026-11-04T12:19:24.204439+00:00",
  "posted": {
+  "B07XLML2YS": {
+   "c": "Cámaras de seguridad",
+   "d": 43,
+   "e": "📹",
+   "m": 32,
+   "p": 22.99,
+   "t": "2026-11-04T11:46:02.514663+00:00",
+   "title": "Tapo C200 - Cámara de Vigilancia WiFi Interior 360º, 1080p, Detección IA",
+   "v": []
+  },
   "B08JLKKD9C": {
    "c": "Videojuegos",
    "d": 23,
@@ -138,10 +149,7 @@
    "title": "Auriculares Inalambricos Deportivos, Auriculares Bluetooth 5.4 HiFi Estéreo con 4 HD Mic, 60H Cascos Inalambricos Bluetooth con Cancelacion Ruido ENC, Pantalla LED, Control App, IP7 Impermeable Cascos"
   }
  },
- "problem": {
-  "fails": 2,
-  "last": "HTTP 503"
- },
+ "problem": {},
  "rejected": {
   "B0HMLWVJ4S": {
    "t": "2026-11-03T19:05:40.773090+00:00",
