@@ -1,5 +1,6 @@
 {
  "cats": {
+  "Afeitado y depilación": "2026-11-04T20:01:05.029072+00:00",
   "Aspiradoras": "2026-11-04T08:10:37.002731+00:00",
   "Auriculares": "2026-11-03T20:50:44.557294+00:00",
   "Cafeteras": "2026-11-04T16:01:05.818600+00:00",
@@ -25,7 +26,7 @@
   "Videojuegos": "2026-11-04T09:20:49.508625+00:00",
   "Zapatillas": "2026-11-04T12:55:44.311669+00:00"
  },
- "next_at": "2026-11-04T20:00:39.311127+00:00",
+ "next_at": "2026-11-04T20:32:37.476003+00:00",
  "posted": {
   "B01L4N33DC": {
    "c": "Zapatillas",
@@ -209,6 +210,16 @@
    "t": "2026-11-03T18:31:39.548251+00:00",
    "title": "Auriculare Inalámbricos Deportivos, 75H Cascos Bluetooth 5.4 HiFi Estéreo"
   },
+  "B0FJFQ74G8": {
+   "c": "Afeitado y depilación",
+   "d": 16,
+   "e": "🪒",
+   "m": 43,
+   "p": 37.99,
+   "t": "2026-11-04T20:01:27.026852+00:00",
+   "title": "Afeitadora Philips Serie 8000 - Afeitadora sin cable para uso en seco y en mojado, sistema de 3 cuchillas, cabezal de afeitado flexible, luz LED, para las piernas y el cuerpo, Modelo BRL129/00",
+   "v": []
+  },
   "B0FNWCYLZN": {
    "t": "2026-11-03T20:51:04.733450+00:00",
    "title": "Soundcore P31i de Anker Auriculares Bluetooth con Cancelación de Ruido"
@@ -260,10 +271,7 @@
    "title": "Auriculares Inalambricos Deportivos, Auriculares Bluetooth 5.4 HiFi Estéreo con 4 HD Mic, 60H Cascos Inalambricos Bluetooth con Cancelacion Ruido ENC, Pantalla LED, Control App, IP7 Impermeable Cascos"
   }
  },
- "problem": {
-  "fails": 1,
-  "last": "HTTP 503"
- },
+ "problem": {},
  "rejected": {
   "B0HMLWVJ4S": {
    "t": "2026-11-03T19:05:40.773090+00:00",
