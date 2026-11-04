@@ -1890,3 +1890,91 @@ def test_every_channel_file_loads_and_its_secrets_are_in_the_workflow():
             assert f"{ch.token_env}: ${{{{ secrets.{ch.token_env} }}}}" in workflow
             assert f"{ch.chat_env}: ${{{{ secrets.{ch.chat_env} }}}}" in workflow
     assert len(set(names)) == len(names)  # nombres distintos: cada canal tiene su propio estado
+
+
+# ------------------------------------------------- texto para X
+
+def xprod(title="Auriculares inalambricos", price=39.99, old=79.99, asin="B000000001"):
+    return deals.Product(asin=asin, title=title, price=price, old_price=old, rating=4.5, reviews=1000, image=None)
+
+
+def test_x_weight_counts_emojis_double_and_latin_single():
+    assert deals.x_weight("abc áéíóú ñ") == 11
+    assert deals.x_weight("🔥") == 2 and deals.x_weight("💶 👉") == 5
+    assert deals.x_weight("€") == 2  # el simbolo del euro tambien cuenta doble para X
+
+
+def test_x_text_fits_280_even_with_a_huge_title():
+    ch = channel(x_copy=True)
+    url = "https://www.amazon.es/dp/B000000001?tag=mitag-21"
+    text = deals.build_x_text(xprod(title="Super " * 80 + "final"), url, ch, {"emoji": "💡"})
+    assert deals.x_weight(text.replace(url, "")) + deals.X_URL_WEIGHT <= deals.X_LIMIT
+    assert text.startswith("💡 ") and "…" in text.split("\n")[0]
+    assert "39,99€ (antes 79,99€) · -50%" in text and url in text
+    assert "#chollo #amazon (Enlace afiliado)" in text
+
+
+def test_x_text_keeps_short_titles_and_allows_no_hashtags_or_disclosure():
+    ch = channel(x_copy=True, x_hashtags="", x_disclosure="")
+    text = deals.build_x_text(xprod(), "https://www.amazon.es/dp/B000000001", ch)
+    assert text.splitlines()[0] == "🔥 Auriculares inalambricos"
+    assert text.splitlines()[-1].startswith("👉 ") and "…" not in text
+
+
+def x_env(monkeypatch):
+    tg = offer_env(monkeypatch)
+    return tg
+
+
+def x_sent(tg):
+    return [d for m, d in tg.calls if m == "sendPhoto" and d.get("chat_id") == "777"]
+
+
+def test_x_copy_is_sent_privately_with_the_text_in_a_code_block(tmp_path, monkeypatch):
+    tg = x_env(monkeypatch)
+    deals.run_channel(channel(x_copy=True, x_min_discount=10), state_dir=tmp_path, now=NOW_IN)
+    sent = x_sent(tg)
+    assert len(sent) == 1
+    assert "<code>" in sent[0]["caption"] and "tag=tag-21" in sent[0]["caption"] and "1/6" in sent[0]["caption"]
+    assert [d for m, d in tg.calls if m == "sendPhoto" and d.get("chat_id") == "@canal"]  # y el canal, como siempre
+
+
+def test_x_copy_is_off_by_default_and_respects_min_discount(tmp_path, monkeypatch):
+    tg = x_env(monkeypatch)
+    deals.run_channel(channel(), state_dir=tmp_path, now=NOW_IN)
+    assert x_sent(tg) == []
+    tg2 = x_env(monkeypatch)
+    deals.run_channel(channel(x_copy=True, x_min_discount=99), state_dir=tmp_path / "b", now=NOW_IN)
+    assert x_sent(tg2) == []
+
+
+def test_x_copy_daily_cap_and_new_day_resets(tmp_path, monkeypatch):
+    tg = x_env(monkeypatch)
+    ch = channel(x_copy=True, x_min_discount=10, x_max_per_day=1)
+    deals.run_channel(ch, state_dir=tmp_path, now=NOW_IN)
+    deals.run_channel(ch, state_dir=tmp_path, now=NOW_IN + timedelta(hours=1))
+    assert len(x_sent(tg)) == 1  # el segundo dia-mismo ya no entra
+    deals.run_channel(ch, state_dir=tmp_path, now=NOW_IN + timedelta(days=1))
+    assert len(x_sent(tg)) == 2
+
+
+def test_x_copy_needs_the_private_chat(tmp_path, monkeypatch):
+    tg = x_env(monkeypatch)
+    monkeypatch.delenv("TG_ALERT_CHAT")
+    assert deals.run_channel(channel(x_copy=True, x_min_discount=10), state_dir=tmp_path, now=NOW_IN) == 1
+    assert x_sent(tg) == []
+
+
+def test_x_copy_failure_never_breaks_the_publication(tmp_path, monkeypatch):
+    tg = x_env(monkeypatch)
+    real = deals.tg_call
+
+    def flaky(method, token, data, **kw):
+        if data.get("chat_id") == "777":
+            raise deals.TelegramError(f"{method}: HTTP 403 blocked")
+        return real(method, token, data, **kw)
+
+    monkeypatch.setattr(deals, "tg_call", flaky)
+    assert deals.run_channel(channel(x_copy=True, x_min_discount=10), state_dir=tmp_path, now=NOW_IN) == 1
+    saved = json.loads((tmp_path / "t.json").read_text())
+    assert len(saved["posted"]) == 1 and "x_copy" not in saved

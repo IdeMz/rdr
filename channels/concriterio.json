@@ -22,6 +22,9 @@
   "website_url": "https://www.concriterio.eu",
   "website_label": "www.concriterio.eu",
   "vote_button": true,
+  "x_copy": true,
+  "x_min_discount": 30,
+  "x_max_per_day": 6,
   "categories": [
     {"nombre": "Móviles", "emoji": "📱", "url": "/s?k=smartphone+libre"},
     {"nombre": "Auriculares", "emoji": "🎧", "url": "/s?k=auriculares+bluetooth+inalambricos"},

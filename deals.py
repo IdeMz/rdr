@@ -274,6 +274,12 @@ class Channel:
     manual_repeat_min: int = 60  # minutos hasta ofrecerte otra si no has contestado
     reserve_size: int = 3  # ofertas buenas que se guardan de reserva en cada publicacion
     reserve_hours: int = 3  # horas que vale una oferta de reserva (despues el precio puede haber cambiado)
+    # Texto listo para X: el bot te lo manda por privado (foto + texto en bloque, para copiar y pegar)
+    x_copy: bool = False
+    x_min_discount: int = 30  # solo ofertas con al menos este descuento (en %)
+    x_max_per_day: int = 6  # como mucho tantos textos al dia
+    x_hashtags: str = "#chollo #amazon"
+    x_disclosure: str = "Enlace afiliado"  # aviso de afiliacion; vacio para quitarlo
 
 
 def load_channel(path: Path) -> Channel:
@@ -305,6 +311,8 @@ def load_channel(path: Path) -> Channel:
             raise ConfigError(f"{path.name}: 'summary_time' debe ser HH:MM (o vacio)") from None
     if min(ch.alert_after, ch.alert_after_empty, ch.alert_repeat_min) < 1:
         raise ConfigError(f"{path.name}: los valores 'alert_*' deben ser al menos 1")
+    if ch.x_min_discount < 0 or ch.x_max_per_day < 0:
+        raise ConfigError(f"{path.name}: 'x_min_discount' y 'x_max_per_day' no pueden ser negativos")
     if min(ch.manual_after, ch.manual_repeat_min, ch.reserve_hours) < 1 or ch.reserve_size < 0:
         raise ConfigError(f"{path.name}: valores 'manual_*' / 'reserve_*' no validos")
     if ch.searches_per_run < 1:
@@ -1286,6 +1294,74 @@ def voter_hash(token: str, user_id) -> str:
 
 
 # --------------------------------------------------------------------------
+# Texto para X (copiar y pegar a mano)
+# --------------------------------------------------------------------------
+
+X_LIMIT = 280  # caracteres por publicacion
+X_URL_WEIGHT = 23  # X acorta cualquier enlace a 23
+
+
+def x_weight(text: str) -> int:
+    """Longitud tal como la cuenta X: casi todo vale 1, pero emojis y simbolos fuera del latin valen 2."""
+    total = 0
+    for c in text:
+        o = ord(c)
+        total += 1 if (o <= 0x10FF or 0x2000 <= o <= 0x200D or 0x2010 <= o <= 0x201F or 0x2032 <= o <= 0x2037) else 2
+    return total
+
+
+def build_x_text(p: Product, url: str, ch: Channel, cat: dict | None = None) -> str:
+    """Publicacion para X (hasta 280): titulo recortado, precio, descuento, enlace y etiquetas."""
+    emoji = (cat or {}).get("emoji") or "🔥"
+    price = f"💶 {fmt_eur(p.price)}"
+    if p.old_price and p.old_price > (p.price or 0):
+        price += f" (antes {fmt_eur(p.old_price)})"
+    if p.discount:
+        price += f" · -{p.discount}%"
+    tail = " ".join(x for x in (ch.x_hashtags.strip(), f"({ch.x_disclosure.strip()})" if ch.x_disclosure.strip() else "") if x)
+    rest = f"\n{price}\n👉 {url}" + (f"\n{tail}" if tail else "")
+    fixed = x_weight(emoji + " ") + x_weight(rest.replace(url, "")) + X_URL_WEIGHT
+    room = X_LIMIT - fixed
+    title = re.sub(r"\s+", " ", p.title).strip()
+    if x_weight(title) > room:
+        cut = title
+        while cut and x_weight(cut) + 1 > room:
+            cut = cut[:-1]
+        cut = cut.rsplit(" ", 1)[0] if " " in cut and len(cut) > 20 else cut
+        title = cut.rstrip(" ,.-–·:;(") + "…"
+    return f"{emoji} {title}{rest}"
+
+
+def maybe_send_x_copy(
+    ch: Channel, state_path: Path, p: Product, cat: dict | None, tag: str | None,
+    photo: bytes | None, photo_url: str | None, now: datetime,
+) -> bool:
+    """Manda a tu chat privado la foto y el texto para X de esta oferta, si cumple descuento y cupo diario."""
+    if not ch.x_copy or p.discount < ch.x_min_discount:
+        return False
+    token, alert_chat = get_secret(ch.token_env), get_secret(ch.alert_chat_env)
+    if not token or not alert_chat:
+        return False
+    day = now.astimezone(ZoneInfo(ch.timezone)).date().isoformat()
+    counter = _read_state_file(state_path).get("x_copy")
+    sent_today = counter.get("n", 0) if isinstance(counter, dict) and counter.get("day") == day else 0
+    if sent_today >= ch.x_max_per_day:
+        return False
+    text = build_x_text(p, affiliate_url(p.asin, tag), ch, cat)
+    caption = (
+        f"📝 <b>Para X</b> ({sent_today + 1}/{ch.x_max_per_day} de hoy). Toca el texto para copiarlo "
+        f"y guarda la foto:\n\n<code>{escape(text)}</code>"
+    )
+    try:
+        send_deal(token, alert_chat, caption, photo, photo_url)
+    except TelegramError as exc:
+        log.warning("%s: no se pudo enviar el texto para X (%s)", ch.name, exc)
+        return False
+    set_state_key(state_path, "x_copy", {"day": day, "n": sent_today + 1})
+    return True
+
+
+# --------------------------------------------------------------------------
 # Ofertas de reserva (publicacion manual con un boton)
 # --------------------------------------------------------------------------
 
@@ -1832,11 +1908,9 @@ def run_channel(
             published += 1
             continue
         photo_url = full_size_image(p.image)
+        photo = prepare_image(photo_url)
         try:
-            msg_id = send_deal(
-                token, chat_id, caption, prepare_image(photo_url), photo_url,
-                build_keyboard(ch, p.asin, tag),
-            )
+            msg_id = send_deal(token, chat_id, caption, photo, photo_url, build_keyboard(ch, p.asin, tag))
         except TelegramError as exc:
             if not exc.ambiguous:
                 if not force:
@@ -1863,6 +1937,10 @@ def run_channel(
         log.info("%s: publicada %s (%s-%d%%)", ch.name, p.asin, where, p.discount)
         note(f"{ch.name}: publicada {p.asin} ({where}-{p.discount}%)")
         record_success(ch, state_path)
+        try:  # el texto para X nunca debe estropear una publicacion ya hecha
+            maybe_send_x_copy(ch, state_path, p, chosen_cat.get(p.asin), tag, photo, photo_url, now)
+        except Exception as err:
+            log.warning("%s: texto para X: %s", ch.name, type(err).__name__)
         if published < len(chosen):
             sleep(2)
     if keep_reserve and published:
