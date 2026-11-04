@@ -3,6 +3,7 @@
   "Aspiradoras": "2026-11-04T08:10:37.002731+00:00",
   "Auriculares": "2026-11-03T20:50:44.557294+00:00",
   "Climatización": "2026-11-04T07:01:02.789247+00:00",
+  "Cuidado del cabello": "2026-11-04T13:30:58.387562+00:00",
   "Cámaras de seguridad": "2026-11-04T11:45:38.640819+00:00",
   "Fitness en casa": "2026-11-04T08:45:45.039704+00:00",
   "Herramientas": "2026-11-04T10:10:38.691433+00:00",
@@ -16,7 +17,7 @@
   "Videojuegos": "2026-11-04T09:20:49.508625+00:00",
   "Zapatillas": "2026-11-04T12:55:44.311669+00:00"
  },
- "next_at": "2026-11-04T13:26:45.505711+00:00",
+ "next_at": "2026-11-04T14:04:50.571439+00:00",
  "posted": {
   "B01L4N33DC": {
    "c": "Zapatillas",
@@ -113,6 +114,16 @@
   "B0CHYDX493": {
    "t": "2026-11-03T17:47:14.388546+00:00",
    "title": "Auriculares Inalámbricos, Auriculares Bluetooth 5.4 HiFi, 50H con 4 HD Mic"
+  },
+  "B0DDCHNPBR": {
+   "c": "Cuidado del cabello",
+   "d": 42,
+   "e": "💇",
+   "m": 35,
+   "p": 34.9,
+   "t": "2026-11-04T13:31:21.190654+00:00",
+   "title": "BaByliss Smooth Finish 1200 – Cepillo de Aire Caliente 4-en-1 para Secar, Alisar, Dar Volumen y Moldear, Tecnología Iónica & Cerámica, 4 Accesorios, 1200W, Negro/Rosa, AS122E",
+   "v": []
   },
   "B0DQ5KNY6Y": {
    "c": "Aspiradoras",
