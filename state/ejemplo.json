@@ -1,12 +1,23 @@
 {
  "cats": {
   "Auriculares": "2026-11-03T20:50:44.557294+00:00",
+  "Climatización": "2026-11-04T07:01:02.789247+00:00",
   "Móviles": "2026-11-03T20:15:41.050553+00:00",
   "Portátiles": "2026-11-03T21:25:41.970831+00:00",
   "Tablets": "2026-11-03T23:35:30.613324+00:00"
  },
- "next_at": "2026-11-04T00:07:11.325670+00:00",
+ "next_at": "2026-11-04T07:31:49.000737+00:00",
  "posted": {
+  "B0BL898WJZ": {
+   "c": "Climatización",
+   "d": 23,
+   "e": "🌬️",
+   "m": 22,
+   "p": 399.99,
+   "t": "2026-11-04T07:01:24.824294+00:00",
+   "title": "Philips Air Performer 8000 3en1 Purificador, Calefactor y Ventilador, 70m²",
+   "v": []
+  },
   "B0BTJ8ZXG5": {
    "t": "2026-11-03T12:38:46.796406+00:00",
    "title": "Sony WH-CH520 Auriculares de diadema inalámbricos Bluetooth, diseño ligero, 50 h de batería, carga rápida, ecualizador, "
@@ -58,5 +69,6 @@
    "t": "2026-11-03T19:05:40.773090+00:00",
    "why": "alta hace 29 dias"
   }
- }
+ },
+ "summary_day": null
 }
