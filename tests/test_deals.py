@@ -353,6 +353,8 @@ def test_caption_layout():
         "⭐ 4,5/5 · 1.234 valoraciones",
         "",
         '👉 <a href="https://www.amazon.es/dp/B000000001?tag=t-21">Ver en Amazon</a>',
+        "",
+        "🌐 AMAZON",
     ]
 
 
@@ -512,7 +514,7 @@ def test_publish_saves_state_and_does_not_repeat(tmp_path, monkeypatch):
     monkeypatch.setenv("TG_C", "@canal")
     monkeypatch.setattr(deals, "collect", lambda ch, html_file=None, session=None: deals.parse_results(HTML))
     monkeypatch.setattr(deals, "prepare_image", lambda url: b"JPEG:" + url.encode())
-    monkeypatch.setattr(deals, "send_deal", lambda token, chat, caption, photo, url: sent.append((chat, photo, url)))
+    monkeypatch.setattr(deals, "send_deal", lambda token, chat, caption, photo, url, markup=None: sent.append((chat, photo, url)))
     monkeypatch.setattr(deals, "sleep", lambda s: None)
 
     assert deals.run_channel(channel(), state_dir=tmp_path, now=NOW_IN) == 1
@@ -877,7 +879,8 @@ def test_run_channel_skips_recent_listing_and_remembers_it(tmp_path, monkeypatch
     monkeypatch.setattr(deals, "fetch", lambda session, url: pages[url.rsplit("/", 1)[1]])
     ch = channel(min_listing_days=60, min_discount=10, min_rating=0, min_reviews=0)
     assert deals.run_channel(ch, state_dir=tmp_path, now=NOW_IN) == 1
-    assert "B000000021" in sent[0][2]
+    assert "Cafetera antigua buena" in sent[0][2]
+    assert "B000000021" in sent[0][5]["inline_keyboard"][-1][0]["url"]
     saved = json.loads((tmp_path / "t.json").read_text())
     assert "B000000020" in saved["rejected"]
     assert "B000000021" in saved["posted"]
@@ -1368,3 +1371,131 @@ def test_load_channel_validates_summary_time(tmp_path):
     with pytest.raises(deals.ConfigError, match="summary_time"):
         deals.load_channel(write_cfg(tmp_path, summary_time="tarde"))
     assert deals.load_channel(write_cfg(tmp_path, summary_time="22:50")).summary_time == "22:50"
+
+
+# ---------------------------------------------------------------- tienda, botones y votos
+
+def test_caption_keeps_text_link_and_adds_store_line_at_the_end():
+    p = deals.Product("B000000001", "X", 10.0, 20.0)
+    cap = deals.build_caption(p, "https://www.amazon.es/dp/B000000001", channel())
+    assert cap.splitlines()[-2:] == ["", "🌐 AMAZON"] and ">Ver en Amazon</a>" in cap
+    assert "🌐 ALIEXPRESS" in deals.build_caption(p, "u", channel(store="ALIEXPRESS"))
+    assert "🌐" not in deals.build_caption(p, "u", channel(store=""))
+
+
+def test_build_keyboard_layout():
+    ch = channel(vote_button=True, website_url="https://www.concriterio.eu/", website_label="")
+    kb = deals.build_keyboard(ch, "B000000001", "tag-21", likes=3)["inline_keyboard"]
+    assert kb[0] == [
+        {"text": "👍 3", "callback_data": "like"},
+        {"text": "www.concriterio.eu", "url": "https://www.concriterio.eu/"},
+    ]
+    assert kb[1] == [{"text": "VER EN AMAZON", "url": "https://www.amazon.es/dp/B000000001?tag=tag-21"}]
+    only = deals.build_keyboard(channel(), "B000000001", None)["inline_keyboard"]
+    assert len(only) == 1 and only[0][0]["text"] == "VER EN AMAZON"
+    assert deals.build_keyboard(channel(website_url="https://x.es", website_label="Mi web"), "A", None)[
+        "inline_keyboard"][0] == [{"text": "Mi web", "url": "https://x.es"}]
+
+
+def test_send_deal_attaches_markup_and_returns_message_id(monkeypatch):
+    calls = []
+
+    def fake(method, token, data, **kw):
+        calls.append((method, data))
+        return {"ok": True, "result": {"message_id": 42}}
+
+    monkeypatch.setattr(deals, "tg_call", fake)
+    markup = {"inline_keyboard": [[{"text": "x", "url": "https://x.es"}]]}
+    assert deals.send_deal(TOKEN, "@c", "pie", b"JPEG", None, markup) == 42
+    assert json.loads(calls[0][1]["reply_markup"]) == markup
+    # sin foto: sendMessage con los mismos botones
+    calls.clear()
+    assert deals.send_deal(TOKEN, "@c", "pie", None, None, markup) == 42
+    assert calls[0][0] == "sendMessage" and "reply_markup" in calls[0][1]
+
+
+def test_website_url_must_be_https(tmp_path):
+    with pytest.raises(deals.ConfigError, match="website_url"):
+        deals.load_channel(write_cfg(tmp_path, website_url="http://x.es"))
+
+
+def update(uid, user, data="like", msg_id=42, chat_id=-100123, username="canal", cq_id="cq1"):
+    return {"update_id": uid, "callback_query": {
+        "id": cq_id, "data": data, "from": {"id": user},
+        "message": {"message_id": msg_id, "chat": {"id": chat_id, "username": username}},
+    }}
+
+
+def votes_setup(monkeypatch, tmp_path, updates):
+    calls = []
+    monkeypatch.setenv("TG_T", TOKEN)
+    monkeypatch.setenv("TG_C", "@canal")
+
+    def fake(method, token, data, **kw):
+        calls.append((method, data))
+        if method == "getUpdates":
+            return {"ok": True, "result": updates if not any(c[0] == "getUpdates" for c in calls[:-1]) else []}
+        return {"ok": True}
+
+    monkeypatch.setattr(deals, "tg_call", fake)
+    path = tmp_path / "t.json"
+    state = {"B000000001": {"t": NOW_IN.isoformat(), "title": "X", "m": 42, "v": []}}
+    deals.save_state(path, state)
+    ch = channel(vote_button=True, website_url="https://www.concriterio.eu")
+    return ch, path, state, calls
+
+
+def test_votes_count_toggle_and_edit_buttons(tmp_path, monkeypatch):
+    ch, path, state, calls = votes_setup(monkeypatch, tmp_path, [update(10, 1), update(11, 2, cq_id="cq2"), update(12, 1, cq_id="cq3")])
+    assert deals.process_votes(ch, path, state, "tag-21") == 1
+    # usuario 1 vota, usuario 2 vota, usuario 1 retira -> queda 1 voto
+    assert len(state["B000000001"]["v"]) == 1
+    edit = [c for c in calls if c[0] == "editMessageReplyMarkup"]
+    assert len(edit) == 1 and edit[0][1]["message_id"] == 42
+    kb = json.loads(edit[0][1]["reply_markup"])["inline_keyboard"]
+    assert kb[0][0]["text"] == "👍 1" and kb[1][0]["url"].endswith("?tag=tag-21")
+    answers = [c[1]["text"] for c in calls if c[0] == "answerCallbackQuery"]
+    assert answers == ["¡Gracias por tu voto! 👍", "¡Gracias por tu voto! 👍", "Voto retirado"]
+    saved = json.loads(path.read_text())
+    assert saved["tg_offset"] == 13 and len(saved["posted"]["B000000001"]["v"]) == 1
+    # el ID real de Telegram no se guarda en el repositorio
+    assert "\"1\"" not in json.dumps(saved["posted"]) and deals.voter_hash(TOKEN, 2) in saved["posted"]["B000000001"]["v"]
+
+
+def test_votes_ignore_other_chats_unknown_messages_and_other_data(tmp_path, monkeypatch):
+    ups = [
+        update(1, 1, chat_id=-999, username="otro"),   # otro chat
+        update(2, 1, data="otra"),                       # otro boton
+        update(3, 1, msg_id=999),                        # mensaje desconocido
+    ]
+    ch, path, state, calls = votes_setup(monkeypatch, tmp_path, ups)
+    assert deals.process_votes(ch, path, state, None) == 0
+    assert state["B000000001"]["v"] == []
+    assert not [c for c in calls if c[0] == "editMessageReplyMarkup"]
+    assert [c[1]["text"] for c in calls if c[0] == "answerCallbackQuery"] == ["Votación cerrada"]
+    assert json.loads(path.read_text())["tg_offset"] == 4  # se avanza para no releerlos
+
+
+def test_votes_survive_telegram_errors(tmp_path, monkeypatch):
+    monkeypatch.setenv("TG_T", TOKEN)
+    monkeypatch.setenv("TG_C", "@canal")
+
+    def boom(*a, **k):
+        raise deals.TelegramError("getUpdates: HTTP 409 conflict")
+
+    monkeypatch.setattr(deals, "tg_call", boom)
+    ch = channel(vote_button=True)
+    assert deals.process_votes(ch, tmp_path / "t.json", {}, None) == 0
+
+
+def test_run_channel_processes_votes_and_stores_message_id(tmp_path, monkeypatch):
+    sent = setup_publish(monkeypatch)
+    monkeypatch.setattr(deals, "send_deal", lambda *a: sent.append(a) or 77)
+    got = []
+    monkeypatch.setattr(deals, "process_votes", lambda *a: got.append(a) or 0)
+    ch = channel(vote_button=True, website_url="https://www.concriterio.eu")
+    assert deals.run_channel(ch, state_dir=tmp_path, now=NOW_IN) == 1
+    assert len(got) == 1
+    entry = json.loads((tmp_path / "t.json").read_text())["posted"]["B000000001"]
+    assert entry["m"] == 77 and entry["v"] == []
+    assert sent[0][5]["inline_keyboard"][0][0] == {"text": "👍 0", "callback_data": "like"}

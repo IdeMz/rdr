@@ -12,6 +12,8 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
+import hmac
 import io
 import json
 import logging
@@ -159,6 +161,11 @@ class Channel:
     similarity: float = 0.5
     skip_sponsored: bool = True
     footer: str = ""
+    # Pie del mensaje: tienda, boton de la web propia y boton de voto
+    store: str = "AMAZON"  # nombre de la tienda que sale en el mensaje y en el boton de compra
+    website_url: str = ""  # boton con tu web (https://...); vacio = sin boton
+    website_label: str = ""  # texto del boton; si va vacio se usa la direccion sin https://
+    vote_button: bool = False  # boton 👍 con contador (se actualiza en la siguiente ejecucion)
     enabled: bool = True
     # Categorias en rotacion: cada publicacion mira primero la que lleva mas tiempo sin visitarse.
     # Cada una: {"nombre", "url" o "query", y opcionalmente min_discount, max_discount, min_price,
@@ -204,6 +211,8 @@ def load_channel(path: Path) -> Channel:
     if not ch.queries and not ch.urls and not ch.categories:
         raise ConfigError(f"{path.name}: hace falta 'queries', 'urls' o 'categories'")
     validate_categories(ch, path.name)
+    if ch.website_url and not ch.website_url.startswith("https://"):
+        raise ConfigError(f"{path.name}: 'website_url' debe empezar por https://")
     if ch.summary_time:
         try:
             hhmm(ch.summary_time)
@@ -1062,6 +1071,8 @@ def build_caption(p: Product, url: str, ch: Channel, category: dict | None = Non
             rating_line += f" · {p.reviews:,}".replace(",", ".") + " valoraciones"
         lines.append(rating_line)
     lines += ["", f'👉 <a href="{escape(url, quote=True)}">Ver en Amazon</a>']
+    if ch.store:
+        lines += ["", f"🌐 {escape(ch.store)}"]
     if ch.footer:
         lines += ["", f"<i>{escape(ch.footer)}</i>"]
     return "\n".join(lines)
@@ -1071,7 +1082,7 @@ class TelegramError(Exception):
     pass
 
 
-def tg_call(method: str, token: str, data: dict, retries: int = 2, files: dict | None = None) -> None:
+def tg_call(method: str, token: str, data: dict, retries: int = 2, files: dict | None = None) -> dict | None:
     url = f"{TELEGRAM_API}/bot{token}/{method}"
     for attempt in range(retries + 1):
         try:
@@ -1089,27 +1100,129 @@ def tg_call(method: str, token: str, data: dict, retries: int = 2, files: dict |
             continue
         if not r.ok:
             raise TelegramError(f"{method}: HTTP {r.status_code} {scrub(str(body.get('description', '')))}")
-        return
+        return body
 
 
 def send_deal(
-    token: str, chat_id: str, caption: str, photo: bytes | None, photo_url: str | None = None
-) -> None:
-    """Prefiere la foto cuadrada subida como archivo; si falla, la URL original; si no, solo texto."""
+    token: str,
+    chat_id: str,
+    caption: str,
+    photo: bytes | None,
+    photo_url: str | None = None,
+    markup: dict | None = None,
+) -> int | None:
+    """Prefiere la foto cuadrada subida como archivo; si falla, la URL original; si no, solo texto.
+
+    'markup' son los botones bajo el mensaje. Devuelve el id del mensaje publicado, si Telegram lo da.
+    """
     base = {"chat_id": chat_id, "caption": caption, "parse_mode": "HTML"}
+    if markup:
+        base["reply_markup"] = json.dumps(markup)
+
+    def message_id(body):
+        return ((body or {}).get("result") or {}).get("message_id")
+
     if photo:
         try:
-            tg_call("sendPhoto", token, base, files={"photo": ("oferta.jpg", photo, "image/jpeg")})
-            return
+            return message_id(
+                tg_call("sendPhoto", token, base, files={"photo": ("oferta.jpg", photo, "image/jpeg")})
+            )
         except TelegramError as exc:
             log.warning("sendPhoto con archivo fallo (%s)", exc)
     if photo_url:
         try:
-            tg_call("sendPhoto", token, {**base, "photo": photo_url})
-            return
+            return message_id(tg_call("sendPhoto", token, {**base, "photo": photo_url}))
         except TelegramError as exc:
             log.warning("sendPhoto con URL fallo (%s); envio solo texto", exc)
-    tg_call("sendMessage", token, {"chat_id": chat_id, "text": caption, "parse_mode": "HTML"})
+    text = {"chat_id": chat_id, "text": caption, "parse_mode": "HTML"}
+    if markup:
+        text["reply_markup"] = json.dumps(markup)
+    return message_id(tg_call("sendMessage", token, text))
+
+
+def build_keyboard(ch: Channel, asin: str, tag: str | None, likes: int = 0) -> dict:
+    """Botones bajo el mensaje: [👍 N] [tu web] y debajo [VER EN <TIENDA>]."""
+    rows = []
+    first = []
+    if ch.vote_button:
+        first.append({"text": f"👍 {likes}", "callback_data": "like"})
+    if ch.website_url:
+        label = ch.website_label or re.sub(r"^https?://", "", ch.website_url).rstrip("/")
+        first.append({"text": label, "url": ch.website_url})
+    if first:
+        rows.append(first)
+    rows.append([{"text": f"VER EN {ch.store}" if ch.store else "VER OFERTA", "url": affiliate_url(asin, tag)}])
+    return {"inline_keyboard": rows}
+
+
+def voter_hash(token: str, user_id) -> str:
+    """Identificador anonimo del votante: el ID real de Telegram no se guarda en el repositorio."""
+    return hmac.new(token.encode(), str(user_id).encode(), hashlib.sha256).hexdigest()[:12]
+
+
+def process_votes(ch: Channel, state_path: Path, state: dict, tag: str | None) -> int:
+    """Lee los toques en 👍 pendientes, actualiza los contadores y los botones. Devuelve cuantos mensajes cambiaron."""
+    token, chat_id = get_secret(ch.token_env), get_secret(ch.chat_env)
+    if not token or not chat_id:
+        return 0
+    raw_offset = _read_state_file(state_path).get("tg_offset")
+    offset = raw_offset if isinstance(raw_offset, int) else None
+    changed: set[str] = set()
+    new_offset = offset
+    for _ in range(5):  # 100 avisos por llamada
+        data = {"timeout": 0, "limit": 100, "allowed_updates": json.dumps(["callback_query"])}
+        if new_offset is not None:
+            data["offset"] = new_offset
+        try:
+            updates = (tg_call("getUpdates", token, data, retries=1) or {}).get("result") or []
+        except TelegramError as exc:
+            log.warning("%s: no se pudieron leer los votos (%s)", ch.name, exc)
+            break
+        if not updates:
+            break
+        for up in updates:
+            new_offset = max(new_offset or 0, int(up.get("update_id", 0)) + 1)
+            cq = up.get("callback_query") or {}
+            msg = cq.get("message") or {}
+            chat = msg.get("chat") or {}
+            same_chat = str(chat.get("id")) == str(chat_id) or (
+                chat.get("username") and f"@{chat['username']}".lower() == str(chat_id).lower()
+            )
+            if cq.get("data") != "like" or not same_chat or not (cq.get("from") or {}).get("id"):
+                continue
+            asin = next((a for a, e in state.items() if e.get("m") == msg.get("message_id")), None)
+            reply = "Votación cerrada"
+            if asin:
+                votes = state[asin].setdefault("v", [])
+                who = voter_hash(token, cq["from"]["id"])
+                if who in votes:
+                    votes.remove(who)
+                    reply = "Voto retirado"
+                else:
+                    votes.append(who)
+                    reply = "¡Gracias por tu voto! 👍"
+                changed.add(asin)
+            try:  # si pasaron muchos segundos, Telegram ya no lo admite: no importa
+                tg_call("answerCallbackQuery", token, {"callback_query_id": cq.get("id"), "text": reply}, retries=0)
+            except TelegramError:
+                pass
+        if len(updates) < 100:
+            break
+    for asin in changed:
+        try:
+            tg_call("editMessageReplyMarkup", token, {
+                "chat_id": chat_id,
+                "message_id": state[asin]["m"],
+                "reply_markup": json.dumps(build_keyboard(ch, asin, tag, len(state[asin].get("v", [])))),
+            }, retries=0)
+        except TelegramError as exc:
+            log.info("%s: no se pudo actualizar el contador de %s (%s)", ch.name, asin, exc)
+    if new_offset is not None and new_offset != offset:
+        set_state_key(state_path, "tg_offset", new_offset)
+    if changed:
+        set_state_key(state_path, "posted", state)
+        log.info("%s: %d mensajes con votos actualizados", ch.name, len(changed))
+    return len(changed)
 
 
 # --------------------------------------------------------------------------
@@ -1272,6 +1385,9 @@ def run_channel(
     state = load_state(state_path, ch.repeat_days, now)
     publishing = not dry_run and html_file is None
 
+    if publishing and ch.vote_button:
+        process_votes(ch, state_path, state, get_secret("AMAZON_TAG"))
+
     if publishing and not force and ch.summary_time:
         maybe_send_summary(ch, state_path, state, now)
 
@@ -1362,12 +1478,19 @@ def run_channel(
     for p in chosen:
         caption = build_caption(p, affiliate_url(p.asin, tag), ch, chosen_cat.get(p.asin))
         if token is None:
-            print(f"--- {ch.name} / {p.asin} ---\n{caption}\n")
+            buttons = " | ".join(
+                f"[{b['text']}" + (f" -> {b['url']}" if "url" in b else "") + "]"
+                for row in build_keyboard(ch, p.asin, tag)["inline_keyboard"] for b in row
+            )
+            print(f"--- {ch.name} / {p.asin} ---\n{caption}\nBotones: {buttons}\n")
             published += 1
             continue
         photo_url = full_size_image(p.image)
         try:
-            send_deal(token, chat_id, caption, prepare_image(photo_url), photo_url)
+            msg_id = send_deal(
+                token, chat_id, caption, prepare_image(photo_url), photo_url,
+                build_keyboard(ch, p.asin, tag),
+            )
         except TelegramError as exc:
             if not force:
                 record_problem(ch, state_path, "fail", str(exc), now)
@@ -1380,6 +1503,8 @@ def run_channel(
             "d": p.discount,
             "c": cat.get("nombre", ""),
             "e": cat.get("emoji", ""),
+            "m": msg_id,
+            "v": [],
         }
         save_state(state_path, state, next_at=next_post, rejected=rejected, cats=cats)
         published += 1
