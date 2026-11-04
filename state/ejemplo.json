@@ -3,6 +3,7 @@
   "Aspiradoras": "2026-11-04T08:10:37.002731+00:00",
   "Auriculares": "2026-11-03T20:50:44.557294+00:00",
   "Cafeteras": "2026-11-04T16:01:05.818600+00:00",
+  "Café y cápsulas": "2026-11-04T16:35:32.068918+00:00",
   "Climatización": "2026-11-04T07:01:02.789247+00:00",
   "Cuidado del cabello": "2026-11-04T13:30:58.387562+00:00",
   "Cámaras de seguridad": "2026-11-04T11:45:38.640819+00:00",
@@ -20,7 +21,7 @@
   "Videojuegos": "2026-11-04T09:20:49.508625+00:00",
   "Zapatillas": "2026-11-04T12:55:44.311669+00:00"
  },
- "next_at": "2026-11-04T16:33:54.953187+00:00",
+ "next_at": "2026-11-04T17:07:50.749765+00:00",
  "posted": {
   "B01L4N33DC": {
    "c": "Zapatillas",
@@ -137,6 +138,16 @@
   "B0CHYDX493": {
    "t": "2026-11-03T17:47:14.388546+00:00",
    "title": "Auriculares Inalámbricos, Auriculares Bluetooth 5.4 HiFi, 50H con 4 HD Mic"
+  },
+  "B0D6RTTM4K": {
+   "c": "Café y cápsulas",
+   "d": 50,
+   "e": "🫘",
+   "m": 39,
+   "p": 15.99,
+   "t": "2026-11-04T16:35:59.401528+00:00",
+   "title": "illy, Café en Grano CLASSICO, 500g",
+   "v": []
   },
   "B0DDCHNPBR": {
    "c": "Cuidado del cabello",
