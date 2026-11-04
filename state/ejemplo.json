@@ -18,7 +18,7 @@
   "Videojuegos": "2026-11-04T09:20:49.508625+00:00",
   "Zapatillas": "2026-11-04T12:55:44.311669+00:00"
  },
- "next_at": "2026-11-04T14:48:10.385623+00:00",
+ "next_at": "2026-11-04T15:00:39.472512+00:00",
  "posted": {
   "B01L4N33DC": {
    "c": "Zapatillas",
@@ -193,7 +193,10 @@
    "title": "Auriculares Inalambricos Deportivos, Auriculares Bluetooth 5.4 HiFi Estéreo con 4 HD Mic, 60H Cascos Inalambricos Bluetooth con Cancelacion Ruido ENC, Pantalla LED, Control App, IP7 Impermeable Cascos"
   }
  },
- "problem": {},
+ "problem": {
+  "fails": 1,
+  "last": "HTTP 503"
+ },
  "rejected": {
   "B0HMLWVJ4S": {
    "t": "2026-11-03T19:05:40.773090+00:00",
