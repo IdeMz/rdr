@@ -175,6 +175,8 @@ class Channel:
     interval_min: int = 30
     interval_max: int = 35
     retry_minutes: int = 10  # espera tras un intento sin candidatos o con bloqueo
+    # Resumen diario en el canal: hora local (HH:MM) a partir de la cual se envia; vacio = sin resumen
+    summary_time: str = ""
     # Avisos privados por Telegram cuando algo falla varias veces seguidas
     alert_chat_env: str = "TG_ALERT_CHAT"  # secreto con tu ID de chat (si no existe, no se avisa)
     alert_after: int = 3  # fallos seguidos (bloqueo, ubicacion, Telegram, error) antes de avisar
@@ -202,6 +204,11 @@ def load_channel(path: Path) -> Channel:
     if not ch.queries and not ch.urls and not ch.categories:
         raise ConfigError(f"{path.name}: hace falta 'queries', 'urls' o 'categories'")
     validate_categories(ch, path.name)
+    if ch.summary_time:
+        try:
+            hhmm(ch.summary_time)
+        except ValueError:
+            raise ConfigError(f"{path.name}: 'summary_time' debe ser HH:MM (o vacio)") from None
     if min(ch.alert_after, ch.alert_after_empty, ch.alert_repeat_min) < 1:
         raise ConfigError(f"{path.name}: los valores 'alert_*' deben ser al menos 1")
     if ch.searches_per_run < 1:
@@ -961,6 +968,7 @@ def save_state(
         "rejected": rejected or {},
         "cats": load_cats(path) if cats is None else cats,
         "problem": load_problem(path) if problem is None else problem,
+        "summary_day": _read_state_file(path).get("summary_day"),
     }
     tmp = path.with_suffix(".tmp")
     tmp.write_text(json.dumps(data, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
@@ -1160,6 +1168,77 @@ def record_success(ch: Channel, state_path: Path) -> None:
     set_state_key(state_path, "problem", {})
 
 
+MONTHS_ES = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"]
+WEEKDAYS_ES = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]
+SUMMARY_CHUNK = 3500  # Telegram admite 4096 caracteres por mensaje
+
+
+def summary_messages(entries: list[tuple[str, dict]], day: date, tag: str | None, footer: str = "") -> list[str]:
+    """Textos (HTML) del resumen del dia: cabecera y una linea numerada por oferta, en tandas."""
+    head = f"📋 <b>Resumen del día · {WEEKDAYS_ES[day.weekday()]} {day.day} {MONTHS_ES[day.month - 1]}</b>"
+    sub = f"{len(entries)} oferta{'s' if len(entries) != 1 else ''} publicada{'s' if len(entries) != 1 else ''}"
+    lines = []
+    for i, (asin, e) in enumerate(entries, 1):
+        title = e.get("title", "") or asin
+        title = title if len(title) <= 60 else title[:57].rstrip() + "…"
+        link = f'<a href="{escape(affiliate_url(asin, tag), quote=True)}">{escape(title)}</a>'
+        emoji = f"{e['e']} " if e.get("e") else ""
+        price = f" · {fmt_eur(e['p'])}" if e.get("p") else ""
+        disc = f" (−{e['d']} %)" if e.get("d") else ""
+        lines.append(f"{i}. {emoji}{link}{price}{disc}")
+    chunks: list[list[str]] = [[]]
+    size = len(head) + len(sub)
+    for line in lines:
+        if size + len(line) + 1 > SUMMARY_CHUNK and chunks[-1]:
+            chunks.append([])
+            size = len(head) + 10
+        chunks[-1].append(line)
+        size += len(line) + 1
+    out = []
+    for n, chunk in enumerate(chunks, 1):
+        title = head if n == 1 else f"{head} ({n}/{len(chunks)})"
+        text = title + ("\n" + sub if n == 1 else "") + "\n\n" + "\n".join(chunk)
+        if footer and n == len(chunks):
+            text += f"\n\n<i>{escape(footer)}</i>"
+        out.append(text)
+    if len(out) > 1:
+        out[0] = out[0].replace(head, f"{head} (1/{len(out)})", 1)
+    return out
+
+
+def maybe_send_summary(ch: Channel, state_path: Path, state: dict, now: datetime) -> bool:
+    """Una vez al dia, a partir de 'summary_time', publica en el canal la lista de ofertas del dia."""
+    tz = ZoneInfo(ch.timezone)
+    local = now.astimezone(tz)
+    if local.hour * 60 + local.minute < hhmm(ch.summary_time):
+        return False
+    day = local.date()
+    if _read_state_file(state_path).get("summary_day") == day.isoformat():
+        return False
+    token, chat_id = get_secret(ch.token_env), get_secret(ch.chat_env)
+    if not token or not chat_id:
+        return False  # el flujo normal avisa de los secretos que faltan
+    entries = sorted(
+        ((a, e) for a, e in state.items() if _ts(e).astimezone(tz).date() == day),
+        key=lambda ae: _ts(ae[1]),
+    )
+    if entries:
+        try:
+            for text in summary_messages(entries, day, get_secret("AMAZON_TAG"), ch.footer):
+                tg_call("sendMessage", token, {
+                    "chat_id": chat_id, "text": text, "parse_mode": "HTML",
+                    "disable_web_page_preview": "true",
+                })
+                sleep(1)
+        except TelegramError as exc:
+            log.warning("%s: no se pudo enviar el resumen del dia (%s)", ch.name, exc)
+            return False
+        log.info("%s: resumen del dia enviado (%d ofertas)", ch.name, len(entries))
+        note(f"{ch.name}: resumen del dia ({len(entries)} ofertas)")
+    set_state_key(state_path, "summary_day", day.isoformat())
+    return bool(entries)
+
+
 def note(line: str) -> None:
     """Resumen de una linea: va al mensaje del commit de estado y al resumen de la ejecucion."""
     try:
@@ -1192,6 +1271,9 @@ def run_channel(
     state_path = state_dir / f"{ch.name}.json"
     state = load_state(state_path, ch.repeat_days, now)
     publishing = not dry_run and html_file is None
+
+    if publishing and not force and ch.summary_time:
+        maybe_send_summary(ch, state_path, state, now)
 
     if publishing and not force:
         if not in_window(now, ch):
@@ -1290,7 +1372,15 @@ def run_channel(
             if not force:
                 record_problem(ch, state_path, "fail", str(exc), now)
             raise
-        state[p.asin] = {"t": datetime.now(timezone.utc).isoformat(), "title": p.title[:200]}
+        cat = chosen_cat.get(p.asin) or {}
+        state[p.asin] = {
+            "t": datetime.now(timezone.utc).isoformat(),
+            "title": p.title[:200],
+            "p": p.price,
+            "d": p.discount,
+            "c": cat.get("nombre", ""),
+            "e": cat.get("emoji", ""),
+        }
         save_state(state_path, state, next_at=next_post, rejected=rejected, cats=cats)
         published += 1
         where = f"{chosen_cat[p.asin]['nombre']}, " if chosen_cat.get(p.asin) else ""

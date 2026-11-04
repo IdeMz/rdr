@@ -1263,3 +1263,108 @@ def test_run_channel_uses_category_header(tmp_path, monkeypatch):
                  min_discount=10, min_rating=0, min_reviews=0)
     deals.run_channel(ch, state_dir=tmp_path, now=NOW_IN)
     assert sent[0][2].startswith("<b>🔧 Herramientas</b>\n\n🔥")
+
+
+# ---------------------------------------------------------------- resumen diario
+
+def posted(asin, hour, title, price=20.0, disc=30, cat="Lego", emoji="🧱", day=(2026, 11, 3)):
+    t = datetime(*day, hour, 0, tzinfo=timezone.utc).isoformat()
+    return asin, {"t": t, "title": title, "p": price, "d": disc, "c": cat, "e": emoji}
+
+
+def summary_setup(monkeypatch, tmp_path, entries, ch=None):
+    sent = []
+    monkeypatch.setenv("TG_T", TOKEN)
+    monkeypatch.setenv("TG_C", "@canal")
+    monkeypatch.setenv("AMAZON_TAG", "tag-21")
+    monkeypatch.setattr(deals, "tg_call", lambda method, token, data, **kw: sent.append((method, data)))
+    monkeypatch.setattr(deals, "sleep", lambda s: None)
+    ch = ch or channel(summary_time="22:50")
+    path = tmp_path / "t.json"
+    deals.save_state(path, dict(entries))
+    return ch, path, sent
+
+
+def test_summary_sent_once_after_summary_time(tmp_path, monkeypatch):
+    entries = [posted("B000000001", 8, "Lego Ciudad"), posted("B000000002", 11, "Auriculares & más", 23.99, 52, "Auriculares", "🎧")]
+    ch, path, sent = summary_setup(monkeypatch, tmp_path, entries)
+    state = deals.load_state(path, 14, utc(2026, 11, 3, 21, 50))
+    assert deals.maybe_send_summary(ch, path, state, utc(2026, 11, 3, 21, 49)) is False  # 22:49 en Madrid
+    assert sent == []
+    assert deals.maybe_send_summary(ch, path, state, utc(2026, 11, 3, 21, 50)) is True  # 22:50
+    assert len(sent) == 1 and sent[0][0] == "sendMessage"
+    text = sent[0][1]["text"]
+    assert "Resumen del día · martes 3 nov" in text and "2 ofertas publicadas" in text
+    assert "1. 🧱" in text and "2. 🎧" in text and "23,99€ (−52 %)" in text
+    assert "https://www.amazon.es/dp/B000000002?tag=tag-21" in text and "Auriculares &amp; más" in text
+    assert sent[0][1]["disable_web_page_preview"] == "true" and sent[0][1]["chat_id"] == "@canal"
+    # una sola vez al dia
+    assert deals.maybe_send_summary(ch, path, state, utc(2026, 11, 3, 21, 55)) is False
+    assert len(sent) == 1 and json.loads(path.read_text())["summary_day"] == "2026-11-03"
+
+
+def test_summary_only_counts_todays_posts(tmp_path, monkeypatch):
+    entries = [posted("B000000001", 9, "De ayer", day=(2026, 11, 2)), posted("B000000002", 9, "De hoy")]
+    ch, path, sent = summary_setup(monkeypatch, tmp_path, entries)
+    state = deals.load_state(path, 14, utc(2026, 11, 3, 22, 0))
+    deals.maybe_send_summary(ch, path, state, utc(2026, 11, 3, 22, 0))
+    assert "De hoy" in sent[0][1]["text"] and "De ayer" not in sent[0][1]["text"]
+    assert "1 oferta publicada" in sent[0][1]["text"]
+
+
+def test_summary_skipped_when_no_posts_but_day_is_marked(tmp_path, monkeypatch):
+    ch, path, sent = summary_setup(monkeypatch, tmp_path, [])
+    assert deals.maybe_send_summary(ch, path, {}, utc(2026, 11, 3, 22, 0)) is False
+    assert sent == [] and json.loads(path.read_text())["summary_day"] == "2026-11-03"
+
+
+def test_summary_retries_if_telegram_fails(tmp_path, monkeypatch):
+    ch, path, sent = summary_setup(monkeypatch, tmp_path, [posted("B000000001", 9, "Lego")])
+
+    def boom(*a, **k):
+        raise deals.TelegramError("sendMessage: HTTP 500")
+
+    monkeypatch.setattr(deals, "tg_call", boom)
+    state = deals.load_state(path, 14, utc(2026, 11, 3, 22, 0))
+    assert deals.maybe_send_summary(ch, path, state, utc(2026, 11, 3, 22, 0)) is False
+    assert "summary_day" not in json.loads(path.read_text()) or json.loads(path.read_text())["summary_day"] is None
+
+
+def test_summary_splits_long_lists():
+    entries = [posted(f"B{i:09d}", 8 + i % 14, "Producto con un titulo bastante largo para ocupar sitio " * 2, 19.99, 30)
+               for i in range(60)]
+    texts = deals.summary_messages(entries, datetime(2026, 11, 3).date(), "t-21")
+    assert len(texts) > 1 and all(len(t) <= 4096 for t in texts)
+    assert "(1/" in texts[0] and f"({len(texts)}/{len(texts)})" in texts[-1]
+    assert sum(t.count("\n") > 0 for t in texts) == len(texts)
+    assert "60 ofertas publicadas" in texts[0]
+
+
+def test_summary_runs_before_window_gate_and_state_survives(tmp_path, monkeypatch):
+    entries = [posted("B000000001", 9, "Lego")]
+    ch, path, sent = summary_setup(monkeypatch, tmp_path, entries)
+    monkeypatch.setattr(deals, "ROOT", tmp_path)
+    late = utc(2026, 11, 3, 21, 52)  # 22:52 Madrid: dentro de horario, pero aun no toca otra oferta
+    deals.save_state(path, dict(entries), next_at=late + timedelta(minutes=20))
+    assert deals.run_channel(ch, state_dir=tmp_path, now=late) == 0
+    assert len(sent) == 1 and "Resumen del día" in sent[0][1]["text"]
+    data = json.loads(path.read_text())
+    assert data["summary_day"] == "2026-11-03" and "B000000001" in data["posted"]
+    deals.save_state(path, deals.load_state(path, 14, late), next_at=late)  # un save_state posterior lo conserva
+    assert json.loads(path.read_text())["summary_day"] == "2026-11-03"
+
+
+def test_published_entry_stores_price_discount_and_category(tmp_path, monkeypatch):
+    html = page(card("B000000090", "Taladro percutor", "40,00 €", "80,00 €"))
+    setup_publish(monkeypatch, html=html)
+    ch = channel(categories=[{"nombre": "Herramientas", "emoji": "🔧", "query": "taladro"}],
+                 min_discount=10, min_rating=0, min_reviews=0)
+    deals.run_channel(ch, state_dir=tmp_path, now=NOW_IN)
+    e = json.loads((tmp_path / "t.json").read_text())["posted"]["B000000090"]
+    assert (e["p"], e["d"], e["c"], e["e"]) == (40.0, 50, "Herramientas", "🔧")
+
+
+def test_load_channel_validates_summary_time(tmp_path):
+    with pytest.raises(deals.ConfigError, match="summary_time"):
+        deals.load_channel(write_cfg(tmp_path, summary_time="tarde"))
+    assert deals.load_channel(write_cfg(tmp_path, summary_time="22:50")).summary_time == "22:50"

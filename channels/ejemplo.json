@@ -17,6 +17,7 @@
   "window_end": "23:00",
   "interval_min": 30,
   "interval_max": 35,
+  "summary_time": "22:50",
   "categories": [
     {"nombre": "Móviles", "emoji": "📱", "url": "/s?k=smartphone+libre"},
     {"nombre": "Auriculares", "emoji": "🎧", "url": "/s?k=auriculares+bluetooth+inalambricos"},
