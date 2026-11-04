@@ -34,6 +34,8 @@ jobs:
           AMAZON_TAG: ${{ secrets.AMAZON_TAG }}
           TG_TOKEN_EJEMPLO: ${{ secrets.TG_TOKEN_EJEMPLO }}
           TG_CHAT_EJEMPLO: ${{ secrets.TG_CHAT_EJEMPLO }}
+          TG_TOKEN_CONCRITERIO: ${{ secrets.TG_TOKEN_CONCRITERIO }}
+          TG_CHAT_CONCRITERIO: ${{ secrets.TG_CHAT_CONCRITERIO }}
           TG_ALERT_CHAT: ${{ secrets.TG_ALERT_CHAT }}
         run: python deals.py --all
 

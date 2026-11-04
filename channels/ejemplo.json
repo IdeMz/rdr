@@ -1,6 +1,6 @@
 {
   "name": "ejemplo",
-  "enabled": true,
+  "enabled": false,
   "token_env": "TG_TOKEN_EJEMPLO",
   "chat_env": "TG_CHAT_EJEMPLO",
   "min_discount": 10,

@@ -1,5 +1,6 @@
 import io
 import json
+from pathlib import Path
 import logging
 from datetime import datetime, timedelta, timezone
 
@@ -1874,3 +1875,18 @@ def test_reserve_loaded_for_offers_skips_lookalikes_of_what_was_just_posted(tmp_
     posted = {"P1": {"title": "DDPAI Mini Pro 4K Dash CAM Coche Camara 2160P WiFi", "t": NOW_IN.isoformat()}}
     got = deals.load_reserve(path, NOW_IN, ch, exclude=posted)
     assert [d["a"] for d in got] == ["A2"]
+
+
+def test_every_channel_file_loads_and_its_secrets_are_in_the_workflow():
+    root = Path(__file__).resolve().parent.parent
+    workflow = (root / ".github/workflows/run.yml").read_text(encoding="utf-8")
+    files = sorted((root / "channels").glob("*.json"))
+    assert files
+    names = []
+    for f in files:
+        ch = deals.load_channel(f)
+        names.append(ch.name)
+        if ch.enabled:  # un canal activo sin sus secretos en el workflow nunca publicaria
+            assert f"{ch.token_env}: ${{{{ secrets.{ch.token_env} }}}}" in workflow
+            assert f"{ch.chat_env}: ${{{{ secrets.{ch.chat_env} }}}}" in workflow
+    assert len(set(names)) == len(names)  # nombres distintos: cada canal tiene su propio estado
