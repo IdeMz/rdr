@@ -2,11 +2,12 @@
  "cats": {
   "Auriculares": "2026-11-03T20:50:44.557294+00:00",
   "Climatización": "2026-11-04T07:01:02.789247+00:00",
+  "Monitores": "2026-11-04T07:35:28.422892+00:00",
   "Móviles": "2026-11-03T20:15:41.050553+00:00",
   "Portátiles": "2026-11-03T21:25:41.970831+00:00",
   "Tablets": "2026-11-03T23:35:30.613324+00:00"
  },
- "next_at": "2026-11-04T07:31:49.000737+00:00",
+ "next_at": "2026-11-04T08:07:30.292235+00:00",
  "posted": {
   "B0BL898WJZ": {
    "c": "Climatización",
@@ -40,6 +41,16 @@
    "t": "2026-11-03T20:51:04.733450+00:00",
    "title": "Soundcore P31i de Anker Auriculares Bluetooth con Cancelación de Ruido"
   },
+  "B0FQ5F2QSQ": {
+   "c": "Monitores",
+   "d": 24,
+   "e": "🖥️",
+   "m": 23,
+   "p": 106.18,
+   "t": "2026-11-04T07:35:51.812203+00:00",
+   "title": "DELL 24 Plus Monitor - S2425HSM, Full HD (1920x1080), 144Hz, IPS, 1ms MPRT",
+   "v": []
+  },
   "B0FR4SMRXY": {
    "t": "2026-11-03T19:06:21.737291+00:00",
    "title": "Auriculares Inalámbricos Bluetooth 5.4 HiFi Estéreo, Reducción de Ruido ENC"
@@ -72,6 +83,5 @@
    "why": "alta hace 29 dias"
   }
  },
- "summary_day": null,
- "tg_offset": 316840175
+ "summary_day": null
 }
