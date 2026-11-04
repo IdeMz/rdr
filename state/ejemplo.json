@@ -20,7 +20,9 @@
    "p": 6.99,
    "t": "2026-11-04T08:46:07.836906+00:00",
    "title": "Fokky Gomas Elasticas Musculacion [Set de 5], Látex Natural",
-   "v": []
+   "v": [
+    "94e93229fb06"
+   ]
   },
   "B0BL898WJZ": {
    "c": "Climatización",
@@ -54,7 +56,9 @@
    "p": 499.0,
    "t": "2026-11-04T08:10:56.644294+00:00",
    "title": "DREAME L50 Pro Ultra Robot Aspirador y Fregasuelos, 19500 Pa, Autolimpieza de la Mopa, Detección de Obstáculos Inteligente, Limpieza con Agua Caliente a 75°, Robot Aspitador con Cámara para Mascotas",
-   "v": []
+   "v": [
+    "94e93229fb06"
+   ]
   },
   "B0FJ8BRCZQ": {
    "t": "2026-11-03T18:31:39.548251+00:00",
@@ -72,7 +76,9 @@
    "p": 106.18,
    "t": "2026-11-04T07:35:51.812203+00:00",
    "title": "DELL 24 Plus Monitor - S2425HSM, Full HD (1920x1080), 144Hz, IPS, 1ms MPRT",
-   "v": []
+   "v": [
+    "94e93229fb06"
+   ]
   },
   "B0FR4SMRXY": {
    "t": "2026-11-03T19:06:21.737291+00:00",
@@ -106,5 +112,6 @@
    "why": "alta hace 29 dias"
   }
  },
- "summary_day": null
+ "summary_day": null,
+ "tg_offset": 316840180
 }
