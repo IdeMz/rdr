@@ -16,7 +16,9 @@
    "p": 399.99,
    "t": "2026-11-04T07:01:24.824294+00:00",
    "title": "Philips Air Performer 8000 3en1 Purificador, Calefactor y Ventilador, 70m²",
-   "v": []
+   "v": [
+    "94e93229fb06"
+   ]
   },
   "B0BTJ8ZXG5": {
    "t": "2026-11-03T12:38:46.796406+00:00",
@@ -71,5 +73,5 @@
   }
  },
  "summary_day": null,
- "tg_offset": 316840174
+ "tg_offset": 316840175
 }
