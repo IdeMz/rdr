@@ -267,6 +267,13 @@ class Channel:
     alert_after: int = 3  # fallos seguidos (bloqueo, ubicacion, Telegram, error) antes de avisar
     alert_after_empty: int = 6  # intentos seguidos sin ningun producto que publicar
     alert_repeat_min: int = 180  # minutos entre avisos mientras siga el problema
+    # Oferta de reserva: si Amazon falla, el bot te envia por privado un producto ya preparado con un
+    # boton para publicarlo en el canal (o descartarlo). Necesita el chat privado de avisos.
+    manual_offer: bool = True
+    manual_after: int = 2  # fallos seguidos antes de ofrecerte una oferta de reserva
+    manual_repeat_min: int = 60  # minutos hasta ofrecerte otra si no has contestado
+    reserve_size: int = 3  # ofertas buenas que se guardan de reserva en cada publicacion
+    reserve_hours: int = 3  # horas que vale una oferta de reserva (despues el precio puede haber cambiado)
 
 
 def load_channel(path: Path) -> Channel:
@@ -298,6 +305,8 @@ def load_channel(path: Path) -> Channel:
             raise ConfigError(f"{path.name}: 'summary_time' debe ser HH:MM (o vacio)") from None
     if min(ch.alert_after, ch.alert_after_empty, ch.alert_repeat_min) < 1:
         raise ConfigError(f"{path.name}: los valores 'alert_*' deben ser al menos 1")
+    if min(ch.manual_after, ch.manual_repeat_min, ch.reserve_hours) < 1 or ch.reserve_size < 0:
+        raise ConfigError(f"{path.name}: valores 'manual_*' / 'reserve_*' no validos")
     if ch.searches_per_run < 1:
         raise ConfigError(f"{path.name}: 'searches_per_run' debe ser al menos 1")
     for url in ch.urls:
@@ -1062,7 +1071,10 @@ def save_state(
     problem: dict | None = None,
 ) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
+    managed = ("next_at", "posted", "rejected", "cats", "problem", "summary_day")
+    extra = {k: v for k, v in _read_state_file(path).items() if k not in managed and k != "posted"}
     data = {
+        **extra,
         "next_at": next_at.isoformat() if next_at else None,
         "posted": posted,
         "rejected": rejected or {},
@@ -1273,11 +1285,186 @@ def voter_hash(token: str, user_id) -> str:
     return hmac.new(token.encode(), str(user_id).encode(), hashlib.sha256).hexdigest()[:12]
 
 
-def process_votes(ch: Channel, state_path: Path, state: dict, tag: str | None) -> int:
+# --------------------------------------------------------------------------
+# Ofertas de reserva (publicacion manual con un boton)
+# --------------------------------------------------------------------------
+
+
+def product_to_dict(p: Product, cat: dict | None, now: datetime) -> dict:
+    return {
+        "a": p.asin, "title": p.title[:200], "p": p.price, "op": p.old_price, "r": p.rating,
+        "n": p.reviews, "img": p.image, "c": (cat or {}).get("nombre", ""), "e": (cat or {}).get("emoji", ""),
+        "t": now.isoformat(),
+    }
+
+
+def product_from_dict(d: dict) -> Product:
+    return Product(
+        asin=d["a"], title=d.get("title", ""), price=d.get("p"), old_price=d.get("op"),
+        rating=d.get("r"), reviews=d.get("n"), image=d.get("img"),
+    )
+
+
+def load_reserve(path: Path, now: datetime, ch: Channel, exclude: dict | None = None) -> list[dict]:
+    """Ofertas de reserva todavia validas (recientes y no publicadas ni descartadas)."""
+    raw = _read_state_file(path).get("reserve")
+    if not isinstance(raw, list):
+        return []
+    cutoff = now - timedelta(hours=ch.reserve_hours)
+    rejected = load_rejected(path, now)
+    out, seen = [], set()
+    for d in raw:
+        if not isinstance(d, dict) or not isinstance(d.get("a"), str) or d["a"] in seen:
+            continue
+        if _ts(d) <= cutoff or d["a"] in (exclude or {}) or d["a"] in rejected:
+            continue
+        if not isinstance(d.get("p"), (int, float)):
+            continue
+        seen.add(d["a"])
+        out.append(d)
+    return out
+
+
+def _offer_open(state_path: Path, now: datetime, ch: Channel) -> bool:
+    """Hay una oferta de reserva a la que aun puedes contestar (Telegram guarda los toques 24 h)."""
+    offer = _read_state_file(state_path).get("offer")
+    return isinstance(offer, dict) and _ts(offer) > now - timedelta(hours=24)
+
+
+def offer_keyboard(asin: str) -> dict:
+    return {"inline_keyboard": [
+        [{"text": "✅ Publicar en el canal", "callback_data": f"pub:{asin}"}],
+        [{"text": "🗑 Descartar", "callback_data": f"skip:{asin}"}],
+    ]}
+
+
+def maybe_offer(ch: Channel, state_path: Path, now: datetime, tag: str | None) -> bool:
+    """Tras varios fallos seguidos, te manda por privado una oferta de reserva con boton para publicarla."""
+    if not ch.manual_offer:
+        return False
+    token, alert_chat = get_secret(ch.token_env), get_secret(ch.alert_chat_env)
+    if not token or not alert_chat:
+        return False
+    if int(load_problem(state_path).get("fails", 0)) < ch.manual_after:
+        return False
+    pending = _read_state_file(state_path).get("offer")
+    if isinstance(pending, dict) and now - _ts(pending) < timedelta(minutes=ch.manual_repeat_min):
+        return False  # ya tienes una oferta esperando
+    items = load_reserve(state_path, now, ch, exclude=load_state(state_path, ch.repeat_days, now))
+    if not items:
+        return False
+    item = items[0]
+    p = product_from_dict(item)
+    cat = {"nombre": item["c"], "emoji": item.get("e", "")} if item.get("c") else None
+    caption = (
+        "⚠️ <b>Amazon no responde.</b> Oferta de reserva: abre el enlace y comprueba que el precio "
+        "sigue igual antes de publicar.\n\n" + build_caption(p, affiliate_url(p.asin, tag), ch, cat)
+    )
+    markup = json.dumps(offer_keyboard(p.asin))
+    msg_id = None
+    try:
+        if p.image and len(caption) <= 1000:
+            try:
+                body = tg_call("sendPhoto", token, {
+                    "chat_id": alert_chat, "caption": caption, "parse_mode": "HTML",
+                    "photo": full_size_image(p.image), "reply_markup": markup,
+                }, retries=1)
+            except TelegramError as exc:
+                if exc.ambiguous:
+                    raise
+                body = None
+        else:
+            body = None
+        if body is None:
+            body = tg_call("sendMessage", token, {
+                "chat_id": alert_chat, "text": caption, "parse_mode": "HTML", "reply_markup": markup,
+            }, retries=1)
+        msg_id = ((body or {}).get("result") or {}).get("message_id")
+    except TelegramError as exc:
+        log.warning("%s: no se pudo enviar la oferta de reserva (%s)", ch.name, exc)
+        if not exc.ambiguous:
+            return False
+    set_state_key(state_path, "offer", {"a": p.asin, "m": msg_id, "t": now.isoformat()})
+    log.info("%s: oferta de reserva %s enviada a tu chat privado", ch.name, p.asin)
+    return True
+
+
+def handle_offer_action(
+    ch: Channel, state_path: Path, state: dict, action: str, asin: str, tag: str | None, now: datetime
+) -> str:
+    """Boton 'Publicar' o 'Descartar' de una oferta de reserva. Devuelve el texto de respuesta."""
+    token, chat_id = get_secret(ch.token_env), get_secret(ch.chat_env)
+    data = _read_state_file(state_path)
+    reserve = load_reserve(state_path, now, ch)
+    item = next((d for d in reserve if d["a"] == asin), None)
+    pending = data.get("offer") if isinstance(data.get("offer"), dict) else {}
+    offer_msg = pending.get("m") if pending.get("a") == asin else None
+
+    def close(note_text: str) -> None:
+        set_state_key(state_path, "reserve", [d for d in reserve if d["a"] != asin])
+        if pending.get("a") == asin:
+            set_state_key(state_path, "offer", None)
+        alert_chat = get_secret(ch.alert_chat_env)
+        if offer_msg and alert_chat and token:
+            try:
+                tg_call("editMessageReplyMarkup", token, {
+                    "chat_id": alert_chat, "message_id": offer_msg,
+                    "reply_markup": json.dumps({"inline_keyboard": []}),
+                }, retries=0)
+            except TelegramError:
+                pass
+        if token and alert_chat:
+            try:
+                tg_call("sendMessage", token, {"chat_id": alert_chat, "text": note_text}, retries=0)
+            except TelegramError:
+                pass
+
+    if asin in state:
+        close("Esa oferta ya estaba publicada en el canal.")
+        return "Ya publicada"
+    if action == "skip":
+        rejected = load_rejected(state_path, now)
+        rejected[asin] = {"t": now.isoformat(), "why": "descartada a mano"}
+        set_state_key(state_path, "rejected", rejected)
+        close("🗑 Oferta descartada: no se volverá a elegir.")
+        return "Descartada"
+    if item is None:
+        close("Esa oferta ya ha caducado (pasaron más de %d h). Espera a la siguiente." % ch.reserve_hours)
+        return "Oferta caducada"
+    p = product_from_dict(item)
+    cat = {"nombre": item["c"], "emoji": item.get("e", "")} if item.get("c") else None
+    photo_url = full_size_image(p.image)
+    try:
+        msg_id = send_deal(
+            token, chat_id, build_caption(p, affiliate_url(p.asin, tag), ch, cat),
+            prepare_image(photo_url), photo_url, build_keyboard(ch, p.asin, tag),
+        )
+    except TelegramError as exc:
+        if not exc.ambiguous:
+            log.warning("%s: no se pudo publicar la oferta de reserva (%s)", ch.name, exc)
+            return "No se pudo publicar"
+        msg_id = None  # puede haber salido: se da por publicada para no repetirla
+    state[asin] = {
+        "t": now.isoformat(), "title": p.title[:200], "p": p.price, "d": p.discount,
+        "c": item.get("c", ""), "e": item.get("e", ""), "m": msg_id, "v": [], "manual": True,
+    }
+    next_post = now + timedelta(minutes=random.uniform(ch.interval_min, ch.interval_max))
+    save_state(state_path, state, next_at=next_post, rejected=load_rejected(state_path, now), cats=load_cats(state_path))
+    log.info("%s: publicada a mano la oferta de reserva %s", ch.name, asin)
+    note(f"{ch.name}: publicada a mano {asin}")
+    close(f"✅ Publicada en el canal: {p.title[:80]}")
+    return "Publicada ✅"
+
+
+def process_votes(
+    ch: Channel, state_path: Path, state: dict, tag: str | None, now: datetime | None = None
+) -> int:
     """Lee los toques en 👍 pendientes, actualiza los contadores y los botones. Devuelve cuantos mensajes cambiaron."""
     token, chat_id = get_secret(ch.token_env), get_secret(ch.chat_env)
     if not token or not chat_id:
         return 0
+    now = now or datetime.now(timezone.utc)
+    alert_chat = get_secret(ch.alert_chat_env) if ch.manual_offer else None
     raw_offset = _read_state_file(state_path).get("tg_offset")
     offset = raw_offset if isinstance(raw_offset, int) else None
     changed: set[str] = set()
@@ -1301,7 +1488,19 @@ def process_votes(ch: Channel, state_path: Path, state: dict, tag: str | None) -
             same_chat = str(chat.get("id")) == str(chat_id) or (
                 chat.get("username") and f"@{chat['username']}".lower() == str(chat_id).lower()
             )
-            if cq.get("data") != "like" or not same_chat or not (cq.get("from") or {}).get("id"):
+            cb = cq.get("data") or ""
+            if (
+                alert_chat and str(chat.get("id")) == str(alert_chat)
+                and (cb.startswith("pub:") or cb.startswith("skip:"))
+            ):
+                action, _, offer_asin = cb.partition(":")
+                reply = handle_offer_action(ch, state_path, state, action, offer_asin, tag, now)
+                try:
+                    tg_call("answerCallbackQuery", token, {"callback_query_id": cq.get("id"), "text": reply}, retries=0)
+                except TelegramError:
+                    pass
+                continue
+            if cb != "like" or not same_chat or not (cq.get("from") or {}).get("id"):
                 continue
             asin = next((a for a, e in state.items() if e.get("m") == msg.get("message_id")), None)
             reply = "Votación cerrada"
@@ -1498,8 +1697,9 @@ def run_channel(
     state = load_state(state_path, ch.repeat_days, now)
     publishing = not dry_run and html_file is None
 
-    if publishing and ch.vote_button:
-        process_votes(ch, state_path, state, get_secret("AMAZON_TAG"))
+    offer_waiting = ch.manual_offer and _offer_open(state_path, now, ch)
+    if publishing and (ch.vote_button or offer_waiting):
+        process_votes(ch, state_path, state, get_secret("AMAZON_TAG"), now)
 
     if publishing and not force and ch.summary_time:
         maybe_send_summary(ch, state_path, state, now)
@@ -1536,6 +1736,12 @@ def run_channel(
     chosen: list[Product] = []
     chosen_cat: dict[str, dict | None] = {}
     rows: list[tuple[Product, str, str]] = []
+    # Reserva: ofertas buenas de sobra que se guardan por si Amazon falla (ver maybe_offer)
+    keep_reserve = publishing and ch.manual_offer and ch.reserve_size > 0
+    reserve = load_reserve(state_path, now, ch, exclude=state) if keep_reserve else []
+    need = max(0, ch.reserve_size - len(reserve))
+    extras: list[tuple[Product, dict | None]] = []
+    known = {d["a"] for d in reserve}
     for cat in targets:
         cch = category_channel(ch, cat) if cat else ch
         label = f"{ch.name}/{cat['nombre']}" if cat else ch.name
@@ -1545,18 +1751,25 @@ def run_channel(
             if publishing and not force:
                 save_state(state_path, state, next_at=retry_at, rejected=rejected, cats=cats)  # no insistir
                 record_problem(ch, state_path, "fail", str(exc), now)
+                try:  # una oferta de reserva para publicar a mano, si hay
+                    maybe_offer(ch, state_path, now, tag)
+                except Exception as err:
+                    log.warning("%s: oferta de reserva: %s", ch.name, type(err).__name__)
             raise
         if cat:
             cats[cat["nombre"]] = now.isoformat()
         check_pages = session is not None and (cch.min_listing_days > 0 or cch.min_history_drop > 0)
         candidates = pick(
-            products, cch, state, limit=MAX_PAGE_CHECKS if check_pages else None, skip=set(rejected)
+            products, cch, state, limit=MAX_PAGE_CHECKS if check_pages else ch.max_posts + need,
+            skip=set(rejected) | known,
         )
         log.info("%s: %s", label, funnel(products, cch, state, skip=set(rejected)))
 
         for p in candidates:
-            if len(chosen) >= ch.max_posts:
+            if len(chosen) >= ch.max_posts and len(extras) >= need:
                 break
+            if p.asin in known or any(p.asin == e.asin for e, _ in extras):
+                continue
             if check_pages:
                 try:
                     ok, why = listing_ok(session, p, cch, now.date())
@@ -1567,8 +1780,11 @@ def run_channel(
                     log.info("%s: descartado %s (%s)", label, p.asin, why)
                     rejected[p.asin] = {"t": now.isoformat(), "why": why}
                     continue
-            chosen.append(p)
-            chosen_cat[p.asin] = cat
+            if len(chosen) < ch.max_posts:
+                chosen.append(p)
+                chosen_cat[p.asin] = cat
+            else:
+                extras.append((p, cat))
         rows += [(p, why, cat["nombre"] if cat else "") for p, why in
                  explain(products, cch, state, skip=rejected, chosen=chosen)]
         if chosen:
@@ -1632,6 +1848,10 @@ def run_channel(
         record_success(ch, state_path)
         if published < len(chosen):
             sleep(2)
+    if keep_reserve and published:
+        fresh = [product_to_dict(e, c, now) for e, c in extras if e.asin not in state]
+        kept = [d for d in reserve if d["a"] not in state]
+        set_state_key(state_path, "reserve", (fresh + kept)[: ch.reserve_size])
     return published
 
 

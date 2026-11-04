@@ -1631,3 +1631,220 @@ def test_alert_texts_do_not_include_channel_name(tmp_path, alerts):
     deals.record_success(ch, path)
     assert alerts and all("ejemplo" not in a[1]["text"] for a in alerts)
     assert "HTTP 503" in alerts[0][1]["text"]
+
+
+# ------------------------------------------------- oferta de reserva con boton
+
+MANY = page(
+    card("B00000000A", "Auriculares inalambricos Alfa", "30,00 €", "100,00 €"),
+    card("B00000000B", "Cafetera superautomatica Beta", "100,00 €", "200,00 €"),
+    card("B00000000C", "Teclado mecanico gamer Gamma", "40,00 €", "80,00 €"),
+    card("B00000000D", "Aspirador de mano Delta", "25,00 €", "50,00 €"),
+    card("B00000000E", "Zapatillas de running Epsilon", "45,00 €", "75,00 €"),
+)
+
+
+class Tg:
+    """Telegram simulado: guarda las llamadas y devuelve ids de mensaje; 'updates' alimenta getUpdates."""
+
+    def __init__(self):
+        self.calls, self.updates, self.n = [], [], 100
+
+    def __call__(self, method, token, data, **kw):
+        self.calls.append((method, data))
+        if method == "getUpdates":
+            ups, self.updates = self.updates, []
+            return {"result": ups}
+        self.n += 1
+        return {"ok": True, "result": {"message_id": self.n}}
+
+    def of(self, method):
+        return [d for m, d in self.calls if m == method]
+
+
+def offer_env(monkeypatch, html=MANY):
+    monkeypatch.setenv("TG_T", TOKEN)
+    monkeypatch.setenv("TG_C", "@canal")
+    monkeypatch.setenv("TG_ALERT_CHAT", "777")
+    monkeypatch.setenv("AMAZON_TAG", "tag-21")
+    monkeypatch.setattr(deals, "collect", lambda ch, html_file=None, session=None: deals.parse_results(html))
+    monkeypatch.setattr(deals, "prepare_image", lambda url: b"JPEG")
+    monkeypatch.setattr(deals, "sleep", lambda s: None)
+    tg = Tg()
+    monkeypatch.setattr(deals, "tg_call", tg)
+    return tg
+
+
+def test_publish_stores_the_next_best_offers_as_reserve(tmp_path, monkeypatch):
+    tg = offer_env(monkeypatch)
+    assert deals.run_channel(channel(), state_dir=tmp_path, now=NOW_IN) == 1
+    saved = json.loads((tmp_path / "t.json").read_text())
+    published = next(iter(saved["posted"]))
+    reserve = saved["reserve"]
+    assert len(reserve) == 3 and published not in [d["a"] for d in reserve]
+    assert all(d["title"] and d["p"] and d["img"] for d in reserve)
+    assert "tg_offset" not in saved or isinstance(saved["tg_offset"], int)
+
+
+def test_reserve_is_topped_up_not_duplicated(tmp_path, monkeypatch):
+    offer_env(monkeypatch)
+    deals.run_channel(channel(), state_dir=tmp_path, now=NOW_IN)
+    later = NOW_IN + timedelta(hours=1)
+    deals.run_channel(channel(), state_dir=tmp_path, now=later)
+    saved = json.loads((tmp_path / "t.json").read_text())
+    ids = [d["a"] for d in saved["reserve"]]
+    assert len(ids) == len(set(ids)) <= 3 and not set(ids) & set(saved["posted"])
+
+
+def test_reserve_disabled_when_manual_offer_is_off(tmp_path, monkeypatch):
+    offer_env(monkeypatch)
+    deals.run_channel(channel(manual_offer=False), state_dir=tmp_path, now=NOW_IN)
+    assert "reserve" not in json.loads((tmp_path / "t.json").read_text())
+
+
+def fail_after_publishing(tmp_path, monkeypatch, fails):
+    """Publica una vez (con reserva) y luego Amazon empieza a dar 503."""
+    tg = offer_env(monkeypatch)
+    deals.run_channel(channel(), state_dir=tmp_path, now=NOW_IN)
+
+    def blocked(ch, html_file=None, session=None):
+        raise deals.Blocked("HTTP 503")
+
+    monkeypatch.setattr(deals, "collect", blocked)
+    t = NOW_IN + timedelta(minutes=40)
+    for i in range(fails):
+        with pytest.raises(deals.Blocked):
+            deals.run_channel(channel(), state_dir=tmp_path, now=t + timedelta(minutes=10 * i))
+    return tg
+
+
+def test_no_offer_after_a_single_failure(tmp_path, monkeypatch):
+    tg = fail_after_publishing(tmp_path, monkeypatch, 1)
+    assert not [d for d in tg.of("sendPhoto") if d["chat_id"] == "777"]
+
+
+def test_offer_is_sent_privately_with_buttons_after_two_failures_and_only_once(tmp_path, monkeypatch):
+    tg = fail_after_publishing(tmp_path, monkeypatch, 3)
+    offers = [d for d in tg.of("sendPhoto") if d["chat_id"] == "777"]
+    assert len(offers) == 1  # un solo aviso mientras esperas
+    o = offers[0]
+    assert "Amazon no responde" in o["caption"] and "Ver en Amazon" in o["caption"] and "tag=tag-21" in o["caption"]
+    kb = json.loads(o["reply_markup"])["inline_keyboard"]
+    asin = json.loads((tmp_path / "t.json").read_text())["offer"]["a"]
+    assert kb[0][0]["callback_data"] == f"pub:{asin}" and kb[1][0]["callback_data"] == f"skip:{asin}"
+    assert o["photo"].startswith("https://m.media-amazon.com/")
+
+
+def test_offer_needs_the_private_chat(tmp_path, monkeypatch):
+    tg = offer_env(monkeypatch)
+    deals.run_channel(channel(), state_dir=tmp_path, now=NOW_IN)
+    monkeypatch.delenv("TG_ALERT_CHAT")
+    assert deals.maybe_offer(channel(), tmp_path / "t.json", NOW_IN, None) is False
+
+
+def press(tg, asin, action, chat="777", uid=1):
+    tg.updates.append({
+        "update_id": 900 + len(tg.calls),
+        "callback_query": {
+            "id": "cb1", "data": f"{action}:{asin}", "from": {"id": uid},
+            "message": {"message_id": 5, "chat": {"id": int(chat)}},
+        },
+    })
+
+
+def test_pressing_publish_posts_to_channel_and_records_it(tmp_path, monkeypatch):
+    tg = fail_after_publishing(tmp_path, monkeypatch, 2)
+    path = tmp_path / "t.json"
+    asin = json.loads(path.read_text())["offer"]["a"]
+    sent = []
+    monkeypatch.setattr(deals, "send_deal", lambda *a: sent.append(a) or 555)
+    press(tg, asin, "pub")
+    t = NOW_IN + timedelta(minutes=70)
+    assert deals.run_channel(channel(), state_dir=tmp_path, now=t) == 0  # atiende el boton y no toca consultar Amazon
+    saved = json.loads(path.read_text())
+    assert len(sent) == 1 and sent[0][1] == "@canal" and "Ver en Amazon" in sent[0][2]
+    assert saved["posted"][asin]["manual"] is True and saved["posted"][asin]["m"] == 555
+    assert asin not in [d["a"] for d in saved["reserve"]] and saved["offer"] is None
+    assert datetime.fromisoformat(saved["next_at"]) > t  # el bot espera su turno despues de publicar a mano
+    assert any("Publicada en el canal" in d.get("text", "") for d in tg.of("sendMessage"))
+    assert any(d.get("text") == "Publicada ✅" for d in tg.of("answerCallbackQuery"))
+
+
+def test_published_by_hand_is_never_repeated_by_the_bot(tmp_path, monkeypatch):
+    tg = fail_after_publishing(tmp_path, monkeypatch, 2)
+    path = tmp_path / "t.json"
+    asin = json.loads(path.read_text())["offer"]["a"]
+    monkeypatch.setattr(deals, "send_deal", lambda *a: 555)
+    press(tg, asin, "pub")
+    deals.run_channel(channel(), state_dir=tmp_path, now=NOW_IN + timedelta(minutes=70))
+    monkeypatch.setattr(deals, "collect", lambda ch, html_file=None, session=None: deals.parse_results(MANY))
+    posted = []
+    monkeypatch.setattr(deals, "send_deal", lambda *a: posted.append(a) or 1)
+    deals.run_channel(channel(), state_dir=tmp_path, now=NOW_IN + timedelta(hours=3))
+    saved = json.loads(path.read_text())
+    assert len(posted) == 1 and len(saved["posted"]) == 3  # la primera, la manual y la nueva: ninguna repetida
+    assert saved["posted"][asin]["manual"] is True
+
+
+def test_pressing_skip_discards_and_never_picks_it_again(tmp_path, monkeypatch):
+    tg = fail_after_publishing(tmp_path, monkeypatch, 2)
+    path = tmp_path / "t.json"
+    asin = json.loads(path.read_text())["offer"]["a"]
+    press(tg, asin, "skip")
+    with pytest.raises(deals.Blocked):
+        deals.run_channel(channel(), state_dir=tmp_path, now=NOW_IN + timedelta(minutes=70))
+    saved = json.loads(path.read_text())
+    assert asin in saved["rejected"] and asin not in saved["posted"]
+    assert asin not in [d["a"] for d in saved["reserve"]]
+    assert saved["offer"] is None or saved["offer"]["a"] != asin  # si Amazon sigue fallando, te ofrece la siguiente
+    assert any(d.get("text") == "Descartada" for d in tg.of("answerCallbackQuery"))
+
+
+def test_expired_offer_cannot_be_published(tmp_path, monkeypatch):
+    tg = fail_after_publishing(tmp_path, monkeypatch, 2)
+    path = tmp_path / "t.json"
+    asin = json.loads(path.read_text())["offer"]["a"]
+    sent = []
+    monkeypatch.setattr(deals, "send_deal", lambda *a: sent.append(a))
+    press(tg, asin, "pub")
+    with pytest.raises(deals.Blocked):
+        deals.run_channel(channel(), state_dir=tmp_path, now=NOW_IN + timedelta(hours=5))
+    assert sent == []
+    assert any(d.get("text") == "Oferta caducada" for d in tg.of("answerCallbackQuery"))
+
+
+def test_buttons_from_other_chats_are_ignored(tmp_path, monkeypatch):
+    tg = fail_after_publishing(tmp_path, monkeypatch, 2)
+    path = tmp_path / "t.json"
+    asin = json.loads(path.read_text())["offer"]["a"]
+    sent = []
+    monkeypatch.setattr(deals, "send_deal", lambda *a: sent.append(a))
+    press(tg, asin, "pub", chat="999")  # otro chat: nadie mas puede publicar
+    with pytest.raises(deals.Blocked):
+        deals.run_channel(channel(), state_dir=tmp_path, now=NOW_IN + timedelta(minutes=70))
+    assert sent == [] and asin not in json.loads(path.read_text())["posted"]
+
+
+def test_failed_publish_keeps_the_offer_so_you_can_retry(tmp_path, monkeypatch):
+    tg = fail_after_publishing(tmp_path, monkeypatch, 2)
+    path = tmp_path / "t.json"
+    asin = json.loads(path.read_text())["offer"]["a"]
+
+    def rejected(*a):
+        raise deals.TelegramError("sendPhoto: HTTP 400 bad request")
+
+    monkeypatch.setattr(deals, "send_deal", rejected)
+    press(tg, asin, "pub")
+    with pytest.raises(deals.Blocked):
+        deals.run_channel(channel(), state_dir=tmp_path, now=NOW_IN + timedelta(minutes=70))
+    saved = json.loads(path.read_text())
+    assert asin not in saved["posted"] and asin in [d["a"] for d in saved["reserve"]]
+
+
+def test_save_state_keeps_unknown_keys(tmp_path):
+    path = tmp_path / "s.json"
+    deals.set_state_key(path, "reserve", [{"a": "X"}])
+    deals.set_state_key(path, "tg_offset", 7)
+    deals.save_state(path, {}, next_at=NOW_IN)
+    saved = json.loads(path.read_text())
+    assert saved["reserve"] == [{"a": "X"}] and saved["tg_offset"] == 7
