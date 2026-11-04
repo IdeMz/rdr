@@ -1,5 +1,6 @@
 {
  "cats": {
+  "Accesorios de coche": "2026-11-04T20:35:30.743063+00:00",
   "Afeitado y depilación": "2026-11-04T20:01:05.029072+00:00",
   "Aspiradoras": "2026-11-04T08:10:37.002731+00:00",
   "Auriculares": "2026-11-03T20:50:44.557294+00:00",
@@ -26,7 +27,7 @@
   "Videojuegos": "2026-11-04T09:20:49.508625+00:00",
   "Zapatillas": "2026-11-04T12:55:44.311669+00:00"
  },
- "next_at": "2026-11-04T20:32:37.476003+00:00",
+ "next_at": "2026-11-04T21:06:57.604327+00:00",
  "posted": {
   "B01L4N33DC": {
    "c": "Zapatillas",
@@ -252,6 +253,16 @@
    "t": "2026-11-03T20:16:00.734199+00:00",
    "title": "Google Pixel 10a - 7 años de Nuevas actualizaciones y Funciones, más de 30 Horas de batería, Asistente de Cámara, Gemini Live, Seguridad de Pixel - Obsidiana, 128GB"
   },
+  "B0H3Z8M52C": {
+   "c": "Accesorios de coche",
+   "d": 39,
+   "e": "🚗",
+   "m": 44,
+   "p": 54.99,
+   "t": "2026-11-04T20:36:08.145369+00:00",
+   "title": "DDPAI Mini Pro 4K Dash CAM Coche, Cámara 2160P, Giración de 360°, Tarjeta 64GB Incluida, Visión Nocturna, 24H Monitor Aparcamiento, 5.8G WiFi 6, Grabación en Bucle, Control por App, Supercondensador",
+   "v": []
+  },
   "B0H4ZJ6MD7": {
    "t": "2026-11-03T21:26:03.787861+00:00",
    "title": "HP 15 Ordenador portátil 15,6\" FHD, Ryzen 5, 16GB, 512SSD, Windows 11"
@@ -278,5 +289,43 @@
    "why": "alta hace 29 dias"
   }
  },
+ "reserve": [
+  {
+   "a": "B0GTLD65SS",
+   "c": "Accesorios de coche",
+   "e": "🚗",
+   "img": "https://m.media-amazon.com/images/I/71I4qqdm0LL._AC_UL320_.jpg",
+   "n": 562,
+   "op": 149.99,
+   "p": 106.99,
+   "r": 4.5,
+   "t": "2026-11-04T20:35:30.743063+00:00",
+   "title": "70mai A810 Lite Cámara de Salpicadero 4K Doble, WiFi 6 5GHz, 4G LTE Remoto, GPS, Visión Nocturna HDR, Vigilancia 24h Estacionamiento, Control por Voz, Bloqueo de Emergencia y Grabación Continua"
+  },
+  {
+   "a": "B0C33RDGY8",
+   "c": "Accesorios de coche",
+   "e": "🚗",
+   "img": "https://m.media-amazon.com/images/I/61P8UhBxRQL._AC_UL320_.jpg",
+   "n": 11300,
+   "op": 89.99,
+   "p": 69.99,
+   "r": 4.3,
+   "t": "2026-11-04T20:35:30.743063+00:00",
+   "title": "GKU 4K Dashcam Cámara Coche, 5GHz WiFi Dash CAM Coche con Tarjeta de 64GB, Mini Cámara Coche Grabadora, 170° Gran Angular, Visión Nocturna, WDR, Sensor G, Modo Parking 24H, Control App, Máx 256GB"
+  },
+  {
+   "a": "B0GX4YGYXG",
+   "c": "Accesorios de coche",
+   "e": "🚗",
+   "img": "https://m.media-amazon.com/images/I/81NekMkXTUL._AC_UL320_.jpg",
+   "n": 118,
+   "op": 129.99,
+   "p": 84.99,
+   "r": 4.4,
+   "t": "2026-11-04T20:35:30.743063+00:00",
+   "title": "WOLFANG 4K Dashcam, 610° 4 Canales Cámara de Coche con 5,8 GHz WiFi & App"
+  }
+ ],
  "summary_day": null
 }
