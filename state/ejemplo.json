@@ -8,10 +8,21 @@
   "Móviles": "2026-11-03T20:15:41.050553+00:00",
   "Perros": "2026-11-04T08:45:45.039704+00:00",
   "Portátiles": "2026-11-03T21:25:41.970831+00:00",
-  "Tablets": "2026-11-03T23:35:30.613324+00:00"
+  "Tablets": "2026-11-03T23:35:30.613324+00:00",
+  "Videojuegos": "2026-11-04T09:20:49.508625+00:00"
  },
- "next_at": "2026-11-04T09:16:48.960351+00:00",
+ "next_at": "2026-11-04T09:52:12.036978+00:00",
  "posted": {
+  "B08JLKKD9C": {
+   "c": "Videojuegos",
+   "d": 23,
+   "e": "🎮",
+   "m": 26,
+   "p": 30.61,
+   "t": "2026-11-04T09:21:17.846623+00:00",
+   "title": "Sniper Elite 4 - Nintendo Switch - Nintendo Switch [Importación francesa]",
+   "v": []
+  },
   "B09CTVQWK8": {
    "c": "Fitness en casa",
    "d": 46,
@@ -112,6 +123,5 @@
    "why": "alta hace 29 dias"
   }
  },
- "summary_day": null,
- "tg_offset": 316840180
+ "summary_day": null
 }
