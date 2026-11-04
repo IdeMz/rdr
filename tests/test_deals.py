@@ -1175,7 +1175,7 @@ def test_alert_after_three_failures_then_throttled_then_recovery(tmp_path, alert
     deals.record_problem(ch, path, "fail", "otra vez", NOW_IN + timedelta(hours=4))  # pasado el plazo: repite
     assert len(alerts) == 2
     deals.record_success(ch, path)
-    assert len(alerts) == 3 and "vuelve a publicar" in alerts[2][1]["text"]
+    assert len(alerts) == 3 and "Vuelve a publicar" in alerts[2][1]["text"]
     assert deals.load_problem(path) == {}
 
 
@@ -1233,7 +1233,7 @@ def test_run_channel_counts_block_and_publish_resets(tmp_path, monkeypatch, aler
     assert len(alerts) == 1 and "captcha" in alerts[0][1]["text"]
     monkeypatch.setattr(deals, "collect", lambda ch, html_file=None, session=None: deals.parse_results(HTML))
     assert deals.run_channel(channel(), state_dir=tmp_path, now=NOW_IN + timedelta(hours=1)) == 1
-    assert len(alerts) == 2 and "vuelve a publicar" in alerts[1][1]["text"]
+    assert len(alerts) == 2 and "Vuelve a publicar" in alerts[1][1]["text"]
 
 
 def test_force_runs_do_not_count_as_failures(tmp_path, monkeypatch, alerts):
@@ -1499,3 +1499,135 @@ def test_run_channel_processes_votes_and_stores_message_id(tmp_path, monkeypatch
     entry = json.loads((tmp_path / "t.json").read_text())["posted"]["B000000001"]
     assert entry["m"] == 77 and entry["v"] == []
     assert sent[0][5]["inline_keyboard"][0][0] == {"text": "👍 0", "callback_data": "like"}
+
+
+# ------------------------------------------------- cabeceras rotativas y sin duplicados
+
+def test_header_profiles_are_complete_and_consistent():
+    uas = [p["User-Agent"] for p in deals.HEADER_PROFILES]
+    assert len(set(uas)) == len(uas) >= 5
+    for p in deals.HEADER_PROFILES:
+        assert p["Accept-Language"].startswith("es") and "br" not in p["Accept-Encoding"]
+        assert p["Sec-Fetch-Mode"] == "navigate"
+        # solo los navegadores Chromium envian sec-ch-ua
+        assert ("sec-ch-ua" in p) == ("Chrome/" in p["User-Agent"])
+
+
+def test_make_session_uses_a_full_profile():
+    s = deals.make_session()
+    assert s.headers["User-Agent"] in [p["User-Agent"] for p in deals.HEADER_PROFILES]
+    assert s.headers["Referer"].startswith("https://www.amazon.es")
+    assert "python-requests" not in s.headers["User-Agent"]
+
+
+def test_rotate_profile_changes_user_agent_and_keeps_cookies():
+    s = deals.make_session()
+    s.cookies.set("session-id", "abc")
+    before = s.headers["User-Agent"]
+    for _ in range(10):
+        deals.rotate_profile(s)
+        assert s.headers["User-Agent"] != before
+        before = s.headers["User-Agent"]
+    assert s.cookies.get("session-id") == "abc"
+
+
+def test_fetch_rotates_headers_and_backs_off_after_a_503(monkeypatch):
+    s = deals.make_session()
+    seen, waits = [], []
+
+    def fake_get(url, headers=None, timeout=None):
+        seen.append(s.headers["User-Agent"])
+        return Resp(text="ok") if len(seen) == 3 else Resp(status=503)
+
+    monkeypatch.setattr(s, "get", fake_get)
+    monkeypatch.setattr(deals, "sleep", waits.append)
+    assert deals.fetch(s, "https://www.amazon.es/s?k=x") == "ok"
+    assert len(set(seen)) == 3 or seen[0] != seen[1] != seen[2]
+    assert len(waits) == 2 and all(w >= 5 for w in waits)
+
+
+def test_fetch_gives_up_with_blocked_after_all_retries(monkeypatch):
+    s = deals.make_session()
+    monkeypatch.setattr(s, "get", lambda *a, **k: Resp(status=503))
+    monkeypatch.setattr(deals, "sleep", lambda s_: None)
+    with pytest.raises(deals.Blocked, match="503"):
+        deals.fetch(s, "https://www.amazon.es/s?k=x")
+
+
+def test_timeout_is_ambiguous_but_connection_refused_is_not(monkeypatch):
+    def timeout(url, **kw):
+        raise requests.ReadTimeout("timed out")
+
+    monkeypatch.setattr(deals.requests, "post", timeout)
+    with pytest.raises(deals.TelegramError) as info:
+        deals.tg_call("sendPhoto", TOKEN, {})
+    assert info.value.ambiguous
+
+    def refused(url, **kw):
+        raise requests.ConnectTimeout("no connect")
+
+    monkeypatch.setattr(deals.requests, "post", refused)
+    with pytest.raises(deals.TelegramError) as info:
+        deals.tg_call("sendPhoto", TOKEN, {})
+    assert not info.value.ambiguous
+
+
+def test_send_deal_does_not_resend_after_a_timeout(monkeypatch):
+    calls = []
+
+    def fake_post(url, data=None, files=None, timeout=None):
+        calls.append(url.rsplit("/", 1)[1])
+        raise requests.ReadTimeout("timed out")
+
+    monkeypatch.setattr(deals.requests, "post", fake_post)
+    with pytest.raises(deals.TelegramError) as info:
+        deals.send_deal(TOKEN, "1", "hola", b"JPEG", "https://m.media-amazon.com/x.jpg")
+    assert info.value.ambiguous and calls == ["sendPhoto"]  # una sola peticion, ningun reenvio
+
+
+def test_send_deal_does_not_resend_after_a_5xx(monkeypatch):
+    calls = []
+
+    def fake_post(url, data=None, files=None, timeout=None):
+        calls.append(url.rsplit("/", 1)[1])
+        return FakeResp(502, {"description": "Bad Gateway"})
+
+    monkeypatch.setattr(deals.requests, "post", fake_post)
+    with pytest.raises(deals.TelegramError):
+        deals.send_deal(TOKEN, "1", "hola", b"JPEG", "https://m.media-amazon.com/x.jpg")
+    assert calls == ["sendPhoto"]
+
+
+def test_unconfirmed_send_counts_as_published_so_it_is_not_repeated(tmp_path, monkeypatch):
+    setup_publish(monkeypatch)
+
+    def timeout(*a):
+        raise deals.TelegramError("sendPhoto: error de red (ReadTimeout)", ambiguous=True)
+
+    monkeypatch.setattr(deals, "send_deal", timeout)
+    assert deals.run_channel(channel(), state_dir=tmp_path, now=NOW_IN) == 1
+    saved = json.loads((tmp_path / "t.json").read_text())
+    assert len(saved["posted"]) == 1 and next(iter(saved["posted"].values()))["m"] is None
+    assert datetime.fromisoformat(saved["next_at"]) > NOW_IN  # y no vuelve a intentarlo en el siguiente turno
+
+
+def test_definitive_telegram_error_is_not_saved_as_published(tmp_path, monkeypatch):
+    setup_publish(monkeypatch)
+
+    def rejected(*a):
+        raise deals.TelegramError("sendMessage: HTTP 400 chat not found")
+
+    monkeypatch.setattr(deals, "send_deal", rejected)
+    with pytest.raises(deals.TelegramError):
+        deals.run_channel(channel(), state_dir=tmp_path, now=NOW_IN)
+    assert json.loads((tmp_path / "t.json").read_text())["posted"] == {}
+
+
+def test_alert_texts_do_not_include_channel_name(tmp_path, alerts):
+    ch = channel(name="ejemplo")
+    path = tmp_path / "t.json"
+    for i in range(3):
+        deals.record_problem(ch, path, "fail", "HTTP 503", NOW_IN + timedelta(minutes=i))
+    deals.record_success(ch, path)
+    assert alerts and all("ejemplo" not in a[1]["text"] for a in alerts)
+    assert "HTTP 503" in alerts[0][1]["text"]

@@ -42,12 +42,90 @@ PHOTO_MARGIN = 40  # aire alrededor del producto, en pixeles
 MAX_IMAGE_BYTES = 12 * 1024 * 1024
 IMAGE_HOST_SUFFIXES = (".media-amazon.com", ".ssl-images-amazon.com")
 
-USER_AGENTS = [
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
-    "Chrome/126.0.0.0 Safari/537.36",
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) "
-    "Version/17.5 Safari/605.1.15",
-    "Mozilla/5.0 (X11; Linux x86_64; rv:127.0) Gecko/20100101 Firefox/127.0",
+_ACCEPT_HTML = "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
+
+# Perfiles completos de navegador: cada uno lleva las cabeceras coherentes entre si (un Chrome con
+# cabeceras de Firefox delata al bot). Se evita 'br' en Accept-Encoding: requests no lo descomprime
+# sin librerias extra. Solo perfiles de escritorio: la version movil de Amazon tiene otro HTML.
+HEADER_PROFILES = [
+    {  # Chrome en Windows
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/126.0.0.0 Safari/537.36",
+        "Accept": _ACCEPT_HTML,
+        "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+        "Accept-Encoding": "gzip, deflate",
+        "sec-ch-ua": '"Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"',
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": '"Windows"',
+        "Sec-Fetch-Dest": "document",
+        "Sec-Fetch-Mode": "navigate",
+        "Sec-Fetch-Site": "same-origin",
+        "Sec-Fetch-User": "?1",
+        "Upgrade-Insecure-Requests": "1",
+    },
+    {  # Edge en Windows
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0",
+        "Accept": _ACCEPT_HTML,
+        "Accept-Language": "es-ES,es;q=0.9",
+        "Accept-Encoding": "gzip, deflate",
+        "sec-ch-ua": '"Microsoft Edge";v="125", "Chromium";v="125", "Not.A/Brand";v="24"',
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": '"Windows"',
+        "Sec-Fetch-Dest": "document",
+        "Sec-Fetch-Mode": "navigate",
+        "Sec-Fetch-Site": "same-origin",
+        "Sec-Fetch-User": "?1",
+        "Upgrade-Insecure-Requests": "1",
+    },
+    {  # Chrome en Mac
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/124.0.0.0 Safari/537.36",
+        "Accept": _ACCEPT_HTML,
+        "Accept-Language": "es-ES,es;q=0.9,en-US;q=0.8,en;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "sec-ch-ua": '"Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"',
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": '"macOS"',
+        "Sec-Fetch-Dest": "document",
+        "Sec-Fetch-Mode": "navigate",
+        "Sec-Fetch-Site": "same-origin",
+        "Sec-Fetch-User": "?1",
+        "Upgrade-Insecure-Requests": "1",
+    },
+    {  # Firefox en Windows
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:127.0) Gecko/20100101 Firefox/127.0",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+        "Accept-Language": "es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3",
+        "Accept-Encoding": "gzip, deflate",
+        "Sec-Fetch-Dest": "document",
+        "Sec-Fetch-Mode": "navigate",
+        "Sec-Fetch-Site": "same-origin",
+        "Sec-Fetch-User": "?1",
+        "Upgrade-Insecure-Requests": "1",
+        "DNT": "1",
+    },
+    {  # Firefox en Linux
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:126.0) Gecko/20100101 Firefox/126.0",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "es-ES,es;q=0.5",
+        "Accept-Encoding": "gzip, deflate",
+        "Sec-Fetch-Dest": "document",
+        "Sec-Fetch-Mode": "navigate",
+        "Sec-Fetch-Site": "same-origin",
+        "Sec-Fetch-User": "?1",
+        "Upgrade-Insecure-Requests": "1",
+    },
+    {  # Safari en Mac
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) "
+        "Version/17.5 Safari/605.1.15",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "es-ES,es;q=0.9",
+        "Accept-Encoding": "gzip, deflate",
+        "Sec-Fetch-Dest": "document",
+        "Sec-Fetch-Mode": "navigate",
+        "Sec-Fetch-Site": "same-origin",
+    },
 ]
 
 BLOCK_MARKERS = (
@@ -463,17 +541,28 @@ class LocationError(Exception):
     """No se ha podido fijar la entrega en España: es mejor no publicar que publicar precios sin IVA."""
 
 
+def apply_profile(session: requests.Session, avoid: str | None = None) -> str:
+    """Pone en la sesion un perfil completo de cabeceras distinto al actual y devuelve su User-Agent."""
+    pool = [p for p in HEADER_PROFILES if p["User-Agent"] != avoid] or HEADER_PROFILES
+    profile = random.choice(pool)
+    session.headers.clear()
+    session.headers.update(profile)
+    session.headers["Referer"] = BASE + "/"
+    return profile["User-Agent"]
+
+
 def make_session() -> requests.Session:
     s = requests.Session()
-    s.headers.update(
-        {
-            "User-Agent": random.choice(USER_AGENTS),
-            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-            "Accept-Language": "es-ES,es;q=0.9",
-            "Referer": BASE + "/",
-        }
-    )
+    apply_profile(s)
     return s
+
+
+def rotate_profile(session: requests.Session) -> None:
+    """Cambia a otro perfil de cabeceras (se llama tras un fallo). Las cookies se conservan."""
+    headers = getattr(session, "headers", None)
+    if headers is None or not hasattr(headers, "clear"):  # sesiones simuladas en las pruebas
+        return
+    apply_profile(session, avoid=headers.get("User-Agent"))
 
 
 def fetch(session: requests.Session, url: str, retries: int = 3) -> str:
@@ -489,7 +578,9 @@ def fetch(session: requests.Session, url: str, retries: int = 3) -> str:
             last = f"HTTP {r.status_code}"
         log.warning("Amazon: %s, intento %d/%d", last, attempt, retries)
         if attempt < retries:
-            sleep(random.uniform(3, 7) * attempt)
+            # tras un 503/429/etc. se cambia de perfil y se espera mas: insistir igual solo empeora
+            rotate_profile(session)
+            sleep(random.uniform(5, 10) * attempt)
     raise Blocked(last)
 
 
@@ -1079,7 +1170,20 @@ def build_caption(p: Product, url: str, ch: Channel, category: dict | None = Non
 
 
 class TelegramError(Exception):
-    pass
+    """Fallo al hablar con Telegram. 'ambiguous' = puede que el mensaje SI se haya entregado
+    (tiempo agotado, conexion cortada o error 5xx tras enviarlo): reenviarlo duplicaria la oferta."""
+
+    def __init__(self, message: str, ambiguous: bool = False):
+        super().__init__(message)
+        self.ambiguous = ambiguous
+
+
+def _never_sent(exc: requests.RequestException) -> bool:
+    """True si la peticion ni siquiera llego a salir (no se pudo conectar)."""
+    if isinstance(exc, requests.ConnectTimeout):
+        return True
+    reason = getattr(exc.args[0], "reason", None) if exc.args else None
+    return type(reason).__name__ in ("NewConnectionError", "NameResolutionError", "ConnectTimeoutError")
 
 
 def tg_call(method: str, token: str, data: dict, retries: int = 2, files: dict | None = None) -> dict | None:
@@ -1089,7 +1193,9 @@ def tg_call(method: str, token: str, data: dict, retries: int = 2, files: dict |
             r = requests.post(url, data=data, files=files, timeout=60 if files else 20)
         except requests.RequestException as exc:
             # 'from None': la excepcion original contiene la URL con el token
-            raise TelegramError(f"{method}: error de red ({type(exc).__name__})") from None
+            raise TelegramError(
+                f"{method}: error de red ({type(exc).__name__})", ambiguous=not _never_sent(exc)
+            ) from None
         try:
             body = r.json()
         except ValueError:
@@ -1099,7 +1205,10 @@ def tg_call(method: str, token: str, data: dict, retries: int = 2, files: dict |
             sleep(min(int(wait), 30))
             continue
         if not r.ok:
-            raise TelegramError(f"{method}: HTTP {r.status_code} {scrub(str(body.get('description', '')))}")
+            raise TelegramError(
+                f"{method}: HTTP {r.status_code} {scrub(str(body.get('description', '')))}",
+                ambiguous=r.status_code >= 500,
+            )
         return body
 
 
@@ -1128,11 +1237,15 @@ def send_deal(
                 tg_call("sendPhoto", token, base, files={"photo": ("oferta.jpg", photo, "image/jpeg")})
             )
         except TelegramError as exc:
+            if exc.ambiguous:  # puede estar ya publicado: no se prueba otra via
+                raise
             log.warning("sendPhoto con archivo fallo (%s)", exc)
     if photo_url:
         try:
             return message_id(tg_call("sendPhoto", token, {**base, "photo": photo_url}))
         except TelegramError as exc:
+            if exc.ambiguous:
+                raise
             log.warning("sendPhoto con URL fallo (%s); envio solo texto", exc)
     text = {"chat_id": chat_id, "text": caption, "parse_mode": "HTML"}
     if markup:
@@ -1260,10 +1373,10 @@ def record_problem(ch: Channel, state_path: Path, kind: str, detail: str, now: d
     due = alerted is None or now - alerted >= timedelta(minutes=ch.alert_repeat_min)
     if problem[key] >= threshold and due:
         if kind == "fail":
-            text = f"⚠️ {ch.name}: {problem[key]} fallos seguidos. Ultimo: {problem['last']}. Sigo reintentando."
+            text = f"⚠️ {problem[key]} fallos seguidos. Ultimo: {problem['last']}. Sigo reintentando."
         else:
             text = (
-                f"⚠️ {ch.name}: {problem[key]} intentos seguidos sin ningun producto que publicar. "
+                f"⚠️ {problem[key]} intentos seguidos sin ningun producto que publicar. "
                 "Puede que los filtros sean demasiado estrictos o que Amazon no devuelva resultados."
             )
         if send_alert(ch, text):
@@ -1277,7 +1390,7 @@ def record_success(ch: Channel, state_path: Path) -> None:
     if not problem:
         return
     if problem.get("alerted_at"):
-        send_alert(ch, f"✅ {ch.name}: vuelve a publicar con normalidad.")
+        send_alert(ch, "✅ Vuelve a publicar con normalidad.")
     set_state_key(state_path, "problem", {})
 
 
@@ -1492,9 +1605,14 @@ def run_channel(
                 build_keyboard(ch, p.asin, tag),
             )
         except TelegramError as exc:
-            if not force:
-                record_problem(ch, state_path, "fail", str(exc), now)
-            raise
+            if not exc.ambiguous:
+                if not force:
+                    record_problem(ch, state_path, "fail", str(exc), now)
+                raise
+            # Telegram no contesto, pero el mensaje pudo llegar. Se da por publicado (sin id): perder
+            # una oferta es mejor que publicarla repetida.
+            log.warning("%s: envio sin confirmar (%s); se da por publicado para no repetirlo", ch.name, exc)
+            msg_id = None
         cat = chosen_cat.get(p.asin) or {}
         state[p.asin] = {
             "t": datetime.now(timezone.utc).isoformat(),
