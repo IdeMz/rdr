@@ -1,0 +1,35 @@
+{
+ "cats": {
+  "Domótica": "2026-11-04T23:02:32.803093+00:00"
+ },
+ "next_at": "2026-11-04T23:32:38.845041+00:00",
+ "posted": {
+  "B08GDC99PX": {
+   "c": "Domótica",
+   "d": 44,
+   "e": "💡",
+   "m": 48,
+   "p": 9.99,
+   "t": "2026-11-04T23:03:00.315188+00:00",
+   "title": "Tapo L530E - Bombilla Inteligente WiFi, RGB Multicolor, 800lm, 8.3W, E27",
+   "v": []
+  }
+ },
+ "problem": {},
+ "rejected": {},
+ "reserve": [
+  {
+   "a": "B09KRVN7XG",
+   "c": "Domótica",
+   "e": "💡",
+   "img": "https://m.media-amazon.com/images/I/61A8VvCRK9L._AC_UL320_.jpg",
+   "n": 7400,
+   "op": 14.9,
+   "p": 10.99,
+   "r": 4.4,
+   "t": "2026-11-04T23:02:32.803093+00:00",
+   "title": "Tapo L520E-Bombilla inteligente WiFi, Blanco Neutro 4000K, 8.7W/ 806lm, E27"
+  }
+ ],
+ "summary_day": null
+}
