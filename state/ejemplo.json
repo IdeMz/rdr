@@ -2,6 +2,7 @@
  "cats": {
   "Accesorios de coche": "2026-11-04T20:35:30.743063+00:00",
   "Afeitado y depilación": "2026-11-04T20:01:05.029072+00:00",
+  "Almacenamiento": "2026-11-04T21:45:42.076679+00:00",
   "Aspiradoras": "2026-11-04T08:10:37.002731+00:00",
   "Auriculares": "2026-11-03T20:50:44.557294+00:00",
   "Cafeteras": "2026-11-04T16:01:05.818600+00:00",
@@ -28,7 +29,7 @@
   "Videojuegos": "2026-11-04T09:20:49.508625+00:00",
   "Zapatillas": "2026-11-04T12:55:44.311669+00:00"
  },
- "next_at": "2026-11-04T21:41:32.811432+00:00",
+ "next_at": "2026-11-04T22:20:09.585090+00:00",
  "posted": {
   "B01L4N33DC": {
    "c": "Zapatillas",
@@ -120,6 +121,16 @@
    "p": 11.99,
    "t": "2026-11-04T17:11:01.542491+00:00",
    "title": "HANPOSH",
+   "v": []
+  },
+  "B09ZRD38D8": {
+   "c": "Almacenamiento",
+   "d": 29,
+   "e": "💾",
+   "m": 46,
+   "p": 231.26,
+   "t": "2026-11-04T21:46:05.472979+00:00",
+   "title": "WD_BLACK 1TB P40 Game Drive SSD USB-C USB 3.2 Gen 2x2 Memoria de estado sólido NVMe externa hasta 2000 MB/s Iluminación RGB personalizable compatible con Playstation, Xbox, PC y Mac",
    "v": []
   },
   "B0BL898WJZ": {
