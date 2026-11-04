@@ -1305,6 +1305,20 @@ def product_from_dict(d: dict) -> Product:
     )
 
 
+def diversify(items: list[dict], posted: dict, ch: Channel) -> list[dict]:
+    """Deja en la reserva ofertas variadas: nada parecido a lo ya publicado ni entre si, y una por categoria."""
+    titles = [v.get("title", "") for v in posted.values()]
+    out, cats = [], set()
+    for d in items:
+        cat = d.get("c") or d["a"]
+        if cat in cats or any(similar(d.get("title", ""), t, ch.similarity) for t in titles):
+            continue
+        cats.add(cat)
+        titles.append(d.get("title", ""))
+        out.append(d)
+    return out
+
+
 def load_reserve(path: Path, now: datetime, ch: Channel, exclude: dict | None = None) -> list[dict]:
     """Ofertas de reserva todavia validas (recientes y no publicadas ni descartadas)."""
     raw = _read_state_file(path).get("reserve")
@@ -1322,7 +1336,7 @@ def load_reserve(path: Path, now: datetime, ch: Channel, exclude: dict | None = 
             continue
         seen.add(d["a"])
         out.append(d)
-    return out
+    return diversify(out, exclude, ch) if exclude else out
 
 
 def _offer_open(state_path: Path, now: datetime, ch: Channel) -> bool:
@@ -1759,14 +1773,17 @@ def run_channel(
         if cat:
             cats[cat["nombre"]] = now.isoformat()
         check_pages = session is not None and (cch.min_listing_days > 0 or cch.min_history_drop > 0)
+        # un sobrante como mucho por categoria, y solo si esa categoria aun no esta en la reserva
+        extras_before = len(extras)
+        want = 1 if need and not any(d.get("c") == (cat or {}).get("nombre", "") for d in reserve) else 0
         candidates = pick(
-            products, cch, state, limit=MAX_PAGE_CHECKS if check_pages else ch.max_posts + need,
+            products, cch, state, limit=MAX_PAGE_CHECKS if check_pages else ch.max_posts + want,
             skip=set(rejected) | known,
         )
         log.info("%s: %s", label, funnel(products, cch, state, skip=set(rejected)))
 
         for p in candidates:
-            if len(chosen) >= ch.max_posts and len(extras) >= need:
+            if len(chosen) >= ch.max_posts and len(extras) - extras_before >= want:
                 break
             if p.asin in known or any(p.asin == e.asin for e, _ in extras):
                 continue
@@ -1851,7 +1868,7 @@ def run_channel(
     if keep_reserve and published:
         fresh = [product_to_dict(e, c, now) for e, c in extras if e.asin not in state]
         kept = [d for d in reserve if d["a"] not in state]
-        set_state_key(state_path, "reserve", (fresh + kept)[: ch.reserve_size])
+        set_state_key(state_path, "reserve", diversify(fresh + kept, state, ch)[: ch.reserve_size])
     return published
 
 

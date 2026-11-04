@@ -1681,7 +1681,7 @@ def test_publish_stores_the_next_best_offers_as_reserve(tmp_path, monkeypatch):
     saved = json.loads((tmp_path / "t.json").read_text())
     published = next(iter(saved["posted"]))
     reserve = saved["reserve"]
-    assert len(reserve) == 3 and published not in [d["a"] for d in reserve]
+    assert len(reserve) == 1 and published not in [d["a"] for d in reserve]  # una por categoria
     assert all(d["title"] and d["p"] and d["img"] for d in reserve)
     assert "tg_offset" not in saved or isinstance(saved["tg_offset"], int)
 
@@ -1848,3 +1848,29 @@ def test_save_state_keeps_unknown_keys(tmp_path):
     deals.save_state(path, {}, next_at=NOW_IN)
     saved = json.loads(path.read_text())
     assert saved["reserve"] == [{"a": "X"}] and saved["tg_offset"] == 7
+
+
+def test_diversify_keeps_one_per_category_and_drops_lookalikes_of_posted():
+    ch = channel()
+    posted = {"P1": {"title": "DDPAI Mini Pro 4K Dash CAM Coche Camara 2160P WiFi GPS"}}
+    items = [
+        {"a": "A1", "c": "Accesorios de coche", "title": "DDPAI Mini Pro 4K Dash CAM Coche Camara 2160P WiFi"},
+        {"a": "A2", "c": "Accesorios de coche", "title": "Aspirador de coche portatil potente"},
+        {"a": "A3", "c": "Accesorios de coche", "title": "Cargador de coche USB rapido doble"},
+        {"a": "A4", "c": "Hogar", "title": "Lampara de mesa LED regulable"},
+        {"a": "A5", "c": "Hogar", "title": "Organizador de cocina apilable"},
+    ]
+    got = deals.diversify(items, posted, ch)
+    assert [d["a"] for d in got] == ["A2", "A4"]  # A1 parecida a lo publicado; A3/A5 repiten categoria
+
+
+def test_reserve_loaded_for_offers_skips_lookalikes_of_what_was_just_posted(tmp_path):
+    ch = channel()
+    path = tmp_path / "t.json"
+    deals.set_state_key(path, "reserve", [
+        {"a": "A1", "c": "Coche", "title": "DDPAI Mini Pro 4K Dash CAM Coche Camara 2160P", "p": 50.0, "t": NOW_IN.isoformat()},
+        {"a": "A2", "c": "Hogar", "title": "Lampara de mesa LED regulable", "p": 20.0, "t": NOW_IN.isoformat()},
+    ])
+    posted = {"P1": {"title": "DDPAI Mini Pro 4K Dash CAM Coche Camara 2160P WiFi", "t": NOW_IN.isoformat()}}
+    got = deals.load_reserve(path, NOW_IN, ch, exclude=posted)
+    assert [d["a"] for d in got] == ["A2"]
