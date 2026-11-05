@@ -136,7 +136,9 @@
    "p": 699.0,
    "t": "2026-11-05T13:36:01.953859+00:00",
    "title": "HP 15 Ordenador portátil 15,6\" FHD, Ryzen 5, 16GB, 512SSD, Windows 11",
-   "v": []
+   "v": [
+    "5f2e3ed7ec51"
+   ]
   },
   "B0HDXYLPHV": {
    "c": "Smartwatch",
@@ -200,6 +202,7 @@
   }
  ],
  "summary_day": null,
+ "tg_offset": 511048048,
  "x_copy": {
   "day": "2026-11-05",
   "n": 6
