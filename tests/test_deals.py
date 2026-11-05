@@ -1904,21 +1904,30 @@ def test_x_weight_counts_emojis_double_and_latin_single():
     assert deals.x_weight("€") == 2  # el simbolo del euro tambien cuenta doble para X
 
 
+def test_x_text_matches_the_format_used_by_hand():
+    ch = channel(x_copy=True)
+    url = "https://www.amazon.es/dp/B0FG3ZYOQ?tag=mitag-21"
+    p = xprod(title="Mellerware - Freidora sin aceite Crunchy Plus 5.5L 1500W | 11 Menus Predefinidos",
+              price=39.99, old=69.99)
+    assert deals.build_x_text(p, url, ch, {"emoji": "💡"}) == (
+        "Mellerware - Freidora sin aceite Crunchy Plus 5.5L 1500W | 11 Menus Predefinidos\n\n"
+        "❌69.99€\n🛒39.99€👉-43%\n\n" + url
+    )
+
+
 def test_x_text_fits_280_even_with_a_huge_title():
     ch = channel(x_copy=True)
     url = "https://www.amazon.es/dp/B000000001?tag=mitag-21"
-    text = deals.build_x_text(xprod(title="Super " * 80 + "final"), url, ch, {"emoji": "💡"})
+    text = deals.build_x_text(xprod(title="Super " * 80 + "final"), url, ch)
     assert deals.x_weight(text.replace(url, "")) + deals.X_URL_WEIGHT <= deals.X_LIMIT
-    assert text.startswith("💡 ") and "…" in text.split("\n")[0]
-    assert "39,99€ (antes 79,99€) · -50%" in text and url in text
-    assert "#chollo #amazon (Enlace afiliado)" in text
+    assert "…" in text.split("\n")[0] and url in text and "🛒39.99€👉-50%" in text
 
 
-def test_x_text_keeps_short_titles_and_allows_no_hashtags_or_disclosure():
-    ch = channel(x_copy=True, x_hashtags="", x_disclosure="")
-    text = deals.build_x_text(xprod(), "https://www.amazon.es/dp/B000000001", ch)
-    assert text.splitlines()[0] == "🔥 Auriculares inalambricos"
-    assert text.splitlines()[-1].startswith("👉 ") and "…" not in text
+def test_x_text_whole_prices_without_old_price_and_optional_tags():
+    ch = channel(x_copy=True, x_hashtags="#chollo", x_disclosure="Enlace afiliado")
+    text = deals.build_x_text(xprod(price=23.0, old=None), "https://www.amazon.es/dp/B000000001", ch)
+    assert "❌" not in text and "🛒23€" in text and "👉" not in text.split("🛒")[1].split("\n")[0]
+    assert text.endswith("#chollo (Enlace afiliado)")
 
 
 def x_env(monkeypatch):
@@ -1936,6 +1945,7 @@ def test_x_copy_is_sent_privately_with_the_text_in_a_code_block(tmp_path, monkey
     sent = x_sent(tg)
     assert len(sent) == 1
     assert "<code>" in sent[0]["caption"] and "tag=tag-21" in sent[0]["caption"] and "1/6" in sent[0]["caption"]
+    assert "🛒" in sent[0]["caption"] and "❌" in sent[0]["caption"]
     assert [d for m, d in tg.calls if m == "sendPhoto" and d.get("chat_id") == "@canal"]  # y el canal, como siempre
 
 

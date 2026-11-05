@@ -278,8 +278,8 @@ class Channel:
     x_copy: bool = False
     x_min_discount: int = 30  # solo ofertas con al menos este descuento (en %)
     x_max_per_day: int = 6  # como mucho tantos textos al dia
-    x_hashtags: str = "#chollo #amazon"
-    x_disclosure: str = "Enlace afiliado"  # aviso de afiliacion; vacio para quitarlo
+    x_hashtags: str = ""  # por ejemplo "#chollo #amazon"; vacio = sin etiquetas
+    x_disclosure: str = ""  # por ejemplo "Enlace afiliado"; vacio = sin aviso
 
 
 def load_channel(path: Path) -> Channel:
@@ -1310,26 +1310,36 @@ def x_weight(text: str) -> int:
     return total
 
 
+def x_price(value: float) -> str:
+    """39.99 -> '39.99€' ; 23.0 -> '23€' (con punto decimal, como en las publicaciones de X)."""
+    text = f"{value:.2f}"
+    return (text[:-3] if text.endswith(".00") else text) + "€"
+
+
 def build_x_text(p: Product, url: str, ch: Channel, cat: dict | None = None) -> str:
-    """Publicacion para X (hasta 280): titulo recortado, precio, descuento, enlace y etiquetas."""
-    emoji = (cat or {}).get("emoji") or "🔥"
-    price = f"💶 {fmt_eur(p.price)}"
-    if p.old_price and p.old_price > (p.price or 0):
-        price += f" (antes {fmt_eur(p.old_price)})"
+    """Publicacion para X (hasta 280): titulo, precio anterior, precio actual con descuento y enlace.
+
+    Deja una linea en blanco bajo el titulo para que puedas anadir a mano, tras comprobar el precio,
+    el aviso de 'precio mas bajo'. Si x_hashtags / x_disclosure tienen texto, se anade al final.
+    """
+    lines = []
+    if p.old_price and p.price and p.old_price > p.price:
+        lines.append(f"❌{x_price(p.old_price)}")
+    now_line = f"🛒{x_price(p.price)}"
     if p.discount:
-        price += f" · -{p.discount}%"
+        now_line += f"👉-{p.discount}%"
+    lines.append(now_line)
     tail = " ".join(x for x in (ch.x_hashtags.strip(), f"({ch.x_disclosure.strip()})" if ch.x_disclosure.strip() else "") if x)
-    rest = f"\n{price}\n👉 {url}" + (f"\n{tail}" if tail else "")
-    fixed = x_weight(emoji + " ") + x_weight(rest.replace(url, "")) + X_URL_WEIGHT
-    room = X_LIMIT - fixed
+    rest = "\n\n" + "\n".join(lines) + "\n\n" + url + (f"\n{tail}" if tail else "")
+    room = X_LIMIT - x_weight(rest.replace(url, "")) - X_URL_WEIGHT
     title = re.sub(r"\s+", " ", p.title).strip()
     if x_weight(title) > room:
         cut = title
         while cut and x_weight(cut) + 1 > room:
             cut = cut[:-1]
         cut = cut.rsplit(" ", 1)[0] if " " in cut and len(cut) > 20 else cut
-        title = cut.rstrip(" ,.-–·:;(") + "…"
-    return f"{emoji} {title}{rest}"
+        title = cut.rstrip(" ,.-–·:;(|") + "…"
+    return title + rest
 
 
 def maybe_send_x_copy(
