@@ -10,13 +10,14 @@
   "Gatos": "2026-11-05T13:01:09.573881+00:00",
   "Jardín": "2026-11-05T10:05:33.583568+00:00",
   "Nutrición deportiva": "2026-11-05T10:40:44.258434+00:00",
+  "Perfumes": "2026-11-05T14:10:43.141327+00:00",
   "Periféricos": "2026-11-05T07:01:09.065539+00:00",
   "Portátiles": "2026-11-05T13:35:39.971891+00:00",
   "Robots de cocina": "2026-11-05T08:15:41.952994+00:00",
   "Smartwatch": "2026-11-05T11:15:40.907800+00:00",
   "Suplementos": "2026-11-05T07:40:39.265430+00:00"
  },
- "next_at": "2026-11-05T14:09:57.754181+00:00",
+ "next_at": "2026-11-05T14:45:28.722978+00:00",
  "posted": {
   "B0095SMIP8": {
    "c": "Gatos",
@@ -66,6 +67,16 @@
    "p": 22.99,
    "t": "2026-11-05T09:30:55.475102+00:00",
    "title": "Tapo C200 - Cámara de Vigilancia WiFi Interior 360º, 1080p, Detección IA",
+   "v": []
+  },
+  "B08FBQHY35": {
+   "c": "Perfumes",
+   "d": 37,
+   "e": "🌸",
+   "m": 62,
+   "p": 64.95,
+   "t": "2026-11-05T14:11:12.475410+00:00",
+   "title": "Jpg le male le parfum epv 75ml",
    "v": []
   },
   "B08GDC99PX": {
@@ -165,6 +176,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B000C1UBQU",
+   "c": "Perfumes",
+   "e": "🌸",
+   "img": "https://m.media-amazon.com/images/I/51zdSiNFrHL._AC_UL320_.jpg",
+   "n": 7600,
+   "op": 38.95,
+   "p": 27.9,
+   "r": 4.6,
+   "t": "2026-11-05T14:10:43.141327+00:00",
+   "title": "CALVIN KLEIN EVERYONE Eau de Parfum para mujer | Fragancia femenina floral con notas de bergamota y lirio blanco | Atemporal y larga duración"
+  },
+  {
    "a": "B0CQ53RVTW",
    "c": "Altavoces",
    "e": "🔊",
@@ -187,18 +210,6 @@
    "r": 4.5,
    "t": "2026-11-05T11:15:40.907800+00:00",
    "title": "FOSMET Reloj Inteligente Mujer Salud ECG/HRV/BMI Presión Arterial, Rosa Oro"
-  },
-  {
-   "a": "B0HCVH7ZZJ",
-   "c": "Nutrición deportiva",
-   "e": "💪",
-   "img": "https://m.media-amazon.com/images/I/6167LiVzGIL._AC_UL320_.jpg",
-   "n": 144,
-   "op": 33.32,
-   "p": 29.99,
-   "r": 4.4,
-   "t": "2026-11-05T10:40:44.258434+00:00",
-   "title": "Bulk Pure Whey Protein + Colágeno, Vainilla, 900g"
   }
  ],
  "summary_day": null,
