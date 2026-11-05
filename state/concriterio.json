@@ -2,6 +2,7 @@
  "cats": {
   "Afeitado y depilación": "2026-11-05T09:31:10.693430+00:00",
   "Altavoces": "2026-11-05T11:50:44.194753+00:00",
+  "Café y cápsulas": "2026-11-05T12:25:32.144399+00:00",
   "Climatización": "2026-11-05T07:40:39.265430+00:00",
   "Cámaras de seguridad": "2026-11-05T09:30:32.450110+00:00",
   "Domótica": "2026-11-04T23:02:32.803093+00:00",
@@ -13,7 +14,7 @@
   "Smartwatch": "2026-11-05T11:15:40.907800+00:00",
   "Suplementos": "2026-11-05T07:40:39.265430+00:00"
  },
- "next_at": "2026-11-05T12:22:34.967535+00:00",
+ "next_at": "2026-11-05T12:59:47.268375+00:00",
  "posted": {
   "B00CHJ3DW4": {
    "c": "Nutrición deportiva",
@@ -23,6 +24,16 @@
    "p": 16.99,
    "t": "2026-11-05T10:41:12.221135+00:00",
    "title": "Myprotein Creatina Monohidrato en Polvo, Sin Sabor, 500g",
+   "v": []
+  },
+  "B01AMAYRHY": {
+   "c": "Café y cápsulas",
+   "d": 17,
+   "e": "🫘",
+   "m": 59,
+   "p": 22.5,
+   "t": "2026-11-05T12:25:53.456959+00:00",
+   "title": "NESCAFÉ Dolce Gusto Café Cortado 90 cápsulas (3x30)",
    "v": []
   },
   "B01MU77FQQ": {
