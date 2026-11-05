@@ -2,11 +2,12 @@
  "cats": {
   "Climatización": "2026-11-05T07:40:39.265430+00:00",
   "Domótica": "2026-11-04T23:02:32.803093+00:00",
+  "Freidoras de aire": "2026-11-05T08:50:42.521815+00:00",
   "Periféricos": "2026-11-05T07:01:09.065539+00:00",
   "Robots de cocina": "2026-11-05T08:15:41.952994+00:00",
   "Suplementos": "2026-11-05T07:40:39.265430+00:00"
  },
- "next_at": "2026-11-05T08:49:17.401688+00:00",
+ "next_at": "2026-11-05T09:24:26.254979+00:00",
  "posted": {
   "B01MU77FQQ": {
    "c": "Periféricos",
@@ -36,6 +37,16 @@
    "p": 399.99,
    "t": "2026-11-05T07:41:06.685336+00:00",
    "title": "Philips Air Performer 8000 3en1 Purificador, Calefactor y Ventilador, 70m²",
+   "v": []
+  },
+  "B0DVLGQX5N": {
+   "c": "Freidoras de aire",
+   "d": 43,
+   "e": "🍟",
+   "m": 52,
+   "p": 39.99,
+   "t": "2026-11-05T08:51:03.417762+00:00",
+   "title": "Mellerware - Freidora sin aceite Crunchy Plus 5.5L 1500W | 11 Menús Predefinidos | Capacidad para 3-5 raciones | Temporizador Programable | Pantalla para controlar la temperatura | Air Fryer 80-200º",
    "v": []
   },
   "B0HGQG1L2J": {
@@ -92,6 +103,6 @@
  "summary_day": null,
  "x_copy": {
   "day": "2026-11-05",
-  "n": 2
+  "n": 3
  }
 }
