@@ -6,12 +6,23 @@
   "Domótica": "2026-11-04T23:02:32.803093+00:00",
   "Freidoras de aire": "2026-11-05T08:50:42.521815+00:00",
   "Jardín": "2026-11-05T10:05:33.583568+00:00",
+  "Nutrición deportiva": "2026-11-05T10:40:44.258434+00:00",
   "Periféricos": "2026-11-05T07:01:09.065539+00:00",
   "Robots de cocina": "2026-11-05T08:15:41.952994+00:00",
   "Suplementos": "2026-11-05T07:40:39.265430+00:00"
  },
- "next_at": "2026-11-05T10:37:54.165710+00:00",
+ "next_at": "2026-11-05T11:10:54.166081+00:00",
  "posted": {
+  "B00CHJ3DW4": {
+   "c": "Nutrición deportiva",
+   "d": 50,
+   "e": "💪",
+   "m": 56,
+   "p": 16.99,
+   "t": "2026-11-05T10:41:12.221135+00:00",
+   "title": "Myprotein Creatina Monohidrato en Polvo, Sin Sabor, 500g",
+   "v": []
+  },
   "B01MU77FQQ": {
    "c": "Periféricos",
    "d": 36,
@@ -97,6 +108,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0HCVH7ZZJ",
+   "c": "Nutrición deportiva",
+   "e": "💪",
+   "img": "https://m.media-amazon.com/images/I/6167LiVzGIL._AC_UL320_.jpg",
+   "n": 144,
+   "op": 33.32,
+   "p": 29.99,
+   "r": 4.4,
+   "t": "2026-11-05T10:40:44.258434+00:00",
+   "title": "Bulk Pure Whey Protein + Colágeno, Vainilla, 900g"
+  },
+  {
    "a": "B083YCYMW4",
    "c": "Robots de cocina",
    "e": "🥣",
@@ -107,23 +130,11 @@
    "r": 4.4,
    "t": "2026-11-05T08:15:41.952994+00:00",
    "title": "Bosch - Robot de cocina con báscula, MUM 5, 1000 W, Cuenco de acero inoxidable (3.9 L), Juego profesional de pastelería, Blanco, MUM5XW20"
-  },
-  {
-   "a": "B0FM8L1GCX",
-   "c": "Climatización",
-   "e": "🌬️",
-   "img": "https://m.media-amazon.com/images/I/81UYTwShXDL._AC_UL320_.jpg",
-   "n": 5000,
-   "op": 84.99,
-   "p": 73.56,
-   "r": 4.6,
-   "t": "2026-11-05T07:40:39.265430+00:00",
-   "title": "Dreo Calefactor Inteligente 2000W para Dormitorio, Estufa Portátil 16 Pulgadas con Oscilación de 70°, Termostato, Mando a Distancia, 3 Modos, 3 Velocidades, Temporizador 12H, Solaris Slim H3S Mejorado"
   }
  ],
  "summary_day": null,
  "x_copy": {
   "day": "2026-11-05",
-  "n": 4
+  "n": 5
  }
 }
