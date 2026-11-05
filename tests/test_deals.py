@@ -1988,3 +1988,51 @@ def test_x_copy_failure_never_breaks_the_publication(tmp_path, monkeypatch):
     assert deals.run_channel(channel(x_copy=True, x_min_discount=10), state_dir=tmp_path, now=NOW_IN) == 1
     saved = json.loads((tmp_path / "t.json").read_text())
     assert len(saved["posted"]) == 1 and "x_copy" not in saved
+
+
+# ------------------------------------------------- precio por kilo no es el precio anterior
+
+def unit_card(price, unit_html, strike_html=""):
+    return f"""
+    <div data-component-type="s-search-result" data-asin="B00CHJ3DW4">
+      <img class="s-image" src="https://m.media-amazon.com/images/I/x.jpg">
+      <h2 aria-label="Creatina 500g"><a><span>Creatina 500g</span></a></h2>
+      <span class="a-icon-alt">4,5 de 5 estrellas</span><span class="s-underline-text">2.000</span>
+      <span class="a-price" data-a-size="xl"><span class="a-offscreen">{price}</span></span>
+      {strike_html}
+      <span class="a-size-base a-color-secondary">{unit_html}</span>
+    </div>"""
+
+
+KG = '(<span class="a-price a-text-price" data-a-size="b" data-a-color="secondary"><span class="a-offscreen">33,98 €</span></span>/kg)'
+STRIKE = ('<span class="a-size-base a-color-secondary">PVPR: <span class="a-price a-text-price" data-a-size="b" '
+          'data-a-strike="true" data-a-color="secondary"><span class="a-offscreen">24,99 €</span></span></span>')
+
+
+def parse_one(html):
+    (p,) = deals.parse_results("<html><body>" + html + "</body></html>")
+    return p
+
+
+def test_price_per_kilo_is_not_taken_as_the_old_price():
+    p = parse_one(unit_card("16,99 €", KG))
+    assert p.price == 16.99 and p.old_price is None and p.discount == 0
+
+
+def test_real_strikethrough_price_wins_over_the_unit_price_in_any_order():
+    assert parse_one(unit_card("16,99 €", KG, STRIKE)).old_price == 24.99
+    assert parse_one(unit_card("16,99 €", STRIKE + KG)).old_price == 24.99
+
+
+@pytest.mark.parametrize("suffix", ["/kg", "/100 g", "/l", "/100 ml", "/ud.", "/unidad", "/ 100g"])
+def test_unit_price_suffixes_are_all_ignored(suffix):
+    html = (
+        '(<span class="a-price a-text-price" data-a-size="b"><span class="a-offscreen">1,99 €</span></span>'
+        + suffix + ")"
+    )
+    assert parse_one(unit_card("0,99 €", html)).old_price is None
+
+
+def test_unmarked_strikethrough_price_still_works_without_the_strike_attribute():
+    html = unit_card("16,99 €", "", '<span class="a-price a-text-price"><span class="a-offscreen">24,99 €</span></span>')
+    assert parse_one(html).old_price == 24.99

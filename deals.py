@@ -494,6 +494,33 @@ def _text(el) -> str:
     return el.get_text(" ", strip=True) or el.get("aria-label", "") or ""
 
 
+def _is_unit_price(span) -> bool:
+    """True si ese precio es el de por kilo / litro / unidad, como '(33,98 €/kg)'.
+
+    Amazon lo pinta con las mismas clases que el precio tachado, pero va entre parentesis y seguido de '/kg'.
+    """
+    after = "".join(sib.get_text() if hasattr(sib, "get_text") else str(sib) for sib in span.next_siblings)
+    before = "".join(
+        sib.get_text() if hasattr(sib, "get_text") else str(sib) for sib in span.previous_siblings
+    )
+    if re.match(r"\s*\)?\s*/\s*[A-Za-zµ0-9]", after):
+        return True
+    return bool(re.search(r"\(\s*$", before)) and "/" in after[:12]
+
+
+def parse_old_price(card) -> float | None:
+    """Precio anterior (PVPR / tachado) de una tarjeta, sin confundirlo con el precio por kilo o litro."""
+    spans = [s for s in card.select("span.a-price.a-text-price") if not _is_unit_price(s)]
+    if not spans:
+        return None
+    struck = [s for s in spans if s.get("data-a-strike") == "true"]
+    for span in struck or spans:
+        value = parse_price(_text(span.select_one("span.a-offscreen")))
+        if value is not None:
+            return value
+    return None
+
+
 def parse_results(html: str) -> list[Product]:
     soup = BeautifulSoup(html, "html.parser")
     products: list[Product] = []
@@ -506,7 +533,7 @@ def parse_results(html: str) -> list[Product]:
         if h2 is not None:
             title = (h2.get("aria-label") or h2.get_text(" ", strip=True) or "").strip()
         price = parse_price(_text(card.select_one("span.a-price:not(.a-text-price) span.a-offscreen")))
-        old_price = parse_price(_text(card.select_one("span.a-price.a-text-price span.a-offscreen")))
+        old_price = parse_old_price(card)
 
         rating_el = card.select_one("span.a-icon-alt") or card.select_one('[aria-label*="de 5 estrellas"]')
         rating = parse_rating(_text(rating_el))
