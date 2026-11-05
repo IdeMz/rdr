@@ -13,6 +13,7 @@
   "Gatos": "2026-11-05T13:01:09.573881+00:00",
   "Iluminación": "2026-11-05T17:15:47.121170+00:00",
   "Jardín": "2026-11-05T10:05:33.583568+00:00",
+  "Menaje de cocina": "2026-11-05T17:50:46.417577+00:00",
   "Monitores": "2026-11-05T16:40:53.798263+00:00",
   "Nutrición deportiva": "2026-11-05T10:40:44.258434+00:00",
   "Perfumes": "2026-11-05T14:10:43.141327+00:00",
@@ -22,7 +23,7 @@
   "Smartwatch": "2026-11-05T11:15:40.907800+00:00",
   "Suplementos": "2026-11-05T07:40:39.265430+00:00"
  },
- "next_at": "2026-11-05T17:48:38.507862+00:00",
+ "next_at": "2026-11-05T18:21:29.591945+00:00",
  "posted": {
   "B0095SMIP8": {
    "c": "Gatos",
@@ -194,6 +195,16 @@
    "title": "12M Dispositivo de Enfriamiento por Aspersión, Sistema de Riego de Jardines, 75 Pcs Kit de Pulverización de Jardín, Adecuado para Eventos al Aire Libre, Jardines, Patios, Sombrillas y Techos",
    "v": []
   },
+  "B0H2TPD39T": {
+   "c": "Menaje de cocina",
+   "d": 27,
+   "e": "🍳",
+   "m": 68,
+   "p": 109.99,
+   "t": "2026-11-05T17:51:13.928517+00:00",
+   "title": "CAROTE Juego de Ollas y Sartenes Antiadherentes 13 Piezas, Marrón Oscuro",
+   "v": []
+  },
   "B0H4ZJ6MD7": {
    "c": "Portátiles",
    "d": 26,
@@ -231,6 +242,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0DBHLNQK2",
+   "c": "Menaje de cocina",
+   "e": "🍳",
+   "img": "https://m.media-amazon.com/images/I/9106ZSaFuwL._AC_UL320_.jpg",
+   "n": 504,
+   "op": 199.99,
+   "p": 142.94,
+   "r": 4.3,
+   "t": "2026-11-05T17:50:46.417577+00:00",
+   "title": "Kitchen Academy Juego de Ollas y Sartenes Antiadherentes 30 Piezas Verde"
+  },
+  {
    "a": "B0D12GJW72",
    "c": "Iluminación",
    "e": "🪔",
@@ -253,18 +276,6 @@
    "r": 4.6,
    "t": "2026-11-05T15:31:07.211566+00:00",
    "title": "L'Oréal Paris Revitalift Filler Crema Hidratante Día Nº1 con SPF 50, 50ml"
-  },
-  {
-   "a": "B0CDCFRXPN",
-   "c": "Cafeteras",
-   "e": "☕",
-   "img": "https://m.media-amazon.com/images/I/61w6-XowuZL._AC_UL320_.jpg",
-   "n": 1000,
-   "op": 459.99,
-   "p": 359.95,
-   "r": 4.2,
-   "t": "2026-11-05T14:45:44.188384+00:00",
-   "title": "Philips 3300 Cafetera Superautomática, Espumador de leche, 5 bebidas, Negro"
   }
  ],
  "summary_day": null,
