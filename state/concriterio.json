@@ -5,6 +5,7 @@
   "Cafeteras": "2026-11-05T14:45:44.188384+00:00",
   "Café y cápsulas": "2026-11-05T12:25:32.144399+00:00",
   "Climatización": "2026-11-05T07:40:39.265430+00:00",
+  "Cuidado de la piel": "2026-11-05T15:31:07.211566+00:00",
   "Cámaras de seguridad": "2026-11-05T09:30:32.450110+00:00",
   "Domótica": "2026-11-04T23:02:32.803093+00:00",
   "Freidoras de aire": "2026-11-05T08:50:42.521815+00:00",
@@ -18,7 +19,7 @@
   "Smartwatch": "2026-11-05T11:15:40.907800+00:00",
   "Suplementos": "2026-11-05T07:40:39.265430+00:00"
  },
- "next_at": "2026-11-05T15:30:41.906350+00:00",
+ "next_at": "2026-11-05T16:02:33.175067+00:00",
  "posted": {
   "B0095SMIP8": {
    "c": "Gatos",
@@ -120,6 +121,16 @@
    "title": "Cecotec Rasuradora facial Bamba FaceCare Smooth, Cuchilla de Acero inoxidable, Se adapta a la piel, Impermeable IPX5, Capuchón protector",
    "v": []
   },
+  "B0CM4B43DZ": {
+   "c": "Cuidado de la piel",
+   "d": 44,
+   "e": "🧴",
+   "m": 64,
+   "p": 32.0,
+   "t": "2026-11-05T15:31:40.208934+00:00",
+   "title": "La Roche-Posay, Mela B3 Sérum, Hiperpigmentación y manchas post acné, 30 ml",
+   "v": []
+  },
   "B0D6W8GSL3": {
    "c": "Altavoces",
    "d": 40,
@@ -183,12 +194,21 @@
    "v": []
   }
  },
- "problem": {
-  "fails": 1,
-  "last": "HTTP 503"
- },
+ "problem": {},
  "rejected": {},
  "reserve": [
+  {
+   "a": "B094TYNC9T",
+   "c": "Cuidado de la piel",
+   "e": "🧴",
+   "img": "https://m.media-amazon.com/images/I/71hV6Km1zkL._AC_UL320_.jpg",
+   "n": 3200,
+   "op": 22.9,
+   "p": 12.95,
+   "r": 4.6,
+   "t": "2026-11-05T15:31:07.211566+00:00",
+   "title": "L'Oréal Paris Revitalift Filler Crema Hidratante Día Nº1 con SPF 50, 50ml"
+  },
   {
    "a": "B0CDCFRXPN",
    "c": "Cafeteras",
@@ -212,18 +232,6 @@
    "r": 4.6,
    "t": "2026-11-05T14:10:43.141327+00:00",
    "title": "CALVIN KLEIN EVERYONE Eau de Parfum para mujer | Fragancia femenina floral con notas de bergamota y lirio blanco | Atemporal y larga duración"
-  },
-  {
-   "a": "B0CQ53RVTW",
-   "c": "Altavoces",
-   "e": "🔊",
-   "img": "https://m.media-amazon.com/images/I/71UFhbO8+sL._AC_UL320_.jpg",
-   "n": 9200,
-   "op": 129.99,
-   "p": 89.99,
-   "r": 4.7,
-   "t": "2026-11-05T11:50:44.194753+00:00",
-   "title": "Soundcore Boom 2 Altavoz Bluetooth Potente 80 W, 24 h, IPX7"
   }
  ],
  "summary_day": null,
