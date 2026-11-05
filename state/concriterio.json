@@ -9,9 +9,10 @@
   "Nutrición deportiva": "2026-11-05T10:40:44.258434+00:00",
   "Periféricos": "2026-11-05T07:01:09.065539+00:00",
   "Robots de cocina": "2026-11-05T08:15:41.952994+00:00",
+  "Smartwatch": "2026-11-05T11:15:40.907800+00:00",
   "Suplementos": "2026-11-05T07:40:39.265430+00:00"
  },
- "next_at": "2026-11-05T11:10:54.166081+00:00",
+ "next_at": "2026-11-05T11:49:16.156070+00:00",
  "posted": {
   "B00CHJ3DW4": {
    "c": "Nutrición deportiva",
@@ -93,6 +94,16 @@
    "title": "12M Dispositivo de Enfriamiento por Aspersión, Sistema de Riego de Jardines, 75 Pcs Kit de Pulverización de Jardín, Adecuado para Eventos al Aire Libre, Jardines, Patios, Sombrillas y Techos",
    "v": []
   },
+  "B0HDXYLPHV": {
+   "c": "Smartwatch",
+   "d": 50,
+   "e": "⌚",
+   "m": 57,
+   "p": 49.99,
+   "t": "2026-11-05T11:16:08.344673+00:00",
+   "title": "Reloj Inteligente Mujer Hombre con Llamadas Bluetooth y Voz AI, 1.85'' Smartwatch con Whatsapp Notificación, Pulsómetro/SpO2/Sueño/Podómetro, 110+ Modos Deportivos, Impermeable IP68 para iOS/Android",
+   "v": []
+  },
   "B0HGQG1L2J": {
    "c": "Robots de cocina",
    "d": 40,
@@ -107,6 +118,18 @@
  "problem": {},
  "rejected": {},
  "reserve": [
+  {
+   "a": "B0HDP4SP9K",
+   "c": "Smartwatch",
+   "e": "⌚",
+   "img": "https://m.media-amazon.com/images/I/816iZpZcabL._AC_UL320_.jpg",
+   "n": 107,
+   "op": 99.99,
+   "p": 47.15,
+   "r": 4.5,
+   "t": "2026-11-05T11:15:40.907800+00:00",
+   "title": "FOSMET Reloj Inteligente Mujer Salud ECG/HRV/BMI Presión Arterial, Rosa Oro"
+  },
   {
    "a": "B0HCVH7ZZJ",
    "c": "Nutrición deportiva",
@@ -135,6 +158,6 @@
  "summary_day": null,
  "x_copy": {
   "day": "2026-11-05",
-  "n": 5
+  "n": 6
  }
 }
