@@ -2,6 +2,7 @@
  "cats": {
   "Afeitado y depilación": "2026-11-05T09:31:10.693430+00:00",
   "Altavoces": "2026-11-05T11:50:44.194753+00:00",
+  "Cafeteras": "2026-11-05T14:45:44.188384+00:00",
   "Café y cápsulas": "2026-11-05T12:25:32.144399+00:00",
   "Climatización": "2026-11-05T07:40:39.265430+00:00",
   "Cámaras de seguridad": "2026-11-05T09:30:32.450110+00:00",
@@ -17,7 +18,7 @@
   "Smartwatch": "2026-11-05T11:15:40.907800+00:00",
   "Suplementos": "2026-11-05T07:40:39.265430+00:00"
  },
- "next_at": "2026-11-05T14:45:28.722978+00:00",
+ "next_at": "2026-11-05T15:15:53.997504+00:00",
  "posted": {
   "B0095SMIP8": {
    "c": "Gatos",
@@ -67,6 +68,16 @@
    "p": 22.99,
    "t": "2026-11-05T09:30:55.475102+00:00",
    "title": "Tapo C200 - Cámara de Vigilancia WiFi Interior 360º, 1080p, Detección IA",
+   "v": []
+  },
+  "B086RF6YJQ": {
+   "c": "Cafeteras",
+   "d": 23,
+   "e": "☕",
+   "m": 63,
+   "p": 99.0,
+   "t": "2026-11-05T14:46:18.914865+00:00",
+   "title": "De'Longhi Stilosa - Cafetera Espresso Manual con Espumador Manual Negro",
    "v": []
   },
   "B08FBQHY35": {
@@ -176,6 +187,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0CDCFRXPN",
+   "c": "Cafeteras",
+   "e": "☕",
+   "img": "https://m.media-amazon.com/images/I/61w6-XowuZL._AC_UL320_.jpg",
+   "n": 1000,
+   "op": 459.99,
+   "p": 359.95,
+   "r": 4.2,
+   "t": "2026-11-05T14:45:44.188384+00:00",
+   "title": "Philips 3300 Cafetera Superautomática, Espumador de leche, 5 bebidas, Negro"
+  },
+  {
    "a": "B000C1UBQU",
    "c": "Perfumes",
    "e": "🌸",
@@ -198,18 +221,6 @@
    "r": 4.7,
    "t": "2026-11-05T11:50:44.194753+00:00",
    "title": "Soundcore Boom 2 Altavoz Bluetooth Potente 80 W, 24 h, IPX7"
-  },
-  {
-   "a": "B0HDP4SP9K",
-   "c": "Smartwatch",
-   "e": "⌚",
-   "img": "https://m.media-amazon.com/images/I/816iZpZcabL._AC_UL320_.jpg",
-   "n": 107,
-   "op": 99.99,
-   "p": 47.15,
-   "r": 4.5,
-   "t": "2026-11-05T11:15:40.907800+00:00",
-   "title": "FOSMET Reloj Inteligente Mujer Salud ECG/HRV/BMI Presión Arterial, Rosa Oro"
   }
  ],
  "summary_day": null,
