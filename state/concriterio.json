@@ -18,6 +18,7 @@
   "Jardín": "2026-11-05T10:05:33.583568+00:00",
   "Menaje de cocina": "2026-11-05T17:50:46.417577+00:00",
   "Monitores": "2026-11-05T16:40:53.798263+00:00",
+  "Móviles": "2026-11-05T20:45:43.085606+00:00",
   "Nutrición deportiva": "2026-11-05T10:40:44.258434+00:00",
   "Perfumes": "2026-11-05T14:10:43.141327+00:00",
   "Periféricos": "2026-11-05T07:01:09.065539+00:00",
@@ -27,7 +28,7 @@
   "Suplementos": "2026-11-05T07:40:39.265430+00:00",
   "Tablets": "2026-11-05T20:10:40.689839+00:00"
  },
- "next_at": "2026-11-05T20:41:02.216781+00:00",
+ "next_at": "2026-11-05T21:19:11.941930+00:00",
  "posted": {
   "B0095SMIP8": {
    "c": "Gatos",
@@ -229,6 +230,16 @@
    "title": "Lefant  M210 Robot Aspirador, 2200Pa, 120min, Suelos Duros, Modo Silencioso",
    "v": []
   },
+  "B0GGCDV1Q1": {
+   "c": "Móviles",
+   "d": 22,
+   "e": "📱",
+   "m": 73,
+   "p": 429.0,
+   "t": "2026-11-05T20:46:08.089055+00:00",
+   "title": "Google Pixel 10a - 7 años de Nuevas actualizaciones y Funciones, más de 30 Horas de batería, Asistente de Cámara, Gemini Live, Seguridad de Pixel - Obsidiana, 128GB",
+   "v": []
+  },
   "B0GLPDX39K": {
    "c": "Jardín",
    "d": 13,
@@ -286,6 +297,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0FT8PMRW4",
+   "c": "Móviles",
+   "e": "📱",
+   "img": "https://m.media-amazon.com/images/I/616gwh5LgOL._AC_UL320_.jpg",
+   "n": 572,
+   "op": 199.55,
+   "p": 174.5,
+   "r": 4.3,
+   "t": "2026-11-05T20:45:43.085606+00:00",
+   "title": "Samsung SM-A175 A17 4+128GB 6.7\" 4G Black DS ITA"
+  },
+  {
    "a": "B01D3ACIR6",
    "c": "Almacenamiento",
    "e": "💾",
@@ -308,18 +331,6 @@
    "r": 4.3,
    "t": "2026-11-05T17:50:46.417577+00:00",
    "title": "Kitchen Academy Juego de Ollas y Sartenes Antiadherentes 30 Piezas Verde"
-  },
-  {
-   "a": "B0D12GJW72",
-   "c": "Iluminación",
-   "e": "🪔",
-   "img": "https://m.media-amazon.com/images/I/61LQQASk7oL._AC_UL320_.jpg",
-   "n": 1300,
-   "op": 33.99,
-   "p": 28.99,
-   "r": 4.6,
-   "t": "2026-11-05T17:15:47.121170+00:00",
-   "title": "Plafon LED Techo Regulable 24W Lámpara de Techo con Mando"
   }
  ],
  "summary_day": null,
