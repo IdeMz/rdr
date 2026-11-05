@@ -11,11 +11,12 @@
   "Jardín": "2026-11-05T10:05:33.583568+00:00",
   "Nutrición deportiva": "2026-11-05T10:40:44.258434+00:00",
   "Periféricos": "2026-11-05T07:01:09.065539+00:00",
+  "Portátiles": "2026-11-05T13:35:39.971891+00:00",
   "Robots de cocina": "2026-11-05T08:15:41.952994+00:00",
   "Smartwatch": "2026-11-05T11:15:40.907800+00:00",
   "Suplementos": "2026-11-05T07:40:39.265430+00:00"
  },
- "next_at": "2026-11-05T13:32:57.425117+00:00",
+ "next_at": "2026-11-05T14:09:57.754181+00:00",
  "posted": {
   "B0095SMIP8": {
    "c": "Gatos",
@@ -125,6 +126,16 @@
    "p": 13.99,
    "t": "2026-11-05T10:05:53.748698+00:00",
    "title": "12M Dispositivo de Enfriamiento por Aspersión, Sistema de Riego de Jardines, 75 Pcs Kit de Pulverización de Jardín, Adecuado para Eventos al Aire Libre, Jardines, Patios, Sombrillas y Techos",
+   "v": []
+  },
+  "B0H4ZJ6MD7": {
+   "c": "Portátiles",
+   "d": 26,
+   "e": "💻",
+   "m": 61,
+   "p": 699.0,
+   "t": "2026-11-05T13:36:01.953859+00:00",
+   "title": "HP 15 Ordenador portátil 15,6\" FHD, Ryzen 5, 16GB, 512SSD, Windows 11",
    "v": []
   },
   "B0HDXYLPHV": {
