@@ -1,9 +1,11 @@
 {
  "cats": {
+  "Climatización": "2026-11-05T07:40:39.265430+00:00",
   "Domótica": "2026-11-04T23:02:32.803093+00:00",
-  "Periféricos": "2026-11-05T07:01:09.065539+00:00"
+  "Periféricos": "2026-11-05T07:01:09.065539+00:00",
+  "Suplementos": "2026-11-05T07:40:39.265430+00:00"
  },
- "next_at": "2026-11-05T07:35:40.525685+00:00",
+ "next_at": "2026-11-05T08:12:59.489546+00:00",
  "posted": {
   "B01MU77FQQ": {
    "c": "Periféricos",
@@ -24,11 +26,33 @@
    "t": "2026-11-04T23:03:00.315188+00:00",
    "title": "Tapo L530E - Bombilla Inteligente WiFi, RGB Multicolor, 800lm, 8.3W, E27",
    "v": []
+  },
+  "B0BL898WJZ": {
+   "c": "Climatización",
+   "d": 23,
+   "e": "🌬️",
+   "m": 50,
+   "p": 399.99,
+   "t": "2026-11-05T07:41:06.685336+00:00",
+   "title": "Philips Air Performer 8000 3en1 Purificador, Calefactor y Ventilador, 70m²",
+   "v": []
   }
  },
  "problem": {},
  "rejected": {},
  "reserve": [
+  {
+   "a": "B0FM8L1GCX",
+   "c": "Climatización",
+   "e": "🌬️",
+   "img": "https://m.media-amazon.com/images/I/81UYTwShXDL._AC_UL320_.jpg",
+   "n": 5000,
+   "op": 84.99,
+   "p": 73.56,
+   "r": 4.6,
+   "t": "2026-11-05T07:40:39.265430+00:00",
+   "title": "Dreo Calefactor Inteligente 2000W para Dormitorio, Estufa Portátil 16 Pulgadas con Oscilación de 70°, Termostato, Mando a Distancia, 3 Modos, 3 Velocidades, Temporizador 12H, Solaris Slim H3S Mejorado"
+  },
   {
    "a": "B0797LMGXH",
    "c": "Periféricos",
