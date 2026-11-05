@@ -1,6 +1,7 @@
 {
  "cats": {
   "Afeitado y depilación": "2026-11-05T09:31:10.693430+00:00",
+  "Almacenamiento": "2026-11-05T19:01:07.787656+00:00",
   "Altavoces": "2026-11-05T11:50:44.194753+00:00",
   "Cafeteras": "2026-11-05T14:45:44.188384+00:00",
   "Café y cápsulas": "2026-11-05T12:25:32.144399+00:00",
@@ -24,7 +25,7 @@
   "Smartwatch": "2026-11-05T11:15:40.907800+00:00",
   "Suplementos": "2026-11-05T07:40:39.265430+00:00"
  },
- "next_at": "2026-11-05T18:56:08.635182+00:00",
+ "next_at": "2026-11-05T19:33:07.716765+00:00",
  "posted": {
   "B0095SMIP8": {
    "c": "Gatos",
@@ -114,6 +115,16 @@
    "p": 109.0,
    "t": "2026-11-05T18:25:55.312078+00:00",
    "title": "Einhell Set de taladro percutor con batería TE-CD 18/40 Li-i +64 (2x2,0 Ah)",
+   "v": []
+  },
+  "B09ZRD38D8": {
+   "c": "Almacenamiento",
+   "d": 29,
+   "e": "💾",
+   "m": 70,
+   "p": 231.2,
+   "t": "2026-11-05T19:01:35.205491+00:00",
+   "title": "WD_BLACK 1TB P40 Game Drive SSD USB-C USB 3.2 Gen 2x2 Memoria de estado sólido NVMe externa hasta 2000 MB/s Iluminación RGB personalizable compatible con Playstation, Xbox, PC y Mac",
    "v": []
   },
   "B0BL898WJZ": {
@@ -253,6 +264,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B01D3ACIR6",
+   "c": "Almacenamiento",
+   "e": "💾",
+   "img": "https://m.media-amazon.com/images/I/614HikUJ-LL._AC_UL320_.jpg",
+   "n": 9700,
+   "op": 54.68,
+   "p": 42.96,
+   "r": 4.6,
+   "t": "2026-11-05T19:01:07.787656+00:00",
+   "title": "Intenso 3813440 240GB SATA III High Performance Internal 2.5' SSD"
+  },
+  {
    "a": "B0DBHLNQK2",
    "c": "Menaje de cocina",
    "e": "🍳",
@@ -275,18 +298,6 @@
    "r": 4.6,
    "t": "2026-11-05T17:15:47.121170+00:00",
    "title": "Plafon LED Techo Regulable 24W Lámpara de Techo con Mando"
-  },
-  {
-   "a": "B094TYNC9T",
-   "c": "Cuidado de la piel",
-   "e": "🧴",
-   "img": "https://m.media-amazon.com/images/I/71hV6Km1zkL._AC_UL320_.jpg",
-   "n": 3200,
-   "op": 22.9,
-   "p": 12.95,
-   "r": 4.6,
-   "t": "2026-11-05T15:31:07.211566+00:00",
-   "title": "L'Oréal Paris Revitalift Filler Crema Hidratante Día Nº1 con SPF 50, 50ml"
   }
  ],
  "summary_day": null,
