@@ -3,9 +3,10 @@
   "Climatización": "2026-11-05T07:40:39.265430+00:00",
   "Domótica": "2026-11-04T23:02:32.803093+00:00",
   "Periféricos": "2026-11-05T07:01:09.065539+00:00",
+  "Robots de cocina": "2026-11-05T08:15:41.952994+00:00",
   "Suplementos": "2026-11-05T07:40:39.265430+00:00"
  },
- "next_at": "2026-11-05T08:12:59.489546+00:00",
+ "next_at": "2026-11-05T08:49:17.401688+00:00",
  "posted": {
   "B01MU77FQQ": {
    "c": "Periféricos",
@@ -36,11 +37,33 @@
    "t": "2026-11-05T07:41:06.685336+00:00",
    "title": "Philips Air Performer 8000 3en1 Purificador, Calefactor y Ventilador, 70m²",
    "v": []
+  },
+  "B0HGQG1L2J": {
+   "c": "Robots de cocina",
+   "d": 40,
+   "e": "🥣",
+   "m": 51,
+   "p": 120.02,
+   "t": "2026-11-05T08:16:10.363665+00:00",
+   "title": "Camic Batidora Amasadora 2000W - 10 Velocidades con Asa de Transporte, Bol Acero Inoxidable (7L), Amasadora con Gancho Para Remover, Gancho Para Amasar",
+   "v": []
   }
  },
  "problem": {},
  "rejected": {},
  "reserve": [
+  {
+   "a": "B083YCYMW4",
+   "c": "Robots de cocina",
+   "e": "🥣",
+   "img": "https://m.media-amazon.com/images/I/71-Yybe8zfL._AC_UL320_.jpg",
+   "n": 6800,
+   "op": 399.99,
+   "p": 303.05,
+   "r": 4.4,
+   "t": "2026-11-05T08:15:41.952994+00:00",
+   "title": "Bosch - Robot de cocina con báscula, MUM 5, 1000 W, Cuenco de acero inoxidable (3.9 L), Juego profesional de pastelería, Blanco, MUM5XW20"
+  },
   {
    "a": "B0FM8L1GCX",
    "c": "Climatización",
@@ -69,6 +92,6 @@
  "summary_day": null,
  "x_copy": {
   "day": "2026-11-05",
-  "n": 1
+  "n": 2
  }
 }
