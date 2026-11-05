@@ -27,9 +27,10 @@
   "Robots de cocina": "2026-11-05T08:15:41.952994+00:00",
   "Smartwatch": "2026-11-05T11:15:40.907800+00:00",
   "Suplementos": "2026-11-05T07:40:39.265430+00:00",
-  "Tablets": "2026-11-05T20:10:40.689839+00:00"
+  "Tablets": "2026-11-05T20:10:40.689839+00:00",
+  "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-05T21:51:54.491726+00:00",
+ "next_at": "2026-11-05T22:27:38.722126+00:00",
  "posted": {
   "B0095SMIP8": {
    "c": "Gatos",
@@ -209,6 +210,16 @@
    "p": 39.99,
    "t": "2026-11-05T08:51:03.417762+00:00",
    "title": "Mellerware - Freidora sin aceite Crunchy Plus 5.5L 1500W | 11 Menús Predefinidos | Capacidad para 3-5 raciones | Temporizador Programable | Pantalla para controlar la temperatura | Air Fryer 80-200º",
+   "v": []
+  },
+  "B0FBG3ZCK6": {
+   "c": "Zapatillas",
+   "d": 40,
+   "e": "👟",
+   "m": 77,
+   "p": 60.0,
+   "t": "2026-11-05T21:55:57.983634+00:00",
+   "title": "Reebok",
    "v": []
   },
   "B0FQ5F2QSQ": {
