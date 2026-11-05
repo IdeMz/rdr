@@ -1,6 +1,7 @@
 {
  "cats": {
   "Afeitado y depilación": "2026-11-05T09:31:10.693430+00:00",
+  "Altavoces": "2026-11-05T11:50:44.194753+00:00",
   "Climatización": "2026-11-05T07:40:39.265430+00:00",
   "Cámaras de seguridad": "2026-11-05T09:30:32.450110+00:00",
   "Domótica": "2026-11-04T23:02:32.803093+00:00",
@@ -12,7 +13,7 @@
   "Smartwatch": "2026-11-05T11:15:40.907800+00:00",
   "Suplementos": "2026-11-05T07:40:39.265430+00:00"
  },
- "next_at": "2026-11-05T11:49:16.156070+00:00",
+ "next_at": "2026-11-05T12:22:34.967535+00:00",
  "posted": {
   "B00CHJ3DW4": {
    "c": "Nutrición deportiva",
@@ -74,6 +75,16 @@
    "title": "Cecotec Rasuradora facial Bamba FaceCare Smooth, Cuchilla de Acero inoxidable, Se adapta a la piel, Impermeable IPX5, Capuchón protector",
    "v": []
   },
+  "B0D6W8GSL3": {
+   "c": "Altavoces",
+   "d": 40,
+   "e": "🔊",
+   "m": 58,
+   "p": 107.5,
+   "t": "2026-11-05T11:51:14.921640+00:00",
+   "title": "Bose SoundLink Flex (2.ª Gen.), Altavoz portátil inalámbrico con Bluetooth pequeño y Potente para Fiestas al Aire Libre, hasta 12 h de autonomía, Resistente al Agua IP67 y al Polvo, Arenisca",
+   "v": []
+  },
   "B0DVLGQX5N": {
    "c": "Freidoras de aire",
    "d": 43,
@@ -119,6 +130,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0CQ53RVTW",
+   "c": "Altavoces",
+   "e": "🔊",
+   "img": "https://m.media-amazon.com/images/I/71UFhbO8+sL._AC_UL320_.jpg",
+   "n": 9200,
+   "op": 129.99,
+   "p": 89.99,
+   "r": 4.7,
+   "t": "2026-11-05T11:50:44.194753+00:00",
+   "title": "Soundcore Boom 2 Altavoz Bluetooth Potente 80 W, 24 h, IPX7"
+  },
+  {
    "a": "B0HDP4SP9K",
    "c": "Smartwatch",
    "e": "⌚",
@@ -141,18 +164,6 @@
    "r": 4.4,
    "t": "2026-11-05T10:40:44.258434+00:00",
    "title": "Bulk Pure Whey Protein + Colágeno, Vainilla, 900g"
-  },
-  {
-   "a": "B083YCYMW4",
-   "c": "Robots de cocina",
-   "e": "🥣",
-   "img": "https://m.media-amazon.com/images/I/71-Yybe8zfL._AC_UL320_.jpg",
-   "n": 6800,
-   "op": 399.99,
-   "p": 303.05,
-   "r": 4.4,
-   "t": "2026-11-05T08:15:41.952994+00:00",
-   "title": "Bosch - Robot de cocina con báscula, MUM 5, 1000 W, Cuenco de acero inoxidable (3.9 L), Juego profesional de pastelería, Blanco, MUM5XW20"
   }
  ],
  "summary_day": null,
