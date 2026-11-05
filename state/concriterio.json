@@ -5,6 +5,7 @@
   "Cafeteras": "2026-11-05T14:45:44.188384+00:00",
   "Café y cápsulas": "2026-11-05T12:25:32.144399+00:00",
   "Climatización": "2026-11-05T07:40:39.265430+00:00",
+  "Colchones y almohadas": "2026-11-05T16:05:35.786776+00:00",
   "Cuidado de la piel": "2026-11-05T15:31:07.211566+00:00",
   "Cámaras de seguridad": "2026-11-05T09:30:32.450110+00:00",
   "Domótica": "2026-11-04T23:02:32.803093+00:00",
@@ -19,7 +20,7 @@
   "Smartwatch": "2026-11-05T11:15:40.907800+00:00",
   "Suplementos": "2026-11-05T07:40:39.265430+00:00"
  },
- "next_at": "2026-11-05T16:02:33.175067+00:00",
+ "next_at": "2026-11-05T16:35:41.078807+00:00",
  "posted": {
   "B0095SMIP8": {
    "c": "Gatos",
@@ -129,6 +130,16 @@
    "p": 32.0,
    "t": "2026-11-05T15:31:40.208934+00:00",
    "title": "La Roche-Posay, Mela B3 Sérum, Hiperpigmentación y manchas post acné, 30 ml",
+   "v": []
+  },
+  "B0D1KN8DRS": {
+   "c": "Colchones y almohadas",
+   "d": 14,
+   "e": "🛏️",
+   "m": 65,
+   "p": 36.99,
+   "t": "2026-11-05T16:05:56.692103+00:00",
+   "title": "Homey - Almohada Viscoelástica Carbono | Máximo Confort y Excelente Adaptabilidad con Propiedades Antiestrés | 2 Unidades de 70 x 40 cm",
    "v": []
   },
   "B0D6W8GSL3": {
