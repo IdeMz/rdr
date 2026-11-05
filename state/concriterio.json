@@ -5,11 +5,12 @@
   "Cámaras de seguridad": "2026-11-05T09:30:32.450110+00:00",
   "Domótica": "2026-11-04T23:02:32.803093+00:00",
   "Freidoras de aire": "2026-11-05T08:50:42.521815+00:00",
+  "Jardín": "2026-11-05T10:05:33.583568+00:00",
   "Periféricos": "2026-11-05T07:01:09.065539+00:00",
   "Robots de cocina": "2026-11-05T08:15:41.952994+00:00",
   "Suplementos": "2026-11-05T07:40:39.265430+00:00"
  },
- "next_at": "2026-11-05T10:02:57.842965+00:00",
+ "next_at": "2026-11-05T10:37:54.165710+00:00",
  "posted": {
   "B01MU77FQQ": {
    "c": "Periféricos",
@@ -71,6 +72,16 @@
    "title": "Mellerware - Freidora sin aceite Crunchy Plus 5.5L 1500W | 11 Menús Predefinidos | Capacidad para 3-5 raciones | Temporizador Programable | Pantalla para controlar la temperatura | Air Fryer 80-200º",
    "v": []
   },
+  "B0GLPDX39K": {
+   "c": "Jardín",
+   "d": 13,
+   "e": "🌱",
+   "m": 55,
+   "p": 13.99,
+   "t": "2026-11-05T10:05:53.748698+00:00",
+   "title": "12M Dispositivo de Enfriamiento por Aspersión, Sistema de Riego de Jardines, 75 Pcs Kit de Pulverización de Jardín, Adecuado para Eventos al Aire Libre, Jardines, Patios, Sombrillas y Techos",
+   "v": []
+  },
   "B0HGQG1L2J": {
    "c": "Robots de cocina",
    "d": 40,
@@ -108,18 +119,6 @@
    "r": 4.6,
    "t": "2026-11-05T07:40:39.265430+00:00",
    "title": "Dreo Calefactor Inteligente 2000W para Dormitorio, Estufa Portátil 16 Pulgadas con Oscilación de 70°, Termostato, Mando a Distancia, 3 Modos, 3 Velocidades, Temporizador 12H, Solaris Slim H3S Mejorado"
-  },
-  {
-   "a": "B0797LMGXH",
-   "c": "Periféricos",
-   "e": "⌨️",
-   "img": "https://m.media-amazon.com/images/I/71QHOYkSx7L._AC_UL320_.jpg",
-   "n": 1100,
-   "op": 59.99,
-   "p": 39.99,
-   "r": 4.4,
-   "t": "2026-11-05T07:01:09.065539+00:00",
-   "title": "Logitech MK540 Advanced Combo Teclado y Ratón Inalámbrico - QWERTY ESP"
   }
  ],
  "summary_day": null,
