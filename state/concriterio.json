@@ -11,6 +11,7 @@
   "Domótica": "2026-11-04T23:02:32.803093+00:00",
   "Freidoras de aire": "2026-11-05T08:50:42.521815+00:00",
   "Gatos": "2026-11-05T13:01:09.573881+00:00",
+  "Iluminación": "2026-11-05T17:15:47.121170+00:00",
   "Jardín": "2026-11-05T10:05:33.583568+00:00",
   "Monitores": "2026-11-05T16:40:53.798263+00:00",
   "Nutrición deportiva": "2026-11-05T10:40:44.258434+00:00",
@@ -21,7 +22,7 @@
   "Smartwatch": "2026-11-05T11:15:40.907800+00:00",
   "Suplementos": "2026-11-05T07:40:39.265430+00:00"
  },
- "next_at": "2026-11-05T17:11:21.700702+00:00",
+ "next_at": "2026-11-05T17:48:38.507862+00:00",
  "posted": {
   "B0095SMIP8": {
    "c": "Gatos",
@@ -123,6 +124,16 @@
    "title": "Cecotec Rasuradora facial Bamba FaceCare Smooth, Cuchilla de Acero inoxidable, Se adapta a la piel, Impermeable IPX5, Capuchón protector",
    "v": []
   },
+  "B0CBPL4RKH": {
+   "c": "Iluminación",
+   "d": 17,
+   "e": "🪔",
+   "m": 67,
+   "p": 14.59,
+   "t": "2026-11-05T17:16:13.011202+00:00",
+   "title": "Gritin 19 LED Luz de Lectura, 360° Flexible Ajustable Lámpara de Lectura",
+   "v": []
+  },
   "B0CM4B43DZ": {
    "c": "Cuidado de la piel",
    "d": 44,
@@ -220,6 +231,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0D12GJW72",
+   "c": "Iluminación",
+   "e": "🪔",
+   "img": "https://m.media-amazon.com/images/I/61LQQASk7oL._AC_UL320_.jpg",
+   "n": 1300,
+   "op": 33.99,
+   "p": 28.99,
+   "r": 4.6,
+   "t": "2026-11-05T17:15:47.121170+00:00",
+   "title": "Plafon LED Techo Regulable 24W Lámpara de Techo con Mando"
+  },
+  {
    "a": "B094TYNC9T",
    "c": "Cuidado de la piel",
    "e": "🧴",
@@ -242,18 +265,6 @@
    "r": 4.2,
    "t": "2026-11-05T14:45:44.188384+00:00",
    "title": "Philips 3300 Cafetera Superautomática, Espumador de leche, 5 bebidas, Negro"
-  },
-  {
-   "a": "B000C1UBQU",
-   "c": "Perfumes",
-   "e": "🌸",
-   "img": "https://m.media-amazon.com/images/I/51zdSiNFrHL._AC_UL320_.jpg",
-   "n": 7600,
-   "op": 38.95,
-   "p": 27.9,
-   "r": 4.6,
-   "t": "2026-11-05T14:10:43.141327+00:00",
-   "title": "CALVIN KLEIN EVERYONE Eau de Parfum para mujer | Fragancia femenina floral con notas de bergamota y lirio blanco | Atemporal y larga duración"
   }
  ],
  "summary_day": null,
