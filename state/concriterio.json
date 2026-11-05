@@ -12,6 +12,7 @@
   "Freidoras de aire": "2026-11-05T08:50:42.521815+00:00",
   "Gatos": "2026-11-05T13:01:09.573881+00:00",
   "Jardín": "2026-11-05T10:05:33.583568+00:00",
+  "Monitores": "2026-11-05T16:40:53.798263+00:00",
   "Nutrición deportiva": "2026-11-05T10:40:44.258434+00:00",
   "Perfumes": "2026-11-05T14:10:43.141327+00:00",
   "Periféricos": "2026-11-05T07:01:09.065539+00:00",
@@ -20,7 +21,7 @@
   "Smartwatch": "2026-11-05T11:15:40.907800+00:00",
   "Suplementos": "2026-11-05T07:40:39.265430+00:00"
  },
- "next_at": "2026-11-05T16:35:41.078807+00:00",
+ "next_at": "2026-11-05T17:11:21.700702+00:00",
  "posted": {
   "B0095SMIP8": {
    "c": "Gatos",
@@ -160,6 +161,16 @@
    "p": 39.99,
    "t": "2026-11-05T08:51:03.417762+00:00",
    "title": "Mellerware - Freidora sin aceite Crunchy Plus 5.5L 1500W | 11 Menús Predefinidos | Capacidad para 3-5 raciones | Temporizador Programable | Pantalla para controlar la temperatura | Air Fryer 80-200º",
+   "v": []
+  },
+  "B0FQ5F2QSQ": {
+   "c": "Monitores",
+   "d": 24,
+   "e": "🖥️",
+   "m": 66,
+   "p": 106.18,
+   "t": "2026-11-05T16:41:17.230785+00:00",
+   "title": "DELL 24 Plus Monitor - S2425HSM, Full HD (1920x1080), 144Hz, IPS, 1ms MPRT",
    "v": []
   },
   "B0GLPDX39K": {
