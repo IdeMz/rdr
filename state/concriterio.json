@@ -23,6 +23,7 @@
   "Jardín": "2026-11-05T10:05:33.583568+00:00",
   "Lego": "2026-11-06T10:35:29.846768+00:00",
   "Menaje de cocina": "2026-11-05T17:50:46.417577+00:00",
+  "Mochilas y maletas": "2026-11-06T11:10:40.042548+00:00",
   "Monitores": "2026-11-05T16:40:53.798263+00:00",
   "Móviles": "2026-11-05T20:45:43.085606+00:00",
   "Nutrición deportiva": "2026-11-05T10:40:44.258434+00:00",
@@ -37,7 +38,7 @@
   "Televisores": "2026-11-06T08:50:41.728785+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-06T11:09:23.762000+00:00",
+ "next_at": "2026-11-06T11:42:12.445249+00:00",
  "posted": {
   "B0095SMIP8": {
    "c": "Gatos",
@@ -229,6 +230,16 @@
    "title": "LEGO Disney Stitch 43249",
    "v": []
   },
+  "B0CGDQMT69": {
+   "c": "Mochilas y maletas",
+   "d": 52,
+   "e": "🎒",
+   "m": 85,
+   "p": 21.7,
+   "t": "2026-11-06T11:11:11.805912+00:00",
+   "title": "American Tourister",
+   "v": []
+  },
   "B0CM4B43DZ": {
    "c": "Cuidado de la piel",
    "d": 44,
@@ -396,6 +407,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0D7BSGM9H",
+   "c": "Mochilas y maletas",
+   "e": "🎒",
+   "img": "https://m.media-amazon.com/images/I/61XiOjmeTjL._AC_UL320_.jpg",
+   "n": 6800,
+   "op": 32.99,
+   "p": 22.99,
+   "r": 4.7,
+   "t": "2026-11-06T11:10:40.042548+00:00",
+   "title": "MATEIN"
+  },
+  {
    "a": "B0CFVYPKGB",
    "c": "Lego",
    "e": "🧱",
@@ -418,24 +441,12 @@
    "r": 4.4,
    "t": "2026-11-06T08:15:40.851086+00:00",
    "title": "Fokky Gomas Elasticas Musculacion [Set de 5], Látex Natural"
-  },
-  {
-   "a": "B0BQ14QLPJ",
-   "c": "Ciclismo",
-   "e": "🚴",
-   "img": "https://m.media-amazon.com/images/I/51FFNXMYebL._AC_UL320_.jpg",
-   "n": 400,
-   "op": 23.9,
-   "p": 19.9,
-   "r": 4.6,
-   "t": "2026-11-06T07:40:40.920898+00:00",
-   "title": "Cecotec Casco Urbano y Montaña para Bicicletas y Patinetes Eléctricos BrainGuard Urban y Sprinter, Tallas S-M y L-XL, Homologado para Cumplir con la Máxima Seguridad"
   }
  ],
  "summary_day": "2026-11-05",
  "tg_offset": 511048048,
  "x_copy": {
   "day": "2026-11-06",
-  "n": 6
+  "n": 7
  }
 }
