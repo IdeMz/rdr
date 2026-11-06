@@ -8,6 +8,7 @@
   "Auriculares": "2026-11-05T21:20:42.646272+00:00",
   "Cafeteras": "2026-11-05T14:45:44.188384+00:00",
   "Café y cápsulas": "2026-11-05T12:25:32.144399+00:00",
+  "Cargadores y baterías": "2026-11-06T11:45:38.407566+00:00",
   "Ciclismo": "2026-11-06T07:40:40.920898+00:00",
   "Climatización": "2026-11-05T07:40:39.265430+00:00",
   "Colchones y almohadas": "2026-11-05T16:05:35.786776+00:00",
@@ -38,7 +39,7 @@
   "Televisores": "2026-11-06T08:50:41.728785+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-06T11:42:12.445249+00:00",
+ "next_at": "2026-11-06T12:16:47.104396+00:00",
  "posted": {
   "B0095SMIP8": {
    "c": "Gatos",
@@ -310,6 +311,16 @@
    "title": "Reebok",
    "v": []
   },
+  "B0FLPCM6CB": {
+   "c": "Cargadores y baterías",
+   "d": 39,
+   "e": "🔌",
+   "m": 86,
+   "p": 24.36,
+   "t": "2026-11-06T11:46:03.973237+00:00",
+   "title": "INIU 45W Power Bank, Fino 10000mAh Inalámbrico Magnético Batería Externa",
+   "v": []
+  },
   "B0FQ5F2QSQ": {
    "c": "Monitores",
    "d": 24,
@@ -407,6 +418,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0F6TYQT12",
+   "c": "Cargadores y baterías",
+   "e": "🔌",
+   "img": "https://m.media-amazon.com/images/I/61RfyHDgYAL._AC_UL320_.jpg",
+   "n": 3400,
+   "op": 24.99,
+   "p": 16.99,
+   "r": 4.4,
+   "t": "2026-11-06T11:45:38.407566+00:00",
+   "title": "Batería Externa 27000mAh 22.5W PD3.0 QC4.0 Power Bank Carga Rapida, 3A USB C Cargador Portátil con Pantalla LED, 2 Entradas y 3 Salidas Powerbank para Smartphones, Tablets y más (black1)"
+  },
+  {
    "a": "B0D7BSGM9H",
    "c": "Mochilas y maletas",
    "e": "🎒",
@@ -429,24 +452,12 @@
    "r": 4.8,
    "t": "2026-11-06T10:35:29.846768+00:00",
    "title": "LEGO Creator 3 en 1 Camión Plataforma con Helicóptero 31146"
-  },
-  {
-   "a": "B0CJJ4C7DV",
-   "c": "Fitness en casa",
-   "e": "🏋️",
-   "img": "https://m.media-amazon.com/images/I/61gqlvQombL._AC_UL320_.jpg",
-   "n": 13900,
-   "op": 12.99,
-   "p": 8.99,
-   "r": 4.4,
-   "t": "2026-11-06T08:15:40.851086+00:00",
-   "title": "Fokky Gomas Elasticas Musculacion [Set de 5], Látex Natural"
   }
  ],
  "summary_day": "2026-11-05",
  "tg_offset": 511048048,
  "x_copy": {
   "day": "2026-11-06",
-  "n": 7
+  "n": 8
  }
 }
