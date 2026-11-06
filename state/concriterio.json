@@ -30,6 +30,7 @@
   "Nutrición deportiva": "2026-11-05T10:40:44.258434+00:00",
   "Perfumes": "2026-11-05T14:10:43.141327+00:00",
   "Periféricos": "2026-11-05T07:01:09.065539+00:00",
+  "Perros": "2026-11-06T12:20:41.756967+00:00",
   "Portátiles": "2026-11-05T13:35:39.971891+00:00",
   "Relojes": "2026-11-06T10:01:05.963762+00:00",
   "Robots de cocina": "2026-11-05T08:15:41.952994+00:00",
@@ -39,7 +40,7 @@
   "Televisores": "2026-11-06T08:50:41.728785+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-06T12:16:47.104396+00:00",
+ "next_at": "2026-11-06T12:53:53.763475+00:00",
  "posted": {
   "B0095SMIP8": {
    "c": "Gatos",
@@ -281,6 +282,16 @@
    "title": "BaByliss Smooth Finish 1200 – Cepillo de Aire Caliente 4-en-1 para Secar, Alisar, Dar Volumen y Moldear, Tecnología Iónica & Cerámica, 4 Accesorios, 1200W, Negro/Rosa, AS122E",
    "v": []
   },
+  "B0DN6B2BWP": {
+   "c": "Perros",
+   "d": 30,
+   "e": "🐶",
+   "m": 87,
+   "p": 12.59,
+   "t": "2026-11-06T12:21:03.387466+00:00",
+   "title": "Arquivet Fresh Puppy Junior Pavo & Salmón 2,5Kg - Pienso Semihúmedo",
+   "v": []
+  },
   "B0DVLGQX5N": {
    "c": "Freidoras de aire",
    "d": 43,
@@ -458,6 +469,6 @@
  "tg_offset": 511048048,
  "x_copy": {
   "day": "2026-11-06",
-  "n": 8
+  "n": 9
  }
 }
