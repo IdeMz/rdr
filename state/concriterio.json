@@ -13,7 +13,7 @@
   "Climatización": "2026-11-05T07:40:39.265430+00:00",
   "Colchones y almohadas": "2026-11-06T14:40:42.953766+00:00",
   "Cuidado de la piel": "2026-11-05T15:31:07.211566+00:00",
-  "Cuidado del cabello": "2026-11-06T09:25:32.635667+00:00",
+  "Cuidado del cabello": "2026-11-06T21:40:40.967672+00:00",
   "Cámaras de seguridad": "2026-11-05T09:30:32.450110+00:00",
   "Domótica": "2026-11-06T14:05:32.179358+00:00",
   "Fitness en casa": "2026-11-06T08:15:40.851086+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-06T12:55:37.011327+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-06T21:36:13.292037+00:00",
+ "next_at": "2026-11-06T22:14:40.960611+00:00",
  "offer": {
   "a": "B079FFWFWT",
   "m": 33,
@@ -380,6 +380,16 @@
    "title": "Bose SoundLink Flex (2.ª Gen.), Altavoz portátil inalámbrico con Bluetooth pequeño y Potente para Fiestas al Aire Libre, hasta 12 h de autonomía, Resistente al Agua IP67 y al Polvo, Arenisca",
    "v": []
   },
+  "B0D79G6RDY": {
+   "c": "Cuidado del cabello",
+   "d": 44,
+   "e": "💇",
+   "m": 103,
+   "p": 99.9,
+   "t": "2026-11-06T21:41:07.314026+00:00",
+   "title": "Cecotec Cepillo de Aire 14 Cabezales CeramicCare 14in1 AirGlisse Black",
+   "v": []
+  },
   "B0DDCHNPBR": {
    "c": "Cuidado del cabello",
    "d": 42,
@@ -577,6 +587,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B07MNT79M4",
+   "c": "Cuidado del cabello",
+   "e": "💇",
+   "img": "https://m.media-amazon.com/images/I/61eHBqbRSkL._AC_UL320_.jpg",
+   "n": 3200,
+   "op": 24.99,
+   "p": 15.6,
+   "r": 4.5,
+   "t": "2026-11-06T21:40:40.967672+00:00",
+   "title": "Philips Plancha Alisadora con Placas de Cerámica y Queratina de 100 mm, Cepillo Alisador para Estilizar y Peinar con Tecnología ThermoProtect, hasta 220°C en 1 minuto, en Negro y Rosa, BHS375/00"
+  },
+  {
    "a": "B0FJ9234ZX",
    "c": "Tablets",
    "e": "📲",
@@ -599,24 +621,12 @@
    "r": 4.6,
    "t": "2026-11-06T19:30:54.067513+00:00",
    "title": "Gillette Venus Comfortglide Spa Breeze Maquinilla de Afeitar Mujer"
-  },
-  {
-   "a": "B0DQ5KNY6Y",
-   "c": "Aspiradoras",
-   "e": "🧹",
-   "img": "https://m.media-amazon.com/images/I/61nNQOyry2L._AC_UL320_.jpg",
-   "n": 287,
-   "op": 1099.0,
-   "p": 499.0,
-   "r": 4.3,
-   "t": "2026-11-06T18:10:43.252691+00:00",
-   "title": "DREAME L50 Pro Ultra Robot Aspirador y Fregasuelos, 19500 Pa, Autolimpieza de la Mopa, Detección de Obstáculos Inteligente, Limpieza con Agua Caliente a 75°, Robot Aspitador con Cámara para Mascotas"
   }
  ],
  "summary_day": "2026-11-05",
  "tg_offset": 511048049,
  "x_copy": {
   "day": "2026-11-06",
-  "n": 23
+  "n": 24
  }
 }
