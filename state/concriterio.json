@@ -28,7 +28,7 @@
   "Monitores": "2026-11-06T13:31:01.144570+00:00",
   "Móviles": "2026-11-05T20:45:43.085606+00:00",
   "Nutrición deportiva": "2026-11-06T16:25:33.271370+00:00",
-  "Perfumes": "2026-11-05T14:10:43.141327+00:00",
+  "Perfumes": "2026-11-06T17:35:34.238247+00:00",
   "Periféricos": "2026-11-06T15:50:43.516360+00:00",
   "Perros": "2026-11-06T12:20:41.756967+00:00",
   "Portátiles": "2026-11-06T17:01:09.983033+00:00",
@@ -41,8 +41,18 @@
   "Videojuegos": "2026-11-06T12:55:37.011327+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-06T17:33:11.808817+00:00",
+ "next_at": "2026-11-06T18:07:05.717145+00:00",
  "posted": {
+  "B000C1UBQU": {
+   "c": "Perfumes",
+   "d": 28,
+   "e": "🌸",
+   "m": 96,
+   "p": 27.9,
+   "t": "2026-11-06T17:35:59.938950+00:00",
+   "title": "CALVIN KLEIN EVERYONE Eau de Parfum para mujer | Fragancia femenina floral con notas de bergamota y lirio blanco | Atemporal y larga duración",
+   "v": []
+  },
   "B0095SMIP8": {
    "c": "Gatos",
    "d": 31,
@@ -512,6 +522,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0CKM2SSK3",
+   "c": "Perfumes",
+   "e": "🌸",
+   "img": "https://m.media-amazon.com/images/I/71DfESbdC8L._AC_UL320_.jpg",
+   "n": 6500,
+   "op": 47.4,
+   "p": 36.87,
+   "r": 4.3,
+   "t": "2026-11-06T17:35:34.238247+00:00",
+   "title": "Rasasi Hawas Ice 100 ml Eau de Parfum"
+  },
+  {
    "a": "B00BEFY1W8",
    "c": "Periféricos",
    "e": "⌨️",
@@ -534,24 +556,12 @@
    "r": 4.3,
    "t": "2026-11-06T14:40:42.953766+00:00",
    "title": "Matnature | Naturea | Colchón Viscoelástico | Fabricado Espuma High Resilience Confort Alta Densidad | Grosor 20 cm | Colchón Antibacterial y Antiácaros | Medidas 105 x 190 cm"
-  },
-  {
-   "a": "B0FNRQQTZR",
-   "c": "Domótica",
-   "e": "💡",
-   "img": "https://m.media-amazon.com/images/I/61NeXRQja4L._AC_UL320_.jpg",
-   "n": 388,
-   "op": 13.99,
-   "p": 11.99,
-   "r": 4.5,
-   "t": "2026-11-06T14:05:32.179358+00:00",
-   "title": "Tapo L430P-Bombilla inteligente WiFi, 16 millones de colores, regulable,E27"
   }
  ],
  "summary_day": "2026-11-05",
  "tg_offset": 511048049,
  "x_copy": {
   "day": "2026-11-06",
-  "n": 17
+  "n": 18
  }
 }
