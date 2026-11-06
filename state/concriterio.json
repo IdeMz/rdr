@@ -25,7 +25,7 @@
   "Lego": "2026-11-06T10:35:29.846768+00:00",
   "Menaje de cocina": "2026-11-05T17:50:46.417577+00:00",
   "Mochilas y maletas": "2026-11-06T11:10:40.042548+00:00",
-  "Monitores": "2026-11-05T16:40:53.798263+00:00",
+  "Monitores": "2026-11-06T13:31:01.144570+00:00",
   "Móviles": "2026-11-05T20:45:43.085606+00:00",
   "Nutrición deportiva": "2026-11-05T10:40:44.258434+00:00",
   "Perfumes": "2026-11-05T14:10:43.141327+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-06T12:55:37.011327+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-06T13:28:52.854707+00:00",
+ "next_at": "2026-11-06T14:03:24.116594+00:00",
  "posted": {
   "B0095SMIP8": {
    "c": "Gatos",
@@ -363,6 +363,16 @@
    "title": "Tablet 10 Pulgadas Android 15 con Gemini AI, 30 GB RAM + Ampliable 2 TB ROM, Octa-Core, Widevine L1, 1280x800 HD, WiFi 5GHz, BT 5.0, Cámara 8 MP + 5 MP, 6000 mAh, con Teclado, Ratón y Funda – Negro",
    "v": []
   },
+  "B0FWCPNPCV": {
+   "c": "Monitores",
+   "d": 28,
+   "e": "🖥️",
+   "m": 89,
+   "p": 109.0,
+   "t": "2026-11-06T13:31:21.219338+00:00",
+   "title": "MSI mag 276CFA E20 Monitor Gaming de 27\" FHD 1500R, 1920 x 1080 Rapid VA, 200 Hz, 0,5 ms, Compatible con HDR, AMD FreeSync™ Premium, Eye-Care, visión AI, HDMI 2.0b, DP 1.2a, Frameless, Negro",
+   "v": []
+  },
   "B0GF1WDV3V": {
    "c": "Aspiradoras",
    "d": 50,
@@ -480,6 +490,6 @@
  "tg_offset": 511048048,
  "x_copy": {
   "day": "2026-11-06",
-  "n": 10
+  "n": 11
  }
 }
