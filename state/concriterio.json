@@ -11,7 +11,7 @@
   "Cargadores y baterías": "2026-11-06T11:45:38.407566+00:00",
   "Ciclismo": "2026-11-06T07:40:40.920898+00:00",
   "Climatización": "2026-11-05T07:40:39.265430+00:00",
-  "Colchones y almohadas": "2026-11-05T16:05:35.786776+00:00",
+  "Colchones y almohadas": "2026-11-06T14:40:42.953766+00:00",
   "Cuidado de la piel": "2026-11-05T15:31:07.211566+00:00",
   "Cuidado del cabello": "2026-11-06T09:25:32.635667+00:00",
   "Cámaras de seguridad": "2026-11-05T09:30:32.450110+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-06T12:55:37.011327+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-06T14:39:57.395168+00:00",
+ "next_at": "2026-11-06T15:12:19.519715+00:00",
  "posted": {
   "B0095SMIP8": {
    "c": "Gatos",
@@ -181,6 +181,16 @@
    "p": 231.2,
    "t": "2026-11-05T19:01:35.205491+00:00",
    "title": "WD_BLACK 1TB P40 Game Drive SSD USB-C USB 3.2 Gen 2x2 Memoria de estado sólido NVMe externa hasta 2000 MB/s Iluminación RGB personalizable compatible con Playstation, Xbox, PC y Mac",
+   "v": []
+  },
+  "B0B57J6FFY": {
+   "c": "Colchones y almohadas",
+   "d": 22,
+   "e": "🛏️",
+   "m": 91,
+   "p": 109.0,
+   "t": "2026-11-06T14:41:15.970354+00:00",
+   "title": "Cecotec Colchón Viscoelástico Flow PureVital 1900 Medida 90x190. Multicapa, Altura 21cm, Firmeza Alta, Núcleo FoamVital, Doble Cara Dual System para Invierno y Verano",
    "v": []
   },
   "B0BCKHQGJN": {
@@ -460,6 +470,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0H3ZT4C8F",
+   "c": "Colchones y almohadas",
+   "e": "🛏️",
+   "img": "https://m.media-amazon.com/images/I/51QMwiHy4WL._AC_UL320_.jpg",
+   "n": 163,
+   "op": 99.0,
+   "p": 86.13,
+   "r": 4.3,
+   "t": "2026-11-06T14:40:42.953766+00:00",
+   "title": "Matnature | Naturea | Colchón Viscoelástico | Fabricado Espuma High Resilience Confort Alta Densidad | Grosor 20 cm | Colchón Antibacterial y Antiácaros | Medidas 105 x 190 cm"
+  },
+  {
    "a": "B0FNRQQTZR",
    "c": "Domótica",
    "e": "💡",
@@ -482,24 +504,12 @@
    "r": 4.4,
    "t": "2026-11-06T11:45:38.407566+00:00",
    "title": "Batería Externa 27000mAh 22.5W PD3.0 QC4.0 Power Bank Carga Rapida, 3A USB C Cargador Portátil con Pantalla LED, 2 Entradas y 3 Salidas Powerbank para Smartphones, Tablets y más (black1)"
-  },
-  {
-   "a": "B0D7BSGM9H",
-   "c": "Mochilas y maletas",
-   "e": "🎒",
-   "img": "https://m.media-amazon.com/images/I/61XiOjmeTjL._AC_UL320_.jpg",
-   "n": 6800,
-   "op": 32.99,
-   "p": 22.99,
-   "r": 4.7,
-   "t": "2026-11-06T11:10:40.042548+00:00",
-   "title": "MATEIN"
   }
  ],
  "summary_day": "2026-11-05",
  "tg_offset": 511048048,
  "x_copy": {
   "day": "2026-11-06",
-  "n": 12
+  "n": 13
  }
 }
