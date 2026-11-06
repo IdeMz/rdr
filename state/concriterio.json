@@ -12,6 +12,7 @@
   "Climatización": "2026-11-05T07:40:39.265430+00:00",
   "Colchones y almohadas": "2026-11-05T16:05:35.786776+00:00",
   "Cuidado de la piel": "2026-11-05T15:31:07.211566+00:00",
+  "Cuidado del cabello": "2026-11-06T09:25:32.635667+00:00",
   "Cámaras de seguridad": "2026-11-05T09:30:32.450110+00:00",
   "Domótica": "2026-11-04T23:02:32.803093+00:00",
   "Fitness en casa": "2026-11-06T08:15:40.851086+00:00",
@@ -34,7 +35,7 @@
   "Televisores": "2026-11-06T08:50:41.728785+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-06T09:23:26.814407+00:00",
+ "next_at": "2026-11-06T09:57:39.837658+00:00",
  "posted": {
   "B0095SMIP8": {
    "c": "Gatos",
@@ -236,6 +237,16 @@
    "title": "Bose SoundLink Flex (2.ª Gen.), Altavoz portátil inalámbrico con Bluetooth pequeño y Potente para Fiestas al Aire Libre, hasta 12 h de autonomía, Resistente al Agua IP67 y al Polvo, Arenisca",
    "v": []
   },
+  "B0DDCHNPBR": {
+   "c": "Cuidado del cabello",
+   "d": 42,
+   "e": "💇",
+   "m": 82,
+   "p": 34.9,
+   "t": "2026-11-06T09:25:54.127040+00:00",
+   "title": "BaByliss Smooth Finish 1200 – Cepillo de Aire Caliente 4-en-1 para Secar, Alisar, Dar Volumen y Moldear, Tecnología Iónica & Cerámica, 4 Accesorios, 1200W, Negro/Rosa, AS122E",
+   "v": []
+  },
   "B0DVLGQX5N": {
    "c": "Freidoras de aire",
    "d": 43,
@@ -403,6 +414,6 @@
  "tg_offset": 511048048,
  "x_copy": {
   "day": "2026-11-06",
-  "n": 3
+  "n": 4
  }
 }
