@@ -31,9 +31,10 @@
   "Smartwatch": "2026-11-05T11:15:40.907800+00:00",
   "Suplementos": "2026-11-05T07:40:39.265430+00:00",
   "Tablets": "2026-11-05T20:10:40.689839+00:00",
+  "Televisores": "2026-11-06T08:50:41.728785+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-06T08:49:31.086949+00:00",
+ "next_at": "2026-11-06T09:23:26.814407+00:00",
  "posted": {
   "B0095SMIP8": {
    "c": "Gatos",
@@ -245,6 +246,16 @@
    "title": "Mellerware - Freidora sin aceite Crunchy Plus 5.5L 1500W | 11 Menús Predefinidos | Capacidad para 3-5 raciones | Temporizador Programable | Pantalla para controlar la temperatura | Air Fryer 80-200º",
    "v": []
   },
+  "B0F457M449": {
+   "c": "Televisores",
+   "d": 28,
+   "e": "📺",
+   "m": 81,
+   "p": 129.0,
+   "t": "2026-11-06T08:51:01.609226+00:00",
+   "title": "XIAOMI TV F Pro 32 Pulgadas 2025, QLED Smart TV, Fire OS7, L32MB-FPEU",
+   "v": []
+  },
   "B0FBG3ZCK6": {
    "c": "Zapatillas",
    "d": 40,
@@ -392,6 +403,6 @@
  "tg_offset": 511048048,
  "x_copy": {
   "day": "2026-11-06",
-  "n": 2
+  "n": 3
  }
 }
