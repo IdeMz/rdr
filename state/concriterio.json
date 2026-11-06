@@ -19,7 +19,7 @@
   "Fitness en casa": "2026-11-06T08:15:40.851086+00:00",
   "Freidoras de aire": "2026-11-05T08:50:42.521815+00:00",
   "Gatos": "2026-11-05T13:01:09.573881+00:00",
-  "Herramientas": "2026-11-05T18:25:35.364841+00:00",
+  "Herramientas": "2026-11-06T17:01:09.983033+00:00",
   "Iluminación": "2026-11-05T17:15:47.121170+00:00",
   "Jardín": "2026-11-06T15:50:43.516360+00:00",
   "Lego": "2026-11-06T10:35:29.846768+00:00",
@@ -31,7 +31,7 @@
   "Perfumes": "2026-11-05T14:10:43.141327+00:00",
   "Periféricos": "2026-11-06T15:50:43.516360+00:00",
   "Perros": "2026-11-06T12:20:41.756967+00:00",
-  "Portátiles": "2026-11-05T13:35:39.971891+00:00",
+  "Portátiles": "2026-11-06T17:01:09.983033+00:00",
   "Relojes": "2026-11-06T10:01:05.963762+00:00",
   "Robots de cocina": "2026-11-05T08:15:41.952994+00:00",
   "Smartwatch": "2026-11-05T11:15:40.907800+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-06T12:55:37.011327+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-06T16:57:19.467510+00:00",
+ "next_at": "2026-11-06T17:33:11.808817+00:00",
  "posted": {
   "B0095SMIP8": {
    "c": "Gatos",
@@ -213,6 +213,16 @@
    "p": 23.46,
    "t": "2026-11-05T21:21:06.517914+00:00",
    "title": "Auriculares Inalámbricos Bluetooth, Auriculares Bluetooth 5.3, HiFi Estéreo",
+   "v": []
+  },
+  "B0BCKSWJGJ": {
+   "c": "Herramientas",
+   "d": 25,
+   "e": "🔧",
+   "m": 95,
+   "p": 114.75,
+   "t": "2026-11-06T17:01:35.426534+00:00",
+   "title": "Bosch taladro percutor a batería EasyImpact 18V-40 (2x batería de 2,0 Ah, sistema de 18 V, set de destornilladores y brocas para madera, piedra y metal de 43 piezas, en caja)",
    "v": []
   },
   "B0BL898WJZ": {
@@ -542,6 +552,6 @@
  "tg_offset": 511048049,
  "x_copy": {
   "day": "2026-11-06",
-  "n": 16
+  "n": 17
  }
 }
