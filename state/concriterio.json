@@ -21,6 +21,7 @@
   "Herramientas": "2026-11-05T18:25:35.364841+00:00",
   "Iluminación": "2026-11-05T17:15:47.121170+00:00",
   "Jardín": "2026-11-05T10:05:33.583568+00:00",
+  "Lego": "2026-11-06T10:35:29.846768+00:00",
   "Menaje de cocina": "2026-11-05T17:50:46.417577+00:00",
   "Monitores": "2026-11-05T16:40:53.798263+00:00",
   "Móviles": "2026-11-05T20:45:43.085606+00:00",
@@ -36,7 +37,7 @@
   "Televisores": "2026-11-06T08:50:41.728785+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-06T10:35:29.671698+00:00",
+ "next_at": "2026-11-06T11:09:23.762000+00:00",
  "posted": {
   "B0095SMIP8": {
    "c": "Gatos",
@@ -218,6 +219,16 @@
    "title": "Gritin 19 LED Luz de Lectura, 360° Flexible Ajustable Lámpara de Lectura",
    "v": []
   },
+  "B0CFVZG5TR": {
+   "c": "Lego",
+   "d": 38,
+   "e": "🧱",
+   "m": 84,
+   "p": 39.99,
+   "t": "2026-11-06T10:35:58.852555+00:00",
+   "title": "LEGO Disney Stitch 43249",
+   "v": []
+  },
   "B0CM4B43DZ": {
    "c": "Cuidado de la piel",
    "d": 44,
@@ -385,6 +396,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0CFVYPKGB",
+   "c": "Lego",
+   "e": "🧱",
+   "img": "https://m.media-amazon.com/images/I/71vMYCyNExL._AC_UL320_.jpg",
+   "n": 5800,
+   "op": 19.99,
+   "p": 14.95,
+   "r": 4.8,
+   "t": "2026-11-06T10:35:29.846768+00:00",
+   "title": "LEGO Creator 3 en 1 Camión Plataforma con Helicóptero 31146"
+  },
+  {
    "a": "B0CJJ4C7DV",
    "c": "Fitness en casa",
    "e": "🏋️",
@@ -407,24 +430,12 @@
    "r": 4.6,
    "t": "2026-11-06T07:40:40.920898+00:00",
    "title": "Cecotec Casco Urbano y Montaña para Bicicletas y Patinetes Eléctricos BrainGuard Urban y Sprinter, Tallas S-M y L-XL, Homologado para Cumplir con la Máxima Seguridad"
-  },
-  {
-   "a": "B0GX4YGYXG",
-   "c": "Accesorios de coche",
-   "e": "🚗",
-   "img": "https://m.media-amazon.com/images/I/81NekMkXTUL._AC_UL320_.jpg",
-   "n": 120,
-   "op": 129.99,
-   "p": 84.99,
-   "r": 4.4,
-   "t": "2026-11-06T07:01:07.134816+00:00",
-   "title": "WOLFANG 4K Dashcam, 610° 4 Canales Cámara de Coche con 5,8 GHz WiFi & App"
   }
  ],
  "summary_day": "2026-11-05",
  "tg_offset": 511048048,
  "x_copy": {
   "day": "2026-11-06",
-  "n": 5
+  "n": 6
  }
 }
