@@ -1,5 +1,6 @@
 {
  "cats": {
+  "Accesorios de coche": "2026-11-06T07:01:07.134816+00:00",
   "Afeitado y depilación": "2026-11-05T09:31:10.693430+00:00",
   "Almacenamiento": "2026-11-05T19:01:07.787656+00:00",
   "Altavoces": "2026-11-05T11:50:44.194753+00:00",
@@ -30,7 +31,7 @@
   "Tablets": "2026-11-05T20:10:40.689839+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-05T22:27:38.722126+00:00",
+ "next_at": "2026-11-06T07:35:40.555346+00:00",
  "posted": {
   "B0095SMIP8": {
    "c": "Gatos",
@@ -160,6 +161,16 @@
    "p": 12.9,
    "t": "2026-11-05T09:31:30.749018+00:00",
    "title": "Cecotec Rasuradora facial Bamba FaceCare Smooth, Cuchilla de Acero inoxidable, Se adapta a la piel, Impermeable IPX5, Capuchón protector",
+   "v": []
+  },
+  "B0C33RDGY8": {
+   "c": "Accesorios de coche",
+   "d": 22,
+   "e": "🚗",
+   "m": 78,
+   "p": 69.99,
+   "t": "2026-11-06T07:01:39.101272+00:00",
+   "title": "GKU 4K Dashcam Cámara Coche, 5GHz WiFi Dash CAM Coche con Tarjeta de 64GB, Mini Cámara Coche Grabadora, 170° Gran Angular, Visión Nocturna, WDR, Sensor G, Modo Parking 24H, Control App, Máx 256GB",
    "v": []
   },
   "B0CBPL4RKH": {
@@ -319,40 +330,16 @@
  "rejected": {},
  "reserve": [
   {
-   "a": "B0CCDNJS75",
-   "c": "Auriculares",
-   "e": "🎧",
-   "img": "https://m.media-amazon.com/images/I/710Lppy-fzL._AC_UL320_.jpg",
-   "n": 24700,
-   "op": 49.99,
-   "p": 25.99,
-   "r": 4.3,
-   "t": "2026-11-05T21:20:42.646272+00:00",
-   "title": "Auriculares Inalámbricos Bluetooth, Auriculares Bluetooth 5.3, 4 Mic con Reducción de Ruido ENC, 50H con Graves, Cascos Inalambricos Bluetooth IP7 Impermeable, Carga Rápida USB-C, Ajuste Cómodo"
-  },
-  {
-   "a": "B0FT8PMRW4",
-   "c": "Móviles",
-   "e": "📱",
-   "img": "https://m.media-amazon.com/images/I/616gwh5LgOL._AC_UL320_.jpg",
-   "n": 572,
-   "op": 199.55,
-   "p": 174.5,
-   "r": 4.3,
-   "t": "2026-11-05T20:45:43.085606+00:00",
-   "title": "Samsung SM-A175 A17 4+128GB 6.7\" 4G Black DS ITA"
-  },
-  {
-   "a": "B01D3ACIR6",
-   "c": "Almacenamiento",
-   "e": "💾",
-   "img": "https://m.media-amazon.com/images/I/614HikUJ-LL._AC_UL320_.jpg",
-   "n": 9700,
-   "op": 54.68,
-   "p": 42.96,
-   "r": 4.6,
-   "t": "2026-11-05T19:01:07.787656+00:00",
-   "title": "Intenso 3813440 240GB SATA III High Performance Internal 2.5' SSD"
+   "a": "B0GX4YGYXG",
+   "c": "Accesorios de coche",
+   "e": "🚗",
+   "img": "https://m.media-amazon.com/images/I/81NekMkXTUL._AC_UL320_.jpg",
+   "n": 120,
+   "op": 129.99,
+   "p": 84.99,
+   "r": 4.4,
+   "t": "2026-11-06T07:01:07.134816+00:00",
+   "title": "WOLFANG 4K Dashcam, 610° 4 Canales Cámara de Coche con 5,8 GHz WiFi & App"
   }
  ],
  "summary_day": "2026-11-05",
