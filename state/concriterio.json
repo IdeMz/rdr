@@ -38,9 +38,10 @@
   "Suplementos": "2026-11-05T07:40:39.265430+00:00",
   "Tablets": "2026-11-05T20:10:40.689839+00:00",
   "Televisores": "2026-11-06T08:50:41.728785+00:00",
+  "Videojuegos": "2026-11-06T12:55:37.011327+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-06T12:53:53.763475+00:00",
+ "next_at": "2026-11-06T13:28:52.854707+00:00",
  "posted": {
   "B0095SMIP8": {
    "c": "Gatos",
@@ -262,6 +263,16 @@
    "title": "Homey - Almohada Viscoelástica Carbono | Máximo Confort y Excelente Adaptabilidad con Propiedades Antiestrés | 2 Unidades de 70 x 40 cm",
    "v": []
   },
+  "B0D323HH3F": {
+   "c": "Videojuegos",
+   "d": 26,
+   "e": "🎮",
+   "m": 88,
+   "p": 9.99,
+   "t": "2026-11-06T12:56:05.681897+00:00",
+   "title": "Funko Fusion - Gioco Per Ps5",
+   "v": []
+  },
   "B0D6W8GSL3": {
    "c": "Altavoces",
    "d": 40,
@@ -469,6 +480,6 @@
  "tg_offset": 511048048,
  "x_copy": {
   "day": "2026-11-06",
-  "n": 9
+  "n": 10
  }
 }
