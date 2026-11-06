@@ -8,6 +8,7 @@
   "Auriculares": "2026-11-05T21:20:42.646272+00:00",
   "Cafeteras": "2026-11-05T14:45:44.188384+00:00",
   "Café y cápsulas": "2026-11-05T12:25:32.144399+00:00",
+  "Ciclismo": "2026-11-06T07:40:40.920898+00:00",
   "Climatización": "2026-11-05T07:40:39.265430+00:00",
   "Colchones y almohadas": "2026-11-05T16:05:35.786776+00:00",
   "Cuidado de la piel": "2026-11-05T15:31:07.211566+00:00",
@@ -31,7 +32,7 @@
   "Tablets": "2026-11-05T20:10:40.689839+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-06T07:35:40.555346+00:00",
+ "next_at": "2026-11-06T08:14:55.082391+00:00",
  "posted": {
   "B0095SMIP8": {
    "c": "Gatos",
@@ -71,6 +72,16 @@
    "p": 69.99,
    "t": "2026-11-05T07:01:36.358305+00:00",
    "title": "Logitech MK850 Combo Teclado y Ratón Multidispositivo, QWERTY Español",
+   "v": []
+  },
+  "B06XK8H7DM": {
+   "c": "Ciclismo",
+   "d": 41,
+   "e": "🚴",
+   "m": 79,
+   "p": 21.78,
+   "t": "2026-11-06T07:41:06.854876+00:00",
+   "title": "Fischer Urban Levin Bicicleta Casco",
    "v": []
   },
   "B07XLML2YS": {
@@ -330,6 +341,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0BQ14QLPJ",
+   "c": "Ciclismo",
+   "e": "🚴",
+   "img": "https://m.media-amazon.com/images/I/51FFNXMYebL._AC_UL320_.jpg",
+   "n": 400,
+   "op": 23.9,
+   "p": 19.9,
+   "r": 4.6,
+   "t": "2026-11-06T07:40:40.920898+00:00",
+   "title": "Cecotec Casco Urbano y Montaña para Bicicletas y Patinetes Eléctricos BrainGuard Urban y Sprinter, Tallas S-M y L-XL, Homologado para Cumplir con la Máxima Seguridad"
+  },
+  {
    "a": "B0GX4YGYXG",
    "c": "Accesorios de coche",
    "e": "🚗",
@@ -345,7 +368,7 @@
  "summary_day": "2026-11-05",
  "tg_offset": 511048048,
  "x_copy": {
-  "day": "2026-11-05",
-  "n": 6
+  "day": "2026-11-06",
+  "n": 1
  }
 }
