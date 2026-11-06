@@ -3,7 +3,7 @@
   "Accesorios de coche": "2026-11-06T07:01:07.134816+00:00",
   "Afeitado y depilación": "2026-11-06T19:30:54.067513+00:00",
   "Almacenamiento": "2026-11-05T19:01:07.787656+00:00",
-  "Altavoces": "2026-11-05T11:50:44.194753+00:00",
+  "Altavoces": "2026-11-06T20:30:59.575667+00:00",
   "Aspiradoras": "2026-11-06T18:10:43.252691+00:00",
   "Auriculares": "2026-11-05T21:20:42.646272+00:00",
   "Cafeteras": "2026-11-06T18:45:37.891773+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-06T12:55:37.011327+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-06T20:25:43.695040+00:00",
+ "next_at": "2026-11-06T21:02:02.564717+00:00",
  "offer": {
   "a": "B079FFWFWT",
   "m": 33,
@@ -330,6 +330,16 @@
    "title": "La Roche-Posay, Mela B3 Sérum, Hiperpigmentación y manchas post acné, 30 ml",
    "v": []
   },
+  "B0CQ53RVTW": {
+   "c": "Altavoces",
+   "d": 31,
+   "e": "🔊",
+   "m": 101,
+   "p": 89.99,
+   "t": "2026-11-06T20:31:19.446471+00:00",
+   "title": "Soundcore Boom 2 Altavoz Bluetooth Potente 80 W, 24 h, IPX7",
+   "v": []
+  },
   "B0D1KN8DRS": {
    "c": "Colchones y almohadas",
    "d": 14,
@@ -553,10 +563,7 @@
    "v": []
   }
  },
- "problem": {
-  "fails": 2,
-  "last": "HTTP 503"
- },
+ "problem": {},
  "rejected": {},
  "reserve": [
   {
@@ -600,6 +607,6 @@
  "tg_offset": 511048049,
  "x_copy": {
   "day": "2026-11-06",
-  "n": 21
+  "n": 22
  }
 }
