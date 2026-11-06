@@ -36,12 +36,12 @@
   "Robots de cocina": "2026-11-05T08:15:41.952994+00:00",
   "Smartwatch": "2026-11-05T11:15:40.907800+00:00",
   "Suplementos": "2026-11-06T15:15:40.655483+00:00",
-  "Tablets": "2026-11-05T20:10:40.689839+00:00",
+  "Tablets": "2026-11-06T21:05:32.851025+00:00",
   "Televisores": "2026-11-06T08:50:41.728785+00:00",
   "Videojuegos": "2026-11-06T12:55:37.011327+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-06T21:02:02.564717+00:00",
+ "next_at": "2026-11-06T21:36:13.292037+00:00",
  "offer": {
   "a": "B079FFWFWT",
   "m": 33,
@@ -188,6 +188,16 @@
    "p": 109.0,
    "t": "2026-11-05T18:25:55.312078+00:00",
    "title": "Einhell Set de taladro percutor con batería TE-CD 18/40 Li-i +64 (2x2,0 Ah)",
+   "v": []
+  },
+  "B09FL1TK77": {
+   "c": "Tablets",
+   "d": 23,
+   "e": "📲",
+   "m": 102,
+   "p": 99.99,
+   "t": "2026-11-06T21:06:01.022588+00:00",
+   "title": "TECLAST M50T Tablet 10.1 Pulgadas Android 16 Tableta Gemini AI, 32GB RAM+128GB ROM+5TB TF, 2GHz Octa-Core, 7000mAh, 2.4G+5G WiFi, BT 5.4/Widevine L1/13MP+5MP/3.5MM/Face ID/OTG, Tablets con Lápiz, 2026",
    "v": []
   },
   "B09KRVN7XG": {
@@ -567,6 +577,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0FJ9234ZX",
+   "c": "Tablets",
+   "e": "📲",
+   "img": "https://m.media-amazon.com/images/I/71zO6+NNVML._AC_UL320_.jpg",
+   "n": 259,
+   "op": 299.9,
+   "p": 244.99,
+   "r": 4.8,
+   "t": "2026-11-06T21:05:32.851025+00:00",
+   "title": "XIAOMI REDMI Pad 2 Pro Tablet 6+128GB Gris Batería de 12000 mAh"
+  },
+  {
    "a": "B079FFWFWT",
    "c": "Afeitado y depilación",
    "e": "🪒",
@@ -589,24 +611,12 @@
    "r": 4.3,
    "t": "2026-11-06T18:10:43.252691+00:00",
    "title": "DREAME L50 Pro Ultra Robot Aspirador y Fregasuelos, 19500 Pa, Autolimpieza de la Mopa, Detección de Obstáculos Inteligente, Limpieza con Agua Caliente a 75°, Robot Aspitador con Cámara para Mascotas"
-  },
-  {
-   "a": "B0CKM2SSK3",
-   "c": "Perfumes",
-   "e": "🌸",
-   "img": "https://m.media-amazon.com/images/I/71DfESbdC8L._AC_UL320_.jpg",
-   "n": 6500,
-   "op": 47.4,
-   "p": 36.87,
-   "r": 4.3,
-   "t": "2026-11-06T17:35:34.238247+00:00",
-   "title": "Rasasi Hawas Ice 100 ml Eau de Parfum"
   }
  ],
  "summary_day": "2026-11-05",
  "tg_offset": 511048049,
  "x_copy": {
   "day": "2026-11-06",
-  "n": 22
+  "n": 23
  }
 }
