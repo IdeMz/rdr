@@ -35,13 +35,13 @@
   "Relojes": "2026-11-06T10:01:05.963762+00:00",
   "Robots de cocina": "2026-11-05T08:15:41.952994+00:00",
   "Smartwatch": "2026-11-05T11:15:40.907800+00:00",
-  "Suplementos": "2026-11-05T07:40:39.265430+00:00",
+  "Suplementos": "2026-11-06T15:15:40.655483+00:00",
   "Tablets": "2026-11-05T20:10:40.689839+00:00",
   "Televisores": "2026-11-06T08:50:41.728785+00:00",
   "Videojuegos": "2026-11-06T12:55:37.011327+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-06T15:12:19.519715+00:00",
+ "next_at": "2026-11-06T15:49:25.461688+00:00",
  "posted": {
   "B0095SMIP8": {
    "c": "Gatos",
@@ -313,6 +313,16 @@
    "title": "BaByliss Smooth Finish 1200 – Cepillo de Aire Caliente 4-en-1 para Secar, Alisar, Dar Volumen y Moldear, Tecnología Iónica & Cerámica, 4 Accesorios, 1200W, Negro/Rosa, AS122E",
    "v": []
   },
+  "B0DFY4ZZPX": {
+   "c": "Suplementos",
+   "d": 10,
+   "e": "💊",
+   "m": 92,
+   "p": 8.95,
+   "t": "2026-11-06T15:16:09.174346+00:00",
+   "title": "Kneipp Gummies Niños Concentración, 30 gominolas",
+   "v": []
+  },
   "B0DN6B2BWP": {
    "c": "Perros",
    "d": 30,
@@ -492,24 +502,12 @@
    "r": 4.5,
    "t": "2026-11-06T14:05:32.179358+00:00",
    "title": "Tapo L430P-Bombilla inteligente WiFi, 16 millones de colores, regulable,E27"
-  },
-  {
-   "a": "B0F6TYQT12",
-   "c": "Cargadores y baterías",
-   "e": "🔌",
-   "img": "https://m.media-amazon.com/images/I/61RfyHDgYAL._AC_UL320_.jpg",
-   "n": 3400,
-   "op": 24.99,
-   "p": 16.99,
-   "r": 4.4,
-   "t": "2026-11-06T11:45:38.407566+00:00",
-   "title": "Batería Externa 27000mAh 22.5W PD3.0 QC4.0 Power Bank Carga Rapida, 3A USB C Cargador Portátil con Pantalla LED, 2 Entradas y 3 Salidas Powerbank para Smartphones, Tablets y más (black1)"
   }
  ],
  "summary_day": "2026-11-05",
  "tg_offset": 511048048,
  "x_copy": {
   "day": "2026-11-06",
-  "n": 13
+  "n": 14
  }
 }
