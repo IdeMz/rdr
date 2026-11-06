@@ -1,7 +1,7 @@
 {
  "cats": {
   "Accesorios de coche": "2026-11-06T07:01:07.134816+00:00",
-  "Afeitado y depilación": "2026-11-05T09:31:10.693430+00:00",
+  "Afeitado y depilación": "2026-11-06T19:30:54.067513+00:00",
   "Almacenamiento": "2026-11-05T19:01:07.787656+00:00",
   "Altavoces": "2026-11-05T11:50:44.194753+00:00",
   "Aspiradoras": "2026-11-06T18:10:43.252691+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-06T12:55:37.011327+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-06T19:30:39.744088+00:00",
+ "next_at": "2026-11-06T20:01:29.289007+00:00",
  "posted": {
   "B000C1UBQU": {
    "c": "Perfumes",
@@ -305,6 +305,16 @@
    "title": "American Tourister",
    "v": []
   },
+  "B0CHZ5WN26": {
+   "c": "Afeitado y depilación",
+   "d": 41,
+   "e": "🪒",
+   "m": 100,
+   "p": 39.99,
+   "t": "2026-11-06T19:31:22.583572+00:00",
+   "title": "Philips OneBlade 360 con Bluetooth, Recortadora para Barba y Cuerpo, Afeitadora Eléctrica Hombre, Depilación masculina, 2 Cuchillas, 5 Longitudes, 60 minutos de uso con 1 hora de carga, QP4631/30",
+   "v": []
+  },
   "B0CM4B43DZ": {
    "c": "Cuidado de la piel",
    "d": 44,
@@ -538,12 +548,21 @@
    "v": []
   }
  },
- "problem": {
-  "fails": 1,
-  "last": "HTTP 503"
- },
+ "problem": {},
  "rejected": {},
  "reserve": [
+  {
+   "a": "B079FFWFWT",
+   "c": "Afeitado y depilación",
+   "e": "🪒",
+   "img": "https://m.media-amazon.com/images/I/71B+JHlDBjL._AC_UL320_.jpg",
+   "n": 10700,
+   "op": 13.45,
+   "p": 8.49,
+   "r": 4.6,
+   "t": "2026-11-06T19:30:54.067513+00:00",
+   "title": "Gillette Venus Comfortglide Spa Breeze Maquinilla de Afeitar Mujer"
+  },
   {
    "a": "B0DQ5KNY6Y",
    "c": "Aspiradoras",
@@ -567,24 +586,12 @@
    "r": 4.3,
    "t": "2026-11-06T17:35:34.238247+00:00",
    "title": "Rasasi Hawas Ice 100 ml Eau de Parfum"
-  },
-  {
-   "a": "B00BEFY1W8",
-   "c": "Periféricos",
-   "e": "⌨️",
-   "img": "https://m.media-amazon.com/images/I/61pUul1oDlL._AC_UL320_.jpg",
-   "n": 8600,
-   "op": 29.99,
-   "p": 21.99,
-   "r": 4.2,
-   "t": "2026-11-06T15:50:43.516360+00:00",
-   "title": "Logitech MK270 Combo Teclado y Ratón Inalámbrico para Windows"
   }
  ],
  "summary_day": "2026-11-05",
  "tg_offset": 511048049,
  "x_copy": {
   "day": "2026-11-06",
-  "n": 20
+  "n": 21
  }
 }
