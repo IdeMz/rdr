@@ -4,7 +4,7 @@
   "Afeitado y depilación": "2026-11-05T09:31:10.693430+00:00",
   "Almacenamiento": "2026-11-05T19:01:07.787656+00:00",
   "Altavoces": "2026-11-05T11:50:44.194753+00:00",
-  "Aspiradoras": "2026-11-05T19:35:33.265025+00:00",
+  "Aspiradoras": "2026-11-06T18:10:43.252691+00:00",
   "Auriculares": "2026-11-05T21:20:42.646272+00:00",
   "Cafeteras": "2026-11-05T14:45:44.188384+00:00",
   "Café y cápsulas": "2026-11-05T12:25:32.144399+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-06T12:55:37.011327+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-06T18:07:05.717145+00:00",
+ "next_at": "2026-11-06T18:44:09.654591+00:00",
  "posted": {
   "B000C1UBQU": {
    "c": "Perfumes",
@@ -435,6 +435,16 @@
    "title": "MSI mag 276CFA E20 Monitor Gaming de 27\" FHD 1500R, 1920 x 1080 Rapid VA, 200 Hz, 0,5 ms, Compatible con HDR, AMD FreeSync™ Premium, Eye-Care, visión AI, HDMI 2.0b, DP 1.2a, Frameless, Negro",
    "v": []
   },
+  "B0G7VW141Z": {
+   "c": "Aspiradoras",
+   "d": 55,
+   "e": "🧹",
+   "m": 98,
+   "p": 269.98,
+   "t": "2026-11-06T18:11:18.732164+00:00",
+   "title": "Lefant M210 Omni Robot Aspirador y Fregasuelos, Mopa de Rodillo, 20000 Pa",
+   "v": []
+  },
   "B0GF1WDV3V": {
    "c": "Aspiradoras",
    "d": 50,
@@ -522,6 +532,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0DQ5KNY6Y",
+   "c": "Aspiradoras",
+   "e": "🧹",
+   "img": "https://m.media-amazon.com/images/I/61nNQOyry2L._AC_UL320_.jpg",
+   "n": 287,
+   "op": 1099.0,
+   "p": 499.0,
+   "r": 4.3,
+   "t": "2026-11-06T18:10:43.252691+00:00",
+   "title": "DREAME L50 Pro Ultra Robot Aspirador y Fregasuelos, 19500 Pa, Autolimpieza de la Mopa, Detección de Obstáculos Inteligente, Limpieza con Agua Caliente a 75°, Robot Aspitador con Cámara para Mascotas"
+  },
+  {
    "a": "B0CKM2SSK3",
    "c": "Perfumes",
    "e": "🌸",
@@ -544,24 +566,12 @@
    "r": 4.2,
    "t": "2026-11-06T15:50:43.516360+00:00",
    "title": "Logitech MK270 Combo Teclado y Ratón Inalámbrico para Windows"
-  },
-  {
-   "a": "B0H3ZT4C8F",
-   "c": "Colchones y almohadas",
-   "e": "🛏️",
-   "img": "https://m.media-amazon.com/images/I/51QMwiHy4WL._AC_UL320_.jpg",
-   "n": 163,
-   "op": 99.0,
-   "p": 86.13,
-   "r": 4.3,
-   "t": "2026-11-06T14:40:42.953766+00:00",
-   "title": "Matnature | Naturea | Colchón Viscoelástico | Fabricado Espuma High Resilience Confort Alta Densidad | Grosor 20 cm | Colchón Antibacterial y Antiácaros | Medidas 105 x 190 cm"
   }
  ],
  "summary_day": "2026-11-05",
  "tg_offset": 511048049,
  "x_copy": {
   "day": "2026-11-06",
-  "n": 18
+  "n": 19
  }
 }
