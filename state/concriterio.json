@@ -101,7 +101,9 @@
    "p": 39.99,
    "t": "2026-11-06T15:51:11.319109+00:00",
    "title": "Logitech MK540 Advanced Combo Teclado y Ratón Inalámbrico - QWERTY ESP",
-   "v": []
+   "v": [
+    "5f2e3ed7ec51"
+   ]
   },
   "B07TJW59YZ": {
    "c": "Relojes",
@@ -527,7 +529,7 @@
   }
  ],
  "summary_day": "2026-11-05",
- "tg_offset": 511048048,
+ "tg_offset": 511048049,
  "x_copy": {
   "day": "2026-11-06",
   "n": 15
