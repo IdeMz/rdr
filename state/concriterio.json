@@ -33,7 +33,7 @@
   "Perros": "2026-11-06T12:20:41.756967+00:00",
   "Portátiles": "2026-11-06T17:01:09.983033+00:00",
   "Relojes": "2026-11-06T10:01:05.963762+00:00",
-  "Robots de cocina": "2026-11-05T08:15:41.952994+00:00",
+  "Robots de cocina": "2026-11-07T08:45:38.780928+00:00",
   "Smartwatch": "2026-11-05T11:15:40.907800+00:00",
   "Suplementos": "2026-11-06T15:15:40.655483+00:00",
   "Tablets": "2026-11-06T21:05:32.851025+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-06T12:55:37.011327+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-07T08:41:54.901184+00:00",
+ "next_at": "2026-11-07T09:16:56.572901+00:00",
  "offer": {
   "a": "B079FFWFWT",
   "m": 33,
@@ -400,6 +400,16 @@
    "title": "Cecotec Cepillo de Aire 14 Cabezales CeramicCare 14in1 AirGlisse Black",
    "v": []
   },
+  "B0D8QQ2LY5": {
+   "c": "Robots de cocina",
+   "d": 33,
+   "e": "🥣",
+   "m": 108,
+   "p": 187.7,
+   "t": "2026-11-07T08:46:01.344537+00:00",
+   "title": "Ninja Detect Power Pro, Batidora y Procesador de Alimentos, Negro",
+   "v": []
+  },
   "B0DBHLNQK2": {
    "c": "Menaje de cocina",
    "d": 29,
@@ -657,6 +667,6 @@
  "tg_offset": 511048049,
  "x_copy": {
   "day": "2026-11-07",
-  "n": 3
+  "n": 4
  }
 }
