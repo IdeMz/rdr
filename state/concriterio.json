@@ -1,6 +1,6 @@
 {
  "cats": {
-  "Accesorios de coche": "2026-11-06T07:01:07.134816+00:00",
+  "Accesorios de coche": "2026-11-07T08:10:40.429017+00:00",
   "Afeitado y depilación": "2026-11-06T19:30:54.067513+00:00",
   "Almacenamiento": "2026-11-05T19:01:07.787656+00:00",
   "Altavoces": "2026-11-06T20:30:59.575667+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-06T12:55:37.011327+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-07T08:06:55.786650+00:00",
+ "next_at": "2026-11-07T08:41:54.901184+00:00",
  "offer": {
   "a": "B079FFWFWT",
   "m": 33,
@@ -550,6 +550,16 @@
    "title": "12M Dispositivo de Enfriamiento por Aspersión, Sistema de Riego de Jardines, 75 Pcs Kit de Pulverización de Jardín, Adecuado para Eventos al Aire Libre, Jardines, Patios, Sombrillas y Techos",
    "v": []
   },
+  "B0GX4YGYXG": {
+   "c": "Accesorios de coche",
+   "d": 35,
+   "e": "🚗",
+   "m": 107,
+   "p": 84.99,
+   "t": "2026-11-07T08:11:15.032675+00:00",
+   "title": "WOLFANG 4K Dashcam, 610° 4 Canales Cámara de Coche con 5,8 GHz WiFi & App",
+   "v": []
+  },
   "B0H2TPD39T": {
    "c": "Menaje de cocina",
    "d": 27,
@@ -607,6 +617,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0D58HZF7P",
+   "c": "Accesorios de coche",
+   "e": "🚗",
+   "img": "https://m.media-amazon.com/images/I/71-EVE4+GyL._AC_UL320_.jpg",
+   "n": 478,
+   "op": 99.99,
+   "p": 69.99,
+   "r": 4.2,
+   "t": "2026-11-07T08:10:40.429017+00:00",
+   "title": "iZEEKER 3 Canales 4K Dashcam con Tarjeta de 32GB GRATIS, Cámara Coche Frontal, Trasera e Interior 4K+1080P+1080P con WDR, Visión Nocturna IR, WiFi 6, Ángulo 170°, G-Sensor, Modo de Estacionamiento 24H"
+  },
+  {
    "a": "B0049U0DMC",
    "c": "Café y cápsulas",
    "e": "🫘",
@@ -635,6 +657,6 @@
  "tg_offset": 511048049,
  "x_copy": {
   "day": "2026-11-07",
-  "n": 2
+  "n": 3
  }
 }
