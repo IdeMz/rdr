@@ -18,7 +18,7 @@
   "Domótica": "2026-11-06T14:05:32.179358+00:00",
   "Fitness en casa": "2026-11-07T15:40:38.914161+00:00",
   "Freidoras de aire": "2026-11-05T08:50:42.521815+00:00",
-  "Gatos": "2026-11-05T13:01:09.573881+00:00",
+  "Gatos": "2026-11-07T16:50:41.349951+00:00",
   "Herramientas": "2026-11-06T17:01:09.983033+00:00",
   "Iluminación": "2026-11-07T09:20:39.723799+00:00",
   "Jardín": "2026-11-06T15:50:43.516360+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-07T10:30:58.103086+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-07T16:49:35.448821+00:00",
+ "next_at": "2026-11-07T17:24:51.120245+00:00",
  "offer": {
   "a": "B008TOWNQ8",
   "m": 50,
@@ -96,6 +96,16 @@
    "p": 16.99,
    "t": "2026-11-05T10:41:12.221135+00:00",
    "title": "Myprotein Creatina Monohidrato en Polvo, Sin Sabor, 500g",
+   "v": []
+  },
+  "B00O4AXMQG": {
+   "c": "Gatos",
+   "d": 38,
+   "e": "🐱",
+   "m": 119,
+   "p": 23.0,
+   "t": "2026-11-07T16:51:08.490373+00:00",
+   "title": "Arquivet, Arena Gato Silica Crystal 17,8 L",
    "v": []
   },
   "B01AMAYRHY": {
@@ -728,6 +738,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B012H6JLAE",
+   "c": "Gatos",
+   "e": "🐱",
+   "img": "https://m.media-amazon.com/images/I/71vDfIzSaQL._AC_UL320_.jpg",
+   "n": 8400,
+   "op": 8.99,
+   "p": 7.99,
+   "r": 4.4,
+   "t": "2026-11-07T16:50:41.349951+00:00",
+   "title": "Sanicat - Arena Aglomerante Active White con Flor de Loto, Hecha de minerales naturales con control de olor garantizado, Absorbe la humedad y facilita la limpieza, 6 L de capacidad"
+  },
+  {
    "a": "B0D1DV9NHZ",
    "c": "Fitness en casa",
    "e": "🏋️",
@@ -756,6 +778,6 @@
  "tg_offset": 511048050,
  "x_copy": {
   "day": "2026-11-07",
-  "n": 13
+  "n": 14
  }
 }
