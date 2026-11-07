@@ -38,10 +38,10 @@
   "Suplementos": "2026-11-06T15:15:40.655483+00:00",
   "Tablets": "2026-11-06T21:05:32.851025+00:00",
   "Televisores": "2026-11-06T08:50:41.728785+00:00",
-  "Videojuegos": "2026-11-06T12:55:37.011327+00:00",
+  "Videojuegos": "2026-11-07T10:30:58.103086+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-07T10:25:43.528219+00:00",
+ "next_at": "2026-11-07T11:05:06.019888+00:00",
  "offer": {
   "a": "B079FFWFWT",
   "m": 33,
@@ -540,6 +540,16 @@
    "title": "MSI mag 276CFA E20 Monitor Gaming de 27\" FHD 1500R, 1920 x 1080 Rapid VA, 200 Hz, 0,5 ms, Compatible con HDR, AMD FreeSync™ Premium, Eye-Care, visión AI, HDMI 2.0b, DP 1.2a, Frameless, Negro",
    "v": []
   },
+  "B0FXHDBB1R": {
+   "c": "Videojuegos",
+   "d": 18,
+   "e": "🎮",
+   "m": 111,
+   "p": 32.99,
+   "t": "2026-11-07T10:31:22.323082+00:00",
+   "title": "Assassin's Creed Shadows (Switch 2)",
+   "v": []
+  },
   "B0G7VW141Z": {
    "c": "Aspiradoras",
    "d": 55,
@@ -647,6 +657,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0DDCFZBQD",
+   "c": "Videojuegos",
+   "e": "🎮",
+   "img": "https://m.media-amazon.com/images/I/81GlQBfZUZL._AC_UL320_.jpg",
+   "n": 749,
+   "op": 29.99,
+   "p": 25.99,
+   "r": 4.7,
+   "t": "2026-11-07T10:30:58.103086+00:00",
+   "title": "Poppy Playtime Triple Pack - PS5"
+  },
+  {
    "a": "B0D58HZF7P",
    "c": "Accesorios de coche",
    "e": "🚗",
@@ -669,24 +691,12 @@
    "r": 4.5,
    "t": "2026-11-07T07:35:31.317148+00:00",
    "title": "Lavazza, Qualità Oro, Café en Grano Natural, 1 kg"
-  },
-  {
-   "a": "B0F9L1BKBK",
-   "c": "Menaje de cocina",
-   "e": "🍳",
-   "img": "https://m.media-amazon.com/images/I/71bUU-dlnFL._AC_UL320_.jpg",
-   "n": 1700,
-   "op": 94.99,
-   "p": 72.99,
-   "r": 4.3,
-   "t": "2026-11-07T07:01:04.743659+00:00",
-   "title": "GiPP Juego de Sartenes y Cacerolas con Revestimiento Cerámico Antiadherente - Juego de 15 Piezas con Asas Desmontables, Sin Sustancias Tóxicas, Apto Para Inducción, Horno y Lavavajillas"
   }
  ],
  "summary_day": "2026-11-06",
  "tg_offset": 511048049,
  "x_copy": {
   "day": "2026-11-07",
-  "n": 6
+  "n": 7
  }
 }
