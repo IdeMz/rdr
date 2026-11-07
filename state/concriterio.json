@@ -20,7 +20,7 @@
   "Freidoras de aire": "2026-11-05T08:50:42.521815+00:00",
   "Gatos": "2026-11-05T13:01:09.573881+00:00",
   "Herramientas": "2026-11-06T17:01:09.983033+00:00",
-  "Iluminación": "2026-11-05T17:15:47.121170+00:00",
+  "Iluminación": "2026-11-07T09:20:39.723799+00:00",
   "Jardín": "2026-11-06T15:50:43.516360+00:00",
   "Lego": "2026-11-06T10:35:29.846768+00:00",
   "Menaje de cocina": "2026-11-07T07:01:04.743659+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-06T12:55:37.011327+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-07T09:16:56.572901+00:00",
+ "next_at": "2026-11-07T09:52:01.266720+00:00",
  "offer": {
   "a": "B079FFWFWT",
   "m": 33,
@@ -370,6 +370,16 @@
    "title": "Homey - Almohada Viscoelástica Carbono | Máximo Confort y Excelente Adaptabilidad con Propiedades Antiestrés | 2 Unidades de 70 x 40 cm",
    "v": []
   },
+  "B0D2CVB8MD": {
+   "c": "Iluminación",
+   "d": 40,
+   "e": "🪔",
+   "m": 109,
+   "p": 10.12,
+   "t": "2026-11-07T09:21:03.962929+00:00",
+   "title": "OUILA Plafon LED Techo Redondo Lámpara de Techo Blanco Frio 6500K Ø22CM",
+   "v": []
+  },
   "B0D323HH3F": {
    "c": "Videojuegos",
    "d": 26,
@@ -667,6 +677,6 @@
  "tg_offset": 511048049,
  "x_copy": {
   "day": "2026-11-07",
-  "n": 4
+  "n": 5
  }
 }
