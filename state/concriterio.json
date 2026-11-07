@@ -41,12 +41,8 @@
   "Videojuegos": "2026-11-07T10:30:58.103086+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-07T13:35:30.373491+00:00",
- "offer": {
-  "a": "B0CXDXP8VR",
-  "m": 47,
-  "t": "2026-11-07T13:25:30.373491+00:00"
- },
+ "next_at": "2026-11-07T14:06:04.170026+00:00",
+ "offer": null,
  "posted": {
   "B000C1UBQU": {
    "c": "Perfumes",
@@ -370,6 +366,17 @@
    "title": "PHILIPS 24E1N1100A Monitor 24 Pulgadas 120Hz Panel IPS, 4ms GtG, Altavoces, (1920x1080 HDMI 1x 1.4) Negro",
    "v": []
   },
+  "B0CXDXP8VR": {
+   "c": "Cargadores y baterías",
+   "d": 20,
+   "e": "🔌",
+   "m": 115,
+   "manual": true,
+   "p": 39.99,
+   "t": "2026-11-07T13:35:29.080896+00:00",
+   "title": "Anker Power bank 20.000 mAh 87 W con cable USB C integrado",
+   "v": []
+  },
   "B0D1KN8DRS": {
    "c": "Colchones y almohadas",
    "d": 14,
@@ -690,18 +697,6 @@
  "rejected": {},
  "reserve": [
   {
-   "a": "B0CXDXP8VR",
-   "c": "Cargadores y baterías",
-   "e": "🔌",
-   "img": "https://m.media-amazon.com/images/I/61jWG2JyYNL._AC_UL320_.jpg",
-   "n": 10600,
-   "op": 49.99,
-   "p": 39.99,
-   "r": 4.7,
-   "t": "2026-11-07T11:40:38.247143+00:00",
-   "title": "Anker Power bank 20.000 mAh 87 W con cable USB C integrado"
-  },
-  {
    "a": "B0FT8PMRW4",
    "c": "Móviles",
    "e": "📱",
@@ -712,22 +707,10 @@
    "r": 4.3,
    "t": "2026-11-07T11:05:35.080138+00:00",
    "title": "Samsung SM-A175 A17 4+128GB 6.7\" 4G Black DS ITA"
-  },
-  {
-   "a": "B0DDCFZBQD",
-   "c": "Videojuegos",
-   "e": "🎮",
-   "img": "https://m.media-amazon.com/images/I/81GlQBfZUZL._AC_UL320_.jpg",
-   "n": 749,
-   "op": 29.99,
-   "p": 25.99,
-   "r": 4.7,
-   "t": "2026-11-07T10:30:58.103086+00:00",
-   "title": "Poppy Playtime Triple Pack - PS5"
   }
  ],
  "summary_day": "2026-11-06",
- "tg_offset": 511048049,
+ "tg_offset": 511048050,
  "x_copy": {
   "day": "2026-11-07",
   "n": 10
