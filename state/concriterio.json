@@ -37,11 +37,11 @@
   "Smartwatch": "2026-11-05T11:15:40.907800+00:00",
   "Suplementos": "2026-11-06T15:15:40.655483+00:00",
   "Tablets": "2026-11-06T21:05:32.851025+00:00",
-  "Televisores": "2026-11-06T08:50:41.728785+00:00",
+  "Televisores": "2026-11-07T12:30:55.746453+00:00",
   "Videojuegos": "2026-11-07T10:30:58.103086+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-07T12:25:39.096060+00:00",
+ "next_at": "2026-11-07T13:05:46.827788+00:00",
  "offer": {
   "a": "B079FFWFWT",
   "m": 33,
@@ -480,6 +480,16 @@
    "title": "Mellerware - Freidora sin aceite Crunchy Plus 5.5L 1500W | 11 Menús Predefinidos | Capacidad para 3-5 raciones | Temporizador Programable | Pantalla para controlar la temperatura | Air Fryer 80-200º",
    "v": []
   },
+  "B0F227Q92B": {
+   "c": "Televisores",
+   "d": 19,
+   "e": "📺",
+   "m": 114,
+   "p": 232.95,
+   "t": "2026-11-07T12:31:28.937722+00:00",
+   "title": "LG 32LR60006LA - TV 32\" FHD (80 cm), Smart TV webOS 23, Procesador α5 AI Gen6, HDR10/HLG, Dolby Digital Plus, AI Sound, Google Assistant, Apple AirPlay, ThinQ, HDMI, USB, Bluetooth, Wi-Fi",
+   "v": []
+  },
   "B0F457M449": {
    "c": "Televisores",
    "d": 28,
@@ -673,10 +683,7 @@
    "v": []
   }
  },
- "problem": {
-  "fails": 1,
-  "last": "HTTP 503"
- },
+ "problem": {},
  "rejected": {},
  "reserve": [
   {
@@ -720,6 +727,6 @@
  "tg_offset": 511048049,
  "x_copy": {
   "day": "2026-11-07",
-  "n": 9
+  "n": 10
  }
 }
