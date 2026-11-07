@@ -35,13 +35,13 @@
   "Relojes": "2026-11-06T10:01:05.963762+00:00",
   "Robots de cocina": "2026-11-07T08:45:38.780928+00:00",
   "Smartwatch": "2026-11-05T11:15:40.907800+00:00",
-  "Suplementos": "2026-11-06T15:15:40.655483+00:00",
+  "Suplementos": "2026-11-07T16:15:41.580021+00:00",
   "Tablets": "2026-11-06T21:05:32.851025+00:00",
   "Televisores": "2026-11-07T12:30:55.746453+00:00",
   "Videojuegos": "2026-11-07T10:30:58.103086+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-07T16:14:25.746901+00:00",
+ "next_at": "2026-11-07T16:49:35.448821+00:00",
  "offer": {
   "a": "B008TOWNQ8",
   "m": 50,
@@ -421,6 +421,16 @@
    "title": "OUILA Plafon LED Techo Redondo Lámpara de Techo Blanco Frio 6500K Ø22CM",
    "v": []
   },
+  "B0D2RNPY7Q": {
+   "c": "Suplementos",
+   "d": 40,
+   "e": "💊",
+   "m": 118,
+   "p": 8.99,
+   "t": "2026-11-07T16:16:09.939538+00:00",
+   "title": "Multivitaminas y Minerales para Hombre y Mujer, 180 Tabletas",
+   "v": []
+  },
   "B0D323HH3F": {
    "c": "Videojuegos",
    "d": 26,
@@ -746,6 +756,6 @@
  "tg_offset": 511048050,
  "x_copy": {
   "day": "2026-11-07",
-  "n": 12
+  "n": 13
  }
 }
