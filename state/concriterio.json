@@ -26,7 +26,7 @@
   "Menaje de cocina": "2026-11-07T07:01:04.743659+00:00",
   "Mochilas y maletas": "2026-11-06T11:10:40.042548+00:00",
   "Monitores": "2026-11-07T09:55:30.516815+00:00",
-  "Móviles": "2026-11-05T20:45:43.085606+00:00",
+  "Móviles": "2026-11-07T11:05:35.080138+00:00",
   "Nutrición deportiva": "2026-11-06T16:25:33.271370+00:00",
   "Perfumes": "2026-11-06T17:35:34.238247+00:00",
   "Periféricos": "2026-11-06T15:50:43.516360+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-07T10:30:58.103086+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-07T11:05:06.019888+00:00",
+ "next_at": "2026-11-07T11:38:20.140779+00:00",
  "offer": {
   "a": "B079FFWFWT",
   "m": 33,
@@ -610,6 +610,16 @@
    "title": "CAROTE Juego de Ollas y Sartenes Antiadherentes 13 Piezas, Marrón Oscuro",
    "v": []
   },
+  "B0H4H83XNV": {
+   "c": "Móviles",
+   "d": 17,
+   "e": "📱",
+   "m": 112,
+   "p": 249.0,
+   "t": "2026-11-07T11:06:13.156131+00:00",
+   "title": "REDMI Note 17, Smartphone 6+256GB, Morado Celestial, batería de 7700mAh",
+   "v": []
+  },
   "B0H4ZJ6MD7": {
    "c": "Portátiles",
    "d": 26,
@@ -657,6 +667,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0FT8PMRW4",
+   "c": "Móviles",
+   "e": "📱",
+   "img": "https://m.media-amazon.com/images/I/616gwh5LgOL._AC_UL320_.jpg",
+   "n": 579,
+   "op": 199.55,
+   "p": 172.0,
+   "r": 4.3,
+   "t": "2026-11-07T11:05:35.080138+00:00",
+   "title": "Samsung SM-A175 A17 4+128GB 6.7\" 4G Black DS ITA"
+  },
+  {
    "a": "B0DDCFZBQD",
    "c": "Videojuegos",
    "e": "🎮",
@@ -679,24 +701,12 @@
    "r": 4.2,
    "t": "2026-11-07T08:10:40.429017+00:00",
    "title": "iZEEKER 3 Canales 4K Dashcam con Tarjeta de 32GB GRATIS, Cámara Coche Frontal, Trasera e Interior 4K+1080P+1080P con WDR, Visión Nocturna IR, WiFi 6, Ángulo 170°, G-Sensor, Modo de Estacionamiento 24H"
-  },
-  {
-   "a": "B0049U0DMC",
-   "c": "Café y cápsulas",
-   "e": "🫘",
-   "img": "https://m.media-amazon.com/images/I/51282YmGvmL._AC_UL320_.jpg",
-   "n": 13600,
-   "op": 30.99,
-   "p": 26.99,
-   "r": 4.5,
-   "t": "2026-11-07T07:35:31.317148+00:00",
-   "title": "Lavazza, Qualità Oro, Café en Grano Natural, 1 kg"
   }
  ],
  "summary_day": "2026-11-06",
  "tg_offset": 511048049,
  "x_copy": {
   "day": "2026-11-07",
-  "n": 7
+  "n": 8
  }
 }
