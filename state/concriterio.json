@@ -34,14 +34,14 @@
   "Portátiles": "2026-11-06T17:01:09.983033+00:00",
   "Relojes": "2026-11-07T18:45:40.901475+00:00",
   "Robots de cocina": "2026-11-07T08:45:38.780928+00:00",
-  "Smartwatch": "2026-11-05T11:15:40.907800+00:00",
+  "Smartwatch": "2026-11-07T20:30:54.137606+00:00",
   "Suplementos": "2026-11-07T16:15:41.580021+00:00",
   "Tablets": "2026-11-06T21:05:32.851025+00:00",
   "Televisores": "2026-11-07T12:30:55.746453+00:00",
   "Videojuegos": "2026-11-07T10:30:58.103086+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-07T20:30:40.108024+00:00",
+ "next_at": "2026-11-07T21:01:33.833786+00:00",
  "offer": {
   "a": "B0G2XKZW44",
   "m": 60,
@@ -733,6 +733,16 @@
    "title": "Bulk Pure Whey Protein + Colágeno, Vainilla, 900g",
    "v": []
   },
+  "B0HDP4SP9K": {
+   "c": "Smartwatch",
+   "d": 53,
+   "e": "⌚",
+   "m": 122,
+   "p": 47.15,
+   "t": "2026-11-07T20:31:22.232194+00:00",
+   "title": "FOSMET Reloj Inteligente Mujer Salud ECG/HRV/BMI Presión Arterial, Rosa Oro",
+   "v": []
+  },
   "B0HDXYLPHV": {
    "c": "Smartwatch",
    "d": 50,
@@ -754,12 +764,21 @@
    "v": []
   }
  },
- "problem": {
-  "fails": 1,
-  "last": "HTTP 503"
- },
+ "problem": {},
  "rejected": {},
  "reserve": [
+  {
+   "a": "B0HGXRWRFT",
+   "c": "Smartwatch",
+   "e": "⌚",
+   "img": "https://m.media-amazon.com/images/I/81SvGuMpi7L._AC_UL320_.jpg",
+   "n": 80,
+   "op": 99.99,
+   "p": 49.99,
+   "r": 4.5,
+   "t": "2026-11-07T20:30:54.137606+00:00",
+   "title": "Popglory Reloj Inteligente Mujer, Llamadas/Presión Arterial/100+ Deportes Smartwatch Mujer, Frecuencia respiratoria Frecuencia Cardíaca Oxígeno en Sangre Sueño, Reloj Android iOS"
+  },
   {
    "a": "B0BQ14QLPJ",
    "c": "Ciclismo",
@@ -783,24 +802,12 @@
    "r": 4.5,
    "t": "2026-11-07T18:45:40.901475+00:00",
    "title": "LN LENQIN"
-  },
-  {
-   "a": "B012H6JLAE",
-   "c": "Gatos",
-   "e": "🐱",
-   "img": "https://m.media-amazon.com/images/I/71vDfIzSaQL._AC_UL320_.jpg",
-   "n": 8400,
-   "op": 8.99,
-   "p": 7.99,
-   "r": 4.4,
-   "t": "2026-11-07T16:50:41.349951+00:00",
-   "title": "Sanicat - Arena Aglomerante Active White con Flor de Loto, Hecha de minerales naturales con control de olor garantizado, Absorbe la humedad y facilita la limpieza, 6 L de capacidad"
   }
  ],
  "summary_day": "2026-11-06",
  "tg_offset": 511048050,
  "x_copy": {
   "day": "2026-11-07",
-  "n": 16
+  "n": 17
  }
 }
