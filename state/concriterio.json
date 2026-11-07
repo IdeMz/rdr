@@ -23,7 +23,7 @@
   "Iluminación": "2026-11-05T17:15:47.121170+00:00",
   "Jardín": "2026-11-06T15:50:43.516360+00:00",
   "Lego": "2026-11-06T10:35:29.846768+00:00",
-  "Menaje de cocina": "2026-11-05T17:50:46.417577+00:00",
+  "Menaje de cocina": "2026-11-07T07:01:04.743659+00:00",
   "Mochilas y maletas": "2026-11-06T11:10:40.042548+00:00",
   "Monitores": "2026-11-06T13:31:01.144570+00:00",
   "Móviles": "2026-11-05T20:45:43.085606+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-06T12:55:37.011327+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-06T22:14:40.960611+00:00",
+ "next_at": "2026-11-07T07:31:15.720246+00:00",
  "offer": {
   "a": "B079FFWFWT",
   "m": 33,
@@ -390,6 +390,16 @@
    "title": "Cecotec Cepillo de Aire 14 Cabezales CeramicCare 14in1 AirGlisse Black",
    "v": []
   },
+  "B0DBHLNQK2": {
+   "c": "Menaje de cocina",
+   "d": 29,
+   "e": "🍳",
+   "m": 105,
+   "p": 142.94,
+   "t": "2026-11-07T07:01:40.046413+00:00",
+   "title": "Kitchen Academy Juego de Ollas y Sartenes Antiadherentes 30 Piezas Verde",
+   "v": []
+  },
   "B0DDCHNPBR": {
    "c": "Cuidado del cabello",
    "d": 42,
@@ -587,46 +597,22 @@
  "rejected": {},
  "reserve": [
   {
-   "a": "B07MNT79M4",
-   "c": "Cuidado del cabello",
-   "e": "💇",
-   "img": "https://m.media-amazon.com/images/I/61eHBqbRSkL._AC_UL320_.jpg",
-   "n": 3200,
-   "op": 24.99,
-   "p": 15.6,
-   "r": 4.5,
-   "t": "2026-11-06T21:40:40.967672+00:00",
-   "title": "Philips Plancha Alisadora con Placas de Cerámica y Queratina de 100 mm, Cepillo Alisador para Estilizar y Peinar con Tecnología ThermoProtect, hasta 220°C en 1 minuto, en Negro y Rosa, BHS375/00"
-  },
-  {
-   "a": "B0FJ9234ZX",
-   "c": "Tablets",
-   "e": "📲",
-   "img": "https://m.media-amazon.com/images/I/71zO6+NNVML._AC_UL320_.jpg",
-   "n": 259,
-   "op": 299.9,
-   "p": 244.99,
-   "r": 4.8,
-   "t": "2026-11-06T21:05:32.851025+00:00",
-   "title": "XIAOMI REDMI Pad 2 Pro Tablet 6+128GB Gris Batería de 12000 mAh"
-  },
-  {
-   "a": "B079FFWFWT",
-   "c": "Afeitado y depilación",
-   "e": "🪒",
-   "img": "https://m.media-amazon.com/images/I/71B+JHlDBjL._AC_UL320_.jpg",
-   "n": 10700,
-   "op": 13.45,
-   "p": 8.49,
-   "r": 4.6,
-   "t": "2026-11-06T19:30:54.067513+00:00",
-   "title": "Gillette Venus Comfortglide Spa Breeze Maquinilla de Afeitar Mujer"
+   "a": "B0F9L1BKBK",
+   "c": "Menaje de cocina",
+   "e": "🍳",
+   "img": "https://m.media-amazon.com/images/I/71bUU-dlnFL._AC_UL320_.jpg",
+   "n": 1700,
+   "op": 94.99,
+   "p": 72.99,
+   "r": 4.3,
+   "t": "2026-11-07T07:01:04.743659+00:00",
+   "title": "GiPP Juego de Sartenes y Cacerolas con Revestimiento Cerámico Antiadherente - Juego de 15 Piezas con Asas Desmontables, Sin Sustancias Tóxicas, Apto Para Inducción, Horno y Lavavajillas"
   }
  ],
  "summary_day": "2026-11-06",
  "tg_offset": 511048049,
  "x_copy": {
-  "day": "2026-11-06",
-  "n": 24
+  "day": "2026-11-07",
+  "n": 1
  }
 }
