@@ -32,7 +32,7 @@
   "Periféricos": "2026-11-06T15:50:43.516360+00:00",
   "Perros": "2026-11-07T14:10:38.191714+00:00",
   "Portátiles": "2026-11-06T17:01:09.983033+00:00",
-  "Relojes": "2026-11-06T10:01:05.963762+00:00",
+  "Relojes": "2026-11-07T18:45:40.901475+00:00",
   "Robots de cocina": "2026-11-07T08:45:38.780928+00:00",
   "Smartwatch": "2026-11-05T11:15:40.907800+00:00",
   "Suplementos": "2026-11-07T16:15:41.580021+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-07T10:30:58.103086+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-07T18:40:53.766991+00:00",
+ "next_at": "2026-11-07T19:18:58.928098+00:00",
  "offer": {
   "a": "B012H6JLAE",
   "m": 56,
@@ -258,6 +258,16 @@
    "p": 9.42,
    "t": "2026-11-06T08:16:09.038191+00:00",
    "title": "Suright Gomas Elasticas Musculacion, 3 Niveles Bandas Elasticas Musculacion",
+   "v": []
+  },
+  "B09W9867V2": {
+   "c": "Relojes",
+   "d": 40,
+   "e": "🕰️",
+   "m": 120,
+   "p": 11.99,
+   "t": "2026-11-07T18:46:08.772342+00:00",
+   "title": "HANPOSH",
    "v": []
   },
   "B09ZRD38D8": {
@@ -734,13 +744,21 @@
    "v": []
   }
  },
- "problem": {
-  "alerted_at": "2026-11-07T17:50:40.409526+00:00",
-  "fails": 6,
-  "last": "HTTP 503"
- },
+ "problem": {},
  "rejected": {},
  "reserve": [
+  {
+   "a": "B0G2XKZW44",
+   "c": "Relojes",
+   "e": "🕰️",
+   "img": "https://m.media-amazon.com/images/I/71FD7+oLKWL._AC_UL320_.jpg",
+   "n": 138,
+   "op": 19.99,
+   "p": 12.99,
+   "r": 4.5,
+   "t": "2026-11-07T18:45:40.901475+00:00",
+   "title": "LN LENQIN"
+  },
   {
    "a": "B012H6JLAE",
    "c": "Gatos",
@@ -752,36 +770,12 @@
    "r": 4.4,
    "t": "2026-11-07T16:50:41.349951+00:00",
    "title": "Sanicat - Arena Aglomerante Active White con Flor de Loto, Hecha de minerales naturales con control de olor garantizado, Absorbe la humedad y facilita la limpieza, 6 L de capacidad"
-  },
-  {
-   "a": "B0D1DV9NHZ",
-   "c": "Fitness en casa",
-   "e": "🏋️",
-   "img": "https://m.media-amazon.com/images/I/71lz3Nq7-OL._AC_UL320_.jpg",
-   "n": 2600,
-   "op": 30.99,
-   "p": 20.12,
-   "r": 4.4,
-   "t": "2026-11-07T15:40:38.914161+00:00",
-   "title": "Fokky Gomas Elasticas Musculacion con Anclaje de Puerta y Asas, 5 Niveles"
-  },
-  {
-   "a": "B008TOWNQ8",
-   "c": "Perros",
-   "e": "🐶",
-   "img": "https://m.media-amazon.com/images/I/71dTJuufZ1L._AC_UL320_.jpg",
-   "n": 1100,
-   "op": 62.99,
-   "p": 52.21,
-   "r": 4.5,
-   "t": "2026-11-07T14:10:38.191714+00:00",
-   "title": "Advance Medium Adult Chicken, Pienso para Perros Adultos de Razas Medianas con Pollo, 14kg"
   }
  ],
  "summary_day": "2026-11-06",
  "tg_offset": 511048050,
  "x_copy": {
   "day": "2026-11-07",
-  "n": 14
+  "n": 15
  }
 }
