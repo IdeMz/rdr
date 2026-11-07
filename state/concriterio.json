@@ -8,7 +8,7 @@
   "Auriculares": "2026-11-05T21:20:42.646272+00:00",
   "Cafeteras": "2026-11-06T18:45:37.891773+00:00",
   "Café y cápsulas": "2026-11-07T07:35:31.317148+00:00",
-  "Cargadores y baterías": "2026-11-06T11:45:38.407566+00:00",
+  "Cargadores y baterías": "2026-11-07T11:40:38.247143+00:00",
   "Ciclismo": "2026-11-06T07:40:40.920898+00:00",
   "Climatización": "2026-11-05T07:40:39.265430+00:00",
   "Colchones y almohadas": "2026-11-06T14:40:42.953766+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-07T10:30:58.103086+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-07T11:38:20.140779+00:00",
+ "next_at": "2026-11-07T12:10:59.564604+00:00",
  "offer": {
   "a": "B079FFWFWT",
   "m": 33,
@@ -490,6 +490,16 @@
    "title": "XIAOMI TV F Pro 32 Pulgadas 2025, QLED Smart TV, Fire OS7, L32MB-FPEU",
    "v": []
   },
+  "B0F6TYQT12": {
+   "c": "Cargadores y baterías",
+   "d": 32,
+   "e": "🔌",
+   "m": 113,
+   "p": 16.99,
+   "t": "2026-11-07T11:41:06.214880+00:00",
+   "title": "Batería Externa 27000mAh 22.5W PD3.0 QC4.0 Power Bank Carga Rapida, 3A USB C Cargador Portátil con Pantalla LED, 2 Entradas y 3 Salidas Powerbank para Smartphones, Tablets y más (black1)",
+   "v": []
+  },
   "B0FBG3ZCK6": {
    "c": "Zapatillas",
    "d": 40,
@@ -667,6 +677,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0CXDXP8VR",
+   "c": "Cargadores y baterías",
+   "e": "🔌",
+   "img": "https://m.media-amazon.com/images/I/61jWG2JyYNL._AC_UL320_.jpg",
+   "n": 10600,
+   "op": 49.99,
+   "p": 39.99,
+   "r": 4.7,
+   "t": "2026-11-07T11:40:38.247143+00:00",
+   "title": "Anker Power bank 20.000 mAh 87 W con cable USB C integrado"
+  },
+  {
    "a": "B0FT8PMRW4",
    "c": "Móviles",
    "e": "📱",
@@ -689,24 +711,12 @@
    "r": 4.7,
    "t": "2026-11-07T10:30:58.103086+00:00",
    "title": "Poppy Playtime Triple Pack - PS5"
-  },
-  {
-   "a": "B0D58HZF7P",
-   "c": "Accesorios de coche",
-   "e": "🚗",
-   "img": "https://m.media-amazon.com/images/I/71-EVE4+GyL._AC_UL320_.jpg",
-   "n": 478,
-   "op": 99.99,
-   "p": 69.99,
-   "r": 4.2,
-   "t": "2026-11-07T08:10:40.429017+00:00",
-   "title": "iZEEKER 3 Canales 4K Dashcam con Tarjeta de 32GB GRATIS, Cámara Coche Frontal, Trasera e Interior 4K+1080P+1080P con WDR, Visión Nocturna IR, WiFi 6, Ángulo 170°, G-Sensor, Modo de Estacionamiento 24H"
   }
  ],
  "summary_day": "2026-11-06",
  "tg_offset": 511048049,
  "x_copy": {
   "day": "2026-11-07",
-  "n": 8
+  "n": 9
  }
 }
