@@ -28,7 +28,7 @@
   "Monitores": "2026-11-07T09:55:30.516815+00:00",
   "Móviles": "2026-11-07T11:05:35.080138+00:00",
   "Nutrición deportiva": "2026-11-07T21:40:38.731365+00:00",
-  "Perfumes": "2026-11-06T17:35:34.238247+00:00",
+  "Perfumes": "2026-11-08T08:10:43.446539+00:00",
   "Periféricos": "2026-11-06T15:50:43.516360+00:00",
   "Perros": "2026-11-07T14:10:38.191714+00:00",
   "Portátiles": "2026-11-08T07:35:30.266273+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-07T10:30:58.103086+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-08T08:08:57.732797+00:00",
+ "next_at": "2026-11-08T08:43:43.455065+00:00",
  "offer": {
   "a": "B0G2XKZW44",
   "m": 60,
@@ -56,6 +56,16 @@
    "p": 27.9,
    "t": "2026-11-06T17:35:59.938950+00:00",
    "title": "CALVIN KLEIN EVERYONE Eau de Parfum para mujer | Fragancia femenina floral con notas de bergamota y lirio blanco | Atemporal y larga duración",
+   "v": []
+  },
+  "B005GWRNQQ": {
+   "c": "Perfumes",
+   "d": 31,
+   "e": "🌸",
+   "m": 128,
+   "p": 58.5,
+   "t": "2026-11-08T08:11:16.063062+00:00",
+   "title": "Diesel, LOVERDOSE, Eau De Parfum, Colonia Apasionada y Floral para mujer, Mandarina Fresca, Regaliz Seductor y Cálido Acorde de Vainilla, Larga Duración, Perfume de Lujo para Mujer",
    "v": []
   },
   "B00708ZNK2": {
@@ -808,6 +818,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0CKM2SSK3",
+   "c": "Perfumes",
+   "e": "🌸",
+   "img": "https://m.media-amazon.com/images/I/71DfESbdC8L._AC_UL320_.jpg",
+   "n": 6500,
+   "op": 47.4,
+   "p": 36.87,
+   "r": 4.3,
+   "t": "2026-11-08T08:10:43.446539+00:00",
+   "title": "Rasasi Hawas Ice 100 ml Eau de Parfum"
+  },
+  {
    "a": "B08B21PRLM",
    "c": "Cuidado de la piel",
    "e": "🧴",
@@ -836,6 +858,6 @@
  "tg_offset": 511048050,
  "x_copy": {
   "day": "2026-11-08",
-  "n": 2
+  "n": 3
  }
 }
