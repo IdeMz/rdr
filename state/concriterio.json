@@ -14,7 +14,7 @@
   "Colchones y almohadas": "2026-11-06T14:40:42.953766+00:00",
   "Cuidado de la piel": "2026-11-08T07:35:30.266273+00:00",
   "Cuidado del cabello": "2026-11-08T08:45:38.227499+00:00",
-  "Cámaras de seguridad": "2026-11-05T09:30:32.450110+00:00",
+  "Cámaras de seguridad": "2026-11-08T10:31:00.865925+00:00",
   "Domótica": "2026-11-06T14:05:32.179358+00:00",
   "Fitness en casa": "2026-11-07T15:40:38.914161+00:00",
   "Freidoras de aire": "2026-11-05T08:50:42.521815+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-07T10:30:58.103086+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-08T10:27:40.163763+00:00",
+ "next_at": "2026-11-08T11:04:46.781246+00:00",
  "offer": {
   "a": "B0G2XKZW44",
   "m": 60,
@@ -438,6 +438,16 @@
    "p": 89.99,
    "t": "2026-11-06T20:31:19.446471+00:00",
    "title": "Soundcore Boom 2 Altavoz Bluetooth Potente 80 W, 24 h, IPX7",
+   "v": []
+  },
+  "B0CWY22136": {
+   "c": "Cámaras de seguridad",
+   "d": 40,
+   "e": "📹",
+   "m": 132,
+   "p": 21.65,
+   "t": "2026-11-08T10:31:30.210947+00:00",
+   "title": "SYMYNELEC Cámara de Vigilancia WiFi Interior 2K 4MP, 5GHz/2,4GHz, 360°",
    "v": []
   },
   "B0CX9CT3ZF": {
@@ -848,6 +858,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0D544WSFP",
+   "c": "Cámaras de seguridad",
+   "e": "📹",
+   "img": "https://m.media-amazon.com/images/I/81Cs+nZEREL._AC_UL320_.jpg",
+   "n": 11300,
+   "op": 79.99,
+   "p": 59.99,
+   "r": 4.4,
+   "t": "2026-11-08T10:31:00.865925+00:00",
+   "title": "Tapo C410 Kit - Cámara de Vigilancia WiFi Exterior, Panel Solar, 2K 3MP, IA"
+  },
+  {
    "a": "B0CKM2SSK3",
    "c": "Perfumes",
    "e": "🌸",
@@ -870,24 +892,12 @@
    "r": 4.6,
    "t": "2026-11-08T07:35:30.266273+00:00",
    "title": "L'Oréal Paris Revitalift Filler Sérum Facial Ácido Hialurónico y PDRN, 30ml"
-  },
-  {
-   "a": "B0GSZ6BPW9",
-   "c": "Aspiradoras",
-   "e": "🧹",
-   "img": "https://m.media-amazon.com/images/I/61EnPAk2F7L._AC_UL320_.jpg",
-   "n": 1400,
-   "op": 699.0,
-   "p": 469.99,
-   "r": 4.7,
-   "t": "2026-11-08T07:01:15.344089+00:00",
-   "title": "roborock Qrevo Edge T Robot Aspirador Succión 18500 Pa, con FlexiArm"
   }
  ],
  "summary_day": "2026-11-07",
  "tg_offset": 511048050,
  "x_copy": {
   "day": "2026-11-08",
-  "n": 6
+  "n": 7
  }
 }
