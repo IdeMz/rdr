@@ -12,7 +12,7 @@
   "Ciclismo": "2026-11-07T19:45:40.338426+00:00",
   "Climatización": "2026-11-07T21:05:33.483971+00:00",
   "Colchones y almohadas": "2026-11-06T14:40:42.953766+00:00",
-  "Cuidado de la piel": "2026-11-05T15:31:07.211566+00:00",
+  "Cuidado de la piel": "2026-11-08T07:35:30.266273+00:00",
   "Cuidado del cabello": "2026-11-06T21:40:40.967672+00:00",
   "Cámaras de seguridad": "2026-11-05T09:30:32.450110+00:00",
   "Domótica": "2026-11-06T14:05:32.179358+00:00",
@@ -31,7 +31,7 @@
   "Perfumes": "2026-11-06T17:35:34.238247+00:00",
   "Periféricos": "2026-11-06T15:50:43.516360+00:00",
   "Perros": "2026-11-07T14:10:38.191714+00:00",
-  "Portátiles": "2026-11-06T17:01:09.983033+00:00",
+  "Portátiles": "2026-11-08T07:35:30.266273+00:00",
   "Relojes": "2026-11-07T18:45:40.901475+00:00",
   "Robots de cocina": "2026-11-07T08:45:38.780928+00:00",
   "Smartwatch": "2026-11-07T20:30:54.137606+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-07T10:30:58.103086+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-08T07:33:17.380581+00:00",
+ "next_at": "2026-11-08T08:08:57.732797+00:00",
  "offer": {
   "a": "B0G2XKZW44",
   "m": 60,
@@ -116,6 +116,16 @@
    "p": 22.5,
    "t": "2026-11-05T12:25:53.456959+00:00",
    "title": "NESCAFÉ Dolce Gusto Café Cortado 90 cápsulas (3x30)",
+   "v": []
+  },
+  "B01H5VO9QM": {
+   "c": "Cuidado de la piel",
+   "d": 42,
+   "e": "🧴",
+   "m": 127,
+   "p": 6.5,
+   "t": "2026-11-08T07:35:59.297719+00:00",
+   "title": "L'Oréal Paris Revitalift Clásico Sérum Reparador con Pro Retinol, 30ml",
    "v": []
   },
   "B01MU77FQQ": {
@@ -798,6 +808,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B08B21PRLM",
+   "c": "Cuidado de la piel",
+   "e": "🧴",
+   "img": "https://m.media-amazon.com/images/I/71x+s0WMrTL._AC_UL320_.jpg",
+   "n": 6700,
+   "op": 23.9,
+   "p": 15.2,
+   "r": 4.6,
+   "t": "2026-11-08T07:35:30.266273+00:00",
+   "title": "L'Oréal Paris Revitalift Filler Sérum Facial Ácido Hialurónico y PDRN, 30ml"
+  },
+  {
    "a": "B0GSZ6BPW9",
    "c": "Aspiradoras",
    "e": "🧹",
@@ -814,6 +836,6 @@
  "tg_offset": 511048050,
  "x_copy": {
   "day": "2026-11-08",
-  "n": 1
+  "n": 2
  }
 }
