@@ -1,6 +1,6 @@
 {
  "cats": {
-  "Accesorios de coche": "2026-11-07T08:10:40.429017+00:00",
+  "Accesorios de coche": "2026-11-08T09:55:33.252950+00:00",
   "Afeitado y depilación": "2026-11-06T19:30:54.067513+00:00",
   "Almacenamiento": "2026-11-05T19:01:07.787656+00:00",
   "Altavoces": "2026-11-06T20:30:59.575667+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-07T10:30:58.103086+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-08T09:55:04.338786+00:00",
+ "next_at": "2026-11-08T10:27:40.163763+00:00",
  "offer": {
   "a": "B0G2XKZW44",
   "m": 60,
@@ -771,6 +771,16 @@
    "title": "CAROTE Juego de Ollas y Sartenes Antiadherentes 13 Piezas, Marrón Oscuro",
    "v": []
   },
+  "B0H3Z8M52C": {
+   "c": "Accesorios de coche",
+   "d": 39,
+   "e": "🚗",
+   "m": 131,
+   "p": 54.99,
+   "t": "2026-11-08T09:55:59.632535+00:00",
+   "title": "DDPAI Mini Pro 4K Dash CAM Coche, Cámara 2160P, Giración de 360°, Tarjeta 64GB Incluida, Visión Nocturna, 24H Monitor Aparcamiento, 5.8G WiFi 6, Grabación en Bucle, Control por App, Supercondensador",
+   "v": []
+  },
   "B0H4H83XNV": {
    "c": "Móviles",
    "d": 17,
@@ -878,6 +888,6 @@
  "tg_offset": 511048050,
  "x_copy": {
   "day": "2026-11-08",
-  "n": 5
+  "n": 6
  }
 }
