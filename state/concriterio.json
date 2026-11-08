@@ -7,7 +7,7 @@
   "Aspiradoras": "2026-11-08T07:01:15.344089+00:00",
   "Auriculares": "2026-11-05T21:20:42.646272+00:00",
   "Cafeteras": "2026-11-06T18:45:37.891773+00:00",
-  "Café y cápsulas": "2026-11-07T07:35:31.317148+00:00",
+  "Café y cápsulas": "2026-11-08T11:40:39.945107+00:00",
   "Cargadores y baterías": "2026-11-07T11:40:38.247143+00:00",
   "Ciclismo": "2026-11-07T19:45:40.338426+00:00",
   "Climatización": "2026-11-07T21:05:33.483971+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-07T10:30:58.103086+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-08T11:38:18.434947+00:00",
+ "next_at": "2026-11-08T12:14:52.678811+00:00",
  "offer": {
   "a": "B0G2XKZW44",
   "m": 60,
@@ -56,6 +56,16 @@
    "p": 27.9,
    "t": "2026-11-06T17:35:59.938950+00:00",
    "title": "CALVIN KLEIN EVERYONE Eau de Parfum para mujer | Fragancia femenina floral con notas de bergamota y lirio blanco | Atemporal y larga duración",
+   "v": []
+  },
+  "B002PM23YC": {
+   "c": "Café y cápsulas",
+   "d": 13,
+   "e": "🫘",
+   "m": 134,
+   "p": 24.94,
+   "t": "2026-11-08T11:41:12.275160+00:00",
+   "title": "Lavazza, Qualità Rossa, Café en Grano Natural, Ideal para la Máquina de Café Espresso, con Notas Aromáticas de Chocolate y Frutos Secos, Arábica y Robusta, Intensidad 5, Tueste Medio, Paquete de 1 kg",
    "v": []
   },
   "B005GWRNQQ": {
@@ -868,6 +878,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B07Q37YLQT",
+   "c": "Café y cápsulas",
+   "e": "🫘",
+   "img": "https://m.media-amazon.com/images/I/71hAn4bhgIL._AC_UL320_.jpg",
+   "n": 3400,
+   "op": 22.9,
+   "p": 19.9,
+   "r": 4.5,
+   "t": "2026-11-08T11:40:39.945107+00:00",
+   "title": "Granos de Café Enteros Kimbo Crema Intensa, Tueste Medio, Bolsa 1kg"
+  },
+  {
    "a": "B0CHDV5VFR",
    "c": "Iluminación",
    "e": "🪔",
@@ -890,24 +912,12 @@
    "r": 4.4,
    "t": "2026-11-08T10:31:00.865925+00:00",
    "title": "Tapo C410 Kit - Cámara de Vigilancia WiFi Exterior, Panel Solar, 2K 3MP, IA"
-  },
-  {
-   "a": "B0CKM2SSK3",
-   "c": "Perfumes",
-   "e": "🌸",
-   "img": "https://m.media-amazon.com/images/I/71DfESbdC8L._AC_UL320_.jpg",
-   "n": 6500,
-   "op": 47.4,
-   "p": 36.87,
-   "r": 4.3,
-   "t": "2026-11-08T08:10:43.446539+00:00",
-   "title": "Rasasi Hawas Ice 100 ml Eau de Parfum"
   }
  ],
  "summary_day": "2026-11-07",
  "tg_offset": 511048050,
  "x_copy": {
   "day": "2026-11-08",
-  "n": 8
+  "n": 9
  }
 }
