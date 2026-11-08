@@ -2,7 +2,7 @@
  "cats": {
   "Accesorios de coche": "2026-11-08T09:55:33.252950+00:00",
   "Afeitado y depilación": "2026-11-06T19:30:54.067513+00:00",
-  "Almacenamiento": "2026-11-05T19:01:07.787656+00:00",
+  "Almacenamiento": "2026-11-08T15:10:41.467777+00:00",
   "Altavoces": "2026-11-08T12:15:39.683496+00:00",
   "Aspiradoras": "2026-11-08T07:01:15.344089+00:00",
   "Auriculares": "2026-11-05T21:20:42.646272+00:00",
@@ -24,7 +24,7 @@
   "Jardín": "2026-11-08T14:35:33.354661+00:00",
   "Lego": "2026-11-08T09:20:38.570337+00:00",
   "Menaje de cocina": "2026-11-07T07:01:04.743659+00:00",
-  "Mochilas y maletas": "2026-11-06T11:10:40.042548+00:00",
+  "Mochilas y maletas": "2026-11-08T15:10:41.467777+00:00",
   "Monitores": "2026-11-07T09:55:30.516815+00:00",
   "Móviles": "2026-11-07T11:05:35.080138+00:00",
   "Nutrición deportiva": "2026-11-07T21:40:38.731365+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-08T15:07:32.895285+00:00",
+ "next_at": "2026-11-08T15:41:38.729912+00:00",
  "offer": {
   "a": "B0G2XKZW44",
   "m": 60,
@@ -591,6 +591,16 @@
    "title": "Cecotec Cepillo de Aire 14 Cabezales CeramicCare 14in1 AirGlisse Black",
    "v": []
   },
+  "B0D7BSGM9H": {
+   "c": "Mochilas y maletas",
+   "d": 30,
+   "e": "🎒",
+   "m": 140,
+   "p": 22.99,
+   "t": "2026-11-08T15:11:09.144750+00:00",
+   "title": "MATEIN",
+   "v": []
+  },
   "B0D8QQ2LY5": {
    "c": "Robots de cocina",
    "d": 33,
@@ -928,6 +938,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0H3KV5W3B",
+   "c": "Mochilas y maletas",
+   "e": "🎒",
+   "img": "https://m.media-amazon.com/images/I/61YFHNcnaHL._AC_UL320_.jpg",
+   "n": 216,
+   "op": 39.99,
+   "p": 21.98,
+   "r": 4.5,
+   "t": "2026-11-08T15:10:41.467777+00:00",
+   "title": "Yankony"
+  },
+  {
    "a": "B09J92VPH2",
    "c": "Jardín",
    "e": "🌱",
@@ -950,24 +972,12 @@
    "r": 4.7,
    "t": "2026-11-08T14:01:05.382304+00:00",
    "title": "Poppy Playtime Triple Pack - PS5"
-  },
-  {
-   "a": "B07Q37YLQT",
-   "c": "Café y cápsulas",
-   "e": "🫘",
-   "img": "https://m.media-amazon.com/images/I/71hAn4bhgIL._AC_UL320_.jpg",
-   "n": 3400,
-   "op": 22.9,
-   "p": 19.9,
-   "r": 4.5,
-   "t": "2026-11-08T11:40:39.945107+00:00",
-   "title": "Granos de Café Enteros Kimbo Crema Intensa, Tueste Medio, Bolsa 1kg"
   }
  ],
  "summary_day": "2026-11-07",
  "tg_offset": 511048050,
  "x_copy": {
   "day": "2026-11-08",
-  "n": 14
+  "n": 15
  }
 }
