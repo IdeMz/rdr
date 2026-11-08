@@ -37,11 +37,11 @@
   "Smartwatch": "2026-11-08T16:55:32.154620+00:00",
   "Suplementos": "2026-11-07T16:15:41.580021+00:00",
   "Tablets": "2026-11-06T21:05:32.851025+00:00",
-  "Televisores": "2026-11-07T12:30:55.746453+00:00",
+  "Televisores": "2026-11-08T19:50:40.268854+00:00",
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-08T19:46:01.417595+00:00",
+ "next_at": "2026-11-08T20:21:05.732135+00:00",
  "offer": {
   "a": "B0HDBF863N",
   "m": 85,
@@ -891,6 +891,16 @@
    "title": "12M Dispositivo de Enfriamiento por Aspersión, Sistema de Riego de Jardines, 75 Pcs Kit de Pulverización de Jardín, Adecuado para Eventos al Aire Libre, Jardines, Patios, Sombrillas y Techos",
    "v": []
   },
+  "B0GQHGGWHX": {
+   "c": "Televisores",
+   "d": 40,
+   "e": "📺",
+   "m": 147,
+   "p": 299.0,
+   "t": "2026-11-08T19:51:09.950070+00:00",
+   "title": "TCL 55V6D Televisor 55 Pulgadas 4K UHD Smart TV, Fire TV, Alexa Integrado, Dolby Vision & Atmos, Game Master, HDR10+, Control por Voz",
+   "v": []
+  },
   "B0GX4YGYXG": {
    "c": "Accesorios de coche",
    "d": 35,
@@ -1038,6 +1048,6 @@
  "tg_offset": 511048050,
  "x_copy": {
   "day": "2026-11-08",
-  "n": 21
+  "n": 22
  }
 }
