@@ -9,7 +9,7 @@
   "Cafeteras": "2026-11-08T12:50:40.333375+00:00",
   "Café y cápsulas": "2026-11-08T11:40:39.945107+00:00",
   "Cargadores y baterías": "2026-11-08T18:10:41.707008+00:00",
-  "Ciclismo": "2026-11-07T19:45:40.338426+00:00",
+  "Ciclismo": "2026-11-08T19:15:39.655860+00:00",
   "Climatización": "2026-11-07T21:05:33.483971+00:00",
   "Colchones y almohadas": "2026-11-06T14:40:42.953766+00:00",
   "Cuidado de la piel": "2026-11-08T07:35:30.266273+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-08T19:11:09.682112+00:00",
+ "next_at": "2026-11-08T19:46:01.417595+00:00",
  "offer": {
   "a": "B0HDBF863N",
   "m": 85,
@@ -418,6 +418,16 @@
    "p": 399.99,
    "t": "2026-11-05T07:41:06.685336+00:00",
    "title": "Philips Air Performer 8000 3en1 Purificador, Calefactor y Ventilador, 70m²",
+   "v": []
+  },
+  "B0BQ14QLPJ": {
+   "c": "Ciclismo",
+   "d": 17,
+   "e": "🚴",
+   "m": 146,
+   "p": 19.9,
+   "t": "2026-11-08T19:16:03.684305+00:00",
+   "title": "Cecotec Casco Urbano y Montaña para Bicicletas y Patinetes Eléctricos BrainGuard Urban y Sprinter, Tallas S-M y L-XL, Homologado para Cumplir con la Máxima Seguridad",
    "v": []
   },
   "B0BQ1LKJ1Y": {
@@ -984,12 +994,21 @@
    "v": []
   }
  },
- "problem": {
-  "fails": 2,
-  "last": "HTTP 503"
- },
+ "problem": {},
  "rejected": {},
  "reserve": [
+  {
+   "a": "B0H5BFBZLH",
+   "c": "Ciclismo",
+   "e": "🚴",
+   "img": "https://m.media-amazon.com/images/I/71G5stzdlbL._AC_UL320_.jpg",
+   "n": 343,
+   "op": 7.99,
+   "p": 6.99,
+   "r": 4.2,
+   "t": "2026-11-08T19:15:39.655860+00:00",
+   "title": "Juego de Almohadillas Casco Bicicleta EVA Esponja Puntos de Traje,Casco de Bicicleta Esponja para Casco de Bicicleta Universal Recambio Almohadillas Casco Bici para Protección"
+  },
   {
    "a": "B0HDBF863N",
    "c": "Cargadores y baterías",
@@ -1019,6 +1038,6 @@
  "tg_offset": 511048050,
  "x_copy": {
   "day": "2026-11-08",
-  "n": 20
+  "n": 21
  }
 }
