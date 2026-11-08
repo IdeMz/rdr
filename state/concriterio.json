@@ -38,10 +38,10 @@
   "Suplementos": "2026-11-07T16:15:41.580021+00:00",
   "Tablets": "2026-11-06T21:05:32.851025+00:00",
   "Televisores": "2026-11-07T12:30:55.746453+00:00",
-  "Videojuegos": "2026-11-07T10:30:58.103086+00:00",
+  "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-08T13:56:46.689989+00:00",
+ "next_at": "2026-11-08T14:35:26.585054+00:00",
  "offer": {
   "a": "B0G2XKZW44",
   "m": 60,
@@ -398,6 +398,16 @@
    "p": 12.9,
    "t": "2026-11-05T09:31:30.749018+00:00",
    "title": "Cecotec Rasuradora facial Bamba FaceCare Smooth, Cuchilla de Acero inoxidable, Se adapta a la piel, Impermeable IPX5, Capuchón protector",
+   "v": []
+  },
+  "B0BTJ6QWM7": {
+   "c": "Videojuegos",
+   "d": 28,
+   "e": "🎮",
+   "m": 138,
+   "p": 15.83,
+   "t": "2026-11-08T14:01:31.780178+00:00",
+   "title": "Gal Guardians: Demon Purge - PlayStation 5",
    "v": []
   },
   "B0C33RDGY8": {
@@ -908,6 +918,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0DDCFZBQD",
+   "c": "Videojuegos",
+   "e": "🎮",
+   "img": "https://m.media-amazon.com/images/I/81GlQBfZUZL._AC_UL320_.jpg",
+   "n": 750,
+   "op": 29.99,
+   "p": 25.99,
+   "r": 4.7,
+   "t": "2026-11-08T14:01:05.382304+00:00",
+   "title": "Poppy Playtime Triple Pack - PS5"
+  },
+  {
    "a": "B07Q37YLQT",
    "c": "Café y cápsulas",
    "e": "🫘",
@@ -930,24 +952,12 @@
    "r": 4.4,
    "t": "2026-11-08T11:05:32.711349+00:00",
    "title": "Luz LED Armario 30cm con Sensor de Movimiento 3000mAh USB-C Recargable，2"
-  },
-  {
-   "a": "B0D544WSFP",
-   "c": "Cámaras de seguridad",
-   "e": "📹",
-   "img": "https://m.media-amazon.com/images/I/81Cs+nZEREL._AC_UL320_.jpg",
-   "n": 11300,
-   "op": 79.99,
-   "p": 59.99,
-   "r": 4.4,
-   "t": "2026-11-08T10:31:00.865925+00:00",
-   "title": "Tapo C410 Kit - Cámara de Vigilancia WiFi Exterior, Panel Solar, 2K 3MP, IA"
   }
  ],
  "summary_day": "2026-11-07",
  "tg_offset": 511048050,
  "x_copy": {
   "day": "2026-11-08",
-  "n": 12
+  "n": 13
  }
 }
