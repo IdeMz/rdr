@@ -35,13 +35,13 @@
   "Relojes": "2026-11-07T18:45:40.901475+00:00",
   "Robots de cocina": "2026-11-08T16:20:40.816944+00:00",
   "Smartwatch": "2026-11-08T16:55:32.154620+00:00",
-  "Suplementos": "2026-11-07T16:15:41.580021+00:00",
+  "Suplementos": "2026-11-08T20:23:42.721848+00:00",
   "Tablets": "2026-11-06T21:05:32.851025+00:00",
   "Televisores": "2026-11-08T19:50:40.268854+00:00",
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-08T20:21:05.732135+00:00",
+ "next_at": "2026-11-08T20:54:43.279421+00:00",
  "offer": {
   "a": "B0HDBF863N",
   "m": 85,
@@ -209,6 +209,16 @@
    "v": [
     "5f2e3ed7ec51"
    ]
+  },
+  "B07K142D5Q": {
+   "c": "Suplementos",
+   "d": 11,
+   "e": "💊",
+   "m": 148,
+   "p": 34.9,
+   "t": "2026-11-08T20:24:03.737762+00:00",
+   "title": "SWISSE - Omega 3 IFOS Certificado 5 Estrellas, 200 Cápsulas Blandas con 1500 mg de Aceite de Pescado, Vitamina E, 233 mg EPA y 135 mg DHA por Dosis - Suplementos para Cerebro y Corazón, Made in Italy",
+   "v": []
   },
   "B07MNT79M4": {
    "c": "Cuidado del cabello",
@@ -1048,6 +1058,6 @@
  "tg_offset": 511048050,
  "x_copy": {
   "day": "2026-11-08",
-  "n": 22
+  "n": 23
  }
 }
