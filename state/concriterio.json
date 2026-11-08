@@ -13,7 +13,7 @@
   "Climatización": "2026-11-07T21:05:33.483971+00:00",
   "Colchones y almohadas": "2026-11-06T14:40:42.953766+00:00",
   "Cuidado de la piel": "2026-11-08T07:35:30.266273+00:00",
-  "Cuidado del cabello": "2026-11-06T21:40:40.967672+00:00",
+  "Cuidado del cabello": "2026-11-08T08:45:38.227499+00:00",
   "Cámaras de seguridad": "2026-11-05T09:30:32.450110+00:00",
   "Domótica": "2026-11-06T14:05:32.179358+00:00",
   "Fitness en casa": "2026-11-07T15:40:38.914161+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-07T10:30:58.103086+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-08T08:43:43.455065+00:00",
+ "next_at": "2026-11-08T09:16:17.295555+00:00",
  "offer": {
   "a": "B0G2XKZW44",
   "m": 60,
@@ -169,6 +169,16 @@
    "v": [
     "5f2e3ed7ec51"
    ]
+  },
+  "B07MNT79M4": {
+   "c": "Cuidado del cabello",
+   "d": 38,
+   "e": "💇",
+   "m": 129,
+   "p": 15.6,
+   "t": "2026-11-08T08:46:01.200043+00:00",
+   "title": "Philips Plancha Alisadora con Placas de Cerámica y Queratina de 100 mm, Cepillo Alisador para Estilizar y Peinar con Tecnología ThermoProtect, hasta 220°C en 1 minuto, en Negro y Rosa, BHS375/00",
+   "v": []
   },
   "B07TJW59YZ": {
    "c": "Relojes",
@@ -858,6 +868,6 @@
  "tg_offset": 511048050,
  "x_copy": {
   "day": "2026-11-08",
-  "n": 3
+  "n": 4
  }
 }
