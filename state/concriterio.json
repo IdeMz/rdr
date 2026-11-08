@@ -34,14 +34,14 @@
   "Portátiles": "2026-11-08T07:35:30.266273+00:00",
   "Relojes": "2026-11-07T18:45:40.901475+00:00",
   "Robots de cocina": "2026-11-08T16:20:40.816944+00:00",
-  "Smartwatch": "2026-11-07T20:30:54.137606+00:00",
+  "Smartwatch": "2026-11-08T16:55:32.154620+00:00",
   "Suplementos": "2026-11-07T16:15:41.580021+00:00",
   "Tablets": "2026-11-06T21:05:32.851025+00:00",
   "Televisores": "2026-11-07T12:30:55.746453+00:00",
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-08T16:51:21.294402+00:00",
+ "next_at": "2026-11-08T17:30:02.615514+00:00",
  "offer": {
   "a": "B0G2XKZW44",
   "m": 60,
@@ -761,6 +761,16 @@
    "title": "Rowenta Intense Comfort, calefactor, calentamiento rápido, SO9330",
    "v": []
   },
+  "B0FJ85FBC9": {
+   "c": "Smartwatch",
+   "d": 48,
+   "e": "⌚",
+   "m": 143,
+   "p": 26.18,
+   "t": "2026-11-08T16:55:52.981883+00:00",
+   "title": "Reloj Inteligente Mujer Smartwatch con llamada: 1.27\"TFT Pantalla Táctil Smart Watch Bluetooth con Frecuencia Cardíaca SpO2 Sangre Presión Arterial Sueño Deportivo IP68 Impermeable para iOS Android",
+   "v": []
+  },
   "B0FLPCM6CB": {
    "c": "Cargadores y baterías",
    "d": 39,
@@ -998,6 +1008,6 @@
  "tg_offset": 511048050,
  "x_copy": {
   "day": "2026-11-08",
-  "n": 17
+  "n": 18
  }
 }
