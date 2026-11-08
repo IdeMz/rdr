@@ -3,7 +3,7 @@
   "Accesorios de coche": "2026-11-08T09:55:33.252950+00:00",
   "Afeitado y depilación": "2026-11-06T19:30:54.067513+00:00",
   "Almacenamiento": "2026-11-05T19:01:07.787656+00:00",
-  "Altavoces": "2026-11-06T20:30:59.575667+00:00",
+  "Altavoces": "2026-11-08T12:15:39.683496+00:00",
   "Aspiradoras": "2026-11-08T07:01:15.344089+00:00",
   "Auriculares": "2026-11-05T21:20:42.646272+00:00",
   "Cafeteras": "2026-11-06T18:45:37.891773+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-07T10:30:58.103086+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-08T12:14:52.678811+00:00",
+ "next_at": "2026-11-08T12:47:03.886689+00:00",
  "offer": {
   "a": "B0G2XKZW44",
   "m": 60,
@@ -621,6 +621,16 @@
    "title": "Mellerware - Freidora sin aceite Crunchy Plus 5.5L 1500W | 11 Menús Predefinidos | Capacidad para 3-5 raciones | Temporizador Programable | Pantalla para controlar la temperatura | Air Fryer 80-200º",
    "v": []
   },
+  "B0DXKNBQS6": {
+   "c": "Altavoces",
+   "d": 30,
+   "e": "🔊",
+   "m": 135,
+   "p": 139.0,
+   "t": "2026-11-08T12:16:01.605425+00:00",
+   "title": "JBL Charge 6, Altavoz Bluetooth Portátil Inalámbrico, Negro",
+   "v": []
+  },
   "B0F227Q92B": {
    "c": "Televisores",
    "d": 19,
@@ -918,6 +928,6 @@
  "tg_offset": 511048050,
  "x_copy": {
   "day": "2026-11-08",
-  "n": 9
+  "n": 10
  }
 }
