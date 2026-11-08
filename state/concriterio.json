@@ -8,7 +8,7 @@
   "Auriculares": "2026-11-05T21:20:42.646272+00:00",
   "Cafeteras": "2026-11-08T12:50:40.333375+00:00",
   "Café y cápsulas": "2026-11-08T11:40:39.945107+00:00",
-  "Cargadores y baterías": "2026-11-07T11:40:38.247143+00:00",
+  "Cargadores y baterías": "2026-11-08T18:10:41.707008+00:00",
   "Ciclismo": "2026-11-07T19:45:40.338426+00:00",
   "Climatización": "2026-11-07T21:05:33.483971+00:00",
   "Colchones y almohadas": "2026-11-06T14:40:42.953766+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-08T18:05:52.373939+00:00",
+ "next_at": "2026-11-08T18:42:24.226610+00:00",
  "offer": {
   "a": "B0G2XKZW44",
   "m": 60,
@@ -448,6 +448,16 @@
    "p": 69.99,
    "t": "2026-11-06T07:01:39.101272+00:00",
    "title": "GKU 4K Dashcam Cámara Coche, 5GHz WiFi Dash CAM Coche con Tarjeta de 64GB, Mini Cámara Coche Grabadora, 170° Gran Angular, Visión Nocturna, WDR, Sensor G, Modo Parking 24H, Control App, Máx 256GB",
+   "v": []
+  },
+  "B0C6TH55LD": {
+   "c": "Cargadores y baterías",
+   "d": 28,
+   "e": "🔌",
+   "m": 145,
+   "p": 16.99,
+   "t": "2026-11-08T18:11:12.426707+00:00",
+   "title": "VEEKTOMX Bateria Externa Carga Rapida 22.5W, Mini Power Bank 10000mAh",
    "v": []
   },
   "B0CBPL4RKH": {
@@ -978,6 +988,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0HDBF863N",
+   "c": "Cargadores y baterías",
+   "e": "🔌",
+   "img": "https://m.media-amazon.com/images/I/71Nez60vu-L._AC_UL320_.jpg",
+   "n": 71,
+   "op": 25.0,
+   "p": 16.99,
+   "r": 4.4,
+   "t": "2026-11-08T18:10:41.707008+00:00",
+   "title": "Power Bank 25800 mAh, 22,5 W, PD3.0 QC4.0, batería Externa para teléfono móvil, Carga rápida, Pantalla LCD, batería Externa con Cable USB-C, Salidas y entradas, Cargador portátil para Smartphone"
+  },
+  {
    "a": "B0FL32LSR5",
    "c": "Monitores",
    "e": "🖥️",
@@ -988,36 +1010,12 @@
    "r": 4.4,
    "t": "2026-11-08T17:30:52.669776+00:00",
    "title": "LG Monitor Gaming Ultragear 24G411A-B - 24'', IPS, 144Hz, 1 ms, Morado"
-  },
-  {
-   "a": "B0H3KV5W3B",
-   "c": "Mochilas y maletas",
-   "e": "🎒",
-   "img": "https://m.media-amazon.com/images/I/61YFHNcnaHL._AC_UL320_.jpg",
-   "n": 216,
-   "op": 39.99,
-   "p": 21.98,
-   "r": 4.5,
-   "t": "2026-11-08T15:10:41.467777+00:00",
-   "title": "Yankony"
-  },
-  {
-   "a": "B09J92VPH2",
-   "c": "Jardín",
-   "e": "🌱",
-   "img": "https://m.media-amazon.com/images/I/51bXrZlPDfL._AC_UL320_.jpg",
-   "n": 297,
-   "op": 144.99,
-   "p": 98.22,
-   "r": 4.2,
-   "t": "2026-11-08T14:35:33.354661+00:00",
-   "title": "Gardena kit de riego para vacaciones con depósito de agua: Kit de riego interior y exterior para plantas en maceta, transformador con temporizador integrado, función de parada automática (13366-20)"
   }
  ],
  "summary_day": "2026-11-07",
  "tg_offset": 511048050,
  "x_copy": {
   "day": "2026-11-08",
-  "n": 19
+  "n": 20
  }
 }
