@@ -4,7 +4,7 @@
   "Afeitado y depilación": "2026-11-06T19:30:54.067513+00:00",
   "Almacenamiento": "2026-11-05T19:01:07.787656+00:00",
   "Altavoces": "2026-11-06T20:30:59.575667+00:00",
-  "Aspiradoras": "2026-11-06T18:10:43.252691+00:00",
+  "Aspiradoras": "2026-11-08T07:01:15.344089+00:00",
   "Auriculares": "2026-11-05T21:20:42.646272+00:00",
   "Cafeteras": "2026-11-06T18:45:37.891773+00:00",
   "Café y cápsulas": "2026-11-07T07:35:31.317148+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-07T10:30:58.103086+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-07T22:15:11.989513+00:00",
+ "next_at": "2026-11-08T07:33:17.380581+00:00",
  "offer": {
   "a": "B0G2XKZW44",
   "m": 60,
@@ -711,6 +711,16 @@
    "title": "WOLFANG 4K Dashcam, 610° 4 Canales Cámara de Coche con 5,8 GHz WiFi & App",
    "v": []
   },
+  "B0GZZM4CXF": {
+   "c": "Aspiradoras",
+   "d": 49,
+   "e": "🧹",
+   "m": 126,
+   "p": 349.0,
+   "t": "2026-11-08T07:01:42.392144+00:00",
+   "title": "roborock Qrevo 2 Pro Robot Aspirador Succión Extrema de 25000 Pa,Negro",
+   "v": []
+  },
   "B0H2TPD39T": {
    "c": "Menaje de cocina",
    "d": 27,
@@ -788,46 +798,22 @@
  "rejected": {},
  "reserve": [
   {
-   "a": "B0HGXRWRFT",
-   "c": "Smartwatch",
-   "e": "⌚",
-   "img": "https://m.media-amazon.com/images/I/81SvGuMpi7L._AC_UL320_.jpg",
-   "n": 80,
-   "op": 99.99,
-   "p": 49.99,
-   "r": 4.5,
-   "t": "2026-11-07T20:30:54.137606+00:00",
-   "title": "Popglory Reloj Inteligente Mujer, Llamadas/Presión Arterial/100+ Deportes Smartwatch Mujer, Frecuencia respiratoria Frecuencia Cardíaca Oxígeno en Sangre Sueño, Reloj Android iOS"
-  },
-  {
-   "a": "B0BQ14QLPJ",
-   "c": "Ciclismo",
-   "e": "🚴",
-   "img": "https://m.media-amazon.com/images/I/51FFNXMYebL._AC_UL320_.jpg",
-   "n": 402,
-   "op": 23.9,
-   "p": 19.9,
-   "r": 4.6,
-   "t": "2026-11-07T19:45:40.338426+00:00",
-   "title": "Cecotec Casco Urbano y Montaña para Bicicletas y Patinetes Eléctricos BrainGuard Urban y Sprinter, Tallas S-M y L-XL, Homologado para Cumplir con la Máxima Seguridad"
-  },
-  {
-   "a": "B0G2XKZW44",
-   "c": "Relojes",
-   "e": "🕰️",
-   "img": "https://m.media-amazon.com/images/I/71FD7+oLKWL._AC_UL320_.jpg",
-   "n": 138,
-   "op": 19.99,
-   "p": 12.99,
-   "r": 4.5,
-   "t": "2026-11-07T18:45:40.901475+00:00",
-   "title": "LN LENQIN"
+   "a": "B0GSZ6BPW9",
+   "c": "Aspiradoras",
+   "e": "🧹",
+   "img": "https://m.media-amazon.com/images/I/61EnPAk2F7L._AC_UL320_.jpg",
+   "n": 1400,
+   "op": 699.0,
+   "p": 469.99,
+   "r": 4.7,
+   "t": "2026-11-08T07:01:15.344089+00:00",
+   "title": "roborock Qrevo Edge T Robot Aspirador Succión 18500 Pa, con FlexiArm"
   }
  ],
  "summary_day": "2026-11-07",
  "tg_offset": 511048050,
  "x_copy": {
-  "day": "2026-11-07",
-  "n": 19
+  "day": "2026-11-08",
+  "n": 1
  }
 }
