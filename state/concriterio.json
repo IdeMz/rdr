@@ -25,7 +25,7 @@
   "Lego": "2026-11-08T09:20:38.570337+00:00",
   "Menaje de cocina": "2026-11-07T07:01:04.743659+00:00",
   "Mochilas y maletas": "2026-11-08T15:10:41.467777+00:00",
-  "Monitores": "2026-11-07T09:55:30.516815+00:00",
+  "Monitores": "2026-11-08T17:30:52.669776+00:00",
   "Móviles": "2026-11-07T11:05:35.080138+00:00",
   "Nutrición deportiva": "2026-11-07T21:40:38.731365+00:00",
   "Perfumes": "2026-11-08T08:10:43.446539+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-08T17:30:02.615514+00:00",
+ "next_at": "2026-11-08T18:05:52.373939+00:00",
  "offer": {
   "a": "B0G2XKZW44",
   "m": 60,
@@ -831,6 +831,16 @@
    "title": "Lefant M210 Omni Robot Aspirador y Fregasuelos, Mopa de Rodillo, 20000 Pa",
    "v": []
   },
+  "B0GDWJV1TG": {
+   "c": "Monitores",
+   "d": 31,
+   "e": "🖥️",
+   "m": 144,
+   "p": 89.99,
+   "t": "2026-11-08T17:31:18.924035+00:00",
+   "title": "UPERFECT Monitor Portátil con Soporte Metálico Plegable, 15.6\" 125% sRGB",
+   "v": []
+  },
   "B0GF1WDV3V": {
    "c": "Aspiradoras",
    "d": 50,
@@ -968,6 +978,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0FL32LSR5",
+   "c": "Monitores",
+   "e": "🖥️",
+   "img": "https://m.media-amazon.com/images/I/71kvya-jApL._AC_UL320_.jpg",
+   "n": 148,
+   "op": 109.0,
+   "p": 83.95,
+   "r": 4.4,
+   "t": "2026-11-08T17:30:52.669776+00:00",
+   "title": "LG Monitor Gaming Ultragear 24G411A-B - 24'', IPS, 144Hz, 1 ms, Morado"
+  },
+  {
    "a": "B0H3KV5W3B",
    "c": "Mochilas y maletas",
    "e": "🎒",
@@ -990,24 +1012,12 @@
    "r": 4.2,
    "t": "2026-11-08T14:35:33.354661+00:00",
    "title": "Gardena kit de riego para vacaciones con depósito de agua: Kit de riego interior y exterior para plantas en maceta, transformador con temporizador integrado, función de parada automática (13366-20)"
-  },
-  {
-   "a": "B0DDCFZBQD",
-   "c": "Videojuegos",
-   "e": "🎮",
-   "img": "https://m.media-amazon.com/images/I/81GlQBfZUZL._AC_UL320_.jpg",
-   "n": 750,
-   "op": 29.99,
-   "p": 25.99,
-   "r": 4.7,
-   "t": "2026-11-08T14:01:05.382304+00:00",
-   "title": "Poppy Playtime Triple Pack - PS5"
   }
  ],
  "summary_day": "2026-11-07",
  "tg_offset": 511048050,
  "x_copy": {
   "day": "2026-11-08",
-  "n": 18
+  "n": 19
  }
 }
