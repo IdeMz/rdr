@@ -12,7 +12,7 @@
   "Ciclismo": "2026-11-08T19:15:39.655860+00:00",
   "Climatización": "2026-11-07T21:05:33.483971+00:00",
   "Colchones y almohadas": "2026-11-06T14:40:42.953766+00:00",
-  "Cuidado de la piel": "2026-11-08T07:35:30.266273+00:00",
+  "Cuidado de la piel": "2026-11-08T21:30:55.800032+00:00",
   "Cuidado del cabello": "2026-11-08T08:45:38.227499+00:00",
   "Cámaras de seguridad": "2026-11-08T10:31:00.865925+00:00",
   "Domótica": "2026-11-06T14:05:32.179358+00:00",
@@ -27,7 +27,7 @@
   "Mochilas y maletas": "2026-11-08T15:10:41.467777+00:00",
   "Monitores": "2026-11-08T17:30:52.669776+00:00",
   "Móviles": "2026-11-07T11:05:35.080138+00:00",
-  "Nutrición deportiva": "2026-11-07T21:40:38.731365+00:00",
+  "Nutrición deportiva": "2026-11-08T21:30:55.800032+00:00",
   "Perfumes": "2026-11-08T08:10:43.446539+00:00",
   "Periféricos": "2026-11-06T15:50:43.516360+00:00",
   "Perros": "2026-11-08T13:25:31.829164+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-08T21:26:52.520856+00:00",
+ "next_at": "2026-11-08T22:03:59.599279+00:00",
  "offer": {
   "a": "B0HDBF863N",
   "m": 85,
@@ -288,6 +288,16 @@
    "p": 99.0,
    "t": "2026-11-05T14:46:18.914865+00:00",
    "title": "De'Longhi Stilosa - Cafetera Espresso Manual con Espumador Manual Negro",
+   "v": []
+  },
+  "B08B21PRLM": {
+   "c": "Cuidado de la piel",
+   "d": 36,
+   "e": "🧴",
+   "m": 150,
+   "p": 15.2,
+   "t": "2026-11-08T21:31:30.332152+00:00",
+   "title": "L'Oréal Paris Revitalift Filler Sérum Facial Ácido Hialurónico y PDRN, 30ml",
    "v": []
   },
   "B08CBJCQ39": {
@@ -1028,6 +1038,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B08L9DBVZ9",
+   "c": "Cuidado de la piel",
+   "e": "🧴",
+   "img": "https://m.media-amazon.com/images/I/71uJKiEJbkL._AC_UL320_.jpg",
+   "n": 2100,
+   "op": 23.99,
+   "p": 14.25,
+   "r": 4.4,
+   "t": "2026-11-08T21:30:55.800032+00:00",
+   "title": "NIVEA Luminous 630 Sérum antimanchas de tratamiento avanzado, 30 ml"
+  },
+  {
    "a": "B0039UT5OK",
    "c": "Relojes",
    "e": "🕰️",
@@ -1050,24 +1072,12 @@
    "r": 4.2,
    "t": "2026-11-08T19:15:39.655860+00:00",
    "title": "Juego de Almohadillas Casco Bicicleta EVA Esponja Puntos de Traje,Casco de Bicicleta Esponja para Casco de Bicicleta Universal Recambio Almohadillas Casco Bici para Protección"
-  },
-  {
-   "a": "B0HDBF863N",
-   "c": "Cargadores y baterías",
-   "e": "🔌",
-   "img": "https://m.media-amazon.com/images/I/71Nez60vu-L._AC_UL320_.jpg",
-   "n": 71,
-   "op": 25.0,
-   "p": 16.99,
-   "r": 4.4,
-   "t": "2026-11-08T18:10:41.707008+00:00",
-   "title": "Power Bank 25800 mAh, 22,5 W, PD3.0 QC4.0, batería Externa para teléfono móvil, Carga rápida, Pantalla LCD, batería Externa con Cable USB-C, Salidas y entradas, Cargador portátil para Smartphone"
   }
  ],
  "summary_day": "2026-11-07",
  "tg_offset": 511048050,
  "x_copy": {
   "day": "2026-11-08",
-  "n": 24
+  "n": 25
  }
 }
