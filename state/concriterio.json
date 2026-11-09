@@ -4,7 +4,7 @@
   "Afeitado y depilación": "2026-11-06T19:30:54.067513+00:00",
   "Almacenamiento": "2026-11-08T15:10:41.467777+00:00",
   "Altavoces": "2026-11-08T12:15:39.683496+00:00",
-  "Aspiradoras": "2026-11-08T07:01:15.344089+00:00",
+  "Aspiradoras": "2026-11-09T07:35:34.621273+00:00",
   "Auriculares": "2026-11-05T21:20:42.646272+00:00",
   "Cafeteras": "2026-11-08T12:50:40.333375+00:00",
   "Café y cápsulas": "2026-11-08T11:40:39.945107+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-09T07:31:25.352131+00:00",
+ "next_at": "2026-11-09T08:06:55.689088+00:00",
  "offer": {
   "a": "B0HDBF863N",
   "m": 85,
@@ -731,6 +731,16 @@
    "title": "Arquivet Fresh Puppy Junior Pavo & Salmón 2,5Kg - Pienso Semihúmedo",
    "v": []
   },
+  "B0DQ5KNY6Y": {
+   "c": "Aspiradoras",
+   "d": 55,
+   "e": "🧹",
+   "m": 154,
+   "p": 499.0,
+   "t": "2026-11-09T07:36:01.665974+00:00",
+   "title": "DREAME L50 Pro Ultra Robot Aspirador y Fregasuelos, 19500 Pa, Autolimpieza de la Mopa, Detección de Obstáculos Inteligente, Limpieza con Agua Caliente a 75°, Robot Aspitador con Cámara para Mascotas",
+   "v": []
+  },
   "B0DVLGQX5N": {
    "c": "Freidoras de aire",
    "d": 43,
@@ -1048,6 +1058,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0GSZ6BPW9",
+   "c": "Aspiradoras",
+   "e": "🧹",
+   "img": "https://m.media-amazon.com/images/I/61EnPAk2F7L._AC_UL320_.jpg",
+   "n": 1400,
+   "op": 699.0,
+   "p": 469.99,
+   "r": 4.7,
+   "t": "2026-11-09T07:35:34.621273+00:00",
+   "title": "roborock Qrevo Edge T Robot Aspirador Succión 18500 Pa, con FlexiArm"
+  },
+  {
    "a": "B08X6DCJT2",
    "c": "Cámaras de seguridad",
    "e": "📹",
@@ -1064,6 +1086,6 @@
  "tg_offset": 511048050,
  "x_copy": {
   "day": "2026-11-09",
-  "n": 1
+  "n": 2
  }
 }
