@@ -24,7 +24,7 @@
   "Jardín": "2026-11-08T14:35:33.354661+00:00",
   "Lego": "2026-11-09T10:30:54.098717+00:00",
   "Menaje de cocina": "2026-11-07T07:01:04.743659+00:00",
-  "Mochilas y maletas": "2026-11-08T15:10:41.467777+00:00",
+  "Mochilas y maletas": "2026-11-09T14:01:06.954280+00:00",
   "Monitores": "2026-11-08T17:30:52.669776+00:00",
   "Móviles": "2026-11-07T11:05:35.080138+00:00",
   "Nutrición deportiva": "2026-11-08T21:30:55.800032+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-09T13:58:21.554555+00:00",
+ "next_at": "2026-11-09T14:34:04.817215+00:00",
  "offer": {
   "a": "B0FMGRBGD9",
   "m": 99,
@@ -1071,6 +1071,16 @@
    "title": "CAROTE Juego de Ollas y Sartenes Antiadherentes 13 Piezas, Marrón Oscuro",
    "v": []
   },
+  "B0H3KV5W3B": {
+   "c": "Mochilas y maletas",
+   "d": 45,
+   "e": "🎒",
+   "m": 164,
+   "p": 21.98,
+   "t": "2026-11-09T14:01:35.956097+00:00",
+   "title": "Yankony",
+   "v": []
+  },
   "B0H3Z8M52C": {
    "c": "Accesorios de coche",
    "d": 39,
@@ -1148,6 +1158,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0CSYSC19R",
+   "c": "Mochilas y maletas",
+   "e": "🎒",
+   "img": "https://m.media-amazon.com/images/I/71tmNR1SoIL._AC_UL320_.jpg",
+   "n": 2800,
+   "op": 23.99,
+   "p": 17.14,
+   "r": 4.7,
+   "t": "2026-11-09T14:01:06.954280+00:00",
+   "title": "Xkdoai"
+  },
+  {
    "a": "B0C5Y1GN2Y",
    "c": "Afeitado y depilación",
    "e": "🪒",
@@ -1170,24 +1192,12 @@
    "r": 4.6,
    "t": "2026-11-09T11:05:34.803967+00:00",
    "title": "JBL Grip, Altavoz Bluetooth Compacto, Azul"
-  },
-  {
-   "a": "B01N6CJ1QW",
-   "c": "Lego",
-   "e": "🧱",
-   "img": "https://m.media-amazon.com/images/I/61oCbN8IQwL._AC_UL320_.jpg",
-   "n": 19300,
-   "op": 29.99,
-   "p": 21.99,
-   "r": 4.9,
-   "t": "2026-11-09T10:30:54.098717+00:00",
-   "title": "LEGO Botanicals Miniorquídea 10343"
   }
  ],
  "summary_day": "2026-11-08",
  "tg_offset": 511048050,
  "x_copy": {
   "day": "2026-11-09",
-  "n": 11
+  "n": 12
  }
 }
