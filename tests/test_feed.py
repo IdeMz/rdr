@@ -40,6 +40,40 @@ def test_parse_feed_accepts_gzip_and_other_delimiters():
     assert feed.parse_feed(gzip.compress(raw)) == {"1": 9.99}
 
 
+def test_parse_feed_accepts_quoted_header():
+    raw = b'"aw_deep_link","product_name","aw_product_id","search_price"\n"u","n","7","5.50"\n'
+    assert feed.parse_feed(raw) == {"7": 5.5}
+
+
+def test_parse_feed_error_says_what_arrived():
+    with pytest.raises(feed.FeedError, match=r"HTML.*Error 500"):
+        feed.parse_feed(b"<html>Error 500</html>")
+    with pytest.raises(feed.FeedError, match="XML"):
+        feed.parse_feed(b'<?xml version="1.0"?><products></products>')
+    with pytest.raises(feed.FeedError, match="bytes"):
+        feed.parse_feed(b"nombre,precio\n1,2\n")
+
+
+def zipped(data, name="feed.csv"):
+    import io
+    import zipfile
+    buf = io.BytesIO()
+    with zipfile.ZipFile(buf, "w", zipfile.ZIP_DEFLATED) as z:
+        z.writestr(name, data)
+    return buf.getvalue()
+
+
+def test_parse_feed_accepts_zip_like_awin_delivers():
+    raw = csv_bytes([["http://a", "Uno", "1", "9.99", "new", "1"]])
+    assert feed.parse_feed(zipped(raw)) == {"1": 9.99}
+    assert feed.parse_feed(zipped(raw, name="PowerPlanet_ES.csv")) == {"1": 9.99}
+
+
+def test_parse_feed_broken_zip_is_a_feed_error():
+    with pytest.raises(feed.FeedError, match="zip"):
+        feed.parse_feed(b"PK\x03\x04esto no es un zip")
+
+
 def test_parse_feed_rejects_garbage():
     with pytest.raises(feed.FeedError):
         feed.parse_feed(b"<html>Error 500</html>")

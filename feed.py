@@ -16,6 +16,7 @@ import io
 import json
 import logging
 import time
+import zipfile
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
@@ -26,6 +27,7 @@ log = logging.getLogger("deals")
 FEED_ENV = "AWIN_FEED_URL"
 KEEP_DAYS = 45                 # cuanto historial se conserva
 RETRY_MINUTES = 60             # espera tras una descarga fallida
+MAX_UNZIPPED = 400 * 1024 * 1024  # tope al descomprimir (el feed real ronda los 18 MB)
 MIN_PRODUCTS = 500             # un feed con menos productos se considera roto
 MIN_RATIO = 0.5                # ... igual que uno que pierde mas de la mitad del dia anterior
 EPOCH = date(2026, 1, 1)       # los dias se guardan como numero de dias desde esta fecha
@@ -62,21 +64,46 @@ def download(url: str, attempts: int = 3) -> bytes:
     raise FeedError(f"no se pudo descargar el feed ({last})")
 
 
+def describe(raw: bytes, header: str) -> str:
+    """Resumen seguro de lo que llego, para el log: tamano, tipo aparente y el principio de la primera linea."""
+    head = raw[:200].lstrip().lower()
+    kind = ("HTML" if head.startswith((b"<!doctype html", b"<html")) else
+            "XML" if head.startswith(b"<?xml") or head.startswith(b"<") else
+            "JSON" if head.startswith((b"{", b"[")) else "texto")
+    return f"{len(raw)} bytes, parece {kind}, empieza por {header[:150]!r}"
+
+
 def parse_feed(raw: bytes) -> dict[str, float]:
     """{id de producto: precio} de los productos nuevos y con precio. Acepta CSV normal o comprimido."""
+    if raw[:4] == b"PK\x03\x04":  # Awin entrega un .zip cuando la URL lleva /compression/zip/
+        try:
+            with zipfile.ZipFile(io.BytesIO(raw)) as zf:
+                members = [i for i in zf.infolist() if not i.is_dir()]
+                members.sort(key=lambda i: not i.filename.lower().endswith((".csv", ".txt")))
+                if not members or members[0].file_size > MAX_UNZIPPED:
+                    raise FeedError("el zip del feed esta vacio o es demasiado grande")
+                raw = zf.read(members[0])
+        except zipfile.BadZipFile as exc:
+            raise FeedError("el feed es un zip danado") from exc
     if raw[:2] == b"\x1f\x8b":
         try:
             raw = gzip.decompress(raw)
         except (OSError, EOFError) as exc:
             raise FeedError("el feed esta comprimido pero no se puede descomprimir") from exc
     text = raw.decode("utf-8-sig", errors="replace")
-    header = text.split("\n", 1)[0]
-    delim = next((d for d in DELIMITERS if "aw_product_id" in header.split(d)), None)
+    header = text.split("\n", 1)[0].rstrip("\r")
+    delim = None
+    for d in DELIMITERS:
+        names = [c.strip().strip('"').strip("'") for c in next(csv.reader([header], delimiter=d), [])]
+        if "aw_product_id" in names:
+            delim = d
+            break
     if delim is None:
-        raise FeedError("el feed no tiene el formato esperado (falta aw_product_id)")
-    reader = csv.DictReader(io.StringIO(text, newline=""), delimiter=delim)
-    if "search_price" not in (reader.fieldnames or []):
-        raise FeedError("el feed no trae la columna search_price")
+        raise FeedError(f"el feed no tiene el formato esperado (falta aw_product_id): {describe(raw, header)}")
+    reader = csv.DictReader(io.StringIO(text, newline=""), delimiter=delim, quotechar='"')
+    reader.fieldnames = [(c or "").strip().strip('"') for c in (reader.fieldnames or [])]
+    if "search_price" not in reader.fieldnames:
+        raise FeedError(f"el feed no trae la columna search_price (columnas: {', '.join(reader.fieldnames)[:200]})")
     prices: dict[str, float] = {}
     for row in reader:
         pid = (row.get("aw_product_id") or "").strip()
