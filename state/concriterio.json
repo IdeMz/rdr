@@ -22,7 +22,7 @@
   "Herramientas": "2026-11-06T17:01:09.983033+00:00",
   "Iluminación": "2026-11-08T11:05:32.711349+00:00",
   "Jardín": "2026-11-08T14:35:33.354661+00:00",
-  "Lego": "2026-11-08T09:20:38.570337+00:00",
+  "Lego": "2026-11-09T10:30:54.098717+00:00",
   "Menaje de cocina": "2026-11-07T07:01:04.743659+00:00",
   "Mochilas y maletas": "2026-11-08T15:10:41.467777+00:00",
   "Monitores": "2026-11-08T17:30:52.669776+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-09T10:25:54.444719+00:00",
+ "next_at": "2026-11-09T11:04:52.866518+00:00",
  "offer": {
   "a": "B0HDBF863N",
   "m": 85,
@@ -741,6 +741,16 @@
    "title": "Kneipp Gummies Niños Concentración, 30 gominolas",
    "v": []
   },
+  "B0DHSBBV6R": {
+   "c": "Lego",
+   "d": 30,
+   "e": "🧱",
+   "m": 159,
+   "p": 18.99,
+   "t": "2026-11-09T10:31:21.761000+00:00",
+   "title": "LEGO Speed Champions Coche de Carreras Ferrari SF-24 F1 77242",
+   "v": []
+  },
   "B0DHSF1PW6": {
    "c": "Lego",
    "d": 33,
@@ -1098,6 +1108,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B01N6CJ1QW",
+   "c": "Lego",
+   "e": "🧱",
+   "img": "https://m.media-amazon.com/images/I/61oCbN8IQwL._AC_UL320_.jpg",
+   "n": 19300,
+   "op": 29.99,
+   "p": 21.99,
+   "r": 4.9,
+   "t": "2026-11-09T10:30:54.098717+00:00",
+   "title": "LEGO Botanicals Miniorquídea 10343"
+  },
+  {
    "a": "B0H1BGRHCV",
    "c": "Fitness en casa",
    "e": "🏋️",
@@ -1120,24 +1142,12 @@
    "r": 4.7,
    "t": "2026-11-09T07:35:34.621273+00:00",
    "title": "roborock Qrevo Edge T Robot Aspirador Succión 18500 Pa, con FlexiArm"
-  },
-  {
-   "a": "B08X6DCJT2",
-   "c": "Cámaras de seguridad",
-   "e": "📹",
-   "img": "https://m.media-amazon.com/images/I/51ibns6pBhL._AC_UL320_.jpg",
-   "n": 51800,
-   "op": 27.69,
-   "p": 21.99,
-   "r": 4.5,
-   "t": "2026-11-09T07:01:09.710131+00:00",
-   "title": "Imou Cámara IP WiFi Interior 2K/3MP Cámara de Vigilancia WiFi Interior 360°"
   }
  ],
  "summary_day": "2026-11-08",
  "tg_offset": 511048050,
  "x_copy": {
   "day": "2026-11-09",
-  "n": 6
+  "n": 7
  }
 }
