@@ -1,7 +1,7 @@
 {
  "cats": {
   "Accesorios de coche": "2026-11-08T09:55:33.252950+00:00",
-  "Afeitado y depilación": "2026-11-06T19:30:54.067513+00:00",
+  "Afeitado y depilación": "2026-11-09T12:15:43.445622+00:00",
   "Almacenamiento": "2026-11-08T15:10:41.467777+00:00",
   "Altavoces": "2026-11-09T11:05:34.803967+00:00",
   "Aspiradoras": "2026-11-09T07:35:34.621273+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-09T12:11:05.362219+00:00",
+ "next_at": "2026-11-09T12:49:01.796978+00:00",
  "offer": {
   "a": "B0FMGRBGD9",
   "m": 99,
@@ -66,6 +66,16 @@
    "p": 27.9,
    "t": "2026-11-06T17:35:59.938950+00:00",
    "title": "CALVIN KLEIN EVERYONE Eau de Parfum para mujer | Fragancia femenina floral con notas de bergamota y lirio blanco | Atemporal y larga duración",
+   "v": []
+  },
+  "B001RYWCWM": {
+   "c": "Afeitado y depilación",
+   "d": 39,
+   "e": "🪒",
+   "m": 161,
+   "p": 4.24,
+   "t": "2026-11-09T12:16:44.090689+00:00",
+   "title": "Wilkinson Sword Xtreme 3 Comfort - 6 Maquinillas Desechables Depilatorias Femeninas de 3 Hojas Flexibles con Aceite de Coco Hidratante",
    "v": []
   },
   "B002PM23YC": {
@@ -1114,13 +1124,21 @@
    "v": []
   }
  },
- "problem": {
-  "alerted_at": "2026-11-09T12:01:05.362219+00:00",
-  "fails": 3,
-  "last": "HTTP 503"
- },
+ "problem": {},
  "rejected": {},
  "reserve": [
+  {
+   "a": "B0C5Y1GN2Y",
+   "c": "Afeitado y depilación",
+   "e": "🪒",
+   "img": "https://m.media-amazon.com/images/I/718uiJpktiL._AC_UL320_.jpg",
+   "n": 1000,
+   "op": 13.99,
+   "p": 8.63,
+   "r": 4.5,
+   "t": "2026-11-09T12:15:43.445622+00:00",
+   "title": "Gillette Venus Maquinilla de Afeitar Mujer para Ingles Y Zona Íntima"
+  },
   {
    "a": "B0FMGRBGD9",
    "c": "Altavoces",
@@ -1144,24 +1162,12 @@
    "r": 4.9,
    "t": "2026-11-09T10:30:54.098717+00:00",
    "title": "LEGO Botanicals Miniorquídea 10343"
-  },
-  {
-   "a": "B0H1BGRHCV",
-   "c": "Fitness en casa",
-   "e": "🏋️",
-   "img": "https://m.media-amazon.com/images/I/71dbnFaf5SL._AC_UL320_.jpg",
-   "n": 825,
-   "op": 19.99,
-   "p": 14.66,
-   "r": 4.4,
-   "t": "2026-11-09T08:10:41.171109+00:00",
-   "title": "Gomas Elasticas Musculacion 4 Niveles Anclaje Protectores Trasporto"
   }
  ],
  "summary_day": "2026-11-08",
  "tg_offset": 511048050,
  "x_copy": {
   "day": "2026-11-09",
-  "n": 8
+  "n": 9
  }
 }
