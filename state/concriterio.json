@@ -19,7 +19,7 @@
   "Fitness en casa": "2026-11-09T08:10:41.171109+00:00",
   "Freidoras de aire": "2026-11-09T15:10:45.867226+00:00",
   "Gatos": "2026-11-07T16:50:41.349951+00:00",
-  "Herramientas": "2026-11-06T17:01:09.983033+00:00",
+  "Herramientas": "2026-11-09T17:35:34.285922+00:00",
   "Iluminación": "2026-11-09T13:25:33.337111+00:00",
   "Jardín": "2026-11-08T14:35:33.354661+00:00",
   "Lego": "2026-11-09T10:30:54.098717+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-09T15:45:40.967709+00:00"
  },
- "next_at": "2026-11-09T17:31:32.657041+00:00",
+ "next_at": "2026-11-09T18:09:13.022966+00:00",
  "offer": {
   "a": "B0FMGRBGD9",
   "m": 99,
@@ -358,6 +358,16 @@
    "p": 358.23,
    "t": "2026-11-09T14:36:02.093294+00:00",
    "title": "SanDisk Extreme pro SSD externo Portátil 2 TB (Disco duro externo SSD con velodidad de lectura e de escritura hasta 2000 MB/s, 256-bit AES hardware encryption, Clasificación IP65)",
+   "v": []
+  },
+  "B093WKG8RF": {
+   "c": "Herramientas",
+   "d": 29,
+   "e": "🔧",
+   "m": 170,
+   "p": 99.0,
+   "t": "2026-11-09T17:35:56.108251+00:00",
+   "title": "metabo PowerMaxx BS Basic Taladro Atornillador de 12 V con Luz LED",
    "v": []
   },
   "B0987W5VK6": {
@@ -1248,6 +1258,6 @@
  "tg_offset": 511048050,
  "x_copy": {
   "day": "2026-11-09",
-  "n": 17
+  "n": 18
  }
 }
