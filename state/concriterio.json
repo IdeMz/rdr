@@ -14,7 +14,7 @@
   "Colchones y almohadas": "2026-11-06T14:40:42.953766+00:00",
   "Cuidado de la piel": "2026-11-08T21:30:55.800032+00:00",
   "Cuidado del cabello": "2026-11-08T08:45:38.227499+00:00",
-  "Cámaras de seguridad": "2026-11-08T10:31:00.865925+00:00",
+  "Cámaras de seguridad": "2026-11-09T07:01:09.710131+00:00",
   "Domótica": "2026-11-06T14:05:32.179358+00:00",
   "Fitness en casa": "2026-11-07T15:40:38.914161+00:00",
   "Freidoras de aire": "2026-11-08T15:45:42.169234+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-08T22:03:59.599279+00:00",
+ "next_at": "2026-11-09T07:31:25.352131+00:00",
  "offer": {
   "a": "B0HDBF863N",
   "m": 85,
@@ -621,6 +621,16 @@
    "title": "Funko Fusion - Gioco Per Ps5",
    "v": []
   },
+  "B0D544WSFP": {
+   "c": "Cámaras de seguridad",
+   "d": 25,
+   "e": "📹",
+   "m": 153,
+   "p": 59.99,
+   "t": "2026-11-09T07:01:45.166249+00:00",
+   "title": "Tapo C410 Kit - Cámara de Vigilancia WiFi Exterior, Panel Solar, 2K 3MP, IA",
+   "v": []
+  },
   "B0D5B6L569": {
    "c": "Nutrición deportiva",
    "d": 28,
@@ -1038,46 +1048,22 @@
  "rejected": {},
  "reserve": [
   {
-   "a": "B08L9DBVZ9",
-   "c": "Cuidado de la piel",
-   "e": "🧴",
-   "img": "https://m.media-amazon.com/images/I/71uJKiEJbkL._AC_UL320_.jpg",
-   "n": 2100,
-   "op": 23.99,
-   "p": 14.25,
-   "r": 4.4,
-   "t": "2026-11-08T21:30:55.800032+00:00",
-   "title": "NIVEA Luminous 630 Sérum antimanchas de tratamiento avanzado, 30 ml"
-  },
-  {
-   "a": "B0039UT5OK",
-   "c": "Relojes",
-   "e": "🕰️",
-   "img": "https://m.media-amazon.com/images/I/61OfYLWEjcL._AC_UL320_.jpg",
-   "n": 9400,
-   "op": 59.9,
-   "p": 48.49,
-   "r": 4.7,
-   "t": "2026-11-08T20:55:31.883791+00:00",
-   "title": "Casio"
-  },
-  {
-   "a": "B0H5BFBZLH",
-   "c": "Ciclismo",
-   "e": "🚴",
-   "img": "https://m.media-amazon.com/images/I/71G5stzdlbL._AC_UL320_.jpg",
-   "n": 343,
-   "op": 7.99,
-   "p": 6.99,
-   "r": 4.2,
-   "t": "2026-11-08T19:15:39.655860+00:00",
-   "title": "Juego de Almohadillas Casco Bicicleta EVA Esponja Puntos de Traje,Casco de Bicicleta Esponja para Casco de Bicicleta Universal Recambio Almohadillas Casco Bici para Protección"
+   "a": "B08X6DCJT2",
+   "c": "Cámaras de seguridad",
+   "e": "📹",
+   "img": "https://m.media-amazon.com/images/I/51ibns6pBhL._AC_UL320_.jpg",
+   "n": 51800,
+   "op": 27.69,
+   "p": 21.99,
+   "r": 4.5,
+   "t": "2026-11-09T07:01:09.710131+00:00",
+   "title": "Imou Cámara IP WiFi Interior 2K/3MP Cámara de Vigilancia WiFi Interior 360°"
   }
  ],
  "summary_day": "2026-11-08",
  "tg_offset": 511048050,
  "x_copy": {
-  "day": "2026-11-08",
-  "n": 25
+  "day": "2026-11-09",
+  "n": 1
  }
 }
