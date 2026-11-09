@@ -16,7 +16,7 @@
   "Cuidado del cabello": "2026-11-08T08:45:38.227499+00:00",
   "Cámaras de seguridad": "2026-11-09T07:01:09.710131+00:00",
   "Domótica": "2026-11-06T14:05:32.179358+00:00",
-  "Fitness en casa": "2026-11-07T15:40:38.914161+00:00",
+  "Fitness en casa": "2026-11-09T08:10:41.171109+00:00",
   "Freidoras de aire": "2026-11-08T15:45:42.169234+00:00",
   "Gatos": "2026-11-07T16:50:41.349951+00:00",
   "Herramientas": "2026-11-06T17:01:09.983033+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-09T08:06:55.689088+00:00",
+ "next_at": "2026-11-09T08:42:08.196318+00:00",
  "offer": {
   "a": "B0HDBF863N",
   "m": 85,
@@ -581,6 +581,16 @@
    "title": "Anker Power bank 20.000 mAh 87 W con cable USB C integrado",
    "v": []
   },
+  "B0D1DV9NHZ": {
+   "c": "Fitness en casa",
+   "d": 35,
+   "e": "🏋️",
+   "m": 155,
+   "p": 20.12,
+   "t": "2026-11-09T08:11:10.219735+00:00",
+   "title": "Fokky Gomas Elasticas Musculacion con Anclaje de Puerta y Asas, 5 Niveles",
+   "v": []
+  },
   "B0D1KN8DRS": {
    "c": "Colchones y almohadas",
    "d": 14,
@@ -1058,6 +1068,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0H1BGRHCV",
+   "c": "Fitness en casa",
+   "e": "🏋️",
+   "img": "https://m.media-amazon.com/images/I/71dbnFaf5SL._AC_UL320_.jpg",
+   "n": 825,
+   "op": 19.99,
+   "p": 14.66,
+   "r": 4.4,
+   "t": "2026-11-09T08:10:41.171109+00:00",
+   "title": "Gomas Elasticas Musculacion 4 Niveles Anclaje Protectores Trasporto"
+  },
+  {
    "a": "B0GSZ6BPW9",
    "c": "Aspiradoras",
    "e": "🧹",
@@ -1086,6 +1108,6 @@
  "tg_offset": 511048050,
  "x_copy": {
   "day": "2026-11-09",
-  "n": 2
+  "n": 3
  }
 }
