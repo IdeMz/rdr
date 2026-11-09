@@ -3,7 +3,7 @@
   "Accesorios de coche": "2026-11-08T09:55:33.252950+00:00",
   "Afeitado y depilación": "2026-11-06T19:30:54.067513+00:00",
   "Almacenamiento": "2026-11-08T15:10:41.467777+00:00",
-  "Altavoces": "2026-11-08T12:15:39.683496+00:00",
+  "Altavoces": "2026-11-09T11:05:34.803967+00:00",
   "Aspiradoras": "2026-11-09T07:35:34.621273+00:00",
   "Auriculares": "2026-11-09T09:20:44.161501+00:00",
   "Cafeteras": "2026-11-08T12:50:40.333375+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-09T11:04:52.866518+00:00",
+ "next_at": "2026-11-09T11:37:21.236239+00:00",
  "offer": {
   "a": "B0HDBF863N",
   "m": 85,
@@ -641,6 +641,16 @@
    "title": "Funko Fusion - Gioco Per Ps5",
    "v": []
   },
+  "B0D3X3YKVF": {
+   "c": "Altavoces",
+   "d": 33,
+   "e": "🔊",
+   "m": 160,
+   "p": 69.99,
+   "t": "2026-11-09T11:06:08.436992+00:00",
+   "title": "Ultimate Ears WONDERBOOM 4, altavoz Bluetooth portátil resistente al agua",
+   "v": []
+  },
   "B0D544WSFP": {
    "c": "Cámaras de seguridad",
    "d": 25,
@@ -1108,6 +1118,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0FMGRBGD9",
+   "c": "Altavoces",
+   "e": "🔊",
+   "img": "https://m.media-amazon.com/images/I/71dBlw4OnwL._AC_UL320_.jpg",
+   "n": 1400,
+   "op": 99.99,
+   "p": 69.99,
+   "r": 4.6,
+   "t": "2026-11-09T11:05:34.803967+00:00",
+   "title": "JBL Grip, Altavoz Bluetooth Compacto, Azul"
+  },
+  {
    "a": "B01N6CJ1QW",
    "c": "Lego",
    "e": "🧱",
@@ -1130,24 +1152,12 @@
    "r": 4.4,
    "t": "2026-11-09T08:10:41.171109+00:00",
    "title": "Gomas Elasticas Musculacion 4 Niveles Anclaje Protectores Trasporto"
-  },
-  {
-   "a": "B0GSZ6BPW9",
-   "c": "Aspiradoras",
-   "e": "🧹",
-   "img": "https://m.media-amazon.com/images/I/61EnPAk2F7L._AC_UL320_.jpg",
-   "n": 1400,
-   "op": 699.0,
-   "p": 469.99,
-   "r": 4.7,
-   "t": "2026-11-09T07:35:34.621273+00:00",
-   "title": "roborock Qrevo Edge T Robot Aspirador Succión 18500 Pa, con FlexiArm"
   }
  ],
  "summary_day": "2026-11-08",
  "tg_offset": 511048050,
  "x_copy": {
   "day": "2026-11-09",
-  "n": 7
+  "n": 8
  }
 }
