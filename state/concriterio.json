@@ -15,7 +15,7 @@
   "Cuidado de la piel": "2026-11-08T21:30:55.800032+00:00",
   "Cuidado del cabello": "2026-11-08T08:45:38.227499+00:00",
   "Cámaras de seguridad": "2026-11-09T07:01:09.710131+00:00",
-  "Domótica": "2026-11-06T14:05:32.179358+00:00",
+  "Domótica": "2026-11-09T08:45:39.502721+00:00",
   "Fitness en casa": "2026-11-09T08:10:41.171109+00:00",
   "Freidoras de aire": "2026-11-08T15:45:42.169234+00:00",
   "Gatos": "2026-11-07T16:50:41.349951+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-09T08:42:08.196318+00:00",
+ "next_at": "2026-11-09T09:20:28.086739+00:00",
  "offer": {
   "a": "B0HDBF863N",
   "m": 85,
@@ -651,6 +651,16 @@
    "title": "BIG - Proteinas Whey - Proteina en Polvo para Desarrollo de Masa Muscular y Recuperación - Materia Prima Premium - Whey Protein Sin Lactosa, Sin Grumos (1Kg, Cacaolat)",
    "v": []
   },
+  "B0D6NLJHQ3": {
+   "c": "Domótica",
+   "d": 24,
+   "e": "💡",
+   "m": 156,
+   "p": 38.16,
+   "t": "2026-11-09T08:46:01.559437+00:00",
+   "title": "Philips Hue Bombilla Foco GU10, 2 Uds.",
+   "v": []
+  },
   "B0D6W8GSL3": {
    "c": "Altavoces",
    "d": 40,
@@ -1108,6 +1118,6 @@
  "tg_offset": 511048050,
  "x_copy": {
   "day": "2026-11-09",
-  "n": 3
+  "n": 4
  }
 }
