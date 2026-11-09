@@ -39,9 +39,9 @@
   "Tablets": "2026-11-06T21:05:32.851025+00:00",
   "Televisores": "2026-11-08T19:50:40.268854+00:00",
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
-  "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
+  "Zapatillas": "2026-11-09T15:45:40.967709+00:00"
  },
- "next_at": "2026-11-09T15:42:37.260979+00:00",
+ "next_at": "2026-11-09T16:16:32.022550+00:00",
  "offer": {
   "a": "B0FMGRBGD9",
   "m": 99,
@@ -578,6 +578,16 @@
    "p": 36.87,
    "t": "2026-11-09T12:51:09.578543+00:00",
    "title": "Rasasi Hawas Ice 100 ml Eau de Parfum",
+   "v": []
+  },
+  "B0CKXT51LV": {
+   "c": "Zapatillas",
+   "d": 37,
+   "e": "👟",
+   "m": 167,
+   "p": 37.99,
+   "t": "2026-11-09T15:46:06.341582+00:00",
+   "title": "adidas",
    "v": []
   },
   "B0CM4B43DZ": {
@@ -1178,6 +1188,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0B87W25MB",
+   "c": "Zapatillas",
+   "e": "👟",
+   "img": "https://m.media-amazon.com/images/I/71UHiDtRUyL._AC_UL320_.jpg",
+   "n": 18700,
+   "op": 39.99,
+   "p": 28.28,
+   "r": 4.4,
+   "t": "2026-11-09T15:45:40.967709+00:00",
+   "title": "Feethit"
+  },
+  {
    "a": "B0CWP7M17B",
    "c": "Freidoras de aire",
    "e": "🍟",
@@ -1200,24 +1222,12 @@
    "r": 4.7,
    "t": "2026-11-09T14:01:06.954280+00:00",
    "title": "Xkdoai"
-  },
-  {
-   "a": "B0C5Y1GN2Y",
-   "c": "Afeitado y depilación",
-   "e": "🪒",
-   "img": "https://m.media-amazon.com/images/I/718uiJpktiL._AC_UL320_.jpg",
-   "n": 1000,
-   "op": 13.99,
-   "p": 8.63,
-   "r": 4.5,
-   "t": "2026-11-09T12:15:43.445622+00:00",
-   "title": "Gillette Venus Maquinilla de Afeitar Mujer para Ingles Y Zona Íntima"
   }
  ],
  "summary_day": "2026-11-08",
  "tg_offset": 511048050,
  "x_copy": {
   "day": "2026-11-09",
-  "n": 14
+  "n": 15
  }
 }
