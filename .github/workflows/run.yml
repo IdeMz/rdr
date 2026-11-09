@@ -37,6 +37,7 @@ jobs:
           TG_TOKEN_CONCRITERIO: ${{ secrets.TG_TOKEN_CONCRITERIO }}
           TG_CHAT_CONCRITERIO: ${{ secrets.TG_CHAT_CONCRITERIO }}
           TG_ALERT_CHAT: ${{ secrets.TG_ALERT_CHAT }}
+          AWIN_FEED_URL: ${{ secrets.AWIN_FEED_URL }}
         run: python deals.py --all
 
       - name: Informe de productos
