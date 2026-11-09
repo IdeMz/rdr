@@ -41,12 +41,8 @@
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-09T15:45:40.967709+00:00"
  },
- "next_at": "2026-11-09T19:55:43.265071+00:00",
- "offer": {
-  "a": "B0DK13SSYG",
-  "m": 113,
-  "t": "2026-11-09T19:01:12.703164+00:00"
- },
+ "next_at": "2026-11-09T20:27:54.748474+00:00",
+ "offer": null,
  "posted": {
   "B0001IOZ98": {
    "c": "Jardín",
@@ -841,6 +837,17 @@
    "title": "LEGO Speed Champions Coche de Carreras BWT Alpine F1 Team A524 77248",
    "v": []
   },
+  "B0DK13SSYG": {
+   "c": "Ciclismo",
+   "d": 10,
+   "e": "🚴",
+   "m": 172,
+   "manual": true,
+   "p": 41.39,
+   "t": "2026-11-09T19:55:35.904719+00:00",
+   "title": "Odoland Casco Bicicleta Adulto con Gafas UV400, Ligero y Ajustable Unisex",
+   "v": []
+  },
   "B0DN6B2BWP": {
    "c": "Perros",
    "d": 30,
@@ -1232,18 +1239,6 @@
  "rejected": {},
  "reserve": [
   {
-   "a": "B0DK13SSYG",
-   "c": "Ciclismo",
-   "e": "🚴",
-   "img": "https://m.media-amazon.com/images/I/71rW2NPGB1L._AC_UL320_.jpg",
-   "n": 1100,
-   "op": 45.99,
-   "p": 41.39,
-   "r": 4.5,
-   "t": "2026-11-09T18:11:13.639360+00:00",
-   "title": "Odoland Casco Bicicleta Adulto con Gafas UV400, Ligero y Ajustable Unisex"
-  },
-  {
    "a": "B0FPM18556",
    "c": "Menaje de cocina",
    "e": "🍳",
@@ -1254,22 +1249,10 @@
    "r": 4.4,
    "t": "2026-11-09T17:01:16.746585+00:00",
    "title": "GiPP Juego de Ollas y Sartenes Cerámicas Antiadherente - Juego de Cocina con Mangos Desmontables, No Tóxico, Apto para Inducción, Horno y Lavavajillas(Blanc 11PCS)"
-  },
-  {
-   "a": "B0B87W25MB",
-   "c": "Zapatillas",
-   "e": "👟",
-   "img": "https://m.media-amazon.com/images/I/71UHiDtRUyL._AC_UL320_.jpg",
-   "n": 18700,
-   "op": 39.99,
-   "p": 28.28,
-   "r": 4.4,
-   "t": "2026-11-09T15:45:40.967709+00:00",
-   "title": "Feethit"
   }
  ],
  "summary_day": "2026-11-08",
- "tg_offset": 511048050,
+ "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-09",
   "n": 19
