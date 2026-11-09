@@ -5,7 +5,7 @@
   "Almacenamiento": "2026-11-08T15:10:41.467777+00:00",
   "Altavoces": "2026-11-08T12:15:39.683496+00:00",
   "Aspiradoras": "2026-11-09T07:35:34.621273+00:00",
-  "Auriculares": "2026-11-05T21:20:42.646272+00:00",
+  "Auriculares": "2026-11-09T09:20:44.161501+00:00",
   "Cafeteras": "2026-11-08T12:50:40.333375+00:00",
   "Café y cápsulas": "2026-11-08T11:40:39.945107+00:00",
   "Cargadores y baterías": "2026-11-08T18:10:41.707008+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-09T09:20:28.086739+00:00",
+ "next_at": "2026-11-09T09:51:15.149643+00:00",
  "offer": {
   "a": "B0HDBF863N",
   "m": 85,
@@ -498,6 +498,16 @@
    "p": 14.59,
    "t": "2026-11-05T17:16:13.011202+00:00",
    "title": "Gritin 19 LED Luz de Lectura, 360° Flexible Ajustable Lámpara de Lectura",
+   "v": []
+  },
+  "B0CCDNJS75": {
+   "c": "Auriculares",
+   "d": 48,
+   "e": "🎧",
+   "m": 157,
+   "p": 25.99,
+   "t": "2026-11-09T09:21:08.056086+00:00",
+   "title": "Auriculares Inalámbricos Bluetooth, Auriculares Bluetooth 5.3, 4 Mic con Reducción de Ruido ENC, 50H con Graves, Cascos Inalambricos Bluetooth IP7 Impermeable, Carga Rápida USB-C, Ajuste Cómodo",
    "v": []
   },
   "B0CFVZG5TR": {
@@ -1118,6 +1128,6 @@
  "tg_offset": 511048050,
  "x_copy": {
   "day": "2026-11-09",
-  "n": 4
+  "n": 5
  }
 }
