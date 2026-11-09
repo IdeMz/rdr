@@ -230,6 +230,11 @@ class Channel:
     max_discount: int = 0  # 0 = sin tope; util contra precios recomendados inflados
     min_listing_days: int = 60  # dias minimos desde el alta del producto en Amazon.es (0 = no comprobar)
     min_history_drop: int = 10  # % minimo por debajo del precio mas alto reciente de la ficha (0 = no comprobar)
+    # Precio de referencia real de la ficha ("El precio mas bajo de los ultimos 30 dias" / "Precio mediano"):
+    # "off" no mira, "soft" rechaza si el precio actual esta por encima de esa referencia y acepta si la ficha
+    # no la trae, "strict" ademas rechaza lo que no la trae.
+    price_check: str = "off"
+    price_tolerance: int = 3  # % que el precio actual puede superar la referencia sin rechazarse
     min_price: float = 0
     max_price: float = 0  # 0 = sin tope
     min_rating: float = 4.0
@@ -344,6 +349,10 @@ def load_channel(path: Path) -> Channel:
         raise ConfigError(f"{path.name}: 'min_history_drop' debe estar entre 0 y 90")
     if ch.min_listing_days < 0:
         raise ConfigError(f"{path.name}: 'min_listing_days' no puede ser negativo")
+    if ch.price_check not in ("off", "soft", "strict"):
+        raise ConfigError(f"{path.name}: 'price_check' debe ser off, soft o strict")
+    if not 0 <= ch.price_tolerance <= 50:
+        raise ConfigError(f"{path.name}: 'price_tolerance' debe estar entre 0 y 50")
     return ch
 
 
@@ -863,6 +872,28 @@ def price_history(html: str) -> tuple[float, float, int | None] | None:
     return min(lo, hi), max(lo, hi), int(days[-1]) if days else None
 
 
+LOW30_RE = re.compile(r"precio m[aá]s bajo de los [úu]ltimos\s+(\d+)\s+d[ií]as\s*:?\s*([\d.,]+)\s*€", re.I)
+MEDIAN_RE = re.compile(r"precio mediano\s*:?\s*([\d.,]+)\s*€", re.I)
+REF_WHY = "referencia"          # los descartes por precio de referencia empiezan con esta palabra
+PRICE_REJECT_DAYS = 1           # y se olvidan pronto: si el precio baja de verdad, el producto vuelve a valer
+
+
+def price_reference(html: str) -> dict:
+    """Precios de referencia reales de la ficha: {'low30': minimo de 30 dias, 'median': precio mediano}.
+
+    Solo trae las claves que la ficha muestra (Amazon no las enseña en todos los productos).
+    """
+    text = BeautifulSoup(html, "html.parser").get_text(" ", strip=True)
+    ref = {}
+    m = LOW30_RE.search(text)
+    if m and parse_price(m.group(2)):
+        ref["low30"] = parse_price(m.group(2))
+    m = MEDIAN_RE.search(text)
+    if m and parse_price(m.group(1)):
+        ref["median"] = parse_price(m.group(1))
+    return ref
+
+
 def listing_ok(session: requests.Session, p: Product, ch: Channel, today: date) -> tuple[bool, str]:
     """Mira la ficha: descarta altas recientes y descuentos que el historial de precios desmiente.
 
@@ -890,6 +921,24 @@ def listing_ok(session: requests.Session, p: Product, ch: Channel, today: date) 
                     f"precio habitual: entre {fmt_eur(lo)} y {fmt_eur(hi)} en {span}; "
                     f"hoy solo {drop}% menos que el maximo"
                 )
+
+    if ch.price_check != "off":
+        ref = price_reference(html)
+        if not ref:
+            if ch.price_check == "strict":
+                return False, f"{REF_WHY}: la ficha no trae precio de referencia"
+            log.info("%s: %s sin precio de referencia en la ficha; se acepta", ch.name, p.asin)
+        else:
+            log.info("%s: %s precio %s, referencia de la ficha: %s", ch.name, p.asin, fmt_eur(p.price),
+                     ", ".join(f"{k} {fmt_eur(v)}" for k, v in ref.items()))
+            limit = 1 + ch.price_tolerance / 100
+            for key, label in (("low30", "minimo de 30 dias"), ("median", "precio mediano")):
+                if key in ref and p.price > ref[key] * limit:
+                    over = round((p.price / ref[key] - 1) * 100)
+                    return False, (
+                        f"{REF_WHY}: {label} {fmt_eur(ref[key])}, hoy {fmt_eur(p.price)} "
+                        f"({over}% por encima); el descuento es solo contra el PVPR"
+                    )
     return True, ""
 
 
@@ -1057,8 +1106,10 @@ def load_rejected(path: Path, now: datetime) -> dict:
     rejected = _read_state_file(path).get("rejected")
     if not isinstance(rejected, dict):
         return {}
-    cutoff = now - timedelta(days=REJECT_DAYS)
-    return {a: v for a, v in rejected.items() if isinstance(v, dict) and _ts(v) > cutoff}
+    def alive(v: dict) -> bool:
+        days = PRICE_REJECT_DAYS if str(v.get("why", "")).startswith(REF_WHY) else REJECT_DAYS
+        return _ts(v) > now - timedelta(days=days)
+    return {a: v for a, v in rejected.items() if isinstance(v, dict) and alive(v)}
 
 
 def load_next_at(path: Path) -> datetime | None:
@@ -1885,7 +1936,7 @@ def run_channel(
             raise
         if cat:
             cats[cat["nombre"]] = now.isoformat()
-        check_pages = session is not None and (cch.min_listing_days > 0 or cch.min_history_drop > 0)
+        check_pages = session is not None and (cch.min_listing_days > 0 or cch.min_history_drop > 0 or cch.price_check != "off")
         # un sobrante como mucho por categoria, y solo si esa categoria aun no esta en la reserva
         extras_before = len(extras)
         want = 1 if need and not any(d.get("c") == (cat or {}).get("nombre", "") for d in reserve) else 0

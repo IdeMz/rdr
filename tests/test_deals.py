@@ -1009,6 +1009,77 @@ def test_load_channel_validates_min_history_drop(tmp_path):
         deals.load_channel(write_cfg(tmp_path, min_history_drop=95))
 
 
+# ---------------------------------------------------------------- precio de referencia de la ficha
+
+# textos tal como salen en las fichas guardadas de Amazon.es
+REF_FICHA = (
+    "Historial de precios -5 % El precio más bajo de los últimos 30 días: 39,99€ 39,99€ "
+    "Es el precio más bajo del producto en Amazon.es ... Precio mediano: 39,99 € Precio mediano: 39,99€ 39,99€"
+)
+REF_AURICULARES = "El precio más bajo de los últimos 30 días: 19,49€ 19,49€"
+
+
+def test_price_reference_parses_low30_and_median():
+    assert deals.price_reference(product_page(REF_FICHA)) == {"low30": 39.99, "median": 39.99}
+    assert deals.price_reference(product_page(REF_AURICULARES)) == {"low30": 19.49}
+    assert deals.price_reference(product_page("100+ comprados el mes pasado 19,29 € Historial de precios")) == {}
+
+
+def test_price_check_rejects_price_at_top_of_its_range(monkeypatch):
+    """El caso de los auriculares: el precio acaba de subir a 26 EUR y el minimo de 30 dias es 19,49."""
+    monkeypatch.setattr(deals, "sleep", lambda s: None)
+    monkeypatch.setattr(deals, "fetch", lambda session, url: product_page(REF_AURICULARES))
+    ch = channel(price_check="soft")
+    ok, why = deals.listing_ok(None, fake_product(price=25.99), ch, TODAY)
+    assert not ok and why.startswith(deals.REF_WHY) and "19,49€" in why and "33%" in why
+
+
+def test_price_check_accepts_price_near_or_below_reference(monkeypatch):
+    monkeypatch.setattr(deals, "sleep", lambda s: None)
+    monkeypatch.setattr(deals, "fetch", lambda session, url: product_page(REF_AURICULARES))
+    ch = channel(price_check="soft", price_tolerance=3)
+    assert deals.listing_ok(None, fake_product(price=19.49), ch, TODAY)[0] is True
+    assert deals.listing_ok(None, fake_product(price=19.99), ch, TODAY)[0] is True   # +2,6 %: dentro
+    assert deals.listing_ok(None, fake_product(price=20.29), ch, TODAY)[0] is False  # +4,1 %: fuera
+    monkeypatch.setattr(deals, "fetch", lambda session, url: product_page(REF_FICHA))
+    assert deals.listing_ok(None, fake_product(price=37.99), channel(price_check="soft"), TODAY)[0] is True
+    assert deals.listing_ok(None, fake_product(price=45.0), channel(price_check="soft"), TODAY)[0] is False
+
+
+def test_price_check_modes_without_reference(monkeypatch):
+    monkeypatch.setattr(deals, "sleep", lambda s: None)
+    monkeypatch.setattr(deals, "fetch", lambda session, url: product_page("sin datos de precio"))
+    assert deals.listing_ok(None, fake_product(), channel(price_check="soft"), TODAY)[0] is True
+    ok, why = deals.listing_ok(None, fake_product(), channel(price_check="strict"), TODAY)
+    assert not ok and why.startswith(deals.REF_WHY)
+    assert deals.listing_ok(None, fake_product(price=99), channel(price_check="off"), TODAY)[0] is True
+
+
+def test_price_check_off_does_not_even_download_the_page():
+    ch = channel(price_check="off")
+    assert not (ch.min_listing_days > 0 or ch.min_history_drop > 0 or ch.price_check != "off")
+
+
+def test_price_rejections_are_forgotten_sooner(tmp_path):
+    path = tmp_path / "s.json"
+    now = datetime(2026, 11, 9, 12, 0, tzinfo=timezone.utc)
+    why = f"{deals.REF_WHY}: minimo de 30 dias 19,49€"
+    deals.save_state(path, {}, next_at=None, rejected={
+        "PRECIO_VIEJO": {"t": (now - timedelta(hours=25)).isoformat(), "why": why},
+        "PRECIO_RECIENTE": {"t": (now - timedelta(hours=3)).isoformat(), "why": why},
+        "OTRO": {"t": (now - timedelta(hours=25)).isoformat(), "why": "alta hace 5 dias"},
+    })
+    assert set(deals.load_rejected(path, now)) == {"PRECIO_RECIENTE", "OTRO"}
+
+
+def test_load_channel_validates_price_check(tmp_path):
+    assert deals.load_channel(write_cfg(tmp_path, price_check="strict")).price_check == "strict"
+    with pytest.raises(deals.ConfigError, match="price_check"):
+        deals.load_channel(write_cfg(tmp_path, price_check="mucho"))
+    with pytest.raises(deals.ConfigError, match="price_tolerance"):
+        deals.load_channel(write_cfg(tmp_path, price_tolerance=80))
+
+
 # ---------------------------------------------------------------- categorias en rotacion
 
 CATS = [
