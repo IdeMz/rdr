@@ -11,7 +11,7 @@
   "Cargadores y baterías": "2026-11-08T18:10:41.707008+00:00",
   "Ciclismo": "2026-11-08T19:15:39.655860+00:00",
   "Climatización": "2026-11-07T21:05:33.483971+00:00",
-  "Colchones y almohadas": "2026-11-06T14:40:42.953766+00:00",
+  "Colchones y almohadas": "2026-11-09T09:55:33.819208+00:00",
   "Cuidado de la piel": "2026-11-08T21:30:55.800032+00:00",
   "Cuidado del cabello": "2026-11-08T08:45:38.227499+00:00",
   "Cámaras de seguridad": "2026-11-09T07:01:09.710131+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-09T09:51:15.149643+00:00",
+ "next_at": "2026-11-09T10:25:54.444719+00:00",
  "offer": {
   "a": "B0HDBF863N",
   "m": 85,
@@ -881,6 +881,16 @@
    "title": "DELL 24 Plus Monitor - S2425HSM, Full HD (1920x1080), 144Hz, IPS, 1ms MPRT",
    "v": []
   },
+  "B0FQHYZRJZ": {
+   "c": "Colchones y almohadas",
+   "d": 10,
+   "e": "🛏️",
+   "m": 158,
+   "p": 56.69,
+   "t": "2026-11-09T09:55:53.457300+00:00",
+   "title": "ACCURATEX Almohadas 50x70cm Juego de 2, Espuma Viscoelástica Triturada Ajustable, Relleno Alternativo al Plumón, Funda de Algodón Extraíble - Soporte Firme para Dormir de Lado y Espalda",
+   "v": []
+  },
   "B0FRMC8FLH": {
    "c": "Tablets",
    "d": 39,
@@ -1128,6 +1138,6 @@
  "tg_offset": 511048050,
  "x_copy": {
   "day": "2026-11-09",
-  "n": 5
+  "n": 6
  }
 }
