@@ -17,7 +17,7 @@
   "Cámaras de seguridad": "2026-11-09T07:01:09.710131+00:00",
   "Domótica": "2026-11-09T08:45:39.502721+00:00",
   "Fitness en casa": "2026-11-09T08:10:41.171109+00:00",
-  "Freidoras de aire": "2026-11-08T15:45:42.169234+00:00",
+  "Freidoras de aire": "2026-11-09T15:10:45.867226+00:00",
   "Gatos": "2026-11-07T16:50:41.349951+00:00",
   "Herramientas": "2026-11-06T17:01:09.983033+00:00",
   "Iluminación": "2026-11-09T13:25:33.337111+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-09T15:09:59.154055+00:00",
+ "next_at": "2026-11-09T15:42:37.260979+00:00",
  "offer": {
   "a": "B0FMGRBGD9",
   "m": 99,
@@ -1051,6 +1051,16 @@
    "title": "TCL 55V6D Televisor 55 Pulgadas 4K UHD Smart TV, Fire TV, Alexa Integrado, Dolby Vision & Atmos, Game Master, HDR10+, Control por Voz",
    "v": []
   },
+  "B0GSS73FLQ": {
+   "c": "Freidoras de aire",
+   "d": 27,
+   "e": "🍟",
+   "m": 166,
+   "p": 109.0,
+   "t": "2026-11-09T15:11:11.756515+00:00",
+   "title": "Ninja MAX PRO, Freidora de Aire sin Aceite, 6,2L, Piedra/Dorado",
+   "v": []
+  },
   "B0GX4YGYXG": {
    "c": "Accesorios de coche",
    "d": 35,
@@ -1168,6 +1178,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0CWP7M17B",
+   "c": "Freidoras de aire",
+   "e": "🍟",
+   "img": "https://m.media-amazon.com/images/I/51EASto3heL._AC_UL320_.jpg",
+   "n": 5500,
+   "op": 114.99,
+   "p": 89.0,
+   "r": 4.7,
+   "t": "2026-11-09T15:10:45.867226+00:00",
+   "title": "Philips 2000 Airfryer - Freidora de Aire 6,2L, 13 opciones, Táctil, Negro"
+  },
+  {
    "a": "B0CSYSC19R",
    "c": "Mochilas y maletas",
    "e": "🎒",
@@ -1196,6 +1218,6 @@
  "tg_offset": 511048050,
  "x_copy": {
   "day": "2026-11-09",
-  "n": 13
+  "n": 14
  }
 }
