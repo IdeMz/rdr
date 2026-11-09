@@ -34,6 +34,8 @@ import requests
 from bs4 import BeautifulSoup
 from PIL import Image, ImageOps
 
+import feed
+
 ROOT = Path(__file__).resolve().parent
 BASE = "https://www.amazon.es"
 TELEGRAM_API = "https://api.telegram.org"
@@ -2038,6 +2040,24 @@ def run_channel(
     return published
 
 
+def collect_feeds() -> None:
+    """Recopila el historial de precios del feed de Awin (una vez al dia). Nunca debe tumbar la ejecucion."""
+    url = get_secret(feed.FEED_ENV)
+    if not url:
+        return
+    for part in urlparse(url).path.split("/"):  # la clave de Awin va en la URL: tambien se tapa suelta
+        if re.fullmatch(r"[0-9A-Fa-f]{20,}", part):
+            register_secret(part)
+    try:
+        today = datetime.now(ZoneInfo("Europe/Madrid")).date()
+    except ZoneInfoNotFoundError:
+        today = datetime.now(timezone.utc).date()
+    try:
+        log.info("%s", feed.collect(url, ROOT / "state" / "feed_powerplanet.json", today))
+    except Exception as exc:  # el feed es un extra: sin traceback, que podria llevar la clave
+        log.error("feed: error inesperado %s: %s", type(exc).__name__, scrub(str(exc)))
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     group = ap.add_mutually_exclusive_group(required=True)
@@ -2055,6 +2075,9 @@ def main(argv: list[str] | None = None) -> int:
         (ROOT / "run_note.txt").unlink()
     except OSError:
         pass
+
+    if not (args.dry_run or args.html):
+        collect_feeds()
 
     if args.channel:
         paths = [ROOT / "channels" / f"{args.channel}.json"]

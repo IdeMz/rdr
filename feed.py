@@ -1,0 +1,213 @@
+"""Historial de precios del feed de Awin (PowerPlanet).
+
+Una vez al dia descarga el feed, anota el precio de cada producto y guarda solo los CAMBIOS de precio
+de los ultimos 45 dias en state/feed_powerplanet.json. Con ese historial propio se podra distinguir una
+bajada real de un descuento contra un PVPR inflado (el feed no trae historial de precios).
+
+Este modulo no publica nada y no conoce Telegram: solo recopila. La URL del feed lleva la clave de Awin,
+por eso nunca se escribe en los logs ni en los errores (las excepciones se resumen sin la URL).
+"""
+
+from __future__ import annotations
+
+import csv
+import gzip
+import io
+import json
+import logging
+import time
+from datetime import date, datetime, timedelta, timezone
+from pathlib import Path
+
+import requests
+
+log = logging.getLogger("deals")
+
+FEED_ENV = "AWIN_FEED_URL"
+KEEP_DAYS = 45                 # cuanto historial se conserva
+RETRY_MINUTES = 60             # espera tras una descarga fallida
+MIN_PRODUCTS = 500             # un feed con menos productos se considera roto
+MIN_RATIO = 0.5                # ... igual que uno que pierde mas de la mitad del dia anterior
+EPOCH = date(2026, 1, 1)       # los dias se guardan como numero de dias desde esta fecha
+DELIMITERS = (",", "\t", ";", "|")
+sleep = time.sleep             # sustituible en tests
+
+
+class FeedError(Exception):
+    """Fallo al descargar o leer el feed. El mensaje nunca lleva la URL."""
+
+
+def day_no(d: date) -> int:
+    return (d - EPOCH).days
+
+
+# --------------------------------------------------------------------------
+# Descarga y lectura
+# --------------------------------------------------------------------------
+
+
+def download(url: str, attempts: int = 3) -> bytes:
+    """Descarga el feed. Los errores se resumen sin URL porque lleva la clave de Awin."""
+    last = "sin respuesta"
+    for i in range(1, attempts + 1):
+        try:
+            resp = requests.get(url, timeout=(15, 180))
+            if resp.status_code == 200 and resp.content:
+                return resp.content
+            last = f"HTTP {resp.status_code}"
+        except requests.RequestException as exc:
+            last = type(exc).__name__
+        if i < attempts:
+            sleep(5 * i)
+    raise FeedError(f"no se pudo descargar el feed ({last})")
+
+
+def parse_feed(raw: bytes) -> dict[str, float]:
+    """{id de producto: precio} de los productos nuevos y con precio. Acepta CSV normal o comprimido."""
+    if raw[:2] == b"\x1f\x8b":
+        try:
+            raw = gzip.decompress(raw)
+        except (OSError, EOFError) as exc:
+            raise FeedError("el feed esta comprimido pero no se puede descomprimir") from exc
+    text = raw.decode("utf-8-sig", errors="replace")
+    header = text.split("\n", 1)[0]
+    delim = next((d for d in DELIMITERS if "aw_product_id" in header.split(d)), None)
+    if delim is None:
+        raise FeedError("el feed no tiene el formato esperado (falta aw_product_id)")
+    reader = csv.DictReader(io.StringIO(text, newline=""), delimiter=delim)
+    if "search_price" not in (reader.fieldnames or []):
+        raise FeedError("el feed no trae la columna search_price")
+    prices: dict[str, float] = {}
+    for row in reader:
+        pid = (row.get("aw_product_id") or "").strip()
+        try:
+            price = round(float((row.get("search_price") or "").replace(",", ".")), 2)
+        except ValueError:
+            continue
+        if not pid or price <= 0:
+            continue
+        if (row.get("condition") or "new").strip().lower() not in ("new", ""):
+            continue  # usados y reacondicionados no entran
+        if (row.get("in_stock") or "1").strip().lower() in ("0", "false", "no"):
+            continue
+        prices[pid] = price
+    return prices
+
+
+# --------------------------------------------------------------------------
+# Historial
+# --------------------------------------------------------------------------
+
+
+def load_history(path: Path) -> dict:
+    """Historial guardado, o uno vacio si no existe o esta danado."""
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {"p": {}}
+    if not isinstance(data, dict) or not isinstance(data.get("p"), dict):
+        return {"p": {}}
+    return data
+
+
+def save_history(path: Path, hist: dict) -> None:
+    """Un producto por linea y ordenado: asi git guarda solo lo que cambia cada dia."""
+    head = {k: v for k, v in hist.items() if k != "p"}
+    opening = json.dumps(head, ensure_ascii=False, separators=(",", ":"))[:-1]
+    lines = [opening + (',"p":{' if head else '"p":{')]
+    items = sorted(hist["p"].items())
+    for i, (pid, entry) in enumerate(items):
+        comma = "," if i < len(items) - 1 else ""
+        lines.append(f'{json.dumps(pid)}:{json.dumps(entry, separators=(",", ":"))}{comma}')
+    lines.append("}}")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_suffix(".tmp")
+    tmp.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    tmp.replace(path)
+
+
+def update_history(hist: dict, prices: dict[str, float], today: date) -> dict:
+    """Anota los precios de hoy. Cada producto: [ultimo dia visto, dia, precio, dia, precio, ...].
+
+    Solo se anade una pareja cuando el precio cambia. Devuelve estadisticas para el log.
+    """
+    today_no = day_no(today)
+    cutoff = today_no - KEEP_DAYS
+    products = hist.setdefault("p", {})
+    stats = {"total": len(prices), "nuevos": 0, "cambiaron": 0, "bajaron10": 0, "podados": 0}
+    for pid, price in prices.items():
+        entry = products.get(pid)
+        if not entry:
+            products[pid] = [today_no, today_no, price]
+            stats["nuevos"] += 1
+            continue
+        entry[0] = today_no
+        last = entry[-1]
+        if last != price:
+            entry += [today_no, price]
+            stats["cambiaron"] += 1
+            if price <= last * 0.9:
+                stats["bajaron10"] += 1
+    for pid in list(products):
+        entry = products[pid]
+        if entry[0] < cutoff:  # lleva mas de KEEP_DAYS sin aparecer en el feed
+            del products[pid]
+            stats["podados"] += 1
+            continue
+        # quita parejas antiguas pero conserva la ultima anterior al corte: es el precio vigente al empezar
+        pairs = [(entry[i], entry[i + 1]) for i in range(1, len(entry), 2)]
+        while len(pairs) > 1 and pairs[1][0] <= cutoff:
+            pairs.pop(0)
+        entry[1:] = [x for pair in pairs for x in pair]
+    hist.setdefault("first", today.isoformat())
+    hist["updated"] = today.isoformat()
+    hist["n"] = len(prices)
+    hist["retry_at"] = None
+    return stats
+
+
+def history_days(hist: dict, today: date) -> int:
+    """Dias que lleva recopilandose el historial."""
+    try:
+        return (today - date.fromisoformat(hist["first"])).days + 1
+    except (KeyError, TypeError, ValueError):
+        return 0
+
+
+# --------------------------------------------------------------------------
+# Punto de entrada: una vez al dia
+# --------------------------------------------------------------------------
+
+
+def collect(url: str, path: Path, today: date, now: datetime | None = None, fetch=download) -> str:
+    """Actualiza el historial si hoy aun no se ha hecho. Devuelve una frase para el log.
+
+    Nunca lanza excepciones por culpa del feed: si falla, se reintenta pasada una hora.
+    """
+    now = now or datetime.now(timezone.utc)
+    hist = load_history(path)
+    if hist.get("updated") == today.isoformat():
+        return "feed ya recopilado hoy"
+    retry_at = hist.get("retry_at")
+    if retry_at:
+        try:
+            if datetime.fromisoformat(retry_at) > now:
+                return "feed: reintento aplazado"
+        except ValueError:
+            pass
+    try:
+        prices = parse_feed(fetch(url))
+        previous = hist.get("n") or 0
+        if len(prices) < MIN_PRODUCTS or (previous and len(prices) < previous * MIN_RATIO):
+            raise FeedError(f"el feed trae solo {len(prices)} productos (ayer {previous}); se ignora")
+    except FeedError as exc:
+        hist["retry_at"] = (now + timedelta(minutes=RETRY_MINUTES)).isoformat()
+        save_history(path, hist)
+        return f"feed: {exc}"
+    stats = update_history(hist, prices, today)
+    save_history(path, hist)
+    return (
+        f"feed: {stats['total']} productos, {stats['nuevos']} nuevos, {stats['cambiaron']} con otro precio "
+        f"({stats['bajaron10']} bajaron un 10 % o mas), {stats['podados']} podados; "
+        f"{history_days(hist, today)} dias de historial"
+    )
