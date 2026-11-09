@@ -9,7 +9,7 @@
   "Cafeteras": "2026-11-08T12:50:40.333375+00:00",
   "Café y cápsulas": "2026-11-09T16:20:49.923718+00:00",
   "Cargadores y baterías": "2026-11-08T18:10:41.707008+00:00",
-  "Ciclismo": "2026-11-08T19:15:39.655860+00:00",
+  "Ciclismo": "2026-11-09T18:11:13.639360+00:00",
   "Climatización": "2026-11-07T21:05:33.483971+00:00",
   "Colchones y almohadas": "2026-11-09T09:55:33.819208+00:00",
   "Cuidado de la piel": "2026-11-08T21:30:55.800032+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-09T15:45:40.967709+00:00"
  },
- "next_at": "2026-11-09T18:09:13.022966+00:00",
+ "next_at": "2026-11-09T18:44:21.417240+00:00",
  "offer": {
   "a": "B0FMGRBGD9",
   "m": 99,
@@ -1173,6 +1173,16 @@
     "5f2e3ed7ec51"
    ]
   },
+  "B0H5BFBZLH": {
+   "c": "Ciclismo",
+   "d": 13,
+   "e": "🚴",
+   "m": 171,
+   "p": 6.99,
+   "t": "2026-11-09T18:11:41.299968+00:00",
+   "title": "Juego de Almohadillas Casco Bicicleta EVA Esponja Puntos de Traje,Casco de Bicicleta Esponja para Casco de Bicicleta Universal Recambio Almohadillas Casco Bici para Protección",
+   "v": []
+  },
   "B0HCVH7ZZJ": {
    "c": "Nutrición deportiva",
    "d": 38,
@@ -1218,6 +1228,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0DK13SSYG",
+   "c": "Ciclismo",
+   "e": "🚴",
+   "img": "https://m.media-amazon.com/images/I/71rW2NPGB1L._AC_UL320_.jpg",
+   "n": 1100,
+   "op": 45.99,
+   "p": 41.39,
+   "r": 4.5,
+   "t": "2026-11-09T18:11:13.639360+00:00",
+   "title": "Odoland Casco Bicicleta Adulto con Gafas UV400, Ligero y Ajustable Unisex"
+  },
+  {
    "a": "B0FPM18556",
    "c": "Menaje de cocina",
    "e": "🍳",
@@ -1240,24 +1262,12 @@
    "r": 4.4,
    "t": "2026-11-09T15:45:40.967709+00:00",
    "title": "Feethit"
-  },
-  {
-   "a": "B0CWP7M17B",
-   "c": "Freidoras de aire",
-   "e": "🍟",
-   "img": "https://m.media-amazon.com/images/I/51EASto3heL._AC_UL320_.jpg",
-   "n": 5500,
-   "op": 114.99,
-   "p": 89.0,
-   "r": 4.7,
-   "t": "2026-11-09T15:10:45.867226+00:00",
-   "title": "Philips 2000 Airfryer - Freidora de Aire 6,2L, 13 opciones, Táctil, Negro"
   }
  ],
  "summary_day": "2026-11-08",
  "tg_offset": 511048050,
  "x_copy": {
   "day": "2026-11-09",
-  "n": 18
+  "n": 19
  }
 }
