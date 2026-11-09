@@ -2,7 +2,7 @@
  "cats": {
   "Accesorios de coche": "2026-11-08T09:55:33.252950+00:00",
   "Afeitado y depilación": "2026-11-09T12:15:43.445622+00:00",
-  "Almacenamiento": "2026-11-08T15:10:41.467777+00:00",
+  "Almacenamiento": "2026-11-09T14:35:34.051656+00:00",
   "Altavoces": "2026-11-09T11:05:34.803967+00:00",
   "Aspiradoras": "2026-11-09T07:35:34.621273+00:00",
   "Auriculares": "2026-11-09T09:20:44.161501+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-09T14:34:04.817215+00:00",
+ "next_at": "2026-11-09T15:09:59.154055+00:00",
  "offer": {
   "a": "B0FMGRBGD9",
   "m": 99,
@@ -338,6 +338,16 @@
    "p": 9.99,
    "t": "2026-11-04T23:03:00.315188+00:00",
    "title": "Tapo L530E - Bombilla Inteligente WiFi, RGB Multicolor, 800lm, 8.3W, E27",
+   "v": []
+  },
+  "B08GV4YYV7": {
+   "c": "Almacenamiento",
+   "d": 22,
+   "e": "💾",
+   "m": 165,
+   "p": 358.23,
+   "t": "2026-11-09T14:36:02.093294+00:00",
+   "title": "SanDisk Extreme pro SSD externo Portátil 2 TB (Disco duro externo SSD con velodidad de lectura e de escritura hasta 2000 MB/s, 256-bit AES hardware encryption, Clasificación IP65)",
    "v": []
   },
   "B0987W5VK6": {
@@ -1180,24 +1190,12 @@
    "r": 4.5,
    "t": "2026-11-09T12:15:43.445622+00:00",
    "title": "Gillette Venus Maquinilla de Afeitar Mujer para Ingles Y Zona Íntima"
-  },
-  {
-   "a": "B0FMGRBGD9",
-   "c": "Altavoces",
-   "e": "🔊",
-   "img": "https://m.media-amazon.com/images/I/71dBlw4OnwL._AC_UL320_.jpg",
-   "n": 1400,
-   "op": 99.99,
-   "p": 69.99,
-   "r": 4.6,
-   "t": "2026-11-09T11:05:34.803967+00:00",
-   "title": "JBL Grip, Altavoz Bluetooth Compacto, Azul"
   }
  ],
  "summary_day": "2026-11-08",
  "tg_offset": 511048050,
  "x_copy": {
   "day": "2026-11-09",
-  "n": 12
+  "n": 13
  }
 }
