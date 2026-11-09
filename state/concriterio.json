@@ -28,7 +28,7 @@
   "Monitores": "2026-11-08T17:30:52.669776+00:00",
   "Móviles": "2026-11-07T11:05:35.080138+00:00",
   "Nutrición deportiva": "2026-11-08T21:30:55.800032+00:00",
-  "Perfumes": "2026-11-08T08:10:43.446539+00:00",
+  "Perfumes": "2026-11-09T12:50:40.713905+00:00",
   "Periféricos": "2026-11-06T15:50:43.516360+00:00",
   "Perros": "2026-11-08T13:25:31.829164+00:00",
   "Portátiles": "2026-11-08T07:35:30.266273+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-05T21:55:33.327335+00:00"
  },
- "next_at": "2026-11-09T12:49:01.796978+00:00",
+ "next_at": "2026-11-09T13:23:11.524810+00:00",
  "offer": {
   "a": "B0FMGRBGD9",
   "m": 99,
@@ -548,6 +548,16 @@
    "p": 39.99,
    "t": "2026-11-06T19:31:22.583572+00:00",
    "title": "Philips OneBlade 360 con Bluetooth, Recortadora para Barba y Cuerpo, Afeitadora Eléctrica Hombre, Depilación masculina, 2 Cuchillas, 5 Longitudes, 60 minutos de uso con 1 hora de carga, QP4631/30",
+   "v": []
+  },
+  "B0CKM2SSK3": {
+   "c": "Perfumes",
+   "d": 22,
+   "e": "🌸",
+   "m": 162,
+   "p": 36.87,
+   "t": "2026-11-09T12:51:09.578543+00:00",
+   "title": "Rasasi Hawas Ice 100 ml Eau de Parfum",
    "v": []
   },
   "B0CM4B43DZ": {
@@ -1168,6 +1178,6 @@
  "tg_offset": 511048050,
  "x_copy": {
   "day": "2026-11-09",
-  "n": 9
+  "n": 10
  }
 }
