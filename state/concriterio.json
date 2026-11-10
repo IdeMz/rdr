@@ -1,7 +1,7 @@
 {
  "cats": {
   "Accesorios de coche": "2026-11-10T08:10:41.461869+00:00",
-  "Afeitado y depilación": "2026-11-09T12:15:43.445622+00:00",
+  "Afeitado y depilación": "2026-11-10T17:05:37.721123+00:00",
   "Almacenamiento": "2026-11-09T14:35:34.051656+00:00",
   "Altavoces": "2026-11-09T11:05:34.803967+00:00",
   "Aspiradoras": "2026-11-10T12:25:33.122047+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-09T15:45:40.967709+00:00"
  },
- "next_at": "2026-11-10T17:01:18.969481+00:00",
+ "next_at": "2026-11-10T17:37:20.117061+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -584,6 +584,16 @@
    "p": 15.83,
    "t": "2026-11-08T14:01:31.780178+00:00",
    "title": "Gal Guardians: Demon Purge - PlayStation 5",
+   "v": []
+  },
+  "B0BYT66JQG": {
+   "c": "Afeitado y depilación",
+   "d": 46,
+   "e": "🪒",
+   "m": 191,
+   "p": 19.99,
+   "t": "2026-11-10T17:06:05.900509+00:00",
+   "title": "Gillette Venus Comfortglide Breeze Cuchillas de Afeitar Mujer, Pack de 10",
    "v": []
   },
   "B0C33RDGY8": {
@@ -1405,6 +1415,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0C5Y1GN2Y",
+   "c": "Afeitado y depilación",
+   "e": "🪒",
+   "img": "https://m.media-amazon.com/images/I/718uiJpktiL._AC_UL320_.jpg",
+   "n": 1000,
+   "op": 13.99,
+   "p": 9.59,
+   "r": 4.5,
+   "t": "2026-11-10T17:05:37.721123+00:00",
+   "title": "Gillette Venus Maquinilla de Afeitar Mujer para Ingles Y Zona Íntima"
+  },
+  {
    "a": "B08ZFKB8ZK",
    "c": "Perfumes",
    "e": "🌸",
@@ -1427,24 +1449,12 @@
    "r": 4.6,
    "t": "2026-11-10T14:45:46.160107+00:00",
    "title": "Dreo Calefactor Inteligente 2000W para Dormitorio, Estufa Portátil 16 Pulgadas con Oscilación de 70°, Termostato, Mando a Distancia, 3 Modos, 3 Velocidades, Temporizador 12H, Solaris Slim H3S Mejorado"
-  },
-  {
-   "a": "B0CHJKQD1V",
-   "c": "Relojes",
-   "e": "🕰️",
-   "img": "https://m.media-amazon.com/images/I/61kqWX4VjpL._AC_UL320_.jpg",
-   "n": 5100,
-   "op": 23.99,
-   "p": 17.99,
-   "r": 4.2,
-   "t": "2026-11-10T13:35:32.468342+00:00",
-   "title": "Reloj Hombre Relojes de Acero Inoxidable Hombres Reloj de Cuarzo"
   }
  ],
  "summary_day": "2026-11-09",
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-10",
-  "n": 17
+  "n": 18
  }
 }
