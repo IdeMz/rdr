@@ -229,3 +229,45 @@ def test_collect_feeds_hides_the_key_and_never_raises(monkeypatch, caplog):
     assert "feed: error inesperado RuntimeError" in caplog.text
     assert key in deals._secrets
     assert key not in deals.scrub(f"https://x/apikey/{key}/")
+
+
+# ---------------------------------------------------------------- hora de descarga adaptativa
+
+D2 = D1 + timedelta(days=1)
+
+
+def test_collect_waits_for_start_hour(tmp_path):
+    path = tmp_path / "f.json"
+    feed.collect("http://x", path, D1, NOW, fetch=fake_fetch(many()), hour=9)
+
+    def boom(url):
+        raise AssertionError("no debe descargar antes de la hora")
+    msg = feed.collect("http://x", path, D2, NOW, fetch=boom, hour=0)
+    assert "aun no es hora" in msg
+
+
+def test_collect_retries_hourly_while_feed_is_unchanged_then_takes_the_change(tmp_path):
+    path = tmp_path / "f.json"
+    feed.collect("http://x", path, D1, NOW, fetch=fake_fetch(many()), hour=9)
+    # dia 2, 06:00: Awin aun no ha regenerado -> mismo contenido, se reintenta
+    msg = feed.collect("http://x", path, D2, NOW, fetch=fake_fetch(many()), hour=6)
+    assert "igual que el ultimo" in msg and feed.load_history(path)["updated"] == "2026-11-09"
+    # antes de pasar la hora de espera no se vuelve a descargar
+    assert feed.collect("http://x", path, D2, NOW + timedelta(minutes=30), fetch=fake_fetch(many()), hour=6) == "feed: reintento aplazado"
+    # 08:00: ya hay precios nuevos -> se recopila y se anota la hora
+    msg = feed.collect("http://x", path, D2, NOW + timedelta(hours=2), fetch=fake_fetch(many(price=9.0)), hour=8)
+    assert "600 con otro precio" in msg and "cambio detectado a las 8h" in msg
+    assert feed.load_history(path)["updated"] == "2026-11-10" and feed.load_history(path)["retry_at"] is None
+
+
+def test_collect_accepts_unchanged_feed_after_give_up_hour(tmp_path):
+    path = tmp_path / "f.json"
+    feed.collect("http://x", path, D1, NOW, fetch=fake_fetch(many()), hour=9)
+    msg = feed.collect("http://x", path, D2, NOW, fetch=fake_fetch(many()), hour=feed.GIVE_UP_HOUR)
+    assert "sin cambios, se da por bueno" in msg and "0 con otro precio" in msg
+    assert feed.load_history(path)["updated"] == "2026-11-10"
+
+
+def test_collect_first_ever_run_does_not_wait(tmp_path):
+    msg = feed.collect("http://x", tmp_path / "f.json", D1, NOW, fetch=fake_fetch(many()), hour=0)
+    assert "600 productos" in msg

@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import csv
 import gzip
+import hashlib
 import io
 import json
 import logging
@@ -30,6 +31,8 @@ RETRY_MINUTES = 60             # espera tras una descarga fallida
 MAX_UNZIPPED = 400 * 1024 * 1024  # tope al descomprimir (el feed real ronda los 18 MB)
 MIN_PRODUCTS = 500             # un feed con menos productos se considera roto
 MIN_RATIO = 0.5                # ... igual que uno que pierde mas de la mitad del dia anterior
+START_HOUR = 5                 # hora de Madrid desde la que se intenta la descarga del dia
+GIVE_UP_HOUR = 14              # pasada esta hora, un feed igual que el de ayer se da por bueno
 EPOCH = date(2026, 1, 1)       # los dias se guardan como numero de dias desde esta fecha
 DELIMITERS = (",", "\t", ";", "|")
 sleep = time.sleep             # sustituible en tests
@@ -206,8 +209,18 @@ def history_days(hist: dict, today: date) -> int:
 # --------------------------------------------------------------------------
 
 
-def collect(url: str, path: Path, today: date, now: datetime | None = None, fetch=download) -> str:
+def digest(prices: dict[str, float]) -> str:
+    """Huella del contenido: solo cambia si cambia algun precio o algun producto (no depende del zip)."""
+    return hashlib.sha1(repr(sorted(prices.items())).encode()).hexdigest()
+
+
+def collect(url: str, path: Path, today: date, now: datetime | None = None, fetch=download,
+            hour: int | None = None) -> str:
     """Actualiza el historial si hoy aun no se ha hecho. Devuelve una frase para el log.
+
+    `hour` es la hora actual en Madrid. Awin regenera el feed a una hora que no conocemos, asi que el bot
+    espera a START_HOUR y, mientras el contenido sea identico al del dia anterior, vuelve a mirar cada hora
+    hasta GIVE_UP_HOUR; la hora del cambio queda en el log. Con hour=None no se espera (modo sin horario).
 
     Nunca lanza excepciones por culpa del feed: si falla, se reintenta pasada una hora.
     """
@@ -215,6 +228,8 @@ def collect(url: str, path: Path, today: date, now: datetime | None = None, fetc
     hist = load_history(path)
     if hist.get("updated") == today.isoformat():
         return "feed ya recopilado hoy"
+    if hour is not None and hour < START_HOUR and hist.get("updated"):
+        return f"feed: aun no es hora (desde las {START_HOUR}:00)"
     retry_at = hist.get("retry_at")
     if retry_at:
         try:
@@ -231,10 +246,18 @@ def collect(url: str, path: Path, today: date, now: datetime | None = None, fetc
         hist["retry_at"] = (now + timedelta(minutes=RETRY_MINUTES)).isoformat()
         save_history(path, hist)
         return f"feed: {exc}"
+    fingerprint = digest(prices)
+    same = hist.get("digest") == fingerprint
+    if same and hour is not None and hour < GIVE_UP_HOUR:
+        hist["retry_at"] = (now + timedelta(minutes=RETRY_MINUTES)).isoformat()
+        save_history(path, hist)
+        return f"feed: igual que el ultimo recopilado (hora {hour}h en Madrid); se vuelve a mirar en 1 h"
     stats = update_history(hist, prices, today)
+    hist["digest"] = fingerprint
     save_history(path, hist)
+    when = "sin cambios, se da por bueno" if same else (f"cambio detectado a las {hour}h (Madrid)" if hour is not None else "")
     return (
         f"feed: {stats['total']} productos, {stats['nuevos']} nuevos, {stats['cambiaron']} con otro precio "
         f"({stats['bajaron10']} bajaron un 10 % o mas), {stats['podados']} podados; "
-        f"{history_days(hist, today)} dias de historial"
+        f"{history_days(hist, today)} dias de historial" + (f"; {when}" if when else "")
     )

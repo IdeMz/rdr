@@ -2069,11 +2069,12 @@ def collect_feeds() -> None:
         if re.fullmatch(r"[0-9A-Fa-f]{20,}", part):
             register_secret(part)
     try:
-        today = datetime.now(ZoneInfo("Europe/Madrid")).date()
+        local = datetime.now(ZoneInfo("Europe/Madrid"))
     except ZoneInfoNotFoundError:
-        today = datetime.now(timezone.utc).date()
+        local = datetime.now(timezone.utc)
+    today = local.date()
     try:
-        log.info("%s", feed.collect(url, ROOT / "state" / "feed_powerplanet.json", today))
+        log.info("%s", feed.collect(url, ROOT / "state" / "feed_powerplanet.json", today, hour=local.hour))
     except Exception as exc:  # el feed es un extra: sin traceback, que podria llevar la clave
         log.error("feed: error inesperado %s: %s", type(exc).__name__, scrub(str(exc)))
 
