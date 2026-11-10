@@ -532,6 +532,24 @@ def parse_old_price(card) -> float | None:
     return None
 
 
+def card_title(card) -> str:
+    """Nombre del producto de una tarjeta. Algunas (moda, deporte) traen dos <h2>: el primero es solo la marca
+    y el segundo el nombre completo, asi que se elige el mas largo; si aun queda un nombre de 1-2 palabras,
+    se prueba con el texto alternativo de la imagen."""
+    candidates = []
+    for h2 in card.select("h2"):
+        text = (h2.get("aria-label") or h2.get_text(" ", strip=True) or "").strip()
+        if text:
+            candidates.append(text)
+    title = max(candidates, key=len, default="")
+    if len(title.split()) <= 2:
+        img = card.select_one("img.s-image")
+        alt = ((img.get("alt") if img else "") or "").strip()
+        if len(alt.split()) > len(title.split()) and alt.lower().startswith(title.lower()):
+            title = alt
+    return title
+
+
 def parse_results(html: str) -> list[Product]:
     soup = BeautifulSoup(html, "html.parser")
     products: list[Product] = []
@@ -539,10 +557,7 @@ def parse_results(html: str) -> list[Product]:
         asin = (card.get("data-asin") or "").strip()
         if not re.fullmatch(r"[A-Z0-9]{10}", asin):
             continue
-        h2 = card.select_one("h2")
-        title = ""
-        if h2 is not None:
-            title = (h2.get("aria-label") or h2.get_text(" ", strip=True) or "").strip()
+        title = card_title(card)
         price = parse_price(_text(card.select_one("span.a-price:not(.a-text-price) span.a-offscreen")))
         old_price = parse_old_price(card)
 
@@ -893,6 +908,10 @@ def price_reference(html: str) -> dict:
     m = MEDIAN_RE.search(text)
     if m and parse_price(m.group(1)):
         ref["median"] = parse_price(m.group(1))
+    if "low30" not in ref:  # otras fichas solo traen la frase "ha variado entre X y Y" de los ultimos 30 dias
+        hist = price_history(html)
+        if hist and hist[2] in (None, 30):
+            ref["low30"] = hist[0]
     return ref
 
 
@@ -929,7 +948,8 @@ def listing_ok(session: requests.Session, p: Product, ch: Channel, today: date) 
         if not ref:
             if ch.price_check == "strict":
                 return False, f"{REF_WHY}: la ficha no trae precio de referencia"
-            log.info("%s: %s sin precio de referencia en la ficha; se acepta", ch.name, p.asin)
+            log.info("%s: %s sin precio de referencia en la ficha; se acepta (%d bytes, historial: %s)",
+                     ch.name, p.asin, len(html), "si" if "Historial de precios" in html else "no")
         else:
             log.info("%s: %s precio %s, referencia de la ficha: %s", ch.name, p.asin, fmt_eur(p.price),
                      ", ".join(f"{k} {fmt_eur(v)}" for k, v in ref.items()))

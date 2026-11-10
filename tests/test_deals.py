@@ -2107,3 +2107,34 @@ def test_unit_price_suffixes_are_all_ignored(suffix):
 def test_unmarked_strikethrough_price_still_works_without_the_strike_attribute():
     html = unit_card("16,99 €", "", '<span class="a-price a-text-price"><span class="a-offscreen">24,99 €</span></span>')
     assert parse_one(html).old_price == 24.99
+
+
+def test_title_skips_brand_only_h2():
+    """En tarjetas de moda el primer <h2> es solo la marca; el nombre va en el segundo."""
+    html = """<div data-component-type="s-search-result" data-asin="B0CKXT51LV">
+      <img class="s-image" src="https://m.media-amazon.com/images/I/x.jpg" alt="adidas Hombre Runfalcon 5 Zapatillas de Correr">
+      <h2 class="a-size-mini"><span>adidas</span></h2>
+      <h2 aria-label="adidas Hombre Runfalcon 5 Zapatillas de Correr"><a><span>adidas Hombre Runfalcon 5 Zapatillas de Correr</span></a></h2>
+      <span class="a-icon-alt">4,4 de 5 estrellas</span><span class="s-underline-text">13.005</span>
+      <span class="a-price"><span class="a-offscreen">37,99 €</span></span></div>"""
+    assert deals.parse_results("<html><body>" + html + "</body></html>")[0].title == "adidas Hombre Runfalcon 5 Zapatillas de Correr"
+
+
+def test_title_falls_back_to_image_alt_when_only_brand():
+    html = """<div data-component-type="s-search-result" data-asin="B0H3KV5W3B">
+      <img class="s-image" src="https://m.media-amazon.com/images/I/y.jpg" alt="Yankony Mochila Impermeable 20L">
+      <h2><span>Yankony</span></h2>
+      <span class="a-price"><span class="a-offscreen">21,98 €</span></span></div>"""
+    assert deals.parse_results("<html><body>" + html + "</body></html>")[0].title == "Yankony Mochila Impermeable 20L"
+
+
+def test_price_reference_uses_history_sentence_as_low30():
+    html = product_page(
+        "<div>En los últimos 30 días, el precio de las Zapatillas Adidas Runfalcon 5 ha variado entre 31,99 € y 39,49 €. "
+        "El precio actual es 39,49 €, el más alto en los últimos 30 días.</div>")
+    assert deals.price_reference(html) == {"low30": 31.99}
+
+
+def test_price_reference_prefers_explicit_low30_over_sentence():
+    html = product_page(HISTORIAL + "<div>El precio más bajo de los últimos 30 días: 19,49€</div>")
+    assert deals.price_reference(html)["low30"] == 19.49
