@@ -10,7 +10,7 @@
   "Café y cápsulas": "2026-11-09T16:20:49.923718+00:00",
   "Cargadores y baterías": "2026-11-10T11:15:42.709254+00:00",
   "Ciclismo": "2026-11-09T18:11:13.639360+00:00",
-  "Climatización": "2026-11-07T21:05:33.483971+00:00",
+  "Climatización": "2026-11-10T14:45:46.160107+00:00",
   "Colchones y almohadas": "2026-11-09T09:55:33.819208+00:00",
   "Cuidado de la piel": "2026-11-10T07:35:33.533101+00:00",
   "Cuidado del cabello": "2026-11-10T14:10:44.256404+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-09T15:45:40.967709+00:00"
  },
- "next_at": "2026-11-10T14:44:44.768978+00:00",
+ "next_at": "2026-11-10T15:18:17.230598+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -1008,6 +1008,16 @@
    "title": "Batería Externa 27000mAh 22.5W PD3.0 QC4.0 Power Bank Carga Rapida, 3A USB C Cargador Portátil con Pantalla LED, 2 Entradas y 3 Salidas Powerbank para Smartphones, Tablets y más (black1)",
    "v": []
   },
+  "B0F7RPDTJ5": {
+   "c": "Climatización",
+   "d": 17,
+   "e": "🌬️",
+   "m": 187,
+   "p": 499.0,
+   "t": "2026-11-10T14:46:16.396777+00:00",
+   "title": "Dyson Purifier Hot+Cool HP1 Purificador de Aire, Calefactor",
+   "v": []
+  },
   "B0F9L1BKBK": {
    "c": "Menaje de cocina",
    "d": 23,
@@ -1365,6 +1375,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0FM8L1GCX",
+   "c": "Climatización",
+   "e": "🌬️",
+   "img": "https://m.media-amazon.com/images/I/81UYTwShXDL._AC_UL320_.jpg",
+   "n": 305,
+   "op": 84.99,
+   "p": 73.42,
+   "r": 4.6,
+   "t": "2026-11-10T14:45:46.160107+00:00",
+   "title": "Dreo Calefactor Inteligente 2000W para Dormitorio, Estufa Portátil 16 Pulgadas con Oscilación de 70°, Termostato, Mando a Distancia, 3 Modos, 3 Velocidades, Temporizador 12H, Solaris Slim H3S Mejorado"
+  },
+  {
    "a": "B0CHJKQD1V",
    "c": "Relojes",
    "e": "🕰️",
@@ -1387,24 +1409,12 @@
    "r": 4.3,
    "t": "2026-11-10T11:50:46.199170+00:00",
    "title": "TechStone Juego de Bandas de Resistencia para Hombres y Mujeres, Paquete de 5 Niveles de Resistencia Diferentes, Banda elástica para Gimnasio en casa, Entrenamiento de Ejercicio Largo"
-  },
-  {
-   "a": "B0DX6SVQ7P",
-   "c": "Cargadores y baterías",
-   "e": "🔌",
-   "img": "https://m.media-amazon.com/images/I/61kFXxMvT0L._AC_UL320_.jpg",
-   "n": 1200,
-   "op": 39.99,
-   "p": 33.99,
-   "r": 4.6,
-   "t": "2026-11-10T11:15:42.709254+00:00",
-   "title": "Baseus Powerbank 45W 20000mAh con 2 Cables USB-C Integrados, Power Bank PD3,0 QC4,0 Baterías Externas Carga Rapida, 3 C 1 A, Cargador Portátil para iPhone 17/16/15 Pro MAX, Samsung, Negro"
   }
  ],
  "summary_day": "2026-11-09",
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-10",
-  "n": 13
+  "n": 14
  }
 }
