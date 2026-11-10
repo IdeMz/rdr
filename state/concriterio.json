@@ -13,7 +13,7 @@
   "Climatización": "2026-11-07T21:05:33.483971+00:00",
   "Colchones y almohadas": "2026-11-09T09:55:33.819208+00:00",
   "Cuidado de la piel": "2026-11-10T07:35:33.533101+00:00",
-  "Cuidado del cabello": "2026-11-08T08:45:38.227499+00:00",
+  "Cuidado del cabello": "2026-11-10T14:10:44.256404+00:00",
   "Cámaras de seguridad": "2026-11-09T07:01:09.710131+00:00",
   "Domótica": "2026-11-10T09:20:41.879952+00:00",
   "Fitness en casa": "2026-11-10T11:50:46.199170+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-09T15:45:40.967709+00:00"
  },
- "next_at": "2026-11-10T14:05:40.855376+00:00",
+ "next_at": "2026-11-10T14:44:44.768978+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -614,6 +614,16 @@
    "p": 25.99,
    "t": "2026-11-09T09:21:08.056086+00:00",
    "title": "Auriculares Inalámbricos Bluetooth, Auriculares Bluetooth 5.3, 4 Mic con Reducción de Ruido ENC, 50H con Graves, Cascos Inalambricos Bluetooth IP7 Impermeable, Carga Rápida USB-C, Ajuste Cómodo",
+   "v": []
+  },
+  "B0CCYPDLCQ": {
+   "c": "Cuidado del cabello",
+   "d": 33,
+   "e": "💇",
+   "m": 186,
+   "p": 167.98,
+   "t": "2026-11-10T14:11:06.914629+00:00",
+   "title": "ghd Gold - Plancha de Pelo Profesional Avanzada",
    "v": []
   },
   "B0CFVZG5TR": {
@@ -1395,6 +1405,6 @@
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-10",
-  "n": 12
+  "n": 13
  }
 }
