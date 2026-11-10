@@ -32,7 +32,7 @@
   "Periféricos": "2026-11-10T09:55:34.015428+00:00",
   "Perros": "2026-11-08T13:25:31.829164+00:00",
   "Portátiles": "2026-11-09T17:01:16.746585+00:00",
-  "Relojes": "2026-11-08T20:55:31.883791+00:00",
+  "Relojes": "2026-11-10T13:35:32.468342+00:00",
   "Robots de cocina": "2026-11-08T16:20:40.816944+00:00",
   "Smartwatch": "2026-11-10T10:30:55.583683+00:00",
   "Suplementos": "2026-11-10T08:45:47.983358+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-09T15:45:40.967709+00:00"
  },
- "next_at": "2026-11-10T13:32:28.720234+00:00",
+ "next_at": "2026-11-10T14:05:40.855376+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -235,6 +235,16 @@
    "v": [
     "5f2e3ed7ec51"
    ]
+  },
+  "B079QQ34RL": {
+   "c": "Relojes",
+   "d": 29,
+   "e": "🕰️",
+   "m": 185,
+   "p": 126.75,
+   "t": "2026-11-10T13:36:05.516695+00:00",
+   "title": "Reloj Analógico Multifuncional de Cuarzo para Hombres con Correa de Silicona, Acero Inoxidable o Cuero, Subesferas para Día y Fecha, Resistente al Agua hasta 5ATM.",
+   "v": []
   },
   "B07K142D5Q": {
    "c": "Suplementos",
@@ -1345,6 +1355,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0CHJKQD1V",
+   "c": "Relojes",
+   "e": "🕰️",
+   "img": "https://m.media-amazon.com/images/I/61kqWX4VjpL._AC_UL320_.jpg",
+   "n": 5100,
+   "op": 23.99,
+   "p": 17.99,
+   "r": 4.2,
+   "t": "2026-11-10T13:35:32.468342+00:00",
+   "title": "Reloj Hombre Relojes de Acero Inoxidable Hombres Reloj de Cuarzo"
+  },
+  {
    "a": "B088DZWSF6",
    "c": "Fitness en casa",
    "e": "🏋️",
@@ -1367,24 +1389,12 @@
    "r": 4.6,
    "t": "2026-11-10T11:15:42.709254+00:00",
    "title": "Baseus Powerbank 45W 20000mAh con 2 Cables USB-C Integrados, Power Bank PD3,0 QC4,0 Baterías Externas Carga Rapida, 3 C 1 A, Cargador Portátil para iPhone 17/16/15 Pro MAX, Samsung, Negro"
-  },
-  {
-   "a": "B0H6MCJG9F",
-   "c": "Smartwatch",
-   "e": "⌚",
-   "img": "https://m.media-amazon.com/images/I/81FNoVvYpsL._AC_UL320_.jpg",
-   "n": 782,
-   "op": 69.99,
-   "p": 43.95,
-   "r": 4.3,
-   "t": "2026-11-10T10:30:55.583683+00:00",
-   "title": "FOSMET Nuevo Reloj Inteligente Hombre con ECG/HRV/BMI, Android iOS Negro"
   }
  ],
  "summary_day": "2026-11-09",
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-10",
-  "n": 11
+  "n": 12
  }
 }
