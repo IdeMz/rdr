@@ -15,7 +15,7 @@
   "Cuidado de la piel": "2026-11-10T07:35:33.533101+00:00",
   "Cuidado del cabello": "2026-11-08T08:45:38.227499+00:00",
   "Cámaras de seguridad": "2026-11-09T07:01:09.710131+00:00",
-  "Domótica": "2026-11-09T08:45:39.502721+00:00",
+  "Domótica": "2026-11-10T09:20:41.879952+00:00",
   "Fitness en casa": "2026-11-09T08:10:41.171109+00:00",
   "Freidoras de aire": "2026-11-09T15:10:45.867226+00:00",
   "Gatos": "2026-11-07T16:50:41.349951+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-09T15:45:40.967709+00:00"
  },
- "next_at": "2026-11-10T09:16:59.997845+00:00",
+ "next_at": "2026-11-10T09:50:49.649155+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -474,6 +474,16 @@
    "p": 109.0,
    "t": "2026-11-06T14:41:15.970354+00:00",
    "title": "Cecotec Colchón Viscoelástico Flow PureVital 1900 Medida 90x190. Multicapa, Altura 21cm, Firmeza Alta, Núcleo FoamVital, Doble Cara Dual System para Invierno y Verano",
+   "v": []
+  },
+  "B0B6CKMLQH": {
+   "c": "Domótica",
+   "d": 13,
+   "e": "💡",
+   "m": 178,
+   "p": 7.85,
+   "t": "2026-11-10T09:21:07.492176+00:00",
+   "title": "Tapo L630 - Bombilla Inteligente, 3.7 W, Ahorro de Energía, 350 lm, GU10",
    "v": []
   },
   "B0BCKHQGJN": {
@@ -1315,6 +1325,6 @@
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-10",
-  "n": 4
+  "n": 5
  }
 }
