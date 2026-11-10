@@ -36,12 +36,12 @@
   "Robots de cocina": "2026-11-08T16:20:40.816944+00:00",
   "Smartwatch": "2026-11-10T10:30:55.583683+00:00",
   "Suplementos": "2026-11-10T08:45:47.983358+00:00",
-  "Tablets": "2026-11-06T21:05:32.851025+00:00",
+  "Tablets": "2026-11-10T20:35:35.839507+00:00",
   "Televisores": "2026-11-10T18:15:42.344426+00:00",
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-09T15:45:40.967709+00:00"
  },
- "next_at": "2026-11-10T20:33:27.674625+00:00",
+ "next_at": "2026-11-10T21:05:53.415505+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -1318,6 +1318,16 @@
    "title": "WOLFANG 4K Dashcam, 610° 4 Canales Cámara de Coche con 5,8 GHz WiFi & App",
    "v": []
   },
+  "B0GX9SBDKC": {
+   "c": "Tablets",
+   "d": 29,
+   "e": "📲",
+   "m": 197,
+   "p": 199.9,
+   "t": "2026-11-10T20:36:11.477238+00:00",
+   "title": "XIAOMI REDMI Pad 2 4+256GB Tablet de 11\" 2.5K Gris Batería de 9000 mAh",
+   "v": []
+  },
   "B0GZZM4CXF": {
    "c": "Aspiradoras",
    "d": 49,
@@ -1465,6 +1475,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0G14W2ZWW",
+   "c": "Tablets",
+   "e": "📲",
+   "img": "https://m.media-amazon.com/images/I/61U1OXOnAZL._AC_UL320_.jpg",
+   "n": 335,
+   "op": 329.0,
+   "p": 269.0,
+   "r": 4.6,
+   "t": "2026-11-10T20:35:35.839507+00:00",
+   "title": "Samsung Galaxy Tab A11+ 128GB, Tableta con IA, Pantalla de 11\" con 90 Hz, 6GB de Memoria, Altavoces Cuádruples Dolby, Garantía del Fabricante 3 Años + 1 Año Extra, Gris (Versión Española)"
+  },
+  {
    "a": "B0CWP7M17B",
    "c": "Freidoras de aire",
    "e": "🍟",
@@ -1487,24 +1509,12 @@
    "r": 4.3,
    "t": "2026-11-10T18:15:42.344426+00:00",
    "title": "Hisense 40A4S - 40 Pulgadas Smart TV Full HD, Dolby Audio, DVB-T2"
-  },
-  {
-   "a": "B0C5Y1GN2Y",
-   "c": "Afeitado y depilación",
-   "e": "🪒",
-   "img": "https://m.media-amazon.com/images/I/718uiJpktiL._AC_UL320_.jpg",
-   "n": 1000,
-   "op": 13.99,
-   "p": 9.59,
-   "r": 4.5,
-   "t": "2026-11-10T17:05:37.721123+00:00",
-   "title": "Gillette Venus Maquinilla de Afeitar Mujer para Ingles Y Zona Íntima"
   }
  ],
  "summary_day": "2026-11-09",
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-10",
-  "n": 23
+  "n": 24
  }
 }
