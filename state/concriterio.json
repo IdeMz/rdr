@@ -12,7 +12,7 @@
   "Ciclismo": "2026-11-09T18:11:13.639360+00:00",
   "Climatización": "2026-11-07T21:05:33.483971+00:00",
   "Colchones y almohadas": "2026-11-09T09:55:33.819208+00:00",
-  "Cuidado de la piel": "2026-11-08T21:30:55.800032+00:00",
+  "Cuidado de la piel": "2026-11-10T07:35:33.533101+00:00",
   "Cuidado del cabello": "2026-11-08T08:45:38.227499+00:00",
   "Cámaras de seguridad": "2026-11-09T07:01:09.710131+00:00",
   "Domótica": "2026-11-09T08:45:39.502721+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-09T15:45:40.967709+00:00"
  },
- "next_at": "2026-11-10T07:33:27.325572+00:00",
+ "next_at": "2026-11-10T08:08:36.793032+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -374,6 +374,16 @@
    "p": 99.0,
    "t": "2026-11-09T17:35:56.108251+00:00",
    "title": "metabo PowerMaxx BS Basic Taladro Atornillador de 12 V con Luz LED",
+   "v": []
+  },
+  "B094TYNC9T": {
+   "c": "Cuidado de la piel",
+   "d": 46,
+   "e": "🧴",
+   "m": 175,
+   "p": 12.3,
+   "t": "2026-11-10T07:36:05.124558+00:00",
+   "title": "L'Oréal Paris Revitalift Filler Crema Hidratante Día Nº1 con SPF 50, 50ml",
    "v": []
   },
   "B0987W5VK6": {
@@ -1245,6 +1255,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B08RZZVKNZ",
+   "c": "Cuidado de la piel",
+   "e": "🧴",
+   "img": "https://m.media-amazon.com/images/I/6132Ac5wVIL._AC_UL320_.jpg",
+   "n": 475,
+   "op": 29.99,
+   "p": 13.48,
+   "r": 4.6,
+   "t": "2026-11-10T07:35:33.533101+00:00",
+   "title": "Olay Regenerist Sérum Facial Reafirmante con Niacinamida, 50ml"
+  },
+  {
    "a": "B0CDCL53KW",
    "c": "Cafeteras",
    "e": "☕",
@@ -1261,6 +1283,6 @@
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-10",
-  "n": 1
+  "n": 2
  }
 }
