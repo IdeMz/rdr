@@ -4,7 +4,7 @@
   "Afeitado y depilación": "2026-11-09T12:15:43.445622+00:00",
   "Almacenamiento": "2026-11-09T14:35:34.051656+00:00",
   "Altavoces": "2026-11-09T11:05:34.803967+00:00",
-  "Aspiradoras": "2026-11-09T07:35:34.621273+00:00",
+  "Aspiradoras": "2026-11-10T12:25:33.122047+00:00",
   "Auriculares": "2026-11-09T09:20:44.161501+00:00",
   "Cafeteras": "2026-11-10T07:01:10.513922+00:00",
   "Café y cápsulas": "2026-11-09T16:20:49.923718+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-09T15:45:40.967709+00:00"
  },
- "next_at": "2026-11-10T12:23:41.704892+00:00",
+ "next_at": "2026-11-10T12:59:40.564594+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -1168,6 +1168,16 @@
    "title": "Ninja MAX PRO, Freidora de Aire sin Aceite, 6,2L, Piedra/Dorado",
    "v": []
   },
+  "B0GSZ6BPW9": {
+   "c": "Aspiradoras",
+   "d": 43,
+   "e": "🧹",
+   "m": 183,
+   "p": 399.99,
+   "t": "2026-11-10T12:25:53.841393+00:00",
+   "title": "roborock Qrevo Edge T Robot Aspirador Succión 18500 Pa, con FlexiArm",
+   "v": []
+  },
   "B0GX4YGYXG": {
    "c": "Accesorios de coche",
    "d": 35,
@@ -1365,6 +1375,6 @@
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-10",
-  "n": 9
+  "n": 10
  }
 }
