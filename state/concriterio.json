@@ -21,7 +21,7 @@
   "Gatos": "2026-11-07T16:50:41.349951+00:00",
   "Herramientas": "2026-11-09T17:35:34.285922+00:00",
   "Iluminación": "2026-11-09T13:25:33.337111+00:00",
-  "Jardín": "2026-11-08T14:35:33.354661+00:00",
+  "Jardín": "2026-11-10T16:30:58.610970+00:00",
   "Lego": "2026-11-09T10:30:54.098717+00:00",
   "Menaje de cocina": "2026-11-09T17:01:16.746585+00:00",
   "Mochilas y maletas": "2026-11-09T14:01:06.954280+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-09T15:45:40.967709+00:00"
  },
- "next_at": "2026-11-10T16:28:21.870586+00:00",
+ "next_at": "2026-11-10T17:01:18.969481+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -534,6 +534,16 @@
    "p": 114.75,
    "t": "2026-11-06T17:01:35.426534+00:00",
    "title": "Bosch taladro percutor a batería EasyImpact 18V-40 (2x batería de 2,0 Ah, sistema de 18 V, set de destornilladores y brocas para madera, piedra y metal de 43 piezas, en caja)",
+   "v": []
+  },
+  "B0BFB8B1RL": {
+   "c": "Jardín",
+   "d": 16,
+   "e": "🌱",
+   "m": 190,
+   "p": 10.95,
+   "t": "2026-11-10T16:31:21.289762+00:00",
+   "title": "S&M 180040 Grifo de jardín antihielo con dos salidas y toma automática, Negro Y Azul",
    "v": []
   },
   "B0BL898WJZ": {
@@ -1435,6 +1445,6 @@
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-10",
-  "n": 16
+  "n": 17
  }
 }
