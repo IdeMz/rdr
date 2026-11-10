@@ -19,7 +19,7 @@
   "Fitness en casa": "2026-11-10T11:50:46.199170+00:00",
   "Freidoras de aire": "2026-11-10T19:25:34.668553+00:00",
   "Gatos": "2026-11-07T16:50:41.349951+00:00",
-  "Herramientas": "2026-11-09T17:35:34.285922+00:00",
+  "Herramientas": "2026-11-10T21:45:45.365277+00:00",
   "Iluminación": "2026-11-09T13:25:33.337111+00:00",
   "Jardín": "2026-11-10T16:30:58.610970+00:00",
   "Lego": "2026-11-09T10:30:54.098717+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-10T21:10:42.687124+00:00",
   "Zapatillas": "2026-11-09T15:45:40.967709+00:00"
  },
- "next_at": "2026-11-10T21:41:29.579958+00:00",
+ "next_at": "2026-11-10T22:17:26.597691+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -1420,6 +1420,16 @@
    "title": "Juego de Almohadillas Casco Bicicleta EVA Esponja Puntos de Traje,Casco de Bicicleta Esponja para Casco de Bicicleta Universal Recambio Almohadillas Casco Bici para Protección",
    "v": []
   },
+  "B0H741D676": {
+   "c": "Herramientas",
+   "d": 29,
+   "e": "🔧",
+   "m": 199,
+   "p": 49.99,
+   "t": "2026-11-10T21:46:14.949007+00:00",
+   "title": "Taladro Atornillador Batería, LEEIKOO Atornillador Electrico 21V, 42N.m con 2 Baterías 2.0Ah, 18+1 Ajuste de Par, 2 Velocidad, LED Luz, 14 Accesorios Para Hogar, Bricolaje, Gris",
+   "v": []
+  },
   "B0HCVH7ZZJ": {
    "c": "Nutrición deportiva",
    "d": 38,
@@ -1485,6 +1495,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B09877WFM6",
+   "c": "Herramientas",
+   "e": "🔧",
+   "img": "https://m.media-amazon.com/images/I/71wPKhAIjcL._AC_UL320_.jpg",
+   "n": 2600,
+   "op": 129.99,
+   "p": 114.7,
+   "r": 4.7,
+   "t": "2026-11-10T21:45:45.365277+00:00",
+   "title": "Bosch Martillo taladrador a batería UniversalImpact 18V (1 batería, sistema de 18 V, en Maletín) – Amazon Edición"
+  },
+  {
    "a": "B0G14W2ZWW",
    "c": "Tablets",
    "e": "📲",
@@ -1507,24 +1529,12 @@
    "r": 4.7,
    "t": "2026-11-10T19:25:34.668553+00:00",
    "title": "Philips 2000 Airfryer - Freidora de Aire 6,2L, 13 opciones, Táctil, Negro"
-  },
-  {
-   "a": "B0GJFC1Q9Z",
-   "c": "Televisores",
-   "e": "📺",
-   "img": "https://m.media-amazon.com/images/I/71uuJJ9J-9L._AC_UL320_.jpg",
-   "n": 81,
-   "op": 259.0,
-   "p": 231.0,
-   "r": 4.3,
-   "t": "2026-11-10T18:15:42.344426+00:00",
-   "title": "Hisense 40A4S - 40 Pulgadas Smart TV Full HD, Dolby Audio, DVB-T2"
   }
  ],
  "summary_day": "2026-11-09",
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-10",
-  "n": 25
+  "n": 26
  }
 }
