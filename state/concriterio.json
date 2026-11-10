@@ -37,11 +37,11 @@
   "Smartwatch": "2026-11-10T10:30:55.583683+00:00",
   "Suplementos": "2026-11-10T08:45:47.983358+00:00",
   "Tablets": "2026-11-06T21:05:32.851025+00:00",
-  "Televisores": "2026-11-08T19:50:40.268854+00:00",
+  "Televisores": "2026-11-10T18:15:42.344426+00:00",
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-09T15:45:40.967709+00:00"
  },
- "next_at": "2026-11-10T18:12:59.839086+00:00",
+ "next_at": "2026-11-10T18:46:00.160726+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -1268,6 +1268,16 @@
    "title": "roborock Qrevo Edge T Robot Aspirador Succión 18500 Pa, con FlexiArm",
    "v": []
   },
+  "B0GTRP6G9Y": {
+   "c": "Televisores",
+   "d": 16,
+   "e": "📺",
+   "m": 193,
+   "p": 379.0,
+   "t": "2026-11-10T18:16:16.149428+00:00",
+   "title": "LG 43QNED70B6C - Smart TV QNED MiniLED AI 43\" 4K Sin Reflejos 94%, 2026",
+   "v": []
+  },
   "B0GX4YGYXG": {
    "c": "Accesorios de coche",
    "d": 35,
@@ -1425,6 +1435,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0GJFC1Q9Z",
+   "c": "Televisores",
+   "e": "📺",
+   "img": "https://m.media-amazon.com/images/I/71uuJJ9J-9L._AC_UL320_.jpg",
+   "n": 81,
+   "op": 259.0,
+   "p": 231.0,
+   "r": 4.3,
+   "t": "2026-11-10T18:15:42.344426+00:00",
+   "title": "Hisense 40A4S - 40 Pulgadas Smart TV Full HD, Dolby Audio, DVB-T2"
+  },
+  {
    "a": "B0C5Y1GN2Y",
    "c": "Afeitado y depilación",
    "e": "🪒",
@@ -1447,24 +1469,12 @@
    "r": 4.6,
    "t": "2026-11-10T15:55:36.869200+00:00",
    "title": "Azzaro"
-  },
-  {
-   "a": "B0FM8L1GCX",
-   "c": "Climatización",
-   "e": "🌬️",
-   "img": "https://m.media-amazon.com/images/I/81UYTwShXDL._AC_UL320_.jpg",
-   "n": 305,
-   "op": 84.99,
-   "p": 73.42,
-   "r": 4.6,
-   "t": "2026-11-10T14:45:46.160107+00:00",
-   "title": "Dreo Calefactor Inteligente 2000W para Dormitorio, Estufa Portátil 16 Pulgadas con Oscilación de 70°, Termostato, Mando a Distancia, 3 Modos, 3 Velocidades, Temporizador 12H, Solaris Slim H3S Mejorado"
   }
  ],
  "summary_day": "2026-11-09",
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-10",
-  "n": 19
+  "n": 20
  }
 }
