@@ -38,10 +38,10 @@
   "Suplementos": "2026-11-10T08:45:47.983358+00:00",
   "Tablets": "2026-11-10T20:35:35.839507+00:00",
   "Televisores": "2026-11-10T18:15:42.344426+00:00",
-  "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
+  "Videojuegos": "2026-11-10T21:10:42.687124+00:00",
   "Zapatillas": "2026-11-09T15:45:40.967709+00:00"
  },
- "next_at": "2026-11-10T21:05:53.415505+00:00",
+ "next_at": "2026-11-10T21:41:29.579958+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -927,6 +927,16 @@
    "title": "Kitchen Academy Juego de Ollas y Sartenes Antiadherentes 30 Piezas Verde",
    "v": []
   },
+  "B0DDCFZBQD": {
+   "c": "Videojuegos",
+   "d": 13,
+   "e": "🎮",
+   "m": 198,
+   "p": 25.99,
+   "t": "2026-11-10T21:11:03.933507+00:00",
+   "title": "Poppy Playtime Triple Pack - PS5",
+   "v": []
+  },
   "B0DDCHNPBR": {
    "c": "Cuidado del cabello",
    "d": 42,
@@ -1515,6 +1525,6 @@
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-10",
-  "n": 24
+  "n": 25
  }
 }
