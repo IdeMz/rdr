@@ -28,7 +28,7 @@
   "Monitores": "2026-11-08T17:30:52.669776+00:00",
   "Móviles": "2026-11-10T15:20:47.993631+00:00",
   "Nutrición deportiva": "2026-11-10T13:01:09.677737+00:00",
-  "Perfumes": "2026-11-09T12:50:40.713905+00:00",
+  "Perfumes": "2026-11-10T15:55:36.869200+00:00",
   "Periféricos": "2026-11-10T09:55:34.015428+00:00",
   "Perros": "2026-11-08T13:25:31.829164+00:00",
   "Portátiles": "2026-11-09T17:01:16.746585+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-09T15:45:40.967709+00:00"
  },
- "next_at": "2026-11-10T15:53:46.665085+00:00",
+ "next_at": "2026-11-10T16:28:21.870586+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -1088,6 +1088,16 @@
    "title": "DELL 24 Plus Monitor - S2425HSM, Full HD (1920x1080), 144Hz, IPS, 1ms MPRT",
    "v": []
   },
+  "B0FQCNKYW4": {
+   "c": "Perfumes",
+   "d": 29,
+   "e": "🌸",
+   "m": 189,
+   "p": 20.55,
+   "t": "2026-11-10T15:56:04.484080+00:00",
+   "title": "Hugo Deep Red Eau de Parfum para Mujer",
+   "v": []
+  },
   "B0FQHYZRJZ": {
    "c": "Colchones y almohadas",
    "d": 10,
@@ -1385,6 +1395,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B08ZFKB8ZK",
+   "c": "Perfumes",
+   "e": "🌸",
+   "img": "https://m.media-amazon.com/images/I/61-s7n-e4DL._AC_UL320_.jpg",
+   "n": 13800,
+   "op": 57.22,
+   "p": 48.9,
+   "r": 4.6,
+   "t": "2026-11-10T15:55:36.869200+00:00",
+   "title": "Azzaro"
+  },
+  {
    "a": "B0FM8L1GCX",
    "c": "Climatización",
    "e": "🌬️",
@@ -1413,6 +1435,6 @@
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-10",
-  "n": 15
+  "n": 16
  }
 }
