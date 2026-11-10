@@ -26,7 +26,7 @@
   "Menaje de cocina": "2026-11-09T17:01:16.746585+00:00",
   "Mochilas y maletas": "2026-11-09T14:01:06.954280+00:00",
   "Monitores": "2026-11-08T17:30:52.669776+00:00",
-  "Móviles": "2026-11-07T11:05:35.080138+00:00",
+  "Móviles": "2026-11-10T15:20:47.993631+00:00",
   "Nutrición deportiva": "2026-11-10T13:01:09.677737+00:00",
   "Perfumes": "2026-11-09T12:50:40.713905+00:00",
   "Periféricos": "2026-11-10T09:55:34.015428+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-09T15:45:40.967709+00:00"
  },
- "next_at": "2026-11-10T15:18:17.230598+00:00",
+ "next_at": "2026-11-10T15:53:46.665085+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -1108,6 +1108,16 @@
    "title": "Tablet 10 Pulgadas Android 15 con Gemini AI, 30 GB RAM + Ampliable 2 TB ROM, Octa-Core, Widevine L1, 1280x800 HD, WiFi 5GHz, BT 5.0, Cámara 8 MP + 5 MP, 6000 mAh, con Teclado, Ratón y Funda – Negro",
    "v": []
   },
+  "B0FT8PMRW4": {
+   "c": "Móviles",
+   "d": 11,
+   "e": "📱",
+   "m": 188,
+   "p": 177.0,
+   "t": "2026-11-10T15:21:10.062687+00:00",
+   "title": "Samsung SM-A175 A17 4+128GB 6.7\" 4G Black DS ITA",
+   "v": []
+  },
   "B0FWCPNPCV": {
    "c": "Monitores",
    "d": 28,
@@ -1397,24 +1407,12 @@
    "r": 4.2,
    "t": "2026-11-10T13:35:32.468342+00:00",
    "title": "Reloj Hombre Relojes de Acero Inoxidable Hombres Reloj de Cuarzo"
-  },
-  {
-   "a": "B088DZWSF6",
-   "c": "Fitness en casa",
-   "e": "🏋️",
-   "img": "https://m.media-amazon.com/images/I/818CdlN1H0L._AC_UL320_.jpg",
-   "n": 18300,
-   "op": 9.99,
-   "p": 7.99,
-   "r": 4.3,
-   "t": "2026-11-10T11:50:46.199170+00:00",
-   "title": "TechStone Juego de Bandas de Resistencia para Hombres y Mujeres, Paquete de 5 Niveles de Resistencia Diferentes, Banda elástica para Gimnasio en casa, Entrenamiento de Ejercicio Largo"
   }
  ],
  "summary_day": "2026-11-09",
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-10",
-  "n": 14
+  "n": 15
  }
 }
