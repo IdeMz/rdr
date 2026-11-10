@@ -6,7 +6,7 @@
   "Altavoces": "2026-11-09T11:05:34.803967+00:00",
   "Aspiradoras": "2026-11-09T07:35:34.621273+00:00",
   "Auriculares": "2026-11-09T09:20:44.161501+00:00",
-  "Cafeteras": "2026-11-08T12:50:40.333375+00:00",
+  "Cafeteras": "2026-11-10T07:01:10.513922+00:00",
   "Café y cápsulas": "2026-11-09T16:20:49.923718+00:00",
   "Cargadores y baterías": "2026-11-08T18:10:41.707008+00:00",
   "Ciclismo": "2026-11-09T18:11:13.639360+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-09T15:45:40.967709+00:00"
  },
- "next_at": "2026-11-09T21:55:39.990472+00:00",
+ "next_at": "2026-11-10T07:33:27.325572+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -314,6 +314,16 @@
    "p": 15.2,
    "t": "2026-11-08T21:31:30.332152+00:00",
    "title": "L'Oréal Paris Revitalift Filler Sérum Facial Ácido Hialurónico y PDRN, 30ml",
+   "v": []
+  },
+  "B08CBJ8W9W": {
+   "c": "Cafeteras",
+   "d": 27,
+   "e": "☕",
+   "m": 174,
+   "p": 489.0,
+   "t": "2026-11-10T07:01:36.650115+00:00",
+   "title": "Philips Serie 5400 Cafetera Superautomática - Sistema de Leche LatteGo, 12 Variedades de Café, Pantalla Intuitiva, 4 Perfiles de Usuario, Cromado (EP5447/90)",
    "v": []
   },
   "B08CBJCQ39": {
@@ -1231,30 +1241,26 @@
    "v": []
   }
  },
- "problem": {
-  "alerted_at": "2026-11-09T19:15:42.207878+00:00",
-  "fails": 11,
-  "last": "HTTP 503"
- },
+ "problem": {},
  "rejected": {},
  "reserve": [
   {
-   "a": "B0FPM18556",
-   "c": "Menaje de cocina",
-   "e": "🍳",
-   "img": "https://m.media-amazon.com/images/I/71Ee3orJ1BL._AC_UL320_.jpg",
-   "n": 1200,
-   "op": 89.99,
-   "p": 69.99,
-   "r": 4.4,
-   "t": "2026-11-09T17:01:16.746585+00:00",
-   "title": "GiPP Juego de Ollas y Sartenes Cerámicas Antiadherente - Juego de Cocina con Mangos Desmontables, No Tóxico, Apto para Inducción, Horno y Lavavajillas(Blanc 11PCS)"
+   "a": "B0CDCL53KW",
+   "c": "Cafeteras",
+   "e": "☕",
+   "img": "https://m.media-amazon.com/images/I/61jNq-LOU9L._AC_UL320_.jpg",
+   "n": 1400,
+   "op": 749.0,
+   "p": 599.0,
+   "r": 4.2,
+   "t": "2026-11-10T07:01:10.513922+00:00",
+   "title": "De'Longhi Rivelia - Cafetera Superautomática 16 Bebidas Gris"
   }
  ],
  "summary_day": "2026-11-09",
  "tg_offset": 511048052,
  "x_copy": {
-  "day": "2026-11-09",
-  "n": 19
+  "day": "2026-11-10",
+  "n": 1
  }
 }
