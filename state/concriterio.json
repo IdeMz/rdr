@@ -1,6 +1,6 @@
 {
  "cats": {
-  "Accesorios de coche": "2026-11-08T09:55:33.252950+00:00",
+  "Accesorios de coche": "2026-11-10T08:10:41.461869+00:00",
   "Afeitado y depilación": "2026-11-09T12:15:43.445622+00:00",
   "Almacenamiento": "2026-11-09T14:35:34.051656+00:00",
   "Altavoces": "2026-11-09T11:05:34.803967+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-09T15:45:40.967709+00:00"
  },
- "next_at": "2026-11-10T08:08:36.793032+00:00",
+ "next_at": "2026-11-10T08:43:38.375544+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -747,6 +747,16 @@
    "title": "Tapo C410 Kit - Cámara de Vigilancia WiFi Exterior, Panel Solar, 2K 3MP, IA",
    "v": []
   },
+  "B0D58HZF7P": {
+   "c": "Accesorios de coche",
+   "d": 30,
+   "e": "🚗",
+   "m": 176,
+   "p": 69.99,
+   "t": "2026-11-10T08:11:08.798584+00:00",
+   "title": "iZEEKER 3 Canales 4K Dashcam con Tarjeta de 32GB GRATIS, Cámara Coche Frontal, Trasera e Interior 4K+1080P+1080P con WDR, Visión Nocturna IR, WiFi 6, Ángulo 170°, G-Sensor, Modo de Estacionamiento 24H",
+   "v": []
+  },
   "B0D5B6L569": {
    "c": "Nutrición deportiva",
    "d": 28,
@@ -1255,6 +1265,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0DTCF14RM",
+   "c": "Accesorios de coche",
+   "e": "🚗",
+   "img": "https://m.media-amazon.com/images/I/71iAzN+mZ-L._AC_UL320_.jpg",
+   "n": 390,
+   "op": 43.68,
+   "p": 37.45,
+   "r": 4.2,
+   "t": "2026-11-10T08:10:41.461869+00:00",
+   "title": "Dashcam 4K, Dash CAM Coche con CPL, WiFi Camara Coche Grabadora con Tarjeta 64G, Super Visión, Gran 170°, Control App, Sensor G, Monitor de Aparcamiento, Grabación de Bucle"
+  },
+  {
    "a": "B08RZZVKNZ",
    "c": "Cuidado de la piel",
    "e": "🧴",
@@ -1283,6 +1305,6 @@
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-10",
-  "n": 2
+  "n": 3
  }
 }
