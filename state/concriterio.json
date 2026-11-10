@@ -16,7 +16,7 @@
   "Cuidado del cabello": "2026-11-08T08:45:38.227499+00:00",
   "Cámaras de seguridad": "2026-11-09T07:01:09.710131+00:00",
   "Domótica": "2026-11-10T09:20:41.879952+00:00",
-  "Fitness en casa": "2026-11-09T08:10:41.171109+00:00",
+  "Fitness en casa": "2026-11-10T11:50:46.199170+00:00",
   "Freidoras de aire": "2026-11-09T15:10:45.867226+00:00",
   "Gatos": "2026-11-07T16:50:41.349951+00:00",
   "Herramientas": "2026-11-09T17:35:34.285922+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-09T15:45:40.967709+00:00"
  },
- "next_at": "2026-11-10T11:47:45.406700+00:00",
+ "next_at": "2026-11-10T12:23:41.704892+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -1188,6 +1188,16 @@
    "title": "roborock Qrevo 2 Pro Robot Aspirador Succión Extrema de 25000 Pa,Negro",
    "v": []
   },
+  "B0H1BGRHCV": {
+   "c": "Fitness en casa",
+   "d": 27,
+   "e": "🏋️",
+   "m": 182,
+   "p": 14.66,
+   "t": "2026-11-10T11:51:14.322412+00:00",
+   "title": "Gomas Elasticas Musculacion 4 Niveles Anclaje Protectores Trasporto",
+   "v": []
+  },
   "B0H2TPD39T": {
    "c": "Menaje de cocina",
    "d": 27,
@@ -1315,6 +1325,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B088DZWSF6",
+   "c": "Fitness en casa",
+   "e": "🏋️",
+   "img": "https://m.media-amazon.com/images/I/818CdlN1H0L._AC_UL320_.jpg",
+   "n": 18300,
+   "op": 9.99,
+   "p": 7.99,
+   "r": 4.3,
+   "t": "2026-11-10T11:50:46.199170+00:00",
+   "title": "TechStone Juego de Bandas de Resistencia para Hombres y Mujeres, Paquete de 5 Niveles de Resistencia Diferentes, Banda elástica para Gimnasio en casa, Entrenamiento de Ejercicio Largo"
+  },
+  {
    "a": "B0DX6SVQ7P",
    "c": "Cargadores y baterías",
    "e": "🔌",
@@ -1343,6 +1365,6 @@
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-10",
-  "n": 8
+  "n": 9
  }
 }
