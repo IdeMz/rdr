@@ -8,7 +8,7 @@
   "Auriculares": "2026-11-09T09:20:44.161501+00:00",
   "Cafeteras": "2026-11-10T07:01:10.513922+00:00",
   "Café y cápsulas": "2026-11-09T16:20:49.923718+00:00",
-  "Cargadores y baterías": "2026-11-08T18:10:41.707008+00:00",
+  "Cargadores y baterías": "2026-11-10T11:15:42.709254+00:00",
   "Ciclismo": "2026-11-09T18:11:13.639360+00:00",
   "Climatización": "2026-11-07T21:05:33.483971+00:00",
   "Colchones y almohadas": "2026-11-09T09:55:33.819208+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-09T15:45:40.967709+00:00"
  },
- "next_at": "2026-11-10T11:15:36.467730+00:00",
+ "next_at": "2026-11-10T11:47:45.406700+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -1260,6 +1260,16 @@
    "title": "Bulk Pure Whey Protein + Colágeno, Vainilla, 900g",
    "v": []
   },
+  "B0HDBF863N": {
+   "c": "Cargadores y baterías",
+   "d": 32,
+   "e": "🔌",
+   "m": 181,
+   "p": 16.99,
+   "t": "2026-11-10T11:16:10.170210+00:00",
+   "title": "Power Bank 25800 mAh, 22,5 W, PD3.0 QC4.0, batería Externa para teléfono móvil, Carga rápida, Pantalla LCD, batería Externa con Cable USB-C, Salidas y entradas, Cargador portátil para Smartphone",
+   "v": []
+  },
   "B0HDP4SP9K": {
    "c": "Smartwatch",
    "d": 53,
@@ -1301,12 +1311,21 @@
    "v": []
   }
  },
- "problem": {
-  "fails": 1,
-  "last": "HTTP 503"
- },
+ "problem": {},
  "rejected": {},
  "reserve": [
+  {
+   "a": "B0DX6SVQ7P",
+   "c": "Cargadores y baterías",
+   "e": "🔌",
+   "img": "https://m.media-amazon.com/images/I/61kFXxMvT0L._AC_UL320_.jpg",
+   "n": 1200,
+   "op": 39.99,
+   "p": 33.99,
+   "r": 4.6,
+   "t": "2026-11-10T11:15:42.709254+00:00",
+   "title": "Baseus Powerbank 45W 20000mAh con 2 Cables USB-C Integrados, Power Bank PD3,0 QC4,0 Baterías Externas Carga Rapida, 3 C 1 A, Cargador Portátil para iPhone 17/16/15 Pro MAX, Samsung, Negro"
+  },
   {
    "a": "B0H6MCJG9F",
    "c": "Smartwatch",
@@ -1318,36 +1337,12 @@
    "r": 4.3,
    "t": "2026-11-10T10:30:55.583683+00:00",
    "title": "FOSMET Nuevo Reloj Inteligente Hombre con ECG/HRV/BMI, Android iOS Negro"
-  },
-  {
-   "a": "B0DTCF14RM",
-   "c": "Accesorios de coche",
-   "e": "🚗",
-   "img": "https://m.media-amazon.com/images/I/71iAzN+mZ-L._AC_UL320_.jpg",
-   "n": 390,
-   "op": 43.68,
-   "p": 37.45,
-   "r": 4.2,
-   "t": "2026-11-10T08:10:41.461869+00:00",
-   "title": "Dashcam 4K, Dash CAM Coche con CPL, WiFi Camara Coche Grabadora con Tarjeta 64G, Super Visión, Gran 170°, Control App, Sensor G, Monitor de Aparcamiento, Grabación de Bucle"
-  },
-  {
-   "a": "B08RZZVKNZ",
-   "c": "Cuidado de la piel",
-   "e": "🧴",
-   "img": "https://m.media-amazon.com/images/I/6132Ac5wVIL._AC_UL320_.jpg",
-   "n": 475,
-   "op": 29.99,
-   "p": 13.48,
-   "r": 4.6,
-   "t": "2026-11-10T07:35:33.533101+00:00",
-   "title": "Olay Regenerist Sérum Facial Reafirmante con Niacinamida, 50ml"
   }
  ],
  "summary_day": "2026-11-09",
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-10",
-  "n": 7
+  "n": 8
  }
 }
