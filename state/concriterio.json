@@ -17,7 +17,7 @@
   "Cámaras de seguridad": "2026-11-09T07:01:09.710131+00:00",
   "Domótica": "2026-11-10T09:20:41.879952+00:00",
   "Fitness en casa": "2026-11-10T11:50:46.199170+00:00",
-  "Freidoras de aire": "2026-11-09T15:10:45.867226+00:00",
+  "Freidoras de aire": "2026-11-10T19:25:34.668553+00:00",
   "Gatos": "2026-11-07T16:50:41.349951+00:00",
   "Herramientas": "2026-11-09T17:35:34.285922+00:00",
   "Iluminación": "2026-11-09T13:25:33.337111+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-09T15:45:40.967709+00:00"
  },
- "next_at": "2026-11-10T19:21:45.973465+00:00",
+ "next_at": "2026-11-10T19:57:33.541459+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -1258,6 +1258,16 @@
    "title": "TCL 55V6D Televisor 55 Pulgadas 4K UHD Smart TV, Fire TV, Alexa Integrado, Dolby Vision & Atmos, Game Master, HDR10+, Control por Voz",
    "v": []
   },
+  "B0GSS34ZYM": {
+   "c": "Freidoras de aire",
+   "d": 37,
+   "e": "🍟",
+   "m": 195,
+   "p": 169.99,
+   "t": "2026-11-10T19:26:01.738396+00:00",
+   "title": "Ninja Foodi FlexDrawer, Freidora de Aire con Compartimento Doble, 10,4L",
+   "v": []
+  },
   "B0GSS73FLQ": {
    "c": "Freidoras de aire",
    "d": 27,
@@ -1445,6 +1455,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0CWP7M17B",
+   "c": "Freidoras de aire",
+   "e": "🍟",
+   "img": "https://m.media-amazon.com/images/I/51EASto3heL._AC_UL320_.jpg",
+   "n": 5600,
+   "op": 114.99,
+   "p": 89.0,
+   "r": 4.7,
+   "t": "2026-11-10T19:25:34.668553+00:00",
+   "title": "Philips 2000 Airfryer - Freidora de Aire 6,2L, 13 opciones, Táctil, Negro"
+  },
+  {
    "a": "B0GJFC1Q9Z",
    "c": "Televisores",
    "e": "📺",
@@ -1467,24 +1489,12 @@
    "r": 4.5,
    "t": "2026-11-10T17:05:37.721123+00:00",
    "title": "Gillette Venus Maquinilla de Afeitar Mujer para Ingles Y Zona Íntima"
-  },
-  {
-   "a": "B08ZFKB8ZK",
-   "c": "Perfumes",
-   "e": "🌸",
-   "img": "https://m.media-amazon.com/images/I/61-s7n-e4DL._AC_UL320_.jpg",
-   "n": 13800,
-   "op": 57.22,
-   "p": 48.9,
-   "r": 4.6,
-   "t": "2026-11-10T15:55:36.869200+00:00",
-   "title": "Azzaro"
   }
  ],
  "summary_day": "2026-11-09",
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-10",
-  "n": 21
+  "n": 22
  }
 }
