@@ -9,7 +9,7 @@
   "Cafeteras": "2026-11-10T07:01:10.513922+00:00",
   "Café y cápsulas": "2026-11-10T17:41:04.281374+00:00",
   "Cargadores y baterías": "2026-11-10T11:15:42.709254+00:00",
-  "Ciclismo": "2026-11-09T18:11:13.639360+00:00",
+  "Ciclismo": "2026-11-10T20:01:09.445485+00:00",
   "Climatización": "2026-11-10T14:45:46.160107+00:00",
   "Colchones y almohadas": "2026-11-09T09:55:33.819208+00:00",
   "Cuidado de la piel": "2026-11-10T07:35:33.533101+00:00",
@@ -23,7 +23,7 @@
   "Iluminación": "2026-11-09T13:25:33.337111+00:00",
   "Jardín": "2026-11-10T16:30:58.610970+00:00",
   "Lego": "2026-11-09T10:30:54.098717+00:00",
-  "Menaje de cocina": "2026-11-09T17:01:16.746585+00:00",
+  "Menaje de cocina": "2026-11-10T20:01:09.445485+00:00",
   "Mochilas y maletas": "2026-11-10T18:50:43.937099+00:00",
   "Monitores": "2026-11-08T17:30:52.669776+00:00",
   "Móviles": "2026-11-10T15:20:47.993631+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-09T15:45:40.967709+00:00"
  },
- "next_at": "2026-11-10T19:57:33.541459+00:00",
+ "next_at": "2026-11-10T20:33:27.674625+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -1118,6 +1118,16 @@
    "title": "INIU 45W Power Bank, Fino 10000mAh Inalámbrico Magnético Batería Externa",
    "v": []
   },
+  "B0FPM18556": {
+   "c": "Menaje de cocina",
+   "d": 22,
+   "e": "🍳",
+   "m": 196,
+   "p": 69.99,
+   "t": "2026-11-10T20:01:37.201163+00:00",
+   "title": "GiPP Juego de Ollas y Sartenes Cerámicas Antiadherente - Juego de Cocina con Mangos Desmontables, No Tóxico, Apto para Inducción, Horno y Lavavajillas(Blanc 11PCS)",
+   "v": []
+  },
   "B0FQ5F2QSQ": {
    "c": "Monitores",
    "d": 24,
@@ -1495,6 +1505,6 @@
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-10",
-  "n": 22
+  "n": 23
  }
 }
