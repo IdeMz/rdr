@@ -35,13 +35,13 @@
   "Relojes": "2026-11-08T20:55:31.883791+00:00",
   "Robots de cocina": "2026-11-08T16:20:40.816944+00:00",
   "Smartwatch": "2026-11-08T16:55:32.154620+00:00",
-  "Suplementos": "2026-11-08T20:23:42.721848+00:00",
+  "Suplementos": "2026-11-10T08:45:47.983358+00:00",
   "Tablets": "2026-11-06T21:05:32.851025+00:00",
   "Televisores": "2026-11-08T19:50:40.268854+00:00",
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-09T15:45:40.967709+00:00"
  },
- "next_at": "2026-11-10T08:43:38.375544+00:00",
+ "next_at": "2026-11-10T09:16:59.997845+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -414,6 +414,16 @@
    "p": 99.99,
    "t": "2026-11-06T21:06:01.022588+00:00",
    "title": "TECLAST M50T Tablet 10.1 Pulgadas Android 16 Tableta Gemini AI, 32GB RAM+128GB ROM+5TB TF, 2GHz Octa-Core, 7000mAh, 2.4G+5G WiFi, BT 5.4/Widevine L1/13MP+5MP/3.5MM/Face ID/OTG, Tablets con Lápiz, 2026",
+   "v": []
+  },
+  "B09HHNZ5Q4": {
+   "c": "Suplementos",
+   "d": 30,
+   "e": "💊",
+   "m": 177,
+   "p": 20.89,
+   "t": "2026-11-10T08:46:08.788835+00:00",
+   "title": "Colageno Hidrolizado Puro, Acido Hialuronico, Coenzima Q10, Zinc",
    "v": []
   },
   "B09KRVN7XG": {
@@ -1305,6 +1315,6 @@
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-10",
-  "n": 3
+  "n": 4
  }
 }
