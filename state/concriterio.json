@@ -34,14 +34,14 @@
   "Portátiles": "2026-11-09T17:01:16.746585+00:00",
   "Relojes": "2026-11-08T20:55:31.883791+00:00",
   "Robots de cocina": "2026-11-08T16:20:40.816944+00:00",
-  "Smartwatch": "2026-11-08T16:55:32.154620+00:00",
+  "Smartwatch": "2026-11-10T10:30:55.583683+00:00",
   "Suplementos": "2026-11-10T08:45:47.983358+00:00",
   "Tablets": "2026-11-06T21:05:32.851025+00:00",
   "Televisores": "2026-11-08T19:50:40.268854+00:00",
   "Videojuegos": "2026-11-08T14:01:05.382304+00:00",
   "Zapatillas": "2026-11-09T15:45:40.967709+00:00"
  },
- "next_at": "2026-11-10T10:26:11.504626+00:00",
+ "next_at": "2026-11-10T11:02:34.706370+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -1280,6 +1280,16 @@
    "title": "Reloj Inteligente Mujer Hombre con Llamadas Bluetooth y Voz AI, 1.85'' Smartwatch con Whatsapp Notificación, Pulsómetro/SpO2/Sueño/Podómetro, 110+ Modos Deportivos, Impermeable IP68 para iOS/Android",
    "v": []
   },
+  "B0HGQCFCBF": {
+   "c": "Smartwatch",
+   "d": 50,
+   "e": "⌚",
+   "m": 180,
+   "p": 49.99,
+   "t": "2026-11-10T10:31:21.865279+00:00",
+   "title": "Reloj Inteligente para Xiaomi Apple Samsung, Llamadas Bluetooth y WhatsApp",
+   "v": []
+  },
   "B0HGQG1L2J": {
    "c": "Robots de cocina",
    "d": 40,
@@ -1294,6 +1304,18 @@
  "problem": {},
  "rejected": {},
  "reserve": [
+  {
+   "a": "B0H6MCJG9F",
+   "c": "Smartwatch",
+   "e": "⌚",
+   "img": "https://m.media-amazon.com/images/I/81FNoVvYpsL._AC_UL320_.jpg",
+   "n": 782,
+   "op": 69.99,
+   "p": 43.95,
+   "r": 4.3,
+   "t": "2026-11-10T10:30:55.583683+00:00",
+   "title": "FOSMET Nuevo Reloj Inteligente Hombre con ECG/HRV/BMI, Android iOS Negro"
+  },
   {
    "a": "B0DTCF14RM",
    "c": "Accesorios de coche",
@@ -1317,24 +1339,12 @@
    "r": 4.6,
    "t": "2026-11-10T07:35:33.533101+00:00",
    "title": "Olay Regenerist Sérum Facial Reafirmante con Niacinamida, 50ml"
-  },
-  {
-   "a": "B0CDCL53KW",
-   "c": "Cafeteras",
-   "e": "☕",
-   "img": "https://m.media-amazon.com/images/I/61jNq-LOU9L._AC_UL320_.jpg",
-   "n": 1400,
-   "op": 749.0,
-   "p": 599.0,
-   "r": 4.2,
-   "t": "2026-11-10T07:01:10.513922+00:00",
-   "title": "De'Longhi Rivelia - Cafetera Superautomática 16 Bebidas Gris"
   }
  ],
  "summary_day": "2026-11-09",
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-10",
-  "n": 6
+  "n": 7
  }
 }
