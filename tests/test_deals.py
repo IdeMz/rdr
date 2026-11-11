@@ -1136,6 +1136,89 @@ def test_load_channel_validates_own_history(tmp_path):
         deals.load_channel(write_cfg(tmp_path, own_history="si"))
 
 
+# ---------------------------------------------------------------- busqueda en el departamento Ofertas
+
+def test_deals_urls():
+    assert deals.deals_urls(channel(queries=["a b"], deals_search=False)) == []
+    ch = channel(queries=["robot aspirador"], pages=2, search_params="&x=1", deals_search=True,
+                 urls=[deals.BASE + "/s?k=tv", deals.BASE + "/s?k=tv&i=electronics",
+                       deals.BASE + "/s?k=tv&rh=p_8%3A20-", deals.BASE + "/b?node=123"])
+    assert deals.deals_urls(ch) == [
+        "https://www.amazon.es/s?k=robot+aspirador&page=1&x=1&i=todays-deals",
+        "https://www.amazon.es/s?k=robot+aspirador&page=2&x=1&i=todays-deals",
+        "https://www.amazon.es/s?k=tv&i=todays-deals",
+        "https://www.amazon.es/s?k=tv&i=todays-deals&page=2",
+    ]  # sin tocar las direcciones que ya llevan departamento, filtros o no son una busqueda
+
+
+def fake_amazon(monkeypatch, normal, extra, calls):
+    def fetch(session, url, retries=3):
+        calls.append((url, retries))
+        out = extra if "todays-deals" in url else normal
+        if isinstance(out, Exception):
+            raise out
+        return out
+    monkeypatch.setattr(deals, "fetch", fetch)
+    monkeypatch.setattr(deals, "sleep", lambda s: None)
+
+
+def test_collect_adds_products_from_the_deals_department(monkeypatch, caplog):
+    calls = []
+    normal = page(card("B000000060", "Movil normal", "100,00 €", "150,00 €"),
+                  card("B000000061", "Movil repetido", "90,00 €", "120,00 €"))
+    extra = page(card("B000000061", "Movil repetido", "90,00 €", "120,00 €"),
+                 card("B000000062", "Movil en oferta del dia", "80,00 €", "160,00 €"))
+    fake_amazon(monkeypatch, normal, extra, calls)
+    ch = channel(queries=["movil"], deals_search=True, require_spain=False)
+    with caplog.at_level(logging.INFO, logger="deals"):
+        found = deals.collect(ch, session=object())
+    assert [p.asin for p in found] == ["B000000060", "B000000061", "B000000062"]   # sin duplicados
+    assert calls[0][1] == 3 and calls[1][1] == 1                                   # el extra, un solo intento
+    assert "busqueda 2 de 2 (ofertas)" in caplog.text
+
+
+def test_collect_keeps_going_when_the_deals_page_fails(monkeypatch, caplog):
+    calls = []
+    normal = page(card("B000000060", "Movil normal", "100,00 €", "150,00 €"))
+    fake_amazon(monkeypatch, normal, deals.Blocked("HTTP 503"), calls)
+    with caplog.at_level(logging.INFO, logger="deals"):
+        found = deals.collect(channel(queries=["movil"], deals_search=True, require_spain=False), session=object())
+    assert [p.asin for p in found] == ["B000000060"]
+    assert "la busqueda de ofertas no respondio" in caplog.text
+
+
+def test_collect_empty_deals_page_is_not_a_block(monkeypatch):
+    calls = []
+    normal = page(card("B000000060", "Movil normal", "100,00 €", "150,00 €"))
+    fake_amazon(monkeypatch, normal, page(), calls)
+    found = deals.collect(channel(queries=["movil"], deals_search=True, require_spain=False), session=object())
+    assert [p.asin for p in found] == ["B000000060"]
+
+
+def test_collect_still_stops_on_a_captcha_in_the_deals_page(monkeypatch):
+    calls = []
+    normal = page(card("B000000060", "Movil normal", "100,00 €", "150,00 €"))
+    fake_amazon(monkeypatch, normal, "<html>Introduce los caracteres que ves</html>", calls)
+    with pytest.raises(deals.Blocked):
+        deals.collect(channel(queries=["movil"], deals_search=True, require_spain=False), session=object())
+
+
+def test_collect_without_deals_search_makes_no_extra_request(monkeypatch):
+    calls = []
+    fake_amazon(monkeypatch, page(card("B000000060", "Movil normal", "100,00 €", "150,00 €")), page(), calls)
+    deals.collect(channel(queries=["movil"], require_spain=False), session=object())
+    assert len(calls) == 1 and "todays-deals" not in calls[0][0]
+
+
+def test_deals_search_per_category_and_validation(tmp_path):
+    ch = channel(deals_search=True, categories=[{"nombre": "A", "query": "a"}, {"nombre": "B", "query": "b", "deals_search": False}])
+    assert deals.category_channel(ch, ch.categories[0]).deals_search is True
+    assert deals.category_channel(ch, ch.categories[1]).deals_search is False
+    assert deals.load_channel(write_cfg(tmp_path, deals_search=True)).deals_search is True
+    with pytest.raises(deals.ConfigError, match="deals_search"):
+        deals.load_channel(write_cfg(tmp_path, deals_search="si"))
+
+
 def seed_history(path, series_by_asin, today):
     """Escribe un historial como si el bot hubiera visto cada producto a lo largo de los dias anteriores."""
     hist = {"p": {}}

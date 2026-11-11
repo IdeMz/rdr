@@ -10,6 +10,7 @@
   "min_history_drop": 0,
   "price_check": "strict",
   "own_history": true,
+  "deals_search": true,
   "price_tolerance": 3,
   "max_posts": 1,
   "repeat_days": 14,

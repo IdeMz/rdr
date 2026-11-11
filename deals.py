@@ -241,6 +241,9 @@ class Channel:
     # Historial propio: el bot anota los precios que ve en los listados y, con unos dias de datos, lo usa
     # como referencia cuando la ficha no trae la suya. Solo actua si price_check no es "off".
     own_history: bool = True
+    # Ademas de cada busqueda, mira la misma dentro del departamento "Ofertas" de Amazon (&i=todays-deals).
+    # Si esa pagina falla o viene vacia se sigue con la busqueda normal.
+    deals_search: bool = False
     min_price: float = 0
     max_price: float = 0  # 0 = sin tope
     min_rating: float = 4.0
@@ -361,12 +364,14 @@ def load_channel(path: Path) -> Channel:
         raise ConfigError(f"{path.name}: 'price_tolerance' debe estar entre 0 y 50")
     if not isinstance(ch.own_history, bool):
         raise ConfigError(f"{path.name}: 'own_history' debe ser true o false")
+    if not isinstance(ch.deals_search, bool):
+        raise ConfigError(f"{path.name}: 'deals_search' debe ser true o false")
     return ch
 
 
 CATEGORY_OVERRIDES = (
     "min_discount", "max_discount", "min_price", "max_price", "min_rating", "min_reviews", "pages",
-    "search_params",
+    "search_params", "deals_search",
 )
 CATEGORY_KEYS = {"nombre", "emoji", "url", "query", *CATEGORY_OVERRIDES}
 
@@ -775,6 +780,35 @@ def search_urls(ch: Channel) -> list[str]:
     return urls
 
 
+DEALS_PARAM = "&i=todays-deals"  # departamento "Ofertas" de Amazon.es, en una busqueda normal
+
+
+def deals_url(url: str) -> str | None:
+    """La misma busqueda dentro del departamento Ofertas, o None si la direccion no se puede adaptar."""
+    parsed = urlparse(url)
+    query = parse_qs(parsed.query)
+    if parsed.path != "/s" or "k" not in query or "i" in query or "rh" in query:
+        return None  # no es una busqueda por texto, ya lleva departamento o filtros que no se pueden mezclar
+    return url + DEALS_PARAM
+
+
+def deals_urls(ch: Channel) -> list[str]:
+    """Busquedas en el departamento Ofertas (vacio si 'deals_search' esta apagado)."""
+    if not ch.deals_search:
+        return []
+    urls: list[str] = []
+    for q in ch.queries:
+        for page in range(1, ch.pages + 1):
+            urls.append(f"{BASE}/s?k={quote_plus(q)}&page={page}{ch.search_params}{DEALS_PARAM}")
+    for url in ch.urls:
+        base = deals_url(url)
+        if base is None:
+            continue
+        for page in range(1, ch.pages + 1):
+            urls.append(base if page == 1 else base + f"&page={page}")
+    return urls
+
+
 LOCATION_ATTEMPTS = 3  # veces que se intenta fijar el codigo postal antes de rendirse
 
 
@@ -785,10 +819,19 @@ def collect(
         return parse_results(html_file.read_text(encoding="utf-8"))
     session = session or make_session()
     found: dict[str, Product] = {}
-    for i, url in enumerate(search_urls(ch)):
+    # las busquedas de Ofertas van despues y son un extra: un solo intento, y si fallan se sigue sin ellas
+    plan = [(u, False) for u in search_urls(ch)] + [(u, True) for u in deals_urls(ch)]
+    for i, (url, optional) in enumerate(plan):
         if i:
             sleep(random.uniform(2, 5))
-        html = fetch(session, url)
+        if optional:
+            try:
+                html = fetch(session, url, retries=1)
+            except Blocked as exc:
+                log.info("%s: la busqueda de ofertas no respondio (%s); se sigue sin ella", ch.name, exc)
+                continue
+        else:
+            html = fetch(session, url)
         results = parse_results(html)
         if is_blocked(html, len(results)):
             raise Blocked("captcha o bloqueo")
@@ -811,7 +854,8 @@ def collect(
                     log.info("%s: intento %d fallido (%s); se reintenta", ch.name, attempt, exc)
                     sleep(random.uniform(5, 10))
                     html = fetch(session, url)
-        log.info("%s: %d productos en la busqueda %d de %d", ch.name, len(results), i + 1, len(search_urls(ch)))
+        log.info("%s: %d productos en la busqueda %d de %d%s", ch.name, len(results), i + 1, len(plan),
+                 " (ofertas)" if optional else "")
         for p in results:
             found.setdefault(p.asin, p)
     return list(found.values())
