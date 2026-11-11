@@ -39,9 +39,9 @@
   "Tablets": "2026-11-10T20:35:35.839507+00:00",
   "Televisores": "2026-11-10T18:15:42.344426+00:00",
   "Videojuegos": "2026-11-10T21:10:42.687124+00:00",
-  "Zapatillas": "2026-11-09T15:45:40.967709+00:00"
+  "Zapatillas": "2026-11-11T12:50:38.562143+00:00"
  },
- "next_at": "2026-11-11T12:47:16.844387+00:00",
+ "next_at": "2026-11-11T13:20:52.316947+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -1068,6 +1068,16 @@
    "title": "Arquivet Fresh Puppy Junior Pavo & Salmón 2,5Kg - Pienso Semihúmedo",
    "v": []
   },
+  "B0DP4SB367": {
+   "c": "Zapatillas",
+   "d": 32,
+   "e": "👟",
+   "m": 212,
+   "p": 27.06,
+   "t": "2026-11-11T12:51:32.468193+00:00",
+   "title": "Barefoot Hombre Mujer Zapatillas de Trail Running Ligeras Cómodas Minimalistas Zapatos Descalzos GR.36-48",
+   "v": []
+  },
   "B0DQ5KNY6Y": {
    "c": "Aspiradoras",
    "d": 55,
@@ -1593,8 +1603,28 @@
  },
  "problem": {},
  "rejected": {
+  "B06XBBG1L1": {
+   "t": "2026-11-11T12:50:38.562143+00:00",
+   "why": "referencia: precio mediano 17,99€, hoy 38,18€ (112% por encima); el descuento es solo contra el PVPR"
+  },
+  "B09YLB3SKY": {
+   "t": "2026-11-11T12:50:38.562143+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0CKRZMLN6": {
+   "t": "2026-11-11T12:50:38.562143+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0CKXRGX7M": {
+   "t": "2026-11-11T12:50:38.562143+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0DD3CRCTR": {
    "t": "2026-11-11T09:55:30.001966+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0DHZT876C": {
+   "t": "2026-11-11T12:50:38.562143+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0G39CZ4QQ": {
@@ -1644,6 +1674,6 @@
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-11",
-  "n": 10
+  "n": 11
  }
 }
