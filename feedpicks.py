@@ -9,8 +9,9 @@ Un producto es candidato cuando, segun el historial propio del feed:
   2. su precio actual es un MINIMO NUEVO de la ventana: al menos NEW_LOW_MARGIN % por debajo de todos los
      precios anteriores (descarta "subir el precio y volver a bajarlo": el precio de antes ya existia),
   3. esta al menos MIN_DROP % por debajo de su mediana de 30 dias,
-  4. la bajada es reciente (el precio actual empezo hace como mucho FRESH_DAYS dias) y no pasa de MAX_DROP %
-     (una caida de 6.118 a 700 EUR es un error de datos, no una oferta),
+  4. la bajada es reciente (el precio actual empezo hace como mucho FRESH_DAYS dias). Si pasa de MAX_DROP %
+     no se descarta: va a la lista "to_verify" para contrastarla con Amazon antes de publicar. Solo por
+     encima de ABSURD_DROP % (6.118 a 700 EUR) se considera un error de datos y se aparta en "suspicious",
   5. cuesta al menos MIN_PRICE, hay stock y la oferta no ha caducado.
 """
 
@@ -29,11 +30,12 @@ import pricehist
 MIN_TRACK_DAYS = 3
 NEW_LOW_MARGIN = 3     # % por debajo del minimo anterior
 MIN_DROP = 10          # % por debajo de la mediana de 30 dias
-MAX_DROP = 50          # una bajada mayor se considera sospechosa (error de precio) y no se propone
+MAX_DROP = 50          # una bajada mayor no se propone sin mas: va a "to_verify" (se contrasta con Amazon)
+ABSURD_DROP = 80       # una bajada mayor es casi seguro un error de datos y solo se lista en "suspicious"
 FRESH_DAYS = 7         # dias desde que empezo el precio actual
 MIN_PRICE = 25.0
 LIMIT = 80             # candidatos que se guardan
-SUSPICIOUS_LIMIT = 30  # bajadas sospechosas que se guardan para revisarlas a mano
+SUSPICIOUS_LIMIT = 30  # bajadas "a comprobar" y sospechosas que se guardan (cada lista) para revisarlas
 SIMILARITY = 0.5       # nombres tan parecidos se consideran el mismo producto (otro color, por ejemplo)
 
 
@@ -92,7 +94,8 @@ def _expired(valid_to: str, today: date) -> bool:
 def judge(item: dict, entry: list | None, today: date) -> tuple[dict | None, str]:
     """(datos de la bajada, "") si el producto es candidato; (None, motivo) si no.
 
-    Solo la "bajada sospechosa" devuelve tambien los datos junto al motivo."""
+    Solo la "bajada sospechosa" devuelve tambien los datos junto al motivo. Una bajada de MAX_DROP a ABSURD_DROP %
+    es candidata con info["verify"] = True."""
     t = pricehist.day_no(today)
     if not entry or len(entry) < 3 or entry[0] != t:
         return None, "sin historial de hoy"
@@ -131,8 +134,11 @@ def judge(item: dict, entry: list | None, today: date) -> tuple[dict | None, str
         "tracked_days": tracked,
         "level_days": age + 1,
     }
-    if drop > MAX_DROP or info["drop_vs_low"] > MAX_DROP:
+    worst = max(drop, info["drop_vs_low"])
+    if worst > ABSURD_DROP:
         return info, "bajada sospechosa"  # se devuelven los datos para poder revisarla en el informe
+    if worst > MAX_DROP:
+        info["verify"] = True  # candidato, pero hay que contrastarlo antes de publicarlo
     return info, ""
 
 
@@ -141,7 +147,10 @@ def _tokens(name: str) -> set[str]:
 
 
 def _same_product(a: str, b: str) -> bool:
-    ta, tb = _tokens(a), _tokens(b)
+    return _same_tokens(_tokens(a), _tokens(b))
+
+
+def _same_tokens(ta: set[str], tb: set[str]) -> bool:
     if not ta or not tb:
         return False
     common = len(ta & tb)
@@ -152,13 +161,15 @@ def _same_product(a: str, b: str) -> bool:
     return smaller >= 4 and common / smaller >= 0.8
 
 
-def select(items: dict[str, dict], hist: dict, today: date,
-           suspicious: list | None = None) -> tuple[list[dict], dict]:
+def select(items: dict[str, dict], hist: dict, today: date, suspicious: list | None = None,
+           to_verify: list | None = None) -> tuple[list[dict], dict]:
     """Candidatos ordenados de mejor a peor y recuento de por que se descartaron los demas.
 
-    Las bajadas sospechosas (probables errores de precio) se anaden a `suspicious` si se pasa la lista."""
+    Las bajadas sospechosas (probables errores de precio) se anaden a `suspicious` y las que hay que contrastar
+    con otra tienda antes de publicarlas (bajada de 50 a 80 %) a `to_verify`, si se pasan esas listas."""
     why: Counter = Counter()
     found: list[dict] = []
+    check: list[dict] = []
     products = hist.get("p", {})
     for pid, item in items.items():
         info, reason = judge(item, products.get(pid), today)
@@ -167,7 +178,12 @@ def select(items: dict[str, dict], hist: dict, today: date,
             if reason == "bajada sospechosa" and suspicious is not None:
                 suspicious.append({**item, **info})
             continue
-        found.append({**item, **info, "score": round(info["drop"] * math.log10(item["price"]), 2)})
+        cand = {**item, **info, "score": round(info["drop"] * math.log10(item["price"]), 2)}
+        if info.get("verify"):
+            why["a comprobar"] += 1
+            check.append(cand)
+        else:
+            found.append(cand)
     found.sort(key=lambda c: c["score"], reverse=True)
     picks: list[dict] = []
     for cand in found:
@@ -177,6 +193,9 @@ def select(items: dict[str, dict], hist: dict, today: date,
         picks.append(cand)
         if len(picks) >= LIMIT:
             break
+    check.sort(key=lambda c: c["score"], reverse=True)
+    if to_verify is not None:
+        to_verify.extend(check)
     why["candidatos"] = len(picks)
     return picks, dict(why)
 
@@ -184,7 +203,8 @@ def select(items: dict[str, dict], hist: dict, today: date,
 def build(rows: list[dict], hist: dict, today: date) -> dict:
     items = items_from_rows(rows)
     suspicious: list[dict] = []
-    picks, stats = select(items, hist, today, suspicious)
+    to_verify: list[dict] = []
+    picks, stats = select(items, hist, today, suspicious, to_verify)
     suspicious.sort(key=lambda c: c["price"], reverse=True)
     return {
         "day": today.isoformat(),
@@ -192,16 +212,17 @@ def build(rows: list[dict], hist: dict, today: date) -> dict:
         "mode": "informe",
         "thresholds": {
             "min_track_days": MIN_TRACK_DAYS, "new_low_margin": NEW_LOW_MARGIN, "min_drop": MIN_DROP,
-            "max_drop": MAX_DROP, "fresh_days": FRESH_DAYS, "min_price": MIN_PRICE,
+            "max_drop": MAX_DROP, "absurd_drop": ABSURD_DROP, "fresh_days": FRESH_DAYS, "min_price": MIN_PRICE,
         },
         "products": len(items),
         "stats": stats,
+        "to_verify": to_verify[:SUSPICIOUS_LIMIT],
         "suspicious": suspicious[:SUSPICIOUS_LIMIT],
         "candidates": picks,
     }
 
 
-LIST_KEYS = ("suspicious", "candidates")
+LIST_KEYS = ("to_verify", "suspicious", "candidates")
 
 
 def save(path: Path, data: dict) -> None:

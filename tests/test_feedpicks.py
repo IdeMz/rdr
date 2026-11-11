@@ -122,6 +122,28 @@ def test_select_reports_suspicious_drops_apart():
     assert [(c["id"], c["price"], c["prior_low"], c["drop"]) for c in suspicious] == [("1", 100.0, 1000.0, 90)]
 
 
+def test_big_drop_goes_to_verify_not_rejected_and_absurd_drop_stays_suspicious():
+    info, why = judge(40.0, (10, 100.0), (0, 40.0))                  # -60 %: se contrasta con otra tienda
+    assert why == "" and info["verify"] is True and info["drop"] == 60
+    info, why = judge(70.0, (10, 100.0), (0, 70.0))                  # -30 %: candidato normal
+    assert why == "" and "verify" not in info
+    assert judge(15.0 * 3, (10, 1000.0), (0, 45.0))[1] == "bajada sospechosa"   # -95 %
+
+
+def test_select_separates_to_verify_from_candidates():
+    items = {"1": item(40.0, id="1", name="Auriculares Epos Impact SC 230 MS II"),
+             "2": item(80.0, id="2", name="Movil normal azul oscuro"),
+             "3": item(100.0, id="3", name="Portatil gaming misterioso")}
+    hist = {"p": {"1": entry((10, 100.0), (0, 40.0)), "2": entry((10, 100.0), (0, 80.0)),
+                  "3": entry((10, 1000.0), (0, 100.0))}}
+    suspicious, verify = [], []
+    picks, stats = fp.select(items, hist, TODAY, suspicious, verify)
+    assert [c["id"] for c in picks] == ["2"]
+    assert [c["id"] for c in verify] == ["1"] and verify[0]["verify"] is True
+    assert [c["id"] for c in suspicious] == ["3"]
+    assert stats["a comprobar"] == 1 and stats["bajada sospechosa"] == 1 and stats["candidatos"] == 1
+
+
 def test_save_writes_valid_json_one_product_per_line(tmp_path):
     data = {"day": "2026-11-20", "suspicious": [{"id": "9", "name": "Raro"}],
             "candidates": [{"id": "1", "name": "Ñandú"}, {"id": "2", "name": "Dos"}]}
