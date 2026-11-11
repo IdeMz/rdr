@@ -23,6 +23,8 @@ from pathlib import Path
 
 import requests
 
+import feedpicks
+
 log = logging.getLogger("deals")
 
 FEED_ENV = "AWIN_FEED_URL"
@@ -76,8 +78,16 @@ def describe(raw: bytes, header: str) -> str:
     return f"{len(raw)} bytes, parece {kind}, empieza por {header[:150]!r}"
 
 
-def parse_feed(raw: bytes) -> dict[str, float]:
-    """{id de producto: precio} de los productos nuevos y con precio. Acepta CSV normal o comprimido."""
+# columnas que se conservan de cada fila (el feed trae muchas mas y no hacen falta)
+KEEP_COLUMNS = (
+    "aw_product_id", "search_price", "condition", "in_stock", "product_name", "brand_name", "aw_deep_link",
+    "rrp_price", "merchant_image_url", "aw_image_url", "large_image", "ean", "merchant_product_category_path",
+    "category_name", "commission_group", "stock_quantity", "valid_to", "average_rating", "reviews",
+)
+
+
+def read_rows(raw: bytes) -> list[dict]:
+    """Filas del feed (solo KEEP_COLUMNS). Acepta CSV normal, comprimido en zip o gzip."""
     if raw[:4] == b"PK\x03\x04":  # Awin entrega un .zip cuando la URL lleva /compression/zip/
         try:
             with zipfile.ZipFile(io.BytesIO(raw)) as zf:
@@ -107,21 +117,38 @@ def parse_feed(raw: bytes) -> dict[str, float]:
     reader.fieldnames = [(c or "").strip().strip('"') for c in (reader.fieldnames or [])]
     if "search_price" not in reader.fieldnames:
         raise FeedError(f"el feed no trae la columna search_price (columnas: {', '.join(reader.fieldnames)[:200]})")
+    return [{k: row.get(k) or "" for k in KEEP_COLUMNS if k in reader.fieldnames} for row in reader]
+
+
+def row_price(row: dict) -> float | None:
+    try:
+        return round(float((row.get("search_price") or "").replace(",", ".")), 2)
+    except ValueError:
+        return None
+
+
+def row_usable(row: dict) -> bool:
+    """Producto nuevo y en stock (los usados y reacondicionados no entran)."""
+    if (row.get("condition") or "new").strip().lower() not in ("new", ""):
+        return False
+    return (row.get("in_stock") or "1").strip().lower() not in ("0", "false", "no")
+
+
+def prices_from_rows(rows: list[dict]) -> dict[str, float]:
+    """{id de producto: precio} de los productos nuevos y con precio."""
     prices: dict[str, float] = {}
-    for row in reader:
+    for row in rows:
         pid = (row.get("aw_product_id") or "").strip()
-        try:
-            price = round(float((row.get("search_price") or "").replace(",", ".")), 2)
-        except ValueError:
-            continue
-        if not pid or price <= 0:
-            continue
-        if (row.get("condition") or "new").strip().lower() not in ("new", ""):
-            continue  # usados y reacondicionados no entran
-        if (row.get("in_stock") or "1").strip().lower() in ("0", "false", "no"):
+        price = row_price(row)
+        if not pid or price is None or price <= 0 or not row_usable(row):
             continue
         prices[pid] = price
     return prices
+
+
+def parse_feed(raw: bytes) -> dict[str, float]:
+    """{id de producto: precio} de los productos nuevos y con precio. Acepta CSV normal o comprimido."""
+    return prices_from_rows(read_rows(raw))
 
 
 # --------------------------------------------------------------------------
@@ -214,6 +241,20 @@ def digest(prices: dict[str, float]) -> str:
     return hashlib.sha1(repr(sorted(prices.items())).encode()).hexdigest()
 
 
+PICKS_FILE = "powerplanet_candidates.json"
+
+
+def picks_summary(rows: list[dict], hist: dict, today: date, path: Path) -> str:
+    """Calcula y guarda los candidatos de hoy (modo informe: no se publica nada). Nunca lanza excepciones."""
+    try:
+        data = feedpicks.build(rows, hist, today)
+        feedpicks.save(path.with_name(PICKS_FILE), data)
+        return f"; ofertas: {len(data['candidates'])} candidatos en el informe"
+    except Exception as exc:  # es un extra: que falle no debe tumbar el historial
+        log.warning("feed: no se pudieron calcular los candidatos (%s)", type(exc).__name__)
+        return ""
+
+
 def collect(url: str, path: Path, today: date, now: datetime | None = None, fetch=download,
             hour: int | None = None) -> str:
     """Actualiza el historial si hoy aun no se ha hecho. Devuelve una frase para el log.
@@ -238,7 +279,8 @@ def collect(url: str, path: Path, today: date, now: datetime | None = None, fetc
         except ValueError:
             pass
     try:
-        prices = parse_feed(fetch(url))
+        rows = read_rows(fetch(url))
+        prices = prices_from_rows(rows)
         previous = hist.get("n") or 0
         if len(prices) < MIN_PRODUCTS or (previous and len(prices) < previous * MIN_RATIO):
             raise FeedError(f"el feed trae solo {len(prices)} productos (ayer {previous}); se ignora")
@@ -255,9 +297,10 @@ def collect(url: str, path: Path, today: date, now: datetime | None = None, fetc
     stats = update_history(hist, prices, today)
     hist["digest"] = fingerprint
     save_history(path, hist)
+    picks = picks_summary(rows, hist, today, path)
     when = "sin cambios, se da por bueno" if same else (f"cambio detectado a las {hour}h (Madrid)" if hour is not None else "")
     return (
         f"feed: {stats['total']} productos, {stats['nuevos']} nuevos, {stats['cambiaron']} con otro precio "
         f"({stats['bajaron10']} bajaron un 10 % o mas), {stats['podados']} podados; "
-        f"{history_days(hist, today)} dias de historial" + (f"; {when}" if when else "")
+        f"{history_days(hist, today)} dias de historial" + (f"; {when}" if when else "") + picks
     )

@@ -104,22 +104,15 @@ def record(hist: dict, prices: dict[str, float], today: date) -> dict:
     return stats
 
 
-def reference(entry: list | None, today: date) -> dict | None:
-    """Minimo y mediana de los ultimos 30 dias segun lo que ha visto el bot, o None si aun no basta.
+def window_stats(pairs: list[tuple[int, float]], t: int, window: int = WINDOW_DAYS) -> dict | None:
+    """Minimo y mediana de los ultimos `window` dias a partir de parejas (dia, precio) ordenadas.
 
-    Devuelve {'low30', 'median', 'seen', 'span', 'low_ago'}. 'low_ago' son los dias desde el ultimo
-    dia en que se vio ese minimo.
+    Cuentan las parejas de la ventana y la vigente al empezar. La mediana se pondera por los dias que duro
+    cada precio (el ultimo llega hasta hoy incluido). Devuelve {'low', 'median', 'low_ago'}.
     """
-    if not _valid(entry):
+    if not pairs:
         return None
-    t = day_no(today)
-    seen = entry[1]
-    pairs = [(entry[i], entry[i + 1]) for i in range(2, len(entry), 2)]
-    span = t - pairs[0][0]
-    if seen < MIN_SEEN_DAYS or span < MIN_SPAN_DAYS:
-        return None
-    cutoff = t - WINDOW_DAYS
-    # parejas que cuentan: las de la ventana y la vigente al empezar
+    cutoff = t - window
     first = max((i for i, (d, _) in enumerate(pairs) if d <= cutoff), default=0)
     active = pairs[first:]
     low = min(p for _, p in active)
@@ -127,7 +120,6 @@ def reference(entry: list | None, today: date) -> dict | None:
     low_day = max(
         (active[i + 1][0] - 1 if i + 1 < len(active) else t) for i, (_, p) in enumerate(active) if p == low
     )
-    # mediana ponderada por los dias que duro cada precio (el ultimo llega hasta hoy incluido)
     weighted: list[tuple[float, int]] = []
     for i, (d, p) in enumerate(active):
         start = max(d, cutoff)
@@ -142,4 +134,24 @@ def reference(entry: list | None, today: date) -> dict | None:
         if acc >= half:
             median = p
             break
-    return {"low30": low, "median": median, "seen": seen, "span": span, "low_ago": max(t - low_day, 0)}
+    return {"low": low, "median": median, "low_ago": max(t - low_day, 0)}
+
+
+def reference(entry: list | None, today: date) -> dict | None:
+    """Minimo y mediana de los ultimos 30 dias segun lo que ha visto el bot, o None si aun no basta.
+
+    Devuelve {'low30', 'median', 'seen', 'span', 'low_ago'}. 'low_ago' son los dias desde el ultimo
+    dia en que se vio ese minimo.
+    """
+    if not _valid(entry):
+        return None
+    t = day_no(today)
+    seen = entry[1]
+    pairs = [(entry[i], entry[i + 1]) for i in range(2, len(entry), 2)]
+    span = t - pairs[0][0]
+    if seen < MIN_SEEN_DAYS or span < MIN_SPAN_DAYS:
+        return None
+    stats = window_stats(pairs, t)
+    if stats is None:
+        return None
+    return {"low30": stats["low"], "median": stats["median"], "seen": seen, "span": span, "low_ago": stats["low_ago"]}
