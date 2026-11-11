@@ -11,7 +11,7 @@
   "Cargadores y baterías": "2026-11-10T11:15:42.709254+00:00",
   "Ciclismo": "2026-11-10T20:01:09.445485+00:00",
   "Climatización": "2026-11-11T15:45:40.067358+00:00",
-  "Colchones y almohadas": "2026-11-09T09:55:33.819208+00:00",
+  "Colchones y almohadas": "2026-11-11T18:30:53.717319+00:00",
   "Cuidado de la piel": "2026-11-11T11:40:40.899668+00:00",
   "Cuidado del cabello": "2026-11-10T14:10:44.256404+00:00",
   "Cámaras de seguridad": "2026-11-11T09:20:41.357359+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-11T17:45:42.500382+00:00",
   "Zapatillas": "2026-11-11T12:50:38.562143+00:00"
  },
- "next_at": "2026-11-11T18:30:37.601634+00:00",
+ "next_at": "2026-11-11T19:05:13.783556+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -584,6 +584,16 @@
    "p": 109.0,
    "t": "2026-11-06T14:41:15.970354+00:00",
    "title": "Cecotec Colchón Viscoelástico Flow PureVital 1900 Medida 90x190. Multicapa, Altura 21cm, Firmeza Alta, Núcleo FoamVital, Doble Cara Dual System para Invierno y Verano",
+   "v": []
+  },
+  "B0B5DLQC93": {
+   "c": "Colchones y almohadas",
+   "d": 23,
+   "e": "🛏️",
+   "m": 221,
+   "p": 123.6,
+   "t": "2026-11-11T18:31:31.263986+00:00",
+   "title": "Matnature | MatFoam | Colchón Viscosoft Reversible | Firme e Indeformable | Altura 21 cm | Muy Transpirable Antibacterial | Óptima Termoregulación | Tejido Antideslizante (135 x 200 cm)",
    "v": []
   },
   "B0B6CKMLQH": {
@@ -1681,10 +1691,7 @@
    "v": []
   }
  },
- "problem": {
-  "fails": 1,
-  "last": "HTTP 503"
- },
+ "problem": {},
  "rejected": {
   "B06XBBG1L1": {
    "t": "2026-11-11T12:50:38.562143+00:00",
@@ -1700,6 +1707,10 @@
   },
   "B0CKXRGX7M": {
    "t": "2026-11-11T12:50:38.562143+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0CWJJ2WBC": {
+   "t": "2026-11-11T18:30:53.717319+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0CWP7M17B": {
@@ -1729,6 +1740,18 @@
  },
  "reserve": [
   {
+   "a": "B0937LZJ3X",
+   "c": "Colchones y almohadas",
+   "e": "🛏️",
+   "img": "https://m.media-amazon.com/images/I/712ls4SmQ1L._AC_UL320_.jpg",
+   "n": 486,
+   "op": 179.2,
+   "p": 144.7,
+   "r": 4.3,
+   "t": "2026-11-11T18:30:53.717319+00:00",
+   "title": "Matnature | Platinum | Colchón Gran Confort Pro Múltiple Descanso | Muelles Ensacados y Viscoelástica | Altura 30 cm | Transpirable, Antideslizante y Antiácaros (90 x 200 cm)"
+  },
+  {
    "a": "B0BGY558SZ",
    "c": "Videojuegos",
    "e": "🎮",
@@ -1739,24 +1762,12 @@
    "r": 4.3,
    "t": "2026-11-11T17:45:42.500382+00:00",
    "title": "Wild Hearts (PS5)"
-  },
-  {
-   "a": "B0FX5217CY",
-   "c": "Freidoras de aire",
-   "e": "🍟",
-   "img": "https://m.media-amazon.com/images/I/71WwDIvz9XL._AC_UL320_.jpg",
-   "n": 70,
-   "op": 159.99,
-   "p": 99.98,
-   "r": 4.4,
-   "t": "2026-11-11T15:10:43.941870+00:00",
-   "title": "Moulinex Easy Fry XL Surface, Freidora de aire 2200W, Doble resistencia"
   }
  ],
  "summary_day": "2026-11-10",
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-11",
-  "n": 19
+  "n": 20
  }
 }
