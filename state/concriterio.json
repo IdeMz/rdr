@@ -30,7 +30,7 @@
   "Nutrición deportiva": "2026-11-10T13:01:09.677737+00:00",
   "Perfumes": "2026-11-10T15:55:36.869200+00:00",
   "Periféricos": "2026-11-10T09:55:34.015428+00:00",
-  "Perros": "2026-11-08T13:25:31.829164+00:00",
+  "Perros": "2026-11-11T07:01:10.008228+00:00",
   "Portátiles": "2026-11-09T17:01:16.746585+00:00",
   "Relojes": "2026-11-10T13:35:32.468342+00:00",
   "Robots de cocina": "2026-11-08T16:20:40.816944+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-10T21:10:42.687124+00:00",
   "Zapatillas": "2026-11-09T15:45:40.967709+00:00"
  },
- "next_at": "2026-11-10T22:17:26.597691+00:00",
+ "next_at": "2026-11-11T07:31:37.726455+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -172,6 +172,16 @@
    "p": 19.99,
    "t": "2026-11-10T13:01:30.414464+00:00",
    "title": "Optimum Nutrition Creatina Monohidrato Micronizada en Polvo, 634g",
+   "v": []
+  },
+  "B00XFXQ2EW": {
+   "c": "Perros",
+   "d": 23,
+   "e": "🐶",
+   "m": 202,
+   "p": 16.69,
+   "t": "2026-11-11T07:01:39.104213+00:00",
+   "title": "bosch HPC SOFT Pollo y Plátano | Alimento semi-húmedo para perros adultos de todas las razas | Sin cereales | 1 x 2,5 kg",
    "v": []
   },
   "B013DQEJF4": {
@@ -1495,46 +1505,22 @@
  "rejected": {},
  "reserve": [
   {
-   "a": "B09877WFM6",
-   "c": "Herramientas",
-   "e": "🔧",
-   "img": "https://m.media-amazon.com/images/I/71wPKhAIjcL._AC_UL320_.jpg",
-   "n": 2600,
-   "op": 129.99,
-   "p": 114.7,
-   "r": 4.7,
-   "t": "2026-11-10T21:45:45.365277+00:00",
-   "title": "Bosch Martillo taladrador a batería UniversalImpact 18V (1 batería, sistema de 18 V, en Maletín) – Amazon Edición"
-  },
-  {
-   "a": "B0G14W2ZWW",
-   "c": "Tablets",
-   "e": "📲",
-   "img": "https://m.media-amazon.com/images/I/61U1OXOnAZL._AC_UL320_.jpg",
-   "n": 335,
-   "op": 329.0,
-   "p": 269.0,
-   "r": 4.6,
-   "t": "2026-11-10T20:35:35.839507+00:00",
-   "title": "Samsung Galaxy Tab A11+ 128GB, Tableta con IA, Pantalla de 11\" con 90 Hz, 6GB de Memoria, Altavoces Cuádruples Dolby, Garantía del Fabricante 3 Años + 1 Año Extra, Gris (Versión Española)"
-  },
-  {
-   "a": "B0CWP7M17B",
-   "c": "Freidoras de aire",
-   "e": "🍟",
-   "img": "https://m.media-amazon.com/images/I/51EASto3heL._AC_UL320_.jpg",
-   "n": 5600,
-   "op": 114.99,
-   "p": 89.0,
-   "r": 4.7,
-   "t": "2026-11-10T19:25:34.668553+00:00",
-   "title": "Philips 2000 Airfryer - Freidora de Aire 6,2L, 13 opciones, Táctil, Negro"
+   "a": "B008SANRAY",
+   "c": "Perros",
+   "e": "🐶",
+   "img": "https://m.media-amazon.com/images/I/71lNK65ocXL._AC_UL320_.jpg",
+   "n": 576,
+   "op": 62.99,
+   "p": 50.89,
+   "r": 4.3,
+   "t": "2026-11-11T07:01:10.008228+00:00",
+   "title": "Advance Medium Adult Light, Pienso para Perros Adultos de Razas Medianas Bajo en Grasa con Pollo, 12kg"
   }
  ],
  "summary_day": "2026-11-10",
  "tg_offset": 511048052,
  "x_copy": {
-  "day": "2026-11-10",
-  "n": 26
+  "day": "2026-11-11",
+  "n": 1
  }
 }
