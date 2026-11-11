@@ -1,6 +1,6 @@
 {
  "cats": {
-  "Accesorios de coche": "2026-11-10T08:10:41.461869+00:00",
+  "Accesorios de coche": "2026-11-11T10:30:58.490315+00:00",
   "Afeitado y depilación": "2026-11-10T17:05:37.721123+00:00",
   "Almacenamiento": "2026-11-11T08:45:40.016109+00:00",
   "Altavoces": "2026-11-11T08:45:40.016109+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-10T21:10:42.687124+00:00",
   "Zapatillas": "2026-11-09T15:45:40.967709+00:00"
  },
- "next_at": "2026-11-11T10:26:59.976558+00:00",
+ "next_at": "2026-11-11T11:01:58.761387+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -1408,6 +1408,16 @@
    "title": "roborock Qrevo 2 Pro Robot Aspirador Succión Extrema de 25000 Pa,Negro",
    "v": []
   },
+  "B0H14S7JK9": {
+   "c": "Accesorios de coche",
+   "d": 20,
+   "e": "🚗",
+   "m": 208,
+   "p": 119.69,
+   "t": "2026-11-11T10:31:37.172664+00:00",
+   "title": "WOLFANG Dashcam 4K+4K Delantera y Trasera con STARVIS 2,Pantalla IPS de 3,69 Pulgadas, WiFi de 5,8 GHz, GPS, Cámara de Coche, WDR Gran Angular de 170°, Monitor de Aparcamiento 24H",
+   "v": []
+  },
   "B0H1BGRHCV": {
    "c": "Fitness en casa",
    "d": 27,
@@ -1556,9 +1566,25 @@
   "B0DD3CRCTR": {
    "t": "2026-11-11T09:55:30.001966+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0G39CZ4QQ": {
+   "t": "2026-11-11T10:30:58.490315+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
   }
  },
  "reserve": [
+  {
+   "a": "B0DTCF14RM",
+   "c": "Accesorios de coche",
+   "e": "🚗",
+   "img": "https://m.media-amazon.com/images/I/71iAzN+mZ-L._AC_UL320_.jpg",
+   "n": 390,
+   "op": 43.68,
+   "p": 37.45,
+   "r": 4.2,
+   "t": "2026-11-11T10:30:58.490315+00:00",
+   "title": "Dashcam 4K, Dash CAM Coche con CPL, WiFi Camara Coche Grabadora con Tarjeta 64G, Super Visión, Gran 170°, Control App, Sensor G, Monitor de Aparcamiento, Grabación de Bucle"
+  },
   {
    "a": "B0FNRQQTZR",
    "c": "Domótica",
@@ -1582,24 +1608,12 @@
    "r": 4.6,
    "t": "2026-11-11T07:35:32.720140+00:00",
    "title": "Soundcore C50i de Anker, Auriculares Abiertos con Clip, diseño FlexiClip"
-  },
-  {
-   "a": "B008SANRAY",
-   "c": "Perros",
-   "e": "🐶",
-   "img": "https://m.media-amazon.com/images/I/71lNK65ocXL._AC_UL320_.jpg",
-   "n": 576,
-   "op": 62.99,
-   "p": 50.89,
-   "r": 4.3,
-   "t": "2026-11-11T07:01:10.008228+00:00",
-   "title": "Advance Medium Adult Light, Pienso para Perros Adultos de Razas Medianas Bajo en Grasa con Pollo, 12kg"
   }
  ],
  "summary_day": "2026-11-10",
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-11",
-  "n": 6
+  "n": 7
  }
 }
