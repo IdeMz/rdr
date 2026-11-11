@@ -16,7 +16,7 @@
   "Cuidado del cabello": "2026-11-10T14:10:44.256404+00:00",
   "Cámaras de seguridad": "2026-11-11T09:20:41.357359+00:00",
   "Domótica": "2026-11-11T08:10:38.955781+00:00",
-  "Fitness en casa": "2026-11-10T11:50:46.199170+00:00",
+  "Fitness en casa": "2026-11-11T14:35:34.717806+00:00",
   "Freidoras de aire": "2026-11-10T19:25:34.668553+00:00",
   "Gatos": "2026-11-11T14:01:09.084076+00:00",
   "Herramientas": "2026-11-10T21:45:45.365277+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-10T21:10:42.687124+00:00",
   "Zapatillas": "2026-11-11T12:50:38.562143+00:00"
  },
- "next_at": "2026-11-11T14:35:24.745747+00:00",
+ "next_at": "2026-11-11T15:06:59.488622+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -1248,6 +1248,16 @@
    "title": "GiPP Juego de Ollas y Sartenes Cerámicas Antiadherente - Juego de Cocina con Mangos Desmontables, No Tóxico, Apto para Inducción, Horno y Lavavajillas(Blanc 11PCS)",
    "v": []
   },
+  "B0FPQR9572": {
+   "c": "Fitness en casa",
+   "d": 27,
+   "e": "🏋️",
+   "m": 215,
+   "p": 9.03,
+   "t": "2026-11-11T14:36:02.315625+00:00",
+   "title": "JATEKA Banda Elástica Fitness, Banda de Resistencia en Casa y Gym, Gomas Elásticas Musculacion para Hombre Mujer Entrenamiento de Fuerza, Yoga, Pilates, Versátil, Duradera y Portátil",
+   "v": []
+  },
   "B0FQ5F2QSQ": {
    "c": "Monitores",
    "d": 24,
@@ -1654,6 +1664,18 @@
  },
  "reserve": [
   {
+   "a": "B088DZWSF6",
+   "c": "Fitness en casa",
+   "e": "🏋️",
+   "img": "https://m.media-amazon.com/images/I/818CdlN1H0L._AC_UL320_.jpg",
+   "n": 18300,
+   "op": 9.99,
+   "p": 7.99,
+   "r": 4.3,
+   "t": "2026-11-11T14:35:34.717806+00:00",
+   "title": "TechStone Juego de Bandas de Resistencia para Hombres y Mujeres, Paquete de 5 Niveles de Resistencia Diferentes, Banda elástica para Gimnasio en casa, Entrenamiento de Ejercicio Largo"
+  },
+  {
    "a": "B08GW3KGYG",
    "c": "Gatos",
    "e": "🐱",
@@ -1676,24 +1698,12 @@
    "r": 4.5,
    "t": "2026-11-11T11:40:40.899668+00:00",
    "title": "L'Oréal Paris Revitalift Laser Serúm de Noche Nº1 con Retinol Puro, 30ml"
-  },
-  {
-   "a": "B0FN8FR84Q",
-   "c": "Aspiradoras",
-   "e": "🧹",
-   "img": "https://m.media-amazon.com/images/I/61nQhPq3w2L._AC_UL320_.jpg",
-   "n": 2000,
-   "op": 499.0,
-   "p": 329.0,
-   "r": 4.5,
-   "t": "2026-11-11T11:05:32.427978+00:00",
-   "title": "dreame L10s Ultra Gen 3 Kit Robot Aspirador y Fregasuelos, Succión 25.000Pa"
   }
  ],
  "summary_day": "2026-11-10",
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-11",
-  "n": 13
+  "n": 14
  }
 }
