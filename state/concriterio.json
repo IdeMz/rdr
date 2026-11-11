@@ -34,14 +34,14 @@
   "Portátiles": "2026-11-11T11:05:32.427978+00:00",
   "Relojes": "2026-11-11T09:55:30.001966+00:00",
   "Robots de cocina": "2026-11-08T16:20:40.816944+00:00",
-  "Smartwatch": "2026-11-10T10:30:55.583683+00:00",
+  "Smartwatch": "2026-11-11T16:20:38.627123+00:00",
   "Suplementos": "2026-11-10T08:45:47.983358+00:00",
   "Tablets": "2026-11-10T20:35:35.839507+00:00",
   "Televisores": "2026-11-10T18:15:42.344426+00:00",
   "Videojuegos": "2026-11-10T21:10:42.687124+00:00",
   "Zapatillas": "2026-11-11T12:50:38.562143+00:00"
  },
- "next_at": "2026-11-11T16:15:44.798068+00:00",
+ "next_at": "2026-11-11T16:55:26.523039+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -1570,6 +1570,16 @@
     "5f2e3ed7ec51"
    ]
   },
+  "B0H4ZJZNX6": {
+   "c": "Smartwatch",
+   "d": 39,
+   "e": "⌚",
+   "m": 218,
+   "p": 42.54,
+   "t": "2026-11-11T16:21:05.366158+00:00",
+   "title": "Smartwatch Reloj Inteligente Hombre con GPS: 1.46\" Militar Smart Watch con Llamadas Bluetooth Brújula 530mAh 100+ Deportivos Pulsera Actividad con Sueño SpO2 iOS Android",
+   "v": []
+  },
   "B0H5BFBZLH": {
    "c": "Ciclismo",
    "d": 13,
@@ -1728,6 +1738,6 @@
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-11",
-  "n": 16
+  "n": 17
  }
 }
