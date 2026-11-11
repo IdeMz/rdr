@@ -32,7 +32,7 @@
   "Periféricos": "2026-11-10T09:55:34.015428+00:00",
   "Perros": "2026-11-11T07:01:10.008228+00:00",
   "Portátiles": "2026-11-09T17:01:16.746585+00:00",
-  "Relojes": "2026-11-10T13:35:32.468342+00:00",
+  "Relojes": "2026-11-11T09:55:30.001966+00:00",
   "Robots de cocina": "2026-11-08T16:20:40.816944+00:00",
   "Smartwatch": "2026-11-10T10:30:55.583683+00:00",
   "Suplementos": "2026-11-10T08:45:47.983358+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-10T21:10:42.687124+00:00",
   "Zapatillas": "2026-11-09T15:45:40.967709+00:00"
  },
- "next_at": "2026-11-11T09:55:21.292934+00:00",
+ "next_at": "2026-11-11T10:26:59.976558+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -1308,6 +1308,16 @@
    "title": "Google Pixel 10a - 7 años de Nuevas actualizaciones y Funciones, más de 30 Horas de batería, Asistente de Cámara, Gemini Live, Seguridad de Pixel - Obsidiana, 128GB",
    "v": []
   },
+  "B0GGJB61JQ": {
+   "c": "Relojes",
+   "d": 36,
+   "e": "🕰️",
+   "m": 207,
+   "p": 35.01,
+   "t": "2026-11-11T09:56:06.099177+00:00",
+   "title": "Band 11 Smartwatch, 1,62″ AMOLED 1500 Nits, para Android iOS, Negro",
+   "v": []
+  },
   "B0GLPDX39K": {
    "c": "Jardín",
    "d": 13,
@@ -1542,7 +1552,12 @@
   }
  },
  "problem": {},
- "rejected": {},
+ "rejected": {
+  "B0DD3CRCTR": {
+   "t": "2026-11-11T09:55:30.001966+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  }
+ },
  "reserve": [
   {
    "a": "B0FNRQQTZR",
@@ -1585,6 +1600,6 @@
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-11",
-  "n": 5
+  "n": 6
  }
 }
