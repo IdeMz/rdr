@@ -16,6 +16,7 @@ import hashlib
 import io
 import json
 import logging
+import re
 import time
 import zipfile
 from datetime import date, datetime, timedelta, timezone
@@ -86,6 +87,14 @@ KEEP_COLUMNS = (
 )
 
 
+# La descripcion avisa cuando la unidad es una version de otro mercado (p. ej. un reloj LTE estadounidense).
+FOREIGN_RE = re.compile(
+    r"versi[oó]n\s+(?:estadounidense|americana|de\s+(?:ee\.?\s?uu\.?|estados\s+unidos))"
+    r"|aviso importante sobre la conectividad",
+    re.IGNORECASE,
+)
+
+
 def read_rows(raw: bytes) -> list[dict]:
     """Filas del feed (solo KEEP_COLUMNS). Acepta CSV normal, comprimido en zip o gzip."""
     if raw[:4] == b"PK\x03\x04":  # Awin entrega un .zip cuando la URL lleva /compression/zip/
@@ -117,7 +126,13 @@ def read_rows(raw: bytes) -> list[dict]:
     reader.fieldnames = [(c or "").strip().strip('"') for c in (reader.fieldnames or [])]
     if "search_price" not in reader.fieldnames:
         raise FeedError(f"el feed no trae la columna search_price (columnas: {', '.join(reader.fieldnames)[:200]})")
-    return [{k: row.get(k) or "" for k in KEEP_COLUMNS if k in reader.fieldnames} for row in reader]
+    rows = []
+    for row in reader:
+        kept = {k: row.get(k) or "" for k in KEEP_COLUMNS if k in reader.fieldnames}
+        if FOREIGN_RE.search(row.get("description") or ""):
+            kept["foreign"] = "1"  # solo se guarda el aviso, no la descripcion entera
+        rows.append(kept)
+    return rows
 
 
 def row_price(row: dict) -> float | None:

@@ -12,7 +12,8 @@ Un producto es candidato cuando, segun el historial propio del feed:
   4. la bajada es reciente (el precio actual empezo hace como mucho FRESH_DAYS dias). Si pasa de MAX_DROP %
      no se descarta: va a la lista "to_verify" para contrastarla con Amazon antes de publicar. Solo por
      encima de ABSURD_DROP % (6.118 a 700 EUR) se considera un error de datos y se aparta en "suspicious",
-  5. cuesta al menos MIN_PRICE, hay stock y la oferta no ha caducado.
+  5. cuesta al menos MIN_PRICE, hay stock, la oferta no ha caducado y la descripcion no avisa de que es una
+     version de otro mercado (el Pixel Watch LTE estadounidense, que aqui no tiene datos).
 """
 
 from __future__ import annotations
@@ -77,6 +78,7 @@ def items_from_rows(rows: list[dict]) -> dict[str, dict]:
             "valid_to": _text(row, "valid_to"),
             "rating": _num(_text(row, "average_rating")),
             "reviews": int(r) if (r := _num(_text(row, "reviews"))) is not None else None,
+            "foreign": bool(row.get("foreign")),
         }
     return items
 
@@ -114,6 +116,8 @@ def judge(item: dict, entry: list | None, today: date) -> tuple[dict | None, str
         return None, "sin stock"
     if _expired(item["valid_to"], today):
         return None, "oferta caducada"
+    if item.get("foreign"):
+        return None, "version de otro mercado"
     age = t - pairs[-1][0]
     if age > FRESH_DAYS:
         return None, "bajada antigua"

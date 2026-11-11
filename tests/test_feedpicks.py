@@ -144,6 +144,17 @@ def test_select_separates_to_verify_from_candidates():
     assert stats["a comprobar"] == 1 and stats["bajada sospechosa"] == 1 and stats["candidatos"] == 1
 
 
+def test_foreign_market_version_is_rejected_from_the_description():
+    raw = ("aw_product_id,search_price,product_name,description\n"
+           "1,109.95,Pixel Watch LTE,Aviso importante sobre la conectividad LTE: esta unidad corresponde a la version estadounidense\n"
+           "2,109.95,Pixel Watch Wifi,Reloj con version USB 2.0 y sensor\n").encode()
+    rows = feed.read_rows(raw)
+    assert rows[0].get("foreign") == "1" and "foreign" not in rows[1]
+    items = fp.items_from_rows(rows)
+    assert items["1"]["foreign"] is True and items["2"]["foreign"] is False
+    assert judge(80.0, (10, 100.0), (0, 80.0), foreign=True)[1] == "version de otro mercado"
+
+
 def test_save_writes_valid_json_one_product_per_line(tmp_path):
     data = {"day": "2026-11-20", "suspicious": [{"id": "9", "name": "Raro"}],
             "candidates": [{"id": "1", "name": "Ñandú"}, {"id": "2", "name": "Dos"}]}
