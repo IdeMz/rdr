@@ -23,7 +23,7 @@
   "Iluminación": "2026-11-09T13:25:33.337111+00:00",
   "Jardín": "2026-11-11T19:40:41.234476+00:00",
   "Lego": "2026-11-09T10:30:54.098717+00:00",
-  "Menaje de cocina": "2026-11-10T20:01:09.445485+00:00",
+  "Menaje de cocina": "2026-11-11T20:57:31.234861+00:00",
   "Mochilas y maletas": "2026-11-10T18:50:43.937099+00:00",
   "Monitores": "2026-11-11T19:05:38.080787+00:00",
   "Móviles": "2026-11-10T15:20:47.993631+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-11T17:45:42.500382+00:00",
   "Zapatillas": "2026-11-11T12:50:38.562143+00:00"
  },
- "next_at": "2026-11-11T20:50:22.604617+00:00",
+ "next_at": "2026-11-11T21:32:30.121429+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -294,6 +294,16 @@
    "p": 126.75,
    "t": "2026-11-10T13:36:05.516695+00:00",
    "title": "Reloj Analógico Multifuncional de Cuarzo para Hombres con Correa de Silicona, Acero Inoxidable o Cuero, Subesferas para Día y Fecha, Resistente al Agua hasta 5ATM.",
+   "v": []
+  },
+  "B07HKRBK1S": {
+   "c": "Menaje de cocina",
+   "d": 25,
+   "e": "🍳",
+   "m": 225,
+   "p": 89.99,
+   "t": "2026-11-11T20:58:15.154291+00:00",
+   "title": "Tefal Daily Cook - Juego de 4 Piezas + 5 Accesorios, Acero inoxidable",
    "v": []
   },
   "B07K142D5Q": {
@@ -1766,9 +1776,25 @@
   "B0G39CZ4QQ": {
    "t": "2026-11-11T10:30:58.490315+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0H699SLKM": {
+   "t": "2026-11-11T20:57:31.234861+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
   }
  },
  "reserve": [
+  {
+   "a": "B00UOIZ8VY",
+   "c": "Menaje de cocina",
+   "e": "🍳",
+   "img": "https://m.media-amazon.com/images/I/51qX7gpVoQL._AC_UL320_.jpg",
+   "n": 1900,
+   "op": 57.49,
+   "p": 47.99,
+   "r": 4.6,
+   "t": "2026-11-11T20:57:31.234861+00:00",
+   "title": "Tefal Comfort Max - Juego de 3 Cazos + 2 Tapas, Acero Inoxidable"
+  },
   {
    "a": "B0DT4R1N9N",
    "c": "Monitores",
@@ -1792,24 +1818,12 @@
    "r": 4.3,
    "t": "2026-11-11T18:30:53.717319+00:00",
    "title": "Matnature | Platinum | Colchón Gran Confort Pro Múltiple Descanso | Muelles Ensacados y Viscoelástica | Altura 30 cm | Transpirable, Antideslizante y Antiácaros (90 x 200 cm)"
-  },
-  {
-   "a": "B0BGY558SZ",
-   "c": "Videojuegos",
-   "e": "🎮",
-   "img": "https://m.media-amazon.com/images/I/810Qtabs7HL._AC_UL320_.jpg",
-   "n": 197,
-   "op": 24.26,
-   "p": 20.99,
-   "r": 4.3,
-   "t": "2026-11-11T17:45:42.500382+00:00",
-   "title": "Wild Hearts (PS5)"
   }
  ],
  "summary_day": "2026-11-10",
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-11",
-  "n": 23
+  "n": 24
  }
 }
