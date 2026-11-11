@@ -7,7 +7,7 @@
   "Aspiradoras": "2026-11-11T11:05:32.427978+00:00",
   "Auriculares": "2026-11-11T07:35:32.720140+00:00",
   "Cafeteras": "2026-11-10T07:01:10.513922+00:00",
-  "Café y cápsulas": "2026-11-10T17:41:04.281374+00:00",
+  "Café y cápsulas": "2026-11-11T13:25:31.954839+00:00",
   "Cargadores y baterías": "2026-11-10T11:15:42.709254+00:00",
   "Ciclismo": "2026-11-10T20:01:09.445485+00:00",
   "Climatización": "2026-11-10T14:45:46.160107+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-10T21:10:42.687124+00:00",
   "Zapatillas": "2026-11-11T12:50:38.562143+00:00"
  },
- "next_at": "2026-11-11T13:20:52.316947+00:00",
+ "next_at": "2026-11-11T13:56:05.512547+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -262,6 +262,16 @@
    "p": 21.78,
    "t": "2026-11-06T07:41:06.854876+00:00",
    "title": "Fischer Urban Levin Bicicleta Casco",
+   "v": []
+  },
+  "B072Q7K86H": {
+   "c": "Café y cápsulas",
+   "d": 28,
+   "e": "🫘",
+   "m": 213,
+   "p": 25.03,
+   "t": "2026-11-11T13:25:58.129727+00:00",
+   "title": "Tassimo Cápsulas de Café Marcilla Largo| 80 Cápsulas Compatibles con Cafetera Tassimo - 5PACK - Amazon Exclusive",
    "v": []
   },
   "B0797LMGXH": {
@@ -1674,6 +1684,6 @@
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-11",
-  "n": 11
+  "n": 12
  }
 }
