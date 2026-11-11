@@ -12,7 +12,7 @@
   "Ciclismo": "2026-11-10T20:01:09.445485+00:00",
   "Climatización": "2026-11-10T14:45:46.160107+00:00",
   "Colchones y almohadas": "2026-11-09T09:55:33.819208+00:00",
-  "Cuidado de la piel": "2026-11-10T07:35:33.533101+00:00",
+  "Cuidado de la piel": "2026-11-11T11:40:40.899668+00:00",
   "Cuidado del cabello": "2026-11-10T14:10:44.256404+00:00",
   "Cámaras de seguridad": "2026-11-11T09:20:41.357359+00:00",
   "Domótica": "2026-11-11T08:10:38.955781+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-10T21:10:42.687124+00:00",
   "Zapatillas": "2026-11-09T15:45:40.967709+00:00"
  },
- "next_at": "2026-11-11T11:35:48.696235+00:00",
+ "next_at": "2026-11-11T12:12:34.048998+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -232,6 +232,16 @@
    "p": 17.11,
    "t": "2026-11-10T17:41:26.340276+00:00",
    "title": "Caffè Borbone Respresso, Mezcla de Café Roja - 100 Cápsulas -Compatibles con Máquinas de Café Nespresso®* para uso doméstico",
+   "v": []
+  },
+  "B06XDS7J69": {
+   "c": "Cuidado de la piel",
+   "d": 48,
+   "e": "🧴",
+   "m": 210,
+   "p": 11.93,
+   "t": "2026-11-11T11:41:14.007969+00:00",
+   "title": "L'Oréal Paris Revitalift Laser Crema SPF25 Nº1 AntiEdad y AntiManchas, 50ml",
    "v": []
   },
   "B06XK8H7DM": {
@@ -1584,6 +1594,18 @@
  },
  "reserve": [
   {
+   "a": "B08SS5TRP4",
+   "c": "Cuidado de la piel",
+   "e": "🧴",
+   "img": "https://m.media-amazon.com/images/I/61I6MKqCj2L._AC_UL320_.jpg",
+   "n": 2300,
+   "op": 23.9,
+   "p": 12.3,
+   "r": 4.5,
+   "t": "2026-11-11T11:40:40.899668+00:00",
+   "title": "L'Oréal Paris Revitalift Laser Serúm de Noche Nº1 con Retinol Puro, 30ml"
+  },
+  {
    "a": "B0FN8FR84Q",
    "c": "Aspiradoras",
    "e": "🧹",
@@ -1606,24 +1628,12 @@
    "r": 4.2,
    "t": "2026-11-11T10:30:58.490315+00:00",
    "title": "Dashcam 4K, Dash CAM Coche con CPL, WiFi Camara Coche Grabadora con Tarjeta 64G, Super Visión, Gran 170°, Control App, Sensor G, Monitor de Aparcamiento, Grabación de Bucle"
-  },
-  {
-   "a": "B0FNRQQTZR",
-   "c": "Domótica",
-   "e": "💡",
-   "img": "https://m.media-amazon.com/images/I/61NeXRQja4L._AC_UL320_.jpg",
-   "n": 397,
-   "op": 13.99,
-   "p": 11.99,
-   "r": 4.5,
-   "t": "2026-11-11T08:10:38.955781+00:00",
-   "title": "Tapo L430P-Bombilla inteligente WiFi, 16 millones de colores, regulable,E27"
   }
  ],
  "summary_day": "2026-11-10",
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-11",
-  "n": 8
+  "n": 9
  }
 }
