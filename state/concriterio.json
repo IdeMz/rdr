@@ -2,8 +2,8 @@
  "cats": {
   "Accesorios de coche": "2026-11-10T08:10:41.461869+00:00",
   "Afeitado y depilación": "2026-11-10T17:05:37.721123+00:00",
-  "Almacenamiento": "2026-11-09T14:35:34.051656+00:00",
-  "Altavoces": "2026-11-09T11:05:34.803967+00:00",
+  "Almacenamiento": "2026-11-11T08:45:40.016109+00:00",
+  "Altavoces": "2026-11-11T08:45:40.016109+00:00",
   "Aspiradoras": "2026-11-10T12:25:33.122047+00:00",
   "Auriculares": "2026-11-11T07:35:32.720140+00:00",
   "Cafeteras": "2026-11-10T07:01:10.513922+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-10T21:10:42.687124+00:00",
   "Zapatillas": "2026-11-09T15:45:40.967709+00:00"
  },
- "next_at": "2026-11-11T08:45:27.413154+00:00",
+ "next_at": "2026-11-11T09:19:23.006982+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -947,6 +947,16 @@
    "title": "Ninja Detect Power Pro, Batidora y Procesador de Alimentos, Negro",
    "v": []
   },
+  "B0DB1753RZ": {
+   "c": "Altavoces",
+   "d": 37,
+   "e": "🔊",
+   "m": 205,
+   "p": 18.99,
+   "t": "2026-11-11T08:46:05.718440+00:00",
+   "title": "Soundcore Select 4 Go de Anker Altavoz Bluetooth Portátil Mini(Negro)",
+   "v": []
+  },
   "B0DBHLNQK2": {
    "c": "Menaje de cocina",
    "d": 29,
@@ -1565,6 +1575,6 @@
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-11",
-  "n": 3
+  "n": 4
  }
 }
