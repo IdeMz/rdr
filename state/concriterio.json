@@ -5,7 +5,7 @@
   "Almacenamiento": "2026-11-09T14:35:34.051656+00:00",
   "Altavoces": "2026-11-09T11:05:34.803967+00:00",
   "Aspiradoras": "2026-11-10T12:25:33.122047+00:00",
-  "Auriculares": "2026-11-09T09:20:44.161501+00:00",
+  "Auriculares": "2026-11-11T07:35:32.720140+00:00",
   "Cafeteras": "2026-11-10T07:01:10.513922+00:00",
   "Café y cápsulas": "2026-11-10T17:41:04.281374+00:00",
   "Cargadores y baterías": "2026-11-10T11:15:42.709254+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-10T21:10:42.687124+00:00",
   "Zapatillas": "2026-11-09T15:45:40.967709+00:00"
  },
- "next_at": "2026-11-11T07:31:37.726455+00:00",
+ "next_at": "2026-11-11T08:09:26.175648+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -754,6 +754,16 @@
    "p": 89.99,
    "t": "2026-11-06T20:31:19.446471+00:00",
    "title": "Soundcore Boom 2 Altavoz Bluetooth Potente 80 W, 24 h, IPX7",
+   "v": []
+  },
+  "B0CRTYZG5C": {
+   "c": "Auriculares",
+   "d": 40,
+   "e": "🎧",
+   "m": 203,
+   "p": 23.99,
+   "t": "2026-11-11T07:35:57.800070+00:00",
+   "title": "Soundcore P30i de Anker Auriculares con Cancelación de Ruido, 45h",
    "v": []
   },
   "B0CWY22136": {
@@ -1505,6 +1515,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0FKSV2GW2",
+   "c": "Auriculares",
+   "e": "🎧",
+   "img": "https://m.media-amazon.com/images/I/51oANfCPfVL._AC_UL320_.jpg",
+   "n": 3400,
+   "op": 69.99,
+   "p": 37.99,
+   "r": 4.6,
+   "t": "2026-11-11T07:35:32.720140+00:00",
+   "title": "Soundcore C50i de Anker, Auriculares Abiertos con Clip, diseño FlexiClip"
+  },
+  {
    "a": "B008SANRAY",
    "c": "Perros",
    "e": "🐶",
@@ -1521,6 +1543,6 @@
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-11",
-  "n": 1
+  "n": 2
  }
 }
