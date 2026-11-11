@@ -9,8 +9,9 @@ import requests
 from PIL import Image
 
 import deals
+import pricehist
 
-TOKEN = "123456789:AAH_fake-token_abcdefghijklmnopqrstuvwxyz0123"
+TOKEN ="123456789:AAH_fake-token_abcdefghijklmnopqrstuvwxyz0123"
 
 
 @pytest.fixture(autouse=True)
@@ -1078,6 +1079,145 @@ def test_load_channel_validates_price_check(tmp_path):
         deals.load_channel(write_cfg(tmp_path, price_check="mucho"))
     with pytest.raises(deals.ConfigError, match="price_tolerance"):
         deals.load_channel(write_cfg(tmp_path, price_tolerance=80))
+
+
+# ---------------------------------------------------------------- historial propio de precios
+
+def own_ref(low=347.78, median=379.0, ago=4):
+    return {"low30": low, "median": median, "seen": 9, "span": 20, "low_ago": ago}
+
+
+def test_own_reference_why():
+    assert deals.own_reference_why(None, 379.0, 3) == ""
+    assert deals.own_reference_why(own_ref(), 347.78, 3) == ""
+    assert deals.own_reference_why(own_ref(low=370.0), 379.0, 3) == ""            # +2,4 %: dentro de la tolerancia
+    why = deals.own_reference_why(own_ref(), 379.0, 3)
+    assert why.startswith(deals.REF_WHY) and "historial propio" in why
+    assert "347,78€" in why and "379€" in why and "9%" in why and "hace 4 dias" in why
+
+
+def test_listing_ok_rejects_with_own_history_without_downloading_the_page(monkeypatch):
+    def boom(*a, **k):
+        raise AssertionError("no deberia descargar la ficha")
+    monkeypatch.setattr(deals, "fetch", boom)
+    ok, why = deals.listing_ok(None, fake_product(price=379.0), channel(price_check="strict"), TODAY, own=own_ref())
+    assert not ok and "historial propio" in why
+
+
+def test_strict_accepts_without_page_reference_when_own_history_backs_it(monkeypatch, caplog):
+    monkeypatch.setattr(deals, "sleep", lambda s: None)
+    monkeypatch.setattr(deals, "fetch", lambda session, url: product_page("sin datos de precio"))
+    strict = channel(price_check="strict")
+    with caplog.at_level(logging.INFO, logger="deals"):
+        assert deals.listing_ok(None, fake_product(price=347.78), strict, TODAY, own=own_ref())[0] is True
+    assert "lo respalda el historial propio" in caplog.text
+    ok, why = deals.listing_ok(None, fake_product(price=347.78), strict, TODAY)  # sin historial propio: como antes
+    assert not ok and why.startswith(deals.REF_WHY)
+
+
+def test_page_reference_still_applies_when_own_history_exists(monkeypatch):
+    monkeypatch.setattr(deals, "sleep", lambda s: None)
+    monkeypatch.setattr(deals, "fetch", lambda session, url: product_page(REF_AURICULARES))
+    ok, why = deals.listing_ok(None, fake_product(price=25.99), channel(price_check="strict"), TODAY,
+                               own=own_ref(low=25.99, median=25.99))
+    assert not ok and "19,49€" in why and "historial propio" not in why
+
+
+def test_own_history_is_ignored_when_price_check_is_off(monkeypatch):
+    monkeypatch.setattr(deals, "sleep", lambda s: None)
+    monkeypatch.setattr(deals, "fetch", lambda session, url: product_page("nada"))
+    assert deals.listing_ok(None, fake_product(price=379.0), channel(price_check="off"), TODAY, own=own_ref())[0] is True
+
+
+def test_load_channel_validates_own_history(tmp_path):
+    assert deals.load_channel(write_cfg(tmp_path)).own_history is True
+    assert deals.load_channel(write_cfg(tmp_path, own_history=False)).own_history is False
+    with pytest.raises(deals.ConfigError, match="own_history"):
+        deals.load_channel(write_cfg(tmp_path, own_history="si"))
+
+
+def seed_history(path, series_by_asin, today):
+    """Escribe un historial como si el bot hubiera visto cada producto a lo largo de los dias anteriores."""
+    hist = {"p": {}}
+    for asin, prices in series_by_asin.items():
+        for back, price in prices:  # (dias atras, precio)
+            pricehist.record(hist, {asin: price}, today - timedelta(days=back))
+    pricehist.save(path, hist)
+
+
+OWN_PAGE = page(
+    card("B000000050", "Smart TV LG 43 pulgadas QNED", "379,00 €", "600,00 €"),     # -37 %, pero en su maximo
+    card("B000000051", "Aspirador Dyson sin cable potente", "347,78 €", "449,00 €"),  # -22 %, en su minimo
+)
+
+
+def test_run_channel_uses_own_history_to_skip_overpriced_and_verify_the_rest(tmp_path, monkeypatch, caplog):
+    sent = setup_publish(monkeypatch, html=OWN_PAGE)
+    pages = []
+    monkeypatch.setattr(deals, "fetch", lambda session, url: pages.append(url) or product_page("sin datos de precio"))
+    today = NOW_IN.date()
+    hist_path = tmp_path / "precios_amazon.json"
+    seed_history(hist_path, {
+        "B000000050": [(12, 379.0), (9, 379.0), (6, 347.78), (3, 379.0), (1, 379.0)],
+        "B000000051": [(12, 347.78), (9, 347.78), (6, 347.78), (3, 347.78), (1, 347.78)],
+    }, today)
+    ch = channel(price_check="strict", min_discount=10, min_rating=0, min_reviews=0)
+    with caplog.at_level(logging.INFO, logger="deals"):
+        assert deals.run_channel(ch, state_dir=tmp_path, now=NOW_IN) == 1
+    assert list(json.loads((tmp_path / "t.json").read_text())["posted"]) == ["B000000051"]
+    assert len(pages) == 1 and "B000000051" in pages[0]          # la ficha del LG ni se descarga
+    assert "1 candidatos descartados por precio alto" in caplog.text
+    assert "lo respalda el historial propio" in caplog.text
+    # y los precios de hoy quedan anotados
+    saved = pricehist.load(hist_path)["p"]
+    assert saved["B000000050"][0] == pricehist.day_no(today) and saved["B000000050"][1] == 6
+
+
+def test_run_channel_without_history_falls_back_to_page_check(tmp_path, monkeypatch):
+    sent = setup_publish(monkeypatch, html=OWN_PAGE)
+    monkeypatch.setattr(deals, "fetch", lambda session, url: product_page("sin datos de precio"))
+    ch = channel(price_check="strict", min_discount=10, min_rating=0, min_reviews=0)
+    assert deals.run_channel(ch, state_dir=tmp_path, now=NOW_IN) == 0   # nada verificable: strict no publica
+    assert sent == []
+    assert set(json.loads((tmp_path / "t.json").read_text())["rejected"]) == {"B000000050", "B000000051"}
+    assert pricehist.load(tmp_path / "precios_amazon.json")["p"].keys() == {"B000000050", "B000000051"}
+
+
+def test_own_history_failure_never_blocks_publishing(tmp_path, monkeypatch, caplog):
+    sent = setup_publish(monkeypatch, html=OWN_PAGE)
+    monkeypatch.setattr(deals, "fetch", lambda session, url: product_page("sin datos de precio"))
+
+    def boom(*a, **k):
+        raise OSError("disco lleno")
+    monkeypatch.setattr(pricehist, "save", boom)
+    ch = channel(price_check="soft", min_discount=10, min_rating=0, min_reviews=0)
+    with caplog.at_level(logging.INFO, logger="deals"):
+        assert deals.run_channel(ch, state_dir=tmp_path, now=NOW_IN) == 1
+    assert "historial propio: OSError" in caplog.text
+
+
+def test_dry_run_reads_but_never_writes_the_history(tmp_path, monkeypatch):
+    setup_publish(monkeypatch, html=OWN_PAGE)
+    monkeypatch.setattr(deals, "fetch", lambda session, url: product_page("sin datos de precio"))
+    ch = channel(price_check="soft", min_discount=10, min_rating=0, min_reviews=0)
+    deals.run_channel(ch, dry_run=True, state_dir=tmp_path, now=NOW_IN)
+    assert not (tmp_path / "precios_amazon.json").exists()
+
+
+def test_own_history_off_keeps_old_behaviour(tmp_path, monkeypatch):
+    setup_publish(monkeypatch, html=OWN_PAGE)
+    monkeypatch.setattr(deals, "fetch", lambda session, url: product_page("sin datos de precio"))
+    ch = channel(price_check="soft", own_history=False, min_discount=10, min_rating=0, min_reviews=0)
+    assert deals.run_channel(ch, state_dir=tmp_path, now=NOW_IN) == 1
+    assert not (tmp_path / "precios_amazon.json").exists()
+
+
+def test_explain_labels_own_history_rejections():
+    products = deals.parse_results(OWN_PAGE)
+    ch = channel(min_discount=10, min_rating=0, min_reviews=0)
+    skip = {"B000000050": {"t": NOW_IN.isoformat(), "why": "referencia: historial propio, minimo 347,78€"}}
+    why = {p.asin: r for p, r in deals.explain(products, ch, {}, skip=skip)}
+    assert why["B000000050"].startswith("descartado por el historial propio: ")
 
 
 # ---------------------------------------------------------------- categorias en rotacion

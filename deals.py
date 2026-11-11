@@ -35,6 +35,7 @@ from bs4 import BeautifulSoup
 from PIL import Image, ImageOps
 
 import feed
+import pricehist
 
 ROOT = Path(__file__).resolve().parent
 BASE = "https://www.amazon.es"
@@ -237,6 +238,9 @@ class Channel:
     # no la trae, "strict" ademas rechaza lo que no la trae.
     price_check: str = "off"
     price_tolerance: int = 3  # % que el precio actual puede superar la referencia sin rechazarse
+    # Historial propio: el bot anota los precios que ve en los listados y, con unos dias de datos, lo usa
+    # como referencia cuando la ficha no trae la suya. Solo actua si price_check no es "off".
+    own_history: bool = True
     min_price: float = 0
     max_price: float = 0  # 0 = sin tope
     min_rating: float = 4.0
@@ -355,6 +359,8 @@ def load_channel(path: Path) -> Channel:
         raise ConfigError(f"{path.name}: 'price_check' debe ser off, soft o strict")
     if not 0 <= ch.price_tolerance <= 50:
         raise ConfigError(f"{path.name}: 'price_tolerance' debe estar entre 0 y 50")
+    if not isinstance(ch.own_history, bool):
+        raise ConfigError(f"{path.name}: 'own_history' debe ser true o false")
     return ch
 
 
@@ -915,11 +921,34 @@ def price_reference(html: str) -> dict:
     return ref
 
 
-def listing_ok(session: requests.Session, p: Product, ch: Channel, today: date) -> tuple[bool, str]:
+def own_reference_why(ref: dict | None, price: float, tolerance: int) -> str:
+    """Motivo de rechazo segun el historial propio de precios, o '' si no hay objecion (o no hay datos)."""
+    if not ref:
+        return ""
+    limit = 1 + tolerance / 100
+    for key, label in (("low30", "minimo de 30 dias"), ("median", "precio mediano")):
+        if price > ref[key] * limit:
+            over = round((price / ref[key] - 1) * 100)
+            extra = f", visto hace {ref['low_ago']} dias" if key == "low30" and ref["low_ago"] else ""
+            return (
+                f"{REF_WHY}: historial propio, {label} {fmt_eur(ref[key])}{extra}, hoy {fmt_eur(price)} "
+                f"({over}% por encima); el descuento es solo contra el PVPR"
+            )
+    return ""
+
+
+def listing_ok(
+    session: requests.Session, p: Product, ch: Channel, today: date, own: dict | None = None
+) -> tuple[bool, str]:
     """Mira la ficha: descarta altas recientes y descuentos que el historial de precios desmiente.
 
-    Si la ficha no trae la informacion, acepta el producto y lo anota en el log.
+    'own' es la referencia del historial propio (pricehist.reference). Si la ficha no trae la informacion,
+    acepta el producto y lo anota en el log; con price_check 'strict' lo acepta solo si 'own' lo respalda.
     """
+    if ch.price_check != "off":
+        why = own_reference_why(own, p.price, ch.price_tolerance)
+        if why:  # el historial propio ya lo desmiente: se ahorra descargar la ficha
+            return False, why
     sleep(random.uniform(2, 4))
     html = fetch(session, f"{BASE}/dp/{p.asin}")
 
@@ -945,7 +974,11 @@ def listing_ok(session: requests.Session, p: Product, ch: Channel, today: date) 
 
     if ch.price_check != "off":
         ref = price_reference(html)
-        if not ref:
+        if not ref and own:
+            log.info("%s: %s sin referencia en la ficha; lo respalda el historial propio (minimo %s, mediana %s, "
+                     "%d dias vistos en %d)", ch.name, p.asin, fmt_eur(own["low30"]), fmt_eur(own["median"]),
+                     own["seen"], own["span"])
+        elif not ref:
             if ch.price_check == "strict":
                 return False, f"{REF_WHY}: la ficha no trae precio de referencia"
             log.info("%s: %s sin precio de referencia en la ficha; se acepta (%d bytes, historial: %s)",
@@ -1032,7 +1065,9 @@ def explain(products: list[Product], ch: Channel, state: dict, skip=frozenset(),
         elif p.asin in state:
             reasons[p.asin] = "ya publicado"
         elif p.asin in skip:
-            reasons[p.asin] = f"descartado por la ficha: {skip[p.asin].get('why', '') if isinstance(skip, dict) else ''}".strip(": ")
+            detail = skip[p.asin].get("why", "") if isinstance(skip, dict) else ""
+            source = "el historial propio" if "historial propio" in detail else "la ficha"
+            reasons[p.asin] = f"descartado por {source}: {detail}".strip(": ")
         elif p.asin not in fresh:
             reasons[p.asin] = "parecido a otro ya publicado"
         else:
@@ -1928,6 +1963,9 @@ def run_channel(
     rejected = load_rejected(state_path, now)
     cats = load_cats(state_path)
     session = make_session() if html_file is None else None
+    use_own = ch.own_history and ch.price_check != "off" and html_file is None
+    hist_path = state_dir / "precios_amazon.json"
+    hist = pricehist.load(hist_path) if use_own else {"p": {}}
     if ch.categories:
         targets = category_order(ch, cats)[: 1 if html_file else ch.searches_per_run]
     else:
@@ -1959,14 +1997,37 @@ def run_channel(
         if cat:
             cats[cat["nombre"]] = now.isoformat()
         check_pages = session is not None and (cch.min_listing_days > 0 or cch.min_history_drop > 0 or cch.price_check != "off")
+        skip_why = dict(rejected)  # descartes recordados + los que el historial propio desmiente en esta pasada
+        own_refs: dict[str, dict] = {}
+        if use_own:
+            try:
+                if publishing:
+                    seen = pricehist.record(hist, {p.asin: p.price for p in products if p.price}, now.date())
+                    pricehist.save(hist_path, hist)
+                    log.info("%s: precios anotados: %d vistos, %d nuevos, %d productos en el historial",
+                             label, seen["vistos"], seen["nuevos"], len(hist["p"]))
+                for p in products:
+                    ref = pricehist.reference(hist["p"].get(p.asin), now.date())
+                    if ref:
+                        own_refs[p.asin] = ref
+                for p in products:
+                    if p.asin in own_refs and p.asin not in state and p.asin not in skip_why and eligible(p, cch):
+                        why = own_reference_why(own_refs[p.asin], p.price, cch.price_tolerance)
+                        if why:
+                            skip_why[p.asin] = {"t": now.isoformat(), "why": why}
+                log.info("%s: historial propio: %d productos con datos suficientes, %d candidatos descartados por precio alto",
+                         label, len(own_refs), len(skip_why) - len(rejected))
+            except Exception as exc:  # el historial es una ayuda: nunca debe impedir publicar
+                log.warning("%s: historial propio: %s", label, type(exc).__name__)
+                own_refs, skip_why = {}, dict(rejected)
         # un sobrante como mucho por categoria, y solo si esa categoria aun no esta en la reserva
         extras_before = len(extras)
         want = 1 if need and not any(d.get("c") == (cat or {}).get("nombre", "") for d in reserve) else 0
         candidates = pick(
             products, cch, state, limit=MAX_PAGE_CHECKS if check_pages else ch.max_posts + want,
-            skip=set(rejected) | known,
+            skip=set(skip_why) | known,
         )
-        log.info("%s: %s", label, funnel(products, cch, state, skip=set(rejected)))
+        log.info("%s: %s", label, funnel(products, cch, state, skip=set(skip_why)))
 
         for p in candidates:
             if len(chosen) >= ch.max_posts and len(extras) - extras_before >= want:
@@ -1975,7 +2036,7 @@ def run_channel(
                 continue
             if check_pages:
                 try:
-                    ok, why = listing_ok(session, p, cch, now.date())
+                    ok, why = listing_ok(session, p, cch, now.date(), own=own_refs.get(p.asin))
                 except Exception as exc:  # una ficha que no carga no debe tumbar la ejecucion
                     log.info("%s: %s no se pudo comprobar la ficha (%s); se acepta", label, p.asin, type(exc).__name__)
                     ok, why = True, ""
@@ -1989,7 +2050,7 @@ def run_channel(
             else:
                 extras.append((p, cat))
         rows += [(p, why, cat["nombre"] if cat else "") for p, why in
-                 explain(products, cch, state, skip=rejected, chosen=chosen)]
+                 explain(products, cch, state, skip={**skip_why, **rejected}, chosen=chosen)]
         if chosen:
             break
     try:
