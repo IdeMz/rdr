@@ -25,7 +25,7 @@
   "Lego": "2026-11-09T10:30:54.098717+00:00",
   "Menaje de cocina": "2026-11-10T20:01:09.445485+00:00",
   "Mochilas y maletas": "2026-11-10T18:50:43.937099+00:00",
-  "Monitores": "2026-11-08T17:30:52.669776+00:00",
+  "Monitores": "2026-11-11T19:05:38.080787+00:00",
   "Móviles": "2026-11-10T15:20:47.993631+00:00",
   "Nutrición deportiva": "2026-11-11T16:55:32.341741+00:00",
   "Perfumes": "2026-11-11T12:15:40.954595+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-11T17:45:42.500382+00:00",
   "Zapatillas": "2026-11-11T12:50:38.562143+00:00"
  },
- "next_at": "2026-11-11T19:05:13.783556+00:00",
+ "next_at": "2026-11-11T19:39:35.468157+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -1258,6 +1258,16 @@
    "title": "Rowenta Intense Comfort, calefactor, calentamiento rápido, SO9330",
    "v": []
   },
+  "B0FHKXPWKS": {
+   "c": "Monitores",
+   "d": 47,
+   "e": "🖥️",
+   "m": 222,
+   "p": 100.63,
+   "t": "2026-11-11T19:06:15.972353+00:00",
+   "title": "Lenovo Legion 27-10 Monitor Gaming FHD 27\" (IPS, 240 Hz, 0.5 ms, 16:9, HDMI 2.1 - DP 1.4, AMD FreeSync Premium, VESA Adaptive Sync, Montaje VESA 100 mm, Ajuste Inclinación/Altura/Pivote/Giro) Negro",
+   "v": []
+  },
   "B0FJ85FBC9": {
    "c": "Smartwatch",
    "d": 48,
@@ -1740,6 +1750,18 @@
  },
  "reserve": [
   {
+   "a": "B0DT4R1N9N",
+   "c": "Monitores",
+   "e": "🖥️",
+   "img": "https://m.media-amazon.com/images/I/71StNw1nDbL._AC_UL320_.jpg",
+   "n": 288,
+   "op": 179.0,
+   "p": 119.0,
+   "r": 4.6,
+   "t": "2026-11-11T19:05:38.080787+00:00",
+   "title": "AOC Q27G42XE Gaming Monitor 27 Pulgadas 180Hz Panel Fast IPS, 1ms GtG, HDR10, G-Sync Compatible, Altavoces, (2560x1440 HDMI 2X 2.0 DP 1x 1.4) Negro"
+  },
+  {
    "a": "B0937LZJ3X",
    "c": "Colchones y almohadas",
    "e": "🛏️",
@@ -1768,6 +1790,6 @@
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-11",
-  "n": 20
+  "n": 21
  }
 }
