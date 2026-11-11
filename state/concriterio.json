@@ -15,7 +15,7 @@
   "Cuidado de la piel": "2026-11-10T07:35:33.533101+00:00",
   "Cuidado del cabello": "2026-11-10T14:10:44.256404+00:00",
   "Cámaras de seguridad": "2026-11-09T07:01:09.710131+00:00",
-  "Domótica": "2026-11-10T09:20:41.879952+00:00",
+  "Domótica": "2026-11-11T08:10:38.955781+00:00",
   "Fitness en casa": "2026-11-10T11:50:46.199170+00:00",
   "Freidoras de aire": "2026-11-10T19:25:34.668553+00:00",
   "Gatos": "2026-11-07T16:50:41.349951+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-10T21:10:42.687124+00:00",
   "Zapatillas": "2026-11-09T15:45:40.967709+00:00"
  },
- "next_at": "2026-11-11T08:09:26.175648+00:00",
+ "next_at": "2026-11-11T08:45:27.413154+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -564,6 +564,16 @@
    "p": 10.95,
    "t": "2026-11-10T16:31:21.289762+00:00",
    "title": "S&M 180040 Grifo de jardín antihielo con dos salidas y toma automática, Negro Y Azul",
+   "v": []
+  },
+  "B0BG6DQRL9": {
+   "c": "Domótica",
+   "d": 15,
+   "e": "💡",
+   "m": 204,
+   "p": 16.14,
+   "t": "2026-11-11T08:11:06.848421+00:00",
+   "title": "Tapo L630(2-Pack) - Bombilla inteligente WiFi, 16M colores, 1100 lm, E27",
    "v": []
   },
   "B0BL898WJZ": {
@@ -1515,6 +1525,18 @@
  "rejected": {},
  "reserve": [
   {
+   "a": "B0FNRQQTZR",
+   "c": "Domótica",
+   "e": "💡",
+   "img": "https://m.media-amazon.com/images/I/61NeXRQja4L._AC_UL320_.jpg",
+   "n": 397,
+   "op": 13.99,
+   "p": 11.99,
+   "r": 4.5,
+   "t": "2026-11-11T08:10:38.955781+00:00",
+   "title": "Tapo L430P-Bombilla inteligente WiFi, 16 millones de colores, regulable,E27"
+  },
+  {
    "a": "B0FKSV2GW2",
    "c": "Auriculares",
    "e": "🎧",
@@ -1543,6 +1565,6 @@
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-11",
-  "n": 2
+  "n": 3
  }
 }
