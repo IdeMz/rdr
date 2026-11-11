@@ -17,7 +17,7 @@
   "Cámaras de seguridad": "2026-11-11T09:20:41.357359+00:00",
   "Domótica": "2026-11-11T08:10:38.955781+00:00",
   "Fitness en casa": "2026-11-11T14:35:34.717806+00:00",
-  "Freidoras de aire": "2026-11-10T19:25:34.668553+00:00",
+  "Freidoras de aire": "2026-11-11T15:10:43.941870+00:00",
   "Gatos": "2026-11-11T14:01:09.084076+00:00",
   "Herramientas": "2026-11-10T21:45:45.365277+00:00",
   "Iluminación": "2026-11-09T13:25:33.337111+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-10T21:10:42.687124+00:00",
   "Zapatillas": "2026-11-11T12:50:38.562143+00:00"
  },
- "next_at": "2026-11-11T15:06:59.488622+00:00",
+ "next_at": "2026-11-11T15:44:39.389478+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -1047,6 +1047,16 @@
    "title": "Kneipp Gummies Niños Concentración, 30 gominolas",
    "v": []
   },
+  "B0DGLC3Y3L": {
+   "c": "Freidoras de aire",
+   "d": 33,
+   "e": "🍟",
+   "m": 216,
+   "p": 35.01,
+   "t": "2026-11-11T15:11:22.102210+00:00",
+   "title": "Cecotec Freidora de Aire 4 L Cecofry&Grill Duoheat 4000 1900W",
+   "v": []
+  },
   "B0DHSBBV6R": {
    "c": "Lego",
    "d": 30,
@@ -1649,6 +1659,10 @@
    "t": "2026-11-11T12:50:38.562143+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0CWP7M17B": {
+   "t": "2026-11-11T15:10:43.941870+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0DD3CRCTR": {
    "t": "2026-11-11T09:55:30.001966+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -1663,6 +1677,18 @@
   }
  },
  "reserve": [
+  {
+   "a": "B0FX5217CY",
+   "c": "Freidoras de aire",
+   "e": "🍟",
+   "img": "https://m.media-amazon.com/images/I/71WwDIvz9XL._AC_UL320_.jpg",
+   "n": 70,
+   "op": 159.99,
+   "p": 99.98,
+   "r": 4.4,
+   "t": "2026-11-11T15:10:43.941870+00:00",
+   "title": "Moulinex Easy Fry XL Surface, Freidora de aire 2200W, Doble resistencia"
+  },
   {
    "a": "B088DZWSF6",
    "c": "Fitness en casa",
@@ -1686,24 +1712,12 @@
    "r": 4.6,
    "t": "2026-11-11T14:01:09.084076+00:00",
    "title": "Arena para Gatos Aglomerante de Cascara de Guisante Go Natural, Lavanda"
-  },
-  {
-   "a": "B08SS5TRP4",
-   "c": "Cuidado de la piel",
-   "e": "🧴",
-   "img": "https://m.media-amazon.com/images/I/61I6MKqCj2L._AC_UL320_.jpg",
-   "n": 2300,
-   "op": 23.9,
-   "p": 12.3,
-   "r": 4.5,
-   "t": "2026-11-11T11:40:40.899668+00:00",
-   "title": "L'Oréal Paris Revitalift Laser Serúm de Noche Nº1 con Retinol Puro, 30ml"
   }
  ],
  "summary_day": "2026-11-10",
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-11",
-  "n": 14
+  "n": 15
  }
 }
