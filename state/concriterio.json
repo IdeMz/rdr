@@ -10,7 +10,7 @@
   "Café y cápsulas": "2026-11-11T13:25:31.954839+00:00",
   "Cargadores y baterías": "2026-11-10T11:15:42.709254+00:00",
   "Ciclismo": "2026-11-10T20:01:09.445485+00:00",
-  "Climatización": "2026-11-10T14:45:46.160107+00:00",
+  "Climatización": "2026-11-11T15:45:40.067358+00:00",
   "Colchones y almohadas": "2026-11-09T09:55:33.819208+00:00",
   "Cuidado de la piel": "2026-11-11T11:40:40.899668+00:00",
   "Cuidado del cabello": "2026-11-10T14:10:44.256404+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-10T21:10:42.687124+00:00",
   "Zapatillas": "2026-11-11T12:50:38.562143+00:00"
  },
- "next_at": "2026-11-11T15:44:39.389478+00:00",
+ "next_at": "2026-11-11T16:15:44.798068+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -634,6 +634,16 @@
    "p": 399.99,
    "t": "2026-11-05T07:41:06.685336+00:00",
    "title": "Philips Air Performer 8000 3en1 Purificador, Calefactor y Ventilador, 70m²",
+   "v": []
+  },
+  "B0BPYVWS6Y": {
+   "c": "Climatización",
+   "d": 40,
+   "e": "🌬️",
+   "m": 217,
+   "p": 17.93,
+   "t": "2026-11-11T15:46:06.545820+00:00",
+   "title": "Cecotec Calefactor Cerámico de Sobremesa ReadyWarm 1500 Max Ceramic, 1500 W, Termostato Regulable y 3 Modos de Funcionamiento, Área de Cobertura de 15m2",
    "v": []
   },
   "B0BQ14QLPJ": {
@@ -1718,6 +1728,6 @@
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-11",
-  "n": 15
+  "n": 16
  }
 }
