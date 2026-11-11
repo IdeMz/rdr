@@ -21,7 +21,7 @@
   "Gatos": "2026-11-11T14:01:09.084076+00:00",
   "Herramientas": "2026-11-10T21:45:45.365277+00:00",
   "Iluminación": "2026-11-09T13:25:33.337111+00:00",
-  "Jardín": "2026-11-10T16:30:58.610970+00:00",
+  "Jardín": "2026-11-11T19:40:41.234476+00:00",
   "Lego": "2026-11-09T10:30:54.098717+00:00",
   "Menaje de cocina": "2026-11-10T20:01:09.445485+00:00",
   "Mochilas y maletas": "2026-11-10T18:50:43.937099+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-11T17:45:42.500382+00:00",
   "Zapatillas": "2026-11-11T12:50:38.562143+00:00"
  },
- "next_at": "2026-11-11T19:39:35.468157+00:00",
+ "next_at": "2026-11-11T20:11:42.243668+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -454,6 +454,16 @@
    "p": 13.53,
    "t": "2026-11-11T14:01:45.946424+00:00",
    "title": "Catit Go Natural! Arena Guisantes, Aroma Vainilla 5.6 kg",
+   "v": []
+  },
+  "B08JLG459W": {
+   "c": "Jardín",
+   "d": 22,
+   "e": "🌱",
+   "m": 223,
+   "p": 23.46,
+   "t": "2026-11-11T19:41:17.797229+00:00",
+   "title": "DEWINNER Aspersor de Jardín Automático, Aspersor Giratorio de Césped de 360 °, Suministros de Jardinería Ajustables, Sistema de Riego con Boquilla de 3 Brazos para Equipos",
    "v": []
   },
   "B08X6DCJT2": {
@@ -1790,6 +1800,6 @@
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-11",
-  "n": 21
+  "n": 22
  }
 }
