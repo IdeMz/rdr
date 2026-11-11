@@ -38,10 +38,10 @@
   "Suplementos": "2026-11-10T08:45:47.983358+00:00",
   "Tablets": "2026-11-10T20:35:35.839507+00:00",
   "Televisores": "2026-11-10T18:15:42.344426+00:00",
-  "Videojuegos": "2026-11-10T21:10:42.687124+00:00",
+  "Videojuegos": "2026-11-11T17:45:42.500382+00:00",
   "Zapatillas": "2026-11-11T12:50:38.562143+00:00"
  },
- "next_at": "2026-11-11T17:40:53.665124+00:00",
+ "next_at": "2026-11-11T18:17:27.508465+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -464,6 +464,16 @@
    "p": 19.84,
    "t": "2026-11-11T09:21:10.526575+00:00",
    "title": "Imou Cámara IP WiFi Interior 2K/3MP Cámara de Vigilancia WiFi Interior 360°",
+   "v": []
+  },
+  "B08XRNCFZX": {
+   "c": "Videojuegos",
+   "d": 22,
+   "e": "🎮",
+   "m": 220,
+   "p": 29.9,
+   "t": "2026-11-11T17:46:31.652013+00:00",
+   "title": "Final Fantasy VII Remake Intergrade PS5",
    "v": []
   },
   "B093WKG8RF": {
@@ -1671,10 +1681,7 @@
    "v": []
   }
  },
- "problem": {
-  "fails": 1,
-  "last": "HTTP 503"
- },
+ "problem": {},
  "rejected": {
   "B06XBBG1L1": {
    "t": "2026-11-11T12:50:38.562143+00:00",
@@ -1700,8 +1707,16 @@
    "t": "2026-11-11T09:55:30.001966+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0DDTPK894": {
+   "t": "2026-11-11T17:45:42.500382+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0DHZT876C": {
    "t": "2026-11-11T12:50:38.562143+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0FL7NNGRG": {
+   "t": "2026-11-11T17:45:42.500382+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0G39CZ4QQ": {
@@ -1710,6 +1725,18 @@
   }
  },
  "reserve": [
+  {
+   "a": "B0BGY558SZ",
+   "c": "Videojuegos",
+   "e": "🎮",
+   "img": "https://m.media-amazon.com/images/I/810Qtabs7HL._AC_UL320_.jpg",
+   "n": 197,
+   "op": 24.26,
+   "p": 20.99,
+   "r": 4.3,
+   "t": "2026-11-11T17:45:42.500382+00:00",
+   "title": "Wild Hearts (PS5)"
+  },
   {
    "a": "B0FX5217CY",
    "c": "Freidoras de aire",
@@ -1721,36 +1748,12 @@
    "r": 4.4,
    "t": "2026-11-11T15:10:43.941870+00:00",
    "title": "Moulinex Easy Fry XL Surface, Freidora de aire 2200W, Doble resistencia"
-  },
-  {
-   "a": "B088DZWSF6",
-   "c": "Fitness en casa",
-   "e": "🏋️",
-   "img": "https://m.media-amazon.com/images/I/818CdlN1H0L._AC_UL320_.jpg",
-   "n": 18300,
-   "op": 9.99,
-   "p": 7.99,
-   "r": 4.3,
-   "t": "2026-11-11T14:35:34.717806+00:00",
-   "title": "TechStone Juego de Bandas de Resistencia para Hombres y Mujeres, Paquete de 5 Niveles de Resistencia Diferentes, Banda elástica para Gimnasio en casa, Entrenamiento de Ejercicio Largo"
-  },
-  {
-   "a": "B08GW3KGYG",
-   "c": "Gatos",
-   "e": "🐱",
-   "img": "https://m.media-amazon.com/images/I/618TTAwgUoL._AC_UL320_.jpg",
-   "n": 9300,
-   "op": 22.4,
-   "p": 13.79,
-   "r": 4.6,
-   "t": "2026-11-11T14:01:09.084076+00:00",
-   "title": "Arena para Gatos Aglomerante de Cascara de Guisante Go Natural, Lavanda"
   }
  ],
  "summary_day": "2026-11-10",
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-11",
-  "n": 18
+  "n": 19
  }
 }
