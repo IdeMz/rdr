@@ -113,14 +113,24 @@ def test_select_respects_the_limit(monkeypatch):
     assert len(fp.select(items, hist, TODAY)[0]) == 2
 
 
-def test_save_writes_valid_json_one_candidate_per_line(tmp_path):
-    data = {"day": "2026-11-20", "candidates": [{"id": "1", "name": "Ñandú"}, {"id": "2", "name": "Dos"}]}
+def test_select_reports_suspicious_drops_apart():
+    items = {"1": item(100.0, id="1", name="Portatil gaming misterioso"), "2": item(80.0, id="2", name="Movil normal azul")}
+    hist = {"p": {"1": entry((10, 1000.0), (0, 100.0)), "2": entry((10, 100.0), (0, 80.0))}}
+    suspicious = []
+    picks, stats = fp.select(items, hist, TODAY, suspicious)
+    assert [c["id"] for c in picks] == ["2"] and stats["bajada sospechosa"] == 1
+    assert [(c["id"], c["price"], c["prior_low"], c["drop"]) for c in suspicious] == [("1", 100.0, 1000.0, 90)]
+
+
+def test_save_writes_valid_json_one_product_per_line(tmp_path):
+    data = {"day": "2026-11-20", "suspicious": [{"id": "9", "name": "Raro"}],
+            "candidates": [{"id": "1", "name": "Ñandú"}, {"id": "2", "name": "Dos"}]}
     path = tmp_path / "s" / "c.json"
     fp.save(path, data)
     assert json.loads(path.read_text(encoding="utf-8")) == data
-    assert len(path.read_text(encoding="utf-8").splitlines()) == 4
+    assert len(path.read_text(encoding="utf-8").splitlines()) == 6
     fp.save(path, {"day": "x", "candidates": []})
-    assert json.loads(path.read_text(encoding="utf-8"))["candidates"] == []
+    assert json.loads(path.read_text(encoding="utf-8")) == {"day": "x", "candidates": []}
 
 
 # ---------------------------------------------------------------- integracion con el colector del feed

@@ -27,7 +27,7 @@ from dataclasses import dataclass, field, fields, replace
 from datetime import date, datetime, timedelta, timezone
 from html import escape, unescape
 from pathlib import Path
-from urllib.parse import parse_qs, quote_plus, urljoin, urlparse
+from urllib.parse import parse_qs, quote, quote_plus, urljoin, urlparse
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
 import requests
@@ -292,6 +292,7 @@ class Channel:
     x_copy: bool = False
     x_min_discount: int = 30  # solo ofertas con al menos este descuento (en %)
     x_max_per_day: int = 6  # como mucho tantos textos al dia
+    x_button: bool = True  # boton que abre X con el texto ya escrito (solo si x_copy esta activo)
     x_hashtags: str = ""  # por ejemplo "#chollo #amazon"; vacio = sin etiquetas
     x_disclosure: str = ""  # por ejemplo "Enlace afiliado"; vacio = sin aviso
 
@@ -366,6 +367,8 @@ def load_channel(path: Path) -> Channel:
         raise ConfigError(f"{path.name}: 'own_history' debe ser true o false")
     if not isinstance(ch.deals_search, bool):
         raise ConfigError(f"{path.name}: 'deals_search' debe ser true o false")
+    if not isinstance(ch.x_button, bool):
+        raise ConfigError(f"{path.name}: 'x_button' debe ser true o false")
     return ch
 
 
@@ -1521,6 +1524,19 @@ def build_x_text(p: Product, url: str, ch: Channel, cat: dict | None = None) -> 
     return title + rest
 
 
+X_INTENT = "https://x.com/intent/post?text="
+X_BUTTON_MAX = 2000  # Telegram rechaza las direcciones de boton demasiado largas
+
+
+def x_intent_url(text: str) -> str | None:
+    """Direccion que abre el compositor de X con el texto ya escrito; None si no cabe en un boton.
+
+    X no deja adjuntar la foto por enlace: se guarda desde Telegram y se anade a mano.
+    """
+    url = X_INTENT + quote(text, safe="")
+    return url if len(url) <= X_BUTTON_MAX else None
+
+
 def maybe_send_x_copy(
     ch: Channel, state_path: Path, p: Product, cat: dict | None, tag: str | None,
     photo: bytes | None, photo_url: str | None, now: datetime,
@@ -1537,12 +1553,21 @@ def maybe_send_x_copy(
     if sent_today >= ch.x_max_per_day:
         return False
     text = build_x_text(p, affiliate_url(p.asin, tag), ch, cat)
-    caption = (
-        f"📝 <b>Para X</b> ({sent_today + 1}/{ch.x_max_per_day} de hoy). Toca el texto para copiarlo "
-        f"y guarda la foto:\n\n<code>{escape(text)}</code>"
+    link = x_intent_url(text) if ch.x_button else None
+    markup = {"inline_keyboard": [[{"text": "𝕏 Abrir en X con el texto", "url": link}]]} if link else None
+    how = (
+        "Pulsa el botón para abrir X con el texto ya escrito (guarda antes la foto para añadirla) o copia el texto"
+        if markup else "Toca el texto para copiarlo y guarda la foto"
     )
+    caption = f"📝 <b>Para X</b> ({sent_today + 1}/{ch.x_max_per_day} de hoy). {how}:\n\n<code>{escape(text)}</code>"
     try:
-        send_deal(token, alert_chat, caption, photo, photo_url)
+        try:
+            send_deal(token, alert_chat, caption, photo, photo_url, markup)
+        except TelegramError as exc:
+            if not markup or exc.ambiguous:
+                raise
+            log.warning("%s: Telegram no acepto el boton de X (%s); se envia sin boton", ch.name, exc)
+            send_deal(token, alert_chat, caption, photo, photo_url)
     except TelegramError as exc:
         log.warning("%s: no se pudo enviar el texto para X (%s)", ch.name, exc)
         return False

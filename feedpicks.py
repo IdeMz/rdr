@@ -33,6 +33,7 @@ MAX_DROP = 50          # una bajada mayor se considera sospechosa (error de prec
 FRESH_DAYS = 7         # dias desde que empezo el precio actual
 MIN_PRICE = 25.0
 LIMIT = 80             # candidatos que se guardan
+SUSPICIOUS_LIMIT = 30  # bajadas sospechosas que se guardan para revisarlas a mano
 SIMILARITY = 0.5       # nombres tan parecidos se consideran el mismo producto (otro color, por ejemplo)
 
 
@@ -89,7 +90,9 @@ def _expired(valid_to: str, today: date) -> bool:
 
 
 def judge(item: dict, entry: list | None, today: date) -> tuple[dict | None, str]:
-    """(datos de la bajada, "") si el producto es candidato; (None, motivo) si no."""
+    """(datos de la bajada, "") si el producto es candidato; (None, motivo) si no.
+
+    Solo la "bajada sospechosa" devuelve tambien los datos junto al motivo."""
     t = pricehist.day_no(today)
     if not entry or len(entry) < 3 or entry[0] != t:
         return None, "sin historial de hoy"
@@ -120,16 +123,17 @@ def judge(item: dict, entry: list | None, today: date) -> tuple[dict | None, str
     drop = round((1 - price / now["median"]) * 100)
     if drop < MIN_DROP:
         return None, "bajada pequena"
-    if drop > MAX_DROP or round((1 - price / prior["low"]) * 100) > MAX_DROP:
-        return None, "bajada sospechosa"
-    return {
+    info = {
         "median": now["median"],
         "prior_low": prior["low"],
         "drop": drop,
         "drop_vs_low": round((1 - price / prior["low"]) * 100),
         "tracked_days": tracked,
         "level_days": age + 1,
-    }, ""
+    }
+    if drop > MAX_DROP or info["drop_vs_low"] > MAX_DROP:
+        return info, "bajada sospechosa"  # se devuelven los datos para poder revisarla en el informe
+    return info, ""
 
 
 def _tokens(name: str) -> set[str]:
@@ -148,15 +152,20 @@ def _same_product(a: str, b: str) -> bool:
     return smaller >= 4 and common / smaller >= 0.8
 
 
-def select(items: dict[str, dict], hist: dict, today: date) -> tuple[list[dict], dict]:
-    """Candidatos ordenados de mejor a peor y recuento de por que se descartaron los demas."""
+def select(items: dict[str, dict], hist: dict, today: date,
+           suspicious: list | None = None) -> tuple[list[dict], dict]:
+    """Candidatos ordenados de mejor a peor y recuento de por que se descartaron los demas.
+
+    Las bajadas sospechosas (probables errores de precio) se anaden a `suspicious` si se pasa la lista."""
     why: Counter = Counter()
     found: list[dict] = []
     products = hist.get("p", {})
     for pid, item in items.items():
         info, reason = judge(item, products.get(pid), today)
-        if info is None:
+        if reason:
             why[reason] += 1
+            if reason == "bajada sospechosa" and suspicious is not None:
+                suspicious.append({**item, **info})
             continue
         found.append({**item, **info, "score": round(info["drop"] * math.log10(item["price"]), 2)})
     found.sort(key=lambda c: c["score"], reverse=True)
@@ -174,7 +183,9 @@ def select(items: dict[str, dict], hist: dict, today: date) -> tuple[list[dict],
 
 def build(rows: list[dict], hist: dict, today: date) -> dict:
     items = items_from_rows(rows)
-    picks, stats = select(items, hist, today)
+    suspicious: list[dict] = []
+    picks, stats = select(items, hist, today, suspicious)
+    suspicious.sort(key=lambda c: c["price"], reverse=True)
     return {
         "day": today.isoformat(),
         "generated": datetime.now().astimezone().isoformat(timespec="seconds"),
@@ -185,19 +196,26 @@ def build(rows: list[dict], hist: dict, today: date) -> dict:
         },
         "products": len(items),
         "stats": stats,
+        "suspicious": suspicious[:SUSPICIOUS_LIMIT],
         "candidates": picks,
     }
 
 
+LIST_KEYS = ("suspicious", "candidates")
+
+
 def save(path: Path, data: dict) -> None:
-    """Un candidato por linea (se lee mejor y git guarda solo lo que cambia)."""
-    head = {k: v for k, v in data.items() if k != "candidates"}
-    opening = json.dumps(head, ensure_ascii=False, separators=(",", ":"))[:-1]
-    lines = [opening + ',"candidates":[']
-    cands = data["candidates"]
-    for i, cand in enumerate(cands):
-        lines.append(json.dumps(cand, ensure_ascii=False, separators=(",", ":")) + ("," if i < len(cands) - 1 else ""))
-    lines.append("]}")
+    """Un producto por linea en cada lista (se lee mejor y git guarda solo lo que cambia)."""
+    head = {k: v for k, v in data.items() if k not in LIST_KEYS}
+    lines = [json.dumps(head, ensure_ascii=False, separators=(",", ":"))[:-1]]
+    present = [k for k in LIST_KEYS if k in data]
+    for n, key in enumerate(present):
+        rows = data[key]
+        lines[-1] += f',"{key}":['
+        for i, row in enumerate(rows):
+            lines.append(json.dumps(row, ensure_ascii=False, separators=(",", ":")) + ("," if i < len(rows) - 1 else ""))
+        lines.append("]")
+    lines[-1] += "}"
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(".tmp")
     tmp.write_text("\n".join(lines) + "\n", encoding="utf-8")

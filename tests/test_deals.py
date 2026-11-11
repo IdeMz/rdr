@@ -2284,6 +2284,58 @@ def test_x_copy_failure_never_breaks_the_publication(tmp_path, monkeypatch):
     assert len(saved["posted"]) == 1 and "x_copy" not in saved
 
 
+def test_x_intent_url_opens_the_composer_with_the_exact_text():
+    from urllib.parse import parse_qs, urlparse
+    text = "Freidora 5,5L ñ\n\n❌69.99€\n🛒39.99€👉-43%\n\nhttps://www.amazon.es/dp/B000000001?tag=tag-21"
+    url = deals.x_intent_url(text)
+    assert url.startswith("https://x.com/intent/post?text=") and "\n" not in url and " " not in url
+    assert parse_qs(urlparse(url).query)["text"] == [text]
+    assert deals.x_intent_url("a" * 3000) is None
+
+
+def test_x_copy_has_a_button_that_opens_x_with_the_text(tmp_path, monkeypatch):
+    from html import unescape
+    from urllib.parse import parse_qs, urlparse
+    tg = x_env(monkeypatch)
+    deals.run_channel(channel(x_copy=True, x_min_discount=10), state_dir=tmp_path, now=NOW_IN)
+    sent = x_sent(tg)[0]
+    button = json.loads(sent["reply_markup"])["inline_keyboard"][0][0]
+    text = parse_qs(urlparse(button["url"]).query)["text"][0]
+    assert "tag=tag-21" in text and "🛒" in text and button["url"].startswith("https://x.com/intent/post?text=")
+    assert f"<code>{deals.escape(text)}</code>" in sent["caption"] and "Pulsa el botón" in sent["caption"]
+
+
+def test_x_button_can_be_turned_off(tmp_path, monkeypatch):
+    tg = x_env(monkeypatch)
+    deals.run_channel(channel(x_copy=True, x_min_discount=10, x_button=False), state_dir=tmp_path, now=NOW_IN)
+    sent = x_sent(tg)[0]
+    assert "reply_markup" not in sent and "Toca el texto" in sent["caption"]
+
+
+def test_x_copy_is_resent_without_the_button_if_telegram_refuses_it(tmp_path, monkeypatch, caplog):
+    tg = x_env(monkeypatch)
+    real = deals.tg_call
+
+    def picky(method, token, data, **kw):
+        if data.get("chat_id") == "777" and "reply_markup" in data:
+            raise deals.TelegramError(f"{method}: HTTP 400 BUTTON_URL_INVALID")
+        return real(method, token, data, **kw)
+
+    monkeypatch.setattr(deals, "tg_call", picky)
+    with caplog.at_level(logging.WARNING, logger="deals"):
+        assert deals.run_channel(channel(x_copy=True, x_min_discount=10), state_dir=tmp_path, now=NOW_IN) == 1
+    sent = x_sent(tg)
+    assert len(sent) == 1 and "reply_markup" not in sent[0] and "<code>" in sent[0]["caption"]
+    assert "no acepto el boton de X" in caplog.text
+    assert json.loads((tmp_path / "t.json").read_text())["x_copy"]["n"] == 1
+
+
+def test_load_channel_validates_x_button(tmp_path):
+    assert deals.load_channel(write_cfg(tmp_path)).x_button is True
+    with pytest.raises(deals.ConfigError, match="x_button"):
+        deals.load_channel(write_cfg(tmp_path, x_button="si"))
+
+
 # ------------------------------------------------- precio por kilo no es el precio anterior
 
 def unit_card(price, unit_html, strike_html=""):
