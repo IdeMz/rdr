@@ -39,9 +39,9 @@
   "Tablets": "2026-11-10T20:35:35.839507+00:00",
   "Televisores": "2026-11-11T20:15:41.209092+00:00",
   "Videojuegos": "2026-11-11T17:45:42.500382+00:00",
-  "Zapatillas": "2026-11-11T12:50:38.562143+00:00"
+  "Zapatillas": "2026-11-12T11:45:43.028763+00:00"
  },
- "next_at": "2026-11-12T11:41:41.913931+00:00",
+ "next_at": "2026-11-12T12:17:31.394982+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -1444,6 +1444,17 @@
    "title": "Anker soundcore 2 Altavoz Bluetooth Portátil 12 W, BassUp, IPX7(Beige)",
    "v": []
   },
+  "B0FT44FP1R": {
+   "c": "Zapatillas",
+   "d": 36,
+   "e": "👟",
+   "m": 237,
+   "p": 64.0,
+   "s": "ofertas",
+   "t": "2026-11-12T11:46:36.756650+00:00",
+   "title": "Mujer Adizero Pacer W Shoes",
+   "v": []
+  },
   "B0FT8PMRW4": {
    "c": "Móviles",
    "d": 11,
@@ -1855,6 +1866,10 @@
    "t": "2026-11-12T09:20:48.160799+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0BZXL5TTB": {
+   "t": "2026-11-12T11:45:43.028763+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0CDCL53KW": {
    "t": "2026-11-12T08:45:45.168399+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -1865,6 +1880,10 @@
   },
   "B0CKRZMLN6": {
    "t": "2026-11-11T12:50:38.562143+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0CKRZNZBW": {
+   "t": "2026-11-12T11:45:43.028763+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0CKXRGX7M": {
@@ -1887,6 +1906,10 @@
    "t": "2026-11-11T17:45:42.500382+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0DHXFDNK2": {
+   "t": "2026-11-12T11:45:43.028763+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0DHZT876C": {
    "t": "2026-11-11T12:50:38.562143+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -1901,6 +1924,14 @@
   },
   "B0FMGXH38Q": {
    "t": "2026-11-12T07:35:38.163573+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0FVXGNCPB": {
+   "t": "2026-11-12T11:45:43.028763+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0FXMHY6TT": {
+   "t": "2026-11-12T11:45:43.028763+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0H699SLKM": {
@@ -1932,24 +1963,12 @@
    "r": 4.2,
    "t": "2026-11-12T10:35:36.602474+00:00",
    "title": "eufy C28 Omni Robot Aspirador y fregasuelos, HydroJet 15.000 Pa"
-  },
-  {
-   "a": "B0DTTK2RVR",
-   "c": "Almacenamiento",
-   "e": "💾",
-   "img": "https://m.media-amazon.com/images/I/61l-Pu+pssL._AC_UY218_.jpg",
-   "n": 605,
-   "op": 189.99,
-   "p": 170.99,
-   "r": 4.4,
-   "t": "2026-11-12T08:10:49.385821+00:00",
-   "title": "1TB NVMe PCIe 3.0x4 SSD 3500MB/s Para Mac Air 2013-2017"
   }
  ],
  "summary_day": "2026-11-11",
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-12",
-  "n": 8
+  "n": 9
  }
 }
