@@ -33,7 +33,7 @@
   "Perros": "2026-11-11T07:01:10.008228+00:00",
   "Portátiles": "2026-11-11T11:05:32.427978+00:00",
   "Relojes": "2026-11-12T09:20:48.160799+00:00",
-  "Robots de cocina": "2026-11-08T16:20:40.816944+00:00",
+  "Robots de cocina": "2026-11-12T11:10:46.841102+00:00",
   "Smartwatch": "2026-11-11T16:20:38.627123+00:00",
   "Suplementos": "2026-11-12T07:01:12.210606+00:00",
   "Tablets": "2026-11-10T20:35:35.839507+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-11T17:45:42.500382+00:00",
   "Zapatillas": "2026-11-11T12:50:38.562143+00:00"
  },
- "next_at": "2026-11-12T11:10:22.267090+00:00",
+ "next_at": "2026-11-12T11:41:41.913931+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -1664,6 +1664,17 @@
    "title": "CAROTE Juego de Ollas y Sartenes Antiadherentes 13 Piezas, Marrón Oscuro",
    "v": []
   },
+  "B0H33NS6RS": {
+   "c": "Robots de cocina",
+   "d": 21,
+   "e": "🥣",
+   "m": 236,
+   "p": 47.49,
+   "s": "ofertas",
+   "t": "2026-11-12T11:11:25.178010+00:00",
+   "title": "TopStrong Procesador de Alimentos Multifunción, 800W Robot de Cocina, Compacto, Recipiente de 2L, Incluye 3 Discos de Corte, Picadora, Amasadora y Batidor",
+   "v": []
+  },
   "B0H3KV5W3B": {
    "c": "Mochilas y maletas",
    "d": 45,
@@ -1828,6 +1839,10 @@
    "t": "2026-11-12T07:35:38.163573+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0815BLCJL": {
+   "t": "2026-11-12T11:10:46.841102+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B09YLB3SKY": {
    "t": "2026-11-11T12:50:38.562143+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -1895,6 +1910,18 @@
  },
  "reserve": [
   {
+   "a": "B0DJ2Y3XZ8",
+   "c": "Robots de cocina",
+   "e": "🥣",
+   "img": "https://m.media-amazon.com/images/I/71xs9hRoGTL._AC_UL320_.jpg",
+   "n": 71,
+   "op": 79.9,
+   "p": 58.9,
+   "r": 4.4,
+   "t": "2026-11-12T11:10:46.841102+00:00",
+   "title": "Cecotec Robot de Cocina Bebé, Procesador de Alimentos Nana BabyCare FoodProcessor. Hierve, Tritura, Esteriliza y Calienta Biberones, sin BPA, Apto para Frutas, Verduras y Carnes, Incluye Recetario"
+  },
+  {
    "a": "B0FL7GXSCV",
    "c": "Aspiradoras",
    "e": "🧹",
@@ -1917,24 +1944,12 @@
    "r": 4.4,
    "t": "2026-11-12T08:10:49.385821+00:00",
    "title": "1TB NVMe PCIe 3.0x4 SSD 3500MB/s Para Mac Air 2013-2017"
-  },
-  {
-   "a": "B08N3YCTK7",
-   "c": "Altavoces",
-   "e": "🔊",
-   "img": "https://m.media-amazon.com/images/I/716Ap-eCdtL._AC_UY218_.jpg",
-   "n": 609,
-   "op": 69.98,
-   "p": 52.92,
-   "r": 4.3,
-   "t": "2026-11-12T07:35:38.163573+00:00",
-   "title": "Altavoz Bluetooth Potente de 60W (80W Peak) con Doble Subwoofer y Bajo Profundo, Altavoces Bluetooth Portátiles con Conexión Inalámbrica de 100ft, Ideal para Viajes y Fiestas"
   }
  ],
  "summary_day": "2026-11-11",
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-12",
-  "n": 7
+  "n": 8
  }
 }
