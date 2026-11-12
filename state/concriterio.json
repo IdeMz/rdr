@@ -14,7 +14,7 @@
   "Colchones y almohadas": "2026-11-11T18:30:53.717319+00:00",
   "Cuidado de la piel": "2026-11-11T11:40:40.899668+00:00",
   "Cuidado del cabello": "2026-11-10T14:10:44.256404+00:00",
-  "Cámaras de seguridad": "2026-11-11T09:20:41.357359+00:00",
+  "Cámaras de seguridad": "2026-11-12T16:45:42.838161+00:00",
   "Domótica": "2026-11-12T16:10:50.553905+00:00",
   "Fitness en casa": "2026-11-11T14:35:34.717806+00:00",
   "Freidoras de aire": "2026-11-11T15:10:43.941870+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-11T17:45:42.500382+00:00",
   "Zapatillas": "2026-11-12T11:45:43.028763+00:00"
  },
- "next_at": "2026-11-12T16:43:43.233991+00:00",
+ "next_at": "2026-11-12T17:20:42.742403+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -1528,6 +1528,17 @@
    "title": "LN LENQIN",
    "v": []
   },
+  "B0G6BMWHYN": {
+   "c": "Cámaras de seguridad",
+   "d": 24,
+   "e": "📹",
+   "m": 243,
+   "p": 75.95,
+   "s": "ambas",
+   "t": "2026-11-12T16:46:11.511232+00:00",
+   "title": "Tapo C545D - Cámara de Vigilancia WiFi Exterior 360º, Doble Lente 2K, IA",
+   "v": []
+  },
   "B0G7VW141Z": {
    "c": "Aspiradoras",
    "d": 55,
@@ -1980,6 +1991,18 @@
  },
  "reserve": [
   {
+   "a": "B0CBMVQQSK",
+   "c": "Cámaras de seguridad",
+   "e": "📹",
+   "img": "https://m.media-amazon.com/images/I/61ag1lGRrDL._AC_UL320_.jpg",
+   "n": 31900,
+   "op": 45.99,
+   "p": 37.99,
+   "r": 4.5,
+   "t": "2026-11-12T16:45:42.838161+00:00",
+   "title": "EZVIZ Kit de 2 Cámaras Vigilancia WiFi Interior 360º, C6N Camara Vigilancia Bebe 1080P, Visión Nocturna, Audio Bidireccional, Detección de Movimiento, Control Remoto, Blanco"
+  },
+  {
    "a": "B0BFJLTTL7",
    "c": "Domótica",
    "e": "💡",
@@ -1996,6 +2019,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-12",
-  "n": 13
+  "n": 14
  }
 }
