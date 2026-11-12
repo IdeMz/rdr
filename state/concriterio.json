@@ -13,7 +13,7 @@
   "Climatización": "2026-11-11T15:45:40.067358+00:00",
   "Colchones y almohadas": "2026-11-11T18:30:53.717319+00:00",
   "Cuidado de la piel": "2026-11-11T11:40:40.899668+00:00",
-  "Cuidado del cabello": "2026-11-10T14:10:44.256404+00:00",
+  "Cuidado del cabello": "2026-11-12T21:55:34.077440+00:00",
   "Cámaras de seguridad": "2026-11-12T16:45:42.838161+00:00",
   "Domótica": "2026-11-12T16:10:50.553905+00:00",
   "Fitness en casa": "2026-11-11T14:35:34.717806+00:00",
@@ -36,12 +36,12 @@
   "Robots de cocina": "2026-11-12T11:10:46.841102+00:00",
   "Smartwatch": "2026-11-12T20:30:50.378352+00:00",
   "Suplementos": "2026-11-12T07:01:12.210606+00:00",
-  "Tablets": "2026-11-10T20:35:35.839507+00:00",
+  "Tablets": "2026-11-12T21:55:34.077440+00:00",
   "Televisores": "2026-11-11T20:15:41.209092+00:00",
   "Videojuegos": "2026-11-12T21:40:51.544407+00:00",
   "Zapatillas": "2026-11-12T11:45:43.028763+00:00"
  },
- "next_at": "2026-11-12T21:50:51.544407+00:00",
+ "next_at": "2026-11-12T22:30:20.312354+00:00",
  "offer": {
   "a": "B09VN62HF3",
   "m": 193,
@@ -460,6 +460,17 @@
    "p": 64.95,
    "t": "2026-11-05T14:11:12.475410+00:00",
    "title": "Jpg le male le parfum epv 75ml",
+   "v": []
+  },
+  "B08GCDYC89": {
+   "c": "Cuidado del cabello",
+   "d": 30,
+   "e": "💇",
+   "m": 251,
+   "p": 20.89,
+   "s": "ofertas",
+   "t": "2026-11-12T21:56:31.030360+00:00",
+   "title": "Rowenta Optiliss, plancha de pelo, calentamiento rápido, SF3210",
    "v": []
   },
   "B08GDC99PX": {
@@ -1976,11 +1987,12 @@
    "v": []
   }
  },
- "problem": {
-  "empties": 1,
-  "last": "sin candidatos"
- },
+ "problem": {},
  "rejected": {
+  "B07N9CTXRP": {
+   "t": "2026-11-12T21:55:34.077440+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B07TFGZ33M": {
    "t": "2026-11-12T07:35:38.163573+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2057,8 +2069,16 @@
    "t": "2026-11-12T11:45:43.028763+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0G14W2ZWW": {
+   "t": "2026-11-12T21:55:34.077440+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0G39CZ4QQ": {
    "t": "2026-11-12T14:05:45.520815+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0GQL6N4BG": {
+   "t": "2026-11-12T21:55:34.077440+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0HCBT1LRB": {
@@ -2071,6 +2091,18 @@
   }
  },
  "reserve": [
+  {
+   "a": "B0GYFM8Z87",
+   "c": "Cuidado del cabello",
+   "e": "💇",
+   "img": "https://m.media-amazon.com/images/I/71GMxwLydyL._AC_UL320_.jpg",
+   "n": 160,
+   "op": 199.0,
+   "p": 128.19,
+   "r": 4.7,
+   "t": "2026-11-12T21:55:34.077440+00:00",
+   "title": "ghd Glide+ Max - Cepillo Alisador de Pelo Profesional Térmico más Amplio"
+  },
   {
    "a": "B0D1VN79ML",
    "c": "Nutrición deportiva",
@@ -2100,6 +2132,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-12",
-  "n": 20
+  "n": 21
  }
 }
