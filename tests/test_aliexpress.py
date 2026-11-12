@@ -104,6 +104,14 @@ def test_item_from_converts_fields_and_rejects_unusable_products():
     assert ax.item_from(product("80", "1.299,99"))["price"] == 1299.99
 
 
+def test_origin_is_read_from_any_shipping_origin_field():
+    assert ax.item_from(product("1", 9.0, ship_from_country="ES"))["from_spain"] is True
+    assert ax.item_from(product("2", 9.0, ship_from="China"))["from_spain"] is False
+    assert ax.item_from(product("3", 9.0, warehouse="Spain"))["from_spain"] is True
+    unknown = ax.item_from(product("4", 9.0))
+    assert unknown["from_spain"] is None and unknown["ship_from"] is None
+
+
 def test_keywords_come_from_the_channel_search_urls(tmp_path):
     ch = tmp_path / "c.json"
     ch.write_text(json.dumps({"categories": [{"url": "/s?k=smartphone+libre"}, {"url": "/s?k=auriculares%20bluetooth"},
@@ -190,3 +198,38 @@ def test_report_finds_a_real_drop_with_the_lower_price_floor(tmp_path):
     data = json.loads((tmp_path / ax.PICKS_FILE).read_text())
     assert [c["id"] for c in data["candidates"]] == ["1"] and data["candidates"][0]["drop"] == 30
     assert data["stats"]["precio sin cambios"] == 1                # el de 8 EUR no ha bajado nunca
+
+
+def test_report_drops_products_shipped_from_abroad_and_keeps_unknown_origin(tmp_path):
+    ch = channel_file(tmp_path)
+    creds = (KEY, SECRET, TRACK)
+    for n, price in enumerate([20.0, 20.0, 20.0, 14.0]):
+        day = date(2026, 11, 9 + n)
+        batch = [product("1", price, ship_from_country="ES", product_title="Auriculares Xiaomi Redmi Buds"),
+                 product("2", price, ship_from_country="CN", product_title="Altavoz Anker Soundcore Mini"),
+                 product("3", price, product_title="Cargador Baseus GaN 65W rapido")]
+        ax.run(creds, tmp_path, ch, day, 8, post=poster(batch), sleep=lambda s: None)
+    data = json.loads((tmp_path / ax.PICKS_FILE).read_text())
+    assert sorted(c["id"] for c in data["candidates"]) == ["1", "3"]
+    assert {c["id"]: c["from_spain"] for c in data["candidates"]} == {"1": True, "3": None}
+    assert data["stats"]["no envia desde España"] == 1
+    assert data["origin_known"] == 2 and data["from_spain"] == 1
+
+
+def test_run_repeats_an_outdated_probe_once_even_if_the_day_is_already_collected(tmp_path):
+    ch = channel_file(tmp_path)
+    creds = (KEY, SECRET, TRACK)
+    calls = []
+    post = poster([product("1", 10.0)], calls=calls)
+    ax.run(creds, tmp_path, ch, TODAY, 7, post=post, sleep=lambda s: None)
+    probe_path = tmp_path / ax.PROBE_FILE
+    assert json.loads(probe_path.read_text())["version"] == ax.PROBE_VERSION
+    old = json.loads(probe_path.read_text())
+    old["version"] = 1
+    probe_path.write_text(json.dumps(old))
+    n = len(calls)
+    assert "sondeo actualizado" in ax.run(creds, tmp_path, ch, TODAY, 8, post=post, sleep=lambda s: None)
+    assert len(calls) > n and json.loads(probe_path.read_text())["version"] == ax.PROBE_VERSION
+    n = len(calls)
+    assert "ya recogidos" in ax.run(creds, tmp_path, ch, TODAY, 9, post=post, sleep=lambda s: None)
+    assert len(calls) == n

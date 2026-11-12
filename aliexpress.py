@@ -1,8 +1,12 @@
 """Recopilador de precios de AliExpress (API de afiliados). De momento solo en modo informe.
 
-Una vez al dia pide a la API los productos mas vendidos de cada categoria del canal (con envio a España y en
-euros), anota su precio en state/aliexpress_precios.json con el mismo formato que el feed de PowerPlanet y deja
+Una vez al dia pide a la API los productos mas vendidos de cada categoria del canal (precios y plazos para
+España, en euros), anota su precio en state/aliexpress_precios.json con el mismo formato que el feed de PowerPlanet y deja
 los candidatos en state/aliexpress_candidates.json con las reglas de feedpicks.py. No publica nada.
+
+Solo interesan los productos que se ENVIAN DESDE España (almacen local), no los que solo se entregan en España.
+La API puede no decir el origen: si lo dice y no es España el producto se descarta; si no lo dice queda en el
+informe con from_spain = null (sin verificar) y con su plazo de entrega, que es la otra pista.
 
 El "antes" de AliExpress esta muy inflado y la API no da historial: la bajada se mide contra el historial propio.
 
@@ -46,6 +50,10 @@ MIN_PRICE = 5.0           # en AliExpress hay ofertas validas por debajo de los 
 HIST_FILE = "aliexpress_precios.json"
 PICKS_FILE = "aliexpress_candidates.json"
 PROBE_FILE = "aliexpress_probe.json"
+ONLY_FROM_SPAIN = True    # descarta del informe los productos cuyo origen conocido no es España
+SPAIN_NAMES = {"ES", "ESP", "SPAIN", "ESPANA", "ESPAÑA"}
+ORIGIN_KEY_RE = re.compile(r"ship\w*from|from_?country|origin(?!al)|warehouse", re.IGNORECASE)  # no "original_price"
+PROBE_VERSION = 2         # sube cuando cambian las variantes del sondeo: se repite aunque el dia ya este recogido
 SAMPLE = 3                # productos de muestra por consulta en el fichero de sondeo
 SAMPLE_CHARS = 160
 
@@ -117,6 +125,14 @@ def _num(value) -> float | None:
         return None
 
 
+def origin_of(product: dict) -> str | None:
+    """Pais desde el que se envia, si la API lo dice en algun campo (el nombre del campo no esta confirmado)."""
+    for key, value in product.items():
+        if ORIGIN_KEY_RE.search(str(key)) and isinstance(value, str) and value.strip():
+            return value.strip()
+    return None
+
+
 def item_from(product: dict) -> dict | None:
     """Producto de la API en el formato de feedpicks (id, nombre, precio...), o None si no es utilizable."""
     pid = str(product.get("product_id") or "").strip()
@@ -125,6 +141,7 @@ def item_from(product: dict) -> dict | None:
         return None
     original = _num(product.get("target_original_price"))
     days = _num(product.get("ship_to_days"))
+    origin = origin_of(product)
     return {
         "id": pid,
         "name": str(product.get("product_title") or "").strip(),
@@ -141,6 +158,8 @@ def item_from(product: dict) -> dict | None:
         "rating": _num(product.get("evaluate_rate")),          # AliExpress lo da en porcentaje (94.5%)
         "reviews": int(v) if (v := _num(product.get("lastest_volume"))) is not None else None,  # ventas
         "ship_days": int(days) if days is not None else None,
+        "ship_from": origin,
+        "from_spain": (origin.upper() in SPAIN_NAMES) if origin else None,  # None = la API no lo dice
     }
 
 
@@ -204,7 +223,9 @@ def probe(key: str, secret: str, tracking: str, keyword: str, post=requests.post
     """Prueba unas pocas variantes y apunta que campos devuelven (para saber que se puede filtrar)."""
     variants = {
         "hot_base": (HOT_METHOD, {}),
+        "hot_entrega_3_dias": (HOT_METHOD, {"delivery_days": "3"}),
         "hot_entrega_5_dias": (HOT_METHOD, {"delivery_days": "5"}),
+        "hot_envio_desde_ES": (HOT_METHOD, {"ship_from_country": "ES"}),  # nombre de parametro sin confirmar
         "busqueda_base": (SEARCH_METHOD, {}),
     }
     out: dict = {}
@@ -237,7 +258,11 @@ def report(items: dict[str, dict], hist: dict, today: date) -> dict:
     """Candidatos del dia con las mismas reglas que PowerPlanet (otro suelo de precio)."""
     suspicious: list[dict] = []
     to_verify: list[dict] = []
-    picks, stats = feedpicks.select(items, hist, today, suspicious, to_verify, min_price=MIN_PRICE)
+    foreign = {pid for pid, i in items.items() if ONLY_FROM_SPAIN and i.get("from_spain") is False}
+    usable = {pid: i for pid, i in items.items() if pid not in foreign}
+    picks, stats = feedpicks.select(usable, hist, today, suspicious, to_verify, min_price=MIN_PRICE)
+    if foreign:
+        stats["no envia desde España"] = len(foreign)
     suspicious.sort(key=lambda c: c["price"], reverse=True)
     with_days = sum(1 for i in items.values() if i.get("ship_days") is not None)
     return {
@@ -245,6 +270,8 @@ def report(items: dict[str, dict], hist: dict, today: date) -> dict:
         "mode": "informe",
         "products": len(items),
         "with_ship_days": with_days,
+        "origin_known": sum(1 for i in items.values() if i.get("from_spain") is not None),
+        "from_spain": sum(1 for i in items.values() if i.get("from_spain")),
         "stats": stats,
         "to_verify": to_verify[:feedpicks.SUSPICIOUS_LIMIT],
         "suspicious": suspicious[:feedpicks.SUSPICIOUS_LIMIT],
@@ -258,11 +285,14 @@ def run(creds: tuple[str, str, str], state_dir: Path, channel_file: Path, today:
     key, secret, tracking = creds
     path = state_dir / HIST_FILE
     hist = feed.load_history(path)
-    if hist.get("updated") == today.isoformat():
-        return "aliexpress: precios de hoy ya recogidos"
     if hour < START_HOUR:
         return f"aliexpress: se recoge a partir de las {START_HOUR}h (Madrid)"
     keywords = keywords_from_channel(channel_file)
+    if hist.get("updated") == today.isoformat():
+        if not probe_is_current(state_dir):  # el sondeo de hoy se hizo con otras variantes: se repite una vez
+            save_probe(creds, state_dir, keywords, today, post, sleep, now)
+            return "aliexpress: precios de hoy ya recogidos; sondeo actualizado"
+        return "aliexpress: precios de hoy ya recogidos"
     items, stats = gather(key, secret, tracking, keywords, post=post, sleep=sleep, now=now)
     if not items:
         return f"aliexpress: sin productos ({stats['errores']} errores en {stats['llamadas']} llamadas); se reintenta"
@@ -277,10 +307,21 @@ def run(creds: tuple[str, str, str], state_dir: Path, channel_file: Path, today:
         sentence += f"; {len(data['candidates'])} candidatos en el informe"
     except Exception as exc:  # el informe es un extra
         log.warning("aliexpress: no se pudo calcular el informe (%s)", type(exc).__name__)
+    save_probe(creds, state_dir, keywords, today, post, sleep, now)
+    return sentence
+
+
+def save_probe(creds: tuple[str, str, str], state_dir: Path, keywords: list[str], today: date, post, sleep, now) -> None:
+    key, secret, tracking = creds
     try:
-        write_json(state_dir / PROBE_FILE, {"day": today.isoformat(),
-                                            "variants": probe(key, secret, tracking, keywords[0] if keywords else "auriculares",
-                                                              post=post, sleep=sleep, now=now)})
+        variants = probe(key, secret, tracking, keywords[0] if keywords else "auriculares", post=post, sleep=sleep, now=now)
+        write_json(state_dir / PROBE_FILE, {"version": PROBE_VERSION, "day": today.isoformat(), "variants": variants})
     except Exception as exc:
         log.warning("aliexpress: no se pudo guardar el sondeo (%s)", type(exc).__name__)
-    return sentence
+
+
+def probe_is_current(state_dir: Path) -> bool:
+    try:
+        return json.loads((state_dir / PROBE_FILE).read_text(encoding="utf-8")).get("version") == PROBE_VERSION
+    except (OSError, ValueError):
+        return False
