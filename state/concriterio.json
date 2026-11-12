@@ -5,7 +5,7 @@
   "Almacenamiento": "2026-11-12T08:10:49.385821+00:00",
   "Altavoces": "2026-11-12T07:35:38.163573+00:00",
   "Aspiradoras": "2026-11-12T10:35:36.602474+00:00",
-  "Auriculares": "2026-11-11T07:35:32.720140+00:00",
+  "Auriculares": "2026-11-12T12:20:44.296151+00:00",
   "Cafeteras": "2026-11-12T08:45:45.168399+00:00",
   "Café y cápsulas": "2026-11-11T13:25:31.954839+00:00",
   "Cargadores y baterías": "2026-11-10T11:15:42.709254+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-11T17:45:42.500382+00:00",
   "Zapatillas": "2026-11-12T11:45:43.028763+00:00"
  },
- "next_at": "2026-11-12T12:17:31.394982+00:00",
+ "next_at": "2026-11-12T12:52:29.231696+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -788,6 +788,17 @@
    "p": 69.99,
    "t": "2026-11-06T07:01:39.101272+00:00",
    "title": "GKU 4K Dashcam Cámara Coche, 5GHz WiFi Dash CAM Coche con Tarjeta de 64GB, Mini Cámara Coche Grabadora, 170° Gran Angular, Visión Nocturna, WDR, Sensor G, Modo Parking 24H, Control App, Máx 256GB",
+   "v": []
+  },
+  "B0C3HCD34R": {
+   "c": "Auriculares",
+   "d": 40,
+   "e": "🎧",
+   "m": 238,
+   "p": 29.99,
+   "s": "ofertas",
+   "t": "2026-11-12T12:21:20.635700+00:00",
+   "title": "soundcore Q20i de Anker Cascos Bluetooth con ANC Híbrida, Hi-Res, 40H",
    "v": []
   },
   "B0C6TH55LD": {
@@ -1941,6 +1952,18 @@
  },
  "reserve": [
   {
+   "a": "B0FKSV2GW2",
+   "c": "Auriculares",
+   "e": "🎧",
+   "img": "https://m.media-amazon.com/images/I/51oANfCPfVL._AC_UL320_.jpg",
+   "n": 3400,
+   "op": 69.99,
+   "p": 37.99,
+   "r": 4.6,
+   "t": "2026-11-12T12:20:44.296151+00:00",
+   "title": "Soundcore C50i de Anker, Auriculares Abiertos con Clip, diseño FlexiClip"
+  },
+  {
    "a": "B0DJ2Y3XZ8",
    "c": "Robots de cocina",
    "e": "🥣",
@@ -1969,6 +1992,6 @@
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-12",
-  "n": 9
+  "n": 10
  }
 }
