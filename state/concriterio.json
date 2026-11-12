@@ -41,12 +41,8 @@
   "Videojuegos": "2026-11-11T17:45:42.500382+00:00",
   "Zapatillas": "2026-11-12T11:45:43.028763+00:00"
  },
- "next_at": "2026-11-12T15:38:25.019769+00:00",
- "offer": {
-  "a": "B0GQX6JT42",
-  "m": 183,
-  "t": "2026-11-12T14:50:44.944777+00:00"
- },
+ "next_at": "2026-11-12T16:07:04.704350+00:00",
+ "offer": null,
  "posted": {
   "B0001IOZ98": {
    "c": "Jardín",
@@ -1602,6 +1598,17 @@
    "title": "TCL 55V6D Televisor 55 Pulgadas 4K UHD Smart TV, Fire TV, Alexa Integrado, Dolby Vision & Atmos, Game Master, HDR10+, Control por Voz",
    "v": []
   },
+  "B0GQX6JT42": {
+   "c": "Accesorios de coche",
+   "d": 10,
+   "e": "🚗",
+   "m": 241,
+   "manual": true,
+   "p": 26.99,
+   "t": "2026-11-12T15:35:36.961465+00:00",
+   "title": "GKU Dashcam Kit de Cableado con 8 Fusibles, Puerto USB-C 3,2 Metros, 12V-24V a 5V/3A, Voltaje Ajustable 11,3 V y 13,5 V, Protección de Bajo Voltaje y Vigilancia de Estacionamiento para GKU Dash CAM",
+   "v": []
+  },
   "B0GSS34ZYM": {
    "c": "Freidoras de aire",
    "d": 37,
@@ -1964,46 +1971,9 @@
    "why": "referencia: la ficha no trae precio de referencia"
   }
  },
- "reserve": [
-  {
-   "a": "B0GQX6JT42",
-   "c": "Accesorios de coche",
-   "e": "🚗",
-   "img": "https://m.media-amazon.com/images/I/61Io4pNfx-L._AC_UL320_.jpg",
-   "n": 1300,
-   "op": 29.99,
-   "p": 26.99,
-   "r": 4.4,
-   "t": "2026-11-12T14:05:45.520815+00:00",
-   "title": "GKU Dashcam Kit de Cableado con 8 Fusibles, Puerto USB-C 3,2 Metros, 12V-24V a 5V/3A, Voltaje Ajustable 11,3 V y 13,5 V, Protección de Bajo Voltaje y Vigilancia de Estacionamiento para GKU Dash CAM"
-  },
-  {
-   "a": "B0FKSV2GW2",
-   "c": "Auriculares",
-   "e": "🎧",
-   "img": "https://m.media-amazon.com/images/I/51oANfCPfVL._AC_UL320_.jpg",
-   "n": 3400,
-   "op": 69.99,
-   "p": 37.99,
-   "r": 4.6,
-   "t": "2026-11-12T12:20:44.296151+00:00",
-   "title": "Soundcore C50i de Anker, Auriculares Abiertos con Clip, diseño FlexiClip"
-  },
-  {
-   "a": "B0DJ2Y3XZ8",
-   "c": "Robots de cocina",
-   "e": "🥣",
-   "img": "https://m.media-amazon.com/images/I/71xs9hRoGTL._AC_UL320_.jpg",
-   "n": 71,
-   "op": 79.9,
-   "p": 58.9,
-   "r": 4.4,
-   "t": "2026-11-12T11:10:46.841102+00:00",
-   "title": "Cecotec Robot de Cocina Bebé, Procesador de Alimentos Nana BabyCare FoodProcessor. Hierve, Tritura, Esteriliza y Calienta Biberones, sin BPA, Apto para Frutas, Verduras y Carnes, Incluye Recetario"
-  }
- ],
+ "reserve": [],
  "summary_day": "2026-11-11",
- "tg_offset": 511048052,
+ "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-12",
   "n": 12
