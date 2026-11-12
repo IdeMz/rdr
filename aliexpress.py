@@ -66,7 +66,7 @@ EUROPE_NAMES = {  # UE, EEE, Reino Unido y Suiza: codigos ISO y nombres habitual
     "HUNGARY", "HUNGRIA", "ROMANIA", "RUMANIA", "BULGARIA", "GREECE", "GRECIA", "SLOVAKIA", "ESLOVAQUIA",
 }
 ORIGIN_KEY_RE = re.compile(r"ship\w*from|from_?country|origin(?!al)|warehouse", re.IGNORECASE)  # no "original_price"
-PROBE_VERSION = 7         # sube cuando cambian las variantes del sondeo: se repite aunque el dia ya este recogido
+PROBE_VERSION = 8         # sube cuando cambian las variantes del sondeo: se repite aunque el dia ya este recogido
 SAMPLE_PRICES = 15
 SAMPLE = 3                # productos de muestra por consulta en el fichero de sondeo
 SAMPLE_CHARS = 160
@@ -323,24 +323,31 @@ def probe(key: str, secret: str, tracking: str, keyword: str, post=requests.post
         "productos_sin_filtro_de_entrega": out["busqueda_actual"].get("count"),
         "productos_entrega_1_dia": out["entrega_1_dia"].get("count"),
     }
-    out["detalle_de_producto"] = product_detail(base_ids or [], key, secret, tracking, post, now)
+    out["detalle_de_producto"] = product_detail(base_ids or [], key, secret, tracking, post, now, sleep)
     return out
 
 
-def product_detail(ids: list[str], key: str, secret: str, tracking: str, post, now) -> dict:
+def product_detail(ids: list[str], key: str, secret: str, tracking: str, post, now, sleep=time.sleep) -> dict:
     """Pide el detalle de unos productos: puede traer campos que la busqueda no trae (origen, plazo real)."""
     params = {"product_ids": ",".join(ids[:5]), "country": "ES", "target_currency": "EUR", "target_language": "ES",
               "tracking_id": tracking}
     entry: dict = {"method": DETAIL_METHOD}
     if not ids:
         return {**entry, "ok": False, "error": "sin productos para pedir el detalle"}
-    try:
-        products = find_products(call(DETAIL_METHOD, params, key, secret, post=post, now=now))
-        entry.update(ok=True, count=len(products), fields=sorted({k for p in products for k in p}),
-                     sample=[{k: str(v)[:SAMPLE_CHARS] for k, v in p.items() if k != "promotion_link"}
-                             for p in products[:SAMPLE]])
-    except ApiError as exc:
-        entry.update(ok=False, error=str(exc))
+    sleep(2.0)  # la API limita la frecuencia: justo despues de otra consulta contesta ApiCallLimit
+    for attempt in (1, 2):
+        try:
+            products = find_products(call(DETAIL_METHOD, params, key, secret, post=post, now=now))
+            entry.update(ok=True, count=len(products), fields=sorted({k for p in products for k in p}),
+                         sample=[{k: str(v)[:SAMPLE_CHARS] for k, v in p.items() if k != "promotion_link"}
+                                 for p in products[:SAMPLE]])
+            return entry
+        except ApiError as exc:
+            entry.update(ok=False, error=str(exc))
+            if attempt == 1 and "ApiCallLimit" in str(exc):
+                sleep(5.0)
+                continue
+            return entry
     return entry
 
 

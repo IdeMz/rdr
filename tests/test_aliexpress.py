@@ -1,5 +1,6 @@
 import hashlib
 import json
+import time
 from datetime import date
 
 import pytest
@@ -197,6 +198,23 @@ def test_empty_multiword_phrases_are_retried_with_their_first_word():
     assert seen == ["smartphone libre", "portatil", "crema facial", "smartphone", "crema"]
     assert stats["consultas"]["smartphone"] == 1 and stats["consultas"]["smartphone libre"] == 0
     assert set(items) == {"portatil", "smartphone", "crema"}
+
+
+def test_product_detail_waits_and_retries_once_when_the_api_limits_the_frequency():
+    sleeps, state = [], {"n": 0}
+
+    def post(url, params=None, data=None, timeout=None):
+        state["n"] += 1
+        if state["n"] == 1:
+            return FakeResp({"error_response": {"code": "ApiCallLimit", "msg": "Api access frequency exceeds the limit"}})
+        return FakeResp(ok(ax.DETAIL_METHOD, [product("1", 12.0, ship_from_country="PL")]))
+    out = ax.product_detail(["1", "2"], KEY, SECRET, TRACK, post, time.time, sleep=sleeps.append)
+    assert out["ok"] and "ship_from_country" in out["fields"] and state["n"] == 2
+    assert sleeps == [2.0, 5.0]
+    # otro error no se reintenta, y sin productos no se llama a la API
+    out = ax.product_detail(["1"], KEY, SECRET, TRACK, poster(error_for=lambda d: True), time.time, sleep=lambda s: None)
+    assert out["ok"] is False and "IllegalParam" in out["error"]
+    assert ax.product_detail([], KEY, SECRET, TRACK, poster(), time.time, sleep=lambda s: None)["ok"] is False
 
 
 def test_probe_words_pick_the_richest_keyword_and_the_first_empty_one():
