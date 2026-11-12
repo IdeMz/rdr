@@ -7,7 +7,7 @@
   "Aspiradoras": "2026-11-12T10:35:36.602474+00:00",
   "Auriculares": "2026-11-12T12:20:44.296151+00:00",
   "Cafeteras": "2026-11-12T08:45:45.168399+00:00",
-  "Café y cápsulas": "2026-11-11T13:25:31.954839+00:00",
+  "Café y cápsulas": "2026-11-12T18:01:01.485472+00:00",
   "Cargadores y baterías": "2026-11-10T11:15:42.709254+00:00",
   "Ciclismo": "2026-11-10T20:01:09.445485+00:00",
   "Climatización": "2026-11-11T15:45:40.067358+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-11T17:45:42.500382+00:00",
   "Zapatillas": "2026-11-12T11:45:43.028763+00:00"
  },
- "next_at": "2026-11-12T17:58:55.187757+00:00",
+ "next_at": "2026-11-12T18:32:54.608155+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -1083,6 +1083,17 @@
    "title": "Philips Hue Bombilla Foco GU10, 2 Uds.",
    "v": []
   },
+  "B0D6RW3DH5": {
+   "c": "Café y cápsulas",
+   "d": 27,
+   "e": "🫘",
+   "m": 245,
+   "p": 12.33,
+   "s": "busqueda",
+   "t": "2026-11-12T18:01:26.910811+00:00",
+   "title": "illy, Café en Grano INTENSO, 500g",
+   "v": []
+  },
   "B0D6W8GSL3": {
    "c": "Altavoces",
    "d": 40,
@@ -1959,10 +1970,6 @@
    "t": "2026-11-12T09:20:48.160799+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0DDTPK894": {
-   "t": "2026-11-11T17:45:42.500382+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0DHXFDNK2": {
    "t": "2026-11-12T11:45:43.028763+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -1973,10 +1980,6 @@
   },
   "B0FGJTVH91": {
    "t": "2026-11-12T07:35:38.163573+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0FL7NNGRG": {
-   "t": "2026-11-11T17:45:42.500382+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0FMGXH38Q": {
@@ -2042,6 +2045,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-12",
-  "n": 15
+  "n": 16
  }
 }
