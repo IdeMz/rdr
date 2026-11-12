@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-11T17:45:42.500382+00:00",
   "Zapatillas": "2026-11-12T11:45:43.028763+00:00"
  },
- "next_at": "2026-11-12T15:12:49.901209+00:00",
+ "next_at": "2026-11-12T15:25:37.807967+00:00",
  "offer": {
   "a": "B0GQX6JT42",
   "m": 183,
@@ -1879,7 +1879,7 @@
  },
  "problem": {
   "alerted_at": "2026-11-12T15:02:49.901209+00:00",
-  "fails": 3,
+  "fails": 4,
   "last": "HTTP 503"
  },
  "rejected": {
@@ -1917,10 +1917,6 @@
   },
   "B0CWJJ2WBC": {
    "t": "2026-11-11T18:30:53.717319+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0CWP7M17B": {
-   "t": "2026-11-11T15:10:43.941870+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0D3H4S8H4": {
