@@ -110,11 +110,13 @@ def test_item_from_converts_fields_and_rejects_unusable_products():
 
 
 def test_origin_is_read_from_any_shipping_origin_field():
-    assert ax.item_from(product("1", 9.0, ship_from_country="ES"))["from_spain"] is True
-    assert ax.item_from(product("2", 9.0, ship_from="China"))["from_spain"] is False
-    assert ax.item_from(product("3", 9.0, warehouse="Spain"))["from_spain"] is True
+    assert ax.item_from(product("1", 9.0, ship_from_country="ES"))["from_europe"] is True
+    assert ax.item_from(product("2", 9.0, ship_from="China"))["from_europe"] is False
+    assert ax.item_from(product("5", 9.0, ship_from_country="PL"))["from_europe"] is True
+    assert ax.item_from(product("6", 9.0, ship_from_country="Germany"))["from_europe"] is True
+    assert ax.item_from(product("3", 9.0, warehouse="Spain"))["from_europe"] is True
     unknown = ax.item_from(product("4", 9.0))
-    assert unknown["from_spain"] is None and unknown["ship_from"] is None
+    assert unknown["from_europe"] is None and unknown["ship_from"] is None
 
 
 def test_keywords_come_from_the_channel_search_urls(tmp_path):
@@ -127,15 +129,15 @@ def test_keywords_come_from_the_channel_search_urls(tmp_path):
 
 # ---------------------------------------------------------------- recogida
 
-def test_gather_collects_global_pages_and_keywords_and_dedupes():
+def test_gather_queries_each_keyword_with_the_delivery_filter_and_dedupes():
     calls = []
     items, stats = ax.gather(KEY, SECRET, TRACK, ["tv", "movil"], post=poster([product("1", 10.0)], calls=calls),
                              sleep=lambda s: None)
     assert list(items) == ["1"] and stats["llamadas"] == ax.GLOBAL_PAGES + 2 and stats["errores"] == 0
     assert calls[0]["ship_to_country"] == "ES" and calls[0]["target_currency"] == "EUR"
-    assert calls[0]["tracking_id"] == TRACK and "keywords" not in calls[0]
-    assert calls[0]["sign_method"] == "md5"
-    assert calls[-1]["keywords"] == "tv" or calls[-1]["keywords"] == "movil"
+    assert calls[0]["tracking_id"] == TRACK and calls[0]["sign_method"] == "md5"
+    assert calls[0]["method"] == ax.SEARCH_METHOD and calls[0]["delivery_days"] == ax.DELIVERY_DAYS == "5"
+    assert [c["keywords"] for c in calls] == ["tv", "movil"]
 
 
 def test_gather_survives_isolated_errors_but_gives_up_after_several_in_a_row():
@@ -152,12 +154,16 @@ def test_gather_survives_isolated_errors_but_gives_up_after_several_in_a_row():
 
 
 def test_probe_records_fields_and_errors_without_secrets():
-    post = poster([product("1", 10.0, ship_to_days="4")],
-                  error_for=lambda d: d.get("delivery_days") == "5")
+    calls = []
+    post = poster([product("1", 10.0, ship_to_days="Ship to ES in 3 days")],
+                  error_for=lambda d: d.get("min_sale_price") == "1000", calls=calls)
     out = ax.probe(KEY, SECRET, TRACK, "tv", post=post, sleep=lambda s: None)
-    assert out["hot_base"]["ok"] and "ship_to_days" in out["hot_base"]["fields"] and out["hot_base"]["count"] == 1
-    assert out["hot_entrega_5_dias"]["ok"] is False and "IllegalParam" in out["hot_entrega_5_dias"]["error"]
-    assert out["busqueda_base"]["ok"] and "promotion_link" not in out["busqueda_base"]["sample"][0]
+    main = out["busqueda_entrega_5_dias"]
+    assert main["ok"] and "ship_to_days" in main["fields"] and main["count"] == 1
+    assert "promotion_link" not in main["sample"][0]
+    assert out["busqueda_desde_10_eur"]["ok"] is False and "IllegalParam" in out["busqueda_desde_10_eur"]["error"]
+    assert out["busqueda_entrega_3_dias"]["ok"] and calls[1]["delivery_days"] == "3"
+    assert "delivery_days" not in calls[2]                     # la variante sin filtro no lo envia
     text = json.dumps(out)
     assert SECRET not in text and KEY not in text and TRACK not in text
 
@@ -194,7 +200,7 @@ def test_run_with_no_products_writes_nothing_and_retries(tmp_path):
     assert "sin productos" in text and "se reintenta" in text
     assert not (tmp_path / ax.HIST_FILE).exists()
     status = json.loads((tmp_path / ax.STATUS_FILE).read_text())
-    assert status["errores"] == ax.MAX_ERRORS and status["muestra_de_errores"] == ["IllegalParam: bad"]
+    assert status["errores"] == 1 and status["muestra_de_errores"] == ["IllegalParam: bad"]
     assert SECRET not in json.dumps(status) and KEY not in json.dumps(status)
     before = (tmp_path / ax.STATUS_FILE).stat().st_mtime_ns
     ax.run((KEY, SECRET, TRACK), tmp_path, channel_file(tmp_path), TODAY, 8, post=poster(error_for=lambda d: True),
@@ -224,9 +230,9 @@ def test_report_drops_products_shipped_from_abroad_and_keeps_unknown_origin(tmp_
         ax.run(creds, tmp_path, ch, day, 8, post=poster(batch), sleep=lambda s: None)
     data = json.loads((tmp_path / ax.PICKS_FILE).read_text())
     assert sorted(c["id"] for c in data["candidates"]) == ["1", "3"]
-    assert {c["id"]: c["from_spain"] for c in data["candidates"]} == {"1": True, "3": None}
-    assert data["stats"]["no envia desde España"] == 1
-    assert data["origin_known"] == 2 and data["from_spain"] == 1
+    assert {c["id"]: c["from_europe"] for c in data["candidates"]} == {"1": True, "3": None}
+    assert data["stats"]["no envia desde Europa"] == 1
+    assert data["origin_known"] == 2 and data["from_europe"] == 1
 
 
 def test_run_repeats_an_outdated_probe_once_even_if_the_day_is_already_collected(tmp_path):
@@ -263,17 +269,17 @@ def test_empty_results_are_not_errors_and_per_query_counts_are_recorded():
     assert stats["consultas"]["sin resultados"] == 0 and stats["consultas"]["con resultados"] == 1
     assert "ship_from_country" in stats["campos"] and "ship_to_days" in stats["campos"]
     assert stats["muestra_productos"][0]["product_id"] == "1" and "promotion_link" not in stats["muestra_productos"][0]
-    assert items["1"]["from_spain"] is True
+    assert items["1"]["from_europe"] is True
 
 
 def test_many_empty_queries_in_a_row_do_not_abort_the_day():
     def post(url, params=None, data=None, timeout=None):
         merged = {**(params or {}), **(data or {})}
-        if merged.get("keywords"):
+        if merged.get("keywords") != "buena":
             return FakeResp({"x_response": {"resp_result": {"resp_code": 405, "resp_msg": "empty"}}})
         return FakeResp(ok(merged["method"], [product("1", 10.0)]))
-    items, stats = ax.gather(KEY, SECRET, TRACK, ["a", "b", "c", "d", "e"], post=post, sleep=lambda s: None)
-    assert items and stats["errores"] == 0 and stats["llamadas"] == ax.GLOBAL_PAGES + 5
+    items, stats = ax.gather(KEY, SECRET, TRACK, ["a", "b", "c", "d", "e", "buena"], post=post, sleep=lambda s: None)
+    assert items and stats["errores"] == 0 and stats["vacias"] == 5 and stats["llamadas"] == ax.GLOBAL_PAGES + 6
 
 
 def test_run_records_the_status_file_and_probes_with_a_working_keyword(tmp_path):
@@ -290,5 +296,20 @@ def test_run_records_the_status_file_and_probes_with_a_working_keyword(tmp_path)
     ax.run((KEY, SECRET, TRACK), tmp_path, ch, TODAY, 8, post=post, sleep=lambda s: None)
     status = json.loads((tmp_path / ax.STATUS_FILE).read_text())
     assert status["consultas"]["vacia"] == 0 and status["consultas"]["buena"] == 1 and status["campos"]
-    probe_params = json.loads((tmp_path / ax.PROBE_FILE).read_text())["variants"]["hot_base"]["params"]
+    probe_params = json.loads((tmp_path / ax.PROBE_FILE).read_text())["variants"]["busqueda_entrega_5_dias"]["params"]
     assert probe_params["keywords"] == "buena"
+
+
+def test_repeated_query_adds_only_products_not_yet_in_todays_history(tmp_path):
+    ch = channel_file(tmp_path)
+    creds = (KEY, SECRET, TRACK)
+    ax.run(creds, tmp_path, ch, TODAY, 7, post=poster([product("1", 10.0)]), sleep=lambda s: None)
+    probe_path = tmp_path / ax.PROBE_FILE
+    old = json.loads(probe_path.read_text())
+    old["version"] = 1
+    probe_path.write_text(json.dumps(old))
+    batch = [product("1", 99.0), product("2", 20.0, product_title="Otro producto distinto")]
+    ax.run(creds, tmp_path, ch, TODAY, 8, post=poster(batch), sleep=lambda s: None)
+    hist = feed.load_history(tmp_path / ax.HIST_FILE)
+    assert hist["p"]["1"][1:] == [feed.day_no(TODAY), 10.0]          # el ya anotado no se toca
+    assert hist["p"]["2"][1:] == [feed.day_no(TODAY), 20.0] and hist["n"] == 2

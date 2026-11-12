@@ -4,9 +4,10 @@ Una vez al dia pide a la API los productos mas vendidos de cada categoria del ca
 España, en euros), anota su precio en state/aliexpress_precios.json con el mismo formato que el feed de PowerPlanet y deja
 los candidatos en state/aliexpress_candidates.json con las reglas de feedpicks.py. No publica nada.
 
-Solo interesan los productos que se ENVIAN DESDE España (almacen local), no los que solo se entregan en España.
-La API puede no decir el origen: si lo dice y no es España el producto se descarta; si no lo dice queda en el
-informe con from_spain = null (sin verificar) y con su plazo de entrega, que es la otra pista.
+Solo interesan los productos que se ENVIAN DESDE Europa (para evitar aduana y tasas), no los que solo se entregan
+en España. La API no dice el origen: por eso se pide siempre entrega en DELIVERY_DAYS dias o menos, que en la
+practica deja los almacenes europeos. Si algun dia la API trae el origen y no es europeo, el producto se descarta;
+si no lo dice queda en el informe con from_europe = null (sin verificar).
 
 El "antes" de AliExpress esta muy inflado y la API no da historial: la bajada se mide contra el historial propio.
 
@@ -41,7 +42,9 @@ ENDPOINT = "https://api-sg.aliexpress.com/sync"
 HOT_METHOD = "aliexpress.affiliate.hotproduct.query"
 SEARCH_METHOD = "aliexpress.affiliate.product.query"
 PAGE_SIZE = 50
-GLOBAL_PAGES = 3          # paginas de "hot products" sin categoria
+GLOBAL_PAGES = 0          # las paginas generales de "hot products" dan casi solo productos de 2-4 EUR: no se piden
+DELIVERY_DAYS = "5"       # la API no dice el origen del envio; entrega en 5 dias o menos = almacen en Europa (sin aduana)
+QUERY_METHOD = SEARCH_METHOD  # la busqueda normal da mas resultados que "hot products" (7 contra 1 con la misma palabra)
 MAX_CALLS = 45            # tope de llamadas a la API por dia
 MAX_ERRORS = 3            # errores seguidos tras los cuales se abandona el dia
 START_HOUR = 6            # hora de Madrid desde la que se hace la recogida diaria
@@ -50,10 +53,17 @@ HIST_FILE = "aliexpress_precios.json"
 PICKS_FILE = "aliexpress_candidates.json"
 PROBE_FILE = "aliexpress_probe.json"
 STATUS_FILE = "aliexpress_estado.json"   # por que no hubo productos (la API da errores): se lee sin necesidad del log
-ONLY_FROM_SPAIN = True    # descarta del informe los productos cuyo origen conocido no es España
-SPAIN_NAMES = {"ES", "ESP", "SPAIN", "ESPANA", "ESPAÑA"}
+ONLY_FROM_EUROPE = True   # descarta del informe los productos cuyo origen conocido no es europeo
+EUROPE_NAMES = {  # UE, EEE, Reino Unido y Suiza: codigos ISO y nombres habituales en ingles y español
+    "AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT",
+    "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "NO", "IS", "LI", "CH", "GB", "UK",
+    "SPAIN", "ESPANA", "ESPAÑA", "GERMANY", "ALEMANIA", "FRANCE", "FRANCIA", "ITALY", "ITALIA", "POLAND", "POLONIA",
+    "PORTUGAL", "NETHERLANDS", "PAISES BAJOS", "BELGIUM", "BELGICA", "CZECH REPUBLIC", "CZECHIA", "IRELAND", "IRLANDA",
+    "SWEDEN", "SUECIA", "UNITED KINGDOM", "REINO UNIDO", "SWITZERLAND", "SUIZA", "AUSTRIA", "DENMARK", "DINAMARCA",
+    "HUNGARY", "HUNGRIA", "ROMANIA", "RUMANIA", "BULGARIA", "GREECE", "GRECIA", "SLOVAKIA", "ESLOVAQUIA",
+}
 ORIGIN_KEY_RE = re.compile(r"ship\w*from|from_?country|origin(?!al)|warehouse", re.IGNORECASE)  # no "original_price"
-PROBE_VERSION = 4         # sube cuando cambian las variantes del sondeo: se repite aunque el dia ya este recogido
+PROBE_VERSION = 5         # sube cuando cambian las variantes del sondeo: se repite aunque el dia ya este recogido
 SAMPLE = 3                # productos de muestra por consulta en el fichero de sondeo
 SAMPLE_CHARS = 160
 
@@ -173,7 +183,7 @@ def item_from(product: dict) -> dict | None:
         "reviews": int(v) if (v := _num(product.get("lastest_volume"))) is not None else None,  # ventas
         "ship_days": int(days) if days is not None else None,
         "ship_from": origin,
-        "from_spain": (origin.upper() in SPAIN_NAMES) if origin else None,  # None = la API no lo dice
+        "from_europe": (origin.upper() in EUROPE_NAMES) if origin else None,  # None = la API no lo dice
     }
 
 
@@ -195,7 +205,7 @@ def keywords_from_channel(path: Path) -> list[str]:
 def base_params(tracking: str) -> dict:
     return {
         "ship_to_country": "ES", "target_currency": "EUR", "target_language": "ES", "tracking_id": tracking,
-        "page_size": PAGE_SIZE, "sort": "LAST_VOLUME_DESC",
+        "page_size": PAGE_SIZE, "sort": "LAST_VOLUME_DESC", "delivery_days": DELIVERY_DAYS,
     }
 
 
@@ -217,7 +227,7 @@ def gather(key: str, secret: str, tracking: str, keywords: list[str], post=reque
         stats["llamadas"] += 1
         label = extra.get("keywords") or f"general p{extra['page_no']}"
         try:
-            data = call(HOT_METHOD, {**base_params(tracking), **extra}, key, secret, post=post, now=now)
+            data = call(QUERY_METHOD, {**base_params(tracking), **extra}, key, secret, post=post, now=now)
             streak = 0
         except EmptyResult:
             stats["vacias"] += 1
@@ -255,10 +265,10 @@ def probe(key: str, secret: str, tracking: str, keyword: str, post=requests.post
           now=time.time) -> dict:
     """Prueba unas pocas variantes y apunta que campos devuelven (para saber que se puede filtrar)."""
     variants = {
-        "hot_base": (HOT_METHOD, {}),
-        "hot_entrega_3_dias": (HOT_METHOD, {"delivery_days": "3"}),
-        "hot_entrega_5_dias": (HOT_METHOD, {"delivery_days": "5"}),
-        "busqueda_base": (SEARCH_METHOD, {}),
+        "busqueda_entrega_5_dias": (SEARCH_METHOD, {}),                          # lo que usa la recogida
+        "busqueda_entrega_3_dias": (SEARCH_METHOD, {"delivery_days": "3"}),
+        "busqueda_sin_filtro_de_entrega": (SEARCH_METHOD, {"delivery_days": ""}),
+        "busqueda_desde_10_eur": (SEARCH_METHOD, {"min_sale_price": "1000"}),   # para saber si el precio va en centimos
     }
     out: dict = {}
     for name, (method, extra) in variants.items():
@@ -290,11 +300,11 @@ def report(items: dict[str, dict], hist: dict, today: date) -> dict:
     """Candidatos del dia con las mismas reglas que PowerPlanet (otro suelo de precio)."""
     suspicious: list[dict] = []
     to_verify: list[dict] = []
-    foreign = {pid for pid, i in items.items() if ONLY_FROM_SPAIN and i.get("from_spain") is False}
+    foreign = {pid for pid, i in items.items() if ONLY_FROM_EUROPE and i.get("from_europe") is False}
     usable = {pid: i for pid, i in items.items() if pid not in foreign}
     picks, stats = feedpicks.select(usable, hist, today, suspicious, to_verify, min_price=MIN_PRICE)
     if foreign:
-        stats["no envia desde España"] = len(foreign)
+        stats["no envia desde Europa"] = len(foreign)
     suspicious.sort(key=lambda c: c["price"], reverse=True)
     with_days = sum(1 for i in items.values() if i.get("ship_days") is not None)
     return {
@@ -302,8 +312,8 @@ def report(items: dict[str, dict], hist: dict, today: date) -> dict:
         "mode": "informe",
         "products": len(items),
         "with_ship_days": with_days,
-        "origin_known": sum(1 for i in items.values() if i.get("from_spain") is not None),
-        "from_spain": sum(1 for i in items.values() if i.get("from_spain")),
+        "origin_known": sum(1 for i in items.values() if i.get("from_europe") is not None),
+        "from_europe": sum(1 for i in items.values() if i.get("from_europe")),
         "stats": stats,
         "to_verify": to_verify[:feedpicks.SUSPICIOUS_LIMIT],
         "suspicious": suspicious[:feedpicks.SUSPICIOUS_LIMIT],
@@ -323,7 +333,13 @@ def run(creds: tuple[str, str, str], state_dir: Path, channel_file: Path, today:
     if hist.get("updated") == today.isoformat():
         if not probe_is_current(state_dir):  # el sondeo de hoy es de una version anterior: se repite una vez
             items, stats = gather(key, secret, tracking, keywords, post=post, sleep=sleep, now=now)
-            write_status(state_dir, today, stats)  # los precios de hoy ya estan anotados: no se tocan
+            write_status(state_dir, today, stats)
+            fresh = {pid: i["price"] for pid, i in items.items() if pid not in hist["p"]}
+            if fresh:  # productos que esta consulta ve por primera vez: solo se anaden, los ya anotados no se tocan
+                total = hist.get("n", 0) + len(fresh)
+                feed.update_history(hist, fresh, today)
+                hist["n"] = total
+                feed.save_history(path, hist)
             working = [w for w in keywords if stats["consultas"].get(w)]
             save_probe(creds, state_dir, working[:1] or [""], today, post, sleep, now)
             return "aliexpress: precios de hoy ya recogidos; sondeo actualizado"
