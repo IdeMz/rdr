@@ -36,10 +36,12 @@ from PIL import Image, ImageOps
 
 import feed
 import aliexpress
+import review
 import pricehist
 
 ROOT = Path(__file__).resolve().parent
 BASE = "https://www.amazon.es"
+REVIEW_CHANNEL = "concriterio"  # canal cuyo chat privado recibe la lista de revision
 TELEGRAM_API = "https://api.telegram.org"
 PHOTO_SIZE = 1200  # lado del cuadrado: con fotos siempre cuadradas, todos los posts miden igual de ancho
 PHOTO_MARGIN = 40  # aire alrededor del producto, en pixeles
@@ -1767,6 +1769,74 @@ def handle_offer_action(
     return "Publicada ✅"
 
 
+def handle_review_action(ch: Channel, path: Path, cb: str, msg: dict, now: datetime) -> str:
+    """Boton de la lista de revision (✅/❌/🚫). Devuelve el texto con el que se contesta al toque."""
+    parsed = review.parse_callback(cb)
+    if not parsed:
+        return "Botón no válido"
+    action, rid = parsed
+    data = review.load(path)
+    reply, also = review.apply(data, action, rid, now)
+    review.save(path, data)
+    token, chat = get_secret(ch.token_env), get_secret(ch.alert_chat_env)
+    targets = [(rid, msg.get("message_id"))] + [(r, data["items"][r].get("m")) for r in also]
+    for _, message_id in targets:  # se quitan los botones para que no se pulsen dos veces
+        if token and chat and message_id:
+            try:
+                tg_call("editMessageReplyMarkup", token, {
+                    "chat_id": chat, "message_id": message_id, "reply_markup": json.dumps({"inline_keyboard": []}),
+                }, retries=0)
+            except TelegramError:
+                pass
+    if also:
+        reply += f" · {len(also)} más de la misma tienda"
+    log.info("%s: revision %s %s -> %s", ch.name, action, rid, reply)
+    note(f"{ch.name}: revision {action} {rid}")
+    return reply
+
+
+def send_reviews(ch: Channel, state_dir: Path, now: datetime) -> int:
+    """Anota los candidatos de AliExpress y te manda por privado los que faltan por revisar. Devuelve cuantos envia."""
+    token, chat = get_secret(ch.token_env), get_secret(ch.alert_chat_env)
+    picks = _read_state_file(state_dir / aliexpress.PICKS_FILE).get("candidates")
+    path = state_dir / review.FILE
+    data = review.load(path)
+    before = json.dumps(data, sort_keys=True)
+    review.expire(data, now)
+    if isinstance(picks, list):
+        review.queue(data, [c for c in picks if isinstance(c, dict)], now)
+    sent = 0
+    if token and chat:
+        for rid, item in review.to_send(data, now):
+            text, markup = review.caption(item), json.dumps(review.keyboard(rid))
+            msg_id = None
+            try:
+                body = None
+                if item.get("image") and len(text) <= 1000:
+                    try:
+                        body = tg_call("sendPhoto", token, {
+                            "chat_id": chat, "caption": text, "parse_mode": "HTML",
+                            "photo": item["image"], "reply_markup": markup}, retries=1)
+                    except TelegramError as exc:
+                        if exc.ambiguous:
+                            raise
+                if body is None:
+                    body = tg_call("sendMessage", token, {
+                        "chat_id": chat, "text": text, "parse_mode": "HTML", "reply_markup": markup}, retries=1)
+                msg_id = ((body or {}).get("result") or {}).get("message_id")
+            except TelegramError as exc:
+                log.warning("%s: no se pudo enviar la revision de %s (%s)", ch.name, rid, exc)
+                if not exc.ambiguous:
+                    break  # Telegram falla: se reintenta en la siguiente ejecucion
+            review.mark_sent(data, rid, msg_id, now)
+            sent += 1
+    if json.dumps(data, sort_keys=True) != before:
+        review.save(path, data)
+    if sent:
+        log.info("%s: %d productos de AliExpress enviados a tu chat para revisar", ch.name, sent)
+    return sent
+
+
 def process_votes(
     ch: Channel, state_path: Path, state: dict, tag: str | None, now: datetime | None = None
 ) -> int:
@@ -1800,6 +1870,14 @@ def process_votes(
                 chat.get("username") and f"@{chat['username']}".lower() == str(chat_id).lower()
             )
             cb = cq.get("data") or ""
+            review_chat = get_secret(ch.alert_chat_env)
+            if review_chat and str(chat.get("id")) == str(review_chat) and cb.startswith("rv:"):
+                reply = handle_review_action(ch, state_path.parent / review.FILE, cb, msg, now)
+                try:
+                    tg_call("answerCallbackQuery", token, {"callback_query_id": cq.get("id"), "text": reply}, retries=0)
+                except TelegramError:
+                    pass
+                continue
             if (
                 alert_chat and str(chat.get("id")) == str(alert_chat)
                 and (cb.startswith("pub:") or cb.startswith("skip:"))
@@ -2009,8 +2087,15 @@ def run_channel(
     publishing = not dry_run and html_file is None
 
     offer_waiting = ch.manual_offer and _offer_open(state_path, now, ch)
-    if publishing and (ch.vote_button or offer_waiting):
+    review_waiting = review.has_open(review.load(state_dir / review.FILE))
+    if publishing and (ch.vote_button or offer_waiting or review_waiting):
         process_votes(ch, state_path, state, get_secret("AMAZON_TAG"), now)
+
+    if publishing and ch.name == REVIEW_CHANNEL:
+        try:
+            send_reviews(ch, state_dir, now)
+        except Exception as exc:  # la revision es un extra: no debe parar la publicacion
+            log.warning("%s: la lista de revision ha fallado (%s)", ch.name, type(exc).__name__)
 
     if publishing and not force and ch.summary_time:
         maybe_send_summary(ch, state_path, state, now)

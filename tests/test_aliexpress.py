@@ -390,3 +390,9 @@ def test_repeated_query_adds_only_products_not_yet_in_todays_history(tmp_path):
     hist = feed.load_history(tmp_path / ax.HIST_FILE)
     assert hist["p"]["1"][1:] == [feed.day_no(TODAY), 10.0]          # el ya anotado no se toca
     assert hist["p"]["2"][1:] == [feed.day_no(TODAY), 20.0] and hist["n"] == 2
+
+
+def test_item_keeps_the_shop_for_the_review_list():
+    item = ax.item_from(product("77", 12.5, shop_id=1103573332, shop_name=" Stone's Store "))
+    assert item["shop_id"] == "1103573332" and item["shop"] == "Stone's Store"
+    assert ax.item_from(product("78", 12.5))["shop_id"] == ""

@@ -2415,3 +2415,96 @@ def test_price_reference_uses_history_sentence_as_low30():
 def test_price_reference_prefers_explicit_low30_over_sentence():
     html = product_page(HISTORIAL + "<div>El precio más bajo de los últimos 30 días: 19,49€</div>")
     assert deals.price_reference(html)["low30"] == 19.49
+
+
+# ---------------------------------------------------------------- lista de revision (AliExpress)
+
+def _review_cand(pid, shop_id="s1", **kw):
+    base = {"id": pid, "name": f"Producto {pid}", "price": 19.9, "drop": 30.0, "reviews": 500, "rating": 95.0,
+            "image": "https://img/x.jpg", "link": "https://s.click/x", "shop_id": shop_id, "shop": "Tienda Uno",
+            "score": 30.0}
+    base.update(kw)
+    return base
+
+
+def _review_env(monkeypatch, tmp_path, cands):
+    monkeypatch.setenv("TG_T", TOKEN)
+    monkeypatch.setenv("TG_C", "@canal")
+    monkeypatch.setenv("TG_A", "777")
+    (tmp_path / "aliexpress_candidates.json").write_text(json.dumps({"candidates": cands}), encoding="utf-8")
+    calls = []
+
+    def fake(method, token, data, **kw):
+        calls.append((method, data))
+        return {"ok": True, "result": {"message_id": 900 + len(calls)}}
+
+    monkeypatch.setattr(deals, "tg_call", fake)
+    return calls
+
+
+def test_send_reviews_sends_candidates_to_the_private_chat_once(tmp_path, monkeypatch):
+    calls = _review_env(monkeypatch, tmp_path, [_review_cand("1"), _review_cand("2", "s2")])
+    ch = channel(alert_chat_env="TG_A")
+    assert deals.send_reviews(ch, tmp_path, NOW_IN) == 2
+    assert [c[0] for c in calls] == ["sendPhoto", "sendPhoto"]
+    assert calls[0][1]["chat_id"] == "777" and "rv:ok:a" in calls[0][1]["reply_markup"]
+    saved = json.loads((tmp_path / "revision.json").read_text(encoding="utf-8"))
+    assert {i["st"] for i in saved["items"].values()} == {"sent"}
+    assert deals.send_reviews(ch, tmp_path, NOW_IN) == 0  # no se repite
+
+
+def test_send_reviews_without_private_chat_only_queues(tmp_path, monkeypatch):
+    calls = _review_env(monkeypatch, tmp_path, [_review_cand("1")])
+    monkeypatch.delenv("TG_A")
+    assert deals.send_reviews(channel(alert_chat_env="TG_A"), tmp_path, NOW_IN) == 0
+    assert calls == []
+    assert json.loads((tmp_path / "revision.json").read_text(encoding="utf-8"))["items"]["a1"]["st"] == "new"
+
+
+def test_send_reviews_telegram_failure_keeps_it_for_the_next_run(tmp_path, monkeypatch):
+    _review_env(monkeypatch, tmp_path, [_review_cand("1")])
+
+    def boom(*a, **k):
+        raise deals.TelegramError("sendMessage: HTTP 500")
+
+    monkeypatch.setattr(deals, "tg_call", boom)
+    assert deals.send_reviews(channel(alert_chat_env="TG_A"), tmp_path, NOW_IN) == 0
+    assert json.loads((tmp_path / "revision.json").read_text(encoding="utf-8"))["items"]["a1"]["st"] == "new"
+
+
+def test_review_button_updates_the_list_and_removes_the_keyboard(tmp_path, monkeypatch):
+    calls = _review_env(monkeypatch, tmp_path, [_review_cand("1"), _review_cand("2")])
+    ch = channel(alert_chat_env="TG_A")
+    deals.send_reviews(ch, tmp_path, NOW_IN)
+    calls.clear()
+    reply = deals.handle_review_action(ch, tmp_path / "revision.json", "rv:ok:a1", {"message_id": 901}, NOW_IN)
+    assert "confianza" in reply and "1 más" in reply
+    data = json.loads((tmp_path / "revision.json").read_text(encoding="utf-8"))
+    assert data["trusted"] == {"s1": "Tienda Uno"} and data["items"]["a2"]["st"] == "ok"
+    assert [c[0] for c in calls] == ["editMessageReplyMarkup", "editMessageReplyMarkup"]
+    assert deals.handle_review_action(ch, tmp_path / "revision.json", "basura", {}, NOW_IN) == "Botón no válido"
+
+
+def test_process_votes_routes_review_buttons_from_the_private_chat(tmp_path, monkeypatch):
+    calls = _review_env(monkeypatch, tmp_path, [_review_cand("1")])
+    ch = channel(alert_chat_env="TG_A")
+    deals.send_reviews(ch, tmp_path, NOW_IN)
+    path = tmp_path / "t.json"
+    deals.save_state(path, {})
+    ups = [update(1, 5, data="rv:no:a1", msg_id=901, chat_id=777, username=None),
+           update(2, 5, data="rv:no:a1", msg_id=901, chat_id=555, username=None)]  # otro chat: se ignora
+    answered = []
+    seen = {"n": 0}
+
+    def fake_calls(method, token, data, **kw):
+        if method == "getUpdates":
+            seen["n"] += 1
+            return {"ok": True, "result": ups if seen["n"] == 1 else []}
+        answered.append((method, data))
+        return {"ok": True}
+
+    monkeypatch.setattr(deals, "tg_call", fake_calls)
+    deals.process_votes(ch, path, {}, None, NOW_IN)
+    data = json.loads((tmp_path / "revision.json").read_text(encoding="utf-8"))
+    assert data["items"]["a1"]["st"] == "no"
+    assert [m for m, _ in answered].count("answerCallbackQuery") == 1

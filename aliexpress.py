@@ -188,6 +188,8 @@ def item_from(product: dict) -> dict | None:
         "ship_days": int(days) if days is not None else None,
         "ship_from": origin,
         "from_europe": (origin.upper() in EUROPE_NAMES) if origin else None,  # None = la API no lo dice
+        "shop_id": str(product.get("shop_id") or "").strip(),
+        "shop": str(product.get("shop_name") or "").strip(),
     }
 
 
