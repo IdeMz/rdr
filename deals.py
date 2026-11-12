@@ -35,6 +35,7 @@ from bs4 import BeautifulSoup
 from PIL import Image, ImageOps
 
 import feed
+import aliexpress
 import pricehist
 
 ROOT = Path(__file__).resolve().parent
@@ -463,6 +464,7 @@ class Product:
     reviews: int | None = None
     image: str | None = None
     sponsored: bool = False
+    via: str = ""  # de donde salio: "busqueda", "ofertas" (solo en la busqueda de Ofertas) o "ambas"
 
     @property
     def discount(self) -> int:
@@ -860,7 +862,12 @@ def collect(
         log.info("%s: %d productos en la busqueda %d de %d%s", ch.name, len(results), i + 1, len(plan),
                  " (ofertas)" if optional else "")
         for p in results:
-            found.setdefault(p.asin, p)
+            known = found.get(p.asin)
+            if known is None:
+                p.via = "ofertas" if optional else "busqueda"
+                found[p.asin] = p
+            elif optional and known.via == "busqueda":
+                known.via = "ambas"  # ya salia en la busqueda normal y tambien esta en Ofertas
     return list(found.values())
 
 
@@ -2171,11 +2178,14 @@ def run_channel(
             "m": msg_id,
             "v": [],
         }
+        if p.via:
+            state[p.asin]["s"] = p.via
         save_state(state_path, state, next_at=next_post, rejected=rejected, cats=cats)
         published += 1
         where = f"{chosen_cat[p.asin]['nombre']}, " if chosen_cat.get(p.asin) else ""
-        log.info("%s: publicada %s (%s-%d%%)", ch.name, p.asin, where, p.discount)
-        note(f"{ch.name}: publicada {p.asin} ({where}-{p.discount}%)")
+        src = f", via {p.via}" if p.via else ""
+        log.info("%s: publicada %s (%s-%d%%%s)", ch.name, p.asin, where, p.discount, src)
+        note(f"{ch.name}: publicada {p.asin} ({where}-{p.discount}%{src})")
         record_success(ch, state_path)
         try:  # el texto para X nunca debe estropear una publicacion ya hecha
             maybe_send_x_copy(ch, state_path, p, chosen_cat.get(p.asin), tag, photo, photo_url, now)
@@ -2209,6 +2219,24 @@ def collect_feeds() -> None:
         log.error("feed: error inesperado %s: %s", type(exc).__name__, scrub(str(exc)))
 
 
+def collect_aliexpress() -> None:
+    """Recopila los precios de AliExpress (una vez al dia, en modo informe). Nunca debe tumbar la ejecucion."""
+    creds = tuple(get_secret(name) for name in (aliexpress.ENV_KEY, aliexpress.ENV_SECRET, aliexpress.ENV_TRACKING))
+    if not all(creds):
+        return
+    for value in creds[:2]:
+        register_secret(value)
+    try:
+        local = datetime.now(ZoneInfo("Europe/Madrid"))
+    except ZoneInfoNotFoundError:
+        local = datetime.now(timezone.utc)
+    try:
+        log.info("%s", aliexpress.run(creds, ROOT / "state", ROOT / "channels" / "concriterio.json",
+                                      local.date(), local.hour))
+    except Exception as exc:  # sin traceback: podria llevar la clave
+        log.error("aliexpress: error inesperado %s: %s", type(exc).__name__, scrub(str(exc)))
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     group = ap.add_mutually_exclusive_group(required=True)
@@ -2229,6 +2257,7 @@ def main(argv: list[str] | None = None) -> int:
 
     if not (args.dry_run or args.html):
         collect_feeds()
+        collect_aliexpress()
 
     if args.channel:
         paths = [ROOT / "channels" / f"{args.channel}.json"]

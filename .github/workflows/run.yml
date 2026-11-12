@@ -38,6 +38,9 @@ jobs:
           TG_CHAT_CONCRITERIO: ${{ secrets.TG_CHAT_CONCRITERIO }}
           TG_ALERT_CHAT: ${{ secrets.TG_ALERT_CHAT }}
           AWIN_FEED_URL: ${{ secrets.AWIN_FEED_URL }}
+          ALIEXPRESS_APP_KEY: ${{ secrets.ALIEXPRESS_APP_KEY }}
+          ALIEXPRESS_APP_SECRET: ${{ secrets.ALIEXPRESS_APP_SECRET }}
+          ALIEXPRESS_TRACKING_ID: ${{ secrets.ALIEXPRESS_TRACKING_ID }}
         run: python deals.py --all
 
       - name: Informe de productos

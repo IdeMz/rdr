@@ -93,7 +93,7 @@ def _expired(valid_to: str, today: date) -> bool:
         return False
 
 
-def judge(item: dict, entry: list | None, today: date) -> tuple[dict | None, str]:
+def judge(item: dict, entry: list | None, today: date, min_price: float | None = None) -> tuple[dict | None, str]:
     """(datos de la bajada, "") si el producto es candidato; (None, motivo) si no.
 
     Solo la "bajada sospechosa" devuelve tambien los datos junto al motivo. Una bajada de MAX_DROP a ABSURD_DROP %
@@ -110,7 +110,7 @@ def judge(item: dict, entry: list | None, today: date) -> tuple[dict | None, str
     if len(pairs) < 2:
         return None, "precio sin cambios"
     price = item["price"]
-    if price < MIN_PRICE:
+    if price < (MIN_PRICE if min_price is None else min_price):
         return None, "precio bajo"
     if item["stock"] is not None and item["stock"] <= 0:
         return None, "sin stock"
@@ -166,7 +166,7 @@ def _same_tokens(ta: set[str], tb: set[str]) -> bool:
 
 
 def select(items: dict[str, dict], hist: dict, today: date, suspicious: list | None = None,
-           to_verify: list | None = None) -> tuple[list[dict], dict]:
+           to_verify: list | None = None, min_price: float | None = None) -> tuple[list[dict], dict]:
     """Candidatos ordenados de mejor a peor y recuento de por que se descartaron los demas.
 
     Las bajadas sospechosas (probables errores de precio) se anaden a `suspicious` y las que hay que contrastar
@@ -176,7 +176,7 @@ def select(items: dict[str, dict], hist: dict, today: date, suspicious: list | N
     check: list[dict] = []
     products = hist.get("p", {})
     for pid, item in items.items():
-        info, reason = judge(item, products.get(pid), today)
+        info, reason = judge(item, products.get(pid), today, min_price)
         if reason:
             why[reason] += 1
             if reason == "bajada sospechosa" and suspicious is not None:

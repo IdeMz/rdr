@@ -1175,6 +1175,8 @@ def test_collect_adds_products_from_the_deals_department(monkeypatch, caplog):
     assert [p.asin for p in found] == ["B000000060", "B000000061", "B000000062"]   # sin duplicados
     assert calls[0][1] == 3 and calls[1][1] == 1                                   # el extra, un solo intento
     assert "busqueda 2 de 2 (ofertas)" in caplog.text
+    assert {p.asin: p.via for p in found} == {   # de donde salio cada uno
+        "B000000060": "busqueda", "B000000061": "ambas", "B000000062": "ofertas"}
 
 
 def test_collect_keeps_going_when_the_deals_page_fails(monkeypatch, caplog):
