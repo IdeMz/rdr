@@ -1,0 +1,9 @@
+{
+ "day": "2026-11-12",
+ "llamadas": 3,
+ "errores": 3,
+ "vacias": 0,
+ "muestra_de_errores": [
+  "IncompleteSignature: The request signature does not conform to platform standards"
+ ]
+}
