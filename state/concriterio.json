@@ -1,6 +1,6 @@
 {
  "cats": {
-  "Accesorios de coche": "2026-11-11T10:30:58.490315+00:00",
+  "Accesorios de coche": "2026-11-12T14:05:45.520815+00:00",
   "Afeitado y depilación": "2026-11-10T17:05:37.721123+00:00",
   "Almacenamiento": "2026-11-12T08:10:49.385821+00:00",
   "Altavoces": "2026-11-12T07:35:38.163573+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-11T17:45:42.500382+00:00",
   "Zapatillas": "2026-11-12T11:45:43.028763+00:00"
  },
- "next_at": "2026-11-12T14:03:00.072720+00:00",
+ "next_at": "2026-11-12T14:39:13.601805+00:00",
  "offer": {
   "a": "B0FKSV2GW2",
   "m": 178,
@@ -1237,6 +1237,17 @@
    "title": "DREAME L50 Pro Ultra Robot Aspirador y Fregasuelos, 19500 Pa, Autolimpieza de la Mopa, Detección de Obstáculos Inteligente, Limpieza con Agua Caliente a 75°, Robot Aspitador con Cámara para Mascotas",
    "v": []
   },
+  "B0DTCF14RM": {
+   "c": "Accesorios de coche",
+   "d": 14,
+   "e": "🚗",
+   "m": 240,
+   "p": 37.45,
+   "s": "ambas",
+   "t": "2026-11-12T14:06:28.037136+00:00",
+   "title": "Dashcam 4K, Dash CAM Coche con CPL, WiFi Camara Coche Grabadora con Tarjeta 64G, Super Visión, Gran 170°, Control App, Sensor G, Monitor de Aparcamiento, Grabación de Bucle",
+   "v": []
+  },
   "B0DVLGQX5N": {
    "c": "Freidoras de aire",
    "d": 43,
@@ -1920,6 +1931,10 @@
    "t": "2026-11-12T11:45:43.028763+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0F2MX4FJQ": {
+   "t": "2026-11-12T14:05:45.520815+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0FGJTVH91": {
    "t": "2026-11-12T07:35:38.163573+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -1940,12 +1955,28 @@
    "t": "2026-11-12T11:45:43.028763+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0G39CZ4QQ": {
+   "t": "2026-11-12T14:05:45.520815+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0H699SLKM": {
    "t": "2026-11-11T20:57:31.234861+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   }
  },
  "reserve": [
+  {
+   "a": "B0GQX6JT42",
+   "c": "Accesorios de coche",
+   "e": "🚗",
+   "img": "https://m.media-amazon.com/images/I/61Io4pNfx-L._AC_UL320_.jpg",
+   "n": 1300,
+   "op": 29.99,
+   "p": 26.99,
+   "r": 4.4,
+   "t": "2026-11-12T14:05:45.520815+00:00",
+   "title": "GKU Dashcam Kit de Cableado con 8 Fusibles, Puerto USB-C 3,2 Metros, 12V-24V a 5V/3A, Voltaje Ajustable 11,3 V y 13,5 V, Protección de Bajo Voltaje y Vigilancia de Estacionamiento para GKU Dash CAM"
+  },
   {
    "a": "B0FKSV2GW2",
    "c": "Auriculares",
@@ -1969,24 +2000,12 @@
    "r": 4.4,
    "t": "2026-11-12T11:10:46.841102+00:00",
    "title": "Cecotec Robot de Cocina Bebé, Procesador de Alimentos Nana BabyCare FoodProcessor. Hierve, Tritura, Esteriliza y Calienta Biberones, sin BPA, Apto para Frutas, Verduras y Carnes, Incluye Recetario"
-  },
-  {
-   "a": "B0FL7GXSCV",
-   "c": "Aspiradoras",
-   "e": "🧹",
-   "img": "https://m.media-amazon.com/images/I/61ypDC-kULL._AC_UY218_.jpg",
-   "n": 149,
-   "op": 699.0,
-   "p": 399.0,
-   "r": 4.2,
-   "t": "2026-11-12T10:35:36.602474+00:00",
-   "title": "eufy C28 Omni Robot Aspirador y fregasuelos, HydroJet 15.000 Pa"
   }
  ],
  "summary_day": "2026-11-11",
  "tg_offset": 511048052,
  "x_copy": {
   "day": "2026-11-12",
-  "n": 11
+  "n": 12
  }
 }
