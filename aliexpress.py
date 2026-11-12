@@ -48,7 +48,10 @@ QUERY_METHOD = SEARCH_METHOD  # la busqueda normal da mas resultados que "hot pr
 MAX_CALLS = 45            # tope de llamadas a la API por dia
 MAX_ERRORS = 3            # errores seguidos tras los cuales se abandona el dia
 START_HOUR = 6            # hora de Madrid desde la que se hace la recogida diaria
-MIN_PRICE = 5.0           # en AliExpress hay ofertas validas por debajo de los 25 EUR de PowerPlanet
+MIN_PRICE = 10.0          # EUR; por debajo casi todo es accesorio de usar y tirar
+MIN_PRICE_CENTS = "1000"  # min_sale_price de la API va en centimos (con 1000 desaparecieron los productos de 9 EUR)
+MIN_SALES = 50            # ventas recientes (lastest_volume) minimas para proponer un producto
+MIN_RATING = 90.0         # valoracion minima en % (evaluate_rate)
 HIST_FILE = "aliexpress_precios.json"
 PICKS_FILE = "aliexpress_candidates.json"
 PROBE_FILE = "aliexpress_probe.json"
@@ -63,7 +66,8 @@ EUROPE_NAMES = {  # UE, EEE, Reino Unido y Suiza: codigos ISO y nombres habitual
     "HUNGARY", "HUNGRIA", "ROMANIA", "RUMANIA", "BULGARIA", "GREECE", "GRECIA", "SLOVAKIA", "ESLOVAQUIA",
 }
 ORIGIN_KEY_RE = re.compile(r"ship\w*from|from_?country|origin(?!al)|warehouse", re.IGNORECASE)  # no "original_price"
-PROBE_VERSION = 5         # sube cuando cambian las variantes del sondeo: se repite aunque el dia ya este recogido
+PROBE_VERSION = 6         # sube cuando cambian las variantes del sondeo: se repite aunque el dia ya este recogido
+SAMPLE_PRICES = 15
 SAMPLE = 3                # productos de muestra por consulta en el fichero de sondeo
 SAMPLE_CHARS = 160
 
@@ -206,6 +210,7 @@ def base_params(tracking: str) -> dict:
     return {
         "ship_to_country": "ES", "target_currency": "EUR", "target_language": "ES", "tracking_id": tracking,
         "page_size": PAGE_SIZE, "sort": "LAST_VOLUME_DESC", "delivery_days": DELIVERY_DAYS,
+        "min_sale_price": MIN_PRICE_CENTS,
     }
 
 
@@ -262,30 +267,49 @@ def gather(key: str, secret: str, tracking: str, keywords: list[str], post=reque
 
 
 def probe(key: str, secret: str, tracking: str, keyword: str, post=requests.post, sleep=time.sleep,
-          now=time.time) -> dict:
-    """Prueba unas pocas variantes y apunta que campos devuelven (para saber que se puede filtrar)."""
+          now=time.time, empty_keyword: str = "") -> dict:
+    """Compara variantes de la consulta para saber que filtros funcionan de verdad.
+
+    `keyword` es una palabra con muchos resultados y `empty_keyword` una que dio 0 con los filtros de la
+    recogida (puede que sin ellos si de resultados). Para cada variante se guardan los ids de los productos:
+    "resumen" dice si el filtro de entrega cambia algo."""
     variants = {
-        "busqueda_entrega_5_dias": (SEARCH_METHOD, {}),                          # lo que usa la recogida
-        "busqueda_entrega_3_dias": (SEARCH_METHOD, {"delivery_days": "3"}),
-        "busqueda_sin_filtro_de_entrega": (SEARCH_METHOD, {"delivery_days": ""}),
-        "busqueda_desde_10_eur": (SEARCH_METHOD, {"min_sale_price": "1000"}),   # para saber si el precio va en centimos
+        "busqueda_actual": (keyword, {}),                                         # lo que usa la recogida
+        "entrega_3_dias": (keyword, {"delivery_days": "3"}),
+        "sin_filtro_de_entrega": (keyword, {"delivery_days": ""}),
+        "sin_precio_minimo": (keyword, {"min_sale_price": ""}),
+        "sin_ningun_filtro": (keyword, {"delivery_days": "", "min_sale_price": ""}),
+        "palabra_vacia_con_filtros": (empty_keyword, {}),
+        "palabra_vacia_sin_filtros": (empty_keyword, {"delivery_days": "", "min_sale_price": ""}),
     }
     out: dict = {}
-    for name, (method, extra) in variants.items():
+    for name, (word, extra) in variants.items():
         if out:
             sleep(1.0)
-        params = {**base_params(tracking), "keywords": keyword, "page_no": 1, **extra}
-        entry: dict = {"method": method, "params": {k: v for k, v in params.items() if k != "tracking_id"}}
+        params = {**base_params(tracking), "keywords": word, "page_no": 1, **extra}
+        entry: dict = {"method": SEARCH_METHOD,
+                       "params": {k: v for k, v in params.items() if k != "tracking_id" and v != ""}}
         try:
-            products = find_products(call(method, params, key, secret, post=post, now=now))
-            entry.update(ok=True, count=len(products))
-            names = sorted({k for p in products for k in p})
-            entry["fields"] = names
+            products = find_products(call(SEARCH_METHOD, params, key, secret, post=post, now=now))
+            entry.update(ok=True, count=len(products), ids=[str(p.get("product_id")) for p in products])
+            entry["fields"] = sorted({k for p in products for k in p})
+            entry["precios"] = [str(p.get("target_sale_price")) for p in products[:SAMPLE_PRICES]]
             entry["sample"] = [{k: str(v)[:SAMPLE_CHARS] for k, v in p.items() if k != "promotion_link"}
                                for p in products[:SAMPLE]]
         except ApiError as exc:
             entry.update(ok=False, error=str(exc))
         out[name] = entry
+
+    def ids(name: str):
+        return out[name].get("ids") if out[name].get("ok") else None
+    out["resumen"] = {
+        "el_filtro_de_entrega_cambia_los_resultados": (ids("busqueda_actual") != ids("sin_ningun_filtro"))
+        if ids("busqueda_actual") is not None and ids("sin_ningun_filtro") is not None else None,
+        "entrega_3_dias_difiere_de_5": (ids("entrega_3_dias") != ids("busqueda_actual"))
+        if ids("entrega_3_dias") is not None and ids("busqueda_actual") is not None else None,
+        "productos_con_filtros": out["busqueda_actual"].get("count"),
+        "productos_sin_filtros": out["sin_ningun_filtro"].get("count"),
+    }
     return out
 
 
@@ -301,10 +325,13 @@ def report(items: dict[str, dict], hist: dict, today: date) -> dict:
     suspicious: list[dict] = []
     to_verify: list[dict] = []
     foreign = {pid for pid, i in items.items() if ONLY_FROM_EUROPE and i.get("from_europe") is False}
-    usable = {pid: i for pid, i in items.items() if pid not in foreign}
+    few_sales = {pid for pid, i in items.items() if (i.get("reviews") or 0) < MIN_SALES}
+    low_rating = {pid for pid, i in items.items() if pid not in few_sales and (i.get("rating") or 0) < MIN_RATING}
+    usable = {pid: i for pid, i in items.items() if pid not in foreign | few_sales | low_rating}
     picks, stats = feedpicks.select(usable, hist, today, suspicious, to_verify, min_price=MIN_PRICE)
-    if foreign:
-        stats["no envia desde Europa"] = len(foreign)
+    for label, group in (("no envia desde Europa", foreign), ("pocas ventas", few_sales), ("valoracion baja", low_rating)):
+        if group:
+            stats[label] = len(group)
     suspicious.sort(key=lambda c: c["price"], reverse=True)
     with_days = sum(1 for i in items.values() if i.get("ship_days") is not None)
     return {
@@ -340,8 +367,7 @@ def run(creds: tuple[str, str, str], state_dir: Path, channel_file: Path, today:
                 feed.update_history(hist, fresh, today)
                 hist["n"] = total
                 feed.save_history(path, hist)
-            working = [w for w in keywords if stats["consultas"].get(w)]
-            save_probe(creds, state_dir, working[:1] or [""], today, post, sleep, now)
+            save_probe(creds, state_dir, probe_words(keywords, stats["consultas"]), today, post, sleep, now)
             return "aliexpress: precios de hoy ya recogidos; sondeo actualizado"
         return "aliexpress: precios de hoy ya recogidos"
     items, stats = gather(key, secret, tracking, keywords, post=post, sleep=sleep, now=now)
@@ -360,15 +386,21 @@ def run(creds: tuple[str, str, str], state_dir: Path, channel_file: Path, today:
         sentence += f"; {len(data['candidates'])} candidatos en el informe"
     except Exception as exc:  # el informe es un extra
         log.warning("aliexpress: no se pudo calcular el informe (%s)", type(exc).__name__)
-    working = [w for w in keywords if stats["consultas"].get(w)]
-    save_probe(creds, state_dir, working[:1] or [""], today, post, sleep, now)
+    save_probe(creds, state_dir, probe_words(keywords, stats["consultas"]), today, post, sleep, now)
     return sentence
 
 
-def save_probe(creds: tuple[str, str, str], state_dir: Path, keywords: list[str], today: date, post, sleep, now) -> None:
+def probe_words(keywords: list[str], consultas: dict) -> tuple[str, str]:
+    """(palabra con mas resultados, primera palabra sin resultados) segun la recogida de hoy."""
+    best = max(keywords, key=lambda w: consultas.get(w) or 0, default="")
+    empty = next((w for w in keywords if consultas.get(w) == 0), "")
+    return best, empty
+
+
+def save_probe(creds: tuple[str, str, str], state_dir: Path, words: tuple[str, str], today: date, post, sleep, now) -> None:
     key, secret, tracking = creds
     try:
-        variants = probe(key, secret, tracking, keywords[0] if keywords else "", post=post, sleep=sleep, now=now)
+        variants = probe(key, secret, tracking, words[0], post=post, sleep=sleep, now=now, empty_keyword=words[1])
         write_json(state_dir / PROBE_FILE, {"version": PROBE_VERSION, "day": today.isoformat(), "variants": variants})
     except Exception as exc:
         log.warning("aliexpress: no se pudo guardar el sondeo (%s)", type(exc).__name__)

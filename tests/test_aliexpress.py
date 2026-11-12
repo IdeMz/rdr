@@ -153,19 +153,59 @@ def test_gather_survives_isolated_errors_but_gives_up_after_several_in_a_row():
     assert items == {} and stats["errores"] == ax.MAX_ERRORS and stats["llamadas"] == ax.MAX_ERRORS
 
 
-def test_probe_records_fields_and_errors_without_secrets():
+def test_probe_compares_variants_by_product_ids_and_hides_secrets():
     calls = []
-    post = poster([product("1", 10.0, ship_to_days="Ship to ES in 3 days")],
-                  error_for=lambda d: d.get("min_sale_price") == "1000", calls=calls)
-    out = ax.probe(KEY, SECRET, TRACK, "tv", post=post, sleep=lambda s: None)
-    main = out["busqueda_entrega_5_dias"]
-    assert main["ok"] and "ship_to_days" in main["fields"] and main["count"] == 1
+
+    def post(url, params=None, data=None, timeout=None):
+        merged = {**(params or {}), **(data or {})}
+        calls.append(merged)
+        if merged.get("keywords") == "vacia" and merged.get("delivery_days"):
+            return FakeResp({"x_response": {"resp_result": {"resp_code": 405, "resp_msg": "empty"}}})
+        filtered = bool(merged.get("delivery_days")) and bool(merged.get("min_sale_price"))
+        rows = [product("1", 12.0, ship_to_days="Ship to ES in 5 days")]
+        if not filtered:
+            rows.append(product("2", 5.0))
+        return FakeResp(ok(merged["method"], rows))
+    out = ax.probe(KEY, SECRET, TRACK, "tv", post=post, sleep=lambda s: None, empty_keyword="vacia")
+    main = out["busqueda_actual"]
+    assert main["ok"] and main["ids"] == ["1"] and "ship_to_days" in main["fields"] and main["precios"] == ["12.0"]
     assert "promotion_link" not in main["sample"][0]
-    assert out["busqueda_desde_10_eur"]["ok"] is False and "IllegalParam" in out["busqueda_desde_10_eur"]["error"]
-    assert out["busqueda_entrega_3_dias"]["ok"] and calls[1]["delivery_days"] == "3"
-    assert "delivery_days" not in calls[2]                     # la variante sin filtro no lo envia
+    assert out["sin_ningun_filtro"]["ids"] == ["1", "2"]
+    assert out["entrega_3_dias"]["params"]["delivery_days"] == "3"
+    assert "delivery_days" not in out["sin_filtro_de_entrega"]["params"]
+    assert out["palabra_vacia_con_filtros"]["count"] == 0 and out["palabra_vacia_sin_filtros"]["count"] == 2
+    summary = out["resumen"]
+    assert summary["el_filtro_de_entrega_cambia_los_resultados"] is True
+    assert summary["productos_con_filtros"] == 1 and summary["productos_sin_filtros"] == 2
     text = json.dumps(out)
     assert SECRET not in text and KEY not in text and TRACK not in text
+
+
+def test_probe_words_pick_the_richest_keyword_and_the_first_empty_one():
+    assert ax.probe_words(["a", "b", "c", "d"], {"a": 0, "b": 5, "c": 50, "d": 0}) == ("c", "a")
+    assert ax.probe_words(["a"], {"a": 3}) == ("a", "")
+    assert ax.probe_words([], {}) == ("", "")
+
+
+def test_report_filters_out_few_sales_and_low_rating(tmp_path):
+    ch = channel_file(tmp_path)
+    creds = (KEY, SECRET, TRACK)
+    for n, price in enumerate([40.0, 40.0, 40.0, 28.0]):
+        day = date(2026, 11, 9 + n)
+        batch = [product("1", price, product_title="Auriculares Xiaomi Redmi Buds"),
+                 product("2", price, product_title="Altavoz Anker Soundcore Mini", lastest_volume="3"),
+                 product("3", price, product_title="Cargador Baseus GaN 65W rapido", evaluate_rate="80.0%"),
+                 product("4", price, product_title="Teclado Logitech MX Keys Mini", evaluate_rate=None)]
+        ax.run(creds, tmp_path, ch, day, 8, post=poster(batch), sleep=lambda s: None)
+    data = json.loads((tmp_path / ax.PICKS_FILE).read_text())
+    assert [c["id"] for c in data["candidates"]] == ["1"]
+    assert data["stats"]["pocas ventas"] == 1 and data["stats"]["valoracion baja"] == 2
+
+
+def test_collection_asks_for_the_minimum_price_in_cents():
+    calls = []
+    ax.gather(KEY, SECRET, TRACK, ["tv"], post=poster([product("1", 10.0)], calls=calls), sleep=lambda s: None)
+    assert calls[0]["min_sale_price"] == ax.MIN_PRICE_CENTS == "1000"
 
 
 # ---------------------------------------------------------------- recogida diaria completa
@@ -296,7 +336,7 @@ def test_run_records_the_status_file_and_probes_with_a_working_keyword(tmp_path)
     ax.run((KEY, SECRET, TRACK), tmp_path, ch, TODAY, 8, post=post, sleep=lambda s: None)
     status = json.loads((tmp_path / ax.STATUS_FILE).read_text())
     assert status["consultas"]["vacia"] == 0 and status["consultas"]["buena"] == 1 and status["campos"]
-    probe_params = json.loads((tmp_path / ax.PROBE_FILE).read_text())["variants"]["busqueda_entrega_5_dias"]["params"]
+    probe_params = json.loads((tmp_path / ax.PROBE_FILE).read_text())["variants"]["busqueda_actual"]["params"]
     assert probe_params["keywords"] == "buena"
 
 
