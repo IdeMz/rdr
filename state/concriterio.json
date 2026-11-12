@@ -15,7 +15,7 @@
   "Cuidado de la piel": "2026-11-11T11:40:40.899668+00:00",
   "Cuidado del cabello": "2026-11-10T14:10:44.256404+00:00",
   "Cámaras de seguridad": "2026-11-11T09:20:41.357359+00:00",
-  "Domótica": "2026-11-11T08:10:38.955781+00:00",
+  "Domótica": "2026-11-12T16:10:50.553905+00:00",
   "Fitness en casa": "2026-11-11T14:35:34.717806+00:00",
   "Freidoras de aire": "2026-11-11T15:10:43.941870+00:00",
   "Gatos": "2026-11-11T14:01:09.084076+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-11T17:45:42.500382+00:00",
   "Zapatillas": "2026-11-12T11:45:43.028763+00:00"
  },
- "next_at": "2026-11-12T16:07:04.704350+00:00",
+ "next_at": "2026-11-12T16:43:43.233991+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -1032,6 +1032,17 @@
    "title": "Ultimate Ears WONDERBOOM 4, altavoz Bluetooth portátil resistente al agua",
    "v": []
   },
+  "B0D4TXJTXQ": {
+   "c": "Domótica",
+   "d": 32,
+   "e": "💡",
+   "m": 242,
+   "p": 20.51,
+   "s": "ofertas",
+   "t": "2026-11-12T16:11:30.507516+00:00",
+   "title": "Lepro BP1 AI Bombilla LED E14, G45 Bombilla Inteligente Alexa 2Pcs",
+   "v": []
+  },
   "B0D544WSFP": {
    "c": "Cámaras de seguridad",
    "d": 25,
@@ -1884,11 +1895,7 @@
    "v": []
   }
  },
- "problem": {
-  "alerted_at": "2026-11-12T15:02:49.901209+00:00",
-  "fails": 5,
-  "last": "HTTP 503"
- },
+ "problem": {},
  "rejected": {
   "B07TFGZ33M": {
    "t": "2026-11-12T07:35:38.163573+00:00",
@@ -1971,11 +1978,24 @@
    "why": "referencia: la ficha no trae precio de referencia"
   }
  },
- "reserve": [],
+ "reserve": [
+  {
+   "a": "B0BFJLTTL7",
+   "c": "Domótica",
+   "e": "💡",
+   "img": "https://m.media-amazon.com/images/I/61sh60LwUSL._AC_UL320_.jpg",
+   "n": 989,
+   "op": 9.77,
+   "p": 7.98,
+   "r": 4.3,
+   "t": "2026-11-12T16:10:50.553905+00:00",
+   "title": "WiZ - Bombilla LED Inteligente Wi-Fi, A60 8,5 W (Eq. 60 W) casquillo E27, Luz Blanca y de Colores, con tecnología SpaceSense y compatible con Alexa y Google Home"
+  }
+ ],
  "summary_day": "2026-11-11",
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-12",
-  "n": 12
+  "n": 13
  }
 }
