@@ -27,7 +27,7 @@
   "Mochilas y maletas": "2026-11-10T18:50:43.937099+00:00",
   "Monitores": "2026-11-12T19:10:42.508182+00:00",
   "Móviles": "2026-11-11T21:35:37.983562+00:00",
-  "Nutrición deportiva": "2026-11-11T16:55:32.341741+00:00",
+  "Nutrición deportiva": "2026-11-12T21:05:35.059588+00:00",
   "Perfumes": "2026-11-12T17:25:31.862202+00:00",
   "Periféricos": "2026-11-12T10:01:08.714316+00:00",
   "Perros": "2026-11-11T07:01:10.008228+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-11T17:45:42.500382+00:00",
   "Zapatillas": "2026-11-12T11:45:43.028763+00:00"
  },
- "next_at": "2026-11-12T21:02:01.421556+00:00",
+ "next_at": "2026-11-12T21:36:13.362112+00:00",
  "offer": {
   "a": "B09VN62HF3",
   "m": 193,
@@ -96,6 +96,17 @@
    "p": 24.94,
    "t": "2026-11-08T11:41:12.275160+00:00",
    "title": "Lavazza, Qualità Rossa, Café en Grano Natural, Ideal para la Máquina de Café Espresso, con Notas Aromáticas de Chocolate y Frutos Secos, Arábica y Robusta, Intensidad 5, Tueste Medio, Paquete de 1 kg",
+   "v": []
+  },
+  "B0057ED9AM": {
+   "c": "Nutrición deportiva",
+   "d": 30,
+   "e": "💪",
+   "m": 249,
+   "p": 20.93,
+   "s": "ofertas",
+   "t": "2026-11-12T21:06:04.878599+00:00",
+   "title": "ESN Creatina Monohidrato Ultrapura, 500 g, 142 porciones",
    "v": []
   },
   "B005GWRNQQ": {
@@ -2035,10 +2046,6 @@
    "t": "2026-11-12T14:05:45.520815+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0H699SLKM": {
-   "t": "2026-11-11T20:57:31.234861+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0HCBT1LRB": {
    "t": "2026-11-12T20:30:50.378352+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2049,6 +2056,18 @@
   }
  },
  "reserve": [
+  {
+   "a": "B0D1VN79ML",
+   "c": "Nutrición deportiva",
+   "e": "💪",
+   "img": "https://m.media-amazon.com/images/I/61EFnVji93L._AC_UL320_.jpg",
+   "n": 129,
+   "op": 27.37,
+   "p": 18.83,
+   "r": 4.7,
+   "t": "2026-11-12T21:05:35.059588+00:00",
+   "title": "Enervit, Creatina Monohidrato Pura, sin Aromas, para Mejorar el Rendimiento Muscular, 3,4g de Creatina por Porción, para Consumir Durante el Día, Vegano, Frasco de 330g"
+  },
   {
    "a": "B0HHN4Q6SN",
    "c": "Smartwatch",
@@ -2066,6 +2085,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-12",
-  "n": 19
+  "n": 20
  }
 }
