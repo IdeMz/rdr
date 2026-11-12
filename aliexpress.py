@@ -5,9 +5,9 @@ España, en euros), anota su precio en state/aliexpress_precios.json con el mism
 los candidatos en state/aliexpress_candidates.json con las reglas de feedpicks.py. No publica nada.
 
 Solo interesan los productos que se ENVIAN DESDE Europa (para evitar aduana y tasas), no los que solo se entregan
-en España. La API no dice el origen: por eso se pide siempre entrega en DELIVERY_DAYS dias o menos, que en la
-practica deja los almacenes europeos. Si algun dia la API trae el origen y no es europeo, el producto se descarta;
-si no lo dice queda en el informe con from_europe = null (sin verificar).
+en España. La API NO dice el origen y su filtro delivery_days no cambia los resultados (comprobado el 12-11-2026:
+mismos productos con 3, 5 dias y sin filtro). Por eso el origen queda sin verificar (from_europe = null) y hay que
+mirarlo en la ficha antes de publicar. Si algun dia la API trae el origen y no es europeo, el producto se descarta.
 
 El "antes" de AliExpress esta muy inflado y la API no da historial: la bajada se mide contra el historial propio.
 
@@ -41,11 +41,11 @@ ENV_TRACKING = "ALIEXPRESS_TRACKING_ID"
 ENDPOINT = "https://api-sg.aliexpress.com/sync"
 HOT_METHOD = "aliexpress.affiliate.hotproduct.query"
 SEARCH_METHOD = "aliexpress.affiliate.product.query"
+DETAIL_METHOD = "aliexpress.affiliate.productdetail.get"
 PAGE_SIZE = 50
 GLOBAL_PAGES = 0          # las paginas generales de "hot products" dan casi solo productos de 2-4 EUR: no se piden
-DELIVERY_DAYS = "5"       # la API no dice el origen del envio; entrega en 5 dias o menos = almacen en Europa (sin aduana)
 QUERY_METHOD = SEARCH_METHOD  # la busqueda normal da mas resultados que "hot products" (7 contra 1 con la misma palabra)
-MAX_CALLS = 45            # tope de llamadas a la API por dia
+MAX_CALLS = 75            # tope de llamadas a la API por dia (consultas + reintentos con la primera palabra)
 MAX_ERRORS = 3            # errores seguidos tras los cuales se abandona el dia
 START_HOUR = 6            # hora de Madrid desde la que se hace la recogida diaria
 MIN_PRICE = 10.0          # EUR; por debajo casi todo es accesorio de usar y tirar
@@ -66,7 +66,7 @@ EUROPE_NAMES = {  # UE, EEE, Reino Unido y Suiza: codigos ISO y nombres habitual
     "HUNGARY", "HUNGRIA", "ROMANIA", "RUMANIA", "BULGARIA", "GREECE", "GRECIA", "SLOVAKIA", "ESLOVAQUIA",
 }
 ORIGIN_KEY_RE = re.compile(r"ship\w*from|from_?country|origin(?!al)|warehouse", re.IGNORECASE)  # no "original_price"
-PROBE_VERSION = 6         # sube cuando cambian las variantes del sondeo: se repite aunque el dia ya este recogido
+PROBE_VERSION = 7         # sube cuando cambian las variantes del sondeo: se repite aunque el dia ya este recogido
 SAMPLE_PRICES = 15
 SAMPLE = 3                # productos de muestra por consulta en el fichero de sondeo
 SAMPLE_CHARS = 160
@@ -209,8 +209,7 @@ def keywords_from_channel(path: Path) -> list[str]:
 def base_params(tracking: str) -> dict:
     return {
         "ship_to_country": "ES", "target_currency": "EUR", "target_language": "ES", "tracking_id": tracking,
-        "page_size": PAGE_SIZE, "sort": "LAST_VOLUME_DESC", "delivery_days": DELIVERY_DAYS,
-        "min_sale_price": MIN_PRICE_CENTS,
+        "page_size": PAGE_SIZE, "sort": "LAST_VOLUME_DESC", "min_sale_price": MIN_PRICE_CENTS,
     }
 
 
@@ -218,37 +217,36 @@ def gather(key: str, secret: str, tracking: str, keywords: list[str], post=reque
            now=time.time) -> tuple[dict[str, dict], dict]:
     """Productos de hoy {id: item} y cifras para el log. Un error suelto no tumba el dia; varios seguidos si.
 
-    Una consulta sin resultados no es un error. stats["consultas"] dice cuantos productos dio cada una y
-    stats["campos"] / stats["muestra_productos"] son los campos y unos productos tal como los devuelve la API."""
+    Una consulta sin resultados no es un error. Si una frase de varias palabras no da nada se repite con su primera
+    palabra (AliExpress exige que salgan todas: "smartphone libre" da 0 y "smartphone" no). stats["consultas"]
+    dice cuantos productos dio cada una y stats["campos"] / stats["muestra_productos"] son los campos y unos
+    productos tal como los devuelve la API."""
     items: dict[str, dict] = {}
     stats: dict = {"llamadas": 0, "errores": 0, "vacias": 0, "muestra": [], "consultas": {}, "campos": [],
                    "muestra_productos": []}
-    plan = [{"page_no": n} for n in range(1, GLOBAL_PAGES + 1)] + [{"keywords": w, "page_no": 1} for w in keywords]
-    streak = 0
+    state = {"streak": 0}
     fields: set[str] = set()
-    for extra in plan[:MAX_CALLS]:
+
+    def query(extra: dict, label: str) -> int | None:
+        """Productos que da la consulta (0 si esta vacia) o None si fallo."""
         if stats["llamadas"]:
             sleep(1.0)
         stats["llamadas"] += 1
-        label = extra.get("keywords") or f"general p{extra['page_no']}"
         try:
             data = call(QUERY_METHOD, {**base_params(tracking), **extra}, key, secret, post=post, now=now)
-            streak = 0
+            state["streak"] = 0
         except EmptyResult:
             stats["vacias"] += 1
             stats["consultas"][label] = 0
-            streak = 0
-            continue
+            state["streak"] = 0
+            return 0
         except ApiError as exc:
             stats["errores"] += 1
-            streak += 1
+            state["streak"] += 1
             if str(exc) not in stats["muestra"] and len(stats["muestra"]) < 3:
                 stats["muestra"].append(str(exc))
             log.warning("aliexpress: error en la consulta %s: %s", label, exc)
-            if streak >= MAX_ERRORS:
-                log.warning("aliexpress: %d errores seguidos; se deja para otro dia", MAX_ERRORS)
-                break
-            continue
+            return None
         products = find_products(data)
         stats["consultas"][label] = len(products)
         if not products:
@@ -261,6 +259,24 @@ def gather(key: str, secret: str, tracking: str, keywords: list[str], post=reque
             item = item_from(product)
             if item:
                 items.setdefault(item["id"], item)
+        return len(products)
+
+    plan = [({"page_no": n}, f"general p{n}") for n in range(1, GLOBAL_PAGES + 1)]
+    plan += [({"keywords": w, "page_no": 1}, w) for w in keywords]
+    empty_phrases: list[str] = []
+    for extra, label in plan[:MAX_CALLS]:
+        got = query(extra, label)
+        if got == 0 and " " in label.strip():
+            empty_phrases.append(label)
+        if state["streak"] >= MAX_ERRORS:
+            log.warning("aliexpress: %d errores seguidos; se deja para otro dia", MAX_ERRORS)
+            break
+    for phrase in empty_phrases:
+        if state["streak"] >= MAX_ERRORS or stats["llamadas"] >= MAX_CALLS:
+            break
+        first = phrase.split()[0]
+        if first not in stats["consultas"]:
+            query({"keywords": first, "page_no": 1}, first)
     stats["campos"] = sorted(fields)
     stats["productos"] = len(items)
     return items, stats
@@ -274,13 +290,11 @@ def probe(key: str, secret: str, tracking: str, keyword: str, post=requests.post
     recogida (puede que sin ellos si de resultados). Para cada variante se guardan los ids de los productos:
     "resumen" dice si el filtro de entrega cambia algo."""
     variants = {
-        "busqueda_actual": (keyword, {}),                                         # lo que usa la recogida
-        "entrega_3_dias": (keyword, {"delivery_days": "3"}),
-        "sin_filtro_de_entrega": (keyword, {"delivery_days": ""}),
+        "busqueda_actual": (keyword, {}),                                         # lo que usa la recogida (sin filtro de entrega)
+        "entrega_5_dias": (keyword, {"delivery_days": "5"}),
+        "entrega_1_dia": (keyword, {"delivery_days": "1"}),                      # valor extremo: si no cambia nada, no filtra
         "sin_precio_minimo": (keyword, {"min_sale_price": ""}),
-        "sin_ningun_filtro": (keyword, {"delivery_days": "", "min_sale_price": ""}),
-        "palabra_vacia_con_filtros": (empty_keyword, {}),
-        "palabra_vacia_sin_filtros": (empty_keyword, {"delivery_days": "", "min_sale_price": ""}),
+        "sin_ningun_filtro": (keyword, {"min_sale_price": ""}),
     }
     out: dict = {}
     for name, (word, extra) in variants.items():
@@ -302,15 +316,32 @@ def probe(key: str, secret: str, tracking: str, keyword: str, post=requests.post
 
     def ids(name: str):
         return out[name].get("ids") if out[name].get("ok") else None
+    base_ids = ids("busqueda_actual")
     out["resumen"] = {
-        "el_filtro_de_entrega_cambia_los_resultados": (ids("busqueda_actual") != ids("sin_ningun_filtro"))
-        if ids("busqueda_actual") is not None and ids("sin_ningun_filtro") is not None else None,
-        "entrega_3_dias_difiere_de_5": (ids("entrega_3_dias") != ids("busqueda_actual"))
-        if ids("entrega_3_dias") is not None and ids("busqueda_actual") is not None else None,
-        "productos_con_filtros": out["busqueda_actual"].get("count"),
-        "productos_sin_filtros": out["sin_ningun_filtro"].get("count"),
+        "entrega_5_dias_igual_que_sin_filtro": (ids("entrega_5_dias") == base_ids) if base_ids is not None else None,
+        "entrega_1_dia_igual_que_sin_filtro": (ids("entrega_1_dia") == base_ids) if base_ids is not None else None,
+        "productos_sin_filtro_de_entrega": out["busqueda_actual"].get("count"),
+        "productos_entrega_1_dia": out["entrega_1_dia"].get("count"),
     }
+    out["detalle_de_producto"] = product_detail(base_ids or [], key, secret, tracking, post, now)
     return out
+
+
+def product_detail(ids: list[str], key: str, secret: str, tracking: str, post, now) -> dict:
+    """Pide el detalle de unos productos: puede traer campos que la busqueda no trae (origen, plazo real)."""
+    params = {"product_ids": ",".join(ids[:5]), "country": "ES", "target_currency": "EUR", "target_language": "ES",
+              "tracking_id": tracking}
+    entry: dict = {"method": DETAIL_METHOD}
+    if not ids:
+        return {**entry, "ok": False, "error": "sin productos para pedir el detalle"}
+    try:
+        products = find_products(call(DETAIL_METHOD, params, key, secret, post=post, now=now))
+        entry.update(ok=True, count=len(products), fields=sorted({k for p in products for k in p}),
+                     sample=[{k: str(v)[:SAMPLE_CHARS] for k, v in p.items() if k != "promotion_link"}
+                             for p in products[:SAMPLE]])
+    except ApiError as exc:
+        entry.update(ok=False, error=str(exc))
+    return entry
 
 
 def write_json(path: Path, data: dict) -> None:

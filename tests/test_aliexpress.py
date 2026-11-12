@@ -129,14 +129,14 @@ def test_keywords_come_from_the_channel_search_urls(tmp_path):
 
 # ---------------------------------------------------------------- recogida
 
-def test_gather_queries_each_keyword_with_the_delivery_filter_and_dedupes():
+def test_gather_queries_each_keyword_without_the_useless_delivery_filter_and_dedupes():
     calls = []
     items, stats = ax.gather(KEY, SECRET, TRACK, ["tv", "movil"], post=poster([product("1", 10.0)], calls=calls),
                              sleep=lambda s: None)
     assert list(items) == ["1"] and stats["llamadas"] == ax.GLOBAL_PAGES + 2 and stats["errores"] == 0
     assert calls[0]["ship_to_country"] == "ES" and calls[0]["target_currency"] == "EUR"
     assert calls[0]["tracking_id"] == TRACK and calls[0]["sign_method"] == "md5"
-    assert calls[0]["method"] == ax.SEARCH_METHOD and calls[0]["delivery_days"] == ax.DELIVERY_DAYS == "5"
+    assert calls[0]["method"] == ax.SEARCH_METHOD and "delivery_days" not in calls[0]   # no filtra: no se pide
     assert [c["keywords"] for c in calls] == ["tv", "movil"]
 
 
@@ -159,26 +159,44 @@ def test_probe_compares_variants_by_product_ids_and_hides_secrets():
     def post(url, params=None, data=None, timeout=None):
         merged = {**(params or {}), **(data or {})}
         calls.append(merged)
-        if merged.get("keywords") == "vacia" and merged.get("delivery_days"):
-            return FakeResp({"x_response": {"resp_result": {"resp_code": 405, "resp_msg": "empty"}}})
-        filtered = bool(merged.get("delivery_days")) and bool(merged.get("min_sale_price"))
-        rows = [product("1", 12.0, ship_to_days="Ship to ES in 5 days")]
-        if not filtered:
-            rows.append(product("2", 5.0))
+        rows = [product("1", 12.0), product("2", 14.0)]
+        if merged.get("delivery_days") == "1":           # este filtro "funciona" en la prueba
+            rows = rows[:1]
+        if not merged.get("min_sale_price"):
+            rows = rows + [product("3", 5.0)]
+        if merged["method"] == ax.DETAIL_METHOD:
+            rows = [product("1", 12.0, ship_from_country="PL")]
         return FakeResp(ok(merged["method"], rows))
-    out = ax.probe(KEY, SECRET, TRACK, "tv", post=post, sleep=lambda s: None, empty_keyword="vacia")
+    out = ax.probe(KEY, SECRET, TRACK, "tv", post=post, sleep=lambda s: None)
     main = out["busqueda_actual"]
-    assert main["ok"] and main["ids"] == ["1"] and "ship_to_days" in main["fields"] and main["precios"] == ["12.0"]
-    assert "promotion_link" not in main["sample"][0]
-    assert out["sin_ningun_filtro"]["ids"] == ["1", "2"]
-    assert out["entrega_3_dias"]["params"]["delivery_days"] == "3"
-    assert "delivery_days" not in out["sin_filtro_de_entrega"]["params"]
-    assert out["palabra_vacia_con_filtros"]["count"] == 0 and out["palabra_vacia_sin_filtros"]["count"] == 2
+    assert main["ok"] and main["ids"] == ["1", "2"] and main["precios"] == ["12.0", "14.0"]
+    assert "promotion_link" not in main["sample"][0] and "delivery_days" not in main["params"]
+    assert out["sin_ningun_filtro"]["ids"] == ["1", "2", "3"]
+    assert out["entrega_5_dias"]["params"]["delivery_days"] == "5"
     summary = out["resumen"]
-    assert summary["el_filtro_de_entrega_cambia_los_resultados"] is True
-    assert summary["productos_con_filtros"] == 1 and summary["productos_sin_filtros"] == 2
+    assert summary["entrega_5_dias_igual_que_sin_filtro"] is True       # no cambia nada
+    assert summary["entrega_1_dia_igual_que_sin_filtro"] is False       # este si cambia
+    detail = out["detalle_de_producto"]
+    assert detail["ok"] and "ship_from_country" in detail["fields"]
+    assert [c for c in calls if c["method"] == ax.DETAIL_METHOD][0]["product_ids"] == "1,2"
     text = json.dumps(out)
     assert SECRET not in text and KEY not in text and TRACK not in text
+
+
+def test_empty_multiword_phrases_are_retried_with_their_first_word():
+    seen = []
+
+    def post(url, params=None, data=None, timeout=None):
+        merged = {**(params or {}), **(data or {})}
+        seen.append(merged.get("keywords"))
+        if merged.get("keywords") in ("smartphone libre", "crema facial"):
+            return FakeResp(ok(merged["method"], []))
+        return FakeResp(ok(merged["method"], [product(merged["keywords"], 20.0)]))
+    items, stats = ax.gather(KEY, SECRET, TRACK, ["smartphone libre", "portatil", "crema facial"], post=post,
+                             sleep=lambda s: None)
+    assert seen == ["smartphone libre", "portatil", "crema facial", "smartphone", "crema"]
+    assert stats["consultas"]["smartphone"] == 1 and stats["consultas"]["smartphone libre"] == 0
+    assert set(items) == {"portatil", "smartphone", "crema"}
 
 
 def test_probe_words_pick_the_richest_keyword_and_the_first_empty_one():
@@ -305,8 +323,9 @@ def test_empty_results_are_not_errors_and_per_query_counts_are_recorded():
                 "resp_code": 405, "resp_msg": "The result is empty"}}})
         return FakeResp(ok(merged["method"], [product("1", 10.0, ship_to_days="3", ship_from_country="ES")]))
     items, stats = ax.gather(KEY, SECRET, TRACK, ["sin resultados", "con resultados"], post=post, sleep=lambda s: None)
-    assert stats["errores"] == 0 and stats["vacias"] == 1 and stats["llamadas"] == ax.GLOBAL_PAGES + 2
+    assert stats["errores"] == 0 and stats["vacias"] == 1 and stats["llamadas"] == ax.GLOBAL_PAGES + 3
     assert stats["consultas"]["sin resultados"] == 0 and stats["consultas"]["con resultados"] == 1
+    assert stats["consultas"]["sin"] == 1                      # la frase vacia se reintenta con su primera palabra
     assert "ship_from_country" in stats["campos"] and "ship_to_days" in stats["campos"]
     assert stats["muestra_productos"][0]["product_id"] == "1" and "promotion_link" not in stats["muestra_productos"][0]
     assert items["1"]["from_europe"] is True
