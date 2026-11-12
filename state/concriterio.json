@@ -25,7 +25,7 @@
   "Lego": "2026-11-09T10:30:54.098717+00:00",
   "Menaje de cocina": "2026-11-11T20:57:31.234861+00:00",
   "Mochilas y maletas": "2026-11-10T18:50:43.937099+00:00",
-  "Monitores": "2026-11-11T19:05:38.080787+00:00",
+  "Monitores": "2026-11-12T19:10:42.508182+00:00",
   "Móviles": "2026-11-11T21:35:37.983562+00:00",
   "Nutrición deportiva": "2026-11-11T16:55:32.341741+00:00",
   "Perfumes": "2026-11-12T17:25:31.862202+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-11T17:45:42.500382+00:00",
   "Zapatillas": "2026-11-12T11:45:43.028763+00:00"
  },
- "next_at": "2026-11-12T19:09:36.710025+00:00",
+ "next_at": "2026-11-12T19:40:42.949538+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -1255,6 +1255,17 @@
    "title": "DREAME L50 Pro Ultra Robot Aspirador y Fregasuelos, 19500 Pa, Autolimpieza de la Mopa, Detección de Obstáculos Inteligente, Limpieza con Agua Caliente a 75°, Robot Aspitador con Cámara para Mascotas",
    "v": []
   },
+  "B0DT4R1N9N": {
+   "c": "Monitores",
+   "d": 34,
+   "e": "🖥️",
+   "m": 247,
+   "p": 119.0,
+   "s": "ambas",
+   "t": "2026-11-12T19:11:14.073041+00:00",
+   "title": "AOC Q27G42XE Gaming Monitor 27 Pulgadas 180Hz Panel Fast IPS, 1ms GtG, HDR10, G-Sync Compatible, Altavoces, (2560x1440 HDMI 2X 2.0 DP 1x 1.4) Negro",
+   "v": []
+  },
   "B0DTCF14RM": {
    "c": "Accesorios de coche",
    "d": 14,
@@ -2056,6 +2067,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-12",
-  "n": 17
+  "n": 18
  }
 }
