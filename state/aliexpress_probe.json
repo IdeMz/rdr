@@ -1,0 +1,64 @@
+{
+ "version": 3,
+ "day": "2026-11-12",
+ "variants": {
+  "hot_base": {
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "params": {
+    "ship_to_country": "ES",
+    "target_currency": "EUR",
+    "target_language": "ES",
+    "page_size": 50,
+    "sort": "LAST_VOLUME_DESC",
+    "keywords": "smartphone libre",
+    "page_no": 1
+   },
+   "ok": false,
+   "error": "resp_code 405: The result is empty"
+  },
+  "hot_entrega_3_dias": {
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "params": {
+    "ship_to_country": "ES",
+    "target_currency": "EUR",
+    "target_language": "ES",
+    "page_size": 50,
+    "sort": "LAST_VOLUME_DESC",
+    "keywords": "smartphone libre",
+    "page_no": 1,
+    "delivery_days": "3"
+   },
+   "ok": false,
+   "error": "resp_code 405: The result is empty"
+  },
+  "hot_entrega_5_dias": {
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "params": {
+    "ship_to_country": "ES",
+    "target_currency": "EUR",
+    "target_language": "ES",
+    "page_size": 50,
+    "sort": "LAST_VOLUME_DESC",
+    "keywords": "smartphone libre",
+    "page_no": 1,
+    "delivery_days": "5"
+   },
+   "ok": false,
+   "error": "resp_code 405: The result is empty"
+  },
+  "busqueda_base": {
+   "method": "aliexpress.affiliate.product.query",
+   "params": {
+    "ship_to_country": "ES",
+    "target_currency": "EUR",
+    "target_language": "ES",
+    "page_size": 50,
+    "sort": "LAST_VOLUME_DESC",
+    "keywords": "smartphone libre",
+    "page_no": 1
+   },
+   "ok": false,
+   "error": "resp_code 405: The result is empty"
+  }
+ }
+}
