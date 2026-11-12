@@ -187,6 +187,13 @@ def test_run_with_no_products_writes_nothing_and_retries(tmp_path):
                   post=poster(error_for=lambda d: True), sleep=lambda s: None)
     assert "sin productos" in text and "se reintenta" in text
     assert not (tmp_path / ax.HIST_FILE).exists()
+    status = json.loads((tmp_path / ax.STATUS_FILE).read_text())
+    assert status["errores"] == ax.MAX_ERRORS and status["muestra_de_errores"] == ["IllegalParam: bad"]
+    assert SECRET not in json.dumps(status) and KEY not in json.dumps(status)
+    before = (tmp_path / ax.STATUS_FILE).stat().st_mtime_ns
+    ax.run((KEY, SECRET, TRACK), tmp_path, channel_file(tmp_path), TODAY, 8, post=poster(error_for=lambda d: True),
+           sleep=lambda s: None)
+    assert (tmp_path / ax.STATUS_FILE).stat().st_mtime_ns == before      # igual que antes: no se reescribe
 
 
 def test_report_finds_a_real_drop_with_the_lower_price_floor(tmp_path):

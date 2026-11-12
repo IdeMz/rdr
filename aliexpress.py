@@ -50,6 +50,7 @@ MIN_PRICE = 5.0           # en AliExpress hay ofertas validas por debajo de los 
 HIST_FILE = "aliexpress_precios.json"
 PICKS_FILE = "aliexpress_candidates.json"
 PROBE_FILE = "aliexpress_probe.json"
+STATUS_FILE = "aliexpress_estado.json"   # por que no hubo productos (la API da errores): se lee sin necesidad del log
 ONLY_FROM_SPAIN = True    # descarta del informe los productos cuyo origen conocido no es España
 SPAIN_NAMES = {"ES", "ESP", "SPAIN", "ESPANA", "ESPAÑA"}
 ORIGIN_KEY_RE = re.compile(r"ship\w*from|from_?country|origin(?!al)|warehouse", re.IGNORECASE)  # no "original_price"
@@ -189,7 +190,7 @@ def gather(key: str, secret: str, tracking: str, keywords: list[str], post=reque
            now=time.time) -> tuple[dict[str, dict], dict]:
     """Productos de hoy {id: item} y cifras para el log. Un error suelto no tumba el dia; varios seguidos si."""
     items: dict[str, dict] = {}
-    stats = {"llamadas": 0, "errores": 0, "vacias": 0}
+    stats = {"llamadas": 0, "errores": 0, "vacias": 0, "muestra": []}
     plan = [{"page_no": n} for n in range(1, GLOBAL_PAGES + 1)] + [{"keywords": w, "page_no": 1} for w in keywords]
     streak = 0
     for extra in plan[:MAX_CALLS]:
@@ -202,6 +203,8 @@ def gather(key: str, secret: str, tracking: str, keywords: list[str], post=reque
         except ApiError as exc:
             stats["errores"] += 1
             streak += 1
+            if str(exc) not in stats["muestra"] and len(stats["muestra"]) < 3:
+                stats["muestra"].append(str(exc))
             log.warning("aliexpress: error en la consulta %s: %s", extra.get("keywords") or f"pagina {extra['page_no']}", exc)
             if streak >= MAX_ERRORS:
                 log.warning("aliexpress: %d errores seguidos; se deja para otro dia", MAX_ERRORS)
@@ -295,6 +298,7 @@ def run(creds: tuple[str, str, str], state_dir: Path, channel_file: Path, today:
         return "aliexpress: precios de hoy ya recogidos"
     items, stats = gather(key, secret, tracking, keywords, post=post, sleep=sleep, now=now)
     if not items:
+        write_status(state_dir, today, stats)
         return f"aliexpress: sin productos ({stats['errores']} errores en {stats['llamadas']} llamadas); se reintenta"
     update = feed.update_history(hist, {pid: i["price"] for pid, i in items.items()}, today)
     feed.save_history(path, hist)
@@ -318,6 +322,22 @@ def save_probe(creds: tuple[str, str, str], state_dir: Path, keywords: list[str]
         write_json(state_dir / PROBE_FILE, {"version": PROBE_VERSION, "day": today.isoformat(), "variants": variants})
     except Exception as exc:
         log.warning("aliexpress: no se pudo guardar el sondeo (%s)", type(exc).__name__)
+
+
+def write_status(state_dir: Path, today: date, stats: dict) -> None:
+    """Deja el motivo del fallo en un fichero. Solo se reescribe si cambia, para no llenar el historial de commits."""
+    data = {"day": today.isoformat(), "llamadas": stats.get("llamadas"), "errores": stats.get("errores"),
+            "vacias": stats.get("vacias"), "muestra_de_errores": stats.get("muestra", [])}
+    path = state_dir / STATUS_FILE
+    try:
+        if json.loads(path.read_text(encoding="utf-8")) == data:
+            return
+    except (OSError, ValueError):
+        pass
+    try:
+        write_json(path, data)
+    except OSError as exc:
+        log.warning("aliexpress: no se pudo guardar el estado (%s)", type(exc).__name__)
 
 
 def probe_is_current(state_dir: Path) -> bool:
