@@ -35,13 +35,13 @@
   "Relojes": "2026-11-11T09:55:30.001966+00:00",
   "Robots de cocina": "2026-11-08T16:20:40.816944+00:00",
   "Smartwatch": "2026-11-11T16:20:38.627123+00:00",
-  "Suplementos": "2026-11-10T08:45:47.983358+00:00",
+  "Suplementos": "2026-11-12T07:01:12.210606+00:00",
   "Tablets": "2026-11-10T20:35:35.839507+00:00",
   "Televisores": "2026-11-11T20:15:41.209092+00:00",
   "Videojuegos": "2026-11-11T17:45:42.500382+00:00",
   "Zapatillas": "2026-11-11T12:50:38.562143+00:00"
  },
- "next_at": "2026-11-11T22:07:02.841721+00:00",
+ "next_at": "2026-11-12T07:31:12.322068+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -474,6 +474,17 @@
    "p": 23.46,
    "t": "2026-11-11T19:41:17.797229+00:00",
    "title": "DEWINNER Aspersor de Jardín Automático, Aspersor Giratorio de Césped de 360 °, Suministros de Jardinería Ajustables, Sistema de Riego con Boquilla de 3 Brazos para Equipos",
+   "v": []
+  },
+  "B08JZ6MPF3": {
+   "c": "Suplementos",
+   "d": 37,
+   "e": "💊",
+   "m": 229,
+   "p": 12.63,
+   "s": "ambas",
+   "t": "2026-11-12T07:01:42.629400+00:00",
+   "title": "Moller’s ® | Cápsulas de omega 3 | Aceite de pescado | Suplemento dietético nórdico con omega 3 y EPA, DHA, vitaminas A, D y E | Marca con 166 años de historia | Daily Health | 112 cápsulas",
    "v": []
   },
   "B08X6DCJT2": {
@@ -1794,34 +1805,22 @@
  },
  "reserve": [
   {
-   "a": "B00UOIZ8VY",
-   "c": "Menaje de cocina",
-   "e": "🍳",
-   "img": "https://m.media-amazon.com/images/I/51qX7gpVoQL._AC_UL320_.jpg",
-   "n": 1900,
-   "op": 57.49,
-   "p": 47.99,
-   "r": 4.6,
-   "t": "2026-11-11T20:57:31.234861+00:00",
-   "title": "Tefal Comfort Max - Juego de 3 Cazos + 2 Tapas, Acero Inoxidable"
-  },
-  {
-   "a": "B0DT4R1N9N",
-   "c": "Monitores",
-   "e": "🖥️",
-   "img": "https://m.media-amazon.com/images/I/71StNw1nDbL._AC_UL320_.jpg",
-   "n": 288,
-   "op": 179.0,
-   "p": 119.0,
-   "r": 4.6,
-   "t": "2026-11-11T19:05:38.080787+00:00",
-   "title": "AOC Q27G42XE Gaming Monitor 27 Pulgadas 180Hz Panel Fast IPS, 1ms GtG, HDR10, G-Sync Compatible, Altavoces, (2560x1440 HDMI 2X 2.0 DP 1x 1.4) Negro"
+   "a": "B08WC4V1PK",
+   "c": "Suplementos",
+   "e": "💊",
+   "img": "https://m.media-amazon.com/images/I/81M550HTRsL._AC_UL320_.jpg",
+   "n": 1000,
+   "op": 16.9,
+   "p": 10.74,
+   "r": 4.5,
+   "t": "2026-11-12T07:01:12.210606+00:00",
+   "title": "Moller’s ® | Omega 3 para niños | Omega-3 Cápsulas de Aceite de Pescado con Ácidos Grasos Omega 3 | Con DHA y EPA, Sin Gluten, Sin Lactosa, Sin Azucares Añadidos | Tutti Frutti | 36 Uds"
   }
  ],
  "summary_day": "2026-11-11",
  "tg_offset": 511048052,
  "x_copy": {
-  "day": "2026-11-11",
-  "n": 25
+  "day": "2026-11-12",
+  "n": 1
  }
 }
