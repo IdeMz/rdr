@@ -18,7 +18,6 @@ plazo de entrega...). Este modulo no conoce Telegram.
 from __future__ import annotations
 
 import hashlib
-import hmac
 import json
 import logging
 import re
@@ -54,7 +53,7 @@ STATUS_FILE = "aliexpress_estado.json"   # por que no hubo productos (la API da 
 ONLY_FROM_SPAIN = True    # descarta del informe los productos cuyo origen conocido no es España
 SPAIN_NAMES = {"ES", "ESP", "SPAIN", "ESPANA", "ESPAÑA"}
 ORIGIN_KEY_RE = re.compile(r"ship\w*from|from_?country|origin(?!al)|warehouse", re.IGNORECASE)  # no "original_price"
-PROBE_VERSION = 2         # sube cuando cambian las variantes del sondeo: se repite aunque el dia ya este recogido
+PROBE_VERSION = 3         # sube cuando cambian las variantes del sondeo: se repite aunque el dia ya este recogido
 SAMPLE = 3                # productos de muestra por consulta en el fichero de sondeo
 SAMPLE_CHARS = 160
 
@@ -63,19 +62,27 @@ class ApiError(Exception):
     """La API contesto con un error (o con algo que no se entiende)."""
 
 
+SYSTEM_PARAMS = ("format", "app_key", "sign_method", "v", "timestamp", "partner_id", "method")
+PARTNER_ID = "taobao-sdk-python-20200924"  # la misma etiqueta que envia el SDK oficial de la plataforma
+
+
 def sign(params: dict[str, str], secret: str) -> str:
-    """Firma HMAC-SHA256 de la plataforma: parametros ordenados y pegados como clave+valor."""
-    base = "".join(f"{k}{params[k]}" for k in sorted(params))
-    return hmac.new(secret.encode("utf-8"), base.encode("utf-8"), hashlib.sha256).hexdigest().upper()
+    """Firma MD5 de la pasarela: secreto + (clave+valor de todos los parametros ordenados) + secreto, en mayusculas."""
+    base = secret + "".join(f"{k}{params[k]}" for k in sorted(params)) + secret
+    return hashlib.md5(base.encode("utf-8")).hexdigest().upper()
 
 
 def call(method: str, params: dict, key: str, secret: str, post=requests.post, now=time.time) -> dict:
-    """Una llamada firmada. Devuelve el JSON de la respuesta o lanza ApiError."""
+    """Una llamada firmada. Devuelve el JSON de la respuesta o lanza ApiError.
+
+    Como el SDK oficial: los parametros de sistema van en la URL y los de la consulta en el cuerpo; la firma
+    cubre todos."""
     body = {k: str(v) for k, v in params.items() if v not in (None, "")}
-    body.update({"app_key": key, "timestamp": str(int(now() * 1000)), "sign_method": "sha256", "method": method})
-    body["sign"] = sign(body, secret)
+    system = {"format": "json", "app_key": key, "sign_method": "md5", "v": "2.0",
+              "timestamp": str(int(now() * 1000)), "partner_id": PARTNER_ID, "method": method}
+    system["sign"] = sign({**system, **body}, secret)
     try:
-        resp = post(ENDPOINT, data=body, timeout=25)
+        resp = post(ENDPOINT, params=system, data=body, timeout=25)
         data = resp.json()
     except (requests.RequestException, ValueError) as exc:
         raise ApiError(f"{type(exc).__name__}") from exc
@@ -228,7 +235,6 @@ def probe(key: str, secret: str, tracking: str, keyword: str, post=requests.post
         "hot_base": (HOT_METHOD, {}),
         "hot_entrega_3_dias": (HOT_METHOD, {"delivery_days": "3"}),
         "hot_entrega_5_dias": (HOT_METHOD, {"delivery_days": "5"}),
-        "hot_envio_desde_ES": (HOT_METHOD, {"ship_from_country": "ES"}),  # nombre de parametro sin confirmar
         "busqueda_base": (SEARCH_METHOD, {}),
     }
     out: dict = {}

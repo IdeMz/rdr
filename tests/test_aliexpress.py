@@ -1,5 +1,4 @@
 import hashlib
-import hmac
 import json
 from datetime import date
 
@@ -38,11 +37,12 @@ def ok(method, products):
 
 
 def poster(products_by_call=None, error_for=None, calls=None):
-    def post(url, data=None, timeout=None):
+    def post(url, params=None, data=None, timeout=None):
+        merged = {**(params or {}), **(data or {})}
         if calls is not None:
-            calls.append(dict(data))
-        method = data["method"]
-        if error_for and error_for(data):
+            calls.append(merged)
+        method = merged["method"]
+        if error_for and error_for(merged):
             return FakeResp({"error_response": {"code": "IllegalParam", "msg": "bad"}})
         return FakeResp(ok(method, (products_by_call or [product("1", 10.0)])))
     return post
@@ -50,22 +50,27 @@ def poster(products_by_call=None, error_for=None, calls=None):
 
 # ---------------------------------------------------------------- firma y llamada
 
-def test_sign_is_hmac_sha256_over_sorted_key_value_pairs_uppercase():
+def test_sign_is_md5_with_the_secret_around_the_sorted_pairs_uppercase():
     params = {"b": "2", "a": "1", "method": "m"}
-    expected = hmac.new(b"sec", b"a1b2methodm", hashlib.sha256).hexdigest().upper()
+    expected = hashlib.md5(b"seca1b2methodmsec").hexdigest().upper()
     assert ax.sign(params, "sec") == expected
 
 
-def test_call_sends_signed_system_params_and_skips_empty_values():
-    calls = []
+def test_call_puts_system_params_in_the_url_and_query_params_in_the_body_and_signs_everything():
+    seen = {}
+
+    def post(url, params=None, data=None, timeout=None):
+        seen.update(url=url, params=dict(params), data=dict(data))
+        return FakeResp(ok(ax.HOT_METHOD, [product("1", 10.0)]))
     ax.call(ax.HOT_METHOD, {"keywords": "tv", "page_no": 1, "x": None, "y": ""}, KEY, SECRET,
-            post=poster(calls=calls), now=lambda: 1700000000.5)
-    sent = calls[0]
-    assert sent["app_key"] == KEY and sent["timestamp"] == "1700000000500" and sent["sign_method"] == "sha256"
-    assert sent["keywords"] == "tv" and sent["page_no"] == "1" and "x" not in sent and "y" not in sent
-    check = {k: v for k, v in sent.items() if k != "sign"}
-    assert sent["sign"] == ax.sign(check, SECRET)
-    assert SECRET not in json.dumps(sent)
+            post=post, now=lambda: 1700000000.5)
+    sysp, body = seen["params"], seen["data"]
+    assert seen["url"] == ax.ENDPOINT and body == {"keywords": "tv", "page_no": "1"}
+    assert sysp["app_key"] == KEY and sysp["timestamp"] == "1700000000500" and sysp["sign_method"] == "md5"
+    assert sysp["v"] == "2.0" and sysp["format"] == "json" and sysp["method"] == ax.HOT_METHOD
+    signed = {k: v for k, v in sysp.items() if k != "sign"} | body
+    assert sysp["sign"] == ax.sign(signed, SECRET)
+    assert SECRET not in json.dumps([sysp, body])
 
 
 def test_call_raises_api_error_on_error_response_bad_code_and_network_problems():
@@ -129,6 +134,7 @@ def test_gather_collects_global_pages_and_keywords_and_dedupes():
     assert list(items) == ["1"] and stats["llamadas"] == ax.GLOBAL_PAGES + 2 and stats["errores"] == 0
     assert calls[0]["ship_to_country"] == "ES" and calls[0]["target_currency"] == "EUR"
     assert calls[0]["tracking_id"] == TRACK and "keywords" not in calls[0]
+    assert calls[0]["sign_method"] == "md5"
     assert calls[-1]["keywords"] == "tv" or calls[-1]["keywords"] == "movil"
 
 

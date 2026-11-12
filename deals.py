@@ -2221,10 +2221,11 @@ def collect_feeds() -> None:
 
 def collect_aliexpress() -> None:
     """Recopila los precios de AliExpress (una vez al dia, en modo informe). Nunca debe tumbar la ejecucion."""
-    creds = tuple(get_secret(name) for name in (aliexpress.ENV_KEY, aliexpress.ENV_SECRET, aliexpress.ENV_TRACKING))
+    raw = [get_secret(name) for name in (aliexpress.ENV_KEY, aliexpress.ENV_SECRET, aliexpress.ENV_TRACKING)]
+    creds = tuple((value or "").strip() for value in raw)  # un espacio o salto de linea al pegar el secreto rompe la firma
     if not all(creds):
         return
-    for value in creds[:2]:
+    for value in (*raw[:2], *creds[:2]):
         register_secret(value)
     try:
         local = datetime.now(ZoneInfo("Europe/Madrid"))
