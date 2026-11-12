@@ -48,6 +48,7 @@ QUERY_METHOD = SEARCH_METHOD  # la busqueda normal da mas resultados que "hot pr
 MAX_CALLS = 75            # tope de llamadas a la API por dia (consultas + reintentos con la primera palabra)
 MAX_ERRORS = 3            # errores seguidos tras los cuales se abandona el dia
 START_HOUR = 6            # hora de Madrid desde la que se hace la recogida diaria
+MIN_TRACK_DAYS = 6   # dias de historial propio antes de fiarse de una bajada (PowerPlanet: ver feedpicks)
 MIN_PRICE = 10.0          # EUR; por debajo casi todo es accesorio de usar y tirar
 MIN_PRICE_CENTS = "1000"  # min_sale_price de la API va en centimos (con 1000 desaparecieron los productos de 9 EUR)
 MIN_SALES = 50            # ventas recientes (lastest_volume) minimas para proponer un producto
@@ -368,7 +369,8 @@ def report(items: dict[str, dict], hist: dict, today: date) -> dict:
     few_sales = {pid for pid, i in items.items() if (i.get("reviews") or 0) < MIN_SALES}
     low_rating = {pid for pid, i in items.items() if pid not in few_sales and (i.get("rating") or 0) < MIN_RATING}
     usable = {pid: i for pid, i in items.items() if pid not in foreign | few_sales | low_rating}
-    picks, stats = feedpicks.select(usable, hist, today, suspicious, to_verify, min_price=MIN_PRICE)
+    picks, stats = feedpicks.select(usable, hist, today, suspicious, to_verify, min_price=MIN_PRICE,
+                                      min_track=MIN_TRACK_DAYS)
     for label, group in (("no envia desde Europa", foreign), ("pocas ventas", few_sales), ("valoracion baja", low_rating)):
         if group:
             stats[label] = len(group)

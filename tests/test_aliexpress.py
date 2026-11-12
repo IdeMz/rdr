@@ -226,7 +226,7 @@ def test_probe_words_pick_the_richest_keyword_and_the_first_empty_one():
 def test_report_filters_out_few_sales_and_low_rating(tmp_path):
     ch = channel_file(tmp_path)
     creds = (KEY, SECRET, TRACK)
-    for n, price in enumerate([40.0, 40.0, 40.0, 28.0]):
+    for n, price in enumerate([40.0] * 5 + [28.0]):
         day = date(2026, 11, 9 + n)
         batch = [product("1", price, product_title="Auriculares Xiaomi Redmi Buds"),
                  product("2", price, product_title="Altavoz Anker Soundcore Mini", lastest_volume="3"),
@@ -287,7 +287,7 @@ def test_run_with_no_products_writes_nothing_and_retries(tmp_path):
 def test_report_finds_a_real_drop_with_the_lower_price_floor(tmp_path):
     ch = channel_file(tmp_path)
     creds = (KEY, SECRET, TRACK)
-    for n, price in enumerate([20.0, 20.0, 20.0, 14.0]):
+    for n, price in enumerate([20.0] * 5 + [14.0]):
         day = date(2026, 11, 9 + n)
         ax.run(creds, tmp_path, ch, day, 8, post=poster([product("1", price), product("2", 8.0)]), sleep=lambda s: None)
     data = json.loads((tmp_path / ax.PICKS_FILE).read_text())
@@ -298,7 +298,7 @@ def test_report_finds_a_real_drop_with_the_lower_price_floor(tmp_path):
 def test_report_drops_products_shipped_from_abroad_and_keeps_unknown_origin(tmp_path):
     ch = channel_file(tmp_path)
     creds = (KEY, SECRET, TRACK)
-    for n, price in enumerate([20.0, 20.0, 20.0, 14.0]):
+    for n, price in enumerate([20.0] * 5 + [14.0]):
         day = date(2026, 11, 9 + n)
         batch = [product("1", price, ship_from_country="ES", product_title="Auriculares Xiaomi Redmi Buds"),
                  product("2", price, ship_from_country="CN", product_title="Altavoz Anker Soundcore Mini"),
@@ -396,3 +396,16 @@ def test_item_keeps_the_shop_for_the_review_list():
     item = ax.item_from(product("77", 12.5, shop_id=1103573332, shop_name=" Stone's Store "))
     assert item["shop_id"] == "1103573332" and item["shop"] == "Stone's Store"
     assert ax.item_from(product("78", 12.5))["shop_id"] == ""
+
+
+def test_report_waits_for_six_days_of_history(tmp_path):
+    assert ax.MIN_TRACK_DAYS == 6
+    ch = channel_file(tmp_path)
+    creds = (KEY, SECRET, TRACK)
+    for n, price in enumerate([20.0, 20.0, 20.0, 20.0, 14.0]):         # 5 dias: aun pronto
+        ax.run(creds, tmp_path, ch, date(2026, 11, 9 + n), 8, post=poster([product("1", price)]), sleep=lambda s: None)
+    data = json.loads((tmp_path / ax.PICKS_FILE).read_text())
+    assert data["candidates"] == [] and data["stats"]["historial corto"] == 1
+    ax.run(creds, tmp_path, ch, date(2026, 11, 14), 8, post=poster([product("1", 14.0)]), sleep=lambda s: None)
+    data = json.loads((tmp_path / ax.PICKS_FILE).read_text())
+    assert [c["id"] for c in data["candidates"]] == ["1"]               # al sexto dia ya cuenta

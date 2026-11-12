@@ -93,7 +93,8 @@ def _expired(valid_to: str, today: date) -> bool:
         return False
 
 
-def judge(item: dict, entry: list | None, today: date, min_price: float | None = None) -> tuple[dict | None, str]:
+def judge(item: dict, entry: list | None, today: date, min_price: float | None = None,
+          min_track: int | None = None) -> tuple[dict | None, str]:
     """(datos de la bajada, "") si el producto es candidato; (None, motivo) si no.
 
     Solo la "bajada sospechosa" devuelve tambien los datos junto al motivo. Una bajada de MAX_DROP a ABSURD_DROP %
@@ -105,7 +106,7 @@ def judge(item: dict, entry: list | None, today: date, min_price: float | None =
     if not pairs:
         return None, "sin historial de hoy"
     tracked = t - pairs[0][0] + 1
-    if tracked < MIN_TRACK_DAYS:
+    if tracked < (MIN_TRACK_DAYS if min_track is None else min_track):
         return None, "historial corto"
     if len(pairs) < 2:
         return None, "precio sin cambios"
@@ -166,7 +167,8 @@ def _same_tokens(ta: set[str], tb: set[str]) -> bool:
 
 
 def select(items: dict[str, dict], hist: dict, today: date, suspicious: list | None = None,
-           to_verify: list | None = None, min_price: float | None = None) -> tuple[list[dict], dict]:
+           to_verify: list | None = None, min_price: float | None = None,
+           min_track: int | None = None) -> tuple[list[dict], dict]:
     """Candidatos ordenados de mejor a peor y recuento de por que se descartaron los demas.
 
     Las bajadas sospechosas (probables errores de precio) se anaden a `suspicious` y las que hay que contrastar
@@ -176,7 +178,7 @@ def select(items: dict[str, dict], hist: dict, today: date, suspicious: list | N
     check: list[dict] = []
     products = hist.get("p", {})
     for pid, item in items.items():
-        info, reason = judge(item, products.get(pid), today, min_price)
+        info, reason = judge(item, products.get(pid), today, min_price, min_track)
         if reason:
             why[reason] += 1
             if reason == "bajada sospechosa" and suspicious is not None:
