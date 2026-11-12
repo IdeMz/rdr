@@ -1502,24 +1502,30 @@ def x_weight(text: str) -> int:
 
 
 def x_price(value: float) -> str:
-    """39.99 -> '39.99€' ; 23.0 -> '23€' (con punto decimal, como en las publicaciones de X)."""
+    """39.99 -> '39,99€' ; 23.0 -> '23€' (con coma decimal, como en las publicaciones de X)."""
     text = f"{value:.2f}"
-    return (text[:-3] if text.endswith(".00") else text) + "€"
+    return (text[:-3] if text.endswith(".00") else text.replace(".", ",")) + "€"
+
+
+def x_strike(text: str) -> str:
+    """Tacha el texto con el trazo combinado U+0336: X no admite formato, pero este signo si se ve tachado."""
+    return "".join(c + "\u0336" for c in text if not c.isspace())
 
 
 def build_x_text(p: Product, url: str, ch: Channel, cat: dict | None = None) -> str:
-    """Publicacion para X (hasta 280): titulo, precio anterior, precio actual con descuento y enlace.
+    """Publicacion para X (hasta 280): titulo, PVPR tachado, precio actual, descuento y diferencia, y enlace.
 
     Deja una linea en blanco bajo el titulo para que puedas anadir a mano, tras comprobar el precio,
     el aviso de 'precio mas bajo'. Si x_hashtags / x_disclosure tienen texto, se anade al final.
     """
     lines = []
     if p.old_price and p.price and p.old_price > p.price:
-        lines.append(f"❌{x_price(p.old_price)}")
-    now_line = f"🛒{x_price(p.price)}"
-    if p.discount:
-        now_line += f"👉-{p.discount}%"
-    lines.append(now_line)
+        discount = p.discount or round(100 * (p.old_price - p.price) / p.old_price)
+        lines.append(f"❌ PVPR: {x_strike(x_price(p.old_price))}")
+        lines.append(f"🛒 Ahora: {x_price(p.price)}")
+        lines.append(f"−{discount} % · Diferencia {x_price(round(p.old_price - p.price, 2))}")
+    else:
+        lines.append(f"🛒 Ahora: {x_price(p.price)}")
     tail = " ".join(x for x in (ch.x_hashtags.strip(), f"({ch.x_disclosure.strip()})" if ch.x_disclosure.strip() else "") if x)
     rest = "\n\n" + "\n".join(lines) + "\n\n" + url + (f"\n{tail}" if tail else "")
     room = X_LIMIT - x_weight(rest.replace(url, "")) - X_URL_WEIGHT

@@ -2207,7 +2207,7 @@ def test_x_text_matches_the_format_used_by_hand():
               price=39.99, old=69.99)
     assert deals.build_x_text(p, url, ch, {"emoji": "💡"}) == (
         "Mellerware - Freidora sin aceite Crunchy Plus 5.5L 1500W | 11 Menus Predefinidos\n\n"
-        "❌69.99€\n🛒39.99€👉-43%\n\n" + url
+        "❌ PVPR: " + deals.x_strike("69,99€") + "\n🛒 Ahora: 39,99€\n−43 % · Diferencia 30€\n\n" + url
     )
 
 
@@ -2216,13 +2216,13 @@ def test_x_text_fits_280_even_with_a_huge_title():
     url = "https://www.amazon.es/dp/B000000001?tag=mitag-21"
     text = deals.build_x_text(xprod(title="Super " * 80 + "final"), url, ch)
     assert deals.x_weight(text.replace(url, "")) + deals.X_URL_WEIGHT <= deals.X_LIMIT
-    assert "…" in text.split("\n")[0] and url in text and "🛒39.99€👉-50%" in text
+    assert "…" in text.split("\n")[0] and url in text and "🛒 Ahora: 39,99€\n−50 % · Diferencia 40€" in text
 
 
 def test_x_text_whole_prices_without_old_price_and_optional_tags():
     ch = channel(x_copy=True, x_hashtags="#chollo", x_disclosure="Enlace afiliado")
     text = deals.build_x_text(xprod(price=23.0, old=None), "https://www.amazon.es/dp/B000000001", ch)
-    assert "❌" not in text and "🛒23€" in text and "👉" not in text.split("🛒")[1].split("\n")[0]
+    assert "❌" not in text and "🛒 Ahora: 23€" in text and "Diferencia" not in text and "\u0336" not in text
     assert text.endswith("#chollo (Enlace afiliado)")
 
 
@@ -2508,3 +2508,19 @@ def test_process_votes_routes_review_buttons_from_the_private_chat(tmp_path, mon
     data = json.loads((tmp_path / "revision.json").read_text(encoding="utf-8"))
     assert data["items"]["a1"]["st"] == "no"
     assert [m for m, _ in answered].count("answerCallbackQuery") == 1
+
+
+def test_x_strike_puts_a_strikethrough_on_every_character_of_the_old_price():
+    assert deals.x_strike("69,99€") == "6\u03369\u0336,\u03369\u03369\u0336€\u0336"
+    assert deals.x_price(69.99) == "69,99€" and deals.x_price(32.0) == "32€" and deals.x_price(5.5) == "5,50€"
+
+
+def test_x_text_copies_the_posted_example_with_the_old_price_struck_through():
+    ch = channel(x_copy=True)
+    p = xprod(title="Soundcore C50i de Anker, Auriculares Abiertos con Clip, diseño FlexiClip", price=37.99, old=69.99)
+    text = deals.build_x_text(p, "https://amzn.to/x", ch)
+    assert text.split("\n") == [
+        "Soundcore C50i de Anker, Auriculares Abiertos con Clip, diseño FlexiClip", "",
+        "❌ PVPR: 6\u03369\u0336,\u03369\u03369\u0336€\u0336", "🛒 Ahora: 37,99€", "−46 % · Diferencia 32€", "",
+        "https://amzn.to/x"]
+    assert deals.x_weight(text.replace("https://amzn.to/x", "")) + deals.X_URL_WEIGHT <= deals.X_LIMIT
