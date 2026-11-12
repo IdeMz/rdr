@@ -53,13 +53,17 @@ STATUS_FILE = "aliexpress_estado.json"   # por que no hubo productos (la API da 
 ONLY_FROM_SPAIN = True    # descarta del informe los productos cuyo origen conocido no es España
 SPAIN_NAMES = {"ES", "ESP", "SPAIN", "ESPANA", "ESPAÑA"}
 ORIGIN_KEY_RE = re.compile(r"ship\w*from|from_?country|origin(?!al)|warehouse", re.IGNORECASE)  # no "original_price"
-PROBE_VERSION = 3         # sube cuando cambian las variantes del sondeo: se repite aunque el dia ya este recogido
+PROBE_VERSION = 4         # sube cuando cambian las variantes del sondeo: se repite aunque el dia ya este recogido
 SAMPLE = 3                # productos de muestra por consulta en el fichero de sondeo
 SAMPLE_CHARS = 160
 
 
 class ApiError(Exception):
     """La API contesto con un error (o con algo que no se entiende)."""
+
+
+class EmptyResult(ApiError):
+    """La consulta es valida pero no tiene resultados (resp_code 405): no es un fallo de la API."""
 
 
 SYSTEM_PARAMS = ("format", "app_key", "sign_method", "v", "timestamp", "partner_id", "method")
@@ -94,6 +98,8 @@ def call(method: str, params: dict, key: str, secret: str, post=requests.post, n
     top = data.get(method.replace(".", "_") + "_response")
     if isinstance(top, dict):
         result = top.get("resp_result")
+        if isinstance(result, dict) and str(result.get("resp_code", "200")) == "405":
+            raise EmptyResult(f"resp_code 405: {str(result.get('resp_msg', ''))[:120]}")
         if isinstance(result, dict) and str(result.get("resp_code", "200")) != "200":
             raise ApiError(f"resp_code {result.get('resp_code')}: {str(result.get('resp_msg', ''))[:120]}")
     return data
@@ -195,35 +201,52 @@ def base_params(tracking: str) -> dict:
 
 def gather(key: str, secret: str, tracking: str, keywords: list[str], post=requests.post, sleep=time.sleep,
            now=time.time) -> tuple[dict[str, dict], dict]:
-    """Productos de hoy {id: item} y cifras para el log. Un error suelto no tumba el dia; varios seguidos si."""
+    """Productos de hoy {id: item} y cifras para el log. Un error suelto no tumba el dia; varios seguidos si.
+
+    Una consulta sin resultados no es un error. stats["consultas"] dice cuantos productos dio cada una y
+    stats["campos"] / stats["muestra_productos"] son los campos y unos productos tal como los devuelve la API."""
     items: dict[str, dict] = {}
-    stats = {"llamadas": 0, "errores": 0, "vacias": 0, "muestra": []}
+    stats: dict = {"llamadas": 0, "errores": 0, "vacias": 0, "muestra": [], "consultas": {}, "campos": [],
+                   "muestra_productos": []}
     plan = [{"page_no": n} for n in range(1, GLOBAL_PAGES + 1)] + [{"keywords": w, "page_no": 1} for w in keywords]
     streak = 0
+    fields: set[str] = set()
     for extra in plan[:MAX_CALLS]:
         if stats["llamadas"]:
             sleep(1.0)
         stats["llamadas"] += 1
+        label = extra.get("keywords") or f"general p{extra['page_no']}"
         try:
             data = call(HOT_METHOD, {**base_params(tracking), **extra}, key, secret, post=post, now=now)
             streak = 0
+        except EmptyResult:
+            stats["vacias"] += 1
+            stats["consultas"][label] = 0
+            streak = 0
+            continue
         except ApiError as exc:
             stats["errores"] += 1
             streak += 1
             if str(exc) not in stats["muestra"] and len(stats["muestra"]) < 3:
                 stats["muestra"].append(str(exc))
-            log.warning("aliexpress: error en la consulta %s: %s", extra.get("keywords") or f"pagina {extra['page_no']}", exc)
+            log.warning("aliexpress: error en la consulta %s: %s", label, exc)
             if streak >= MAX_ERRORS:
                 log.warning("aliexpress: %d errores seguidos; se deja para otro dia", MAX_ERRORS)
                 break
             continue
         products = find_products(data)
+        stats["consultas"][label] = len(products)
         if not products:
             stats["vacias"] += 1
         for product in products:
+            fields.update(product)
+            if len(stats["muestra_productos"]) < SAMPLE:
+                stats["muestra_productos"].append({k: str(v)[:SAMPLE_CHARS] for k, v in product.items()
+                                                   if k != "promotion_link"})
             item = item_from(product)
             if item:
                 items.setdefault(item["id"], item)
+    stats["campos"] = sorted(fields)
     stats["productos"] = len(items)
     return items, stats
 
@@ -298,14 +321,18 @@ def run(creds: tuple[str, str, str], state_dir: Path, channel_file: Path, today:
         return f"aliexpress: se recoge a partir de las {START_HOUR}h (Madrid)"
     keywords = keywords_from_channel(channel_file)
     if hist.get("updated") == today.isoformat():
-        if not probe_is_current(state_dir):  # el sondeo de hoy se hizo con otras variantes: se repite una vez
-            save_probe(creds, state_dir, keywords, today, post, sleep, now)
+        if not probe_is_current(state_dir):  # el sondeo de hoy es de una version anterior: se repite una vez
+            items, stats = gather(key, secret, tracking, keywords, post=post, sleep=sleep, now=now)
+            write_status(state_dir, today, stats)  # los precios de hoy ya estan anotados: no se tocan
+            working = [w for w in keywords if stats["consultas"].get(w)]
+            save_probe(creds, state_dir, working[:1] or [""], today, post, sleep, now)
             return "aliexpress: precios de hoy ya recogidos; sondeo actualizado"
         return "aliexpress: precios de hoy ya recogidos"
     items, stats = gather(key, secret, tracking, keywords, post=post, sleep=sleep, now=now)
     if not items:
         write_status(state_dir, today, stats)
         return f"aliexpress: sin productos ({stats['errores']} errores en {stats['llamadas']} llamadas); se reintenta"
+    write_status(state_dir, today, stats)
     update = feed.update_history(hist, {pid: i["price"] for pid, i in items.items()}, today)
     feed.save_history(path, hist)
     sentence = (f"aliexpress: {stats['productos']} productos ({update['nuevos']} nuevos, {update['cambiaron']} con precio "
@@ -317,14 +344,15 @@ def run(creds: tuple[str, str, str], state_dir: Path, channel_file: Path, today:
         sentence += f"; {len(data['candidates'])} candidatos en el informe"
     except Exception as exc:  # el informe es un extra
         log.warning("aliexpress: no se pudo calcular el informe (%s)", type(exc).__name__)
-    save_probe(creds, state_dir, keywords, today, post, sleep, now)
+    working = [w for w in keywords if stats["consultas"].get(w)]
+    save_probe(creds, state_dir, working[:1] or [""], today, post, sleep, now)
     return sentence
 
 
 def save_probe(creds: tuple[str, str, str], state_dir: Path, keywords: list[str], today: date, post, sleep, now) -> None:
     key, secret, tracking = creds
     try:
-        variants = probe(key, secret, tracking, keywords[0] if keywords else "auriculares", post=post, sleep=sleep, now=now)
+        variants = probe(key, secret, tracking, keywords[0] if keywords else "", post=post, sleep=sleep, now=now)
         write_json(state_dir / PROBE_FILE, {"version": PROBE_VERSION, "day": today.isoformat(), "variants": variants})
     except Exception as exc:
         log.warning("aliexpress: no se pudo guardar el sondeo (%s)", type(exc).__name__)
@@ -333,7 +361,9 @@ def save_probe(creds: tuple[str, str, str], state_dir: Path, keywords: list[str]
 def write_status(state_dir: Path, today: date, stats: dict) -> None:
     """Deja el motivo del fallo en un fichero. Solo se reescribe si cambia, para no llenar el historial de commits."""
     data = {"day": today.isoformat(), "llamadas": stats.get("llamadas"), "errores": stats.get("errores"),
-            "vacias": stats.get("vacias"), "muestra_de_errores": stats.get("muestra", [])}
+            "vacias": stats.get("vacias"), "muestra_de_errores": stats.get("muestra", []),
+            "consultas": stats.get("consultas", {}), "campos": stats.get("campos", []),
+            "muestra_productos": stats.get("muestra_productos", [])}
     path = state_dir / STATUS_FILE
     try:
         if json.loads(path.read_text(encoding="utf-8")) == data:

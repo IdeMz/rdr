@@ -241,8 +241,54 @@ def test_run_repeats_an_outdated_probe_once_even_if_the_day_is_already_collected
     old["version"] = 1
     probe_path.write_text(json.dumps(old))
     n = len(calls)
+    before = (tmp_path / ax.HIST_FILE).read_text()
     assert "sondeo actualizado" in ax.run(creds, tmp_path, ch, TODAY, 8, post=post, sleep=lambda s: None)
     assert len(calls) > n and json.loads(probe_path.read_text())["version"] == ax.PROBE_VERSION
+    assert (tmp_path / ax.HIST_FILE).read_text() == before            # el historial no se toca
+    assert json.loads((tmp_path / ax.STATUS_FILE).read_text())["consultas"]
     n = len(calls)
     assert "ya recogidos" in ax.run(creds, tmp_path, ch, TODAY, 9, post=post, sleep=lambda s: None)
     assert len(calls) == n
+
+
+def test_empty_results_are_not_errors_and_per_query_counts_are_recorded():
+    def post(url, params=None, data=None, timeout=None):
+        merged = {**(params or {}), **(data or {})}
+        if merged.get("keywords") == "sin resultados":
+            return FakeResp({"aliexpress_affiliate_hotproduct_query_response": {"resp_result": {
+                "resp_code": 405, "resp_msg": "The result is empty"}}})
+        return FakeResp(ok(merged["method"], [product("1", 10.0, ship_to_days="3", ship_from_country="ES")]))
+    items, stats = ax.gather(KEY, SECRET, TRACK, ["sin resultados", "con resultados"], post=post, sleep=lambda s: None)
+    assert stats["errores"] == 0 and stats["vacias"] == 1 and stats["llamadas"] == ax.GLOBAL_PAGES + 2
+    assert stats["consultas"]["sin resultados"] == 0 and stats["consultas"]["con resultados"] == 1
+    assert "ship_from_country" in stats["campos"] and "ship_to_days" in stats["campos"]
+    assert stats["muestra_productos"][0]["product_id"] == "1" and "promotion_link" not in stats["muestra_productos"][0]
+    assert items["1"]["from_spain"] is True
+
+
+def test_many_empty_queries_in_a_row_do_not_abort_the_day():
+    def post(url, params=None, data=None, timeout=None):
+        merged = {**(params or {}), **(data or {})}
+        if merged.get("keywords"):
+            return FakeResp({"x_response": {"resp_result": {"resp_code": 405, "resp_msg": "empty"}}})
+        return FakeResp(ok(merged["method"], [product("1", 10.0)]))
+    items, stats = ax.gather(KEY, SECRET, TRACK, ["a", "b", "c", "d", "e"], post=post, sleep=lambda s: None)
+    assert items and stats["errores"] == 0 and stats["llamadas"] == ax.GLOBAL_PAGES + 5
+
+
+def test_run_records_the_status_file_and_probes_with_a_working_keyword(tmp_path):
+    ch = tmp_path / "ch.json"
+    ch.write_text(json.dumps({"categories": [{"url": "/s?k=vacia"}, {"url": "/s?k=buena"}]}))
+    seen = []
+
+    def post(url, params=None, data=None, timeout=None):
+        merged = {**(params or {}), **(data or {})}
+        seen.append(merged.get("keywords"))
+        if merged.get("keywords") == "vacia":
+            return FakeResp({"x_response": {"resp_result": {"resp_code": 405, "resp_msg": "empty"}}})
+        return FakeResp(ok(merged["method"], [product("1", 10.0)]))
+    ax.run((KEY, SECRET, TRACK), tmp_path, ch, TODAY, 8, post=post, sleep=lambda s: None)
+    status = json.loads((tmp_path / ax.STATUS_FILE).read_text())
+    assert status["consultas"]["vacia"] == 0 and status["consultas"]["buena"] == 1 and status["campos"]
+    probe_params = json.loads((tmp_path / ax.PROBE_FILE).read_text())["variants"]["hot_base"]["params"]
+    assert probe_params["keywords"] == "buena"
