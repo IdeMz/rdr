@@ -11,7 +11,7 @@
   "Cargadores y baterías": "2026-11-10T11:15:42.709254+00:00",
   "Ciclismo": "2026-11-10T20:01:09.445485+00:00",
   "Climatización": "2026-11-13T07:01:09.103150+00:00",
-  "Colchones y almohadas": "2026-11-11T18:30:53.717319+00:00",
+  "Colchones y almohadas": "2026-11-13T08:45:39.815574+00:00",
   "Cuidado de la piel": "2026-11-11T11:40:40.899668+00:00",
   "Cuidado del cabello": "2026-11-12T21:55:34.077440+00:00",
   "Cámaras de seguridad": "2026-11-12T16:45:42.838161+00:00",
@@ -26,7 +26,7 @@
   "Menaje de cocina": "2026-11-13T07:35:36.489438+00:00",
   "Mochilas y maletas": "2026-11-10T18:50:43.937099+00:00",
   "Monitores": "2026-11-12T19:10:42.508182+00:00",
-  "Móviles": "2026-11-11T21:35:37.983562+00:00",
+  "Móviles": "2026-11-13T08:45:39.815574+00:00",
   "Nutrición deportiva": "2026-11-12T21:05:35.059588+00:00",
   "Perfumes": "2026-11-12T17:25:31.862202+00:00",
   "Periféricos": "2026-11-12T10:01:08.714316+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-12T21:40:51.544407+00:00",
   "Zapatillas": "2026-11-12T11:45:43.028763+00:00"
  },
- "next_at": "2026-11-13T08:45:07.697984+00:00",
+ "next_at": "2026-11-13T09:18:05.344290+00:00",
  "offer": {
   "a": "B09VN62HF3",
   "m": 193,
@@ -553,6 +553,17 @@
    "p": 29.9,
    "t": "2026-11-11T17:46:31.652013+00:00",
    "title": "Final Fantasy VII Remake Intergrade PS5",
+   "v": []
+  },
+  "B0937LZJ3X": {
+   "c": "Colchones y almohadas",
+   "d": 19,
+   "e": "🛏️",
+   "m": 255,
+   "p": 144.7,
+   "s": "ofertas",
+   "t": "2026-11-13T08:46:24.380023+00:00",
+   "title": "Matnature | Platinum | Colchón Gran Confort Pro Múltiple Descanso | Muelles Ensacados y Viscoelástica | Altura 30 cm | Transpirable, Antideslizante y Antiácaros (90 x 200 cm)",
    "v": []
   },
   "B093WKG8RF": {
@@ -2066,6 +2077,10 @@
    "t": "2026-11-12T11:45:43.028763+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0CWJJ2WBC": {
+   "t": "2026-11-13T08:45:39.815574+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0CWP7M17B": {
    "t": "2026-11-12T18:35:31.872877+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2197,6 +2212,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-13",
-  "n": 3
+  "n": 4
  }
 }
