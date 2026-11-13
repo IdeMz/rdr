@@ -10,6 +10,12 @@
    "a": "",
    "t": "2026-11-13T13:25:30.604640+00:00"
   },
+  "0619659184704": {
+   "a": "B08RX4QKXS",
+   "t": "2026-11-13T14:01:00.760700+00:00",
+   "title": "SANDISK Extreme SSD externo Portátil 4TB (Disco duro externo SSD con velodidad de lectura de hasta 1050 MB/s, 1000 MB/s de escritura, Clasificación IP65 de resi",
+   "via": "ean"
+  },
   "0766907027891": {
    "a": "B0CMPW1698",
    "t": "2026-11-13T11:40:39.260187+00:00",
@@ -39,6 +45,12 @@
   "6974958250739": {
    "a": "",
    "t": "2026-11-13T12:50:38.657328+00:00"
+  },
+  "8003705121379": {
+   "a": "B0C59JRLM4",
+   "t": "2026-11-13T14:01:00.760700+00:00",
+   "title": "Ariete 00c462800ar0 Hei?luftfritteuse 7 L Antihaftbeschichtung, BpA-Frei, Digitaler Timer, F?r Lebensmittel, Hei?lufT-Funktion, LcD-Display, UmlufT-F",
+   "via": "ean"
   },
   "840006666493": {
    "a": "",
@@ -102,6 +114,25 @@
    "t": "2026-11-13T13:25:30.604640+00:00",
    "veredicto": "amazon_mas_barato"
   },
+  "45930203409": {
+   "ahorro_vs_amazon": 8,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 598.99,
+   "amz_title": "SANDISK Extreme SSD externo Portátil 4TB (Disco duro externo SSD con velodidad de lectura de hasta 1050 MB/s, 1000 MB/s de escritura, Clasificación IP65 de resi",
+   "asin": "B08RX4QKXS",
+   "disponible": true,
+   "ean": "0619659184704",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "antes 746.95 en PowerPlanet, pero en Amazon suele estar a 598.99",
+   "name": "SanDisk Extreme Portable V2 4TB IP55 USB 3.2 Gen 2 1050MB/s SSD externo",
+   "pp_drop": 26,
+   "pp_median": 746.95,
+   "pp_price": 552.95,
+   "t": "2026-11-13T14:01:00.760700+00:00",
+   "veredicto": "pvpr_inflado"
+  },
   "45948306671": {
    "ean": "840006666493",
    "lista": "candidates",
@@ -153,6 +184,25 @@
    "pp_price": 379.0,
    "t": "2026-11-13T12:50:38.657328+00:00",
    "veredicto": "no_esta"
+  },
+  "46239685097": {
+   "ahorro_vs_amazon": 23,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 125.96,
+   "amz_title": "Ariete 00c462800ar0 Hei?luftfritteuse 7 L Antihaftbeschichtung, BpA-Frei, Digitaler Timer, F?r Lebensmittel, Hei?lufT-Funktion, LcD-Display, UmlufT-F",
+   "asin": "B0C59JRLM4",
+   "disponible": true,
+   "ean": "8003705121379",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "23 % por debajo del habitual en Amazon (125.96)",
+   "name": "Ariete Airy Fryer Metal 7L 1800W 12 programas Negro 4628/00 pantalla táctil Freidora de aire",
+   "pp_drop": 36,
+   "pp_median": 150.95,
+   "pp_price": 96.95,
+   "t": "2026-11-13T14:01:00.760700+00:00",
+   "veredicto": "oferta_real"
   },
   "46256205684": {
    "ahorro_vs_amazon": -5,
@@ -208,9 +258,9 @@
   "amazon_mas_barato": 3,
   "dudoso": 0,
   "no_esta": 5,
-  "oferta_real": 0,
-  "pvpr_inflado": 0,
+  "oferta_real": 1,
+  "pvpr_inflado": 1,
   "sin_precio": 2
  },
- "updated": "2026-11-13T13:25:30.604640+00:00"
+ "updated": "2026-11-13T14:01:00.760700+00:00"
 }
