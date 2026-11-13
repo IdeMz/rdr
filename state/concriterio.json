@@ -32,7 +32,7 @@
   "Periféricos": "2026-11-13T09:20:46.074861+00:00",
   "Perros": "2026-11-13T11:40:39.260187+00:00",
   "Portátiles": "2026-11-12T21:40:51.544407+00:00",
-  "Relojes": "2026-11-12T09:20:48.160799+00:00",
+  "Relojes": "2026-11-13T15:10:54.425531+00:00",
   "Robots de cocina": "2026-11-12T11:10:46.841102+00:00",
   "Smartwatch": "2026-11-13T14:01:00.760700+00:00",
   "Suplementos": "2026-11-13T10:31:00.804242+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-12T21:40:51.544407+00:00",
   "Zapatillas": "2026-11-12T11:45:43.028763+00:00"
  },
- "next_at": "2026-11-13T15:07:50.389193+00:00",
+ "next_at": "2026-11-13T15:42:23.769264+00:00",
  "offer": {
   "a": "B09VN62HF3",
   "m": 193,
@@ -309,6 +309,17 @@
    "p": 126.75,
    "t": "2026-11-10T13:36:05.516695+00:00",
    "title": "Reloj Analógico Multifuncional de Cuarzo para Hombres con Correa de Silicona, Acero Inoxidable o Cuero, Subesferas para Día y Fecha, Resistente al Agua hasta 5ATM.",
+   "v": []
+  },
+  "B07CNMVKTS": {
+   "c": "Relojes",
+   "d": 36,
+   "e": "🕰️",
+   "m": 266,
+   "p": 50.79,
+   "s": "ofertas",
+   "t": "2026-11-13T15:11:58.122752+00:00",
+   "title": "Men's Expedition Scout 40mm Leather Strap Watch",
    "v": []
   },
   "B07D14W78C": {
@@ -2155,12 +2166,20 @@
    "t": "2026-11-12T21:55:34.077440+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B07RPYDLRD": {
+   "t": "2026-11-13T15:10:54.425531+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B07TFGZ33M": {
    "t": "2026-11-13T08:10:39.209090+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0816QF6SZ": {
    "t": "2026-11-13T11:05:30.316413+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B09L196XFD": {
+   "t": "2026-11-13T15:10:54.425531+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0CDCL53KW": {
@@ -2171,12 +2190,20 @@
    "t": "2026-11-13T07:35:36.489438+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0CHJKQD1V": {
+   "t": "2026-11-13T15:10:54.425531+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0CWJJ2WBC": {
    "t": "2026-11-13T08:45:39.815574+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0CWP7M17B": {
    "t": "2026-11-12T18:35:31.872877+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0D3H4S8H4": {
+   "t": "2026-11-13T15:10:54.425531+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0DCPB9J7K": {
@@ -2246,6 +2273,18 @@
  },
  "reserve": [
   {
+   "a": "B0D3QWBSX5",
+   "c": "Relojes",
+   "e": "🕰️",
+   "img": "https://m.media-amazon.com/images/I/61DjZ+PziLL._AC_UL320_.jpg",
+   "n": 927,
+   "op": 49.0,
+   "p": 37.79,
+   "r": 4.6,
+   "t": "2026-11-13T15:10:54.425531+00:00",
+   "title": "Racing Digital Men's Quartz Watch - 52mm"
+  },
+  {
    "a": "B08RZZVKNZ",
    "c": "Cuidado de la piel",
    "e": "🧴",
@@ -2268,24 +2307,12 @@
    "r": 4.2,
    "t": "2026-11-13T14:01:00.760700+00:00",
    "title": "Blackview Reloj Inteligente Niño 4G, Videollamadas, GPS Posición, SOS Llamar, LED Linterna, Chat de Voz, 1.85” Smartwatch Niños - Modo Escuela, Modo Deportivo, Calculadora, Despertador, 850 mAh, Azul"
-  },
-  {
-   "a": "B01EQZATNM",
-   "c": "Perros",
-   "e": "🐶",
-   "img": "https://m.media-amazon.com/images/I/81OYflkFGgL._AC_UL320_.jpg",
-   "n": 5500,
-   "op": 15.95,
-   "p": 11.99,
-   "r": 4.3,
-   "t": "2026-11-13T11:40:39.260187+00:00",
-   "title": "bosch HPC Maxi Junior | Alimento seco para perros de cría de razas grandes (a partir de 25 kg de peso final) | 1 x 3 kg"
   }
  ],
  "summary_day": "2026-11-12",
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-13",
-  "n": 14
+  "n": 15
  }
 }

@@ -6,6 +6,12 @@
    "title": "Apple TV 4K Black, Silver 4K Ultra HD 128 GB Wi-Fi Ethernet LAN, W128291662 (HD 128 GB Wi-Fi Ethernet LAN)",
    "via": "ean"
   },
+  "0195949544163": {
+   "a": "B0DGJ74WP3",
+   "t": "2026-11-13T15:10:54.425531+00:00",
+   "title": "Apple AirPods Max Auriculares inalámbricos de diadema con cancelación activa de ruido de nivel profesional,modo de sonido ambiente,audio espacial personalizado,",
+   "via": "ean"
+  },
   "0196548939664": {
    "a": "",
    "t": "2026-11-13T13:25:30.604640+00:00"
@@ -31,6 +37,12 @@
   "0840414637900": {
    "a": "",
    "t": "2026-11-13T14:35:34.102055+00:00"
+  },
+  "4547410455649": {
+   "a": "B09TWS33C3",
+   "t": "2026-11-13T15:10:54.425531+00:00",
+   "title": "instax Link Wide Impresora para teléfonos, Color Blanco Ceniza & Fujifilm, película Wide Coon Borde Negro",
+   "via": "nombre"
   },
   "4711121768279": {
    "a": "",
@@ -93,6 +105,25 @@
    "pp_price": 421.95,
    "t": "2026-11-13T12:15:38.991127+00:00",
    "veredicto": "sin_precio"
+  },
+  "38915518299": {
+   "ahorro_vs_amazon": -14,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 388.73,
+   "amz_title": "Apple AirPods Max Auriculares inalámbricos de diadema con cancelación activa de ruido de nivel profesional,modo de sonido ambiente,audio espacial personalizado,",
+   "asin": "B0DGJ74WP3",
+   "disponible": true,
+   "ean": "0195949544163",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 388.73 frente a 442.94",
+   "name": "Apple AirPods Max USB-C Blanco Estrella Diadema Bluetooth 5.0 20h Auriculares inalámbricos",
+   "pp_drop": 23,
+   "pp_median": 577.94,
+   "pp_price": 442.94,
+   "t": "2026-11-13T15:10:54.425531+00:00",
+   "veredicto": "amazon_mas_barato"
   },
   "45124316529": {
    "ean": "6974958250739",
@@ -263,6 +294,25 @@
    "t": "2026-11-13T11:40:39.260187+00:00",
    "veredicto": "amazon_mas_barato"
   },
+  "46599139094": {
+   "ahorro_vs_amazon": 4,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 115.99,
+   "amz_title": "instax Link Wide Impresora para teléfonos, Color Blanco Ceniza & Fujifilm, película Wide Coon Borde Negro",
+   "asin": "B09TWS33C3",
+   "disponible": true,
+   "ean": "4547410455649",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "antes 153.95 en PowerPlanet, pero en Amazon suele estar a 115.99",
+   "name": "Impresora fotográfica Fujifilm Instax Link Wide Gris",
+   "pp_drop": 28,
+   "pp_median": 153.95,
+   "pp_price": 110.94,
+   "t": "2026-11-13T15:10:54.425531+00:00",
+   "veredicto": "pvpr_inflado"
+  },
   "46599140303": {
    "ahorro_vs_amazon": -13,
    "amz_low30": null,
@@ -295,12 +345,12 @@
   }
  },
  "resumen": {
-  "amazon_mas_barato": 3,
+  "amazon_mas_barato": 4,
   "dudoso": 0,
   "no_esta": 6,
   "oferta_real": 2,
-  "pvpr_inflado": 1,
+  "pvpr_inflado": 2,
   "sin_precio": 2
  },
- "updated": "2026-11-13T14:35:34.102055+00:00"
+ "updated": "2026-11-13T15:10:54.425531+00:00"
 }
