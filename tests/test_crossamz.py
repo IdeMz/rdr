@@ -276,3 +276,33 @@ def test_search_order_is_ean_then_model_then_name(tmp_path):
     fake = Fake()
     crossamz.run(tmp_path, fake.search, fake.page, ref_none, NOW, sleep=lambda s: None)
     assert fake.searches == ["4711121768279", "Acer QH12a", crossamz.name_query(it)]
+
+
+def test_amazon_own_products_without_brand_in_title():
+    name = "Amazon Echo Dot Kids 5ª Gen WiFi Altavoz inteligente Alexa"
+    title = "Echo Dot Kids (5.ª generación) | Altavoz inteligente con Alexa para niños | Diseño de búho"
+    assert crossamz.same_product(name, "Amazon", title)                  # por EAN
+    assert not crossamz.same_product(name, "Amazon", title, strict=True)  # por nombre sigue haciendo falta la marca
+
+
+def test_products_mentioning_their_base_or_battery_are_not_accessories():
+    name = "iRobot Roomba Plus 515 Combo Negro 22000Pa LiDAR friegasuelos autovaciado compatible con Alexa Robot aspirador"
+    title = ("iRobot Roomba Plus 515 Combo, robot aspirador y friegasuelos con base de autovaciado, "
+             "batería de larga duración, navegación LiDAR")
+    assert crossamz.same_product(name, "Irobot", title)
+    assert not crossamz.same_product(name, "Irobot", "Base de carga compatible con iRobot Roomba Plus 515 Combo")
+
+
+def test_not_found_saves_what_amazon_returned_and_old_misses_are_retried(tmp_path):
+    write_cands(tmp_path, [item()])
+    data = crossamz.empty()  # un "no esta" guardado con las reglas anteriores
+    data["ean_asin"]["0840006667278"] = {"a": "", "t": NOW.isoformat()}
+    data["items"]["1"] = {"t": NOW.isoformat(), "pp_price": 163.96, "veredicto": "no_esta"}
+    crossamz.save(tmp_path / crossamz.FILE, data)
+    fake = Fake({"0840006667278": [P("B0OTRO0001", "Logitech G915 Teclado gaming")]})
+    crossamz.run(tmp_path, fake.search, fake.page, ref_none, NOW + timedelta(hours=1), sleep=lambda s: None)
+    assert fake.searches[0] == "0840006667278"
+    e = crossamz.load(tmp_path / crossamz.FILE)["items"]["1"]
+    assert e["veredicto"] == "no_esta" and e["v"] == crossamz.MATCH_VERSION
+    assert e["vistos"]["ean"] == ["Logitech G915 Teclado gaming"]
+    assert e["vistos"]["nombre"] == ["(sin resultados)"]

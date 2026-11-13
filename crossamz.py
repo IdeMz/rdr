@@ -41,6 +41,10 @@ SAME_PRICE = 3           # % : Amazon hasta un 3 % mas caro cuenta como "mismo p
 MIN_SAVING = 10          # % por debajo del precio habitual de Amazon para ser "oferta real"
 INFLATED = 15            # % : precio anterior de PowerPlanet por encima del habitual de Amazon = PVPR inflado
 
+MATCH_VERSION = 2        # sube cuando cambian las reglas de emparejamiento: los "no esta" se vuelven a buscar
+ACCESSORY_LEAD = 3       # un resultado es accesorio si una de estas palabras sale entre sus 3 primeras
+SEEN = 3                 # titulos de Amazon que se guardan cuando no se encuentra el producto
+
 VERDICTS = ("amazon_mas_barato", "oferta_real", "pvpr_inflado", "dudoso", "no_esta", "sin_precio")
 
 ACCESSORY_WORDS = {
@@ -108,7 +112,8 @@ def strong_models(text: str, brand: str = "") -> set[str]:
 def same_product(pp_name: str, brand: str, amz_title: str, strict: bool = False) -> bool:
     """¿El resultado de Amazon es el mismo producto que el de PowerPlanet?
 
-    Siempre: la marca aparece en el titulo de Amazon y no es un accesorio que el original no menciona.
+    Siempre: la marca (o un codigo de modelo claro) aparece en el titulo de Amazon, salvo por EAN con la mitad
+    de las palabras en comun, y el titulo no empieza como un accesorio ("Funda para...").
     Por EAN (strict=False): al menos un codigo de modelo en comun, o la mitad de las palabras si no hay codigos.
     Por nombre (strict=True): al menos la mitad de los codigos de modelo y la mitad de las palabras.
     En los dos casos, la capacidad (2tb, 128gb) tiene que coincidir."""
@@ -116,16 +121,19 @@ def same_product(pp_name: str, brand: str, amz_title: str, strict: bool = False)
     if not amz:
         return False
     strong = strong_models(pp_name, brand) & amz  # el codigo de modelo vale tanto como la marca (Acer vende como AOPEN)
+    pp = set(tokens(pp_name))
+    overlap = len(pp & amz) / len(pp) if pp else 0.0
     brand_toks = tokens(brand)[:1]  # "Kingston Technology" -> "kingston"
     if brand_toks and brand_toks[0] not in amz and not strong:
-        return False
-    pp = set(tokens(pp_name))
-    if (amz & ACCESSORY_WORDS) - pp:
+        # Amazon titula sus cosas sin la marca ("Echo Dot Kids..."): por EAN basta con que casen las palabras
+        if strict or overlap < 0.5:
+            return False
+    lead = set(tokens(amz_title)[:ACCESSORY_LEAD])  # "Funda para...", "Correa compatible con..."
+    if (lead & ACCESSORY_WORDS) - pp:               # (un robot que habla de su "base" no es un accesorio)
         return False
     models = model_tokens(pp_name)
     if {t for t in models if CAPACITY_RE.fullmatch(t)} - amz:  # 2TB y 1TB son productos distintos
         return False
-    overlap = len(pp & amz) / len(pp) if pp else 0.0
     if strict:
         if strong:
             return overlap >= 0.3
@@ -302,6 +310,8 @@ def due(data: dict, item: dict, now: datetime) -> bool:
         return True
     if old.get("pp_price") != item.get("price"):
         return True
+    if old.get("veredicto") == "no_esta" and old.get("v", 1) < MATCH_VERSION:  # reglas nuevas: otra oportunidad
+        return True
     t = _ts(old.get("t"))
     wait = timedelta(hours=SIN_PRECIO_HOURS) if old.get("veredicto") == "sin_precio" else timedelta(days=RECHECK_DAYS)
     return t is None or now - t >= wait
@@ -337,21 +347,23 @@ def find_asin(data: dict, item: dict, search, now: datetime, spend) -> tuple[str
     known = data["ean_asin"].get(ean)
     if known:
         t = _ts(known.get("t"))
-        if known.get("a") or (t and now - t < timedelta(days=NOT_FOUND_DAYS)):
+        fresh = t and now - t < timedelta(days=NOT_FOUND_DAYS) and known.get("v", 1) >= MATCH_VERSION
+        if known.get("a") or fresh:
             return known.get("a", ""), known.get("via", "ean"), None
     name, brand = item.get("name") or "", item.get("brand") or ""
     queries = (("ean", ean, False), ("modelo", model_query(item), True), ("nombre", name_query(item), True))
+    seen: dict[str, list[str]] = {}
     for via, query, strict in queries:
         if not query:
             continue
         spend()
-        for p in search(query):
-            if getattr(p, "sponsored", False):
-                continue
+        results = [p for p in search(query) if not getattr(p, "sponsored", False)]
+        seen[via] = [p.title[:100] for p in results[:SEEN]] or ["(sin resultados)"]
+        for p in results:
             if same_product(name, brand, p.title, strict=strict):
                 data["ean_asin"][ean] = {"a": p.asin, "t": now.isoformat(), "via": via, "title": p.title[:160]}
                 return p.asin, via, p.price
-    data["ean_asin"][ean] = {"a": "", "t": now.isoformat()}
+    data["ean_asin"][ean] = {"a": "", "t": now.isoformat(), "v": MATCH_VERSION, "vistos": seen}
     return "", "", None
 
 
@@ -362,7 +374,8 @@ def cross_one(data: dict, list_name: str, item: dict, search, page, reference, n
     entry = {"t": now.isoformat(), "lista": list_name, "name": (item.get("name") or "")[:160], "ean": str(item["ean"]),
              "pp_price": item.get("price"), "pp_median": item.get("median"), "pp_drop": item.get("drop")}
     if not asin:
-        entry.update(veredicto="no_esta", motivo="no se encuentra en Amazon por EAN, modelo ni nombre")
+        entry.update(veredicto="no_esta", motivo="no se encuentra en Amazon por EAN, modelo ni nombre", v=MATCH_VERSION,
+                     vistos=data["ean_asin"].get(str(item["ean"]), {}).get("vistos", {}))
         return entry
     spend()
     html = page(asin)
