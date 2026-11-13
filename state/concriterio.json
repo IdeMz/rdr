@@ -13,7 +13,7 @@
   "Climatización": "2026-11-13T07:01:09.103150+00:00",
   "Colchones y almohadas": "2026-11-13T08:45:39.815574+00:00",
   "Cuidado de la piel": "2026-11-13T14:35:34.102055+00:00",
-  "Cuidado del cabello": "2026-11-12T21:55:34.077440+00:00",
+  "Cuidado del cabello": "2026-11-13T21:50:42.988192+00:00",
   "Cámaras de seguridad": "2026-11-12T16:45:42.838161+00:00",
   "Domótica": "2026-11-12T16:10:50.553905+00:00",
   "Fitness en casa": "2026-11-13T09:55:33.688450+00:00",
@@ -38,10 +38,10 @@
   "Suplementos": "2026-11-13T10:31:00.804242+00:00",
   "Tablets": "2026-11-12T21:55:34.077440+00:00",
   "Televisores": "2026-11-11T20:15:41.209092+00:00",
-  "Videojuegos": "2026-11-12T21:40:51.544407+00:00",
+  "Videojuegos": "2026-11-13T21:50:42.988192+00:00",
   "Zapatillas": "2026-11-13T19:20:42.278458+00:00"
  },
- "next_at": "2026-11-13T21:49:31.304465+00:00",
+ "next_at": "2026-11-13T22:25:06.221374+00:00",
  "offer": {
   "a": "B08PVDQFQQ",
   "m": 218,
@@ -2013,6 +2013,17 @@
    "title": "XIAOMI REDMI Pad 2 4+256GB Tablet de 11\" 2.5K Gris Batería de 9000 mAh",
    "v": []
   },
+  "B0GYFM8Z87": {
+   "c": "Cuidado del cabello",
+   "d": 36,
+   "e": "💇",
+   "m": 278,
+   "p": 128.19,
+   "s": "ambas",
+   "t": "2026-11-13T21:51:45.177670+00:00",
+   "title": "ghd Glide+ Max - Cepillo Alisador de Pelo Profesional Térmico más Amplio",
+   "v": []
+  },
   "B0GZL6RZ7Z": {
    "c": "Cafeteras",
    "d": 21,
@@ -2281,6 +2292,10 @@
    "t": "2026-11-13T15:10:54.425531+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0B7X7PK9S": {
+   "t": "2026-11-13T21:50:42.988192+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0CDCL53KW": {
    "t": "2026-11-13T12:15:38.991127+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2302,7 +2317,7 @@
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0DCPB9J7K": {
-   "t": "2026-11-12T21:40:51.544407+00:00",
+   "t": "2026-11-13T21:50:42.988192+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0DHXFDNK2": {
@@ -2310,7 +2325,7 @@
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0DQ5WMN4H": {
-   "t": "2026-11-12T21:40:51.544407+00:00",
+   "t": "2026-11-13T21:50:42.988192+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0DWDRZQYB": {
@@ -2338,7 +2353,7 @@
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0FL7NNGRG": {
-   "t": "2026-11-12T21:40:51.544407+00:00",
+   "t": "2026-11-13T21:50:42.988192+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0FMGXH38Q": {
@@ -2384,6 +2399,18 @@
  },
  "reserve": [
   {
+   "a": "B0BX4HGTQD",
+   "c": "Cuidado del cabello",
+   "e": "💇",
+   "img": "https://m.media-amazon.com/images/I/51hYtDSsYPL._AC_UL320_.jpg",
+   "n": 468,
+   "op": 419.0,
+   "p": 278.29,
+   "r": 4.2,
+   "t": "2026-11-13T21:50:42.988192+00:00",
+   "title": "ghd Duet Style - Plancha Secador Profesional de Pelo 2 en 1"
+  },
+  {
    "a": "B0CNY1GWVC",
    "c": "Café y cápsulas",
    "e": "🫘",
@@ -2406,24 +2433,12 @@
    "r": 4.5,
    "t": "2026-11-13T19:20:42.278458+00:00",
    "title": "Softride Symmetry Fuzion Wn's Zapatillas para Correr de carreteraMujer"
-  },
-  {
-   "a": "B0H2DFN9CF",
-   "c": "Aspiradoras",
-   "e": "🧹",
-   "img": "https://m.media-amazon.com/images/I/71ROIFSuF0L._AC_UL320_.jpg",
-   "n": 70,
-   "op": 269.99,
-   "p": 218.47,
-   "r": 4.6,
-   "t": "2026-11-13T18:45:39.134382+00:00",
-   "title": "Ultenic Robot Aspirador y Fregasuelos Autovaciado con Líquido Limpiador: Láser LiDAR Lineal, Evitación Mejorada, 10000 Pa, Refuerzo en Alfombras, App y Voz, para Apartamentos y Familias con Mascotas"
   }
  ],
- "summary_day": "2026-11-12",
+ "summary_day": "2026-11-13",
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-13",
-  "n": 24
+  "n": 25
  }
 }

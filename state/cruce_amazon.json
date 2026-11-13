@@ -102,6 +102,16 @@
    "a": "",
    "t": "2026-11-13T12:50:38.657328+00:00"
   },
+  "5706991026542": {
+   "a": "B0BKH4FX9Y",
+   "t": "2026-11-13T21:50:42.988192+00:00",
+   "title": "Jabra Evolve2 Buds, Auriculares Bluetooth Intraaurales Inalámbricos, Cancelación Activa de Ruido y Tecnología MultiSensor con 4 Micrófonos, Certificados para MS",
+   "via": "ean"
+  },
+  "5901969445664": {
+   "a": "",
+   "t": "2026-11-13T21:50:42.988192+00:00"
+  },
   "619659205058": {
    "a": "B0C5SC2V95",
    "t": "2026-11-13T11:05:30.316413+00:00",
@@ -244,6 +254,25 @@
    "t": "2026-11-13T12:50:38.657328+00:00",
    "veredicto": "no_esta"
   },
+  "45368125530": {
+   "ahorro_vs_amazon": 37,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 274.01,
+   "amz_title": "Jabra Evolve2 Buds, Auriculares Bluetooth Intraaurales Inalámbricos, Cancelación Activa de Ruido y Tecnología MultiSensor con 4 Micrófonos, Certificados para MS",
+   "asin": "B0BKH4FX9Y",
+   "disponible": true,
+   "ean": "5706991026542",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "37 % por debajo del habitual en Amazon (274.01)",
+   "name": "Jabra Evolve2 Buds USB-A ANC IP57 con micrófono Auriculares",
+   "pp_drop": 21,
+   "pp_median": 217.95,
+   "pp_price": 172.95,
+   "t": "2026-11-13T21:50:42.988192+00:00",
+   "veredicto": "oferta_real"
+  },
   "45403196290": {
    "ean": "0840414637900",
    "lista": "candidates",
@@ -284,6 +313,17 @@
    "pp_price": 88.95,
    "t": "2026-11-13T13:25:30.604640+00:00",
    "veredicto": "amazon_mas_barato"
+  },
+  "45570747758": {
+   "ean": "5901969445664",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Genesis Holm Modular 180 RGB MDF y Acero 180x75cm gestión de cables soporte para auriculares Mesa gaming",
+   "pp_drop": 20,
+   "pp_median": 290.94,
+   "pp_price": 233.95,
+   "t": "2026-11-13T21:50:42.988192+00:00",
+   "veredicto": "no_esta"
   },
   "45626822202": {
    "ean": "6959422615818",
@@ -664,10 +704,10 @@
  "resumen": {
   "amazon_mas_barato": 9,
   "dudoso": 0,
-  "no_esta": 12,
-  "oferta_real": 4,
+  "no_esta": 13,
+  "oferta_real": 5,
   "pvpr_inflado": 3,
   "sin_precio": 3
  },
- "updated": "2026-11-13T21:15:42.495405+00:00"
+ "updated": "2026-11-13T21:50:42.988192+00:00"
 }
