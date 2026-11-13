@@ -17,7 +17,7 @@
   "Cámaras de seguridad": "2026-11-12T16:45:42.838161+00:00",
   "Domótica": "2026-11-12T16:10:50.553905+00:00",
   "Fitness en casa": "2026-11-13T09:55:33.688450+00:00",
-  "Freidoras de aire": "2026-11-12T18:35:31.872877+00:00",
+  "Freidoras de aire": "2026-11-13T16:35:32.960175+00:00",
   "Gatos": "2026-11-11T14:01:09.084076+00:00",
   "Herramientas": "2026-11-12T13:30:58.815254+00:00",
   "Iluminación": "2026-11-09T13:25:33.337111+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-12T21:40:51.544407+00:00",
   "Zapatillas": "2026-11-12T11:45:43.028763+00:00"
  },
- "next_at": "2026-11-13T16:33:13.638201+00:00",
+ "next_at": "2026-11-13T17:07:53.381622+00:00",
  "offer": {
   "a": "B09VN62HF3",
   "m": 193,
@@ -1773,6 +1773,17 @@
    "title": "Lefant M210 Omni Robot Aspirador y Fregasuelos, Mopa de Rodillo, 20000 Pa",
    "v": []
   },
+  "B0GC69WYZ3": {
+   "c": "Freidoras de aire",
+   "d": 17,
+   "e": "🍟",
+   "m": 268,
+   "p": 107.99,
+   "s": "ambas",
+   "t": "2026-11-13T16:36:08.644699+00:00",
+   "title": "Cosori Freidora de Aire Turbo Blaze 6L, 9en1, Ultrarrápida, 95%Menos Aceite",
+   "v": []
+  },
   "B0GDWJV1TG": {
    "c": "Monitores",
    "d": 31,
@@ -2324,6 +2335,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-13",
-  "n": 16
+  "n": 17
  }
 }

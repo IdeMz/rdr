@@ -34,6 +34,12 @@
    "title": "ViewSonic VX2758A-2K-PRO QHD - Monitor de Juego (IPS, Plano, 27\", sin Marco, 1 ms, MPRT 170 Hz, 2 HDMI, DisplayPort, HDR10)",
    "via": "nombre"
   },
+  "0826581572633": {
+   "a": "B0G12ZC81W",
+   "t": "2026-11-13T16:35:32.960175+00:00",
+   "title": "HP ProBook 450 G7 Ordenador portátil de Negocios, 15,6 Pulgadas FHD (1920x1080), Intel Core i5-10210U, 16 GB de RAM, 512 GB SSD, Teclado QWERTY, Windows 11 Pro ",
+   "via": "nombre"
+  },
   "0840006667278": {
    "a": "B0CT8W3Y29",
    "t": "2026-11-13T11:40:39.260187+00:00",
@@ -49,6 +55,12 @@
    "t": "2026-11-13T15:10:54.425531+00:00",
    "title": "instax Link Wide Impresora para teléfonos, Color Blanco Ceniza & Fujifilm, película Wide Coon Borde Negro",
    "via": "nombre"
+  },
+  "4711121527333": {
+   "a": "B07NFK9XST",
+   "t": "2026-11-13T16:35:32.960175+00:00",
+   "title": "acer Nitro VG271U Pbmiipx 27 pulgadas WQHD (2560 x 1440) IPS AMD Radeon FREESYNC Monitor para juegos, 144 Hz, pantalla certificada VESA HDR400, DCI-P3, (2 puert",
+   "via": "modelo"
   },
   "4711121768279": {
    "a": "",
@@ -372,6 +384,25 @@
    "t": "2026-11-13T11:40:39.260187+00:00",
    "veredicto": "amazon_mas_barato"
   },
+  "46599140681": {
+   "ahorro_vs_amazon": 63,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 654.2,
+   "amz_title": "acer Nitro VG271U Pbmiipx 27 pulgadas WQHD (2560 x 1440) IPS AMD Radeon FREESYNC Monitor para juegos, 144 Hz, pantalla certificada VESA HDR400, DCI-P3, (2 puert",
+   "asin": "B07NFK9XST",
+   "disponible": true,
+   "ean": "4711121527333",
+   "encontrado_por": "modelo",
+   "lista": "candidates",
+   "motivo": "63 % por debajo del habitual en Amazon (654.20)",
+   "name": "Monitor Acer Nitro VG271U 27 pulgadas 180Hz QHD IPS Negro",
+   "pp_drop": 24,
+   "pp_median": 312.95,
+   "pp_price": 238.95,
+   "t": "2026-11-13T16:35:32.960175+00:00",
+   "veredicto": "oferta_real"
+  },
   "46599141566": {
    "ean": "4711121768279",
    "lista": "to_verify",
@@ -388,9 +419,9 @@
   "amazon_mas_barato": 5,
   "dudoso": 0,
   "no_esta": 7,
-  "oferta_real": 2,
+  "oferta_real": 3,
   "pvpr_inflado": 2,
   "sin_precio": 2
  },
- "updated": "2026-11-13T16:01:12.341933+00:00"
+ "updated": "2026-11-13T16:35:32.960175+00:00"
 }
