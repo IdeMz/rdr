@@ -242,11 +242,31 @@
    "lista": "to_verify",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "SanDisk Extreme Portable V2 2TB NVMe USB 3.2 Gen 2 1050MB/s IP65 SSD externo",
+   "pista": "2049388 bytes; 5 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 58,
    "pp_median": 631.95,
    "pp_price": 266.95,
-   "t": "2026-11-13T11:05:30.316413+00:00",
+   "t": "2026-11-13T17:10:41.240248+00:00",
    "veredicto": "sin_precio"
+  },
+  "46165551484": {
+   "ahorro_vs_amazon": -143,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 499.0,
+   "amz_title": "HP ProBook 450 G7 Ordenador portátil de Negocios, 15,6 Pulgadas FHD (1920x1080), Intel Core i5-10210U, 16 GB de RAM, 512 GB SSD, Teclado QWERTY, Windows 11 Pro ",
+   "asin": "B0G12ZC81W",
+   "disponible": true,
+   "ean": "0826581572633",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "Amazon 499.00 frente a 1210.96",
+   "name": "HP ProBook 4 G2i 16GB/512GB SSD 16 pulgadas IPS WUXGA Intel Core 7 350 NVMe M.2 Windows 11 Pro Plata WiFi 7 Portátil",
+   "pp_drop": 18,
+   "pp_median": 1468.95,
+   "pp_price": 1210.96,
+   "t": "2026-11-13T17:10:41.240248+00:00",
+   "veredicto": "amazon_mas_barato"
   },
   "46186036340": {
    "ahorro_vs_amazon": 32,
@@ -416,12 +436,12 @@
   }
  },
  "resumen": {
-  "amazon_mas_barato": 5,
+  "amazon_mas_barato": 6,
   "dudoso": 0,
   "no_esta": 7,
   "oferta_real": 3,
   "pvpr_inflado": 2,
   "sin_precio": 2
  },
- "updated": "2026-11-13T16:35:32.960175+00:00"
+ "updated": "2026-11-13T17:10:41.240248+00:00"
 }

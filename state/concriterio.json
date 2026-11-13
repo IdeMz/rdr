@@ -33,7 +33,7 @@
   "Perros": "2026-11-13T11:40:39.260187+00:00",
   "Portátiles": "2026-11-12T21:40:51.544407+00:00",
   "Relojes": "2026-11-13T15:10:54.425531+00:00",
-  "Robots de cocina": "2026-11-12T11:10:46.841102+00:00",
+  "Robots de cocina": "2026-11-13T17:10:41.240248+00:00",
   "Smartwatch": "2026-11-13T14:01:00.760700+00:00",
   "Suplementos": "2026-11-13T10:31:00.804242+00:00",
   "Tablets": "2026-11-12T21:55:34.077440+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-12T21:40:51.544407+00:00",
   "Zapatillas": "2026-11-12T11:45:43.028763+00:00"
  },
- "next_at": "2026-11-13T17:07:53.381622+00:00",
+ "next_at": "2026-11-13T17:45:25.432992+00:00",
  "offer": {
   "a": "B09VN62HF3",
   "m": 193,
@@ -1752,6 +1752,17 @@
    "title": "LN LENQIN",
    "v": []
   },
+  "B0G66ZCDL1": {
+   "c": "Robots de cocina",
+   "d": 31,
+   "e": "🥣",
+   "m": 269,
+   "p": 89.99,
+   "s": "ofertas",
+   "t": "2026-11-13T17:11:12.379008+00:00",
+   "title": "Ninja BlendBoss, Batidora de Vaso Portátil, Color Piedra",
+   "v": []
+  },
   "B0G6BMWHYN": {
    "c": "Cámaras de seguridad",
    "d": 24,
@@ -2295,6 +2306,18 @@
  },
  "reserve": [
   {
+   "a": "B08PVDQFQQ",
+   "c": "Robots de cocina",
+   "e": "🥣",
+   "img": "https://m.media-amazon.com/images/I/51H+bNqhdxL._AC_UY218_.jpg",
+   "n": 1700,
+   "op": 39.9,
+   "p": 29.56,
+   "r": 4.3,
+   "t": "2026-11-13T17:10:41.240248+00:00",
+   "title": "Cecotec Batidora de mano Power TitanBlack 1200 XL Cream&Crush. Potencia 1200 W, Tecnología CrossBlades, Pie XL, Campana antisalpicaduras, Velocidad ajustable, Función Turbo"
+  },
+  {
    "a": "B0D3QWBSX5",
    "c": "Relojes",
    "e": "🕰️",
@@ -2317,24 +2340,12 @@
    "r": 4.6,
    "t": "2026-11-13T14:35:34.102055+00:00",
    "title": "Olay Regenerist Sérum Facial Reafirmante con Niacinamida, 50ml"
-  },
-  {
-   "a": "B0G7YT1S7V",
-   "c": "Smartwatch",
-   "e": "⌚",
-   "img": "https://m.media-amazon.com/images/I/71knFFU0paL._AC_UY218_.jpg",
-   "n": 4200,
-   "op": 59.99,
-   "p": 48.86,
-   "r": 4.2,
-   "t": "2026-11-13T14:01:00.760700+00:00",
-   "title": "Blackview Reloj Inteligente Niño 4G, Videollamadas, GPS Posición, SOS Llamar, LED Linterna, Chat de Voz, 1.85” Smartwatch Niños - Modo Escuela, Modo Deportivo, Calculadora, Despertador, 850 mAh, Azul"
   }
  ],
  "summary_day": "2026-11-12",
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-13",
-  "n": 17
+  "n": 18
  }
 }
