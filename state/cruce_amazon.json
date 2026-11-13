@@ -88,6 +88,12 @@
    "a": "",
    "t": "2026-11-13T18:45:39.134382+00:00"
   },
+  "4713436150800": {
+   "a": "B0BVLRFFWQ",
+   "t": "2026-11-13T21:15:42.495405+00:00",
+   "title": "Silicon Power 4TB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5\" 7mm (0.28\") Internal Solid State Drive",
+   "via": "nombre"
+  },
   "4895229151192": {
    "a": "",
    "t": "2026-11-13T20:05:35.325047+00:00"
@@ -100,6 +106,12 @@
    "a": "B0C5SC2V95",
    "t": "2026-11-13T11:05:30.316413+00:00",
    "title": "SanDisk SSD portátil Extremo de 2 TB - hasta 1050 MB/s - USB-C, USB 3.2 Gen 2 - Unidad Externa de Estado sólido - SDSSDE61-2T00-G25B",
+   "via": "ean"
+  },
+  "6942103154287": {
+   "a": "B0F1G8QQLM",
+   "t": "2026-11-13T21:15:42.495405+00:00",
+   "title": "Montre connectée Huawei Watch 5 42 mm Bluetooth Beige avec bracelet en fluoroélastomère Beige",
    "via": "ean"
   },
   "6959422615818": {
@@ -189,6 +201,25 @@
    "pp_median": 577.94,
    "pp_price": 442.94,
    "t": "2026-11-13T15:10:54.425531+00:00",
+   "veredicto": "amazon_mas_barato"
+  },
+  "41405667926": {
+   "ahorro_vs_amazon": -13,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 397.83,
+   "amz_title": "Montre connectée Huawei Watch 5 42 mm Bluetooth Beige avec bracelet en fluoroélastomère Beige",
+   "asin": "B0F1G8QQLM",
+   "disponible": true,
+   "ean": "6942103154287",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 397.83 frente a 449.95",
+   "name": "Huawei Watch 5 42 mm Beige 1,38 pulgadas AMOLED GPS NFC 3 días +100 deportes 5ATM",
+   "pp_drop": 18,
+   "pp_median": 545.95,
+   "pp_price": 449.95,
+   "t": "2026-11-13T21:15:42.495405+00:00",
    "veredicto": "amazon_mas_barato"
   },
   "45020234483": {
@@ -568,6 +599,26 @@
    "t": "2026-11-13T16:35:32.960175+00:00",
    "veredicto": "oferta_real"
   },
+  "46599141412": {
+   "ahorro_vs_amazon": null,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": null,
+   "amz_title": "Silicon Power 4TB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5\" 7mm (0.28\") Internal Solid State Drive",
+   "asin": "B0BVLRFFWQ",
+   "disponible": true,
+   "ean": "4713436150800",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "en Amazon pero sin precio o no disponible",
+   "name": "SSD Silicon Power Ace A55 4TB 2.5 pulgadas SATA III Negro",
+   "pista": "1912201 bytes; 3 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pp_drop": 18,
+   "pp_median": 553.95,
+   "pp_price": 456.94,
+   "t": "2026-11-13T21:15:42.495405+00:00",
+   "veredicto": "sin_precio"
+  },
   "46599141566": {
    "ean": "4711121768279",
    "lista": "to_verify",
@@ -611,12 +662,12 @@
   }
  },
  "resumen": {
-  "amazon_mas_barato": 8,
+  "amazon_mas_barato": 9,
   "dudoso": 0,
   "no_esta": 12,
   "oferta_real": 4,
   "pvpr_inflado": 3,
-  "sin_precio": 2
+  "sin_precio": 3
  },
- "updated": "2026-11-13T20:40:48.338068+00:00"
+ "updated": "2026-11-13T21:15:42.495405+00:00"
 }

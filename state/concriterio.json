@@ -8,7 +8,7 @@
   "Auriculares": "2026-11-12T12:20:44.296151+00:00",
   "Cafeteras": "2026-11-13T12:15:38.991127+00:00",
   "Café y cápsulas": "2026-11-13T20:40:48.338068+00:00",
-  "Cargadores y baterías": "2026-11-10T11:15:42.709254+00:00",
+  "Cargadores y baterías": "2026-11-13T21:15:42.495405+00:00",
   "Ciclismo": "2026-11-13T11:05:30.316413+00:00",
   "Climatización": "2026-11-13T07:01:09.103150+00:00",
   "Colchones y almohadas": "2026-11-13T08:45:39.815574+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-12T21:40:51.544407+00:00",
   "Zapatillas": "2026-11-13T19:20:42.278458+00:00"
  },
- "next_at": "2026-11-13T21:12:04.423586+00:00",
+ "next_at": "2026-11-13T21:49:31.304465+00:00",
  "offer": {
   "a": "B08PVDQFQQ",
   "m": 218,
@@ -754,6 +754,17 @@
    "s": "busqueda",
    "t": "2026-11-13T13:26:02.261876+00:00",
    "title": "Azzaro, The Most Wanted, Parfum, perfume de hombre fougère, 100 ml",
+   "v": []
+  },
+  "B09VPHVT2Z": {
+   "c": "Cargadores y baterías",
+   "d": 52,
+   "e": "🔌",
+   "m": 275,
+   "p": 72.18,
+   "s": "ofertas",
+   "t": "2026-11-13T21:16:15.823061+00:00",
+   "title": "Anker Zolo Power bank 24.000mAh 140W con Tres puertos USB C",
    "v": []
   },
   "B09W9867V2": {
@@ -2413,6 +2424,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-13",
-  "n": 23
+  "n": 24
  }
 }
