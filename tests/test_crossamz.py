@@ -214,3 +214,19 @@ def test_old_entries_of_products_that_left_the_list_are_pruned(tmp_path):
 def test_missing_candidates_file_is_harmless(tmp_path):
     line = crossamz.run(tmp_path, lambda t: [], lambda a: "", ref_none, NOW, sleep=lambda s: None)
     assert line.startswith("cruce amazon: 0 cruzados")
+
+
+def test_night_crosses_more_but_at_most_every_15_minutes(tmp_path):
+    write_cands(tmp_path, [item(str(i), ean=f"84{i:011d}") for i in range(10)])
+    assert crossamz.night_due(tmp_path, NOW)
+    fake = Fake()
+    line = crossamz.run(tmp_path, fake.search, fake.page, ref_none, NOW, sleep=lambda s: None, night=True)
+    assert line.startswith("cruce amazon (noche): 3 cruzados")
+    assert not crossamz.night_due(tmp_path, NOW + timedelta(minutes=10))
+    assert crossamz.night_due(tmp_path, NOW + timedelta(minutes=15))
+
+
+def test_night_is_not_due_when_nothing_is_pending(tmp_path):
+    write_cands(tmp_path, [item()])
+    crossamz.run(tmp_path, lambda t: [], lambda a: "", ref_none, NOW, sleep=lambda s: None)
+    assert not crossamz.night_due(tmp_path, NOW + timedelta(hours=1))

@@ -2110,6 +2110,8 @@ def run_channel(
     if publishing and not force:
         if not in_window(now, ch):
             log.info("%s: fuera de horario (%s-%s %s)", ch.name, ch.window_start, ch.window_end, ch.timezone)
+            if ch.name == REVIEW_CHANNEL and crossamz.night_due(state_dir, now):  # de noche: solo cruces
+                cross_amazon(make_session(), state_dir, now, ch, night=True)
             return 0
         next_at = load_next_at(state_path)
         if next_at and now < next_at:
@@ -2290,25 +2292,41 @@ def run_channel(
         kept = [d for d in reserve if d["a"] not in state]
         set_state_key(state_path, "reserve", diversify(fresh + kept, state, ch)[: ch.reserve_size])
     if publishing and session is not None and ch.name == REVIEW_CHANNEL:
-        cross_amazon(session, state_dir, now)
+        cross_amazon(session, state_dir, now, ch)
     return published
 
 
-def cross_amazon(session: requests.Session, state_dir: Path, now: datetime) -> None:
-    """Cruza unos pocos candidatos de PowerPlanet con Amazon (modo informe). Reutiliza la sesion, que ya
-    tiene la entrega fijada en España. Nunca debe tumbar la ejecucion."""
+def cross_amazon(session: requests.Session, state_dir: Path, now: datetime, ch: Channel | None = None,
+                 night: bool = False) -> None:
+    """Cruza unos pocos candidatos de PowerPlanet con Amazon (modo informe). De dia reutiliza la sesion de la
+    publicacion; de noche es una sesion nueva y la entrega se fija en España con la primera pagina.
+    Nunca debe tumbar la ejecucion."""
+    located = not (ch and ch.require_spain)
+
+    def get(url: str) -> str:
+        nonlocal located
+        html = fetch(session, url, retries=1)
+        if not located and not location_ok(html, ch.postal_code):
+            set_location(session, url, html, ch.postal_code)  # LocationError: se para y se reintenta luego
+            sleep(random.uniform(2, 4))
+            html = fetch(session, url, retries=1)
+            if not location_ok(html, ch.postal_code):
+                raise LocationError("la pagina sigue sin mostrar España")
+        located = True
+        return html
+
     def search(text: str) -> list[Product]:
-        html = fetch(session, f"{BASE}/s?k={quote_plus(text)}", retries=1)
+        html = get(f"{BASE}/s?k={quote_plus(text)}")
         results = parse_results(html)
         if is_blocked(html, len(results)):
             raise Blocked("captcha o bloqueo")
         return results
 
     def page(asin: str) -> str:
-        return fetch(session, f"{BASE}/dp/{asin}", retries=1)
+        return get(f"{BASE}/dp/{asin}")
 
     try:
-        log.info("%s", crossamz.run(state_dir, search, page, price_reference, now, sleep=sleep))
+        log.info("%s", crossamz.run(state_dir, search, page, price_reference, now, sleep=sleep, night=night))
     except Exception as exc:  # el cruce es un extra
         log.warning("cruce amazon: %s", type(exc).__name__)
 

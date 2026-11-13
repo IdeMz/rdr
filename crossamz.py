@@ -33,6 +33,9 @@ MAX_REQUESTS = 5         # peticiones a Amazon por ejecucion, como mucho
 RECHECK_DAYS = 2         # un cruce se repite pasado este tiempo (o antes, si cambia el precio de PowerPlanet)
 NOT_FOUND_DAYS = 7       # un EAN que no se encontro se vuelve a buscar pasado este tiempo
 KEEP_DAYS = 14           # cuanto se recuerda un cruce de un producto que ya no es candidato
+NIGHT_PER_TICK = 3       # de noche (fuera del horario de publicacion) se cruzan mas por ejecucion...
+NIGHT_MAX_REQUESTS = 8
+NIGHT_EVERY_MIN = 15     # ...pero como mucho una vez cada 15 minutos
 SAME_PRICE = 3           # % : Amazon hasta un 3 % mas caro cuenta como "mismo precio"
 MIN_SAVING = 10          # % por debajo del precio habitual de Amazon para ser "oferta real"
 INFLATED = 15            # % : precio anterior de PowerPlanet por encima del habitual de Amazon = PVPR inflado
@@ -303,25 +306,37 @@ def cross_one(data: dict, list_name: str, item: dict, search, page, reference, n
     return entry
 
 
-def run(state_dir: Path, search, page, reference, now: datetime, sleep=time.sleep) -> str:
+def night_due(state_dir: Path, now: datetime) -> bool:
+    """¿Toca cruzar de noche? Si hay pendientes y han pasado NIGHT_EVERY_MIN desde la ultima vez."""
+    data = load(state_dir / FILE)
+    last = _ts(data.get("night_at"))
+    if last and now - last < timedelta(minutes=NIGHT_EVERY_MIN):
+        return False
+    return any(due(data, i, now) for _, i in load_candidates(state_dir / SOURCE))
+
+
+def run(state_dir: Path, search, page, reference, now: datetime, sleep=time.sleep, night: bool = False) -> str:
     """Cruza unos pocos candidatos pendientes. Devuelve una frase para el log. No lanza salvo por bugs."""
     path = state_dir / FILE
     data = load(path)
     cands = load_candidates(state_dir / SOURCE)
     live = {str(i["id"]) for _, i in cands}
     pending = [(k, i) for k, i in cands if due(data, i, now)]
+    per_tick, max_requests = (NIGHT_PER_TICK, NIGHT_MAX_REQUESTS) if night else (PER_TICK, MAX_REQUESTS)
+    if night:
+        data["night_at"] = now.isoformat()
     used = 0
 
     def spend():
         nonlocal used
-        if used >= MAX_REQUESTS:
+        if used >= max_requests:
             raise Budget()
         if used:
             sleep(random.uniform(2, 4))
         used += 1
 
     done, stop = 0, ""
-    for list_name, item in pending[:PER_TICK]:
+    for list_name, item in pending[:per_tick]:
         try:
             data["items"][str(item["id"])] = cross_one(data, list_name, item, search, page, reference, now, spend)
             done += 1
@@ -336,4 +351,4 @@ def run(state_dir: Path, search, page, reference, now: datetime, sleep=time.slee
     save(path, data)
     left = len(pending) - done
     counts = ", ".join(f"{k} {v}" for k, v in data["resumen"].items() if v)
-    return f"cruce amazon: {done} cruzados, {left} pendientes, {used} peticiones{stop}" + (f" ({counts})" if counts else "")
+    return f"cruce amazon{' (noche)' if night else ''}: {done} cruzados, {left} pendientes, {used} peticiones{stop}" + (f" ({counts})" if counts else "")

@@ -2541,3 +2541,24 @@ def test_cross_amazon_uses_the_session_and_never_raises(tmp_path, monkeypatch):
     deals.cross_amazon(object(), tmp_path, datetime(2026, 11, 16, 10, tzinfo=timezone.utc))
     assert calls == ["https://www.amazon.es/s?k=0840006667278"]
     assert crossamz.load(tmp_path / crossamz.FILE)["items"] == {}
+
+
+def test_cross_amazon_fixes_the_location_on_a_fresh_session(tmp_path, monkeypatch):
+    import crossamz
+    (tmp_path / crossamz.SOURCE).write_text(json.dumps({"candidates": [
+        {"id": "1", "ean": "0840006667278", "name": "Corsair K65 Plus Wireless Teclado", "brand": "Corsair",
+         "price": 163.96, "median": 319.95}]}), encoding="utf-8")
+    ch = deals.Channel(name="concriterio", token_env="T", chat_env="C", queries=["x"], require_spain=True,
+                       postal_code="28001")
+    located = []
+    spain = '<span id="glow-ingress-line2">Madrid 28001</span>'
+
+    def fake_fetch(session, url, retries=3):
+        return "<html>" + (spain if located else "") + "</html>"
+    monkeypatch.setattr(deals, "fetch", fake_fetch)
+    monkeypatch.setattr(deals, "set_location", lambda s, u, h, cp: located.append(cp))
+    monkeypatch.setattr(deals, "sleep", lambda s: None)
+    deals.cross_amazon(object(), tmp_path, datetime(2026, 11, 16, 2, tzinfo=timezone.utc), ch, night=True)
+    assert located == ["28001"]
+    data = crossamz.load(tmp_path / crossamz.FILE)
+    assert data["items"]["1"]["veredicto"] == "no_esta" and data["night_at"]
