@@ -12,7 +12,7 @@
   "Ciclismo": "2026-11-13T11:05:30.316413+00:00",
   "Climatización": "2026-11-13T07:01:09.103150+00:00",
   "Colchones y almohadas": "2026-11-13T08:45:39.815574+00:00",
-  "Cuidado de la piel": "2026-11-11T11:40:40.899668+00:00",
+  "Cuidado de la piel": "2026-11-13T14:35:34.102055+00:00",
   "Cuidado del cabello": "2026-11-12T21:55:34.077440+00:00",
   "Cámaras de seguridad": "2026-11-12T16:45:42.838161+00:00",
   "Domótica": "2026-11-12T16:10:50.553905+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-12T21:40:51.544407+00:00",
   "Zapatillas": "2026-11-12T11:45:43.028763+00:00"
  },
- "next_at": "2026-11-13T14:34:04.410332+00:00",
+ "next_at": "2026-11-13T15:07:50.389193+00:00",
  "offer": {
   "a": "B09VN62HF3",
   "m": 193,
@@ -597,6 +597,17 @@
    "p": 29.9,
    "t": "2026-11-11T17:46:31.652013+00:00",
    "title": "Final Fantasy VII Remake Intergrade PS5",
+   "v": []
+  },
+  "B091JT7CSN": {
+   "c": "Cuidado de la piel",
+   "d": 55,
+   "e": "🧴",
+   "m": 265,
+   "p": 13.48,
+   "s": "ofertas",
+   "t": "2026-11-13T14:36:09.523973+00:00",
+   "title": "Olay Regenerist Crema Facial de Día Antiarrugas SPF 30, 50ml",
    "v": []
   },
   "B0937LZJ3X": {
@@ -2188,10 +2199,6 @@
    "t": "2026-11-13T08:10:39.209090+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0F2MX4FJQ": {
-   "t": "2026-11-12T14:05:45.520815+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0FGJTVH91": {
    "t": "2026-11-13T08:10:39.209090+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2224,10 +2231,6 @@
    "t": "2026-11-12T21:55:34.077440+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0G39CZ4QQ": {
-   "t": "2026-11-12T14:05:45.520815+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0GQL6N4BG": {
    "t": "2026-11-12T21:55:34.077440+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2242,6 +2245,18 @@
   }
  },
  "reserve": [
+  {
+   "a": "B08RZZVKNZ",
+   "c": "Cuidado de la piel",
+   "e": "🧴",
+   "img": "https://m.media-amazon.com/images/I/6132Ac5wVIL._AC_UL320_.jpg",
+   "n": 475,
+   "op": 29.99,
+   "p": 13.48,
+   "r": 4.6,
+   "t": "2026-11-13T14:35:34.102055+00:00",
+   "title": "Olay Regenerist Sérum Facial Reafirmante con Niacinamida, 50ml"
+  },
   {
    "a": "B0G7YT1S7V",
    "c": "Smartwatch",
@@ -2265,24 +2280,12 @@
    "r": 4.3,
    "t": "2026-11-13T11:40:39.260187+00:00",
    "title": "bosch HPC Maxi Junior | Alimento seco para perros de cría de razas grandes (a partir de 25 kg de peso final) | 1 x 3 kg"
-  },
-  {
-   "a": "B0CPYPCMZT",
-   "c": "Ciclismo",
-   "e": "🚴",
-   "img": "https://m.media-amazon.com/images/I/810PgUaho6L._AC_UL320_.jpg",
-   "n": 67,
-   "op": 25.0,
-   "p": 19.49,
-   "r": 4.4,
-   "t": "2026-11-13T11:05:30.316413+00:00",
-   "title": "deuter Helmet Bag Bolsa para Casco"
   }
  ],
  "summary_day": "2026-11-12",
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-13",
-  "n": 13
+  "n": 14
  }
 }

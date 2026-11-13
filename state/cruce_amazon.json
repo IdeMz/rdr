@@ -28,6 +28,10 @@
    "title": "CORSAIR K65 PLUS WIRELESS 75% RGB Teclado Mecánico para Juegos Intercambiable en Caliente - Interruptores Lineales Rojos CORSAIR MLX Prelubricados - Insonorizac",
    "via": "ean"
   },
+  "0840414637900": {
+   "a": "",
+   "t": "2026-11-13T14:35:34.102055+00:00"
+  },
   "4711121768279": {
    "a": "",
    "t": "2026-11-13T11:05:30.316413+00:00"
@@ -45,6 +49,12 @@
   "6974958250739": {
    "a": "",
    "t": "2026-11-13T12:50:38.657328+00:00"
+  },
+  "6977388390044": {
+   "a": "B0H6LCS1HS",
+   "t": "2026-11-13T14:35:34.102055+00:00",
+   "title": "NIIMBOT B31 Impresora de etiquetas con etiquetas, Bluetooth gris y blanco",
+   "via": "nombre"
   },
   "8003705121379": {
    "a": "B0C59JRLM4",
@@ -93,6 +103,17 @@
    "pp_median": 129.95,
    "pp_price": 76.96,
    "t": "2026-11-13T12:50:38.657328+00:00",
+   "veredicto": "no_esta"
+  },
+  "45403196290": {
+   "ean": "0840414637900",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Amazon Echo Dot Kids 5ª Gen WiFi Altavoz inteligente Alexa",
+   "pp_drop": 37,
+   "pp_median": 73.96,
+   "pp_price": 46.95,
+   "t": "2026-11-13T14:35:34.102055+00:00",
    "veredicto": "no_esta"
   },
   "45570747232": {
@@ -162,6 +183,25 @@
    "pp_price": 266.95,
    "t": "2026-11-13T11:05:30.316413+00:00",
    "veredicto": "sin_precio"
+  },
+  "46186036340": {
+   "ahorro_vs_amazon": 32,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 77.46,
+   "amz_title": "NIIMBOT B31 Impresora de etiquetas con etiquetas, Bluetooth gris y blanco",
+   "asin": "B0H6LCS1HS",
+   "disponible": true,
+   "ean": "6977388390044",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "32 % por debajo del habitual en Amazon (77.46)",
+   "name": "Niimbot B31 Térmica 203 dpi Azul Oscuro Impresora de etiquetas",
+   "pp_drop": 36,
+   "pp_median": 82.95,
+   "pp_price": 52.95,
+   "t": "2026-11-13T14:35:34.102055+00:00",
+   "veredicto": "oferta_real"
   },
   "46239682368": {
    "ean": "0196548939664",
@@ -257,10 +297,10 @@
  "resumen": {
   "amazon_mas_barato": 3,
   "dudoso": 0,
-  "no_esta": 5,
-  "oferta_real": 1,
+  "no_esta": 6,
+  "oferta_real": 2,
   "pvpr_inflado": 1,
   "sin_precio": 2
  },
- "updated": "2026-11-13T14:01:00.760700+00:00"
+ "updated": "2026-11-13T14:35:34.102055+00:00"
 }
