@@ -22,8 +22,8 @@
   "Herramientas": "2026-11-12T13:30:58.815254+00:00",
   "Iluminación": "2026-11-09T13:25:33.337111+00:00",
   "Jardín": "2026-11-12T21:40:51.544407+00:00",
-  "Lego": "2026-11-09T10:30:54.098717+00:00",
-  "Menaje de cocina": "2026-11-11T20:57:31.234861+00:00",
+  "Lego": "2026-11-13T07:35:36.489438+00:00",
+  "Menaje de cocina": "2026-11-13T07:35:36.489438+00:00",
   "Mochilas y maletas": "2026-11-10T18:50:43.937099+00:00",
   "Monitores": "2026-11-12T19:10:42.508182+00:00",
   "Móviles": "2026-11-11T21:35:37.983562+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-12T21:40:51.544407+00:00",
   "Zapatillas": "2026-11-12T11:45:43.028763+00:00"
  },
- "next_at": "2026-11-13T07:34:50.183190+00:00",
+ "next_at": "2026-11-13T08:06:32.779161+00:00",
  "offer": {
   "a": "B09VN62HF3",
   "m": 193,
@@ -633,6 +633,17 @@
    "p": 9.42,
    "t": "2026-11-06T08:16:09.038191+00:00",
    "title": "Suright Gomas Elasticas Musculacion, 3 Niveles Bandas Elasticas Musculacion",
+   "v": []
+  },
+  "B09TL86RB6": {
+   "c": "Menaje de cocina",
+   "d": 20,
+   "e": "🍳",
+   "m": 253,
+   "p": 48.98,
+   "s": "ofertas",
+   "t": "2026-11-13T07:37:04.738191+00:00",
+   "title": "Tefal Ingenio Easy On - Juego de 2 Sartenes, NO APTO INDUCCIÓN",
    "v": []
   },
   "B09W9867V2": {
@@ -2000,6 +2011,14 @@
  },
  "problem": {},
  "rejected": {
+  "B00NFDPXRO": {
+   "t": "2026-11-13T07:35:36.489438+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B01N6CJ1QW": {
+   "t": "2026-11-13T07:35:36.489438+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B07N9CTXRP": {
    "t": "2026-11-12T21:55:34.077440+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2026,6 +2045,10 @@
   },
   "B0CDCL53KW": {
    "t": "2026-11-12T08:45:45.168399+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0CFVZC2GF": {
+   "t": "2026-11-13T07:35:36.489438+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0CHJKQD1V": {
@@ -2056,6 +2079,10 @@
    "t": "2026-11-12T21:40:51.544407+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0DWDRZQYB": {
+   "t": "2026-11-13T07:35:36.489438+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0F2MX4FJQ": {
    "t": "2026-11-12T14:05:45.520815+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2070,6 +2097,22 @@
   },
   "B0FMGXH38Q": {
    "t": "2026-11-12T07:35:38.163573+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0FPXGKBCS": {
+   "t": "2026-11-13T07:35:36.489438+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0FPXGRFLV": {
+   "t": "2026-11-13T07:35:36.489438+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0FPXK52K8": {
+   "t": "2026-11-13T07:35:36.489438+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0FQTVLFT1": {
+   "t": "2026-11-13T07:35:36.489438+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0FVXGNCPB": {
@@ -2103,6 +2146,18 @@
  },
  "reserve": [
   {
+   "a": "B00UOIZ8VY",
+   "c": "Menaje de cocina",
+   "e": "🍳",
+   "img": "https://m.media-amazon.com/images/I/51qX7gpVoQL._AC_UL320_.jpg",
+   "n": 1900,
+   "op": 57.49,
+   "p": 47.99,
+   "r": 4.6,
+   "t": "2026-11-13T07:35:36.489438+00:00",
+   "title": "Tefal Comfort Max - Juego de 3 Cazos + 2 Tapas, Acero Inoxidable"
+  },
+  {
    "a": "B09HCH4T22",
    "c": "Climatización",
    "e": "🌬️",
@@ -2119,6 +2174,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-13",
-  "n": 1
+  "n": 2
  }
 }
