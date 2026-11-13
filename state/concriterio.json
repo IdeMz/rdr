@@ -29,7 +29,7 @@
   "Móviles": "2026-11-13T08:45:39.815574+00:00",
   "Nutrición deportiva": "2026-11-12T21:05:35.059588+00:00",
   "Perfumes": "2026-11-12T17:25:31.862202+00:00",
-  "Periféricos": "2026-11-12T10:01:08.714316+00:00",
+  "Periféricos": "2026-11-13T09:20:46.074861+00:00",
   "Perros": "2026-11-11T07:01:10.008228+00:00",
   "Portátiles": "2026-11-12T21:40:51.544407+00:00",
   "Relojes": "2026-11-12T09:20:48.160799+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-12T21:40:51.544407+00:00",
   "Zapatillas": "2026-11-12T11:45:43.028763+00:00"
  },
- "next_at": "2026-11-13T09:18:05.344290+00:00",
+ "next_at": "2026-11-13T09:51:01.100210+00:00",
  "offer": {
   "a": "B09VN62HF3",
   "m": 193,
@@ -380,6 +380,17 @@
    "p": 49.99,
    "t": "2026-11-06T10:01:28.431151+00:00",
    "title": "BENYAR",
+   "v": []
+  },
+  "B07W4DGPGF": {
+   "c": "Periféricos",
+   "d": 47,
+   "e": "⌨️",
+   "m": 256,
+   "p": 84.99,
+   "s": "ofertas",
+   "t": "2026-11-13T09:21:15.455920+00:00",
+   "title": "Logitech G PRO X SUPERLIGHT 2, Ratón inalámbrico para gaming - Blanco",
    "v": []
   },
   "B07XLML2YS": {
@@ -2061,10 +2072,6 @@
    "t": "2026-11-12T11:45:43.028763+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0CDCL53KW": {
-   "t": "2026-11-12T08:45:45.168399+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0CFVZC2GF": {
    "t": "2026-11-13T07:35:36.489438+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2212,6 +2219,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-13",
-  "n": 4
+  "n": 5
  }
 }
