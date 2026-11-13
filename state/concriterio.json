@@ -30,7 +30,7 @@
   "Nutrición deportiva": "2026-11-12T21:05:35.059588+00:00",
   "Perfumes": "2026-11-12T17:25:31.862202+00:00",
   "Periféricos": "2026-11-13T09:20:46.074861+00:00",
-  "Perros": "2026-11-11T07:01:10.008228+00:00",
+  "Perros": "2026-11-13T11:40:39.260187+00:00",
   "Portátiles": "2026-11-12T21:40:51.544407+00:00",
   "Relojes": "2026-11-12T09:20:48.160799+00:00",
   "Robots de cocina": "2026-11-12T11:10:46.841102+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-12T21:40:51.544407+00:00",
   "Zapatillas": "2026-11-12T11:45:43.028763+00:00"
  },
- "next_at": "2026-11-13T11:40:19.030484+00:00",
+ "next_at": "2026-11-13T12:15:27.191133+00:00",
  "offer": {
   "a": "B09VN62HF3",
   "m": 193,
@@ -1461,6 +1461,17 @@
    "title": "GiPP Juego de Sartenes y Cacerolas con Revestimiento Cerámico Antiadherente - Juego de 15 Piezas con Asas Desmontables, Sin Sustancias Tóxicas, Apto Para Inducción, Horno y Lavavajillas",
    "v": []
   },
+  "B0F9XBMM3M": {
+   "c": "Perros",
+   "d": 32,
+   "e": "🐶",
+   "m": 260,
+   "p": 35.89,
+   "s": "ambas",
+   "t": "2026-11-13T11:41:13.817542+00:00",
+   "title": "JOSERA SensiPlus (1 x 12,5 kg) | Adultos | Pienso seco con Pato y arroz para Perros Adultos con Piel Sensible | con Gran cantidad de biotina para una Piel y un Pelaje sanos | Altamente digestible",
+   "v": []
+  },
   "B0FBG3ZCK6": {
    "c": "Zapatillas",
    "d": 40,
@@ -2093,10 +2104,6 @@
    "t": "2026-11-13T08:10:39.209090+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0815BLCJL": {
-   "t": "2026-11-12T11:10:46.841102+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0816QF6SZ": {
    "t": "2026-11-13T11:05:30.316413+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2204,6 +2211,18 @@
  },
  "reserve": [
   {
+   "a": "B01EQZATNM",
+   "c": "Perros",
+   "e": "🐶",
+   "img": "https://m.media-amazon.com/images/I/81OYflkFGgL._AC_UL320_.jpg",
+   "n": 5500,
+   "op": 15.95,
+   "p": 11.99,
+   "r": 4.3,
+   "t": "2026-11-13T11:40:39.260187+00:00",
+   "title": "bosch HPC Maxi Junior | Alimento seco para perros de cría de razas grandes (a partir de 25 kg de peso final) | 1 x 3 kg"
+  },
+  {
    "a": "B0CPYPCMZT",
    "c": "Ciclismo",
    "e": "🚴",
@@ -2226,24 +2245,12 @@
    "r": 4.6,
    "t": "2026-11-13T10:31:00.804242+00:00",
    "title": "Nutravita Omega 3 2000mg - con 660mg EPA y 440mg DHA - 240 Cápsulas Blandas"
-  },
-  {
-   "a": "B08N3YCTK7",
-   "c": "Altavoces",
-   "e": "🔊",
-   "img": "https://m.media-amazon.com/images/I/716Ap-eCdtL._AC_UY218_.jpg",
-   "n": 609,
-   "op": 69.98,
-   "p": 52.92,
-   "r": 4.3,
-   "t": "2026-11-13T08:10:39.209090+00:00",
-   "title": "Altavoz Bluetooth Potente de 60W (80W Peak) con Doble Subwoofer y Bajo Profundo, Altavoces Bluetooth Portátiles con Conexión Inalámbrica de 100ft, Ideal para Viajes y Fiestas"
   }
  ],
  "summary_day": "2026-11-12",
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-13",
-  "n": 8
+  "n": 9
  }
 }

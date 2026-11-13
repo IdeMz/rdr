@@ -1,5 +1,17 @@
 {
  "ean_asin": {
+  "0766907027891": {
+   "a": "B0CMPW1698",
+   "t": "2026-11-13T11:40:39.260187+00:00",
+   "title": "ViewSonic VX2758A-2K-PRO QHD - Monitor de Juego (IPS, Plano, 27\", sin Marco, 1 ms, MPRT 170 Hz, 2 HDMI, DisplayPort, HDR10)",
+   "via": "nombre"
+  },
+  "0840006667278": {
+   "a": "B0CT8W3Y29",
+   "t": "2026-11-13T11:40:39.260187+00:00",
+   "title": "CORSAIR K65 PLUS WIRELESS 75% RGB Teclado Mecánico para Juegos Intercambiable en Caliente - Interruptores Lineales Rojos CORSAIR MLX Prelubricados - Insonorizac",
+   "via": "ean"
+  },
   "4711121768279": {
    "a": "",
    "t": "2026-11-13T11:05:30.316413+00:00"
@@ -31,6 +43,44 @@
    "t": "2026-11-13T11:05:30.316413+00:00",
    "veredicto": "sin_precio"
   },
+  "46256205684": {
+   "ahorro_vs_amazon": -5,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 156.0,
+   "amz_title": "CORSAIR K65 PLUS WIRELESS 75% RGB Teclado Mecánico para Juegos Intercambiable en Caliente - Interruptores Lineales Rojos CORSAIR MLX Prelubricados - Insonorizac",
+   "asin": "B0CT8W3Y29",
+   "disponible": true,
+   "ean": "0840006667278",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 156.00 frente a 163.96",
+   "name": "Corsair K65 Plus Wireless 75% MLX Red RGB Negro Teclado gaming inalámbrico mecánico",
+   "pp_drop": 49,
+   "pp_median": 319.95,
+   "pp_price": 163.96,
+   "t": "2026-11-13T11:40:39.260187+00:00",
+   "veredicto": "amazon_mas_barato"
+  },
+  "46599140303": {
+   "ahorro_vs_amazon": -13,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 158.05,
+   "amz_title": "ViewSonic VX2758A-2K-PRO QHD - Monitor de Juego (IPS, Plano, 27\", sin Marco, 1 ms, MPRT 170 Hz, 2 HDMI, DisplayPort, HDR10)",
+   "asin": "B0CMPW1698",
+   "disponible": true,
+   "ean": "0766907027891",
+   "encontrado_por": "nombre",
+   "lista": "to_verify",
+   "motivo": "Amazon 158.05 frente a 177.95",
+   "name": "Monitor ViewSonic 27 pulgadas 240Hz QHD IPS Negro VX2758A-2K-PRO-3",
+   "pp_drop": 57,
+   "pp_median": 413.95,
+   "pp_price": 177.95,
+   "t": "2026-11-13T11:40:39.260187+00:00",
+   "veredicto": "amazon_mas_barato"
+  },
   "46599141566": {
    "ean": "4711121768279",
    "lista": "to_verify",
@@ -44,12 +94,12 @@
   }
  },
  "resumen": {
-  "amazon_mas_barato": 0,
+  "amazon_mas_barato": 2,
   "dudoso": 0,
   "no_esta": 1,
   "oferta_real": 0,
   "pvpr_inflado": 0,
   "sin_precio": 1
  },
- "updated": "2026-11-13T11:05:30.316413+00:00"
+ "updated": "2026-11-13T11:40:39.260187+00:00"
 }
