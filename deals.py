@@ -37,6 +37,7 @@ from PIL import Image, ImageOps
 import feed
 import aliexpress
 import review
+import crossamz
 import pricehist
 
 ROOT = Path(__file__).resolve().parent
@@ -2288,7 +2289,28 @@ def run_channel(
         fresh = [product_to_dict(e, c, now) for e, c in extras if e.asin not in state]
         kept = [d for d in reserve if d["a"] not in state]
         set_state_key(state_path, "reserve", diversify(fresh + kept, state, ch)[: ch.reserve_size])
+    if publishing and session is not None and ch.name == REVIEW_CHANNEL:
+        cross_amazon(session, state_dir, now)
     return published
+
+
+def cross_amazon(session: requests.Session, state_dir: Path, now: datetime) -> None:
+    """Cruza unos pocos candidatos de PowerPlanet con Amazon (modo informe). Reutiliza la sesion, que ya
+    tiene la entrega fijada en España. Nunca debe tumbar la ejecucion."""
+    def search(text: str) -> list[Product]:
+        html = fetch(session, f"{BASE}/s?k={quote_plus(text)}", retries=1)
+        results = parse_results(html)
+        if is_blocked(html, len(results)):
+            raise Blocked("captcha o bloqueo")
+        return results
+
+    def page(asin: str) -> str:
+        return fetch(session, f"{BASE}/dp/{asin}", retries=1)
+
+    try:
+        log.info("%s", crossamz.run(state_dir, search, page, price_reference, now, sleep=sleep))
+    except Exception as exc:  # el cruce es un extra
+        log.warning("cruce amazon: %s", type(exc).__name__)
 
 
 def collect_feeds() -> None:

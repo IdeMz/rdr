@@ -2524,3 +2524,20 @@ def test_x_text_copies_the_posted_example_with_the_old_price_struck_through():
         "❌ PVPR: 6\u03369\u0336,\u03369\u03369\u0336€\u0336", "🛒 Ahora: 37,99€", "−46 % · Diferencia 32€", "",
         "https://amzn.to/x"]
     assert deals.x_weight(text.replace("https://amzn.to/x", "")) + deals.X_URL_WEIGHT <= deals.X_LIMIT
+
+
+def test_cross_amazon_uses_the_session_and_never_raises(tmp_path, monkeypatch):
+    import crossamz
+    (tmp_path / crossamz.SOURCE).write_text(json.dumps({"candidates": [
+        {"id": "1", "ean": "0840006667278", "name": "Corsair K65 Plus Wireless Teclado", "brand": "Corsair",
+         "price": 163.96, "median": 319.95}]}), encoding="utf-8")
+    calls = []
+
+    def fake_fetch(session, url, retries=3):
+        calls.append(url)
+        raise deals.Blocked("HTTP 503")
+    monkeypatch.setattr(deals, "fetch", fake_fetch)
+    monkeypatch.setattr(deals, "sleep", lambda s: None)
+    deals.cross_amazon(object(), tmp_path, datetime(2026, 11, 16, 10, tzinfo=timezone.utc))
+    assert calls == ["https://www.amazon.es/s?k=0840006667278"]
+    assert crossamz.load(tmp_path / crossamz.FILE)["items"] == {}
