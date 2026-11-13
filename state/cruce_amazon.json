@@ -6,6 +6,10 @@
    "title": "Apple TV 4K Black, Silver 4K Ultra HD 128 GB Wi-Fi Ethernet LAN, W128291662 (HD 128 GB Wi-Fi Ethernet LAN)",
    "via": "ean"
   },
+  "0196548939664": {
+   "a": "",
+   "t": "2026-11-13T13:25:30.604640+00:00"
+  },
   "0766907027891": {
    "a": "B0CMPW1698",
    "t": "2026-11-13T11:40:39.260187+00:00",
@@ -39,6 +43,12 @@
   "840006666493": {
    "a": "",
    "t": "2026-11-13T12:15:38.991127+00:00"
+  },
+  "8425402875179": {
+   "a": "B09YS5DTK4",
+   "t": "2026-11-13T13:25:30.604640+00:00",
+   "title": "SaveFamily Slim 4G | Reloj Inteligente Niño/a con Localizador GPS",
+   "via": "ean"
   }
  },
  "items": {
@@ -73,6 +83,25 @@
    "t": "2026-11-13T12:50:38.657328+00:00",
    "veredicto": "no_esta"
   },
+  "45570747232": {
+   "ahorro_vs_amazon": 0,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 89.0,
+   "amz_title": "SaveFamily Slim 4G | Reloj Inteligente Niño/a con Localizador GPS",
+   "asin": "B09YS5DTK4",
+   "disponible": true,
+   "ean": "8425402875179",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 89.00 frente a 88.95",
+   "name": "SaveFamily Slim 4G Negro 1,28 pulgadas IPS GPS IP67 Smartwatch para niños",
+   "pp_drop": 39,
+   "pp_median": 145.95,
+   "pp_price": 88.95,
+   "t": "2026-11-13T13:25:30.604640+00:00",
+   "veredicto": "amazon_mas_barato"
+  },
   "45948306671": {
    "ean": "840006666493",
    "lista": "candidates",
@@ -102,6 +131,17 @@
    "pp_price": 266.95,
    "t": "2026-11-13T11:05:30.316413+00:00",
    "veredicto": "sin_precio"
+  },
+  "46239682368": {
+   "ean": "0196548939664",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "HP 925 Ergonomic Vertical Mouse Negro Multidispositivo 6 botones Ratón inalámbrico",
+   "pp_drop": 45,
+   "pp_median": 92.95,
+   "pp_price": 50.95,
+   "t": "2026-11-13T13:25:30.604640+00:00",
+   "veredicto": "no_esta"
   },
   "46239684598": {
    "ean": "5061112450973",
@@ -165,12 +205,12 @@
   }
  },
  "resumen": {
-  "amazon_mas_barato": 2,
+  "amazon_mas_barato": 3,
   "dudoso": 0,
-  "no_esta": 4,
+  "no_esta": 5,
   "oferta_real": 0,
   "pvpr_inflado": 0,
   "sin_precio": 2
  },
- "updated": "2026-11-13T12:50:38.657328+00:00"
+ "updated": "2026-11-13T13:25:30.604640+00:00"
 }
