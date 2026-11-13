@@ -110,7 +110,18 @@
   },
   "4711387951224": {
    "a": "",
-   "t": "2026-11-13T18:45:39.134382+00:00"
+   "t": "2026-11-13T23:50:27.854573+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "ASUS ROG Keris II Origin - Ratón Gaming Inalámbrico Ergonómico - Negro"
+    ],
+    "nombre": [
+     "ASUS ROG Keris II Origin - Ratón Gaming Inalámbrico Ergonómico - Negro",
+     "ASUS - Souris ROG Keris II Origin Kojima Edition",
+     "ASUS ROG Keris II Origin - Ratón Gaming Inalámbrico Ergonómico - Blanco"
+    ]
+   }
   },
   "4713436150800": {
    "a": "B0BVLRFFWQ",
@@ -161,7 +172,18 @@
   },
   "6959422615818": {
    "a": "",
-   "t": "2026-11-13T17:45:36.587944+00:00"
+   "t": "2026-11-13T23:50:27.854573+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "JMGO N3 Ultimate 4K Proyector Triple Láser, 5800 lúmenes ISO, Google TV",
+     "JMGO N1S 4K Proyector Portatil, Triple Laser, 1700 ISO Lumens, Google TV",
+     "JMGO O2S Ultra Proyector UHD 4K Tiro Corto, Triple Laser UST, Dolby Vision"
+    ]
+   }
   },
   "6974958250739": {
    "a": "B0FF1X7VGL",
@@ -177,7 +199,18 @@
   },
   "6977728943794": {
    "a": "",
-   "t": "2026-11-13T19:20:42.278458+00:00"
+   "t": "2026-11-13T23:50:27.854573+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "MOVA E50 Ultra, robot aspirador con 30 kPa de succión y 12 N descendente",
+     "MOVA Z50 Ultra, robot aspirador, negro, Powered by dreame",
+     "Para Robot Aspirador USB Recargable 6cm Perfil Bajo"
+    ]
+   }
   },
   "6977728943800": {
    "a": "",
@@ -429,8 +462,19 @@
    "pp_drop": 21,
    "pp_median": 418.95,
    "pp_price": 329.95,
-   "t": "2026-11-13T17:45:36.587944+00:00",
-   "veredicto": "no_esta"
+   "t": "2026-11-13T23:50:27.854573+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "JMGO N3 Ultimate 4K Proyector Triple Láser, 5800 lúmenes ISO, Google TV",
+     "JMGO N1S 4K Proyector Portatil, Triple Laser, 1700 ISO Lumens, Google TV",
+     "JMGO O2S Ultra Proyector UHD 4K Tiro Corto, Triple Laser UST, Dolby Vision"
+    ]
+   }
   },
   "45930203409": {
    "ahorro_vs_amazon": 8,
@@ -516,8 +560,19 @@
    "pp_drop": 19,
    "pp_median": 639.9,
    "pp_price": 519.9,
-   "t": "2026-11-13T19:20:42.278458+00:00",
-   "veredicto": "no_esta"
+   "t": "2026-11-13T23:50:27.854573+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "MOVA E50 Ultra, robot aspirador con 30 kPa de succión y 12 N descendente",
+     "MOVA Z50 Ultra, robot aspirador, negro, Powered by dreame",
+     "Para Robot Aspirador USB Recargable 6cm Perfil Bajo"
+    ]
+   }
   },
   "46165551484": {
    "ahorro_vs_amazon": -143,
@@ -666,8 +721,19 @@
    "pp_drop": 26,
    "pp_median": 144.95,
    "pp_price": 106.95,
-   "t": "2026-11-13T18:45:39.134382+00:00",
-   "veredicto": "no_esta"
+   "t": "2026-11-13T23:50:27.854573+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "ASUS ROG Keris II Origin - Ratón Gaming Inalámbrico Ergonómico - Negro"
+    ],
+    "nombre": [
+     "ASUS ROG Keris II Origin - Ratón Gaming Inalámbrico Ergonómico - Negro",
+     "ASUS - Souris ROG Keris II Origin Kojima Edition",
+     "ASUS ROG Keris II Origin - Ratón Gaming Inalámbrico Ergonómico - Blanco"
+    ]
+   }
   },
   "46599139094": {
    "ahorro_vs_amazon": 4,
@@ -850,7 +916,7 @@
    }
   }
  },
- "night_at": "2026-11-13T23:20:24.256283+00:00",
+ "night_at": "2026-11-13T23:50:27.854573+00:00",
  "resumen": {
   "amazon_mas_barato": 11,
   "dudoso": 0,
@@ -859,5 +925,5 @@
   "pvpr_inflado": 3,
   "sin_precio": 2
  },
- "updated": "2026-11-13T23:20:24.256283+00:00"
+ "updated": "2026-11-13T23:50:27.854573+00:00"
 }
