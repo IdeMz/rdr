@@ -1,0 +1,55 @@
+{
+ "ean_asin": {
+  "4711121768279": {
+   "a": "",
+   "t": "2026-11-13T11:05:30.316413+00:00"
+  },
+  "619659205058": {
+   "a": "B0C5SC2V95",
+   "t": "2026-11-13T11:05:30.316413+00:00",
+   "title": "SanDisk SSD portátil Extremo de 2 TB - hasta 1050 MB/s - USB-C, USB 3.2 Gen 2 - Unidad Externa de Estado sólido - SDSSDE61-2T00-G25B",
+   "via": "ean"
+  }
+ },
+ "items": {
+  "45948306775": {
+   "ahorro_vs_amazon": null,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": null,
+   "amz_title": "SanDisk SSD portátil Extremo de 2 TB - hasta 1050 MB/s - USB-C, USB 3.2 Gen 2 - Unidad Externa de Estado sólido - SDSSDE61-2T00-G25B",
+   "asin": "B0C5SC2V95",
+   "disponible": true,
+   "ean": "619659205058",
+   "encontrado_por": "ean",
+   "lista": "to_verify",
+   "motivo": "en Amazon pero sin precio o no disponible",
+   "name": "SanDisk Extreme Portable V2 2TB NVMe USB 3.2 Gen 2 1050MB/s IP65 SSD externo",
+   "pp_drop": 58,
+   "pp_median": 631.95,
+   "pp_price": 266.95,
+   "t": "2026-11-13T11:05:30.316413+00:00",
+   "veredicto": "sin_precio"
+  },
+  "46599141566": {
+   "ean": "4711121768279",
+   "lista": "to_verify",
+   "motivo": "no se encuentra en Amazon por EAN ni por nombre",
+   "name": "Acer AOPEN QH12a 720p HD Ready 135 lúmenes ANSI LED Azul Bluetooth altavoz 3W Proyector",
+   "pp_drop": 68,
+   "pp_median": 636.94,
+   "pp_price": 200.94,
+   "t": "2026-11-13T11:05:30.316413+00:00",
+   "veredicto": "no_esta"
+  }
+ },
+ "resumen": {
+  "amazon_mas_barato": 0,
+  "dudoso": 0,
+  "no_esta": 1,
+  "oferta_real": 0,
+  "pvpr_inflado": 0,
+  "sin_precio": 1
+ },
+ "updated": "2026-11-13T11:05:30.316413+00:00"
+}

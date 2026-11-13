@@ -9,7 +9,7 @@
   "Cafeteras": "2026-11-12T08:45:45.168399+00:00",
   "Café y cápsulas": "2026-11-12T18:01:01.485472+00:00",
   "Cargadores y baterías": "2026-11-10T11:15:42.709254+00:00",
-  "Ciclismo": "2026-11-10T20:01:09.445485+00:00",
+  "Ciclismo": "2026-11-13T11:05:30.316413+00:00",
   "Climatización": "2026-11-13T07:01:09.103150+00:00",
   "Colchones y almohadas": "2026-11-13T08:45:39.815574+00:00",
   "Cuidado de la piel": "2026-11-11T11:40:40.899668+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-12T21:40:51.544407+00:00",
   "Zapatillas": "2026-11-12T11:45:43.028763+00:00"
  },
- "next_at": "2026-11-13T11:01:32.247391+00:00",
+ "next_at": "2026-11-13T11:40:19.030484+00:00",
  "offer": {
   "a": "B09VN62HF3",
   "m": 193,
@@ -309,6 +309,17 @@
    "p": 126.75,
    "t": "2026-11-10T13:36:05.516695+00:00",
    "title": "Reloj Analógico Multifuncional de Cuarzo para Hombres con Correa de Silicona, Acero Inoxidable o Cuero, Subesferas para Día y Fecha, Resistente al Agua hasta 5ATM.",
+   "v": []
+  },
+  "B07D14W78C": {
+   "c": "Ciclismo",
+   "d": 28,
+   "e": "🚴",
+   "m": 259,
+   "p": 15.64,
+   "s": "ofertas",
+   "t": "2026-11-13T11:06:06.481003+00:00",
+   "title": "EULANT Pequeña Mochila para Bicicleta,12L Mochila de Hidratación Impermeable,Reflectoras Mochila de Ciclismo para MTB Senderismo Correr Natación Playa, con Capa de Aislamiento & red de pelota",
    "v": []
   },
   "B07GS6ZB7T": {
@@ -2086,6 +2097,10 @@
    "t": "2026-11-12T11:10:46.841102+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0816QF6SZ": {
+   "t": "2026-11-13T11:05:30.316413+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0BZXL5TTB": {
    "t": "2026-11-12T11:45:43.028763+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2189,6 +2204,18 @@
  },
  "reserve": [
   {
+   "a": "B0CPYPCMZT",
+   "c": "Ciclismo",
+   "e": "🚴",
+   "img": "https://m.media-amazon.com/images/I/810PgUaho6L._AC_UL320_.jpg",
+   "n": 67,
+   "op": 25.0,
+   "p": 19.49,
+   "r": 4.4,
+   "t": "2026-11-13T11:05:30.316413+00:00",
+   "title": "deuter Helmet Bag Bolsa para Casco"
+  },
+  {
    "a": "B01K28121U",
    "c": "Suplementos",
    "e": "💊",
@@ -2211,24 +2238,12 @@
    "r": 4.3,
    "t": "2026-11-13T08:10:39.209090+00:00",
    "title": "Altavoz Bluetooth Potente de 60W (80W Peak) con Doble Subwoofer y Bajo Profundo, Altavoces Bluetooth Portátiles con Conexión Inalámbrica de 100ft, Ideal para Viajes y Fiestas"
-  },
-  {
-   "a": "B00UOIZ8VY",
-   "c": "Menaje de cocina",
-   "e": "🍳",
-   "img": "https://m.media-amazon.com/images/I/51qX7gpVoQL._AC_UL320_.jpg",
-   "n": 1900,
-   "op": 57.49,
-   "p": 47.99,
-   "r": 4.6,
-   "t": "2026-11-13T07:35:36.489438+00:00",
-   "title": "Tefal Comfort Max - Juego de 3 Cazos + 2 Tapas, Acero Inoxidable"
   }
  ],
  "summary_day": "2026-11-12",
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-13",
-  "n": 7
+  "n": 8
  }
 }
