@@ -181,7 +181,18 @@
   },
   "6977728943800": {
    "a": "",
-   "t": "2026-11-13T16:01:12.341933+00:00"
+   "t": "2026-11-13T23:20:24.256283+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "DREAME X50 Ultra Complete Robot Aspirador y Fregasuelos, 20.000Pa Succión",
+     "dreame L10s Ultra Gen 3 Kit-A Robot Aspirador y Friegasuelos, Succión de 25.000Pa, Cepillo Lateral y",
+     "dreame L50 Ultra Ae-A Robot Aspirador y Fregasuelos, 100 Días de Vaciado Automático, Mopas con Autol"
+    ]
+   }
   },
   "8003705121379": {
    "a": "B0C59JRLM4",
@@ -191,7 +202,23 @@
   },
   "8004399143500": {
    "a": "",
-   "t": "2026-11-13T17:45:36.587944+00:00"
+   "t": "2026-11-13T23:20:24.256283+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "De'Longhi Calefactor Vertical Edge 1 Bianco"
+    ],
+    "modelo": [
+     "De'Longhi Calefactor Vertical Edge 1 Bianco",
+     "De'Longhi Calentador rápido HFS50F24 - Calefactor (2400 W, hasta 70 m³), color blanco",
+     "De 'Longhi calefactor rápido, hva 3220"
+    ],
+    "nombre": [
+     "De'Longhi Termoventilador Cerámico de Torre, Calentamiento Rápido con 2 Niveles, Mando a Distancia, ",
+     "De'longhi HFX65v20 - Calefactor cerámico, 2000 w, temporizador digital, 2 niveles de calefacción, ma",
+     "De'Longhi Calefactor Vertical Edge 1 Bianco"
+    ]
+   }
   },
   "840006666493": {
    "a": "B0CP6BWBF5",
@@ -350,8 +377,19 @@
    "pp_drop": 21,
    "pp_median": 669.0,
    "pp_price": 529.0,
-   "t": "2026-11-13T16:01:12.341933+00:00",
-   "veredicto": "no_esta"
+   "t": "2026-11-13T23:20:24.256283+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "DREAME X50 Ultra Complete Robot Aspirador y Fregasuelos, 20.000Pa Succión",
+     "dreame L10s Ultra Gen 3 Kit-A Robot Aspirador y Friegasuelos, Succión de 25.000Pa, Cepillo Lateral y",
+     "dreame L50 Ultra Ae-A Robot Aspirador y Fregasuelos, 100 Días de Vaciado Automático, Mopas con Autol"
+    ]
+   }
   },
   "45570747232": {
    "ahorro_vs_amazon": 0,
@@ -433,24 +471,23 @@
    "veredicto": "amazon_mas_barato"
   },
   "45948306775": {
-   "ahorro_vs_amazon": null,
+   "ahorro_vs_amazon": 23,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": null,
+   "amz_price": 348.89,
    "amz_title": "SanDisk SSD portátil Extremo de 2 TB - hasta 1050 MB/s - USB-C, USB 3.2 Gen 2 - Unidad Externa de Estado sólido - SDSSDE61-2T00-G25B",
    "asin": "B0C5SC2V95",
    "disponible": true,
    "ean": "619659205058",
    "encontrado_por": "ean",
    "lista": "to_verify",
-   "motivo": "en Amazon pero sin precio o no disponible",
+   "motivo": "23 % por debajo del habitual en Amazon (348.89)",
    "name": "SanDisk Extreme Portable V2 2TB NVMe USB 3.2 Gen 2 1050MB/s IP65 SSD externo",
-   "pista": "2049388 bytes; 5 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 58,
    "pp_median": 631.95,
    "pp_price": 266.95,
-   "t": "2026-11-13T17:10:41.240248+00:00",
-   "veredicto": "sin_precio"
+   "t": "2026-11-13T23:20:24.256283+00:00",
+   "veredicto": "oferta_real"
   },
   "45992962853": {
    "ahorro_vs_amazon": 3,
@@ -793,18 +830,34 @@
    "pp_drop": 32,
    "pp_median": 75.95,
    "pp_price": 51.95,
-   "t": "2026-11-13T17:45:36.587944+00:00",
-   "veredicto": "no_esta"
+   "t": "2026-11-13T23:20:24.256283+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "De'Longhi Calefactor Vertical Edge 1 Bianco"
+    ],
+    "modelo": [
+     "De'Longhi Calefactor Vertical Edge 1 Bianco",
+     "De'Longhi Calentador rápido HFS50F24 - Calefactor (2400 W, hasta 70 m³), color blanco",
+     "De 'Longhi calefactor rápido, hva 3220"
+    ],
+    "nombre": [
+     "De'Longhi Termoventilador Cerámico de Torre, Calentamiento Rápido con 2 Niveles, Mando a Distancia, ",
+     "De'longhi HFX65v20 - Calefactor cerámico, 2000 w, temporizador digital, 2 niveles de calefacción, ma",
+     "De'Longhi Calefactor Vertical Edge 1 Bianco"
+    ]
+   }
   }
  },
- "night_at": "2026-11-13T22:50:26.355987+00:00",
+ "night_at": "2026-11-13T23:20:24.256283+00:00",
  "resumen": {
   "amazon_mas_barato": 11,
   "dudoso": 0,
   "no_esta": 10,
-  "oferta_real": 6,
+  "oferta_real": 7,
   "pvpr_inflado": 3,
-  "sin_precio": 3
+  "sin_precio": 2
  },
- "updated": "2026-11-13T22:50:26.355987+00:00"
+ "updated": "2026-11-13T23:20:24.256283+00:00"
 }
