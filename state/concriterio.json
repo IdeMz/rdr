@@ -2,7 +2,7 @@
  "cats": {
   "Accesorios de coche": "2026-11-13T13:25:30.604640+00:00",
   "Afeitado y depilación": "2026-11-13T12:50:38.657328+00:00",
-  "Almacenamiento": "2026-11-12T08:10:49.385821+00:00",
+  "Almacenamiento": "2026-11-13T17:45:36.587944+00:00",
   "Altavoces": "2026-11-13T08:10:39.209090+00:00",
   "Aspiradoras": "2026-11-12T10:35:36.602474+00:00",
   "Auriculares": "2026-11-12T12:20:44.296151+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-12T21:40:51.544407+00:00",
   "Zapatillas": "2026-11-12T11:45:43.028763+00:00"
  },
- "next_at": "2026-11-13T17:45:25.432992+00:00",
+ "next_at": "2026-11-13T18:18:36.390753+00:00",
  "offer": {
   "a": "B09VN62HF3",
   "m": 193,
@@ -1435,6 +1435,17 @@
    "title": "Dashcam 4K, Dash CAM Coche con CPL, WiFi Camara Coche Grabadora con Tarjeta 64G, Super Visión, Gran 170°, Control App, Sensor G, Monitor de Aparcamiento, Grabación de Bucle",
    "v": []
   },
+  "B0DTTK2RVR": {
+   "c": "Almacenamiento",
+   "d": 10,
+   "e": "💾",
+   "m": 270,
+   "p": 170.99,
+   "s": "ambas",
+   "t": "2026-11-13T17:46:10.058900+00:00",
+   "title": "1TB NVMe PCIe 3.0x4 SSD 3500MB/s Para Mac Air 2013-2017",
+   "v": []
+  },
   "B0DV11JVBN": {
    "c": "Perfumes",
    "d": 37,
@@ -2328,24 +2339,12 @@
    "r": 4.6,
    "t": "2026-11-13T15:10:54.425531+00:00",
    "title": "Racing Digital Men's Quartz Watch - 52mm"
-  },
-  {
-   "a": "B08RZZVKNZ",
-   "c": "Cuidado de la piel",
-   "e": "🧴",
-   "img": "https://m.media-amazon.com/images/I/6132Ac5wVIL._AC_UL320_.jpg",
-   "n": 475,
-   "op": 29.99,
-   "p": 13.48,
-   "r": 4.6,
-   "t": "2026-11-13T14:35:34.102055+00:00",
-   "title": "Olay Regenerist Sérum Facial Reafirmante con Niacinamida, 50ml"
   }
  ],
  "summary_day": "2026-11-12",
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-13",
-  "n": 18
+  "n": 19
  }
 }

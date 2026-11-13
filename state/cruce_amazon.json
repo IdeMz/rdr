@@ -76,6 +76,10 @@
    "title": "SanDisk SSD portátil Extremo de 2 TB - hasta 1050 MB/s - USB-C, USB 3.2 Gen 2 - Unidad Externa de Estado sólido - SDSSDE61-2T00-G25B",
    "via": "ean"
   },
+  "6959422615818": {
+   "a": "",
+   "t": "2026-11-13T17:45:36.587944+00:00"
+  },
   "6974958250739": {
    "a": "",
    "t": "2026-11-13T12:50:38.657328+00:00"
@@ -95,6 +99,10 @@
    "t": "2026-11-13T14:01:00.760700+00:00",
    "title": "Ariete 00c462800ar0 Hei?luftfritteuse 7 L Antihaftbeschichtung, BpA-Frei, Digitaler Timer, F?r Lebensmittel, Hei?lufT-Funktion, LcD-Display, UmlufT-F",
    "via": "ean"
+  },
+  "8004399143500": {
+   "a": "",
+   "t": "2026-11-13T17:45:36.587944+00:00"
   },
   "840006666493": {
    "a": "",
@@ -198,6 +206,17 @@
    "pp_price": 88.95,
    "t": "2026-11-13T13:25:30.604640+00:00",
    "veredicto": "amazon_mas_barato"
+  },
+  "45626822202": {
+   "ean": "6959422615818",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "JMGO PicoPlay+ 1080p Full HD 450 ISO Lúmenes DLP LED Google TV WiFi 5 Bluetooth 5.4 altavoz 10W Proyector",
+   "pp_drop": 21,
+   "pp_median": 418.95,
+   "pp_price": 329.95,
+   "t": "2026-11-13T17:45:36.587944+00:00",
+   "veredicto": "no_esta"
   },
   "45930203409": {
    "ahorro_vs_amazon": 8,
@@ -433,15 +452,26 @@
    "pp_price": 200.94,
    "t": "2026-11-13T11:05:30.316413+00:00",
    "veredicto": "no_esta"
+  },
+  "46693747648": {
+   "ean": "8004399143500",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Termoventilador De'Longhi Blanco Termostato 2000W 2 Niveles HFS50A20.WH",
+   "pp_drop": 32,
+   "pp_median": 75.95,
+   "pp_price": 51.95,
+   "t": "2026-11-13T17:45:36.587944+00:00",
+   "veredicto": "no_esta"
   }
  },
  "resumen": {
   "amazon_mas_barato": 6,
   "dudoso": 0,
-  "no_esta": 7,
+  "no_esta": 9,
   "oferta_real": 3,
   "pvpr_inflado": 2,
   "sin_precio": 2
  },
- "updated": "2026-11-13T17:10:41.240248+00:00"
+ "updated": "2026-11-13T17:45:36.587944+00:00"
 }
