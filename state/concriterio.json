@@ -16,7 +16,7 @@
   "Cuidado del cabello": "2026-11-12T21:55:34.077440+00:00",
   "Cámaras de seguridad": "2026-11-12T16:45:42.838161+00:00",
   "Domótica": "2026-11-12T16:10:50.553905+00:00",
-  "Fitness en casa": "2026-11-11T14:35:34.717806+00:00",
+  "Fitness en casa": "2026-11-13T09:55:33.688450+00:00",
   "Freidoras de aire": "2026-11-12T18:35:31.872877+00:00",
   "Gatos": "2026-11-11T14:01:09.084076+00:00",
   "Herramientas": "2026-11-12T13:30:58.815254+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-12T21:40:51.544407+00:00",
   "Zapatillas": "2026-11-12T11:45:43.028763+00:00"
  },
- "next_at": "2026-11-13T09:51:01.100210+00:00",
+ "next_at": "2026-11-13T10:26:03.368386+00:00",
  "offer": {
   "a": "B09VN62HF3",
   "m": 193,
@@ -1295,6 +1295,17 @@
    "title": "Odoland Casco Bicicleta Adulto con Gafas UV400, Ligero y Ajustable Unisex",
    "v": []
   },
+  "B0DMDT1KYZ": {
+   "c": "Fitness en casa",
+   "d": 25,
+   "e": "🏋️",
+   "m": 257,
+   "p": 9.71,
+   "s": "ofertas",
+   "t": "2026-11-13T09:55:59.354032+00:00",
+   "title": "Amazon Basics Pesas ajustables para tobillo y muñeca para mujeres y hombres, 1.13kg cada una, juego de 2",
+   "v": []
+  },
   "B0DN6B2BWP": {
    "c": "Perros",
    "d": 30,
@@ -2064,20 +2075,12 @@
    "t": "2026-11-12T11:10:46.841102+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0BJDJJQQH": {
-   "t": "2026-11-12T09:20:48.160799+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0BZXL5TTB": {
    "t": "2026-11-12T11:45:43.028763+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0CFVZC2GF": {
    "t": "2026-11-13T07:35:36.489438+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0CHJKQD1V": {
-   "t": "2026-11-12T09:20:48.160799+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0CKRZNZBW": {
@@ -2090,10 +2093,6 @@
   },
   "B0CWP7M17B": {
    "t": "2026-11-12T18:35:31.872877+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0D3H4S8H4": {
-   "t": "2026-11-12T09:20:48.160799+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0DCPB9J7K": {
@@ -2219,6 +2218,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-13",
-  "n": 5
+  "n": 6
  }
 }
