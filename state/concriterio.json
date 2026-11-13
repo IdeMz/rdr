@@ -7,7 +7,7 @@
   "Aspiradoras": "2026-11-13T18:45:39.134382+00:00",
   "Auriculares": "2026-11-12T12:20:44.296151+00:00",
   "Cafeteras": "2026-11-13T12:15:38.991127+00:00",
-  "Café y cápsulas": "2026-11-12T18:01:01.485472+00:00",
+  "Café y cápsulas": "2026-11-13T20:40:48.338068+00:00",
   "Cargadores y baterías": "2026-11-10T11:15:42.709254+00:00",
   "Ciclismo": "2026-11-13T11:05:30.316413+00:00",
   "Climatización": "2026-11-13T07:01:09.103150+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-12T21:40:51.544407+00:00",
   "Zapatillas": "2026-11-13T19:20:42.278458+00:00"
  },
- "next_at": "2026-11-13T20:37:30.401832+00:00",
+ "next_at": "2026-11-13T21:12:04.423586+00:00",
  "offer": {
   "a": "B08PVDQFQQ",
   "m": 218,
@@ -331,6 +331,17 @@
    "s": "ofertas",
    "t": "2026-11-13T11:06:06.481003+00:00",
    "title": "EULANT Pequeña Mochila para Bicicleta,12L Mochila de Hidratación Impermeable,Reflectoras Mochila de Ciclismo para MTB Senderismo Correr Natación Playa, con Capa de Aislamiento & red de pelota",
+   "v": []
+  },
+  "B07F5M8SZ7": {
+   "c": "Café y cápsulas",
+   "d": 24,
+   "e": "🫘",
+   "m": 274,
+   "p": 13.45,
+   "s": "busqueda",
+   "t": "2026-11-13T20:41:16.075645+00:00",
+   "title": "Delta Cafés espresso Bar - Café en Grano - Estimula los Sentidos - Aroma de Centroamérica y Robusta Africana - 1 kg",
    "v": []
   },
   "B07GS6ZB7T": {
@@ -2358,17 +2369,21 @@
   "B0HBWW6LQQ": {
    "t": "2026-11-13T18:45:39.134382+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0HCBT1LRB": {
-   "t": "2026-11-12T20:30:50.378352+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0HJR8HC2F": {
-   "t": "2026-11-12T20:30:50.378352+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
   }
  },
  "reserve": [
+  {
+   "a": "B0CNY1GWVC",
+   "c": "Café y cápsulas",
+   "e": "🫘",
+   "img": "https://m.media-amazon.com/images/I/81X7BaXHtwL._AC_UL320_.jpg",
+   "n": 2700,
+   "op": 24.38,
+   "p": 19.49,
+   "r": 4.6,
+   "t": "2026-11-13T20:40:48.338068+00:00",
+   "title": "STARBUCKS Paquete Variado de Nespresso, Cápsulas de Café de Diferentes Intensidades 6 x 10 (60 Cápsulas) - Exclusivo de Amazon"
+  },
   {
    "a": "B0F6NJ9QWP",
    "c": "Zapatillas",
@@ -2392,24 +2407,12 @@
    "r": 4.6,
    "t": "2026-11-13T18:45:39.134382+00:00",
    "title": "Ultenic Robot Aspirador y Fregasuelos Autovaciado con Líquido Limpiador: Láser LiDAR Lineal, Evitación Mejorada, 10000 Pa, Refuerzo en Alfombras, App y Voz, para Apartamentos y Familias con Mascotas"
-  },
-  {
-   "a": "B08PVDQFQQ",
-   "c": "Robots de cocina",
-   "e": "🥣",
-   "img": "https://m.media-amazon.com/images/I/51H+bNqhdxL._AC_UY218_.jpg",
-   "n": 1700,
-   "op": 39.9,
-   "p": 29.56,
-   "r": 4.3,
-   "t": "2026-11-13T17:10:41.240248+00:00",
-   "title": "Cecotec Batidora de mano Power TitanBlack 1200 XL Cream&Crush. Potencia 1200 W, Tecnología CrossBlades, Pie XL, Campana antisalpicaduras, Velocidad ajustable, Función Turbo"
   }
  ],
  "summary_day": "2026-11-12",
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-13",
-  "n": 22
+  "n": 23
  }
 }

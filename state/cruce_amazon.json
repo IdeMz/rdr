@@ -50,6 +50,12 @@
    "a": "",
    "t": "2026-11-13T14:35:34.102055+00:00"
   },
+  "4260499852320": {
+   "a": "B08S7MYYL7",
+   "t": "2026-11-13T20:40:48.338068+00:00",
+   "title": "BLAUPUNKT Milano 200 BT - Bluetooth 1-DIN Radio MIT CD mit USB | Autoradio",
+   "via": "nombre"
+  },
   "4547410455649": {
    "a": "B09TWS33C3",
    "t": "2026-11-13T15:10:54.425531+00:00",
@@ -136,6 +142,12 @@
    "a": "B09YS5DTK4",
    "t": "2026-11-13T13:25:30.604640+00:00",
    "title": "SaveFamily Slim 4G | Reloj Inteligente Niño/a con Localizador GPS",
+   "via": "ean"
+  },
+  "8886307700155": {
+   "a": "B0FDFR71J9",
+   "t": "2026-11-13T20:40:48.338068+00:00",
+   "title": "Inno3D GeForce RTX 5080 iCHILL Frostbite 16GB GDDR7 Reflex 2 RTX AI DLSS4",
    "via": "ean"
   }
  },
@@ -499,6 +511,25 @@
    "t": "2026-11-13T20:05:35.325047+00:00",
    "veredicto": "amazon_mas_barato"
   },
+  "46599139733": {
+   "ahorro_vs_amazon": 12,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 2477.97,
+   "amz_title": "Inno3D GeForce RTX 5080 iCHILL Frostbite 16GB GDDR7 Reflex 2 RTX AI DLSS4",
+   "asin": "B0FDFR71J9",
+   "disponible": true,
+   "ean": "8886307700155",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "12 % por debajo del habitual en Amazon (2477.97)",
+   "name": "INNO3D GeForce RTX 5080 ICHILL FROSTBITE 16GB Tarjeta gráfica",
+   "pp_drop": 15,
+   "pp_median": 2549.95,
+   "pp_price": 2168.95,
+   "t": "2026-11-13T20:40:48.338068+00:00",
+   "veredicto": "oferta_real"
+  },
   "46599140303": {
    "ahorro_vs_amazon": -13,
    "amz_low30": null,
@@ -548,6 +579,25 @@
    "t": "2026-11-13T11:05:30.316413+00:00",
    "veredicto": "no_esta"
   },
+  "46599144084": {
+   "ahorro_vs_amazon": 7,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 108.43,
+   "amz_title": "BLAUPUNKT Milano 200 BT - Bluetooth 1-DIN Radio MIT CD mit USB | Autoradio",
+   "asin": "B08S7MYYL7",
+   "disponible": true,
+   "ean": "4260499852320",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "antes 133.95 en PowerPlanet, pero en Amazon suele estar a 108.43",
+   "name": "Blaupunkt Madrid 200 BT Negro 1 DIN Bluetooth Autorradio",
+   "pp_drop": 25,
+   "pp_median": 133.95,
+   "pp_price": 100.95,
+   "t": "2026-11-13T20:40:48.338068+00:00",
+   "veredicto": "pvpr_inflado"
+  },
   "46693747648": {
    "ean": "8004399143500",
    "lista": "candidates",
@@ -564,9 +614,9 @@
   "amazon_mas_barato": 8,
   "dudoso": 0,
   "no_esta": 12,
-  "oferta_real": 3,
-  "pvpr_inflado": 2,
+  "oferta_real": 4,
+  "pvpr_inflado": 3,
   "sin_precio": 2
  },
- "updated": "2026-11-13T20:05:35.325047+00:00"
+ "updated": "2026-11-13T20:40:48.338068+00:00"
 }
