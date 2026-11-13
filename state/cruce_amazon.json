@@ -66,6 +66,10 @@
    "a": "",
    "t": "2026-11-13T11:05:30.316413+00:00"
   },
+  "4711387951224": {
+   "a": "",
+   "t": "2026-11-13T18:45:39.134382+00:00"
+  },
   "5061112450973": {
    "a": "",
    "t": "2026-11-13T12:50:38.657328+00:00"
@@ -129,11 +133,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Apple TV 4K 3ª Gen 128GB WiFi 6 Bluetooth 5.0 A15 Gigabit",
-   "pista": "1903822 bytes; 6 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1880967 bytes; 6 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 35,
    "pp_median": 650.96,
    "pp_price": 421.95,
-   "t": "2026-11-13T12:15:38.991127+00:00",
+   "t": "2026-11-13T18:45:39.134382+00:00",
    "veredicto": "sin_precio"
   },
   "38915518299": {
@@ -385,6 +389,17 @@
    "t": "2026-11-13T11:40:39.260187+00:00",
    "veredicto": "amazon_mas_barato"
   },
+  "46265356695": {
+   "ean": "4711387951224",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "ASUS ROG Keris II Origin 42000 DPI RGB Negro 6 botones 2.4GHz 113 g Ratón gaming inalámbrico",
+   "pp_drop": 26,
+   "pp_median": 144.95,
+   "pp_price": 106.95,
+   "t": "2026-11-13T18:45:39.134382+00:00",
+   "veredicto": "no_esta"
+  },
   "46599139094": {
    "ahorro_vs_amazon": 4,
    "amz_low30": null,
@@ -468,10 +483,10 @@
  "resumen": {
   "amazon_mas_barato": 6,
   "dudoso": 0,
-  "no_esta": 9,
+  "no_esta": 10,
   "oferta_real": 3,
   "pvpr_inflado": 2,
   "sin_precio": 2
  },
- "updated": "2026-11-13T17:45:36.587944+00:00"
+ "updated": "2026-11-13T18:45:39.134382+00:00"
 }

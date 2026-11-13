@@ -4,7 +4,7 @@
   "Afeitado y depilación": "2026-11-13T12:50:38.657328+00:00",
   "Almacenamiento": "2026-11-13T17:45:36.587944+00:00",
   "Altavoces": "2026-11-13T08:10:39.209090+00:00",
-  "Aspiradoras": "2026-11-12T10:35:36.602474+00:00",
+  "Aspiradoras": "2026-11-13T18:45:39.134382+00:00",
   "Auriculares": "2026-11-12T12:20:44.296151+00:00",
   "Cafeteras": "2026-11-13T12:15:38.991127+00:00",
   "Café y cápsulas": "2026-11-12T18:01:01.485472+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-12T21:40:51.544407+00:00",
   "Zapatillas": "2026-11-12T11:45:43.028763+00:00"
  },
- "next_at": "2026-11-13T18:40:54.861809+00:00",
+ "next_at": "2026-11-13T19:20:22.393384+00:00",
  "offer": {
   "a": "B08PVDQFQQ",
   "m": 218,
@@ -1497,6 +1497,17 @@
    "title": "XIAOMI TV F Pro 32 Pulgadas 2025, QLED Smart TV, Fire OS7, L32MB-FPEU",
    "v": []
   },
+  "B0F53MJY8T": {
+   "c": "Aspiradoras",
+   "d": 15,
+   "e": "🧹",
+   "m": 271,
+   "p": 339.0,
+   "s": "ambas",
+   "t": "2026-11-13T18:46:52.241190+00:00",
+   "title": "dreame L40 Ultra Ae Robot Aspirador, 19,000 Pa de Succión, Cepillo TriCut",
+   "v": []
+  },
   "B0F6TYQT12": {
    "c": "Cargadores y baterías",
    "d": 32,
@@ -2196,10 +2207,7 @@
    "v": []
   }
  },
- "problem": {
-  "fails": 2,
-  "last": "HTTP 503"
- },
+ "problem": {},
  "rejected": {
   "B00NFDPXRO": {
    "t": "2026-11-13T07:35:36.489438+00:00",
@@ -2245,10 +2253,6 @@
    "t": "2026-11-13T08:45:39.815574+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0CWP7M17B": {
-   "t": "2026-11-12T18:35:31.872877+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0D3H4S8H4": {
    "t": "2026-11-13T15:10:54.425531+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2269,12 +2273,20 @@
    "t": "2026-11-13T14:01:00.760700+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0DY8V59LY": {
+   "t": "2026-11-13T18:45:39.134382+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0DZ76B7XQ": {
    "t": "2026-11-13T08:10:39.209090+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0FGJTVH91": {
    "t": "2026-11-13T08:10:39.209090+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0FL2JGPYH": {
+   "t": "2026-11-13T18:45:39.134382+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0FL7NNGRG": {
@@ -2309,6 +2321,14 @@
    "t": "2026-11-12T21:55:34.077440+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0H6DZJX44": {
+   "t": "2026-11-13T18:45:39.134382+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0HBWW6LQQ": {
+   "t": "2026-11-13T18:45:39.134382+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0HCBT1LRB": {
    "t": "2026-11-12T20:30:50.378352+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2320,6 +2340,18 @@
  },
  "reserve": [
   {
+   "a": "B0H2DFN9CF",
+   "c": "Aspiradoras",
+   "e": "🧹",
+   "img": "https://m.media-amazon.com/images/I/71ROIFSuF0L._AC_UL320_.jpg",
+   "n": 70,
+   "op": 269.99,
+   "p": 218.47,
+   "r": 4.6,
+   "t": "2026-11-13T18:45:39.134382+00:00",
+   "title": "Ultenic Robot Aspirador y Fregasuelos Autovaciado con Líquido Limpiador: Láser LiDAR Lineal, Evitación Mejorada, 10000 Pa, Refuerzo en Alfombras, App y Voz, para Apartamentos y Familias con Mascotas"
+  },
+  {
    "a": "B08PVDQFQQ",
    "c": "Robots de cocina",
    "e": "🥣",
@@ -2330,24 +2362,12 @@
    "r": 4.3,
    "t": "2026-11-13T17:10:41.240248+00:00",
    "title": "Cecotec Batidora de mano Power TitanBlack 1200 XL Cream&Crush. Potencia 1200 W, Tecnología CrossBlades, Pie XL, Campana antisalpicaduras, Velocidad ajustable, Función Turbo"
-  },
-  {
-   "a": "B0D3QWBSX5",
-   "c": "Relojes",
-   "e": "🕰️",
-   "img": "https://m.media-amazon.com/images/I/61DjZ+PziLL._AC_UL320_.jpg",
-   "n": 927,
-   "op": 49.0,
-   "p": 37.79,
-   "r": 4.6,
-   "t": "2026-11-13T15:10:54.425531+00:00",
-   "title": "Racing Digital Men's Quartz Watch - 52mm"
   }
  ],
  "summary_day": "2026-11-12",
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-13",
-  "n": 19
+  "n": 20
  }
 }
