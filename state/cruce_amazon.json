@@ -16,6 +16,12 @@
    "a": "",
    "t": "2026-11-13T13:25:30.604640+00:00"
   },
+  "0198122955305": {
+   "a": "B0C89KZ874",
+   "t": "2026-11-13T16:01:12.341933+00:00",
+   "title": "HP 330 Combo de Teclado y Ratón Inalámbricos - (1600 PPP, Puerto USB-A, Indicadores LED, Teclas con Atajos, Windows 10; Windows 11) QWERTY Español, Color Negro",
+   "via": "nombre"
+  },
   "0619659184704": {
    "a": "B08RX4QKXS",
    "t": "2026-11-13T14:01:00.760700+00:00",
@@ -67,6 +73,10 @@
    "t": "2026-11-13T14:35:34.102055+00:00",
    "title": "NIIMBOT B31 Impresora de etiquetas con etiquetas, Bluetooth gris y blanco",
    "via": "nombre"
+  },
+  "6977728943800": {
+   "a": "",
+   "t": "2026-11-13T16:01:12.341933+00:00"
   },
   "8003705121379": {
    "a": "B0C59JRLM4",
@@ -145,6 +155,17 @@
    "pp_median": 73.96,
    "pp_price": 46.95,
    "t": "2026-11-13T14:35:34.102055+00:00",
+   "veredicto": "no_esta"
+  },
+  "45403202658": {
+   "ean": "6977728943800",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Dreame V50 Ultra Complete 20000Pa LiDAR friegasuelos autovaciado 220 min 6400mAh Robot aspirador",
+   "pp_drop": 21,
+   "pp_median": 669.0,
+   "pp_price": 529.0,
+   "t": "2026-11-13T16:01:12.341933+00:00",
    "veredicto": "no_esta"
   },
   "45570747232": {
@@ -275,6 +296,25 @@
    "t": "2026-11-13T14:01:00.760700+00:00",
    "veredicto": "oferta_real"
   },
+  "46247661211": {
+   "ahorro_vs_amazon": -70,
+   "amz_low30": null,
+   "amz_median": 31.7,
+   "amz_price": 29.74,
+   "amz_title": "HP 330 Combo de Teclado y Ratón Inalámbricos - (1600 PPP, Puerto USB-A, Indicadores LED, Teclas con Atajos, Windows 10; Windows 11) QWERTY Español, Color Negro",
+   "asin": "B0C89KZ874",
+   "disponible": true,
+   "ean": "0198122955305",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "Amazon 29.74 frente a 53.95",
+   "name": "HP 725 Negro Español de tijera Teclado y ratón inalámbrico",
+   "pp_drop": 33,
+   "pp_median": 79.94,
+   "pp_price": 53.95,
+   "t": "2026-11-13T16:01:12.341933+00:00",
+   "veredicto": "amazon_mas_barato"
+  },
   "46256205684": {
    "ahorro_vs_amazon": -5,
    "amz_low30": null,
@@ -345,12 +385,12 @@
   }
  },
  "resumen": {
-  "amazon_mas_barato": 4,
+  "amazon_mas_barato": 5,
   "dudoso": 0,
-  "no_esta": 6,
+  "no_esta": 7,
   "oferta_real": 2,
   "pvpr_inflado": 2,
   "sin_precio": 2
  },
- "updated": "2026-11-13T15:10:54.425531+00:00"
+ "updated": "2026-11-13T16:01:12.341933+00:00"
 }

@@ -27,7 +27,7 @@
   "Mochilas y maletas": "2026-11-10T18:50:43.937099+00:00",
   "Monitores": "2026-11-12T19:10:42.508182+00:00",
   "Móviles": "2026-11-13T08:45:39.815574+00:00",
-  "Nutrición deportiva": "2026-11-12T21:05:35.059588+00:00",
+  "Nutrición deportiva": "2026-11-13T16:01:12.341933+00:00",
   "Perfumes": "2026-11-13T13:25:30.604640+00:00",
   "Periféricos": "2026-11-13T09:20:46.074861+00:00",
   "Perros": "2026-11-13T11:40:39.260187+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-12T21:40:51.544407+00:00",
   "Zapatillas": "2026-11-12T11:45:43.028763+00:00"
  },
- "next_at": "2026-11-13T15:55:47.451893+00:00",
+ "next_at": "2026-11-13T16:33:13.638201+00:00",
  "offer": {
   "a": "B09VN62HF3",
   "m": 193,
@@ -392,6 +392,17 @@
    "p": 19.9,
    "t": "2026-11-09T16:21:18.177704+00:00",
    "title": "Granos de Café Enteros Kimbo Crema Intensa, Tueste Medio, Bolsa 1kg",
+   "v": []
+  },
+  "B07QDB3KMS": {
+   "c": "Nutrición deportiva",
+   "d": 22,
+   "e": "💪",
+   "m": 267,
+   "p": 15.5,
+   "s": "ofertas",
+   "t": "2026-11-13T16:01:40.638908+00:00",
+   "title": "Healthy Fusion 100% Creatina Monohidrato en Polvo | Promueve el crecimiento muscular y mejora la resistencia física | Alta solubilidad | 300g | 60 Dosis | sabor sandía",
    "v": []
   },
   "B07TJW59YZ": {
@@ -2152,10 +2163,7 @@
    "v": []
   }
  },
- "problem": {
-  "fails": 1,
-  "last": "HTTP 503"
- },
+ "problem": {},
  "rejected": {
   "B00NFDPXRO": {
    "t": "2026-11-13T07:35:36.489438+00:00",
@@ -2316,6 +2324,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-13",
-  "n": 15
+  "n": 16
  }
 }
