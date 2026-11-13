@@ -230,3 +230,49 @@ def test_night_is_not_due_when_nothing_is_pending(tmp_path):
     write_cands(tmp_path, [item()])
     crossamz.run(tmp_path, lambda t: [], lambda a: "", ref_none, NOW, sleep=lambda s: None)
     assert not crossamz.night_due(tmp_path, NOW + timedelta(hours=1))
+
+
+def test_page_price_other_layouts():
+    split = ('<div id="corePriceDisplay_desktop_feature_div"><span class="a-price"><span class="a-offscreen"></span>'
+             '<span class="a-price-whole">1.299<span class="a-price-decimal">,</span></span>'
+             '<span class="a-price-fraction">90</span></span></div>')
+    assert crossamz.page_price(split) == (1299.9, True)
+    assert crossamz.page_price('<span class="priceToPay"><span class="a-offscreen">89,99 €</span></span>') == (89.99, True)
+    assert crossamz.page_price('<input type="hidden" id="twister-plus-price-data-price" value="249.0">') == (249.0, True)
+
+
+def test_missing_price_leaves_a_hint_and_is_rechecked_sooner(tmp_path):
+    write_cands(tmp_path, [item()])
+    html = '<html><div id="availability">En stock</div><p>Ver todas las opciones de compra</p></html>'
+    fake = Fake({"0840006667278": [P("B0CORSAIR1", "Corsair K65 Plus Wireless Teclado")]}, {"B0CORSAIR1": html})
+    crossamz.run(tmp_path, fake.search, fake.page, ref_none, NOW, sleep=lambda s: None)
+    e = crossamz.load(tmp_path / crossamz.FILE)["items"]["1"]
+    assert e["veredicto"] == "sin_precio" and "sin vendedor destacado" in e["pista"]
+    data = crossamz.load(tmp_path / crossamz.FILE)
+    assert not crossamz.due(data, item(), NOW + timedelta(hours=5))
+    assert crossamz.due(data, item(), NOW + timedelta(hours=6))
+
+
+ACER = "Acer AOPEN QH12a 720p HD Ready 135 lúmenes ANSI LED Azul Bluetooth altavoz 3W Proyector"
+
+
+def test_strong_model_code_replaces_the_brand():
+    assert crossamz.strong_models(ACER) == {"qh12a"}
+    title = "Proyector portátil AOPEN QH12a 1280x720, 135 lúmenes, Entrada HDMI, Bluetooth, altavoz 3W"
+    assert crossamz.same_product(ACER, "Acer", title)
+    assert crossamz.same_product(ACER, "Acer", title, strict=True)
+    # sin codigo ni marca no vale
+    assert not crossamz.same_product(ACER, "Acer", "Proyector portátil 1280x720, 135 lúmenes, Bluetooth")
+
+
+def test_model_query():
+    assert crossamz.model_query({"name": ACER, "brand": "Acer"}) == "Acer QH12a"
+    assert crossamz.model_query({"name": "Bose SoundLink Max Azul 20h IP67", "brand": "Bose"}) == ""
+
+
+def test_search_order_is_ean_then_model_then_name(tmp_path):
+    it = item(name=ACER, brand="Acer", ean="4711121768279")
+    write_cands(tmp_path, [it])
+    fake = Fake()
+    crossamz.run(tmp_path, fake.search, fake.page, ref_none, NOW, sleep=lambda s: None)
+    assert fake.searches == ["4711121768279", "Acer QH12a", crossamz.name_query(it)]

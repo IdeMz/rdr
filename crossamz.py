@@ -31,6 +31,7 @@ SOURCE = "powerplanet_candidates.json"
 PER_TICK = 2             # productos cruzados por ejecucion (cada uno: 1-2 busquedas + 1 ficha)
 MAX_REQUESTS = 5         # peticiones a Amazon por ejecucion, como mucho
 RECHECK_DAYS = 2         # un cruce se repite pasado este tiempo (o antes, si cambia el precio de PowerPlanet)
+SIN_PRECIO_HOURS = 6     # una ficha sin precio puede ser algo pasajero: se vuelve a mirar antes
 NOT_FOUND_DAYS = 7       # un EAN que no se encontro se vuelve a buscar pasado este tiempo
 KEEP_DAYS = 14           # cuanto se recuerda un cruce de un producto que ya no es candidato
 NIGHT_PER_TICK = 3       # de noche (fuera del horario de publicacion) se cruzan mas por ejecucion...
@@ -54,6 +55,10 @@ STOP = {
 
 PRICE_SELECTORS = (
     "#corePrice_feature_div .a-price .a-offscreen",
+    "#corePrice_desktop .a-price .a-offscreen",
+    ".priceToPay .a-offscreen",
+    ".apexPriceToPay .a-offscreen",
+    "#corePriceDisplay_desktop_feature_div .aok-offscreen",
     "#corePriceDisplay_desktop_feature_div .a-price .a-offscreen",
     "#apex_desktop .a-price .a-offscreen",
     "#priceblock_dealprice",
@@ -90,6 +95,16 @@ def model_tokens(text: str) -> set[str]:
     return {t for t in tokens(text) if re.search(r"\d", t) and re.search(r"[a-z]", t)}
 
 
+SPEC_RE = re.compile(
+    r"ipx?\d+k?|(?:usb|wifi|bt|g?ddr\d?|lpddr|cl|pcie)\d+[a-z]?|\d+x\d+(?:cm|mm)?"
+    r"|\d+(?:p|w|hz|ghz|mhz|mah|mm|cm|gb|tb|mb|ms|v|l|kg|ml|k|mbs|mbps|th|a|pa|atm|dpi|nits|mp|db|hp|ppm|fps|rpm|km|kmh|g)?")
+
+
+def strong_models(text: str, brand: str = "") -> set[str]:
+    """Codigos de modelo de verdad (qh12a, vx2758a, xs2000): 4+ caracteres y no una especificacion (720p, 3w)."""
+    return {t for t in model_tokens(text) if len(t) >= 4 and not SPEC_RE.fullmatch(t)} - set(tokens(brand))
+
+
 def same_product(pp_name: str, brand: str, amz_title: str, strict: bool = False) -> bool:
     """¿El resultado de Amazon es el mismo producto que el de PowerPlanet?
 
@@ -100,8 +115,9 @@ def same_product(pp_name: str, brand: str, amz_title: str, strict: bool = False)
     amz = set(tokens(amz_title))
     if not amz:
         return False
+    strong = strong_models(pp_name, brand) & amz  # el codigo de modelo vale tanto como la marca (Acer vende como AOPEN)
     brand_toks = tokens(brand)[:1]  # "Kingston Technology" -> "kingston"
-    if brand_toks and brand_toks[0] not in amz:
+    if brand_toks and brand_toks[0] not in amz and not strong:
         return False
     pp = set(tokens(pp_name))
     if (amz & ACCESSORY_WORDS) - pp:
@@ -111,10 +127,22 @@ def same_product(pp_name: str, brand: str, amz_title: str, strict: bool = False)
         return False
     overlap = len(pp & amz) / len(pp) if pp else 0.0
     if strict:
+        if strong:
+            return overlap >= 0.3
         return (not models or len(models & amz) * 2 >= len(models)) and overlap >= 0.5
     if models:
         return bool(models & amz) or overlap >= 0.6
     return overlap >= 0.5
+
+
+def model_query(item: dict) -> str:
+    """Busqueda por marca + codigo de modelo ('Acer QH12a'), o '' si el nombre no trae un codigo claro."""
+    brand_name = item.get("brand") or ""
+    codes = [w for w in re.findall(r"\S+", item.get("name") or "") if strong_models(w, brand_name)]
+    if not codes:
+        return ""
+    brand = (item.get("brand") or "").split()[:1]
+    return " ".join(brand + codes[:2])
 
 
 def name_query(item: dict) -> str:
@@ -142,6 +170,22 @@ def parse_eur(text: str | None) -> float | None:
     return value if value > 0 else None
 
 
+HIDDEN_PRICE_IDS = ("twister-plus-price-data-price", "attach-base-product-price", "priceValue")
+PRICE_BOXES = ("#corePriceDisplay_desktop_feature_div", "#corePrice_feature_div", "#corePrice_desktop", "#apex_desktop")
+NO_BUYBOX_RE = re.compile(r"ver todas las opciones de compra|no hay ofertas destacadas", re.I)
+
+
+def _whole_fraction(box) -> float | None:
+    """Precio partido en '.a-price-whole' + '.a-price-fraction' (cuando '.a-offscreen' viene vacio)."""
+    whole = box.select_one(".a-price-whole")
+    if whole is None:
+        return None
+    frac = box.select_one(".a-price-fraction")
+    digits = re.sub(r"\D", "", whole.get_text())
+    cents = re.sub(r"\D", "", frac.get_text()) if frac else "00"
+    return parse_eur(f"{digits},{cents or '00'}") if digits else None
+
+
 def page_price(html: str) -> tuple[float | None, bool]:
     """(precio actual, disponible) de la ficha."""
     soup = BeautifulSoup(html, "html.parser")
@@ -152,7 +196,33 @@ def page_price(html: str) -> tuple[float | None, bool]:
         price = parse_eur(el.get_text(strip=True)) if el else None
         if price:
             return price, available
+    for box_sel in PRICE_BOXES:
+        box = soup.select_one(box_sel)
+        price = _whole_fraction(box) if box else None
+        if price:
+            return price, available
+    for hid in HIDDEN_PRICE_IDS:  # campos ocultos del formulario de compra: el valor va con punto decimal
+        el = soup.find(id=hid)
+        try:
+            price = float(el.get("value")) if el and el.get("value") else None
+        except ValueError:
+            price = None
+        if price and price > 0:
+            return price, available
     return None, False if avail is None else available
+
+
+def page_hint(html: str) -> str:
+    """Pista corta de por que una ficha no trae precio, para revisarlo en el fichero."""
+    soup = BeautifulSoup(html, "html.parser")
+    avail = soup.select_one("#availability")
+    bits = [f"{len(html)} bytes", f"{len(soup.select('.a-price'))} a-price",
+            "caja de precio" if any(soup.select_one(b) for b in PRICE_BOXES) else "sin caja de precio"]
+    if avail:
+        bits.append("disponibilidad: " + avail.get_text(" ", strip=True)[:60])
+    if NO_BUYBOX_RE.search(soup.get_text(" ", strip=True)):
+        bits.append("sin vendedor destacado")
+    return "; ".join(bits)
 
 
 # --------------------------------------------------------------------------
@@ -233,7 +303,8 @@ def due(data: dict, item: dict, now: datetime) -> bool:
     if old.get("pp_price") != item.get("price"):
         return True
     t = _ts(old.get("t"))
-    return t is None or now - t >= timedelta(days=RECHECK_DAYS)
+    wait = timedelta(hours=SIN_PRECIO_HOURS) if old.get("veredicto") == "sin_precio" else timedelta(days=RECHECK_DAYS)
+    return t is None or now - t >= wait
 
 
 def prune(data: dict, live: set[str], now: datetime) -> None:
@@ -269,7 +340,8 @@ def find_asin(data: dict, item: dict, search, now: datetime, spend) -> tuple[str
         if known.get("a") or (t and now - t < timedelta(days=NOT_FOUND_DAYS)):
             return known.get("a", ""), known.get("via", "ean"), None
     name, brand = item.get("name") or "", item.get("brand") or ""
-    for via, query, strict in (("ean", ean, False), ("nombre", name_query(item), True)):
+    queries = (("ean", ean, False), ("modelo", model_query(item), True), ("nombre", name_query(item), True))
+    for via, query, strict in queries:
         if not query:
             continue
         spend()
@@ -290,7 +362,7 @@ def cross_one(data: dict, list_name: str, item: dict, search, page, reference, n
     entry = {"t": now.isoformat(), "lista": list_name, "name": (item.get("name") or "")[:160], "ean": str(item["ean"]),
              "pp_price": item.get("price"), "pp_median": item.get("median"), "pp_drop": item.get("drop")}
     if not asin:
-        entry.update(veredicto="no_esta", motivo="no se encuentra en Amazon por EAN ni por nombre")
+        entry.update(veredicto="no_esta", motivo="no se encuentra en Amazon por EAN, modelo ni nombre")
         return entry
     spend()
     html = page(asin)
@@ -298,6 +370,8 @@ def cross_one(data: dict, list_name: str, item: dict, search, page, reference, n
     if price is None and available:
         price = search_price
     ref = reference(html) or {}
+    if price is None:
+        entry["pista"] = page_hint(html)
     entry.update(asin=asin, encontrado_por=via, amz_title=data["ean_asin"].get(str(item["ean"]), {}).get("title", ""),
                  amz_price=price if available else None, amz_low30=ref.get("low30"), amz_median=ref.get("median"),
                  disponible=available)
