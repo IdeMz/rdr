@@ -2562,3 +2562,176 @@ def test_cross_amazon_fixes_the_location_on_a_fresh_session(tmp_path, monkeypatc
     assert located == ["28001"]
     data = crossamz.load(tmp_path / crossamz.FILE)
     assert data["items"]["1"]["veredicto"] == "no_esta" and data["night_at"]
+
+
+# ------------------------------------------------- publicacion a mano por privado
+
+LISTING = """<html><span id="productTitle"> Auriculares Zeta Pro inalámbricos </span>
+<div id="availability">En stock</div>
+<div id="corePriceDisplay_desktop_feature_div">
+ <span class="a-price"><span class="a-offscreen">59,99 €</span></span>
+ <span class="basisPrice">PVPR: <span class="a-price a-text-price"><span class="a-offscreen">99,99 €</span></span></span>
+</div>
+<span id="acrPopover" title="4,6 de 5 estrellas"></span><span id="acrCustomerReviewText">2.345 valoraciones</span>
+<img id="landingImage" data-old-hires="https://m.media-amazon.com/images/I/zeta._SL1500_.jpg" src="x.jpg">
+</html>"""
+
+
+@pytest.mark.parametrize("text,expected", [
+    ("mira https://www.amazon.es/Auriculares-Zeta/dp/B0CT8W3Y29?ref=abc", "B0CT8W3Y29"),
+    ("https://www.amazon.es/gp/product/B0CT8W3Y29/", "B0CT8W3Y29"),
+    ("b0ct8w3y29", "B0CT8W3Y29"),
+    ("hola", None),
+])
+def test_asin_in_text(text, expected):
+    assert deals.asin_in_text(text) == expected
+
+
+def test_short_links_are_followed():
+    class S:
+        def get(self, url, **kw):
+            return type("R", (), {"url": "https://www.amazon.es/dp/B0CT8W3Y29?th=1"})()
+    assert deals.asin_in_text("https://amzn.eu/d/abc123", S()) == "B0CT8W3Y29"
+
+
+def test_parse_listing():
+    p = deals.parse_listing(LISTING, "B0CT8W3Y29")
+    assert (p.title, p.price, p.old_price, p.discount) == ("Auriculares Zeta Pro inalámbricos", 59.99, 99.99, 40)
+    assert p.rating == 4.6 and p.reviews == 2345 and p.image.endswith("_SL1500_.jpg")
+    assert deals.parse_listing("<html><span id='productTitle'>X</span></html>", "B0CT8W3Y29") is None
+
+
+def manual_env(monkeypatch, html=LISTING):
+    tg = offer_env(monkeypatch)
+    monkeypatch.setattr(deals, "fetch", lambda session, url, retries=3: html)
+    return tg
+
+
+def message(tg, text, chat="777"):
+    tg.updates.append({"update_id": 500 + len(tg.calls), "message": {"message_id": 9, "chat": {"id": int(chat)},
+                                                                     "text": text}})
+
+
+def test_link_by_private_message_gets_a_preview_then_publishes(tmp_path, monkeypatch):
+    tg = manual_env(monkeypatch)
+    ch = channel(name="concriterio", require_spain=False)
+    path = tmp_path / "concriterio.json"
+    message(tg, "https://www.amazon.es/dp/B0CT8W3Y29")
+    state = {}
+    deals.process_votes(ch, path, state, "tag-21", NOW_IN)
+    previews = tg.of("sendPhoto")
+    assert len(previews) == 1 and previews[0]["chat_id"] == "777" and "Vista previa" in previews[0]["caption"]
+    assert "mpub:B0CT8W3Y29" in previews[0]["reply_markup"]
+    assert "tag=tag-21" in previews[0]["caption"]
+    sent = []
+    monkeypatch.setattr(deals, "send_deal", lambda *a: sent.append(a) or 4321)
+    press(tg, "B0CT8W3Y29", "mpub")
+    deals.process_votes(ch, path, state, "tag-21", NOW_IN + timedelta(minutes=5))
+    saved = json.loads(path.read_text())
+    assert len(sent) == 1 and sent[0][1] == "@canal" and "59,99" in sent[0][2]
+    assert saved["posted"]["B0CT8W3Y29"]["manual"] is True and saved["posted"]["B0CT8W3Y29"]["m"] == 4321
+    assert saved["manual"] == {}
+    assert any(d.get("text") == "Publicada ✅" for d in tg.of("answerCallbackQuery"))
+
+
+def test_messages_from_other_chats_are_ignored(tmp_path, monkeypatch):
+    tg = manual_env(monkeypatch)
+    message(tg, "https://www.amazon.es/dp/B0CT8W3Y29", chat="12345")
+    deals.process_votes(channel(name="concriterio", require_spain=False), tmp_path / "c.json", {}, "tag-21", NOW_IN)
+    assert tg.of("sendPhoto") == [] and tg.of("sendMessage") == []
+
+
+def test_message_without_product_gets_help(tmp_path, monkeypatch):
+    tg = manual_env(monkeypatch)
+    message(tg, "/start")
+    deals.process_votes(channel(name="concriterio", require_spain=False), tmp_path / "c.json", {}, "tag-21", NOW_IN)
+    assert "enlace de Amazon" in tg.of("sendMessage")[0]["text"]
+
+
+def test_discard_and_expired_preview(tmp_path, monkeypatch):
+    tg = manual_env(monkeypatch)
+    ch, path = channel(name="concriterio", require_spain=False), tmp_path / "c.json"
+    message(tg, "B0CT8W3Y29")
+    deals.process_votes(ch, path, {}, "tag-21", NOW_IN)
+    press(tg, "B0CT8W3Y29", "mno")
+    deals.process_votes(ch, path, {}, "tag-21", NOW_IN + timedelta(minutes=1))
+    assert any(d.get("text") == "Descartada" for d in tg.of("answerCallbackQuery"))
+    message(tg, "B0CT8W3Y29")
+    deals.process_votes(ch, path, {}, "tag-21", NOW_IN + timedelta(minutes=2))
+    press(tg, "B0CT8W3Y29", "mpub")
+    deals.process_votes(ch, path, {}, "tag-21", NOW_IN + timedelta(hours=7))
+    assert any(d.get("text") == "Caducada" for d in tg.of("answerCallbackQuery"))
+    assert "B0CT8W3Y29" not in json.loads(path.read_text()).get("posted", {})
+
+
+def test_amazon_down_tells_you_to_retry(tmp_path, monkeypatch):
+    tg = manual_env(monkeypatch)
+
+    def blocked(session, url, retries=3):
+        raise deals.Blocked("HTTP 503")
+    monkeypatch.setattr(deals, "fetch", blocked)
+    message(tg, "B0CT8W3Y29")
+    deals.process_votes(channel(name="concriterio", require_spain=False), tmp_path / "c.json", {}, "tag-21", NOW_IN)
+    assert "Amazon no responde" in tg.of("sendMessage")[0]["text"]
+
+
+def test_already_published_is_warned_in_the_preview(tmp_path, monkeypatch):
+    tg = manual_env(monkeypatch)
+    message(tg, "B0CT8W3Y29")
+    state = {"B0CT8W3Y29": {"t": NOW_IN.isoformat(), "title": "x", "p": 1, "d": 1, "m": 1, "v": []}}
+    deals.process_votes(channel(name="concriterio", require_spain=False), tmp_path / "c.json", state, "tag-21", NOW_IN)
+    assert "Ya se publicó" in tg.of("sendPhoto")[0]["caption"]
+
+
+def test_powerplanet_link_preview_and_publish(tmp_path, monkeypatch):
+    import feed as feedmod
+    tg = manual_env(monkeypatch)
+    monkeypatch.setenv("AWIN_FEED_URL", "https://feed.example/clave")
+    csv_text = ("aw_product_id,product_name,search_price,rrp_price,aw_deep_link,merchant_image_url,condition,in_stock\n"
+                "45948306775,SanDisk Extreme Portable V2 2TB NVMe SSD externo,266.95,791.64,"
+                "https://www.awin1.com/pclick.php?p=45948306775,https://www.powerplanetonline.com/i.webp,new,1\n")
+    monkeypatch.setattr(feedmod, "download", lambda url, attempts=3: csv_text.encode())
+
+    class Resp:
+        status_code, text = 404, ""
+    monkeypatch.setattr(deals.requests, "get", lambda *a, **k: Resp())
+    ch, path = channel(name="concriterio", require_spain=False), tmp_path / "concriterio.json"
+    message(tg, "https://www.powerplanetonline.com/es/ssd-sandisk-extreme-portable-v2-2tb-azul")
+    state = {}
+    deals.process_votes(ch, path, state, "tag-21", NOW_IN)
+    prev = tg.of("sendPhoto")[0]
+    assert "Ver en PowerPlanet" in prev["caption"] and "awin1.com/pclick.php?p=45948306775" in prev["caption"]
+    assert "#publicidad" in prev["caption"] and "tag=tag-21" not in prev["caption"]
+    assert "mpub:pp:45948306775" in prev["reply_markup"]
+    sent = []
+    monkeypatch.setattr(deals, "send_deal", lambda *a: sent.append(a) or 77)
+    press(tg, "pp:45948306775", "mpub")
+    deals.process_votes(ch, path, state, "tag-21", NOW_IN + timedelta(minutes=5))
+    post = json.loads(path.read_text())["posted"]["pp:45948306775"]
+    assert post["u"].startswith("https://www.awin1.com/") and post["st"] == "POWERPLANET"
+    assert "VER EN POWERPLANET" in json.dumps(sent[0][5], ensure_ascii=False)
+    summary = deals.summary_messages([("pp:45948306775", post)], NOW_IN.date(), "tag-21")[0]
+    assert "awin1.com" in summary and "amazon" not in summary
+
+
+def test_aliexpress_link_uses_the_api(tmp_path, monkeypatch):
+    import aliexpress
+    tg = manual_env(monkeypatch)
+    for name in ("ALIEXPRESS_APP_KEY", "ALIEXPRESS_APP_SECRET", "ALIEXPRESS_TRACKING_ID"):
+        monkeypatch.setenv(name, "x" + name)
+    asked = []
+
+    def fake_call(method, params, key, secret, **kw):
+        asked.append((method, params["product_ids"]))
+        return {"resp_result": {"result": {"products": {"product": [{
+            "product_id": 33039312461, "product_title": "Luz LED nocturna de búho", "target_sale_price": "14.19",
+            "target_original_price": "29.90", "promotion_link": "https://s.click.aliexpress.com/e/_abc",
+            "product_main_image_url": "https://ae-pic-a1.aliexpress-media.com/kf/a.jpg", "evaluate_rate": "99.3%",
+            "lastest_volume": "384", "shop_id": "5046292", "shop_name": "STARNIGHT Official Store"}]}}}}
+    monkeypatch.setattr(aliexpress, "call", fake_call)
+    message(tg, "https://es.aliexpress.com/item/33039312461.html?spm=abc")
+    deals.process_votes(channel(name="concriterio", require_spain=False), tmp_path / "concriterio.json", {}, "t", NOW_IN)
+    assert asked == [(aliexpress.DETAIL_METHOD, "33039312461")]
+    prev = tg.of("sendPhoto")[0]
+    assert "Ver en AliExpress" in prev["caption"] and "s.click.aliexpress.com/e/_abc" in prev["caption"]
+    assert "Europa" in prev["caption"] and "mpub:ae:33039312461" in prev["reply_markup"]

@@ -38,6 +38,7 @@ import feed
 import aliexpress
 import review
 import crossamz
+import manual
 import pricehist
 
 ROOT = Path(__file__).resolve().parent
@@ -47,7 +48,8 @@ TELEGRAM_API = "https://api.telegram.org"
 PHOTO_SIZE = 1200  # lado del cuadrado: con fotos siempre cuadradas, todos los posts miden igual de ancho
 PHOTO_MARGIN = 40  # aire alrededor del producto, en pixeles
 MAX_IMAGE_BYTES = 12 * 1024 * 1024
-IMAGE_HOST_SUFFIXES = (".media-amazon.com", ".ssl-images-amazon.com")
+IMAGE_HOST_SUFFIXES = (".media-amazon.com", ".ssl-images-amazon.com",  # y las de PowerPlanet/AliExpress (a mano)
+                       ".powerplanetonline.com", ".aliexpress-media.com", ".alicdn.com", ".productserve.com")
 
 _ACCEPT_HTML = "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
 
@@ -468,6 +470,8 @@ class Product:
     image: str | None = None
     sponsored: bool = False
     via: str = ""  # de donde salio: "busqueda", "ofertas" (solo en la busqueda de Ofertas) o "ambas"
+    url: str = ""    # enlace de afiliado ya hecho (PowerPlanet, AliExpress); vacio = Amazon con el tag
+    store: str = ""  # tienda (POWERPLANET, ALIEXPRESS); vacio = la del canal (Amazon)
 
     @property
     def discount(self) -> int:
@@ -1354,6 +1358,9 @@ def prepare_image(url: str | None) -> bytes | None:
         return None
 
 
+STORE_NAMES = {"POWERPLANET": "PowerPlanet", "ALIEXPRESS": "AliExpress"}
+
+
 def build_caption(p: Product, url: str, ch: Channel, category: dict | None = None) -> str:
     title = p.title if len(p.title) <= 110 else p.title[:107].rstrip() + "…"
     lines = []
@@ -1373,9 +1380,13 @@ def build_caption(p: Product, url: str, ch: Channel, category: dict | None = Non
         if p.reviews:
             rating_line += f" · {p.reviews:,}".replace(",", ".") + " valoraciones"
         lines.append(rating_line)
-    lines += ["", f'👉 <a href="{escape(url, quote=True)}">Ver en Amazon</a>']
-    if ch.store:
-        lines += ["", f"🌐 {escape(ch.store)}"]
+    store = p.store or ch.store
+    shop = STORE_NAMES.get(p.store, "Amazon")
+    lines += ["", f'👉 <a href="{escape(p.url or url, quote=True)}">Ver en {shop}</a>']
+    if store:
+        lines += ["", f"🌐 {escape(store)}"]
+    if p.store:  # Awin y AliExpress piden marcar la publicidad
+        lines += ["", "#publicidad"]
     if ch.footer:
         lines += ["", f"<i>{escape(ch.footer)}</i>"]
     return "\n".join(lines)
@@ -1465,7 +1476,8 @@ def send_deal(
     return message_id(tg_call("sendMessage", token, text))
 
 
-def build_keyboard(ch: Channel, asin: str, tag: str | None, likes: int = 0) -> dict:
+def build_keyboard(ch: Channel, asin: str, tag: str | None, likes: int = 0, url: str | None = None,
+                   store: str | None = None) -> dict:
     """Botones bajo el mensaje: [👍 N] [tu web] y debajo [VER EN <TIENDA>]."""
     rows = []
     first = []
@@ -1476,7 +1488,8 @@ def build_keyboard(ch: Channel, asin: str, tag: str | None, likes: int = 0) -> d
         first.append({"text": label, "url": ch.website_url})
     if first:
         rows.append(first)
-    rows.append([{"text": f"VER EN {ch.store}" if ch.store else "VER OFERTA", "url": affiliate_url(asin, tag)}])
+    shop = store or ch.store
+    rows.append([{"text": f"VER EN {shop}" if shop else "VER OFERTA", "url": url or affiliate_url(asin, tag)}])
     return {"inline_keyboard": rows}
 
 
@@ -1568,7 +1581,7 @@ def maybe_send_x_copy(
     sent_today = counter.get("n", 0) if isinstance(counter, dict) and counter.get("day") == day else 0
     if sent_today >= ch.x_max_per_day:
         return False
-    text = build_x_text(p, affiliate_url(p.asin, tag), ch, cat)
+    text = build_x_text(p, p.url or affiliate_url(p.asin, tag), ch, cat)
     link = x_intent_url(text) if ch.x_button else None
     markup = {"inline_keyboard": [[{"text": "𝕏 Abrir en X con el texto", "url": link}]]} if link else None
     how = (
@@ -1600,14 +1613,14 @@ def product_to_dict(p: Product, cat: dict | None, now: datetime) -> dict:
     return {
         "a": p.asin, "title": p.title[:200], "p": p.price, "op": p.old_price, "r": p.rating,
         "n": p.reviews, "img": p.image, "c": (cat or {}).get("nombre", ""), "e": (cat or {}).get("emoji", ""),
-        "t": now.isoformat(),
+        "t": now.isoformat(), **({"u": p.url, "st": p.store} if p.url else {}),
     }
 
 
 def product_from_dict(d: dict) -> Product:
     return Product(
         asin=d["a"], title=d.get("title", ""), price=d.get("p"), old_price=d.get("op"),
-        rating=d.get("r"), reviews=d.get("n"), image=d.get("img"),
+        rating=d.get("r"), reviews=d.get("n"), image=d.get("img"), url=d.get("u", ""), store=d.get("st", ""),
     )
 
 
@@ -1844,6 +1857,272 @@ def send_reviews(ch: Channel, state_dir: Path, now: datetime) -> int:
     return sent
 
 
+# --------------------------------------------------------------------------
+# Publicacion a mano: le mandas al bot un enlace de Amazon por privado
+# --------------------------------------------------------------------------
+
+MANUAL_HOURS = 6         # una vista previa sin contestar caduca (el precio puede haber cambiado)
+MANUAL_PER_TICK = 3      # enlaces atendidos por ejecucion, como mucho
+ASIN_RE = re.compile(r"/(?:dp|gp/product|gp/aw/d|product)/([A-Z0-9]{10})(?=[/?#&]|$)", re.I)
+BARE_ASIN_RE = re.compile(r"(?<![A-Z0-9])(B0[A-Z0-9]{8})(?![A-Z0-9])")
+SHORT_LINK_RE = re.compile(r"https?://(?:www\.)?(?:amzn\.(?:eu|to)|a\.co)/\S+", re.I)
+MANUAL_HELP = ("Mándame un enlace de Amazon.es (también vale el corto amzn.eu o un ASIN B0…), de PowerPlanet "
+               "o de AliExpress y te devuelvo una vista previa con el botón para publicarlo en el canal.")
+OLD_PRICE_SELECTORS = (
+    "#corePriceDisplay_desktop_feature_div .basisPrice .a-offscreen",
+    "#corePriceDisplay_desktop_feature_div .a-text-price .a-offscreen",
+    "#corePrice_feature_div .a-text-price .a-offscreen",
+    "#corePrice_desktop .a-text-price .a-offscreen",
+    ".basisPrice .a-offscreen",
+)
+
+
+def asin_in_text(text: str, session: requests.Session | None = None) -> str | None:
+    """ASIN de un enlace de Amazon o escrito suelto. Los enlaces cortos (amzn.eu) se siguen hasta la ficha."""
+    m = ASIN_RE.search(text or "")
+    if m:
+        return m.group(1).upper()
+    m = BARE_ASIN_RE.search((text or "").upper())
+    if m:
+        return m.group(1)
+    m = SHORT_LINK_RE.search(text or "")
+    if m and session is not None:
+        try:
+            r = session.get(m.group(0), timeout=20, allow_redirects=True)
+        except requests.RequestException:
+            return None
+        m2 = ASIN_RE.search(getattr(r, "url", "") or "")
+        return m2.group(1).upper() if m2 else None
+    return None
+
+
+def parse_listing(html: str, asin: str) -> Product | None:
+    """Producto a partir de su ficha (titulo, precio, PVPR, valoracion, foto), o None si falta titulo o precio."""
+    soup = BeautifulSoup(html, "html.parser")
+    title = _text(soup.select_one("#productTitle"))
+    price, available = crossamz.page_price(html)
+    if not title or not price or not available:
+        return None
+    old = None
+    for sel in OLD_PRICE_SELECTORS:
+        value = parse_price(_text(soup.select_one(sel)))
+        if value and value > price:
+            old = value
+            break
+    rating_el = soup.select_one("#acrPopover")
+    rating = parse_rating(rating_el.get("title") if rating_el and rating_el.get("title") else
+                          _text(soup.select_one("#averageCustomerReviews span.a-icon-alt")))
+    reviews = parse_count(_text(soup.select_one("#acrCustomerReviewText")))
+    img = soup.select_one("#landingImage") or soup.select_one("#imgBlkFront")
+    image = None
+    if img is not None:
+        image = img.get("data-old-hires") or None
+        if not image and img.get("data-a-dynamic-image"):
+            try:
+                image = next(iter(json.loads(img["data-a-dynamic-image"])), None)
+            except ValueError:
+                image = None
+        image = image or img.get("src")
+    return Product(asin=asin, title=title, price=price, old_price=old, rating=rating, reviews=reviews, image=image)
+
+
+def manual_keyboard(asin: str) -> dict:
+    return {"inline_keyboard": [
+        [{"text": "✅ Publicar en el canal", "callback_data": f"mpub:{asin}"}],
+        [{"text": "❌ Descartar", "callback_data": f"mno:{asin}"}],
+    ]}
+
+
+def _manual_items(state_path: Path, now: datetime) -> dict:
+    raw = _read_state_file(state_path).get("manual")
+    if not isinstance(raw, dict):
+        return {}
+    cutoff = now - timedelta(hours=MANUAL_HOURS)
+    return {a: d for a, d in raw.items() if isinstance(d, dict) and _ts(d) > cutoff}
+
+
+def _tell(ch: Channel, text: str) -> None:
+    token, chat = get_secret(ch.token_env), get_secret(ch.alert_chat_env)
+    if token and chat:
+        try:
+            tg_call("sendMessage", token, {"chat_id": chat, "text": text, "parse_mode": "HTML"}, retries=0)
+        except TelegramError:
+            pass
+
+
+def handle_manual_request(ch: Channel, state_path: Path, state: dict, text: str, tag: str | None,
+                          now: datetime, session: requests.Session) -> str:
+    """Un mensaje tuyo con un enlace: te manda la vista previa con botones. Devuelve una frase para el log."""
+    stripped = (text or "").strip()
+    store, link = manual.detect(stripped)
+    if store:
+        found = other_store_product(ch, state_path, store, link, now, session)
+        if isinstance(found, str):
+            _tell(ch, found)
+            return f"{store}: {found[:60]}"
+        p, info = found
+        return send_preview(ch, state_path, state, p, info, tag, now)
+    asin = asin_in_text(stripped, session)
+    if not asin:
+        _tell(ch, MANUAL_HELP if stripped.startswith("/") or not stripped
+              else "No encuentro ningún producto de Amazon en ese mensaje. " + MANUAL_HELP)
+        return "sin ASIN"
+    try:
+        html = amazon_getter(session, ch)(f"{BASE}/dp/{asin}")
+    except (Blocked, LocationError) as exc:
+        _tell(ch, f"Amazon no responde ahora mismo ({escape(str(exc))}). Vuelve a mandarme {asin} en unos minutos.")
+        return f"{asin}: Amazon no responde"
+    p = parse_listing(html, asin)
+    if p is None:
+        _tell(ch, f"No he podido leer el título o el precio de {asin} (puede que no esté disponible o no tenga "
+                  "vendedor destacado).")
+        return f"{asin}: ficha sin precio"
+    return send_preview(ch, state_path, state, p, [], tag, now)
+
+
+def send_preview(ch: Channel, state_path: Path, state: dict, p: Product, info: list[str], tag: str | None,
+                 now: datetime) -> str:
+    """Te manda por privado el mensaje tal y como saldria, con avisos arriba y los botones Publicar/Descartar."""
+    key = p.asin
+    warn = "".join(f"\n{escape(line)}" for line in info)
+    if key in state:
+        when = _ts(state[key]).astimezone(ZoneInfo(ch.timezone)).strftime("%d/%m %H:%M")
+        warn += f"\n⚠️ Ya se publicó el {when}."
+    if not p.discount:
+        warn += "\nℹ️ No hay precio anterior: saldrá sin descuento."
+    caption = f"👀 <b>Vista previa</b>{warn}\n\n" + build_caption(p, affiliate_url(p.asin, tag), ch)
+    if len(caption) > 1024:  # pie de foto de Telegram: se recortan los avisos, nunca el mensaje
+        caption = "👀 <b>Vista previa</b>\n\n" + build_caption(p, affiliate_url(p.asin, tag), ch)
+    token, chat = get_secret(ch.token_env), get_secret(ch.alert_chat_env)
+    photo_url = full_size_image(p.image) if not p.store else p.image
+    try:
+        msg_id = send_deal(token, chat, caption, None, photo_url, manual_keyboard(key))
+    except TelegramError as exc:
+        log.warning("%s: no se pudo enviar la vista previa de %s (%s)", ch.name, key, exc)
+        return f"{key}: vista previa no enviada"
+    items = _manual_items(state_path, now)
+    items[key] = {**product_to_dict(p, None, now), "m": msg_id}
+    set_state_key(state_path, "manual", items)
+    return f"{key}: vista previa enviada ({fmt_eur(p.price)}, -{p.discount}%)"
+
+
+PAGE_HEADERS = {"User-Agent": HEADER_PROFILES[0]["User-Agent"], "Accept": _ACCEPT_HTML,
+                "Accept-Language": "es-ES,es;q=0.9"}
+
+
+def other_store_product(ch: Channel, state_path: Path, store: str, link: str, now: datetime,
+                        session: requests.Session) -> tuple[Product, list[str]] | str:
+    """(producto, avisos) de un enlace de PowerPlanet o AliExpress, o un texto con el motivo si no se puede."""
+    try:
+        local = now.astimezone(ZoneInfo(ch.timezone))
+    except ZoneInfoNotFoundError:
+        local = now
+    if store == "powerplanet":
+        url = get_secret(feed.FEED_ENV)
+        if not url:
+            return "Falta el secreto AWIN_FEED_URL: no puedo buscar el producto en el feed de PowerPlanet."
+        page: dict = {}
+        try:
+            r = requests.get(link, timeout=20, headers=PAGE_HEADERS)
+            if r.status_code == 200:
+                page = manual.parse_pp_page(r.text)
+        except requests.RequestException:
+            pass
+        try:
+            rows = [r for r in feed.read_rows(feed.download(url, attempts=2)) if feed.row_usable(r)]
+        except Exception as exc:  # sin detalles: el error podria llevar la URL con la clave
+            return f"No he podido descargar el feed de PowerPlanet ({type(exc).__name__}). Prueba en unos minutos."
+        hist = feed.load_history(state_path.parent / "feed_powerplanet.json")
+        found, info = manual.pp_item(rows, link, page, None, local.date())
+        if found is None:
+            return info[0]
+        entry = hist.get("p", {}).get(found["key"][3:])
+        line = manual.pp_history_line(entry, local.date())
+        if line:
+            info.insert(1, "📈 " + line[0].upper() + line[1:])
+    else:
+        creds = tuple((get_secret(n) or "").strip()
+                      for n in (aliexpress.ENV_KEY, aliexpress.ENV_SECRET, aliexpress.ENV_TRACKING))
+        if not all(creds):
+            return "Faltan los secretos de AliExpress: no puedo consultar el producto."
+        for value in creds[:2]:
+            register_secret(value)
+        pid = manual.ae_id(link)
+        if pid is None and manual.is_ae_short(link):
+            try:
+                r = session.get(link, timeout=20, allow_redirects=True)
+                pid = manual.ae_id(getattr(r, "url", "") or "")
+            except requests.RequestException:
+                pid = None
+        if pid is None:
+            return "No encuentro el número de producto en ese enlace de AliExpress."
+        key, secret, tracking = creds
+        params = {"product_ids": pid, "country": "ES", "target_currency": "EUR", "target_language": "ES",
+                  "tracking_id": tracking}
+        try:
+            products = aliexpress.find_products(aliexpress.call(aliexpress.DETAIL_METHOD, params, key, secret))
+        except Exception as exc:
+            return f"La API de AliExpress no ha respondido ({type(exc).__name__}). Prueba en unos minutos."
+        api_item = next((x for x in map(aliexpress.item_from, products) if x), None)
+        if api_item is None:
+            return f"AliExpress no devuelve el producto {pid} (puede que no esté en el programa de afiliados)."
+        rv = review.load(state_path.parent / review.FILE)
+        found, info = manual.ae_item(api_item, rv.get("trusted", {}), rv.get("blocked", {}))
+        if "s.click.aliexpress.com" not in found["url"]:
+            info.append("⚠️ La API no ha dado enlace de afiliado: revisa el enlace antes de publicar.")
+    p = Product(asin=found["key"], title=found["title"], price=found["price"], old_price=found["old"],
+                rating=found["rating"], reviews=found["reviews"], image=found["image"], url=found["url"],
+                store=found["store"])
+    return p, info
+
+
+def handle_manual_action(ch: Channel, state_path: Path, state: dict, action: str, asin: str, tag: str | None,
+                         now: datetime, msg: dict) -> str:
+    """Boton de la vista previa: 'mpub' publica en el canal, 'mno' la descarta. Devuelve la respuesta al toque."""
+    token, chat_id, alert_chat = get_secret(ch.token_env), get_secret(ch.chat_env), get_secret(ch.alert_chat_env)
+    items = _manual_items(state_path, now)
+    item = items.pop(asin, None)
+    set_state_key(state_path, "manual", items)
+    if token and alert_chat and msg.get("message_id"):  # fuera botones, para no pulsar dos veces
+        try:
+            tg_call("editMessageReplyMarkup", token, {"chat_id": alert_chat, "message_id": msg["message_id"],
+                                                      "reply_markup": json.dumps({"inline_keyboard": []})}, retries=0)
+        except TelegramError:
+            pass
+    if item is None:
+        _tell(ch, f"La vista previa de {asin} ha caducado (más de {MANUAL_HOURS} h). Vuelve a mandarme el enlace.")
+        return "Caducada"
+    if action == "mno":
+        return "Descartada"
+    p = product_from_dict(item)
+    photo_url = full_size_image(p.image)
+    photo = prepare_image(photo_url)
+    try:
+        msg_id = send_deal(token, chat_id, build_caption(p, affiliate_url(p.asin, tag), ch), photo, photo_url,
+                           build_keyboard(ch, p.asin, tag, url=p.url or None, store=p.store or None))
+    except TelegramError as exc:
+        if not exc.ambiguous:
+            log.warning("%s: no se pudo publicar %s a mano (%s)", ch.name, asin, exc)
+            items[asin] = item  # se deja para reintentar con otra vista previa
+            set_state_key(state_path, "manual", items)
+            _tell(ch, f"Telegram no dejó publicar {asin}. Vuelve a mandarme el enlace para reintentarlo.")
+            return "No se pudo publicar"
+        msg_id = None
+    state[asin] = {"t": now.isoformat(), "title": p.title[:200], "p": p.price, "d": p.discount, "c": "", "e": "",
+                   "m": msg_id, "v": [], "manual": True}
+    if p.url:
+        state[asin].update(u=p.url, st=p.store)
+    next_post = now + timedelta(minutes=random.uniform(ch.interval_min, ch.interval_max))
+    save_state(state_path, state, next_at=next_post, rejected=load_rejected(state_path, now), cats=load_cats(state_path))
+    log.info("%s: publicada a mano %s", ch.name, asin)
+    note(f"{ch.name}: publicada a mano {asin}")
+    try:
+        maybe_send_x_copy(ch, state_path, p, None, tag, photo, photo_url, now)
+    except Exception as err:
+        log.warning("%s: texto para X: %s", ch.name, type(err).__name__)
+    return "Publicada ✅"
+
+
 def process_votes(
     ch: Channel, state_path: Path, state: dict, tag: str | None, now: datetime | None = None
 ) -> int:
@@ -1857,8 +2136,10 @@ def process_votes(
     offset = raw_offset if isinstance(raw_offset, int) else None
     changed: set[str] = set()
     new_offset = offset
+    manual_chat = get_secret(ch.alert_chat_env) if ch.name == REVIEW_CHANNEL else None
+    requests_in: list[str] = []
     for _ in range(5):  # 100 avisos por llamada
-        data = {"timeout": 0, "limit": 100, "allowed_updates": json.dumps(["callback_query"])}
+        data = {"timeout": 0, "limit": 100, "allowed_updates": json.dumps(["callback_query", "message"])}
         if new_offset is not None:
             data["offset"] = new_offset
         try:
@@ -1870,6 +2151,11 @@ def process_votes(
             break
         for up in updates:
             new_offset = max(new_offset or 0, int(up.get("update_id", 0)) + 1)
+            message = up.get("message")
+            if isinstance(message, dict):  # solo se atiende lo que le escribes tu por privado
+                if manual_chat and str((message.get("chat") or {}).get("id")) == str(manual_chat):
+                    requests_in.append(message.get("text") or message.get("caption") or "")
+                continue
             cq = up.get("callback_query") or {}
             msg = cq.get("message") or {}
             chat = msg.get("chat") or {}
@@ -1877,6 +2163,14 @@ def process_votes(
                 chat.get("username") and f"@{chat['username']}".lower() == str(chat_id).lower()
             )
             cb = cq.get("data") or ""
+            if manual_chat and str(chat.get("id")) == str(manual_chat) and (cb.startswith("mpub:") or cb.startswith("mno:")):
+                action, _, manual_asin = cb.partition(":")
+                reply = handle_manual_action(ch, state_path, state, action, manual_asin, tag, now, msg)
+                try:
+                    tg_call("answerCallbackQuery", token, {"callback_query_id": cq.get("id"), "text": reply}, retries=0)
+                except TelegramError:
+                    pass
+                continue
             review_chat = get_secret(ch.alert_chat_env)
             if review_chat and str(chat.get("id")) == str(review_chat) and cb.startswith("rv:"):
                 reply = handle_review_action(ch, state_path.parent / review.FILE, cb, msg, now)
@@ -1921,12 +2215,22 @@ def process_votes(
             tg_call("editMessageReplyMarkup", token, {
                 "chat_id": chat_id,
                 "message_id": state[asin]["m"],
-                "reply_markup": json.dumps(build_keyboard(ch, asin, tag, len(state[asin].get("v", [])))),
+                "reply_markup": json.dumps(build_keyboard(ch, asin, tag, len(state[asin].get("v", [])),
+                                                          state[asin].get("u"), state[asin].get("st"))),
             }, retries=0)
         except TelegramError as exc:
             log.info("%s: no se pudo actualizar el contador de %s (%s)", ch.name, asin, exc)
     if new_offset is not None and new_offset != offset:
         set_state_key(state_path, "tg_offset", new_offset)
+    if requests_in:
+        session = make_session()
+        for text in requests_in[:MANUAL_PER_TICK]:
+            try:
+                log.info("%s: enlace a mano: %s", ch.name, handle_manual_request(ch, state_path, state, text, tag, now, session))
+            except Exception as exc:  # un enlace raro no debe tumbar la ejecucion
+                log.warning("%s: enlace a mano: %s", ch.name, type(exc).__name__)
+        if len(requests_in) > MANUAL_PER_TICK:
+            _tell(ch, f"Me has mandado {len(requests_in)} mensajes; he atendido {MANUAL_PER_TICK}. Reenvía el resto.")
     if changed:
         set_state_key(state_path, "posted", state)
         log.info("%s: %d mensajes con votos actualizados", ch.name, len(changed))
@@ -2002,7 +2306,7 @@ def summary_messages(entries: list[tuple[str, dict]], day: date, tag: str | None
     for i, (asin, e) in enumerate(entries, 1):
         title = e.get("title", "") or asin
         title = title if len(title) <= 60 else title[:57].rstrip() + "…"
-        link = f'<a href="{escape(affiliate_url(asin, tag), quote=True)}">{escape(title)}</a>'
+        link = f'<a href="{escape(e.get("u") or affiliate_url(asin, tag), quote=True)}">{escape(title)}</a>'
         emoji = f"{e['e']} " if e.get("e") else ""
         price = f" · {fmt_eur(e['p'])}" if e.get("p") else ""
         disc = f" (−{e['d']} %)" if e.get("d") else ""
@@ -2095,7 +2399,7 @@ def run_channel(
 
     offer_waiting = ch.manual_offer and _offer_open(state_path, now, ch)
     review_waiting = review.has_open(review.load(state_dir / review.FILE))
-    if publishing and (ch.vote_button or offer_waiting or review_waiting):
+    if publishing and (ch.vote_button or offer_waiting or review_waiting or ch.name == REVIEW_CHANNEL):
         process_votes(ch, state_path, state, get_secret("AMAZON_TAG"), now)
 
     if publishing and ch.name == REVIEW_CHANNEL:
@@ -2296,11 +2600,8 @@ def run_channel(
     return published
 
 
-def cross_amazon(session: requests.Session, state_dir: Path, now: datetime, ch: Channel | None = None,
-                 night: bool = False) -> None:
-    """Cruza unos pocos candidatos de PowerPlanet con Amazon (modo informe). De dia reutiliza la sesion de la
-    publicacion; de noche es una sesion nueva y la entrega se fija en España con la primera pagina.
-    Nunca debe tumbar la ejecucion."""
+def amazon_getter(session: requests.Session, ch: Channel | None):
+    """get(url) -> html que, la primera vez, fija la entrega en España si la pagina no la muestra."""
     located = not (ch and ch.require_spain)
 
     def get(url: str) -> str:
@@ -2314,6 +2615,15 @@ def cross_amazon(session: requests.Session, state_dir: Path, now: datetime, ch: 
                 raise LocationError("la pagina sigue sin mostrar España")
         located = True
         return html
+    return get
+
+
+def cross_amazon(session: requests.Session, state_dir: Path, now: datetime, ch: Channel | None = None,
+                 night: bool = False) -> None:
+    """Cruza unos pocos candidatos de PowerPlanet con Amazon (modo informe). De dia reutiliza la sesion de la
+    publicacion; de noche es una sesion nueva y la entrega se fija en España con la primera pagina.
+    Nunca debe tumbar la ejecucion."""
+    get = amazon_getter(session, ch)
 
     def search(text: str) -> list[Product]:
         html = get(f"{BASE}/s?k={quote_plus(text)}")
