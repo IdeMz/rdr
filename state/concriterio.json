@@ -3,7 +3,7 @@
   "Accesorios de coche": "2026-11-12T14:05:45.520815+00:00",
   "Afeitado y depilación": "2026-11-10T17:05:37.721123+00:00",
   "Almacenamiento": "2026-11-12T08:10:49.385821+00:00",
-  "Altavoces": "2026-11-12T07:35:38.163573+00:00",
+  "Altavoces": "2026-11-13T08:10:39.209090+00:00",
   "Aspiradoras": "2026-11-12T10:35:36.602474+00:00",
   "Auriculares": "2026-11-12T12:20:44.296151+00:00",
   "Cafeteras": "2026-11-12T08:45:45.168399+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-12T21:40:51.544407+00:00",
   "Zapatillas": "2026-11-12T11:45:43.028763+00:00"
  },
- "next_at": "2026-11-13T08:06:32.779161+00:00",
+ "next_at": "2026-11-13T08:45:07.697984+00:00",
  "offer": {
   "a": "B09VN62HF3",
   "m": 193,
@@ -1007,6 +1007,17 @@
    "p": 39.99,
    "t": "2026-11-07T13:35:29.080896+00:00",
    "title": "Anker Power bank 20.000 mAh 87 W con cable USB C integrado",
+   "v": []
+  },
+  "B0D1CSN1QR": {
+   "c": "Altavoces",
+   "d": 28,
+   "e": "🔊",
+   "m": 254,
+   "p": 289.95,
+   "s": "ambas",
+   "t": "2026-11-13T08:11:33.192775+00:00",
+   "title": "Bose SoundLink Max, Altavoz portátil con bluetooth para exterior con graves potentes, Resistente al agua estéreo con Bluetooth y conexión USB-C , Hasta 20 horas de autonomía, AUX de 3,5 mm, Negro",
    "v": []
   },
   "B0D1DV9NHZ": {
@@ -2024,15 +2035,11 @@
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B07TFGZ33M": {
-   "t": "2026-11-12T07:35:38.163573+00:00",
+   "t": "2026-11-13T08:10:39.209090+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0815BLCJL": {
    "t": "2026-11-12T11:10:46.841102+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B09ZQF5GZW": {
-   "t": "2026-11-12T07:35:38.163573+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0BJDJJQQH": {
@@ -2083,12 +2090,16 @@
    "t": "2026-11-13T07:35:36.489438+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0DZ76B7XQ": {
+   "t": "2026-11-13T08:10:39.209090+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0F2MX4FJQ": {
    "t": "2026-11-12T14:05:45.520815+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0FGJTVH91": {
-   "t": "2026-11-12T07:35:38.163573+00:00",
+   "t": "2026-11-13T08:10:39.209090+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0FL7NNGRG": {
@@ -2096,7 +2107,7 @@
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0FMGXH38Q": {
-   "t": "2026-11-12T07:35:38.163573+00:00",
+   "t": "2026-11-13T08:10:39.209090+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0FPXGKBCS": {
@@ -2146,6 +2157,18 @@
  },
  "reserve": [
   {
+   "a": "B08N3YCTK7",
+   "c": "Altavoces",
+   "e": "🔊",
+   "img": "https://m.media-amazon.com/images/I/716Ap-eCdtL._AC_UY218_.jpg",
+   "n": 609,
+   "op": 69.98,
+   "p": 52.92,
+   "r": 4.3,
+   "t": "2026-11-13T08:10:39.209090+00:00",
+   "title": "Altavoz Bluetooth Potente de 60W (80W Peak) con Doble Subwoofer y Bajo Profundo, Altavoces Bluetooth Portátiles con Conexión Inalámbrica de 100ft, Ideal para Viajes y Fiestas"
+  },
+  {
    "a": "B00UOIZ8VY",
    "c": "Menaje de cocina",
    "e": "🍳",
@@ -2174,6 +2197,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-13",
-  "n": 2
+  "n": 3
  }
 }
