@@ -56,6 +56,12 @@
    "title": "instax Link Wide Impresora para teléfonos, Color Blanco Ceniza & Fujifilm, película Wide Coon Borde Negro",
    "via": "nombre"
   },
+  "4547410487671": {
+   "a": "B0BV2L3WM7",
+   "t": "2026-11-13T19:20:42.278458+00:00",
+   "title": "instax Square Link. Impresora para teléfonos, Color Blanco. & Fujifilm Square Black, película instantanea, 10 Fotos",
+   "via": "ean"
+  },
   "4711121527333": {
    "a": "B07NFK9XST",
    "t": "2026-11-13T16:35:32.960175+00:00",
@@ -93,6 +99,10 @@
    "t": "2026-11-13T14:35:34.102055+00:00",
    "title": "NIIMBOT B31 Impresora de etiquetas con etiquetas, Bluetooth gris y blanco",
    "via": "nombre"
+  },
+  "6977728943794": {
+   "a": "",
+   "t": "2026-11-13T19:20:42.278458+00:00"
   },
   "6977728943800": {
    "a": "",
@@ -271,6 +281,36 @@
    "pp_price": 266.95,
    "t": "2026-11-13T17:10:41.240248+00:00",
    "veredicto": "sin_precio"
+  },
+  "45992962853": {
+   "ahorro_vs_amazon": 3,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 112.99,
+   "amz_title": "instax Square Link. Impresora para teléfonos, Color Blanco. & Fujifilm Square Black, película instantanea, 10 Fotos",
+   "asin": "B0BV2L3WM7",
+   "disponible": true,
+   "ean": "4547410487671",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 112.99 frente a 109.95",
+   "name": "Fujifilm Instax Square Link Bluetooth + USB-C Impresora fotográfica térmica",
+   "pp_drop": 25,
+   "pp_median": 145.95,
+   "pp_price": 109.95,
+   "t": "2026-11-13T19:20:42.278458+00:00",
+   "veredicto": "amazon_mas_barato"
+  },
+  "46071185419": {
+   "ean": "6977728943794",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "MOVA V50 Ultra Complete 24000Pa LiDAR Cámara IA DuoSolution 80°C friegasuelos 6400mAh Robot aspirador",
+   "pp_drop": 19,
+   "pp_median": 639.9,
+   "pp_price": 519.9,
+   "t": "2026-11-13T19:20:42.278458+00:00",
+   "veredicto": "no_esta"
   },
   "46165551484": {
    "ahorro_vs_amazon": -143,
@@ -481,12 +521,12 @@
   }
  },
  "resumen": {
-  "amazon_mas_barato": 6,
+  "amazon_mas_barato": 7,
   "dudoso": 0,
-  "no_esta": 10,
+  "no_esta": 11,
   "oferta_real": 3,
   "pvpr_inflado": 2,
   "sin_precio": 2
  },
- "updated": "2026-11-13T18:45:39.134382+00:00"
+ "updated": "2026-11-13T19:20:42.278458+00:00"
 }

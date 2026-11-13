@@ -39,9 +39,9 @@
   "Tablets": "2026-11-12T21:55:34.077440+00:00",
   "Televisores": "2026-11-11T20:15:41.209092+00:00",
   "Videojuegos": "2026-11-12T21:40:51.544407+00:00",
-  "Zapatillas": "2026-11-12T11:45:43.028763+00:00"
+  "Zapatillas": "2026-11-13T19:20:42.278458+00:00"
  },
- "next_at": "2026-11-13T19:20:22.393384+00:00",
+ "next_at": "2026-11-13T19:52:07.099669+00:00",
  "offer": {
   "a": "B08PVDQFQQ",
   "m": 218,
@@ -1733,6 +1733,17 @@
    "title": "Samsung SM-A175 A17 4+128GB 6.7\" 4G Black DS ITA",
    "v": []
   },
+  "B0FV8PMMLP": {
+   "c": "Zapatillas",
+   "d": 38,
+   "e": "👟",
+   "m": 272,
+   "p": 28.06,
+   "s": "ofertas",
+   "t": "2026-11-13T19:21:32.519131+00:00",
+   "title": "Zapatillas de Running Flyer Lite 4 Unisex",
+   "v": []
+  },
   "B0FWCPNPCV": {
    "c": "Monitores",
    "d": 28,
@@ -2261,6 +2272,10 @@
    "t": "2026-11-12T21:40:51.544407+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0DHXFDNK2": {
+   "t": "2026-11-13T19:20:42.278458+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0DQ5WMN4H": {
    "t": "2026-11-12T21:40:51.544407+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2313,6 +2328,10 @@
    "t": "2026-11-13T07:35:36.489438+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0FVXGNCPB": {
+   "t": "2026-11-13T19:20:42.278458+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0G14W2ZWW": {
    "t": "2026-11-12T21:55:34.077440+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2339,6 +2358,18 @@
   }
  },
  "reserve": [
+  {
+   "a": "B0F6NJ9QWP",
+   "c": "Zapatillas",
+   "e": "👟",
+   "img": "https://m.media-amazon.com/images/I/61uuFhqaCfL._AC_UL320_.jpg",
+   "n": 416,
+   "op": 64.95,
+   "p": 41.51,
+   "r": 4.5,
+   "t": "2026-11-13T19:20:42.278458+00:00",
+   "title": "Softride Symmetry Fuzion Wn's Zapatillas para Correr de carreteraMujer"
+  },
   {
    "a": "B0H2DFN9CF",
    "c": "Aspiradoras",
@@ -2368,6 +2399,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-13",
-  "n": 20
+  "n": 21
  }
 }
