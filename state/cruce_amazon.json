@@ -1,5 +1,11 @@
 {
  "ean_asin": {
+  "0194253097297": {
+   "a": "B0BJMMFCDX",
+   "t": "2026-11-13T12:15:38.991127+00:00",
+   "title": "Apple TV 4K Black, Silver 4K Ultra HD 128 GB Wi-Fi Ethernet LAN, W128291662 (HD 128 GB Wi-Fi Ethernet LAN)",
+   "via": "ean"
+  },
   "0766907027891": {
    "a": "B0CMPW1698",
    "t": "2026-11-13T11:40:39.260187+00:00",
@@ -21,9 +27,44 @@
    "t": "2026-11-13T11:05:30.316413+00:00",
    "title": "SanDisk SSD portátil Extremo de 2 TB - hasta 1050 MB/s - USB-C, USB 3.2 Gen 2 - Unidad Externa de Estado sólido - SDSSDE61-2T00-G25B",
    "via": "ean"
+  },
+  "840006666493": {
+   "a": "",
+   "t": "2026-11-13T12:15:38.991127+00:00"
   }
  },
  "items": {
+  "37600259956": {
+   "ahorro_vs_amazon": null,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": null,
+   "amz_title": "Apple TV 4K Black, Silver 4K Ultra HD 128 GB Wi-Fi Ethernet LAN, W128291662 (HD 128 GB Wi-Fi Ethernet LAN)",
+   "asin": "B0BJMMFCDX",
+   "disponible": true,
+   "ean": "0194253097297",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "en Amazon pero sin precio o no disponible",
+   "name": "Apple TV 4K 3ª Gen 128GB WiFi 6 Bluetooth 5.0 A15 Gigabit",
+   "pista": "1903822 bytes; 6 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pp_drop": 35,
+   "pp_median": 650.96,
+   "pp_price": 421.95,
+   "t": "2026-11-13T12:15:38.991127+00:00",
+   "veredicto": "sin_precio"
+  },
+  "45948306671": {
+   "ean": "840006666493",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Corsair K55 Core RGB Negro CH-9226C65-ES Teclado gaming",
+   "pp_drop": 46,
+   "pp_median": 103.95,
+   "pp_price": 55.95,
+   "t": "2026-11-13T12:15:38.991127+00:00",
+   "veredicto": "no_esta"
+  },
   "45948306775": {
    "ahorro_vs_amazon": null,
    "amz_low30": null,
@@ -96,10 +137,10 @@
  "resumen": {
   "amazon_mas_barato": 2,
   "dudoso": 0,
-  "no_esta": 1,
+  "no_esta": 2,
   "oferta_real": 0,
   "pvpr_inflado": 0,
-  "sin_precio": 1
+  "sin_precio": 2
  },
- "updated": "2026-11-13T11:40:39.260187+00:00"
+ "updated": "2026-11-13T12:15:38.991127+00:00"
 }

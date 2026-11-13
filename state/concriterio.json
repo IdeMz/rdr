@@ -6,7 +6,7 @@
   "Altavoces": "2026-11-13T08:10:39.209090+00:00",
   "Aspiradoras": "2026-11-12T10:35:36.602474+00:00",
   "Auriculares": "2026-11-12T12:20:44.296151+00:00",
-  "Cafeteras": "2026-11-12T08:45:45.168399+00:00",
+  "Cafeteras": "2026-11-13T12:15:38.991127+00:00",
   "Café y cápsulas": "2026-11-12T18:01:01.485472+00:00",
   "Cargadores y baterías": "2026-11-10T11:15:42.709254+00:00",
   "Ciclismo": "2026-11-13T11:05:30.316413+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-12T21:40:51.544407+00:00",
   "Zapatillas": "2026-11-12T11:45:43.028763+00:00"
  },
- "next_at": "2026-11-13T12:15:27.191133+00:00",
+ "next_at": "2026-11-13T12:45:44.803296+00:00",
  "offer": {
   "a": "B09VN62HF3",
   "m": 193,
@@ -1870,6 +1870,17 @@
    "title": "XIAOMI REDMI Pad 2 4+256GB Tablet de 11\" 2.5K Gris Batería de 9000 mAh",
    "v": []
   },
+  "B0GZL6RZ7Z": {
+   "c": "Cafeteras",
+   "d": 21,
+   "e": "☕",
+   "m": 261,
+   "p": 473.99,
+   "s": "ofertas",
+   "t": "2026-11-13T12:16:10.637869+00:00",
+   "title": "SIEMENS, Cafetera superautomática EQ500 iAroma, Negro, TP551E07",
+   "v": []
+  },
   "B0GZZM4CXF": {
    "c": "Aspiradoras",
    "d": 49,
@@ -2108,16 +2119,12 @@
    "t": "2026-11-13T11:05:30.316413+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0BZXL5TTB": {
-   "t": "2026-11-12T11:45:43.028763+00:00",
+  "B0CDCL53KW": {
+   "t": "2026-11-13T12:15:38.991127+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0CFVZC2GF": {
    "t": "2026-11-13T07:35:36.489438+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0CKRZNZBW": {
-   "t": "2026-11-12T11:45:43.028763+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0CWJJ2WBC": {
@@ -2130,10 +2137,6 @@
   },
   "B0DCPB9J7K": {
    "t": "2026-11-12T21:40:51.544407+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0DHXFDNK2": {
-   "t": "2026-11-12T11:45:43.028763+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0DQ5WMN4H": {
@@ -2178,14 +2181,6 @@
   },
   "B0FQTVLFT1": {
    "t": "2026-11-13T07:35:36.489438+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0FVXGNCPB": {
-   "t": "2026-11-12T11:45:43.028763+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0FXMHY6TT": {
-   "t": "2026-11-12T11:45:43.028763+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0G14W2ZWW": {
@@ -2251,6 +2246,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-13",
-  "n": 9
+  "n": 10
  }
 }
