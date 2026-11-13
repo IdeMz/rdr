@@ -72,9 +72,19 @@
    "a": "",
    "t": "2026-11-13T11:05:30.316413+00:00"
   },
+  "4711387835517": {
+   "a": "B0DZPCGF7T",
+   "t": "2026-11-13T20:05:35.325047+00:00",
+   "title": "ASUS ROG Strix 1000W Platinum - Fuente de Alimentación",
+   "via": "ean"
+  },
   "4711387951224": {
    "a": "",
    "t": "2026-11-13T18:45:39.134382+00:00"
+  },
+  "4895229151192": {
+   "a": "",
+   "t": "2026-11-13T20:05:35.325047+00:00"
   },
   "5061112450973": {
    "a": "",
@@ -168,6 +178,17 @@
    "pp_price": 442.94,
    "t": "2026-11-13T15:10:54.425531+00:00",
    "veredicto": "amazon_mas_barato"
+  },
+  "45020234483": {
+   "ean": "4895229151192",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Philips TAR1609/00 Analógica con Linterna FM Radio portátil",
+   "pp_drop": 32,
+   "pp_median": 56.95,
+   "pp_price": 38.95,
+   "t": "2026-11-13T20:05:35.325047+00:00",
+   "veredicto": "no_esta"
   },
   "45124316529": {
    "ean": "6974958250739",
@@ -459,6 +480,25 @@
    "t": "2026-11-13T15:10:54.425531+00:00",
    "veredicto": "pvpr_inflado"
   },
+  "46599139558": {
+   "ahorro_vs_amazon": 2,
+   "amz_low30": null,
+   "amz_median": 259.9,
+   "amz_price": 239.0,
+   "amz_title": "ASUS ROG Strix 1000W Platinum - Fuente de Alimentación",
+   "asin": "B0DZPCGF7T",
+   "disponible": true,
+   "ean": "4711387835517",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 239.00 frente a 253.95",
+   "name": "ASUS ROG Strix 1000P White Edition 1000W 80 Plus Platinum modular Fuente de alimentación",
+   "pp_drop": 21,
+   "pp_median": 322.21,
+   "pp_price": 253.95,
+   "t": "2026-11-13T20:05:35.325047+00:00",
+   "veredicto": "amazon_mas_barato"
+  },
   "46599140303": {
    "ahorro_vs_amazon": -13,
    "amz_low30": null,
@@ -521,12 +561,12 @@
   }
  },
  "resumen": {
-  "amazon_mas_barato": 7,
+  "amazon_mas_barato": 8,
   "dudoso": 0,
-  "no_esta": 11,
+  "no_esta": 12,
   "oferta_real": 3,
   "pvpr_inflado": 2,
   "sin_precio": 2
  },
- "updated": "2026-11-13T19:20:42.278458+00:00"
+ "updated": "2026-11-13T20:05:35.325047+00:00"
 }

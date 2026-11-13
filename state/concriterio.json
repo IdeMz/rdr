@@ -20,7 +20,7 @@
   "Freidoras de aire": "2026-11-13T16:35:32.960175+00:00",
   "Gatos": "2026-11-11T14:01:09.084076+00:00",
   "Herramientas": "2026-11-12T13:30:58.815254+00:00",
-  "Iluminación": "2026-11-09T13:25:33.337111+00:00",
+  "Iluminación": "2026-11-13T20:05:35.325047+00:00",
   "Jardín": "2026-11-12T21:40:51.544407+00:00",
   "Lego": "2026-11-13T07:35:36.489438+00:00",
   "Menaje de cocina": "2026-11-13T07:35:36.489438+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-12T21:40:51.544407+00:00",
   "Zapatillas": "2026-11-13T19:20:42.278458+00:00"
  },
- "next_at": "2026-11-13T20:05:30.770087+00:00",
+ "next_at": "2026-11-13T20:37:30.401832+00:00",
  "offer": {
   "a": "B08PVDQFQQ",
   "m": 218,
@@ -1610,6 +1610,17 @@
    "title": "Reloj Inteligente Mujer Smartwatch con llamada: 1.27\"TFT Pantalla Táctil Smart Watch Bluetooth con Frecuencia Cardíaca SpO2 Sangre Presión Arterial Sueño Deportivo IP68 Impermeable para iOS Android",
    "v": []
   },
+  "B0FJFX6JK9": {
+   "c": "Iluminación",
+   "d": 49,
+   "e": "🪔",
+   "m": 273,
+   "p": 45.99,
+   "s": "ofertas",
+   "t": "2026-11-13T20:06:05.760522+00:00",
+   "title": "SwitchBot Matter RGBICWW Lampara de Pie, Blanco Cálido & Frío, Lámpara de Pie LED compatible con Apple Home, Alexa, Google Home, 16 Millones Colores, 1200lm, Sincronización de Música, Modos de Escena",
+   "v": []
+  },
   "B0FLPCM6CB": {
    "c": "Cargadores y baterías",
    "d": 39,
@@ -2218,10 +2229,7 @@
    "v": []
   }
  },
- "problem": {
-  "fails": 1,
-  "last": "HTTP 503"
- },
+ "problem": {},
  "rejected": {
   "B00NFDPXRO": {
    "t": "2026-11-13T07:35:36.489438+00:00",
@@ -2402,6 +2410,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-13",
-  "n": 21
+  "n": 22
  }
 }
