@@ -75,8 +75,10 @@
    "via": "modelo"
   },
   "4711121768279": {
-   "a": "",
-   "t": "2026-11-13T11:05:30.316413+00:00"
+   "a": "B0CWB4MFJM",
+   "t": "2026-11-13T22:35:19.548446+00:00",
+   "title": "AOPEN QH12a Proyector LED portátil HD 1280x720, 135 lúmenes, Entrada de Gama, Blanco",
+   "via": "ean"
   },
   "4711387835517": {
    "a": "B0DZPCGF7T",
@@ -100,7 +102,18 @@
   },
   "5061112450973": {
    "a": "",
-   "t": "2026-11-13T12:50:38.657328+00:00"
+   "t": "2026-11-13T22:35:19.548446+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "Robot aspirador Roombapluus512Comboblack Robot Lava/Aspirar"
+    ],
+    "nombre": [
+     "iRobot Roomba Plus 515 Combo Robot Aspirador y Fregasuelos, 22000 Pa, Blanco",
+     "iRobot Roomba Plus 516 Combo Robot Aspirador y Fregasuelos, 22000 Pa, Negro",
+     "iRobot Roomba Plus 575 Combo + Base AutoWash multifunción, 25KPa, Mopas DualClean PerfectEdge, Lava "
+    ]
+   }
   },
   "5706991026542": {
    "a": "B0BKH4FX9Y",
@@ -157,8 +170,10 @@
    "t": "2026-11-13T17:45:36.587944+00:00"
   },
   "840006666493": {
-   "a": "",
-   "t": "2026-11-13T12:15:38.991127+00:00"
+   "a": "B0CP6BWBF5",
+   "t": "2026-11-13T22:35:19.548446+00:00",
+   "title": "CORSAIR K55 CORE RGB Teclado de Membrana con Cable Para Juegos – Negro",
+   "via": "ean"
   },
   "8425402875179": {
    "a": "B09YS5DTK4",
@@ -356,15 +371,23 @@
    "veredicto": "pvpr_inflado"
   },
   "45948306671": {
+   "ahorro_vs_amazon": -17,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 47.95,
+   "amz_title": "CORSAIR K55 CORE RGB Teclado de Membrana con Cable Para Juegos – Negro",
+   "asin": "B0CP6BWBF5",
+   "disponible": true,
    "ean": "840006666493",
+   "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "motivo": "Amazon 47.95 frente a 55.95",
    "name": "Corsair K55 Core RGB Negro CH-9226C65-ES Teclado gaming",
    "pp_drop": 46,
    "pp_median": 103.95,
    "pp_price": 55.95,
-   "t": "2026-11-13T12:15:38.991127+00:00",
-   "veredicto": "no_esta"
+   "t": "2026-11-13T22:35:19.548446+00:00",
+   "veredicto": "amazon_mas_barato"
   },
   "45948306775": {
    "ahorro_vs_amazon": null,
@@ -473,8 +496,19 @@
    "pp_drop": 31,
    "pp_median": 549.95,
    "pp_price": 379.0,
-   "t": "2026-11-13T12:50:38.657328+00:00",
-   "veredicto": "no_esta"
+   "t": "2026-11-13T22:35:19.548446+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "Robot aspirador Roombapluus512Comboblack Robot Lava/Aspirar"
+    ],
+    "nombre": [
+     "iRobot Roomba Plus 515 Combo Robot Aspirador y Fregasuelos, 22000 Pa, Blanco",
+     "iRobot Roomba Plus 516 Combo Robot Aspirador y Fregasuelos, 22000 Pa, Negro",
+     "iRobot Roomba Plus 575 Combo + Base AutoWash multifunción, 25KPa, Mopas DualClean PerfectEdge, Lava "
+    ]
+   }
   },
   "46239685097": {
    "ahorro_vs_amazon": 23,
@@ -660,15 +694,23 @@
    "veredicto": "sin_precio"
   },
   "46599141566": {
+   "ahorro_vs_amazon": -70,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 117.97,
+   "amz_title": "AOPEN QH12a Proyector LED portátil HD 1280x720, 135 lúmenes, Entrada de Gama, Blanco",
+   "asin": "B0CWB4MFJM",
+   "disponible": true,
    "ean": "4711121768279",
+   "encontrado_por": "ean",
    "lista": "to_verify",
-   "motivo": "no se encuentra en Amazon por EAN ni por nombre",
+   "motivo": "Amazon 117.97 frente a 200.94",
    "name": "Acer AOPEN QH12a 720p HD Ready 135 lúmenes ANSI LED Azul Bluetooth altavoz 3W Proyector",
    "pp_drop": 68,
    "pp_median": 636.94,
    "pp_price": 200.94,
-   "t": "2026-11-13T11:05:30.316413+00:00",
-   "veredicto": "no_esta"
+   "t": "2026-11-13T22:35:19.548446+00:00",
+   "veredicto": "amazon_mas_barato"
   },
   "46599144084": {
    "ahorro_vs_amazon": 7,
@@ -701,13 +743,14 @@
    "veredicto": "no_esta"
   }
  },
+ "night_at": "2026-11-13T22:35:19.548446+00:00",
  "resumen": {
-  "amazon_mas_barato": 9,
+  "amazon_mas_barato": 11,
   "dudoso": 0,
-  "no_esta": 13,
+  "no_esta": 11,
   "oferta_real": 5,
   "pvpr_inflado": 3,
   "sin_precio": 3
  },
- "updated": "2026-11-13T21:50:42.988192+00:00"
+ "updated": "2026-11-13T22:35:19.548446+00:00"
 }
