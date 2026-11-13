@@ -1,7 +1,7 @@
 {
  "cats": {
   "Accesorios de coche": "2026-11-12T14:05:45.520815+00:00",
-  "Afeitado y depilación": "2026-11-10T17:05:37.721123+00:00",
+  "Afeitado y depilación": "2026-11-13T12:50:38.657328+00:00",
   "Almacenamiento": "2026-11-12T08:10:49.385821+00:00",
   "Altavoces": "2026-11-13T08:10:39.209090+00:00",
   "Aspiradoras": "2026-11-12T10:35:36.602474+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-12T21:40:51.544407+00:00",
   "Zapatillas": "2026-11-12T11:45:43.028763+00:00"
  },
- "next_at": "2026-11-13T12:45:44.803296+00:00",
+ "next_at": "2026-11-13T13:22:24.786726+00:00",
  "offer": {
   "a": "B09VN62HF3",
   "m": 193,
@@ -432,6 +432,17 @@
    "p": 22.27,
    "t": "2026-11-07T19:46:06.937509+00:00",
    "title": "Fischer Urban Lano - Casco de Ciclismo para Adultos con Sistema de Anillo Interior Iluminado",
+   "v": []
+  },
+  "B084QRY7WR": {
+   "c": "Afeitado y depilación",
+   "d": 55,
+   "e": "🪒",
+   "m": 262,
+   "p": 5.44,
+   "s": "ambas",
+   "t": "2026-11-13T12:51:02.696112+00:00",
+   "title": "Wilkinson Sword Intuition Complete - Cuchillas de afeitar para mujer (3 unidades)",
    "v": []
   },
   "B086RF6YJQ": {
@@ -2246,6 +2257,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-13",
-  "n": 10
+  "n": 11
  }
 }

@@ -22,11 +22,19 @@
    "a": "",
    "t": "2026-11-13T11:05:30.316413+00:00"
   },
+  "5061112450973": {
+   "a": "",
+   "t": "2026-11-13T12:50:38.657328+00:00"
+  },
   "619659205058": {
    "a": "B0C5SC2V95",
    "t": "2026-11-13T11:05:30.316413+00:00",
    "title": "SanDisk SSD portátil Extremo de 2 TB - hasta 1050 MB/s - USB-C, USB 3.2 Gen 2 - Unidad Externa de Estado sólido - SDSSDE61-2T00-G25B",
    "via": "ean"
+  },
+  "6974958250739": {
+   "a": "",
+   "t": "2026-11-13T12:50:38.657328+00:00"
   },
   "840006666493": {
    "a": "",
@@ -53,6 +61,17 @@
    "pp_price": 421.95,
    "t": "2026-11-13T12:15:38.991127+00:00",
    "veredicto": "sin_precio"
+  },
+  "45124316529": {
+   "ean": "6974958250739",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "KOSPET Tank T3 Ultra Negro 1,43 pulgadas AMOLED GPS 15 días +170 deportes 5ATM IP69K Smartwatch",
+   "pp_drop": 41,
+   "pp_median": 129.95,
+   "pp_price": 76.96,
+   "t": "2026-11-13T12:50:38.657328+00:00",
+   "veredicto": "no_esta"
   },
   "45948306671": {
    "ean": "840006666493",
@@ -83,6 +102,17 @@
    "pp_price": 266.95,
    "t": "2026-11-13T11:05:30.316413+00:00",
    "veredicto": "sin_precio"
+  },
+  "46239684598": {
+   "ean": "5061112450973",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "iRobot Roomba Plus 515 Combo Negro 22000Pa LiDAR friegasuelos autovaciado compatible con Alexa Robot aspirador",
+   "pp_drop": 31,
+   "pp_median": 549.95,
+   "pp_price": 379.0,
+   "t": "2026-11-13T12:50:38.657328+00:00",
+   "veredicto": "no_esta"
   },
   "46256205684": {
    "ahorro_vs_amazon": -5,
@@ -137,10 +167,10 @@
  "resumen": {
   "amazon_mas_barato": 2,
   "dudoso": 0,
-  "no_esta": 2,
+  "no_esta": 4,
   "oferta_real": 0,
   "pvpr_inflado": 0,
   "sin_precio": 2
  },
- "updated": "2026-11-13T12:15:38.991127+00:00"
+ "updated": "2026-11-13T12:50:38.657328+00:00"
 }
