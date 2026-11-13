@@ -10,7 +10,7 @@
   "Café y cápsulas": "2026-11-12T18:01:01.485472+00:00",
   "Cargadores y baterías": "2026-11-10T11:15:42.709254+00:00",
   "Ciclismo": "2026-11-10T20:01:09.445485+00:00",
-  "Climatización": "2026-11-11T15:45:40.067358+00:00",
+  "Climatización": "2026-11-13T07:01:09.103150+00:00",
   "Colchones y almohadas": "2026-11-11T18:30:53.717319+00:00",
   "Cuidado de la piel": "2026-11-11T11:40:40.899668+00:00",
   "Cuidado del cabello": "2026-11-12T21:55:34.077440+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-12T21:40:51.544407+00:00",
   "Zapatillas": "2026-11-12T11:45:43.028763+00:00"
  },
- "next_at": "2026-11-12T22:30:20.312354+00:00",
+ "next_at": "2026-11-13T07:34:50.183190+00:00",
  "offer": {
   "a": "B09VN62HF3",
   "m": 193,
@@ -1404,6 +1404,17 @@
    "title": "Lámpara Escritorio, Flexo Led Escritorio, 5 Modos,10 Niveles de Brillo",
    "v": []
   },
+  "B0FDL3BK9T": {
+   "c": "Climatización",
+   "d": 18,
+   "e": "🌬️",
+   "m": 252,
+   "p": 89.99,
+   "s": "ambas",
+   "t": "2026-11-13T07:01:39.298391+00:00",
+   "title": "Levoit Purificador de Aire con Filtro Hepa, Flitro Personalizado, Core 300",
+   "v": []
+  },
   "B0FGY2HN51": {
    "c": "Climatización",
    "d": 46,
@@ -2092,46 +2103,22 @@
  },
  "reserve": [
   {
-   "a": "B0GYFM8Z87",
-   "c": "Cuidado del cabello",
-   "e": "💇",
-   "img": "https://m.media-amazon.com/images/I/71GMxwLydyL._AC_UL320_.jpg",
-   "n": 160,
-   "op": 199.0,
-   "p": 128.19,
-   "r": 4.7,
-   "t": "2026-11-12T21:55:34.077440+00:00",
-   "title": "ghd Glide+ Max - Cepillo Alisador de Pelo Profesional Térmico más Amplio"
-  },
-  {
-   "a": "B0D1VN79ML",
-   "c": "Nutrición deportiva",
-   "e": "💪",
-   "img": "https://m.media-amazon.com/images/I/61EFnVji93L._AC_UL320_.jpg",
-   "n": 129,
-   "op": 27.37,
-   "p": 18.83,
-   "r": 4.7,
-   "t": "2026-11-12T21:05:35.059588+00:00",
-   "title": "Enervit, Creatina Monohidrato Pura, sin Aromas, para Mejorar el Rendimiento Muscular, 3,4g de Creatina por Porción, para Consumir Durante el Día, Vegano, Frasco de 330g"
-  },
-  {
-   "a": "B0HHN4Q6SN",
-   "c": "Smartwatch",
-   "e": "⌚",
-   "img": "https://m.media-amazon.com/images/I/71hNWmDBpTL._AC_UL320_.jpg",
-   "n": 52,
-   "op": 21.99,
-   "p": 15.19,
-   "r": 4.4,
-   "t": "2026-11-12T20:30:50.378352+00:00",
-   "title": "Reloj Inteligente Hombre Mujer, 1.95\" Smartwatches Reloj Deporte con Funciún Llamadas y Mensajes Bluetooth, 110+ Deportivos SmartWatch con Podómetro/Pulsómetro/Monitor de Sueño, IP68 Pulsera Actividad"
+   "a": "B09HCH4T22",
+   "c": "Climatización",
+   "e": "🌬️",
+   "img": "https://m.media-amazon.com/images/I/716jyozUmHL._AC_UY218_.jpg",
+   "n": 1400,
+   "op": 29.99,
+   "p": 21.99,
+   "r": 4.2,
+   "t": "2026-11-13T07:01:09.103150+00:00",
+   "title": "Mellerware Homy Calefactor Baño Bajo Consumo 2000W IP24 con Termostato ECO"
   }
  ],
  "summary_day": "2026-11-12",
  "tg_offset": 511048053,
  "x_copy": {
-  "day": "2026-11-12",
-  "n": 21
+  "day": "2026-11-13",
+  "n": 1
  }
 }
