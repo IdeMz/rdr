@@ -35,13 +35,13 @@
   "Relojes": "2026-11-12T09:20:48.160799+00:00",
   "Robots de cocina": "2026-11-12T11:10:46.841102+00:00",
   "Smartwatch": "2026-11-12T20:30:50.378352+00:00",
-  "Suplementos": "2026-11-12T07:01:12.210606+00:00",
+  "Suplementos": "2026-11-13T10:31:00.804242+00:00",
   "Tablets": "2026-11-12T21:55:34.077440+00:00",
   "Televisores": "2026-11-11T20:15:41.209092+00:00",
   "Videojuegos": "2026-11-12T21:40:51.544407+00:00",
   "Zapatillas": "2026-11-12T11:45:43.028763+00:00"
  },
- "next_at": "2026-11-13T10:26:03.368386+00:00",
+ "next_at": "2026-11-13T11:01:32.247391+00:00",
  "offer": {
   "a": "B09VN62HF3",
   "m": 193,
@@ -544,6 +544,17 @@
    "s": "busqueda",
    "t": "2026-11-12T08:11:27.235153+00:00",
    "title": "WD_BLACK P10 2TB Game Drive for Xbox One para obtener acceso a su colección de juegos de Xbox en cualquier lugar",
+   "v": []
+  },
+  "B08WC4V1PK": {
+   "c": "Suplementos",
+   "d": 36,
+   "e": "💊",
+   "m": 258,
+   "p": 10.74,
+   "s": "ofertas",
+   "t": "2026-11-13T10:31:34.560950+00:00",
+   "title": "Moller’s ® | Omega 3 para niños | Omega-3 Cápsulas de Aceite de Pescado con Ácidos Grasos Omega 3 | Con DHA y EPA, Sin Gluten, Sin Lactosa, Sin Azucares Añadidos | Tutti Frutti | 36 Uds",
    "v": []
   },
   "B08X6DCJT2": {
@@ -2178,6 +2189,18 @@
  },
  "reserve": [
   {
+   "a": "B01K28121U",
+   "c": "Suplementos",
+   "e": "💊",
+   "img": "https://m.media-amazon.com/images/I/61nswZst+-L._AC_UL320_.jpg",
+   "n": 30500,
+   "op": 23.99,
+   "p": 18.99,
+   "r": 4.6,
+   "t": "2026-11-13T10:31:00.804242+00:00",
+   "title": "Nutravita Omega 3 2000mg - con 660mg EPA y 440mg DHA - 240 Cápsulas Blandas"
+  },
+  {
    "a": "B08N3YCTK7",
    "c": "Altavoces",
    "e": "🔊",
@@ -2200,24 +2223,12 @@
    "r": 4.6,
    "t": "2026-11-13T07:35:36.489438+00:00",
    "title": "Tefal Comfort Max - Juego de 3 Cazos + 2 Tapas, Acero Inoxidable"
-  },
-  {
-   "a": "B09HCH4T22",
-   "c": "Climatización",
-   "e": "🌬️",
-   "img": "https://m.media-amazon.com/images/I/716jyozUmHL._AC_UY218_.jpg",
-   "n": 1400,
-   "op": 29.99,
-   "p": 21.99,
-   "r": 4.2,
-   "t": "2026-11-13T07:01:09.103150+00:00",
-   "title": "Mellerware Homy Calefactor Baño Bajo Consumo 2000W IP24 con Termostato ECO"
   }
  ],
  "summary_day": "2026-11-12",
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-13",
-  "n": 6
+  "n": 7
  }
 }
