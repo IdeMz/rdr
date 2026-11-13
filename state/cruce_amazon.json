@@ -14,7 +14,18 @@
   },
   "0196548939664": {
    "a": "",
-   "t": "2026-11-13T13:25:30.604640+00:00"
+   "t": "2026-11-13T22:50:26.355987+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "HP 925 - Vertikale Maus - ergonomisch - 6 Tasten - kabellos - Bluetooth 5.3, 2.4 GHz - kabelloser Em"
+    ],
+    "nombre": [
+     "HP Tilt 720M - Ratón inalámbrico ergonómico (Inclinación semivertical 21°, Bluetooth y USB Type-A, R",
+     "Logitech Lift Ratón Ergonómico Vertical - Gris",
+     "HP 780M Ratón Inalámbrico Ergonómico con Desplazamiento Ultra Rápido, Supercondensador Recargable, 6"
+    ]
+   }
   },
   "0198122955305": {
    "a": "B0C89KZ874",
@@ -48,7 +59,18 @@
   },
   "0840414637900": {
    "a": "",
-   "t": "2026-11-13T14:35:34.102055+00:00"
+   "t": "2026-11-13T22:50:26.355987+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Amazon Echo Dot (última gen.): altavoz inteligente compacto con sonido espectacular y controlador de",
+     "Echo Dot (modelo de 2022) | Altavoz inteligente wifi y Bluetooth, con sonido más potente y de mayor ",
+     "Amazon Echo Dot Max (última generación): altavoz con sonido envolvente y controlador de Hogar digita"
+    ]
+   }
   },
   "4260499852320": {
    "a": "B08S7MYYL7",
@@ -142,8 +164,10 @@
    "t": "2026-11-13T17:45:36.587944+00:00"
   },
   "6974958250739": {
-   "a": "",
-   "t": "2026-11-13T12:50:38.657328+00:00"
+   "a": "B0FF1X7VGL",
+   "t": "2026-11-13T22:50:26.355987+00:00",
+   "title": "KOSPET Tank T3 Ultra 2 Reloj Inteligente Hombre GPS, Acero Inoxidable Bateria Larga Duracion Reloj Inteligente, 1,43'' AMOLED 5ATM Impermeable Smartwatch Hombre",
+   "via": "nombre"
   },
   "6977388390044": {
    "a": "B0H6LCS1HS",
@@ -259,15 +283,23 @@
    "veredicto": "no_esta"
   },
   "45124316529": {
+   "ahorro_vs_amazon": 52,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 159.99,
+   "amz_title": "KOSPET Tank T3 Ultra 2 Reloj Inteligente Hombre GPS, Acero Inoxidable Bateria Larga Duracion Reloj Inteligente, 1,43'' AMOLED 5ATM Impermeable Smartwatch Hombre",
+   "asin": "B0FF1X7VGL",
+   "disponible": true,
    "ean": "6974958250739",
+   "encontrado_por": "nombre",
    "lista": "candidates",
-   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "motivo": "52 % por debajo del habitual en Amazon (159.99)",
    "name": "KOSPET Tank T3 Ultra Negro 1,43 pulgadas AMOLED GPS 15 días +170 deportes 5ATM IP69K Smartwatch",
    "pp_drop": 41,
    "pp_median": 129.95,
    "pp_price": 76.96,
-   "t": "2026-11-13T12:50:38.657328+00:00",
-   "veredicto": "no_esta"
+   "t": "2026-11-13T22:50:26.355987+00:00",
+   "veredicto": "oferta_real"
   },
   "45368125530": {
    "ahorro_vs_amazon": 37,
@@ -296,8 +328,19 @@
    "pp_drop": 37,
    "pp_median": 73.96,
    "pp_price": 46.95,
-   "t": "2026-11-13T14:35:34.102055+00:00",
-   "veredicto": "no_esta"
+   "t": "2026-11-13T22:50:26.355987+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Amazon Echo Dot (última gen.): altavoz inteligente compacto con sonido espectacular y controlador de",
+     "Echo Dot (modelo de 2022) | Altavoz inteligente wifi y Bluetooth, con sonido más potente y de mayor ",
+     "Amazon Echo Dot Max (última generación): altavoz con sonido envolvente y controlador de Hogar digita"
+    ]
+   }
   },
   "45403202658": {
    "ean": "6977728943800",
@@ -485,8 +528,19 @@
    "pp_drop": 45,
    "pp_median": 92.95,
    "pp_price": 50.95,
-   "t": "2026-11-13T13:25:30.604640+00:00",
-   "veredicto": "no_esta"
+   "t": "2026-11-13T22:50:26.355987+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "HP 925 - Vertikale Maus - ergonomisch - 6 Tasten - kabellos - Bluetooth 5.3, 2.4 GHz - kabelloser Em"
+    ],
+    "nombre": [
+     "HP Tilt 720M - Ratón inalámbrico ergonómico (Inclinación semivertical 21°, Bluetooth y USB Type-A, R",
+     "Logitech Lift Ratón Ergonómico Vertical - Gris",
+     "HP 780M Ratón Inalámbrico Ergonómico con Desplazamiento Ultra Rápido, Supercondensador Recargable, 6"
+    ]
+   }
   },
   "46239684598": {
    "ean": "5061112450973",
@@ -743,14 +797,14 @@
    "veredicto": "no_esta"
   }
  },
- "night_at": "2026-11-13T22:35:19.548446+00:00",
+ "night_at": "2026-11-13T22:50:26.355987+00:00",
  "resumen": {
   "amazon_mas_barato": 11,
   "dudoso": 0,
-  "no_esta": 11,
-  "oferta_real": 5,
+  "no_esta": 10,
+  "oferta_real": 6,
   "pvpr_inflado": 3,
   "sin_precio": 3
  },
- "updated": "2026-11-13T22:35:19.548446+00:00"
+ "updated": "2026-11-13T22:50:26.355987+00:00"
 }
