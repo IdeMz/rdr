@@ -168,6 +168,19 @@
     ]
    }
   },
+  "196388599943": {
+   "a": "",
+   "t": "2026-11-14T09:20:40.743974+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "(sin resultados)"
+    ]
+   }
+  },
   "196786567667": {
    "a": "",
    "t": "2026-11-14T04:20:27.040644+00:00",
@@ -1372,6 +1385,26 @@
     ]
    }
   },
+  "46093615979": {
+   "ean": "196388599943",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Ninja Gaiden 4 Standard Edition - PlayStation 5",
+   "pp_drop": 19,
+   "pp_median": 63.95,
+   "pp_price": 51.95,
+   "t": "2026-11-14T09:20:40.743974+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "(sin resultados)"
+    ]
+   }
+  },
   "46106243328": {
    "ean": "5060777122928",
    "lista": "candidates",
@@ -1964,11 +1997,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "SSD Silicon Power Ace A55 4TB 2.5 pulgadas SATA III Negro",
-   "pista": "1932268 bytes; 7 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1895462 bytes; 3 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 18,
    "pp_median": 553.95,
    "pp_price": 456.94,
-   "t": "2026-11-14T03:20:26.477658+00:00",
+   "t": "2026-11-14T09:20:40.743974+00:00",
    "veredicto": "sin_precio"
   },
   "46599141566": {
@@ -2142,10 +2175,10 @@
  "resumen": {
   "amazon_mas_barato": 20,
   "dudoso": 3,
-  "no_esta": 23,
+  "no_esta": 24,
   "oferta_real": 21,
   "pvpr_inflado": 4,
   "sin_precio": 3
  },
- "updated": "2026-11-14T08:45:50.370542+00:00"
+ "updated": "2026-11-14T09:20:40.743974+00:00"
 }
