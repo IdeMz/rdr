@@ -499,6 +499,21 @@
    "title": "KOSPET Tank T3 Ultra 2 Reloj Inteligente Hombre GPS, Acero Inoxidable Bateria Larga Duracion Reloj Inteligente, 1,43'' AMOLED 5ATM Impermeable Smartwatch Hombre",
    "via": "nombre"
   },
+  "6975165000599": {
+   "a": "",
+   "t": "2026-11-14T11:05:31.708608+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "UREVO Cinta de Correr Plegable 2 en 1 con aplicación para el hogar",
+     "Vannect 6 en 1 Cinta de Correr Plegable, 9% Inclinación Cinta de Andar con 12KM/H, Dual Pantalla LED",
+     "UREVO CyberPad Smart Walking Pad - Cinta de correr de escritorio con inclinación automática del 14% "
+    ]
+   }
+  },
   "6975253983131": {
    "a": "B0CVVT1HCW",
    "t": "2026-11-14T05:08:32.344426+00:00",
@@ -1549,6 +1564,25 @@
    "t": "2026-11-14T02:20:24.077147+00:00",
    "veredicto": "oferta_real"
   },
+  "46186025334": {
+   "ahorro_vs_amazon": 3,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 52.39,
+   "amz_title": "Moulinex Inicio Compact, Plancha de Paninis y Grill de 1000W, Inox, Pinzas",
+   "asin": "B0FX5K33S4",
+   "disponible": true,
+   "ean": "3045380026261",
+   "encontrado_por": "nombre",
+   "lista": "to_verify",
+   "motivo": "Amazon 52.39 frente a 50.95",
+   "name": "Parrilla eléctrica Moulinex Inicio Compact 1000W 2 personas Negro GI270D",
+   "pp_drop": 51,
+   "pp_median": 103.95,
+   "pp_price": 50.95,
+   "t": "2026-11-14T11:05:31.708608+00:00",
+   "veredicto": "amazon_mas_barato"
+  },
   "46186027796": {
    "ean": "0884095225322",
    "lista": "candidates",
@@ -2250,16 +2284,38 @@
      "De'Longhi Calefactor Vertical Edge 1 Bianco"
     ]
    }
+  },
+  "46725327773": {
+   "ean": "6975165000599",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Cinta de correr UREVO Strol 2E Negro Plegable 2,5CV 10km/h",
+   "pp_drop": 40,
+   "pp_median": 499.0,
+   "pp_price": 299.0,
+   "t": "2026-11-14T11:05:31.708608+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "UREVO Cinta de Correr Plegable 2 en 1 con aplicación para el hogar",
+     "Vannect 6 en 1 Cinta de Correr Plegable, 9% Inclinación Cinta de Andar con 12KM/H, Dual Pantalla LED",
+     "UREVO CyberPad Smart Walking Pad - Cinta de correr de escritorio con inclinación automática del 14% "
+    ]
+   }
   }
  },
  "night_at": "2026-11-14T05:50:24.845085+00:00",
  "resumen": {
-  "amazon_mas_barato": 10,
+  "amazon_mas_barato": 11,
   "dudoso": 2,
-  "no_esta": 8,
+  "no_esta": 9,
   "oferta_real": 12,
   "pvpr_inflado": 1,
   "sin_precio": 3
  },
- "updated": "2026-11-14T10:30:50.359175+00:00"
+ "updated": "2026-11-14T11:05:31.708608+00:00"
 }

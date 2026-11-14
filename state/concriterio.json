@@ -10,7 +10,7 @@
   "Café y cápsulas": "2026-11-13T20:40:48.338068+00:00",
   "Cargadores y baterías": "2026-11-13T21:15:42.495405+00:00",
   "Ciclismo": "2026-11-14T08:45:50.370542+00:00",
-  "Climatización": "2026-11-13T07:01:09.103150+00:00",
+  "Climatización": "2026-11-14T11:05:31.708608+00:00",
   "Colchones y almohadas": "2026-11-13T08:45:39.815574+00:00",
   "Cuidado de la piel": "2026-11-13T14:35:34.102055+00:00",
   "Cuidado del cabello": "2026-11-13T21:50:42.988192+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-13T21:50:42.988192+00:00",
   "Zapatillas": "2026-11-13T19:20:42.278458+00:00"
  },
- "next_at": "2026-11-14T11:03:20.067897+00:00",
+ "next_at": "2026-11-14T11:40:20.340170+00:00",
  "offer": {
   "a": "B08PVDQFQQ",
   "m": 218,
@@ -713,6 +713,17 @@
    "p": 99.99,
    "t": "2026-11-06T21:06:01.022588+00:00",
    "title": "TECLAST M50T Tablet 10.1 Pulgadas Android 16 Tableta Gemini AI, 32GB RAM+128GB ROM+5TB TF, 2GHz Octa-Core, 7000mAh, 2.4G+5G WiFi, BT 5.4/Widevine L1/13MP+5MP/3.5MM/Face ID/OTG, Tablets con Lápiz, 2026",
+   "v": []
+  },
+  "B09HCH4T22": {
+   "c": "Climatización",
+   "d": 27,
+   "e": "🌬️",
+   "m": 286,
+   "p": 21.99,
+   "s": "ofertas",
+   "t": "2026-11-14T11:05:59.888684+00:00",
+   "title": "Mellerware Homy Calefactor Baño Bajo Consumo 2000W IP24 con Termostato ECO",
    "v": []
   },
   "B09HHNZ5Q4": {
@@ -2345,10 +2356,6 @@
    "t": "2026-11-13T15:10:54.425531+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0816QF6SZ": {
-   "t": "2026-11-13T11:05:30.316413+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B09L196XFD": {
    "t": "2026-11-13T15:10:54.425531+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2432,6 +2439,18 @@
  },
  "reserve": [
   {
+   "a": "B0CL5C3BQC",
+   "c": "Climatización",
+   "e": "🌬️",
+   "img": "https://m.media-amazon.com/images/I/31Rt9TI2kiL._AC_UY218_.jpg",
+   "n": 1400,
+   "op": 39.99,
+   "p": 29.99,
+   "r": 4.2,
+   "t": "2026-11-14T11:05:31.708608+00:00",
+   "title": "Mellerware Homy! Calefactor Cerámico Bajo Consumo 2000W Oscilante"
+  },
+  {
    "a": "B00HGPLEX4",
    "c": "Fitness en casa",
    "e": "🏋️",
@@ -2454,24 +2473,12 @@
    "r": 4.6,
    "t": "2026-11-14T08:10:40.297090+00:00",
    "title": "Soundcore Anker V20i Auriculares Open-Ear, Ganchos Ajustables, IPX5, Negro"
-  },
-  {
-   "a": "B0CP7R6KDQ",
-   "c": "Monitores",
-   "e": "🖥️",
-   "img": "https://m.media-amazon.com/images/I/710q+sSccwL._AC_UL320_.jpg",
-   "n": 804,
-   "op": 89.9,
-   "p": 79.9,
-   "r": 4.6,
-   "t": "2026-11-14T07:35:33.414859+00:00",
-   "title": "Amazon Basics Monitor de 27\"/68.6 cm, FHD 1080p, MAX 100 Hz, Compatible con VESA, Altavoces Integrados, Negro"
   }
  ],
  "summary_day": "2026-11-13",
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-14",
-  "n": 7
+  "n": 8
  }
 }
