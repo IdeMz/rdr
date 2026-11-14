@@ -272,11 +272,23 @@
    "title": "Russell Hobbs Adventure 24080-56 – Tostadora, 2 Ranuras Anchas, para 2 Rebanadas, Acero Inoxidable, Plata",
    "via": "ean"
   },
+  "4054278048215": {
+   "a": "B0794VJ2J1",
+   "t": "2026-11-14T22:05:27.466329+00:00",
+   "title": "KÄRCHER NT 30/1 Tact Te M Aspirador Multiuso en seco y húmedo, Elimina de Forma Segura los Polvos Respirables de Clase M, Gris",
+   "via": "ean"
+  },
   "4260499852320": {
    "a": "B08S7MYYL7",
    "t": "2026-11-13T20:40:48.338068+00:00",
    "title": "BLAUPUNKT Milano 200 BT - Bluetooth 1-DIN Radio MIT CD mit USB | Autoradio",
    "via": "nombre"
+  },
+  "4260499852344": {
+   "a": "B08S7JHLJQ",
+   "t": "2026-11-14T22:05:27.466329+00:00",
+   "title": "Blaupunkt Valencia 200 DAB BT | DAB+, Bluetooth, sintonizador RDS, manos libres, USB, entrada auxiliar",
+   "via": "ean"
   },
   "4547410455649": {
    "a": "B09TWS33C3",
@@ -833,6 +845,12 @@
    "t": "2026-11-14T04:50:24.590570+00:00",
    "title": "Samsung Monitor Curvo Gaming Odyssey G9 G95C Dual QHD 49\" con 240Hz y AMD Freesync Pro",
    "via": "modelo"
+  },
+  "8806096444061": {
+   "a": "B0F38QGFFB",
+   "t": "2026-11-14T22:05:27.466329+00:00",
+   "title": "LG Smart Monitor 27U731SA-W - 27'', IPS, 4K, 60 Hz, DCI-P3-90%, Blanco",
+   "via": "ean"
   },
   "8806097480167": {
    "a": "B0G2RM5BK9",
@@ -2097,6 +2115,25 @@
     ]
    }
   },
+  "46239684647": {
+   "ahorro_vs_amazon": -2,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 692.9,
+   "amz_title": "KÄRCHER NT 30/1 Tact Te M Aspirador Multiuso en seco y húmedo, Elimina de Forma Segura los Polvos Respirables de Clase M, Gris",
+   "asin": "B0794VJ2J1",
+   "disponible": true,
+   "ean": "4054278048215",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 692.90 frente a 705.95",
+   "name": "Kärcher NT 30/1 Tact Te M 25,4 kPa Negro/Gris 1380W Aspirador",
+   "pp_drop": 11,
+   "pp_median": 788.94,
+   "pp_price": 705.95,
+   "t": "2026-11-14T22:05:27.466329+00:00",
+   "veredicto": "amazon_mas_barato"
+  },
   "46239685052": {
    "ean": "0622356320559",
    "lista": "candidates",
@@ -2401,6 +2438,25 @@
    "pp_price": 33.95,
    "t": "2026-11-14T14:01:05.199813+00:00",
    "veredicto": "oferta_real"
+  },
+  "46599139889": {
+   "ahorro_vs_amazon": 5,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 274.0,
+   "amz_title": "LG Smart Monitor 27U731SA-W - 27'', IPS, 4K, 60 Hz, DCI-P3-90%, Blanco",
+   "asin": "B0F38QGFFB",
+   "disponible": true,
+   "ean": "8806096444061",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "solo 5 % por debajo del habitual en Amazon (274.00)",
+   "name": "Monitor LG MyView 27 pulgadas 4K IPS 60Hz 5 ms Blanco 27U731SA-W",
+   "pp_drop": 13,
+   "pp_median": 298.0,
+   "pp_price": 259.0,
+   "t": "2026-11-14T22:05:27.466329+00:00",
+   "veredicto": "dudoso"
   },
   "46599140076": {
    "ahorro_vs_amazon": -125,
@@ -2781,6 +2837,25 @@
    "t": "2026-11-14T03:50:27.795156+00:00",
    "veredicto": "pvpr_inflado"
   },
+  "46599144079": {
+   "ahorro_vs_amazon": -30,
+   "amz_low30": null,
+   "amz_median": 98.4,
+   "amz_price": 92.5,
+   "amz_title": "Blaupunkt Valencia 200 DAB BT | DAB+, Bluetooth, sintonizador RDS, manos libres, USB, entrada auxiliar",
+   "asin": "B08S7JHLJQ",
+   "disponible": true,
+   "ean": "4260499852344",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 92.50 frente a 127.95",
+   "name": "Blaupunkt Valencia 200 DAB BT Negro 1 DIN Autorradio",
+   "pp_drop": 15,
+   "pp_median": 150.62,
+   "pp_price": 127.95,
+   "t": "2026-11-14T22:05:27.466329+00:00",
+   "veredicto": "amazon_mas_barato"
+  },
   "46599144084": {
    "ahorro_vs_amazon": 7,
    "amz_low30": null,
@@ -2958,14 +3033,14 @@
    }
   }
  },
- "night_at": "2026-11-14T05:50:24.845085+00:00",
+ "night_at": "2026-11-14T22:05:27.466329+00:00",
  "resumen": {
-  "amazon_mas_barato": 16,
-  "dudoso": 4,
+  "amazon_mas_barato": 18,
+  "dudoso": 5,
   "no_esta": 15,
   "oferta_real": 20,
   "pvpr_inflado": 2,
   "sin_precio": 3
  },
- "updated": "2026-11-14T21:35:30.640432+00:00"
+ "updated": "2026-11-14T22:05:27.466329+00:00"
 }
