@@ -18,6 +18,21 @@
    "title": "Apple AirPods Max Auriculares inalámbricos de diadema con cancelación activa de ruido de nivel profesional,modo de sonido ambiente,audio espacial personalizado,",
    "via": "ean"
   },
+  "0196548864997": {
+   "a": "",
+   "t": "2026-11-14T01:50:35.475157+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "HP 715 RECHBL MULT-DVC WRLS"
+    ],
+    "nombre": [
+     "HP 715 RECHBL MULT-DVC WRLS",
+     "HP Smart Tank 7605 Impresora A4 Multifunción con Deposito de Tinta",
+     "HP Smart Tank 7008, Impresora multifunción de inyección de Tinta A4 a Color, Wi-Fi, impresión a Dobl"
+    ]
+   }
+  },
   "0196548939664": {
    "a": "",
    "t": "2026-11-13T22:50:26.355987+00:00",
@@ -191,10 +206,22 @@
     ]
    }
   },
+  "5706991019971": {
+   "a": "B01K6TUC20",
+   "t": "2026-11-14T01:50:35.475157+00:00",
+   "title": "Jabra Evolve 30 UC - Auriculares Estéreo de Comunicaciones Unificadas para VoIP Softphone - Cancelación Pasiva de Ruido - Cable USB con Unidad de Control - Negr",
+   "via": "ean"
+  },
   "5706991026542": {
    "a": "B0BKH4FX9Y",
    "t": "2026-11-13T21:50:42.988192+00:00",
    "title": "Jabra Evolve2 Buds, Auriculares Bluetooth Intraaurales Inalámbricos, Cancelación Activa de Ruido y Tecnología MultiSensor con 4 Micrófonos, Certificados para MS",
+   "via": "ean"
+  },
+  "5707119062299": {
+   "a": "B0F5QHBD4P",
+   "t": "2026-11-14T01:50:35.475157+00:00",
+   "title": "SteelSeries Rival 3 Wireless Gen 2 - Raton Gaming - 2,4GHz y Bluetooth - Sensor óptico TrueMove Air de 18000 dpi - Durabilidad de 60 M de clics - Ligero - Desli",
    "via": "ean"
   },
   "5901969445664": {
@@ -460,6 +487,25 @@
    "pp_price": 449.95,
    "t": "2026-11-13T21:15:42.495405+00:00",
    "veredicto": "amazon_mas_barato"
+  },
+  "41436482383": {
+   "ahorro_vs_amazon": 53,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 78.44,
+   "amz_title": "Jabra Evolve 30 UC - Auriculares Estéreo de Comunicaciones Unificadas para VoIP Softphone - Cancelación Pasiva de Ruido - Cable USB con Unidad de Control - Negr",
+   "asin": "B01K6TUC20",
+   "disponible": true,
+   "ean": "5706991019971",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "53 % por debajo del habitual en Amazon (78.44)",
+   "name": "Jabra Evolve 30 II UC Stereo USB-A Diadema con micrófono Auriculares",
+   "pp_drop": 27,
+   "pp_median": 50.95,
+   "pp_price": 36.95,
+   "t": "2026-11-14T01:50:35.475157+00:00",
+   "veredicto": "oferta_real"
   },
   "45020234483": {
    "ahorro_vs_amazon": 12,
@@ -821,6 +867,25 @@
     ]
    }
   },
+  "46239682507": {
+   "ahorro_vs_amazon": -64,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 30.99,
+   "amz_title": "SteelSeries Rival 3 Wireless Gen 2 - Raton Gaming - 2,4GHz y Bluetooth - Sensor óptico TrueMove Air de 18000 dpi - Durabilidad de 60 M de clics - Ligero - Desli",
+   "asin": "B0F5QHBD4P",
+   "disponible": true,
+   "ean": "5707119062299",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 30.99 frente a 50.95",
+   "name": "SteelSeries Rival 3 Wireless Gen 2 18000 DPI RGB Azul Claro 6 botones Bluetooth + 2.4GHz 84 g Ratón gaming inalámbrico",
+   "pp_drop": 25,
+   "pp_median": 68.27,
+   "pp_price": 50.95,
+   "t": "2026-11-14T01:50:35.475157+00:00",
+   "veredicto": "amazon_mas_barato"
+  },
   "46239684598": {
    "ean": "5061112450973",
    "lista": "candidates",
@@ -880,6 +945,28 @@
    "pp_price": 53.95,
    "t": "2026-11-13T16:01:12.341933+00:00",
    "veredicto": "amazon_mas_barato"
+  },
+  "46247661228": {
+   "ean": "0196548864997",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "HP 715 Multidispositivo Negro Bluetooth 5.3 7 botones 84 g Ratón silencioso recargable",
+   "pp_drop": 25,
+   "pp_median": 67.95,
+   "pp_price": 50.95,
+   "t": "2026-11-14T01:50:35.475157+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "HP 715 RECHBL MULT-DVC WRLS"
+    ],
+    "nombre": [
+     "HP 715 RECHBL MULT-DVC WRLS",
+     "HP Smart Tank 7605 Impresora A4 Multifunción con Deposito de Tinta",
+     "HP Smart Tank 7008, Impresora multifunción de inyección de Tinta A4 a Color, Wi-Fi, impresión a Dobl"
+    ]
+   }
   },
   "46256205684": {
    "ahorro_vs_amazon": -5,
@@ -1127,14 +1214,14 @@
    }
   }
  },
- "night_at": "2026-11-14T01:20:25.760497+00:00",
+ "night_at": "2026-11-14T01:50:35.475157+00:00",
  "resumen": {
-  "amazon_mas_barato": 13,
+  "amazon_mas_barato": 14,
   "dudoso": 0,
-  "no_esta": 11,
-  "oferta_real": 9,
+  "no_esta": 12,
+  "oferta_real": 10,
   "pvpr_inflado": 3,
   "sin_precio": 3
  },
- "updated": "2026-11-14T01:20:25.760497+00:00"
+ "updated": "2026-11-14T01:50:35.475157+00:00"
 }
