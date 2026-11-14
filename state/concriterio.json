@@ -7,7 +7,7 @@
   "Aspiradoras": "2026-11-13T18:45:39.134382+00:00",
   "Auriculares": "2026-11-14T08:10:40.297090+00:00",
   "Cafeteras": "2026-11-14T14:40:41.311125+00:00",
-  "Café y cápsulas": "2026-11-13T20:40:48.338068+00:00",
+  "Café y cápsulas": "2026-11-14T16:45:37.700799+00:00",
   "Cargadores y baterías": "2026-11-13T21:15:42.495405+00:00",
   "Ciclismo": "2026-11-14T08:45:50.370542+00:00",
   "Climatización": "2026-11-14T11:05:31.708608+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-13T21:50:42.988192+00:00",
   "Zapatillas": "2026-11-13T19:20:42.278458+00:00"
  },
- "next_at": "2026-11-14T16:42:07.546320+00:00",
+ "next_at": "2026-11-14T17:16:25.948760+00:00",
  "offer": {
   "a": "B0H75TB7ZC",
   "m": 239,
@@ -1163,6 +1163,17 @@
    "p": 23.99,
    "t": "2026-11-11T07:35:57.800070+00:00",
    "title": "Soundcore P30i de Anker Auriculares con Cancelación de Ruido, 45h",
+   "v": []
+  },
+  "B0CW22BX7M": {
+   "c": "Café y cápsulas",
+   "d": 31,
+   "e": "🫘",
+   "m": 294,
+   "p": 8.32,
+   "s": "busqueda",
+   "t": "2026-11-14T16:46:09.761248+00:00",
+   "title": "Marcilla Puro Arábica Café en Grano Sudamérica 100% Arábica | 400g",
    "v": []
   },
   "B0CWY22136": {
@@ -2516,6 +2527,18 @@
  },
  "reserve": [
   {
+   "a": "B0CNY1GWVC",
+   "c": "Café y cápsulas",
+   "e": "🫘",
+   "img": "https://m.media-amazon.com/images/I/81X7BaXHtwL._AC_UL320_.jpg",
+   "n": 2700,
+   "op": 24.38,
+   "p": 19.49,
+   "r": 4.6,
+   "t": "2026-11-14T16:45:37.700799+00:00",
+   "title": "STARBUCKS Paquete Variado de Nespresso, Cápsulas de Café de Diferentes Intensidades 6 x 10 (60 Cápsulas) - Exclusivo de Amazon"
+  },
+  {
    "a": "B0FJFS513J",
    "c": "Afeitado y depilación",
    "e": "🪒",
@@ -2544,6 +2567,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-14",
-  "n": 15
+  "n": 16
  }
 }

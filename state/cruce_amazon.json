@@ -24,6 +24,26 @@
    "title": "Apple MacBook Air de 13,6 Pulgadas con Chip M5: Pantalla Liquid Retina, CPU de 10 núcleos, GPU de 8 núcleos, 16 GB de Memoria unificada, 512 GB de SSD, Wi-Fi 7,",
    "via": "ean"
   },
+  "0196388689545": {
+   "a": "",
+   "t": "2026-11-14T16:45:37.700799+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "Microsoft Surface Pro para Business Platinum (12th)・13\" Touch・Core Ultra 7 366H・64GB・512GB・W11P (EP2"
+    ],
+    "modelo": [
+     "Microsoft Surface Pro for Business - 12th Edition - Intel Core Ultra 7 366H / 2GHz - Win11Pro - Inte",
+     "Microsoft Surface Laptop 8 13.8 Copilot+ Pc Intel Core Ultra 7 366h Computer Portatile 35 Cm [13.8] ",
+     "Microsoft Surface Laptop 8 13.8 Copilot+ Pc Intel Core Ultra 7 366h Computer Portatile 35 Cm [13.8] "
+    ],
+    "nombre": [
+     "Microsoft Surface Pro, 12\" | Snapdragon X Plus | 16GB RAM, 512GB SSD",
+     "Microsoft Surface Pro, 12\" | Snapdragon X Plus | 16GB RAM, 512GB SSD",
+     "Microsoft Surface Pro, 13\" | Snapdragon X2 Plus | 16GB RAM, 256GB SSD"
+    ]
+   }
+  },
   "0196548864997": {
    "a": "",
    "t": "2026-11-14T01:50:35.475157+00:00",
@@ -2280,7 +2300,7 @@
    "veredicto": "oferta_real"
   },
   "46599140716": {
-   "ahorro_vs_amazon": 75,
+   "ahorro_vs_amazon": 76,
    "amz_low30": null,
    "amz_median": null,
    "amz_price": 749.64,
@@ -2290,12 +2310,12 @@
    "ean": "4711474211033",
    "encontrado_por": "modelo",
    "lista": "candidates",
-   "motivo": "75 % por debajo del habitual en Amazon (749.64)",
+   "motivo": "76 % por debajo del habitual en Amazon (749.64)",
    "name": "Monitor Acer Vero B7 B277 D6 27 pulgadas Full HD 4 ms Negro",
-   "pp_drop": 15,
+   "pp_drop": 18,
    "pp_median": 217.16,
-   "pp_price": 184.95,
-   "t": "2026-11-14T08:10:40.297090+00:00",
+   "pp_price": 177.95,
+   "t": "2026-11-14T16:45:37.700799+00:00",
    "veredicto": "oferta_real"
   },
   "46599141105": {
@@ -2415,6 +2435,33 @@
    "pp_price": 1219.0,
    "t": "2026-11-14T04:20:27.040644+00:00",
    "veredicto": "dudoso"
+  },
+  "46599143223": {
+   "ean": "0196388689545",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Microsoft Surface Pro 12 64GB/512GB 13 pulgadas Negro OLED 120Hz Intel Core Ultra 7 366H WiFi 7",
+   "pp_drop": 11,
+   "pp_median": 5155.76,
+   "pp_price": 4585.95,
+   "t": "2026-11-14T16:45:37.700799+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "Microsoft Surface Pro para Business Platinum (12th)・13\" Touch・Core Ultra 7 366H・64GB・512GB・W11P (EP2"
+    ],
+    "modelo": [
+     "Microsoft Surface Pro for Business - 12th Edition - Intel Core Ultra 7 366H / 2GHz - Win11Pro - Inte",
+     "Microsoft Surface Laptop 8 13.8 Copilot+ Pc Intel Core Ultra 7 366h Computer Portatile 35 Cm [13.8] ",
+     "Microsoft Surface Laptop 8 13.8 Copilot+ Pc Intel Core Ultra 7 366h Computer Portatile 35 Cm [13.8] "
+    ],
+    "nombre": [
+     "Microsoft Surface Pro, 12\" | Snapdragon X Plus | 16GB RAM, 512GB SSD",
+     "Microsoft Surface Pro, 12\" | Snapdragon X Plus | 16GB RAM, 512GB SSD",
+     "Microsoft Surface Pro, 13\" | Snapdragon X2 Plus | 16GB RAM, 256GB SSD"
+    ]
+   }
   },
   "46599143318": {
    "ean": "6942785108035",
@@ -2616,10 +2663,10 @@
  "resumen": {
   "amazon_mas_barato": 14,
   "dudoso": 2,
-  "no_esta": 12,
+  "no_esta": 13,
   "oferta_real": 15,
   "pvpr_inflado": 2,
   "sin_precio": 3
  },
- "updated": "2026-11-14T16:10:41.956036+00:00"
+ "updated": "2026-11-14T16:45:37.700799+00:00"
 }
