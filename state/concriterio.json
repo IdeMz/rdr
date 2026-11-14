@@ -26,14 +26,14 @@
   "Menaje de cocina": "2026-11-14T12:15:37.671280+00:00",
   "Mochilas y maletas": "2026-11-14T09:20:40.743974+00:00",
   "Monitores": "2026-11-14T07:35:33.414859+00:00",
-  "Móviles": "2026-11-14T07:01:07.663772+00:00",
+  "Móviles": "2026-11-14T19:45:46.808036+00:00",
   "Nutrición deportiva": "2026-11-14T11:40:39.802795+00:00",
   "Perfumes": "2026-11-14T12:50:38.841046+00:00",
   "Periféricos": "2026-11-14T17:55:30.798523+00:00",
   "Perros": "2026-11-13T11:40:39.260187+00:00",
-  "Portátiles": "2026-11-12T21:40:51.544407+00:00",
+  "Portátiles": "2026-11-14T19:45:46.808036+00:00",
   "Relojes": "2026-11-13T15:10:54.425531+00:00",
-  "Robots de cocina": "2026-11-13T17:10:41.240248+00:00",
+  "Robots de cocina": "2026-11-14T19:45:46.808036+00:00",
   "Smartwatch": "2026-11-14T14:01:05.199813+00:00",
   "Suplementos": "2026-11-13T10:31:00.804242+00:00",
   "Tablets": "2026-11-12T21:55:34.077440+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-13T21:50:42.988192+00:00",
   "Zapatillas": "2026-11-13T19:20:42.278458+00:00"
  },
- "next_at": "2026-11-14T19:40:52.684664+00:00",
+ "next_at": "2026-11-14T20:15:52.047527+00:00",
  "offer": {
   "a": "B0CBMVQQSK",
   "m": 247,
@@ -654,6 +654,17 @@
    "s": "busqueda",
    "t": "2026-11-12T08:11:27.235153+00:00",
    "title": "WD_BLACK P10 2TB Game Drive for Xbox One para obtener acceso a su colección de juegos de Xbox en cualquier lugar",
+   "v": []
+  },
+  "B08PVDQFQQ": {
+   "c": "Robots de cocina",
+   "d": 26,
+   "e": "🥣",
+   "m": 298,
+   "p": 29.56,
+   "s": "ofertas",
+   "t": "2026-11-14T19:46:43.508950+00:00",
+   "title": "Cecotec Batidora de mano Power TitanBlack 1200 XL Cream&Crush. Potencia 1200 W, Tecnología CrossBlades, Pie XL, Campana antisalpicaduras, Velocidad ajustable, Función Turbo",
    "v": []
   },
   "B08QZXJ8T4": {
@@ -2471,12 +2482,12 @@
    "v": []
   }
  },
- "problem": {
-  "alerted_at": "2026-11-14T19:30:52.684664+00:00",
-  "fails": 3,
-  "last": "HTTP 503"
- },
+ "problem": {},
  "rejected": {
+  "B0815BLCJL": {
+   "t": "2026-11-14T19:45:46.808036+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0B7X7PK9S": {
    "t": "2026-11-13T21:50:42.988192+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2499,6 +2510,10 @@
   },
   "B0DF84JPCW": {
    "t": "2026-11-14T07:35:33.414859+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0DGL75TNW": {
+   "t": "2026-11-14T19:45:46.808036+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0DQ5WMN4H": {
@@ -2533,12 +2548,28 @@
    "t": "2026-11-14T14:01:05.199813+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0H62LV77B": {
+   "t": "2026-11-14T19:45:46.808036+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0HJR8HC2F": {
    "t": "2026-11-14T14:01:05.199813+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   }
  },
  "reserve": [
+  {
+   "a": "B0DJ2Y3XZ8",
+   "c": "Robots de cocina",
+   "e": "🥣",
+   "img": "https://m.media-amazon.com/images/I/71xs9hRoGTL._AC_UL320_.jpg",
+   "n": 71,
+   "op": 79.9,
+   "p": 58.9,
+   "r": 4.4,
+   "t": "2026-11-14T19:45:46.808036+00:00",
+   "title": "Cecotec Robot de Cocina Bebé, Procesador de Alimentos Nana BabyCare FoodProcessor. Hierve, Tritura, Esteriliza y Calienta Biberones, sin BPA, Apto para Frutas, Verduras y Carnes, Incluye Recetario"
+  },
   {
    "a": "B0CBMVQQSK",
    "c": "Cámaras de seguridad",
@@ -2550,36 +2581,12 @@
    "r": 4.5,
    "t": "2026-11-14T17:20:46.627491+00:00",
    "title": "EZVIZ Kit de 2 Cámaras Vigilancia WiFi Interior 360º, C6N Camara Vigilancia Bebe 1080P, Visión Nocturna, Audio Bidireccional, Detección de Movimiento, Control Remoto, Blanco"
-  },
-  {
-   "a": "B0CNY1GWVC",
-   "c": "Café y cápsulas",
-   "e": "🫘",
-   "img": "https://m.media-amazon.com/images/I/81X7BaXHtwL._AC_UL320_.jpg",
-   "n": 2700,
-   "op": 24.38,
-   "p": 19.49,
-   "r": 4.6,
-   "t": "2026-11-14T16:45:37.700799+00:00",
-   "title": "STARBUCKS Paquete Variado de Nespresso, Cápsulas de Café de Diferentes Intensidades 6 x 10 (60 Cápsulas) - Exclusivo de Amazon"
-  },
-  {
-   "a": "B0FJFS513J",
-   "c": "Afeitado y depilación",
-   "e": "🪒",
-   "img": "https://m.media-amazon.com/images/I/71mJQmQ3UsL._AC_UL320_.jpg",
-   "n": 616,
-   "op": 74.99,
-   "p": 49.99,
-   "r": 4.3,
-   "t": "2026-11-14T16:10:41.956036+00:00",
-   "title": "Afeitadora Philips Serie 8000 - Afeitadora sin cable para uso en seco y en mojado, sistema de 3 cuchillas, luz LED, para la cara, las piernas, el cuerpo y la zona del bikini, Modelo BRL159/00"
   }
  ],
  "summary_day": "2026-11-13",
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-14",
-  "n": 19
+  "n": 20
  }
 }
