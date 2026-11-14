@@ -314,6 +314,12 @@
    "title": "AOPEN QH12a Proyector LED portátil HD 1280x720, 135 lúmenes, Entrada de Gama, Blanco",
    "via": "ean"
   },
+  "4711377301541": {
+   "a": "B0F11KQQF4",
+   "t": "2026-11-14T20:20:37.410274+00:00",
+   "title": "MSI Gaming RTX 5070 Ti 16G Gaming Trio OC Tarjeta gráfica (16 GB GDDR7, 256 bits, rendimiento extremo: 2580, DisplayPort x 3 2.1a, HDMI 2.1b, NVIDIA Blackwell A",
+   "via": "nombre"
+  },
   "4711377344272": {
    "a": "B0F4LQ216W",
    "t": "2026-11-14T18:30:55.099025+00:00",
@@ -950,11 +956,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Shokz OpenFit Air Rosa Open-Ear Bluetooth 5.2 IP54 Multipunto Auriculares inalámbricos",
-   "pista": "1867300 bytes; 16 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
-   "pp_drop": 25,
-   "pp_median": 84.95,
+   "pista": "1872691 bytes; 11 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pp_drop": 19,
+   "pp_median": 78.95,
    "pp_price": 63.95,
-   "t": "2026-11-14T07:01:07.663772+00:00",
+   "t": "2026-11-14T20:20:37.410274+00:00",
    "veredicto": "sin_precio"
   },
   "40167730445": {
@@ -1553,6 +1559,25 @@
    "pp_price": 266.95,
    "t": "2026-11-13T23:20:24.256283+00:00",
    "veredicto": "oferta_real"
+  },
+  "45956990791": {
+   "ahorro_vs_amazon": 6,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 1599.75,
+   "amz_title": "MSI Gaming RTX 5070 Ti 16G Gaming Trio OC Tarjeta gráfica (16 GB GDDR7, 256 bits, rendimiento extremo: 2580, DisplayPort x 3 2.1a, HDMI 2.1b, NVIDIA Blackwell A",
+   "asin": "B0F11KQQF4",
+   "disponible": true,
+   "ean": "4711377301541",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "solo 6 % por debajo del habitual en Amazon (1599.75)",
+   "name": "MSI GeForce RTX 5070 Ti Gaming Trio OC 16GB GDDR7 3 ventiladores HDMI 2.1 Tarjeta gráfica",
+   "pp_drop": 11,
+   "pp_median": 1684.95,
+   "pp_price": 1498.95,
+   "t": "2026-11-14T20:20:37.410274+00:00",
+   "veredicto": "dudoso"
   },
   "45956990874": {
    "ahorro_vs_amazon": 16,
@@ -2812,11 +2837,11 @@
  "night_at": "2026-11-14T05:50:24.845085+00:00",
  "resumen": {
   "amazon_mas_barato": 15,
-  "dudoso": 2,
+  "dudoso": 3,
   "no_esta": 13,
   "oferta_real": 20,
   "pvpr_inflado": 2,
   "sin_precio": 3
  },
- "updated": "2026-11-14T19:45:46.808036+00:00"
+ "updated": "2026-11-14T20:20:37.410274+00:00"
 }

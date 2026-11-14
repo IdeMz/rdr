@@ -4,7 +4,7 @@
   "Afeitado y depilación": "2026-11-14T16:10:41.956036+00:00",
   "Almacenamiento": "2026-11-13T17:45:36.587944+00:00",
   "Altavoces": "2026-11-14T07:01:07.663772+00:00",
-  "Aspiradoras": "2026-11-13T18:45:39.134382+00:00",
+  "Aspiradoras": "2026-11-14T20:20:37.410274+00:00",
   "Auriculares": "2026-11-14T08:10:40.297090+00:00",
   "Cafeteras": "2026-11-14T14:40:41.311125+00:00",
   "Café y cápsulas": "2026-11-14T16:45:37.700799+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-13T21:50:42.988192+00:00",
   "Zapatillas": "2026-11-13T19:20:42.278458+00:00"
  },
- "next_at": "2026-11-14T20:15:52.047527+00:00",
+ "next_at": "2026-11-14T20:55:34.615582+00:00",
  "offer": {
   "a": "B0CBMVQQSK",
   "m": 247,
@@ -2099,6 +2099,17 @@
    "title": "Band 11 Smartwatch, 1,62″ AMOLED 1500 Nits, para Android iOS, Negro",
    "v": []
   },
+  "B0GHN9DR1C": {
+   "c": "Aspiradoras",
+   "d": 41,
+   "e": "🧹",
+   "m": 299,
+   "p": 349.99,
+   "s": "busqueda",
+   "t": "2026-11-14T20:21:40.396554+00:00",
+   "title": "roborock Qrevo S Pro Robot Aspirador (Versión Mejorada del QV 35A) Succión de 18500 Pa, Base Todo en Uno, 2,7L Bolsa para Polvo, Sistema antienredos, Evitación de Obstáculos, Negro",
+   "v": []
+  },
   "B0GLPDX39K": {
    "c": "Jardín",
    "d": 13,
@@ -2524,6 +2535,14 @@
    "t": "2026-11-14T14:01:05.199813+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0DY8V59LY": {
+   "t": "2026-11-14T20:20:37.410274+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0FL2JGPYH": {
+   "t": "2026-11-14T20:20:37.410274+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0FL32LSR5": {
    "t": "2026-11-14T07:35:33.414859+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2552,12 +2571,32 @@
    "t": "2026-11-14T19:45:46.808036+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0H6DZJX44": {
+   "t": "2026-11-14T20:20:37.410274+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0HBWW6LQQ": {
+   "t": "2026-11-14T20:20:37.410274+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0HJR8HC2F": {
    "t": "2026-11-14T14:01:05.199813+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   }
  },
  "reserve": [
+  {
+   "a": "B0H2DFN9CF",
+   "c": "Aspiradoras",
+   "e": "🧹",
+   "img": "https://m.media-amazon.com/images/I/71ROIFSuF0L._AC_UL320_.jpg",
+   "n": 73,
+   "op": 269.99,
+   "p": 218.47,
+   "r": 4.6,
+   "t": "2026-11-14T20:20:37.410274+00:00",
+   "title": "Ultenic Robot Aspirador y Fregasuelos Autovaciado con Líquido Limpiador: Láser LiDAR Lineal, Evitación Mejorada, 10000 Pa, Refuerzo en Alfombras, App y Voz, para Apartamentos y Familias con Mascotas"
+  },
   {
    "a": "B0DJ2Y3XZ8",
    "c": "Robots de cocina",
@@ -2587,6 +2626,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-14",
-  "n": 20
+  "n": 21
  }
 }
