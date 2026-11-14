@@ -303,6 +303,12 @@
     ]
    }
   },
+  "5702017818023": {
+   "a": "B0DWDQYB87",
+   "t": "2026-11-14T05:35:19.499764+00:00",
+   "title": "LEGO One Piece Barco Pirata Going Merry 75639",
+   "via": "ean"
+  },
   "5706991019971": {
    "a": "B01K6TUC20",
    "t": "2026-11-14T01:50:35.475157+00:00",
@@ -457,6 +463,12 @@
    "title": "Bowers & Wilkins Pi6 - Verde Bosque",
    "via": "ean"
   },
+  "8001090914415": {
+   "a": "B097JWGZ67",
+   "t": "2026-11-14T05:35:19.499764+00:00",
+   "title": "Oral-B Pro Series 1 Cepillo de Dientes Eléctrico con Mango Recargable y Cabezal, Diseñado por Braun, Regalos Originales para Mujer y Hombre - Negro",
+   "via": "nombre"
+  },
   "8003705121379": {
    "a": "B0C59JRLM4",
    "t": "2026-11-13T14:01:00.760700+00:00",
@@ -539,6 +551,21 @@
    "t": "2026-11-13T20:40:48.338068+00:00",
    "title": "Inno3D GeForce RTX 5080 iCHILL Frostbite 16GB GDDR7 Reflex 2 RTX AI DLSS4",
    "via": "ean"
+  },
+  "8886419377108": {
+   "a": "",
+   "t": "2026-11-14T05:35:19.499764+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "Razer Kiyo - Cámara de transmisión con Anillo de luz (cámara Web USB, vídeo HD 720p, 60 FPS, Compati"
+    ],
+    "nombre": [
+     "Razer Kiyo - Cámara de transmisión con Anillo de luz (cámara Web USB, vídeo HD 720p, 60 FPS, Compati",
+     "Razer Kiyo X - cámara web Full HD en streaming 1080p 30 fps/720p 60 fps con puesta en punto automáti",
+     "Razer Kiyo V2 X - Full-HD-Webcam 1080p, 60 FPS para Creadores - Enfoque automático - Objetivo Gran A"
+    ]
+   }
   },
   "8886419379874": {
    "a": "",
@@ -1115,6 +1142,25 @@
    "t": "2026-11-13T19:20:42.278458+00:00",
    "veredicto": "amazon_mas_barato"
   },
+  "45992963335": {
+   "ahorro_vs_amazon": 40,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 49.97,
+   "amz_title": "Oral-B Pro Series 1 Cepillo de Dientes Eléctrico con Mango Recargable y Cabezal, Diseñado por Braun, Regalos Originales para Mujer y Hombre - Negro",
+   "asin": "B097JWGZ67",
+   "disponible": true,
+   "ean": "8001090914415",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "40 % por debajo del habitual en Amazon (49.97)",
+   "name": "Oral-B Pro Series 1 Cross Action Cepillo de dientes eléctrico",
+   "pp_drop": 25,
+   "pp_median": 39.95,
+   "pp_price": 29.85,
+   "t": "2026-11-14T05:35:19.499764+00:00",
+   "veredicto": "oferta_real"
+  },
   "46001913812": {
    "ahorro_vs_amazon": -2,
    "amz_low30": null,
@@ -1276,6 +1322,28 @@
    "pp_price": 52.95,
    "t": "2026-11-13T14:35:34.102055+00:00",
    "veredicto": "oferta_real"
+  },
+  "46239681484": {
+   "ean": "8886419377108",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Razer Kiyo Full HD Micrófono USB Negro 60fps autoenfoque Webcam",
+   "pp_drop": 21,
+   "pp_median": 70.95,
+   "pp_price": 55.95,
+   "t": "2026-11-14T05:35:19.499764+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "Razer Kiyo - Cámara de transmisión con Anillo de luz (cámara Web USB, vídeo HD 720p, 60 FPS, Compati"
+    ],
+    "nombre": [
+     "Razer Kiyo - Cámara de transmisión con Anillo de luz (cámara Web USB, vídeo HD 720p, 60 FPS, Compati",
+     "Razer Kiyo X - cámara web Full HD en streaming 1080p 30 fps/720p 60 fps con puesta en punto automáti",
+     "Razer Kiyo V2 X - Full-HD-Webcam 1080p, 60 FPS para Creadores - Enfoque automático - Objetivo Gran A"
+    ]
+   }
   },
   "46239682368": {
    "ean": "0196548939664",
@@ -1457,6 +1525,25 @@
      "(sin resultados)"
     ]
    }
+  },
+  "46256205935": {
+   "ahorro_vs_amazon": -10,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 103.99,
+   "amz_title": "LEGO One Piece Barco Pirata Going Merry 75639",
+   "asin": "B0DWDQYB87",
+   "disponible": true,
+   "ean": "5702017818023",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 103.99 frente a 113.95",
+   "name": "Set de construcción LEGO One Piece Barco Pirata Going Merry 75639 1376 piezas A partir de 10 años",
+   "pp_drop": 18,
+   "pp_median": 138.94,
+   "pp_price": 113.95,
+   "t": "2026-11-14T05:35:19.499764+00:00",
+   "veredicto": "amazon_mas_barato"
   },
   "46265356695": {
    "ean": "4711387951224",
@@ -1802,14 +1889,14 @@
    }
   }
  },
- "night_at": "2026-11-14T05:08:32.344426+00:00",
+ "night_at": "2026-11-14T05:35:19.499764+00:00",
  "resumen": {
-  "amazon_mas_barato": 17,
+  "amazon_mas_barato": 18,
   "dudoso": 2,
-  "no_esta": 20,
-  "oferta_real": 16,
+  "no_esta": 21,
+  "oferta_real": 17,
   "pvpr_inflado": 4,
   "sin_precio": 3
  },
- "updated": "2026-11-14T05:08:32.344426+00:00"
+ "updated": "2026-11-14T05:35:19.499764+00:00"
 }
