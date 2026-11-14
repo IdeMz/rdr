@@ -9,7 +9,7 @@
   "Cafeteras": "2026-11-13T12:15:38.991127+00:00",
   "Café y cápsulas": "2026-11-13T20:40:48.338068+00:00",
   "Cargadores y baterías": "2026-11-13T21:15:42.495405+00:00",
-  "Ciclismo": "2026-11-13T11:05:30.316413+00:00",
+  "Ciclismo": "2026-11-14T08:45:50.370542+00:00",
   "Climatización": "2026-11-13T07:01:09.103150+00:00",
   "Colchones y almohadas": "2026-11-13T08:45:39.815574+00:00",
   "Cuidado de la piel": "2026-11-13T14:35:34.102055+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-13T21:50:42.988192+00:00",
   "Zapatillas": "2026-11-13T19:20:42.278458+00:00"
  },
- "next_at": "2026-11-14T08:43:59.774803+00:00",
+ "next_at": "2026-11-14T09:15:58.786727+00:00",
  "offer": {
   "a": "B08PVDQFQQ",
   "m": 218,
@@ -865,6 +865,17 @@
    "p": 13.25,
    "t": "2026-11-11T16:55:59.247682+00:00",
    "title": "Foodelis Creatina Monohidratada 1 kg en Polvo, 333 Dosis de 3 g, Sin Sabor",
+   "v": []
+  },
+  "B0BL39SF8P": {
+   "c": "Ciclismo",
+   "d": 11,
+   "e": "🚴",
+   "m": 282,
+   "p": 29.44,
+   "s": "ambas",
+   "t": "2026-11-14T08:46:21.283733+00:00",
+   "title": "Casco de bicicleta para hombres y mujeres, casco de ciclismo ligero con luz LED, gafas magnéticas, visera solar, cascos de bicicleta de montaña y carretera para adultos, tamaño ajustable 57-62",
    "v": []
   },
   "B0BL898WJZ": {
@@ -2321,8 +2332,8 @@
    "t": "2026-11-13T15:10:54.425531+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0CWJJ2WBC": {
-   "t": "2026-11-13T08:45:39.815574+00:00",
+  "B0CTKJKZRT": {
+   "t": "2026-11-14T08:45:50.370542+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0D3H4S8H4": {
@@ -2428,6 +2439,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-14",
-  "n": 3
+  "n": 4
  }
 }

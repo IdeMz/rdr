@@ -66,6 +66,21 @@
    "title": "SANDISK Extreme SSD externo Portátil 4TB (Disco duro externo SSD con velodidad de lectura de hasta 1050 MB/s, 1000 MB/s de escritura, Clasificación IP65 de resi",
    "via": "ean"
   },
+  "0711719592068": {
+   "a": "",
+   "t": "2026-11-14T08:45:50.370542+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Astro Bot /PS5",
+     "Astrobot - Gioco Per Ps5",
+     "ASTRO BOT"
+    ]
+   }
+  },
   "0740617207781": {
    "a": "B008CP5R8K",
    "t": "2026-11-14T00:51:58.629494+00:00",
@@ -172,6 +187,12 @@
    "a": "B0DT9SW2LH",
    "t": "2026-11-14T05:50:24.845085+00:00",
    "title": "Tefal Easy Fry Silence, Freidora de aire caliente, hasta un 99% menos de grasa, nueva tecnología silenciosa, capacidad de 5 l, con rejilla de cocción antiadhere",
+   "via": "ean"
+  },
+  "3362932914846": {
+   "a": "B01H6KXGDY",
+   "t": "2026-11-14T08:45:50.370542+00:00",
+   "title": "Thrustmaster T16000M FCS HOTAS - Pack Joystick y Acelerador - PC",
    "via": "ean"
   },
   "4260499852320": {
@@ -792,6 +813,28 @@
    "t": "2026-11-14T01:50:35.475157+00:00",
    "veredicto": "oferta_real"
   },
+  "41465570933": {
+   "ean": "0711719592068",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Astro Bot PS5",
+   "pp_drop": 20,
+   "pp_median": 54.95,
+   "pp_price": 43.9,
+   "t": "2026-11-14T08:45:50.370542+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Astro Bot /PS5",
+     "Astrobot - Gioco Per Ps5",
+     "ASTRO BOT"
+    ]
+   }
+  },
   "42520354709": {
    "ahorro_vs_amazon": 25,
    "amz_low30": null,
@@ -1230,6 +1273,25 @@
    "pp_price": 747.95,
    "t": "2026-11-14T07:35:33.414859+00:00",
    "veredicto": "dudoso"
+  },
+  "45956992523": {
+   "ahorro_vs_amazon": 21,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 144.05,
+   "amz_title": "Thrustmaster T16000M FCS HOTAS - Pack Joystick y Acelerador - PC",
+   "asin": "B01H6KXGDY",
+   "disponible": true,
+   "ean": "3362932914846",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "21 % por debajo del habitual en Amazon (144.05)",
+   "name": "Thrustmaster T-16000M FCS Hotas PC - Palanca de vuelo + Acelerador",
+   "pp_drop": 16,
+   "pp_median": 134.95,
+   "pp_price": 113.52,
+   "t": "2026-11-14T08:45:50.370542+00:00",
+   "veredicto": "oferta_real"
   },
   "45992962853": {
    "ahorro_vs_amazon": 3,
@@ -2080,10 +2142,10 @@
  "resumen": {
   "amazon_mas_barato": 20,
   "dudoso": 3,
-  "no_esta": 22,
-  "oferta_real": 20,
+  "no_esta": 23,
+  "oferta_real": 21,
   "pvpr_inflado": 4,
   "sin_precio": 3
  },
- "updated": "2026-11-14T08:10:40.297090+00:00"
+ "updated": "2026-11-14T08:45:50.370542+00:00"
 }
