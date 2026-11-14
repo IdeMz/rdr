@@ -12,6 +12,26 @@
    "title": "Apple TV 4K Black, Silver 4K Ultra HD 128 GB Wi-Fi Ethernet LAN, W128291662 (HD 128 GB Wi-Fi Ethernet LAN)",
    "via": "ean"
   },
+  "0194644019075": {
+   "a": "",
+   "t": "2026-11-14T22:50:36.785672+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "Eufy Sensor de Movimiento Blanco"
+    ],
+    "modelo": [
+     "Sensor de Movimiento, eufy Security Home Alarm System Motion Detector",
+     "eufy Security by Anker, Sensor de Puerta",
+     "eufy C28 Omni Robot Aspirador y fregasuelos, HydroJet 15.000 Pa"
+    ],
+    "nombre": [
+     "Sensor de Movimiento, eufy Security Home Alarm System Motion Detector",
+     "eufy Security by Anker, Sensor de Puerta",
+     "Tapo T100 - Detector de Movimiento WiFi, Montaje Magnético, Requiere Hub"
+    ]
+   }
+  },
   "0195949544163": {
    "a": "B0DGJ74WP3",
    "t": "2026-11-13T15:10:54.425531+00:00",
@@ -610,6 +630,12 @@
     ]
    }
   },
+  "6948052901026": {
+   "a": "B0BNNMY9S5",
+   "t": "2026-11-14T22:50:36.785672+00:00",
+   "title": "Joystick PXN-2113 Pro Flight Control",
+   "via": "ean"
+  },
   "6948052904089": {
    "a": "",
    "t": "2026-11-14T21:35:30.640432+00:00",
@@ -827,6 +853,12 @@
     ]
    }
   },
+  "8021098002440": {
+   "a": "B0C2VZJXZR",
+   "t": "2026-11-14T22:50:36.785672+00:00",
+   "title": "Braun MultiGrill 7 CG 7040, Plancha Cocina Eléctrica con Control Electrónico, 2 Termostatos Independientes, 3 Posiciones de Cocción, Placas Lavables en Lavavaji",
+   "via": "ean"
+  },
   "840006666493": {
    "a": "B0CP6BWBF5",
    "t": "2026-11-13T22:35:19.548446+00:00",
@@ -1028,6 +1060,33 @@
    "pp_price": 442.94,
    "t": "2026-11-13T15:10:54.425531+00:00",
    "veredicto": "amazon_mas_barato"
+  },
+  "39617298396": {
+   "ean": "0194644019075",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Eufy Security T8910021 Blanco WiFi Sensor de movimiento",
+   "pp_drop": 21,
+   "pp_median": 33.99,
+   "pp_price": 26.9,
+   "t": "2026-11-14T22:50:36.785672+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "Eufy Sensor de Movimiento Blanco"
+    ],
+    "modelo": [
+     "Sensor de Movimiento, eufy Security Home Alarm System Motion Detector",
+     "eufy Security by Anker, Sensor de Puerta",
+     "eufy C28 Omni Robot Aspirador y fregasuelos, HydroJet 15.000 Pa"
+    ],
+    "nombre": [
+     "Sensor de Movimiento, eufy Security Home Alarm System Motion Detector",
+     "eufy Security by Anker, Sensor de Puerta",
+     "Tapo T100 - Detector de Movimiento WiFi, Montaje Magnético, Requiere Hub"
+    ]
+   }
   },
   "39856617880": {
    "ahorro_vs_amazon": null,
@@ -2006,6 +2065,25 @@
    "t": "2026-11-14T02:20:24.077147+00:00",
    "veredicto": "oferta_real"
   },
+  "46186025333": {
+   "ahorro_vs_amazon": -31,
+   "amz_low30": null,
+   "amz_median": 119.0,
+   "amz_price": 113.9,
+   "amz_title": "Braun MultiGrill 7 CG 7040, Plancha Cocina Eléctrica con Control Electrónico, 2 Termostatos Independientes, 3 Posiciones de Cocción, Placas Lavables en Lavavaji",
+   "asin": "B0C2VZJXZR",
+   "disponible": true,
+   "ean": "8021098002440",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 113.90 frente a 155.94",
+   "name": "Parrilla eléctrica Braun MultiGrill 7 CG 7040 2000W 6 personas Acero Inoxidable",
+   "pp_drop": 14,
+   "pp_median": 180.96,
+   "pp_price": 155.94,
+   "t": "2026-11-14T22:50:36.785672+00:00",
+   "veredicto": "amazon_mas_barato"
+  },
   "46186025334": {
    "ahorro_vs_amazon": 3,
    "amz_low30": null,
@@ -2063,6 +2141,25 @@
    "pp_price": 52.95,
    "t": "2026-11-13T14:35:34.102055+00:00",
    "veredicto": "oferta_real"
+  },
+  "46186038476": {
+   "ahorro_vs_amazon": -27,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 29.99,
+   "amz_title": "Joystick PXN-2113 Pro Flight Control",
+   "asin": "B0BNNMY9S5",
+   "disponible": true,
+   "ean": "6948052901026",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 29.99 frente a 37.95",
+   "name": "Joystick de Vuelo PXN Negro PXN-2113 PRO",
+   "pp_drop": 19,
+   "pp_median": 46.95,
+   "pp_price": 37.95,
+   "t": "2026-11-14T22:50:36.785672+00:00",
+   "veredicto": "amazon_mas_barato"
   },
   "46239681484": {
    "ean": "8886419377108",
@@ -3105,14 +3202,14 @@
    }
   }
  },
- "night_at": "2026-11-14T22:20:30.510879+00:00",
+ "night_at": "2026-11-14T22:50:36.785672+00:00",
  "resumen": {
-  "amazon_mas_barato": 19,
+  "amazon_mas_barato": 21,
   "dudoso": 5,
-  "no_esta": 16,
+  "no_esta": 17,
   "oferta_real": 20,
   "pvpr_inflado": 2,
   "sin_precio": 3
  },
- "updated": "2026-11-14T22:20:30.510879+00:00"
+ "updated": "2026-11-14T22:50:36.785672+00:00"
 }
