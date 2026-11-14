@@ -23,7 +23,7 @@
   "Iluminación": "2026-11-13T20:05:35.325047+00:00",
   "Jardín": "2026-11-14T09:20:40.743974+00:00",
   "Lego": "2026-11-13T07:35:36.489438+00:00",
-  "Menaje de cocina": "2026-11-13T07:35:36.489438+00:00",
+  "Menaje de cocina": "2026-11-14T12:15:37.671280+00:00",
   "Mochilas y maletas": "2026-11-14T09:20:40.743974+00:00",
   "Monitores": "2026-11-14T07:35:33.414859+00:00",
   "Móviles": "2026-11-14T07:01:07.663772+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-13T21:50:42.988192+00:00",
   "Zapatillas": "2026-11-13T19:20:42.278458+00:00"
  },
- "next_at": "2026-11-14T12:14:21.688524+00:00",
+ "next_at": "2026-11-14T12:48:58.487405+00:00",
  "offer": {
   "a": "B08PVDQFQQ",
   "m": 218,
@@ -621,6 +621,17 @@
    "s": "busqueda",
    "t": "2026-11-12T08:11:27.235153+00:00",
    "title": "WD_BLACK P10 2TB Game Drive for Xbox One para obtener acceso a su colección de juegos de Xbox en cualquier lugar",
+   "v": []
+  },
+  "B08QZXJ8T4": {
+   "c": "Menaje de cocina",
+   "d": 19,
+   "e": "🍳",
+   "m": 288,
+   "p": 30.91,
+   "s": "busqueda",
+   "t": "2026-11-14T12:16:15.569594+00:00",
+   "title": "San Ignacio Bateria 5pcs Acero Inoxidable: cazo Ø16x7,5 Cacerolas de Ø18x8,5 y Ø20x9,5 cms, inducción, colección Cassel, 5 Piezas",
    "v": []
   },
   "B08WC4V1PK": {
@@ -2427,6 +2438,10 @@
    "t": "2026-11-13T21:50:42.988192+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0FQTVLFT1": {
+   "t": "2026-11-14T12:15:37.671280+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0FVXGNCPB": {
    "t": "2026-11-13T19:20:42.278458+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2490,6 +2505,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-14",
-  "n": 9
+  "n": 10
  }
 }

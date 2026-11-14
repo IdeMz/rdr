@@ -424,6 +424,12 @@
    "title": "Jabra Evolve2 Buds, Auriculares Bluetooth Intraaurales Inalámbricos, Cancelación Activa de Ruido y Tecnología MultiSensor con 4 Micrófonos, Certificados para MS",
    "via": "ean"
   },
+  "5707119059985": {
+   "a": "B0F5QF2JQQ",
+   "t": "2026-11-14T12:15:37.671280+00:00",
+   "title": "SteelSeries Rival 3 Wireless Gen 2 - Raton Gaming - 2,4GHz y Bluetooth - Sensor óptico TrueMove Air de 18000 dpi - Durabilidad de 60 M de clics - Ligero - Desli",
+   "via": "ean"
+  },
   "5707119062299": {
    "a": "B0F5QHBD4P",
    "t": "2026-11-14T01:50:35.475157+00:00",
@@ -666,6 +672,12 @@
    "t": "2026-11-14T04:50:24.590570+00:00",
    "title": "Samsung Monitor Curvo Gaming Odyssey G9 G95C Dual QHD 49\" con 240Hz y AMD Freesync Pro",
    "via": "modelo"
+  },
+  "8806097480167": {
+   "a": "B0G2RM5BK9",
+   "t": "2026-11-14T12:15:37.671280+00:00",
+   "title": "Samsung Galaxy Watch8 Classic 46mm LTE Negro (Black) L505 - [Versiones italiano, húngaro, polaco, rumano, austriaco y suizo]",
+   "via": "ean"
   },
   "8806097712169": {
    "a": "B0G2RPG83D",
@@ -926,6 +938,25 @@
      "ASTRO BOT"
     ]
    }
+  },
+  "41887696311": {
+   "ahorro_vs_amazon": -25,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 319.0,
+   "amz_title": "Samsung Galaxy Watch8 Classic 46mm LTE Negro (Black) L505 - [Versiones italiano, húngaro, polaco, rumano, austriaco y suizo]",
+   "asin": "B0G2RM5BK9",
+   "disponible": true,
+   "ean": "8806097480167",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 319.00 frente a 399.00",
+   "name": "Samsung Galaxy Watch8 Classic L505 46 mm LTE Negro 1,34 pulgadas AMOLED GPS 5ATM",
+   "pp_drop": 26,
+   "pp_median": 538.95,
+   "pp_price": 399.0,
+   "t": "2026-11-14T12:15:37.671280+00:00",
+   "veredicto": "amazon_mas_barato"
   },
   "42520354709": {
    "ahorro_vs_amazon": 25,
@@ -2006,6 +2037,25 @@
    "t": "2026-11-13T20:40:48.338068+00:00",
    "veredicto": "oferta_real"
   },
+  "46599139855": {
+   "ahorro_vs_amazon": -25,
+   "amz_low30": null,
+   "amz_median": 35.99,
+   "amz_price": 29.99,
+   "amz_title": "SteelSeries Rival 3 Wireless Gen 2 - Raton Gaming - 2,4GHz y Bluetooth - Sensor óptico TrueMove Air de 18000 dpi - Durabilidad de 60 M de clics - Ligero - Desli",
+   "asin": "B0F5QF2JQQ",
+   "disponible": true,
+   "ean": "5707119059985",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 29.99 frente a 44.95",
+   "name": "SteelSeries Rival 3 Wireless Gen 2 18000 DPI RGB Negro Mate 6 botones 84 g Ratón gaming inalámbrico",
+   "pp_drop": 46,
+   "pp_median": 82.95,
+   "pp_price": 44.95,
+   "t": "2026-11-14T12:15:37.671280+00:00",
+   "veredicto": "amazon_mas_barato"
+  },
   "46599139865": {
    "ahorro_vs_amazon": 14,
    "amz_low30": null,
@@ -2372,12 +2422,12 @@
  },
  "night_at": "2026-11-14T05:50:24.845085+00:00",
  "resumen": {
-  "amazon_mas_barato": 11,
+  "amazon_mas_barato": 13,
   "dudoso": 2,
   "no_esta": 10,
   "oferta_real": 12,
   "pvpr_inflado": 2,
   "sin_precio": 3
  },
- "updated": "2026-11-14T11:40:39.802795+00:00"
+ "updated": "2026-11-14T12:15:37.671280+00:00"
 }
