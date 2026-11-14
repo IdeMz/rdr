@@ -99,6 +99,12 @@
    "title": "ViewSonic VX2758A-2K-PRO QHD - Monitor de Juego (IPS, Plano, 27\", sin Marco, 1 ms, MPRT 170 Hz, 2 HDMI, DisplayPort, HDR10)",
    "via": "nombre"
   },
+  "0766907033052": {
+   "a": "B0F8MHRHLP",
+   "t": "2026-11-14T11:40:39.802795+00:00",
+   "title": "ViewSonic Monitor VG2741V-2K MNTN24-C-307",
+   "via": "ean"
+  },
   "0810092678687": {
    "a": "B0DD5DFGG5",
    "t": "2026-11-14T00:51:58.629494+00:00",
@@ -586,6 +592,21 @@
    "t": "2026-11-13T14:01:00.760700+00:00",
    "title": "Ariete 00c462800ar0 Hei?luftfritteuse 7 L Antihaftbeschichtung, BpA-Frei, Digitaler Timer, F?r Lebensmittel, Hei?lufT-Funktion, LcD-Display, UmlufT-F",
    "via": "ean"
+  },
+  "8004399141612": {
+   "a": "",
+   "t": "2026-11-14T11:40:39.802795+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "DeLonghi Caldobagno HBC 3030 Calefactor, Eléctrico, ajustes de termostato, 2200 W, blanco"
+    ],
+    "nombre": [
+     "De'Longhi Termoventilador Cerámico de Torre, Calentamiento Rápido con 2 Niveles, Mando a Distancia, ",
+     "De'Longhi HFX30c18.IW - Calefactor cerámico vertical, 2 ajustes de potencia de 900 y 1800 w, auto re",
+     "De'Longhi TRNS 0808M - Radiador de aceite, 800 w, termostato de seguridad, función Eco, controles di"
+    ]
+   }
   },
   "8004399143500": {
    "a": "",
@@ -2023,6 +2044,25 @@
    "t": "2026-11-14T04:50:24.590570+00:00",
    "veredicto": "amazon_mas_barato"
   },
+  "46599140285": {
+   "ahorro_vs_amazon": 8,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 312.19,
+   "amz_title": "ViewSonic Monitor VG2741V-2K MNTN24-C-307",
+   "asin": "B0F8MHRHLP",
+   "disponible": true,
+   "ean": "0766907033052",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "antes 438.99 en PowerPlanet, pero en Amazon suele estar a 312.19",
+   "name": "Monitor ViewSonic 27 pulgadas QHD IPS 120Hz 4 ms Negro VG2741V-2K",
+   "pp_drop": 35,
+   "pp_median": 438.99,
+   "pp_price": 285.95,
+   "t": "2026-11-14T11:40:39.802795+00:00",
+   "veredicto": "pvpr_inflado"
+  },
   "46599140303": {
    "ahorro_vs_amazon": -13,
    "amz_low30": null,
@@ -2258,6 +2298,28 @@
    "t": "2026-11-13T20:40:48.338068+00:00",
    "veredicto": "pvpr_inflado"
   },
+  "46693747636": {
+   "ean": "8004399141612",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Termoventilador De'Longhi Caldobagno Blanco Termostato 2000W HBC 3030",
+   "pp_drop": 46,
+   "pp_median": 130.95,
+   "pp_price": 70.95,
+   "t": "2026-11-14T11:40:39.802795+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "DeLonghi Caldobagno HBC 3030 Calefactor, Eléctrico, ajustes de termostato, 2200 W, blanco"
+    ],
+    "nombre": [
+     "De'Longhi Termoventilador Cerámico de Torre, Calentamiento Rápido con 2 Niveles, Mando a Distancia, ",
+     "De'Longhi HFX30c18.IW - Calefactor cerámico vertical, 2 ajustes de potencia de 900 y 1800 w, auto re",
+     "De'Longhi TRNS 0808M - Radiador de aceite, 800 w, termostato de seguridad, función Eco, controles di"
+    ]
+   }
+  },
   "46693747648": {
    "ean": "8004399143500",
    "lista": "candidates",
@@ -2312,10 +2374,10 @@
  "resumen": {
   "amazon_mas_barato": 11,
   "dudoso": 2,
-  "no_esta": 9,
+  "no_esta": 10,
   "oferta_real": 12,
-  "pvpr_inflado": 1,
+  "pvpr_inflado": 2,
   "sin_precio": 3
  },
- "updated": "2026-11-14T11:05:31.708608+00:00"
+ "updated": "2026-11-14T11:40:39.802795+00:00"
 }

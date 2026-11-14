@@ -27,7 +27,7 @@
   "Mochilas y maletas": "2026-11-14T09:20:40.743974+00:00",
   "Monitores": "2026-11-14T07:35:33.414859+00:00",
   "Móviles": "2026-11-14T07:01:07.663772+00:00",
-  "Nutrición deportiva": "2026-11-13T16:01:12.341933+00:00",
+  "Nutrición deportiva": "2026-11-14T11:40:39.802795+00:00",
   "Perfumes": "2026-11-13T13:25:30.604640+00:00",
   "Periféricos": "2026-11-13T09:20:46.074861+00:00",
   "Perros": "2026-11-13T11:40:39.260187+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-13T21:50:42.988192+00:00",
   "Zapatillas": "2026-11-13T19:20:42.278458+00:00"
  },
- "next_at": "2026-11-14T11:40:20.340170+00:00",
+ "next_at": "2026-11-14T12:14:21.688524+00:00",
  "offer": {
   "a": "B08PVDQFQQ",
   "m": 218,
@@ -96,6 +96,17 @@
    "p": 24.94,
    "t": "2026-11-08T11:41:12.275160+00:00",
    "title": "Lavazza, Qualità Rossa, Café en Grano Natural, Ideal para la Máquina de Café Espresso, con Notas Aromáticas de Chocolate y Frutos Secos, Arábica y Robusta, Intensidad 5, Tueste Medio, Paquete de 1 kg",
+   "v": []
+  },
+  "B004U4WUFU": {
+   "c": "Nutrición deportiva",
+   "d": 30,
+   "e": "💪",
+   "m": 287,
+   "p": 35.63,
+   "s": "ofertas",
+   "t": "2026-11-14T11:41:16.404514+00:00",
+   "title": "ESN Designer Whey Protein, Chocolate, 1 kg",
    "v": []
   },
   "B0057ED9AM": {
@@ -2439,6 +2450,18 @@
  },
  "reserve": [
   {
+   "a": "B0CW9PR2J6",
+   "c": "Nutrición deportiva",
+   "e": "💪",
+   "img": "https://m.media-amazon.com/images/I/71LCyfyE68L._AC_UL320_.jpg",
+   "n": 291,
+   "op": 47.99,
+   "p": 33.98,
+   "r": 4.3,
+   "t": "2026-11-14T11:40:39.802795+00:00",
+   "title": "Whey Protein Complex - 1000 g (Fresa Plátano) - Con contenido de aislado - Proteína en polvo soluble instantánea con BCAA & EAA - German Elite Nutrition"
+  },
+  {
    "a": "B0CL5C3BQC",
    "c": "Climatización",
    "e": "🌬️",
@@ -2461,24 +2484,12 @@
    "r": 4.6,
    "t": "2026-11-14T10:30:50.359175+00:00",
    "title": "Yes4All Pin de Carga de Placa de Pesas de 2,5 cm y 5,1 cm, Blaster de muñeca y antebrazo, Sistema de polea de Cable de Fitness Lat Gym, Equipo de Gimnasio Resistente"
-  },
-  {
-   "a": "B0D2XRXNGY",
-   "c": "Auriculares",
-   "e": "🎧",
-   "img": "https://m.media-amazon.com/images/I/61g5iswO7kL._AC_UL320_.jpg",
-   "n": 20100,
-   "op": 39.99,
-   "p": 24.29,
-   "r": 4.6,
-   "t": "2026-11-14T08:10:40.297090+00:00",
-   "title": "Soundcore Anker V20i Auriculares Open-Ear, Ganchos Ajustables, IPX5, Negro"
   }
  ],
  "summary_day": "2026-11-13",
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-14",
-  "n": 8
+  "n": 9
  }
 }
