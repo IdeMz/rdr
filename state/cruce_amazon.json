@@ -314,6 +314,12 @@
    "title": "AOPEN QH12a Proyector LED portátil HD 1280x720, 135 lúmenes, Entrada de Gama, Blanco",
    "via": "ean"
   },
+  "4711377344272": {
+   "a": "B0F4LQ216W",
+   "t": "2026-11-14T18:30:55.099025+00:00",
+   "title": "MSI Gaming RTX 5060 Ti 8G Ventus 2X OC Plus - Tarjeta gráfica (8 GB GDDR7, TBA-bit, Rendimiento Extremo: TBA MHz, DisplayPort x3 2.1a, HDMI 2.1b, NVIDIA Blackwe",
+   "via": "nombre"
+  },
   "4711387835517": {
    "a": "B0DZPCGF7T",
    "t": "2026-11-13T20:05:35.325047+00:00",
@@ -573,6 +579,12 @@
    "a": "B0FFT2ZCBP",
    "t": "2026-11-14T17:55:30.798523+00:00",
    "title": "VIOFO A329S 4K 3CH Dashcam Del.+Tras.+Int., Wi-Fi 6, Eco, 210° Interior",
+   "via": "modelo"
+  },
+  "6972147076962": {
+   "a": "B0FFSZK858",
+   "t": "2026-11-14T18:30:55.099025+00:00",
+   "title": "VIOFO A329S 4K 60FPS 2CH Dashcam Del.+Tras., STARVIS 2, Wi-Fi 6",
    "via": "modelo"
   },
   "6974958250739": {
@@ -1101,6 +1113,25 @@
    "pp_median": 1049.0,
    "pp_price": 899.9,
    "t": "2026-11-14T03:20:26.477658+00:00",
+   "veredicto": "oferta_real"
+  },
+  "43812033191": {
+   "ahorro_vs_amazon": 11,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 615.01,
+   "amz_title": "MSI Gaming RTX 5060 Ti 8G Ventus 2X OC Plus - Tarjeta gráfica (8 GB GDDR7, TBA-bit, Rendimiento Extremo: TBA MHz, DisplayPort x3 2.1a, HDMI 2.1b, NVIDIA Blackwe",
+   "asin": "B0F4LQ216W",
+   "disponible": true,
+   "ean": "4711377344272",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "11 % por debajo del habitual en Amazon (615.01)",
+   "name": "MSI GeForce RTX 5060 8G VENTUS 2X OC NVIDIA 8GB GDDR7 PCIe 5.0 2 ventiladores HDMI 2.1 3 DisplayPort Tarjeta gráfica",
+   "pp_drop": 13,
+   "pp_median": 632.95,
+   "pp_price": 547.95,
+   "t": "2026-11-14T18:30:55.099025+00:00",
    "veredicto": "oferta_real"
   },
   "44927881022": {
@@ -2764,9 +2795,9 @@
   "amazon_mas_barato": 15,
   "dudoso": 2,
   "no_esta": 13,
-  "oferta_real": 18,
+  "oferta_real": 19,
   "pvpr_inflado": 2,
   "sin_precio": 3
  },
- "updated": "2026-11-14T17:55:30.798523+00:00"
+ "updated": "2026-11-14T18:30:55.099025+00:00"
 }
