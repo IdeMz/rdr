@@ -404,6 +404,12 @@
    "title": "Philips TAR1609: radio portátil FM/AM con batería interna recargable, pilas AAA y manivela de soporte, energía solar, luz LED y linterna integrada para camping,",
    "via": "ean"
   },
+  "4948570125913": {
+   "a": "B0GHKNQ2KP",
+   "t": "2026-11-14T17:55:30.798523+00:00",
+   "title": "Iiyama Prolite Xb2797hsn?b1 LeD-Monitor 68,6?cm (27\") Full Hd ? Hdmi/dp/usb?c/lan ? Schwarz",
+   "via": "ean"
+  },
   "4977766798518": {
    "a": "B07SQGX8JZ",
    "t": "2026-11-14T03:50:27.795156+00:00",
@@ -562,6 +568,12 @@
      "JMGO O2S Ultra Proyector UHD 4K Tiro Corto, Triple Laser UST, Dolby Vision"
     ]
    }
+  },
+  "6972147076948": {
+   "a": "B0FFT2ZCBP",
+   "t": "2026-11-14T17:55:30.798523+00:00",
+   "title": "VIOFO A329S 4K 3CH Dashcam Del.+Tras.+Int., Wi-Fi 6, Eco, 210° Interior",
+   "via": "modelo"
   },
   "6974958250739": {
    "a": "B0FF1X7VGL",
@@ -2330,6 +2342,25 @@
    "t": "2026-11-13T11:40:39.260187+00:00",
    "veredicto": "amazon_mas_barato"
   },
+  "46599140515": {
+   "ahorro_vs_amazon": 17,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 211.39,
+   "amz_title": "Iiyama Prolite Xb2797hsn?b1 LeD-Monitor 68,6?cm (27\") Full Hd ? Hdmi/dp/usb?c/lan ? Schwarz",
+   "asin": "B0GHKNQ2KP",
+   "disponible": true,
+   "ean": "4948570125913",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "17 % por debajo del habitual en Amazon (211.39)",
+   "name": "Monitor iiyama ProLite 27 pulgadas FHD IPS 100Hz Negro XB2797HSN-B1",
+   "pp_drop": 16,
+   "pp_median": 208.95,
+   "pp_price": 175.95,
+   "t": "2026-11-14T17:55:30.798523+00:00",
+   "veredicto": "oferta_real"
+  },
   "46599140681": {
    "ahorro_vs_amazon": 63,
    "amz_low30": null,
@@ -2592,6 +2623,25 @@
    "t": "2026-11-13T20:40:48.338068+00:00",
    "veredicto": "pvpr_inflado"
   },
+  "46680832923": {
+   "ahorro_vs_amazon": 26,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 499.99,
+   "amz_title": "VIOFO A329S 4K 3CH Dashcam Del.+Tras.+Int., Wi-Fi 6, Eco, 210° Interior",
+   "asin": "B0FFT2ZCBP",
+   "disponible": true,
+   "ean": "6972147076948",
+   "encontrado_por": "modelo",
+   "lista": "candidates",
+   "motivo": "26 % por debajo del habitual en Amazon (499.99)",
+   "name": "Dashcam VIOFO T330T 3CH 4K GPS",
+   "pp_drop": 14,
+   "pp_median": 429.0,
+   "pp_price": 369.0,
+   "t": "2026-11-14T17:55:30.798523+00:00",
+   "veredicto": "oferta_real"
+  },
   "46693747636": {
    "ean": "8004399141612",
    "lista": "candidates",
@@ -2714,9 +2764,9 @@
   "amazon_mas_barato": 15,
   "dudoso": 2,
   "no_esta": 13,
-  "oferta_real": 16,
+  "oferta_real": 18,
   "pvpr_inflado": 2,
   "sin_precio": 3
  },
- "updated": "2026-11-14T17:20:46.627491+00:00"
+ "updated": "2026-11-14T17:55:30.798523+00:00"
 }
