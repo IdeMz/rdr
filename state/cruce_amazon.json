@@ -232,6 +232,12 @@
    "title": "Acer - Ratón inalámbrico RF M501 (Funciona con Chromebook, con USB Plug and Play para diestros/Zurdos (para Chromebooks, Windows PC y Mac)",
    "via": "modelo"
   },
+  "4711081907503": {
+   "a": "B0BSXBCS3C",
+   "t": "2026-11-14T09:55:29.061293+00:00",
+   "title": "ASUS TUF Gaming VG27AQA1A - Monitor Gaming de 27\" WQHD (2560x1440), Overclock 170Hz (por Encima de 144Hz), Extreme Low Motion Blur, Freesync Premium, 1ms (MPRT)",
+   "via": "ean"
+  },
   "4711121527333": {
    "a": "B07NFK9XST",
    "t": "2026-11-13T16:35:32.960175+00:00",
@@ -586,6 +592,12 @@
    "title": "SaveFamily Slim 4G | Reloj Inteligente Niño/a con Localizador GPS",
    "via": "ean"
   },
+  "8435484021807": {
+   "a": "B0BQ13VH9S",
+   "t": "2026-11-14T09:55:29.061293+00:00",
+   "title": "Cecotec Tostador Toast&Taste Extra Double B, 1350W de Potencia, Doble Ranura larga para 2 Tostadas, Apagado y Pop-up Automático, Varillas Superiores",
+   "via": "ean"
+  },
   "8437026689353": {
    "a": "",
    "t": "2026-11-14T03:50:27.795156+00:00",
@@ -669,6 +681,25 @@
   }
  },
  "items": {
+  "37600255591": {
+   "ahorro_vs_amazon": 3,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 184.2,
+   "amz_title": "ASUS TUF Gaming VG27AQA1A - Monitor Gaming de 27\" WQHD (2560x1440), Overclock 170Hz (por Encima de 144Hz), Extreme Low Motion Blur, Freesync Premium, 1ms (MPRT)",
+   "asin": "B0BSXBCS3C",
+   "disponible": true,
+   "ean": "4711081907503",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 184.20 frente a 179.00",
+   "name": "ASUS TUF Gaming VG27AQA1A Negro 27 pulgadas 2K VA 170Hz 1ms FreeSync Premium Monitor",
+   "pp_drop": 14,
+   "pp_median": 207.45,
+   "pp_price": 179.0,
+   "t": "2026-11-14T09:55:29.061293+00:00",
+   "veredicto": "amazon_mas_barato"
+  },
   "37600259956": {
    "ahorro_vs_amazon": null,
    "amz_low30": null,
@@ -1427,6 +1458,25 @@
     ]
    }
   },
+  "46146892668": {
+   "ahorro_vs_amazon": 8,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 27.9,
+   "amz_title": "Cecotec Tostador Toast&Taste Extra Double B, 1350W de Potencia, Doble Ranura larga para 2 Tostadas, Apagado y Pop-up Automático, Varillas Superiores",
+   "asin": "B0BQ13VH9S",
+   "disponible": true,
+   "ean": "8435484021807",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "antes 32.95 en PowerPlanet, pero en Amazon suele estar a 27.90",
+   "name": "Cecotec Toast&Taste Extra Double 1350W 4 Rebanadas Negro 02180 Tostadora",
+   "pp_drop": 23,
+   "pp_median": 32.95,
+   "pp_price": 25.53,
+   "t": "2026-11-14T09:55:29.061293+00:00",
+   "veredicto": "pvpr_inflado"
+  },
   "46165551484": {
    "ahorro_vs_amazon": -143,
    "amz_low30": null,
@@ -2173,12 +2223,12 @@
  },
  "night_at": "2026-11-14T05:50:24.845085+00:00",
  "resumen": {
-  "amazon_mas_barato": 20,
+  "amazon_mas_barato": 21,
   "dudoso": 3,
   "no_esta": 24,
   "oferta_real": 21,
-  "pvpr_inflado": 4,
+  "pvpr_inflado": 5,
   "sin_precio": 3
  },
- "updated": "2026-11-14T09:20:40.743974+00:00"
+ "updated": "2026-11-14T09:55:29.061293+00:00"
 }
