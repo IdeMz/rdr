@@ -86,6 +86,26 @@
    "title": "SANDISK Extreme SSD externo Portátil 4TB (Disco duro externo SSD con velodidad de lectura de hasta 1050 MB/s, 1000 MB/s de escritura, Clasificación IP65 de resi",
    "via": "ean"
   },
+  "0622356281096": {
+   "a": "",
+   "t": "2026-11-14T22:20:30.510879+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "modelo": [
+     "Shark BreatheClear Compact Purificador de aire con NeverChange hasta 6 años*, filtro HEPA, Detección",
+     "Shark NeverChange, Purificador de Aire MAX, Alcance 130 m², Blanco",
+     "Shark PowerPro, Aspiradora sin Cable, 50 Min., Azul Metalizado"
+    ],
+    "nombre": [
+     "Shark STYLE iQ Secador de pelo y moldeador, 3 en 1, con concentrador, difusor y cepillo de peinado, ",
+     "Shark SpeedStyle Sistema secador de cabello de alta velocidad, compacto y potente, modo protección d",
+     "Shark Glam, Multi-Styler 5 en 1 Secador de Pelo, Moldeador, Plancha"
+    ]
+   }
+  },
   "0622356320559": {
    "a": "",
    "t": "2026-11-14T14:40:41.311125+00:00",
@@ -522,6 +542,12 @@
    "a": "B0BKH4FX9Y",
    "t": "2026-11-13T21:50:42.988192+00:00",
    "title": "Jabra Evolve2 Buds, Auriculares Bluetooth Intraaurales Inalámbricos, Cancelación Activa de Ruido y Tecnología MultiSensor con 4 Micrófonos, Certificados para MS",
+   "via": "ean"
+  },
+  "5707119059961": {
+   "a": "B0F5QBSRDR",
+   "t": "2026-11-14T22:20:30.510879+00:00",
+   "title": "SteelSeries Rival 3 Gen 2 - Raton Gaming - Sensor óptico TrueMove Core de 8500 dpi - Durabilidad de 60 M de clics - Baja latencia - 77g de Peso - Deslizadores 1",
    "via": "ean"
   },
   "5707119059985": {
@@ -1563,6 +1589,33 @@
     ]
    }
   },
+  "45790863679": {
+   "ean": "0622356281096",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Shark STYLE iQ HP150EU 66 dB 26 W Blanco 60m² filtro HEPA Purificador de aire",
+   "pp_drop": 14,
+   "pp_median": 199.95,
+   "pp_price": 171.95,
+   "t": "2026-11-14T22:20:30.510879+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "modelo": [
+     "Shark BreatheClear Compact Purificador de aire con NeverChange hasta 6 años*, filtro HEPA, Detección",
+     "Shark NeverChange, Purificador de Aire MAX, Alcance 130 m², Blanco",
+     "Shark PowerPro, Aspiradora sin Cable, 50 Min., Azul Metalizado"
+    ],
+    "nombre": [
+     "Shark STYLE iQ Secador de pelo y moldeador, 3 en 1, con concentrador, difusor y cepillo de peinado, ",
+     "Shark SpeedStyle Sistema secador de cabello de alta velocidad, compacto y potente, modo protección d",
+     "Shark Glam, Multi-Styler 5 en 1 Secador de Pelo, Moldeador, Plancha"
+    ]
+   }
+  },
   "45930203409": {
    "ahorro_vs_amazon": 8,
    "amz_low30": null,
@@ -1657,6 +1710,25 @@
    "pp_price": 609.95,
    "t": "2026-11-14T05:50:24.845085+00:00",
    "veredicto": "oferta_real"
+  },
+  "45956991042": {
+   "ahorro_vs_amazon": -35,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 22.99,
+   "amz_title": "SteelSeries Rival 3 Gen 2 - Raton Gaming - Sensor óptico TrueMove Core de 8500 dpi - Durabilidad de 60 M de clics - Baja latencia - 77g de Peso - Deslizadores 1",
+   "asin": "B0F5QBSRDR",
+   "disponible": true,
+   "ean": "5707119059961",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 22.99 frente a 30.95",
+   "name": "SteelSeries Rival 3 Gen 2 Interruptores Mecánicos 8500 DPI 6 botones USB 106 g Ratón gaming",
+   "pp_drop": 21,
+   "pp_median": 38.95,
+   "pp_price": 30.95,
+   "t": "2026-11-14T22:20:30.510879+00:00",
+   "veredicto": "amazon_mas_barato"
   },
   "45956991451": {
    "ahorro_vs_amazon": 9,
@@ -2623,11 +2695,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "SSD Silicon Power Ace A55 4TB 2.5 pulgadas SATA III Negro",
-   "pista": "1913647 bytes; 3 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1848881 bytes; 3 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 18,
    "pp_median": 553.95,
    "pp_price": 456.94,
-   "t": "2026-11-14T16:10:41.956036+00:00",
+   "t": "2026-11-14T22:20:30.510879+00:00",
    "veredicto": "sin_precio"
   },
   "46599141566": {
@@ -3033,14 +3105,14 @@
    }
   }
  },
- "night_at": "2026-11-14T22:05:27.466329+00:00",
+ "night_at": "2026-11-14T22:20:30.510879+00:00",
  "resumen": {
-  "amazon_mas_barato": 18,
+  "amazon_mas_barato": 19,
   "dudoso": 5,
-  "no_esta": 15,
+  "no_esta": 16,
   "oferta_real": 20,
   "pvpr_inflado": 2,
   "sin_precio": 3
  },
- "updated": "2026-11-14T22:05:27.466329+00:00"
+ "updated": "2026-11-14T22:20:30.510879+00:00"
 }
