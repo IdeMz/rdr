@@ -1,5 +1,11 @@
 {
  "ean_asin": {
+  "0017817854757": {
+   "a": "B0GXWFVKT5",
+   "t": "2026-11-14T01:20:25.760497+00:00",
+   "title": "Bose Auriculares de Diadema QuietComfort (2.ª Gen): circumaurales inalámbricos, cancelación Activa de Ruido, Mic, Audio inmersivo, USB-C, Audio sin pérdida, has",
+   "via": "nombre"
+  },
   "0194253097297": {
    "a": "B0BJMMFCDX",
    "t": "2026-11-13T12:15:38.991127+00:00",
@@ -45,6 +51,12 @@
    "title": "Kingston ValueRAM 4GB 1600MHz DDR3 NonECC CL11 SODIMM 1Rx8 1.5V KVR16S11S8/4 Memoria Portátil",
    "via": "ean"
   },
+  "0740617348552": {
+   "a": "B0FCZM23H9",
+   "t": "2026-11-14T01:20:25.760497+00:00",
+   "title": "Kingston Canvas Select Plus Tarjeta de Memoria microSD 512GB microSDXC Gen3 150MB/s A1 Incluye Adaptador de SD - SDCS3/512GB",
+   "via": "ean"
+  },
   "0766907027891": {
    "a": "B0CMPW1698",
    "t": "2026-11-13T11:40:39.260187+00:00",
@@ -68,6 +80,23 @@
    "t": "2026-11-13T11:40:39.260187+00:00",
    "title": "CORSAIR K65 PLUS WIRELESS 75% RGB Teclado Mecánico para Juegos Intercambiable en Caliente - Interruptores Lineales Rojos CORSAIR MLX Prelubricados - Insonorizac",
    "via": "ean"
+  },
+  "0840353958159": {
+   "a": "",
+   "t": "2026-11-14T01:20:25.760497+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "Google Pixel 11 Pro XL – Smartphone Android Libre - Gris Niebla, 256GB",
+     "Google Pixel 11 Pro XL, Gris Niebla, 256GB + Pixel Buds Pro 2, Verde Liquen",
+     "Google Pixel 11 Pro XL - Gris Niebla, 256GB + Funda Pixelsnap Transparente"
+    ],
+    "nombre": [
+     "Google Pixel 11 Pro XL – Smartphone Android Libre - Obsidiana, 256GB",
+     "Google Pixel 11 Pro XL – Smartphone Android Libre - Gris Niebla, 512GB",
+     "Google Pixel 11 Pro – Smartphone Android Libre - Gris Niebla, 256GB"
+    ]
+   }
   },
   "0840414637900": {
    "a": "",
@@ -372,6 +401,25 @@
    "t": "2026-11-14T00:51:58.629494+00:00",
    "veredicto": "sin_precio"
   },
+  "40167730445": {
+   "ahorro_vs_amazon": -63,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 299.95,
+   "amz_title": "Bose Auriculares de Diadema QuietComfort (2.ª Gen): circumaurales inalámbricos, cancelación Activa de Ruido, Mic, Audio inmersivo, USB-C, Audio sin pérdida, has",
+   "asin": "B0GXWFVKT5",
+   "disponible": true,
+   "ean": "0017817854757",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "Amazon 299.95 frente a 487.94",
+   "name": "Bose Quietcomfort Ultra Headphones Blanco Diamante Diadema ANC Bluetooth 5.3 24h Auriculares inalámbricos",
+   "pp_drop": 16,
+   "pp_median": 582.95,
+   "pp_price": 487.94,
+   "t": "2026-11-14T01:20:25.760497+00:00",
+   "veredicto": "amazon_mas_barato"
+  },
   "40430429374": {
    "ean": "8886419379874",
    "lista": "candidates",
@@ -513,6 +561,25 @@
      "dreame L50 Ultra Ae-A Robot Aspirador y Fregasuelos, 100 Días de Vaciado Automático, Mopas con Autol"
     ]
    }
+  },
+  "45403207735": {
+   "ahorro_vs_amazon": 33,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 91.16,
+   "amz_title": "Kingston Canvas Select Plus Tarjeta de Memoria microSD 512GB microSDXC Gen3 150MB/s A1 Incluye Adaptador de SD - SDCS3/512GB",
+   "asin": "B0FCZM23H9",
+   "disponible": true,
+   "ean": "0740617348552",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "33 % por debajo del habitual en Amazon (91.16)",
+   "name": "Kingston Canvas Select Plus 512GB 150MB/s U3 V30 A1 Tarjeta microSD",
+   "pp_drop": 24,
+   "pp_median": 80.95,
+   "pp_price": 61.18,
+   "t": "2026-11-14T01:20:25.760497+00:00",
+   "veredicto": "oferta_real"
   },
   "45570747232": {
    "ahorro_vs_amazon": 0,
@@ -874,6 +941,30 @@
    "t": "2026-11-13T15:10:54.425531+00:00",
    "veredicto": "pvpr_inflado"
   },
+  "46599139139": {
+   "ean": "0840353958159",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Google Pixel 11 Pro XL 12GB/256GB Fog 6,8 pulgadas OLED 120Hz 50MP 5115mAh 45W NFC",
+   "pp_drop": 14,
+   "pp_median": 1399.0,
+   "pp_price": 1199.0,
+   "t": "2026-11-14T01:20:25.760497+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "Google Pixel 11 Pro XL – Smartphone Android Libre - Gris Niebla, 256GB",
+     "Google Pixel 11 Pro XL, Gris Niebla, 256GB + Pixel Buds Pro 2, Verde Liquen",
+     "Google Pixel 11 Pro XL - Gris Niebla, 256GB + Funda Pixelsnap Transparente"
+    ],
+    "nombre": [
+     "Google Pixel 11 Pro XL – Smartphone Android Libre - Obsidiana, 256GB",
+     "Google Pixel 11 Pro XL – Smartphone Android Libre - Gris Niebla, 512GB",
+     "Google Pixel 11 Pro – Smartphone Android Libre - Gris Niebla, 256GB"
+    ]
+   }
+  },
   "46599139558": {
    "ahorro_vs_amazon": 2,
    "amz_low30": null,
@@ -1036,14 +1127,14 @@
    }
   }
  },
- "night_at": "2026-11-14T00:51:58.629494+00:00",
+ "night_at": "2026-11-14T01:20:25.760497+00:00",
  "resumen": {
-  "amazon_mas_barato": 12,
+  "amazon_mas_barato": 13,
   "dudoso": 0,
-  "no_esta": 10,
-  "oferta_real": 8,
+  "no_esta": 11,
+  "oferta_real": 9,
   "pvpr_inflado": 3,
   "sin_precio": 3
  },
- "updated": "2026-11-14T00:51:58.629494+00:00"
+ "updated": "2026-11-14T01:20:25.760497+00:00"
 }
