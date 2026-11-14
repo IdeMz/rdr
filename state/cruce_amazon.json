@@ -141,6 +141,21 @@
     ]
    }
   },
+  "196786567667": {
+   "a": "",
+   "t": "2026-11-14T04:20:27.040644+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "Impresora Multifunción HP Smart Tank 5106"
+    ],
+    "nombre": [
+     "HP Smart Tank 5105, Impresora Multifunción A4 con Depósito de Tinta",
+     "HP Smart Tank 5108, Impresora Multifunción A4 con Deposito de Tinta",
+     "Impresora Multifunción HP Smart Tank 5106"
+    ]
+   }
+  },
   "4260499852320": {
    "a": "B08S7MYYL7",
    "t": "2026-11-13T20:40:48.338068+00:00",
@@ -203,6 +218,21 @@
    "t": "2026-11-13T21:15:42.495405+00:00",
    "title": "Silicon Power 4TB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5\" 7mm (0.28\") Internal Solid State Drive",
    "via": "nombre"
+  },
+  "4895223103654": {
+   "a": "",
+   "t": "2026-11-14T04:20:27.040644+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "INNO3D NVIDIA GEFORCE RTX 3050 Twin X2 V2 6GB GDDR6 96-bit PCIe 4.0 Gaming Tarjeta gráfica - N30502-",
+     "INNO3D GeForce RTX 3050 Twin X2 V2, 8192 MB GDDR6",
+     "INNO3D GeForce RTX 5060 Twin X2 OC, 8192 MB GDDR7"
+    ]
+   }
   },
   "4895229151192": {
    "a": "B0DFVRT79C",
@@ -442,6 +472,12 @@
    "a": "B0G2RPG83D",
    "t": "2026-11-14T03:20:26.477658+00:00",
    "title": "Samsung Galaxy Tab S11 11\" 12GB/512GB WiFi Gris (Moonstone Grey) X730 [versión Polaca]",
+   "via": "ean"
+  },
+  "8806099394516": {
+   "a": "B0HHS3GPMP",
+   "t": "2026-11-14T04:20:27.040644+00:00",
+   "title": "Samsung Galaxy Tab S12+ Tablet Wi-Fi 512GB/12GB 12.6''",
    "via": "ean"
   },
   "8886307700155": {
@@ -864,6 +900,28 @@
     ]
    }
   },
+  "45626822434": {
+   "ean": "196786567667",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "HP Smart Tank 5106 Multifunción Color WiFi Dúplex Manual 5ppm Impresora de tinta",
+   "pp_drop": 17,
+   "pp_median": 243.45,
+   "pp_price": 200.94,
+   "t": "2026-11-14T04:20:27.040644+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "Impresora Multifunción HP Smart Tank 5106"
+    ],
+    "nombre": [
+     "HP Smart Tank 5105, Impresora Multifunción A4 con Depósito de Tinta",
+     "HP Smart Tank 5108, Impresora Multifunción A4 con Deposito de Tinta",
+     "Impresora Multifunción HP Smart Tank 5106"
+    ]
+   }
+  },
   "45646443496": {
    "ean": "8437026689353",
    "lista": "candidates",
@@ -1021,6 +1079,28 @@
    "pp_price": 1210.96,
    "t": "2026-11-13T17:10:41.240248+00:00",
    "veredicto": "amazon_mas_barato"
+  },
+  "46186023323": {
+   "ean": "4895223103654",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Inno3D GeForce RTX 3050 Twin X2 8GB GDDR6 Negro PCIe 4.0 2 ventiladores HDMI 2.1 1 DisplayPort Tarjeta gráfica",
+   "pp_drop": 15,
+   "pp_median": 479.95,
+   "pp_price": 409.95,
+   "t": "2026-11-14T04:20:27.040644+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "INNO3D NVIDIA GEFORCE RTX 3050 Twin X2 V2 6GB GDDR6 96-bit PCIe 4.0 Gaming Tarjeta gráfica - N30502-",
+     "INNO3D GeForce RTX 3050 Twin X2 V2, 8192 MB GDDR6",
+     "INNO3D GeForce RTX 5060 Twin X2 OC, 8192 MB GDDR7"
+    ]
+   }
   },
   "46186024134": {
    "ahorro_vs_amazon": 12,
@@ -1441,6 +1521,25 @@
    "t": "2026-11-13T22:35:19.548446+00:00",
    "veredicto": "amazon_mas_barato"
   },
+  "46599143133": {
+   "ahorro_vs_amazon": 8,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 1326.99,
+   "amz_title": "Samsung Galaxy Tab S12+ Tablet Wi-Fi 512GB/12GB 12.6''",
+   "asin": "B0HHS3GPMP",
+   "disponible": true,
+   "ean": "8806099394516",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "solo 8 % por debajo del habitual en Amazon (1326.99)",
+   "name": "Samsung Galaxy Tab S12+ 12GB/512GB Gris S Pen incluido 12,6 pulgadas Dynamic AMOLED 2X 10600mAh",
+   "pp_drop": 13,
+   "pp_median": 1399.0,
+   "pp_price": 1219.0,
+   "t": "2026-11-14T04:20:27.040644+00:00",
+   "veredicto": "dudoso"
+  },
   "46599143318": {
    "ean": "6942785108035",
    "lista": "candidates",
@@ -1529,14 +1628,14 @@
    }
   }
  },
- "night_at": "2026-11-14T03:50:27.795156+00:00",
+ "night_at": "2026-11-14T04:20:27.040644+00:00",
  "resumen": {
   "amazon_mas_barato": 15,
-  "dudoso": 0,
-  "no_esta": 16,
+  "dudoso": 1,
+  "no_esta": 18,
   "oferta_real": 15,
   "pvpr_inflado": 4,
   "sin_precio": 3
  },
- "updated": "2026-11-14T03:50:27.795156+00:00"
+ "updated": "2026-11-14T04:20:27.040644+00:00"
 }
