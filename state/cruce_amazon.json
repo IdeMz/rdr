@@ -231,6 +231,12 @@
     ]
    }
   },
+  "4711474211033": {
+   "a": "B077JYYQ7V",
+   "t": "2026-11-14T08:10:40.297090+00:00",
+   "title": "Acer B7 B277 bmiprzx LED display 68,6 cm (27\") Full HD Plana Negro - Monitor (68,6 cm (27\"), 1920 x 1080 Pixeles, Full HD, LED, 4 ms, Negro)",
+   "via": "modelo"
+  },
   "4713436150800": {
    "a": "B0BVLRFFWQ",
    "t": "2026-11-13T21:15:42.495405+00:00",
@@ -249,6 +255,21 @@
      "TCL K70 SE(Indigo Black)",
      "TCL K70 4G(Midnight Black)",
      "TCL K70 4G (Azul Estelar)"
+    ]
+   }
+  },
+  "4894827003674": {
+   "a": "",
+   "t": "2026-11-14T08:10:40.297090+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "Tableta Android TCL Tab A1 Plus, NXTPAPER, 12,2 Pulgadas, 2,4 K, 120 Hz, 6+256 GB, con T-Pen 2 y Fun"
+    ],
+    "nombre": [
+     "Tableta Android TCL Tab A1 Plus, NXTPAPER, 12,2 Pulgadas, 2,4 K, 120 Hz, 6+256 GB, con T-Pen 2 y Fun",
+     "TCL NXTPAPER 11 Plus Tablet, 11.45\" 2.2K NXTPAPER 4.0 Display, MediaTek Helio G100, 256GB ROM (8GB +",
+     "TCL Tab A1 Plus Tablet Android 12,2\" 2.4K 120Hz con Funda y Lápiz | 6GB+128GB, Procesador 4 NM, Dise"
     ]
    }
   },
@@ -1830,6 +1851,25 @@
    "t": "2026-11-13T16:35:32.960175+00:00",
    "veredicto": "oferta_real"
   },
+  "46599140716": {
+   "ahorro_vs_amazon": 75,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 749.64,
+   "amz_title": "Acer B7 B277 bmiprzx LED display 68,6 cm (27\") Full HD Plana Negro - Monitor (68,6 cm (27\"), 1920 x 1080 Pixeles, Full HD, LED, 4 ms, Negro)",
+   "asin": "B077JYYQ7V",
+   "disponible": true,
+   "ean": "4711474211033",
+   "encontrado_por": "modelo",
+   "lista": "candidates",
+   "motivo": "75 % por debajo del habitual en Amazon (749.64)",
+   "name": "Monitor Acer Vero B7 B277 D6 27 pulgadas Full HD 4 ms Negro",
+   "pp_drop": 15,
+   "pp_median": 217.16,
+   "pp_price": 184.95,
+   "t": "2026-11-14T08:10:40.297090+00:00",
+   "veredicto": "oferta_real"
+  },
   "46599141105": {
    "ahorro_vs_amazon": 3,
    "amz_low30": null,
@@ -1906,6 +1946,28 @@
    "pp_price": 66.95,
    "t": "2026-11-14T05:50:24.845085+00:00",
    "veredicto": "amazon_mas_barato"
+  },
+  "46599143121": {
+   "ean": "4894827003674",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "TCL TAB A1 Plus NXTPAPER 6GB/256GB Gris Aerolito T-Pen 120Hz 12,2 pulgadas",
+   "pp_drop": 13,
+   "pp_median": 389.9,
+   "pp_price": 339.9,
+   "t": "2026-11-14T08:10:40.297090+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "Tableta Android TCL Tab A1 Plus, NXTPAPER, 12,2 Pulgadas, 2,4 K, 120 Hz, 6+256 GB, con T-Pen 2 y Fun"
+    ],
+    "nombre": [
+     "Tableta Android TCL Tab A1 Plus, NXTPAPER, 12,2 Pulgadas, 2,4 K, 120 Hz, 6+256 GB, con T-Pen 2 y Fun",
+     "TCL NXTPAPER 11 Plus Tablet, 11.45\" 2.2K NXTPAPER 4.0 Display, MediaTek Helio G100, 256GB ROM (8GB +",
+     "TCL Tab A1 Plus Tablet Android 12,2\" 2.4K 120Hz con Funda y Lápiz | 6GB+128GB, Procesador 4 NM, Dise"
+    ]
+   }
   },
   "46599143133": {
    "ahorro_vs_amazon": 8,
@@ -2018,10 +2080,10 @@
  "resumen": {
   "amazon_mas_barato": 20,
   "dudoso": 3,
-  "no_esta": 21,
-  "oferta_real": 19,
+  "no_esta": 22,
+  "oferta_real": 20,
   "pvpr_inflado": 4,
   "sin_precio": 3
  },
- "updated": "2026-11-14T07:35:33.414859+00:00"
+ "updated": "2026-11-14T08:10:40.297090+00:00"
 }

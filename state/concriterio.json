@@ -5,7 +5,7 @@
   "Almacenamiento": "2026-11-13T17:45:36.587944+00:00",
   "Altavoces": "2026-11-14T07:01:07.663772+00:00",
   "Aspiradoras": "2026-11-13T18:45:39.134382+00:00",
-  "Auriculares": "2026-11-12T12:20:44.296151+00:00",
+  "Auriculares": "2026-11-14T08:10:40.297090+00:00",
   "Cafeteras": "2026-11-13T12:15:38.991127+00:00",
   "Café y cápsulas": "2026-11-13T20:40:48.338068+00:00",
   "Cargadores y baterías": "2026-11-13T21:15:42.495405+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-13T21:50:42.988192+00:00",
   "Zapatillas": "2026-11-13T19:20:42.278458+00:00"
  },
- "next_at": "2026-11-14T08:07:21.445857+00:00",
+ "next_at": "2026-11-14T08:43:59.774803+00:00",
  "offer": {
   "a": "B08PVDQFQQ",
   "m": 218,
@@ -1665,6 +1665,17 @@
    "title": "SwitchBot Matter RGBICWW Lampara de Pie, Blanco Cálido & Frío, Lámpara de Pie LED compatible con Apple Home, Alexa, Google Home, 16 Millones Colores, 1200lm, Sincronización de Música, Modos de Escena",
    "v": []
   },
+  "B0FKSV2GW2": {
+   "c": "Auriculares",
+   "d": 46,
+   "e": "🎧",
+   "m": 281,
+   "p": 37.99,
+   "s": "busqueda",
+   "t": "2026-11-14T08:11:13.371670+00:00",
+   "title": "Soundcore C50i de Anker, Auriculares Abiertos con Clip, diseño FlexiClip",
+   "v": []
+  },
   "B0FLPCM6CB": {
    "c": "Cargadores y baterías",
    "d": 39,
@@ -2286,20 +2297,8 @@
  },
  "problem": {},
  "rejected": {
-  "B00NFDPXRO": {
-   "t": "2026-11-13T07:35:36.489438+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B01N6CJ1QW": {
-   "t": "2026-11-13T07:35:36.489438+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B07RPYDLRD": {
    "t": "2026-11-13T15:10:54.425531+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B07TFGZ33M": {
-   "t": "2026-11-13T08:10:39.209090+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0816QF6SZ": {
@@ -2316,10 +2315,6 @@
   },
   "B0CDCL53KW": {
    "t": "2026-11-13T12:15:38.991127+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0CFVZC2GF": {
-   "t": "2026-11-13T07:35:36.489438+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0CHJKQD1V": {
@@ -2350,24 +2345,12 @@
    "t": "2026-11-13T21:50:42.988192+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0DWDRZQYB": {
-   "t": "2026-11-13T07:35:36.489438+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0DY1P85GK": {
    "t": "2026-11-13T14:01:00.760700+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0DY8V59LY": {
    "t": "2026-11-13T18:45:39.134382+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0DZ76B7XQ": {
-   "t": "2026-11-13T08:10:39.209090+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0FGJTVH91": {
-   "t": "2026-11-13T08:10:39.209090+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0FL2JGPYH": {
@@ -2380,26 +2363,6 @@
   },
   "B0FL7NNGRG": {
    "t": "2026-11-13T21:50:42.988192+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0FMGXH38Q": {
-   "t": "2026-11-13T08:10:39.209090+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0FPXGKBCS": {
-   "t": "2026-11-13T07:35:36.489438+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0FPXGRFLV": {
-   "t": "2026-11-13T07:35:36.489438+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0FPXK52K8": {
-   "t": "2026-11-13T07:35:36.489438+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0FQTVLFT1": {
-   "t": "2026-11-13T07:35:36.489438+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0FVXGNCPB": {
@@ -2424,6 +2387,18 @@
   }
  },
  "reserve": [
+  {
+   "a": "B0D2XRXNGY",
+   "c": "Auriculares",
+   "e": "🎧",
+   "img": "https://m.media-amazon.com/images/I/61g5iswO7kL._AC_UL320_.jpg",
+   "n": 20100,
+   "op": 39.99,
+   "p": 24.29,
+   "r": 4.6,
+   "t": "2026-11-14T08:10:40.297090+00:00",
+   "title": "Soundcore Anker V20i Auriculares Open-Ear, Ganchos Ajustables, IPX5, Negro"
+  },
   {
    "a": "B0CP7R6KDQ",
    "c": "Monitores",
@@ -2453,6 +2428,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-14",
-  "n": 2
+  "n": 3
  }
 }
