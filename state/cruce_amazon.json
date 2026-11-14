@@ -159,6 +159,12 @@
    "title": "instax Square Link. Impresora para teléfonos, Color Blanco. & Fujifilm Square Black, película instantanea, 10 Fotos",
    "via": "ean"
   },
+  "4710886001201": {
+   "a": "B08BZY1MRQ",
+   "t": "2026-11-14T03:50:27.795156+00:00",
+   "title": "Acer - Ratón inalámbrico RF M501 (Funciona con Chromebook, con USB Plug and Play para diestros/Zurdos (para Chromebooks, Windows PC y Mac)",
+   "via": "modelo"
+  },
   "4711121527333": {
    "a": "B07NFK9XST",
    "t": "2026-11-13T16:35:32.960175+00:00",
@@ -202,6 +208,12 @@
    "a": "B0DFVRT79C",
    "t": "2026-11-14T00:20:27.018416+00:00",
    "title": "Philips TAR1609: radio portátil FM/AM con batería interna recargable, pilas AAA y manivela de soporte, energía solar, luz LED y linterna integrada para camping,",
+   "via": "ean"
+  },
+  "4977766798518": {
+   "a": "B07SQGX8JZ",
+   "t": "2026-11-14T03:50:27.795156+00:00",
+   "title": "Brother QL-600R - Impresora de Etiquetas (Interfaz USB, impresión de códigos de Barras, Unidad de Corte automático), 130, QL600RXX1",
    "via": "ean"
   },
   "5055387600614": {
@@ -410,6 +422,21 @@
    "t": "2026-11-13T13:25:30.604640+00:00",
    "title": "SaveFamily Slim 4G | Reloj Inteligente Niño/a con Localizador GPS",
    "via": "ean"
+  },
+  "8437026689353": {
+   "a": "",
+   "t": "2026-11-14T03:50:27.795156+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "SaveFamily Iconic Plus 2 | Reloj Inteligente Niño/a con Localizador GPS"
+    ],
+    "nombre": [
+     "SaveFamily Iconic Plus 2 | Reloj Inteligente Niño/a con Localizador GPS",
+     "SaveFamily SaveWatch Plus 2 | Reloj Inteligente Niño/a con Localizador GPS",
+     "SaveFamily SaveWatch Plus 4G | Reloj Inteligente Niño/a con Localizador GPS"
+    ]
+   }
   },
   "8806097712169": {
    "a": "B0G2RPG83D",
@@ -834,6 +861,28 @@
      "JMGO N3 Ultimate 4K Proyector Triple Láser, 5800 lúmenes ISO, Google TV",
      "JMGO N1S 4K Proyector Portatil, Triple Laser, 1700 ISO Lumens, Google TV",
      "JMGO O2S Ultra Proyector UHD 4K Tiro Corto, Triple Laser UST, Dolby Vision"
+    ]
+   }
+  },
+  "45646443496": {
+   "ean": "8437026689353",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "SaveFamily Iconic Plus 2 Estampada Pop 1,78 pulgadas Llamadas Bluetooth IP67 Smartwatch",
+   "pp_drop": 23,
+   "pp_median": 74.95,
+   "pp_price": 57.95,
+   "t": "2026-11-14T03:50:27.795156+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "SaveFamily Iconic Plus 2 | Reloj Inteligente Niño/a con Localizador GPS"
+    ],
+    "nombre": [
+     "SaveFamily Iconic Plus 2 | Reloj Inteligente Niño/a con Localizador GPS",
+     "SaveFamily SaveWatch Plus 2 | Reloj Inteligente Niño/a con Localizador GPS",
+     "SaveFamily SaveWatch Plus 4G | Reloj Inteligente Niño/a con Localizador GPS"
     ]
    }
   },
@@ -1296,6 +1345,25 @@
    "t": "2026-11-13T20:40:48.338068+00:00",
    "veredicto": "oferta_real"
   },
+  "46599139865": {
+   "ahorro_vs_amazon": 14,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 42.97,
+   "amz_title": "Acer - Ratón inalámbrico RF M501 (Funciona con Chromebook, con USB Plug and Play para diestros/Zurdos (para Chromebooks, Windows PC y Mac)",
+   "asin": "B08BZY1MRQ",
+   "disponible": true,
+   "ean": "4710886001201",
+   "encontrado_por": "modelo",
+   "lista": "candidates",
+   "motivo": "14 % por debajo del habitual en Amazon (42.97)",
+   "name": "Acer M501 Blanco 1600 DPI 3 botones 2.4GHz 55 g Ratón inalámbrico",
+   "pp_drop": 26,
+   "pp_median": 49.95,
+   "pp_price": 36.95,
+   "t": "2026-11-14T03:50:27.795156+00:00",
+   "veredicto": "oferta_real"
+  },
   "46599140303": {
    "ahorro_vs_amazon": -13,
    "amz_low30": null,
@@ -1395,6 +1463,25 @@
     ]
    }
   },
+  "46599143979": {
+   "ahorro_vs_amazon": 6,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 108.51,
+   "amz_title": "Brother QL-600R - Impresora de Etiquetas (Interfaz USB, impresión de códigos de Barras, Unidad de Corte automático), 130, QL600RXX1",
+   "asin": "B07SQGX8JZ",
+   "disponible": true,
+   "ean": "4977766798518",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "antes 127.95 en PowerPlanet, pero en Amazon suele estar a 108.51",
+   "name": "Brother QL-600R Rojo/Blanco monocromo Impresora de etiquetas térmica directa",
+   "pp_drop": 20,
+   "pp_median": 127.95,
+   "pp_price": 101.95,
+   "t": "2026-11-14T03:50:27.795156+00:00",
+   "veredicto": "pvpr_inflado"
+  },
   "46599144084": {
    "ahorro_vs_amazon": 7,
    "amz_low30": null,
@@ -1442,14 +1529,14 @@
    }
   }
  },
- "night_at": "2026-11-14T03:20:26.477658+00:00",
+ "night_at": "2026-11-14T03:50:27.795156+00:00",
  "resumen": {
   "amazon_mas_barato": 15,
   "dudoso": 0,
-  "no_esta": 15,
-  "oferta_real": 14,
-  "pvpr_inflado": 3,
+  "no_esta": 16,
+  "oferta_real": 15,
+  "pvpr_inflado": 4,
   "sin_precio": 3
  },
- "updated": "2026-11-14T03:20:26.477658+00:00"
+ "updated": "2026-11-14T03:50:27.795156+00:00"
 }
