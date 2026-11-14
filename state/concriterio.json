@@ -16,7 +16,7 @@
   "Cuidado del cabello": "2026-11-13T21:50:42.988192+00:00",
   "Cámaras de seguridad": "2026-11-12T16:45:42.838161+00:00",
   "Domótica": "2026-11-14T09:55:29.061293+00:00",
-  "Fitness en casa": "2026-11-13T09:55:33.688450+00:00",
+  "Fitness en casa": "2026-11-14T10:30:50.359175+00:00",
   "Freidoras de aire": "2026-11-13T16:35:32.960175+00:00",
   "Gatos": "2026-11-11T14:01:09.084076+00:00",
   "Herramientas": "2026-11-12T13:30:58.815254+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-13T21:50:42.988192+00:00",
   "Zapatillas": "2026-11-13T19:20:42.278458+00:00"
  },
- "next_at": "2026-11-14T10:26:14.969974+00:00",
+ "next_at": "2026-11-14T11:03:20.067897+00:00",
  "offer": {
   "a": "B08PVDQFQQ",
   "m": 218,
@@ -486,6 +486,17 @@
    "p": 99.0,
    "t": "2026-11-05T14:46:18.914865+00:00",
    "title": "De'Longhi Stilosa - Cafetera Espresso Manual con Espumador Manual Negro",
+   "v": []
+  },
+  "B088DZWSF6": {
+   "c": "Fitness en casa",
+   "d": 20,
+   "e": "🏋️",
+   "m": 285,
+   "p": 7.99,
+   "s": "ambas",
+   "t": "2026-11-14T10:31:21.948303+00:00",
+   "title": "TechStone Juego de Bandas de Resistencia para Hombres y Mujeres, Paquete de 5 Niveles de Resistencia Diferentes, Banda elástica para Gimnasio en casa, Entrenamiento de Ejercicio Largo",
    "v": []
   },
   "B08B21PRLM": {
@@ -2421,6 +2432,18 @@
  },
  "reserve": [
   {
+   "a": "B00HGPLEX4",
+   "c": "Fitness en casa",
+   "e": "🏋️",
+   "img": "https://m.media-amazon.com/images/I/611o5xbo5OL._AC_UL320_.jpg",
+   "n": 4000,
+   "op": 15.9,
+   "p": 12.52,
+   "r": 4.6,
+   "t": "2026-11-14T10:30:50.359175+00:00",
+   "title": "Yes4All Pin de Carga de Placa de Pesas de 2,5 cm y 5,1 cm, Blaster de muñeca y antebrazo, Sistema de polea de Cable de Fitness Lat Gym, Equipo de Gimnasio Resistente"
+  },
+  {
    "a": "B0D2XRXNGY",
    "c": "Auriculares",
    "e": "🎧",
@@ -2443,24 +2466,12 @@
    "r": 4.6,
    "t": "2026-11-14T07:35:33.414859+00:00",
    "title": "Amazon Basics Monitor de 27\"/68.6 cm, FHD 1080p, MAX 100 Hz, Compatible con VESA, Altavoces Integrados, Negro"
-  },
-  {
-   "a": "B0CX1XFLCV",
-   "c": "Altavoces",
-   "e": "🔊",
-   "img": "https://m.media-amazon.com/images/I/61nk5uieFzL._AC_UL320_.jpg",
-   "n": 443,
-   "op": 449.0,
-   "p": 279.0,
-   "r": 4.7,
-   "t": "2026-11-14T07:01:07.663772+00:00",
-   "title": "Sony ULT FIELD 7 Altavoz inalámbrico bluetooth portátil con ULT POWER SOUND y Deep Bass, altavoz X-Balanced, 30H de batería, IP67, resistente al agua, iluminación LED, micrófono, entrada para guitarra"
   }
  ],
  "summary_day": "2026-11-13",
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-14",
-  "n": 6
+  "n": 7
  }
 }

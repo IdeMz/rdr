@@ -196,6 +196,12 @@
     ]
    }
   },
+  "3045380026261": {
+   "a": "B0FX5K33S4",
+   "t": "2026-11-14T10:30:50.359175+00:00",
+   "title": "Moulinex Inicio Compact, Plancha de Paninis y Grill de 1000W, Inox, Pinzas",
+   "via": "nombre"
+  },
   "3045387293741": {
    "a": "B0DT9SW2LH",
    "t": "2026-11-14T05:50:24.845085+00:00",
@@ -350,6 +356,12 @@
    "a": "B0HN7FZYK5",
    "t": "2026-11-14T02:20:24.077147+00:00",
    "title": "Optoma Hz147x Proiettore A Raggio Standard Dlp 1080p [1920x1080] Compatibilit? 3d Nero (hz147x Duracore Laser Projector)",
+   "via": "ean"
+  },
+  "5055387669734": {
+   "a": "B0HN7P41N9",
+   "t": "2026-11-14T10:30:50.359175+00:00",
+   "title": "Optoma Uhz36ste Proiettore A Corto Raggio Dlp Uhd 4k [3840x2160] Compatibilit? 3d Nero (optoma Uhz36ste Projektor - Uhd 4k [3840)",
    "via": "ean"
   },
   "5060777122928": {
@@ -1778,6 +1790,25 @@
    "t": "2026-11-13T11:40:39.260187+00:00",
    "veredicto": "amazon_mas_barato"
   },
+  "46256205805": {
+   "ahorro_vs_amazon": 16,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 1773.19,
+   "amz_title": "Optoma Uhz36ste Proiettore A Corto Raggio Dlp Uhd 4k [3840x2160] Compatibilit? 3d Nero (optoma Uhz36ste Projektor - Uhd 4k [3840)",
+   "asin": "B0HN7P41N9",
+   "disponible": true,
+   "ean": "5055387669734",
+   "encontrado_por": "ean",
+   "lista": "to_verify",
+   "motivo": "16 % por debajo del habitual en Amazon (1773.19)",
+   "name": "Optoma Láser DLP 4K UHD Tiro Corto 0.496:1 4000 Lúmenes ISO Negro UHZ36STe altavoz 15W 35dB Proyector",
+   "pp_drop": 51,
+   "pp_median": 3033.95,
+   "pp_price": 1491.95,
+   "t": "2026-11-14T10:30:50.359175+00:00",
+   "veredicto": "oferta_real"
+  },
   "46256205898": {
    "ean": "6978258900134",
    "lista": "candidates",
@@ -2223,12 +2254,12 @@
  },
  "night_at": "2026-11-14T05:50:24.845085+00:00",
  "resumen": {
-  "amazon_mas_barato": 21,
-  "dudoso": 3,
-  "no_esta": 24,
-  "oferta_real": 21,
-  "pvpr_inflado": 5,
+  "amazon_mas_barato": 10,
+  "dudoso": 2,
+  "no_esta": 8,
+  "oferta_real": 12,
+  "pvpr_inflado": 1,
   "sin_precio": 3
  },
- "updated": "2026-11-14T09:55:29.061293+00:00"
+ "updated": "2026-11-14T10:30:50.359175+00:00"
 }
