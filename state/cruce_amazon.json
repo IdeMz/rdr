@@ -12,6 +12,12 @@
    "title": "Apple TV 4K Black, Silver 4K Ultra HD 128 GB Wi-Fi Ethernet LAN, W128291662 (HD 128 GB Wi-Fi Ethernet LAN)",
    "via": "ean"
   },
+  "0194632497441": {
+   "a": "B08G8W175Q",
+   "t": "2026-11-14T23:50:25.477607+00:00",
+   "title": "Lenovo Legion M600 - Ratón inalámbrico para Juegos (Sensor óptico 16.000 dpi, Diseño Ambidiestro, Retroiluminación LED RGB, 9 Botones) Negro",
+   "via": "ean"
+  },
   "0194644019075": {
    "a": "",
    "t": "2026-11-14T22:50:36.785672+00:00",
@@ -255,6 +261,12 @@
     ]
    }
   },
+  "0850039905544": {
+   "a": "B0GGGZYZ8M",
+   "t": "2026-11-14T23:50:25.477607+00:00",
+   "title": "HP Projektor MC475 200 ISO-Lumen FullHD (C42LPAA)",
+   "via": "ean"
+  },
   "0850053009525": {
    "a": "B0DXVY3LSF",
    "t": "2026-11-14T07:35:33.414859+00:00",
@@ -273,6 +285,12 @@
      "(sin resultados)"
     ]
    }
+  },
+  "0884116669838": {
+   "a": "B0GR4NJ5MY",
+   "t": "2026-11-14T23:50:25.477607+00:00",
+   "title": "DELL Pro P2726deb Conferencing Monitor 68,6 cm (27\") Qhd? Hdmi/DP/USB?c/LAN? Schwarz",
+   "via": "modelo"
   },
   "196388599943": {
    "a": "",
@@ -1881,6 +1899,25 @@
    "t": "2026-11-14T07:35:33.414859+00:00",
    "veredicto": "dudoso"
   },
+  "45956991485": {
+   "ahorro_vs_amazon": 1,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 253.31,
+   "amz_title": "HP Projektor MC475 200 ISO-Lumen FullHD (C42LPAA)",
+   "asin": "B0GGGZYZ8M",
+   "disponible": true,
+   "ean": "0850039905544",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 253.31 frente a 251.95",
+   "name": "HP MC475 Tiro Corto 0.8:1 1080p LCD 200lúmenes ANSI Android 13 WiFi Bluetooth autoenfoque Proyector",
+   "pp_drop": 12,
+   "pp_median": 285.95,
+   "pp_price": 251.95,
+   "t": "2026-11-14T23:50:25.477607+00:00",
+   "veredicto": "amazon_mas_barato"
+  },
   "45956991871": {
    "ahorro_vs_amazon": 10,
    "amz_low30": null,
@@ -2589,6 +2626,25 @@
     ]
    }
   },
+  "46265356699": {
+   "ahorro_vs_amazon": 5,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 59.69,
+   "amz_title": "Lenovo Legion M600 - Ratón inalámbrico para Juegos (Sensor óptico 16.000 dpi, Diseño Ambidiestro, Retroiluminación LED RGB, 9 Botones) Negro",
+   "asin": "B08G8W175Q",
+   "disponible": true,
+   "ean": "0194632497441",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "solo 5 % por debajo del habitual en Amazon (59.69)",
+   "name": "Lenovo Legion M600 Sports 16000 DPI RGB Negro 9 botones Bluetooth + 2.4GHz Ratón gaming inalámbrico",
+   "pp_drop": 16,
+   "pp_median": 67.95,
+   "pp_price": 56.95,
+   "t": "2026-11-14T23:50:25.477607+00:00",
+   "veredicto": "dudoso"
+  },
   "46599139094": {
    "ahorro_vs_amazon": 4,
    "amz_low30": null,
@@ -2745,6 +2801,25 @@
    "pp_price": 1669.0,
    "t": "2026-11-14T04:50:24.590570+00:00",
    "veredicto": "amazon_mas_barato"
+  },
+  "46599140165": {
+   "ahorro_vs_amazon": 3,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 422.92,
+   "amz_title": "DELL Pro P2726deb Conferencing Monitor 68,6 cm (27\") Qhd? Hdmi/DP/USB?c/LAN? Schwarz",
+   "asin": "B0GR4NJ5MY",
+   "disponible": true,
+   "ean": "0884116669838",
+   "encontrado_por": "modelo",
+   "lista": "candidates",
+   "motivo": "solo 3 % por debajo del habitual en Amazon (422.92)",
+   "name": "Monitor Dell Pro 27 pulgadas QHD IPS 8 ms Negro P2726DEB",
+   "pp_drop": 11,
+   "pp_median": 459.0,
+   "pp_price": 409.0,
+   "t": "2026-11-14T23:50:25.477607+00:00",
+   "veredicto": "dudoso"
   },
   "46599140285": {
    "ahorro_vs_amazon": 8,
@@ -3321,14 +3396,14 @@
    }
   }
  },
- "night_at": "2026-11-14T23:20:25.000542+00:00",
+ "night_at": "2026-11-14T23:50:25.477607+00:00",
  "resumen": {
-  "amazon_mas_barato": 21,
-  "dudoso": 5,
+  "amazon_mas_barato": 22,
+  "dudoso": 7,
   "no_esta": 19,
   "oferta_real": 21,
   "pvpr_inflado": 2,
   "sin_precio": 3
  },
- "updated": "2026-11-14T23:20:25.000542+00:00"
+ "updated": "2026-11-14T23:50:25.477607+00:00"
 }
