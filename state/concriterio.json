@@ -25,7 +25,7 @@
   "Lego": "2026-11-13T07:35:36.489438+00:00",
   "Menaje de cocina": "2026-11-13T07:35:36.489438+00:00",
   "Mochilas y maletas": "2026-11-10T18:50:43.937099+00:00",
-  "Monitores": "2026-11-12T19:10:42.508182+00:00",
+  "Monitores": "2026-11-14T07:35:33.414859+00:00",
   "Móviles": "2026-11-14T07:01:07.663772+00:00",
   "Nutrición deportiva": "2026-11-13T16:01:12.341933+00:00",
   "Perfumes": "2026-11-13T13:25:30.604640+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-13T21:50:42.988192+00:00",
   "Zapatillas": "2026-11-13T19:20:42.278458+00:00"
  },
- "next_at": "2026-11-14T07:35:27.162052+00:00",
+ "next_at": "2026-11-14T08:07:21.445857+00:00",
  "offer": {
   "a": "B08PVDQFQQ",
   "m": 218,
@@ -1561,6 +1561,17 @@
    "title": "Edifier MP330 Altavoz Bluetooth Portátil con 40W RMS & Audio Hi-Res，Negro",
    "v": []
   },
+  "B0F8F1GXCV": {
+   "c": "Monitores",
+   "d": 23,
+   "e": "🖥️",
+   "m": 280,
+   "p": 57.72,
+   "s": "ambas",
+   "t": "2026-11-14T07:36:35.708894+00:00",
+   "title": "Lenovo L24-4e - Monitor FHD 23.8\" (IPS, 1920x1080, Tasa de Refresco 48 Hz – 100 Hz, Tiempo de Respuesta de 4 ms, HDMI 1.4, VGA, VESA 100 x 100 mm) Soporte de Inclinación, Negro",
+   "v": []
+  },
   "B0F9L1BKBK": {
    "c": "Menaje de cocina",
    "d": 23,
@@ -2327,6 +2338,10 @@
    "t": "2026-11-13T21:50:42.988192+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0DF84JPCW": {
+   "t": "2026-11-14T07:35:33.414859+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0DHXFDNK2": {
    "t": "2026-11-13T19:20:42.278458+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2359,6 +2374,10 @@
    "t": "2026-11-13T18:45:39.134382+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0FL32LSR5": {
+   "t": "2026-11-14T07:35:33.414859+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0FL7NNGRG": {
    "t": "2026-11-13T21:50:42.988192+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2387,6 +2406,14 @@
    "t": "2026-11-13T19:20:42.278458+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0FWCTL8CW": {
+   "t": "2026-11-14T07:35:33.414859+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0GXBNBQYL": {
+   "t": "2026-11-14T07:35:33.414859+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0H6DZJX44": {
    "t": "2026-11-13T18:45:39.134382+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2397,6 +2424,18 @@
   }
  },
  "reserve": [
+  {
+   "a": "B0CP7R6KDQ",
+   "c": "Monitores",
+   "e": "🖥️",
+   "img": "https://m.media-amazon.com/images/I/710q+sSccwL._AC_UL320_.jpg",
+   "n": 804,
+   "op": 89.9,
+   "p": 79.9,
+   "r": 4.6,
+   "t": "2026-11-14T07:35:33.414859+00:00",
+   "title": "Amazon Basics Monitor de 27\"/68.6 cm, FHD 1080p, MAX 100 Hz, Compatible con VESA, Altavoces Integrados, Negro"
+  },
   {
    "a": "B0CX1XFLCV",
    "c": "Altavoces",
@@ -2414,6 +2453,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-14",
-  "n": 1
+  "n": 2
  }
 }

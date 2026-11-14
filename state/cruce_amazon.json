@@ -18,6 +18,12 @@
    "title": "Apple AirPods Max Auriculares inalámbricos de diadema con cancelación activa de ruido de nivel profesional,modo de sonido ambiente,audio espacial personalizado,",
    "via": "ean"
   },
+  "0195950687569": {
+   "a": "B0GR1N7ND2",
+   "t": "2026-11-14T07:35:33.414859+00:00",
+   "title": "Apple MacBook Air de 13,6 Pulgadas con Chip M5: Pantalla Liquid Retina, CPU de 10 núcleos, GPU de 8 núcleos, 16 GB de Memoria unificada, 512 GB de SSD, Wi-Fi 7,",
+   "via": "ean"
+  },
   "0196548864997": {
    "a": "",
    "t": "2026-11-14T01:50:35.475157+00:00",
@@ -127,6 +133,12 @@
      "Amazon Echo Dot Max (última generación): altavoz con sonido envolvente y controlador de Hogar digita"
     ]
    }
+  },
+  "0850053009525": {
+   "a": "B0DXVY3LSF",
+   "t": "2026-11-14T07:35:33.414859+00:00",
+   "title": "InFocus IN0061SL 4K Beamer mit zwei HDMI-Eingänge",
+   "via": "ean"
   },
   "0884095225322": {
    "a": "",
@@ -1179,6 +1191,25 @@
    "t": "2026-11-14T05:50:24.845085+00:00",
    "veredicto": "oferta_real"
   },
+  "45956991451": {
+   "ahorro_vs_amazon": 9,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 823.93,
+   "amz_title": "InFocus IN0061SL 4K Beamer mit zwei HDMI-Eingänge",
+   "asin": "B0DXVY3LSF",
+   "disponible": true,
+   "ean": "0850053009525",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "solo 9 % por debajo del habitual en Amazon (823.93)",
+   "name": "InFocus Orbital IN0061SL 4K UHD 4000 lúmenes ANSI DLP altavoz 10W 27dB Proyector",
+   "pp_drop": 12,
+   "pp_median": 848.95,
+   "pp_price": 747.95,
+   "t": "2026-11-14T07:35:33.414859+00:00",
+   "veredicto": "dudoso"
+  },
   "45992962853": {
    "ahorro_vs_amazon": 3,
    "amz_low30": null,
@@ -1440,6 +1471,25 @@
    "pp_median": 68.27,
    "pp_price": 50.95,
    "t": "2026-11-14T01:50:35.475157+00:00",
+   "veredicto": "amazon_mas_barato"
+  },
+  "46239683053": {
+   "ahorro_vs_amazon": 0,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 1329.0,
+   "amz_title": "Apple MacBook Air de 13,6 Pulgadas con Chip M5: Pantalla Liquid Retina, CPU de 10 núcleos, GPU de 8 núcleos, 16 GB de Memoria unificada, 512 GB de SSD, Wi-Fi 7,",
+   "asin": "B0GR1N7ND2",
+   "disponible": true,
+   "ean": "0195950687569",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 1329.00 frente a 1327.95",
+   "name": "Apple MacBook Air 13 pulgadas M5 16GB/512GB SSD Liquid Retina macOS Plata WiFi 7 Portátil",
+   "pp_drop": 11,
+   "pp_median": 1498.95,
+   "pp_price": 1327.95,
+   "t": "2026-11-14T07:35:33.414859+00:00",
    "veredicto": "amazon_mas_barato"
   },
   "46239683789": {
@@ -1966,12 +2016,12 @@
  },
  "night_at": "2026-11-14T05:50:24.845085+00:00",
  "resumen": {
-  "amazon_mas_barato": 19,
-  "dudoso": 2,
+  "amazon_mas_barato": 20,
+  "dudoso": 3,
   "no_esta": 21,
   "oferta_real": 19,
   "pvpr_inflado": 4,
   "sin_precio": 3
  },
- "updated": "2026-11-14T07:01:07.663772+00:00"
+ "updated": "2026-11-14T07:35:33.414859+00:00"
 }
