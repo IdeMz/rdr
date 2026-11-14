@@ -219,6 +219,21 @@
    "title": "Silicon Power 4TB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5\" 7mm (0.28\") Internal Solid State Drive",
    "via": "nombre"
   },
+  "4894461955711": {
+   "a": "",
+   "t": "2026-11-14T04:50:24.590570+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "TCL K70 SE(Indigo Black)"
+    ],
+    "nombre": [
+     "TCL K70 SE(Indigo Black)",
+     "TCL K70 4G(Midnight Black)",
+     "TCL K70 4G (Azul Estelar)"
+    ]
+   }
+  },
   "4895223103654": {
    "a": "",
    "t": "2026-11-14T04:20:27.040644+00:00",
@@ -244,6 +259,12 @@
    "a": "B07SQGX8JZ",
    "t": "2026-11-14T03:50:27.795156+00:00",
    "title": "Brother QL-600R - Impresora de Etiquetas (Interfaz USB, impresión de códigos de Barras, Unidad de Corte automático), 130, QL600RXX1",
+   "via": "ean"
+  },
+  "5025232931552": {
+   "a": "B0BXMN8VN8",
+   "t": "2026-11-14T04:50:24.590570+00:00",
+   "title": "Proyector Panasonic PT-LMZ420 4200 LM",
    "via": "ean"
   },
   "5055387600614": {
@@ -467,6 +488,12 @@
      "SaveFamily SaveWatch Plus 4G | Reloj Inteligente Niño/a con Localizador GPS"
     ]
    }
+  },
+  "8806094972313": {
+   "a": "B0CDTVTFFS",
+   "t": "2026-11-14T04:50:24.590570+00:00",
+   "title": "Samsung Monitor Curvo Gaming Odyssey G9 G95C Dual QHD 49\" con 240Hz y AMD Freesync Pro",
+   "via": "modelo"
   },
   "8806097712169": {
    "a": "B0G2RPG83D",
@@ -716,6 +743,28 @@
    "pp_price": 76.96,
    "t": "2026-11-13T22:50:26.355987+00:00",
    "veredicto": "oferta_real"
+  },
+  "45251942871": {
+   "ean": "4894461955711",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "TCL K70 SE 4G 4GB/64GB Negro Índigo 6,56 pulgadas LCD 90Hz 3000mAh",
+   "pp_drop": 19,
+   "pp_median": 139.95,
+   "pp_price": 112.99,
+   "t": "2026-11-14T04:50:24.590570+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "TCL K70 SE(Indigo Black)"
+    ],
+    "nombre": [
+     "TCL K70 SE(Indigo Black)",
+     "TCL K70 4G(Midnight Black)",
+     "TCL K70 4G (Azul Estelar)"
+    ]
+   }
   },
   "45368125530": {
    "ahorro_vs_amazon": 37,
@@ -1201,6 +1250,25 @@
    "t": "2026-11-14T01:50:35.475157+00:00",
    "veredicto": "amazon_mas_barato"
   },
+  "46239683789": {
+   "ahorro_vs_amazon": -2,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 1429.0,
+   "amz_title": "Proyector Panasonic PT-LMZ420 4200 LM",
+   "asin": "B0BXMN8VN8",
+   "disponible": true,
+   "ean": "5025232931552",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 1429.00 frente a 1457.95",
+   "name": "Panasonic Láser WUXGA 1920x1200 4200 lúmenes ANSI LCD Blanco PT-LMZ420 altavoz 10W 33dB Proyector",
+   "pp_drop": 12,
+   "pp_median": 1653.66,
+   "pp_price": 1457.95,
+   "t": "2026-11-14T04:50:24.590570+00:00",
+   "veredicto": "amazon_mas_barato"
+  },
   "46239684598": {
    "ean": "5061112450973",
    "lista": "candidates",
@@ -1444,6 +1512,25 @@
    "t": "2026-11-14T03:50:27.795156+00:00",
    "veredicto": "oferta_real"
   },
+  "46599140076": {
+   "ahorro_vs_amazon": -125,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 740.93,
+   "amz_title": "Samsung Monitor Curvo Gaming Odyssey G9 G95C Dual QHD 49\" con 240Hz y AMD Freesync Pro",
+   "asin": "B0CDTVTFFS",
+   "disponible": true,
+   "ean": "8806094972313",
+   "encontrado_por": "modelo",
+   "lista": "candidates",
+   "motivo": "Amazon 740.93 frente a 1669.00",
+   "name": "Monitor Samsung Odyssey Neo G9 G95NC 57 pulgadas Mini LED 240Hz Dual UHD Curvo Blanco",
+   "pp_drop": 12,
+   "pp_median": 1899.0,
+   "pp_price": 1669.0,
+   "t": "2026-11-14T04:50:24.590570+00:00",
+   "veredicto": "amazon_mas_barato"
+  },
   "46599140303": {
    "ahorro_vs_amazon": -13,
    "amz_low30": null,
@@ -1628,14 +1715,14 @@
    }
   }
  },
- "night_at": "2026-11-14T04:20:27.040644+00:00",
+ "night_at": "2026-11-14T04:50:24.590570+00:00",
  "resumen": {
-  "amazon_mas_barato": 15,
+  "amazon_mas_barato": 17,
   "dudoso": 1,
-  "no_esta": 18,
+  "no_esta": 19,
   "oferta_real": 15,
   "pvpr_inflado": 4,
   "sin_precio": 3
  },
- "updated": "2026-11-14T04:20:27.040644+00:00"
+ "updated": "2026-11-14T04:50:24.590570+00:00"
 }
