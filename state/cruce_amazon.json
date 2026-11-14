@@ -146,6 +146,26 @@
     ]
    }
   },
+  "0622356376938": {
+   "a": "",
+   "t": "2026-11-14T23:20:25.000542+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "Ninja BlendBoss, Batidora de Vaso Portátil, Color Ciberespacio"
+    ],
+    "modelo": [
+     "Ninja BlendBoss, Batidora de Vaso Portátil, Color Piedra",
+     "Ninja Detect Power Pro, Batidora y Procesador de Alimentos, Negro",
+     "Ninja Blendboss - Batidora personal para batidos y bebidas congeladas, taza de viaje de 25 onzas con"
+    ],
+    "nombre": [
+     "Ninja BlendBoss, Batidora de Vaso Portátil, Color Piedra",
+     "Ninja CREAMi Deluxe, Heladera Multifunción con 2 Tarrinas, Plateado",
+     "Ninja CREAMi, Heladera Eléctrica Multifunción, Negro y Plata"
+    ]
+   }
+  },
   "0711719592068": {
    "a": "",
    "t": "2026-11-14T08:45:50.370542+00:00",
@@ -293,6 +313,26 @@
    "t": "2026-11-14T05:50:24.845085+00:00",
    "title": "Tefal Easy Fry Silence, Freidora de aire caliente, hasta un 99% menos de grasa, nueva tecnología silenciosa, capacidad de 5 l, con rejilla de cocción antiadhere",
    "via": "ean"
+  },
+  "3121040095522": {
+   "a": "",
+   "t": "2026-11-14T23:20:25.000542+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "Rowenta Compact Power, mini radiador, potencia ajustable (Reacondicionado)"
+    ],
+    "modelo": [
+     "Rowenta Compact Power, calefactor, calentamiento rápido, SO2212",
+     "Rowenta Comfort Compact - Calefactor bajo consumo 2000 W, 2 velocidades, termostato mecánico función",
+     "Rowenta Compact Power SO2210 - Calefactor Compacto con motor dual de 1000 W y 2000 W, función Silenc"
+    ],
+    "nombre": [
+     "Rowenta Comfort Compact - Calefactor bajo consumo 2000 W, 2 velocidades, termostato mecánico función",
+     "Rowenta Compact Power, calefactor, calentamiento rápido, SO2212",
+     "Rowenta Compact Power, calefactor, calentamiento rápido, SO5115"
+    ]
+   }
   },
   "3362932914846": {
    "a": "B01H6KXGDY",
@@ -785,6 +825,12 @@
    "a": "B0DCPW2SP5",
    "t": "2026-11-14T02:50:24.306324+00:00",
    "title": "Bowers & Wilkins Pi6 - Verde Bosque",
+   "via": "ean"
+  },
+  "8001090914170": {
+   "a": "B0C6MF8QTB",
+   "t": "2026-11-14T23:20:25.000542+00:00",
+   "title": "Oral-B Pro 1 - Cepillo de dientes eléctrico con cepillo de repuesto, color",
    "via": "ean"
   },
   "8001090914415": {
@@ -1361,6 +1407,33 @@
      "TCL K70 SE(Indigo Black)",
      "TCL K70 4G(Midnight Black)",
      "TCL K70 4G (Azul Estelar)"
+    ]
+   }
+  },
+  "45368123600": {
+   "ean": "3121040095522",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Rowenta Compact Power SO2211 2000W Termoventilador 60dB Calefactor",
+   "pp_drop": 18,
+   "pp_median": 49.95,
+   "pp_price": 40.95,
+   "t": "2026-11-14T23:20:25.000542+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "Rowenta Compact Power, mini radiador, potencia ajustable (Reacondicionado)"
+    ],
+    "modelo": [
+     "Rowenta Compact Power, calefactor, calentamiento rápido, SO2212",
+     "Rowenta Comfort Compact - Calefactor bajo consumo 2000 W, 2 velocidades, termostato mecánico función",
+     "Rowenta Compact Power SO2210 - Calefactor Compacto con motor dual de 1000 W y 2000 W, función Silenc"
+    ],
+    "nombre": [
+     "Rowenta Comfort Compact - Calefactor bajo consumo 2000 W, 2 velocidades, termostato mecánico función",
+     "Rowenta Compact Power, calefactor, calentamiento rápido, SO2212",
+     "Rowenta Compact Power, calefactor, calentamiento rápido, SO5115"
     ]
    }
   },
@@ -2349,6 +2422,33 @@
    "t": "2026-11-13T14:01:00.760700+00:00",
    "veredicto": "oferta_real"
   },
+  "46239687234": {
+   "ean": "0622356376938",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Ninja 0,71L 1100W Gris Oscuro DB351CHCY acero inoxidable Licuadora",
+   "pp_drop": 14,
+   "pp_median": 147.95,
+   "pp_price": 127.95,
+   "t": "2026-11-14T23:20:25.000542+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "Ninja BlendBoss, Batidora de Vaso Portátil, Color Ciberespacio"
+    ],
+    "modelo": [
+     "Ninja BlendBoss, Batidora de Vaso Portátil, Color Piedra",
+     "Ninja Detect Power Pro, Batidora y Procesador de Alimentos, Negro",
+     "Ninja Blendboss - Batidora personal para batidos y bebidas congeladas, taza de viaje de 25 onzas con"
+    ],
+    "nombre": [
+     "Ninja BlendBoss, Batidora de Vaso Portátil, Color Piedra",
+     "Ninja CREAMi Deluxe, Heladera Multifunción con 2 Tarrinas, Plateado",
+     "Ninja CREAMi, Heladera Eléctrica Multifunción, Negro y Plata"
+    ]
+   }
+  },
   "46247661211": {
    "ahorro_vs_amazon": -70,
    "amz_low30": null,
@@ -2818,6 +2918,25 @@
    "t": "2026-11-13T22:35:19.548446+00:00",
    "veredicto": "amazon_mas_barato"
   },
+  "46599141708": {
+   "ahorro_vs_amazon": 24,
+   "amz_low30": null,
+   "amz_median": 52.28,
+   "amz_price": 49.99,
+   "amz_title": "Oral-B Pro 1 - Cepillo de dientes eléctrico con cepillo de repuesto, color",
+   "asin": "B0C6MF8QTB",
+   "disponible": true,
+   "ean": "8001090914170",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "24 % por debajo del habitual en Amazon (52.28)",
+   "name": "Cepillo de dientes eléctrico Oral-B Pro 1 Cross Action Oscilante 3 Modos Negro",
+   "pp_drop": 18,
+   "pp_median": 48.94,
+   "pp_price": 39.95,
+   "t": "2026-11-14T23:20:25.000542+00:00",
+   "veredicto": "oferta_real"
+  },
   "46599142071": {
    "ean": "6978515257926",
    "lista": "candidates",
@@ -3202,14 +3321,14 @@
    }
   }
  },
- "night_at": "2026-11-14T22:50:36.785672+00:00",
+ "night_at": "2026-11-14T23:20:25.000542+00:00",
  "resumen": {
   "amazon_mas_barato": 21,
   "dudoso": 5,
-  "no_esta": 17,
-  "oferta_real": 20,
+  "no_esta": 19,
+  "oferta_real": 21,
   "pvpr_inflado": 2,
   "sin_precio": 3
  },
- "updated": "2026-11-14T22:50:36.785672+00:00"
+ "updated": "2026-11-14T23:20:25.000542+00:00"
 }
