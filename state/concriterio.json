@@ -1,6 +1,6 @@
 {
  "cats": {
-  "Accesorios de coche": "2026-11-13T13:25:30.604640+00:00",
+  "Accesorios de coche": "2026-11-14T13:25:29.087955+00:00",
   "Afeitado y depilación": "2026-11-13T12:50:38.657328+00:00",
   "Almacenamiento": "2026-11-13T17:45:36.587944+00:00",
   "Altavoces": "2026-11-14T07:01:07.663772+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-13T21:50:42.988192+00:00",
   "Zapatillas": "2026-11-13T19:20:42.278458+00:00"
  },
- "next_at": "2026-11-14T13:25:05.914910+00:00",
+ "next_at": "2026-11-14T14:00:00.299354+00:00",
  "offer": {
   "a": "B08PVDQFQQ",
   "m": 218,
@@ -1501,6 +1501,17 @@
    "title": "DREAME L50 Pro Ultra Robot Aspirador y Fregasuelos, 19500 Pa, Autolimpieza de la Mopa, Detección de Obstáculos Inteligente, Limpieza con Agua Caliente a 75°, Robot Aspitador con Cámara para Mascotas",
    "v": []
   },
+  "B0DSZRL2W9": {
+   "c": "Accesorios de coche",
+   "d": 30,
+   "e": "🚗",
+   "m": 290,
+   "p": 132.99,
+   "s": "ofertas",
+   "t": "2026-11-14T13:25:53.225142+00:00",
+   "title": "BOTSLAB Dash Cam Delantera y Trasera, Kit de Cableado, 64 GB",
+   "v": []
+  },
   "B0DT4R1N9N": {
    "c": "Monitores",
    "d": 34,
@@ -2512,6 +2523,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-14",
-  "n": 11
+  "n": 12
  }
 }
