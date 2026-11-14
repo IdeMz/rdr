@@ -3,7 +3,7 @@
   "Accesorios de coche": "2026-11-13T13:25:30.604640+00:00",
   "Afeitado y depilación": "2026-11-13T12:50:38.657328+00:00",
   "Almacenamiento": "2026-11-13T17:45:36.587944+00:00",
-  "Altavoces": "2026-11-13T08:10:39.209090+00:00",
+  "Altavoces": "2026-11-14T07:01:07.663772+00:00",
   "Aspiradoras": "2026-11-13T18:45:39.134382+00:00",
   "Auriculares": "2026-11-12T12:20:44.296151+00:00",
   "Cafeteras": "2026-11-13T12:15:38.991127+00:00",
@@ -26,7 +26,7 @@
   "Menaje de cocina": "2026-11-13T07:35:36.489438+00:00",
   "Mochilas y maletas": "2026-11-10T18:50:43.937099+00:00",
   "Monitores": "2026-11-12T19:10:42.508182+00:00",
-  "Móviles": "2026-11-13T08:45:39.815574+00:00",
+  "Móviles": "2026-11-14T07:01:07.663772+00:00",
   "Nutrición deportiva": "2026-11-13T16:01:12.341933+00:00",
   "Perfumes": "2026-11-13T13:25:30.604640+00:00",
   "Periféricos": "2026-11-13T09:20:46.074861+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-13T21:50:42.988192+00:00",
   "Zapatillas": "2026-11-13T19:20:42.278458+00:00"
  },
- "next_at": "2026-11-13T22:25:06.221374+00:00",
+ "next_at": "2026-11-14T07:35:27.162052+00:00",
  "offer": {
   "a": "B08PVDQFQQ",
   "m": 218,
@@ -1550,6 +1550,17 @@
    "title": "Dyson Purifier Hot+Cool HP1 Purificador de Aire, Calefactor",
    "v": []
   },
+  "B0F8BJ7PW6": {
+   "c": "Altavoces",
+   "d": 47,
+   "e": "🔊",
+   "m": 279,
+   "p": 79.99,
+   "s": "ofertas",
+   "t": "2026-11-14T07:01:44.820311+00:00",
+   "title": "Edifier MP330 Altavoz Bluetooth Portátil con 40W RMS & Audio Hi-Res，Negro",
+   "v": []
+  },
   "B0F9L1BKBK": {
    "c": "Menaje de cocina",
    "d": 23,
@@ -2272,10 +2283,6 @@
    "t": "2026-11-13T07:35:36.489438+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B07N9CTXRP": {
-   "t": "2026-11-12T21:55:34.077440+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B07RPYDLRD": {
    "t": "2026-11-13T15:10:54.425531+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2380,14 +2387,6 @@
    "t": "2026-11-13T19:20:42.278458+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0G14W2ZWW": {
-   "t": "2026-11-12T21:55:34.077440+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0GQL6N4BG": {
-   "t": "2026-11-12T21:55:34.077440+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0H6DZJX44": {
    "t": "2026-11-13T18:45:39.134382+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2399,46 +2398,22 @@
  },
  "reserve": [
   {
-   "a": "B0BX4HGTQD",
-   "c": "Cuidado del cabello",
-   "e": "💇",
-   "img": "https://m.media-amazon.com/images/I/51hYtDSsYPL._AC_UL320_.jpg",
-   "n": 468,
-   "op": 419.0,
-   "p": 278.29,
-   "r": 4.2,
-   "t": "2026-11-13T21:50:42.988192+00:00",
-   "title": "ghd Duet Style - Plancha Secador Profesional de Pelo 2 en 1"
-  },
-  {
-   "a": "B0CNY1GWVC",
-   "c": "Café y cápsulas",
-   "e": "🫘",
-   "img": "https://m.media-amazon.com/images/I/81X7BaXHtwL._AC_UL320_.jpg",
-   "n": 2700,
-   "op": 24.38,
-   "p": 19.49,
-   "r": 4.6,
-   "t": "2026-11-13T20:40:48.338068+00:00",
-   "title": "STARBUCKS Paquete Variado de Nespresso, Cápsulas de Café de Diferentes Intensidades 6 x 10 (60 Cápsulas) - Exclusivo de Amazon"
-  },
-  {
-   "a": "B0F6NJ9QWP",
-   "c": "Zapatillas",
-   "e": "👟",
-   "img": "https://m.media-amazon.com/images/I/61uuFhqaCfL._AC_UL320_.jpg",
-   "n": 416,
-   "op": 64.95,
-   "p": 41.51,
-   "r": 4.5,
-   "t": "2026-11-13T19:20:42.278458+00:00",
-   "title": "Softride Symmetry Fuzion Wn's Zapatillas para Correr de carreteraMujer"
+   "a": "B0CX1XFLCV",
+   "c": "Altavoces",
+   "e": "🔊",
+   "img": "https://m.media-amazon.com/images/I/61nk5uieFzL._AC_UL320_.jpg",
+   "n": 443,
+   "op": 449.0,
+   "p": 279.0,
+   "r": 4.7,
+   "t": "2026-11-14T07:01:07.663772+00:00",
+   "title": "Sony ULT FIELD 7 Altavoz inalámbrico bluetooth portátil con ULT POWER SOUND y Deep Bass, altavoz X-Balanced, 30H de batería, IP67, resistente al agua, iluminación LED, micrófono, entrada para guitarra"
   }
  ],
  "summary_day": "2026-11-13",
  "tg_offset": 511048053,
  "x_copy": {
-  "day": "2026-11-13",
-  "n": 25
+  "day": "2026-11-14",
+  "n": 1
  }
 }
