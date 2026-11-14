@@ -677,6 +677,12 @@
    "title": "Cecotec Tostador Toast&Taste Extra Double B, 1350W de Potencia, Doble Ranura larga para 2 Tostadas, Apagado y Pop-up Automático, Varillas Superiores",
    "via": "ean"
   },
+  "843591088541": {
+   "a": "B01G26166W",
+   "t": "2026-11-14T14:01:05.199813+00:00",
+   "title": "Corsair Vengeance SODIMM 32GB (2x16GB) DDR4 hasta 2400MHz CL16 Memoria para Portátiles/Notebooks (Soporte para Procesadores Intel Core™ i5 e i7 de 6ª Generación",
+   "via": "ean"
+  },
   "8437026689353": {
    "a": "",
    "t": "2026-11-14T03:50:27.795156+00:00",
@@ -1447,6 +1453,25 @@
    "t": "2026-11-14T07:35:33.414859+00:00",
    "veredicto": "dudoso"
   },
+  "45956991871": {
+   "ahorro_vs_amazon": 10,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 402.69,
+   "amz_title": "Corsair Vengeance SODIMM 32GB (2x16GB) DDR4 hasta 2400MHz CL16 Memoria para Portátiles/Notebooks (Soporte para Procesadores Intel Core™ i5 e i7 de 6ª Generación",
+   "asin": "B01G26166W",
+   "disponible": true,
+   "ean": "843591088541",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "10 % por debajo del habitual en Amazon (402.69)",
+   "name": "Corsair Vengeance DDR4 32GB 2x16GB 2400MHz SO-DIMM Memoria RAM",
+   "pp_drop": 18,
+   "pp_median": 439.96,
+   "pp_price": 362.95,
+   "t": "2026-11-14T14:01:05.199813+00:00",
+   "veredicto": "oferta_real"
+  },
   "45956992523": {
    "ahorro_vs_amazon": 21,
    "amz_low30": null,
@@ -2107,7 +2132,7 @@
    "veredicto": "amazon_mas_barato"
   },
   "46599139865": {
-   "ahorro_vs_amazon": 14,
+   "ahorro_vs_amazon": 21,
    "amz_low30": null,
    "amz_median": null,
    "amz_price": 42.97,
@@ -2117,12 +2142,12 @@
    "ean": "4710886001201",
    "encontrado_por": "modelo",
    "lista": "candidates",
-   "motivo": "14 % por debajo del habitual en Amazon (42.97)",
+   "motivo": "21 % por debajo del habitual en Amazon (42.97)",
    "name": "Acer M501 Blanco 1600 DPI 3 botones 2.4GHz 55 g Ratón inalámbrico",
-   "pp_drop": 26,
+   "pp_drop": 32,
    "pp_median": 49.95,
-   "pp_price": 36.95,
-   "t": "2026-11-14T03:50:27.795156+00:00",
+   "pp_price": 33.95,
+   "t": "2026-11-14T14:01:05.199813+00:00",
    "veredicto": "oferta_real"
   },
   "46599140076": {
@@ -2520,9 +2545,9 @@
   "amazon_mas_barato": 14,
   "dudoso": 2,
   "no_esta": 11,
-  "oferta_real": 13,
+  "oferta_real": 14,
   "pvpr_inflado": 2,
   "sin_precio": 3
  },
- "updated": "2026-11-14T13:25:29.087955+00:00"
+ "updated": "2026-11-14T14:01:05.199813+00:00"
 }

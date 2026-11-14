@@ -34,14 +34,14 @@
   "Portátiles": "2026-11-12T21:40:51.544407+00:00",
   "Relojes": "2026-11-13T15:10:54.425531+00:00",
   "Robots de cocina": "2026-11-13T17:10:41.240248+00:00",
-  "Smartwatch": "2026-11-13T14:01:00.760700+00:00",
+  "Smartwatch": "2026-11-14T14:01:05.199813+00:00",
   "Suplementos": "2026-11-13T10:31:00.804242+00:00",
   "Tablets": "2026-11-12T21:55:34.077440+00:00",
   "Televisores": "2026-11-11T20:15:41.209092+00:00",
   "Videojuegos": "2026-11-13T21:50:42.988192+00:00",
   "Zapatillas": "2026-11-13T19:20:42.278458+00:00"
  },
- "next_at": "2026-11-14T14:00:00.299354+00:00",
+ "next_at": "2026-11-14T14:36:01.832672+00:00",
  "offer": {
   "a": "B08PVDQFQQ",
   "m": 218,
@@ -2362,6 +2362,17 @@
    "title": "Reloj Inteligente Mujer Hombre con Llamadas Bluetooth y Voz AI, 1.85'' Smartwatch con Whatsapp Notificación, Pulsómetro/SpO2/Sueño/Podómetro, 110+ Modos Deportivos, Impermeable IP68 para iOS/Android",
    "v": []
   },
+  "B0HDZ1LBCH": {
+   "c": "Smartwatch",
+   "d": 53,
+   "e": "⌚",
+   "m": 291,
+   "p": 56.99,
+   "s": "busqueda",
+   "t": "2026-11-14T14:01:56.352013+00:00",
+   "title": "Reloj Inteligente Niño, 4G Smartwatch con Videollamadas, Chat de Voz, GPS",
+   "v": []
+  },
   "B0HGQCFCBF": {
    "c": "Smartwatch",
    "d": 50,
@@ -2437,7 +2448,7 @@
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0DY1P85GK": {
-   "t": "2026-11-13T14:01:00.760700+00:00",
+   "t": "2026-11-14T14:01:05.199813+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0DY8V59LY": {
@@ -2472,6 +2483,10 @@
    "t": "2026-11-14T07:35:33.414859+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0H5KDLK7M": {
+   "t": "2026-11-14T14:01:05.199813+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0H6DZJX44": {
    "t": "2026-11-13T18:45:39.134382+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2479,9 +2494,25 @@
   "B0HBWW6LQQ": {
    "t": "2026-11-13T18:45:39.134382+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0HJR8HC2F": {
+   "t": "2026-11-14T14:01:05.199813+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
   }
  },
  "reserve": [
+  {
+   "a": "B0H75TB7ZC",
+   "c": "Smartwatch",
+   "e": "⌚",
+   "img": "https://m.media-amazon.com/images/I/71b4E2A4i4L._AC_UL320_.jpg",
+   "n": 433,
+   "op": 39.99,
+   "p": 32.58,
+   "r": 4.5,
+   "t": "2026-11-14T14:01:05.199813+00:00",
+   "title": "Reloj Inteligente Hombre con Llamadas con Linterna y Brújula, 960mAh Batería 1.45\" Militar Smartwatch Hombre con,123 Modos Deporte,Monitor Cardíaco 24h/SpO2/Sueño,Podómetro,IP68,2Correas(iOS/Android)"
+  },
   {
    "a": "B0CW9PR2J6",
    "c": "Nutrición deportiva",
@@ -2505,24 +2536,12 @@
    "r": 4.2,
    "t": "2026-11-14T11:05:31.708608+00:00",
    "title": "Mellerware Homy! Calefactor Cerámico Bajo Consumo 2000W Oscilante"
-  },
-  {
-   "a": "B00HGPLEX4",
-   "c": "Fitness en casa",
-   "e": "🏋️",
-   "img": "https://m.media-amazon.com/images/I/611o5xbo5OL._AC_UL320_.jpg",
-   "n": 4000,
-   "op": 15.9,
-   "p": 12.52,
-   "r": 4.6,
-   "t": "2026-11-14T10:30:50.359175+00:00",
-   "title": "Yes4All Pin de Carga de Placa de Pesas de 2,5 cm y 5,1 cm, Blaster de muñeca y antebrazo, Sistema de polea de Cable de Fitness Lat Gym, Equipo de Gimnasio Resistente"
   }
  ],
  "summary_day": "2026-11-13",
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-14",
-  "n": 12
+  "n": 13
  }
 }
