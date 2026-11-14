@@ -191,6 +191,12 @@
    "title": "Philips TAR1609: radio portátil FM/AM con batería interna recargable, pilas AAA y manivela de soporte, energía solar, luz LED y linterna integrada para camping,",
    "via": "ean"
   },
+  "5055387600614": {
+   "a": "B0HN7FZYK5",
+   "t": "2026-11-14T02:20:24.077147+00:00",
+   "title": "Optoma Hz147x Proiettore A Raggio Standard Dlp 1080p [1920x1080] Compatibilit? 3d Nero (hz147x Duracore Laser Projector)",
+   "via": "ean"
+  },
   "5061112450973": {
    "a": "",
    "t": "2026-11-13T22:35:19.548446+00:00",
@@ -210,6 +216,12 @@
    "a": "B01K6TUC20",
    "t": "2026-11-14T01:50:35.475157+00:00",
    "title": "Jabra Evolve 30 UC - Auriculares Estéreo de Comunicaciones Unificadas para VoIP Softphone - Cancelación Pasiva de Ruido - Cable USB con Unidad de Control - Negr",
+   "via": "ean"
+  },
+  "5706991023008": {
+   "a": "B086LLZZ16",
+   "t": "2026-11-14T02:20:24.077147+00:00",
+   "title": "Jabra Evolve2 65 Auriculares Inalámbricos Monoaurales PC con Cancelación de Ruido - Certificados para Microsoft Teams - Batería de Larga Duración - Adaptador Bl",
    "via": "ean"
   },
   "5706991026542": {
@@ -250,6 +262,12 @@
    "t": "2026-11-13T21:15:42.495405+00:00",
    "title": "Montre connectée Huawei Watch 5 42 mm Bluetooth Beige avec bracelet en fluoroélastomère Beige",
    "via": "ean"
+  },
+  "6953156299399": {
+   "a": "B0FHK3F3DY",
+   "t": "2026-11-14T02:20:24.077147+00:00",
+   "title": "Baseus Eli Sport2 Auriculares Open Ear, Auriculares Deportivos de Conducción Aérea con Curva de Confort en S, 45H de Reproducción, SuperBass 2.0, IPX7, Bluetoot",
+   "via": "nombre"
   },
   "6959422615818": {
    "a": "",
@@ -388,6 +406,25 @@
    "pp_price": 421.95,
    "t": "2026-11-14T00:51:58.629494+00:00",
    "veredicto": "sin_precio"
+  },
+  "38277783220": {
+   "ahorro_vs_amazon": 64,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 289.37,
+   "amz_title": "Jabra Evolve2 65 Auriculares Inalámbricos Monoaurales PC con Cancelación de Ruido - Certificados para Microsoft Teams - Batería de Larga Duración - Adaptador Bl",
+   "asin": "B086LLZZ16",
+   "disponible": true,
+   "ean": "5706991023008",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "64 % por debajo del habitual en Amazon (289.37)",
+   "name": "Jabra Evolve2 65 MS Mono Negro Diadema Bluetooth 5.0 Auriculares inalámbricos",
+   "pp_drop": 21,
+   "pp_median": 130.95,
+   "pp_price": 102.95,
+   "t": "2026-11-14T02:20:24.077147+00:00",
+   "veredicto": "oferta_real"
   },
   "38915518299": {
    "ahorro_vs_amazon": -14,
@@ -627,6 +664,25 @@
    "t": "2026-11-14T01:20:25.760497+00:00",
    "veredicto": "oferta_real"
   },
+  "45403214516": {
+   "ahorro_vs_amazon": 0,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 48.99,
+   "amz_title": "Baseus Eli Sport2 Auriculares Open Ear, Auriculares Deportivos de Conducción Aérea con Curva de Confort en S, 45H de Reproducción, SuperBass 2.0, IPX7, Bluetoot",
+   "asin": "B0FHK3F3DY",
+   "disponible": true,
+   "ean": "6953156299399",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "Amazon 48.99 frente a 48.94",
+   "name": "Baseus Eli Sport 2 Open-Ear TWS Bluetooth 6.0 45h IP57 Multipunto Auriculares inalámbricos",
+   "pp_drop": 25,
+   "pp_median": 64.95,
+   "pp_price": 48.94,
+   "t": "2026-11-14T02:20:24.077147+00:00",
+   "veredicto": "amazon_mas_barato"
+  },
   "45570747232": {
    "ahorro_vs_amazon": 0,
    "amz_low30": null,
@@ -825,6 +881,25 @@
    "pp_price": 1210.96,
    "t": "2026-11-13T17:10:41.240248+00:00",
    "veredicto": "amazon_mas_barato"
+  },
+  "46186024134": {
+   "ahorro_vs_amazon": 12,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 740.43,
+   "amz_title": "Optoma Hz147x Proiettore A Raggio Standard Dlp 1080p [1920x1080] Compatibilit? 3d Nero (hz147x Duracore Laser Projector)",
+   "asin": "B0HN7FZYK5",
+   "disponible": true,
+   "ean": "5055387600614",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "12 % por debajo del habitual en Amazon (740.43)",
+   "name": "Optoma Láser 1080p Full HD 4000 lúmenes DLP Negro HZ147X altavoz 15W 31dB Proyector",
+   "pp_drop": 15,
+   "pp_median": 765.95,
+   "pp_price": 650.96,
+   "t": "2026-11-14T02:20:24.077147+00:00",
+   "veredicto": "oferta_real"
   },
   "46186036340": {
    "ahorro_vs_amazon": 32,
@@ -1214,14 +1289,14 @@
    }
   }
  },
- "night_at": "2026-11-14T01:50:35.475157+00:00",
+ "night_at": "2026-11-14T02:20:24.077147+00:00",
  "resumen": {
-  "amazon_mas_barato": 14,
+  "amazon_mas_barato": 15,
   "dudoso": 0,
   "no_esta": 12,
-  "oferta_real": 10,
+  "oferta_real": 12,
   "pvpr_inflado": 3,
   "sin_precio": 3
  },
- "updated": "2026-11-14T01:50:35.475157+00:00"
+ "updated": "2026-11-14T02:20:24.077147+00:00"
 }
