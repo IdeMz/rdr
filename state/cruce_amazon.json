@@ -273,6 +273,21 @@
    "title": "Optoma Hz147x Proiettore A Raggio Standard Dlp 1080p [1920x1080] Compatibilit? 3d Nero (hz147x Duracore Laser Projector)",
    "via": "ean"
   },
+  "5060777122928": {
+   "a": "",
+   "t": "2026-11-14T05:08:32.344426+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "ghd Original Styler - Plancha de Pelo Profesional"
+    ],
+    "nombre": [
+     "ghd Original Styler - Plancha de Pelo Profesional",
+     "ghd Gold - Plancha de Pelo Profesional Avanzada",
+     "ghd Platinum+ - Plancha de Pelo Profesional Inteligente"
+    ]
+   }
+  },
   "5061112450973": {
    "a": "",
    "t": "2026-11-13T22:35:19.548446+00:00",
@@ -380,6 +395,12 @@
    "t": "2026-11-13T22:50:26.355987+00:00",
    "title": "KOSPET Tank T3 Ultra 2 Reloj Inteligente Hombre GPS, Acero Inoxidable Bateria Larga Duracion Reloj Inteligente, 1,43'' AMOLED 5ATM Impermeable Smartwatch Hombre",
    "via": "nombre"
+  },
+  "6975253983131": {
+   "a": "B0CVVT1HCW",
+   "t": "2026-11-14T05:08:32.344426+00:00",
+   "title": "Reolink Argus Series B320 2K telecamera di sicurezza",
+   "via": "ean"
   },
   "6977388390044": {
    "a": "B0H6LCS1HS",
@@ -499,6 +520,12 @@
    "a": "B0G2RPG83D",
    "t": "2026-11-14T03:20:26.477658+00:00",
    "title": "Samsung Galaxy Tab S11 11\" 12GB/512GB WiFi Gris (Moonstone Grey) X730 [versión Polaca]",
+   "via": "ean"
+  },
+  "8806099003418": {
+   "a": "B0HDT2R532",
+   "t": "2026-11-14T05:08:32.344426+00:00",
+   "title": "Samsung Galaxy Book6 14\", U5, 16GB RAM, 1TB SSD Ordenador Portátil IA",
    "via": "ean"
   },
   "8806099394516": {
@@ -783,6 +810,25 @@
    "pp_median": 217.95,
    "pp_price": 172.95,
    "t": "2026-11-13T21:50:42.988192+00:00",
+   "veredicto": "oferta_real"
+  },
+  "45389434011": {
+   "ahorro_vs_amazon": 13,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 89.29,
+   "amz_title": "Reolink Argus Series B320 2K telecamera di sicurezza",
+   "asin": "B0CVVT1HCW",
+   "disponible": true,
+   "ean": "6975253983131",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "13 % por debajo del habitual en Amazon (89.29)",
+   "name": "Reolink Argus Series B320 Blanco 3MP 4800mAh Exterior Solar batería Cámara de vigilancia",
+   "pp_drop": 20,
+   "pp_median": 96.99,
+   "pp_price": 77.99,
+   "t": "2026-11-14T05:08:32.344426+00:00",
    "veredicto": "oferta_real"
   },
   "45403196290": {
@@ -1107,6 +1153,28 @@
      "MOVA E50 Ultra, robot aspirador con 30 kPa de succión y 12 N descendente",
      "MOVA Z50 Ultra, robot aspirador, negro, Powered by dreame",
      "Para Robot Aspirador USB Recargable 6cm Perfil Bajo"
+    ]
+   }
+  },
+  "46106243328": {
+   "ean": "5060777122928",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "GHD Original Styler Cerámica single-zone 75W Plancha de pelo",
+   "pp_drop": 18,
+   "pp_median": 141.95,
+   "pp_price": 115.83,
+   "t": "2026-11-14T05:08:32.344426+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "ghd Original Styler - Plancha de Pelo Profesional"
+    ],
+    "nombre": [
+     "ghd Original Styler - Plancha de Pelo Profesional",
+     "ghd Gold - Plancha de Pelo Profesional Avanzada",
+     "ghd Platinum+ - Plancha de Pelo Profesional Inteligente"
     ]
    }
   },
@@ -1569,6 +1637,25 @@
    "t": "2026-11-13T16:35:32.960175+00:00",
    "veredicto": "oferta_real"
   },
+  "46599141105": {
+   "ahorro_vs_amazon": 3,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 1299.0,
+   "amz_title": "Samsung Galaxy Book6 14\", U5, 16GB RAM, 1TB SSD Ordenador Portátil IA",
+   "asin": "B0HDT2R532",
+   "disponible": true,
+   "ean": "8806099003418",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "solo 3 % por debajo del habitual en Amazon (1299.00)",
+   "name": "Portátil Samsung Galaxy Book6 16GB/1TB 14 pulgadas Intel Core Ultra 5 325 SSD Windows 11 Home Gris",
+   "pp_drop": 12,
+   "pp_median": 1423.95,
+   "pp_price": 1258.94,
+   "t": "2026-11-14T05:08:32.344426+00:00",
+   "veredicto": "dudoso"
+  },
   "46599141412": {
    "ahorro_vs_amazon": null,
    "amz_low30": null,
@@ -1715,14 +1802,14 @@
    }
   }
  },
- "night_at": "2026-11-14T04:50:24.590570+00:00",
+ "night_at": "2026-11-14T05:08:32.344426+00:00",
  "resumen": {
   "amazon_mas_barato": 17,
-  "dudoso": 1,
-  "no_esta": 19,
-  "oferta_real": 15,
+  "dudoso": 2,
+  "no_esta": 20,
+  "oferta_real": 16,
   "pvpr_inflado": 4,
   "sin_precio": 3
  },
- "updated": "2026-11-14T04:50:24.590570+00:00"
+ "updated": "2026-11-14T05:08:32.344426+00:00"
 }
