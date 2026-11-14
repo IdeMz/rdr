@@ -28,7 +28,7 @@
   "Monitores": "2026-11-14T07:35:33.414859+00:00",
   "Móviles": "2026-11-14T07:01:07.663772+00:00",
   "Nutrición deportiva": "2026-11-14T11:40:39.802795+00:00",
-  "Perfumes": "2026-11-13T13:25:30.604640+00:00",
+  "Perfumes": "2026-11-14T12:50:38.841046+00:00",
   "Periféricos": "2026-11-13T09:20:46.074861+00:00",
   "Perros": "2026-11-13T11:40:39.260187+00:00",
   "Portátiles": "2026-11-12T21:40:51.544407+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-13T21:50:42.988192+00:00",
   "Zapatillas": "2026-11-13T19:20:42.278458+00:00"
  },
- "next_at": "2026-11-14T12:48:58.487405+00:00",
+ "next_at": "2026-11-14T13:25:05.914910+00:00",
  "offer": {
   "a": "B08PVDQFQQ",
   "m": 218,
@@ -342,6 +342,17 @@
    "s": "ofertas",
    "t": "2026-11-13T11:06:06.481003+00:00",
    "title": "EULANT Pequeña Mochila para Bicicleta,12L Mochila de Hidratación Impermeable,Reflectoras Mochila de Ciclismo para MTB Senderismo Correr Natación Playa, con Capa de Aislamiento & red de pelota",
+   "v": []
+  },
+  "B07DNGPVRP": {
+   "c": "Perfumes",
+   "d": 31,
+   "e": "🌸",
+   "m": 289,
+   "p": 26.99,
+   "s": "busqueda",
+   "t": "2026-11-14T12:51:00.937147+00:00",
+   "title": "Yves Rocher Perfume COMME UNE EVIDENCE Eau de Parfum para Mujeres 100ml",
    "v": []
   },
   "B07F5M8SZ7": {
@@ -2386,10 +2397,6 @@
    "t": "2026-11-13T21:50:42.988192+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0CDCL53KW": {
-   "t": "2026-11-13T12:15:38.991127+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0CHJKQD1V": {
    "t": "2026-11-13T15:10:54.425531+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2505,6 +2512,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-14",
-  "n": 10
+  "n": 11
  }
 }

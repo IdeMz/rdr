@@ -599,6 +599,25 @@
    "title": "Ariete 00c462800ar0 Hei?luftfritteuse 7 L Antihaftbeschichtung, BpA-Frei, Digitaler Timer, F?r Lebensmittel, Hei?lufT-Funktion, LcD-Display, UmlufT-F",
    "via": "ean"
   },
+  "8004399021167": {
+   "a": "",
+   "t": "2026-11-14T12:50:38.841046+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "De 'Longhi calefactor rápido, hva 3220"
+    ],
+    "modelo": [
+     "DeLonghi HSX 2320 - Calefactor (Radiador / ventilador, Interior, Color blanco, 2000 W, 60 m³)",
+     "DeLonghi HX65L22 - Convector con 3 niveles de potencia, para hasta 65 m³, función ECO, 2200 W, Schwa"
+    ],
+    "nombre": [
+     "De'Longhi Termoventilador Cerámico de Torre, Calentamiento Rápido con 2 Niveles, Mando a Distancia, ",
+     "De'longhi HFX65v20 - Calefactor cerámico, 2000 w, temporizador digital, 2 niveles de calefacción, ma",
+     "De'Longhi HFX30c18.IW - Calefactor cerámico vertical, 2 ajustes de potencia de 900 y 1800 w, auto re"
+    ]
+   }
+  },
   "8004399141612": {
    "a": "",
    "t": "2026-11-14T11:40:39.802795+00:00",
@@ -677,6 +696,12 @@
    "a": "B0G2RM5BK9",
    "t": "2026-11-14T12:15:37.671280+00:00",
    "title": "Samsung Galaxy Watch8 Classic 46mm LTE Negro (Black) L505 - [Versiones italiano, húngaro, polaco, rumano, austriaco y suizo]",
+   "via": "ean"
+  },
+  "8806097625285": {
+   "a": "B0G6F2724R",
+   "t": "2026-11-14T12:50:38.841046+00:00",
+   "title": "Samsung Galaxy LTE (2025) Ultra Smart Watch, tamaño de caja de 47 mm, azul - [Versiones italiano, húngaro, polaco, rumano, austriaco y suizo]",
    "via": "ean"
   },
   "8806097712169": {
@@ -957,6 +982,25 @@
    "pp_price": 399.0,
    "t": "2026-11-14T12:15:37.671280+00:00",
    "veredicto": "amazon_mas_barato"
+  },
+  "41887696317": {
+   "ahorro_vs_amazon": 13,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 412.28,
+   "amz_title": "Samsung Galaxy LTE (2025) Ultra Smart Watch, tamaño de caja de 47 mm, azul - [Versiones italiano, húngaro, polaco, rumano, austriaco y suizo]",
+   "asin": "B0G6F2724R",
+   "disponible": true,
+   "ean": "8806097625285",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "13 % por debajo del habitual en Amazon (412.28)",
+   "name": "Samsung Galaxy Watch Ultra 2025 47 mm LTE Azul Titanio 1,5 pulgadas AMOLED GPS 8 días 10ATM",
+   "pp_drop": 22,
+   "pp_median": 460.95,
+   "pp_price": 359.95,
+   "t": "2026-11-14T12:50:38.841046+00:00",
+   "veredicto": "oferta_real"
   },
   "42520354709": {
    "ahorro_vs_amazon": 25,
@@ -2370,6 +2414,32 @@
     ]
    }
   },
+  "46693747642": {
+   "ean": "8004399021167",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Termoventilador De'Longhi Gris/Blanco Termostato 2000W 2 Niveles HVA3220",
+   "pp_drop": 40,
+   "pp_median": 51.95,
+   "pp_price": 30.95,
+   "t": "2026-11-14T12:50:38.841046+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "De 'Longhi calefactor rápido, hva 3220"
+    ],
+    "modelo": [
+     "DeLonghi HSX 2320 - Calefactor (Radiador / ventilador, Interior, Color blanco, 2000 W, 60 m³)",
+     "DeLonghi HX65L22 - Convector con 3 niveles de potencia, para hasta 65 m³, función ECO, 2200 W, Schwa"
+    ],
+    "nombre": [
+     "De'Longhi Termoventilador Cerámico de Torre, Calentamiento Rápido con 2 Niveles, Mando a Distancia, ",
+     "De'longhi HFX65v20 - Calefactor cerámico, 2000 w, temporizador digital, 2 niveles de calefacción, ma",
+     "De'Longhi HFX30c18.IW - Calefactor cerámico vertical, 2 ajustes de potencia de 900 y 1800 w, auto re"
+    ]
+   }
+  },
   "46693747648": {
    "ean": "8004399143500",
    "lista": "candidates",
@@ -2424,10 +2494,10 @@
  "resumen": {
   "amazon_mas_barato": 13,
   "dudoso": 2,
-  "no_esta": 10,
-  "oferta_real": 12,
+  "no_esta": 11,
+  "oferta_real": 13,
   "pvpr_inflado": 2,
   "sin_precio": 3
  },
- "updated": "2026-11-14T12:15:37.671280+00:00"
+ "updated": "2026-11-14T12:50:38.841046+00:00"
 }
