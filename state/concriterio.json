@@ -9,7 +9,7 @@
   "Cafeteras": "2026-11-14T14:40:41.311125+00:00",
   "Café y cápsulas": "2026-11-14T16:45:37.700799+00:00",
   "Cargadores y baterías": "2026-11-13T21:15:42.495405+00:00",
-  "Ciclismo": "2026-11-14T08:45:50.370542+00:00",
+  "Ciclismo": "2026-11-14T21:35:30.640432+00:00",
   "Climatización": "2026-11-14T11:05:31.708608+00:00",
   "Colchones y almohadas": "2026-11-13T08:45:39.815574+00:00",
   "Cuidado de la piel": "2026-11-13T14:35:34.102055+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-13T21:50:42.988192+00:00",
   "Zapatillas": "2026-11-13T19:20:42.278458+00:00"
  },
- "next_at": "2026-11-14T21:34:35.602630+00:00",
+ "next_at": "2026-11-14T22:07:59.893046+00:00",
  "offer": {
   "a": "B0CBMVQQSK",
   "m": 247,
@@ -188,6 +188,17 @@
    "p": 44.99,
    "t": "2026-11-08T13:25:53.955113+00:00",
    "title": "Advance Maxi Chicken, Pienso para Perros Adultos de Razas Grandes con Pollo, 14kg",
+   "v": []
+  },
+  "B00FFYQQ8G": {
+   "c": "Ciclismo",
+   "d": 11,
+   "e": "🚴",
+   "m": 301,
+   "p": 6.19,
+   "s": "ofertas",
+   "t": "2026-11-14T21:36:06.326323+00:00",
+   "title": "CATEYE Kit-Front, Trasera y Rueda Luces y reflectores, Ciclismo – Negro, no tamaño",
    "v": []
   },
   "B00O4AXMQG": {
@@ -2510,6 +2521,10 @@
    "t": "2026-11-14T19:45:46.808036+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0816QF6SZ": {
+   "t": "2026-11-14T21:35:30.640432+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0B7X7PK9S": {
    "t": "2026-11-13T21:50:42.988192+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2524,6 +2539,10 @@
   },
   "B0CTKJKZRT": {
    "t": "2026-11-14T08:45:50.370542+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0D5H7ZXRJ": {
+   "t": "2026-11-14T21:35:30.640432+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0DCPB9J7K": {
@@ -2637,6 +2656,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-14",
-  "n": 22
+  "n": 23
  }
 }

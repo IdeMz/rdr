@@ -260,6 +260,12 @@
    "title": "Thrustmaster T16000M FCS HOTAS - Pack Joystick y Acelerador - PC",
    "via": "ean"
   },
+  "3362934403409": {
+   "a": "B0F24NDP7K",
+   "t": "2026-11-14T21:35:30.640432+00:00",
+   "title": "Thrustmaster T598 Direct Axial Drive Volante y Pedalier - XBOX y PC",
+   "via": "ean"
+  },
   "4008496969937": {
    "a": "B078YZB72S",
    "t": "2026-11-14T13:25:29.087955+00:00",
@@ -563,6 +569,21 @@
      "HONOR Pad X8a Tableta 11 Pulgadas 4GB+128GB (Ampliable a 1TB) Gris",
      "HONOR Pad X9a Tableta 11,5 Pulgadas WiFi 6GB+128GB Gris",
      "HONOR Pad X8a Tableta 11 Pulgadas 4GB+64GB (Ampliable a 1TB) Gris"
+    ]
+   }
+  },
+  "6948052904089": {
+   "a": "",
+   "t": "2026-11-14T21:35:30.640432+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "PXN SF U Palanca de Cambios Manual para Simulador de Carreras PC | 7+R Velocidades, Aleación Alumini",
+     "Logitech G Saitek Pro Flight Rudder Pedals",
+     "Thrustmaster TFRP T.Flight Rudder Pedals - PS5, XBOX y PC"
     ]
    }
   },
@@ -1656,6 +1677,25 @@
    "pp_price": 362.95,
    "t": "2026-11-14T14:01:05.199813+00:00",
    "veredicto": "oferta_real"
+  },
+  "45956992517": {
+   "ahorro_vs_amazon": -3,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 441.55,
+   "amz_title": "Thrustmaster T598 Direct Axial Drive Volante y Pedalier - XBOX y PC",
+   "asin": "B0F24NDP7K",
+   "disponible": true,
+   "ean": "3362934403409",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 441.55 frente a 452.95",
+   "name": "Thrustmaster T598 Xbox/PC Direct Drive 5Nm levas de cambio Volante de simulación + Servo Base + Pedales",
+   "pp_drop": 12,
+   "pp_median": 513.95,
+   "pp_price": 452.95,
+   "t": "2026-11-14T21:35:30.640432+00:00",
+   "veredicto": "amazon_mas_barato"
   },
   "45956992523": {
    "ahorro_vs_amazon": 21,
@@ -2760,6 +2800,28 @@
    "t": "2026-11-13T20:40:48.338068+00:00",
    "veredicto": "pvpr_inflado"
   },
+  "46599145173": {
+   "ean": "6948052904089",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Set de Pedales PXN PD HM BT Sensor Efecto Hall PC Windows Negro",
+   "pp_drop": 18,
+   "pp_median": 83.95,
+   "pp_price": 68.95,
+   "t": "2026-11-14T21:35:30.640432+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "PXN SF U Palanca de Cambios Manual para Simulador de Carreras PC | 7+R Velocidades, Aleación Alumini",
+     "Logitech G Saitek Pro Flight Rudder Pedals",
+     "Thrustmaster TFRP T.Flight Rudder Pedals - PS5, XBOX y PC"
+    ]
+   }
+  },
   "46680832923": {
    "ahorro_vs_amazon": 26,
    "amz_low30": null,
@@ -2898,12 +2960,12 @@
  },
  "night_at": "2026-11-14T05:50:24.845085+00:00",
  "resumen": {
-  "amazon_mas_barato": 15,
+  "amazon_mas_barato": 16,
   "dudoso": 4,
-  "no_esta": 14,
+  "no_esta": 15,
   "oferta_real": 20,
   "pvpr_inflado": 2,
   "sin_precio": 3
  },
- "updated": "2026-11-14T21:01:00.449874+00:00"
+ "updated": "2026-11-14T21:35:30.640432+00:00"
 }
