@@ -2330,11 +2330,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "SSD Silicon Power Ace A55 4TB 2.5 pulgadas SATA III Negro",
-   "pista": "1895462 bytes; 3 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1913647 bytes; 3 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 18,
    "pp_median": 553.95,
    "pp_price": 456.94,
-   "t": "2026-11-14T09:20:40.743974+00:00",
+   "t": "2026-11-14T16:10:41.956036+00:00",
    "veredicto": "sin_precio"
   },
   "46599141566": {
@@ -2570,6 +2570,25 @@
     ]
    }
   },
+  "46693747967": {
+   "ahorro_vs_amazon": 10,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 6099.0,
+   "amz_title": "Creality Sermoon X1 Escáner 3D, láser y luz estructurada, precisión 0,02 mm (Rango 5-4000 mm), sin Polvo con escaneo de Agujeros, móvil inalámbrico para CAD, in",
+   "asin": "B0FWJMXXBL",
+   "disponible": true,
+   "ean": "6977905742240",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "10 % por debajo del habitual en Amazon (6099.00)",
+   "name": "Escáner 3D Creality X1 Negro Inalámbrico Precisión 0,02mm",
+   "pp_drop": 11,
+   "pp_median": 6199.0,
+   "pp_price": 5490.0,
+   "t": "2026-11-14T16:10:41.956036+00:00",
+   "veredicto": "oferta_real"
+  },
   "46725327773": {
    "ean": "6975165000599",
    "lista": "candidates",
@@ -2598,9 +2617,9 @@
   "amazon_mas_barato": 14,
   "dudoso": 2,
   "no_esta": 12,
-  "oferta_real": 14,
+  "oferta_real": 15,
   "pvpr_inflado": 2,
   "sin_precio": 3
  },
- "updated": "2026-11-14T14:40:41.311125+00:00"
+ "updated": "2026-11-14T16:10:41.956036+00:00"
 }

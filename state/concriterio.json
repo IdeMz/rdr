@@ -1,7 +1,7 @@
 {
  "cats": {
   "Accesorios de coche": "2026-11-14T13:25:29.087955+00:00",
-  "Afeitado y depilación": "2026-11-13T12:50:38.657328+00:00",
+  "Afeitado y depilación": "2026-11-14T16:10:41.956036+00:00",
   "Almacenamiento": "2026-11-13T17:45:36.587944+00:00",
   "Altavoces": "2026-11-14T07:01:07.663772+00:00",
   "Aspiradoras": "2026-11-13T18:45:39.134382+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-13T21:50:42.988192+00:00",
   "Zapatillas": "2026-11-13T19:20:42.278458+00:00"
  },
- "next_at": "2026-11-14T16:05:33.490288+00:00",
+ "next_at": "2026-11-14T16:42:07.546320+00:00",
  "offer": {
   "a": "B0H75TB7ZC",
   "m": 239,
@@ -1982,6 +1982,17 @@
    "title": "Cosori Freidora de Aire Turbo Blaze 6L, 9en1, Ultrarrápida, 95%Menos Aceite",
    "v": []
   },
+  "B0GCKXNHDB": {
+   "c": "Afeitado y depilación",
+   "d": 37,
+   "e": "🪒",
+   "m": 293,
+   "p": 18.99,
+   "s": "ofertas",
+   "t": "2026-11-14T16:11:22.888290+00:00",
+   "title": "Afeitadora Eléctrica para Mujer y Hombre, Cortadora de Bikini con Pantalla LED, IPX7 Impermeable Uso Húmedo y Seco, 2 en 1 Recargable para Zona del Bikini, Rostro",
+   "v": []
+  },
   "B0GDWJV1TG": {
    "c": "Monitores",
    "d": 31,
@@ -2416,14 +2427,14 @@
    "v": []
   }
  },
- "problem": {
-  "alerted_at": "2026-11-14T15:40:58.998596+00:00",
-  "fails": 4,
-  "last": "HTTP 503"
- },
+ "problem": {},
  "rejected": {
   "B0B7X7PK9S": {
    "t": "2026-11-13T21:50:42.988192+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0C5Y1GN2Y": {
+   "t": "2026-11-14T16:10:41.956036+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0CDCL53KW": {
@@ -2505,6 +2516,18 @@
  },
  "reserve": [
   {
+   "a": "B0FJFS513J",
+   "c": "Afeitado y depilación",
+   "e": "🪒",
+   "img": "https://m.media-amazon.com/images/I/71mJQmQ3UsL._AC_UL320_.jpg",
+   "n": 616,
+   "op": 74.99,
+   "p": 49.99,
+   "r": 4.3,
+   "t": "2026-11-14T16:10:41.956036+00:00",
+   "title": "Afeitadora Philips Serie 8000 - Afeitadora sin cable para uso en seco y en mojado, sistema de 3 cuchillas, luz LED, para la cara, las piernas, el cuerpo y la zona del bikini, Modelo BRL159/00"
+  },
+  {
    "a": "B0H75TB7ZC",
    "c": "Smartwatch",
    "e": "⌚",
@@ -2521,6 +2544,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-14",
-  "n": 14
+  "n": 15
  }
 }
