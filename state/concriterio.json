@@ -19,7 +19,7 @@
   "Fitness en casa": "2026-11-14T10:30:50.359175+00:00",
   "Freidoras de aire": "2026-11-13T16:35:32.960175+00:00",
   "Gatos": "2026-11-14T18:30:55.099025+00:00",
-  "Herramientas": "2026-11-12T13:30:58.815254+00:00",
+  "Herramientas": "2026-11-14T21:01:00.449874+00:00",
   "Iluminación": "2026-11-13T20:05:35.325047+00:00",
   "Jardín": "2026-11-14T09:20:40.743974+00:00",
   "Lego": "2026-11-13T07:35:36.489438+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-13T21:50:42.988192+00:00",
   "Zapatillas": "2026-11-13T19:20:42.278458+00:00"
  },
- "next_at": "2026-11-14T20:55:34.615582+00:00",
+ "next_at": "2026-11-14T21:34:35.602630+00:00",
  "offer": {
   "a": "B0CBMVQQSK",
   "m": 247,
@@ -914,6 +914,17 @@
    "p": 7.85,
    "t": "2026-11-10T09:21:07.492176+00:00",
    "title": "Tapo L630 - Bombilla Inteligente, 3.7 W, Ahorro de Energía, 350 lm, GU10",
+   "v": []
+  },
+  "B0B94523BB": {
+   "c": "Herramientas",
+   "d": 42,
+   "e": "🔧",
+   "m": 300,
+   "p": 34.99,
+   "s": "ofertas",
+   "t": "2026-11-14T21:01:31.629497+00:00",
+   "title": "HOTO Juego de Destornillador Eléctrico 3.6V Inalámbrico, 4 N.m de Par",
    "v": []
   },
   "B0BCKHQGJN": {
@@ -2586,6 +2597,18 @@
  },
  "reserve": [
   {
+   "a": "B0FKBJL68H",
+   "c": "Herramientas",
+   "e": "🔧",
+   "img": "https://m.media-amazon.com/images/I/616YnuYqJUL._AC_UL320_.jpg",
+   "n": 850,
+   "op": 79.99,
+   "p": 53.99,
+   "r": 4.6,
+   "t": "2026-11-14T21:01:00.449874+00:00",
+   "title": "HOTO PixelDrive Destornillador Eléctrico de 3.6V, pantalla inteligente"
+  },
+  {
    "a": "B0H2DFN9CF",
    "c": "Aspiradoras",
    "e": "🧹",
@@ -2608,24 +2631,12 @@
    "r": 4.4,
    "t": "2026-11-14T19:45:46.808036+00:00",
    "title": "Cecotec Robot de Cocina Bebé, Procesador de Alimentos Nana BabyCare FoodProcessor. Hierve, Tritura, Esteriliza y Calienta Biberones, sin BPA, Apto para Frutas, Verduras y Carnes, Incluye Recetario"
-  },
-  {
-   "a": "B0CBMVQQSK",
-   "c": "Cámaras de seguridad",
-   "e": "📹",
-   "img": "https://m.media-amazon.com/images/I/61ag1lGRrDL._AC_UL320_.jpg",
-   "n": 31900,
-   "op": 45.99,
-   "p": 37.99,
-   "r": 4.5,
-   "t": "2026-11-14T17:20:46.627491+00:00",
-   "title": "EZVIZ Kit de 2 Cámaras Vigilancia WiFi Interior 360º, C6N Camara Vigilancia Bebe 1080P, Visión Nocturna, Audio Bidireccional, Detección de Movimiento, Control Remoto, Blanco"
   }
  ],
  "summary_day": "2026-11-13",
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-14",
-  "n": 21
+  "n": 22
  }
 }

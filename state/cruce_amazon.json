@@ -416,6 +416,12 @@
    "title": "Philips TAR1609: radio portátil FM/AM con batería interna recargable, pilas AAA y manivela de soporte, energía solar, luz LED y linterna integrada para camping,",
    "via": "ean"
   },
+  "4948570125630": {
+   "a": "B0FCYQHXK4",
+   "t": "2026-11-14T21:01:00.449874+00:00",
+   "title": "iiyama G-Master G4380UHSU-B2 43 Pulgadas VA, 144Hz, 0.3ms (MPRT), 4K UHD, FreeSync Premium, 2 x HDMI 2.1/DP/USB/USB-C (7.5W), 2 x 7W Altavoces, Control Remoto",
+   "via": "ean"
+  },
   "4948570125913": {
    "a": "B0GHKNQ2KP",
    "t": "2026-11-14T17:55:30.798523+00:00",
@@ -672,6 +678,21 @@
     ],
     "nombre": [
      "(sin resultados)"
+    ]
+   }
+  },
+  "6978515257926": {
+   "a": "",
+   "t": "2026-11-14T21:01:00.449874+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "Dreame PT60 Tasti Air Fritteuse negro, sin recubrimiento, sin productos químicos, vista panorámica d"
+    ],
+    "nombre": [
+     "DREAME Tasti, Freidora de Aire Portátil de Vidrio 5 en 1: 2,5 L + 4,5 L",
+     "Cecotec Freidora de Aire con Cesta de Cristal Cecofry&Glass Crunchy M",
+     "Mellerware - Freidora sin aceite Crunchy Plus 5.5L 1500W | 11 Menús Predefinidos | Capacidad para 3-"
     ]
    }
   },
@@ -2398,6 +2419,25 @@
    "t": "2026-11-13T11:40:39.260187+00:00",
    "veredicto": "amazon_mas_barato"
   },
+  "46599140414": {
+   "ahorro_vs_amazon": 6,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 656.57,
+   "amz_title": "iiyama G-Master G4380UHSU-B2 43 Pulgadas VA, 144Hz, 0.3ms (MPRT), 4K UHD, FreeSync Premium, 2 x HDMI 2.1/DP/USB/USB-C (7.5W), 2 x 7W Altavoces, Control Remoto",
+   "asin": "B0FCYQHXK4",
+   "disponible": true,
+   "ean": "4948570125630",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "solo 6 % por debajo del habitual en Amazon (656.57)",
+   "name": "Monitor iiyama G-MASTER 42,5 pulgadas 144Hz 4K VA Negro Mate G4380UHSU-B2",
+   "pp_drop": 12,
+   "pp_median": 699.95,
+   "pp_price": 613.95,
+   "t": "2026-11-14T21:01:00.449874+00:00",
+   "veredicto": "dudoso"
+  },
   "46599140515": {
    "ahorro_vs_amazon": 17,
    "amz_low30": null,
@@ -2512,6 +2552,28 @@
    "pp_price": 200.94,
    "t": "2026-11-13T22:35:19.548446+00:00",
    "veredicto": "amazon_mas_barato"
+  },
+  "46599142071": {
+   "ean": "6978515257926",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Dreame Tasti 1500W pantalla táctil Freidora de aire",
+   "pp_drop": 14,
+   "pp_median": 269.95,
+   "pp_price": 230.95,
+   "t": "2026-11-14T21:01:00.449874+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "Dreame PT60 Tasti Air Fritteuse negro, sin recubrimiento, sin productos químicos, vista panorámica d"
+    ],
+    "nombre": [
+     "DREAME Tasti, Freidora de Aire Portátil de Vidrio 5 en 1: 2,5 L + 4,5 L",
+     "Cecotec Freidora de Aire con Cesta de Cristal Cecofry&Glass Crunchy M",
+     "Mellerware - Freidora sin aceite Crunchy Plus 5.5L 1500W | 11 Menús Predefinidos | Capacidad para 3-"
+    ]
+   }
   },
   "46599142100": {
    "ahorro_vs_amazon": -3,
@@ -2837,11 +2899,11 @@
  "night_at": "2026-11-14T05:50:24.845085+00:00",
  "resumen": {
   "amazon_mas_barato": 15,
-  "dudoso": 3,
-  "no_esta": 13,
+  "dudoso": 4,
+  "no_esta": 14,
   "oferta_real": 20,
   "pvpr_inflado": 2,
   "sin_precio": 3
  },
- "updated": "2026-11-14T20:20:37.410274+00:00"
+ "updated": "2026-11-14T21:01:00.449874+00:00"
 }
