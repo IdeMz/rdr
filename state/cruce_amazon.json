@@ -128,6 +128,19 @@
     ]
    }
   },
+  "0884095225322": {
+   "a": "",
+   "t": "2026-11-14T03:20:26.477658+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "(sin resultados)"
+    ]
+   }
+  },
   "4260499852320": {
    "a": "B08S7MYYL7",
    "t": "2026-11-13T20:40:48.338068+00:00",
@@ -398,6 +411,12 @@
    "title": "SaveFamily Slim 4G | Reloj Inteligente Niño/a con Localizador GPS",
    "via": "ean"
   },
+  "8806097712169": {
+   "a": "B0G2RPG83D",
+   "t": "2026-11-14T03:20:26.477658+00:00",
+   "title": "Samsung Galaxy Tab S11 11\" 12GB/512GB WiFi Gris (Moonstone Grey) X730 [versión Polaca]",
+   "via": "ean"
+  },
   "8886307700155": {
    "a": "B0FDFR71J9",
    "t": "2026-11-13T20:40:48.338068+00:00",
@@ -576,6 +595,25 @@
    "pp_median": 50.95,
    "pp_price": 36.95,
    "t": "2026-11-14T01:50:35.475157+00:00",
+   "veredicto": "oferta_real"
+  },
+  "42520354709": {
+   "ahorro_vs_amazon": 25,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 1195.87,
+   "amz_title": "Samsung Galaxy Tab S11 11\" 12GB/512GB WiFi Gris (Moonstone Grey) X730 [versión Polaca]",
+   "asin": "B0G2RPG83D",
+   "disponible": true,
+   "ean": "8806097712169",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "25 % por debajo del habitual en Amazon (1195.87)",
+   "name": "Samsung Galaxy Tab S11 WiFi 12GB/512GB Gris 11 pulgadas AMOLED 120Hz 13MP 8400mAh",
+   "pp_drop": 14,
+   "pp_median": 1049.0,
+   "pp_price": 899.9,
+   "t": "2026-11-14T03:20:26.477658+00:00",
    "veredicto": "oferta_real"
   },
   "45020234483": {
@@ -954,6 +992,26 @@
    "t": "2026-11-14T02:20:24.077147+00:00",
    "veredicto": "oferta_real"
   },
+  "46186027796": {
+   "ean": "0884095225322",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Videojuego Deep Silver 007 First Light Estándar PS5",
+   "pp_drop": 23,
+   "pp_median": 79.94,
+   "pp_price": 61.95,
+   "t": "2026-11-14T03:20:26.477658+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "(sin resultados)"
+    ]
+   }
+  },
   "46186036340": {
    "ahorro_vs_amazon": 32,
    "amz_low30": null,
@@ -1289,11 +1347,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "SSD Silicon Power Ace A55 4TB 2.5 pulgadas SATA III Negro",
-   "pista": "1912201 bytes; 3 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1932268 bytes; 7 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 18,
    "pp_median": 553.95,
    "pp_price": 456.94,
-   "t": "2026-11-13T21:15:42.495405+00:00",
+   "t": "2026-11-14T03:20:26.477658+00:00",
    "veredicto": "sin_precio"
   },
   "46599141566": {
@@ -1384,14 +1442,14 @@
    }
   }
  },
- "night_at": "2026-11-14T02:50:24.306324+00:00",
+ "night_at": "2026-11-14T03:20:26.477658+00:00",
  "resumen": {
   "amazon_mas_barato": 15,
   "dudoso": 0,
-  "no_esta": 14,
-  "oferta_real": 13,
+  "no_esta": 15,
+  "oferta_real": 14,
   "pvpr_inflado": 3,
   "sin_precio": 3
  },
- "updated": "2026-11-14T02:50:24.306324+00:00"
+ "updated": "2026-11-14T03:20:26.477658+00:00"
 }
