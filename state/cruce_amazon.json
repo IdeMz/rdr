@@ -66,6 +66,26 @@
    "title": "SANDISK Extreme SSD externo Portátil 4TB (Disco duro externo SSD con velodidad de lectura de hasta 1050 MB/s, 1000 MB/s de escritura, Clasificación IP65 de resi",
    "via": "ean"
   },
+  "0622356320559": {
+   "a": "",
+   "t": "2026-11-14T14:40:41.311125+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "Ninja Artisan Horno con Función Air Fry y Pizza de Exterior, Gris"
+    ],
+    "modelo": [
+     "Ninja Woodfire, Horno Eléctrico Multifunción de Exterior, 8 en 1",
+     "Ninja CREAMi Scoop & Swirl, Heladera con 2 Tarrinas de 480 ml, Plata",
+     "Ninja CREAMi Deluxe, Heladera Multifunción con 2 Tarrinas, Plateado"
+    ],
+    "nombre": [
+     "Ninja Artisan Horno con Función Air Fry y Pizza de Exterior, Gris",
+     "Ninja Woodfire, Horno Eléctrico Multifunción de Exterior, 8 en 1",
+     "VEVOR Horno de Pizza Comercial Eléctrico de Encimera de Doble Piso, Acero Inoxidable con Piedra y Ma"
+    ]
+   }
+  },
   "0711719592068": {
    "a": "",
    "t": "2026-11-14T08:45:50.370542+00:00",
@@ -573,6 +593,12 @@
      "dreame L50 Ultra Ae-A Robot Aspirador y Fregasuelos, 100 Días de Vaciado Automático, Mopas con Autol"
     ]
    }
+  },
+  "6977905742240": {
+   "a": "B0FWJMXXBL",
+   "t": "2026-11-14T14:40:41.311125+00:00",
+   "title": "Creality Sermoon X1 Escáner 3D, láser y luz estructurada, precisión 0,02 mm (Rango 5-4000 mm), sin Polvo con escaneo de Agujeros, móvil inalámbrico para CAD, in",
+   "via": "nombre"
   },
   "6978258900134": {
    "a": "",
@@ -1872,6 +1898,33 @@
     ]
    }
   },
+  "46239685052": {
+   "ean": "0622356320559",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Horno para pizza Ninja Artisan 1760W Acero Inoxidable MO201EU",
+   "pp_drop": 18,
+   "pp_median": 347.95,
+   "pp_price": 285.95,
+   "t": "2026-11-14T14:40:41.311125+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "Ninja Artisan Horno con Función Air Fry y Pizza de Exterior, Gris"
+    ],
+    "modelo": [
+     "Ninja Woodfire, Horno Eléctrico Multifunción de Exterior, 8 en 1",
+     "Ninja CREAMi Scoop & Swirl, Heladera con 2 Tarrinas de 480 ml, Plata",
+     "Ninja CREAMi Deluxe, Heladera Multifunción con 2 Tarrinas, Plateado"
+    ],
+    "nombre": [
+     "Ninja Artisan Horno con Función Air Fry y Pizza de Exterior, Gris",
+     "Ninja Woodfire, Horno Eléctrico Multifunción de Exterior, 8 en 1",
+     "VEVOR Horno de Pizza Comercial Eléctrico de Encimera de Doble Piso, Acero Inoxidable con Piedra y Ma"
+    ]
+   }
+  },
   "46239685097": {
    "ahorro_vs_amazon": 23,
    "amz_low30": null,
@@ -2544,10 +2597,10 @@
  "resumen": {
   "amazon_mas_barato": 14,
   "dudoso": 2,
-  "no_esta": 11,
+  "no_esta": 12,
   "oferta_real": 14,
   "pvpr_inflado": 2,
   "sin_precio": 3
  },
- "updated": "2026-11-14T14:01:05.199813+00:00"
+ "updated": "2026-11-14T14:40:41.311125+00:00"
 }

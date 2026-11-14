@@ -6,7 +6,7 @@
   "Altavoces": "2026-11-14T07:01:07.663772+00:00",
   "Aspiradoras": "2026-11-13T18:45:39.134382+00:00",
   "Auriculares": "2026-11-14T08:10:40.297090+00:00",
-  "Cafeteras": "2026-11-13T12:15:38.991127+00:00",
+  "Cafeteras": "2026-11-14T14:40:41.311125+00:00",
   "Café y cápsulas": "2026-11-13T20:40:48.338068+00:00",
   "Cargadores y baterías": "2026-11-13T21:15:42.495405+00:00",
   "Ciclismo": "2026-11-14T08:45:50.370542+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-13T21:50:42.988192+00:00",
   "Zapatillas": "2026-11-13T19:20:42.278458+00:00"
  },
- "next_at": "2026-11-14T14:36:01.832672+00:00",
+ "next_at": "2026-11-14T15:12:32.517043+00:00",
  "offer": {
   "a": "B08PVDQFQQ",
   "m": 218,
@@ -2043,6 +2043,17 @@
    "title": "12M Dispositivo de Enfriamiento por Aspersión, Sistema de Riego de Jardines, 75 Pcs Kit de Pulverización de Jardín, Adecuado para Eventos al Aire Libre, Jardines, Patios, Sombrillas y Techos",
    "v": []
   },
+  "B0GNMS31J4": {
+   "c": "Cafeteras",
+   "d": 14,
+   "e": "☕",
+   "m": 292,
+   "p": 239.99,
+   "s": "ambas",
+   "t": "2026-11-14T14:41:19.463299+00:00",
+   "title": "KRUPS Harmony, Cafetera Superautomática, 4 Bebidas, Espumador Leche, Carbón",
+   "v": []
+  },
   "B0GQHGGWHX": {
    "c": "Televisores",
    "d": 40,
@@ -2419,6 +2430,10 @@
    "t": "2026-11-13T21:50:42.988192+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0CDCL53KW": {
+   "t": "2026-11-14T14:40:41.311125+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0CHJKQD1V": {
    "t": "2026-11-13T15:10:54.425531+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2512,36 +2527,12 @@
    "r": 4.5,
    "t": "2026-11-14T14:01:05.199813+00:00",
    "title": "Reloj Inteligente Hombre con Llamadas con Linterna y Brújula, 960mAh Batería 1.45\" Militar Smartwatch Hombre con,123 Modos Deporte,Monitor Cardíaco 24h/SpO2/Sueño,Podómetro,IP68,2Correas(iOS/Android)"
-  },
-  {
-   "a": "B0CW9PR2J6",
-   "c": "Nutrición deportiva",
-   "e": "💪",
-   "img": "https://m.media-amazon.com/images/I/71LCyfyE68L._AC_UL320_.jpg",
-   "n": 291,
-   "op": 47.99,
-   "p": 33.98,
-   "r": 4.3,
-   "t": "2026-11-14T11:40:39.802795+00:00",
-   "title": "Whey Protein Complex - 1000 g (Fresa Plátano) - Con contenido de aislado - Proteína en polvo soluble instantánea con BCAA & EAA - German Elite Nutrition"
-  },
-  {
-   "a": "B0CL5C3BQC",
-   "c": "Climatización",
-   "e": "🌬️",
-   "img": "https://m.media-amazon.com/images/I/31Rt9TI2kiL._AC_UY218_.jpg",
-   "n": 1400,
-   "op": 39.99,
-   "p": 29.99,
-   "r": 4.2,
-   "t": "2026-11-14T11:05:31.708608+00:00",
-   "title": "Mellerware Homy! Calefactor Cerámico Bajo Consumo 2000W Oscilante"
   }
  ],
  "summary_day": "2026-11-13",
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-14",
-  "n": 13
+  "n": 14
  }
 }
