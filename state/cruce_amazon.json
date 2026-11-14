@@ -284,6 +284,12 @@
    "title": "instax Square Link. Impresora para teléfonos, Color Blanco. & Fujifilm Square Black, película instantanea, 10 Fotos",
    "via": "ean"
   },
+  "4710562245783": {
+   "a": "B0H7XR3NMW",
+   "t": "2026-11-14T17:20:46.627491+00:00",
+   "title": "Gainward RTX5080 Python III 16GB GDDR7 NE75080019T2-GB2035T",
+   "via": "ean"
+  },
   "4710886001201": {
    "a": "B08BZY1MRQ",
    "t": "2026-11-14T03:50:27.795156+00:00",
@@ -328,6 +334,12 @@
      "ASUS ROG Keris II Origin - Ratón Gaming Inalámbrico Ergonómico - Blanco"
     ]
    }
+  },
+  "4711387951262": {
+   "a": "B0F8ZYXBCC",
+   "t": "2026-11-14T17:20:46.627491+00:00",
+   "title": "ASUS ROG Keris II Origin - Ratón Gaming Inalámbrico Ergonómico - Blanco",
+   "via": "ean"
   },
   "4711474211033": {
    "a": "B077JYYQ7V",
@@ -1218,6 +1230,25 @@
     ]
    }
   },
+  "45403200458": {
+   "ahorro_vs_amazon": 2,
+   "amz_low30": null,
+   "amz_median": 103.99,
+   "amz_price": 89.99,
+   "amz_title": "ASUS ROG Keris II Origin - Ratón Gaming Inalámbrico Ergonómico - Blanco",
+   "asin": "B0F8ZYXBCC",
+   "disponible": true,
+   "ean": "4711387951262",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 89.99 frente a 101.95",
+   "name": "ASUS ROG Keris II Origin 42000 DPI RGB 6 botones 65 g Ratón gaming inalámbrico",
+   "pp_drop": 19,
+   "pp_median": 125.95,
+   "pp_price": 101.95,
+   "t": "2026-11-14T17:20:46.627491+00:00",
+   "veredicto": "amazon_mas_barato"
+  },
   "45403202658": {
    "ean": "6977728943800",
    "lista": "candidates",
@@ -1337,6 +1368,25 @@
      "Genesis Mesa Gaming 160cm MDF y Acero Modular Regulable Leds y Gestión de Cables"
     ]
    }
+  },
+  "45626822189": {
+   "ahorro_vs_amazon": 14,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 2585.6,
+   "amz_title": "Gainward RTX5080 Python III 16GB GDDR7 NE75080019T2-GB2035T",
+   "asin": "B0H7XR3NMW",
+   "disponible": true,
+   "ean": "4710562245783",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "14 % por debajo del habitual en Amazon (2585.60)",
+   "name": "Gainward GeForce RTX 5080 Python III 16GB GDDR7 Tarjeta gráfica",
+   "pp_drop": 11,
+   "pp_median": 2498.95,
+   "pp_price": 2216.95,
+   "t": "2026-11-14T17:20:46.627491+00:00",
+   "veredicto": "oferta_real"
   },
   "45626822202": {
    "ean": "6959422615818",
@@ -2661,12 +2711,12 @@
  },
  "night_at": "2026-11-14T05:50:24.845085+00:00",
  "resumen": {
-  "amazon_mas_barato": 14,
+  "amazon_mas_barato": 15,
   "dudoso": 2,
   "no_esta": 13,
-  "oferta_real": 15,
+  "oferta_real": 16,
   "pvpr_inflado": 2,
   "sin_precio": 3
  },
- "updated": "2026-11-14T16:45:37.700799+00:00"
+ "updated": "2026-11-14T17:20:46.627491+00:00"
 }
