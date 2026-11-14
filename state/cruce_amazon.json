@@ -130,8 +130,10 @@
    "via": "nombre"
   },
   "4895229151192": {
-   "a": "",
-   "t": "2026-11-13T20:05:35.325047+00:00"
+   "a": "B0DFVRT79C",
+   "t": "2026-11-14T00:20:27.018416+00:00",
+   "title": "Philips TAR1609: radio portátil FM/AM con batería interna recargable, pilas AAA y manivela de soporte, energía solar, luz LED y linterna integrada para camping,",
+   "via": "ean"
   },
   "5061112450973": {
    "a": "",
@@ -156,7 +158,18 @@
   },
   "5901969445664": {
    "a": "",
-   "t": "2026-11-13T21:50:42.988192+00:00"
+   "t": "2026-11-14T00:20:27.018416+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "Genesis Mesa Gaming Holm Modular 180cm Acero y MDF Iluminación LED Modularidad Total"
+    ],
+    "nombre": [
+     "Genesis Mesa Gaming Holm Modular 180cm Acero y MDF Iluminación LED Modularidad Total",
+     "Genesis Mesa Gaming Holm Modular 140cm MDF y Acero Altura Ajustable LED y Gestión de Cables",
+     "Genesis Mesa Gaming 160cm MDF y Acero Modular Regulable Leds y Gestión de Cables"
+    ]
+   }
   },
   "619659205058": {
    "a": "B0C5SC2V95",
@@ -270,6 +283,21 @@
    "t": "2026-11-13T20:40:48.338068+00:00",
    "title": "Inno3D GeForce RTX 5080 iCHILL Frostbite 16GB GDDR7 Reflex 2 RTX AI DLSS4",
    "via": "ean"
+  },
+  "8886419379874": {
+   "a": "",
+   "t": "2026-11-14T00:20:27.018416+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "Razer Barracuda X (2022) - Mercury White"
+    ],
+    "nombre": [
+     "Razer Barracuda X - Auriculares Inalámbricos para Móvil y Juegos Multiplataparama (SmartSwitch Dual ",
+     "Razer Barracuda X Chroma - Auriculares inalámbricos para Juegos multiplataforma con 6 Zonas Chroma R",
+     "Razer Barracuda X Chroma - Auriculares inalámbricos para Juegos multiplataforma con 6 Zonas Chroma R"
+    ]
+   }
   }
  },
  "items": {
@@ -312,6 +340,28 @@
    "t": "2026-11-13T15:10:54.425531+00:00",
    "veredicto": "amazon_mas_barato"
   },
+  "40430429374": {
+   "ean": "8886419379874",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Razer Barracuda X Blanco Bluetooth 5.2 50h Auriculares gaming inalámbricos",
+   "pp_drop": 24,
+   "pp_median": 100.95,
+   "pp_price": 76.96,
+   "t": "2026-11-14T00:20:27.018416+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "Razer Barracuda X (2022) - Mercury White"
+    ],
+    "nombre": [
+     "Razer Barracuda X - Auriculares Inalámbricos para Móvil y Juegos Multiplataparama (SmartSwitch Dual ",
+     "Razer Barracuda X Chroma - Auriculares inalámbricos para Juegos multiplataforma con 6 Zonas Chroma R",
+     "Razer Barracuda X Chroma - Auriculares inalámbricos para Juegos multiplataforma con 6 Zonas Chroma R"
+    ]
+   }
+  },
   "41405667926": {
    "ahorro_vs_amazon": -13,
    "amz_low30": null,
@@ -332,15 +382,23 @@
    "veredicto": "amazon_mas_barato"
   },
   "45020234483": {
+   "ahorro_vs_amazon": 12,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 44.49,
+   "amz_title": "Philips TAR1609: radio portátil FM/AM con batería interna recargable, pilas AAA y manivela de soporte, energía solar, luz LED y linterna integrada para camping,",
+   "asin": "B0DFVRT79C",
+   "disponible": true,
    "ean": "4895229151192",
+   "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "motivo": "12 % por debajo del habitual en Amazon (44.49)",
    "name": "Philips TAR1609/00 Analógica con Linterna FM Radio portátil",
    "pp_drop": 32,
    "pp_median": 56.95,
    "pp_price": 38.95,
-   "t": "2026-11-13T20:05:35.325047+00:00",
-   "veredicto": "no_esta"
+   "t": "2026-11-14T00:20:27.018416+00:00",
+   "veredicto": "oferta_real"
   },
   "45124316529": {
    "ahorro_vs_amazon": 52,
@@ -451,8 +509,19 @@
    "pp_drop": 20,
    "pp_median": 290.94,
    "pp_price": 233.95,
-   "t": "2026-11-13T21:50:42.988192+00:00",
-   "veredicto": "no_esta"
+   "t": "2026-11-14T00:20:27.018416+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "Genesis Mesa Gaming Holm Modular 180cm Acero y MDF Iluminación LED Modularidad Total"
+    ],
+    "nombre": [
+     "Genesis Mesa Gaming Holm Modular 180cm Acero y MDF Iluminación LED Modularidad Total",
+     "Genesis Mesa Gaming Holm Modular 140cm MDF y Acero Altura Ajustable LED y Gestión de Cables",
+     "Genesis Mesa Gaming 160cm MDF y Acero Modular Regulable Leds y Gestión de Cables"
+    ]
+   }
   },
   "45626822202": {
    "ean": "6959422615818",
@@ -916,14 +985,14 @@
    }
   }
  },
- "night_at": "2026-11-13T23:50:27.854573+00:00",
+ "night_at": "2026-11-14T00:20:27.018416+00:00",
  "resumen": {
   "amazon_mas_barato": 11,
   "dudoso": 0,
   "no_esta": 10,
-  "oferta_real": 7,
+  "oferta_real": 8,
   "pvpr_inflado": 3,
   "sin_precio": 2
  },
- "updated": "2026-11-13T23:50:27.854573+00:00"
+ "updated": "2026-11-14T00:20:27.018416+00:00"
 }
