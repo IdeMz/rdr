@@ -156,6 +156,12 @@
     ]
    }
   },
+  "3045387293741": {
+   "a": "B0DT9SW2LH",
+   "t": "2026-11-14T05:50:24.845085+00:00",
+   "title": "Tefal Easy Fry Silence, Freidora de aire caliente, hasta un 99% menos de grasa, nueva tecnología silenciosa, capacidad de 5 l, con rejilla de cocción antiadhere",
+   "via": "ean"
+  },
   "4260499852320": {
    "a": "B08S7MYYL7",
    "t": "2026-11-13T20:40:48.338068+00:00",
@@ -360,6 +366,12 @@
    "title": "Montre connectée Huawei Watch 5 42 mm Bluetooth Beige avec bracelet en fluoroélastomère Beige",
    "via": "ean"
   },
+  "6942103178733": {
+   "a": "B0G49SJTZT",
+   "t": "2026-11-14T05:50:24.845085+00:00",
+   "title": "HUAWEI FreeClip 2 Auriculares Bluetooth, hasta 38h Autonomía, Oro Rosa",
+   "via": "nombre"
+  },
   "6942785108035": {
    "a": "",
    "t": "2026-11-14T02:50:24.306324+00:00",
@@ -550,6 +562,12 @@
    "a": "B0FDFR71J9",
    "t": "2026-11-13T20:40:48.338068+00:00",
    "title": "Inno3D GeForce RTX 5080 iCHILL Frostbite 16GB GDDR7 Reflex 2 RTX AI DLSS4",
+   "via": "ean"
+  },
+  "8886307700766": {
+   "a": "B0GCVSLCRY",
+   "t": "2026-11-14T05:50:24.845085+00:00",
+   "title": "INNO3D NVIDIA GeForce RTX 5060 Ti X3 OC 8 GB GDDR7 Gaming Graphics Card (Triple Fan, 2 Ranuras, Reflex 2 RTX AI DLSS4)",
    "via": "ean"
   },
   "8886419377108": {
@@ -758,6 +776,25 @@
    "pp_median": 1049.0,
    "pp_price": 899.9,
    "t": "2026-11-14T03:20:26.477658+00:00",
+   "veredicto": "oferta_real"
+  },
+  "44927881022": {
+   "ahorro_vs_amazon": 10,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 179.0,
+   "amz_title": "HUAWEI FreeClip 2 Auriculares Bluetooth, hasta 38h Autonomía, Oro Rosa",
+   "asin": "B0G49SJTZT",
+   "disponible": true,
+   "ean": "6942103178733",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "10 % por debajo del habitual en Amazon (179.00)",
+   "name": "Huawei FreeClip 2 Dorado Rose Bluetooth 6.0 38h IP57 Multipunto Auriculares inalámbricos",
+   "pp_drop": 16,
+   "pp_median": 191.95,
+   "pp_price": 161.95,
+   "t": "2026-11-14T05:50:24.845085+00:00",
    "veredicto": "oferta_real"
   },
   "45020234483": {
@@ -1121,6 +1158,25 @@
    "pp_median": 631.95,
    "pp_price": 266.95,
    "t": "2026-11-13T23:20:24.256283+00:00",
+   "veredicto": "oferta_real"
+  },
+  "45956990874": {
+   "ahorro_vs_amazon": 16,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 724.07,
+   "amz_title": "INNO3D NVIDIA GeForce RTX 5060 Ti X3 OC 8 GB GDDR7 Gaming Graphics Card (Triple Fan, 2 Ranuras, Reflex 2 RTX AI DLSS4)",
+   "asin": "B0GCVSLCRY",
+   "disponible": true,
+   "ean": "8886307700766",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "16 % por debajo del habitual en Amazon (724.07)",
+   "name": "Inno3D GeForce RTX 5060 Ti TWIN X3 OC 8GB GDDR7 Tarjeta gráfica",
+   "pp_drop": 13,
+   "pp_median": 699.95,
+   "pp_price": 609.95,
+   "t": "2026-11-14T05:50:24.845085+00:00",
    "veredicto": "oferta_real"
   },
   "45992962853": {
@@ -1782,6 +1838,25 @@
    "t": "2026-11-13T22:35:19.548446+00:00",
    "veredicto": "amazon_mas_barato"
   },
+  "46599142100": {
+   "ahorro_vs_amazon": -3,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 65.0,
+   "amz_title": "Tefal Easy Fry Silence, Freidora de aire caliente, hasta un 99% menos de grasa, nueva tecnología silenciosa, capacidad de 5 l, con rejilla de cocción antiadhere",
+   "asin": "B0DT9SW2LH",
+   "disponible": true,
+   "ean": "3045387293741",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 65.00 frente a 66.95",
+   "name": "Tefal Easy Fry Silence XL EY5528 5L 10 Programas pantalla táctil Freidora de aire",
+   "pp_drop": 20,
+   "pp_median": 83.95,
+   "pp_price": 66.95,
+   "t": "2026-11-14T05:50:24.845085+00:00",
+   "veredicto": "amazon_mas_barato"
+  },
   "46599143133": {
    "ahorro_vs_amazon": 8,
    "amz_low30": null,
@@ -1889,14 +1964,14 @@
    }
   }
  },
- "night_at": "2026-11-14T05:35:19.499764+00:00",
+ "night_at": "2026-11-14T05:50:24.845085+00:00",
  "resumen": {
-  "amazon_mas_barato": 18,
+  "amazon_mas_barato": 19,
   "dudoso": 2,
   "no_esta": 21,
-  "oferta_real": 17,
+  "oferta_real": 19,
   "pvpr_inflado": 4,
   "sin_precio": 3
  },
- "updated": "2026-11-14T05:35:19.499764+00:00"
+ "updated": "2026-11-14T05:50:24.845085+00:00"
 }
