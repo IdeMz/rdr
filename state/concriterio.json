@@ -20,7 +20,7 @@
   "Freidoras de aire": "2026-11-15T08:50:40.530842+00:00",
   "Gatos": "2026-11-14T18:30:55.099025+00:00",
   "Herramientas": "2026-11-14T21:01:00.449874+00:00",
-  "Iluminación": "2026-11-13T20:05:35.325047+00:00",
+  "Iluminación": "2026-11-15T11:45:37.493065+00:00",
   "Jardín": "2026-11-15T11:10:43.114079+00:00",
   "Lego": "2026-11-13T07:35:36.489438+00:00",
   "Menaje de cocina": "2026-11-15T09:25:34.345588+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-13T21:50:42.988192+00:00",
   "Zapatillas": "2026-11-15T10:01:03.183163+00:00"
  },
- "next_at": "2026-11-15T11:45:06.371852+00:00",
+ "next_at": "2026-11-15T12:15:39.608282+00:00",
  "offer": {
   "a": "B0CBMVQQSK",
   "m": 247,
@@ -199,6 +199,17 @@
    "s": "ofertas",
    "t": "2026-11-14T21:36:06.326323+00:00",
    "title": "CATEYE Kit-Front, Trasera y Rueda Luces y reflectores, Ciclismo – Negro, no tamaño",
+   "v": []
+  },
+  "B00MOIWOAK": {
+   "c": "Iluminación",
+   "d": 36,
+   "e": "🪔",
+   "m": 311,
+   "p": 37.95,
+   "s": "ofertas",
+   "t": "2026-11-15T11:46:15.607326+00:00",
+   "title": "Beurer TL 30 Lámpara de luz diurna, simulación de luz diurna, intensidad de luz de aprox. 10.000 lux a una distancia de 10 cm, dispositivo médico con tecnología LED, sin rayos UV, con pie variable",
    "v": []
   },
   "B00O4AXMQG": {
@@ -2752,6 +2763,18 @@
  },
  "reserve": [
   {
+   "a": "B0DCBHR3W7",
+   "c": "Iluminación",
+   "e": "🪔",
+   "img": "https://m.media-amazon.com/images/I/51iyQ-AkTaL._AC_UL320_.jpg",
+   "n": 4200,
+   "op": 12.99,
+   "p": 9.49,
+   "r": 4.5,
+   "t": "2026-11-15T11:45:37.493065+00:00",
+   "title": "Plafon LED Techo,15W 1500LM Bajo Consumo lampara techo,3000K/4000K/6500K regulableØIP44 Impermeable Ultra Delgado Plafones Para Techo Led,Adecuado para Baño cocina Ø18CM"
+  },
+  {
    "a": "B0F66LNB8D",
    "c": "Cargadores y baterías",
    "e": "🔌",
@@ -2780,6 +2803,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-15",
-  "n": 8
+  "n": 9
  }
 }

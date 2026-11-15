@@ -475,6 +475,26 @@
    "title": "Ducky Mecha Pro SF Teclado Mecánico Gaming 65% Aluminio RGB Switch MX Blue",
    "via": "nombre"
   },
+  "4711474096838": {
+   "a": "",
+   "t": "2026-11-15T11:45:37.493065+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "modelo": [
+     "Acer X1328WI - MR.JTW11.001",
+     "PROYECTOR ACER X1329 (MR.JX711.001) DLP WXGA 4800 LM 20,000:1 EMEA 2.25",
+     "Proyector Acer MR.JSA11.001 SVGA 4000 LM 800 x 600 px 4000LM"
+    ],
+    "nombre": [
+     "Acer X1128H SVGA 4500LM 4:3 20000:1 1920X1200 HDM",
+     "Acer X1229HP Proyector ANSI DLP XGA 4800 Lúmenes Negro",
+     "Proyector Acer MR.JSA11.001 SVGA 4000 LM 800 x 600 px 4000LM"
+    ]
+   }
+  },
   "4711474211033": {
    "a": "B077JYYQ7V",
    "t": "2026-11-14T08:10:40.297090+00:00",
@@ -1633,6 +1653,33 @@
    "pp_price": 101.95,
    "t": "2026-11-14T17:20:46.627491+00:00",
    "veredicto": "amazon_mas_barato"
+  },
+  "45403202116": {
+   "ean": "4711474096838",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Acer MR.JXE11.001 SVGA 800x600 4800 lúmenes ANSI DLP Lámpara altavoz 3W Proyector",
+   "pp_drop": 25,
+   "pp_median": 397.94,
+   "pp_price": 299.95,
+   "t": "2026-11-15T11:45:37.493065+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "modelo": [
+     "Acer X1328WI - MR.JTW11.001",
+     "PROYECTOR ACER X1329 (MR.JX711.001) DLP WXGA 4800 LM 20,000:1 EMEA 2.25",
+     "Proyector Acer MR.JSA11.001 SVGA 4000 LM 800 x 600 px 4000LM"
+    ],
+    "nombre": [
+     "Acer X1128H SVGA 4500LM 4:3 20000:1 1920X1200 HDM",
+     "Acer X1229HP Proyector ANSI DLP XGA 4800 Lúmenes Negro",
+     "Proyector Acer MR.JSA11.001 SVGA 4000 LM 800 x 600 px 4000LM"
+    ]
+   }
   },
   "45403202658": {
    "ean": "6977728943800",
@@ -3189,11 +3236,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "SSD Silicon Power Ace A55 4TB 2.5 pulgadas SATA III Negro",
-   "pista": "2180724 bytes; 24 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1836969 bytes; 3 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 18,
    "pp_median": 553.95,
    "pp_price": 456.94,
-   "t": "2026-11-15T04:50:26.962728+00:00",
+   "t": "2026-11-15T11:45:37.493065+00:00",
    "veredicto": "sin_precio"
   },
   "46599141566": {
@@ -3622,10 +3669,10 @@
  "resumen": {
   "amazon_mas_barato": 23,
   "dudoso": 7,
-  "no_esta": 16,
+  "no_esta": 17,
   "oferta_real": 18,
   "pvpr_inflado": 2,
   "sin_precio": 3
  },
- "updated": "2026-11-15T11:10:43.114079+00:00"
+ "updated": "2026-11-15T11:45:37.493065+00:00"
 }
