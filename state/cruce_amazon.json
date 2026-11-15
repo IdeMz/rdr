@@ -735,6 +735,21 @@
    "title": "SanDisk SSD portátil Extremo de 2 TB - hasta 1050 MB/s - USB-C, USB 3.2 Gen 2 - Unidad Externa de Estado sólido - SDSSDE61-2T00-G25B",
    "via": "ean"
   },
+  "6924843236393": {
+   "a": "",
+   "t": "2026-11-15T16:30:50.777266+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Vexilar V10Pro Aspiradora sin Cable 45KPa Potente,Aspiradora Fácil Limpieza,Autonomía 45 Min,Batería",
+     "Vexilar V10Pro Aspiradora sin Cable 45KPa Potente,Aspiradora Fácil Limpieza,Autonomía 45 Min,Batería",
+     "Vexilar V10Pro Aspiradora sin Cable 45KPa/45 Min, Potente,Fácil Maneja,Ligera,Accesorios Multiusos,B"
+    ]
+   }
+  },
   "6942103154287": {
    "a": "B0F1G8QQLM",
    "t": "2026-11-13T21:15:42.495405+00:00",
@@ -2491,6 +2506,28 @@
    "t": "2026-11-14T02:20:24.077147+00:00",
    "veredicto": "oferta_real"
   },
+  "46186024577": {
+   "ean": "6924843236393",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Vexilar V10 Pro 45000Pa 450W 45 min sin cable Aspirador escoba",
+   "pp_drop": 16,
+   "pp_median": 98.95,
+   "pp_price": 82.95,
+   "t": "2026-11-15T16:30:50.777266+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Vexilar V10Pro Aspiradora sin Cable 45KPa Potente,Aspiradora Fácil Limpieza,Autonomía 45 Min,Batería",
+     "Vexilar V10Pro Aspiradora sin Cable 45KPa Potente,Aspiradora Fácil Limpieza,Autonomía 45 Min,Batería",
+     "Vexilar V10Pro Aspiradora sin Cable 45KPa/45 Min, Potente,Fácil Maneja,Ligera,Accesorios Multiusos,B"
+    ]
+   }
+  },
   "46186025333": {
    "ahorro_vs_amazon": -31,
    "amz_low30": null,
@@ -2869,22 +2906,22 @@
    "veredicto": "oferta_real"
   },
   "46247661211": {
-   "ahorro_vs_amazon": -70,
+   "ahorro_vs_amazon": -86,
    "amz_low30": null,
-   "amz_median": 31.7,
-   "amz_price": 29.74,
+   "amz_median": null,
+   "amz_price": 28.96,
    "amz_title": "HP 330 Combo de Teclado y Ratón Inalámbricos - (1600 PPP, Puerto USB-A, Indicadores LED, Teclas con Atajos, Windows 10; Windows 11) QWERTY Español, Color Negro",
    "asin": "B0C89KZ874",
    "disponible": true,
    "ean": "0198122955305",
    "encontrado_por": "nombre",
    "lista": "candidates",
-   "motivo": "Amazon 29.74 frente a 53.95",
+   "motivo": "Amazon 28.96 frente a 53.95",
    "name": "HP 725 Negro Español de tijera Teclado y ratón inalámbrico",
    "pp_drop": 33,
    "pp_median": 79.94,
    "pp_price": 53.95,
-   "t": "2026-11-13T16:01:12.341933+00:00",
+   "t": "2026-11-15T16:30:50.777266+00:00",
    "veredicto": "amazon_mas_barato"
   },
   "46247661228": {
@@ -3859,10 +3896,10 @@
  "resumen": {
   "amazon_mas_barato": 24,
   "dudoso": 7,
-  "no_esta": 18,
+  "no_esta": 19,
   "oferta_real": 21,
   "pvpr_inflado": 1,
   "sin_precio": 6
  },
- "updated": "2026-11-15T15:50:40.820191+00:00"
+ "updated": "2026-11-15T16:30:50.777266+00:00"
 }

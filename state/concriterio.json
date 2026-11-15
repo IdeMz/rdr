@@ -2,7 +2,7 @@
  "cats": {
   "Accesorios de coche": "2026-11-15T10:35:39.916250+00:00",
   "Afeitado y depilación": "2026-11-14T16:10:41.956036+00:00",
-  "Almacenamiento": "2026-11-13T17:45:36.587944+00:00",
+  "Almacenamiento": "2026-11-15T16:30:50.777266+00:00",
   "Altavoces": "2026-11-15T08:15:36.859375+00:00",
   "Aspiradoras": "2026-11-14T20:20:37.410274+00:00",
   "Auriculares": "2026-11-14T08:10:40.297090+00:00",
@@ -29,7 +29,7 @@
   "Móviles": "2026-11-14T19:45:46.808036+00:00",
   "Nutrición deportiva": "2026-11-14T11:40:39.802795+00:00",
   "Perfumes": "2026-11-14T12:50:38.841046+00:00",
-  "Periféricos": "2026-11-14T17:55:30.798523+00:00",
+  "Periféricos": "2026-11-15T16:30:50.777266+00:00",
   "Perros": "2026-11-15T07:01:06.978986+00:00",
   "Portátiles": "2026-11-14T19:45:46.808036+00:00",
   "Relojes": "2026-11-15T14:01:02.981281+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-15T12:15:40.152691+00:00",
   "Zapatillas": "2026-11-15T10:01:03.183163+00:00"
  },
- "next_at": "2026-11-15T16:25:31.384717+00:00",
+ "next_at": "2026-11-15T17:03:28.987155+00:00",
  "offer": {
   "a": "B0CBMVQQSK",
   "m": 247,
@@ -523,6 +523,17 @@
    "s": "ofertas",
    "t": "2026-11-13T09:21:15.455920+00:00",
    "title": "Logitech G PRO X SUPERLIGHT 2, Ratón inalámbrico para gaming - Blanco",
+   "v": []
+  },
+  "B07W5JK124": {
+   "c": "Periféricos",
+   "d": 33,
+   "e": "⌨️",
+   "m": 319,
+   "p": 23.4,
+   "s": "ofertas",
+   "t": "2026-11-15T16:31:41.016134+00:00",
+   "title": "Logitech MK295 Combo de Ratón y Teclado Inalámbricos - QWERTY Portugués",
    "v": []
   },
   "B07W7KGYN1": {
@@ -2721,10 +2732,6 @@
    "t": "2026-11-14T21:35:30.640432+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0C5Y1GN2Y": {
-   "t": "2026-11-14T16:10:41.956036+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0CKRZMLN6": {
    "t": "2026-11-15T10:01:03.183163+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2864,6 +2871,18 @@
  },
  "reserve": [
   {
+   "a": "B0CPJRRCPS",
+   "c": "Periféricos",
+   "e": "⌨️",
+   "img": "https://m.media-amazon.com/images/I/71peucE8I0L._AC_UL320_.jpg",
+   "n": 662,
+   "op": 24.99,
+   "p": 19.89,
+   "r": 4.2,
+   "t": "2026-11-15T16:30:50.777266+00:00",
+   "title": "Trust Ymo II Pack Teclado y Ratón Inalámbrico QWERTY Español, Negro"
+  },
+  {
    "a": "B013DQF1DI",
    "c": "Robots de cocina",
    "e": "🥣",
@@ -2892,6 +2911,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-15",
-  "n": 16
+  "n": 17
  }
 }
