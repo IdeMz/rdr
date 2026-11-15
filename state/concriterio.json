@@ -22,7 +22,7 @@
   "Herramientas": "2026-11-14T21:01:00.449874+00:00",
   "Iluminación": "2026-11-15T11:45:37.493065+00:00",
   "Jardín": "2026-11-15T11:10:43.114079+00:00",
-  "Lego": "2026-11-13T07:35:36.489438+00:00",
+  "Lego": "2026-11-15T15:15:41.208340+00:00",
   "Menaje de cocina": "2026-11-15T09:25:34.345588+00:00",
   "Mochilas y maletas": "2026-11-15T07:40:45.992760+00:00",
   "Monitores": "2026-11-15T08:50:40.530842+00:00",
@@ -33,7 +33,7 @@
   "Perros": "2026-11-15T07:01:06.978986+00:00",
   "Portátiles": "2026-11-14T19:45:46.808036+00:00",
   "Relojes": "2026-11-15T14:01:02.981281+00:00",
-  "Robots de cocina": "2026-11-14T19:45:46.808036+00:00",
+  "Robots de cocina": "2026-11-15T15:15:41.208340+00:00",
   "Smartwatch": "2026-11-14T14:01:05.199813+00:00",
   "Suplementos": "2026-11-15T13:25:30.562134+00:00",
   "Tablets": "2026-11-15T11:10:43.114079+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-15T12:15:40.152691+00:00",
   "Zapatillas": "2026-11-15T10:01:03.183163+00:00"
  },
- "next_at": "2026-11-15T15:11:48.859903+00:00",
+ "next_at": "2026-11-15T15:45:42.232384+00:00",
  "offer": {
   "a": "B0CBMVQQSK",
   "m": 247,
@@ -1127,6 +1127,17 @@
    "p": 17.93,
    "t": "2026-11-11T15:46:06.545820+00:00",
    "title": "Cecotec Calefactor Cerámico de Sobremesa ReadyWarm 1500 Max Ceramic, 1500 W, Termostato Regulable y 3 Modos de Funcionamiento, Área de Cobertura de 15m2",
+   "v": []
+  },
+  "B0BPZQRWGC": {
+   "c": "Robots de cocina",
+   "d": 30,
+   "e": "🥣",
+   "m": 317,
+   "p": 70.12,
+   "s": "ofertas",
+   "t": "2026-11-15T15:16:57.926323+00:00",
+   "title": "Cecotec Batidora Amasadora Cecomixer Merengue 5L 1200 Ice-Cream Verde, 1200 W, 5 Función y Hielo, Bol de Acero de 5 L y Accesorios para Batir y Amasar, Incluye Función para Hacer Helado",
    "v": []
   },
   "B0BQ14QLPJ": {
@@ -2675,6 +2686,10 @@
    "t": "2026-11-15T12:15:40.152691+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B01N6CJ1QW": {
+   "t": "2026-11-15T15:15:41.208340+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B07TFGZ33M": {
    "t": "2026-11-15T08:15:36.859375+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2697,10 +2712,6 @@
   },
   "B0C5Y1GN2Y": {
    "t": "2026-11-14T16:10:41.956036+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0CDCL53KW": {
-   "t": "2026-11-14T14:40:41.311125+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0CKRZMLN6": {
@@ -2735,8 +2746,16 @@
    "t": "2026-11-14T19:45:46.808036+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0DHSFBRPB": {
+   "t": "2026-11-15T15:15:41.208340+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0DQ5WMN4H": {
    "t": "2026-11-15T12:15:40.152691+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0DWF6XWX3": {
+   "t": "2026-11-15T15:15:41.208340+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0DY8V59LY": {
@@ -2765,6 +2784,18 @@
   },
   "B0FMGXH38Q": {
    "t": "2026-11-15T08:15:36.859375+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0FPVT4VG6": {
+   "t": "2026-11-15T15:15:41.208340+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0FPXGKBCS": {
+   "t": "2026-11-15T15:15:41.208340+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0FPXK52K8": {
+   "t": "2026-11-15T15:15:41.208340+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0FQTGDT14": {
@@ -2814,6 +2845,18 @@
  },
  "reserve": [
   {
+   "a": "B013DQF1DI",
+   "c": "Robots de cocina",
+   "e": "🥣",
+   "img": "https://m.media-amazon.com/images/I/71hHZ5PwTTL._AC_UY218_.jpg",
+   "n": 3200,
+   "op": 85.0,
+   "p": 65.99,
+   "r": 4.3,
+   "t": "2026-11-15T15:15:41.208340+00:00",
+   "title": "Bosch - Procesador de alimentos, MultiTalent 3, 800 W, Blanco, MCM3100W"
+  },
+  {
    "a": "B092DB8RFH",
    "c": "Café y cápsulas",
    "e": "🫘",
@@ -2824,36 +2867,12 @@
    "r": 4.4,
    "t": "2026-11-15T14:40:39.424977+00:00",
    "title": "Lavazza, Crema e Gusto Classico, Café en Grano Natural, 1 kg"
-  },
-  {
-   "a": "B0C89SN5BZ",
-   "c": "Fitness en casa",
-   "e": "🏋️",
-   "img": "https://m.media-amazon.com/images/I/61joH-FybXL._AC_UL320_.jpg",
-   "n": 436,
-   "op": 24.99,
-   "p": 21.24,
-   "r": 4.4,
-   "t": "2026-11-15T12:15:40.152691+00:00",
-   "title": "Amonax Adjustable Pesas Para Tobillos, Tobilleras Gimnasio Pesas Tobillos Para Mujeres Y Hombres, 2x1kg Pesas Tobilleras, Pesas Muñecas De Pilates, Pesas Para Muñecas Y Tobillos Para Yoga"
-  },
-  {
-   "a": "B0DCBHR3W7",
-   "c": "Iluminación",
-   "e": "🪔",
-   "img": "https://m.media-amazon.com/images/I/51iyQ-AkTaL._AC_UL320_.jpg",
-   "n": 4200,
-   "op": 12.99,
-   "p": 9.49,
-   "r": 4.5,
-   "t": "2026-11-15T11:45:37.493065+00:00",
-   "title": "Plafon LED Techo,15W 1500LM Bajo Consumo lampara techo,3000K/4000K/6500K regulableØIP44 Impermeable Ultra Delgado Plafones Para Techo Led,Adecuado para Baño cocina Ø18CM"
   }
  ],
  "summary_day": "2026-11-14",
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-15",
-  "n": 14
+  "n": 15
  }
 }

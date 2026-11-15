@@ -1083,6 +1083,12 @@
    "title": "Impresora Multifunción Epson Ecotank ET-2860",
    "via": "ean"
   },
+  "8717496872197": {
+   "a": "B08BLFSLHZ",
+   "t": "2026-11-15T15:15:41.208340+00:00",
+   "title": "Playseat® TV Stand Triple Package",
+   "via": "ean"
+  },
   "8806094972313": {
    "a": "B0CDTVTFFS",
    "t": "2026-11-14T04:50:24.590570+00:00",
@@ -1247,22 +1253,22 @@
    "veredicto": "oferta_real"
   },
   "38915518299": {
-   "ahorro_vs_amazon": -14,
+   "ahorro_vs_amazon": -13,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 388.73,
+   "amz_price": 391.36,
    "amz_title": "Apple AirPods Max Auriculares inalámbricos de diadema con cancelación activa de ruido de nivel profesional,modo de sonido ambiente,audio espacial personalizado,",
    "asin": "B0DGJ74WP3",
    "disponible": true,
    "ean": "0195949544163",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "Amazon 388.73 frente a 442.94",
+   "motivo": "Amazon 391.36 frente a 442.94",
    "name": "Apple AirPods Max USB-C Blanco Estrella Diadema Bluetooth 5.0 20h Auriculares inalámbricos",
    "pp_drop": 23,
    "pp_median": 577.94,
    "pp_price": 442.94,
-   "t": "2026-11-13T15:10:54.425531+00:00",
+   "t": "2026-11-15T15:15:41.208340+00:00",
    "veredicto": "amazon_mas_barato"
   },
   "39617298396": {
@@ -3172,6 +3178,25 @@
    "t": "2026-11-14T04:50:24.590570+00:00",
    "veredicto": "amazon_mas_barato"
   },
+  "46599140117": {
+   "ahorro_vs_amazon": 20,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 277.88,
+   "amz_title": "Playseat® TV Stand Triple Package",
+   "asin": "B08BLFSLHZ",
+   "disponible": true,
+   "ean": "8717496872197",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "20 % por debajo del habitual en Amazon (277.88)",
+   "name": "Playseat TV Stand Pro Triple 65 Gris - Soporte para TV",
+   "pp_drop": 16,
+   "pp_median": 264.95,
+   "pp_price": 222.95,
+   "t": "2026-11-15T15:15:41.208340+00:00",
+   "veredicto": "oferta_real"
+  },
   "46599140165": {
    "ahorro_vs_amazon": 3,
    "amz_low30": null,
@@ -3810,9 +3835,9 @@
   "amazon_mas_barato": 24,
   "dudoso": 7,
   "no_esta": 18,
-  "oferta_real": 19,
+  "oferta_real": 20,
   "pvpr_inflado": 1,
   "sin_precio": 6
  },
- "updated": "2026-11-15T14:40:39.424977+00:00"
+ "updated": "2026-11-15T15:15:41.208340+00:00"
 }
