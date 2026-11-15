@@ -28,7 +28,7 @@
   "Monitores": "2026-11-15T19:15:39.725060+00:00",
   "Móviles": "2026-11-14T19:45:46.808036+00:00",
   "Nutrición deportiva": "2026-11-14T11:40:39.802795+00:00",
-  "Perfumes": "2026-11-14T12:50:38.841046+00:00",
+  "Perfumes": "2026-11-15T21:40:42.221187+00:00",
   "Periféricos": "2026-11-15T16:30:50.777266+00:00",
   "Perros": "2026-11-15T07:01:06.978986+00:00",
   "Portátiles": "2026-11-14T19:45:46.808036+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-15T12:15:40.152691+00:00",
   "Zapatillas": "2026-11-15T10:01:03.183163+00:00"
  },
- "next_at": "2026-11-15T21:35:32.333501+00:00",
+ "next_at": "2026-11-15T22:13:47.949022+00:00",
  "offer": {
   "a": "B01EG0DJNE",
   "m": 275,
@@ -828,6 +828,17 @@
    "p": 29.9,
    "t": "2026-11-11T17:46:31.652013+00:00",
    "title": "Final Fantasy VII Remake Intergrade PS5",
+   "v": []
+  },
+  "B08ZFKB8ZK": {
+   "c": "Perfumes",
+   "d": 15,
+   "e": "🌸",
+   "m": 326,
+   "p": 48.9,
+   "s": "ambas",
+   "t": "2026-11-15T21:41:16.235854+00:00",
+   "title": "Azzaro",
    "v": []
   },
   "B091JT7CSN": {
@@ -2759,10 +2770,7 @@
    "v": []
   }
  },
- "problem": {
-  "fails": 1,
-  "last": "HTTP 503"
- },
+ "problem": {},
  "rejected": {
   "B009T6QA2S": {
    "t": "2026-11-15T12:15:40.152691+00:00",
@@ -2784,10 +2792,6 @@
    "t": "2026-11-15T11:10:43.114079+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0816QF6SZ": {
-   "t": "2026-11-14T21:35:30.640432+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B09ZQF5GZW": {
    "t": "2026-11-15T17:05:32.780345+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2806,10 +2810,6 @@
   },
   "B0CWP7M17B": {
    "t": "2026-11-15T08:50:40.530842+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0D5H7ZXRJ": {
-   "t": "2026-11-14T21:35:30.640432+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0DCPB9J7K": {
@@ -2919,6 +2919,18 @@
  },
  "reserve": [
   {
+   "a": "B0B8MF6X5L",
+   "c": "Perfumes",
+   "e": "🌸",
+   "img": "https://m.media-amazon.com/images/I/51JphynD1QL._AC_UL320_.jpg",
+   "n": 3100,
+   "op": 59.75,
+   "p": 49.53,
+   "r": 4.6,
+   "t": "2026-11-15T21:40:42.221187+00:00",
+   "title": "BOSS Bottled Parfum para hombres | Fragancia amaderada ambarina, con notas de cuero y raiz de orris | Atemporal y de larga duración"
+  },
+  {
    "a": "B073RP8DQ5",
    "c": "Mochilas y maletas",
    "e": "🎒",
@@ -2941,24 +2953,12 @@
    "r": 4.7,
    "t": "2026-11-15T20:15:42.147336+00:00",
    "title": "Ninja, Freidora de Aire de 4,7L, Monocajón, 3 en 1, Digital, Negra"
-  },
-  {
-   "a": "B01EG0DJNE",
-   "c": "Afeitado y depilación",
-   "e": "🪒",
-   "img": "https://m.media-amazon.com/images/I/51QAwsDHa4L._AC_UL320_.jpg",
-   "n": 644,
-   "op": 2.37,
-   "p": 1.66,
-   "r": 4.3,
-   "t": "2026-11-15T18:30:54.792871+00:00",
-   "title": "Wilkinson Sword Extra 2 Beauty - 5 unidades Desechables Depilatorias Femeninas de 2 Hojas con Mango Antideslizante y Bandas Lubricantes de Aloe Vera"
   }
  ],
  "summary_day": "2026-11-14",
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-15",
-  "n": 23
+  "n": 24
  }
 }
