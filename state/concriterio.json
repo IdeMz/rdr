@@ -39,9 +39,9 @@
   "Tablets": "2026-11-12T21:55:34.077440+00:00",
   "Televisores": "2026-11-11T20:15:41.209092+00:00",
   "Videojuegos": "2026-11-13T21:50:42.988192+00:00",
-  "Zapatillas": "2026-11-13T19:20:42.278458+00:00"
+  "Zapatillas": "2026-11-15T10:01:03.183163+00:00"
  },
- "next_at": "2026-11-15T09:55:48.136665+00:00",
+ "next_at": "2026-11-15T10:35:07.986959+00:00",
  "offer": {
   "a": "B0CBMVQQSK",
   "m": 247,
@@ -364,6 +364,17 @@
    "s": "ofertas",
    "t": "2026-11-13T11:06:06.481003+00:00",
    "title": "EULANT Pequeña Mochila para Bicicleta,12L Mochila de Hidratación Impermeable,Reflectoras Mochila de Ciclismo para MTB Senderismo Correr Natación Playa, con Capa de Aislamiento & red de pelota",
+   "v": []
+  },
+  "B07DC1YXT3": {
+   "c": "Zapatillas",
+   "d": 36,
+   "e": "👟",
+   "m": 308,
+   "p": 41.79,
+   "s": "ofertas",
+   "t": "2026-11-15T10:01:40.573396+00:00",
+   "title": "Unisex Leader Vt SL Training Shoes",
    "v": []
   },
   "B07DNGPVRP": {
@@ -2592,6 +2603,14 @@
    "t": "2026-11-14T14:40:41.311125+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0CKRZMLN6": {
+   "t": "2026-11-15T10:01:03.183163+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0CKXRGX7M": {
+   "t": "2026-11-15T10:01:03.183163+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0CWP7M17B": {
    "t": "2026-11-15T08:50:40.530842+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2731,6 +2750,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-15",
-  "n": 5
+  "n": 6
  }
 }
