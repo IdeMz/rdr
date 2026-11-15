@@ -1226,11 +1226,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Shokz OpenFit Air Rosa Open-Ear Bluetooth 5.2 IP54 Multipunto Auriculares inalámbricos",
-   "pista": "1872691 bytes; 11 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1862133 bytes; 11 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 19,
    "pp_median": 78.95,
    "pp_price": 63.95,
-   "t": "2026-11-14T20:20:37.410274+00:00",
+   "t": "2026-11-15T02:35:19.159106+00:00",
    "veredicto": "sin_precio"
   },
   "40167730445": {
@@ -3571,7 +3571,7 @@
    }
   }
  },
- "night_at": "2026-11-15T01:50:27.381232+00:00",
+ "night_at": "2026-11-15T02:35:19.159106+00:00",
  "resumen": {
   "amazon_mas_barato": 25,
   "dudoso": 8,
@@ -3580,5 +3580,5 @@
   "pvpr_inflado": 2,
   "sin_precio": 3
  },
- "updated": "2026-11-15T01:50:27.381232+00:00"
+ "updated": "2026-11-15T02:35:19.159106+00:00"
 }
