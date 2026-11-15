@@ -23,7 +23,7 @@
   "Iluminación": "2026-11-13T20:05:35.325047+00:00",
   "Jardín": "2026-11-14T09:20:40.743974+00:00",
   "Lego": "2026-11-13T07:35:36.489438+00:00",
-  "Menaje de cocina": "2026-11-14T12:15:37.671280+00:00",
+  "Menaje de cocina": "2026-11-15T09:25:34.345588+00:00",
   "Mochilas y maletas": "2026-11-15T07:40:45.992760+00:00",
   "Monitores": "2026-11-15T08:50:40.530842+00:00",
   "Móviles": "2026-11-14T19:45:46.808036+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-13T21:50:42.988192+00:00",
   "Zapatillas": "2026-11-13T19:20:42.278458+00:00"
  },
- "next_at": "2026-11-15T09:21:21.913047+00:00",
+ "next_at": "2026-11-15T09:55:48.136665+00:00",
  "offer": {
   "a": "B0CBMVQQSK",
   "m": 247,
@@ -823,6 +823,17 @@
    "p": 99.99,
    "t": "2026-11-06T21:06:01.022588+00:00",
    "title": "TECLAST M50T Tablet 10.1 Pulgadas Android 16 Tableta Gemini AI, 32GB RAM+128GB ROM+5TB TF, 2GHz Octa-Core, 7000mAh, 2.4G+5G WiFi, BT 5.4/Widevine L1/13MP+5MP/3.5MM/Face ID/OTG, Tablets con Lápiz, 2026",
+   "v": []
+  },
+  "B09HCGGDQD": {
+   "c": "Menaje de cocina",
+   "d": 11,
+   "e": "🍳",
+   "m": 307,
+   "p": 207.99,
+   "s": "busqueda",
+   "t": "2026-11-15T09:26:12.520712+00:00",
+   "title": "ZWILLING Simplify Batería de Cocina 5 Piezas, Colador Integrado, Inducción",
    "v": []
   },
   "B09HCH4T22": {
@@ -2629,6 +2640,10 @@
    "t": "2026-11-15T08:15:36.859375+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0FQTGDT14": {
+   "t": "2026-11-15T09:25:34.345588+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0FQTVLFT1": {
    "t": "2026-11-14T12:15:37.671280+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2647,6 +2662,10 @@
   },
   "B0GXBNBQYL": {
    "t": "2026-11-15T08:50:40.530842+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0H1Q36TTN": {
+   "t": "2026-11-15T09:25:34.345588+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0H5KDLK7M": {
@@ -2712,6 +2731,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-15",
-  "n": 4
+  "n": 5
  }
 }
