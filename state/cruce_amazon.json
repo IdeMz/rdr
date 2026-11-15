@@ -475,6 +475,12 @@
    "title": "Acer B7 B277 bmiprzx LED display 68,6 cm (27\") Full HD Plana Negro - Monitor (68,6 cm (27\"), 1920 x 1080 Pixeles, Full HD, LED, 4 ms, Negro)",
    "via": "modelo"
   },
+  "4711636168991": {
+   "a": "B09CD57PMJ",
+   "t": "2026-11-15T00:50:26.258760+00:00",
+   "title": "ASUS ROG Strix OLED XG27AQWMG - Monitor Gaming de 27, 1440p TrueBlack Glossy Tandem, 280 Hz, 0,03 ms, Sensor de proximidad Neo, ASUS OLED Care Pro, ELMB, VESA D",
+   "via": "ean"
+  },
   "4713436150800": {
    "a": "B0BVLRFFWQ",
    "t": "2026-11-13T21:15:42.495405+00:00",
@@ -608,6 +614,12 @@
    "a": "B0DWDQYB87",
    "t": "2026-11-14T05:35:19.499764+00:00",
    "title": "LEGO One Piece Barco Pirata Going Merry 75639",
+   "via": "ean"
+  },
+  "5702018069608": {
+   "a": "B0FPXDRR63",
+   "t": "2026-11-15T00:50:26.258760+00:00",
+   "title": "LEGO Editions Trofeo Oficial de la Copa Mundial de la FIFA 43020",
    "via": "ean"
   },
   "5706991019971": {
@@ -973,6 +985,12 @@
      "SaveFamily SaveWatch Plus 4G | Reloj Inteligente Niño/a con Localizador GPS"
     ]
    }
+  },
+  "8710103936077": {
+   "a": "B08BF3PXPX",
+   "t": "2026-11-15T00:50:26.258760+00:00",
+   "title": "DiamondClean 9000 HX9913/17",
+   "via": "ean"
   },
   "8715946725949": {
    "a": "B0CVQQLLQT",
@@ -1366,6 +1384,25 @@
    "pp_price": 899.9,
    "t": "2026-11-14T03:20:26.477658+00:00",
    "veredicto": "oferta_real"
+  },
+  "43803281748": {
+   "ahorro_vs_amazon": 0,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 529.89,
+   "amz_title": "ASUS ROG Strix OLED XG27AQWMG - Monitor Gaming de 27, 1440p TrueBlack Glossy Tandem, 280 Hz, 0,03 ms, Sensor de proximidad Neo, ASUS OLED Care Pro, ELMB, VESA D",
+   "asin": "B09CD57PMJ",
+   "disponible": true,
+   "ean": "4711636168991",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 529.89 frente a 529.00",
+   "name": "ASUS ROG Strix XG27AQWMG WOLED 27 pulgadas 2K 280Hz 3ms FreeSync Monitor",
+   "pp_drop": 10,
+   "pp_median": 589.9,
+   "pp_price": 529.0,
+   "t": "2026-11-15T00:50:26.258760+00:00",
+   "veredicto": "amazon_mas_barato"
   },
   "43812033191": {
    "ahorro_vs_amazon": 11,
@@ -2129,6 +2166,25 @@
     ]
    }
   },
+  "46093615865": {
+   "ahorro_vs_amazon": 23,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 222.82,
+   "amz_title": "DiamondClean 9000 HX9913/17",
+   "asin": "B08BF3PXPX",
+   "disponible": true,
+   "ean": "8710103936077",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "23 % por debajo del habitual en Amazon (222.82)",
+   "name": "Philips Sonicare DiamondClean 9000 HX9913/17 3 velocidades Cepillo de dientes eléctrico",
+   "pp_drop": 12,
+   "pp_median": 194.96,
+   "pp_price": 171.94,
+   "t": "2026-11-15T00:50:26.258760+00:00",
+   "veredicto": "oferta_real"
+  },
   "46093615979": {
    "ean": "196388599943",
    "lista": "candidates",
@@ -2286,6 +2342,25 @@
    "pp_median": 103.95,
    "pp_price": 50.95,
    "t": "2026-11-14T11:05:31.708608+00:00",
+   "veredicto": "amazon_mas_barato"
+  },
+  "46186025457": {
+   "ahorro_vs_amazon": -9,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 139.99,
+   "amz_title": "LEGO Editions Trofeo Oficial de la Copa Mundial de la FIFA 43020",
+   "asin": "B0FPXDRR63",
+   "disponible": true,
+   "ean": "5702018069608",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 139.99 frente a 152.94",
+   "name": "Set de construcción LEGO Editions Trofeo Oficial de la Copa Mundial de la FIFA 43020 2842 piezas A partir de 12 años",
+   "pp_drop": 12,
+   "pp_median": 172.95,
+   "pp_price": 152.94,
+   "t": "2026-11-15T00:50:26.258760+00:00",
    "veredicto": "amazon_mas_barato"
   },
   "46186027796": {
@@ -3471,14 +3546,14 @@
    }
   }
  },
- "night_at": "2026-11-15T00:20:27.121298+00:00",
+ "night_at": "2026-11-15T00:50:26.258760+00:00",
  "resumen": {
-  "amazon_mas_barato": 23,
+  "amazon_mas_barato": 25,
   "dudoso": 8,
   "no_esta": 19,
-  "oferta_real": 22,
+  "oferta_real": 23,
   "pvpr_inflado": 2,
   "sin_precio": 3
  },
- "updated": "2026-11-15T00:20:27.121298+00:00"
+ "updated": "2026-11-15T00:50:26.258760+00:00"
 }
