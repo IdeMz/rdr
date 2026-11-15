@@ -598,6 +598,12 @@
     ]
    }
   },
+  "5099206099784": {
+   "a": "B0FHQ5XXTK",
+   "t": "2026-11-15T00:20:27.121298+00:00",
+   "title": "Logitech Lift Ratón Ergonómico Vertical, Inalámbrico, Bluetooth o receptor Logi Bolt USB, clics Silenciosos, 4 botones, ERGO K860 Teclado inalámbrico, ergonómic",
+   "via": "ean"
+  },
   "5702017818023": {
    "a": "B0DWDQYB87",
    "t": "2026-11-14T05:35:19.499764+00:00",
@@ -632,6 +638,12 @@
    "a": "B0F5QF2JQQ",
    "t": "2026-11-14T12:15:37.671280+00:00",
    "title": "SteelSeries Rival 3 Wireless Gen 2 - Raton Gaming - 2,4GHz y Bluetooth - Sensor óptico TrueMove Air de 18000 dpi - Durabilidad de 60 M de clics - Ligero - Desli",
+   "via": "ean"
+  },
+  "5707119060523": {
+   "a": "B0DX6V74WK",
+   "t": "2026-11-15T00:20:27.121298+00:00",
+   "title": "SteelSeries Apex 3 TKL - Teclado Gaming Blanco y RGB - Factor Forma TKL Compacto - Iluminación RGB de 8 Zonas - Resistente a Agua y Polvo - Interruptor Gaming s",
    "via": "ean"
   },
   "5707119062299": {
@@ -962,6 +974,12 @@
     ]
    }
   },
+  "8715946725949": {
+   "a": "B0CVQQLLQT",
+   "t": "2026-11-15T00:20:27.121298+00:00",
+   "title": "Impresora Multifunción Epson Ecotank ET-2860",
+   "via": "ean"
+  },
   "8806094972313": {
    "a": "B0CDTVTFFS",
    "t": "2026-11-14T04:50:24.590570+00:00",
@@ -1048,6 +1066,25 @@
   }
  },
  "items": {
+  "37600255371": {
+   "ahorro_vs_amazon": 71,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 141.79,
+   "amz_title": "Logitech Lift Ratón Ergonómico Vertical, Inalámbrico, Bluetooth o receptor Logi Bolt USB, clics Silenciosos, 4 botones, ERGO K860 Teclado inalámbrico, ergonómic",
+   "asin": "B0FHQ5XXTK",
+   "disponible": true,
+   "ean": "5099206099784",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "71 % por debajo del habitual en Amazon (141.79)",
+   "name": "Logitech Lift Bluetooth 4000 DPI Grafito 4 botones 125 g Ratón",
+   "pp_drop": 17,
+   "pp_median": 49.95,
+   "pp_price": 41.44,
+   "t": "2026-11-15T00:20:27.121298+00:00",
+   "veredicto": "oferta_real"
+  },
   "37600255591": {
    "ahorro_vs_amazon": 3,
    "amz_low30": null,
@@ -1861,6 +1898,25 @@
    "t": "2026-11-14T05:50:24.845085+00:00",
    "veredicto": "oferta_real"
   },
+  "45956990981": {
+   "ahorro_vs_amazon": 6,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 57.39,
+   "amz_title": "SteelSeries Apex 3 TKL - Teclado Gaming Blanco y RGB - Factor Forma TKL Compacto - Iluminación RGB de 8 Zonas - Resistente a Agua y Polvo - Interruptor Gaming s",
+   "asin": "B0DX6V74WK",
+   "disponible": true,
+   "ean": "5707119060523",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "solo 6 % por debajo del habitual en Amazon (57.39)",
+   "name": "SteelSeries Apex 3 TKL RGB 8 Zonas USA (QWERTY) Teclado gaming",
+   "pp_drop": 16,
+   "pp_median": 63.95,
+   "pp_price": 53.95,
+   "t": "2026-11-15T00:20:27.121298+00:00",
+   "veredicto": "dudoso"
+  },
   "45956991042": {
    "ahorro_vs_amazon": -35,
    "amz_low30": null,
@@ -1936,6 +1992,25 @@
    "pp_price": 362.95,
    "t": "2026-11-14T14:01:05.199813+00:00",
    "veredicto": "oferta_real"
+  },
+  "45956992353": {
+   "ahorro_vs_amazon": -1,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 189.0,
+   "amz_title": "Impresora Multifunción Epson Ecotank ET-2860",
+   "asin": "B0CVQQLLQT",
+   "disponible": true,
+   "ean": "8715946725949",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 189.00 frente a 189.97",
+   "name": "Epson EcoTank ET-2860 Multifunción Tinta Color WiFi 15ppm Impresora",
+   "pp_drop": 12,
+   "pp_median": 216.28,
+   "pp_price": 189.97,
+   "t": "2026-11-15T00:20:27.121298+00:00",
+   "veredicto": "amazon_mas_barato"
   },
   "45956992517": {
    "ahorro_vs_amazon": -3,
@@ -3396,14 +3471,14 @@
    }
   }
  },
- "night_at": "2026-11-14T23:50:25.477607+00:00",
+ "night_at": "2026-11-15T00:20:27.121298+00:00",
  "resumen": {
-  "amazon_mas_barato": 22,
-  "dudoso": 7,
+  "amazon_mas_barato": 23,
+  "dudoso": 8,
   "no_esta": 19,
-  "oferta_real": 21,
+  "oferta_real": 22,
   "pvpr_inflado": 2,
   "sin_precio": 3
  },
- "updated": "2026-11-14T23:50:25.477607+00:00"
+ "updated": "2026-11-15T00:20:27.121298+00:00"
 }
