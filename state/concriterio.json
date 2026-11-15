@@ -16,7 +16,7 @@
   "Cuidado del cabello": "2026-11-13T21:50:42.988192+00:00",
   "Cámaras de seguridad": "2026-11-14T17:20:46.627491+00:00",
   "Domótica": "2026-11-14T09:55:29.061293+00:00",
-  "Fitness en casa": "2026-11-14T10:30:50.359175+00:00",
+  "Fitness en casa": "2026-11-15T12:15:40.152691+00:00",
   "Freidoras de aire": "2026-11-15T08:50:40.530842+00:00",
   "Gatos": "2026-11-14T18:30:55.099025+00:00",
   "Herramientas": "2026-11-14T21:01:00.449874+00:00",
@@ -38,10 +38,10 @@
   "Suplementos": "2026-11-13T10:31:00.804242+00:00",
   "Tablets": "2026-11-15T11:10:43.114079+00:00",
   "Televisores": "2026-11-11T20:15:41.209092+00:00",
-  "Videojuegos": "2026-11-13T21:50:42.988192+00:00",
+  "Videojuegos": "2026-11-15T12:15:40.152691+00:00",
   "Zapatillas": "2026-11-15T10:01:03.183163+00:00"
  },
- "next_at": "2026-11-15T12:15:39.608282+00:00",
+ "next_at": "2026-11-15T12:50:15.563074+00:00",
  "offer": {
   "a": "B0CBMVQQSK",
   "m": 247,
@@ -490,6 +490,17 @@
    "p": 49.99,
    "t": "2026-11-06T10:01:28.431151+00:00",
    "title": "BENYAR",
+   "v": []
+  },
+  "B07VG82SSM": {
+   "c": "Fitness en casa",
+   "d": 15,
+   "e": "🏋️",
+   "m": 312,
+   "p": 7.64,
+   "s": "ofertas",
+   "t": "2026-11-15T12:16:40.213015+00:00",
+   "title": "Amonax Bandas Elasticas Fitness, Cintas Elasticas Fitness Látex Natural con 4 Niveles Ejercicios en Piernas, Glúteos y Brazos, 4 Bandas Resistencia para Yoga, Pilates, Crossfit, Estiramientos, Fuerza",
    "v": []
   },
   "B07W4DGPGF": {
@@ -2616,6 +2627,10 @@
  },
  "problem": {},
  "rejected": {
+  "B009T6QA2S": {
+   "t": "2026-11-15T12:15:40.152691+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B07TFGZ33M": {
    "t": "2026-11-15T08:15:36.859375+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2660,6 +2675,10 @@
    "t": "2026-11-14T21:35:30.640432+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0DCPB9J7K": {
+   "t": "2026-11-15T12:15:40.152691+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0DD45976Z": {
    "t": "2026-11-15T10:35:39.916250+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2670,6 +2689,10 @@
   },
   "B0DGL75TNW": {
    "t": "2026-11-14T19:45:46.808036+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0DQ5WMN4H": {
+   "t": "2026-11-15T12:15:40.152691+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0DY1P85GK": {
@@ -2706,10 +2729,6 @@
   },
   "B0FQTGDT14": {
    "t": "2026-11-15T09:25:34.345588+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0FQTVLFT1": {
-   "t": "2026-11-14T12:15:37.671280+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0FWCLJ51V": {
@@ -2763,6 +2782,18 @@
  },
  "reserve": [
   {
+   "a": "B0C89SN5BZ",
+   "c": "Fitness en casa",
+   "e": "🏋️",
+   "img": "https://m.media-amazon.com/images/I/61joH-FybXL._AC_UL320_.jpg",
+   "n": 436,
+   "op": 24.99,
+   "p": 21.24,
+   "r": 4.4,
+   "t": "2026-11-15T12:15:40.152691+00:00",
+   "title": "Amonax Adjustable Pesas Para Tobillos, Tobilleras Gimnasio Pesas Tobillos Para Mujeres Y Hombres, 2x1kg Pesas Tobilleras, Pesas Muñecas De Pilates, Pesas Para Muñecas Y Tobillos Para Yoga"
+  },
+  {
    "a": "B0DCBHR3W7",
    "c": "Iluminación",
    "e": "🪔",
@@ -2785,24 +2816,12 @@
    "r": 4.6,
    "t": "2026-11-15T11:10:43.114079+00:00",
    "title": "Anker Prime Power Bank 26.250 mAh, 300 W, 3 Puertos"
-  },
-  {
-   "a": "B0FYH71H42",
-   "c": "Freidoras de aire",
-   "e": "🍟",
-   "img": "https://m.media-amazon.com/images/I/51riuZmyM1L._AC_UL320_.jpg",
-   "n": 360,
-   "op": 99.99,
-   "p": 69.99,
-   "r": 4.7,
-   "t": "2026-11-15T08:50:40.530842+00:00",
-   "title": "Ninja, Freidora de Aire de 4,7L, Monocajón, 3 en 1, Digital, Negra"
   }
  ],
  "summary_day": "2026-11-14",
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-15",
-  "n": 9
+  "n": 10
  }
 }

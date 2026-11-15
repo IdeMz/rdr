@@ -967,6 +967,12 @@
     ]
    }
   },
+  "8007411014116": {
+   "a": "B0H3BX8YX5",
+   "t": "2026-11-15T12:15:40.152691+00:00",
+   "title": "Polti StainOver SC30, shampouineusevapeur 4 en 1 para eliminar manchas, quitamanchas con función de vapor, ideal para dueños de mascotas, incluye 9 accesorios, ",
+   "via": "ean"
+  },
   "8021098002440": {
    "a": "B0C2VZJXZR",
    "t": "2026-11-14T22:50:36.785672+00:00",
@@ -2047,7 +2053,7 @@
    "veredicto": "dudoso"
   },
   "45956991042": {
-   "ahorro_vs_amazon": -35,
+   "ahorro_vs_amazon": -22,
    "amz_low30": null,
    "amz_median": null,
    "amz_price": 22.99,
@@ -2057,12 +2063,12 @@
    "ean": "5707119059961",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "Amazon 22.99 frente a 30.95",
+   "motivo": "Amazon 22.99 frente a 27.95",
    "name": "SteelSeries Rival 3 Gen 2 Interruptores Mecánicos 8500 DPI 6 botones USB 106 g Ratón gaming",
-   "pp_drop": 21,
+   "pp_drop": 28,
    "pp_median": 38.95,
-   "pp_price": 30.95,
-   "t": "2026-11-14T22:20:30.510879+00:00",
+   "pp_price": 27.95,
+   "t": "2026-11-15T12:15:40.152691+00:00",
    "veredicto": "amazon_mas_barato"
   },
   "45956991451": {
@@ -3281,6 +3287,26 @@
    "t": "2026-11-14T23:20:25.000542+00:00",
    "veredicto": "oferta_real"
   },
+  "46599141999": {
+   "ahorro_vs_amazon": null,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": null,
+   "amz_title": "Polti StainOver SC30, shampouineusevapeur 4 en 1 para eliminar manchas, quitamanchas con función de vapor, ideal para dueños de mascotas, incluye 9 accesorios, ",
+   "asin": "B0H3BX8YX5",
+   "disponible": true,
+   "ean": "8007411014116",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "en Amazon pero sin precio o no disponible",
+   "name": "Polti StainOver SC30 2000W Aspirador de tapicería",
+   "pista": "1351186 bytes; 16 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pp_drop": 20,
+   "pp_median": 251.95,
+   "pp_price": 200.94,
+   "t": "2026-11-15T12:15:40.152691+00:00",
+   "veredicto": "sin_precio"
+  },
   "46599142071": {
    "ean": "6978515257926",
    "lista": "candidates",
@@ -3672,7 +3698,7 @@
   "no_esta": 17,
   "oferta_real": 18,
   "pvpr_inflado": 2,
-  "sin_precio": 3
+  "sin_precio": 4
  },
- "updated": "2026-11-15T11:45:37.493065+00:00"
+ "updated": "2026-11-15T12:15:40.152691+00:00"
 }
