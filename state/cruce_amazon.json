@@ -1586,23 +1586,24 @@
    "veredicto": "oferta_real"
   },
   "45124316529": {
-   "ahorro_vs_amazon": 52,
+   "ahorro_vs_amazon": null,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 159.99,
+   "amz_price": null,
    "amz_title": "KOSPET Tank T3 Ultra 2 Reloj Inteligente Hombre GPS, Acero Inoxidable Bateria Larga Duracion Reloj Inteligente, 1,43'' AMOLED 5ATM Impermeable Smartwatch Hombre",
    "asin": "B0FF1X7VGL",
-   "disponible": true,
+   "disponible": false,
    "ean": "6974958250739",
    "encontrado_por": "nombre",
    "lista": "candidates",
-   "motivo": "52 % por debajo del habitual en Amazon (159.99)",
+   "motivo": "en Amazon pero sin precio o no disponible",
    "name": "KOSPET Tank T3 Ultra Negro 1,43 pulgadas AMOLED GPS 15 días +170 deportes 5ATM IP69K Smartwatch",
-   "pp_drop": 41,
-   "pp_median": 129.95,
+   "pista": "1724947 bytes; 21 a-price; caja de precio; disponibilidad: No disponible.; sin vendedor destacado",
+   "pp_drop": 31,
+   "pp_median": 110.94,
    "pp_price": 76.96,
-   "t": "2026-11-13T22:50:26.355987+00:00",
-   "veredicto": "oferta_real"
+   "t": "2026-11-15T23:05:20.314700+00:00",
+   "veredicto": "sin_precio"
   },
   "45251942871": {
    "ean": "4894461955711",
@@ -2686,7 +2687,7 @@
    "pp_drop": 45,
    "pp_median": 92.95,
    "pp_price": 50.95,
-   "t": "2026-11-13T22:50:26.355987+00:00",
+   "t": "2026-11-15T23:05:20.314700+00:00",
    "v": 2,
    "veredicto": "no_esta",
    "vistos": {
@@ -3942,14 +3943,14 @@
    }
   }
  },
- "night_at": "2026-11-15T22:35:20.251381+00:00",
+ "night_at": "2026-11-15T23:05:20.314700+00:00",
  "resumen": {
   "amazon_mas_barato": 26,
   "dudoso": 7,
   "no_esta": 19,
-  "oferta_real": 21,
+  "oferta_real": 20,
   "pvpr_inflado": 1,
-  "sin_precio": 6
+  "sin_precio": 7
  },
- "updated": "2026-11-15T22:35:20.251381+00:00"
+ "updated": "2026-11-15T23:05:20.314700+00:00"
 }
