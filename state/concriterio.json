@@ -7,7 +7,7 @@
   "Aspiradoras": "2026-11-14T20:20:37.410274+00:00",
   "Auriculares": "2026-11-14T08:10:40.297090+00:00",
   "Cafeteras": "2026-11-14T14:40:41.311125+00:00",
-  "Café y cápsulas": "2026-11-14T16:45:37.700799+00:00",
+  "Café y cápsulas": "2026-11-15T14:40:39.424977+00:00",
   "Cargadores y baterías": "2026-11-15T11:10:43.114079+00:00",
   "Ciclismo": "2026-11-14T21:35:30.640432+00:00",
   "Climatización": "2026-11-14T11:05:31.708608+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-15T12:15:40.152691+00:00",
   "Zapatillas": "2026-11-15T10:01:03.183163+00:00"
  },
- "next_at": "2026-11-15T14:35:42.572026+00:00",
+ "next_at": "2026-11-15T15:11:48.859903+00:00",
  "offer": {
   "a": "B0CBMVQQSK",
   "m": 247,
@@ -869,6 +869,17 @@
    "s": "busqueda",
    "t": "2026-11-14T17:21:20.225849+00:00",
    "title": "Tapo C320WS - Cámara de Vigilancia WiFi Exterior, 2K QHD, Detección IA",
+   "v": []
+  },
+  "B09BFG8NQQ": {
+   "c": "Café y cápsulas",
+   "d": 25,
+   "e": "🫘",
+   "m": 316,
+   "p": 32.99,
+   "s": "ofertas",
+   "t": "2026-11-15T14:41:14.087603+00:00",
+   "title": "Lavazza, Qualità Oro, 100 Cápsulas de Café Compatibles con las Máquinas Nespresso* Original, con Notas Aromáticas Florales y Afrutadas, 100% Arábica, Intensidad 8, Tueste Ligero",
    "v": []
   },
   "B09CTVQWK8": {
@@ -2728,10 +2739,6 @@
    "t": "2026-11-15T12:15:40.152691+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0DY1P85GK": {
-   "t": "2026-11-14T14:01:05.199813+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0DY8V59LY": {
    "t": "2026-11-14T20:20:37.410274+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2792,10 +2799,6 @@
    "t": "2026-11-15T09:25:34.345588+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0H5KDLK7M": {
-   "t": "2026-11-14T14:01:05.199813+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0H62LV77B": {
    "t": "2026-11-14T19:45:46.808036+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2807,13 +2810,21 @@
   "B0HBWW6LQQ": {
    "t": "2026-11-14T20:20:37.410274+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0HJR8HC2F": {
-   "t": "2026-11-14T14:01:05.199813+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
   }
  },
  "reserve": [
+  {
+   "a": "B092DB8RFH",
+   "c": "Café y cápsulas",
+   "e": "🫘",
+   "img": "https://m.media-amazon.com/images/I/61T463siEqL._AC_UL320_.jpg",
+   "n": 2400,
+   "op": 26.15,
+   "p": 20.39,
+   "r": 4.4,
+   "t": "2026-11-15T14:40:39.424977+00:00",
+   "title": "Lavazza, Crema e Gusto Classico, Café en Grano Natural, 1 kg"
+  },
   {
    "a": "B0C89SN5BZ",
    "c": "Fitness en casa",
@@ -2837,24 +2848,12 @@
    "r": 4.5,
    "t": "2026-11-15T11:45:37.493065+00:00",
    "title": "Plafon LED Techo,15W 1500LM Bajo Consumo lampara techo,3000K/4000K/6500K regulableØIP44 Impermeable Ultra Delgado Plafones Para Techo Led,Adecuado para Baño cocina Ø18CM"
-  },
-  {
-   "a": "B0F66LNB8D",
-   "c": "Cargadores y baterías",
-   "e": "🔌",
-   "img": "https://m.media-amazon.com/images/I/61ilxnLyWiL._AC_UL320_.jpg",
-   "n": 1700,
-   "op": 199.99,
-   "p": 159.99,
-   "r": 4.6,
-   "t": "2026-11-15T11:10:43.114079+00:00",
-   "title": "Anker Prime Power Bank 26.250 mAh, 300 W, 3 Puertos"
   }
  ],
  "summary_day": "2026-11-14",
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-15",
-  "n": 13
+  "n": 14
  }
 }
