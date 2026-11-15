@@ -3,7 +3,7 @@
   "Accesorios de coche": "2026-11-15T10:35:39.916250+00:00",
   "Afeitado y depilación": "2026-11-14T16:10:41.956036+00:00",
   "Almacenamiento": "2026-11-15T16:30:50.777266+00:00",
-  "Altavoces": "2026-11-15T08:15:36.859375+00:00",
+  "Altavoces": "2026-11-15T17:05:32.780345+00:00",
   "Aspiradoras": "2026-11-14T20:20:37.410274+00:00",
   "Auriculares": "2026-11-14T08:10:40.297090+00:00",
   "Cafeteras": "2026-11-14T14:40:41.311125+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-15T12:15:40.152691+00:00",
   "Zapatillas": "2026-11-15T10:01:03.183163+00:00"
  },
- "next_at": "2026-11-15T17:03:28.987155+00:00",
+ "next_at": "2026-11-15T17:36:02.561122+00:00",
  "offer": {
   "a": "B0CBMVQQSK",
   "m": 247,
@@ -2266,6 +2266,17 @@
    "title": "Lefant  M210 Robot Aspirador, 2200Pa, 120min, Suelos Duros, Modo Silencioso",
    "v": []
   },
+  "B0GF89DZYF": {
+   "c": "Altavoces",
+   "d": 16,
+   "e": "🔊",
+   "m": 320,
+   "p": 55.99,
+   "s": "ofertas",
+   "t": "2026-11-15T17:06:18.789088+00:00",
+   "title": "Tribit StormBox Micro 3 Altavoz Bluetooth Portátil, 13 W, IP68 impermeable",
+   "v": []
+  },
   "B0GG8RP565": {
    "c": "Herramientas",
    "d": 43,
@@ -2732,6 +2743,10 @@
    "t": "2026-11-14T21:35:30.640432+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B09ZQF5GZW": {
+   "t": "2026-11-15T17:05:32.780345+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0CKRZMLN6": {
    "t": "2026-11-15T10:01:03.183163+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2790,6 +2805,10 @@
   },
   "B0F66TD5ZC": {
    "t": "2026-11-15T08:50:40.530842+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0F9S3DWGF": {
+   "t": "2026-11-15T17:05:32.780345+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0FGJTVH91": {
@@ -2867,6 +2886,10 @@
   "B0HBWW6LQQ": {
    "t": "2026-11-14T20:20:37.410274+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0HDC8CRPP": {
+   "t": "2026-11-15T17:05:32.780345+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
   }
  },
  "reserve": [
@@ -2911,6 +2934,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-15",
-  "n": 17
+  "n": 18
  }
 }
