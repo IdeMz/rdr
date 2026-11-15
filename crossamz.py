@@ -36,7 +36,7 @@ NOT_FOUND_DAYS = 7       # un EAN que no se encontro se vuelve a buscar pasado e
 KEEP_DAYS = 14           # cuanto se recuerda un cruce de un producto que ya no es candidato
 NIGHT_PER_TICK = 3       # de noche (fuera del horario de publicacion) se cruzan mas por ejecucion...
 NIGHT_MAX_REQUESTS = 8
-NIGHT_EVERY_MIN = 15     # ...pero como mucho una vez cada 15 minutos
+NIGHT_EVERY_MIN = 12     # ...como mucho una vez por tick de 15 min (margen para el retraso de cada tick)
 SAME_PRICE = 3           # % : Amazon hasta un 3 % mas caro cuenta como "mismo precio"
 MIN_SAVING = 10          # % por debajo del precio habitual de Amazon para ser "oferta real"
 INFLATED = 15            # % : precio anterior de PowerPlanet por encima del habitual de Amazon = PVPR inflado

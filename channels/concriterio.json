@@ -14,6 +14,8 @@
   "price_tolerance": 3,
   "max_posts": 1,
   "repeat_days": 14,
+  "repost_drop": 10,
+  "repost_min_days": 3,
   "searches_per_run": 3,
   "postal_code": "28001",
   "timezone": "Europe/Madrid",

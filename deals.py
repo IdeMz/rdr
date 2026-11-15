@@ -256,6 +256,10 @@ class Channel:
     min_reviews: int = 50
     max_posts: int = 1
     repeat_days: int = 14
+    # Un producto ya publicado puede volver a salir antes de 'repeat_days' si ahora es al menos un
+    # 'repost_drop' % mas barato que la ultima vez y han pasado 'repost_min_days' dias (0 = nunca)
+    repost_drop: int = 10
+    repost_min_days: int = 3
     similarity: float = 0.5
     skip_sponsored: bool = True
     footer: str = ""
@@ -336,6 +340,8 @@ def load_channel(path: Path) -> Channel:
         raise ConfigError(f"{path.name}: 'x_min_discount' y 'x_max_per_day' no pueden ser negativos")
     if min(ch.manual_after, ch.manual_repeat_min, ch.reserve_hours) < 1 or ch.reserve_size < 0:
         raise ConfigError(f"{path.name}: valores 'manual_*' / 'reserve_*' no validos")
+    if not 0 <= ch.repost_drop < 100 or ch.repost_min_days < 1:
+        raise ConfigError(f"{path.name}: 'repost_drop' va de 0 a 99 y 'repost_min_days' debe ser al menos 1")
     if ch.searches_per_run < 1:
         raise ConfigError(f"{path.name}: 'searches_per_run' debe ser al menos 1")
     for url in ch.urls:
@@ -472,6 +478,7 @@ class Product:
     via: str = ""  # de donde salio: "busqueda", "ofertas" (solo en la busqueda de Ofertas) o "ambas"
     url: str = ""    # enlace de afiliado ya hecho (PowerPlanet, AliExpress); vacio = Amazon con el tag
     store: str = ""  # tienda (POWERPLANET, ALIEXPRESS); vacio = la del canal (Amazon)
+    before: float | None = None  # precio de la vez anterior, si se repite porque ha bajado
 
     @property
     def discount(self) -> int:
@@ -1095,18 +1102,20 @@ def eligible(p: Product, ch: Channel) -> bool:
     return all(keep(p) for _, keep in filter_steps(ch))
 
 
-def funnel(products: list[Product], ch: Channel, state: dict, skip: frozenset | set = frozenset()) -> str:
+def funnel(products: list[Product], ch: Channel, state: dict, skip: frozenset | set = frozenset(),
+           now: datetime | None = None) -> str:
     """Resume cuantos productos sobreviven a cada filtro: 'N leidos -> N con precio -> ...'."""
     parts = [f"{len(products)} leidos"]
     current = products
     for label, keep in filter_steps(ch):
         current = [p for p in current if keep(p)]
         parts.append(f"{len(current)} {label}")
-    parts.append(f"{len(pick(current, ch, state, limit=len(current) or 1, skip=skip))} nuevos")
+    parts.append(f"{len(pick(current, ch, state, limit=len(current) or 1, skip=skip, now=now))} nuevos")
     return " -> ".join(parts)
 
 
-def explain(products: list[Product], ch: Channel, state: dict, skip=frozenset(), chosen=()) -> list[tuple[Product, str]]:
+def explain(products: list[Product], ch: Channel, state: dict, skip=frozenset(), chosen=(),
+            now: datetime | None = None) -> list[tuple[Product, str]]:
     """Para cada producto leido, el motivo por el que se descarta (o 'candidato' / 'elegido')."""
     steps = filter_steps(ch)
     reasons: dict[str, str] = {}
@@ -1118,12 +1127,12 @@ def explain(products: list[Product], ch: Channel, state: dict, skip=frozenset(),
                 break
         else:
             survivors.append(p)
-    fresh = {p.asin for p in pick(survivors, ch, state, limit=len(survivors) or 1, skip=skip)}
+    fresh = {p.asin for p in pick(survivors, ch, state, limit=len(survivors) or 1, skip=skip, now=now)}
     picked = {p.asin for p in chosen}
     for p in survivors:
         if p.asin in picked:
             reasons[p.asin] = "elegido"
-        elif p.asin in state:
+        elif already_posted(p, state, ch, now):
             reasons[p.asin] = "ya publicado"
         elif p.asin in skip:
             detail = skip[p.asin].get("why", "") if isinstance(skip, dict) else ""
@@ -1175,24 +1184,48 @@ def pick(
     state: dict,
     limit: int | None = None,
     skip: frozenset | set = frozenset(),
+    now: datetime | None = None,
 ) -> list[Product]:
     """Mejores ofertas que cumplen los filtros y no se han publicado (ni una variante parecida).
 
     'skip' son los ASIN descartados hace poco (por ejemplo, por ser altas muy recientes).
+    Con 'now', un producto ya publicado vuelve a valer si ha bajado bastante (ver repost_ok).
     """
     limit = ch.max_posts if limit is None else limit
-    recent_titles = [v.get("title", "") for v in state.values()]
+    recent = [(a, v.get("title", "")) for a, v in state.items()]
     chosen: list[Product] = []
     for p in sorted((p for p in products if eligible(p, ch)), key=score, reverse=True):
-        if p.asin in state or p.asin in skip:
+        if already_posted(p, state, ch, now) or p.asin in skip:
             continue
-        if any(similar(p.title, t, ch.similarity) for t in recent_titles):
+        # el propio producto no cuenta como 'variante parecida' de si mismo
+        if any(a != p.asin and similar(p.title, t, ch.similarity) for a, t in recent):
             continue
+        if p.asin in state:
+            p.before = state[p.asin].get("p")
         chosen.append(p)
-        recent_titles.append(p.title)
+        recent.append((p.asin, p.title))
         if len(chosen) >= limit:
             break
     return chosen
+
+
+def repost_ok(p: Product, entry: dict, ch: Channel, now: datetime | None) -> bool:
+    """¿Puede repetirse ya? Solo si ha bajado al menos repost_drop % desde la ultima vez
+    y han pasado repost_min_days dias."""
+    if not ch.repost_drop or now is None or not p.price:
+        return False
+    old = entry.get("p")
+    if not isinstance(old, (int, float)) or old <= 0:
+        return False
+    if now - _ts(entry) < timedelta(days=ch.repost_min_days):
+        return False
+    return p.price <= old * (1 - ch.repost_drop / 100) + 0.005
+
+
+def already_posted(p: Product, state: dict, ch: Channel, now: datetime | None = None) -> bool:
+    """Publicado dentro de la ventana de repeticion y sin una bajada que justifique repetirlo."""
+    entry = state.get(p.asin)
+    return isinstance(entry, dict) and not repost_ok(p, entry, ch, now)
 
 
 def _ts(entry: dict) -> datetime:
@@ -1374,6 +1407,8 @@ def build_caption(p: Product, url: str, ch: Channel, category: dict | None = Non
         lines.append(f"−{p.discount} % · Diferencia {fmt_eur(round(p.old_price - p.price, 2))}")
     else:
         lines.append(f"Ahora: {fmt_eur(p.price)}")
+    if p.before and p.price and p.before > p.price:
+        lines.append(f"📉 Ha bajado desde que la publicamos: antes {fmt_eur(p.before)}")
     if p.rating:
         lines.append("")
         rating_line = f"⭐ {str(p.rating).replace('.', ',')}/5"
@@ -2485,7 +2520,7 @@ def run_channel(
                     if ref:
                         own_refs[p.asin] = ref
                 for p in products:
-                    if p.asin in own_refs and p.asin not in state and p.asin not in skip_why and eligible(p, cch):
+                    if p.asin in own_refs and not already_posted(p, state, cch, now) and p.asin not in skip_why and eligible(p, cch):
                         why = own_reference_why(own_refs[p.asin], p.price, cch.price_tolerance)
                         if why:
                             skip_why[p.asin] = {"t": now.isoformat(), "why": why}
@@ -2499,9 +2534,9 @@ def run_channel(
         want = 1 if need and not any(d.get("c") == (cat or {}).get("nombre", "") for d in reserve) else 0
         candidates = pick(
             products, cch, state, limit=MAX_PAGE_CHECKS if check_pages else ch.max_posts + want,
-            skip=set(skip_why) | known,
+            skip=set(skip_why) | known, now=now,
         )
-        log.info("%s: %s", label, funnel(products, cch, state, skip=set(skip_why)))
+        log.info("%s: %s", label, funnel(products, cch, state, skip=set(skip_why), now=now))
 
         for p in candidates:
             if len(chosen) >= ch.max_posts and len(extras) - extras_before >= want:
@@ -2524,7 +2559,7 @@ def run_channel(
             else:
                 extras.append((p, cat))
         rows += [(p, why, cat["nombre"] if cat else "") for p, why in
-                 explain(products, cch, state, skip={**skip_why, **rejected}, chosen=chosen)]
+                 explain(products, cch, state, skip={**skip_why, **rejected}, chosen=chosen, now=now)]
         if chosen:
             break
     try:
@@ -2578,10 +2613,14 @@ def run_channel(
         }
         if p.via:
             state[p.asin]["s"] = p.via
+        if p.before:
+            state[p.asin]["pa"] = p.before  # precio de la publicacion anterior
         save_state(state_path, state, next_at=next_post, rejected=rejected, cats=cats)
         published += 1
         where = f"{chosen_cat[p.asin]['nombre']}, " if chosen_cat.get(p.asin) else ""
         src = f", via {p.via}" if p.via else ""
+        if p.before:
+            src += f", repetida: antes {p.before:.2f}"
         log.info("%s: publicada %s (%s-%d%%%s)", ch.name, p.asin, where, p.discount, src)
         note(f"{ch.name}: publicada {p.asin} ({where}-{p.discount}%{src})")
         record_success(ch, state_path)

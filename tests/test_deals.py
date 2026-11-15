@@ -215,6 +215,49 @@ def test_pick_skips_recent_and_similar():
     assert [p.asin for p in deals.pick(items, ch, state)] == ["B1"]
 
 
+REPOST_NOW = datetime(2026, 11, 20, 12, tzinfo=timezone.utc)
+
+
+def _posted(price, when="2026-11-14T12:00:00+00:00"):
+    return {"A1": {"t": when, "title": "Zapatillas running hombre", "p": price}}
+
+
+def test_repost_when_price_dropped_enough():
+    ch = channel(min_discount=0, max_posts=5)
+    items = [prod("A1", "Zapatillas running hombre", 45, 100)]  # 50 -> 45: -10 %
+    chosen = deals.pick(items, ch, _posted(50), now=REPOST_NOW)
+    assert [p.asin for p in chosen] == ["A1"] and chosen[0].before == 50
+    assert "antes 50€" in deals.build_caption(chosen[0], "https://x", ch)
+
+
+@pytest.mark.parametrize("price,when,kw", [
+    (46, "2026-11-14T12:00:00+00:00", {}),              # solo ha bajado un 8 %
+    (40, "2026-11-19T12:00:00+00:00", {}),              # publicado hace 1 dia
+    (40, "2026-11-14T12:00:00+00:00", {"repost_drop": 0}),  # repeticion desactivada
+])
+def test_no_repost(price, when, kw):
+    ch = channel(min_discount=0, max_posts=5, **kw)
+    items = [prod("A1", "Zapatillas running hombre", price, 100)]
+    assert deals.pick(items, ch, _posted(50, when), now=REPOST_NOW) == []
+
+
+def test_no_repost_without_now_and_variants_still_blocked():
+    ch = channel(min_discount=0, max_posts=5)
+    assert deals.pick([prod("A1", "Zapatillas running hombre", 30, 100)], ch, _posted(50)) == []
+    # una variante parecida no se cuela aunque el original pudiera repetirse
+    items = [prod("A9", "Zapatillas running hombre talla 42", 30, 100)]
+    assert deals.pick(items, ch, _posted(50), now=REPOST_NOW) == []
+
+
+def test_repost_config_validated(tmp_path):
+    for bad in ({"repost_drop": 100}, {"repost_min_days": 0}):
+        cfg = {"name": "t", "token_env": "A", "chat_env": "B", "queries": ["x"], **bad}
+        f = tmp_path / "c.json"
+        f.write_text(json.dumps(cfg))
+        with pytest.raises(deals.ConfigError):
+            deals.load_channel(f)
+
+
 def test_state_prune_and_roundtrip(tmp_path):
     now = datetime(2026, 11, 3, tzinfo=timezone.utc)
     path = tmp_path / "s" / "t.json"
