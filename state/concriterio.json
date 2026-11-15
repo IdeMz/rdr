@@ -24,7 +24,7 @@
   "Jardín": "2026-11-14T09:20:40.743974+00:00",
   "Lego": "2026-11-13T07:35:36.489438+00:00",
   "Menaje de cocina": "2026-11-14T12:15:37.671280+00:00",
-  "Mochilas y maletas": "2026-11-14T09:20:40.743974+00:00",
+  "Mochilas y maletas": "2026-11-15T07:40:45.992760+00:00",
   "Monitores": "2026-11-14T07:35:33.414859+00:00",
   "Móviles": "2026-11-14T19:45:46.808036+00:00",
   "Nutrición deportiva": "2026-11-14T11:40:39.802795+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-13T21:50:42.988192+00:00",
   "Zapatillas": "2026-11-13T19:20:42.278458+00:00"
  },
- "next_at": "2026-11-15T07:35:42.384556+00:00",
+ "next_at": "2026-11-15T08:11:46.957631+00:00",
  "offer": {
   "a": "B0CBMVQQSK",
   "m": 247,
@@ -1457,6 +1457,17 @@
    "title": "Ninja Detect Power Pro, Batidora y Procesador de Alimentos, Negro",
    "v": []
   },
+  "B0D9JS9XS1": {
+   "c": "Mochilas y maletas",
+   "d": 34,
+   "e": "🎒",
+   "m": 304,
+   "p": 22.55,
+   "s": "busqueda",
+   "t": "2026-11-15T07:42:04.756367+00:00",
+   "title": "Mochila 40x30x20, Mochilas Cabina para Ryanair 40x20x30cm",
+   "v": []
+  },
   "B0DB1753RZ": {
    "c": "Altavoces",
    "d": 37,
@@ -2552,10 +2563,6 @@
    "t": "2026-11-14T21:35:30.640432+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0DF84JPCW": {
-   "t": "2026-11-14T07:35:33.414859+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0DGL75TNW": {
    "t": "2026-11-14T19:45:46.808036+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2572,20 +2579,8 @@
    "t": "2026-11-14T20:20:37.410274+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0FL32LSR5": {
-   "t": "2026-11-14T07:35:33.414859+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0FQTVLFT1": {
    "t": "2026-11-14T12:15:37.671280+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0FWCTL8CW": {
-   "t": "2026-11-14T07:35:33.414859+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0GXBNBQYL": {
-   "t": "2026-11-14T07:35:33.414859+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0H5KDLK7M": {
@@ -2611,6 +2606,18 @@
  },
  "reserve": [
   {
+   "a": "B0DZHC2747",
+   "c": "Mochilas y maletas",
+   "e": "🎒",
+   "img": "https://m.media-amazon.com/images/I/71B6SfD7BpL._AC_UL320_.jpg",
+   "n": 1400,
+   "op": 39.99,
+   "p": 30.95,
+   "r": 4.6,
+   "t": "2026-11-15T07:40:45.992760+00:00",
+   "title": "Mochila Cabina 55x40x20 Mochila Viaje Cabina Avion Maletas de Viaje Cabina"
+  },
+  {
    "a": "B01EQZBFG2",
    "c": "Perros",
    "e": "🐶",
@@ -2627,6 +2634,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-15",
-  "n": 1
+  "n": 2
  }
 }
