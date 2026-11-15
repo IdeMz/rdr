@@ -992,6 +992,26 @@
     ]
    }
   },
+  "8592978595500": {
+   "a": "",
+   "t": "2026-11-15T11:10:43.114079+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "modelo": [
+     "Processore - Amd - Ryzen 7 9800x3d - 4,7 Ghz, 8 Core, 104 Mb L2 E L3, Am5",
+     "AMD Ryzen 7 5800X Procesador (8 núcleos/16 threads, 105W DTP, Socket AM4, 36 MB Caché, Reloj de aume",
+     "AMD RYZEN™ 7 9850X3D"
+    ],
+    "nombre": [
+     "AMD EPYC 4564P 16 x 4,5 GHz 64 MB L3 Cache CPU socket AM5 Boxed sin radiador",
+     "AMD EPYC 4005 4465P Dodeca-Core (12 núcleos) 3.40 GHz Procesador - Caja",
+     "AMD Epyc 9224-2,5 GHz - 24 Core - 48 Hilos"
+    ]
+   }
+  },
   "8710103936077": {
    "a": "B08BF3PXPX",
    "t": "2026-11-15T00:50:26.258760+00:00",
@@ -2661,6 +2681,33 @@
     ]
    }
   },
+  "46247661146": {
+   "ean": "8592978595500",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "AMD EPYC 9475F 48 Núcleos Socket SP5 Tray 96 hilos 4,8GHz Procesador",
+   "pp_drop": 24,
+   "pp_median": 6366.95,
+   "pp_price": 4840.96,
+   "t": "2026-11-15T11:10:43.114079+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "modelo": [
+     "Processore - Amd - Ryzen 7 9800x3d - 4,7 Ghz, 8 Core, 104 Mb L2 E L3, Am5",
+     "AMD Ryzen 7 5800X Procesador (8 núcleos/16 threads, 105W DTP, Socket AM4, 36 MB Caché, Reloj de aume",
+     "AMD RYZEN™ 7 9850X3D"
+    ],
+    "nombre": [
+     "AMD EPYC 4564P 16 x 4,5 GHz 64 MB L3 Cache CPU socket AM5 Boxed sin radiador",
+     "AMD EPYC 4005 4465P Dodeca-Core (12 núcleos) 3.40 GHz Procesador - Caja",
+     "AMD Epyc 9224-2,5 GHz - 24 Core - 48 Hilos"
+    ]
+   }
+  },
   "46247661211": {
    "ahorro_vs_amazon": -70,
    "amz_low30": null,
@@ -3573,12 +3620,12 @@
  },
  "night_at": "2026-11-15T04:50:26.962728+00:00",
  "resumen": {
-  "amazon_mas_barato": 25,
-  "dudoso": 8,
-  "no_esta": 19,
-  "oferta_real": 24,
+  "amazon_mas_barato": 23,
+  "dudoso": 7,
+  "no_esta": 16,
+  "oferta_real": 18,
   "pvpr_inflado": 2,
   "sin_precio": 3
  },
- "updated": "2026-11-15T10:35:39.916250+00:00"
+ "updated": "2026-11-15T11:10:43.114079+00:00"
 }

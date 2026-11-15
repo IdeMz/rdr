@@ -8,7 +8,7 @@
   "Auriculares": "2026-11-14T08:10:40.297090+00:00",
   "Cafeteras": "2026-11-14T14:40:41.311125+00:00",
   "Café y cápsulas": "2026-11-14T16:45:37.700799+00:00",
-  "Cargadores y baterías": "2026-11-13T21:15:42.495405+00:00",
+  "Cargadores y baterías": "2026-11-15T11:10:43.114079+00:00",
   "Ciclismo": "2026-11-14T21:35:30.640432+00:00",
   "Climatización": "2026-11-14T11:05:31.708608+00:00",
   "Colchones y almohadas": "2026-11-13T08:45:39.815574+00:00",
@@ -21,7 +21,7 @@
   "Gatos": "2026-11-14T18:30:55.099025+00:00",
   "Herramientas": "2026-11-14T21:01:00.449874+00:00",
   "Iluminación": "2026-11-13T20:05:35.325047+00:00",
-  "Jardín": "2026-11-14T09:20:40.743974+00:00",
+  "Jardín": "2026-11-15T11:10:43.114079+00:00",
   "Lego": "2026-11-13T07:35:36.489438+00:00",
   "Menaje de cocina": "2026-11-15T09:25:34.345588+00:00",
   "Mochilas y maletas": "2026-11-15T07:40:45.992760+00:00",
@@ -36,12 +36,12 @@
   "Robots de cocina": "2026-11-14T19:45:46.808036+00:00",
   "Smartwatch": "2026-11-14T14:01:05.199813+00:00",
   "Suplementos": "2026-11-13T10:31:00.804242+00:00",
-  "Tablets": "2026-11-12T21:55:34.077440+00:00",
+  "Tablets": "2026-11-15T11:10:43.114079+00:00",
   "Televisores": "2026-11-11T20:15:41.209092+00:00",
   "Videojuegos": "2026-11-13T21:50:42.988192+00:00",
   "Zapatillas": "2026-11-15T10:01:03.183163+00:00"
  },
- "next_at": "2026-11-15T11:10:29.580941+00:00",
+ "next_at": "2026-11-15T11:45:06.371852+00:00",
  "offer": {
   "a": "B0CBMVQQSK",
   "m": 247,
@@ -1552,6 +1552,17 @@
    "title": "BaByliss Smooth Finish 1200 – Cepillo de Aire Caliente 4-en-1 para Secar, Alisar, Dar Volumen y Moldear, Tecnología Iónica & Cerámica, 4 Accesorios, 1200W, Negro/Rosa, AS122E",
    "v": []
   },
+  "B0DFLGW8MF": {
+   "c": "Cargadores y baterías",
+   "d": 23,
+   "e": "🔌",
+   "m": 310,
+   "p": 23.13,
+   "s": "ofertas",
+   "t": "2026-11-15T11:11:55.893019+00:00",
+   "title": "INIU Power Bank, Pequeño 45W Carga Rápida 10000mAh USB C Bateria Externa",
+   "v": []
+  },
   "B0DFY4ZZPX": {
    "c": "Suplementos",
    "d": 10,
@@ -2598,6 +2609,14 @@
    "t": "2026-11-15T08:15:36.859375+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B07YSTGP17": {
+   "t": "2026-11-15T11:10:43.114079+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B07Z6N28RD": {
+   "t": "2026-11-15T11:10:43.114079+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0815BLCJL": {
    "t": "2026-11-14T19:45:46.808036+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2694,6 +2713,14 @@
    "t": "2026-11-15T08:15:36.859375+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0G14W2ZWW": {
+   "t": "2026-11-15T11:10:43.114079+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0GWHQQJ56": {
+   "t": "2026-11-15T11:10:43.114079+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0GXBNBQYL": {
    "t": "2026-11-15T08:50:40.530842+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2725,6 +2752,18 @@
  },
  "reserve": [
   {
+   "a": "B0F66LNB8D",
+   "c": "Cargadores y baterías",
+   "e": "🔌",
+   "img": "https://m.media-amazon.com/images/I/61ilxnLyWiL._AC_UL320_.jpg",
+   "n": 1700,
+   "op": 199.99,
+   "p": 159.99,
+   "r": 4.6,
+   "t": "2026-11-15T11:10:43.114079+00:00",
+   "title": "Anker Prime Power Bank 26.250 mAh, 300 W, 3 Puertos"
+  },
+  {
    "a": "B0FYH71H42",
    "c": "Freidoras de aire",
    "e": "🍟",
@@ -2735,24 +2774,12 @@
    "r": 4.7,
    "t": "2026-11-15T08:50:40.530842+00:00",
    "title": "Ninja, Freidora de Aire de 4,7L, Monocajón, 3 en 1, Digital, Negra"
-  },
-  {
-   "a": "B0DZHC2747",
-   "c": "Mochilas y maletas",
-   "e": "🎒",
-   "img": "https://m.media-amazon.com/images/I/71B6SfD7BpL._AC_UL320_.jpg",
-   "n": 1400,
-   "op": 39.99,
-   "p": 30.95,
-   "r": 4.6,
-   "t": "2026-11-15T07:40:45.992760+00:00",
-   "title": "Mochila Cabina 55x40x20 Mochila Viaje Cabina Avion Maletas de Viaje Cabina"
   }
  ],
  "summary_day": "2026-11-14",
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-15",
-  "n": 7
+  "n": 8
  }
 }
