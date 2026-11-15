@@ -17,7 +17,7 @@
   "Cámaras de seguridad": "2026-11-14T17:20:46.627491+00:00",
   "Domótica": "2026-11-15T17:40:41.406854+00:00",
   "Fitness en casa": "2026-11-15T12:15:40.152691+00:00",
-  "Freidoras de aire": "2026-11-15T08:50:40.530842+00:00",
+  "Freidoras de aire": "2026-11-15T20:15:42.147336+00:00",
   "Gatos": "2026-11-14T18:30:55.099025+00:00",
   "Herramientas": "2026-11-14T21:01:00.449874+00:00",
   "Iluminación": "2026-11-15T11:45:37.493065+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-15T12:15:40.152691+00:00",
   "Zapatillas": "2026-11-15T10:01:03.183163+00:00"
  },
- "next_at": "2026-11-15T20:11:00.850803+00:00",
+ "next_at": "2026-11-15T20:47:13.757335+00:00",
  "offer": {
   "a": "B01EG0DJNE",
   "m": 275,
@@ -2406,11 +2406,13 @@
   },
   "B0GSS73FLQ": {
    "c": "Freidoras de aire",
-   "d": 27,
+   "d": 37,
    "e": "🍟",
-   "m": 166,
-   "p": 109.0,
-   "t": "2026-11-09T15:11:11.756515+00:00",
+   "m": 324,
+   "p": 94.99,
+   "pa": 109.0,
+   "s": "ambas",
+   "t": "2026-11-15T20:16:16.270800+00:00",
    "title": "Ninja MAX PRO, Freidora de Aire sin Aceite, 6,2L, Piedra/Dorado",
    "v": []
   },
@@ -2746,10 +2748,7 @@
    "v": []
   }
  },
- "problem": {
-  "fails": 2,
-  "last": "HTTP 503"
- },
+ "problem": {},
  "rejected": {
   "B009T6QA2S": {
    "t": "2026-11-15T12:15:40.152691+00:00",
@@ -2922,6 +2921,18 @@
  },
  "reserve": [
   {
+   "a": "B0FYH71H42",
+   "c": "Freidoras de aire",
+   "e": "🍟",
+   "img": "https://m.media-amazon.com/images/I/51riuZmyM1L._AC_UL320_.jpg",
+   "n": 361,
+   "op": 99.99,
+   "p": 69.99,
+   "r": 4.7,
+   "t": "2026-11-15T20:15:42.147336+00:00",
+   "title": "Ninja, Freidora de Aire de 4,7L, Monocajón, 3 en 1, Digital, Negra"
+  },
+  {
    "a": "B01EG0DJNE",
    "c": "Afeitado y depilación",
    "e": "🪒",
@@ -2944,24 +2955,12 @@
    "r": 4.2,
    "t": "2026-11-15T17:40:41.406854+00:00",
    "title": "Bombilla Inteligente WiFi E27 RGB LED 10W 16 Millones De Colores DIY"
-  },
-  {
-   "a": "B0CPJRRCPS",
-   "c": "Periféricos",
-   "e": "⌨️",
-   "img": "https://m.media-amazon.com/images/I/71peucE8I0L._AC_UL320_.jpg",
-   "n": 662,
-   "op": 24.99,
-   "p": 19.89,
-   "r": 4.2,
-   "t": "2026-11-15T16:30:50.777266+00:00",
-   "title": "Trust Ymo II Pack Teclado y Ratón Inalámbrico QWERTY Español, Negro"
   }
  ],
  "summary_day": "2026-11-14",
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-15",
-  "n": 21
+  "n": 22
  }
 }

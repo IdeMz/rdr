@@ -1851,11 +1851,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "SaveFamily Slim 4G Negro 1,28 pulgadas IPS GPS IP67 Smartwatch para niños",
-   "pista": "2188389 bytes; 6 a-price; caja de precio; disponibilidad: No disponible.; sin vendedor destacado",
+   "pista": "2336516 bytes; 17 a-price; caja de precio; disponibilidad: No disponible.; sin vendedor destacado",
    "pp_drop": 25,
    "pp_median": 118.96,
    "pp_price": 88.95,
-   "t": "2026-11-15T14:01:02.981281+00:00",
+   "t": "2026-11-15T20:15:42.147336+00:00",
    "veredicto": "sin_precio"
   },
   "45570747758": {
@@ -3161,19 +3161,19 @@
    "ahorro_vs_amazon": 2,
    "amz_low30": null,
    "amz_median": 259.9,
-   "amz_price": 239.0,
+   "amz_price": 239.89,
    "amz_title": "ASUS ROG Strix 1000W Platinum - Fuente de Alimentación",
    "asin": "B0DZPCGF7T",
    "disponible": true,
    "ean": "4711387835517",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "Amazon 239.00 frente a 253.95",
+   "motivo": "Amazon 239.89 frente a 253.95",
    "name": "ASUS ROG Strix 1000P White Edition 1000W 80 Plus Platinum modular Fuente de alimentación",
-   "pp_drop": 21,
-   "pp_median": 322.21,
+   "pp_drop": 12,
+   "pp_median": 288.95,
    "pp_price": 253.95,
-   "t": "2026-11-13T20:05:35.325047+00:00",
+   "t": "2026-11-15T20:15:42.147336+00:00",
    "veredicto": "amazon_mas_barato"
   },
   "46599139733": {
@@ -3951,5 +3951,5 @@
   "pvpr_inflado": 1,
   "sin_precio": 6
  },
- "updated": "2026-11-15T19:15:39.725060+00:00"
+ "updated": "2026-11-15T20:15:42.147336+00:00"
 }
