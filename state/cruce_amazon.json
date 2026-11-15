@@ -442,6 +442,12 @@
    "title": "MSI Gaming RTX 5070 Ti 16G Gaming Trio OC Tarjeta gráfica (16 GB GDDR7, 256 bits, rendimiento extremo: 2580, DisplayPort x 3 2.1a, HDMI 2.1b, NVIDIA Blackwell A",
    "via": "nombre"
   },
+  "4711377335744": {
+   "a": "B0F11KQQF4",
+   "t": "2026-11-15T15:50:40.820191+00:00",
+   "title": "MSI Gaming RTX 5070 Ti 16G Gaming Trio OC Tarjeta gráfica (16 GB GDDR7, 256 bits, rendimiento extremo: 2580, DisplayPort x 3 2.1a, HDMI 2.1b, NVIDIA Blackwell A",
+   "via": "nombre"
+  },
   "4711377344272": {
    "a": "B0F4LQ216W",
    "t": "2026-11-14T18:30:55.099025+00:00",
@@ -1311,11 +1317,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Shokz OpenFit Air Rosa Open-Ear Bluetooth 5.2 IP54 Multipunto Auriculares inalámbricos",
-   "pista": "1870562 bytes; 11 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1882810 bytes; 11 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 19,
    "pp_median": 78.95,
    "pp_price": 63.95,
-   "t": "2026-11-15T08:50:40.530842+00:00",
+   "t": "2026-11-15T15:50:40.820191+00:00",
    "veredicto": "sin_precio"
   },
   "40167730445": {
@@ -2843,6 +2849,25 @@
     ]
    }
   },
+  "46247661177": {
+   "ahorro_vs_amazon": 38,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 1599.75,
+   "amz_title": "MSI Gaming RTX 5070 Ti 16G Gaming Trio OC Tarjeta gráfica (16 GB GDDR7, 256 bits, rendimiento extremo: 2580, DisplayPort x 3 2.1a, HDMI 2.1b, NVIDIA Blackwell A",
+   "asin": "B0F11KQQF4",
+   "disponible": true,
+   "ean": "4711377335744",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "38 % por debajo del habitual en Amazon (1599.75)",
+   "name": "MSI GeForce RTX 5060 Ti Gaming Trio OC White 16GB GDDR7 3 ventiladores HDMI 2.1 3 DisplayPort Tarjeta gráfica",
+   "pp_drop": 12,
+   "pp_median": 1132.95,
+   "pp_price": 994.95,
+   "t": "2026-11-15T15:50:40.820191+00:00",
+   "veredicto": "oferta_real"
+  },
   "46247661211": {
    "ahorro_vs_amazon": -70,
    "amz_low30": null,
@@ -3835,9 +3860,9 @@
   "amazon_mas_barato": 24,
   "dudoso": 7,
   "no_esta": 18,
-  "oferta_real": 20,
+  "oferta_real": 21,
   "pvpr_inflado": 1,
   "sin_precio": 6
  },
- "updated": "2026-11-15T15:15:41.208340+00:00"
+ "updated": "2026-11-15T15:50:40.820191+00:00"
 }

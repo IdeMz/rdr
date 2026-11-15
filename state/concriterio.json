@@ -34,14 +34,14 @@
   "Portátiles": "2026-11-14T19:45:46.808036+00:00",
   "Relojes": "2026-11-15T14:01:02.981281+00:00",
   "Robots de cocina": "2026-11-15T15:15:41.208340+00:00",
-  "Smartwatch": "2026-11-14T14:01:05.199813+00:00",
+  "Smartwatch": "2026-11-15T15:50:40.820191+00:00",
   "Suplementos": "2026-11-15T13:25:30.562134+00:00",
   "Tablets": "2026-11-15T11:10:43.114079+00:00",
   "Televisores": "2026-11-11T20:15:41.209092+00:00",
   "Videojuegos": "2026-11-15T12:15:40.152691+00:00",
   "Zapatillas": "2026-11-15T10:01:03.183163+00:00"
  },
- "next_at": "2026-11-15T15:45:42.232384+00:00",
+ "next_at": "2026-11-15T16:25:31.384717+00:00",
  "offer": {
   "a": "B0CBMVQQSK",
   "m": 247,
@@ -2586,6 +2586,17 @@
    "title": "Taladro Atornillador Batería, LEEIKOO Atornillador Electrico 21V, 42N.m con 2 Baterías 2.0Ah, 18+1 Ajuste de Par, 2 Velocidad, LED Luz, 14 Accesorios Para Hogar, Bricolaje, Gris",
    "v": []
   },
+  "B0H75TB7ZC": {
+   "c": "Smartwatch",
+   "d": 19,
+   "e": "⌚",
+   "m": 318,
+   "p": 32.58,
+   "s": "ofertas",
+   "t": "2026-11-15T15:51:21.968973+00:00",
+   "title": "Reloj Inteligente Hombre con Llamadas con Linterna y Brújula, 960mAh Batería 1.45\" Militar Smartwatch Hombre con,123 Modos Deporte,Monitor Cardíaco 24h/SpO2/Sueño,Podómetro,IP68,2Correas(iOS/Android)",
+   "v": []
+  },
   "B0H7WSYTSX": {
    "c": "Relojes",
    "d": 25,
@@ -2758,6 +2769,10 @@
    "t": "2026-11-15T15:15:41.208340+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0DY1P85GK": {
+   "t": "2026-11-15T15:50:40.820191+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0DY8V59LY": {
    "t": "2026-11-14T20:20:37.410274+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2826,6 +2841,10 @@
    "t": "2026-11-15T08:50:40.530842+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0GZSS216X": {
+   "t": "2026-11-15T15:50:40.820191+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0H1Q36TTN": {
    "t": "2026-11-15T09:25:34.345588+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2873,6 +2892,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-15",
-  "n": 15
+  "n": 16
  }
 }
