@@ -1800,23 +1800,24 @@
    "veredicto": "amazon_mas_barato"
   },
   "45570747232": {
-   "ahorro_vs_amazon": 0,
+   "ahorro_vs_amazon": null,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 89.0,
+   "amz_price": null,
    "amz_title": "SaveFamily Slim 4G | Reloj Inteligente Niño/a con Localizador GPS",
    "asin": "B09YS5DTK4",
-   "disponible": true,
+   "disponible": false,
    "ean": "8425402875179",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "Amazon 89.00 frente a 88.95",
+   "motivo": "en Amazon pero sin precio o no disponible",
    "name": "SaveFamily Slim 4G Negro 1,28 pulgadas IPS GPS IP67 Smartwatch para niños",
-   "pp_drop": 39,
-   "pp_median": 145.95,
+   "pista": "2188389 bytes; 6 a-price; caja de precio; disponibilidad: No disponible.; sin vendedor destacado",
+   "pp_drop": 25,
+   "pp_median": 118.96,
    "pp_price": 88.95,
-   "t": "2026-11-13T13:25:30.604640+00:00",
-   "veredicto": "amazon_mas_barato"
+   "t": "2026-11-15T14:01:02.981281+00:00",
+   "veredicto": "sin_precio"
   },
   "45570747758": {
    "ean": "5901969445664",
@@ -1972,23 +1973,23 @@
    }
   },
   "45930203409": {
-   "ahorro_vs_amazon": 8,
+   "ahorro_vs_amazon": 12,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 598.99,
+   "amz_price": 629.9,
    "amz_title": "SANDISK Extreme SSD externo Portátil 4TB (Disco duro externo SSD con velodidad de lectura de hasta 1050 MB/s, 1000 MB/s de escritura, Clasificación IP65 de resi",
    "asin": "B08RX4QKXS",
    "disponible": true,
    "ean": "0619659184704",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "antes 746.95 en PowerPlanet, pero en Amazon suele estar a 598.99",
+   "motivo": "12 % por debajo del habitual en Amazon (629.90)",
    "name": "SanDisk Extreme Portable V2 4TB IP55 USB 3.2 Gen 2 1050MB/s SSD externo",
    "pp_drop": 26,
    "pp_median": 746.95,
    "pp_price": 552.95,
-   "t": "2026-11-13T14:01:00.760700+00:00",
-   "veredicto": "pvpr_inflado"
+   "t": "2026-11-15T14:01:02.981281+00:00",
+   "veredicto": "oferta_real"
   },
   "45948306665": {
    "ahorro_vs_amazon": 13,
@@ -3805,12 +3806,12 @@
  },
  "night_at": "2026-11-15T04:50:26.962728+00:00",
  "resumen": {
-  "amazon_mas_barato": 25,
+  "amazon_mas_barato": 24,
   "dudoso": 7,
   "no_esta": 18,
-  "oferta_real": 19,
-  "pvpr_inflado": 2,
-  "sin_precio": 4
+  "oferta_real": 20,
+  "pvpr_inflado": 1,
+  "sin_precio": 5
  },
- "updated": "2026-11-15T13:25:30.562134+00:00"
+ "updated": "2026-11-15T14:01:02.981281+00:00"
 }
