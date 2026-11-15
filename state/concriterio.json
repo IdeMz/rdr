@@ -25,7 +25,7 @@
   "Lego": "2026-11-15T15:15:41.208340+00:00",
   "Menaje de cocina": "2026-11-15T09:25:34.345588+00:00",
   "Mochilas y maletas": "2026-11-15T07:40:45.992760+00:00",
-  "Monitores": "2026-11-15T08:50:40.530842+00:00",
+  "Monitores": "2026-11-15T19:15:39.725060+00:00",
   "Móviles": "2026-11-14T19:45:46.808036+00:00",
   "Nutrición deportiva": "2026-11-14T11:40:39.802795+00:00",
   "Perfumes": "2026-11-14T12:50:38.841046+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-15T12:15:40.152691+00:00",
   "Zapatillas": "2026-11-15T10:01:03.183163+00:00"
  },
- "next_at": "2026-11-15T19:15:30.557190+00:00",
+ "next_at": "2026-11-15T19:49:51.044488+00:00",
  "offer": {
   "a": "B0CBMVQQSK",
   "m": 247,
@@ -1860,6 +1860,17 @@
    "title": "dreame L40 Ultra Ae Robot Aspirador, 19,000 Pa de Succión, Cepillo TriCut",
    "v": []
   },
+  "B0F5BTWP9T": {
+   "c": "Monitores",
+   "d": 34,
+   "e": "🖥️",
+   "m": 323,
+   "p": 228.95,
+   "s": "ofertas",
+   "t": "2026-11-15T19:16:16.104317+00:00",
+   "title": "AOC U27G4R Gaming Monitor 27 Pulgadas, Dual Mode Panel Fast IPS, 1ms GtG, HDR400, Adaptive Sync, G-Sync Comp., Altura Ajustable, (3840x2160@160Hz; 1920x1080@320Hz HDMI 2X 2.1 DP 1x 1.4 USB Hub) Negro",
+   "v": []
+  },
   "B0F6TYQT12": {
    "c": "Cargadores y baterías",
    "d": 32,
@@ -2735,10 +2746,7 @@
    "v": []
   }
  },
- "problem": {
-  "fails": 1,
-  "last": "HTTP 503"
- },
+ "problem": {},
  "rejected": {
   "B009T6QA2S": {
    "t": "2026-11-15T12:15:40.152691+00:00",
@@ -2963,6 +2971,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-15",
-  "n": 20
+  "n": 21
  }
 }
