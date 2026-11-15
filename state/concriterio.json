@@ -17,7 +17,7 @@
   "Cámaras de seguridad": "2026-11-14T17:20:46.627491+00:00",
   "Domótica": "2026-11-14T09:55:29.061293+00:00",
   "Fitness en casa": "2026-11-14T10:30:50.359175+00:00",
-  "Freidoras de aire": "2026-11-13T16:35:32.960175+00:00",
+  "Freidoras de aire": "2026-11-15T08:50:40.530842+00:00",
   "Gatos": "2026-11-14T18:30:55.099025+00:00",
   "Herramientas": "2026-11-14T21:01:00.449874+00:00",
   "Iluminación": "2026-11-13T20:05:35.325047+00:00",
@@ -25,7 +25,7 @@
   "Lego": "2026-11-13T07:35:36.489438+00:00",
   "Menaje de cocina": "2026-11-14T12:15:37.671280+00:00",
   "Mochilas y maletas": "2026-11-15T07:40:45.992760+00:00",
-  "Monitores": "2026-11-14T07:35:33.414859+00:00",
+  "Monitores": "2026-11-15T08:50:40.530842+00:00",
   "Móviles": "2026-11-14T19:45:46.808036+00:00",
   "Nutrición deportiva": "2026-11-14T11:40:39.802795+00:00",
   "Perfumes": "2026-11-14T12:50:38.841046+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-13T21:50:42.988192+00:00",
   "Zapatillas": "2026-11-13T19:20:42.278458+00:00"
  },
- "next_at": "2026-11-15T08:50:14.057108+00:00",
+ "next_at": "2026-11-15T09:21:21.913047+00:00",
  "offer": {
   "a": "B0CBMVQQSK",
   "m": 247,
@@ -698,6 +698,17 @@
    "s": "busqueda",
    "t": "2026-11-14T12:16:15.569594+00:00",
    "title": "San Ignacio Bateria 5pcs Acero Inoxidable: cazo Ø16x7,5 Cacerolas de Ø18x8,5 y Ø20x9,5 cms, inducción, colección Cassel, 5 Piezas",
+   "v": []
+  },
+  "B08SR2VJG1": {
+   "c": "Freidoras de aire",
+   "d": 31,
+   "e": "🍟",
+   "m": 306,
+   "p": 32.29,
+   "s": "busqueda",
+   "t": "2026-11-15T08:51:59.835954+00:00",
+   "title": "Instant Pot Vortex 4 en 1 Freidora de Aire Digital Antiadherente con Temporizador y Función de Horno y Calentador, 1.700 W – 5,7 L",
    "v": []
   },
   "B08WC4V1PK": {
@@ -2570,12 +2581,16 @@
    "t": "2026-11-14T14:40:41.311125+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0CTKJKZRT": {
-   "t": "2026-11-14T08:45:50.370542+00:00",
+  "B0CWP7M17B": {
+   "t": "2026-11-15T08:50:40.530842+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0D5H7ZXRJ": {
    "t": "2026-11-14T21:35:30.640432+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0DF84JPCW": {
+   "t": "2026-11-15T08:50:40.530842+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0DGL75TNW": {
@@ -2594,12 +2609,20 @@
    "t": "2026-11-15T08:15:36.859375+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0F66TD5ZC": {
+   "t": "2026-11-15T08:50:40.530842+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0FGJTVH91": {
    "t": "2026-11-15T08:15:36.859375+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0FL2JGPYH": {
    "t": "2026-11-14T20:20:37.410274+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0FL32LSR5": {
+   "t": "2026-11-15T08:50:40.530842+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0FMGXH38Q": {
@@ -2610,8 +2633,20 @@
    "t": "2026-11-14T12:15:37.671280+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0FWCLJ51V": {
+   "t": "2026-11-15T08:50:40.530842+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0FWCTL8CW": {
+   "t": "2026-11-15T08:50:40.530842+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0FZT1XB5L": {
    "t": "2026-11-15T08:15:36.859375+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0GXBNBQYL": {
+   "t": "2026-11-15T08:50:40.530842+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0H5KDLK7M": {
@@ -2636,6 +2671,18 @@
   }
  },
  "reserve": [
+  {
+   "a": "B0FYH71H42",
+   "c": "Freidoras de aire",
+   "e": "🍟",
+   "img": "https://m.media-amazon.com/images/I/51riuZmyM1L._AC_UL320_.jpg",
+   "n": 360,
+   "op": 99.99,
+   "p": 69.99,
+   "r": 4.7,
+   "t": "2026-11-15T08:50:40.530842+00:00",
+   "title": "Ninja, Freidora de Aire de 4,7L, Monocajón, 3 en 1, Digital, Negra"
+  },
   {
    "a": "B0DZHC2747",
    "c": "Mochilas y maletas",
@@ -2665,6 +2712,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-15",
-  "n": 3
+  "n": 4
  }
 }
