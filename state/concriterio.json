@@ -15,7 +15,7 @@
   "Cuidado de la piel": "2026-11-15T12:50:40.627443+00:00",
   "Cuidado del cabello": "2026-11-13T21:50:42.988192+00:00",
   "Cámaras de seguridad": "2026-11-14T17:20:46.627491+00:00",
-  "Domótica": "2026-11-14T09:55:29.061293+00:00",
+  "Domótica": "2026-11-15T17:40:41.406854+00:00",
   "Fitness en casa": "2026-11-15T12:15:40.152691+00:00",
   "Freidoras de aire": "2026-11-15T08:50:40.530842+00:00",
   "Gatos": "2026-11-14T18:30:55.099025+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-15T12:15:40.152691+00:00",
   "Zapatillas": "2026-11-15T10:01:03.183163+00:00"
  },
- "next_at": "2026-11-15T17:36:02.561122+00:00",
+ "next_at": "2026-11-15T18:12:42.315618+00:00",
  "offer": {
   "a": "B0CBMVQQSK",
   "m": 247,
@@ -2027,6 +2027,17 @@
    "title": "dreame L10s Ultra Gen 3 Kit Robot Aspirador y Fregasuelos, Succión 25.000Pa",
    "v": []
   },
+  "B0FNRQQTZR": {
+   "c": "Domótica",
+   "d": 29,
+   "e": "💡",
+   "m": 321,
+   "p": 9.99,
+   "s": "ambas",
+   "t": "2026-11-15T17:41:22.235825+00:00",
+   "title": "Tapo L430P-Bombilla inteligente WiFi, 16 millones de colores, regulable,E27",
+   "v": []
+  },
   "B0FNWFTJKQ": {
    "c": "Aspiradoras",
    "d": 55,
@@ -2894,6 +2905,18 @@
  },
  "reserve": [
   {
+   "a": "B0D7Z4M3JK",
+   "c": "Domótica",
+   "e": "💡",
+   "img": "https://m.media-amazon.com/images/I/81Ig64zvhsL._AC_UL320_.jpg",
+   "n": 380,
+   "op": 26.59,
+   "p": 22.6,
+   "r": 4.2,
+   "t": "2026-11-15T17:40:41.406854+00:00",
+   "title": "Bombilla Inteligente WiFi E27 RGB LED 10W 16 Millones De Colores DIY"
+  },
+  {
    "a": "B0CPJRRCPS",
    "c": "Periféricos",
    "e": "⌨️",
@@ -2916,24 +2939,12 @@
    "r": 4.3,
    "t": "2026-11-15T15:15:41.208340+00:00",
    "title": "Bosch - Procesador de alimentos, MultiTalent 3, 800 W, Blanco, MCM3100W"
-  },
-  {
-   "a": "B092DB8RFH",
-   "c": "Café y cápsulas",
-   "e": "🫘",
-   "img": "https://m.media-amazon.com/images/I/61T463siEqL._AC_UL320_.jpg",
-   "n": 2400,
-   "op": 26.15,
-   "p": 20.39,
-   "r": 4.4,
-   "t": "2026-11-15T14:40:39.424977+00:00",
-   "title": "Lavazza, Crema e Gusto Classico, Café en Grano Natural, 1 kg"
   }
  ],
  "summary_day": "2026-11-14",
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-15",
-  "n": 18
+  "n": 19
  }
 }

@@ -720,6 +720,12 @@
    "title": "SteelSeries Rival 3 Wireless Gen 2 - Raton Gaming - 2,4GHz y Bluetooth - Sensor óptico TrueMove Air de 18000 dpi - Durabilidad de 60 M de clics - Ligero - Desli",
    "via": "ean"
   },
+  "5715063357767": {
+   "a": "B0B57F78ST",
+   "t": "2026-11-15T17:40:41.406854+00:00",
+   "title": "HP LaserJet Tank MFP 1604w 381L0A, Impresora Láser A4 Multifunción con Deposito de Toner, Impresión a Doble Cara Manual, Copiadora y Escaner, Wi-Fi, Smart App, ",
+   "via": "nombre"
+  },
   "5901969445664": {
    "a": "",
    "t": "2026-11-14T00:20:27.018416+00:00",
@@ -3683,6 +3689,25 @@
    "t": "2026-11-14T19:45:46.808036+00:00",
    "veredicto": "oferta_real"
   },
+  "46599143782": {
+   "ahorro_vs_amazon": -20,
+   "amz_low30": null,
+   "amz_median": 234.99,
+   "amz_price": 183.92,
+   "amz_title": "HP LaserJet Tank MFP 1604w 381L0A, Impresora Láser A4 Multifunción con Deposito de Toner, Impresión a Doble Cara Manual, Copiadora y Escaner, Wi-Fi, Smart App, ",
+   "asin": "B0B57F78ST",
+   "disponible": true,
+   "ean": "5715063357767",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "Amazon 183.92 frente a 280.95",
+   "name": "HP LaserJet Tank 1604w monocromo WiFi 22ppm AirPrint Impresora",
+   "pp_drop": 11,
+   "pp_median": 313.95,
+   "pp_price": 280.95,
+   "t": "2026-11-15T17:40:41.406854+00:00",
+   "veredicto": "amazon_mas_barato"
+  },
   "46599143979": {
    "ahorro_vs_amazon": 6,
    "amz_low30": null,
@@ -3919,12 +3944,12 @@
  },
  "night_at": "2026-11-15T04:50:26.962728+00:00",
  "resumen": {
-  "amazon_mas_barato": 25,
+  "amazon_mas_barato": 26,
   "dudoso": 7,
   "no_esta": 19,
   "oferta_real": 21,
   "pvpr_inflado": 1,
   "sin_precio": 6
  },
- "updated": "2026-11-15T17:05:32.780345+00:00"
+ "updated": "2026-11-15T17:40:41.406854+00:00"
 }
