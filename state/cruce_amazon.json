@@ -442,6 +442,12 @@
    "title": "MSI Gaming RTX 5060 Ti 8G Ventus 2X OC Plus - Tarjeta gráfica (8 GB GDDR7, TBA-bit, Rendimiento Extremo: TBA MHz, DisplayPort x3 2.1a, HDMI 2.1b, NVIDIA Blackwe",
    "via": "nombre"
   },
+  "4711387754818": {
+   "a": "B0DJDFTS7R",
+   "t": "2026-11-15T12:50:40.627443+00:00",
+   "title": "ASUS Prime Z890-P WiFi - Placa Base ATX, 14+1+2+1 (80A) etapas de Potencia, DDR5, PCIe 5.0 Compatible con GPU de última generación, Puerto Thunderbolt 4 USB Tip",
+   "via": "ean"
+  },
   "4711387835517": {
    "a": "B0DZPCGF7T",
    "t": "2026-11-13T20:05:35.325047+00:00",
@@ -511,6 +517,12 @@
    "a": "B0BVLRFFWQ",
    "t": "2026-11-13T21:15:42.495405+00:00",
    "title": "Silicon Power 4TB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5\" 7mm (0.28\") Internal Solid State Drive",
+   "via": "nombre"
+  },
+  "4719331357559": {
+   "a": "B0DTGP2WMT",
+   "t": "2026-11-15T12:50:40.627443+00:00",
+   "title": "GIGABYTE GeForce RTX 5070 WINDFORCE OC SFF 12G Tarjeta Gráfica - 12GB GDDR7, 192 bits, PCI-E 5.0, 2542 MHz Core Clock, 3 x DP 2.1a, 1 x HDMI 2.1b, NVIDIA DLSS 4",
    "via": "nombre"
   },
   "4894461955711": {
@@ -2963,6 +2975,25 @@
     ]
    }
   },
+  "46599139519": {
+   "ahorro_vs_amazon": 0,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 230.8,
+   "amz_title": "ASUS Prime Z890-P WiFi - Placa Base ATX, 14+1+2+1 (80A) etapas de Potencia, DDR5, PCIe 5.0 Compatible con GPU de última generación, Puerto Thunderbolt 4 USB Tip",
+   "asin": "B0DJDFTS7R",
+   "disponible": true,
+   "ean": "4711387754818",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 230.80 frente a 231.94",
+   "name": "ASUS PRIME Z890-P Intel Z890 LGA 1851 DDR5 ATX WiFi 7 4 ranuras M.2 Placa base",
+   "pp_drop": 17,
+   "pp_median": 280.95,
+   "pp_price": 231.94,
+   "t": "2026-11-15T12:50:40.627443+00:00",
+   "veredicto": "amazon_mas_barato"
+  },
   "46599139558": {
    "ahorro_vs_amazon": 2,
    "amz_low30": null,
@@ -3574,6 +3605,25 @@
    "t": "2026-11-14T17:55:30.798523+00:00",
    "veredicto": "oferta_real"
   },
+  "46693747321": {
+   "ahorro_vs_amazon": -35,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 959.0,
+   "amz_title": "GIGABYTE GeForce RTX 5070 WINDFORCE OC SFF 12G Tarjeta Gráfica - 12GB GDDR7, 192 bits, PCI-E 5.0, 2542 MHz Core Clock, 3 x DP 2.1a, 1 x HDMI 2.1b, NVIDIA DLSS 4",
+   "asin": "B0DTGP2WMT",
+   "disponible": true,
+   "ean": "4719331357559",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "Amazon 959.00 frente a 1289.94",
+   "name": "Gigabyte AORUS GeForce RTX 5070 INFINITY 12GB GDDR7 3 ventiladores HDMI 2.1 3 DisplayPort Tarjeta gráfica",
+   "pp_drop": 13,
+   "pp_median": 1486.94,
+   "pp_price": 1289.94,
+   "t": "2026-11-15T12:50:40.627443+00:00",
+   "veredicto": "amazon_mas_barato"
+  },
   "46693747636": {
    "ean": "8004399141612",
    "lista": "candidates",
@@ -3693,12 +3743,12 @@
  },
  "night_at": "2026-11-15T04:50:26.962728+00:00",
  "resumen": {
-  "amazon_mas_barato": 23,
+  "amazon_mas_barato": 25,
   "dudoso": 7,
   "no_esta": 17,
   "oferta_real": 18,
   "pvpr_inflado": 2,
   "sin_precio": 4
  },
- "updated": "2026-11-15T12:15:40.152691+00:00"
+ "updated": "2026-11-15T12:50:40.627443+00:00"
 }

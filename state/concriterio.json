@@ -12,7 +12,7 @@
   "Ciclismo": "2026-11-14T21:35:30.640432+00:00",
   "Climatización": "2026-11-14T11:05:31.708608+00:00",
   "Colchones y almohadas": "2026-11-13T08:45:39.815574+00:00",
-  "Cuidado de la piel": "2026-11-13T14:35:34.102055+00:00",
+  "Cuidado de la piel": "2026-11-15T12:50:40.627443+00:00",
   "Cuidado del cabello": "2026-11-13T21:50:42.988192+00:00",
   "Cámaras de seguridad": "2026-11-14T17:20:46.627491+00:00",
   "Domótica": "2026-11-14T09:55:29.061293+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-15T12:15:40.152691+00:00",
   "Zapatillas": "2026-11-15T10:01:03.183163+00:00"
  },
- "next_at": "2026-11-15T12:50:15.563074+00:00",
+ "next_at": "2026-11-15T13:22:00.129414+00:00",
  "offer": {
   "a": "B0CBMVQQSK",
   "m": 247,
@@ -731,6 +731,17 @@
    "s": "busqueda",
    "t": "2026-11-14T12:16:15.569594+00:00",
    "title": "San Ignacio Bateria 5pcs Acero Inoxidable: cazo Ø16x7,5 Cacerolas de Ø18x8,5 y Ø20x9,5 cms, inducción, colección Cassel, 5 Piezas",
+   "v": []
+  },
+  "B08RZZVKNZ": {
+   "c": "Cuidado de la piel",
+   "d": 55,
+   "e": "🧴",
+   "m": 313,
+   "p": 13.48,
+   "s": "ambas",
+   "t": "2026-11-15T12:51:08.771987+00:00",
+   "title": "Olay Regenerist Sérum Facial Reafirmante con Niacinamida, 50ml",
    "v": []
   },
   "B08SR2VJG1": {
@@ -2822,6 +2833,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-15",
-  "n": 10
+  "n": 11
  }
 }
