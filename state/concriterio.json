@@ -35,13 +35,13 @@
   "Relojes": "2026-11-13T15:10:54.425531+00:00",
   "Robots de cocina": "2026-11-14T19:45:46.808036+00:00",
   "Smartwatch": "2026-11-14T14:01:05.199813+00:00",
-  "Suplementos": "2026-11-13T10:31:00.804242+00:00",
+  "Suplementos": "2026-11-15T13:25:30.562134+00:00",
   "Tablets": "2026-11-15T11:10:43.114079+00:00",
   "Televisores": "2026-11-11T20:15:41.209092+00:00",
   "Videojuegos": "2026-11-15T12:15:40.152691+00:00",
   "Zapatillas": "2026-11-15T10:01:03.183163+00:00"
  },
- "next_at": "2026-11-15T13:22:00.129414+00:00",
+ "next_at": "2026-11-15T13:58:54.443187+00:00",
  "offer": {
   "a": "B0CBMVQQSK",
   "m": 247,
@@ -331,6 +331,17 @@
    "p": 25.03,
    "t": "2026-11-11T13:25:58.129727+00:00",
    "title": "Tassimo Cápsulas de Café Marcilla Largo| 80 Cápsulas Compatibles con Cafetera Tassimo - 5PACK - Amazon Exclusive",
+   "v": []
+  },
+  "B075RCPZ3P": {
+   "c": "Suplementos",
+   "d": 40,
+   "e": "💊",
+   "m": 314,
+   "p": 11.99,
+   "s": "ambas",
+   "t": "2026-11-15T13:25:58.776986+00:00",
+   "title": "Multivitaminas y Minerales - 450 Comprimidos (Paquete XL) - Todas las Vitaminas A,B,C,D3,E, Calcio, Zinc, Selenio – Multivitaminico Activo Completo para Hombre y Mujer, Perfecto para compartir",
    "v": []
   },
   "B0797LMGXH": {
@@ -2833,6 +2844,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-15",
-  "n": 11
+  "n": 12
  }
 }

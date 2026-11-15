@@ -400,6 +400,12 @@
    "title": "instax Square Link. Impresora para teléfonos, Color Blanco. & Fujifilm Square Black, película instantanea, 10 Fotos",
    "via": "ean"
   },
+  "4710562245769": {
+   "a": "B0H41J37CR",
+   "t": "2026-11-15T13:25:30.562134+00:00",
+   "title": "Palit GeForce RTX 5080 Infinity 3 (16GB GDDR7/PCI Express 5.0/2617MHz/30000MHz)",
+   "via": "ean"
+  },
   "4710562245783": {
    "a": "B0H7XR3NMW",
    "t": "2026-11-14T17:20:46.627491+00:00",
@@ -990,6 +996,21 @@
    "t": "2026-11-14T22:50:36.785672+00:00",
    "title": "Braun MultiGrill 7 CG 7040, Plancha Cocina Eléctrica con Control Electrónico, 2 Termostatos Independientes, 3 Posiciones de Cocción, Placas Lavables en Lavavaji",
    "via": "ean"
+  },
+  "810050911702": {
+   "a": "",
+   "t": "2026-11-15T13:25:30.562134+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "HORI Wireless Racing Wheel Apex for Playstation 5, PlayStation 4 and Windows 11/10"
+    ],
+    "nombre": [
+     "HORI Wireless Racing Wheel Apex for Playstation 5, PlayStation 4 and Windows 11/10",
+     "Logitech G G29 SE Driving Force, Volante de Carreras PS5, PS4 y PC, Negro",
+     "Wheel Stand Pro Hori Deluxe V2"
+    ]
+   }
   },
   "840006666493": {
    "a": "B0CP6BWBF5",
@@ -1838,6 +1859,25 @@
    "t": "2026-11-14T17:20:46.627491+00:00",
    "veredicto": "oferta_real"
   },
+  "45626822190": {
+   "ahorro_vs_amazon": 16,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 2393.78,
+   "amz_title": "Palit GeForce RTX 5080 Infinity 3 (16GB GDDR7/PCI Express 5.0/2617MHz/30000MHz)",
+   "asin": "B0H41J37CR",
+   "disponible": true,
+   "ean": "4710562245769",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "16 % por debajo del habitual en Amazon (2393.78)",
+   "name": "Palit GeForce RTX 5080 Infinity 3 16GB GDDR7 Tarjeta gráfica",
+   "pp_drop": 12,
+   "pp_median": 2285.94,
+   "pp_price": 2011.95,
+   "t": "2026-11-15T13:25:30.562134+00:00",
+   "veredicto": "oferta_real"
+  },
   "45626822202": {
    "ean": "6959422615818",
    "lista": "candidates",
@@ -2139,6 +2179,28 @@
    "pp_price": 362.95,
    "t": "2026-11-14T14:01:05.199813+00:00",
    "veredicto": "oferta_real"
+  },
+  "45956992056": {
+   "ean": "810050911702",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "HORI Wireless Racing Wheel Apex PS5/PS4/PC Pedales incluidos Volante",
+   "pp_drop": 17,
+   "pp_median": 211.96,
+   "pp_price": 174.95,
+   "t": "2026-11-15T13:25:30.562134+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "HORI Wireless Racing Wheel Apex for Playstation 5, PlayStation 4 and Windows 11/10"
+    ],
+    "nombre": [
+     "HORI Wireless Racing Wheel Apex for Playstation 5, PlayStation 4 and Windows 11/10",
+     "Logitech G G29 SE Driving Force, Volante de Carreras PS5, PS4 y PC, Negro",
+     "Wheel Stand Pro Hori Deluxe V2"
+    ]
+   }
   },
   "45956992353": {
    "ahorro_vs_amazon": -1,
@@ -3745,10 +3807,10 @@
  "resumen": {
   "amazon_mas_barato": 25,
   "dudoso": 7,
-  "no_esta": 17,
-  "oferta_real": 18,
+  "no_esta": 18,
+  "oferta_real": 19,
   "pvpr_inflado": 2,
   "sin_precio": 4
  },
- "updated": "2026-11-15T12:50:40.627443+00:00"
+ "updated": "2026-11-15T13:25:30.562134+00:00"
 }
