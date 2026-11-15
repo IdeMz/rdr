@@ -469,6 +469,12 @@
    "title": "ASUS ROG Keris II Origin - Ratón Gaming Inalámbrico Ergonómico - Blanco",
    "via": "ean"
   },
+  "4711394396216": {
+   "a": "B0H94XPBG6",
+   "t": "2026-11-15T01:50:27.381232+00:00",
+   "title": "Ducky Mecha Pro SF Teclado Mecánico Gaming 65% Aluminio RGB Switch MX Blue",
+   "via": "nombre"
+  },
   "4711474211033": {
    "a": "B077JYYQ7V",
    "t": "2026-11-14T08:10:40.297090+00:00",
@@ -1135,11 +1141,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Apple TV 4K 3ª Gen 128GB WiFi 6 Bluetooth 5.0 A15 Gigabit",
-   "pista": "1896210 bytes; 6 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1896413 bytes; 6 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 35,
    "pp_median": 650.96,
    "pp_price": 421.95,
-   "t": "2026-11-14T19:45:46.808036+00:00",
+   "t": "2026-11-15T01:50:27.381232+00:00",
    "veredicto": "sin_precio"
   },
   "38277783220": {
@@ -1858,6 +1864,25 @@
    "pp_price": 552.95,
    "t": "2026-11-13T14:01:00.760700+00:00",
    "veredicto": "pvpr_inflado"
+  },
+  "45948306665": {
+   "ahorro_vs_amazon": 13,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 62.9,
+   "amz_title": "Ducky Mecha Pro SF Teclado Mecánico Gaming 65% Aluminio RGB Switch MX Blue",
+   "asin": "B0H94XPBG6",
+   "disponible": true,
+   "ean": "4711394396216",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "13 % por debajo del habitual en Amazon (62.90)",
+   "name": "Ducky Mecha Pro SF RGB Cherry MX Negro Español 65% Teclado gaming mecánico",
+   "pp_drop": 15,
+   "pp_median": 64.95,
+   "pp_price": 54.98,
+   "t": "2026-11-15T01:50:27.381232+00:00",
+   "veredicto": "oferta_real"
   },
   "45948306671": {
    "ahorro_vs_amazon": -17,
@@ -3546,14 +3571,14 @@
    }
   }
  },
- "night_at": "2026-11-15T01:20:27.974236+00:00",
+ "night_at": "2026-11-15T01:50:27.381232+00:00",
  "resumen": {
   "amazon_mas_barato": 25,
   "dudoso": 8,
   "no_esta": 19,
-  "oferta_real": 23,
+  "oferta_real": 24,
   "pvpr_inflado": 2,
   "sin_precio": 3
  },
- "updated": "2026-11-15T01:20:27.974236+00:00"
+ "updated": "2026-11-15T01:50:27.381232+00:00"
 }
