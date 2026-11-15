@@ -3,7 +3,7 @@
   "Accesorios de coche": "2026-11-14T13:25:29.087955+00:00",
   "Afeitado y depilación": "2026-11-14T16:10:41.956036+00:00",
   "Almacenamiento": "2026-11-13T17:45:36.587944+00:00",
-  "Altavoces": "2026-11-14T07:01:07.663772+00:00",
+  "Altavoces": "2026-11-15T08:15:36.859375+00:00",
   "Aspiradoras": "2026-11-14T20:20:37.410274+00:00",
   "Auriculares": "2026-11-14T08:10:40.297090+00:00",
   "Cafeteras": "2026-11-14T14:40:41.311125+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-13T21:50:42.988192+00:00",
   "Zapatillas": "2026-11-13T19:20:42.278458+00:00"
  },
- "next_at": "2026-11-15T08:11:46.957631+00:00",
+ "next_at": "2026-11-15T08:50:14.057108+00:00",
  "offer": {
   "a": "B0CBMVQQSK",
   "m": 247,
@@ -1069,6 +1069,17 @@
    "p": 15.83,
    "t": "2026-11-08T14:01:31.780178+00:00",
    "title": "Gal Guardians: Demon Purge - PlayStation 5",
+   "v": []
+  },
+  "B0BWXM3RRK": {
+   "c": "Altavoces",
+   "d": 17,
+   "e": "🔊",
+   "m": 305,
+   "p": 99.99,
+   "s": "ofertas",
+   "t": "2026-11-15T08:16:27.292492+00:00",
+   "title": "Soundcore Motion X600 Altavoz Bluetooth Portátil Hi-Res 50W, IPX7(Negro)",
    "v": []
   },
   "B0BYT66JQG": {
@@ -2539,6 +2550,10 @@
  },
  "problem": {},
  "rejected": {
+  "B07TFGZ33M": {
+   "t": "2026-11-15T08:15:36.859375+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0815BLCJL": {
    "t": "2026-11-14T19:45:46.808036+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2575,12 +2590,28 @@
    "t": "2026-11-14T20:20:37.410274+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0DZ76B7XQ": {
+   "t": "2026-11-15T08:15:36.859375+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0FGJTVH91": {
+   "t": "2026-11-15T08:15:36.859375+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0FL2JGPYH": {
    "t": "2026-11-14T20:20:37.410274+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0FMGXH38Q": {
+   "t": "2026-11-15T08:15:36.859375+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0FQTVLFT1": {
    "t": "2026-11-14T12:15:37.671280+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0FZT1XB5L": {
+   "t": "2026-11-15T08:15:36.859375+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0H5KDLK7M": {
@@ -2634,6 +2665,6 @@
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-15",
-  "n": 2
+  "n": 3
  }
 }
