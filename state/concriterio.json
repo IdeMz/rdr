@@ -1,6 +1,6 @@
 {
  "cats": {
-  "Accesorios de coche": "2026-11-14T13:25:29.087955+00:00",
+  "Accesorios de coche": "2026-11-15T10:35:39.916250+00:00",
   "Afeitado y depilación": "2026-11-14T16:10:41.956036+00:00",
   "Almacenamiento": "2026-11-13T17:45:36.587944+00:00",
   "Altavoces": "2026-11-15T08:15:36.859375+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-13T21:50:42.988192+00:00",
   "Zapatillas": "2026-11-15T10:01:03.183163+00:00"
  },
- "next_at": "2026-11-15T10:35:07.986959+00:00",
+ "next_at": "2026-11-15T11:10:29.580941+00:00",
  "offer": {
   "a": "B0CBMVQQSK",
   "m": 247,
@@ -2082,6 +2082,17 @@
    "title": "LN LENQIN",
    "v": []
   },
+  "B0G39CZ4QQ": {
+   "c": "Accesorios de coche",
+   "d": 29,
+   "e": "🚗",
+   "m": 309,
+   "p": 106.99,
+   "s": "busqueda",
+   "t": "2026-11-15T10:36:55.021469+00:00",
+   "title": "BOTSLAB 4K Cámara Doble para Salpicadero Delantera y Trasera, Sensor STARVIS 2, GPS Integrado, Control por Voz, Cámara WiFi de 5 GHz para Automóviles, Tarjeta de 64 GB Incluida.",
+   "v": []
+  },
   "B0G66ZCDL1": {
    "c": "Robots de cocina",
    "d": 31,
@@ -2619,6 +2630,10 @@
    "t": "2026-11-14T21:35:30.640432+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0DD45976Z": {
+   "t": "2026-11-15T10:35:39.916250+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0DF84JPCW": {
    "t": "2026-11-15T08:50:40.530842+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2732,24 +2747,12 @@
    "r": 4.6,
    "t": "2026-11-15T07:40:45.992760+00:00",
    "title": "Mochila Cabina 55x40x20 Mochila Viaje Cabina Avion Maletas de Viaje Cabina"
-  },
-  {
-   "a": "B01EQZBFG2",
-   "c": "Perros",
-   "e": "🐶",
-   "img": "https://m.media-amazon.com/images/I/81BRqrzSw6L._AC_UL320_.jpg",
-   "n": 2500,
-   "op": 19.75,
-   "p": 14.79,
-   "r": 4.6,
-   "t": "2026-11-15T07:01:06.978986+00:00",
-   "title": "bosch HPC Sensitive Cordero y arroz | Alimento seco para perros nutricionalmente sensibles de todas las razas | 1 x 3 kg"
   }
  ],
  "summary_day": "2026-11-14",
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-15",
-  "n": 6
+  "n": 7
  }
 }
