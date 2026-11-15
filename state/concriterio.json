@@ -24,7 +24,7 @@
   "Jardín": "2026-11-15T11:10:43.114079+00:00",
   "Lego": "2026-11-15T15:15:41.208340+00:00",
   "Menaje de cocina": "2026-11-15T09:25:34.345588+00:00",
-  "Mochilas y maletas": "2026-11-15T07:40:45.992760+00:00",
+  "Mochilas y maletas": "2026-11-15T20:50:41.317709+00:00",
   "Monitores": "2026-11-15T19:15:39.725060+00:00",
   "Móviles": "2026-11-14T19:45:46.808036+00:00",
   "Nutrición deportiva": "2026-11-14T11:40:39.802795+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-15T12:15:40.152691+00:00",
   "Zapatillas": "2026-11-15T10:01:03.183163+00:00"
  },
- "next_at": "2026-11-15T20:47:13.757335+00:00",
+ "next_at": "2026-11-15T21:23:23.692391+00:00",
  "offer": {
   "a": "B01EG0DJNE",
   "m": 275,
@@ -753,6 +753,17 @@
    "s": "ofertas",
    "t": "2026-11-14T19:46:43.508950+00:00",
    "title": "Cecotec Batidora de mano Power TitanBlack 1200 XL Cream&Crush. Potencia 1200 W, Tecnología CrossBlades, Pie XL, Campana antisalpicaduras, Velocidad ajustable, Función Turbo",
+   "v": []
+  },
+  "B08PZ787ZJ": {
+   "c": "Mochilas y maletas",
+   "d": 50,
+   "e": "🎒",
+   "m": 325,
+   "p": 77.77,
+   "s": "ofertas",
+   "t": "2026-11-15T20:51:13.985296+00:00",
+   "title": "Mysight - Mochila Para Portátil con ruedas de 17,3 Pulgadas, Mochila con ruedas de 48 cm, con funciones inteligentes, Ergonómica, 25,5 L, Negra",
    "v": []
   },
   "B08QZXJ8T4": {
@@ -2826,10 +2837,6 @@
    "t": "2026-11-15T15:50:40.820191+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0DY8V59LY": {
-   "t": "2026-11-14T20:20:37.410274+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0DZ76B7XQ": {
    "t": "2026-11-15T08:15:36.859375+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2844,10 +2851,6 @@
   },
   "B0FGJTVH91": {
    "t": "2026-11-15T08:15:36.859375+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0FL2JGPYH": {
-   "t": "2026-11-14T20:20:37.410274+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0FL32LSR5": {
@@ -2906,20 +2909,24 @@
    "t": "2026-11-15T09:25:34.345588+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0H6DZJX44": {
-   "t": "2026-11-14T20:20:37.410274+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0HBWW6LQQ": {
-   "t": "2026-11-14T20:20:37.410274+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0HDC8CRPP": {
    "t": "2026-11-15T17:05:32.780345+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   }
  },
  "reserve": [
+  {
+   "a": "B073RP8DQ5",
+   "c": "Mochilas y maletas",
+   "e": "🎒",
+   "img": "https://m.media-amazon.com/images/I/91NpUC4ZS2L._AC_UL320_.jpg",
+   "n": 424,
+   "op": 75.0,
+   "p": 40.79,
+   "r": 4.4,
+   "t": "2026-11-15T20:50:41.317709+00:00",
+   "title": "Unisex Mochila Stockholm, Negro, STD"
+  },
   {
    "a": "B0FYH71H42",
    "c": "Freidoras de aire",
@@ -2943,24 +2950,12 @@
    "r": 4.3,
    "t": "2026-11-15T18:30:54.792871+00:00",
    "title": "Wilkinson Sword Extra 2 Beauty - 5 unidades Desechables Depilatorias Femeninas de 2 Hojas con Mango Antideslizante y Bandas Lubricantes de Aloe Vera"
-  },
-  {
-   "a": "B0D7Z4M3JK",
-   "c": "Domótica",
-   "e": "💡",
-   "img": "https://m.media-amazon.com/images/I/81Ig64zvhsL._AC_UL320_.jpg",
-   "n": 380,
-   "op": 26.59,
-   "p": 22.6,
-   "r": 4.2,
-   "t": "2026-11-15T17:40:41.406854+00:00",
-   "title": "Bombilla Inteligente WiFi E27 RGB LED 10W 16 Millones De Colores DIY"
   }
  ],
  "summary_day": "2026-11-14",
  "tg_offset": 511048053,
  "x_copy": {
   "day": "2026-11-15",
-  "n": 22
+  "n": 23
  }
 }
