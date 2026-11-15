@@ -1365,8 +1365,11 @@ def test_load_channel_with_categories_only(tmp_path):
 @pytest.mark.parametrize("cats,msg", [
     ([{"url": "/s?k=x"}], "nombre"),
     ([{"nombre": "A", "query": "x"}, {"nombre": "A", "query": "y"}], "repetida"),
-    ([{"nombre": "A"}], "'url' o 'query'"),
-    ([{"nombre": "A", "url": "/s?k=x", "query": "x"}], "'url' o 'query'"),
+    ([{"nombre": "A"}], "'url', 'query' o 'busquedas'"),
+    ([{"nombre": "A", "url": "/s?k=x", "query": "x"}], "'url', 'query' o 'busquedas'"),
+    ([{"nombre": "A", "query": "x", "busquedas": ["y"]}], "'url', 'query' o 'busquedas'"),
+    ([{"nombre": "A", "busquedas": "x"}], "lista de textos"),
+    ([{"nombre": "A", "busquedas": ["x", ""]}], "lista de textos"),
     ([{"nombre": "A", "query": "x", "color": "rojo"}], "claves desconocidas"),
     ([{"nombre": "A", "url": "https://otra.com/s?k=x"}], "url debe empezar"),
     ([{"nombre": "A", "query": "x", "min_discount": 50, "max_discount": 40}], "max_discount"),
@@ -1383,6 +1386,13 @@ def test_category_channel_applies_overrides_and_target():
     assert perf.queries == ["perfume"] and perf.urls == [] and perf.categories == []
     aur = deals.category_channel(ch, CATS[0])
     assert aur.urls == ["https://www.amazon.es/s?k=auriculares"] and aur.queries == []
+
+
+def test_category_busquedas_picks_one_each_visit():
+    cat = {"nombre": "Altavoces", "busquedas": ["altavoz bluetooth", "barra de sonido", "altavoz inteligente"]}
+    ch = channel()
+    seen = {tuple(deals.category_channel(ch, cat).queries) for _ in range(60)}
+    assert seen == {("altavoz bluetooth",), ("barra de sonido",), ("altavoz inteligente",)}
 
 
 @pytest.fixture

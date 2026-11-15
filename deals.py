@@ -388,7 +388,7 @@ CATEGORY_OVERRIDES = (
     "min_discount", "max_discount", "min_price", "max_price", "min_rating", "min_reviews", "pages",
     "search_params", "deals_search",
 )
-CATEGORY_KEYS = {"nombre", "emoji", "url", "query", *CATEGORY_OVERRIDES}
+CATEGORY_KEYS = {"nombre", "emoji", "url", "query", "busquedas", *CATEGORY_OVERRIDES}
 
 
 def category_target(cat: dict) -> dict:
@@ -396,6 +396,8 @@ def category_target(cat: dict) -> dict:
     if cat.get("url"):
         url = cat["url"]
         return {"queries": [], "urls": [url if url.startswith("http") else BASE + url]}
+    if cat.get("busquedas"):  # varias busquedas: cada visita usa una al azar, para no ver siempre lo mismo
+        return {"queries": [random.choice(cat["busquedas"])], "urls": []}
     return {"queries": [cat["query"]], "urls": []}
 
 
@@ -419,8 +421,12 @@ def validate_categories(ch: Channel, fname: str) -> None:
         extra = set(cat) - CATEGORY_KEYS
         if extra:
             raise ConfigError(f"{fname}: categoria {name}: claves desconocidas: {', '.join(sorted(extra))}")
-        if bool(cat.get("url")) == bool(cat.get("query")):
-            raise ConfigError(f"{fname}: categoria {name}: indica 'url' o 'query' (solo una)")
+        if sum(bool(cat.get(k)) for k in ("url", "query", "busquedas")) != 1:
+            raise ConfigError(f"{fname}: categoria {name}: indica 'url', 'query' o 'busquedas' (solo una)")
+        if "busquedas" in cat and not (
+            isinstance(cat["busquedas"], list) and all(isinstance(q, str) and q.strip() for q in cat["busquedas"])
+        ):
+            raise ConfigError(f"{fname}: categoria {name}: 'busquedas' debe ser una lista de textos")
         url = cat.get("url")
         if url and not (url.startswith("/") or url.startswith(BASE + "/")):
             raise ConfigError(f"{fname}: categoria {name}: la url debe empezar por / o {BASE}/")
@@ -2492,6 +2498,8 @@ def run_channel(
     for cat in targets:
         cch = category_channel(ch, cat) if cat else ch
         label = f"{ch.name}/{cat['nombre']}" if cat else ch.name
+        if cat and cat.get("busquedas"):
+            label += f" ({cch.queries[0]})"
         try:
             products = collect(cch, html_file, session)
         except (Blocked, LocationError) as exc:
