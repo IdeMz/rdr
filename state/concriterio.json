@@ -30,7 +30,7 @@
   "Nutrición deportiva": "2026-11-14T11:40:39.802795+00:00",
   "Perfumes": "2026-11-14T12:50:38.841046+00:00",
   "Periféricos": "2026-11-14T17:55:30.798523+00:00",
-  "Perros": "2026-11-13T11:40:39.260187+00:00",
+  "Perros": "2026-11-15T07:01:06.978986+00:00",
   "Portátiles": "2026-11-14T19:45:46.808036+00:00",
   "Relojes": "2026-11-13T15:10:54.425531+00:00",
   "Robots de cocina": "2026-11-14T19:45:46.808036+00:00",
@@ -41,7 +41,7 @@
   "Videojuegos": "2026-11-13T21:50:42.988192+00:00",
   "Zapatillas": "2026-11-13T19:20:42.278458+00:00"
  },
- "next_at": "2026-11-14T22:07:59.893046+00:00",
+ "next_at": "2026-11-15T07:35:42.384556+00:00",
  "offer": {
   "a": "B0CBMVQQSK",
   "m": 247,
@@ -249,6 +249,17 @@
    "p": 22.5,
    "t": "2026-11-05T12:25:53.456959+00:00",
    "title": "NESCAFÉ Dolce Gusto Café Cortado 90 cápsulas (3x30)",
+   "v": []
+  },
+  "B01EQZATNM": {
+   "c": "Perros",
+   "d": 25,
+   "e": "🐶",
+   "m": 303,
+   "p": 11.99,
+   "s": "ofertas",
+   "t": "2026-11-15T07:01:39.810191+00:00",
+   "title": "bosch HPC Maxi Junior | Alimento seco para perros de cría de razas grandes (a partir de 25 kg de peso final) | 1 x 3 kg",
    "v": []
   },
   "B01H5VO9QM": {
@@ -2525,10 +2536,6 @@
    "t": "2026-11-14T21:35:30.640432+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0B7X7PK9S": {
-   "t": "2026-11-13T21:50:42.988192+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0C5Y1GN2Y": {
    "t": "2026-11-14T16:10:41.956036+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2545,20 +2552,12 @@
    "t": "2026-11-14T21:35:30.640432+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0DCPB9J7K": {
-   "t": "2026-11-13T21:50:42.988192+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0DF84JPCW": {
    "t": "2026-11-14T07:35:33.414859+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0DGL75TNW": {
    "t": "2026-11-14T19:45:46.808036+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0DQ5WMN4H": {
-   "t": "2026-11-13T21:50:42.988192+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0DY1P85GK": {
@@ -2575,10 +2574,6 @@
   },
   "B0FL32LSR5": {
    "t": "2026-11-14T07:35:33.414859+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0FL7NNGRG": {
-   "t": "2026-11-13T21:50:42.988192+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0FQTVLFT1": {
@@ -2616,46 +2611,22 @@
  },
  "reserve": [
   {
-   "a": "B0FKBJL68H",
-   "c": "Herramientas",
-   "e": "🔧",
-   "img": "https://m.media-amazon.com/images/I/616YnuYqJUL._AC_UL320_.jpg",
-   "n": 850,
-   "op": 79.99,
-   "p": 53.99,
+   "a": "B01EQZBFG2",
+   "c": "Perros",
+   "e": "🐶",
+   "img": "https://m.media-amazon.com/images/I/81BRqrzSw6L._AC_UL320_.jpg",
+   "n": 2500,
+   "op": 19.75,
+   "p": 14.79,
    "r": 4.6,
-   "t": "2026-11-14T21:01:00.449874+00:00",
-   "title": "HOTO PixelDrive Destornillador Eléctrico de 3.6V, pantalla inteligente"
-  },
-  {
-   "a": "B0H2DFN9CF",
-   "c": "Aspiradoras",
-   "e": "🧹",
-   "img": "https://m.media-amazon.com/images/I/71ROIFSuF0L._AC_UL320_.jpg",
-   "n": 73,
-   "op": 269.99,
-   "p": 218.47,
-   "r": 4.6,
-   "t": "2026-11-14T20:20:37.410274+00:00",
-   "title": "Ultenic Robot Aspirador y Fregasuelos Autovaciado con Líquido Limpiador: Láser LiDAR Lineal, Evitación Mejorada, 10000 Pa, Refuerzo en Alfombras, App y Voz, para Apartamentos y Familias con Mascotas"
-  },
-  {
-   "a": "B0DJ2Y3XZ8",
-   "c": "Robots de cocina",
-   "e": "🥣",
-   "img": "https://m.media-amazon.com/images/I/71xs9hRoGTL._AC_UL320_.jpg",
-   "n": 71,
-   "op": 79.9,
-   "p": 58.9,
-   "r": 4.4,
-   "t": "2026-11-14T19:45:46.808036+00:00",
-   "title": "Cecotec Robot de Cocina Bebé, Procesador de Alimentos Nana BabyCare FoodProcessor. Hierve, Tritura, Esteriliza y Calienta Biberones, sin BPA, Apto para Frutas, Verduras y Carnes, Incluye Recetario"
+   "t": "2026-11-15T07:01:06.978986+00:00",
+   "title": "bosch HPC Sensitive Cordero y arroz | Alimento seco para perros nutricionalmente sensibles de todas las razas | 1 x 3 kg"
   }
  ],
  "summary_day": "2026-11-14",
  "tg_offset": 511048053,
  "x_copy": {
-  "day": "2026-11-14",
-  "n": 23
+  "day": "2026-11-15",
+  "n": 1
  }
 }
