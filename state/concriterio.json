@@ -41,6 +41,21 @@
   "Videojuegos": "2026-11-15T12:15:40.152691+00:00",
   "Zapatillas": "2026-11-15T10:01:03.183163+00:00"
  },
+ "manual": {
+  "B07888C7NB": {
+   "a": "B07888C7NB",
+   "c": "",
+   "e": "",
+   "img": "https://m.media-amazon.com/images/I/71AfLqqT0eL._AC_SL1500_.jpg",
+   "m": 280,
+   "n": 42,
+   "op": 19.99,
+   "p": 14.99,
+   "r": 4.5,
+   "t": "2026-11-15T23:50:25.596622+00:00",
+   "title": "GLORIOUS Switches Kailh Purple 120 Pzs para Teclado Mecánico 3 Pines"
+  }
+ },
  "next_at": "2026-11-15T22:13:47.949022+00:00",
  "offer": {
   "a": "B01EG0DJNE",
@@ -2956,7 +2971,7 @@
   }
  ],
  "summary_day": "2026-11-15",
- "tg_offset": 511048053,
+ "tg_offset": 511048058,
  "x_copy": {
   "day": "2026-11-15",
   "n": 24
