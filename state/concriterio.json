@@ -23,6 +23,7 @@
   "Cámaras de seguridad": "2026-11-14T17:20:46.627491+00:00",
   "Decoración navideña": "2026-11-16T20:01:04.281373+00:00",
   "Domótica": "2026-11-15T17:40:41.406854+00:00",
+  "Droguería": "2026-11-16T21:45:41.113869+00:00",
   "Fitness en casa": "2026-11-15T12:15:40.152691+00:00",
   "Fotografía": "2026-11-16T15:40:40.598894+00:00",
   "Freidoras de aire": "2026-11-15T20:15:42.147336+00:00",
@@ -90,7 +91,7 @@
    "title": "adidas Men's Zapatilla de Senderismo Terrex Skychaser AX5 Gore-Tex"
   }
  },
- "next_at": "2026-11-16T21:42:16.825772+00:00",
+ "next_at": "2026-11-16T22:20:16.059593+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -1659,6 +1660,17 @@
    "title": "Anker Power bank 20.000 mAh 87 W con cable USB C integrado",
    "v": []
   },
+  "B0CZ7GFP9C": {
+   "c": "Droguería",
+   "d": 43,
+   "e": "🧴",
+   "m": 350,
+   "p": 19.99,
+   "s": "ambas",
+   "t": "2026-11-16T21:46:05.418340+00:00",
+   "title": "Fairy Platinum Cápsulas Lavavajillas Para Máquina Limón, 126 Cápsulas",
+   "v": []
+  },
   "B0D1CSN1QR": {
    "c": "Altavoces",
    "d": 28,
@@ -3186,6 +3198,6 @@
  "tg_offset": 511048072,
  "x_copy": {
   "day": "2026-11-16",
-  "n": 22
+  "n": 23
  }
 }

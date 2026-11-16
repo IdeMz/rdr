@@ -496,6 +496,12 @@
    "title": "ASUS VY249HGE - Monitor Gaming Eye Care de 24 Pulgadas FHD (1920x1080), IPS, 144 Hz, IPS, SmoothMotion, 1 ms, FreeSync Premium, Eye Care Plus, antiparpadeos, Tr",
    "via": "ean"
   },
+  "4711387418680": {
+   "a": "B0D58PZ1V6",
+   "t": "2026-11-16T21:45:41.113869+00:00",
+   "title": "ASUS GeForce GT 710 2GB GDDR5 EVO - Tarjeta gráfica",
+   "via": "ean"
+  },
   "4711387754818": {
    "a": "B0DJDFTS7R",
    "t": "2026-11-15T12:50:40.627443+00:00",
@@ -635,6 +641,12 @@
      "INNO3D GeForce RTX 5060 Twin X2 OC, 8192 MB GDDR7"
     ]
    }
+  },
+  "4895229117495": {
+   "a": "B093HJMFDW",
+   "t": "2026-11-16T21:45:41.113869+00:00",
+   "title": "Philips TAT3216WT/00, Auriculares Bluetooth inalámbricos, Controles táctiles, Resistentes al Agua, 24 Horas de reproducción, Fundas de Silicona en 3 tamaños, mi",
+   "via": "ean"
   },
   "4895229151192": {
    "a": "B0DFVRT79C",
@@ -2433,6 +2445,25 @@
    "t": "2026-11-14T20:20:37.410274+00:00",
    "veredicto": "dudoso"
   },
+  "45956990832": {
+   "ahorro_vs_amazon": 6,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 59.9,
+   "amz_title": "ASUS GeForce GT 710 2GB GDDR5 EVO - Tarjeta gráfica",
+   "asin": "B0D58PZ1V6",
+   "disponible": true,
+   "ean": "4711387418680",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "solo 6 % por debajo del habitual en Amazon (59.90)",
+   "name": "ASUS GeForce GT 710 EVO 2GB GDDR5 Low Profile Tarjeta gráfica",
+   "pp_drop": 17,
+   "pp_median": 67.95,
+   "pp_price": 56.39,
+   "t": "2026-11-16T21:45:41.113869+00:00",
+   "veredicto": "dudoso"
+  },
   "45956990874": {
    "ahorro_vs_amazon": 16,
    "amz_low30": null,
@@ -3020,6 +3051,25 @@
    "pp_price": 37.95,
    "t": "2026-11-14T22:50:36.785672+00:00",
    "veredicto": "amazon_mas_barato"
+  },
+  "46212467215": {
+   "ahorro_vs_amazon": 27,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 81.26,
+   "amz_title": "Philips TAT3216WT/00, Auriculares Bluetooth inalámbricos, Controles táctiles, Resistentes al Agua, 24 Horas de reproducción, Fundas de Silicona en 3 tamaños, mi",
+   "asin": "B093HJMFDW",
+   "disponible": true,
+   "ean": "4895229117495",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "27 % por debajo del habitual en Amazon (81.26)",
+   "name": "Philips TAT3216WT/00 Blanco TWS Bluetooth 5.0 24h IPX5 Auriculares inalámbricos",
+   "pp_drop": 16,
+   "pp_median": 69.95,
+   "pp_price": 58.95,
+   "t": "2026-11-16T21:45:41.113869+00:00",
+   "veredicto": "oferta_real"
   },
   "46239681484": {
    "ean": "8886419377108",
@@ -4348,11 +4398,11 @@
  "night_at": "2026-11-16T06:05:25.856364+00:00",
  "resumen": {
   "amazon_mas_barato": 17,
-  "dudoso": 0,
+  "dudoso": 1,
   "no_esta": 8,
-  "oferta_real": 17,
+  "oferta_real": 18,
   "pvpr_inflado": 0,
   "sin_precio": 5
  },
- "updated": "2026-11-16T21:10:41.415586+00:00"
+ "updated": "2026-11-16T21:45:41.113869+00:00"
 }
