@@ -35,6 +35,7 @@
   "Periféricos": "2026-11-15T16:30:50.777266+00:00",
   "Perros": "2026-11-15T07:01:06.978986+00:00",
   "Portátiles": "2026-11-14T19:45:46.808036+00:00",
+  "Redes y wifi": "2026-11-16T08:45:43.168202+00:00",
   "Relojes": "2026-11-15T14:01:02.981281+00:00",
   "Robots de cocina": "2026-11-15T15:15:41.208340+00:00",
   "Smartwatch": "2026-11-15T15:50:40.820191+00:00",
@@ -59,7 +60,7 @@
    "title": "Cecotec Freidora de Aire con Cesta de Cristal Cecofry&Glass Crunchy Pro"
   }
  },
- "next_at": "2026-11-16T08:45:29.417819+00:00",
+ "next_at": "2026-11-16T09:18:38.811957+00:00",
  "offer": {
   "a": "B01EG0DJNE",
   "m": 275,
@@ -1068,6 +1069,17 @@
    "p": 11.99,
    "t": "2026-11-07T18:46:08.772342+00:00",
    "title": "HANPOSH",
+   "v": []
+  },
+  "B09X3FTL7F": {
+   "c": "Redes y wifi",
+   "d": 47,
+   "e": "📶",
+   "m": 331,
+   "p": 21.11,
+   "s": "ambas",
+   "t": "2026-11-16T08:46:20.778792+00:00",
+   "title": "TP-Link Archer TX20U Plus - Adaptador WiFi 6 USB, AX1800 Doble Banda",
    "v": []
   },
   "B09ZRD38D8": {
@@ -2835,8 +2847,8 @@
    "t": "2026-11-16T07:01:09.494097+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B07TFGZ33M": {
-   "t": "2026-11-15T08:15:36.859375+00:00",
+  "B07M69276N": {
+   "t": "2026-11-16T08:45:43.168202+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B07W6JDL3Z": {
@@ -2903,10 +2915,6 @@
    "t": "2026-11-15T15:50:40.820191+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0DZ76B7XQ": {
-   "t": "2026-11-15T08:15:36.859375+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0F1NGVZQ9": {
    "t": "2026-11-16T07:01:09.494097+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2919,16 +2927,8 @@
    "t": "2026-11-15T17:05:32.780345+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0FGJTVH91": {
-   "t": "2026-11-15T08:15:36.859375+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0FL32LSR5": {
    "t": "2026-11-15T08:50:40.530842+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0FMGXH38Q": {
-   "t": "2026-11-15T08:15:36.859375+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0FPVT4VG6": {
@@ -2953,10 +2953,6 @@
   },
   "B0FWCTL8CW": {
    "t": "2026-11-15T08:50:40.530842+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0FZT1XB5L": {
-   "t": "2026-11-15T08:15:36.859375+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0G14W2ZWW": {
@@ -3026,6 +3022,6 @@
  "tg_offset": 511048060,
  "x_copy": {
   "day": "2026-11-16",
-  "n": 3
+  "n": 4
  }
 }
