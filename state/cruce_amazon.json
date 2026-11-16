@@ -1267,22 +1267,22 @@
    "veredicto": "sin_precio"
   },
   "38277783220": {
-   "ahorro_vs_amazon": 64,
+   "ahorro_vs_amazon": 52,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 289.37,
+   "amz_price": 214.98,
    "amz_title": "Jabra Evolve2 65 Auriculares Inalámbricos Monoaurales PC con Cancelación de Ruido - Certificados para Microsoft Teams - Batería de Larga Duración - Adaptador Bl",
    "asin": "B086LLZZ16",
    "disponible": true,
    "ean": "5706991023008",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "64 % por debajo del habitual en Amazon (289.37)",
+   "motivo": "52 % por debajo del habitual en Amazon (214.98)",
    "name": "Jabra Evolve2 65 MS Mono Negro Diadema Bluetooth 5.0 Auriculares inalámbricos",
-   "pp_drop": 21,
-   "pp_median": 130.95,
+   "pp_drop": 16,
+   "pp_median": 122.95,
    "pp_price": 102.95,
-   "t": "2026-11-14T02:20:24.077147+00:00",
+   "t": "2026-11-16T02:35:20.145846+00:00",
    "veredicto": "oferta_real"
   },
   "38915518299": {
@@ -3943,7 +3943,7 @@
    }
   }
  },
- "night_at": "2026-11-16T02:20:24.133415+00:00",
+ "night_at": "2026-11-16T02:35:20.145846+00:00",
  "resumen": {
   "amazon_mas_barato": 26,
   "dudoso": 7,
@@ -3952,5 +3952,5 @@
   "pvpr_inflado": 1,
   "sin_precio": 7
  },
- "updated": "2026-11-16T02:20:24.133415+00:00"
+ "updated": "2026-11-16T02:35:20.145846+00:00"
 }
