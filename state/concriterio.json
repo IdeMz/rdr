@@ -1,6 +1,7 @@
 {
  "cats": {
   "Accesorios de coche": "2026-11-15T10:35:39.916250+00:00",
+  "Accesorios de móvil": "2026-11-16T17:40:44.874656+00:00",
   "Afeitado y depilación": "2026-11-15T18:30:54.792871+00:00",
   "Almacenamiento": "2026-11-15T16:30:50.777266+00:00",
   "Altavoces": "2026-11-15T17:05:32.780345+00:00",
@@ -85,7 +86,7 @@
    "title": "adidas Men's Zapatilla de Senderismo Terrex Skychaser AX5 Gore-Tex"
   }
  },
- "next_at": "2026-11-16T17:35:51.577502+00:00",
+ "next_at": "2026-11-16T18:12:00.060224+00:00",
  "offer": {
   "a": "B01EG0DJNE",
   "m": 275,
@@ -1985,6 +1986,17 @@
    "title": "Aurzen BOOM mini Proyector para exterior con Google TV, Dolby Audio de 20 W",
    "v": []
   },
+  "B0DSPKPVX3": {
+   "c": "Accesorios de móvil",
+   "d": 15,
+   "e": "🤳",
+   "m": 345,
+   "p": 14.44,
+   "s": "ofertas",
+   "t": "2026-11-16T17:41:19.612545+00:00",
+   "title": "ESR 2 Unidades Protector de Pantalla para iPad Air 11 Pulgadas M4/M3/M2",
+   "v": []
+  },
   "B0DSZRL2W9": {
    "c": "Accesorios de coche",
    "d": 30,
@@ -3001,10 +3013,7 @@
    "v": []
   }
  },
- "problem": {
-  "fails": 1,
-  "last": "HTTP 503"
- },
+ "problem": {},
  "rejected": {
   "B01N997C1B": {
    "t": "2026-11-16T07:01:09.494097+00:00",
@@ -3077,6 +3086,18 @@
  },
  "reserve": [
   {
+   "a": "B0FC2CRDPV",
+   "c": "Accesorios de móvil",
+   "e": "🤳",
+   "img": "https://m.media-amazon.com/images/I/71CB3s+mDkL._AC_UL320_.jpg",
+   "n": 20100,
+   "op": 14.99,
+   "p": 12.74,
+   "r": 4.4,
+   "t": "2026-11-16T17:40:44.874656+00:00",
+   "title": "ESR Pack 3 Protector Pantalla para iPhone 17 Pro Max, Classic"
+  },
+  {
    "a": "B0CN93Y2YX",
    "c": "Fotografía",
    "e": "📷",
@@ -3099,24 +3120,12 @@
    "r": 4.3,
    "t": "2026-11-16T15:05:39.512603+00:00",
    "title": "Oral-B iO 10 Cepillos de Dientes Eléctricos Negros, Pack de 2"
-  },
-  {
-   "a": "B0CFPN47NY",
-   "c": "eReaders",
-   "e": "📖",
-   "img": "https://m.media-amazon.com/images/I/51H7toa+0PL._AC_UL320_.jpg",
-   "n": 8400,
-   "op": 259.99,
-   "p": 159.99,
-   "r": 4.7,
-   "t": "2026-11-16T13:55:32.747613+00:00",
-   "title": "Kindle Paperwhite Signature Edition 32 GB de Amazon (modelo de 2024): luz frontal autorregulable, carga inalámbrica y semanas de autonomía | Negro metalizado"
   }
  ],
  "summary_day": "2026-11-15",
  "tg_offset": 511048069,
  "x_copy": {
   "day": "2026-11-16",
-  "n": 17
+  "n": 18
  }
 }
