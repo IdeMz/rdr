@@ -2926,3 +2926,43 @@ def test_run_channel_does_not_insist_after_a_captcha(tmp_path, monkeypatch, aler
     with pytest.raises(deals.Blocked):
         deals.run_channel(ch, state_dir=tmp_path, now=NOW_IN)
     assert len(seen) == 1 and deals.load_problem(tmp_path / "t.json")["fails"] == 1
+
+
+# ---------------------------------------------------------------- texto para X al publicar a mano
+
+def test_manual_publication_also_sends_the_x_text_even_below_the_minimum_discount_and_cap(tmp_path, monkeypatch):
+    tg = manual_env(monkeypatch)
+    ch = channel(name="concriterio", require_spain=False, x_copy=True, x_min_discount=99, x_max_per_day=0)
+    path = tmp_path / "concriterio.json"
+    message(tg, "https://www.amazon.es/dp/B0CT8W3Y29")
+    state = {}
+    deals.process_votes(ch, path, state, "tag-21", NOW_IN)
+    sent = []
+    monkeypatch.setattr(deals, "send_deal", lambda *a: sent.append(a) or 4321)
+    press(tg, "B0CT8W3Y29", "mpub")
+    deals.process_votes(ch, path, state, "tag-21", NOW_IN + timedelta(minutes=5))
+    assert [a[1] for a in sent] == ["@canal", "777"]                       # el canal y, ademas, tu chat privado
+    assert "Para X" in sent[1][2] and "PVPR" in sent[1][2] and "59,99€" in sent[1][2]
+    assert json.loads(path.read_text())["x_copy"]["n"] == 1
+
+
+def test_automatic_publications_still_respect_the_minimum_discount(tmp_path, monkeypatch):
+    tg = x_env(monkeypatch)
+    deals.run_channel(channel(x_copy=True, x_min_discount=99), state_dir=tmp_path, now=NOW_IN)
+    assert x_sent(tg) == []
+
+
+def test_reserve_offer_button_also_sends_the_x_text(tmp_path, monkeypatch):
+    tg = fail_after_publishing(tmp_path, monkeypatch, 2)
+    path = tmp_path / "t.json"
+    asin = json.loads(path.read_text())["offer"]["a"]
+    sent = []
+    monkeypatch.setattr(deals, "send_deal", lambda *a: sent.append(a) or 555)
+    press(tg, asin, "pub")
+    deals.run_channel(channel(x_copy=True, x_min_discount=99), state_dir=tmp_path, now=NOW_IN + timedelta(minutes=70))
+    assert [a[1] for a in sent] == ["@canal", "777"] and "Para X" in sent[1][2]
+
+
+def test_channel_posts_every_25_to_30_minutes():
+    ch = deals.load_channel(Path(__file__).resolve().parent.parent / "channels" / "concriterio.json")
+    assert (ch.interval_min, ch.interval_max) == (25, 30)

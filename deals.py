@@ -1672,18 +1672,24 @@ def x_intent_url(text: str) -> str | None:
 
 def maybe_send_x_copy(
     ch: Channel, state_path: Path, p: Product, cat: dict | None, tag: str | None,
-    photo: bytes | None, photo_url: str | None, now: datetime,
+    photo: bytes | None, photo_url: str | None, now: datetime, force: bool = False,
 ) -> bool:
-    """Manda a tu chat privado la foto y el texto para X de esta oferta, si cumple descuento y cupo diario."""
-    if not ch.x_copy or p.discount < ch.x_min_discount:
+    """Manda a tu chat privado la foto y el texto para X de esta oferta, si cumple descuento y cupo diario.
+
+    Con `force` (ofertas que publicas tu a mano con un boton) se manda siempre: pediste esa oferta, asi que ni el
+    descuento minimo ni el cupo diario la dejan sin su texto para X."""
+    if not ch.x_copy:
+        return False
+    if p.discount < ch.x_min_discount and not force:
         return False
     token, alert_chat = get_secret(ch.token_env), get_secret(ch.alert_chat_env)
     if not token or not alert_chat:
+        log.info("%s: sin %s definido; no se manda el texto para X", ch.name, ch.alert_chat_env)
         return False
     day = now.astimezone(ZoneInfo(ch.timezone)).date().isoformat()
     counter = _read_state_file(state_path).get("x_copy")
     sent_today = counter.get("n", 0) if isinstance(counter, dict) and counter.get("day") == day else 0
-    if sent_today >= ch.x_max_per_day:
+    if sent_today >= ch.x_max_per_day and not force:
         return False
     text = build_x_text(p, p.url or affiliate_url(p.asin, tag), ch, cat)
     link = x_intent_url(text) if ch.x_button else None
@@ -1693,6 +1699,8 @@ def maybe_send_x_copy(
         if markup else "Toca el texto para copiarlo y guarda la foto"
     )
     caption = f"📝 <b>Para X</b> ({sent_today + 1}/{ch.x_max_per_day} de hoy). {how}:\n\n<code>{escape(text)}</code>"
+    if len(caption) > 1024 and photo is not None:  # titulo largo: el pie de foto de Telegram tiene tope
+        caption = caption[:1020] + "…"
     try:
         try:
             send_deal(token, alert_chat, caption, photo, photo_url, markup)
@@ -1876,10 +1884,11 @@ def handle_offer_action(
     p = product_from_dict(item)
     cat = {"nombre": item["c"], "emoji": item.get("e", "")} if item.get("c") else None
     photo_url = full_size_image(p.image)
+    photo = prepare_image(photo_url)
     try:
         msg_id = send_deal(
             token, chat_id, build_caption(p, affiliate_url(p.asin, tag), ch, cat),
-            prepare_image(photo_url), photo_url, build_keyboard(ch, p.asin, tag),
+            photo, photo_url, build_keyboard(ch, p.asin, tag),
         )
     except TelegramError as exc:
         if not exc.ambiguous:
@@ -1895,6 +1904,10 @@ def handle_offer_action(
     log.info("%s: publicada a mano la oferta de reserva %s", ch.name, asin)
     note(f"{ch.name}: publicada a mano {asin}")
     close(f"✅ Publicada en el canal: {p.title[:80]}")
+    try:
+        maybe_send_x_copy(ch, state_path, p, cat, tag, photo, photo_url, now, force=True)
+    except Exception as err:
+        log.warning("%s: texto para X: %s", ch.name, type(err).__name__)
     return "Publicada ✅"
 
 
@@ -2226,7 +2239,7 @@ def handle_manual_action(ch: Channel, state_path: Path, state: dict, action: str
     log.info("%s: publicada a mano %s", ch.name, asin)
     note(f"{ch.name}: publicada a mano {asin}")
     try:
-        maybe_send_x_copy(ch, state_path, p, None, tag, photo, photo_url, now)
+        maybe_send_x_copy(ch, state_path, p, None, tag, photo, photo_url, now, force=True)
     except Exception as err:
         log.warning("%s: texto para X: %s", ch.name, type(err).__name__)
     return "Publicada ✅"
