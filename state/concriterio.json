@@ -86,7 +86,7 @@
    "title": "adidas Men's Zapatilla de Senderismo Terrex Skychaser AX5 Gore-Tex"
   }
  },
- "next_at": "2026-11-16T18:35:51.499282+00:00",
+ "next_at": "2026-11-16T18:50:57.881424+00:00",
  "offer": {
   "a": "B0FC2CRDPV",
   "m": 311,
@@ -3014,7 +3014,8 @@
   }
  },
  "problem": {
-  "fails": 2,
+  "alerted_at": "2026-11-16T18:40:57.881424+00:00",
+  "fails": 3,
   "last": "HTTP 503"
  },
  "rejected": {
@@ -3036,10 +3037,6 @@
   },
   "B08297PXHL": {
    "t": "2026-11-16T07:01:09.494097+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0C5Y1GN2Y": {
-   "t": "2026-11-15T18:30:54.792871+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0CK2KK34J": {
