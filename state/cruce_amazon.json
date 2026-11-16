@@ -3456,11 +3456,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "SSD Silicon Power Ace A55 4TB 2.5 pulgadas SATA III Negro",
-   "pista": "1945429 bytes; 7 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1930017 bytes; 7 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 18,
    "pp_median": 553.95,
    "pp_price": 456.94,
-   "t": "2026-11-16T00:50:27.490233+00:00",
+   "t": "2026-11-16T07:01:09.494097+00:00",
    "veredicto": "sin_precio"
   },
   "46599141566": {
@@ -3514,11 +3514,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Polti StainOver SC30 2000W Aspirador de tapicería",
-   "pista": "1313720 bytes; 12 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1354383 bytes; 15 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 20,
    "pp_median": 251.95,
    "pp_price": 200.94,
-   "t": "2026-11-16T00:50:27.490233+00:00",
+   "t": "2026-11-16T07:01:09.494097+00:00",
    "veredicto": "sin_precio"
   },
   "46599142071": {
@@ -3952,5 +3952,5 @@
   "pvpr_inflado": 1,
   "sin_precio": 7
  },
- "updated": "2026-11-16T06:05:25.856364+00:00"
+ "updated": "2026-11-16T07:01:09.494097+00:00"
 }

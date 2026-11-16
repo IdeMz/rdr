@@ -6,6 +6,7 @@
   "Altavoces": "2026-11-15T17:05:32.780345+00:00",
   "Aspiradoras": "2026-11-14T20:20:37.410274+00:00",
   "Auriculares": "2026-11-14T08:10:40.297090+00:00",
+  "Barras de sonido": "2026-11-16T07:01:09.494097+00:00",
   "Cafeteras": "2026-11-14T14:40:41.311125+00:00",
   "Café y cápsulas": "2026-11-15T14:40:39.424977+00:00",
   "Cargadores y baterías": "2026-11-15T11:10:43.114079+00:00",
@@ -56,7 +57,7 @@
    "title": "GLORIOUS Switches Kailh Purple 120 Pzs para Teclado Mecánico 3 Pines"
   }
  },
- "next_at": "2026-11-15T22:13:47.949022+00:00",
+ "next_at": "2026-11-16T07:31:32.626454+00:00",
  "offer": {
   "a": "B01EG0DJNE",
   "m": 275,
@@ -111,6 +112,17 @@
    "p": 24.94,
    "t": "2026-11-08T11:41:12.275160+00:00",
    "title": "Lavazza, Qualità Rossa, Café en Grano Natural, Ideal para la Máquina de Café Espresso, con Notas Aromáticas de Chocolate y Frutos Secos, Arábica y Robusta, Intensidad 5, Tueste Medio, Paquete de 1 kg",
+   "v": []
+  },
+  "B004PGM9KY": {
+   "c": "Barras de sonido",
+   "d": 31,
+   "e": "🎶",
+   "m": 328,
+   "p": 239.99,
+   "s": "ambas",
+   "t": "2026-11-16T07:02:13.013829+00:00",
+   "title": "Logitech Z906 5.1 Sistema de Altavoces Sonido Envolvente THX",
    "v": []
   },
   "B004U4WUFU": {
@@ -2795,8 +2807,16 @@
    "t": "2026-11-15T15:15:41.208340+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B01N997C1B": {
+   "t": "2026-11-16T07:01:09.494097+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B07TFGZ33M": {
    "t": "2026-11-15T08:15:36.859375+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B07W6JDL3Z": {
+   "t": "2026-11-16T07:01:09.494097+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B07YSTGP17": {
@@ -2805,6 +2825,10 @@
   },
   "B07Z6N28RD": {
    "t": "2026-11-15T11:10:43.114079+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B08297PXHL": {
+   "t": "2026-11-16T07:01:09.494097+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B09ZQF5GZW": {
@@ -2857,6 +2881,10 @@
   },
   "B0DZ76B7XQ": {
    "t": "2026-11-15T08:15:36.859375+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0F1NGVZQ9": {
+   "t": "2026-11-16T07:01:09.494097+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0F66TD5ZC": {
@@ -2934,46 +2962,22 @@
  },
  "reserve": [
   {
-   "a": "B0B8MF6X5L",
-   "c": "Perfumes",
-   "e": "🌸",
-   "img": "https://m.media-amazon.com/images/I/51JphynD1QL._AC_UL320_.jpg",
-   "n": 3100,
-   "op": 59.75,
-   "p": 49.53,
-   "r": 4.6,
-   "t": "2026-11-15T21:40:42.221187+00:00",
-   "title": "BOSS Bottled Parfum para hombres | Fragancia amaderada ambarina, con notas de cuero y raiz de orris | Atemporal y de larga duración"
-  },
-  {
-   "a": "B073RP8DQ5",
-   "c": "Mochilas y maletas",
-   "e": "🎒",
-   "img": "https://m.media-amazon.com/images/I/91NpUC4ZS2L._AC_UL320_.jpg",
-   "n": 424,
-   "op": 75.0,
-   "p": 40.79,
-   "r": 4.4,
-   "t": "2026-11-15T20:50:41.317709+00:00",
-   "title": "Unisex Mochila Stockholm, Negro, STD"
-  },
-  {
-   "a": "B0FYH71H42",
-   "c": "Freidoras de aire",
-   "e": "🍟",
-   "img": "https://m.media-amazon.com/images/I/51riuZmyM1L._AC_UL320_.jpg",
-   "n": 361,
-   "op": 99.99,
-   "p": 69.99,
-   "r": 4.7,
-   "t": "2026-11-15T20:15:42.147336+00:00",
-   "title": "Ninja, Freidora de Aire de 4,7L, Monocajón, 3 en 1, Digital, Negra"
+   "a": "B0CYTGQR74",
+   "c": "Barras de sonido",
+   "e": "🎶",
+   "img": "https://m.media-amazon.com/images/I/61wRWLNDAVL._AC_UY218_.jpg",
+   "n": 521,
+   "op": 279.0,
+   "p": 190.0,
+   "r": 4.2,
+   "t": "2026-11-16T07:01:09.494097+00:00",
+   "title": "DENON DHT-S218 Barra de Sonido 2.1 con Subwoofer Integrado y Dolby Atmos"
   }
  ],
  "summary_day": "2026-11-15",
  "tg_offset": 511048058,
  "x_copy": {
-  "day": "2026-11-15",
-  "n": 24
+  "day": "2026-11-16",
+  "n": 1
  }
 }
