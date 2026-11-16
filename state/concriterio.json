@@ -85,7 +85,7 @@
    "title": "adidas Men's Zapatilla de Senderismo Terrex Skychaser AX5 Gore-Tex"
   }
  },
- "next_at": "2026-11-16T17:22:36.870805+00:00",
+ "next_at": "2026-11-16T17:35:51.577502+00:00",
  "offer": {
   "a": "B01EG0DJNE",
   "m": 275,
@@ -3001,7 +3001,10 @@
    "v": []
   }
  },
- "problem": {},
+ "problem": {
+  "fails": 1,
+  "last": "HTTP 503"
+ },
  "rejected": {
   "B01N997C1B": {
    "t": "2026-11-16T07:01:09.494097+00:00",
@@ -3023,10 +3026,6 @@
    "t": "2026-11-16T07:01:09.494097+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B09ZQF5GZW": {
-   "t": "2026-11-15T17:05:32.780345+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0C5Y1GN2Y": {
    "t": "2026-11-15T18:30:54.792871+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3045,10 +3044,6 @@
   },
   "B0F1NGVZQ9": {
    "t": "2026-11-16T07:01:09.494097+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0F9S3DWGF": {
-   "t": "2026-11-15T17:05:32.780345+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0FP5R9BDZ": {
@@ -3073,10 +3068,6 @@
   },
   "B0HC67NJTQ": {
    "t": "2026-11-16T09:20:39.431359+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0HDC8CRPP": {
-   "t": "2026-11-15T17:05:32.780345+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0HJPNLC2Y": {
