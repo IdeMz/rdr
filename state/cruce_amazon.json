@@ -1173,6 +1173,12 @@
     ]
    }
   },
+  "8007403119683": {
+   "a": "B08LVXG2V1",
+   "t": "2026-11-16T23:50:25.846029+00:00",
+   "title": "Bellissima Imetec My Pro Diffon Ceramic, Difusor de aire caliente para cabello rizado, tecnología cerámica, 700 W, 2 combinaciones aire/temperatura, secado deli",
+   "via": "nombre"
+  },
   "8007411014116": {
    "a": "B0H3BX8YX5",
    "t": "2026-11-15T12:15:40.152691+00:00",
@@ -1508,11 +1514,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "WD Elements 8TB Negro USB 3.0 3,5 pulgadas Disco duro externo",
-   "pista": "2301964 bytes; 13 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "2346565 bytes; 11 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 13,
    "pp_median": 290.94,
    "pp_price": 252.38,
-   "t": "2026-11-16T17:40:44.874656+00:00",
+   "t": "2026-11-16T23:50:25.846029+00:00",
    "veredicto": "sin_precio"
   },
   "37600259956": {
@@ -2203,6 +2209,25 @@
     ]
    }
   },
+  "45403202125": {
+   "ahorro_vs_amazon": -24,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 49.99,
+   "amz_title": "Bellissima Imetec My Pro Diffon Ceramic, Difusor de aire caliente para cabello rizado, tecnología cerámica, 700 W, 2 combinaciones aire/temperatura, secado deli",
+   "asin": "B08LVXG2V1",
+   "disponible": true,
+   "ean": "8007403119683",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "Amazon 49.99 frente a 61.95",
+   "name": "Imetec Bellissima Diffon Ion Ceramic 700W iónico 2 velocidades Secador de pelo",
+   "pp_drop": 14,
+   "pp_median": 71.95,
+   "pp_price": 61.95,
+   "t": "2026-11-16T23:50:25.846029+00:00",
+   "veredicto": "amazon_mas_barato"
+  },
   "45403202658": {
    "ean": "6977728943800",
    "lista": "candidates",
@@ -2724,23 +2749,23 @@
    "veredicto": "dudoso"
   },
   "45956991485": {
-   "ahorro_vs_amazon": 1,
+   "ahorro_vs_amazon": 6,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 253.31,
+   "amz_price": 267.26,
    "amz_title": "HP Projektor MC475 200 ISO-Lumen FullHD (C42LPAA)",
    "asin": "B0GGGZYZ8M",
    "disponible": true,
    "ean": "0850039905544",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "Amazon 253.31 frente a 251.95",
+   "motivo": "solo 6 % por debajo del habitual en Amazon (267.26)",
    "name": "HP MC475 Tiro Corto 0.8:1 1080p LCD 200lúmenes ANSI Android 13 WiFi Bluetooth autoenfoque Proyector",
    "pp_drop": 12,
    "pp_median": 285.95,
    "pp_price": 251.95,
-   "t": "2026-11-14T23:50:25.477607+00:00",
-   "veredicto": "amazon_mas_barato"
+   "t": "2026-11-16T23:50:25.846029+00:00",
+   "veredicto": "dudoso"
   },
   "45956991871": {
    "ahorro_vs_amazon": 10,
@@ -4605,14 +4630,14 @@
    }
   }
  },
- "night_at": "2026-11-16T23:35:20.072320+00:00",
+ "night_at": "2026-11-16T23:50:25.846029+00:00",
  "resumen": {
   "amazon_mas_barato": 19,
-  "dudoso": 1,
+  "dudoso": 2,
   "no_esta": 10,
   "oferta_real": 20,
   "pvpr_inflado": 0,
   "sin_precio": 6
  },
- "updated": "2026-11-16T23:35:20.072320+00:00"
+ "updated": "2026-11-16T23:50:25.846029+00:00"
 }
