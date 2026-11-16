@@ -478,6 +478,12 @@
    "title": "MSI Gaming RTX 5060 Ti 8G Ventus 2X OC Plus - Tarjeta gráfica (8 GB GDDR7, TBA-bit, Rendimiento Extremo: TBA MHz, DisplayPort x3 2.1a, HDMI 2.1b, NVIDIA Blackwe",
    "via": "nombre"
   },
+  "4711387078389": {
+   "a": "B0C4FY8DC6",
+   "t": "2026-11-16T15:05:39.512603+00:00",
+   "title": "ASUS VY249HGE - Monitor Gaming Eye Care de 24 Pulgadas FHD (1920x1080), IPS, 144 Hz, IPS, SmoothMotion, 1 ms, FreeSync Premium, Eye Care Plus, antiparpadeos, Tr",
+   "via": "ean"
+  },
   "4711387754818": {
    "a": "B0DJDFTS7R",
    "t": "2026-11-15T12:50:40.627443+00:00",
@@ -547,6 +553,12 @@
    "a": "B09CD57PMJ",
    "t": "2026-11-15T00:50:26.258760+00:00",
    "title": "ASUS ROG Strix OLED XG27AQWMG - Monitor Gaming de 27, 1440p TrueBlack Glossy Tandem, 280 Hz, 0,03 ms, Sensor de proximidad Neo, ASUS OLED Care Pro, ELMB, VESA D",
+   "via": "ean"
+  },
+  "4711636174640": {
+   "a": "B09CL8BDSY",
+   "t": "2026-11-16T15:05:39.512603+00:00",
+   "title": "Asus Rog Strix X870E-H Gaming Wifi7 - Hatsune Miku Edition - Motherboard - Atx - Socket Am5 - Amd X870e Chipsatz - Usb4, UsB-C 3.2 Gen 2x2, UsB-C 3.2",
    "via": "ean"
   },
   "4713436150800": {
@@ -1443,6 +1455,25 @@
    "pp_price": 63.95,
    "t": "2026-11-16T04:20:26.885230+00:00",
    "veredicto": "sin_precio"
+  },
+  "40045392284": {
+   "ahorro_vs_amazon": -3,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 152.0,
+   "amz_title": "ASUS VY249HGE - Monitor Gaming Eye Care de 24 Pulgadas FHD (1920x1080), IPS, 144 Hz, IPS, SmoothMotion, 1 ms, FreeSync Premium, Eye Care Plus, antiparpadeos, Tr",
+   "asin": "B0C4FY8DC6",
+   "disponible": true,
+   "ean": "4711387078389",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 152.00 frente a 156.99",
+   "name": "ASUS VY249HGE Negro 23,8 pulgadas Full HD IPS 144Hz 1ms FreeSync Premium Monitor",
+   "pp_drop": 18,
+   "pp_median": 190.45,
+   "pp_price": 156.99,
+   "t": "2026-11-16T15:05:39.512603+00:00",
+   "veredicto": "amazon_mas_barato"
   },
   "40167730445": {
    "ahorro_vs_amazon": -63,
@@ -2810,6 +2841,25 @@
     ]
    }
   },
+  "46239681513": {
+   "ahorro_vs_amazon": 10,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 663.0,
+   "amz_title": "Asus Rog Strix X870E-H Gaming Wifi7 - Hatsune Miku Edition - Motherboard - Atx - Socket Am5 - Amd X870e Chipsatz - Usb4, UsB-C 3.2 Gen 2x2, UsB-C 3.2",
+   "asin": "B09CL8BDSY",
+   "disponible": true,
+   "ean": "4711636174640",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "10 % por debajo del habitual en Amazon (663.00)",
+   "name": "ASUS ROG Strix X870E-H Gaming WiFi 7 Hatsune Miku Edition AMD AM5 Negro DDR5 ATX 4 ranuras M.2 Placa base",
+   "pp_drop": 15,
+   "pp_median": 700.95,
+   "pp_price": 593.95,
+   "t": "2026-11-16T15:05:39.512603+00:00",
+   "veredicto": "oferta_real"
+  },
   "46239682368": {
    "ean": "0196548939664",
    "lista": "candidates",
@@ -4095,12 +4145,12 @@
  },
  "night_at": "2026-11-16T06:05:25.856364+00:00",
  "resumen": {
-  "amazon_mas_barato": 14,
+  "amazon_mas_barato": 15,
   "dudoso": 0,
   "no_esta": 8,
-  "oferta_real": 12,
+  "oferta_real": 13,
   "pvpr_inflado": 0,
   "sin_precio": 3
  },
- "updated": "2026-11-16T13:55:32.747613+00:00"
+ "updated": "2026-11-16T15:05:39.512603+00:00"
 }

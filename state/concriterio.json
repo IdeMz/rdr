@@ -24,6 +24,7 @@
   "Freidoras de aire": "2026-11-15T20:15:42.147336+00:00",
   "Gatos": "2026-11-14T18:30:55.099025+00:00",
   "Herramientas": "2026-11-14T21:01:00.449874+00:00",
+  "Higiene personal": "2026-11-16T15:05:39.512603+00:00",
   "Iluminación": "2026-11-15T11:45:37.493065+00:00",
   "Impresoras": "2026-11-16T13:05:35.879053+00:00",
   "Jardín": "2026-11-15T11:10:43.114079+00:00",
@@ -81,7 +82,7 @@
    "title": "adidas Men's Zapatilla de Senderismo Terrex Skychaser AX5 Gore-Tex"
   }
  },
- "next_at": "2026-11-16T15:05:13.178048+00:00",
+ "next_at": "2026-11-16T15:38:33.716201+00:00",
  "offer": {
   "a": "B01EG0DJNE",
   "m": 275,
@@ -1133,6 +1134,17 @@
    "p": 231.2,
    "t": "2026-11-05T19:01:35.205491+00:00",
    "title": "WD_BLACK 1TB P40 Game Drive SSD USB-C USB 3.2 Gen 2x2 Memoria de estado sólido NVMe externa hasta 2000 MB/s Iluminación RGB personalizable compatible con Playstation, Xbox, PC y Mac",
+   "v": []
+  },
+  "B0B4SCYCLS": {
+   "c": "Higiene personal",
+   "d": 37,
+   "e": "🪥",
+   "m": 341,
+   "p": 14.52,
+   "s": "busqueda",
+   "t": "2026-11-16T15:06:15.148614+00:00",
+   "title": "Oral-B Vitality Pro Cepillo de Dientes Eléctrico con 1 Cabezal, Negro",
    "v": []
   },
   "B0B57J6FFY": {
@@ -3058,6 +3070,18 @@
  },
  "reserve": [
   {
+   "a": "B0HG82D9PQ",
+   "c": "Higiene personal",
+   "e": "🪥",
+   "img": "https://m.media-amazon.com/images/I/818WSE4jucL._AC_UL320_.jpg",
+   "n": 1400,
+   "op": 799.95,
+   "p": 399.95,
+   "r": 4.3,
+   "t": "2026-11-16T15:05:39.512603+00:00",
+   "title": "Oral-B iO 10 Cepillos de Dientes Eléctricos Negros, Pack de 2"
+  },
+  {
    "a": "B0CFPN47NY",
    "c": "eReaders",
    "e": "📖",
@@ -3068,36 +3092,12 @@
    "r": 4.7,
    "t": "2026-11-16T13:55:32.747613+00:00",
    "title": "Kindle Paperwhite Signature Edition 32 GB de Amazon (modelo de 2024): luz frontal autorregulable, carga inalámbrica y semanas de autonomía | Negro metalizado"
-  },
-  {
-   "a": "B0DDDCVN2P",
-   "c": "Patinetes",
-   "e": "🛴",
-   "img": "https://m.media-amazon.com/images/I/51bx6dQp-8L._AC_UL320_.jpg",
-   "n": 464,
-   "op": 219.99,
-   "p": 169.99,
-   "r": 4.4,
-   "t": "2026-11-16T11:55:31.043068+00:00",
-   "title": "FanttikRide C9 Pro Patinete Eléctrico para Niños, 8/13/16 km/h"
-  },
-  {
-   "a": "B01DNDMSLY",
-   "c": "Camping y montaña",
-   "e": "🏕️",
-   "img": "https://m.media-amazon.com/images/I/71ugWyPoQFL._AC_UL320_.jpg",
-   "n": 24100,
-   "op": 16.99,
-   "p": 13.03,
-   "r": 4.5,
-   "t": "2026-11-16T11:20:40.607767+00:00",
-   "title": "Lepro Linterna Frontal LED USB Recargable, 5 Modos con Luz Rojo, Pack de 1"
   }
  ],
  "summary_day": "2026-11-15",
  "tg_offset": 511048069,
  "x_copy": {
   "day": "2026-11-16",
-  "n": 13
+  "n": 14
  }
 }
