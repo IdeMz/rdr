@@ -48,6 +48,7 @@
   "Redes y wifi": "2026-11-16T08:45:43.168202+00:00",
   "Relojes": "2026-11-15T14:01:02.981281+00:00",
   "Robots de cocina": "2026-11-15T15:15:41.208340+00:00",
+  "Salud": "2026-11-16T16:50:42.783335+00:00",
   "Smartwatch": "2026-11-15T15:50:40.820191+00:00",
   "Suplementos": "2026-11-15T13:25:30.562134+00:00",
   "Tablets": "2026-11-15T11:10:43.114079+00:00",
@@ -84,7 +85,7 @@
    "title": "adidas Men's Zapatilla de Senderismo Terrex Skychaser AX5 Gore-Tex"
   }
  },
- "next_at": "2026-11-16T16:49:29.958554+00:00",
+ "next_at": "2026-11-16T17:22:36.870805+00:00",
  "offer": {
   "a": "B01EG0DJNE",
   "m": 275,
@@ -917,6 +918,17 @@
    "s": "ofertas",
    "t": "2026-11-13T10:31:34.560950+00:00",
    "title": "Moller’s ® | Omega 3 para niños | Omega-3 Cápsulas de Aceite de Pescado con Ácidos Grasos Omega 3 | Con DHA y EPA, Sin Gluten, Sin Lactosa, Sin Azucares Añadidos | Tutti Frutti | 36 Uds",
+   "v": []
+  },
+  "B08WPRCV9Z": {
+   "c": "Salud",
+   "d": 25,
+   "e": "🩺",
+   "m": 344,
+   "p": 22.49,
+   "s": "ambas",
+   "t": "2026-11-16T16:51:09.258914+00:00",
+   "title": "Braun YK-81CEU - Pulsioxímetro Braun 1 (Saturación de Oxígeno, Niveles de Oxígeno en Sangre, Dispositivo Médico Certificado Clínicamente Preciso) Yk-81Ceu",
    "v": []
   },
   "B08X6DCJT2": {
@@ -3114,6 +3126,6 @@
  "tg_offset": 511048069,
  "x_copy": {
   "day": "2026-11-16",
-  "n": 16
+  "n": 17
  }
 }
