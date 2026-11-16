@@ -1598,11 +1598,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "KOSPET Tank T3 Ultra Negro 1,43 pulgadas AMOLED GPS 15 días +170 deportes 5ATM IP69K Smartwatch",
-   "pista": "1724947 bytes; 21 a-price; caja de precio; disponibilidad: No disponible.; sin vendedor destacado",
+   "pista": "1987389 bytes; 50 a-price; caja de precio; disponibilidad: No disponible.; sin vendedor destacado",
    "pp_drop": 31,
    "pp_median": 110.94,
    "pp_price": 76.96,
-   "t": "2026-11-15T23:05:20.314700+00:00",
+   "t": "2026-11-16T05:05:25.139938+00:00",
    "veredicto": "sin_precio"
   },
   "45251942871": {
@@ -3257,19 +3257,19 @@
    "ahorro_vs_amazon": -125,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 740.93,
+   "amz_price": 740.32,
    "amz_title": "Samsung Monitor Curvo Gaming Odyssey G9 G95C Dual QHD 49\" con 240Hz y AMD Freesync Pro",
    "asin": "B0CDTVTFFS",
    "disponible": true,
    "ean": "8806094972313",
    "encontrado_por": "modelo",
    "lista": "candidates",
-   "motivo": "Amazon 740.93 frente a 1669.00",
+   "motivo": "Amazon 740.32 frente a 1669.00",
    "name": "Monitor Samsung Odyssey Neo G9 G95NC 57 pulgadas Mini LED 240Hz Dual UHD Curvo Blanco",
    "pp_drop": 12,
    "pp_median": 1899.0,
    "pp_price": 1669.0,
-   "t": "2026-11-14T04:50:24.590570+00:00",
+   "t": "2026-11-16T05:05:25.139938+00:00",
    "veredicto": "amazon_mas_barato"
   },
   "46599140117": {
@@ -3943,7 +3943,7 @@
    }
   }
  },
- "night_at": "2026-11-16T04:50:32.354968+00:00",
+ "night_at": "2026-11-16T05:05:25.139938+00:00",
  "resumen": {
   "amazon_mas_barato": 26,
   "dudoso": 7,
@@ -3952,5 +3952,5 @@
   "pvpr_inflado": 1,
   "sin_precio": 7
  },
- "updated": "2026-11-16T04:50:32.354968+00:00"
+ "updated": "2026-11-16T05:05:25.139938+00:00"
 }
