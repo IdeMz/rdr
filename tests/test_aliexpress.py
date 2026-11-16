@@ -409,3 +409,42 @@ def test_report_waits_for_six_days_of_history(tmp_path):
     ax.run(creds, tmp_path, ch, date(2026, 11, 14), 8, post=poster([product("1", 14.0)]), sleep=lambda s: None)
     data = json.loads((tmp_path / ax.PICKS_FILE).read_text())
     assert [c["id"] for c in data["candidates"]] == ["1"]               # al sexto dia ya cuenta
+
+
+def test_keywords_come_from_categories_with_several_searches(tmp_path):
+    ch = tmp_path / "ch.json"
+    ch.write_text(json.dumps({"categories": [
+        {"nombre": "Auriculares", "busquedas": ["auriculares bluetooth", "auriculares diadema"]},
+        {"nombre": "Tablets", "query": "tablet android"}, {"nombre": "Lego", "url": "/s?k=lego"},
+        {"nombre": "Vacia", "busquedas": []}, "no es una categoria"]}))
+    assert ax.keywords_from_channel(ch) == ["auriculares bluetooth", "tablet android", "lego"]
+
+
+def test_legacy_keywords_are_kept_first_and_covered_families_are_not_repeated(tmp_path):
+    ch = tmp_path / "ch.json"
+    ch.write_text(json.dumps({"categories": [
+        {"nombre": "Auriculares", "busquedas": ["auriculares bluetooth"]},     # ya cubierta por una de siempre
+        {"nombre": "Proyectores", "busquedas": ["proyector", "proyector 4k"]},
+        {"nombre": "Proyectores 2", "busquedas": ["proyector portatil"]},      # misma familia que la anterior
+        {"nombre": "Redes", "busquedas": ["router wifi"]}]}))
+    legacy = ("auriculares bluetooth inalambricos", "portatil")
+    assert ax.keywords_from_channel(ch, legacy) == ["auriculares bluetooth inalambricos", "portatil", "proyector",
+                                                    "router wifi"]
+    assert ax.keywords_from_channel(tmp_path / "no.json", legacy) == list(legacy)
+
+
+def test_real_channel_file_gives_a_usable_list_within_the_call_limit():
+    from pathlib import Path
+    words = ax.keywords_from_channel(Path(__file__).resolve().parent.parent / "channels" / "concriterio.json",
+                                     ax.LEGACY_KEYWORDS)
+    assert words[:len(ax.LEGACY_KEYWORDS)] == list(ax.LEGACY_KEYWORDS) and len(ax.LEGACY_KEYWORDS) == 40
+    assert len(words) == len(set(words)) and 40 < len(words) < ax.MAX_CALLS - 15   # deja margen a los reintentos
+
+
+def test_run_collects_with_the_legacy_words_when_the_channel_has_no_k_urls(tmp_path):
+    ch = tmp_path / "ch.json"
+    ch.write_text(json.dumps({"categories": [{"nombre": "Moviles", "busquedas": ["smartphone libre"]}]}))
+    calls = []
+    text = ax.run((KEY, SECRET, TRACK), tmp_path, ch, TODAY, 8, post=poster([product("1", 10.0)], calls=calls),
+                  sleep=lambda s: None, legacy=("tablet", "portatil"))
+    assert [c.get("keywords") for c in calls][:3] == ["tablet", "portatil", "smartphone libre"] and "1 productos" in text

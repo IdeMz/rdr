@@ -45,7 +45,7 @@ DETAIL_METHOD = "aliexpress.affiliate.productdetail.get"
 PAGE_SIZE = 50
 GLOBAL_PAGES = 0          # las paginas generales de "hot products" dan casi solo productos de 2-4 EUR: no se piden
 QUERY_METHOD = SEARCH_METHOD  # la busqueda normal da mas resultados que "hot products" (7 contra 1 con la misma palabra)
-MAX_CALLS = 75            # tope de llamadas a la API por dia (consultas + reintentos con la primera palabra)
+MAX_CALLS = 100           # tope de llamadas a la API por dia (consultas + reintentos con la primera palabra)
 MAX_ERRORS = 3            # errores seguidos tras los cuales se abandona el dia
 START_HOUR = 6            # hora de Madrid desde la que se hace la recogida diaria
 MIN_TRACK_DAYS = 6   # dias de historial propio antes de fiarse de una bajada (PowerPlanet: ver feedpicks)
@@ -194,18 +194,56 @@ def item_from(product: dict) -> dict | None:
     }
 
 
-def keywords_from_channel(path: Path) -> list[str]:
-    """Palabras de busqueda de las categorias del canal (el parametro k= de sus direcciones)."""
+# Palabras con las que se recogio el historial del 12 al 15 de noviembre (las de las categorias de entonces).
+# Se mantienen siempre: cambiarlas rompe la continuidad del historial de precios de cada producto.
+LEGACY_KEYWORDS = (
+    "smartphone libre", "auriculares bluetooth inalambricos", "portatil", "tablet", "smartwatch reloj inteligente",
+    "smart tv televisor", "altavoz bluetooth portatil", "ssd disco duro tarjeta memoria", "monitor ordenador",
+    "teclado raton inalambrico", "cargador rapido powerbank", "videojuegos ps5 switch",
+    "bombilla inteligente enchufe wifi", "aspirador robot aspiradora", "freidora aire", "cafetera automatica",
+    "sarten olla bateria cocina", "robot cocina batidora", "ventilador calefactor purificador aire",
+    "colchon almohada viscoelastica", "lampara led iluminacion", "taladro atornillador herramientas",
+    "jardin riego barbacoa exterior", "camara vigilancia wifi", "crema facial serum", "perfume eau de parfum",
+    "secador plancha pelo", "afeitadora depiladora cuchillas", "vitaminas suplementos omega",
+    "proteina whey creatina", "mancuernas esterilla bandas elasticas", "bicicleta casco accesorios ciclismo",
+    "zapatillas running deportivas", "reloj pulsera", "maleta mochila", "comida perro pienso", "comida gato arena",
+    "accesorios coche dashcam", "lego", "cafe capsulas grano",
+)
+
+
+def category_word(cat: dict) -> str:
+    """Palabra de busqueda de una categoria del canal: el k= de su url, su 'query' o la primera de sus 'busquedas'."""
+    q = parse_qs(urlparse(str(cat.get("url", ""))).query).get("k")
+    if q:
+        return unquote_plus(q[0]).strip()
+    if cat.get("query"):
+        return str(cat["query"]).strip()
+    searches = cat.get("busquedas")
+    if isinstance(searches, list) and searches and isinstance(searches[0], str):
+        return searches[0].strip()
+    return ""
+
+
+def keywords_from_channel(path: Path, legacy: tuple[str, ...] = ()) -> list[str]:
+    """Palabras de busqueda: las `legacy` primero y despues una por categoria del canal.
+
+    Con `legacy`, una categoria cuya primera palabra ya esta cubierta (o ya anadida) no suma otra consulta:
+    el canal tiene 63 categorias y la API se limita a MAX_CALLS llamadas al dia."""
     try:
         data = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, ValueError):
-        return []
-    words: list[str] = []
+        return list(legacy)
+    words: list[str] = list(legacy)
+    firsts = {w.split()[0] for w in legacy if w.split()}
     for cat in data.get("categories") or []:
-        q = parse_qs(urlparse(str(cat.get("url", ""))).query).get("k")
-        word = unquote_plus(q[0]).strip() if q else ""
-        if word and word not in words:
-            words.append(word)
+        word = category_word(cat) if isinstance(cat, dict) else ""
+        if not word or word in words:
+            continue
+        if legacy:
+            if word.split()[0] in firsts:
+                continue
+            firsts.add(word.split()[0])
+        words.append(word)
     return words
 
 
@@ -391,14 +429,14 @@ def report(items: dict[str, dict], hist: dict, today: date) -> dict:
 
 
 def run(creds: tuple[str, str, str], state_dir: Path, channel_file: Path, today: date, hour: int,
-        post=requests.post, sleep=time.sleep, now=time.time) -> str:
+        post=requests.post, sleep=time.sleep, now=time.time, legacy: tuple[str, ...] = ()) -> str:
     """Recogida diaria. Devuelve una frase para el log. Nunca lanza por un fallo de la API."""
     key, secret, tracking = creds
     path = state_dir / HIST_FILE
     hist = feed.load_history(path)
     if hour < START_HOUR:
         return f"aliexpress: se recoge a partir de las {START_HOUR}h (Madrid)"
-    keywords = keywords_from_channel(channel_file)
+    keywords = keywords_from_channel(channel_file, legacy)
     if hist.get("updated") == today.isoformat():
         if not probe_is_current(state_dir):  # el sondeo de hoy es de una version anterior: se repite una vez
             items, stats = gather(key, secret, tracking, keywords, post=post, sleep=sleep, now=now)

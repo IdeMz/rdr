@@ -2721,7 +2721,7 @@ def collect_aliexpress() -> None:
         local = datetime.now(timezone.utc)
     try:
         log.info("%s", aliexpress.run(creds, ROOT / "state", ROOT / "channels" / "concriterio.json",
-                                      local.date(), local.hour))
+                                      local.date(), local.hour, legacy=aliexpress.LEGACY_KEYWORDS))
     except Exception as exc:  # sin traceback: podria llevar la clave
         log.error("aliexpress: error inesperado %s: %s", type(exc).__name__, scrub(str(exc)))
 
