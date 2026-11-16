@@ -310,6 +310,12 @@
    "title": "DELL Pro P2726deb Conferencing Monitor 68,6 cm (27\") Qhd? Hdmi/DP/USB?c/LAN? Schwarz",
    "via": "modelo"
   },
+  "1200130008368": {
+   "a": "B0DDCQSYGM",
+   "t": "2026-11-16T22:24:54.934328+00:00",
+   "title": "AKG N5 Hybrid TWS Auriculares – Sonido nítido inalámbrico, Cancelación de Ruido Adaptativa, Calidad de Llamadas certificada por Zoom, 40h de reproducción, Prote",
+   "via": "ean"
+  },
   "196388599943": {
    "a": "",
    "t": "2026-11-14T09:20:40.743974+00:00",
@@ -1839,6 +1845,26 @@
    "t": "2026-11-16T22:05:20.966983+00:00",
    "veredicto": "oferta_real"
   },
+  "44798925691": {
+   "ahorro_vs_amazon": null,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": null,
+   "amz_title": "AKG N5 Hybrid TWS Auriculares – Sonido nítido inalámbrico, Cancelación de Ruido Adaptativa, Calidad de Llamadas certificada por Zoom, 40h de reproducción, Prote",
+   "asin": "B0DDCQSYGM",
+   "disponible": true,
+   "ean": "1200130008368",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "en Amazon pero sin precio o no disponible",
+   "name": "AKG N5 Hybrid con Dongle USB-C Negro TWS Bluetooth 5.3 40h IP54 Multipunto Auriculares inalámbricos",
+   "pista": "1970952 bytes; 9 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pp_drop": 13,
+   "pp_median": 142.95,
+   "pp_price": 123.95,
+   "t": "2026-11-16T22:24:54.934328+00:00",
+   "veredicto": "sin_precio"
+  },
   "44927881022": {
    "ahorro_vs_amazon": 10,
    "amz_low30": null,
@@ -2381,7 +2407,7 @@
    "pp_drop": 14,
    "pp_median": 199.95,
    "pp_price": 171.95,
-   "t": "2026-11-14T22:20:30.510879+00:00",
+   "t": "2026-11-16T22:24:54.934328+00:00",
    "v": 2,
    "veredicto": "no_esta",
    "vistos": {
@@ -3279,7 +3305,7 @@
    "pp_drop": 11,
    "pp_median": 788.94,
    "pp_price": 705.95,
-   "t": "2026-11-14T22:05:27.466329+00:00",
+   "t": "2026-11-16T22:24:54.934328+00:00",
    "veredicto": "amazon_mas_barato"
   },
   "46239685052": {
@@ -4445,14 +4471,14 @@
    }
   }
  },
- "night_at": "2026-11-16T22:05:20.966983+00:00",
+ "night_at": "2026-11-16T22:24:54.934328+00:00",
  "resumen": {
   "amazon_mas_barato": 18,
   "dudoso": 1,
   "no_esta": 8,
   "oferta_real": 19,
   "pvpr_inflado": 0,
-  "sin_precio": 5
+  "sin_precio": 6
  },
- "updated": "2026-11-16T22:05:20.966983+00:00"
+ "updated": "2026-11-16T22:24:54.934328+00:00"
 }
