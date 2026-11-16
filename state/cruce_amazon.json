@@ -1836,7 +1836,7 @@
    "pp_drop": 25,
    "pp_median": 64.95,
    "pp_price": 48.94,
-   "t": "2026-11-14T02:20:24.077147+00:00",
+   "t": "2026-11-16T02:20:24.133415+00:00",
    "veredicto": "amazon_mas_barato"
   },
   "45570747232": {
@@ -1852,11 +1852,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "SaveFamily Slim 4G Negro 1,28 pulgadas IPS GPS IP67 Smartwatch para niños",
-   "pista": "2336516 bytes; 17 a-price; caja de precio; disponibilidad: No disponible.; sin vendedor destacado",
+   "pista": "2248384 bytes; 6 a-price; caja de precio; disponibilidad: No disponible.; sin vendedor destacado",
    "pp_drop": 25,
    "pp_median": 118.96,
    "pp_price": 88.95,
-   "t": "2026-11-15T20:15:42.147336+00:00",
+   "t": "2026-11-16T02:20:24.133415+00:00",
    "veredicto": "sin_precio"
   },
   "45570747758": {
@@ -2504,19 +2504,19 @@
    "ahorro_vs_amazon": 12,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 740.43,
+   "amz_price": 740.53,
    "amz_title": "Optoma Hz147x Proiettore A Raggio Standard Dlp 1080p [1920x1080] Compatibilit? 3d Nero (hz147x Duracore Laser Projector)",
    "asin": "B0HN7FZYK5",
    "disponible": true,
    "ean": "5055387600614",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "12 % por debajo del habitual en Amazon (740.43)",
+   "motivo": "12 % por debajo del habitual en Amazon (740.53)",
    "name": "Optoma Láser 1080p Full HD 4000 lúmenes DLP Negro HZ147X altavoz 15W 31dB Proyector",
    "pp_drop": 15,
    "pp_median": 765.95,
    "pp_price": 650.96,
-   "t": "2026-11-14T02:20:24.077147+00:00",
+   "t": "2026-11-16T02:20:24.133415+00:00",
    "veredicto": "oferta_real"
   },
   "46186024577": {
@@ -3943,7 +3943,7 @@
    }
   }
  },
- "night_at": "2026-11-16T01:52:11.932855+00:00",
+ "night_at": "2026-11-16T02:20:24.133415+00:00",
  "resumen": {
   "amazon_mas_barato": 26,
   "dudoso": 7,
@@ -3952,5 +3952,5 @@
   "pvpr_inflado": 1,
   "sin_precio": 7
  },
- "updated": "2026-11-16T01:52:11.932855+00:00"
+ "updated": "2026-11-16T02:20:24.133415+00:00"
 }
