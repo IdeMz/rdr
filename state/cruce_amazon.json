@@ -138,6 +138,26 @@
     ]
    }
   },
+  "0622356294607": {
+   "a": "",
+   "t": "2026-11-16T22:50:28.400882+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "Ninja Detect Power Pro, Batidora y Procesador de Alimentos, Negro"
+    ],
+    "modelo": [
+     "Ninja Detect Power Pro, Batidora y Procesador de Alimentos, Negro",
+     "Ninja Detect Power Pro Batidora y Procesador de Alimentos, Piedra/Dorado",
+     "Ninja, Batidora de Vaso 2 en 1, Jarra de 2,1L, 1200W, Negro"
+    ],
+    "nombre": [
+     "Ninja Detect Power Pro, Batidora y Procesador de Alimentos, Negro",
+     "Ninja Detect Power Pro, Batidora Potente de Vaso 2 en 1, 1200W, Negro",
+     "Ninja CrushBOSS Batidora estándar y de vaso portátil 2 en 1, 1200 W, SmoothSense, 3 preajustes intel"
+    ]
+   }
+  },
   "0622356320559": {
    "a": "",
    "t": "2026-11-14T14:40:41.311125+00:00",
@@ -837,6 +857,12 @@
    "title": "SanDisk SSD portátil Extremo de 2 TB - hasta 1050 MB/s - USB-C, USB 3.2 Gen 2 - Unidad Externa de Estado sólido - SDSSDE61-2T00-G25B",
    "via": "ean"
   },
+  "6920075740950": {
+   "a": "B0CFXY26H1",
+   "t": "2026-11-16T22:50:28.400882+00:00",
+   "title": "SONOFF Cabezal Termostático Inteligente Zigbee para Válvula Termostática de Radiador 1pcs. Regulador de Temperatura, Pantalla LED, Requiere Zigbee 3.0 Hub. Cont",
+   "via": "ean"
+  },
   "6924843236393": {
    "a": "",
    "t": "2026-11-15T16:30:50.777266+00:00",
@@ -1052,6 +1078,12 @@
    "a": "B0D1VH7WMX",
    "t": "2026-11-16T15:40:40.598894+00:00",
    "title": "Marshall Minor IV Auriculares Inalámbricos Bluetooth, Auriculares Inalámbricos - Negro",
+   "via": "ean"
+  },
+  "7340055416900": {
+   "a": "B0H5CX6JHR",
+   "t": "2026-11-16T22:50:28.400882+00:00",
+   "title": "Marshall Stanmore IV Altavoz Bluetooth - Negro",
    "via": "ean"
   },
   "8001090914170": {
@@ -1487,6 +1519,25 @@
    "pp_price": 374.95,
    "t": "2026-11-16T22:05:20.966983+00:00",
    "veredicto": "sin_precio"
+  },
+  "38195159398": {
+   "ahorro_vs_amazon": -9,
+   "amz_low30": 25.63,
+   "amz_median": 25.63,
+   "amz_price": 24.34,
+   "amz_title": "SONOFF Cabezal Termostático Inteligente Zigbee para Válvula Termostática de Radiador 1pcs. Regulador de Temperatura, Pantalla LED, Requiere Zigbee 3.0 Hub. Cont",
+   "asin": "B0CFXY26H1",
+   "disponible": true,
+   "ean": "6920075740950",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 24.34 frente a 27.99",
+   "name": "SONOFF TRVZB para Radiador Zigbee WiFi compatible con Alexa y Google Válvula termostática",
+   "pp_drop": 18,
+   "pp_median": 33.99,
+   "pp_price": 27.99,
+   "t": "2026-11-16T22:50:28.400882+00:00",
+   "veredicto": "amazon_mas_barato"
   },
   "38277783220": {
    "ahorro_vs_amazon": 52,
@@ -2850,6 +2901,25 @@
     ]
    }
   },
+  "46093615448": {
+   "ahorro_vs_amazon": 17,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 399.0,
+   "amz_title": "Marshall Stanmore IV Altavoz Bluetooth - Negro",
+   "asin": "B0H5CX6JHR",
+   "disponible": true,
+   "ean": "7340055416900",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "17 % por debajo del habitual en Amazon (399.00)",
+   "name": "Marshall Stanmore IV Latón Negro 110W Auracast Altavoz Bluetooth 5.3",
+   "pp_drop": 10,
+   "pp_median": 369.95,
+   "pp_price": 331.95,
+   "t": "2026-11-16T22:50:28.400882+00:00",
+   "veredicto": "oferta_real"
+  },
   "46093615865": {
    "ahorro_vs_amazon": 23,
    "amz_low30": null,
@@ -3108,6 +3178,33 @@
    "pp_price": 52.95,
    "t": "2026-11-16T09:20:39.431359+00:00",
    "veredicto": "sin_precio"
+  },
+  "46186036352": {
+   "ean": "0622356294607",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Ninja Detect Power Pro 2,1L 1200W 14 velocidades Negro TB401EU Batidora de vaso",
+   "pp_drop": 11,
+   "pp_median": 241.95,
+   "pp_price": 214.94,
+   "t": "2026-11-16T22:50:28.400882+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "Ninja Detect Power Pro, Batidora y Procesador de Alimentos, Negro"
+    ],
+    "modelo": [
+     "Ninja Detect Power Pro, Batidora y Procesador de Alimentos, Negro",
+     "Ninja Detect Power Pro Batidora y Procesador de Alimentos, Piedra/Dorado",
+     "Ninja, Batidora de Vaso 2 en 1, Jarra de 2,1L, 1200W, Negro"
+    ],
+    "nombre": [
+     "Ninja Detect Power Pro, Batidora y Procesador de Alimentos, Negro",
+     "Ninja Detect Power Pro, Batidora Potente de Vaso 2 en 1, 1200W, Negro",
+     "Ninja CrushBOSS Batidora estándar y de vaso portátil 2 en 1, 1200 W, SmoothSense, 3 preajustes intel"
+    ]
+   }
   },
   "46186038476": {
    "ahorro_vs_amazon": -27,
@@ -4471,14 +4568,14 @@
    }
   }
  },
- "night_at": "2026-11-16T22:24:54.934328+00:00",
+ "night_at": "2026-11-16T22:50:28.400882+00:00",
  "resumen": {
-  "amazon_mas_barato": 18,
+  "amazon_mas_barato": 19,
   "dudoso": 1,
-  "no_esta": 8,
-  "oferta_real": 19,
+  "no_esta": 9,
+  "oferta_real": 20,
   "pvpr_inflado": 0,
   "sin_precio": 6
  },
- "updated": "2026-11-16T22:24:54.934328+00:00"
+ "updated": "2026-11-16T22:50:28.400882+00:00"
 }
