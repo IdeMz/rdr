@@ -41,6 +41,7 @@
   "Nutrición deportiva": "2026-11-14T11:40:39.802795+00:00",
   "Oficina": "2026-11-16T10:45:46.172773+00:00",
   "Patinetes": "2026-11-16T11:55:31.043068+00:00",
+  "Pequeño electrodoméstico": "2026-11-16T18:55:32.141614+00:00",
   "Perfumes": "2026-11-15T21:40:42.221187+00:00",
   "Periféricos": "2026-11-15T16:30:50.777266+00:00",
   "Perros": "2026-11-15T07:01:06.978986+00:00",
@@ -86,7 +87,7 @@
    "title": "adidas Men's Zapatilla de Senderismo Terrex Skychaser AX5 Gore-Tex"
   }
  },
- "next_at": "2026-11-16T18:50:57.881424+00:00",
+ "next_at": "2026-11-16T19:25:52.164320+00:00",
  "offer": {
   "a": "B0FC2CRDPV",
   "m": 311,
@@ -551,6 +552,17 @@
    "s": "ambas",
    "t": "2026-11-16T16:16:25.540983+00:00",
    "title": "Bosch - Procesador de alimentos, MultiTalent 8, 1250 W, Negro, Acero inoxidable, MC812M844",
+   "v": []
+  },
+  "B07JZ5V5LG": {
+   "c": "Pequeño electrodoméstico",
+   "d": 28,
+   "e": "🍞",
+   "m": 346,
+   "p": 51.9,
+   "s": "ambas",
+   "t": "2026-11-16T18:56:28.250492+00:00",
+   "title": "Cecotec Microondas ProClean 3030. 700 W, Capacidad 20L, Revestimiento Ready2Clean, 6 Niveles Funcionamiento, Temporizador 30 min, Modo Descongelar, Color Negro",
    "v": []
   },
   "B07K142D5Q": {
@@ -3013,12 +3025,12 @@
    "v": []
   }
  },
- "problem": {
-  "alerted_at": "2026-11-16T18:40:57.881424+00:00",
-  "fails": 3,
-  "last": "HTTP 503"
- },
+ "problem": {},
  "rejected": {
+  "B01M7YESHB": {
+   "t": "2026-11-16T18:55:32.141614+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B01N997C1B": {
    "t": "2026-11-16T07:01:09.494097+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3037,6 +3049,10 @@
   },
   "B08297PXHL": {
    "t": "2026-11-16T07:01:09.494097+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0BQ2MHMW8": {
+   "t": "2026-11-16T18:55:32.141614+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0CK2KK34J": {
@@ -3063,6 +3079,10 @@
    "t": "2026-11-16T15:40:40.598894+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0G4DP1KP6": {
+   "t": "2026-11-16T18:55:32.141614+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0GD7B5B14": {
    "t": "2026-11-16T09:20:39.431359+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3086,6 +3106,18 @@
  },
  "reserve": [
   {
+   "a": "B09V8C4QP9",
+   "c": "Pequeño electrodoméstico",
+   "e": "🍞",
+   "img": "https://m.media-amazon.com/images/I/51piMk+15HL._AC_UY218_.jpg",
+   "n": 1100,
+   "op": 221.06,
+   "p": 165.99,
+   "r": 4.3,
+   "t": "2026-11-16T18:55:32.141614+00:00",
+   "title": "Bosch BEL623MS3 Microondas Empotrable Series 2, 60 x 38 cm, Acero Inox"
+  },
+  {
    "a": "B0FC2CRDPV",
    "c": "Accesorios de móvil",
    "e": "🤳",
@@ -3096,36 +3128,12 @@
    "r": 4.4,
    "t": "2026-11-16T17:40:44.874656+00:00",
    "title": "ESR Pack 3 Protector Pantalla para iPhone 17 Pro Max, Classic"
-  },
-  {
-   "a": "B0CN93Y2YX",
-   "c": "Fotografía",
-   "e": "📷",
-   "img": "https://m.media-amazon.com/images/I/819HxcPTmkL._AC_UY218_.jpg",
-   "n": 3900,
-   "op": 209.99,
-   "p": 178.49,
-   "r": 4.2,
-   "t": "2026-11-16T15:40:40.598894+00:00",
-   "title": "AKASO Brave 8 Lite Cámara Deportiva 4K 60FPS 20MP, 60M Acuatica Sumergible"
-  },
-  {
-   "a": "B0HG82D9PQ",
-   "c": "Higiene personal",
-   "e": "🪥",
-   "img": "https://m.media-amazon.com/images/I/818WSE4jucL._AC_UL320_.jpg",
-   "n": 1400,
-   "op": 799.95,
-   "p": 399.95,
-   "r": 4.3,
-   "t": "2026-11-16T15:05:39.512603+00:00",
-   "title": "Oral-B iO 10 Cepillos de Dientes Eléctricos Negros, Pack de 2"
   }
  ],
  "summary_day": "2026-11-15",
  "tg_offset": 511048069,
  "x_copy": {
   "day": "2026-11-16",
-  "n": 18
+  "n": 19
  }
 }
