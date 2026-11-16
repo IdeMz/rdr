@@ -72,16 +72,16 @@
    "c": "",
    "e": "",
    "img": "https://m.media-amazon.com/images/I/615S5G56hQL._AC_SL1500_.jpg",
-   "m": 302,
+   "m": 305,
    "n": 1523,
    "op": 120.0,
    "p": 61.2,
    "r": 4.1,
-   "t": "2026-11-16T14:25:32.926447+00:00",
+   "t": "2026-11-16T14:30:57.944524+00:00",
    "title": "adidas Men's Zapatilla de Senderismo Terrex Skychaser AX5 Gore-Tex"
   }
  },
- "next_at": "2026-11-16T14:29:23.341423+00:00",
+ "next_at": "2026-11-16T15:05:13.178048+00:00",
  "offer": {
   "a": "B01EG0DJNE",
   "m": 275,
@@ -2335,6 +2335,17 @@
    "title": "Anker soundcore 2 Altavoz Bluetooth Portátil 12 W, BassUp, IPX7(Beige)",
    "v": []
   },
+  "B0FT3ZCKNG": {
+   "c": "",
+   "d": 49,
+   "e": "",
+   "m": 340,
+   "manual": true,
+   "p": 61.2,
+   "t": "2026-11-16T14:30:57.944524+00:00",
+   "title": "adidas Men's Zapatilla de Senderismo Terrex Skychaser AX5 Gore-Tex",
+   "v": []
+  },
   "B0FT44FP1R": {
    "c": "Zapatillas",
    "d": 36,
@@ -3084,9 +3095,9 @@
   }
  ],
  "summary_day": "2026-11-15",
- "tg_offset": 511048066,
+ "tg_offset": 511048069,
  "x_copy": {
   "day": "2026-11-16",
-  "n": 12
+  "n": 13
  }
 }
