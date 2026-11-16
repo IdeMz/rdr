@@ -80,7 +80,7 @@
    "title": "Cecotec Freidora de Aire con Cesta de Cristal Cecofry&Glass Crunchy Pro"
   }
  },
- "next_at": "2026-11-16T13:35:51.213009+00:00",
+ "next_at": "2026-11-16T13:50:55.790833+00:00",
  "offer": {
   "a": "B01EG0DJNE",
   "m": 275,
@@ -2930,7 +2930,10 @@
    "v": []
   }
  },
- "problem": {},
+ "problem": {
+  "fails": 1,
+  "last": "HTTP 503"
+ },
  "rejected": {
   "B01N6CJ1QW": {
    "t": "2026-11-15T15:15:41.208340+00:00",
