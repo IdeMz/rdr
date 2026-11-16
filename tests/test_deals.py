@@ -2788,3 +2788,141 @@ def test_aliexpress_link_uses_the_api(tmp_path, monkeypatch):
     prev = tg.of("sendPhoto")[0]
     assert "Ver en AliExpress" in prev["caption"] and "s.click.aliexpress.com/e/_abc" in prev["caption"]
     assert "Europa" in prev["caption"] and "mpub:ae:33039312461" in prev["reply_markup"]
+
+
+# ---------------------------------------------------------------- productos del mismo tipo seguidos
+
+PROT_IPAD = "ESR 2 Unidades Protector de Pantalla para iPad Air 11 Pulgadas M4/M3/M2"
+PROT_IPHONE = "ESR Pack 3 Protector Pantalla para iPhone 17 Pro Max, Classic"
+
+
+def test_same_kind_detects_the_same_type_of_product_even_with_another_model():
+    assert deals.same_kind(PROT_IPAD, PROT_IPHONE)
+    assert deals.same_kind("Samsung Galaxy S24 Funda silicona", "Samsung Galaxy S23 Funda cuero")
+    assert not deals.same_kind("Philips Hue bombilla inteligente E27", "Philips Hue tira led exterior")  # solo la marca
+    assert not deals.same_kind("Apple AirPods Pro 2 auriculares", "Sony WH-1000XM5 auriculares cancelacion ruido")
+    assert not deals.same_kind("", PROT_IPHONE)
+
+
+def test_pick_skips_the_same_kind_of_product_published_in_the_last_hours():
+    ch = channel(same_kind_hours=12, min_discount=10, min_rating=4.0, min_reviews=100)
+    state = {"B0IPAD": {"t": (NOW_IN - timedelta(hours=2)).isoformat(), "title": PROT_IPAD, "p": 12.0}}
+    products = [prod("B0IPHONE", PROT_IPHONE, 12.74, 19.99), prod("B0OTRA", "Anker Cargador USB-C 65W GaN rapido", 25.0, 40.0)]
+    got = deals.pick(products, ch, state, limit=5, now=NOW_IN)
+    assert [p.asin for p in got] == ["B0OTRA"]
+    old = {"B0IPAD": {"t": (NOW_IN - timedelta(hours=13)).isoformat(), "title": PROT_IPAD, "p": 12.0}}
+    assert "B0IPHONE" in [p.asin for p in deals.pick(products, ch, old, limit=5, now=NOW_IN)]  # ya pasaron 12 h
+    off = channel(same_kind_hours=0, min_discount=10, min_rating=4.0, min_reviews=100)
+    assert "B0IPHONE" in [p.asin for p in deals.pick(products, off, state, limit=5, now=NOW_IN)]  # regla apagada
+
+
+def test_pick_does_not_choose_two_of_the_same_kind_in_the_same_run():
+    ch = channel(same_kind_hours=12, min_discount=10, min_rating=4.0, min_reviews=100)
+    products = [prod("A1", PROT_IPAD, 12.0, 25.0), prod("A2", PROT_IPHONE, 12.74, 19.99),
+                prod("A3", "Anker Cargador USB-C 65W GaN rapido", 25.0, 40.0)]
+    got = deals.pick(products, ch, {}, limit=3, now=NOW_IN)
+    assert sorted(p.asin for p in got) == ["A1", "A3"] or sorted(p.asin for p in got) == ["A2", "A3"]
+    assert len(got) == 2
+
+
+def test_reserve_offer_does_not_repeat_the_kind_just_posted():
+    ch = channel(same_kind_hours=12)
+    posted = {"B0IPAD": {"t": (NOW_IN - timedelta(minutes=45)).isoformat(), "title": PROT_IPAD}}
+    items = [{"a": "B0IPHONE", "c": "Accesorios de móvil", "title": PROT_IPHONE},
+             {"a": "B0CAM", "c": "Fotografía", "title": "AKASO Brave 8 Lite Camara Deportiva 4K 60FPS"}]
+    assert [d["a"] for d in deals.diversify(items, posted, ch, NOW_IN)] == ["B0CAM"]
+    assert [d["a"] for d in deals.diversify(items, posted, ch, NOW_IN + timedelta(hours=13))] == ["B0IPHONE", "B0CAM"]
+
+
+def test_explain_says_when_a_product_is_skipped_for_being_the_same_kind():
+    ch = channel(same_kind_hours=12, min_discount=10, min_rating=4.0, min_reviews=100)
+    state = {"B0IPAD": {"t": (NOW_IN - timedelta(hours=2)).isoformat(), "title": PROT_IPAD, "p": 12.0}}
+    rows = dict((p.asin, why) for p, why in deals.explain(
+        [prod("B0IPHONE", PROT_IPHONE, 12.74, 19.99)], ch, state, now=NOW_IN))
+    assert rows["B0IPHONE"] == "mismo tipo que algo publicado hace poco"
+
+
+def test_same_kind_hours_cannot_be_negative(tmp_path):
+    with pytest.raises(deals.ConfigError, match="same_kind_hours"):
+        deals.load_channel(write_cfg(tmp_path, same_kind_hours=-1))
+
+
+# ---------------------------------------------------------------- errores 503 a rachas
+
+def test_collect_uses_the_deals_search_when_the_normal_one_fails(monkeypatch, caplog):
+    calls = []
+    extra = page(card("B000000062", "Movil en oferta del dia", "80,00 €", "160,00 €"))
+    fake_amazon(monkeypatch, deals.Blocked("HTTP 503"), extra, calls)
+    with caplog.at_level(logging.INFO, logger="deals"):
+        found = deals.collect(channel(queries=["movil"], deals_search=True, require_spain=False), session=object())
+    assert [(p.asin, p.via) for p in found] == [("B000000062", "ofertas")]
+    assert calls[0][1] == 3 and calls[1][1] == 2          # la de Ofertas es lo unico que queda: dos intentos
+    assert "la busqueda normal no respondio" in caplog.text
+
+
+def test_collect_still_fails_when_both_searches_fail(monkeypatch):
+    fake_amazon(monkeypatch, deals.Blocked("HTTP 503"), deals.Blocked("HTTP 503"), [])
+    with pytest.raises(deals.Blocked, match="503"):
+        deals.collect(channel(queries=["movil"], deals_search=True, require_spain=False), session=object())
+
+
+def test_collect_without_a_deals_search_still_raises_on_503(monkeypatch):
+    fake_amazon(monkeypatch, deals.Blocked("HTTP 503"), page(), [])
+    with pytest.raises(deals.Blocked, match="503"):
+        deals.collect(channel(queries=["movil"], require_spain=False), session=object())
+
+
+def test_transient_errors_are_503_429_and_network_but_not_captcha():
+    assert all(deals.transient(deals.Blocked(m)) for m in ("HTTP 503", "HTTP 429", "error de red (ReadTimeout)", "sin respuesta"))
+    assert not any(deals.transient(deals.Blocked(m)) for m in ("captcha o bloqueo", "HTTP 404", "captcha"))
+
+
+def test_run_channel_tries_another_category_after_a_503(tmp_path, monkeypatch, alerts):
+    sent = setup_publish(monkeypatch)
+    waits = []
+    monkeypatch.setattr(deals, "sleep", lambda s: waits.append(s))
+    seen = []
+
+    def flaky(ch, html_file=None, session=None):
+        seen.append(ch.queries[0] if ch.queries else "url")
+        if len(seen) == 1:
+            raise deals.Blocked("HTTP 503")
+        return deals.parse_results(HTML)
+
+    monkeypatch.setattr(deals, "collect", flaky)
+    ch = channel(categories=CATS, min_discount=10, min_rating=0, min_reviews=0)
+    assert deals.run_channel(ch, state_dir=tmp_path, now=NOW_IN) == 1
+    assert len(seen) >= 2 and len(sent) == 1       # tras el 503, otra categoria da el producto
+    assert any(deals.RETRY_PAUSE[0] <= w <= deals.RETRY_PAUSE[1] for w in waits)
+    assert deals.load_problem(tmp_path / "t.json") == {} and alerts == []     # un 503 suelto no cuenta como fallo
+
+
+def test_run_channel_counts_one_failure_when_every_category_gives_503(tmp_path, monkeypatch, alerts):
+    setup_publish(monkeypatch)
+    seen = []
+
+    def blocked(ch, html_file=None, session=None):
+        seen.append(1)
+        raise deals.Blocked("HTTP 503")
+
+    monkeypatch.setattr(deals, "collect", blocked)
+    ch = channel(categories=CATS, min_discount=10, min_rating=0, min_reviews=0)
+    with pytest.raises(deals.Blocked, match="503"):
+        deals.run_channel(ch, state_dir=tmp_path, now=NOW_IN)
+    assert len(seen) == min(ch.searches_per_run, len(CATS))
+    assert deals.load_problem(tmp_path / "t.json")["fails"] == 1
+
+
+def test_run_channel_does_not_insist_after_a_captcha(tmp_path, monkeypatch, alerts):
+    setup_publish(monkeypatch)
+    seen = []
+
+    def captcha(ch, html_file=None, session=None):
+        seen.append(1)
+        raise deals.Blocked("captcha o bloqueo")
+
+    monkeypatch.setattr(deals, "collect", captcha)
+    ch = channel(categories=CATS, min_discount=10, min_rating=0, min_reviews=0)
+    with pytest.raises(deals.Blocked):
+        deals.run_channel(ch, state_dir=tmp_path, now=NOW_IN)
+    assert len(seen) == 1 and deals.load_problem(tmp_path / "t.json")["fails"] == 1

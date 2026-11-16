@@ -261,6 +261,9 @@ class Channel:
     repost_drop: int = 10
     repost_min_days: int = 3
     similarity: float = 0.5
+    # No sale otro producto "del mismo tipo" (p. ej. otro protector de pantalla, de otro modelo) hasta que pasen
+    # estas horas desde el ultimo publicado (0 = sin esta regla)
+    same_kind_hours: int = 12
     skip_sponsored: bool = True
     footer: str = ""
     # Pie del mensaje: tienda, boton de la web propia y boton de voto
@@ -340,6 +343,8 @@ def load_channel(path: Path) -> Channel:
         raise ConfigError(f"{path.name}: 'x_min_discount' y 'x_max_per_day' no pueden ser negativos")
     if min(ch.manual_after, ch.manual_repeat_min, ch.reserve_hours) < 1 or ch.reserve_size < 0:
         raise ConfigError(f"{path.name}: valores 'manual_*' / 'reserve_*' no validos")
+    if ch.same_kind_hours < 0:
+        raise ConfigError(f"{path.name}: 'same_kind_hours' no puede ser negativo")
     if not 0 <= ch.repost_drop < 100 or ch.repost_min_days < 1:
         raise ConfigError(f"{path.name}: 'repost_drop' va de 0 a 99 y 'repost_min_days' debe ser al menos 1")
     if ch.searches_per_run < 1:
@@ -647,6 +652,15 @@ class LocationError(Exception):
     """No se ha podido fijar la entrega en España: es mejor no publicar que publicar precios sin IVA."""
 
 
+TRANSIENT_RE = re.compile(r"^(HTTP (5\d\d|429)|error de red|sin respuesta)")
+RETRY_PAUSE = (20, 40)  # segundos de pausa antes de probar otra categoria tras un error pasajero de Amazon
+
+
+def transient(exc: Exception) -> bool:
+    """Error pasajero de Amazon (503, 429, red): probar otra busqueda puede funcionar. Un captcha no."""
+    return bool(TRANSIENT_RE.match(str(exc)))
+
+
 def apply_profile(session: requests.Session, avoid: str | None = None) -> str:
     """Pone en la sesion un perfil completo de cabeceras distinto al actual y devuelve su User-Agent."""
     pool = [p for p in HEADER_PROFILES if p["User-Agent"] != avoid] or HEADER_PROFILES
@@ -846,17 +860,26 @@ def collect(
     found: dict[str, Product] = {}
     # las busquedas de Ofertas van despues y son un extra: un solo intento, y si fallan se sigue sin ellas
     plan = [(u, False) for u in search_urls(ch)] + [(u, True) for u in deals_urls(ch)]
+    primary_error: Blocked | None = None  # la busqueda normal fallo y se intenta con la de Ofertas
     for i, (url, optional) in enumerate(plan):
         if i:
             sleep(random.uniform(2, 5))
         if optional:
             try:
-                html = fetch(session, url, retries=1)
+                # un solo intento si la normal ya dio resultados; dos si la de Ofertas es lo unico que queda
+                html = fetch(session, url, retries=2 if primary_error else 1)
             except Blocked as exc:
                 log.info("%s: la busqueda de ofertas no respondio (%s); se sigue sin ella", ch.name, exc)
                 continue
         else:
-            html = fetch(session, url)
+            try:
+                html = fetch(session, url)
+            except Blocked as exc:
+                if not any(opt for _, opt in plan[i + 1:]):
+                    raise  # no hay otra pagina que probar
+                primary_error = exc
+                log.warning("%s: la busqueda normal no respondio (%s); se prueba la de ofertas", ch.name, exc)
+                continue
         results = parse_results(html)
         if is_blocked(html, len(results)):
             raise Blocked("captcha o bloqueo")
@@ -888,6 +911,8 @@ def collect(
                 found[p.asin] = p
             elif optional and known.via == "busqueda":
                 known.via = "ambas"  # ya salia en la busqueda normal y tambien esta en Ofertas
+    if primary_error is not None and not found:
+        raise primary_error
     return list(found.values())
 
 
@@ -1145,7 +1170,11 @@ def explain(products: list[Product], ch: Channel, state: dict, skip=frozenset(),
             source = "el historial propio" if "historial propio" in detail else "la ficha"
             reasons[p.asin] = f"descartado por {source}: {detail}".strip(": ")
         elif p.asin not in fresh:
-            reasons[p.asin] = "parecido a otro ya publicado"
+            kinds = recent_kind_titles(state, ch, now)
+            kind = any(a != p.asin and same_kind(p.title, t) for a, t in kinds)
+            reasons[p.asin] = ("mismo tipo que algo publicado hace poco" if kind and not any(
+                similar(p.title, v.get("title", ""), ch.similarity) for v in state.values()
+            ) else "parecido a otro ya publicado")
         else:
             reasons[p.asin] = "candidato (no elegido esta vez)"
     return [(p, reasons[p.asin]) for p in products]
@@ -1184,6 +1213,34 @@ def similar(a: str, b: str, threshold: float) -> bool:
     return smaller >= 4 and common / smaller >= 0.8
 
 
+KIND_NOISE = frozenset({
+    "pack", "unidades", "unidad", "pulgadas", "para", "con", "sin", "los", "las", "del", "color", "colores",
+    "negro", "negra", "blanco", "blanca", "azul", "rojo", "gris", "plata", "set", "juego", "kit", "nuevo", "nueva",
+    "compatible", "universal", "mejor", "alta", "calidad", "pro", "plus", "max", "mini", "ultra",
+})
+KIND_SHARED = 2  # palabras del tipo de producto (sin la marca) que tienen que coincidir
+
+
+def kind_words(title: str) -> set[str]:
+    """Palabras que dicen QUE es el producto (protector, pantalla, funda...): sin marca, cifras ni palabras de relleno."""
+    words = re.findall(r"[a-záéíóúüñ0-9]+", title.lower())
+    return {w for w in words[1:] if len(w) > 3 and not any(c.isdigit() for c in w) and w not in KIND_NOISE}
+
+
+def same_kind(a: str, b: str) -> bool:
+    """True si son productos del mismo tipo aunque sean de otro modelo (dos protectores de pantalla de moviles distintos)."""
+    return len(kind_words(a) & kind_words(b)) >= KIND_SHARED
+
+
+def recent_kind_titles(posted: dict, ch: Channel, now: datetime | None) -> list[tuple[str, str]]:
+    """(asin, titulo) de lo publicado en las ultimas same_kind_hours horas."""
+    if not ch.same_kind_hours or now is None:
+        return []
+    cutoff = now - timedelta(hours=ch.same_kind_hours)
+    return [(a, v.get("title", "")) for a, v in posted.items()
+            if isinstance(v, dict) and v.get("title") and _ts(v) > cutoff]
+
+
 def pick(
     products: list[Product],
     ch: Channel,
@@ -1199,6 +1256,8 @@ def pick(
     """
     limit = ch.max_posts if limit is None else limit
     recent = [(a, v.get("title", "")) for a, v in state.items()]
+    kinds = recent_kind_titles(state, ch, now)
+    use_kinds = bool(ch.same_kind_hours) and now is not None
     chosen: list[Product] = []
     for p in sorted((p for p in products if eligible(p, ch)), key=score, reverse=True):
         if already_posted(p, state, ch, now) or p.asin in skip:
@@ -1206,10 +1265,14 @@ def pick(
         # el propio producto no cuenta como 'variante parecida' de si mismo
         if any(a != p.asin and similar(p.title, t, ch.similarity) for a, t in recent):
             continue
+        if any(a != p.asin and same_kind(p.title, t) for a, t in kinds):
+            continue
         if p.asin in state:
             p.before = state[p.asin].get("p")
         chosen.append(p)
         recent.append((p.asin, p.title))
+        if use_kinds:
+            kinds.append((p.asin, p.title))
         if len(chosen) >= limit:
             break
     return chosen
@@ -1665,16 +1728,21 @@ def product_from_dict(d: dict) -> Product:
     )
 
 
-def diversify(items: list[dict], posted: dict, ch: Channel) -> list[dict]:
-    """Deja en la reserva ofertas variadas: nada parecido a lo ya publicado ni entre si, y una por categoria."""
+def diversify(items: list[dict], posted: dict, ch: Channel, now: datetime | None = None) -> list[dict]:
+    """Deja en la reserva ofertas variadas: nada parecido a lo ya publicado ni entre si, una por categoria
+    y nada del mismo tipo que lo publicado hace poco (otro protector de pantalla, de otro modelo)."""
     titles = [v.get("title", "") for v in posted.values()]
+    kinds = [t for _, t in recent_kind_titles(posted, ch, now)]
     out, cats = [], set()
     for d in items:
         cat = d.get("c") or d["a"]
-        if cat in cats or any(similar(d.get("title", ""), t, ch.similarity) for t in titles):
+        title = d.get("title", "")
+        if cat in cats or any(similar(title, t, ch.similarity) for t in titles):
+            continue
+        if any(same_kind(title, t) for t in kinds):
             continue
         cats.add(cat)
-        titles.append(d.get("title", ""))
+        titles.append(title)
         out.append(d)
     return out
 
@@ -1696,7 +1764,7 @@ def load_reserve(path: Path, now: datetime, ch: Channel, exclude: dict | None = 
             continue
         seen.add(d["a"])
         out.append(d)
-    return diversify(out, exclude, ch) if exclude else out
+    return diversify(out, exclude, ch, now) if exclude else out
 
 
 def _offer_open(state_path: Path, now: datetime, ch: Channel) -> bool:
@@ -2495,7 +2563,7 @@ def run_channel(
     need = max(0, ch.reserve_size - len(reserve))
     extras: list[tuple[Product, dict | None]] = []
     known = {d["a"] for d in reserve}
-    for cat in targets:
+    for idx, cat in enumerate(targets):
         cch = category_channel(ch, cat) if cat else ch
         label = f"{ch.name}/{cat['nombre']}" if cat else ch.name
         if cat and cat.get("busquedas"):
@@ -2503,6 +2571,13 @@ def run_channel(
         try:
             products = collect(cch, html_file, session)
         except (Blocked, LocationError) as exc:
+            if (isinstance(exc, Blocked) and transient(exc) and publishing and not force
+                    and idx < len(targets) - 1):
+                # Amazon da 503/429 a rachas: se espera un poco, se cambia de perfil y se prueba otra categoria
+                log.warning("%s: %s; se prueba otra categoria tras una pausa", label, exc)
+                sleep(random.uniform(*RETRY_PAUSE))
+                rotate_profile(session)
+                continue
             if publishing and not force:
                 save_state(state_path, state, next_at=retry_at, rejected=rejected, cats=cats)  # no insistir
                 record_problem(ch, state_path, "fail", str(exc), now)
@@ -2641,7 +2716,7 @@ def run_channel(
     if keep_reserve and published:
         fresh = [product_to_dict(e, c, now) for e, c in extras if e.asin not in state]
         kept = [d for d in reserve if d["a"] not in state]
-        set_state_key(state_path, "reserve", diversify(fresh + kept, state, ch)[: ch.reserve_size])
+        set_state_key(state_path, "reserve", diversify(fresh + kept, state, ch, now)[: ch.reserve_size])
     if publishing and session is not None and ch.name == REVIEW_CHANNEL:
         cross_amazon(session, state_dir, now, ch)
     return published
