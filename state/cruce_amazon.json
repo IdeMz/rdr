@@ -1571,10 +1571,10 @@
    "lista": "candidates",
    "motivo": "13 % por debajo del habitual en Amazon (412.28)",
    "name": "Samsung Galaxy Watch Ultra 2025 47 mm LTE Azul Titanio 1,5 pulgadas AMOLED GPS 8 días 10ATM",
-   "pp_drop": 22,
-   "pp_median": 460.95,
+   "pp_drop": 17,
+   "pp_median": 432.95,
    "pp_price": 359.95,
-   "t": "2026-11-14T12:50:38.841046+00:00",
+   "t": "2026-11-16T13:05:35.879053+00:00",
    "veredicto": "oferta_real"
   },
   "42520354709": {
@@ -3620,11 +3620,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Polti StainOver SC30 2000W Aspirador de tapicería",
-   "pista": "1354383 bytes; 15 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1349318 bytes; 16 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 20,
    "pp_median": 251.95,
    "pp_price": 200.94,
-   "t": "2026-11-16T07:01:09.494097+00:00",
+   "t": "2026-11-16T13:05:35.879053+00:00",
    "veredicto": "sin_precio"
   },
   "46599142071": {
@@ -4077,5 +4077,5 @@
   "pvpr_inflado": 0,
   "sin_precio": 3
  },
- "updated": "2026-11-16T12:30:54.116656+00:00"
+ "updated": "2026-11-16T13:05:35.879053+00:00"
 }
