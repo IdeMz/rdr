@@ -32,6 +32,7 @@
   "Monitores": "2026-11-15T19:15:39.725060+00:00",
   "Móviles": "2026-11-14T19:45:46.808036+00:00",
   "Nutrición deportiva": "2026-11-14T11:40:39.802795+00:00",
+  "Oficina": "2026-11-16T10:45:46.172773+00:00",
   "Perfumes": "2026-11-15T21:40:42.221187+00:00",
   "Periféricos": "2026-11-15T16:30:50.777266+00:00",
   "Perros": "2026-11-15T07:01:06.978986+00:00",
@@ -62,7 +63,7 @@
    "title": "Cecotec Freidora de Aire con Cesta de Cristal Cecofry&Glass Crunchy Pro"
   }
  },
- "next_at": "2026-11-16T10:41:03.315866+00:00",
+ "next_at": "2026-11-16T11:17:55.532001+00:00",
  "offer": {
   "a": "B01EG0DJNE",
   "m": 275,
@@ -117,6 +118,17 @@
    "p": 24.94,
    "t": "2026-11-08T11:41:12.275160+00:00",
    "title": "Lavazza, Qualità Rossa, Café en Grano Natural, Ideal para la Máquina de Café Espresso, con Notas Aromáticas de Chocolate y Frutos Secos, Arábica y Robusta, Intensidad 5, Tueste Medio, Paquete de 1 kg",
+   "v": []
+  },
+  "B004NBZB2Y": {
+   "c": "Oficina",
+   "d": 15,
+   "e": "🖊️",
+   "m": 334,
+   "p": 35.95,
+   "s": "ofertas",
+   "t": "2026-11-16T10:46:23.287304+00:00",
+   "title": "Texas Instruments TI 36 X PRO - Calculadora científica, negro",
    "v": []
   },
   "B004PGM9KY": {
@@ -2857,10 +2869,7 @@
    "v": []
   }
  },
- "problem": {
-  "fails": 1,
-  "last": "HTTP 503"
- },
+ "problem": {},
  "rejected": {
   "B009T6QA2S": {
    "t": "2026-11-15T12:15:40.152691+00:00",
@@ -2872,6 +2881,10 @@
   },
   "B01N997C1B": {
    "t": "2026-11-16T07:01:09.494097+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B07KJZM3QP": {
+   "t": "2026-11-16T10:45:46.172773+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B07M69276N": {
@@ -2912,10 +2925,6 @@
   },
   "B0DCPB9J7K": {
    "t": "2026-11-15T12:15:40.152691+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0DD45976Z": {
-   "t": "2026-11-15T10:35:39.916250+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0DHSFBRPB": {
@@ -2993,6 +3002,18 @@
  },
  "reserve": [
   {
+   "a": "B0006U0NVK",
+   "c": "Oficina",
+   "e": "🖊️",
+   "img": "https://m.media-amazon.com/images/I/61WXkbQHDhL._AC_UL320_.jpg",
+   "n": 668,
+   "op": 7.15,
+   "p": 5.7,
+   "r": 4.7,
+   "t": "2026-11-16T10:45:46.172773+00:00",
+   "title": "Genie 540 - Calculadora con pantalla inclinada de 10 dígitos (panel solar y batería), color plateado"
+  },
+  {
    "a": "B086ZDGPBW",
    "c": "Bricolaje",
    "e": "🪛",
@@ -3003,36 +3024,12 @@
    "r": 4.5,
    "t": "2026-11-16T08:10:40.674323+00:00",
    "title": "SONGMICS Escalera Plegable de 2 Peldaños, Escalera Pequeña, Acero, Carga de 150 kg"
-  },
-  {
-   "a": "B09TW72XZQ",
-   "c": "Bebé",
-   "e": "🍼",
-   "img": "https://m.media-amazon.com/images/I/81b9AqNGSTL._AC_UL320_.jpg",
-   "n": 37100,
-   "op": 22.99,
-   "p": 16.65,
-   "r": 4.8,
-   "t": "2026-11-16T07:35:32.483023+00:00",
-   "title": "WaterWipes Sensitive+ Newborn & Baby Wipes, 6 Paquetes"
-  },
-  {
-   "a": "B0CYTGQR74",
-   "c": "Barras de sonido",
-   "e": "🎶",
-   "img": "https://m.media-amazon.com/images/I/61wRWLNDAVL._AC_UY218_.jpg",
-   "n": 521,
-   "op": 279.0,
-   "p": 190.0,
-   "r": 4.2,
-   "t": "2026-11-16T07:01:09.494097+00:00",
-   "title": "DENON DHT-S218 Barra de Sonido 2.1 con Subwoofer Integrado y Dolby Atmos"
   }
  ],
  "summary_day": "2026-11-15",
  "tg_offset": 511048060,
  "x_copy": {
   "day": "2026-11-16",
-  "n": 6
+  "n": 7
  }
 }

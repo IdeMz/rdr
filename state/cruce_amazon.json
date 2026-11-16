@@ -370,6 +370,18 @@
    "title": "Thrustmaster T598 Direct Axial Drive Volante y Pedalier - XBOX y PC",
    "via": "ean"
   },
+  "3660619040247": {
+   "a": "B08ZJG6TVT",
+   "t": "2026-11-16T10:45:46.172773+00:00",
+   "title": "Seagate Expansion, 2 TB, External Hard Drive HDD, 2.5 Inch, USB 3.0, PC & Notebook, 2 Years Rescue Services (STKM2000400)",
+   "via": "ean"
+  },
+  "4008146046551": {
+   "a": "B0F9TRBWPD",
+   "t": "2026-11-16T10:45:46.172773+00:00",
+   "title": "SEVERIN Freidora de aire FryLight Single, cocinado versátil, pantalla táctil, 8 programas automáticos, función de conservación del calor, 4L, revestimiento anti",
+   "via": "ean"
+  },
   "4008496969937": {
    "a": "B078YZB72S",
    "t": "2026-11-14T13:25:29.087955+00:00",
@@ -1246,6 +1258,25 @@
    "t": "2026-11-16T09:55:33.695632+00:00",
    "veredicto": "amazon_mas_barato"
   },
+  "37600256508": {
+   "ahorro_vs_amazon": 32,
+   "amz_low30": null,
+   "amz_median": 119.99,
+   "amz_price": 115.5,
+   "amz_title": "Seagate Expansion, 2 TB, External Hard Drive HDD, 2.5 Inch, USB 3.0, PC & Notebook, 2 Years Rescue Services (STKM2000400)",
+   "asin": "B08ZJG6TVT",
+   "disponible": true,
+   "ean": "3660619040247",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "32 % por debajo del habitual en Amazon (119.99)",
+   "name": "Seagate Expansion STKM2000400 2TB USB 3.2 Disco duro externo",
+   "pp_drop": 35,
+   "pp_median": 124.94,
+   "pp_price": 81.24,
+   "t": "2026-11-16T10:45:46.172773+00:00",
+   "veredicto": "oferta_real"
+  },
   "37600259956": {
    "ahorro_vs_amazon": null,
    "amz_low30": null,
@@ -1653,6 +1684,26 @@
      "Rowenta Compact Power, calefactor, calentamiento rápido, SO5115"
     ]
    }
+  },
+  "45368123613": {
+   "ahorro_vs_amazon": null,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": null,
+   "amz_title": "SEVERIN Freidora de aire FryLight Single, cocinado versátil, pantalla táctil, 8 programas automáticos, función de conservación del calor, 4L, revestimiento anti",
+   "asin": "B0F9TRBWPD",
+   "disponible": true,
+   "ean": "4008146046551",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "en Amazon pero sin precio o no disponible",
+   "name": "Severin FR 2461 4L 1300W 8 Programas pantalla táctil Freidora de aire",
+   "pista": "1849905 bytes; 20 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pp_drop": 29,
+   "pp_median": 66.95,
+   "pp_price": 47.4,
+   "t": "2026-11-16T10:45:46.172773+00:00",
+   "veredicto": "sin_precio"
   },
   "45368125530": {
    "ahorro_vs_amazon": 37,
@@ -3944,12 +3995,12 @@
  },
  "night_at": "2026-11-16T06:05:25.856364+00:00",
  "resumen": {
-  "amazon_mas_barato": 27,
-  "dudoso": 7,
-  "no_esta": 19,
-  "oferta_real": 20,
+  "amazon_mas_barato": 12,
+  "dudoso": 0,
+  "no_esta": 8,
+  "oferta_real": 9,
   "pvpr_inflado": 1,
-  "sin_precio": 6
+  "sin_precio": 3
  },
- "updated": "2026-11-16T09:55:33.695632+00:00"
+ "updated": "2026-11-16T10:45:46.172773+00:00"
 }
