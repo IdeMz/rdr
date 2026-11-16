@@ -696,10 +696,22 @@
     ]
    }
   },
+  "5099206051775": {
+   "a": "B00LFBEOUA",
+   "t": "2026-11-16T16:15:49.892288+00:00",
+   "title": "Logitech G G402 Hyperion Fury Ratón Gaming con Cable",
+   "via": "ean"
+  },
   "5099206099784": {
    "a": "B0FHQ5XXTK",
    "t": "2026-11-15T00:20:27.121298+00:00",
    "title": "Logitech Lift Ratón Ergonómico Vertical, Inalámbrico, Bluetooth o receptor Logi Bolt USB, clics Silenciosos, 4 botones, ERGO K860 Teclado inalámbrico, ergonómic",
+   "via": "ean"
+  },
+  "5099206111615": {
+   "a": "B0DB5G5QC5",
+   "t": "2026-11-16T16:15:49.892288+00:00",
+   "title": "Logitech Ergo M575S ratón con trackball inalámbrico",
    "via": "ean"
   },
   "5702017818023": {
@@ -1286,6 +1298,25 @@
    "pp_price": 111.88,
    "t": "2026-11-16T11:55:31.043068+00:00",
    "veredicto": "oferta_real"
+  },
+  "37600255328": {
+   "ahorro_vs_amazon": 1,
+   "amz_low30": 37.99,
+   "amz_median": null,
+   "amz_price": 36.09,
+   "amz_title": "Logitech G G402 Hyperion Fury Ratón Gaming con Cable",
+   "asin": "B00LFBEOUA",
+   "disponible": true,
+   "ean": "5099206051775",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 36.09 frente a 37.67",
+   "name": "Logitech Hyperion Fury G402 4000 DPI Ratón gaming",
+   "pp_drop": 23,
+   "pp_median": 48.94,
+   "pp_price": 37.67,
+   "t": "2026-11-16T16:15:49.892288+00:00",
+   "veredicto": "amazon_mas_barato"
   },
   "37600255371": {
    "ahorro_vs_amazon": 71,
@@ -2356,6 +2387,25 @@
    "pp_price": 53.95,
    "t": "2026-11-15T00:20:27.121298+00:00",
    "veredicto": "dudoso"
+  },
+  "45956991003": {
+   "ahorro_vs_amazon": -4,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 33.99,
+   "amz_title": "Logitech Ergo M575S ratón con trackball inalámbrico",
+   "asin": "B0DB5G5QC5",
+   "disponible": true,
+   "ean": "5099206111615",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 33.99 frente a 35.36",
+   "name": "Trackball Logitech Ergo M575S 2000 DPI 5 botones Ratón inalámbrico ergonómico",
+   "pp_drop": 21,
+   "pp_median": 44.95,
+   "pp_price": 35.36,
+   "t": "2026-11-16T16:15:49.892288+00:00",
+   "veredicto": "amazon_mas_barato"
   },
   "45956991042": {
    "ahorro_vs_amazon": -22,
@@ -4195,12 +4245,12 @@
  },
  "night_at": "2026-11-16T06:05:25.856364+00:00",
  "resumen": {
-  "amazon_mas_barato": 15,
+  "amazon_mas_barato": 17,
   "dudoso": 0,
   "no_esta": 8,
   "oferta_real": 15,
   "pvpr_inflado": 0,
   "sin_precio": 3
  },
- "updated": "2026-11-16T15:40:40.598894+00:00"
+ "updated": "2026-11-16T16:15:49.892288+00:00"
 }

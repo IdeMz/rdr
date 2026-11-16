@@ -16,6 +16,7 @@
   "Ciclismo": "2026-11-14T21:35:30.640432+00:00",
   "Climatización": "2026-11-14T11:05:31.708608+00:00",
   "Colchones y almohadas": "2026-11-13T08:45:39.815574+00:00",
+  "Componentes PC": "2026-11-16T16:15:49.892288+00:00",
   "Cuidado de la piel": "2026-11-15T12:50:40.627443+00:00",
   "Cuidado del cabello": "2026-11-13T21:50:42.988192+00:00",
   "Cámaras de seguridad": "2026-11-14T17:20:46.627491+00:00",
@@ -83,7 +84,7 @@
    "title": "adidas Men's Zapatilla de Senderismo Terrex Skychaser AX5 Gore-Tex"
   }
  },
- "next_at": "2026-11-16T16:14:40.666752+00:00",
+ "next_at": "2026-11-16T16:49:29.958554+00:00",
  "offer": {
   "a": "B01EG0DJNE",
   "m": 275,
@@ -537,6 +538,17 @@
    "p": 89.99,
    "t": "2026-11-11T20:58:15.154291+00:00",
    "title": "Tefal Daily Cook - Juego de 4 Piezas + 5 Accesorios, Acero inoxidable",
+   "v": []
+  },
+  "B07HPRQJL1": {
+   "c": "Componentes PC",
+   "d": 31,
+   "e": "🧩",
+   "m": 343,
+   "p": 170.99,
+   "s": "ambas",
+   "t": "2026-11-16T16:16:25.540983+00:00",
+   "title": "Bosch - Procesador de alimentos, MultiTalent 8, 1250 W, Negro, Acero inoxidable, MC812M844",
    "v": []
   },
   "B07K142D5Q": {
@@ -3019,10 +3031,6 @@
    "t": "2026-11-16T09:55:33.695632+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0DY1P85GK": {
-   "t": "2026-11-15T15:50:40.820191+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0F1NGVZQ9": {
    "t": "2026-11-16T07:01:09.494097+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3041,10 +3049,6 @@
   },
   "B0GD7B5B14": {
    "t": "2026-11-16T09:20:39.431359+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0GZSS216X": {
-   "t": "2026-11-15T15:50:40.820191+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0H29D4R26": {
@@ -3110,6 +3114,6 @@
  "tg_offset": 511048069,
  "x_copy": {
   "day": "2026-11-16",
-  "n": 15
+  "n": 16
  }
 }
