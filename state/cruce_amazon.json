@@ -885,6 +885,12 @@
    "title": "VIOFO A329S 4K 60FPS 2CH Dashcam Del.+Tras., STARVIS 2, Wi-Fi 6",
    "via": "modelo"
   },
+  "6972884752242": {
+   "a": "B0H7HZTXYC",
+   "t": "2026-11-16T15:40:40.598894+00:00",
+   "title": "CATLINK Scoop Robot Pro Arenero Gatos Autolimpiable, Arenero Automático con Doble Cámara IA y App, Interior 82 L, Depósito 15 L, 30 dB, para Gatos Grandes y Var",
+   "via": "nombre"
+  },
   "6974958250739": {
    "a": "B0FF1X7VGL",
    "t": "2026-11-13T22:50:26.355987+00:00",
@@ -986,6 +992,12 @@
    "a": "B0DCPW2SP5",
    "t": "2026-11-14T02:50:24.306324+00:00",
    "title": "Bowers & Wilkins Pi6 - Verde Bosque",
+   "via": "ean"
+  },
+  "7340055398251": {
+   "a": "B0D1VH7WMX",
+   "t": "2026-11-16T15:40:40.598894+00:00",
+   "title": "Marshall Minor IV Auriculares Inalámbricos Bluetooth, Auriculares Inalámbricos - Negro",
    "via": "ean"
   },
   "8001090914170": {
@@ -1576,6 +1588,25 @@
     ]
    }
   },
+  "41644272430": {
+   "ahorro_vs_amazon": 20,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 107.38,
+   "amz_title": "Marshall Minor IV Auriculares Inalámbricos Bluetooth, Auriculares Inalámbricos - Negro",
+   "asin": "B0D1VH7WMX",
+   "disponible": true,
+   "ean": "7340055398251",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "20 % por debajo del habitual en Amazon (107.38)",
+   "name": "Marshall Minor IV Negro TWS 30h IPX4 Auriculares inalámbricos",
+   "pp_drop": 20,
+   "pp_median": 106.95,
+   "pp_price": 85.95,
+   "t": "2026-11-16T15:40:40.598894+00:00",
+   "veredicto": "oferta_real"
+  },
   "41887696311": {
    "ahorro_vs_amazon": -25,
    "amz_low30": null,
@@ -1982,6 +2013,25 @@
    "pp_price": 48.94,
    "t": "2026-11-16T02:20:24.133415+00:00",
    "veredicto": "amazon_mas_barato"
+  },
+  "45454760411": {
+   "ahorro_vs_amazon": 30,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 849.99,
+   "amz_title": "CATLINK Scoop Robot Pro Arenero Gatos Autolimpiable, Arenero Automático con Doble Cámara IA y App, Interior 82 L, Depósito 15 L, 30 dB, para Gatos Grandes y Var",
+   "asin": "B0H7HZTXYC",
+   "disponible": true,
+   "ean": "6972884752242",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "30 % por debajo del habitual en Amazon (849.99)",
+   "name": "CATLINK Scoop Robot Pro Con Doble Cámara IA ( Interior y Exterior ) Control APP Capacidad extragrande Arenero automático",
+   "pp_drop": 14,
+   "pp_median": 699.0,
+   "pp_price": 599.0,
+   "t": "2026-11-16T15:40:40.598894+00:00",
+   "veredicto": "oferta_real"
   },
   "45570747232": {
    "ahorro_vs_amazon": 0,
@@ -4148,9 +4198,9 @@
   "amazon_mas_barato": 15,
   "dudoso": 0,
   "no_esta": 8,
-  "oferta_real": 13,
+  "oferta_real": 15,
   "pvpr_inflado": 0,
   "sin_precio": 3
  },
- "updated": "2026-11-16T15:05:39.512603+00:00"
+ "updated": "2026-11-16T15:40:40.598894+00:00"
 }

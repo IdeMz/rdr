@@ -21,6 +21,7 @@
   "Cámaras de seguridad": "2026-11-14T17:20:46.627491+00:00",
   "Domótica": "2026-11-15T17:40:41.406854+00:00",
   "Fitness en casa": "2026-11-15T12:15:40.152691+00:00",
+  "Fotografía": "2026-11-16T15:40:40.598894+00:00",
   "Freidoras de aire": "2026-11-15T20:15:42.147336+00:00",
   "Gatos": "2026-11-14T18:30:55.099025+00:00",
   "Herramientas": "2026-11-14T21:01:00.449874+00:00",
@@ -82,7 +83,7 @@
    "title": "adidas Men's Zapatilla de Senderismo Terrex Skychaser AX5 Gore-Tex"
   }
  },
- "next_at": "2026-11-16T15:38:33.716201+00:00",
+ "next_at": "2026-11-16T16:14:40.666752+00:00",
  "offer": {
   "a": "B01EG0DJNE",
   "m": 275,
@@ -405,6 +406,17 @@
    "s": "ofertas",
    "t": "2026-11-16T12:31:20.885057+00:00",
    "title": "Swiffer Recambios De Plumero 25 Unidades",
+   "v": []
+  },
+  "B074YZ1F59": {
+   "c": "Fotografía",
+   "d": 15,
+   "e": "📷",
+   "m": 342,
+   "p": 59.49,
+   "s": "ambas",
+   "t": "2026-11-16T15:41:33.421617+00:00",
+   "title": "AKASO EK7000 Cámara Deportiva 4K 20MP WiFi Cámara de Acción, Color Negro",
    "v": []
   },
   "B075RCPZ3P": {
@@ -2967,10 +2979,6 @@
  },
  "problem": {},
  "rejected": {
-  "B01N6CJ1QW": {
-   "t": "2026-11-15T15:15:41.208340+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B01N997C1B": {
    "t": "2026-11-16T07:01:09.494097+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3003,16 +3011,12 @@
    "t": "2026-11-16T09:55:33.695632+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0CKML3W6R": {
+   "t": "2026-11-16T15:40:40.598894+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0D1XZL4NF": {
    "t": "2026-11-16T09:55:33.695632+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0DHSFBRPB": {
-   "t": "2026-11-15T15:15:41.208340+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0DWF6XWX3": {
-   "t": "2026-11-15T15:15:41.208340+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0DY1P85GK": {
@@ -3027,16 +3031,12 @@
    "t": "2026-11-15T17:05:32.780345+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0FPVT4VG6": {
-   "t": "2026-11-15T15:15:41.208340+00:00",
+  "B0FP5R9BDZ": {
+   "t": "2026-11-16T15:40:40.598894+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0FPXGKBCS": {
-   "t": "2026-11-15T15:15:41.208340+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0FPXK52K8": {
-   "t": "2026-11-15T15:15:41.208340+00:00",
+  "B0FRFQC6PT": {
+   "t": "2026-11-16T15:40:40.598894+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0GD7B5B14": {
@@ -3070,6 +3070,18 @@
  },
  "reserve": [
   {
+   "a": "B0CN93Y2YX",
+   "c": "Fotografía",
+   "e": "📷",
+   "img": "https://m.media-amazon.com/images/I/819HxcPTmkL._AC_UY218_.jpg",
+   "n": 3900,
+   "op": 209.99,
+   "p": 178.49,
+   "r": 4.2,
+   "t": "2026-11-16T15:40:40.598894+00:00",
+   "title": "AKASO Brave 8 Lite Cámara Deportiva 4K 60FPS 20MP, 60M Acuatica Sumergible"
+  },
+  {
    "a": "B0HG82D9PQ",
    "c": "Higiene personal",
    "e": "🪥",
@@ -3098,6 +3110,6 @@
  "tg_offset": 511048069,
  "x_copy": {
   "day": "2026-11-16",
-  "n": 14
+  "n": 15
  }
 }
