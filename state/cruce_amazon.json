@@ -1814,10 +1814,10 @@
    "lista": "candidates",
    "motivo": "48 % por debajo del habitual en Amazon (157.76)",
    "name": "Bowers & Wilkins Pi6 Verde TWS ANC Bluetooth 5.4 24h IP54 Multipunto Auriculares inalámbricos",
-   "pp_drop": 22,
-   "pp_median": 104.96,
+   "pp_drop": 15,
+   "pp_median": 96.95,
    "pp_price": 81.95,
-   "t": "2026-11-14T02:50:24.306324+00:00",
+   "t": "2026-11-16T02:50:25.725813+00:00",
    "veredicto": "oferta_real"
   },
   "45403214516": {
@@ -3943,7 +3943,7 @@
    }
   }
  },
- "night_at": "2026-11-16T02:35:20.145846+00:00",
+ "night_at": "2026-11-16T02:50:25.725813+00:00",
  "resumen": {
   "amazon_mas_barato": 26,
   "dudoso": 7,
@@ -3952,5 +3952,5 @@
   "pvpr_inflado": 1,
   "sin_precio": 7
  },
- "updated": "2026-11-16T02:35:20.145846+00:00"
+ "updated": "2026-11-16T02:50:25.725813+00:00"
 }
