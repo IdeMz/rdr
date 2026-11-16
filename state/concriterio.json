@@ -34,6 +34,7 @@
   "Móviles": "2026-11-14T19:45:46.808036+00:00",
   "Nutrición deportiva": "2026-11-14T11:40:39.802795+00:00",
   "Oficina": "2026-11-16T10:45:46.172773+00:00",
+  "Patinetes": "2026-11-16T11:55:31.043068+00:00",
   "Perfumes": "2026-11-15T21:40:42.221187+00:00",
   "Periféricos": "2026-11-15T16:30:50.777266+00:00",
   "Perros": "2026-11-15T07:01:06.978986+00:00",
@@ -77,7 +78,7 @@
    "title": "Cecotec Freidora de Aire con Cesta de Cristal Cecofry&Glass Crunchy Pro"
   }
  },
- "next_at": "2026-11-16T11:51:34.808290+00:00",
+ "next_at": "2026-11-16T12:26:48.641792+00:00",
  "offer": {
   "a": "B01EG0DJNE",
   "m": 275,
@@ -1764,6 +1765,17 @@
    "title": "BaByliss Smooth Finish 1200 – Cepillo de Aire Caliente 4-en-1 para Secar, Alisar, Dar Volumen y Moldear, Tecnología Iónica & Cerámica, 4 Accesorios, 1200W, Negro/Rosa, AS122E",
    "v": []
   },
+  "B0DDDGTKCR": {
+   "c": "Patinetes",
+   "d": 25,
+   "e": "🛴",
+   "m": 336,
+   "p": 149.99,
+   "s": "ofertas",
+   "t": "2026-11-16T11:56:01.798665+00:00",
+   "title": "FanttikRide C9 Patinete Electrico Niño, 10/16 km/h, Alcance de 8 km",
+   "v": []
+  },
   "B0DFLGW8MF": {
    "c": "Cargadores y baterías",
    "d": 23,
@@ -3011,6 +3023,18 @@
  },
  "reserve": [
   {
+   "a": "B0DDDCVN2P",
+   "c": "Patinetes",
+   "e": "🛴",
+   "img": "https://m.media-amazon.com/images/I/51bx6dQp-8L._AC_UL320_.jpg",
+   "n": 464,
+   "op": 219.99,
+   "p": 169.99,
+   "r": 4.4,
+   "t": "2026-11-16T11:55:31.043068+00:00",
+   "title": "FanttikRide C9 Pro Patinete Eléctrico para Niños, 8/13/16 km/h"
+  },
+  {
    "a": "B01DNDMSLY",
    "c": "Camping y montaña",
    "e": "🏕️",
@@ -3036,9 +3060,9 @@
   }
  ],
  "summary_day": "2026-11-15",
- "tg_offset": 511048063,
+ "tg_offset": 511048065,
  "x_copy": {
   "day": "2026-11-16",
-  "n": 8
+  "n": 9
  }
 }

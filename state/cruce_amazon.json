@@ -549,6 +549,12 @@
    "title": "Silicon Power 4TB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5\" 7mm (0.28\") Internal Solid State Drive",
    "via": "nombre"
   },
+  "4718017749435": {
+   "a": "B089HG351D",
+   "t": "2026-11-16T11:55:31.043068+00:00",
+   "title": "ASUS Placa ASUS TUF B550-PLUS Gaming AMD AM4 PCIE3.0 M.2 4DDR4 SATA3 USB3.2 ATX, Black, B550",
+   "via": "ean"
+  },
   "4719331357559": {
    "a": "B0DTGP2WMT",
    "t": "2026-11-15T12:50:40.627443+00:00",
@@ -1226,6 +1232,25 @@
   }
  },
  "items": {
+  "37600254906": {
+   "ahorro_vs_amazon": 25,
+   "amz_low30": 129.92,
+   "amz_median": 148.56,
+   "amz_price": 122.99,
+   "amz_title": "ASUS Placa ASUS TUF B550-PLUS Gaming AMD AM4 PCIE3.0 M.2 4DDR4 SATA3 USB3.2 ATX, Black, B550",
+   "asin": "B089HG351D",
+   "disponible": true,
+   "ean": "4718017749435",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "25 % por debajo del habitual en Amazon (148.56)",
+   "name": "ASUS TUF Gaming B550-PLUS Zócalo AM4 ATX Ethernet de 2.5 Gigabit 2 ranuras M.2 Placa base",
+   "pp_drop": 21,
+   "pp_median": 141.95,
+   "pp_price": 111.88,
+   "t": "2026-11-16T11:55:31.043068+00:00",
+   "veredicto": "oferta_real"
+  },
   "37600255371": {
    "ahorro_vs_amazon": 71,
    "amz_low30": null,
@@ -3367,23 +3392,23 @@
    "veredicto": "dudoso"
   },
   "46599140285": {
-   "ahorro_vs_amazon": 8,
+   "ahorro_vs_amazon": -6,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 312.19,
+   "amz_price": 269.19,
    "amz_title": "ViewSonic Monitor VG2741V-2K MNTN24-C-307",
    "asin": "B0F8MHRHLP",
    "disponible": true,
    "ean": "0766907033052",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "antes 438.99 en PowerPlanet, pero en Amazon suele estar a 312.19",
+   "motivo": "Amazon 269.19 frente a 285.95",
    "name": "Monitor ViewSonic 27 pulgadas QHD IPS 120Hz 4 ms Negro VG2741V-2K",
    "pp_drop": 35,
    "pp_median": 438.99,
    "pp_price": 285.95,
-   "t": "2026-11-14T11:40:39.802795+00:00",
-   "veredicto": "pvpr_inflado"
+   "t": "2026-11-16T11:55:31.043068+00:00",
+   "veredicto": "amazon_mas_barato"
   },
   "46599140303": {
    "ahorro_vs_amazon": -13,
@@ -4020,12 +4045,12 @@
  },
  "night_at": "2026-11-16T06:05:25.856364+00:00",
  "resumen": {
-  "amazon_mas_barato": 13,
+  "amazon_mas_barato": 14,
   "dudoso": 0,
   "no_esta": 8,
-  "oferta_real": 9,
-  "pvpr_inflado": 1,
+  "oferta_real": 10,
+  "pvpr_inflado": 0,
   "sin_precio": 3
  },
- "updated": "2026-11-16T11:20:40.607767+00:00"
+ "updated": "2026-11-16T11:55:31.043068+00:00"
 }
