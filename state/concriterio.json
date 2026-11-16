@@ -21,6 +21,7 @@
   "Cuidado de la piel": "2026-11-15T12:50:40.627443+00:00",
   "Cuidado del cabello": "2026-11-13T21:50:42.988192+00:00",
   "Cámaras de seguridad": "2026-11-14T17:20:46.627491+00:00",
+  "Decoración navideña": "2026-11-16T20:01:04.281373+00:00",
   "Domótica": "2026-11-15T17:40:41.406854+00:00",
   "Fitness en casa": "2026-11-15T12:15:40.152691+00:00",
   "Fotografía": "2026-11-16T15:40:40.598894+00:00",
@@ -87,7 +88,7 @@
    "title": "adidas Men's Zapatilla de Senderismo Terrex Skychaser AX5 Gore-Tex"
   }
  },
- "next_at": "2026-11-16T20:00:43.361170+00:00",
+ "next_at": "2026-11-16T20:35:02.081828+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -2216,6 +2217,17 @@
    "title": "Lámpara Escritorio, Flexo Led Escritorio, 5 Modos,10 Niveles de Brillo",
    "v": []
   },
+  "B0FBWBVF71": {
+   "c": "Decoración navideña",
+   "d": 41,
+   "e": "🎄",
+   "m": 347,
+   "p": 99.99,
+   "s": "ambas",
+   "t": "2026-11-16T20:01:46.875316+00:00",
+   "title": "Govee Christmas Sparkle String Lights 30M, Control por Aplicación con Alexa",
+   "v": []
+  },
   "B0FDL3BK9T": {
    "c": "Climatización",
    "d": 18,
@@ -3021,11 +3033,7 @@
    "v": []
   }
  },
- "problem": {
-  "alerted_at": "2026-11-16T19:50:43.361170+00:00",
-  "fails": 3,
-  "last": "HTTP 503"
- },
+ "problem": {},
  "rejected": {
   "B01M7YESHB": {
    "t": "2026-11-16T18:55:32.141614+00:00",
@@ -3110,6 +3118,18 @@
  },
  "reserve": [
   {
+   "a": "B0F9YFH2M4",
+   "c": "Decoración navideña",
+   "e": "🎄",
+   "img": "https://m.media-amazon.com/images/I/71jjuUS-lrL._AC_UL320_.jpg",
+   "n": 402,
+   "op": 199.99,
+   "p": 129.99,
+   "r": 4.7,
+   "t": "2026-11-16T20:01:04.281373+00:00",
+   "title": "Govee Christmas Cone Tree Lights 2,28m, Guirnalda RGBIC 370 LED, Negro"
+  },
+  {
    "a": "B0FC2CRDPV",
    "c": "Accesorios de móvil",
    "e": "🤳",
@@ -3126,6 +3146,6 @@
  "tg_offset": 511048072,
  "x_copy": {
   "day": "2026-11-16",
-  "n": 19
+  "n": 20
  }
 }
