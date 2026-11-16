@@ -26,6 +26,7 @@
   "Fitness en casa": "2026-11-15T12:15:40.152691+00:00",
   "Fotografía": "2026-11-16T15:40:40.598894+00:00",
   "Freidoras de aire": "2026-11-15T20:15:42.147336+00:00",
+  "Gaming": "2026-11-16T20:35:50.275747+00:00",
   "Gatos": "2026-11-14T18:30:55.099025+00:00",
   "Herramientas": "2026-11-14T21:01:00.449874+00:00",
   "Higiene personal": "2026-11-16T15:05:39.512603+00:00",
@@ -88,7 +89,7 @@
    "title": "adidas Men's Zapatilla de Senderismo Terrex Skychaser AX5 Gore-Tex"
   }
  },
- "next_at": "2026-11-16T20:35:02.081828+00:00",
+ "next_at": "2026-11-16T21:09:58.388667+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -1428,6 +1429,17 @@
    "p": 16.99,
    "t": "2026-11-08T18:11:12.426707+00:00",
    "title": "VEEKTOMX Bateria Externa Carga Rapida 22.5W, Mini Power Bank 10000mAh",
+   "v": []
+  },
+  "B0C8KBVW16": {
+   "c": "Gaming",
+   "d": 25,
+   "e": "🕹️",
+   "m": 348,
+   "p": 52.23,
+   "s": "ofertas",
+   "t": "2026-11-16T20:37:21.454292+00:00",
+   "title": "JUPPLIES Silla Escritorio Ergonomica - Silla Oficina con Apoyo Lumbar, Estructura de Plastico, Malla Transpirable, Ruedas Giratorias 360° Soporta hasta 110kg",
    "v": []
   },
   "B0CBPL4RKH": {
@@ -3087,6 +3099,10 @@
    "t": "2026-11-16T15:40:40.598894+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0FR981Z25": {
+   "t": "2026-11-16T20:35:50.275747+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0FRFQC6PT": {
    "t": "2026-11-16T15:40:40.598894+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3118,6 +3134,18 @@
  },
  "reserve": [
   {
+   "a": "B071D4YMR9",
+   "c": "Gaming",
+   "e": "🕹️",
+   "img": "https://m.media-amazon.com/images/I/61yJAvyrwJL._AC_UL320_.jpg",
+   "n": 430,
+   "op": 99.9,
+   "p": 75.33,
+   "r": 4.2,
+   "t": "2026-11-16T20:35:50.275747+00:00",
+   "title": "BAKAJI Silla Gaming Racer direccional para Oficina, ergonómica, Estilo Deportivo, Sillón de Escritorio Racing con 4 Ruedas, giratoria hasta 360°, de Piel sintética Negra con Tela (Rojo)"
+  },
+  {
    "a": "B0F9YFH2M4",
    "c": "Decoración navideña",
    "e": "🎄",
@@ -3146,6 +3174,6 @@
  "tg_offset": 511048072,
  "x_copy": {
   "day": "2026-11-16",
-  "n": 20
+  "n": 21
  }
 }
