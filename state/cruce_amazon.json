@@ -1604,7 +1604,7 @@
    "pp_drop": 21,
    "pp_median": 33.99,
    "pp_price": 26.9,
-   "t": "2026-11-14T22:50:36.785672+00:00",
+   "t": "2026-11-16T23:20:25.910397+00:00",
    "v": 2,
    "veredicto": "no_esta",
    "vistos": {
@@ -2024,7 +2024,7 @@
    "pp_drop": 18,
    "pp_median": 49.95,
    "pp_price": 40.95,
-   "t": "2026-11-14T23:20:25.000542+00:00",
+   "t": "2026-11-16T23:20:25.910397+00:00",
    "v": 2,
    "veredicto": "no_esta",
    "vistos": {
@@ -4089,22 +4089,22 @@
    "veredicto": "amazon_mas_barato"
   },
   "46599141708": {
-   "ahorro_vs_amazon": 24,
+   "ahorro_vs_amazon": 23,
    "amz_low30": null,
-   "amz_median": 52.28,
-   "amz_price": 49.99,
+   "amz_median": 52.19,
+   "amz_price": 41.54,
    "amz_title": "Oral-B Pro 1 - Cepillo de dientes eléctrico con cepillo de repuesto, color",
    "asin": "B0C6MF8QTB",
    "disponible": true,
    "ean": "8001090914170",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "24 % por debajo del habitual en Amazon (52.28)",
+   "motivo": "23 % por debajo del habitual en Amazon (52.19)",
    "name": "Cepillo de dientes eléctrico Oral-B Pro 1 Cross Action Oscilante 3 Modos Negro",
    "pp_drop": 18,
    "pp_median": 48.94,
    "pp_price": 39.95,
-   "t": "2026-11-14T23:20:25.000542+00:00",
+   "t": "2026-11-16T23:20:25.910397+00:00",
    "veredicto": "oferta_real"
   },
   "46599141999": {
@@ -4568,7 +4568,7 @@
    }
   }
  },
- "night_at": "2026-11-16T23:05:21.329835+00:00",
+ "night_at": "2026-11-16T23:20:25.910397+00:00",
  "resumen": {
   "amazon_mas_barato": 19,
   "dudoso": 1,
@@ -4577,5 +4577,5 @@
   "pvpr_inflado": 0,
   "sin_precio": 6
  },
- "updated": "2026-11-16T23:05:21.329835+00:00"
+ "updated": "2026-11-16T23:20:25.910397+00:00"
 }
