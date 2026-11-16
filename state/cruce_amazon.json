@@ -738,6 +738,12 @@
    "title": "HP LaserJet Tank MFP 1604w 381L0A, Impresora Láser A4 Multifunción con Deposito de Toner, Impresión a Doble Cara Manual, Copiadora y Escaner, Wi-Fi, Smart App, ",
    "via": "nombre"
   },
+  "5715328328174": {
+   "a": "B0H7HB8VB3",
+   "t": "2026-11-16T11:20:40.607767+00:00",
+   "title": "ECOINKO Cartucho 308XL Negro - 730+ Páginas, Reemplazo para Tinta HP 308 Negro, Tinta Impresora 308 XL para HP Envy 6100e 6120e 6122e 6132e 6152e 6520e 6530e 65",
+   "via": "modelo"
+  },
   "5901969445664": {
    "a": "",
    "t": "2026-11-14T00:20:27.018416+00:00",
@@ -2611,22 +2617,22 @@
    "veredicto": "amazon_mas_barato"
   },
   "46186025334": {
-   "ahorro_vs_amazon": 3,
-   "amz_low30": null,
-   "amz_median": null,
-   "amz_price": 52.39,
+   "ahorro_vs_amazon": -11,
+   "amz_low30": 52.39,
+   "amz_median": 45.99,
+   "amz_price": 42.99,
    "amz_title": "Moulinex Inicio Compact, Plancha de Paninis y Grill de 1000W, Inox, Pinzas",
    "asin": "B0FX5K33S4",
    "disponible": true,
    "ean": "3045380026261",
    "encontrado_por": "nombre",
    "lista": "to_verify",
-   "motivo": "Amazon 52.39 frente a 50.95",
+   "motivo": "Amazon 42.99 frente a 50.95",
    "name": "Parrilla eléctrica Moulinex Inicio Compact 1000W 2 personas Negro GI270D",
    "pp_drop": 51,
    "pp_median": 103.95,
    "pp_price": 50.95,
-   "t": "2026-11-14T11:05:31.708608+00:00",
+   "t": "2026-11-16T11:20:40.607767+00:00",
    "veredicto": "amazon_mas_barato"
   },
   "46186025457": {
@@ -3759,6 +3765,25 @@
    "t": "2026-11-15T17:40:41.406854+00:00",
    "veredicto": "amazon_mas_barato"
   },
+  "46599143960": {
+   "ahorro_vs_amazon": -100,
+   "amz_low30": 38.92,
+   "amz_median": null,
+   "amz_price": 36.97,
+   "amz_title": "ECOINKO Cartucho 308XL Negro - 730+ Páginas, Reemplazo para Tinta HP 308 Negro, Tinta Impresora 308 XL para HP Envy 6100e 6120e 6122e 6132e 6152e 6520e 6530e 65",
+   "asin": "B0H7HB8VB3",
+   "disponible": true,
+   "ean": "5715328328174",
+   "encontrado_por": "modelo",
+   "lista": "candidates",
+   "motivo": "Amazon 36.97 frente a 77.95",
+   "name": "HP Envy 6122e Multifunción Color WiFi Dúplex Automático Blanco Crepúsculo 10ppm AirPrint Impresora",
+   "pp_drop": 23,
+   "pp_median": 100.95,
+   "pp_price": 77.95,
+   "t": "2026-11-16T11:20:40.607767+00:00",
+   "veredicto": "amazon_mas_barato"
+  },
   "46599143979": {
    "ahorro_vs_amazon": 6,
    "amz_low30": null,
@@ -3995,12 +4020,12 @@
  },
  "night_at": "2026-11-16T06:05:25.856364+00:00",
  "resumen": {
-  "amazon_mas_barato": 12,
+  "amazon_mas_barato": 13,
   "dudoso": 0,
   "no_esta": 8,
   "oferta_real": 9,
   "pvpr_inflado": 1,
   "sin_precio": 3
  },
- "updated": "2026-11-16T10:45:46.172773+00:00"
+ "updated": "2026-11-16T11:20:40.607767+00:00"
 }

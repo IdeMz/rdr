@@ -11,6 +11,7 @@
   "Bricolaje": "2026-11-16T08:10:40.674323+00:00",
   "Cafeteras": "2026-11-14T14:40:41.311125+00:00",
   "Café y cápsulas": "2026-11-15T14:40:39.424977+00:00",
+  "Camping y montaña": "2026-11-16T11:20:40.607767+00:00",
   "Cargadores y baterías": "2026-11-15T11:10:43.114079+00:00",
   "Ciclismo": "2026-11-14T21:35:30.640432+00:00",
   "Climatización": "2026-11-14T11:05:31.708608+00:00",
@@ -63,7 +64,7 @@
    "title": "Cecotec Freidora de Aire con Cesta de Cristal Cecofry&Glass Crunchy Pro"
   }
  },
- "next_at": "2026-11-16T11:17:55.532001+00:00",
+ "next_at": "2026-11-16T11:51:34.808290+00:00",
  "offer": {
   "a": "B01EG0DJNE",
   "m": 275,
@@ -1145,6 +1146,17 @@
    "s": "ofertas",
    "t": "2026-11-14T21:01:31.629497+00:00",
    "title": "HOTO Juego de Destornillador Eléctrico 3.6V Inalámbrico, 4 N.m de Par",
+   "v": []
+  },
+  "B0BCFGW31S": {
+   "c": "Camping y montaña",
+   "d": 40,
+   "e": "🏕️",
+   "m": 335,
+   "p": 46.77,
+   "s": "ofertas",
+   "t": "2026-11-16T11:21:12.986415+00:00",
+   "title": "OLIGHT Perun 2 Mini Linterna Frontal USB Recargable 1100 Lumens 10 Días Máx",
    "v": []
   },
   "B0BCKHQGJN": {
@@ -2895,14 +2907,6 @@
    "t": "2026-11-16T07:01:09.494097+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B07YSTGP17": {
-   "t": "2026-11-15T11:10:43.114079+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B07Z6N28RD": {
-   "t": "2026-11-15T11:10:43.114079+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B08297PXHL": {
    "t": "2026-11-16T07:01:09.494097+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2963,16 +2967,8 @@
    "t": "2026-11-15T15:15:41.208340+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0G14W2ZWW": {
-   "t": "2026-11-15T11:10:43.114079+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0GD7B5B14": {
    "t": "2026-11-16T09:20:39.431359+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0GWHQQJ56": {
-   "t": "2026-11-15T11:10:43.114079+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0GZSS216X": {
@@ -3002,6 +2998,18 @@
  },
  "reserve": [
   {
+   "a": "B01DNDMSLY",
+   "c": "Camping y montaña",
+   "e": "🏕️",
+   "img": "https://m.media-amazon.com/images/I/71ugWyPoQFL._AC_UL320_.jpg",
+   "n": 24100,
+   "op": 16.99,
+   "p": 13.03,
+   "r": 4.5,
+   "t": "2026-11-16T11:20:40.607767+00:00",
+   "title": "Lepro Linterna Frontal LED USB Recargable, 5 Modos con Luz Rojo, Pack de 1"
+  },
+  {
    "a": "B0006U0NVK",
    "c": "Oficina",
    "e": "🖊️",
@@ -3012,24 +3020,12 @@
    "r": 4.7,
    "t": "2026-11-16T10:45:46.172773+00:00",
    "title": "Genie 540 - Calculadora con pantalla inclinada de 10 dígitos (panel solar y batería), color plateado"
-  },
-  {
-   "a": "B086ZDGPBW",
-   "c": "Bricolaje",
-   "e": "🪛",
-   "img": "https://m.media-amazon.com/images/I/61ag-qSHH2L._AC_UL320_.jpg",
-   "n": 3400,
-   "op": 29.99,
-   "p": 22.79,
-   "r": 4.5,
-   "t": "2026-11-16T08:10:40.674323+00:00",
-   "title": "SONGMICS Escalera Plegable de 2 Peldaños, Escalera Pequeña, Acero, Carga de 150 kg"
   }
  ],
  "summary_day": "2026-11-15",
  "tg_offset": 511048060,
  "x_copy": {
   "day": "2026-11-16",
-  "n": 7
+  "n": 8
  }
 }
