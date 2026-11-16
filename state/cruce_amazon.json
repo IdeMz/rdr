@@ -1152,6 +1152,12 @@
    "title": "Playseat® TV Stand Triple Package",
    "via": "ean"
   },
+  "8806094957228": {
+   "a": "B0CBMFJF7V",
+   "t": "2026-11-16T13:55:32.747613+00:00",
+   "title": "Samsung PRO Ultimate Tarjeta de Memoria MicroSD con Adaptador SD, 512 GB, 200 MB/s y 130 MB/s, UHS-I, C10, U3, V30, A2, 4K UHD, Apta para Smartphone, Tablet, Go",
+   "via": "ean"
+  },
   "8806094972313": {
    "a": "B0CDTVTFFS",
    "t": "2026-11-14T04:50:24.590570+00:00",
@@ -1986,6 +1992,25 @@
      "Genesis Mesa Gaming 160cm MDF y Acero Modular Regulable Leds y Gestión de Cables"
     ]
    }
+  },
+  "45593688850": {
+   "ahorro_vs_amazon": 20,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 150.95,
+   "amz_title": "Samsung PRO Ultimate Tarjeta de Memoria MicroSD con Adaptador SD, 512 GB, 200 MB/s y 130 MB/s, UHS-I, C10, U3, V30, A2, 4K UHD, Apta para Smartphone, Tablet, Go",
+   "asin": "B0CBMFJF7V",
+   "disponible": true,
+   "ean": "8806094957228",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "20 % por debajo del habitual en Amazon (150.95)",
+   "name": "Samsung PRO Ultimate 512GB 200MB/s V30 U3 A2 Tarjeta microSD",
+   "pp_drop": 20,
+   "pp_median": 150.95,
+   "pp_price": 121.17,
+   "t": "2026-11-16T13:55:32.747613+00:00",
+   "veredicto": "oferta_real"
   },
   "45626822189": {
    "ahorro_vs_amazon": 14,
@@ -3774,7 +3799,7 @@
    "pp_drop": 34,
    "pp_median": 46.95,
    "pp_price": 30.95,
-   "t": "2026-11-14T13:25:29.087955+00:00",
+   "t": "2026-11-16T13:55:32.747613+00:00",
    "veredicto": "amazon_mas_barato"
   },
   "46599143670": {
@@ -4073,9 +4098,9 @@
   "amazon_mas_barato": 14,
   "dudoso": 0,
   "no_esta": 8,
-  "oferta_real": 11,
+  "oferta_real": 12,
   "pvpr_inflado": 0,
   "sin_precio": 3
  },
- "updated": "2026-11-16T13:05:35.879053+00:00"
+ "updated": "2026-11-16T13:55:32.747613+00:00"
 }

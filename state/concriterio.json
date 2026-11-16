@@ -50,7 +50,8 @@
   "Tablets": "2026-11-15T11:10:43.114079+00:00",
   "Televisores": "2026-11-11T20:15:41.209092+00:00",
   "Videojuegos": "2026-11-15T12:15:40.152691+00:00",
-  "Zapatillas": "2026-11-15T10:01:03.183163+00:00"
+  "Zapatillas": "2026-11-15T10:01:03.183163+00:00",
+  "eReaders": "2026-11-16T13:55:32.747613+00:00"
  },
  "manual": {
   "B0F7ZFWVTC": {
@@ -80,7 +81,7 @@
    "title": "Cecotec Freidora de Aire con Cesta de Cristal Cecofry&Glass Crunchy Pro"
   }
  },
- "next_at": "2026-11-16T13:50:55.790833+00:00",
+ "next_at": "2026-11-16T14:29:23.341423+00:00",
  "offer": {
   "a": "B01EG0DJNE",
   "m": 275,
@@ -1544,6 +1545,17 @@
    "title": "SYMYNELEC Cámara de Vigilancia WiFi Interior 2K 4MP, 5GHz/2,4GHz, 360°",
    "v": []
   },
+  "B0CX8MQF7R": {
+   "c": "eReaders",
+   "d": 45,
+   "e": "📖",
+   "m": 339,
+   "p": 164.99,
+   "s": "ambas",
+   "t": "2026-11-16T13:56:00.389110+00:00",
+   "title": "Kindle Colorsoft de Amazon 16 GB (modelo de 2024): con pantalla a color que da vida a las portadas y al contenido, resaltada ahora en color. Sin publicidad, negro",
+   "v": []
+  },
   "B0CX9CT3ZF": {
    "c": "Monitores",
    "d": 20,
@@ -2930,10 +2942,7 @@
    "v": []
   }
  },
- "problem": {
-  "fails": 1,
-  "last": "HTTP 503"
- },
+ "problem": {},
  "rejected": {
   "B01N6CJ1QW": {
    "t": "2026-11-15T15:15:41.208340+00:00",
@@ -3038,6 +3047,18 @@
  },
  "reserve": [
   {
+   "a": "B0CFPN47NY",
+   "c": "eReaders",
+   "e": "📖",
+   "img": "https://m.media-amazon.com/images/I/51H7toa+0PL._AC_UL320_.jpg",
+   "n": 8400,
+   "op": 259.99,
+   "p": 159.99,
+   "r": 4.7,
+   "t": "2026-11-16T13:55:32.747613+00:00",
+   "title": "Kindle Paperwhite Signature Edition 32 GB de Amazon (modelo de 2024): luz frontal autorregulable, carga inalámbrica y semanas de autonomía | Negro metalizado"
+  },
+  {
    "a": "B0DDDCVN2P",
    "c": "Patinetes",
    "e": "🛴",
@@ -3060,24 +3081,12 @@
    "r": 4.5,
    "t": "2026-11-16T11:20:40.607767+00:00",
    "title": "Lepro Linterna Frontal LED USB Recargable, 5 Modos con Luz Rojo, Pack de 1"
-  },
-  {
-   "a": "B0006U0NVK",
-   "c": "Oficina",
-   "e": "🖊️",
-   "img": "https://m.media-amazon.com/images/I/61WXkbQHDhL._AC_UL320_.jpg",
-   "n": 668,
-   "op": 7.15,
-   "p": 5.7,
-   "r": 4.7,
-   "t": "2026-11-16T10:45:46.172773+00:00",
-   "title": "Genie 540 - Calculadora con pantalla inclinada de 10 dígitos (panel solar y batería), color plateado"
   }
  ],
  "summary_day": "2026-11-15",
  "tg_offset": 511048065,
  "x_copy": {
   "day": "2026-11-16",
-  "n": 11
+  "n": 12
  }
 }
