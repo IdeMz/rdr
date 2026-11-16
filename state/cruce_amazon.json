@@ -454,6 +454,12 @@
    "title": "AOPEN QH12a Proyector LED portátil HD 1280x720, 135 lúmenes, Entrada de Gama, Blanco",
    "via": "ean"
   },
+  "4711173878438": {
+   "a": "B0CSN7KNF6",
+   "t": "2026-11-16T12:30:54.116656+00:00",
+   "title": "Seasonic Netzteil 850w FocuS-GX-850 Atx3 Modular Gold (focuS-GX-850-V4)",
+   "via": "ean"
+  },
   "4711377301541": {
    "a": "B0F11KQQF4",
    "t": "2026-11-14T20:20:37.410274+00:00",
@@ -1365,6 +1371,25 @@
    "pp_price": 442.94,
    "t": "2026-11-15T15:15:41.208340+00:00",
    "veredicto": "amazon_mas_barato"
+  },
+  "39617298309": {
+   "ahorro_vs_amazon": 19,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 167.33,
+   "amz_title": "Seasonic Netzteil 850w FocuS-GX-850 Atx3 Modular Gold (focuS-GX-850-V4)",
+   "asin": "B0CSN7KNF6",
+   "disponible": true,
+   "ean": "4711173878438",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "19 % por debajo del habitual en Amazon (167.33)",
+   "name": "Seasonic Focus GX-850 ATX 3 PCIe 5.1 850W 80 Plus Gold modular Fuente de alimentación",
+   "pp_drop": 20,
+   "pp_median": 169.94,
+   "pp_price": 136.03,
+   "t": "2026-11-16T12:30:54.116656+00:00",
+   "veredicto": "oferta_real"
   },
   "39617298396": {
    "ean": "0194644019075",
@@ -3293,7 +3318,7 @@
    "pp_drop": 46,
    "pp_median": 82.95,
    "pp_price": 44.95,
-   "t": "2026-11-14T12:15:37.671280+00:00",
+   "t": "2026-11-16T12:30:54.116656+00:00",
    "veredicto": "amazon_mas_barato"
   },
   "46599139865": {
@@ -4048,9 +4073,9 @@
   "amazon_mas_barato": 14,
   "dudoso": 0,
   "no_esta": 8,
-  "oferta_real": 10,
+  "oferta_real": 11,
   "pvpr_inflado": 0,
   "sin_precio": 3
  },
- "updated": "2026-11-16T11:55:31.043068+00:00"
+ "updated": "2026-11-16T12:30:54.116656+00:00"
 }

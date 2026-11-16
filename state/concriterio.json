@@ -28,6 +28,7 @@
   "Jardín": "2026-11-15T11:10:43.114079+00:00",
   "Juguetes": "2026-11-16T09:55:33.695632+00:00",
   "Lego": "2026-11-15T15:15:41.208340+00:00",
+  "Limpieza del hogar": "2026-11-16T12:30:54.116656+00:00",
   "Menaje de cocina": "2026-11-15T09:25:34.345588+00:00",
   "Mochilas y maletas": "2026-11-15T20:50:41.317709+00:00",
   "Monitores": "2026-11-15T19:15:39.725060+00:00",
@@ -78,7 +79,7 @@
    "title": "Cecotec Freidora de Aire con Cesta de Cristal Cecofry&Glass Crunchy Pro"
   }
  },
- "next_at": "2026-11-16T12:26:48.641792+00:00",
+ "next_at": "2026-11-16T13:04:21.346538+00:00",
  "offer": {
   "a": "B01EG0DJNE",
   "m": 275,
@@ -390,6 +391,17 @@
    "p": 25.03,
    "t": "2026-11-11T13:25:58.129727+00:00",
    "title": "Tassimo Cápsulas de Café Marcilla Largo| 80 Cápsulas Compatibles con Cafetera Tassimo - 5PACK - Amazon Exclusive",
+   "v": []
+  },
+  "B074P8RR96": {
+   "c": "Limpieza del hogar",
+   "d": 28,
+   "e": "🧽",
+   "m": 337,
+   "p": 15.99,
+   "s": "ofertas",
+   "t": "2026-11-16T12:31:20.885057+00:00",
+   "title": "Swiffer Recambios De Plumero 25 Unidades",
    "v": []
   },
   "B075RCPZ3P": {
@@ -2908,10 +2920,6 @@
  },
  "problem": {},
  "rejected": {
-  "B009T6QA2S": {
-   "t": "2026-11-15T12:15:40.152691+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B01N6CJ1QW": {
    "t": "2026-11-15T15:15:41.208340+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2952,16 +2960,8 @@
    "t": "2026-11-16T09:55:33.695632+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0DCPB9J7K": {
-   "t": "2026-11-15T12:15:40.152691+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0DHSFBRPB": {
    "t": "2026-11-15T15:15:41.208340+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0DQ5WMN4H": {
-   "t": "2026-11-15T12:15:40.152691+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0DWF6XWX3": {
@@ -3063,6 +3063,6 @@
  "tg_offset": 511048065,
  "x_copy": {
   "day": "2026-11-16",
-  "n": 9
+  "n": 10
  }
 }
