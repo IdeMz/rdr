@@ -1171,6 +1171,18 @@
    "title": "Corsair Vengeance SODIMM 32GB (2x16GB) DDR4 hasta 2400MHz CL16 Memoria para Portátiles/Notebooks (Soporte para Procesadores Intel Core™ i5 e i7 de 6ª Generación",
    "via": "ean"
   },
+  "8436532169250": {
+   "a": "B07NCNKHW4",
+   "t": "2026-11-16T22:05:20.966983+00:00",
+   "title": "KROM K-Wheel – Volante de Carreras Multiplataforma con Pedales, Palanca de Cambios y Levas, Efectos de Vibración, 12 Botones, Ángulo de Giro de 180º – Compatibl",
+   "via": "ean"
+  },
+  "8437025767908": {
+   "a": "B0FKHLK43H",
+   "t": "2026-11-16T22:05:20.966983+00:00",
+   "title": "VULKKANO SUB12 Subwoofer Activo de 12 Pulgadas, Frecuencia de 20Hz-200Hz, 200W",
+   "via": "ean"
+  },
   "8437026689353": {
    "a": "",
    "t": "2026-11-14T03:50:27.795156+00:00",
@@ -1463,11 +1475,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Apple TV 4K 3ª Gen 128GB WiFi 6 Bluetooth 5.0 A15 Gigabit",
-   "pista": "1879553 bytes; 6 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
-   "pp_drop": 35,
-   "pp_median": 650.96,
-   "pp_price": 421.95,
-   "t": "2026-11-16T09:20:39.431359+00:00",
+   "pista": "1917383 bytes; 12 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pp_drop": 11,
+   "pp_median": 421.95,
+   "pp_price": 374.95,
+   "t": "2026-11-16T22:05:20.966983+00:00",
    "veredicto": "sin_precio"
   },
   "38277783220": {
@@ -1808,6 +1820,25 @@
    "t": "2026-11-14T18:30:55.099025+00:00",
    "veredicto": "oferta_real"
   },
+  "44787550884": {
+   "ahorro_vs_amazon": 16,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 68.9,
+   "amz_title": "KROM K-Wheel – Volante de Carreras Multiplataforma con Pedales, Palanca de Cambios y Levas, Efectos de Vibración, 12 Botones, Ángulo de Giro de 180º – Compatibl",
+   "asin": "B07NCNKHW4",
+   "disponible": true,
+   "ean": "8436532169250",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "16 % por debajo del habitual en Amazon (68.90)",
+   "name": "Krom K-Wheel USB Negro PS4/Xbox 12 botones Volante + Pedales",
+   "pp_drop": 16,
+   "pp_median": 68.95,
+   "pp_price": 57.95,
+   "t": "2026-11-16T22:05:20.966983+00:00",
+   "veredicto": "oferta_real"
+  },
   "44927881022": {
    "ahorro_vs_amazon": 10,
    "amz_low30": null,
@@ -2014,6 +2045,25 @@
      "Amazon Echo Dot Max (última generación): altavoz con sonido envolvente y controlador de Hogar digita"
     ]
    }
+  },
+  "45403196311": {
+   "ahorro_vs_amazon": -9,
+   "amz_low30": null,
+   "amz_median": 169.99,
+   "amz_price": 159.99,
+   "amz_title": "VULKKANO SUB12 Subwoofer Activo de 12 Pulgadas, Frecuencia de 20Hz-200Hz, 200W",
+   "asin": "B0FKHLK43H",
+   "disponible": true,
+   "ean": "8437025767908",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 159.99 frente a 185.95",
+   "name": "Vulkkano SUB12 200W Subwoofer",
+   "pp_drop": 12,
+   "pp_median": 211.96,
+   "pp_price": 185.95,
+   "t": "2026-11-16T22:05:20.966983+00:00",
+   "veredicto": "amazon_mas_barato"
   },
   "45403200458": {
    "ahorro_vs_amazon": 2,
@@ -4395,14 +4445,14 @@
    }
   }
  },
- "night_at": "2026-11-16T06:05:25.856364+00:00",
+ "night_at": "2026-11-16T22:05:20.966983+00:00",
  "resumen": {
-  "amazon_mas_barato": 17,
+  "amazon_mas_barato": 18,
   "dudoso": 1,
   "no_esta": 8,
-  "oferta_real": 18,
+  "oferta_real": 19,
   "pvpr_inflado": 0,
   "sin_precio": 5
  },
- "updated": "2026-11-16T21:45:41.113869+00:00"
+ "updated": "2026-11-16T22:05:20.966983+00:00"
 }
