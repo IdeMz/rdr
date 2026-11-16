@@ -714,6 +714,12 @@
    "title": "Logitech G G402 Hyperion Fury Ratón Gaming con Cable",
    "via": "ean"
   },
+  "5099206066977": {
+   "a": "B01L6L52K4",
+   "t": "2026-11-16T21:10:41.415586+00:00",
+   "title": "Logitech C922 Pro Stream Cámara Web, Webcam para Streaming, Negro",
+   "via": "ean"
+  },
   "5099206099784": {
    "a": "B0FHQ5XXTK",
    "t": "2026-11-15T00:20:27.121298+00:00",
@@ -1373,6 +1379,25 @@
    "pp_price": 179.0,
    "t": "2026-11-16T09:55:33.695632+00:00",
    "veredicto": "amazon_mas_barato"
+  },
+  "37600255998": {
+   "ahorro_vs_amazon": 14,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 66.95,
+   "amz_title": "Logitech C922 Pro Stream Cámara Web, Webcam para Streaming, Negro",
+   "asin": "B01L6L52K4",
+   "disponible": true,
+   "ean": "5099206066977",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "14 % por debajo del habitual en Amazon (66.95)",
+   "name": "Logitech C922 Pro Full HD Webcam",
+   "pp_drop": 17,
+   "pp_median": 68.95,
+   "pp_price": 57.37,
+   "t": "2026-11-16T21:10:41.415586+00:00",
+   "veredicto": "oferta_real"
   },
   "37600256508": {
    "ahorro_vs_amazon": 32,
@@ -3887,7 +3912,7 @@
    "pp_drop": 14,
    "pp_median": 269.95,
    "pp_price": 230.95,
-   "t": "2026-11-14T21:01:00.449874+00:00",
+   "t": "2026-11-16T21:10:41.415586+00:00",
    "v": 2,
    "veredicto": "no_esta",
    "vistos": {
@@ -4325,9 +4350,9 @@
   "amazon_mas_barato": 17,
   "dudoso": 0,
   "no_esta": 8,
-  "oferta_real": 16,
+  "oferta_real": 17,
   "pvpr_inflado": 0,
   "sin_precio": 5
  },
- "updated": "2026-11-16T20:35:50.275747+00:00"
+ "updated": "2026-11-16T21:10:41.415586+00:00"
 }

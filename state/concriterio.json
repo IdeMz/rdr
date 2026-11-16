@@ -57,6 +57,7 @@
   "Suplementos": "2026-11-15T13:25:30.562134+00:00",
   "Tablets": "2026-11-15T11:10:43.114079+00:00",
   "Televisores": "2026-11-11T20:15:41.209092+00:00",
+  "Textil hogar": "2026-11-16T21:10:41.415586+00:00",
   "Videojuegos": "2026-11-15T12:15:40.152691+00:00",
   "Zapatillas": "2026-11-15T10:01:03.183163+00:00",
   "eReaders": "2026-11-16T13:55:32.747613+00:00"
@@ -89,7 +90,7 @@
    "title": "adidas Men's Zapatilla de Senderismo Terrex Skychaser AX5 Gore-Tex"
   }
  },
- "next_at": "2026-11-16T21:09:58.388667+00:00",
+ "next_at": "2026-11-16T21:42:16.825772+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -326,6 +327,17 @@
    "p": 22.5,
    "t": "2026-11-05T12:25:53.456959+00:00",
    "title": "NESCAFÉ Dolce Gusto Café Cortado 90 cápsulas (3x30)",
+   "v": []
+  },
+  "B01C8ONNPE": {
+   "c": "Textil hogar",
+   "d": 30,
+   "e": "🧺",
+   "m": 349,
+   "p": 29.99,
+   "s": "ofertas",
+   "t": "2026-11-16T21:11:11.865507+00:00",
+   "title": "PIKOLIN Edredón Nórdico Cama 90 150x220cm 300gr Antiacaros Oeko-Tex",
    "v": []
   },
   "B01EQZATNM": {
@@ -3134,6 +3146,18 @@
  },
  "reserve": [
   {
+   "a": "B075MGGDG6",
+   "c": "Textil hogar",
+   "e": "🧺",
+   "img": "https://m.media-amazon.com/images/I/51U3eOqDDuL._AC_UL320_.jpg",
+   "n": 661,
+   "op": 70.9,
+   "p": 49.99,
+   "r": 4.6,
+   "t": "2026-11-16T21:10:41.415586+00:00",
+   "title": "PIKOLIN Edredón Nórdico 500gr Cama 150/160 240x220cm Aloe Vera"
+  },
+  {
    "a": "B071D4YMR9",
    "c": "Gaming",
    "e": "🕹️",
@@ -3156,24 +3180,12 @@
    "r": 4.7,
    "t": "2026-11-16T20:01:04.281373+00:00",
    "title": "Govee Christmas Cone Tree Lights 2,28m, Guirnalda RGBIC 370 LED, Negro"
-  },
-  {
-   "a": "B0FC2CRDPV",
-   "c": "Accesorios de móvil",
-   "e": "🤳",
-   "img": "https://m.media-amazon.com/images/I/71CB3s+mDkL._AC_UL320_.jpg",
-   "n": 20100,
-   "op": 14.99,
-   "p": 12.74,
-   "r": 4.4,
-   "t": "2026-11-16T17:40:44.874656+00:00",
-   "title": "ESR Pack 3 Protector Pantalla para iPhone 17 Pro Max, Classic"
   }
  ],
  "summary_day": "2026-11-15",
  "tg_offset": 511048072,
  "x_copy": {
   "day": "2026-11-16",
-  "n": 21
+  "n": 22
  }
 }
