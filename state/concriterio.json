@@ -7,6 +7,7 @@
   "Aspiradoras": "2026-11-14T20:20:37.410274+00:00",
   "Auriculares": "2026-11-14T08:10:40.297090+00:00",
   "Barras de sonido": "2026-11-16T07:01:09.494097+00:00",
+  "Bebé": "2026-11-16T07:35:32.483023+00:00",
   "Cafeteras": "2026-11-14T14:40:41.311125+00:00",
   "Café y cápsulas": "2026-11-15T14:40:39.424977+00:00",
   "Cargadores y baterías": "2026-11-15T11:10:43.114079+00:00",
@@ -57,7 +58,7 @@
    "title": "GLORIOUS Switches Kailh Purple 120 Pzs para Teclado Mecánico 3 Pines"
   }
  },
- "next_at": "2026-11-16T07:31:32.626454+00:00",
+ "next_at": "2026-11-16T08:08:52.016698+00:00",
  "offer": {
   "a": "B01EG0DJNE",
   "m": 275,
@@ -1782,6 +1783,17 @@
    "title": "Barefoot Hombre Mujer Zapatillas de Trail Running Ligeras Cómodas Minimalistas Zapatos Descalzos GR.36-48",
    "v": []
   },
+  "B0DP7K72L5": {
+   "c": "Bebé",
+   "d": 40,
+   "e": "🍼",
+   "m": 329,
+   "p": 32.48,
+   "s": "ambas",
+   "t": "2026-11-16T07:36:06.223878+00:00",
+   "title": "Dodot Toallitas Pure Aqua Para Bebé, 1152 Toallitas (24 Packs x 48 uds)",
+   "v": []
+  },
   "B0DQ5KNY6Y": {
    "c": "Aspiradoras",
    "d": 55,
@@ -2962,6 +2974,18 @@
  },
  "reserve": [
   {
+   "a": "B09TW72XZQ",
+   "c": "Bebé",
+   "e": "🍼",
+   "img": "https://m.media-amazon.com/images/I/81b9AqNGSTL._AC_UL320_.jpg",
+   "n": 37100,
+   "op": 22.99,
+   "p": 16.65,
+   "r": 4.8,
+   "t": "2026-11-16T07:35:32.483023+00:00",
+   "title": "WaterWipes Sensitive+ Newborn & Baby Wipes, 6 Paquetes"
+  },
+  {
    "a": "B0CYTGQR74",
    "c": "Barras de sonido",
    "e": "🎶",
@@ -2978,6 +3002,6 @@
  "tg_offset": 511048058,
  "x_copy": {
   "day": "2026-11-16",
-  "n": 1
+  "n": 2
  }
 }
