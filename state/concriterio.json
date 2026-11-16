@@ -25,6 +25,7 @@
   "Herramientas": "2026-11-14T21:01:00.449874+00:00",
   "Iluminación": "2026-11-15T11:45:37.493065+00:00",
   "Jardín": "2026-11-15T11:10:43.114079+00:00",
+  "Juguetes": "2026-11-16T09:55:33.695632+00:00",
   "Lego": "2026-11-15T15:15:41.208340+00:00",
   "Menaje de cocina": "2026-11-15T09:25:34.345588+00:00",
   "Mochilas y maletas": "2026-11-15T20:50:41.317709+00:00",
@@ -61,7 +62,7 @@
    "title": "Cecotec Freidora de Aire con Cesta de Cristal Cecofry&Glass Crunchy Pro"
   }
  },
- "next_at": "2026-11-16T09:50:49.828510+00:00",
+ "next_at": "2026-11-16T10:27:39.641880+00:00",
  "offer": {
   "a": "B01EG0DJNE",
   "m": 275,
@@ -1427,6 +1428,17 @@
    "p": 32.0,
    "t": "2026-11-05T15:31:40.208934+00:00",
    "title": "La Roche-Posay, Mela B3 Sérum, Hiperpigmentación y manchas post acné, 30 ml",
+   "v": []
+  },
+  "B0CM8Q7WX5": {
+   "c": "Juguetes",
+   "d": 33,
+   "e": "🧸",
+   "m": 333,
+   "p": 20.19,
+   "s": "ofertas",
+   "t": "2026-11-16T09:56:12.759743+00:00",
+   "title": "Paw Patrol Patrulla Canina Pack 6 Coches Pup Squad Racers Juguetes niños",
    "v": []
   },
   "B0CQ53RVTW": {
@@ -2887,12 +2899,20 @@
    "t": "2026-11-15T18:30:54.792871+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0CK2KK34J": {
+   "t": "2026-11-16T09:55:33.695632+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0CKRZMLN6": {
    "t": "2026-11-15T10:01:03.183163+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0CKXRGX7M": {
    "t": "2026-11-15T10:01:03.183163+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0D1XZL4NF": {
+   "t": "2026-11-16T09:55:33.695632+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0DCPB9J7K": {
@@ -2939,10 +2959,6 @@
    "t": "2026-11-15T15:15:41.208340+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0FQTGDT14": {
-   "t": "2026-11-15T09:25:34.345588+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0G14W2ZWW": {
    "t": "2026-11-15T11:10:43.114079+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -2957,10 +2973,6 @@
   },
   "B0GZSS216X": {
    "t": "2026-11-15T15:50:40.820191+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0H1Q36TTN": {
-   "t": "2026-11-15T09:25:34.345588+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0H29D4R26": {
@@ -3026,6 +3038,6 @@
  "tg_offset": 511048060,
  "x_copy": {
   "day": "2026-11-16",
-  "n": 5
+  "n": 6
  }
 }
