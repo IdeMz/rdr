@@ -61,7 +61,7 @@
   "Televisores": "2026-11-17T13:01:23.458704+00:00",
   "Textil hogar": "2026-11-16T21:10:41.415586+00:00",
   "Videojuegos": "2026-11-17T09:01:06.401047+00:00",
-  "Zapatillas": "2026-11-15T10:01:03.183163+00:00",
+  "Zapatillas": "2026-11-17T17:01:11.572901+00:00",
   "eReaders": "2026-11-16T13:55:32.747613+00:00"
  },
  "manual": {
@@ -107,7 +107,7 @@
  },
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-17T16:57:48.571946+00:00",
+ "next_at": "2026-11-17T17:30:53.671716+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -1681,6 +1681,17 @@
    "p": 39.99,
    "t": "2026-11-06T19:31:22.583572+00:00",
    "title": "Philips OneBlade 360 con Bluetooth, Recortadora para Barba y Cuerpo, Afeitadora Eléctrica Hombre, Depilación masculina, 2 Cuchillas, 5 Longitudes, 60 minutos de uso con 1 hora de carga, QP4631/30",
+   "v": []
+  },
+  "B0CKJTVR1Z": {
+   "c": "Zapatillas",
+   "d": 37,
+   "e": "👟",
+   "m": 372,
+   "p": 37.9,
+   "s": "ofertas",
+   "t": "2026-11-17T17:01:55.476971+00:00",
+   "title": "St Runner V3 Nl Zapatillas Deportivas, Unisex Adulto",
    "v": []
   },
   "B0CKM2SSK3": {
@@ -3307,8 +3318,16 @@
  },
  "problem": {},
  "rejected": {
+  "B014GNJWW8": {
+   "t": "2026-11-17T17:01:11.572901+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B01ERZ900O": {
    "t": "2026-11-17T07:30:53.001889+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B01LZDYR7N": {
+   "t": "2026-11-17T17:01:11.572901+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B01M7YESHB": {
@@ -3358,6 +3377,18 @@
  },
  "reserve": [
   {
+   "a": "B0B3S3F37S",
+   "c": "Zapatillas",
+   "e": "👟",
+   "img": "https://m.media-amazon.com/images/I/71WiEdaVNuL._AC_UL320_.jpg",
+   "n": 6000,
+   "op": 75.99,
+   "p": 46.95,
+   "r": 4.6,
+   "t": "2026-11-17T17:01:11.572901+00:00",
+   "title": "Hombre Zapatillas Range EXP Suede, Navy/White"
+  },
+  {
    "a": "B0F3P65X6Q",
    "c": "Monitores",
    "e": "🖥️",
@@ -3380,24 +3411,12 @@
    "r": 4.4,
    "t": "2026-11-17T15:30:58.601953+00:00",
    "title": "Samsung Galaxy S25 FE 512GB, Teléfono Móvil con IA, Marco Ligero 7,5mm, Pantalla FHD+ 6,7\", Cámara 50MP, Exynos 2400, 8GB RAM, Garantía Fabricante 3 Años+1 Año Extra, Negro Intenso (Versión Española)"
-  },
-  {
-   "a": "B0B133BLXN",
-   "c": "Suplementos",
-   "e": "💊",
-   "img": "https://m.media-amazon.com/images/I/71AbqJDqcvL._AC_UL320_.jpg",
-   "n": 3800,
-   "op": 16.9,
-   "p": 10.9,
-   "r": 4.5,
-   "t": "2026-11-17T14:01:04.582833+00:00",
-   "title": "Equilibra Complemento alimenticio, Colágeno Q10 Ácido Hialurónico, Bueno estado de la piel, a Base de Colágeno Hidrolizado, Ácido Hialurónico, Coenzima Q10, Vitaminas C y E, 90 Comprimidos"
   }
  ],
  "summary_day": "2026-11-16",
  "tg_offset": 511048087,
  "x_copy": {
   "day": "2026-11-17",
-  "n": 20
+  "n": 21
  }
 }

@@ -1143,6 +1143,13 @@
     ]
    }
   },
+  "6971337724577": {
+   "a": "B0DLVYRSDT",
+   "t": "2026-11-17T17:01:11.572901+00:00",
+   "title": "EMEET 4K Webcam S600, Webcam 1080P para PC con micrófono, Enfoque automático PDAF, corrección de luz, Campo de visión de 73°, Cubierta de privacidad, Plug&Play,",
+   "v": 3,
+   "via": "modelo"
+  },
   "6972147076948": {
    "a": "B0FFT2ZCBP",
    "t": "2026-11-14T17:55:30.798523+00:00",
@@ -4496,6 +4503,26 @@
     ]
    }
   },
+  "46599139445": {
+   "ahorro_vs_amazon": 36,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 79.99,
+   "amz_title": "EMEET 4K Webcam S600, Webcam 1080P para PC con micrófono, Enfoque automático PDAF, corrección de luz, Campo de visión de 73°, Cubierta de privacidad, Plug&Play,",
+   "asin": "B0DLVYRSDT",
+   "disponible": true,
+   "ean": "6971337724577",
+   "encontrado_por": "modelo",
+   "lista": "candidates",
+   "motivo": "36 % por debajo del habitual en Amazon (79.99)",
+   "name": "eMeet SmartCam S600 4K Negro 30fps autoenfoque micrófono Webcam",
+   "pp_drop": 27,
+   "pp_median": 69.5,
+   "pp_price": 51.01,
+   "t": "2026-11-17T17:01:11.572901+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "46599139519": {
    "ahorro_vs_amazon": 0,
    "amz_low30": null,
@@ -4893,11 +4920,12 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Polti StainOver SC30 2000W Aspirador de tapicería",
-   "pista": "1360336 bytes; 17 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1353321 bytes; 17 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 20,
    "pp_median": 251.95,
    "pp_price": 200.94,
-   "t": "2026-11-17T08:30:57.514721+00:00",
+   "t": "2026-11-17T17:01:11.572901+00:00",
+   "v": 3,
    "veredicto": "sin_precio"
   },
   "46599142071": {
@@ -5481,9 +5509,9 @@
   "amazon_mas_barato": 15,
   "dudoso": 3,
   "no_esta": 9,
-  "oferta_real": 16,
+  "oferta_real": 17,
   "pvpr_inflado": 1,
   "sin_precio": 1
  },
- "updated": "2026-11-17T16:30:56.399108+00:00"
+ "updated": "2026-11-17T17:01:11.572901+00:00"
 }
