@@ -18,7 +18,7 @@
   "Climatización": "2026-11-14T11:05:31.708608+00:00",
   "Colchones y almohadas": "2026-11-17T10:01:21.690221+00:00",
   "Componentes PC": "2026-11-16T16:15:49.892288+00:00",
-  "Cuidado de la piel": "2026-11-15T12:50:40.627443+00:00",
+  "Cuidado de la piel": "2026-11-17T10:31:06.725588+00:00",
   "Cuidado del cabello": "2026-11-13T21:50:42.988192+00:00",
   "Cámaras de seguridad": "2026-11-14T17:20:46.627491+00:00",
   "Decoración navideña": "2026-11-16T20:01:04.281373+00:00",
@@ -65,7 +65,7 @@
   "eReaders": "2026-11-16T13:55:32.747613+00:00"
  },
  "manual": {},
- "next_at": "2026-11-17T10:30:17.511344+00:00",
+ "next_at": "2026-11-17T10:58:47.952168+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -1137,6 +1137,17 @@
    "s": "ofertas",
    "t": "2026-11-17T07:01:49.849143+00:00",
    "title": "Maybelline New York SuperStay Vinyl Ink Efecto Vinilo Fijo, 35 Cheeky",
+   "v": []
+  },
+  "B09R89BLYH": {
+   "c": "Cuidado de la piel",
+   "d": 54,
+   "e": "🧴",
+   "m": 359,
+   "p": 11.03,
+   "s": "ambas",
+   "t": "2026-11-17T10:31:38.435517+00:00",
+   "title": "L'Oréal Paris Revitalift Filler Sérum Ojos con Cafeína Antiarrugas, 20ml",
    "v": []
   },
   "B09TL86RB6": {
@@ -3181,6 +3192,18 @@
  },
  "reserve": [
   {
+   "a": "B077S4TX92",
+   "c": "Cuidado de la piel",
+   "e": "🧴",
+   "img": "https://m.media-amazon.com/images/I/71vULlfRXyL._AC_UL320_.jpg",
+   "n": 3100,
+   "op": 22.5,
+   "p": 11.94,
+   "r": 4.6,
+   "t": "2026-11-17T10:31:06.725588+00:00",
+   "title": "Neutrogena Rutina Hydro Boost, Gel de Agua 50 ml + Contorno de ojos 15 ml"
+  },
+  {
    "a": "B097F5QSTB",
    "c": "Periféricos",
    "e": "⌨️",
@@ -3203,24 +3226,12 @@
    "r": 4.4,
    "t": "2026-11-17T09:01:06.401047+00:00",
    "title": "playvital Funda de Silicona para PS5 Mando a Distancia"
-  },
-  {
-   "a": "B0B4K55L4B",
-   "c": "Ciclismo",
-   "e": "🚴",
-   "img": "https://m.media-amazon.com/images/I/817mCwvpyVL._AC_UL320_.jpg",
-   "n": 8500,
-   "op": 26.96,
-   "p": 18.95,
-   "r": 4.5,
-   "t": "2026-11-17T07:30:53.001889+00:00",
-   "title": "Calcetines de Ciclismo, Anti-Ampollas, 3 y 5 Pack"
   }
  ],
  "summary_day": "2026-11-16",
  "tg_offset": 511048078,
  "x_copy": {
   "day": "2026-11-17",
-  "n": 7
+  "n": 8
  }
 }

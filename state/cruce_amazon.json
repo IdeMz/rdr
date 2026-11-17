@@ -494,6 +494,12 @@
    "title": "Russell Hobbs Adventure 24080-56 – Tostadora, 2 Ranuras Anchas, para 2 Rebanadas, Acero Inoxidable, Plata",
    "via": "ean"
   },
+  "4015867198926": {
+   "a": "B01LFOIFYW",
+   "t": "2026-11-17T10:31:06.725588+00:00",
+   "title": "Equip 650315 - Soporte de Pared para televisores de 32\" a 55\" (Acero, articulado, Plano/Curve)",
+   "via": "ean"
+  },
   "4038986630795": {
    "a": "",
    "t": "2026-11-17T03:05:20.365221+00:00",
@@ -1418,6 +1424,24 @@
    "t": "2026-11-13T13:25:30.604640+00:00",
    "title": "SaveFamily Slim 4G | Reloj Inteligente Niño/a con Localizador GPS",
    "via": "ean"
+  },
+  "8434388458016": {
+   "a": "",
+   "t": "2026-11-17T10:31:06.725588+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "modelo": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "7,4kW Cargador EV Tipo 2, Portátil Wallbox con Enchufe Schuko y Enchufe CEE,para Tomas estándar de l",
+     "dé Cargador Coche Electrico 7,4 kW APP [6m, Monofásico, 6A-32A] Tipo 2 CEE",
+     "Cargador Coche Eléctrico 7 kW, 5M Cable de Carga de 1 Fase/6-32A"
+    ]
+   }
   },
   "8435256897562": {
    "a": "B08TX6QJ7V",
@@ -3543,6 +3567,25 @@
    "t": "2026-11-17T02:20:36.394189+00:00",
    "veredicto": "amazon_mas_barato"
   },
+  "46146891071": {
+   "ahorro_vs_amazon": 35,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 46.81,
+   "amz_title": "Equip 650315 - Soporte de Pared para televisores de 32\" a 55\" (Acero, articulado, Plano/Curve)",
+   "asin": "B01LFOIFYW",
+   "disponible": true,
+   "ean": "4015867198926",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "35 % por debajo del habitual en Amazon (46.81)",
+   "name": "Soporte TV Equip Negro Pared Doble Brazo Articulado 650315",
+   "pp_drop": 39,
+   "pp_median": 49.95,
+   "pp_price": 30.65,
+   "t": "2026-11-17T10:31:06.725588+00:00",
+   "veredicto": "oferta_real"
+  },
   "46146892668": {
    "ahorro_vs_amazon": 8,
    "amz_low30": null,
@@ -5029,6 +5072,31 @@
    "t": "2026-11-16T20:01:04.281373+00:00",
    "veredicto": "oferta_real"
   },
+  "46599143703": {
+   "ean": "8434388458016",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Cargador Portátil Coche Eléctrico SJL 7.0kW Tipo 2 Cable 5m DL-EU002-2",
+   "pp_drop": 35,
+   "pp_median": 199.0,
+   "pp_price": 129.0,
+   "t": "2026-11-17T10:31:06.725588+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "modelo": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "7,4kW Cargador EV Tipo 2, Portátil Wallbox con Enchufe Schuko y Enchufe CEE,para Tomas estándar de l",
+     "dé Cargador Coche Electrico 7,4 kW APP [6m, Monofásico, 6A-32A] Tipo 2 CEE",
+     "Cargador Coche Eléctrico 7 kW, 5M Cable de Carga de 1 Fase/6-32A"
+    ]
+   }
+  },
   "46599143782": {
    "ahorro_vs_amazon": -20,
    "amz_low30": null,
@@ -5325,12 +5393,12 @@
  },
  "night_at": "2026-11-17T06:05:20.554247+00:00",
  "resumen": {
-  "amazon_mas_barato": 25,
-  "dudoso": 4,
-  "no_esta": 16,
-  "oferta_real": 27,
+  "amazon_mas_barato": 13,
+  "dudoso": 3,
+  "no_esta": 9,
+  "oferta_real": 15,
   "pvpr_inflado": 0,
-  "sin_precio": 9
+  "sin_precio": 2
  },
- "updated": "2026-11-17T10:01:21.690221+00:00"
+ "updated": "2026-11-17T10:31:06.725588+00:00"
 }
