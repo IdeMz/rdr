@@ -2235,11 +2235,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "AKG N5 Hybrid con Dongle USB-C Negro TWS Bluetooth 5.3 40h IP54 Multipunto Auriculares inalámbricos",
-   "pista": "1970952 bytes; 9 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1956280 bytes; 7 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 13,
    "pp_median": 142.95,
    "pp_price": 123.95,
-   "t": "2026-11-16T22:24:54.934328+00:00",
+   "t": "2026-11-17T04:35:20.825957+00:00",
    "veredicto": "sin_precio"
   },
   "44927881022": {
@@ -5323,7 +5323,7 @@
    }
   }
  },
- "night_at": "2026-11-17T04:05:26.884298+00:00",
+ "night_at": "2026-11-17T04:35:20.825957+00:00",
  "resumen": {
   "amazon_mas_barato": 25,
   "dudoso": 4,
@@ -5332,5 +5332,5 @@
   "pvpr_inflado": 0,
   "sin_precio": 9
  },
- "updated": "2026-11-17T04:05:26.884298+00:00"
+ "updated": "2026-11-17T04:35:20.825957+00:00"
 }
