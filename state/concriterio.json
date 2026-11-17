@@ -64,22 +64,8 @@
   "Zapatillas": "2026-11-15T10:01:03.183163+00:00",
   "eReaders": "2026-11-16T13:55:32.747613+00:00"
  },
- "manual": {
-  "B0FBSB1V4L": {
-   "a": "B0FBSB1V4L",
-   "c": "",
-   "e": "",
-   "img": "https://m.media-amazon.com/images/I/41-vFaTDlrL._AC_SL1100_.jpg",
-   "m": 329,
-   "n": 370,
-   "op": 65.0,
-   "p": 37.04,
-   "r": 4.4,
-   "t": "2026-11-17T08:30:57.514721+00:00",
-   "title": "Reebok Court Advance Vegano ZapatillasMujer"
-  }
- },
- "next_at": "2026-11-17T09:30:41.318119+00:00",
+ "manual": {},
+ "next_at": "2026-11-17T09:56:51.031916+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -2274,6 +2260,17 @@
    "title": "Lámpara Escritorio, Flexo Led Escritorio, 5 Modos,10 Niveles de Brillo",
    "v": []
   },
+  "B0FBSB1V4L": {
+   "c": "",
+   "d": 43,
+   "e": "",
+   "m": 357,
+   "manual": true,
+   "p": 37.04,
+   "t": "2026-11-17T09:30:55.984159+00:00",
+   "title": "Reebok Court Advance Vegano ZapatillasMujer",
+   "v": []
+  },
   "B0FBWBVF71": {
    "c": "Decoración navideña",
    "d": 41,
@@ -3169,26 +3166,6 @@
   "B0G4DP1KP6": {
    "t": "2026-11-16T18:55:32.141614+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0GD7B5B14": {
-   "t": "2026-11-16T09:20:39.431359+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0H29D4R26": {
-   "t": "2026-11-16T09:20:39.431359+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0H8BM3745": {
-   "t": "2026-11-16T09:20:39.431359+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0HC67NJTQ": {
-   "t": "2026-11-16T09:20:39.431359+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0HJPNLC2Y": {
-   "t": "2026-11-16T09:20:39.431359+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
   }
  },
  "reserve": [
@@ -3230,9 +3207,9 @@
   }
  ],
  "summary_day": "2026-11-16",
- "tg_offset": 511048075,
+ "tg_offset": 511048078,
  "x_copy": {
   "day": "2026-11-17",
-  "n": 5
+  "n": 6
  }
 }
