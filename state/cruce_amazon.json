@@ -112,6 +112,26 @@
    "title": "SANDISK Extreme SSD externo Portátil 4TB (Disco duro externo SSD con velodidad de lectura de hasta 1050 MB/s, 1000 MB/s de escritura, Clasificación IP65 de resi",
    "via": "ean"
   },
+  "0622356272551": {
+   "a": "",
+   "t": "2026-11-17T03:20:26.617762+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "Shark SmoothStyle Cepillo Secador de Pelo y Peine Térmico Alisador, Seda"
+    ],
+    "modelo": [
+     "Shark SmoothStyle Cepillo Secador de Pelo y Peine Térmico Alisador, Seda",
+     "Shark SmoothStyle Cepillo Secador de Pelo, Peine Alisador y Moldeador",
+     "Shark Glossi, Cepillo Secador de Pelo, Calor y Air Glosser 2 en 1, Turquesa"
+    ],
+    "nombre": [
+     "Shark SmoothStyle Cepillo Secador de Pelo y Peine Térmico Alisador, Seda",
+     "Shark SmoothStyle Cepillo Secador de Pelo, Peine Alisador y Moldeador",
+     "Shark Glossi, Cepillo Secador de Pelo, Calor y Air Glosser 2 en 1, Turquesa"
+    ]
+   }
+  },
   "0622356276573": {
    "a": "B0CXDTMM28",
    "t": "2026-11-15T17:05:32.780345+00:00",
@@ -4854,6 +4874,33 @@
    "t": "2026-11-17T01:35:36.075081+00:00",
    "veredicto": "amazon_mas_barato"
   },
+  "46599142905": {
+   "ean": "0622356272551",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Shark SmoothStyle HT212EU 900W Cepillo moldeador de aire caliente",
+   "pp_drop": 10,
+   "pp_median": 86.95,
+   "pp_price": 77.95,
+   "t": "2026-11-17T03:20:26.617762+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "Shark SmoothStyle Cepillo Secador de Pelo y Peine Térmico Alisador, Seda"
+    ],
+    "modelo": [
+     "Shark SmoothStyle Cepillo Secador de Pelo y Peine Térmico Alisador, Seda",
+     "Shark SmoothStyle Cepillo Secador de Pelo, Peine Alisador y Moldeador",
+     "Shark Glossi, Cepillo Secador de Pelo, Calor y Air Glosser 2 en 1, Turquesa"
+    ],
+    "nombre": [
+     "Shark SmoothStyle Cepillo Secador de Pelo y Peine Térmico Alisador, Seda",
+     "Shark SmoothStyle Cepillo Secador de Pelo, Peine Alisador y Moldeador",
+     "Shark Glossi, Cepillo Secador de Pelo, Calor y Air Glosser 2 en 1, Turquesa"
+    ]
+   }
+  },
   "46599143121": {
    "ean": "4894827003674",
    "lista": "candidates",
@@ -5276,14 +5323,14 @@
    }
   }
  },
- "night_at": "2026-11-17T03:05:20.365221+00:00",
+ "night_at": "2026-11-17T03:20:26.617762+00:00",
  "resumen": {
   "amazon_mas_barato": 25,
   "dudoso": 4,
-  "no_esta": 15,
+  "no_esta": 16,
   "oferta_real": 27,
   "pvpr_inflado": 0,
   "sin_precio": 9
  },
- "updated": "2026-11-17T03:05:20.365221+00:00"
+ "updated": "2026-11-17T03:20:26.617762+00:00"
 }
