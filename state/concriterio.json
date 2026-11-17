@@ -60,7 +60,7 @@
   "Tablets": "2026-11-15T11:10:43.114079+00:00",
   "Televisores": "2026-11-11T20:15:41.209092+00:00",
   "Textil hogar": "2026-11-16T21:10:41.415586+00:00",
-  "Videojuegos": "2026-11-15T12:15:40.152691+00:00",
+  "Videojuegos": "2026-11-17T09:01:06.401047+00:00",
   "Zapatillas": "2026-11-15T10:01:03.183163+00:00",
   "eReaders": "2026-11-16T13:55:32.747613+00:00"
  },
@@ -79,7 +79,7 @@
    "title": "Reebok Court Advance Vegano ZapatillasMujer"
   }
  },
- "next_at": "2026-11-17T08:58:40.739508+00:00",
+ "next_at": "2026-11-17T09:30:41.318119+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -2052,6 +2052,17 @@
    "title": "ESR 2 Unidades Protector de Pantalla para iPad Air 11 Pulgadas M4/M3/M2",
    "v": []
   },
+  "B0DSWJBFM2": {
+   "c": "Videojuegos",
+   "d": 34,
+   "e": "🎮",
+   "m": 356,
+   "p": 32.99,
+   "s": "ofertas",
+   "t": "2026-11-17T09:01:54.185617+00:00",
+   "title": "GXTrust Forta Cascos PS5 Licencia Oficial para PlayStation 5, Azul",
+   "v": []
+  },
   "B0DSZRL2W9": {
    "c": "Accesorios de coche",
    "d": 30,
@@ -3115,8 +3126,8 @@
    "t": "2026-11-16T10:45:46.172773+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B07M69276N": {
-   "t": "2026-11-16T08:45:43.168202+00:00",
+  "B08H99BPJN": {
+   "t": "2026-11-17T09:01:06.401047+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B09V8C4QP9": {
@@ -3182,6 +3193,18 @@
  },
  "reserve": [
   {
+   "a": "B0BLRV83GQ",
+   "c": "Videojuegos",
+   "e": "🎮",
+   "img": "https://m.media-amazon.com/images/I/5170APwonpL._AC_UL320_.jpg",
+   "n": 1100,
+   "op": 11.19,
+   "p": 8.95,
+   "r": 4.4,
+   "t": "2026-11-17T09:01:06.401047+00:00",
+   "title": "playvital Funda de Silicona para PS5 Mando a Distancia"
+  },
+  {
    "a": "B0B4K55L4B",
    "c": "Ciclismo",
    "e": "🚴",
@@ -3210,6 +3233,6 @@
  "tg_offset": 511048075,
  "x_copy": {
   "day": "2026-11-17",
-  "n": 4
+  "n": 5
  }
 }
