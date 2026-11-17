@@ -64,21 +64,9 @@
   "Zapatillas": "2026-11-17T17:01:11.572901+00:00",
   "eReaders": "2026-11-16T13:55:32.747613+00:00"
  },
- "manual": {
-  "B00KIDBV0M": {
-   "a": "B00KIDBV0M",
-   "c": "",
-   "e": "",
-   "img": "https://m.media-amazon.com/images/I/51ZxsxEPhhL._AC_SL1200_.jpg",
-   "m": 363,
-   "n": 48616,
-   "op": null,
-   "p": 35.95,
-   "r": 4.5,
-   "t": "2026-11-17T20:30:59.284408+00:00",
-   "title": "Columbia Steens Mountain Full Zip"
-  },
-  "B01N4Q8KO2": {
+ "manual": {},
+ "manual_queue": [
+  {
    "a": "B01N4Q8KO2",
    "c": "",
    "e": "",
@@ -87,12 +75,26 @@
    "n": 1032,
    "op": null,
    "p": 48.9,
+   "q": "2026-11-17T20:55:34.151614+00:00",
    "r": 4.2,
    "t": "2026-11-17T20:30:59.284408+00:00",
    "title": "Carrera 5041/S XT RCT Gafas de sol, azul (Matt Blue/Blue Sky Grey Speckled), 56 Unisex-Adulto"
+  },
+  {
+   "a": "B00KIDBV0M",
+   "c": "",
+   "e": "",
+   "img": "https://m.media-amazon.com/images/I/51ZxsxEPhhL._AC_SL1200_.jpg",
+   "m": 363,
+   "n": 48616,
+   "op": null,
+   "p": 35.95,
+   "q": "2026-11-17T20:55:34.151614+00:00",
+   "r": 4.5,
+   "t": "2026-11-17T20:30:59.284408+00:00",
+   "title": "Columbia Steens Mountain Full Zip"
   }
- },
- "manual_queue": [],
+ ],
  "manual_todo": [],
  "next_at": "2026-11-17T21:15:09.872318+00:00",
  "offer": null,
@@ -3468,7 +3470,7 @@
   }
  ],
  "summary_day": "2026-11-16",
- "tg_offset": 511048094,
+ "tg_offset": 511048098,
  "x_copy": {
   "day": "2026-11-17",
   "n": 28
