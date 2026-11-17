@@ -58,7 +58,7 @@
   "Smartwatch": "2026-11-15T15:50:40.820191+00:00",
   "Suplementos": "2026-11-15T13:25:30.562134+00:00",
   "Tablets": "2026-11-15T11:10:43.114079+00:00",
-  "Televisores": "2026-11-11T20:15:41.209092+00:00",
+  "Televisores": "2026-11-17T13:01:23.458704+00:00",
   "Textil hogar": "2026-11-16T21:10:41.415586+00:00",
   "Videojuegos": "2026-11-17T09:01:06.401047+00:00",
   "Zapatillas": "2026-11-15T10:01:03.183163+00:00",
@@ -122,7 +122,7 @@
   }
  ],
  "manual_todo": [],
- "next_at": "2026-11-17T12:59:52.990170+00:00",
+ "next_at": "2026-11-17T13:30:25.090448+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -3054,6 +3054,17 @@
    "title": "DDPAI Mini Pro 4K Dash CAM Coche, Cámara 2160P, Giración de 360°, Tarjeta 64GB Incluida, Visión Nocturna, 24H Monitor Aparcamiento, 5.8G WiFi 6, Grabación en Bucle, Control por App, Supercondensador",
    "v": []
   },
+  "B0H448LDSH": {
+   "c": "Televisores",
+   "d": 21,
+   "e": "📺",
+   "m": 364,
+   "p": 259.0,
+   "s": "ofertas",
+   "t": "2026-11-17T13:02:02.612019+00:00",
+   "title": "XIAOMI TV 43 Pulgadas 2026, 4K UHD Smart TV Fire OS8 HDR10 L43MB-FAVEU",
+   "v": []
+  },
   "B0H4H83XNV": {
    "c": "Móviles",
    "d": 17,
@@ -3270,6 +3281,10 @@
    "t": "2026-11-17T08:01:10.979640+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0F8QFTXW9": {
+   "t": "2026-11-17T13:01:23.458704+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0FP5R9BDZ": {
    "t": "2026-11-16T15:40:40.598894+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3288,6 +3303,18 @@
   }
  },
  "reserve": [
+  {
+   "a": "B0GTRJ4LRS",
+   "c": "Televisores",
+   "e": "📺",
+   "img": "https://m.media-amazon.com/images/I/81DciHUQEhL._AC_UL320_.jpg",
+   "n": 169,
+   "op": 297.99,
+   "p": 269.0,
+   "r": 4.2,
+   "t": "2026-11-17T13:01:23.458704+00:00",
+   "title": "LG 43NU800B6LC - Smart TV Nano UHD AI 43\" 4K Sin Reflejos 94%, Modelo 2026"
+  },
   {
    "a": "B09PV7LM3T",
    "c": "Relojes",
@@ -3311,24 +3338,12 @@
    "r": 4.6,
    "t": "2026-11-17T10:31:06.725588+00:00",
    "title": "Neutrogena Rutina Hydro Boost, Gel de Agua 50 ml + Contorno de ojos 15 ml"
-  },
-  {
-   "a": "B097F5QSTB",
-   "c": "Periféricos",
-   "e": "⌨️",
-   "img": "https://m.media-amazon.com/images/I/718iD3X13EL._AC_UL320_.jpg",
-   "n": 443,
-   "op": 119.99,
-   "p": 75.9,
-   "r": 4.6,
-   "t": "2026-11-17T10:01:21.690221+00:00",
-   "title": "Razer BlackWidow V3 Tenkeyless (Yellow Switch) - Teclado Compacto para Juegos con interruptores mecánicos (Teclas ABS, iluminación RGB Chroma) QWERTY Teclado ES | Negro"
   }
  ],
  "summary_day": "2026-11-16",
  "tg_offset": 511048087,
  "x_copy": {
   "day": "2026-11-17",
-  "n": 12
+  "n": 13
  }
 }
