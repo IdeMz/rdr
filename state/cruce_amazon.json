@@ -328,16 +328,16 @@
   },
   "0850033806298": {
    "a": "",
-   "t": "2026-11-17T02:35:21.384179+00:00",
+   "t": "2026-11-17T02:36:09.802417+00:00",
    "v": 2,
    "vistos": {
     "ean": [
      "Shokz Auriculares sin cables"
     ],
     "nombre": [
+     "Shokz OpenMove Auriculares Conducción Ósea Bluetooth 5.1, Ligeros 29g, Gris",
      "Shokz OpenMove Auriculares Conducción Ósea Bluetooth 5.1, Ligeros 29g, Azul",
-     "Shokz OpenRun Auriculares Conducción Ósea Open-Ear Bluetooth 5.1,IP67,Negro",
-     "Shokz OpenRun Mini Auriculares Conducción Ósea Bluetooth 5.1, IP67, Negro"
+     "Shokz OpenRun Auriculares Conducción Ósea Open-Ear Bluetooth 5.1,IP67,Negro"
     ]
    }
   },
@@ -979,7 +979,7 @@
   },
   "6936685224186": {
    "a": "",
-   "t": "2026-11-17T02:35:21.384179+00:00",
+   "t": "2026-11-17T02:36:09.802417+00:00",
    "v": 2,
    "vistos": {
     "ean": [
@@ -1331,7 +1331,7 @@
   },
   "8021098004345": {
    "a": "B0D9VYRDT2",
-   "t": "2026-11-17T02:35:21.384179+00:00",
+   "t": "2026-11-17T02:36:09.802417+00:00",
    "title": "Braun MultiQuick 5 - Minipimer de 1000W Vaso 600ml Blanco",
    "via": "ean"
   },
@@ -1846,7 +1846,7 @@
    "pp_drop": 11,
    "pp_median": 83.95,
    "pp_price": 74.95,
-   "t": "2026-11-17T02:35:21.384179+00:00",
+   "t": "2026-11-17T02:36:09.802417+00:00",
    "v": 2,
    "veredicto": "no_esta",
    "vistos": {
@@ -1854,9 +1854,9 @@
      "Shokz Auriculares sin cables"
     ],
     "nombre": [
+     "Shokz OpenMove Auriculares Conducción Ósea Bluetooth 5.1, Ligeros 29g, Gris",
      "Shokz OpenMove Auriculares Conducción Ósea Bluetooth 5.1, Ligeros 29g, Azul",
-     "Shokz OpenRun Auriculares Conducción Ósea Open-Ear Bluetooth 5.1,IP67,Negro",
-     "Shokz OpenRun Mini Auriculares Conducción Ósea Bluetooth 5.1, IP67, Negro"
+     "Shokz OpenRun Auriculares Conducción Ósea Open-Ear Bluetooth 5.1,IP67,Negro"
     ]
    }
   },
@@ -2257,7 +2257,7 @@
    "pp_drop": 11,
    "pp_median": 84.99,
    "pp_price": 75.99,
-   "t": "2026-11-17T02:35:21.384179+00:00",
+   "t": "2026-11-17T02:36:09.802417+00:00",
    "v": 2,
    "veredicto": "no_esta",
    "vistos": {
@@ -3215,7 +3215,7 @@
    "pp_drop": 13,
    "pp_median": 44.95,
    "pp_price": 38.95,
-   "t": "2026-11-17T02:35:21.384179+00:00",
+   "t": "2026-11-17T02:36:09.802417+00:00",
    "veredicto": "amazon_mas_barato"
   },
   "45956992517": {
@@ -5181,7 +5181,7 @@
    }
   }
  },
- "night_at": "2026-11-17T02:35:21.384179+00:00",
+ "night_at": "2026-11-17T02:36:09.802417+00:00",
  "resumen": {
   "amazon_mas_barato": 23,
   "dudoso": 4,
@@ -5190,5 +5190,5 @@
   "pvpr_inflado": 0,
   "sin_precio": 9
  },
- "updated": "2026-11-17T02:35:21.384179+00:00"
+ "updated": "2026-11-17T02:36:09.802417+00:00"
 }
