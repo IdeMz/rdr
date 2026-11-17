@@ -198,6 +198,21 @@
     ]
    }
   },
+  "0622356384926": {
+   "a": "",
+   "t": "2026-11-17T01:05:23.235625+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Ninja CRISPi PRO XL, Freidora de Aire con 2 Recipientes, Dorado Piedra",
+     "Ninja CRISPi Freidora de aire 4 en 1 de 3,8 l, 2,3 l: Freír con aire, asar, mantener caliente, recup",
+     "Ninja CRISPi, Freidora de Aire Portátil 4 en 1, 2 Recipientes, 3,8L, Gris"
+    ]
+   }
+  },
   "0711719581116": {
    "a": "B0FX5ZLTB3",
    "t": "2026-11-16T16:50:42.783335+00:00",
@@ -455,6 +470,12 @@
    "t": "2026-11-14T22:05:27.466329+00:00",
    "title": "Blaupunkt Valencia 200 DAB BT | DAB+, Bluetooth, sintonizador RDS, manos libres, USB, entrada auxiliar",
    "via": "ean"
+  },
+  "4262533460331": {
+   "a": "B0DCGF1RBF",
+   "t": "2026-11-17T01:05:23.235625+00:00",
+   "title": "ULTIMEA 7.1ch Barra de Sonido con Dolby Atmos, 3D Sonido Envolvente, Control por App, Barra Sonido TV con Subwoofer Inalámbrico y 4 Altavoces con Cable, 460W, B",
+   "via": "nombre"
   },
   "4547410455649": {
    "a": "B09TWS33C3",
@@ -885,6 +906,12 @@
    "a": "B0F19B8FHY",
    "t": "2026-11-17T00:50:28.547812+00:00",
    "title": "Edifier MR5 - Altavoz de Estudio (3 vías, 110 W, Crossover Tri-Amped), Color Blanco",
+   "via": "ean"
+  },
+  "6923520286775": {
+   "a": "B0D9GJ4SZR",
+   "t": "2026-11-17T01:05:23.235625+00:00",
+   "title": "Edifier M60 Altavoces Multimedia Bluetooth con 66W RMS & Audio Hi-Res",
    "via": "ean"
   },
   "6924843236393": {
@@ -2237,6 +2264,25 @@
     ]
    }
   },
+  "45403196307": {
+   "ahorro_vs_amazon": 13,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 149.0,
+   "amz_title": "Edifier M60 Altavoces Multimedia Bluetooth con 66W RMS & Audio Hi-Res",
+   "asin": "B0D9GJ4SZR",
+   "disponible": true,
+   "ean": "6923520286775",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "13 % por debajo del habitual en Amazon (149.00)",
+   "name": "Edifier M60 Classic Oak 66W entrada AUX Altavoz Bluetooth 5.3",
+   "pp_drop": 11,
+   "pp_median": 145.99,
+   "pp_price": 129.95,
+   "t": "2026-11-17T01:05:23.235625+00:00",
+   "veredicto": "oferta_real"
+  },
   "45403196311": {
    "ahorro_vs_amazon": -9,
    "amz_low30": null,
@@ -2704,6 +2750,25 @@
    "pp_median": 631.95,
    "pp_price": 266.95,
    "t": "2026-11-13T23:20:24.256283+00:00",
+   "veredicto": "oferta_real"
+  },
+  "45948306885": {
+   "ahorro_vs_amazon": 12,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 269.99,
+   "amz_title": "ULTIMEA 7.1ch Barra de Sonido con Dolby Atmos, 3D Sonido Envolvente, Control por App, Barra Sonido TV con Subwoofer Inalámbrico y 4 Altavoces con Cable, 460W, B",
+   "asin": "B0DCGF1RBF",
+   "disponible": true,
+   "ean": "4262533460331",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "12 % por debajo del habitual en Amazon (269.99)",
+   "name": "Ultimea Poseidon D80 Boom 7.1 460W Dolby Atmos Subwoofer inalámbrico 6,5 pulgadas HDMI eARC Bluetooth 5.3 Barra de sonido",
+   "pp_drop": 10,
+   "pp_median": 263.95,
+   "pp_price": 238.26,
+   "t": "2026-11-17T01:05:23.235625+00:00",
    "veredicto": "oferta_real"
   },
   "45956990791": {
@@ -4362,6 +4427,28 @@
    "t": "2026-11-16T05:50:30.678743+00:00",
    "veredicto": "amazon_mas_barato"
   },
+  "46599142114": {
+   "ean": "0622356384926",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Freidora de aire Ninja CRISPi PRO 7-in-1 5,7L 2050W 7 Funciones Gris",
+   "pp_drop": 10,
+   "pp_median": 247.95,
+   "pp_price": 223.95,
+   "t": "2026-11-17T01:05:23.235625+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Ninja CRISPi PRO XL, Freidora de Aire con 2 Recipientes, Dorado Piedra",
+     "Ninja CRISPi Freidora de aire 4 en 1 de 3,8 l, 2,3 l: Freír con aire, asar, mantener caliente, recup",
+     "Ninja CRISPi, Freidora de Aire Portátil 4 en 1, 2 Recipientes, 3,8L, Gris"
+    ]
+   }
+  },
   "46599142124": {
    "ahorro_vs_amazon": 15,
    "amz_low30": null,
@@ -4781,14 +4868,14 @@
    }
   }
  },
- "night_at": "2026-11-17T00:50:28.547812+00:00",
+ "night_at": "2026-11-17T01:05:23.235625+00:00",
  "resumen": {
   "amazon_mas_barato": 19,
   "dudoso": 4,
-  "no_esta": 10,
-  "oferta_real": 23,
+  "no_esta": 11,
+  "oferta_real": 25,
   "pvpr_inflado": 0,
   "sin_precio": 7
  },
- "updated": "2026-11-17T00:50:28.547812+00:00"
+ "updated": "2026-11-17T01:05:23.235625+00:00"
 }
