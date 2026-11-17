@@ -326,6 +326,21 @@
     ]
    }
   },
+  "0850033806298": {
+   "a": "",
+   "t": "2026-11-17T02:35:21.384179+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "Shokz Auriculares sin cables"
+    ],
+    "nombre": [
+     "Shokz OpenMove Auriculares Conducción Ósea Bluetooth 5.1, Ligeros 29g, Azul",
+     "Shokz OpenRun Auriculares Conducción Ósea Open-Ear Bluetooth 5.1,IP67,Negro",
+     "Shokz OpenRun Mini Auriculares Conducción Ósea Bluetooth 5.1, IP67, Negro"
+    ]
+   }
+  },
   "0850039905544": {
    "a": "B0GGGZYZ8M",
    "t": "2026-11-14T23:50:25.477607+00:00",
@@ -962,6 +977,21 @@
     ]
    }
   },
+  "6936685224186": {
+   "a": "",
+   "t": "2026-11-17T02:35:21.384179+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "GameSir G7 Pro 8K PC Mando Inalámbrico Esports - Frecuencia 8000Hz, Sticks Mag-Res TMR Gen-2, Botone",
+     "GameSir G7 Pro 8K Mando Esports Inalámbrico para PC – Negro",
+     "GameSir G7 Pro 8K PC Mando Inalámbrico Esports - Frecuencia 8000Hz, Sticks Mag-Res TMR Gen-2, Botone"
+    ]
+   }
+  },
   "6941948710320": {
    "a": "B0H83QMWSJ",
    "t": "2026-11-16T17:40:44.874656+00:00",
@@ -1297,6 +1327,12 @@
    "a": "B0C2VZJXZR",
    "t": "2026-11-14T22:50:36.785672+00:00",
    "title": "Braun MultiGrill 7 CG 7040, Plancha Cocina Eléctrica con Control Electrónico, 2 Termostatos Independientes, 3 Posiciones de Cocción, Placas Lavables en Lavavaji",
+   "via": "ean"
+  },
+  "8021098004345": {
+   "a": "B0D9VYRDT2",
+   "t": "2026-11-17T02:35:21.384179+00:00",
+   "title": "Braun MultiQuick 5 - Minipimer de 1000W Vaso 600ml Blanco",
    "via": "ean"
   },
   "810050911702": {
@@ -1802,6 +1838,28 @@
     ]
    }
   },
+  "39818152139": {
+   "ean": "0850033806298",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Shokz OpenMove Gris Conducción ósea Bluetooth 5.1 6h IP55 Auriculares inalámbricos",
+   "pp_drop": 11,
+   "pp_median": 83.95,
+   "pp_price": 74.95,
+   "t": "2026-11-17T02:35:21.384179+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "Shokz Auriculares sin cables"
+    ],
+    "nombre": [
+     "Shokz OpenMove Auriculares Conducción Ósea Bluetooth 5.1, Ligeros 29g, Azul",
+     "Shokz OpenRun Auriculares Conducción Ósea Open-Ear Bluetooth 5.1,IP67,Negro",
+     "Shokz OpenRun Mini Auriculares Conducción Ósea Bluetooth 5.1, IP67, Negro"
+    ]
+   }
+  },
   "39856617880": {
    "ahorro_vs_amazon": null,
    "amz_low30": null,
@@ -2190,6 +2248,28 @@
    "pp_price": 76.96,
    "t": "2026-11-16T05:05:25.139938+00:00",
    "veredicto": "sin_precio"
+  },
+  "45162004365": {
+   "ean": "6936685224186",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "GameSir G7 Pro 8K Aimlabs Edition Cian PC Bluetooth + 2.4GHz efecto Hall vibración giroscopio 1200mAh Mando inalámbrico",
+   "pp_drop": 11,
+   "pp_median": 84.99,
+   "pp_price": 75.99,
+   "t": "2026-11-17T02:35:21.384179+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "GameSir G7 Pro 8K PC Mando Inalámbrico Esports - Frecuencia 8000Hz, Sticks Mag-Res TMR Gen-2, Botone",
+     "GameSir G7 Pro 8K Mando Esports Inalámbrico para PC – Negro",
+     "GameSir G7 Pro 8K PC Mando Inalámbrico Esports - Frecuencia 8000Hz, Sticks Mag-Res TMR Gen-2, Botone"
+    ]
+   }
   },
   "45251942871": {
    "ean": "4894461955711",
@@ -3117,6 +3197,25 @@
    "pp_median": 216.28,
    "pp_price": 189.97,
    "t": "2026-11-15T00:20:27.121298+00:00",
+   "veredicto": "amazon_mas_barato"
+  },
+  "45956992356": {
+   "ahorro_vs_amazon": -12,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 34.9,
+   "amz_title": "Braun MultiQuick 5 - Minipimer de 1000W Vaso 600ml Blanco",
+   "asin": "B0D9VYRDT2",
+   "disponible": true,
+   "ean": "8021098004345",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 34.90 frente a 38.95",
+   "name": "Braun Minipimer MultiQuick 5 MQ 50001 M 1000W 0,6L 21 velocidades acero inoxidable Batidora de inmersión",
+   "pp_drop": 13,
+   "pp_median": 44.95,
+   "pp_price": 38.95,
+   "t": "2026-11-17T02:35:21.384179+00:00",
    "veredicto": "amazon_mas_barato"
   },
   "45956992517": {
@@ -5082,14 +5181,14 @@
    }
   }
  },
- "night_at": "2026-11-17T02:20:36.394189+00:00",
+ "night_at": "2026-11-17T02:35:21.384179+00:00",
  "resumen": {
-  "amazon_mas_barato": 22,
+  "amazon_mas_barato": 23,
   "dudoso": 4,
-  "no_esta": 12,
+  "no_esta": 14,
   "oferta_real": 27,
   "pvpr_inflado": 0,
   "sin_precio": 9
  },
- "updated": "2026-11-17T02:20:36.394189+00:00"
+ "updated": "2026-11-17T02:35:21.384179+00:00"
 }
