@@ -750,6 +750,13 @@
    "title": "Silicon Power 4TB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5\" 7mm (0.28\") Internal Solid State Drive",
    "via": "nombre"
   },
+  "4718017329729": {
+   "a": "B07V6WWGST",
+   "t": "2026-11-17T20:15:50.874512+00:00",
+   "title": "ASUS ROG Gladius II Core - Ratón de Gaming por Cable Ligero y ergonómico Equipado con un Sensor de 6200 PPP, interruptores Desmontables e iluminación Aura Sync",
+   "v": 3,
+   "via": "ean"
+  },
   "4718017749435": {
    "a": "B089HG351D",
    "t": "2026-11-16T11:55:31.043068+00:00",
@@ -3271,22 +3278,23 @@
    "veredicto": "amazon_mas_barato"
   },
   "45956991042": {
-   "ahorro_vs_amazon": -22,
+   "ahorro_vs_amazon": -97,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 22.99,
+   "amz_price": 14.21,
    "amz_title": "SteelSeries Rival 3 Gen 2 - Raton Gaming - Sensor óptico TrueMove Core de 8500 dpi - Durabilidad de 60 M de clics - Baja latencia - 77g de Peso - Deslizadores 1",
    "asin": "B0F5QBSRDR",
    "disponible": true,
    "ean": "5707119059961",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "Amazon 22.99 frente a 27.95",
+   "motivo": "Amazon 14.21 frente a 27.95",
    "name": "SteelSeries Rival 3 Gen 2 Interruptores Mecánicos 8500 DPI 6 botones USB 106 g Ratón gaming",
    "pp_drop": 28,
    "pp_median": 38.95,
    "pp_price": 27.95,
-   "t": "2026-11-15T12:15:40.152691+00:00",
+   "t": "2026-11-17T20:15:50.874512+00:00",
+   "v": 3,
    "veredicto": "amazon_mas_barato"
   },
   "45956991046": {
@@ -4692,6 +4700,26 @@
    "t": "2026-11-17T03:05:20.365221+00:00",
    "veredicto": "amazon_mas_barato"
   },
+  "46599139844": {
+   "ahorro_vs_amazon": -4,
+   "amz_low30": null,
+   "amz_median": 48.99,
+   "amz_price": 44.2,
+   "amz_title": "ASUS ROG Gladius II Core - Ratón de Gaming por Cable Ligero y ergonómico Equipado con un Sensor de 6200 PPP, interruptores Desmontables e iluminación Aura Sync",
+   "asin": "B07V6WWGST",
+   "disponible": true,
+   "ean": "4718017329729",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 44.20 frente a 50.95",
+   "name": "ASUS ROG Gladius II Core 6200 DPI RGB Negro 6 botones USB 92 g Ratón gaming",
+   "pp_drop": 24,
+   "pp_median": 66.95,
+   "pp_price": 50.95,
+   "t": "2026-11-17T20:15:50.874512+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "46599139855": {
    "ahorro_vs_amazon": -25,
    "amz_low30": null,
@@ -5644,12 +5672,12 @@
  },
  "night_at": "2026-11-17T06:05:20.554247+00:00",
  "resumen": {
-  "amazon_mas_barato": 16,
+  "amazon_mas_barato": 17,
   "dudoso": 3,
   "no_esta": 11,
   "oferta_real": 18,
   "pvpr_inflado": 1,
   "sin_precio": 1
  },
- "updated": "2026-11-17T19:45:42.626266+00:00"
+ "updated": "2026-11-17T20:15:50.874512+00:00"
 }
