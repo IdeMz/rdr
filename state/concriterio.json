@@ -15,7 +15,7 @@
   "Camping y montaña": "2026-11-16T11:20:40.607767+00:00",
   "Cargadores y baterías": "2026-11-15T11:10:43.114079+00:00",
   "Ciclismo": "2026-11-17T07:30:53.001889+00:00",
-  "Climatización": "2026-11-14T11:05:31.708608+00:00",
+  "Climatización": "2026-11-17T15:01:35.153027+00:00",
   "Colchones y almohadas": "2026-11-17T10:01:21.690221+00:00",
   "Componentes PC": "2026-11-16T16:15:49.892288+00:00",
   "Cuidado de la piel": "2026-11-17T10:31:06.725588+00:00",
@@ -107,7 +107,7 @@
  },
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-17T14:59:18.096890+00:00",
+ "next_at": "2026-11-17T15:29:41.151452+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -1088,6 +1088,17 @@
    "s": "ofertas",
    "t": "2026-11-13T14:36:09.523973+00:00",
    "title": "Olay Regenerist Crema Facial de Día Antiarrugas SPF 30, 50ml",
+   "v": []
+  },
+  "B092J7CGXT": {
+   "c": "Climatización",
+   "d": 33,
+   "e": "🌬️",
+   "m": 368,
+   "p": 74.9,
+   "s": "ambas",
+   "t": "2026-11-17T15:02:02.984875+00:00",
+   "title": "Cecotec Ventilador de Pie con Mando a Distancia y Temporizador EnergySilence 1030 SmartExtreme. 28 W, 10 Aspas 40cm de Diámetro, Oscilante, 24 Velocidades, Ajustable 115-135cm, Motor DC, Blanco",
    "v": []
   },
   "B0937LZJ3X": {
@@ -3362,6 +3373,6 @@
  "tg_offset": 511048087,
  "x_copy": {
   "day": "2026-11-17",
-  "n": 16
+  "n": 17
  }
 }

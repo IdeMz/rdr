@@ -1434,8 +1434,8 @@
   },
   "8434388458016": {
    "a": "",
-   "t": "2026-11-17T10:31:06.725588+00:00",
-   "v": 2,
+   "t": "2026-11-17T15:01:35.153027+00:00",
+   "v": 3,
    "vistos": {
     "ean": [
      "(sin resultados)"
@@ -1444,9 +1444,9 @@
      "(sin resultados)"
     ],
     "nombre": [
-     "7,4kW Cargador EV Tipo 2, Portátil Wallbox con Enchufe Schuko y Enchufe CEE,para Tomas estándar de l",
      "dé Cargador Coche Electrico 7,4 kW APP [6m, Monofásico, 6A-32A] Tipo 2 CEE",
-     "Cargador Coche Eléctrico 7 kW, 5M Cable de Carga de 1 Fase/6-32A"
+     "dé Cargador Coche Electrico Schuko 3,7kW 7m con App, 6-16A Ajustable",
+     "Cargador Coche Electrico Wallbox 3,7kW - 7M/6-16A Monofasico Cable carga coche electrico, Cargador T"
     ]
    }
   },
@@ -3620,7 +3620,8 @@
    "pp_drop": 39,
    "pp_median": 49.95,
    "pp_price": 30.65,
-   "t": "2026-11-17T10:31:06.725588+00:00",
+   "t": "2026-11-17T15:01:35.153027+00:00",
+   "v": 3,
    "veredicto": "oferta_real"
   },
   "46146892668": {
@@ -5158,8 +5159,8 @@
    "pp_drop": 35,
    "pp_median": 199.0,
    "pp_price": 129.0,
-   "t": "2026-11-17T10:31:06.725588+00:00",
-   "v": 2,
+   "t": "2026-11-17T15:01:35.153027+00:00",
+   "v": 3,
    "veredicto": "no_esta",
    "vistos": {
     "ean": [
@@ -5169,9 +5170,9 @@
      "(sin resultados)"
     ],
     "nombre": [
-     "7,4kW Cargador EV Tipo 2, Portátil Wallbox con Enchufe Schuko y Enchufe CEE,para Tomas estándar de l",
      "dé Cargador Coche Electrico 7,4 kW APP [6m, Monofásico, 6A-32A] Tipo 2 CEE",
-     "Cargador Coche Eléctrico 7 kW, 5M Cable de Carga de 1 Fase/6-32A"
+     "dé Cargador Coche Electrico Schuko 3,7kW 7m con App, 6-16A Ajustable",
+     "Cargador Coche Electrico Wallbox 3,7kW - 7M/6-16A Monofasico Cable carga coche electrico, Cargador T"
     ]
    }
   },
@@ -5478,5 +5479,5 @@
   "pvpr_inflado": 1,
   "sin_precio": 1
  },
- "updated": "2026-11-17T14:30:58.598858+00:00"
+ "updated": "2026-11-17T15:01:35.153027+00:00"
 }
