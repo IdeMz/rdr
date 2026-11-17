@@ -4,7 +4,7 @@
   "Accesorios de móvil": "2026-11-16T17:40:44.874656+00:00",
   "Afeitado y depilación": "2026-11-17T20:15:50.874512+00:00",
   "Almacenamiento": "2026-11-15T16:30:50.777266+00:00",
-  "Altavoces": "2026-11-15T17:05:32.780345+00:00",
+  "Altavoces": "2026-11-17T20:45:44.607165+00:00",
   "Aspiradoras": "2026-11-14T20:20:37.410274+00:00",
   "Auriculares": "2026-11-17T08:01:10.979640+00:00",
   "Barras de sonido": "2026-11-16T07:01:09.494097+00:00",
@@ -94,7 +94,7 @@
  },
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-17T20:45:36.203326+00:00",
+ "next_at": "2026-11-17T21:15:09.872318+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -1770,11 +1770,13 @@
   },
   "B0CQ53RVTW": {
    "c": "Altavoces",
-   "d": 31,
+   "d": 38,
    "e": "🔊",
-   "m": 101,
-   "p": 89.99,
-   "t": "2026-11-06T20:31:19.446471+00:00",
+   "m": 379,
+   "p": 79.99,
+   "pa": 89.99,
+   "s": "ambas",
+   "t": "2026-11-17T20:46:20.012059+00:00",
    "title": "Soundcore Boom 2 Altavoz Bluetooth Potente 80 W, 24 h, IPX7",
    "v": []
   },
@@ -3430,10 +3432,6 @@
    "t": "2026-11-17T15:30:58.601953+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0FR981Z25": {
-   "t": "2026-11-16T20:35:50.275747+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0FRG54M5R": {
    "t": "2026-11-17T19:45:42.626266+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3473,6 +3471,6 @@
  "tg_offset": 511048094,
  "x_copy": {
   "day": "2026-11-17",
-  "n": 27
+  "n": 28
  }
 }
