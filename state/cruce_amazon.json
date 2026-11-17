@@ -362,19 +362,11 @@
    }
   },
   "0850033806298": {
-   "a": "",
-   "t": "2026-11-17T02:36:09.802417+00:00",
-   "v": 2,
-   "vistos": {
-    "ean": [
-     "Shokz Auriculares sin cables"
-    ],
-    "nombre": [
-     "Shokz OpenMove Auriculares Conducción Ósea Bluetooth 5.1, Ligeros 29g, Gris",
-     "Shokz OpenMove Auriculares Conducción Ósea Bluetooth 5.1, Ligeros 29g, Azul",
-     "Shokz OpenRun Auriculares Conducción Ósea Open-Ear Bluetooth 5.1,IP67,Negro"
-    ]
-   }
+   "a": "B09BW29FJS",
+   "t": "2026-11-17T22:20:31.920357+00:00",
+   "title": "Shokz OpenMove Auriculares Conducción Ósea Bluetooth 5.1, Ligeros 29g, Gris",
+   "v": 3,
+   "via": "nombre"
   },
   "0850039905544": {
    "a": "B0GGGZYZ8M",
@@ -1619,6 +1611,13 @@
     ]
    }
   },
+  "8592978840310": {
+   "a": "B0GZWCX9TK",
+   "t": "2026-11-17T22:20:31.920357+00:00",
+   "title": "Intel Core Ultra 5 250kf Plus - 4.2 Ghz - 18",
+   "v": 3,
+   "via": "ean"
+  },
   "8710103936077": {
    "a": "B08BF3PXPX",
    "t": "2026-11-15T00:50:26.258760+00:00",
@@ -2053,26 +2052,24 @@
    }
   },
   "39818152139": {
+   "ahorro_vs_amazon": 4,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 69.0,
+   "amz_title": "Shokz OpenMove Auriculares Conducción Ósea Bluetooth 5.1, Ligeros 29g, Gris",
+   "asin": "B09BW29FJS",
+   "disponible": true,
    "ean": "0850033806298",
+   "encontrado_por": "nombre",
    "lista": "candidates",
-   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "motivo": "antes 83.95 en PowerPlanet, pero en Amazon suele estar a 69.00",
    "name": "Shokz OpenMove Gris Conducción ósea Bluetooth 5.1 6h IP55 Auriculares inalámbricos",
-   "pp_drop": 11,
+   "pp_drop": 21,
    "pp_median": 83.95,
-   "pp_price": 74.95,
-   "t": "2026-11-17T02:36:09.802417+00:00",
-   "v": 2,
-   "veredicto": "no_esta",
-   "vistos": {
-    "ean": [
-     "Shokz Auriculares sin cables"
-    ],
-    "nombre": [
-     "Shokz OpenMove Auriculares Conducción Ósea Bluetooth 5.1, Ligeros 29g, Gris",
-     "Shokz OpenMove Auriculares Conducción Ósea Bluetooth 5.1, Ligeros 29g, Azul",
-     "Shokz OpenRun Auriculares Conducción Ósea Open-Ear Bluetooth 5.1,IP67,Negro"
-    ]
-   }
+   "pp_price": 65.95,
+   "t": "2026-11-17T22:20:31.920357+00:00",
+   "v": 3,
+   "veredicto": "pvpr_inflado"
   },
   "39856617880": {
    "ahorro_vs_amazon": null,
@@ -2527,6 +2524,27 @@
     ]
    }
   },
+  "45243451387": {
+   "ahorro_vs_amazon": null,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": null,
+   "amz_title": "Intel Core Ultra 5 250kf Plus - 4.2 Ghz - 18",
+   "asin": "B0GZWCX9TK",
+   "disponible": true,
+   "ean": "8592978840310",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "en Amazon pero sin precio o no disponible",
+   "name": "Intel Core Ultra 5 250KF Plus 18 Núcleos LGA1851 Tray 18 hilos 5,3GHz Procesador",
+   "pista": "1003774 bytes; 9 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pp_drop": 17,
+   "pp_median": 222.95,
+   "pp_price": 186.11,
+   "t": "2026-11-17T22:20:31.920357+00:00",
+   "v": 3,
+   "veredicto": "sin_precio"
+  },
   "45251942871": {
    "ean": "4894461955711",
    "lista": "candidates",
@@ -2913,7 +2931,8 @@
    "pp_drop": 14,
    "pp_median": 699.0,
    "pp_price": 599.0,
-   "t": "2026-11-16T15:40:40.598894+00:00",
+   "t": "2026-11-17T22:20:31.920357+00:00",
+   "v": 3,
    "veredicto": "oferta_real"
   },
   "45454760431": {
@@ -5773,14 +5792,14 @@
    }
   }
  },
- "night_at": "2026-11-17T22:05:22.962766+00:00",
+ "night_at": "2026-11-17T22:20:31.920357+00:00",
  "resumen": {
   "amazon_mas_barato": 17,
   "dudoso": 3,
-  "no_esta": 13,
+  "no_esta": 12,
   "oferta_real": 18,
-  "pvpr_inflado": 2,
-  "sin_precio": 1
+  "pvpr_inflado": 3,
+  "sin_precio": 2
  },
- "updated": "2026-11-17T22:05:22.962766+00:00"
+ "updated": "2026-11-17T22:20:31.920357+00:00"
 }
