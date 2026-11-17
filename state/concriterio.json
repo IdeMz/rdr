@@ -16,7 +16,7 @@
   "Cargadores y baterías": "2026-11-15T11:10:43.114079+00:00",
   "Ciclismo": "2026-11-17T07:30:53.001889+00:00",
   "Climatización": "2026-11-14T11:05:31.708608+00:00",
-  "Colchones y almohadas": "2026-11-13T08:45:39.815574+00:00",
+  "Colchones y almohadas": "2026-11-17T10:01:21.690221+00:00",
   "Componentes PC": "2026-11-16T16:15:49.892288+00:00",
   "Cuidado de la piel": "2026-11-15T12:50:40.627443+00:00",
   "Cuidado del cabello": "2026-11-13T21:50:42.988192+00:00",
@@ -47,7 +47,7 @@
   "Patinetes": "2026-11-16T11:55:31.043068+00:00",
   "Pequeño electrodoméstico": "2026-11-16T18:55:32.141614+00:00",
   "Perfumes": "2026-11-15T21:40:42.221187+00:00",
-  "Periféricos": "2026-11-15T16:30:50.777266+00:00",
+  "Periféricos": "2026-11-17T10:01:21.690221+00:00",
   "Perros": "2026-11-15T07:01:06.978986+00:00",
   "Portátiles": "2026-11-17T08:30:57.514721+00:00",
   "Proyectores": "2026-11-16T09:20:39.431359+00:00",
@@ -65,7 +65,7 @@
   "eReaders": "2026-11-16T13:55:32.747613+00:00"
  },
  "manual": {},
- "next_at": "2026-11-17T09:56:51.031916+00:00",
+ "next_at": "2026-11-17T10:30:17.511344+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -345,6 +345,17 @@
    "p": 6.5,
    "t": "2026-11-08T07:35:59.297719+00:00",
    "title": "L'Oréal Paris Revitalift Clásico Sérum Reparador con Pro Retinol, 30ml",
+   "v": []
+  },
+  "B01L6L44NU": {
+   "c": "Periféricos",
+   "d": 50,
+   "e": "⌨️",
+   "m": 358,
+   "p": 34.99,
+   "s": "ambas",
+   "t": "2026-11-17T10:03:47.553003+00:00",
+   "title": "Logitech G G213 Prodigy Teclado Gaming",
    "v": []
   },
   "B01MU77FQQ": {
@@ -3135,20 +3146,20 @@
    "t": "2026-11-16T18:55:32.141614+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0CK2KK34J": {
-   "t": "2026-11-16T09:55:33.695632+00:00",
+  "B0BWYSWC3V": {
+   "t": "2026-11-17T10:01:21.690221+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0CKML3W6R": {
    "t": "2026-11-16T15:40:40.598894+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0CX1TJXKV": {
-   "t": "2026-11-17T08:01:10.979640+00:00",
+  "B0CTZMV8JX": {
+   "t": "2026-11-17T10:01:21.690221+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0D1XZL4NF": {
-   "t": "2026-11-16T09:55:33.695632+00:00",
+  "B0CX1TJXKV": {
+   "t": "2026-11-17T08:01:10.979640+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0FP5R9BDZ": {
@@ -3169,6 +3180,18 @@
   }
  },
  "reserve": [
+  {
+   "a": "B097F5QSTB",
+   "c": "Periféricos",
+   "e": "⌨️",
+   "img": "https://m.media-amazon.com/images/I/718iD3X13EL._AC_UL320_.jpg",
+   "n": 443,
+   "op": 119.99,
+   "p": 75.9,
+   "r": 4.6,
+   "t": "2026-11-17T10:01:21.690221+00:00",
+   "title": "Razer BlackWidow V3 Tenkeyless (Yellow Switch) - Teclado Compacto para Juegos con interruptores mecánicos (Teclas ABS, iluminación RGB Chroma) QWERTY Teclado ES | Negro"
+  },
   {
    "a": "B0BLRV83GQ",
    "c": "Videojuegos",
@@ -3192,24 +3215,12 @@
    "r": 4.5,
    "t": "2026-11-17T07:30:53.001889+00:00",
    "title": "Calcetines de Ciclismo, Anti-Ampollas, 3 y 5 Pack"
-  },
-  {
-   "a": "B08N2GLBR5",
-   "c": "Maquillaje",
-   "e": "💄",
-   "img": "https://m.media-amazon.com/images/I/51hHmHLDBoL._AC_UL320_.jpg",
-   "n": 12100,
-   "op": 10.95,
-   "p": 7.44,
-   "r": 4.4,
-   "t": "2026-11-17T07:01:18.076115+00:00",
-   "title": "Revlon ColorStay Satin Ink Pintalabios líquido satinado,"
   }
  ],
  "summary_day": "2026-11-16",
  "tg_offset": 511048078,
  "x_copy": {
   "day": "2026-11-17",
-  "n": 6
+  "n": 7
  }
 }
