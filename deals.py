@@ -23,6 +23,7 @@ import random
 import re
 import sys
 import time
+import unicodedata
 from dataclasses import dataclass, field, fields, replace
 from datetime import date, datetime, timedelta, timezone
 from html import escape, unescape
@@ -226,6 +227,9 @@ class ConfigError(Exception):
     pass
 
 
+X_STRIKE_MARK = "\u0336"  # trazo combinado "largo"; otras opciones: U+0335 (corto), U+0338 y U+0337 (barras)
+
+
 @dataclass
 class Channel:
     name: str
@@ -308,6 +312,7 @@ class Channel:
     x_button: bool = True  # boton que abre X con el texto ya escrito (solo si x_copy esta activo)
     x_hashtags: str = ""  # por ejemplo "#chollo #amazon"; vacio = sin etiquetas
     x_disclosure: str = ""  # por ejemplo "Enlace afiliado"; vacio = sin aviso
+    x_strike_mark: str = X_STRIKE_MARK  # signo que tacha el PVPR en el texto para X (se puede cambiar sin tocar codigo)
 
 
 def load_channel(path: Path) -> Channel:
@@ -343,6 +348,8 @@ def load_channel(path: Path) -> Channel:
         raise ConfigError(f"{path.name}: 'x_min_discount' y 'x_max_per_day' no pueden ser negativos")
     if min(ch.manual_after, ch.manual_repeat_min, ch.reserve_hours) < 1 or ch.reserve_size < 0:
         raise ConfigError(f"{path.name}: valores 'manual_*' / 'reserve_*' no validos")
+    if len(ch.x_strike_mark) != 1 or not unicodedata.combining(ch.x_strike_mark):
+        raise ConfigError(f"{path.name}: 'x_strike_mark' debe ser un unico signo combinado (por ejemplo U+0336)")
     if ch.same_kind_hours < 0:
         raise ConfigError(f"{path.name}: 'same_kind_hours' no puede ser negativo")
     if not 0 <= ch.repost_drop < 100 or ch.repost_min_days < 1:
@@ -1625,9 +1632,11 @@ def x_price(value: float) -> str:
     return (text[:-3] if text.endswith(".00") else text.replace(".", ",")) + "€"
 
 
-def x_strike(text: str) -> str:
-    """Tacha el texto con el trazo combinado U+0336: X no admite formato, pero este signo si se ve tachado."""
-    return "".join(c + "\u0336" for c in text if not c.isspace())
+def x_strike(text: str, mark: str = X_STRIKE_MARK) -> str:
+    """Tacha las cifras (y la coma o el punto decimal) con un signo combinado: X no admite formato.
+
+    El simbolo del euro NO se tacha: en X para ordenador el trazo del € se dibuja abajo, como un subrayado."""
+    return "".join(c + mark if (c.isdigit() or c in ",.") else c for c in text)
 
 
 def build_x_text(p: Product, url: str, ch: Channel, cat: dict | None = None) -> str:
@@ -1639,7 +1648,7 @@ def build_x_text(p: Product, url: str, ch: Channel, cat: dict | None = None) -> 
     lines = []
     if p.old_price and p.price and p.old_price > p.price:
         discount = p.discount or round(100 * (p.old_price - p.price) / p.old_price)
-        lines.append(f"❌ PVPR: {x_strike(x_price(p.old_price))}")
+        lines.append(f"❌ PVPR: {x_strike(x_price(p.old_price), ch.x_strike_mark)}")
         lines.append(f"🛒 Ahora: {x_price(p.price)}")
         lines.append(f"−{discount} % · Diferencia {x_price(round(p.old_price - p.price, 2))}")
     else:

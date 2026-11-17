@@ -2563,8 +2563,9 @@ def test_process_votes_routes_review_buttons_from_the_private_chat(tmp_path, mon
     assert [m for m, _ in answered].count("answerCallbackQuery") == 1
 
 
-def test_x_strike_puts_a_strikethrough_on_every_character_of_the_old_price():
-    assert deals.x_strike("69,99€") == "6\u03369\u0336,\u03369\u03369\u0336€\u0336"
+def test_x_strike_puts_a_strikethrough_on_the_digits_of_the_old_price_but_not_on_the_euro_sign():
+    assert deals.x_strike("69,99€") == "6\u03369\u0336,\u03369\u03369\u0336€"          # el € se queda sin tachar
+    assert deals.x_strike("105€", "\u0335") == "1\u03350\u03355\u0335€" and deals.x_strike("€") == "€"
     assert deals.x_price(69.99) == "69,99€" and deals.x_price(32.0) == "32€" and deals.x_price(5.5) == "5,50€"
 
 
@@ -2574,7 +2575,7 @@ def test_x_text_copies_the_posted_example_with_the_old_price_struck_through():
     text = deals.build_x_text(p, "https://amzn.to/x", ch)
     assert text.split("\n") == [
         "Soundcore C50i de Anker, Auriculares Abiertos con Clip, diseño FlexiClip", "",
-        "❌ PVPR: 6\u03369\u0336,\u03369\u03369\u0336€\u0336", "🛒 Ahora: 37,99€", "−46 % · Diferencia 32€", "",
+        "❌ PVPR: 6\u03369\u0336,\u03369\u03369\u0336€", "🛒 Ahora: 37,99€", "−46 % · Diferencia 32€", "",
         "https://amzn.to/x"]
     assert deals.x_weight(text.replace("https://amzn.to/x", "")) + deals.X_URL_WEIGHT <= deals.X_LIMIT
 
@@ -2966,3 +2967,13 @@ def test_reserve_offer_button_also_sends_the_x_text(tmp_path, monkeypatch):
 def test_channel_posts_every_25_to_30_minutes():
     ch = deals.load_channel(Path(__file__).resolve().parent.parent / "channels" / "concriterio.json")
     assert (ch.interval_min, ch.interval_max) == (25, 30)
+
+
+def test_strike_mark_is_configurable_and_validated(tmp_path):
+    ch = channel(x_copy=True, x_strike_mark="\u0335")
+    p = xprod(price=37.99, old=69.99)
+    assert "6\u03359\u0335,\u03359\u03359\u0335€" in deals.build_x_text(p, "https://amzn.to/x", ch)
+    assert deals.load_channel(write_cfg(tmp_path, x_strike_mark="\u0338")).x_strike_mark == "\u0338"
+    for bad in ("", "a", "\u0336\u0336"):
+        with pytest.raises(deals.ConfigError, match="x_strike_mark"):
+            deals.load_channel(write_cfg(tmp_path, x_strike_mark=bad))
