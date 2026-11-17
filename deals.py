@@ -14,6 +14,7 @@ import argparse
 import csv
 import hashlib
 import hmac
+import html
 import io
 import json
 import logging
@@ -2300,6 +2301,7 @@ def handle_manual_action(ch: Channel, state_path: Path, state: dict, action: str
         _tell(ch, f"La vista previa de {asin} ha caducado (más de {MANUAL_HOURS} h). Vuelve a mandarme el enlace.")
         return "Caducada"
     if action == "mno":
+        _tell(ch, f"🗑️ Descartada: {html.escape(str(item.get('title') or asin)[:60])}")
         return "Descartada"
     if ch.manual_queue:
         queue = _manual_queue(state_path)
@@ -2309,6 +2311,9 @@ def handle_manual_action(ch: Channel, state_path: Path, state: dict, action: str
         set_state_key(state_path, "manual_queue", queue)
         eta = queue_eta(ch, state_path, now, len(queue))
         log.info("%s: %s en cola (nº %d)", ch.name, asin, len(queue))
+        # el aviso emergente del boton solo se ve si se contesta al momento; el bot lee los toques cada tick, asi que la
+        # confirmacion de verdad es este mensaje
+        _tell(ch, f"✅ En cola nº {len(queue)}: {html.escape(str(item.get('title') or asin)[:60])}\n{eta}")
         return f"En cola ✅ nº {len(queue)} · {eta}"
     p = product_from_dict(item)
     if not _post_manual(ch, state_path, state, p, tag, now, token, chat_id):

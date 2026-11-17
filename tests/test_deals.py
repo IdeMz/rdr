@@ -3232,6 +3232,9 @@ def test_accepted_offer_waits_in_the_queue_instead_of_publishing_at_once(tmp_pat
     assert [d["a"] for d in saved["manual_queue"]] == ["B0CT8W3Y29"]
     reply = [d["text"] for d in tg.of("answerCallbackQuery")][-1]
     assert reply.startswith("En cola ✅ nº 1") and "saldrá hacia las" in reply
+    # el aviso emergente se pierde si se contesta tarde: la confirmacion de verdad es un mensaje en el chat
+    msgs = [m["text"] for m in tg.of("sendMessage")]
+    assert any(m.startswith("✅ En cola nº 1") and "saldrá hacia las" in m for m in msgs)
 
 
 def test_queue_publishes_in_the_next_slot_and_keeps_the_rhythm(tmp_path, monkeypatch):
