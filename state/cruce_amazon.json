@@ -121,6 +121,21 @@
    "title": "HP 330 Combo de Teclado y Ratón Inalámbricos - (1600 PPP, Puerto USB-A, Indicadores LED, Teclas con Atajos, Windows 10; Windows 11) QWERTY Español, Color Negro",
    "via": "nombre"
   },
+  "0199251521225": {
+   "a": "",
+   "t": "2026-11-17T22:50:28.729529+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "HP EliteDesk 800 G5 Mini+Monitor, Core i5, 8 GB, 256 GB (Reacondicionado)",
+     "HP Mini PC Ordenador de Sobremesa Z2 Mini G3, Procesador Core i7‑7700, Memoria RAM 16GB DDR4, SSD 51",
+     "HP Pro Mini 400 G9 Intel? Core? i7-13700T (A1JT7ES#ABD)"
+    ]
+   }
+  },
   "0619659184704": {
    "a": "B08RX4QKXS",
    "t": "2026-11-13T14:01:00.760700+00:00",
@@ -1247,6 +1262,13 @@
    "v": 3,
    "via": "modelo"
   },
+  "6971337725901": {
+   "a": "B0GCBLLVYC",
+   "t": "2026-11-17T22:50:28.729529+00:00",
+   "title": "EMEET Cámara Web 4K S600L, 4 Modos de Iluminación, Efecto Arcoíris, Sensor de 1/2\", Imágenes con IA, PDAF de 0.2 s, 2 Micrófonos, Control Giratorio, Webcam 4K c",
+   "v": 3,
+   "via": "modelo"
+  },
   "6972147076948": {
    "a": "B0FFT2ZCBP",
    "t": "2026-11-14T17:55:30.798523+00:00",
@@ -1760,8 +1782,8 @@
    "veredicto": "oferta_real"
   },
   "37600255328": {
-   "ahorro_vs_amazon": 1,
-   "amz_low30": 37.99,
+   "ahorro_vs_amazon": 25,
+   "amz_low30": 49.99,
    "amz_median": null,
    "amz_price": 36.09,
    "amz_title": "Logitech G G402 Hyperion Fury Ratón Gaming con Cable",
@@ -1775,7 +1797,8 @@
    "pp_drop": 23,
    "pp_median": 48.94,
    "pp_price": 37.67,
-   "t": "2026-11-16T16:15:49.892288+00:00",
+   "t": "2026-11-17T22:50:28.729529+00:00",
+   "v": 3,
    "veredicto": "amazon_mas_barato"
   },
   "37600255371": {
@@ -3935,6 +3958,26 @@
    "t": "2026-11-13T17:10:41.240248+00:00",
    "veredicto": "amazon_mas_barato"
   },
+  "46186022867": {
+   "ahorro_vs_amazon": 28,
+   "amz_low30": 73.79,
+   "amz_median": 81.99,
+   "amz_price": 65.59,
+   "amz_title": "EMEET Cámara Web 4K S600L, 4 Modos de Iluminación, Efecto Arcoíris, Sensor de 1/2\", Imágenes con IA, PDAF de 0.2 s, 2 Micrófonos, Control Giratorio, Webcam 4K c",
+   "asin": "B0GCBLLVYC",
+   "disponible": true,
+   "ean": "6971337725901",
+   "encontrado_por": "modelo",
+   "lista": "candidates",
+   "motivo": "28 % por debajo del habitual en Amazon (81.99)",
+   "name": "EMEET SmartCam S600L con Aro de Luz 4K 30fps 2 Micrófonos Negro autoenfoque Webcam",
+   "pp_drop": 21,
+   "pp_median": 74.95,
+   "pp_price": 59.35,
+   "t": "2026-11-17T22:50:28.729529+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "46186023323": {
    "ean": "4895223103654",
    "lista": "candidates",
@@ -4789,6 +4832,28 @@
    "t": "2026-11-17T17:01:11.572901+00:00",
    "v": 3,
    "veredicto": "oferta_real"
+  },
+  "46599139490": {
+   "ean": "0199251521225",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Mini PC HP Z2 G1a Wolf Pro Security Edition 32GB/1TB Negro SSD WiFi 7",
+   "pp_drop": 11,
+   "pp_median": 2527.94,
+   "pp_price": 2243.95,
+   "t": "2026-11-17T22:50:28.729529+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "HP EliteDesk 800 G5 Mini+Monitor, Core i5, 8 GB, 256 GB (Reacondicionado)",
+     "HP Mini PC Ordenador de Sobremesa Z2 Mini G3, Procesador Core i7‑7700, Memoria RAM 16GB DDR4, SSD 51",
+     "HP Pro Mini 400 G9 Intel? Core? i7-13700T (A1JT7ES#ABD)"
+    ]
+   }
   },
   "46599139519": {
    "ahorro_vs_amazon": 0,
@@ -5836,14 +5901,14 @@
    }
   }
  },
- "night_at": "2026-11-17T22:35:22.842725+00:00",
+ "night_at": "2026-11-17T22:50:28.729529+00:00",
  "resumen": {
   "amazon_mas_barato": 20,
   "dudoso": 3,
-  "no_esta": 11,
-  "oferta_real": 18,
+  "no_esta": 12,
+  "oferta_real": 19,
   "pvpr_inflado": 3,
   "sin_precio": 2
  },
- "updated": "2026-11-17T22:35:22.842725+00:00"
+ "updated": "2026-11-17T22:50:28.729529+00:00"
 }
