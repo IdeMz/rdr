@@ -65,24 +65,9 @@
   "eReaders": "2026-11-16T13:55:32.747613+00:00"
  },
  "manual": {},
- "manual_queue": [
-  {
-   "a": "B00KIDBV0M",
-   "c": "",
-   "e": "",
-   "img": "https://m.media-amazon.com/images/I/51ZxsxEPhhL._AC_SL1200_.jpg",
-   "m": 363,
-   "n": 48616,
-   "op": null,
-   "p": 35.95,
-   "q": "2026-11-17T20:55:34.151614+00:00",
-   "r": 4.5,
-   "t": "2026-11-17T20:30:59.284408+00:00",
-   "title": "Columbia Steens Mountain Full Zip"
-  }
- ],
+ "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-17T21:41:02.573195+00:00",
+ "next_at": "2026-11-17T22:10:55.779481+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -269,6 +254,17 @@
    "s": "ofertas",
    "t": "2026-11-14T21:36:06.326323+00:00",
    "title": "CATEYE Kit-Front, Trasera y Rueda Luces y reflectores, Ciclismo – Negro, no tamaño",
+   "v": []
+  },
+  "B00KIDBV0M": {
+   "c": "",
+   "d": 0,
+   "e": "",
+   "m": 381,
+   "manual": true,
+   "p": 35.95,
+   "t": "2026-11-17T21:45:43.210677+00:00",
+   "title": "Columbia Steens Mountain Full Zip",
    "v": []
   },
   "B00MOIWOAK": {
@@ -3470,6 +3466,6 @@
  "tg_offset": 511048098,
  "x_copy": {
   "day": "2026-11-17",
-  "n": 29
+  "n": 30
  }
 }
