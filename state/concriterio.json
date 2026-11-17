@@ -41,7 +41,7 @@
   "Menaje de cocina": "2026-11-15T09:25:34.345588+00:00",
   "Mochilas y maletas": "2026-11-15T20:50:41.317709+00:00",
   "Monitores": "2026-11-15T19:15:39.725060+00:00",
-  "Móviles": "2026-11-14T19:45:46.808036+00:00",
+  "Móviles": "2026-11-17T15:30:58.601953+00:00",
   "Nutrición deportiva": "2026-11-17T14:30:58.598858+00:00",
   "Oficina": "2026-11-16T10:45:46.172773+00:00",
   "Patinetes": "2026-11-16T11:55:31.043068+00:00",
@@ -107,7 +107,7 @@
  },
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-17T15:29:41.151452+00:00",
+ "next_at": "2026-11-17T15:58:03.943136+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -3094,6 +3094,17 @@
    "title": "XIAOMI TV 43 Pulgadas 2026, 4K UHD Smart TV Fire OS8 HDR10 L43MB-FAVEU",
    "v": []
   },
+  "B0H4H4JYH9": {
+   "c": "Móviles",
+   "d": 36,
+   "e": "📱",
+   "m": 369,
+   "p": 349.9,
+   "s": "ambas",
+   "t": "2026-11-17T15:31:43.035888+00:00",
+   "title": "REDMI Note 17 Pro 5G, Smartphone 8+512GB, Morado, batería de 8340mAh",
+   "v": []
+  },
   "B0H4H83XNV": {
    "c": "Móviles",
    "d": 17,
@@ -3318,6 +3329,10 @@
    "t": "2026-11-16T15:40:40.598894+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0FQGPHDT7": {
+   "t": "2026-11-17T15:30:58.601953+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0FR981Z25": {
    "t": "2026-11-16T20:35:50.275747+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3332,6 +3347,18 @@
   }
  },
  "reserve": [
+  {
+   "a": "B0FLDLRG94",
+   "c": "Móviles",
+   "e": "📱",
+   "img": "https://m.media-amazon.com/images/I/61sv4LuA8HL._AC_UY218_.jpg",
+   "n": 97,
+   "op": 939.0,
+   "p": 669.0,
+   "r": 4.4,
+   "t": "2026-11-17T15:30:58.601953+00:00",
+   "title": "Samsung Galaxy S25 FE 512GB, Teléfono Móvil con IA, Marco Ligero 7,5mm, Pantalla FHD+ 6,7\", Cámara 50MP, Exynos 2400, 8GB RAM, Garantía Fabricante 3 Años+1 Año Extra, Negro Intenso (Versión Española)"
+  },
   {
    "a": "B0B133BLXN",
    "c": "Suplementos",
@@ -3355,24 +3382,12 @@
    "r": 4.2,
    "t": "2026-11-17T13:01:23.458704+00:00",
    "title": "LG 43NU800B6LC - Smart TV Nano UHD AI 43\" 4K Sin Reflejos 94%, Modelo 2026"
-  },
-  {
-   "a": "B09PV7LM3T",
-   "c": "Relojes",
-   "e": "🕰️",
-   "img": "https://m.media-amazon.com/images/I/51QYaZSsjWL._AC_UL320_.jpg",
-   "n": 6600,
-   "op": 49.0,
-   "p": 33.49,
-   "r": 4.3,
-   "t": "2026-11-17T12:30:54.443182+00:00",
-   "title": "Expedition Acadia"
   }
  ],
  "summary_day": "2026-11-16",
  "tg_offset": 511048087,
  "x_copy": {
   "day": "2026-11-17",
-  "n": 17
+  "n": 18
  }
 }
