@@ -2977,3 +2977,206 @@ def test_strike_mark_is_configurable_and_validated(tmp_path):
     for bad in ("", "a", "\u0336\u0336"):
         with pytest.raises(deals.ConfigError, match="x_strike_mark"):
             deals.load_channel(write_cfg(tmp_path, x_strike_mark=bad))
+
+
+def test_x_text_options_without_strike_and_with_a_space_before_the_euro():
+    p = xprod(price=99.99, old=169.99)
+    plain = deals.build_x_text(p, "https://amzn.to/x", channel(x_copy=True, x_strike=False, x_euro_space=True))
+    assert plain.split("\n")[2:5] == ["❌ PVPR: 169,99 €", "🛒 Ahora: 99,99 €", "−41 % · Diferencia 70 €"]
+    spaced = deals.build_x_text(p, "https://amzn.to/x", channel(x_copy=True, x_euro_space=True))
+    assert "❌ PVPR: 1\u03366\u03369\u0336,\u03369\u03369\u0336 €" in spaced     # el trazo no toca al euro
+    default = deals.build_x_text(p, "https://amzn.to/x", channel(x_copy=True))
+    assert "99,99€" in default and "99,99 €" not in default
+    assert deals.x_price(5.5, " ") == "5,50 €"
+
+
+# ---------------------------------------------------------------- ofertas de PowerPlanet y AliExpress
+
+STORE_NOW = datetime(2026, 11, 20, 12, 0, tzinfo=timezone.utc)  # 13:00 en Madrid
+
+
+class FakeResponse:
+    def __init__(self, text="", status=200):
+        self.text, self.status_code = text, status
+
+
+def pp_page_html(price="70.00", delivery="Recíbelo el martes 24 nov", extra=""):
+    return (f'<html><head><meta property="og:title" content="Auriculares Modelo1000 | PowerPlanet">'
+            f'<meta property="product:price:amount" content="{price}"></head>'
+            f'<body><p>{delivery}</p>{extra}</body></html>')
+
+
+def store_env(tmp_path, monkeypatch, *, page=None, ae_rows=None):
+    """Estado con un candidato de PowerPlanet confirmado y uno de AliExpress aprobado."""
+    (tmp_path / "powerplanet_candidates.json").write_text(json.dumps({"day": "2026-11-20", "candidates": [{
+        "id": "1000", "name": "Sony Auriculares Bluetooth inalambricos WH1000", "price": 70.0, "rrp": 100.0, "link": "https://awin/p/1000",
+        "image": "https://img/x.jpg", "stock": 4, "foreign": False, "score": 5, "page": "https://pp/1000"}]}))
+    (tmp_path / "cruce_amazon.json").write_text(json.dumps({"items": {"1000": {
+        "t": STORE_NOW.isoformat(), "pp_price": 70.0, "motivo": "-12 % bajo Amazon", "veredicto": "oferta_real"}}}))
+    review_data = {"items": {"a55": {"src": "a", "id": "55", "st": "ok", "t": STORE_NOW.isoformat(), "title": "Cortacesped robot jardin 55",
+                                      "price": 20.0, "drop": 20, "rating": 95.0, "image": "https://img/a.jpg",
+                                      "link": "https://s.click.aliexpress.com/e/x", "score": 4, "shop_id": "9"}},
+                   "trusted": {}, "blocked": {}}
+    (tmp_path / "revision.json").write_text(json.dumps(review_data))
+    sent = []
+    monkeypatch.setattr(deals, "send_deal", lambda *a, **k: sent.append(a) or 4242)
+    monkeypatch.setattr(deals, "prepare_image", lambda url: None)
+    monkeypatch.setattr(deals.requests, "get", lambda url, **k: page if page is not None else FakeResponse(pp_page_html()))
+    secrets = {"AMAZON_TAG": "tag-21", "TG_T": TOKEN, "TG_C": "@canal"}
+    monkeypatch.setattr(deals, "get_secret", lambda name: secrets.get(name))
+    monkeypatch.setattr(deals.aliexpress, "call", lambda *a, **k: {"x": 1})
+    monkeypatch.setattr(deals.aliexpress, "find_products", lambda data: ae_rows if ae_rows is not None else [{
+        "product_id": "55", "target_sale_price": "20.00", "promotion_link": "https://s.click.aliexpress.com/e/fresh",
+        "product_title": "Cortacesped robot jardin 55", "product_main_image_url": "https://img/a.jpg"}])
+    secrets.update({"ALIEXPRESS_APP_KEY": "k", "ALIEXPRESS_APP_SECRET": "s", "ALIEXPRESS_TRACKING_ID": "t"})
+    return sent
+
+
+def store_channel(**kw):
+    base = dict(store_start="2026-11-20", store_daily={"powerplanet": 1, "aliexpress": 1}, interval_min=25, interval_max=30)
+    base.update(kw)
+    return channel(**base)
+
+
+def run_store(tmp_path, ch=None, now=STORE_NOW, rng=lambda: 0.0):
+    ch = ch or store_channel()
+    path = tmp_path / f"{ch.name}.json"
+    state = deals.load_state(path, 14, now)
+    ok = deals.publish_store_offer(ch, path, state, tmp_path, "tag-21", now, TOKEN, "@canal", rng=rng)
+    return ok, state, path
+
+
+def test_store_offer_is_published_with_ad_tag_and_untouched_affiliate_link(tmp_path, monkeypatch):
+    sent = store_env(tmp_path, monkeypatch)
+    ok, state, path = run_store(tmp_path)
+    assert ok
+    caption = sent[0][2]
+    assert "https://awin/p/1000" in caption and "#publicidad" in caption and "Ver en PowerPlanet" in caption
+    assert "PVPR: <s>100€</s>" in caption and "Ahora: 70€" in caption
+    entry = state["pp:1000"]
+    assert entry["st"] == "POWERPLANET" and entry["auto"] and entry["m"] == 4242 and entry["u"] == "https://awin/p/1000"
+    saved = json.loads(path.read_text())
+    assert "pp:1000" in saved["posted"] and saved["next_at"]
+
+
+def test_store_offer_is_not_published_before_the_start_date_or_when_off(tmp_path, monkeypatch):
+    store_env(tmp_path, monkeypatch)
+    assert run_store(tmp_path, store_channel(store_start="2026-11-21"))[0] is False
+    assert run_store(tmp_path, store_channel(store_start=""))[0] is False
+    assert run_store(tmp_path, store_channel(store_daily={}))[0] is False
+
+
+def test_store_offer_waits_when_the_draw_says_not_this_slot(tmp_path, monkeypatch):
+    sent = store_env(tmp_path, monkeypatch)
+    ok, _, _ = run_store(tmp_path, rng=lambda: 0.999)
+    assert not ok and sent == []
+
+
+def test_store_quota_is_respected_and_alternates_between_stores(tmp_path, monkeypatch):
+    sent = store_env(tmp_path, monkeypatch)
+    ok, state, path = run_store(tmp_path)
+    ok2, state, _ = run_store(tmp_path, now=STORE_NOW + timedelta(minutes=30))
+    assert ok and ok2
+    assert sorted(v["st"] for v in state.values()) == ["ALIEXPRESS", "POWERPLANET"]
+    ok3, _, _ = run_store(tmp_path, now=STORE_NOW + timedelta(minutes=60))
+    assert not ok3 and len(sent) == 2                                     # cupo diario cumplido: 1 + 1
+
+
+def test_aliexpress_offer_is_marked_published_and_uses_the_fresh_affiliate_link(tmp_path, monkeypatch):
+    sent = store_env(tmp_path, monkeypatch)
+    ch = store_channel(store_daily={"aliexpress": 1})
+    ok, state, _ = run_store(tmp_path, ch)
+    assert ok and "https://s.click.aliexpress.com/e/fresh" in sent[0][2] and "#publicidad" in sent[0][2]
+    assert json.loads((tmp_path / "revision.json").read_text())["items"]["a55"]["st"] == "pub"
+    assert state["ae:55"]["st"] == "ALIEXPRESS"
+
+
+def test_powerplanet_offer_is_dropped_when_the_page_price_is_higher(tmp_path, monkeypatch):
+    sent = store_env(tmp_path, monkeypatch, page=FakeResponse(pp_page_html(price="79.90")))
+    ok, state, path = run_store(tmp_path, store_channel(store_daily={"powerplanet": 1}))
+    assert not ok and sent == []
+    assert "pp:1000" in json.loads(path.read_text())["store_skip"]        # no se vuelve a probar hoy
+    ok, _, _ = run_store(tmp_path, store_channel(store_daily={"powerplanet": 1}), now=STORE_NOW + timedelta(minutes=30))
+    assert not ok
+
+
+def test_powerplanet_offer_is_dropped_when_sold_out_or_delivery_is_too_late(tmp_path, monkeypatch):
+    for page in (FakeResponse(pp_page_html(extra='<link itemprop="availability" href="https://schema.org/OutOfStock">')),
+                 FakeResponse(pp_page_html(delivery="Recíbelo el 30 nov")), FakeResponse("", 404)):
+        sent = store_env(tmp_path, monkeypatch, page=page)
+        (tmp_path / "concriterio.json").unlink(missing_ok=True)
+        ok, _, _ = run_store(tmp_path, store_channel(name="concriterio", store_daily={"powerplanet": 1}))
+        assert not ok and sent == []
+
+
+def test_powerplanet_offer_is_published_with_the_feed_when_the_page_does_not_answer(tmp_path, monkeypatch):
+    sent = store_env(tmp_path, monkeypatch)
+
+    def boom(url, **k):
+        raise requests.ConnectionError("x")
+    monkeypatch.setattr(deals.requests, "get", boom)
+    ok, _, _ = run_store(tmp_path, store_channel(store_daily={"powerplanet": 1}))
+    assert ok and "Ahora: 70€" in sent[0][2]
+
+
+def test_aliexpress_offer_with_a_higher_price_or_missing_product_is_dropped(tmp_path, monkeypatch):
+    store_env(tmp_path, monkeypatch, ae_rows=[{"product_id": "55", "target_sale_price": "25.00", "product_title": "x"}])
+    ok, _, path = run_store(tmp_path, store_channel(store_daily={"aliexpress": 1}))
+    assert not ok and "ae:55" in json.loads(path.read_text())["store_skip"]
+    store_env(tmp_path, monkeypatch, ae_rows=[])
+    (tmp_path / "t.json").unlink(missing_ok=True)
+
+
+def test_aliexpress_api_failure_skips_quietly_without_blacklisting(tmp_path, monkeypatch):
+    store_env(tmp_path, monkeypatch)
+
+    def down(*a, **k):
+        raise RuntimeError("limit")
+    monkeypatch.setattr(deals.aliexpress, "call", down)
+    ok, _, path = run_store(tmp_path, store_channel(store_daily={"aliexpress": 1}))
+    assert not ok and "store_skip" not in json.loads(path.read_text() if path.exists() else "{}")
+
+
+def test_store_offer_of_the_same_kind_as_a_recent_post_is_postponed(tmp_path, monkeypatch):
+    sent = store_env(tmp_path, monkeypatch)
+    ch = store_channel(store_daily={"powerplanet": 1})
+    path = tmp_path / f"{ch.name}.json"
+    deals.save_state(path, {"B0AAAAAAAA": {"t": (STORE_NOW - timedelta(hours=2)).isoformat(), "title": "Bose Auriculares Bluetooth inalambricos QC45", "p": 1}})
+    ok, _, _ = run_store(tmp_path, ch)
+    assert not ok and sent == []
+
+
+def test_telegram_refusal_leaves_the_store_offer_for_another_slot(tmp_path, monkeypatch):
+    store_env(tmp_path, monkeypatch)
+
+    def refused(*a, **k):
+        raise deals.TelegramError("400 bad request")
+    monkeypatch.setattr(deals, "send_deal", refused)
+    ok, state, _ = run_store(tmp_path, store_channel(store_daily={"powerplanet": 1}))
+    assert not ok and "pp:1000" not in state
+
+
+def test_run_channel_returns_after_a_store_post_and_does_not_touch_amazon(tmp_path, monkeypatch):
+    sent = store_env(tmp_path, monkeypatch)
+    monkeypatch.setattr(deals.random, "random", lambda: 0.0)
+    monkeypatch.setattr(deals, "collect", lambda *a, **k: (_ for _ in ()).throw(AssertionError("no debia mirar Amazon")))
+    n = deals.run_channel(store_channel(), state_dir=tmp_path, now=STORE_NOW)
+    assert n == 1 and len(sent) == 1
+
+
+def test_store_config_is_validated(tmp_path):
+    def load(**extra):
+        cfg = {"name": "c", "token_env": "T", "chat_env": "C", "queries": ["x"], **extra}
+        p = tmp_path / "c.json"
+        p.write_text(json.dumps(cfg))
+        return deals.load_channel(p)
+    assert load(store_start="2026-11-20", store_daily={"powerplanet": 2, "aliexpress": 2}).store_daily["aliexpress"] == 2
+    for bad in ({"store_start": "20-11-2026"}, {"store_daily": {"ebay": 1}}, {"store_daily": {"powerplanet": -1}},
+                {"store_daily": {"powerplanet": "2"}}, {"store_max_delivery_days": 0}):
+        with pytest.raises(deals.ConfigError):
+            load(**bad)
+
+
+def test_concriterio_starts_stores_on_nov_20_with_two_each():
+    ch = deals.load_channel(Path(__file__).resolve().parent.parent / "channels" / "concriterio.json")
+    assert ch.store_start == "2026-11-20" and ch.store_daily == {"powerplanet": 2, "aliexpress": 2}

@@ -41,6 +41,7 @@ import review
 import crossamz
 import manual
 import pricehist
+import storeposts
 
 ROOT = Path(__file__).resolve().parent
 BASE = "https://www.amazon.es"
@@ -313,6 +314,13 @@ class Channel:
     x_hashtags: str = ""  # por ejemplo "#chollo #amazon"; vacio = sin etiquetas
     x_disclosure: str = ""  # por ejemplo "Enlace afiliado"; vacio = sin aviso
     x_strike_mark: str = X_STRIKE_MARK  # signo que tacha el PVPR en el texto para X (se puede cambiar sin tocar codigo)
+    x_strike: bool = True  # false = el PVPR sale sin tachar (solo con el ❌ delante)
+    x_euro_space: bool = False  # true = "12,50 €" en vez de "12,50€" (en X para ordenador el trazo se escapa al €)
+    # Ofertas de PowerPlanet y AliExpress entre las de Amazon: a partir de `store_start` (AAAA-MM-DD; vacio = apagado)
+    # salen `store_daily` al dia de cada tienda, sin horas fijas, con #publicidad y el enlace de afiliado intacto.
+    store_start: str = ""
+    store_daily: dict = field(default_factory=dict)  # {"powerplanet": 2, "aliexpress": 2}
+    store_max_delivery_days: int = 5  # PowerPlanet: si la ficha promete la entrega mas tarde, no se publica
 
 
 def load_channel(path: Path) -> Channel:
@@ -350,6 +358,16 @@ def load_channel(path: Path) -> Channel:
         raise ConfigError(f"{path.name}: valores 'manual_*' / 'reserve_*' no validos")
     if len(ch.x_strike_mark) != 1 or not unicodedata.combining(ch.x_strike_mark):
         raise ConfigError(f"{path.name}: 'x_strike_mark' debe ser un unico signo combinado (por ejemplo U+0336)")
+    if ch.store_start:
+        try:
+            date.fromisoformat(ch.store_start)
+        except ValueError:
+            raise ConfigError(f"{path.name}: 'store_start' debe ser AAAA-MM-DD (o vacio)") from None
+    if (not isinstance(ch.store_daily, dict) or set(ch.store_daily) - set(storeposts.STORES)
+            or any(not isinstance(v, int) or isinstance(v, bool) or v < 0 for v in ch.store_daily.values())):
+        raise ConfigError(f"{path.name}: 'store_daily' debe ser {{\"powerplanet\": n, \"aliexpress\": n}} con enteros >= 0")
+    if ch.store_max_delivery_days < 1:
+        raise ConfigError(f"{path.name}: 'store_max_delivery_days' debe ser al menos 1")
     if ch.same_kind_hours < 0:
         raise ConfigError(f"{path.name}: 'same_kind_hours' no puede ser negativo")
     if not 0 <= ch.repost_drop < 100 or ch.repost_min_days < 1:
@@ -1626,10 +1644,11 @@ def x_weight(text: str) -> int:
     return total
 
 
-def x_price(value: float) -> str:
-    """39.99 -> '39,99€' ; 23.0 -> '23€' (con coma decimal, como en las publicaciones de X)."""
+def x_price(value: float, gap: str = "") -> str:
+    """39.99 -> '39,99€' ; 23.0 -> '23€' (con coma decimal, como en las publicaciones de X).
+    Con gap=" " deja un espacio antes del euro: '39,99 €'."""
     text = f"{value:.2f}"
-    return (text[:-3] if text.endswith(".00") else text.replace(".", ",")) + "€"
+    return (text[:-3] if text.endswith(".00") else text.replace(".", ",")) + gap + "€"
 
 
 def x_strike(text: str, mark: str = X_STRIKE_MARK) -> str:
@@ -1646,13 +1665,15 @@ def build_x_text(p: Product, url: str, ch: Channel, cat: dict | None = None) -> 
     el aviso de 'precio mas bajo'. Si x_hashtags / x_disclosure tienen texto, se anade al final.
     """
     lines = []
+    gap = " " if ch.x_euro_space else ""
     if p.old_price and p.price and p.old_price > p.price:
         discount = p.discount or round(100 * (p.old_price - p.price) / p.old_price)
-        lines.append(f"❌ PVPR: {x_strike(x_price(p.old_price), ch.x_strike_mark)}")
-        lines.append(f"🛒 Ahora: {x_price(p.price)}")
-        lines.append(f"−{discount} % · Diferencia {x_price(round(p.old_price - p.price, 2))}")
+        old = x_price(p.old_price, gap)
+        lines.append(f"❌ PVPR: {x_strike(old, ch.x_strike_mark) if ch.x_strike else old}")
+        lines.append(f"🛒 Ahora: {x_price(p.price, gap)}")
+        lines.append(f"−{discount} % · Diferencia {x_price(round(p.old_price - p.price, 2), gap)}")
     else:
-        lines.append(f"🛒 Ahora: {x_price(p.price)}")
+        lines.append(f"🛒 Ahora: {x_price(p.price, gap)}")
     tail = " ".join(x for x in (ch.x_hashtags.strip(), f"({ch.x_disclosure.strip()})" if ch.x_disclosure.strip() else "") if x)
     rest = "\n\n" + "\n".join(lines) + "\n\n" + url + (f"\n{tail}" if tail else "")
     room = X_LIMIT - x_weight(rest.replace(url, "")) - X_URL_WEIGHT
@@ -2254,6 +2275,171 @@ def handle_manual_action(ch: Channel, state_path: Path, state: dict, action: str
     return "Publicada ✅"
 
 
+# --------------------------------------------------------------------------
+# Ofertas de tienda (PowerPlanet y AliExpress) entre las de Amazon
+# --------------------------------------------------------------------------
+
+STORE_SKIP_HOURS = 24  # un candidato que no paso la comprobacion previa no se vuelve a probar hasta pasado esto
+
+
+def store_active(ch: Channel, now: datetime) -> bool:
+    if not ch.store_start or not any(ch.store_daily.values()):
+        return False
+    try:
+        local = now.astimezone(ZoneInfo(ch.timezone)).date()
+        return local >= date.fromisoformat(ch.store_start)
+    except (ValueError, ZoneInfoNotFoundError):
+        return False
+
+
+def _check_powerplanet(cand: dict, ch: Channel, today: date) -> tuple[dict | None, str]:
+    """Comprobacion previa en la ficha de la web (no en el enlace de afiliado: asi no hay clics falsos).
+    Devuelve (candidato con el precio de la ficha, '') o (None, motivo). Sin ficha o sin respuesta se acepta el feed."""
+    page_url = cand.get("page") or ""
+    if not page_url:
+        log.info("%s: %s sin direccion de ficha en el feed; se publica con el precio del feed", ch.name, cand["key"])
+        return cand, ""
+    try:
+        r = requests.get(page_url, timeout=20, headers=PAGE_HEADERS)
+    except requests.RequestException as exc:
+        log.info("%s: %s la ficha no responde (%s); se publica con el precio del feed", ch.name, cand["key"],
+                 type(exc).__name__)
+        return cand, ""
+    if r.status_code in (404, 410):
+        return None, "la ficha ya no existe"
+    if r.status_code != 200:
+        log.info("%s: %s ficha con HTTP %s; se publica con el precio del feed", ch.name, cand["key"], r.status_code)
+        return cand, ""
+    if storeposts.page_sold_out(r.text):
+        return None, "agotado en la ficha"
+    page = manual.parse_pp_page(r.text)
+    out = dict(cand)
+    price = page.get("price")
+    if price:
+        if price > cand["price"] * 1.02:
+            return None, f"el precio de la ficha ({price:.2f}) es mayor que el del feed ({cand['price']:.2f})"
+        out["price"] = round(price, 2)
+    days = storeposts.delivery_days(page.get("delivery", ""), today)
+    if days is not None and days > ch.store_max_delivery_days:
+        return None, f"entrega en {days} dias (tope {ch.store_max_delivery_days})"
+    return out, ""
+
+
+def _check_aliexpress(cand: dict, ch: Channel) -> tuple[dict | None, str]:
+    """Vuelve a pedir el producto a la API: sigue existiendo y su precio no ha subido mas de un 5 %.
+    Motivo "api" = no se pudo comprobar (no se apunta como descartado)."""
+    creds = tuple((get_secret(n) or "").strip()
+                  for n in (aliexpress.ENV_KEY, aliexpress.ENV_SECRET, aliexpress.ENV_TRACKING))
+    if not all(creds):
+        return None, "api"
+    for value in creds[:2]:
+        register_secret(value)
+    key, secret, tracking = creds
+    params = {"product_ids": cand["id"], "country": "ES", "target_currency": "EUR", "target_language": "ES",
+              "tracking_id": tracking}
+    try:
+        products = aliexpress.find_products(aliexpress.call(aliexpress.DETAIL_METHOD, params, key, secret))
+    except Exception as exc:
+        log.info("%s: %s la API de AliExpress no responde (%s)", ch.name, cand["key"], type(exc).__name__)
+        return None, "api"
+    api = next((x for x in map(aliexpress.item_from, products) if x), None)
+    if api is None:
+        return None, "ya no esta en la API de AliExpress"
+    if api["price"] > cand["price"] * 1.05:
+        return None, f"el precio ha subido ({api['price']:.2f} frente a {cand['price']:.2f})"
+    out = dict(cand)
+    out["price"] = api["price"]
+    if api.get("link"):
+        out["url"] = api["link"]
+    if api.get("image") and not out.get("image"):
+        out["image"] = api["image"]
+    return out, ""
+
+
+def publish_store_offer(ch: Channel, state_path: Path, state: dict, state_dir: Path, tag: str | None,
+                        now: datetime, token: str, chat_id: str, rng=None) -> bool:
+    """Si esta franja toca una oferta de tienda, la comprueba y la publica. True = se ha publicado una."""
+    if not store_active(ch, now):
+        return False
+    tz = ZoneInfo(ch.timezone)
+    local = now.astimezone(tz)
+    counts = storeposts.counts_today(state, local.date(), tz)
+    left = storeposts.remaining(ch.store_daily, counts)
+    if not left:
+        return False
+    minutes_left = max(0.0, hhmm(ch.window_end) - (local.hour * 60 + local.minute))
+    avg = (ch.interval_min + ch.interval_max) / 2
+    if not storeposts.draw(sum(left.values()), minutes_left, avg, rng or random.random):
+        return False
+    skip = {k: v for k, v in (_read_state_file(state_path).get("store_skip") or {}).items()
+            if isinstance(v, str) and (storeposts._age_days(v, now) or 0) < STORE_SKIP_HOURS / 24}
+    pools = {
+        "powerplanet": storeposts.pp_candidates(_read_state_file(state_dir / feed.PICKS_FILE),
+                                                _read_state_file(state_dir / crossamz.FILE), state, now),
+        "aliexpress": storeposts.ae_candidates(review.load(state_dir / review.FILE), state, now),
+    }
+    recent = recent_kind_titles(state, ch, now)
+    for store in storeposts.store_order(left, ch.store_daily, counts):
+        tries = 0
+        for cand in pools.get(store, []):
+            if tries >= storeposts.MAX_TRIES:
+                break
+            if cand["key"] in skip or any(same_kind(cand["title"], t) for _, t in recent):
+                continue
+            tries += 1
+            if store == "powerplanet":
+                checked, why = _check_powerplanet(cand, ch, local.date())
+            else:
+                checked, why = _check_aliexpress(cand, ch)
+            if checked is None:
+                log.info("%s: %s no pasa la comprobacion previa (%s)", ch.name, cand["key"], why)
+                if why != "api":
+                    skip[cand["key"]] = now.isoformat()
+                    set_state_key(state_path, "store_skip", skip)
+                continue
+            if _publish_store_candidate(ch, state_path, state, state_dir, tag, now, token, chat_id, checked):
+                return True
+    return False
+
+
+def _publish_store_candidate(ch: Channel, state_path: Path, state: dict, state_dir: Path, tag: str | None,
+                             now: datetime, token: str, chat_id: str, cand: dict) -> bool:
+    label = storeposts.LABELS[cand["store"]]
+    p = Product(asin=cand["key"], title=cand["title"], price=cand["price"],
+                old_price=cand["old"] if cand.get("old") and cand["old"] > cand["price"] else None,
+                rating=cand.get("rating"), reviews=cand.get("reviews"), image=cand.get("image") or None,
+                url=cand["url"], store=label)
+    photo_url = full_size_image(p.image)
+    photo = prepare_image(photo_url)
+    try:
+        msg_id = send_deal(token, chat_id, build_caption(p, affiliate_url(p.asin, tag), ch), photo, photo_url,
+                           build_keyboard(ch, p.asin, tag, url=p.url or None, store=p.store or None))
+    except TelegramError as exc:
+        if not exc.ambiguous:
+            log.warning("%s: no se pudo publicar %s (%s)", ch.name, p.asin, exc)
+            return False
+        log.warning("%s: envio sin confirmar (%s); se da por publicado para no repetirlo", ch.name, exc)
+        msg_id = None
+    state[p.asin] = {"t": now.isoformat(), "title": p.title[:200], "p": p.price, "d": p.discount, "c": "", "e": "",
+                     "m": msg_id, "v": [], "u": p.url, "st": label, "auto": True}
+    next_post = now + timedelta(minutes=random.uniform(ch.interval_min, ch.interval_max))
+    save_state(state_path, state, next_at=next_post, rejected=load_rejected(state_path, now), cats=load_cats(state_path))
+    if cand["store"] == "aliexpress" and cand.get("rid"):
+        try:
+            rv = review.load(state_dir / review.FILE)
+            review.mark_published(rv, cand["rid"])
+            review.save(state_dir / review.FILE, rv)
+        except OSError as exc:
+            log.warning("%s: no se pudo marcar %s como publicado (%s)", ch.name, p.asin, type(exc).__name__)
+    log.info("%s: publicada oferta de tienda %s (%s, -%d%%)", ch.name, p.asin, label, p.discount)
+    note(f"{ch.name}: publicada {p.asin} ({label}, -{p.discount}%)")
+    try:
+        maybe_send_x_copy(ch, state_path, p, None, tag, photo, photo_url, now)
+    except Exception as err:
+        log.warning("%s: texto para X: %s", ch.name, type(err).__name__)
+    return True
+
+
 def process_votes(
     ch: Channel, state_path: Path, state: dict, tag: str | None, now: datetime | None = None
 ) -> int:
@@ -2563,6 +2749,13 @@ def run_channel(
         token, chat_id = get_secret(ch.token_env), get_secret(ch.chat_env)
         if not token or not chat_id:
             raise ConfigError(f"{ch.name}: faltan los secretos {ch.token_env} / {ch.chat_env}")
+
+    if publishing and not force and ch.store_daily and token:
+        try:
+            if publish_store_offer(ch, state_path, state, state_dir, tag, now, token, chat_id):
+                return 1
+        except Exception as exc:  # las tiendas son un extra: si fallan, esta franja la ocupa Amazon
+            log.warning("%s: oferta de tienda: %s", ch.name, type(exc).__name__)
 
     retry_at = now + timedelta(minutes=ch.retry_minutes)
     rejected = load_rejected(state_path, now)

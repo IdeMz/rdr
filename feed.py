@@ -84,6 +84,7 @@ KEEP_COLUMNS = (
     "aw_product_id", "search_price", "condition", "in_stock", "product_name", "brand_name", "aw_deep_link",
     "rrp_price", "merchant_image_url", "aw_image_url", "large_image", "ean", "merchant_product_category_path",
     "category_name", "commission_group", "stock_quantity", "valid_to", "average_rating", "reviews",
+    "merchant_deep_link",
 )
 
 

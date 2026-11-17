@@ -181,17 +181,17 @@ def feed_csv(prices):
 def test_feed_collect_writes_candidates_from_the_history(tmp_path):
     path = tmp_path / "feed.json"
     base = {str(1000 + i): 100.0 for i in range(600)}
-    days = [date(2026, 11, 9) + timedelta(days=n) for n in range(3)]
+    days = [date(2026, 11, 9) + timedelta(days=n) for n in range(fp.MIN_TRACK_DAYS + 1)]
     sentences = []
     for n, day in enumerate(days):
         prices = dict(base)
-        if n == 2:
-            prices["1000"] = 70.0                                  # baja el tercer dia
+        if n == len(days) - 1:
+            prices["1000"] = 70.0                                  # baja el ultimo dia
         sentences.append(feed.collect("http://x", path, day, now=datetime(2026, 11, 9, tzinfo=timezone.utc) + timedelta(days=n),
                                       fetch=lambda url, p=prices: feed_csv(p)))
     assert "candidatos" in sentences[-1] and "1 candidatos" in sentences[-1]
     data = json.loads((tmp_path / feed.PICKS_FILE).read_text(encoding="utf-8"))
-    assert data["mode"] == "informe" and data["day"] == "2026-11-11" and data["products"] == 600
+    assert data["mode"] == "informe" and data["day"] == days[-1].isoformat() and data["products"] == 600
     cand = data["candidates"][0]
     assert cand["id"] == "1000" and cand["price"] == 70.0 and cand["drop"] == 30
     assert cand["link"] == "https://awin/p/1000" and cand["rrp"] == 140.0 and cand["stock"] == 4

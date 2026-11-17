@@ -28,7 +28,7 @@ from pathlib import Path
 import pricehist
 
 # En modo informe se aflojan para ver la mecanica. Antes de publicar de verdad: MIN_TRACK_DAYS = 8 o mas.
-MIN_TRACK_DAYS = 3
+MIN_TRACK_DAYS = 8  # dias de historial antes de fiarse de una bajada (PowerPlanet publica desde el 20 nov)
 NEW_LOW_MARGIN = 3     # % por debajo del minimo anterior
 MIN_DROP = 10          # % por debajo de la mediana de 30 dias
 MAX_DROP = 50          # una bajada mayor no se propone sin mas: va a "to_verify" (se contrasta con Amazon)
@@ -70,6 +70,7 @@ def items_from_rows(rows: list[dict]) -> dict[str, dict]:
             "price": price,
             "rrp": rrp if rrp and rrp > price else None,
             "link": _text(row, "aw_deep_link"),
+            "page": _text(row, "merchant_deep_link"),  # ficha en la web de PowerPlanet (para comprobarla antes de publicar)
             "image": _text(row, "large_image") or _text(row, "merchant_image_url") or _text(row, "aw_image_url"),
             "ean": _text(row, "ean"),
             "category": _text(row, "merchant_product_category_path") or _text(row, "category_name"),

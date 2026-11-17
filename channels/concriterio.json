@@ -23,6 +23,8 @@
   "window_end": "23:00",
   "interval_min": 25,
   "interval_max": 30,
+  "store_start": "2026-11-20",
+  "store_daily": {"powerplanet": 2, "aliexpress": 2},
   "summary_time": "22:50",
   "store": "AMAZON",
   "website_url": "https://www.concriterio.eu",
