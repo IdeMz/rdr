@@ -561,6 +561,13 @@
    "title": "Oral-B iO Series 4 Cepillo de dientes eléctrico – Cepillo de dientes eléctrico, incluye 1 cepillo, tecnología magnética, estuche de viaje, 4 modos de cepillado ",
    "via": "ean"
   },
+  "4242003927786": {
+   "a": "B0GZL6RZ7Z",
+   "t": "2026-11-17T23:05:21.933104+00:00",
+   "title": "SIEMENS, Cafetera superautomática EQ500 iAroma, Negro, TP551E07",
+   "v": 3,
+   "via": "modelo"
+  },
   "4260499852320": {
    "a": "B08S7MYYL7",
    "t": "2026-11-13T20:40:48.338068+00:00",
@@ -1694,6 +1701,13 @@
    "title": "Samsung Galaxy Watch8 Classic 46mm LTE Negro (Black) L505 - [Versiones italiano, húngaro, polaco, rumano, austriaco y suizo]",
    "via": "ean"
   },
+  "8806097480921": {
+   "a": "B0FK1XJBD9",
+   "t": "2026-11-17T23:05:21.933104+00:00",
+   "title": "Samsung Galaxy Watch8 (44 mm, LTE) Graphite",
+   "v": 3,
+   "via": "ean"
+  },
   "8806097625285": {
    "a": "B0G6F2724R",
    "t": "2026-11-14T12:50:38.841046+00:00",
@@ -2279,6 +2293,26 @@
    "pp_price": 399.0,
    "t": "2026-11-14T12:15:37.671280+00:00",
    "veredicto": "amazon_mas_barato"
+  },
+  "41887696313": {
+   "ahorro_vs_amazon": 17,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 305.0,
+   "amz_title": "Samsung Galaxy Watch8 (44 mm, LTE) Graphite",
+   "asin": "B0FK1XJBD9",
+   "disponible": true,
+   "ean": "8806097480921",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "17 % por debajo del habitual en Amazon (305.00)",
+   "name": "Samsung Galaxy Watch8 L335 44 mm LTE Gris Oscuro 1,47 pulgadas AMOLED GPS 5ATM",
+   "pp_drop": 15,
+   "pp_median": 299.95,
+   "pp_price": 253.95,
+   "t": "2026-11-17T23:05:21.933104+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
   },
   "41887696317": {
    "ahorro_vs_amazon": 8,
@@ -4435,6 +4469,26 @@
     ]
    }
   },
+  "46239685068": {
+   "ahorro_vs_amazon": 38,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 599.99,
+   "amz_title": "SIEMENS, Cafetera superautomática EQ500 iAroma, Negro, TP551E07",
+   "asin": "B0GZL6RZ7Z",
+   "disponible": true,
+   "ean": "4242003927786",
+   "encontrado_por": "modelo",
+   "lista": "candidates",
+   "motivo": "38 % por debajo del habitual en Amazon (599.99)",
+   "name": "Siemens EQ500 TP511R01 Molinillo Cerámico Integrado Negro 1500W 1,9 L 15 bares Cafetera superautomática",
+   "pp_drop": 14,
+   "pp_median": 428.99,
+   "pp_price": 369.0,
+   "t": "2026-11-17T23:05:21.933104+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "46239685097": {
    "ahorro_vs_amazon": 23,
    "amz_low30": null,
@@ -5292,11 +5346,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Polti StainOver SC30 2000W Aspirador de tapicería",
-   "pista": "1353321 bytes; 17 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1384262 bytes; 18 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 20,
    "pp_median": 251.95,
    "pp_price": 200.94,
-   "t": "2026-11-17T17:01:11.572901+00:00",
+   "t": "2026-11-17T23:05:21.933104+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -5901,14 +5955,14 @@
    }
   }
  },
- "night_at": "2026-11-17T22:50:28.729529+00:00",
+ "night_at": "2026-11-17T23:05:21.933104+00:00",
  "resumen": {
   "amazon_mas_barato": 20,
   "dudoso": 3,
   "no_esta": 12,
-  "oferta_real": 19,
+  "oferta_real": 21,
   "pvpr_inflado": 3,
   "sin_precio": 2
  },
- "updated": "2026-11-17T22:50:28.729529+00:00"
+ "updated": "2026-11-17T23:05:21.933104+00:00"
 }
