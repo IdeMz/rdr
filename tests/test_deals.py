@@ -3012,7 +3012,8 @@ def store_env(tmp_path, monkeypatch, *, page=None, ae_rows=None):
         "id": "1000", "name": "Sony Auriculares Bluetooth inalambricos WH1000", "price": 70.0, "rrp": 100.0, "link": "https://awin/p/1000",
         "image": "https://img/x.jpg", "stock": 4, "foreign": False, "score": 5, "page": "https://pp/1000"}]}))
     (tmp_path / "cruce_amazon.json").write_text(json.dumps({"items": {"1000": {
-        "t": STORE_NOW.isoformat(), "pp_price": 70.0, "motivo": "-12 % bajo Amazon", "veredicto": "oferta_real"}}}))
+        "t": STORE_NOW.isoformat(), "pp_price": 70.0, "motivo": "-12 % bajo Amazon", "veredicto": "oferta_real",
+        "encontrado_por": "ean", "ahorro_vs_amazon": 12}}}))
     review_data = {"items": {"a55": {"src": "a", "id": "55", "st": "ok", "t": STORE_NOW.isoformat(), "title": "Cortacesped robot jardin 55",
                                       "price": 20.0, "drop": 20, "rating": 95.0, "image": "https://img/a.jpg",
                                       "link": "https://s.click.aliexpress.com/e/x", "score": 4, "shop_id": "9"}},
@@ -3361,3 +3362,17 @@ def test_preview_without_history_says_so(tmp_path, monkeypatch):
 def test_concriterio_uses_the_manual_queue():
     ch = deals.load_channel(Path(__file__).resolve().parent.parent / "channels" / "concriterio.json")
     assert ch.manual_queue is True and ch.manual_queue_hours == 8
+
+
+def test_every_run_logs_what_it_read_from_telegram(tmp_path, monkeypatch, caplog):
+    tg = manual_env(monkeypatch)
+    ch, path = channel(name="concriterio", require_spain=False), tmp_path / "concriterio.json"
+    with caplog.at_level(logging.INFO):
+        deals.process_votes(ch, path, {}, "tag-21", NOW_IN)
+        assert "telegram: sin avisos nuevos" in caplog.text
+        message(tg, "B0CT8W3Y29")
+        deals.process_votes(ch, path, {}, "tag-21", NOW_IN + timedelta(minutes=5))
+        press(tg, "B0CT8W3Y29", "mno")
+        deals.process_votes(ch, path, {}, "tag-21", NOW_IN + timedelta(minutes=10))
+    assert "telegram: 1 avisos leidos (1 mensajes, 0 botones)" in caplog.text
+    assert "telegram: 1 avisos leidos (0 mensajes, 1 botones)" in caplog.text

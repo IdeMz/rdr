@@ -19,8 +19,9 @@ def cand(pid="1000", price=70.0, **kw):
     return base
 
 
-def cross(pid="1000", price=70.0, verdict="oferta_real", t=NOW):
-    return {"items": {pid: {"t": t.isoformat(), "pp_price": price, "motivo": "-12 % bajo Amazon", "veredicto": verdict}}}
+def cross(pid="1000", price=70.0, verdict="oferta_real", t=NOW, by="ean", saving=12):
+    return {"items": {pid: {"t": t.isoformat(), "pp_price": price, "motivo": "-12 % bajo Amazon", "veredicto": verdict,
+                            "encontrado_por": by, "ahorro_vs_amazon": saving}}}
 
 
 def picks(*cands, day="2026-11-20"):
@@ -134,3 +135,15 @@ def test_only_approved_recent_unpublished_aliexpress_items_are_candidates():
     c = out[0]
     assert c["key"] == "ae:1" and c["rid"] == "a1" and c["rating"] == 4.8 and c["old"] == 25.0
     assert c["url"] == "https://s.click.aliexpress.com/e/x"
+
+
+def test_only_ean_matches_and_believable_savings_are_published():
+    pool = picks(cand("1"), cand("2"), cand("3"), cand("4"), cand("5"))
+    x = {"items": {
+        "1": cross("1")["items"]["1"],
+        "2": cross("2", by="nombre")["items"]["2"],      # una RTX 5060 con una 5070 Ti
+        "3": cross("3", by="modelo")["items"]["3"],      # una dashcam con otra
+        "4": cross("4", saving=71)["items"]["4"],        # demasiado bueno para ser verdad
+        "5": cross("5", saving=55)["items"]["5"],        # el tope es inclusivo
+    }}
+    assert sorted(c["id"] for c in sp.pp_candidates(pool, x, {}, NOW)) == ["1", "5"]

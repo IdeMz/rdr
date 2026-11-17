@@ -2610,6 +2610,7 @@ def process_votes(
     new_offset = offset
     manual_chat = get_secret(ch.alert_chat_env) if ch.name == REVIEW_CHANNEL else None
     requests_in: list[str] = []
+    n_updates = n_messages = n_buttons = 0
     for _ in range(5):  # 100 avisos por llamada
         data = {"timeout": 0, "limit": 100, "allowed_updates": json.dumps(["callback_query", "message"])}
         if new_offset is not None:
@@ -2622,6 +2623,9 @@ def process_votes(
         if not updates:
             break
         for up in updates:
+            n_updates += 1
+            n_messages += isinstance(up.get("message"), dict)
+            n_buttons += isinstance(up.get("callback_query"), dict)
             new_offset = max(new_offset or 0, int(up.get("update_id", 0)) + 1)
             message = up.get("message")
             if isinstance(message, dict):  # solo se atiende lo que le escribes tu por privado
@@ -2682,6 +2686,11 @@ def process_votes(
                 pass
         if len(updates) < 100:
             break
+    if n_updates:  # una linea por ejecucion con algo que leer: sirve para saber si las pulsaciones llegan y cuando
+        log.info("%s: telegram: %d avisos leidos (%d mensajes, %d botones), siguiente %s",
+                 ch.name, n_updates, n_messages, n_buttons, new_offset)
+    else:
+        log.info("%s: telegram: sin avisos nuevos", ch.name)
     for asin in changed:
         try:
             tg_call("editMessageReplyMarkup", token, {

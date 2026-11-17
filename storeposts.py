@@ -6,7 +6,9 @@ No hace peticiones ni habla con Telegram: deals.py comprueba la ficha y publica.
 
 Reglas:
   * PowerPlanet: solo `oferta_real` en el cruce con Amazon (hecho hace pocos dias y con el mismo precio de hoy),
-    en stock, con la lista de candidatos reciente. Los demas veredictos no se publican.
+    en stock, con la lista de candidatos reciente. Los demas veredictos no se publican. Ademas, el producto de
+    Amazon tiene que haberse encontrado por EAN (por nombre o modelo se confunden versiones: una RTX 5060 con una
+    5070 Ti, una dashcam con otra) y el ahorro frente a Amazon no puede pasar de MAX_SAVING_VS_AMAZON %.
   * AliExpress: solo los productos aprobados en la lista de revision (✅ tuyo o tienda de confianza).
   * Cupo diario por tienda, repartido sin horas fijas: en cada franja se echa a suertes si toca, con probabilidad
     (cupo que falta) / (franjas que quedan en la ventana).
@@ -22,6 +24,7 @@ LABELS = {"powerplanet": "POWERPLANET", "aliexpress": "ALIEXPRESS"}
 
 CANDIDATES_MAX_AGE_DAYS = 1   # la lista de candidatos de PowerPlanet no puede ser mas vieja que esto
 CROSS_MAX_AGE_DAYS = 3        # el cruce con Amazon no puede ser mas viejo (se repite cada 2 dias)
+MAX_SAVING_VS_AMAZON = 55     # un ahorro mayor frente a Amazon es casi siempre un emparejamiento o un precio erroneo
 SAME_PRICE = 0.01             # el precio de hoy no puede haber cambiado mas de un 1 % desde el cruce
 APPROVAL_MAX_AGE_DAYS = 4     # un producto de AliExpress aprobado caduca (el precio cambia): se vuelve a pedir
 MAX_TRIES = 3                 # candidatos que se comprueban en una franja antes de dejarlo para otra
@@ -126,6 +129,8 @@ def pp_candidates(pp: dict, cross: dict, state: dict, now: datetime) -> list[dic
         if not pid or key in state or not entry or entry.get("veredicto") != "oferta_real":
             continue
         if cand.get("foreign") or cand.get("stock") == 0 or not cand.get("link") or not cand.get("price"):
+            continue
+        if entry.get("encontrado_por") != "ean" or (entry.get("ahorro_vs_amazon") or 0) > MAX_SAVING_VS_AMAZON:
             continue
         cross_age = _age_days(entry.get("t", ""), now)
         if cross_age is None or cross_age > CROSS_MAX_AGE_DAYS:
