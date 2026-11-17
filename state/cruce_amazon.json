@@ -1740,11 +1740,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "WD Elements 8TB Negro USB 3.0 3,5 pulgadas Disco duro externo",
-   "pista": "2346565 bytes; 11 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "2351022 bytes; 14 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 13,
    "pp_median": 290.94,
    "pp_price": 252.38,
-   "t": "2026-11-16T23:50:25.846029+00:00",
+   "t": "2026-11-17T06:05:20.554247+00:00",
    "veredicto": "sin_precio"
   },
   "37600259956": {
@@ -5323,7 +5323,7 @@
    }
   }
  },
- "night_at": "2026-11-17T05:09:47.495941+00:00",
+ "night_at": "2026-11-17T06:05:20.554247+00:00",
  "resumen": {
   "amazon_mas_barato": 25,
   "dudoso": 4,
@@ -5332,5 +5332,5 @@
   "pvpr_inflado": 0,
   "sin_precio": 9
  },
- "updated": "2026-11-17T05:09:47.495941+00:00"
+ "updated": "2026-11-17T06:05:20.554247+00:00"
 }
