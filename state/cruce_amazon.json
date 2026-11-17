@@ -329,6 +329,13 @@
    "title": "Corsair M75 Ratón para Juegos FPS Ligero RGB con Cable – 26.000 PPP – Botones Laterales Intercambiables – PC – Negro",
    "via": "ean"
   },
+  "0840268951313": {
+   "a": "B0CN41GMDK",
+   "t": "2026-11-17T22:35:22.842725+00:00",
+   "title": "Amazon Fire TV Stick 4K Select: comienza a reproducir contenido 4K en streaming, ve cientos de miles de películas y episodios de series, encuentra series más rá",
+   "v": 3,
+   "via": "ean"
+  },
   "0840353958159": {
    "a": "",
    "t": "2026-11-14T01:20:25.760497+00:00",
@@ -1043,6 +1050,13 @@
    "title": "ECOINKO Cartucho 308XL Negro - 730+ Páginas, Reemplazo para Tinta HP 308 Negro, Tinta Impresora 308 XL para HP Envy 6100e 6120e 6122e 6132e 6152e 6520e 6530e 65",
    "via": "modelo"
   },
+  "5901969425376": {
+   "a": "B08593L2ZQ",
+   "t": "2026-11-17T22:35:22.842725+00:00",
+   "title": "Genesis Volante Gaming SEABORG 350 PC PS3 PS4 Xbox One Xbox 360 Switch",
+   "v": 3,
+   "via": "ean"
+  },
   "5901969445664": {
    "a": "",
    "t": "2026-11-14T00:20:27.018416+00:00",
@@ -1490,19 +1504,11 @@
    "via": "ean"
   },
   "810050911702": {
-   "a": "",
-   "t": "2026-11-15T13:25:30.562134+00:00",
-   "v": 2,
-   "vistos": {
-    "ean": [
-     "HORI Wireless Racing Wheel Apex for Playstation 5, PlayStation 4 and Windows 11/10"
-    ],
-    "nombre": [
-     "HORI Wireless Racing Wheel Apex for Playstation 5, PlayStation 4 and Windows 11/10",
-     "Logitech G G29 SE Driving Force, Volante de Carreras PS5, PS4 y PC, Negro",
-     "Wheel Stand Pro Hori Deluxe V2"
-    ]
-   }
+   "a": "B0DCCZCR26",
+   "t": "2026-11-17T22:35:22.842725+00:00",
+   "title": "HORI Wireless Racing Wheel Apex for Playstation 5, PlayStation 4 and Windows 11/10",
+   "v": 3,
+   "via": "ean"
   },
   "840006666493": {
    "a": "B0CP6BWBF5",
@@ -2289,6 +2295,26 @@
    "pp_price": 899.9,
    "t": "2026-11-14T03:20:26.477658+00:00",
    "veredicto": "oferta_real"
+  },
+  "42828137776": {
+   "ahorro_vs_amazon": 53,
+   "amz_low30": 69.99,
+   "amz_median": null,
+   "amz_price": 27.99,
+   "amz_title": "Amazon Fire TV Stick 4K Select: comienza a reproducir contenido 4K en streaming, ve cientos de miles de películas y episodios de series, encuentra series más rá",
+   "asin": "B0CN41GMDK",
+   "disponible": true,
+   "ean": "0840268951313",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 27.99 frente a 32.95",
+   "name": "Amazon Fire TV Stick 4K Select WiFi Bluetooth",
+   "pp_drop": 25,
+   "pp_median": 43.95,
+   "pp_price": 32.95,
+   "t": "2026-11-17T22:35:22.842725+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
   },
   "43682318148": {
    "ahorro_vs_amazon": -21,
@@ -3457,26 +3483,44 @@
    "veredicto": "oferta_real"
   },
   "45956992056": {
+   "ahorro_vs_amazon": -25,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 139.99,
+   "amz_title": "HORI Wireless Racing Wheel Apex for Playstation 5, PlayStation 4 and Windows 11/10",
+   "asin": "B0DCCZCR26",
+   "disponible": true,
    "ean": "810050911702",
+   "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "motivo": "Amazon 139.99 frente a 174.95",
    "name": "HORI Wireless Racing Wheel Apex PS5/PS4/PC Pedales incluidos Volante",
    "pp_drop": 17,
    "pp_median": 211.96,
    "pp_price": 174.95,
-   "t": "2026-11-15T13:25:30.562134+00:00",
-   "v": 2,
-   "veredicto": "no_esta",
-   "vistos": {
-    "ean": [
-     "HORI Wireless Racing Wheel Apex for Playstation 5, PlayStation 4 and Windows 11/10"
-    ],
-    "nombre": [
-     "HORI Wireless Racing Wheel Apex for Playstation 5, PlayStation 4 and Windows 11/10",
-     "Logitech G G29 SE Driving Force, Volante de Carreras PS5, PS4 y PC, Negro",
-     "Wheel Stand Pro Hori Deluxe V2"
-    ]
-   }
+   "t": "2026-11-17T22:35:22.842725+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
+  "45956992058": {
+   "ahorro_vs_amazon": 1,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 76.59,
+   "amz_title": "Genesis Volante Gaming SEABORG 350 PC PS3 PS4 Xbox One Xbox 360 Switch",
+   "asin": "B08593L2ZQ",
+   "disponible": true,
+   "ean": "5901969425376",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 76.59 frente a 75.95",
+   "name": "Genesis Seaborg 350 Vibración 2 motores PC/PS4/Xbox/Switch Volante",
+   "pp_drop": 20,
+   "pp_median": 94.95,
+   "pp_price": 75.95,
+   "t": "2026-11-17T22:35:22.842725+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
   },
   "45956992353": {
    "ahorro_vs_amazon": -1,
@@ -5792,14 +5836,14 @@
    }
   }
  },
- "night_at": "2026-11-17T22:20:31.920357+00:00",
+ "night_at": "2026-11-17T22:35:22.842725+00:00",
  "resumen": {
-  "amazon_mas_barato": 17,
+  "amazon_mas_barato": 20,
   "dudoso": 3,
-  "no_esta": 12,
+  "no_esta": 11,
   "oferta_real": 18,
   "pvpr_inflado": 3,
   "sin_precio": 2
  },
- "updated": "2026-11-17T22:20:31.920357+00:00"
+ "updated": "2026-11-17T22:35:22.842725+00:00"
 }
