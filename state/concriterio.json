@@ -14,7 +14,7 @@
   "Café y cápsulas": "2026-11-15T14:40:39.424977+00:00",
   "Camping y montaña": "2026-11-16T11:20:40.607767+00:00",
   "Cargadores y baterías": "2026-11-15T11:10:43.114079+00:00",
-  "Ciclismo": "2026-11-14T21:35:30.640432+00:00",
+  "Ciclismo": "2026-11-17T07:30:53.001889+00:00",
   "Climatización": "2026-11-14T11:05:31.708608+00:00",
   "Colchones y almohadas": "2026-11-13T08:45:39.815574+00:00",
   "Componentes PC": "2026-11-16T16:15:49.892288+00:00",
@@ -92,7 +92,7 @@
    "title": "adidas Men's Zapatilla de Senderismo Terrex Skychaser AX5 Gore-Tex"
   }
  },
- "next_at": "2026-11-17T07:29:07.939848+00:00",
+ "next_at": "2026-11-17T07:58:21.348506+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -309,6 +309,17 @@
    "p": 16.69,
    "t": "2026-11-11T07:01:39.104213+00:00",
    "title": "bosch HPC SOFT Pollo y Plátano | Alimento semi-húmedo para perros adultos de todas las razas | Sin cereales | 1 x 2,5 kg",
+   "v": []
+  },
+  "B00Z83DJVG": {
+   "c": "Ciclismo",
+   "d": 38,
+   "e": "🚴",
+   "m": 353,
+   "p": 7.39,
+   "s": "ambas",
+   "t": "2026-11-17T07:31:28.243354+00:00",
+   "title": "Performance Headband – Diadema para Hombre",
    "v": []
   },
   "B013DQEJF4": {
@@ -3083,6 +3094,10 @@
  },
  "problem": {},
  "rejected": {
+  "B01ERZ900O": {
+   "t": "2026-11-17T07:30:53.001889+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B01M7YESHB": {
    "t": "2026-11-16T18:55:32.141614+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3154,6 +3169,18 @@
  },
  "reserve": [
   {
+   "a": "B0B4K55L4B",
+   "c": "Ciclismo",
+   "e": "🚴",
+   "img": "https://m.media-amazon.com/images/I/817mCwvpyVL._AC_UL320_.jpg",
+   "n": 8500,
+   "op": 26.96,
+   "p": 18.95,
+   "r": 4.5,
+   "t": "2026-11-17T07:30:53.001889+00:00",
+   "title": "Calcetines de Ciclismo, Anti-Ampollas, 3 y 5 Pack"
+  },
+  {
    "a": "B08N2GLBR5",
    "c": "Maquillaje",
    "e": "💄",
@@ -3170,6 +3197,6 @@
  "tg_offset": 511048072,
  "x_copy": {
   "day": "2026-11-17",
-  "n": 1
+  "n": 2
  }
 }
