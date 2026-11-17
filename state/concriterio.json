@@ -49,7 +49,7 @@
   "Perfumes": "2026-11-15T21:40:42.221187+00:00",
   "Periféricos": "2026-11-15T16:30:50.777266+00:00",
   "Perros": "2026-11-15T07:01:06.978986+00:00",
-  "Portátiles": "2026-11-14T19:45:46.808036+00:00",
+  "Portátiles": "2026-11-17T08:30:57.514721+00:00",
   "Proyectores": "2026-11-16T09:20:39.431359+00:00",
   "Redes y wifi": "2026-11-16T08:45:43.168202+00:00",
   "Relojes": "2026-11-15T14:01:02.981281+00:00",
@@ -65,34 +65,21 @@
   "eReaders": "2026-11-16T13:55:32.747613+00:00"
  },
  "manual": {
-  "B0F7ZFWVTC": {
-   "a": "B0F7ZFWVTC",
+  "B0FBSB1V4L": {
+   "a": "B0FBSB1V4L",
    "c": "",
    "e": "",
-   "img": "https://m.media-amazon.com/images/I/615KD4BiJKL._AC_SL1500_.jpg",
-   "m": 294,
-   "n": 41357,
-   "op": 84.99,
-   "p": 37.99,
-   "r": 4.6,
-   "t": "2026-11-16T11:30:54.117267+00:00",
-   "title": "Amazon Fire TV Stick 4K Plus, compatible con Wi-Fi 6, Dolby Vision, Dolby Atmos y HDR10+, encuentra series más rápido con Alexa+"
-  },
-  "B0FT3ZCKNG": {
-   "a": "B0FT3ZCKNG",
-   "c": "",
-   "e": "",
-   "img": "https://m.media-amazon.com/images/I/615S5G56hQL._AC_SL1500_.jpg",
-   "m": 305,
-   "n": 1523,
-   "op": 120.0,
-   "p": 61.2,
-   "r": 4.1,
-   "t": "2026-11-16T14:30:57.944524+00:00",
-   "title": "adidas Men's Zapatilla de Senderismo Terrex Skychaser AX5 Gore-Tex"
+   "img": "https://m.media-amazon.com/images/I/41-vFaTDlrL._AC_SL1100_.jpg",
+   "m": 329,
+   "n": 370,
+   "op": 65.0,
+   "p": 37.04,
+   "r": 4.4,
+   "t": "2026-11-17T08:30:57.514721+00:00",
+   "title": "Reebok Court Advance Vegano ZapatillasMujer"
   }
  },
- "next_at": "2026-11-17T08:30:10.155718+00:00",
+ "next_at": "2026-11-17T08:58:40.739508+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -2287,6 +2274,17 @@
    "title": "Govee Christmas Sparkle String Lights 30M, Control por Aplicación con Alexa",
    "v": []
   },
+  "B0FCG24X9S": {
+   "c": "Portátiles",
+   "d": 14,
+   "e": "💻",
+   "m": 355,
+   "p": 299.0,
+   "s": "busqueda",
+   "t": "2026-11-17T08:31:40.105899+00:00",
+   "title": "HP 15 Ordenador portátil 15.6\", Intel N100, 4GB, 128GB, Windows 11",
+   "v": []
+  },
   "B0FDL3BK9T": {
    "c": "Climatización",
    "d": 18,
@@ -3209,9 +3207,9 @@
   }
  ],
  "summary_day": "2026-11-16",
- "tg_offset": 511048072,
+ "tg_offset": 511048075,
  "x_copy": {
   "day": "2026-11-17",
-  "n": 3
+  "n": 4
  }
 }

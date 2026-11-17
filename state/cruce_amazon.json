@@ -3517,11 +3517,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "FiiO RR13 Negro Batería 10440 FM 18h 450mAh Radio portátil recargable",
-   "pista": "1238686 bytes; 1 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1443497 bytes; 8 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 12,
    "pp_median": 66.95,
    "pp_price": 58.95,
-   "t": "2026-11-17T02:20:36.394189+00:00",
+   "t": "2026-11-17T08:30:57.514721+00:00",
    "veredicto": "sin_precio"
   },
   "46146890816": {
@@ -4766,11 +4766,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Polti StainOver SC30 2000W Aspirador de tapicería",
-   "pista": "1350732 bytes; 17 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1360336 bytes; 17 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 20,
    "pp_median": 251.95,
    "pp_price": 200.94,
-   "t": "2026-11-17T02:20:36.394189+00:00",
+   "t": "2026-11-17T08:30:57.514721+00:00",
    "veredicto": "sin_precio"
   },
   "46599142071": {
@@ -5332,5 +5332,5 @@
   "pvpr_inflado": 0,
   "sin_precio": 9
  },
- "updated": "2026-11-17T08:01:10.979640+00:00"
+ "updated": "2026-11-17T08:30:57.514721+00:00"
 }
