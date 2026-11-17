@@ -52,7 +52,7 @@
   "Portátiles": "2026-11-17T08:30:57.514721+00:00",
   "Proyectores": "2026-11-16T09:20:39.431359+00:00",
   "Redes y wifi": "2026-11-16T08:45:43.168202+00:00",
-  "Relojes": "2026-11-15T14:01:02.981281+00:00",
+  "Relojes": "2026-11-17T12:30:54.443182+00:00",
   "Robots de cocina": "2026-11-15T15:15:41.208340+00:00",
   "Salud": "2026-11-16T16:50:42.783335+00:00",
   "Smartwatch": "2026-11-15T15:50:40.820191+00:00",
@@ -82,7 +82,7 @@
   }
  ],
  "manual_todo": [],
- "next_at": "2026-11-17T12:28:25.666821+00:00",
+ "next_at": "2026-11-17T12:59:52.990170+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -555,6 +555,17 @@
    "s": "busqueda",
    "t": "2026-11-13T20:41:16.075645+00:00",
    "title": "Delta Cafés espresso Bar - Café en Grano - Estimula los Sentidos - Aroma de Centroamérica y Robusta Africana - 1 kg",
+   "v": []
+  },
+  "B07FCLBWD9": {
+   "c": "Relojes",
+   "d": 39,
+   "e": "🕰️",
+   "m": 363,
+   "p": 53.99,
+   "s": "ofertas",
+   "t": "2026-11-17T12:31:28.037316+00:00",
+   "title": "Pro Diver Stainless Steel Men's Quartz Watch - 40mm",
    "v": []
   },
   "B07GS6ZB7T": {
@@ -3238,6 +3249,18 @@
  },
  "reserve": [
   {
+   "a": "B09PV7LM3T",
+   "c": "Relojes",
+   "e": "🕰️",
+   "img": "https://m.media-amazon.com/images/I/51QYaZSsjWL._AC_UL320_.jpg",
+   "n": 6600,
+   "op": 49.0,
+   "p": 33.49,
+   "r": 4.3,
+   "t": "2026-11-17T12:30:54.443182+00:00",
+   "title": "Expedition Acadia"
+  },
+  {
    "a": "B077S4TX92",
    "c": "Cuidado de la piel",
    "e": "🧴",
@@ -3260,24 +3283,12 @@
    "r": 4.6,
    "t": "2026-11-17T10:01:21.690221+00:00",
    "title": "Razer BlackWidow V3 Tenkeyless (Yellow Switch) - Teclado Compacto para Juegos con interruptores mecánicos (Teclas ABS, iluminación RGB Chroma) QWERTY Teclado ES | Negro"
-  },
-  {
-   "a": "B0BLRV83GQ",
-   "c": "Videojuegos",
-   "e": "🎮",
-   "img": "https://m.media-amazon.com/images/I/5170APwonpL._AC_UL320_.jpg",
-   "n": 1100,
-   "op": 11.19,
-   "p": 8.95,
-   "r": 4.4,
-   "t": "2026-11-17T09:01:06.401047+00:00",
-   "title": "playvital Funda de Silicona para PS5 Mando a Distancia"
   }
  ],
  "summary_day": "2026-11-16",
  "tg_offset": 511048086,
  "x_copy": {
   "day": "2026-11-17",
-  "n": 11
+  "n": 12
  }
 }
