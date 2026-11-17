@@ -56,7 +56,7 @@
   "Robots de cocina": "2026-11-15T15:15:41.208340+00:00",
   "Salud": "2026-11-16T16:50:42.783335+00:00",
   "Smartwatch": "2026-11-15T15:50:40.820191+00:00",
-  "Suplementos": "2026-11-15T13:25:30.562134+00:00",
+  "Suplementos": "2026-11-17T14:01:04.582833+00:00",
   "Tablets": "2026-11-15T11:10:43.114079+00:00",
   "Televisores": "2026-11-17T13:01:23.458704+00:00",
   "Textil hogar": "2026-11-16T21:10:41.415586+00:00",
@@ -107,7 +107,7 @@
  },
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-17T13:59:52.647153+00:00",
+ "next_at": "2026-11-17T14:29:00.128732+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -2359,6 +2359,17 @@
    "title": "JOSERA SensiPlus (1 x 12,5 kg) | Adultos | Pienso seco con Pato y arroz para Perros Adultos con Piel Sensible | con Gran cantidad de biotina para una Piel y un Pelaje sanos | Altamente digestible",
    "v": []
   },
+  "B0FB3GM1R1": {
+   "c": "Suplementos",
+   "d": 44,
+   "e": "💊",
+   "m": 366,
+   "p": 19.49,
+   "s": "ambas",
+   "t": "2026-11-17T14:01:38.426466+00:00",
+   "title": "Colageno con Magnesio y Vitamina C - 200 Cápsulas - Colageno Hidrolizado",
+   "v": []
+  },
   "B0FBG3ZCK6": {
    "c": "Zapatillas",
    "d": 40,
@@ -3300,6 +3311,18 @@
  },
  "reserve": [
   {
+   "a": "B0B133BLXN",
+   "c": "Suplementos",
+   "e": "💊",
+   "img": "https://m.media-amazon.com/images/I/71AbqJDqcvL._AC_UL320_.jpg",
+   "n": 3800,
+   "op": 16.9,
+   "p": 10.9,
+   "r": 4.5,
+   "t": "2026-11-17T14:01:04.582833+00:00",
+   "title": "Equilibra Complemento alimenticio, Colágeno Q10 Ácido Hialurónico, Bueno estado de la piel, a Base de Colágeno Hidrolizado, Ácido Hialurónico, Coenzima Q10, Vitaminas C y E, 90 Comprimidos"
+  },
+  {
    "a": "B0GTRJ4LRS",
    "c": "Televisores",
    "e": "📺",
@@ -3322,24 +3345,12 @@
    "r": 4.3,
    "t": "2026-11-17T12:30:54.443182+00:00",
    "title": "Expedition Acadia"
-  },
-  {
-   "a": "B077S4TX92",
-   "c": "Cuidado de la piel",
-   "e": "🧴",
-   "img": "https://m.media-amazon.com/images/I/71vULlfRXyL._AC_UL320_.jpg",
-   "n": 3100,
-   "op": 22.5,
-   "p": 11.94,
-   "r": 4.6,
-   "t": "2026-11-17T10:31:06.725588+00:00",
-   "title": "Neutrogena Rutina Hydro Boost, Gel de Agua 50 ml + Contorno de ojos 15 ml"
   }
  ],
  "summary_day": "2026-11-16",
  "tg_offset": 511048087,
  "x_copy": {
   "day": "2026-11-17",
-  "n": 14
+  "n": 15
  }
 }

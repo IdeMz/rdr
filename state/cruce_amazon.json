@@ -433,10 +433,11 @@
    }
   },
   "3045380026261": {
-   "a": "B0FX5K33S4",
-   "t": "2026-11-14T10:30:50.359175+00:00",
-   "title": "Moulinex Inicio Compact, Plancha de Paninis y Grill de 1000W, Inox, Pinzas",
-   "via": "nombre"
+   "a": "B0DH8HYC7P",
+   "t": "2026-11-17T14:01:04.582833+00:00",
+   "title": "Moulinex Inicio Compact, plancha de paninis y grill, placas de cocción antiadherentes, fácil de guardar, fácil de lavar, GI270D10",
+   "v": 3,
+   "via": "ean"
   },
   "3045387293741": {
    "a": "B0DT9SW2LH",
@@ -1502,8 +1503,8 @@
   },
   "8592978595500": {
    "a": "",
-   "t": "2026-11-15T11:10:43.114079+00:00",
-   "v": 2,
+   "t": "2026-11-17T14:01:04.582833+00:00",
+   "v": 3,
    "vistos": {
     "ean": [
      "(sin resultados)"
@@ -1514,9 +1515,9 @@
      "AMD RYZEN™ 7 9850X3D"
     ],
     "nombre": [
-     "AMD EPYC 4564P 16 x 4,5 GHz 64 MB L3 Cache CPU socket AM5 Boxed sin radiador",
-     "AMD EPYC 4005 4465P Dodeca-Core (12 núcleos) 3.40 GHz Procesador - Caja",
-     "AMD Epyc 9224-2,5 GHz - 24 Core - 48 Hilos"
+     "AMD Epyc 9224-2,5 GHz - 24 Core - 48 Hilos",
+     "Amd Epyc 7413 - 2,65 Ghz - 24 Core - 48 Thread",
+     "AMD EPYC 4564P 16 x 4,5 GHz 64 MB L3 Cache CPU socket AM5 Boxed sin radiador"
     ]
    }
   },
@@ -3763,22 +3764,23 @@
    "veredicto": "amazon_mas_barato"
   },
   "46186025334": {
-   "ahorro_vs_amazon": -11,
-   "amz_low30": 52.39,
-   "amz_median": 45.99,
-   "amz_price": 42.99,
-   "amz_title": "Moulinex Inicio Compact, Plancha de Paninis y Grill de 1000W, Inox, Pinzas",
-   "asin": "B0FX5K33S4",
+   "ahorro_vs_amazon": -38,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 36.8,
+   "amz_title": "Moulinex Inicio Compact, plancha de paninis y grill, placas de cocción antiadherentes, fácil de guardar, fácil de lavar, GI270D10",
+   "asin": "B0DH8HYC7P",
    "disponible": true,
    "ean": "3045380026261",
-   "encontrado_por": "nombre",
+   "encontrado_por": "ean",
    "lista": "to_verify",
-   "motivo": "Amazon 42.99 frente a 50.95",
+   "motivo": "Amazon 36.80 frente a 50.95",
    "name": "Parrilla eléctrica Moulinex Inicio Compact 1000W 2 personas Negro GI270D",
    "pp_drop": 51,
    "pp_median": 103.95,
    "pp_price": 50.95,
-   "t": "2026-11-16T11:20:40.607767+00:00",
+   "t": "2026-11-17T14:01:04.582833+00:00",
+   "v": 3,
    "veredicto": "amazon_mas_barato"
   },
   "46186025457": {
@@ -4185,8 +4187,8 @@
    "pp_drop": 24,
    "pp_median": 6366.95,
    "pp_price": 4840.96,
-   "t": "2026-11-17T12:30:54.443182+00:00",
-   "v": 2,
+   "t": "2026-11-17T14:01:04.582833+00:00",
+   "v": 3,
    "veredicto": "no_esta",
    "vistos": {
     "ean": [
@@ -4198,9 +4200,9 @@
      "AMD RYZEN™ 7 9850X3D"
     ],
     "nombre": [
-     "AMD EPYC 4564P 16 x 4,5 GHz 64 MB L3 Cache CPU socket AM5 Boxed sin radiador",
-     "AMD EPYC 4005 4465P Dodeca-Core (12 núcleos) 3.40 GHz Procesador - Caja",
-     "AMD Epyc 9224-2,5 GHz - 24 Core - 48 Hilos"
+     "AMD Epyc 9224-2,5 GHz - 24 Core - 48 Hilos",
+     "Amd Epyc 7413 - 2,65 Ghz - 24 Core - 48 Thread",
+     "AMD EPYC 4564P 16 x 4,5 GHz 64 MB L3 Cache CPU socket AM5 Boxed sin radiador"
     ]
    }
   },
@@ -5474,5 +5476,5 @@
   "pvpr_inflado": 0,
   "sin_precio": 1
  },
- "updated": "2026-11-17T13:01:23.458704+00:00"
+ "updated": "2026-11-17T14:01:04.582833+00:00"
 }
