@@ -22,7 +22,7 @@
   "Cuidado del cabello": "2026-11-13T21:50:42.988192+00:00",
   "Cámaras de seguridad": "2026-11-14T17:20:46.627491+00:00",
   "Decoración navideña": "2026-11-16T20:01:04.281373+00:00",
-  "Domótica": "2026-11-15T17:40:41.406854+00:00",
+  "Domótica": "2026-11-17T18:45:48.491889+00:00",
   "Droguería": "2026-11-16T21:45:41.113869+00:00",
   "Fitness en casa": "2026-11-15T12:15:40.152691+00:00",
   "Fotografía": "2026-11-16T15:40:40.598894+00:00",
@@ -107,7 +107,7 @@
  },
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-17T18:41:07.834028+00:00",
+ "next_at": "2026-11-17T19:12:36.256190+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -1633,6 +1633,17 @@
    "p": 167.98,
    "t": "2026-11-10T14:11:06.914629+00:00",
    "title": "ghd Gold - Plancha de Pelo Profesional Avanzada",
+   "v": []
+  },
+  "B0CDHC6HXX": {
+   "c": "Domótica",
+   "d": 33,
+   "e": "💡",
+   "m": 375,
+   "p": 66.99,
+   "s": "ofertas",
+   "t": "2026-11-17T18:48:48.388803+00:00",
+   "title": "Philips Hue Enchufes Inteligentes para Lámparas No Inteligentes, Pack de 3",
    "v": []
   },
   "B0CFVZG5TR": {
@@ -3329,10 +3340,7 @@
    "v": []
   }
  },
- "problem": {
-  "fails": 1,
-  "last": "HTTP 503"
- },
+ "problem": {},
  "rejected": {
   "B014GNJWW8": {
    "t": "2026-11-17T17:01:11.572901+00:00",
@@ -3348,6 +3356,10 @@
   },
   "B01M7YESHB": {
    "t": "2026-11-16T18:55:32.141614+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B07Z5JD3T4": {
+   "t": "2026-11-17T18:45:48.491889+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B08H99BPJN": {
@@ -3393,6 +3405,10 @@
   "B0G4DP1KP6": {
    "t": "2026-11-16T18:55:32.141614+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0G52MX15Q": {
+   "t": "2026-11-17T18:45:48.491889+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
   }
  },
  "reserve": [
@@ -3419,24 +3435,12 @@
    "r": 4.6,
    "t": "2026-11-17T16:30:56.399108+00:00",
    "title": "MSI mag 274QF X24, Monitor Gaming 27 Pulgadas WQHD, IPS rápida de 2560 x 1440, 240 Hz, 0,5 ms, Preparado para HDR, AMD FreeSync, Eye Care, AI Vision, inclinación Ajustable, Soporte Vesa, Negro"
-  },
-  {
-   "a": "B0FLDLRG94",
-   "c": "Móviles",
-   "e": "📱",
-   "img": "https://m.media-amazon.com/images/I/61sv4LuA8HL._AC_UY218_.jpg",
-   "n": 97,
-   "op": 939.0,
-   "p": 669.0,
-   "r": 4.4,
-   "t": "2026-11-17T15:30:58.601953+00:00",
-   "title": "Samsung Galaxy S25 FE 512GB, Teléfono Móvil con IA, Marco Ligero 7,5mm, Pantalla FHD+ 6,7\", Cámara 50MP, Exynos 2400, 8GB RAM, Garantía Fabricante 3 Años+1 Año Extra, Negro Intenso (Versión Española)"
   }
  ],
  "summary_day": "2026-11-16",
  "tg_offset": 511048087,
  "x_copy": {
   "day": "2026-11-17",
-  "n": 23
+  "n": 24
  }
 }

@@ -2116,7 +2116,7 @@
    }
   },
   "41644272430": {
-   "ahorro_vs_amazon": 20,
+   "ahorro_vs_amazon": 23,
    "amz_low30": null,
    "amz_median": null,
    "amz_price": 107.38,
@@ -2126,12 +2126,13 @@
    "ean": "7340055398251",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "20 % por debajo del habitual en Amazon (107.38)",
+   "motivo": "23 % por debajo del habitual en Amazon (107.38)",
    "name": "Marshall Minor IV Negro TWS 30h IPX4 Auriculares inalámbricos",
-   "pp_drop": 20,
+   "pp_drop": 22,
    "pp_median": 106.95,
-   "pp_price": 85.95,
-   "t": "2026-11-16T15:40:40.598894+00:00",
+   "pp_price": 82.95,
+   "t": "2026-11-17T18:45:48.491889+00:00",
+   "v": 3,
    "veredicto": "oferta_real"
   },
   "41887696311": {
@@ -2154,23 +2155,24 @@
    "veredicto": "amazon_mas_barato"
   },
   "41887696317": {
-   "ahorro_vs_amazon": 13,
+   "ahorro_vs_amazon": 8,
    "amz_low30": null,
-   "amz_median": null,
-   "amz_price": 412.28,
+   "amz_median": 389.99,
+   "amz_price": 347.99,
    "amz_title": "Samsung Galaxy LTE (2025) Ultra Smart Watch, tamaño de caja de 47 mm, azul - [Versiones italiano, húngaro, polaco, rumano, austriaco y suizo]",
    "asin": "B0G6F2724R",
    "disponible": true,
    "ean": "8806097625285",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "13 % por debajo del habitual en Amazon (412.28)",
+   "motivo": "Amazon 347.99 frente a 359.95",
    "name": "Samsung Galaxy Watch Ultra 2025 47 mm LTE Azul Titanio 1,5 pulgadas AMOLED GPS 8 días 10ATM",
    "pp_drop": 17,
    "pp_median": 432.95,
    "pp_price": 359.95,
-   "t": "2026-11-16T13:05:35.879053+00:00",
-   "veredicto": "oferta_real"
+   "t": "2026-11-17T18:45:48.491889+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
   },
   "42520354709": {
    "ahorro_vs_amazon": 25,
@@ -5560,12 +5562,12 @@
  },
  "night_at": "2026-11-17T06:05:20.554247+00:00",
  "resumen": {
-  "amazon_mas_barato": 15,
+  "amazon_mas_barato": 16,
   "dudoso": 3,
   "no_esta": 9,
-  "oferta_real": 19,
+  "oferta_real": 18,
   "pvpr_inflado": 1,
   "sin_precio": 1
  },
- "updated": "2026-11-17T18:01:13.651055+00:00"
+ "updated": "2026-11-17T18:45:48.491889+00:00"
 }
