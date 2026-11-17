@@ -67,20 +67,6 @@
  "manual": {},
  "manual_queue": [
   {
-   "a": "B0B5GCY7T3",
-   "c": "",
-   "e": "",
-   "img": "https://m.media-amazon.com/images/I/71mRjFT-14L._AC_SL1500_.jpg",
-   "m": 337,
-   "n": 65,
-   "op": 79.99,
-   "p": 29.99,
-   "q": "2026-11-17T11:15:42.925813+00:00",
-   "r": 4.4,
-   "t": "2026-11-17T10:45:39.518196+00:00",
-   "title": "JACK & JONES Jjimike Jjoriginal JJ 111 Noos - Jeans Hombre"
-  },
-  {
    "a": "B07J9N9ZP4",
    "c": "",
    "e": "",
@@ -96,7 +82,7 @@
   }
  ],
  "manual_todo": [],
- "next_at": "2026-11-17T11:56:11.011541+00:00",
+ "next_at": "2026-11-17T12:28:25.666821+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -1296,6 +1282,17 @@
    "p": 123.6,
    "t": "2026-11-11T18:31:31.263986+00:00",
    "title": "Matnature | MatFoam | Colchón Viscosoft Reversible | Firme e Indeformable | Altura 21 cm | Muy Transpirable Antibacterial | Óptima Termoregulación | Tejido Antideslizante (135 x 200 cm)",
+   "v": []
+  },
+  "B0B5GCY7T3": {
+   "c": "",
+   "d": 63,
+   "e": "",
+   "m": 362,
+   "manual": true,
+   "p": 29.99,
+   "t": "2026-11-17T12:01:06.762869+00:00",
+   "title": "JACK & JONES Jjimike Jjoriginal JJ 111 Noos - Jeans Hombre",
    "v": []
   },
   "B0B6CKMLQH": {
@@ -3281,6 +3278,6 @@
  "tg_offset": 511048086,
  "x_copy": {
   "day": "2026-11-17",
-  "n": 10
+  "n": 11
  }
 }
