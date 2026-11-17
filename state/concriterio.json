@@ -65,44 +65,31 @@
   "eReaders": "2026-11-16T13:55:32.747613+00:00"
  },
  "manual": {
-  "B00BIKD1W0": {
-   "a": "B00BIKD1W0",
+  "B00KIDBV0M": {
+   "a": "B00KIDBV0M",
    "c": "",
    "e": "",
-   "img": "https://m.media-amazon.com/images/I/71cF1Y-JccL._AC_SL1500_.jpg",
-   "m": 345,
-   "n": 3,
-   "op": 30.99,
-   "p": 23.79,
-   "r": 5.0,
-   "t": "2026-11-17T12:35:46.012207+00:00",
-   "title": "Julbo Plasma GAFAS DE SNOW Unisex adulto"
+   "img": "https://m.media-amazon.com/images/I/51ZxsxEPhhL._AC_SL1200_.jpg",
+   "m": 363,
+   "n": 48616,
+   "op": null,
+   "p": 35.95,
+   "r": 4.5,
+   "t": "2026-11-17T20:30:59.284408+00:00",
+   "title": "Columbia Steens Mountain Full Zip"
   },
-  "B0DXXBQ2JK": {
-   "a": "B0DXXBQ2JK",
+  "B01N4Q8KO2": {
+   "a": "B01N4Q8KO2",
    "c": "",
    "e": "",
-   "img": "https://m.media-amazon.com/images/I/814j9+zAALL._AC_SL1500_.jpg",
-   "m": 344,
-   "n": 3538,
-   "op": 79.95,
-   "p": 46.99,
-   "r": 4.6,
-   "t": "2026-11-17T12:35:46.012207+00:00",
-   "title": "Skechers Mujer Bobs Squad Chaos Current Muse Slip-In Entrenador"
-  },
-  "B0FJYH9S4S": {
-   "a": "B0FJYH9S4S",
-   "c": "",
-   "e": "",
-   "img": "https://m.media-amazon.com/images/I/71F58Z-8HeL._AC_SL1500_.jpg",
-   "m": 346,
-   "n": 12,
-   "op": 75.0,
-   "p": 51.0,
-   "r": 4.8,
-   "t": "2026-11-17T12:35:46.012207+00:00",
-   "title": "Arena One Go - Mochila deportiva para natación, viaje, tamaño grande, 45 litros"
+   "img": "https://m.media-amazon.com/images/I/51O5EhK2C+L._AC_SL1500_.jpg",
+   "m": 364,
+   "n": 1032,
+   "op": null,
+   "p": 48.9,
+   "r": 4.2,
+   "t": "2026-11-17T20:30:59.284408+00:00",
+   "title": "Carrera 5041/S XT RCT Gafas de sol, azul (Matt Blue/Blue Sky Grey Speckled), 56 Unisex-Adulto"
   }
  },
  "manual_queue": [],
@@ -3483,7 +3470,7 @@
   }
  ],
  "summary_day": "2026-11-16",
- "tg_offset": 511048087,
+ "tg_offset": 511048094,
  "x_copy": {
   "day": "2026-11-17",
   "n": 27
