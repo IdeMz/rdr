@@ -686,10 +686,19 @@
    "via": "nombre"
   },
   "4711377344272": {
-   "a": "B0F4LQ216W",
-   "t": "2026-11-14T18:30:55.099025+00:00",
-   "title": "MSI Gaming RTX 5060 Ti 8G Ventus 2X OC Plus - Tarjeta gráfica (8 GB GDDR7, TBA-bit, Rendimiento Extremo: TBA MHz, DisplayPort x3 2.1a, HDMI 2.1b, NVIDIA Blackwe",
-   "via": "nombre"
+   "a": "",
+   "t": "2026-11-17T23:35:25.173455+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "MSI GeForce RTX 5060 8G Ventus 2X OC"
+    ],
+    "nombre": [
+     "MSI GeForce RTX 5060 Ti 8G VENTUS 2X OC PLUS - Tarjeta gráfica",
+     "RTX 5060 8GB MSI Ventus 2X OC V1 GDDR7",
+     "MSI GeForce RTX 5060 8G Ventus 2X OC"
+    ]
+   }
   },
   "4711387078389": {
    "a": "B0C4FY8DC6",
@@ -1287,6 +1296,26 @@
    "t": "2026-11-14T18:30:55.099025+00:00",
    "title": "VIOFO A329S 4K 60FPS 2CH Dashcam Del.+Tras., STARVIS 2, Wi-Fi 6",
    "via": "modelo"
+  },
+  "6972147077273": {
+   "a": "",
+   "t": "2026-11-17T23:35:25.173455+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "modelo": [
+     "VIOFO A229 Plus 2K+2K Dashcam Del.+Tras., STARVIS 2 HDR, Wi-Fi 5GHz, GPS",
+     "VIOFO A229 Pro 4K+2K Dashcam Del.+Tras., STARVIS 2 HDR, Wi-Fi 5G, GPS, CPL",
+     "VIOFO A119 Mini 2 Dashcam para salpicadero delantera, Control por voz"
+    ],
+    "nombre": [
+     "VIOFO A229 Pro 4K 3CH Dashcam Del.+Tras.+Int., STARVIS 2 HDR, Wi-Fi 5G, GPS",
+     "VIOFO A329S 4K 3CH Dashcam Del.+Tras.+Int., Wi-Fi 6, Eco, 210° Interior",
+     "VIOFO A119M Pro 4K HDR Mini Dashcam Delantera, STARVIS 2, Wi-Fi 6, GPS, CPL"
+    ]
+   }
   },
   "6972884752242": {
    "a": "B0H7HZTXYC",
@@ -2432,23 +2461,26 @@
    "veredicto": "amazon_mas_barato"
   },
   "43812033191": {
-   "ahorro_vs_amazon": 11,
-   "amz_low30": null,
-   "amz_median": null,
-   "amz_price": 615.01,
-   "amz_title": "MSI Gaming RTX 5060 Ti 8G Ventus 2X OC Plus - Tarjeta gráfica (8 GB GDDR7, TBA-bit, Rendimiento Extremo: TBA MHz, DisplayPort x3 2.1a, HDMI 2.1b, NVIDIA Blackwe",
-   "asin": "B0F4LQ216W",
-   "disponible": true,
    "ean": "4711377344272",
-   "encontrado_por": "nombre",
    "lista": "candidates",
-   "motivo": "11 % por debajo del habitual en Amazon (615.01)",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
    "name": "MSI GeForce RTX 5060 8G VENTUS 2X OC NVIDIA 8GB GDDR7 PCIe 5.0 2 ventiladores HDMI 2.1 3 DisplayPort Tarjeta gráfica",
    "pp_drop": 13,
    "pp_median": 632.95,
    "pp_price": 547.95,
-   "t": "2026-11-14T18:30:55.099025+00:00",
-   "veredicto": "oferta_real"
+   "t": "2026-11-17T23:35:25.173455+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "MSI GeForce RTX 5060 8G Ventus 2X OC"
+    ],
+    "nombre": [
+     "MSI GeForce RTX 5060 Ti 8G VENTUS 2X OC PLUS - Tarjeta gráfica",
+     "RTX 5060 8GB MSI Ventus 2X OC V1 GDDR7",
+     "MSI GeForce RTX 5060 8G Ventus 2X OC"
+    ]
+   }
   },
   "44787550502": {
    "ahorro_vs_amazon": 14,
@@ -5195,7 +5227,8 @@
    "pp_drop": 16,
    "pp_median": 208.95,
    "pp_price": 175.95,
-   "t": "2026-11-16T18:55:32.141614+00:00",
+   "t": "2026-11-17T23:35:25.173455+00:00",
+   "v": 3,
    "veredicto": "oferta_real"
   },
   "46599140681": {
@@ -5611,6 +5644,33 @@
    "t": "2026-11-16T20:01:04.281373+00:00",
    "veredicto": "oferta_real"
   },
+  "46599143671": {
+   "ean": "6972147077273",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Dashcam VIOFO T330WW 3CH 4K GPS",
+   "pp_drop": 14,
+   "pp_median": 429.99,
+   "pp_price": 369.0,
+   "t": "2026-11-17T23:35:25.173455+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "modelo": [
+     "VIOFO A229 Plus 2K+2K Dashcam Del.+Tras., STARVIS 2 HDR, Wi-Fi 5GHz, GPS",
+     "VIOFO A229 Pro 4K+2K Dashcam Del.+Tras., STARVIS 2 HDR, Wi-Fi 5G, GPS, CPL",
+     "VIOFO A119 Mini 2 Dashcam para salpicadero delantera, Control por voz"
+    ],
+    "nombre": [
+     "VIOFO A229 Pro 4K 3CH Dashcam Del.+Tras.+Int., STARVIS 2 HDR, Wi-Fi 5G, GPS",
+     "VIOFO A329S 4K 3CH Dashcam Del.+Tras.+Int., Wi-Fi 6, Eco, 210° Interior",
+     "VIOFO A119M Pro 4K HDR Mini Dashcam Delantera, STARVIS 2, Wi-Fi 6, GPS, CPL"
+    ]
+   }
+  },
   "46599143703": {
    "ean": "8434388458016",
    "lista": "candidates",
@@ -5955,14 +6015,14 @@
    }
   }
  },
- "night_at": "2026-11-17T23:20:32.908931+00:00",
+ "night_at": "2026-11-17T23:35:25.173455+00:00",
  "resumen": {
   "amazon_mas_barato": 20,
   "dudoso": 3,
-  "no_esta": 12,
-  "oferta_real": 21,
+  "no_esta": 14,
+  "oferta_real": 20,
   "pvpr_inflado": 3,
   "sin_precio": 2
  },
- "updated": "2026-11-17T23:20:32.908931+00:00"
+ "updated": "2026-11-17T23:35:25.173455+00:00"
 }
