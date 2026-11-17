@@ -64,21 +64,9 @@
   "Zapatillas": "2026-11-15T10:01:03.183163+00:00",
   "eReaders": "2026-11-16T13:55:32.747613+00:00"
  },
- "manual": {
-  "B07J9N9ZP4": {
-   "a": "B07J9N9ZP4",
-   "c": "",
-   "e": "",
-   "img": "https://m.media-amazon.com/images/I/618KpsaiAuL._AC_SL1200_.jpg",
-   "m": 336,
-   "n": 125,
-   "op": 107.79,
-   "p": 82.19,
-   "r": 4.6,
-   "t": "2026-11-17T10:45:39.518196+00:00",
-   "title": "Bering 14526 Reloj de Cuarzo para Mujer con Caja de Acero Inoxidable de 26 mm y Esfera, Correa milanesa, Cristal de Zafiro y Resistencia al Agua de 3 ATM"
-  },
-  "B08FCFC8B1": {
+ "manual": {},
+ "manual_queue": [
+  {
    "a": "B08FCFC8B1",
    "c": "",
    "e": "",
@@ -87,11 +75,12 @@
    "n": 36,
    "op": 51.0,
    "p": 26.99,
+   "q": "2026-11-17T11:15:42.925813+00:00",
    "r": 4.2,
    "t": "2026-11-17T10:45:39.518196+00:00",
    "title": "Tognana Big Family - Sartén (36 cm)"
   },
-  "B0B5GCY7T3": {
+  {
    "a": "B0B5GCY7T3",
    "c": "",
    "e": "",
@@ -100,11 +89,26 @@
    "n": 65,
    "op": 79.99,
    "p": 29.99,
+   "q": "2026-11-17T11:15:42.925813+00:00",
    "r": 4.4,
    "t": "2026-11-17T10:45:39.518196+00:00",
    "title": "JACK & JONES Jjimike Jjoriginal JJ 111 Noos - Jeans Hombre"
+  },
+  {
+   "a": "B07J9N9ZP4",
+   "c": "",
+   "e": "",
+   "img": "https://m.media-amazon.com/images/I/618KpsaiAuL._AC_SL1200_.jpg",
+   "m": 336,
+   "n": 125,
+   "op": 107.79,
+   "p": 82.19,
+   "q": "2026-11-17T11:15:42.925813+00:00",
+   "r": 4.6,
+   "t": "2026-11-17T10:45:39.518196+00:00",
+   "title": "Bering 14526 Reloj de Cuarzo para Mujer con Caja de Acero Inoxidable de 26 mm y Esfera, Correa milanesa, Cristal de Zafiro y Resistencia al Agua de 3 ATM"
   }
- },
+ ],
  "manual_todo": [],
  "next_at": "2026-11-17T11:26:48.730096+00:00",
  "offer": null,
@@ -3277,7 +3281,7 @@
   }
  ],
  "summary_day": "2026-11-16",
- "tg_offset": 511048079,
+ "tg_offset": 511048086,
  "x_copy": {
   "day": "2026-11-17",
   "n": 9
