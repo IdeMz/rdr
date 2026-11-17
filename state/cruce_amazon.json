@@ -225,6 +225,12 @@
    "title": "WD Elements 8 TB Disco duro externo de escritorio, Compatibilidad USB 3.0, Plug-and-Play solución para un fácil almacenamiento adicional de tus fotos, música, v",
    "via": "ean"
   },
+  "0718037868448": {
+   "a": "B07VP5X239",
+   "t": "2026-11-17T00:05:35.720255+00:00",
+   "title": "WD 5TB My Passport Disco Duro Externo Portátil, USB 3.2 Gen 1/USB 3.0, Copia de seguridad y protección con contraseña, Formateado para Windows, ChromeOS y MacOS",
+   "via": "ean"
+  },
   "0740617207781": {
    "a": "B008CP5R8K",
    "t": "2026-11-14T00:51:58.629494+00:00",
@@ -265,6 +271,12 @@
    "a": "B0CT8W3Y29",
    "t": "2026-11-13T11:40:39.260187+00:00",
    "title": "CORSAIR K65 PLUS WIRELESS 75% RGB Teclado Mecánico para Juegos Intercambiable en Caliente - Interruptores Lineales Rojos CORSAIR MLX Prelubricados - Insonorizac",
+   "via": "ean"
+  },
+  "0840006669005": {
+   "a": "B0CTKSDDDJ",
+   "t": "2026-11-17T00:05:35.720255+00:00",
+   "title": "Corsair M75 Ratón para Juegos FPS Ligero RGB con Cable – 26.000 PPP – Botones Laterales Intercambiables – PC – Negro",
    "via": "ean"
   },
   "0840353958159": {
@@ -971,6 +983,12 @@
    "title": "CATLINK Scoop Robot Pro Arenero Gatos Autolimpiable, Arenero Automático con Doble Cámara IA y App, Interior 82 L, Depósito 15 L, 30 dB, para Gatos Grandes y Var",
    "via": "nombre"
   },
+  "6973154655317": {
+   "a": "B0FZJG6WW9",
+   "t": "2026-11-17T00:05:35.720255+00:00",
+   "title": "SHARGE ICEMAG 3 Qi2.2 25W Power Bank MagSafe 10000mAh con Refrigeración Activa",
+   "via": "nombre"
+  },
   "6974958250739": {
    "a": "B0FF1X7VGL",
    "t": "2026-11-13T22:50:26.355987+00:00",
@@ -1501,6 +1519,25 @@
    "t": "2026-11-16T10:45:46.172773+00:00",
    "veredicto": "oferta_real"
   },
+  "37600256521": {
+   "ahorro_vs_amazon": 4,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 192.99,
+   "amz_title": "WD 5TB My Passport Disco Duro Externo Portátil, USB 3.2 Gen 1/USB 3.0, Copia de seguridad y protección con contraseña, Formateado para Windows, ChromeOS y MacOS",
+   "asin": "B07VP5X239",
+   "disponible": true,
+   "ean": "0718037868448",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "solo 4 % por debajo del habitual en Amazon (192.99)",
+   "name": "WD My Passport 5TB Negro USB 3.2 Gen 1 Disco duro externo",
+   "pp_drop": 11,
+   "pp_median": 207.95,
+   "pp_price": 185.48,
+   "t": "2026-11-17T00:05:35.720255+00:00",
+   "veredicto": "dudoso"
+  },
   "37600256522": {
    "ahorro_vs_amazon": null,
    "amz_low30": null,
@@ -1597,6 +1634,25 @@
    "pp_price": 442.94,
    "t": "2026-11-15T15:15:41.208340+00:00",
    "veredicto": "amazon_mas_barato"
+  },
+  "39546563915": {
+   "ahorro_vs_amazon": 16,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 89.99,
+   "amz_title": "Corsair M75 Ratón para Juegos FPS Ligero RGB con Cable – 26.000 PPP – Botones Laterales Intercambiables – PC – Negro",
+   "asin": "B0CTKSDDDJ",
+   "disponible": true,
+   "ean": "0840006669005",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "16 % por debajo del habitual en Amazon (89.99)",
+   "name": "Corsair M75 Lightweight RGB 26000 DPI USB Ratón",
+   "pp_drop": 13,
+   "pp_median": 86.95,
+   "pp_price": 75.95,
+   "t": "2026-11-17T00:05:35.720255+00:00",
+   "veredicto": "oferta_real"
   },
   "39617298309": {
    "ahorro_vs_amazon": 19,
@@ -1896,6 +1952,25 @@
    "pp_median": 632.95,
    "pp_price": 547.95,
    "t": "2026-11-14T18:30:55.099025+00:00",
+   "veredicto": "oferta_real"
+  },
+  "44787550502": {
+   "ahorro_vs_amazon": 14,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 69.99,
+   "amz_title": "SHARGE ICEMAG 3 Qi2.2 25W Power Bank MagSafe 10000mAh con Refrigeración Activa",
+   "asin": "B0FZJG6WW9",
+   "disponible": true,
+   "ean": "6973154655317",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "14 % por debajo del habitual en Amazon (69.99)",
+   "name": "Sharge ICEMAG 3 Negro 10000mAh 25W Qi2 Power Bank",
+   "pp_drop": 14,
+   "pp_median": 69.99,
+   "pp_price": 59.99,
+   "t": "2026-11-17T00:05:35.720255+00:00",
    "veredicto": "oferta_real"
   },
   "44787550884": {
@@ -4630,14 +4705,14 @@
    }
   }
  },
- "night_at": "2026-11-16T23:50:25.846029+00:00",
+ "night_at": "2026-11-17T00:05:35.720255+00:00",
  "resumen": {
   "amazon_mas_barato": 19,
-  "dudoso": 2,
+  "dudoso": 3,
   "no_esta": 10,
-  "oferta_real": 20,
+  "oferta_real": 22,
   "pvpr_inflado": 0,
   "sin_precio": 6
  },
- "updated": "2026-11-16T23:50:25.846029+00:00"
+ "updated": "2026-11-17T00:05:35.720255+00:00"
 }
