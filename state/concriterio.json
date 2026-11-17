@@ -57,7 +57,7 @@
   "Salud": "2026-11-16T16:50:42.783335+00:00",
   "Smartwatch": "2026-11-15T15:50:40.820191+00:00",
   "Suplementos": "2026-11-17T14:01:04.582833+00:00",
-  "Tablets": "2026-11-15T11:10:43.114079+00:00",
+  "Tablets": "2026-11-17T16:01:10.840347+00:00",
   "Televisores": "2026-11-17T13:01:23.458704+00:00",
   "Textil hogar": "2026-11-16T21:10:41.415586+00:00",
   "Videojuegos": "2026-11-17T09:01:06.401047+00:00",
@@ -107,7 +107,7 @@
  },
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-17T15:58:03.943136+00:00",
+ "next_at": "2026-11-17T16:28:03.112917+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -1981,6 +1981,17 @@
    "title": "Ninja Detect Power Pro, Batidora y Procesador de Alimentos, Negro",
    "v": []
   },
+  "B0D947FZQX": {
+   "c": "Tablets",
+   "d": 32,
+   "e": "📲",
+   "m": 370,
+   "p": 115.99,
+   "s": "ofertas",
+   "t": "2026-11-17T16:01:42.815485+00:00",
+   "title": "SKYEGG Tablet 10 Pulgadas Android 15 con Gemini AI, 22GB RAM + 128GB ROM (Ampliable 2TB), Tablet con Teclado y Ratón, Widevine L1, WiFi 5G, Batería 8000mAh, Pantalla IPS HD, Cuerpo Metálico – Gris",
+   "v": []
+  },
   "B0D9JS9XS1": {
    "c": "Mochilas y maletas",
    "d": 34,
@@ -3309,10 +3320,6 @@
    "t": "2026-11-17T10:01:21.690221+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0CKML3W6R": {
-   "t": "2026-11-16T15:40:40.598894+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0CTZMV8JX": {
    "t": "2026-11-17T10:01:21.690221+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3325,20 +3332,12 @@
    "t": "2026-11-17T13:01:23.458704+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0FP5R9BDZ": {
-   "t": "2026-11-16T15:40:40.598894+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0FQGPHDT7": {
    "t": "2026-11-17T15:30:58.601953+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0FR981Z25": {
    "t": "2026-11-16T20:35:50.275747+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0FRFQC6PT": {
-   "t": "2026-11-16T15:40:40.598894+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0G4DP1KP6": {
@@ -3388,6 +3387,6 @@
  "tg_offset": 511048087,
  "x_copy": {
   "day": "2026-11-17",
-  "n": 18
+  "n": 19
  }
 }
