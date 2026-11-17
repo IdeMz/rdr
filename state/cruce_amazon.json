@@ -525,6 +525,12 @@
    "title": "KÄRCHER NT 30/1 Tact Te M Aspirador Multiuso en seco y húmedo, Elimina de Forma Segura los Polvos Respirables de Clase M, Gris",
    "via": "ean"
   },
+  "4210201415022": {
+   "a": "B0B4SGW9YW",
+   "t": "2026-11-17T11:01:06.148601+00:00",
+   "title": "Oral-B iO Series 4 Cepillo de dientes eléctrico – Cepillo de dientes eléctrico, incluye 1 cepillo, tecnología magnética, estuche de viaje, 4 modos de cepillado ",
+   "via": "ean"
+  },
   "4260499852320": {
    "a": "B08S7MYYL7",
    "t": "2026-11-13T20:40:48.338068+00:00",
@@ -1514,6 +1520,12 @@
    "title": "DiamondClean 9000 HX9913/17",
    "via": "ean"
   },
+  "8713439248852": {
+   "a": "B0CYT53J41",
+   "t": "2026-11-17T11:01:06.148601+00:00",
+   "title": "Trust Gaming GXT 867 Acira 60% Teclado Mecánico Alemán QWERTZ Layout, Iluminación RGB, Teclas Dobles, USB Mini Portátil Programable Pequeño Teclado Gaming 60% P",
+   "via": "nombre"
+  },
   "8715946725949": {
    "a": "B0CVQQLLQT",
    "t": "2026-11-15T00:20:27.121298+00:00",
@@ -2169,6 +2181,25 @@
    "pp_price": 86.99,
    "t": "2026-11-17T03:05:20.365221+00:00",
    "veredicto": "amazon_mas_barato"
+  },
+  "43757357888": {
+   "ahorro_vs_amazon": 27,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 110.24,
+   "amz_title": "Oral-B iO Series 4 Cepillo de dientes eléctrico – Cepillo de dientes eléctrico, incluye 1 cepillo, tecnología magnética, estuche de viaje, 4 modos de cepillado ",
+   "asin": "B0B4SGW9YW",
+   "disponible": true,
+   "ean": "4210201415022",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "27 % por debajo del habitual en Amazon (110.24)",
+   "name": "Oral-B iO Series 4 Negro Cepillo de dientes eléctrico",
+   "pp_drop": 28,
+   "pp_median": 111.74,
+   "pp_price": 80.63,
+   "t": "2026-11-17T11:01:06.148601+00:00",
+   "veredicto": "oferta_real"
   },
   "43803281748": {
    "ahorro_vs_amazon": 0,
@@ -4228,6 +4259,25 @@
    "t": "2026-11-17T00:50:28.547812+00:00",
    "veredicto": "dudoso"
   },
+  "46256205677": {
+   "ahorro_vs_amazon": 42,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 49.99,
+   "amz_title": "Trust Gaming GXT 867 Acira 60% Teclado Mecánico Alemán QWERTZ Layout, Iluminación RGB, Teclas Dobles, USB Mini Portátil Programable Pequeño Teclado Gaming 60% P",
+   "asin": "B0CYT53J41",
+   "disponible": true,
+   "ean": "8713439248852",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "42 % por debajo del habitual en Amazon (49.99)",
+   "name": "Trust Gaming GXT 867 Acira 60% Outemu Red RGB Español Negro Teclado gaming mecánico",
+   "pp_drop": 37,
+   "pp_median": 45.96,
+   "pp_price": 28.92,
+   "t": "2026-11-17T11:01:06.148601+00:00",
+   "veredicto": "oferta_real"
+  },
   "46256205684": {
    "ahorro_vs_amazon": -5,
    "amz_low30": null,
@@ -5396,9 +5446,9 @@
   "amazon_mas_barato": 13,
   "dudoso": 3,
   "no_esta": 9,
-  "oferta_real": 15,
+  "oferta_real": 17,
   "pvpr_inflado": 0,
   "sin_precio": 2
  },
- "updated": "2026-11-17T10:31:06.725588+00:00"
+ "updated": "2026-11-17T11:01:06.148601+00:00"
 }

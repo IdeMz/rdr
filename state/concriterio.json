@@ -48,7 +48,7 @@
   "Pequeño electrodoméstico": "2026-11-16T18:55:32.141614+00:00",
   "Perfumes": "2026-11-15T21:40:42.221187+00:00",
   "Periféricos": "2026-11-17T10:01:21.690221+00:00",
-  "Perros": "2026-11-15T07:01:06.978986+00:00",
+  "Perros": "2026-11-17T11:01:06.148601+00:00",
   "Portátiles": "2026-11-17T08:30:57.514721+00:00",
   "Proyectores": "2026-11-16T09:20:39.431359+00:00",
   "Redes y wifi": "2026-11-16T08:45:43.168202+00:00",
@@ -106,7 +106,7 @@
   }
  },
  "manual_todo": [],
- "next_at": "2026-11-17T10:58:47.952168+00:00",
+ "next_at": "2026-11-17T11:26:48.730096+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -157,6 +157,17 @@
    "p": 24.94,
    "t": "2026-11-08T11:41:12.275160+00:00",
    "title": "Lavazza, Qualità Rossa, Café en Grano Natural, Ideal para la Máquina de Café Espresso, con Notas Aromáticas de Chocolate y Frutos Secos, Arábica y Robusta, Intensidad 5, Tueste Medio, Paquete de 1 kg",
+   "v": []
+  },
+  "B0041W2VIM": {
+   "c": "Perros",
+   "d": 39,
+   "e": "🐶",
+   "m": 360,
+   "p": 27.79,
+   "s": "ambas",
+   "t": "2026-11-17T11:01:42.805962+00:00",
+   "title": "Julius-K9, Arnés IDC Power, Tamaño: L / 1, Rosa",
    "v": []
   },
   "B004NBZB2Y": {
@@ -3182,10 +3193,6 @@
    "t": "2026-11-16T18:55:32.141614+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B07KJZM3QP": {
-   "t": "2026-11-16T10:45:46.172773+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B08H99BPJN": {
    "t": "2026-11-17T09:01:06.401047+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3273,6 +3280,6 @@
  "tg_offset": 511048079,
  "x_copy": {
   "day": "2026-11-17",
-  "n": 8
+  "n": 9
  }
 }
