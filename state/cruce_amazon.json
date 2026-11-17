@@ -100,6 +100,21 @@
     ]
    }
   },
+  "0197498115399": {
+   "a": "",
+   "t": "2026-11-17T22:05:22.962766+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "Ratón Hyperx Blanco"
+    ],
+    "nombre": [
+     "HyperX Haste 2 – Ratón gaming con cable, ultraligero 53g, sensor preciso HyperX 26K, cable HyperFlex",
+     "HyperX Haste 2 Wireless – Ratón gaming inalámbrico, ultraligero 61g, batería 100h, sensor preciso Hy",
+     "Ratón Hyperx Blanco"
+    ]
+   }
+  },
   "0198122955305": {
    "a": "B0C89KZ874",
    "t": "2026-11-13T16:01:12.341933+00:00",
@@ -1950,6 +1965,28 @@
    "t": "2026-11-15T15:15:41.208340+00:00",
    "veredicto": "amazon_mas_barato"
   },
+  "39471821088": {
+   "ean": "0197498115399",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "HP HyperX Pulsefire Haste 2 Core Blanco/Verde/Púrpura 3600 DPI 6 botones USB 59 g Ratón inalámbricos",
+   "pp_drop": 26,
+   "pp_median": 44.95,
+   "pp_price": 33.07,
+   "t": "2026-11-17T22:05:22.962766+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "Ratón Hyperx Blanco"
+    ],
+    "nombre": [
+     "HyperX Haste 2 – Ratón gaming con cable, ultraligero 53g, sensor preciso HyperX 26K, cable HyperFlex",
+     "HyperX Haste 2 Wireless – Ratón gaming inalámbrico, ultraligero 61g, batería 100h, sensor preciso Hy",
+     "Ratón Hyperx Blanco"
+    ]
+   }
+  },
   "39546563915": {
    "ahorro_vs_amazon": 16,
    "amz_low30": null,
@@ -2058,22 +2095,23 @@
    "veredicto": "sin_precio"
   },
   "40045392284": {
-   "ahorro_vs_amazon": -3,
+   "ahorro_vs_amazon": -2,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 152.0,
+   "amz_price": 154.04,
    "amz_title": "ASUS VY249HGE - Monitor Gaming Eye Care de 24 Pulgadas FHD (1920x1080), IPS, 144 Hz, IPS, SmoothMotion, 1 ms, FreeSync Premium, Eye Care Plus, antiparpadeos, Tr",
    "asin": "B0C4FY8DC6",
    "disponible": true,
    "ean": "4711387078389",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "Amazon 152.00 frente a 156.99",
+   "motivo": "Amazon 154.04 frente a 156.99",
    "name": "ASUS VY249HGE Negro 23,8 pulgadas Full HD IPS 144Hz 1ms FreeSync Premium Monitor",
    "pp_drop": 18,
    "pp_median": 190.45,
    "pp_price": 156.99,
-   "t": "2026-11-16T15:05:39.512603+00:00",
+   "t": "2026-11-17T22:05:22.962766+00:00",
+   "v": 3,
    "veredicto": "amazon_mas_barato"
   },
   "40167730445": {
@@ -2998,22 +3036,23 @@
    "veredicto": "oferta_real"
   },
   "45626822190": {
-   "ahorro_vs_amazon": 16,
+   "ahorro_vs_amazon": 17,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 2393.78,
+   "amz_price": 2431.41,
    "amz_title": "Palit GeForce RTX 5080 Infinity 3 (16GB GDDR7/PCI Express 5.0/2617MHz/30000MHz)",
    "asin": "B0H41J37CR",
    "disponible": true,
    "ean": "4710562245769",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "16 % por debajo del habitual en Amazon (2393.78)",
+   "motivo": "17 % por debajo del habitual en Amazon (2431.41)",
    "name": "Palit GeForce RTX 5080 Infinity 3 16GB GDDR7 Tarjeta gráfica",
    "pp_drop": 12,
    "pp_median": 2285.94,
    "pp_price": 2011.95,
-   "t": "2026-11-15T13:25:30.562134+00:00",
+   "t": "2026-11-17T22:05:22.962766+00:00",
+   "v": 3,
    "veredicto": "oferta_real"
   },
   "45626822202": {
@@ -5734,14 +5773,14 @@
    }
   }
  },
- "night_at": "2026-11-17T06:05:20.554247+00:00",
+ "night_at": "2026-11-17T22:05:22.962766+00:00",
  "resumen": {
   "amazon_mas_barato": 17,
   "dudoso": 3,
-  "no_esta": 12,
+  "no_esta": 13,
   "oferta_real": 18,
   "pvpr_inflado": 2,
   "sin_precio": 1
  },
- "updated": "2026-11-17T20:45:44.607165+00:00"
+ "updated": "2026-11-17T22:05:22.962766+00:00"
 }
