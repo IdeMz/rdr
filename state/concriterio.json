@@ -50,7 +50,7 @@
   "Periféricos": "2026-11-17T10:01:21.690221+00:00",
   "Perros": "2026-11-17T11:01:06.148601+00:00",
   "Portátiles": "2026-11-17T08:30:57.514721+00:00",
-  "Proyectores": "2026-11-16T09:20:39.431359+00:00",
+  "Proyectores": "2026-11-17T17:31:15.607799+00:00",
   "Redes y wifi": "2026-11-16T08:45:43.168202+00:00",
   "Relojes": "2026-11-17T12:30:54.443182+00:00",
   "Robots de cocina": "2026-11-15T15:15:41.208340+00:00",
@@ -107,7 +107,7 @@
  },
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-17T17:30:53.671716+00:00",
+ "next_at": "2026-11-17T17:57:49.911161+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -1681,6 +1681,17 @@
    "p": 39.99,
    "t": "2026-11-06T19:31:22.583572+00:00",
    "title": "Philips OneBlade 360 con Bluetooth, Recortadora para Barba y Cuerpo, Afeitadora Eléctrica Hombre, Depilación masculina, 2 Cuchillas, 5 Longitudes, 60 minutos de uso con 1 hora de carga, QP4631/30",
+   "v": []
+  },
+  "B0CKHL1VMM": {
+   "c": "Proyectores",
+   "d": 37,
+   "e": "📽️",
+   "m": 373,
+   "p": 379.99,
+   "s": "ofertas",
+   "t": "2026-11-17T17:31:48.778628+00:00",
+   "title": "Nebula Mars 3 Air Proyector Portátil 1080p, Wi‑Fi, 400 Lúmenes",
    "v": []
   },
   "B0CKJTVR1Z": {
@@ -3358,6 +3369,10 @@
    "t": "2026-11-17T08:01:10.979640+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0F4QWS84P": {
+   "t": "2026-11-17T17:31:15.607799+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0F8QFTXW9": {
    "t": "2026-11-17T13:01:23.458704+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3417,6 +3432,6 @@
  "tg_offset": 511048087,
  "x_copy": {
   "day": "2026-11-17",
-  "n": 21
+  "n": 22
  }
 }

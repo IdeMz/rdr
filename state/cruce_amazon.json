@@ -885,6 +885,13 @@
    "title": "Logitech C922 Pro Stream Cámara Web, Webcam para Streaming, Negro",
    "via": "ean"
   },
+  "5099206087316": {
+   "a": "B07W6GVS5C",
+   "t": "2026-11-17T17:31:15.607799+00:00",
+   "title": "Logitech G G213 Prodigy Teclado Gaming",
+   "v": 3,
+   "via": "ean"
+  },
   "5099206099784": {
    "a": "B0FHQ5XXTK",
    "t": "2026-11-15T00:20:27.121298+00:00",
@@ -902,6 +909,13 @@
    "t": "2026-11-17T02:20:36.394189+00:00",
    "title": "Logitech Keys-To-Go 2, Teclado Bluetooth portátil para Tablet - Blanco",
    "via": "nombre"
+  },
+  "5397184688090": {
+   "a": "B09L544CK3",
+   "t": "2026-11-17T17:31:15.607799+00:00",
+   "title": "DELL TECHNOLOGIES Discos Duros Marca Modelo 480GB SSD SATA RI 6GBPS 512E",
+   "v": 3,
+   "via": "ean"
   },
   "5702017818023": {
    "a": "B0DWDQYB87",
@@ -2616,6 +2630,26 @@
    "pp_price": 185.95,
    "t": "2026-11-16T22:05:20.966983+00:00",
    "veredicto": "amazon_mas_barato"
+  },
+  "45403198935": {
+   "ahorro_vs_amazon": 16,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 61.01,
+   "amz_title": "Logitech G G213 Prodigy Teclado Gaming",
+   "asin": "B07W6GVS5C",
+   "disponible": true,
+   "ean": "5099206087316",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "16 % por debajo del habitual en Amazon (61.01)",
+   "name": "Logitech G213 Prodigy RGB LIGHTSYNC QWERTY de membrana Teclado gaming",
+   "pp_drop": 26,
+   "pp_median": 68.95,
+   "pp_price": 50.95,
+   "t": "2026-11-17T17:31:15.607799+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
   },
   "45403200458": {
    "ahorro_vs_amazon": 2,
@@ -4869,6 +4903,26 @@
    "t": "2026-11-16T07:01:09.494097+00:00",
    "veredicto": "sin_precio"
   },
+  "46599141457": {
+   "ahorro_vs_amazon": 12,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 796.99,
+   "amz_title": "DELL TECHNOLOGIES Discos Duros Marca Modelo 480GB SSD SATA RI 6GBPS 512E",
+   "asin": "B09L544CK3",
+   "disponible": true,
+   "ean": "5397184688090",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "12 % por debajo del habitual en Amazon (796.99)",
+   "name": "SSD Dell 480GB 2.5 pulgadas SATA 345-BDZZ",
+   "pp_drop": 16,
+   "pp_median": 830.96,
+   "pp_price": 700.95,
+   "t": "2026-11-17T17:31:15.607799+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "46599141566": {
    "ahorro_vs_amazon": -70,
    "amz_low30": null,
@@ -5509,9 +5563,9 @@
   "amazon_mas_barato": 15,
   "dudoso": 3,
   "no_esta": 9,
-  "oferta_real": 17,
+  "oferta_real": 19,
   "pvpr_inflado": 1,
   "sin_precio": 1
  },
- "updated": "2026-11-17T17:01:11.572901+00:00"
+ "updated": "2026-11-17T17:31:15.607799+00:00"
 }
