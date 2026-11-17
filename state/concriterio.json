@@ -37,6 +37,7 @@
   "Juguetes": "2026-11-16T09:55:33.695632+00:00",
   "Lego": "2026-11-15T15:15:41.208340+00:00",
   "Limpieza del hogar": "2026-11-16T12:30:54.116656+00:00",
+  "Maquillaje": "2026-11-17T07:01:18.076115+00:00",
   "Menaje de cocina": "2026-11-15T09:25:34.345588+00:00",
   "Mochilas y maletas": "2026-11-15T20:50:41.317709+00:00",
   "Monitores": "2026-11-15T19:15:39.725060+00:00",
@@ -91,7 +92,7 @@
    "title": "adidas Men's Zapatilla de Senderismo Terrex Skychaser AX5 Gore-Tex"
   }
  },
- "next_at": "2026-11-16T22:20:16.059593+00:00",
+ "next_at": "2026-11-17T07:29:07.939848+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -1130,6 +1131,17 @@
    "p": 9.42,
    "t": "2026-11-06T08:16:09.038191+00:00",
    "title": "Suright Gomas Elasticas Musculacion, 3 Niveles Bandas Elasticas Musculacion",
+   "v": []
+  },
+  "B09NQG78ND": {
+   "c": "Maquillaje",
+   "d": 36,
+   "e": "💄",
+   "m": 352,
+   "p": 7.99,
+   "s": "ofertas",
+   "t": "2026-11-17T07:01:49.849143+00:00",
+   "title": "Maybelline New York SuperStay Vinyl Ink Efecto Vinilo Fijo, 35 Cheeky",
    "v": []
   },
   "B09TL86RB6": {
@@ -3075,24 +3087,12 @@
    "t": "2026-11-16T18:55:32.141614+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B01N997C1B": {
-   "t": "2026-11-16T07:01:09.494097+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B07KJZM3QP": {
    "t": "2026-11-16T10:45:46.172773+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B07M69276N": {
    "t": "2026-11-16T08:45:43.168202+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B07W6JDL3Z": {
-   "t": "2026-11-16T07:01:09.494097+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B08297PXHL": {
-   "t": "2026-11-16T07:01:09.494097+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B09V8C4QP9": {
@@ -3113,10 +3113,6 @@
   },
   "B0D1XZL4NF": {
    "t": "2026-11-16T09:55:33.695632+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0F1NGVZQ9": {
-   "t": "2026-11-16T07:01:09.494097+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0FP5R9BDZ": {
@@ -3158,46 +3154,22 @@
  },
  "reserve": [
   {
-   "a": "B075MGGDG6",
-   "c": "Textil hogar",
-   "e": "🧺",
-   "img": "https://m.media-amazon.com/images/I/51U3eOqDDuL._AC_UL320_.jpg",
-   "n": 661,
-   "op": 70.9,
-   "p": 49.99,
-   "r": 4.6,
-   "t": "2026-11-16T21:10:41.415586+00:00",
-   "title": "PIKOLIN Edredón Nórdico 500gr Cama 150/160 240x220cm Aloe Vera"
-  },
-  {
-   "a": "B071D4YMR9",
-   "c": "Gaming",
-   "e": "🕹️",
-   "img": "https://m.media-amazon.com/images/I/61yJAvyrwJL._AC_UL320_.jpg",
-   "n": 430,
-   "op": 99.9,
-   "p": 75.33,
-   "r": 4.2,
-   "t": "2026-11-16T20:35:50.275747+00:00",
-   "title": "BAKAJI Silla Gaming Racer direccional para Oficina, ergonómica, Estilo Deportivo, Sillón de Escritorio Racing con 4 Ruedas, giratoria hasta 360°, de Piel sintética Negra con Tela (Rojo)"
-  },
-  {
-   "a": "B0F9YFH2M4",
-   "c": "Decoración navideña",
-   "e": "🎄",
-   "img": "https://m.media-amazon.com/images/I/71jjuUS-lrL._AC_UL320_.jpg",
-   "n": 402,
-   "op": 199.99,
-   "p": 129.99,
-   "r": 4.7,
-   "t": "2026-11-16T20:01:04.281373+00:00",
-   "title": "Govee Christmas Cone Tree Lights 2,28m, Guirnalda RGBIC 370 LED, Negro"
+   "a": "B08N2GLBR5",
+   "c": "Maquillaje",
+   "e": "💄",
+   "img": "https://m.media-amazon.com/images/I/51hHmHLDBoL._AC_UL320_.jpg",
+   "n": 12100,
+   "op": 10.95,
+   "p": 7.44,
+   "r": 4.4,
+   "t": "2026-11-17T07:01:18.076115+00:00",
+   "title": "Revlon ColorStay Satin Ink Pintalabios líquido satinado,"
   }
  ],
  "summary_day": "2026-11-16",
  "tg_offset": 511048072,
  "x_copy": {
-  "day": "2026-11-16",
-  "n": 23
+  "day": "2026-11-17",
+  "n": 1
  }
 }
