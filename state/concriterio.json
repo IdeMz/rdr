@@ -10,7 +10,7 @@
   "Barras de sonido": "2026-11-16T07:01:09.494097+00:00",
   "Bebé": "2026-11-16T07:35:32.483023+00:00",
   "Bricolaje": "2026-11-16T08:10:40.674323+00:00",
-  "Cafeteras": "2026-11-14T14:40:41.311125+00:00",
+  "Cafeteras": "2026-11-17T18:01:13.651055+00:00",
   "Café y cápsulas": "2026-11-15T14:40:39.424977+00:00",
   "Camping y montaña": "2026-11-16T11:20:40.607767+00:00",
   "Cargadores y baterías": "2026-11-15T11:10:43.114079+00:00",
@@ -107,7 +107,7 @@
  },
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-17T17:57:49.911161+00:00",
+ "next_at": "2026-11-17T18:28:37.233540+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -848,11 +848,13 @@
   },
   "B08CBJ8W9W": {
    "c": "Cafeteras",
-   "d": 27,
+   "d": 37,
    "e": "☕",
-   "m": 174,
-   "p": 489.0,
-   "t": "2026-11-10T07:01:36.650115+00:00",
+   "m": 374,
+   "p": 419.0,
+   "pa": 489.0,
+   "s": "busqueda",
+   "t": "2026-11-17T18:03:50.184412+00:00",
    "title": "Philips Serie 5400 Cafetera Superautomática - Sistema de Leche LatteGo, 12 Variedades de Café, Pantalla Intuitiva, 4 Perfiles de Usuario, Cromado (EP5447/90)",
    "v": []
   },
@@ -3432,6 +3434,6 @@
  "tg_offset": 511048087,
  "x_copy": {
   "day": "2026-11-17",
-  "n": 22
+  "n": 23
  }
 }
