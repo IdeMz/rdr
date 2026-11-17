@@ -471,6 +471,21 @@
    "title": "Blaupunkt Valencia 200 DAB BT | DAB+, Bluetooth, sintonizador RDS, manos libres, USB, entrada auxiliar",
    "via": "ean"
   },
+  "4260499852771": {
+   "a": "",
+   "t": "2026-11-17T01:20:27.817734+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "Blaupunkt GTW190A-24V, Altavoz de subgraves Activo bajo el Asiento de 150 vatios"
+    ],
+    "nombre": [
+     "Blaupunkt GTw 190 A | Subwoofer Activo de 150 W de Potencia máxima, Compacto, subwoofer bajo el Suel",
+     "Blaupunkt GTB 8200 A - Subwoofer para Coche (Activo, 75W, 30-200 Hz, RCA, MDF, 25 cm)",
+     "Subwoofer Activo Bajo Asiento 1200 W, 10\", RGB"
+    ]
+   }
+  },
   "4262533460331": {
    "a": "B0DCGF1RBF",
    "t": "2026-11-17T01:05:23.235625+00:00",
@@ -1028,6 +1043,12 @@
    "title": "SHARGE ICEMAG 3 Qi2.2 25W Power Bank MagSafe 10000mAh con Refrigeración Activa",
    "via": "nombre"
   },
+  "6974434223448": {
+   "a": "B0DBJ2CRV4",
+   "t": "2026-11-17T01:20:27.817734+00:00",
+   "title": "Nothing Ear (Open) Auriculares inalambricos Bluetooth con Tecnología Open Sound, Dos micrófonos + Clear Voice por IA, 30 Horas de reproducción de música y EQ av",
+   "via": "ean"
+  },
   "6974958250739": {
    "a": "B0FF1X7VGL",
    "t": "2026-11-13T22:50:26.355987+00:00",
@@ -1279,6 +1300,12 @@
    "a": "B09YS5DTK4",
    "t": "2026-11-13T13:25:30.604640+00:00",
    "title": "SaveFamily Slim 4G | Reloj Inteligente Niño/a con Localizador GPS",
+   "via": "ean"
+  },
+  "8435256897562": {
+   "a": "B08TX6QJ7V",
+   "t": "2026-11-17T01:20:27.817734+00:00",
+   "title": "Aiwa WHF-880: Auriculares Inalámbricos RF con PLL, de Diadema para TVs",
    "via": "ean"
   },
   "8435484021807": {
@@ -2095,6 +2122,25 @@
    "t": "2026-11-14T00:20:27.018416+00:00",
    "veredicto": "oferta_real"
   },
+  "45030146601": {
+   "ahorro_vs_amazon": 14,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 99.0,
+   "amz_title": "Nothing Ear (Open) Auriculares inalambricos Bluetooth con Tecnología Open Sound, Dos micrófonos + Clear Voice por IA, 30 Horas de reproducción de música y EQ av",
+   "asin": "B0DBJ2CRV4",
+   "disponible": true,
+   "ean": "6974434223448",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "14 % por debajo del habitual en Amazon (99.00)",
+   "name": "Nothing Ear (open) Bluetooth 5.3 30h IP54 Auriculares inalámbricos",
+   "pp_drop": 12,
+   "pp_median": 96.99,
+   "pp_price": 84.99,
+   "t": "2026-11-17T01:20:27.817734+00:00",
+   "veredicto": "oferta_real"
+  },
   "45124316529": {
    "ahorro_vs_amazon": null,
    "amz_low30": null,
@@ -2203,6 +2249,25 @@
    "pp_price": 47.4,
    "t": "2026-11-16T23:05:21.329835+00:00",
    "veredicto": "sin_precio"
+  },
+  "45368125438": {
+   "ahorro_vs_amazon": -21,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 46.4,
+   "amz_title": "Aiwa WHF-880: Auriculares Inalámbricos RF con PLL, de Diadema para TVs",
+   "asin": "B08TX6QJ7V",
+   "disponible": true,
+   "ean": "8435256897562",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 46.40 frente a 55.95",
+   "name": "Aiwa WHF-880 RF Diadema 10h Auriculares inalámbricos",
+   "pp_drop": 13,
+   "pp_median": 63.95,
+   "pp_price": 55.95,
+   "t": "2026-11-17T01:20:27.817734+00:00",
+   "veredicto": "amazon_mas_barato"
   },
   "45368125530": {
    "ahorro_vs_amazon": 37,
@@ -4826,6 +4891,28 @@
     ]
    }
   },
+  "46693747965": {
+   "ean": "4260499852771",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Subwoofer de coche Blaupunkt GTw 190 A-24 Activo 80W RMS Negro",
+   "pp_drop": 10,
+   "pp_median": 219.95,
+   "pp_price": 198.95,
+   "t": "2026-11-17T01:20:27.817734+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "Blaupunkt GTW190A-24V, Altavoz de subgraves Activo bajo el Asiento de 150 vatios"
+    ],
+    "nombre": [
+     "Blaupunkt GTw 190 A | Subwoofer Activo de 150 W de Potencia máxima, Compacto, subwoofer bajo el Suel",
+     "Blaupunkt GTB 8200 A - Subwoofer para Coche (Activo, 75W, 30-200 Hz, RCA, MDF, 25 cm)",
+     "Subwoofer Activo Bajo Asiento 1200 W, 10\", RGB"
+    ]
+   }
+  },
   "46693747967": {
    "ahorro_vs_amazon": 10,
    "amz_low30": null,
@@ -4868,14 +4955,14 @@
    }
   }
  },
- "night_at": "2026-11-17T01:05:23.235625+00:00",
+ "night_at": "2026-11-17T01:20:27.817734+00:00",
  "resumen": {
-  "amazon_mas_barato": 19,
+  "amazon_mas_barato": 20,
   "dudoso": 4,
-  "no_esta": 11,
-  "oferta_real": 25,
+  "no_esta": 12,
+  "oferta_real": 26,
   "pvpr_inflado": 0,
   "sin_precio": 7
  },
- "updated": "2026-11-17T01:05:23.235625+00:00"
+ "updated": "2026-11-17T01:20:27.817734+00:00"
 }
