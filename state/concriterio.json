@@ -40,7 +40,7 @@
   "Maquillaje": "2026-11-17T07:01:18.076115+00:00",
   "Menaje de cocina": "2026-11-15T09:25:34.345588+00:00",
   "Mochilas y maletas": "2026-11-15T20:50:41.317709+00:00",
-  "Monitores": "2026-11-15T19:15:39.725060+00:00",
+  "Monitores": "2026-11-17T16:30:56.399108+00:00",
   "Móviles": "2026-11-17T15:30:58.601953+00:00",
   "Nutrición deportiva": "2026-11-17T14:30:58.598858+00:00",
   "Oficina": "2026-11-16T10:45:46.172773+00:00",
@@ -107,7 +107,7 @@
  },
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-17T16:28:03.112917+00:00",
+ "next_at": "2026-11-17T16:57:48.571946+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -1548,6 +1548,17 @@
    "p": 19.99,
    "t": "2026-11-10T17:06:05.900509+00:00",
    "title": "Gillette Venus Comfortglide Breeze Cuchillas de Afeitar Mujer, Pack de 10",
+   "v": []
+  },
+  "B0BZYP24JC": {
+   "c": "Monitores",
+   "d": 41,
+   "e": "🖥️",
+   "m": 371,
+   "p": 218.48,
+   "s": "ofertas",
+   "t": "2026-11-17T16:31:30.124922+00:00",
+   "title": "Monitor gaming curvo ultrawide KOORUI 34\", 180Hz, HDR400, 34E6UC",
    "v": []
   },
   "B0C33RDGY8": {
@@ -3347,6 +3358,18 @@
  },
  "reserve": [
   {
+   "a": "B0F3P65X6Q",
+   "c": "Monitores",
+   "e": "🖥️",
+   "img": "https://m.media-amazon.com/images/I/71-tK+SGWCL._AC_UL320_.jpg",
+   "n": 232,
+   "op": 249.0,
+   "p": 159.0,
+   "r": 4.6,
+   "t": "2026-11-17T16:30:56.399108+00:00",
+   "title": "MSI mag 274QF X24, Monitor Gaming 27 Pulgadas WQHD, IPS rápida de 2560 x 1440, 240 Hz, 0,5 ms, Preparado para HDR, AMD FreeSync, Eye Care, AI Vision, inclinación Ajustable, Soporte Vesa, Negro"
+  },
+  {
    "a": "B0FLDLRG94",
    "c": "Móviles",
    "e": "📱",
@@ -3369,24 +3392,12 @@
    "r": 4.5,
    "t": "2026-11-17T14:01:04.582833+00:00",
    "title": "Equilibra Complemento alimenticio, Colágeno Q10 Ácido Hialurónico, Bueno estado de la piel, a Base de Colágeno Hidrolizado, Ácido Hialurónico, Coenzima Q10, Vitaminas C y E, 90 Comprimidos"
-  },
-  {
-   "a": "B0GTRJ4LRS",
-   "c": "Televisores",
-   "e": "📺",
-   "img": "https://m.media-amazon.com/images/I/81DciHUQEhL._AC_UL320_.jpg",
-   "n": 169,
-   "op": 297.99,
-   "p": 269.0,
-   "r": 4.2,
-   "t": "2026-11-17T13:01:23.458704+00:00",
-   "title": "LG 43NU800B6LC - Smart TV Nano UHD AI 43\" 4K Sin Reflejos 94%, Modelo 2026"
   }
  ],
  "summary_day": "2026-11-16",
  "tg_offset": 511048087,
  "x_copy": {
   "day": "2026-11-17",
-  "n": 19
+  "n": 20
  }
 }
