@@ -67,20 +67,6 @@
  "manual": {},
  "manual_queue": [
   {
-   "a": "B08FCFC8B1",
-   "c": "",
-   "e": "",
-   "img": "https://m.media-amazon.com/images/I/41RjuARDhTL._AC_SL1000_.jpg",
-   "m": 338,
-   "n": 36,
-   "op": 51.0,
-   "p": 26.99,
-   "q": "2026-11-17T11:15:42.925813+00:00",
-   "r": 4.2,
-   "t": "2026-11-17T10:45:39.518196+00:00",
-   "title": "Tognana Big Family - Sartén (36 cm)"
-  },
-  {
    "a": "B0B5GCY7T3",
    "c": "",
    "e": "",
@@ -110,7 +96,7 @@
   }
  ],
  "manual_todo": [],
- "next_at": "2026-11-17T11:26:48.730096+00:00",
+ "next_at": "2026-11-17T11:56:11.011541+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -844,6 +830,17 @@
    "p": 64.95,
    "t": "2026-11-05T14:11:12.475410+00:00",
    "title": "Jpg le male le parfum epv 75ml",
+   "v": []
+  },
+  "B08FCFC8B1": {
+   "c": "",
+   "d": 47,
+   "e": "",
+   "m": 361,
+   "manual": true,
+   "p": 26.99,
+   "t": "2026-11-17T11:30:56.030322+00:00",
+   "title": "Tognana Big Family - Sartén (36 cm)",
    "v": []
   },
   "B08GCDYC89": {
@@ -3284,6 +3281,6 @@
  "tg_offset": 511048086,
  "x_copy": {
   "day": "2026-11-17",
-  "n": 9
+  "n": 10
  }
 }
