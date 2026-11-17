@@ -474,6 +474,25 @@
    "title": "Russell Hobbs Adventure 24080-56 – Tostadora, 2 Ranuras Anchas, para 2 Rebanadas, Acero Inoxidable, Plata",
    "via": "ean"
   },
+  "4038986630795": {
+   "a": "",
+   "t": "2026-11-17T03:05:20.365221+00:00",
+   "v": 2,
+   "vistos": {
+    "ean": [
+     "AOC AGM600 Wired Ergo Mouse 10 Buttons Right-Handed RGB Gaming"
+    ],
+    "modelo": [
+     "AOC AGM600 Wired Ergo Mouse 10 Buttons Right-Handed RGB Gaming",
+     "AOC Agon AGM700 Gaming Mouse - 16.000 DPI - Interruptores Omron - Efectos RGB - DPI ajustable - Peso"
+    ],
+    "nombre": [
+     "AOC Agon AGM700 Gaming Mouse - 16.000 DPI - Interruptores Omron - Efectos RGB - DPI ajustable - Peso",
+     "Logitech G G502 Hero Ratón Gaming con Cable, 25,600 dpi, Negro",
+     "Logitech G G203 LIGHTSYNC Ratón Gaming Negro, 6 Botones Programables"
+    ]
+   }
+  },
   "4054278048215": {
    "a": "B0794VJ2J1",
    "t": "2026-11-14T22:05:27.466329+00:00",
@@ -821,6 +840,12 @@
    "title": "Logitech G G402 Hyperion Fury Ratón Gaming con Cable",
    "via": "ean"
   },
+  "5099206059252": {
+   "a": "B00VHHWNMI",
+   "t": "2026-11-17T03:05:20.365221+00:00",
+   "title": "Logitech K400 Teclado Táctil Inalámbrico Plus para TV",
+   "via": "ean"
+  },
   "5099206066977": {
    "a": "B01L6L52K4",
    "t": "2026-11-16T21:10:41.415586+00:00",
@@ -976,6 +1001,12 @@
      "Vexilar V10Pro Aspiradora sin Cable 45KPa/45 Min, Potente,Fácil Maneja,Ligera,Accesorios Multiusos,B"
     ]
    }
+  },
+  "6935364052522": {
+   "a": "B08FX98B59",
+   "t": "2026-11-17T03:05:20.365221+00:00",
+   "title": "TP-Link TL-WPA8631P-Powerline WiFi AC1200 en 2GHz/5GHz., 3xPuertos Gigabit",
+   "via": "ean"
   },
   "6936685224186": {
    "a": "",
@@ -2075,6 +2106,25 @@
    "pp_price": 899.9,
    "t": "2026-11-14T03:20:26.477658+00:00",
    "veredicto": "oferta_real"
+  },
+  "43682318148": {
+   "ahorro_vs_amazon": -21,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 71.99,
+   "amz_title": "TP-Link TL-WPA8631P-Powerline WiFi AC1200 en 2GHz/5GHz., 3xPuertos Gigabit",
+   "asin": "B08FX98B59",
+   "disponible": true,
+   "ean": "6935364052522",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 71.99 frente a 86.99",
+   "name": "TP-Link TL-WPA8631P Gigabit Ethernet AC1200 Blanco WiFi 3 puertos Adaptador Powerline",
+   "pp_drop": 10,
+   "pp_median": 96.99,
+   "pp_price": 86.99,
+   "t": "2026-11-17T03:05:20.365221+00:00",
+   "veredicto": "amazon_mas_barato"
   },
   "43803281748": {
    "ahorro_vs_amazon": 0,
@@ -4214,6 +4264,32 @@
     ]
    }
   },
+  "46265356697": {
+   "ean": "4038986630795",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "AOC AGON 16000 DPI RGB Negro AGM600B 10 botones USB Ratón gaming",
+   "pp_drop": 12,
+   "pp_median": 42.96,
+   "pp_price": 37.95,
+   "t": "2026-11-17T03:05:20.365221+00:00",
+   "v": 2,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "AOC AGM600 Wired Ergo Mouse 10 Buttons Right-Handed RGB Gaming"
+    ],
+    "modelo": [
+     "AOC AGM600 Wired Ergo Mouse 10 Buttons Right-Handed RGB Gaming",
+     "AOC Agon AGM700 Gaming Mouse - 16.000 DPI - Interruptores Omron - Efectos RGB - DPI ajustable - Peso"
+    ],
+    "nombre": [
+     "AOC Agon AGM700 Gaming Mouse - 16.000 DPI - Interruptores Omron - Efectos RGB - DPI ajustable - Peso",
+     "Logitech G G502 Hero Ratón Gaming con Cable, 25,600 dpi, Negro",
+     "Logitech G G203 LIGHTSYNC Ratón Gaming Negro, 6 Botones Programables"
+    ]
+   }
+  },
   "46265356699": {
    "ahorro_vs_amazon": 5,
    "amz_low30": null,
@@ -4332,6 +4408,25 @@
    "pp_price": 2168.95,
    "t": "2026-11-13T20:40:48.338068+00:00",
    "veredicto": "oferta_real"
+  },
+  "46599139740": {
+   "ahorro_vs_amazon": -1,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 32.99,
+   "amz_title": "Logitech K400 Teclado Táctil Inalámbrico Plus para TV",
+   "asin": "B00VHHWNMI",
+   "disponible": true,
+   "ean": "5099206059252",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 32.99 frente a 33.17",
+   "name": "Logitech K400 Plus 2,4 GHz QWERTY Teclado inalámbrico",
+   "pp_drop": 13,
+   "pp_median": 37.95,
+   "pp_price": 33.17,
+   "t": "2026-11-17T03:05:20.365221+00:00",
+   "veredicto": "amazon_mas_barato"
   },
   "46599139855": {
    "ahorro_vs_amazon": -25,
@@ -5181,14 +5276,14 @@
    }
   }
  },
- "night_at": "2026-11-17T02:50:31.913745+00:00",
+ "night_at": "2026-11-17T03:05:20.365221+00:00",
  "resumen": {
-  "amazon_mas_barato": 23,
+  "amazon_mas_barato": 25,
   "dudoso": 4,
-  "no_esta": 14,
+  "no_esta": 15,
   "oferta_real": 27,
   "pvpr_inflado": 0,
   "sin_precio": 9
  },
- "updated": "2026-11-17T02:50:31.913745+00:00"
+ "updated": "2026-11-17T03:05:20.365221+00:00"
 }
