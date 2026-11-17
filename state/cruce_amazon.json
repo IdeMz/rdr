@@ -2376,11 +2376,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Sony PlayStation 5 Slim 1TB + 2 Mandos DualSense Blanco",
-   "pista": "1409450 bytes; 6 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1441822 bytes; 6 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 11,
    "pp_median": 999.0,
    "pp_price": 889.89,
-   "t": "2026-11-16T23:05:21.329835+00:00",
+   "t": "2026-11-17T05:09:47.495941+00:00",
    "veredicto": "sin_precio"
   },
   "45368123600": {
@@ -2423,11 +2423,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Severin FR 2461 4L 1300W 8 Programas pantalla táctil Freidora de aire",
-   "pista": "1665939 bytes; 12 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1665660 bytes; 12 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 29,
    "pp_median": 66.95,
    "pp_price": 47.4,
-   "t": "2026-11-16T23:05:21.329835+00:00",
+   "t": "2026-11-17T05:09:47.495941+00:00",
    "veredicto": "sin_precio"
   },
   "45368125438": {
@@ -5323,7 +5323,7 @@
    }
   }
  },
- "night_at": "2026-11-17T04:35:20.825957+00:00",
+ "night_at": "2026-11-17T05:09:47.495941+00:00",
  "resumen": {
   "amazon_mas_barato": 25,
   "dudoso": 4,
@@ -5332,5 +5332,5 @@
   "pvpr_inflado": 0,
   "sin_precio": 9
  },
- "updated": "2026-11-17T04:35:20.825957+00:00"
+ "updated": "2026-11-17T05:09:47.495941+00:00"
 }
