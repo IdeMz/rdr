@@ -42,7 +42,7 @@
   "Mochilas y maletas": "2026-11-15T20:50:41.317709+00:00",
   "Monitores": "2026-11-15T19:15:39.725060+00:00",
   "Móviles": "2026-11-14T19:45:46.808036+00:00",
-  "Nutrición deportiva": "2026-11-14T11:40:39.802795+00:00",
+  "Nutrición deportiva": "2026-11-17T14:30:58.598858+00:00",
   "Oficina": "2026-11-16T10:45:46.172773+00:00",
   "Patinetes": "2026-11-16T11:55:31.043068+00:00",
   "Pequeño electrodoméstico": "2026-11-16T18:55:32.141614+00:00",
@@ -107,7 +107,7 @@
  },
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-17T14:29:00.128732+00:00",
+ "next_at": "2026-11-17T14:59:18.096890+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -346,6 +346,17 @@
    "s": "ambas",
    "t": "2026-11-17T07:31:28.243354+00:00",
    "title": "Performance Headband – Diadema para Hombre",
+   "v": []
+  },
+  "B013AYGHT0": {
+   "c": "Nutrición deportiva",
+   "d": 45,
+   "e": "💪",
+   "m": 367,
+   "p": 14.99,
+   "s": "ambas",
+   "t": "2026-11-17T14:31:21.891010+00:00",
+   "title": "Optimum Nutrition Amino Energy Polvo Pre Entrenamiento, Bebida Energética con Aminoácidos, BCAA, L-Glutamina y L-Leucina, Complemento con Vitamina C y Cafeína, Sabor Fruit Fusion, 30 Porciones, 270 g",
    "v": []
   },
   "B013DQEJF4": {
@@ -3351,6 +3362,6 @@
  "tg_offset": 511048087,
  "x_copy": {
   "day": "2026-11-17",
-  "n": 15
+  "n": 16
  }
 }

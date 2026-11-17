@@ -4583,7 +4583,8 @@
    "pp_drop": 46,
    "pp_median": 82.95,
    "pp_price": 44.95,
-   "t": "2026-11-16T12:30:54.116656+00:00",
+   "t": "2026-11-17T14:30:58.598858+00:00",
+   "v": 3,
    "veredicto": "amazon_mas_barato"
   },
   "46599139865": {
@@ -4682,23 +4683,24 @@
    "veredicto": "dudoso"
   },
   "46599140285": {
-   "ahorro_vs_amazon": -6,
+   "ahorro_vs_amazon": 5,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 269.19,
+   "amz_price": 299.49,
    "amz_title": "ViewSonic Monitor VG2741V-2K MNTN24-C-307",
    "asin": "B0F8MHRHLP",
    "disponible": true,
    "ean": "0766907033052",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "Amazon 269.19 frente a 285.95",
+   "motivo": "antes 438.99 en PowerPlanet, pero en Amazon suele estar a 299.49",
    "name": "Monitor ViewSonic 27 pulgadas QHD IPS 120Hz 4 ms Negro VG2741V-2K",
    "pp_drop": 35,
    "pp_median": 438.99,
    "pp_price": 285.95,
-   "t": "2026-11-16T11:55:31.043068+00:00",
-   "veredicto": "amazon_mas_barato"
+   "t": "2026-11-17T14:30:58.598858+00:00",
+   "v": 3,
+   "veredicto": "pvpr_inflado"
   },
   "46599140303": {
    "ahorro_vs_amazon": -13,
@@ -5469,12 +5471,12 @@
  },
  "night_at": "2026-11-17T06:05:20.554247+00:00",
  "resumen": {
-  "amazon_mas_barato": 16,
+  "amazon_mas_barato": 15,
   "dudoso": 3,
   "no_esta": 9,
   "oferta_real": 16,
-  "pvpr_inflado": 0,
+  "pvpr_inflado": 1,
   "sin_precio": 1
  },
- "updated": "2026-11-17T14:01:04.582833+00:00"
+ "updated": "2026-11-17T14:30:58.598858+00:00"
 }
