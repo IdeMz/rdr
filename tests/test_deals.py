@@ -3013,7 +3013,7 @@ def store_env(tmp_path, monkeypatch, *, page=None, ae_rows=None):
         "image": "https://img/x.jpg", "stock": 4, "foreign": False, "score": 5, "page": "https://pp/1000"}]}))
     (tmp_path / "cruce_amazon.json").write_text(json.dumps({"items": {"1000": {
         "t": STORE_NOW.isoformat(), "pp_price": 70.0, "motivo": "-12 % bajo Amazon", "veredicto": "oferta_real",
-        "encontrado_por": "ean", "ahorro_vs_amazon": 12}}}))
+        "v": 3, "encontrado_por": "ean", "ahorro_vs_amazon": 12}}}))
     review_data = {"items": {"a55": {"src": "a", "id": "55", "st": "ok", "t": STORE_NOW.isoformat(), "title": "Cortacesped robot jardin 55",
                                       "price": 20.0, "drop": 20, "rating": 95.0, "image": "https://img/a.jpg",
                                       "link": "https://s.click.aliexpress.com/e/x", "score": 4, "shop_id": "9"}},

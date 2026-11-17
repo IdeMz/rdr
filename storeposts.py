@@ -27,6 +27,7 @@ CROSS_MAX_AGE_DAYS = 3        # el cruce con Amazon no puede ser mas viejo (se r
 MAX_SAVING_VS_AMAZON = 55     # un ahorro mayor frente a Amazon es casi siempre un emparejamiento o un precio erroneo
 SAME_PRICE = 0.01             # el precio de hoy no puede haber cambiado mas de un 1 % desde el cruce
 APPROVAL_MAX_AGE_DAYS = 4     # un producto de AliExpress aprobado caduca (el precio cambia): se vuelve a pedir
+MIN_MATCH_VERSION = 3   # = crossamz.MATCH_VERSION: no se publica con un cruce hecho con reglas viejas
 MAX_TRIES = 3                 # candidatos que se comprueban en una franja antes de dejarlo para otra
 
 MONTHS = {"ene": 1, "feb": 2, "mar": 3, "abr": 4, "may": 5, "jun": 6, "jul": 7, "ago": 8, "sep": 9, "oct": 10,
@@ -129,6 +130,8 @@ def pp_candidates(pp: dict, cross: dict, state: dict, now: datetime) -> list[dic
         if not pid or key in state or not entry or entry.get("veredicto") != "oferta_real":
             continue
         if cand.get("foreign") or cand.get("stock") == 0 or not cand.get("link") or not cand.get("price"):
+            continue
+        if entry.get("v", 1) < MIN_MATCH_VERSION:  # cruce hecho con reglas antiguas de emparejamiento: se espera al nuevo
             continue
         if entry.get("encontrado_por") != "ean" or (entry.get("ahorro_vs_amazon") or 0) > MAX_SAVING_VS_AMAZON:
             continue

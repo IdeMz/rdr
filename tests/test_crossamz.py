@@ -157,7 +157,8 @@ def test_not_found_is_remembered_and_not_searched_again(tmp_path):
 def test_known_asin_skips_the_search(tmp_path):
     write_cands(tmp_path, [item()])
     data = crossamz.empty()
-    data["ean_asin"]["0840006667278"] = {"a": "B0CORSAIR1", "t": NOW.isoformat(), "via": "ean", "title": "Corsair K65"}
+    data["ean_asin"]["0840006667278"] = {"a": "B0CORSAIR1", "t": NOW.isoformat(), "via": "ean", "title": "Corsair K65",
+                                           "v": crossamz.MATCH_VERSION}
     crossamz.save(tmp_path / crossamz.FILE, data)
     fake = Fake(pages={"B0CORSAIR1": ficha("320,00 €")})
     crossamz.run(tmp_path, fake.search, fake.page, ref_none, NOW, sleep=lambda s: None)
@@ -306,3 +307,45 @@ def test_not_found_saves_what_amazon_returned_and_old_misses_are_retried(tmp_pat
     assert e["veredicto"] == "no_esta" and e["v"] == crossamz.MATCH_VERSION
     assert e["vistos"]["ean"] == ["Logitech G915 Teclado gaming"]
     assert e["vistos"]["nombre"] == ["(sin resultados)"]
+
+
+# ---- casos reales (update68) -------------------------------------------------
+
+REAL_SAME = [
+    ("HP Smart Tank 5106 Multifunción Color WiFi Dúplex Manual 5ppm Impresora", "HP", "Impresora Multifunción HP Smart Tank 5106"),
+    ("GHD Original Styler Cerámica single-zone 75W Plancha de pelo", "GHD", "ghd Original Styler - Plancha de Pelo Profesional"),
+    ("Razer Barracuda X Blanco Bluetooth 5.2 50h Auriculares gaming inalámbricos", "Razer", "Razer Barracuda X (2022) - Mercury White"),
+    ("Eufy Security T8910021 Blanco WiFi Sensor de movimiento", "Eufy", "Eufy Sensor de Movimiento Blanco"),
+    ("SaveFamily Iconic Plus 2 Estampada Pop 1,78 pulgadas Llamadas", "SaveFamily", "SaveFamily Iconic Plus 2 | Reloj Inteligente Niño/a"),
+    ("Thrustmaster T-16000M FCS Hotas PC - Palanca de vuelo + Acelerador", "Thrustmaster", "Thrustmaster T16000M FCS HOTAS - Pack Joystick y Acelerador - PC"),
+    ("Panasonic Láser WUXGA 1920x1200 4200 lúmenes ANSI LCD Blanco PT-LMZ420", "Panasonic", "Proyector Panasonic PT-LMZ420 4200 LM"),
+]
+REAL_DIFFERENT = [
+    ("MSI GeForce RTX 5060 Ti Gaming Trio OC White 16GB GDDR7", "MSI", "MSI Gaming RTX 5070 Ti 16G Gaming Trio OC Tarjeta gráfica (16 GB GDDR7"),
+    ("MSI GeForce RTX 5060 8G VENTUS 2X OC NVIDIA 8GB GDDR7", "MSI", "MSI Gaming RTX 5060 Ti 8G Ventus 2X OC Plus - Tarjeta gráfica (8 GB GD"),
+    ("Dashcam VIOFO T330W 2CH 4K GPS", "VIOFO", "VIOFO A329S 4K 60FPS 2CH Dashcam Del.+Tras., STARVIS 2, Wi-Fi 6"),
+    ("Dashcam VIOFO T330T 3CH 4K GPS", "VIOFO", "VIOFO A329S 4K 3CH Dashcam Del.+Tras.+Int., Wi-Fi 6, Eco"),
+    ("Robot aspirador Rowenta SO2211 Explorer", "Rowenta", "Rowenta SO2212 Explorer robot aspirador"),
+    ("Robot aspirador Rowenta SO2211 Explorer", "Rowenta", "Rowenta SO2211 Explorer robot aspirador reacondicionado"),
+    ("Amazon Echo Dot 5ª generación Antracita", "Amazon", "Amazon Echo Dot Kids 5ª generación Antracita"),
+]
+
+
+def test_real_same_products_are_matched():
+    for name, brand, title in REAL_SAME:
+        assert crossamz.same_product(name, brand, title), title
+
+
+def test_real_different_products_are_rejected():
+    for name, brand, title in REAL_DIFFERENT:
+        assert not crossamz.same_product(name, brand, title), title
+
+
+def test_old_pairs_are_revalidated_and_wrong_ones_searched_again(tmp_path):
+    write_cands(tmp_path, [item()])
+    data = crossamz.empty()
+    data["ean_asin"]["0840006667278"] = {"a": "B0BAD", "t": NOW.isoformat(), "via": "ean", "title": "Logitech G915 teclado", "v": 2}
+    crossamz.save(tmp_path / crossamz.FILE, data)
+    fake = Fake(pages={})
+    crossamz.run(tmp_path, fake.search, fake.page, ref_none, NOW, sleep=lambda s: None)
+    assert fake.searches and "B0BAD" not in fake.fichas

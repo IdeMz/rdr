@@ -21,7 +21,7 @@ def cand(pid="1000", price=70.0, **kw):
 
 def cross(pid="1000", price=70.0, verdict="oferta_real", t=NOW, by="ean", saving=12):
     return {"items": {pid: {"t": t.isoformat(), "pp_price": price, "motivo": "-12 % bajo Amazon", "veredicto": verdict,
-                            "encontrado_por": by, "ahorro_vs_amazon": saving}}}
+                            "v": 3, "encontrado_por": by, "ahorro_vs_amazon": saving}}}
 
 
 def picks(*cands, day="2026-11-20"):
@@ -147,3 +147,8 @@ def test_only_ean_matches_and_believable_savings_are_published():
         "5": cross("5", saving=55)["items"]["5"],        # el tope es inclusivo
     }}
     assert sorted(c["id"] for c in sp.pp_candidates(pool, x, {}, NOW)) == ["1", "5"]
+
+
+def test_min_match_version_follows_crossamz():
+    import crossamz
+    assert sp.MIN_MATCH_VERSION == crossamz.MATCH_VERSION
