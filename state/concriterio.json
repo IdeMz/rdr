@@ -6,7 +6,7 @@
   "Almacenamiento": "2026-11-15T16:30:50.777266+00:00",
   "Altavoces": "2026-11-15T17:05:32.780345+00:00",
   "Aspiradoras": "2026-11-14T20:20:37.410274+00:00",
-  "Auriculares": "2026-11-14T08:10:40.297090+00:00",
+  "Auriculares": "2026-11-17T08:01:10.979640+00:00",
   "Barras de sonido": "2026-11-16T07:01:09.494097+00:00",
   "Bebé": "2026-11-16T07:35:32.483023+00:00",
   "Bricolaje": "2026-11-16T08:10:40.674323+00:00",
@@ -92,7 +92,7 @@
    "title": "adidas Men's Zapatilla de Senderismo Terrex Skychaser AX5 Gore-Tex"
   }
  },
- "next_at": "2026-11-17T07:58:21.348506+00:00",
+ "next_at": "2026-11-17T08:30:10.155718+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -2790,6 +2790,17 @@
    "title": "TCL 65C8L 65 Pulgadas SQD-Mini LED 4K HDR10+ Smart TV, 5.000 Nits",
    "v": []
   },
+  "B0GVKBF3JR": {
+   "c": "Auriculares",
+   "d": 42,
+   "e": "🎧",
+   "m": 354,
+   "p": 23.32,
+   "s": "ofertas",
+   "t": "2026-11-17T08:01:44.305659+00:00",
+   "title": "OPPO Enco Buds3 Pro Auriculares Inalámbricos, Enco Master EQ, Glaze White",
+   "v": []
+  },
   "B0GX4YGYXG": {
    "c": "Accesorios de coche",
    "d": 35,
@@ -3126,6 +3137,10 @@
    "t": "2026-11-16T15:40:40.598894+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0CX1TJXKV": {
+   "t": "2026-11-17T08:01:10.979640+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0D1XZL4NF": {
    "t": "2026-11-16T09:55:33.695632+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3197,6 +3212,6 @@
  "tg_offset": 511048072,
  "x_copy": {
   "day": "2026-11-17",
-  "n": 2
+  "n": 3
  }
 }

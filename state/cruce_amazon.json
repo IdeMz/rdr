@@ -3575,11 +3575,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "FiiO RR13 Batería Li-ion extraíble FM 87–108 MHz 7h 450mAh Radio recargable",
-   "pista": "1059164 bytes; 6 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1060665 bytes; 6 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 12,
    "pp_median": 66.99,
    "pp_price": 58.95,
-   "t": "2026-11-17T01:35:36.075081+00:00",
+   "t": "2026-11-17T08:01:10.979640+00:00",
    "veredicto": "sin_precio"
   },
   "46165551484": {
@@ -5332,5 +5332,5 @@
   "pvpr_inflado": 0,
   "sin_precio": 9
  },
- "updated": "2026-11-17T07:30:53.001889+00:00"
+ "updated": "2026-11-17T08:01:10.979640+00:00"
 }
