@@ -3180,3 +3180,184 @@ def test_store_config_is_validated(tmp_path):
 def test_concriterio_starts_stores_on_nov_20_with_two_each():
     ch = deals.load_channel(Path(__file__).resolve().parent.parent / "channels" / "concriterio.json")
     assert ch.store_start == "2026-11-20" and ch.store_daily == {"powerplanet": 2, "aliexpress": 2}
+
+
+# ---------------------------------------------------------------- update66: varios enlaces, cola y contraste
+
+def test_manual_links_splits_a_message_into_separate_products():
+    text = "mira esto https://www.amazon.es/dp/B0CT8W3Y29?th=1 y B0AAAAAAA1\nhttps://amzn.eu/d/abc, https://www.amazon.es/dp/B0CT8W3Y29?th=1"
+    assert deals.manual_links(text) == ["https://www.amazon.es/dp/B0CT8W3Y29?th=1", "B0AAAAAAA1", "https://amzn.eu/d/abc"]
+    assert deals.manual_links("hola") == [] and deals.manual_links("") == []
+    many = " ".join(f"B0AAAAAA{i:02d}" for i in range(40))
+    assert len(deals.manual_links(many)) == deals.MANUAL_MAX_LINKS
+
+
+def test_several_links_in_one_message_get_previews_over_the_next_ticks(tmp_path, monkeypatch):
+    tg = manual_env(monkeypatch)
+    ch, path = channel(name="concriterio", require_spain=False), tmp_path / "concriterio.json"
+    message(tg, " ".join(f"B0CT8W3Y{i:02d}" for i in range(5)))
+    deals.process_votes(ch, path, {}, "tag-21", NOW_IN)
+    assert len(tg.of("sendPhoto")) == deals.MANUAL_PER_TICK
+    assert "Tengo 5 enlaces" in tg.of("sendMessage")[0]["text"]
+    assert len(json.loads(path.read_text())["manual_todo"]) == 2
+    deals.process_votes(ch, path, {}, "tag-21", NOW_IN + timedelta(minutes=5))
+    assert len(tg.of("sendPhoto")) == 5 and json.loads(path.read_text())["manual_todo"] == []
+
+
+def test_pending_links_expire_after_an_hour(tmp_path, monkeypatch):
+    tg = manual_env(monkeypatch)
+    ch, path = channel(name="concriterio", require_spain=False), tmp_path / "concriterio.json"
+    message(tg, " ".join(f"B0CT8W3Y{i:02d}" for i in range(5)))
+    deals.process_votes(ch, path, {}, "tag-21", NOW_IN)
+    deals.process_votes(ch, path, {}, "tag-21", NOW_IN + timedelta(hours=2))
+    assert len(tg.of("sendPhoto")) == deals.MANUAL_PER_TICK
+
+
+def accept(tg, ch, path, monkeypatch, asin="B0CT8W3Y29", now=NOW_IN):
+    message(tg, asin)
+    deals.process_votes(ch, path, {}, "tag-21", now)
+    press(tg, asin, "mpub")
+    deals.process_votes(ch, path, {}, "tag-21", now + timedelta(minutes=1))
+
+
+def test_accepted_offer_waits_in_the_queue_instead_of_publishing_at_once(tmp_path, monkeypatch):
+    tg = manual_env(monkeypatch)
+    ch, path = channel(name="concriterio", require_spain=False, manual_queue=True), tmp_path / "concriterio.json"
+    sent = []
+    monkeypatch.setattr(deals, "send_deal", lambda *a: sent.append(a) or 4321)
+    accept(tg, ch, path, monkeypatch)
+    saved = json.loads(path.read_text())
+    assert [a for a in sent if a[1] == "@canal"] == [] and "B0CT8W3Y29" not in saved.get("posted", {})
+    assert [d["a"] for d in saved["manual_queue"]] == ["B0CT8W3Y29"]
+    reply = [d["text"] for d in tg.of("answerCallbackQuery")][-1]
+    assert reply.startswith("En cola ✅ nº 1") and "saldrá hacia las" in reply
+
+
+def test_queue_publishes_in_the_next_slot_and_keeps_the_rhythm(tmp_path, monkeypatch):
+    tg = manual_env(monkeypatch)
+    ch, path = channel(name="concriterio", require_spain=False, manual_queue=True), tmp_path / "concriterio.json"
+    accept(tg, ch, path, monkeypatch)
+    sent = []
+    monkeypatch.setattr(deals, "send_deal", lambda *a: sent.append(a) or 4321)
+    deals.set_state_key(path, "next_at", (NOW_IN + timedelta(minutes=20)).isoformat())
+    assert deals.run_channel(ch, state_dir=tmp_path, now=NOW_IN + timedelta(minutes=10)) == 0 and sent == []   # aun no toca
+    n = deals.run_channel(ch, state_dir=tmp_path, now=NOW_IN + timedelta(minutes=21))
+    saved = json.loads(path.read_text())
+    assert n == 1 and len(sent) == 1 and sent[0][1] == "@canal" and "59,99" in sent[0][2]
+    assert saved["posted"]["B0CT8W3Y29"]["manual"] is True and saved["manual_queue"] == []
+    assert datetime.fromisoformat(saved["next_at"]) > NOW_IN + timedelta(minutes=21)
+
+
+def test_queue_goes_in_order_one_per_slot(tmp_path, monkeypatch):
+    tg = manual_env(monkeypatch)
+    ch, path = channel(name="concriterio", require_spain=False, manual_queue=True), tmp_path / "concriterio.json"
+    accept(tg, ch, path, monkeypatch, "B0CT8W3Y29")
+    accept(tg, ch, path, monkeypatch, "B0CT8W3Y28", now=NOW_IN + timedelta(minutes=2))
+    sent = []
+    monkeypatch.setattr(deals, "send_deal", lambda *a: sent.append(a) or 4321)
+    assert deals.run_channel(ch, state_dir=tmp_path, now=NOW_IN + timedelta(minutes=5)) == 1
+    assert [d["a"] for d in json.loads(path.read_text())["manual_queue"]] == ["B0CT8W3Y28"]
+    assert deals.run_channel(ch, state_dir=tmp_path, now=NOW_IN + timedelta(minutes=10)) == 0     # aun no toca
+    assert len(sent) == 1
+
+
+def test_queued_offer_whose_price_rose_is_dropped_with_a_notice(tmp_path, monkeypatch):
+    tg = manual_env(monkeypatch)
+    ch, path = channel(name="concriterio", require_spain=False, manual_queue=True), tmp_path / "concriterio.json"
+    accept(tg, ch, path, monkeypatch)
+    monkeypatch.setattr(deals, "fetch", lambda session, url, retries=3: LISTING.replace("59,99", "69,99"))
+    sent = []
+    monkeypatch.setattr(deals, "send_deal", lambda *a: sent.append(a) or 1)
+    n = deals.publish_queued(ch, path, {}, "tag-21", NOW_IN + timedelta(minutes=30), TOKEN, "@canal")
+    assert not n and sent == [] and json.loads(path.read_text())["manual_queue"] == []
+    assert "el precio ha subido" in tg.of("sendMessage")[-1]["text"]
+
+
+def test_queued_offer_is_published_with_the_fresh_lower_price(tmp_path, monkeypatch):
+    tg = manual_env(monkeypatch)
+    ch, path = channel(name="concriterio", require_spain=False, manual_queue=True), tmp_path / "concriterio.json"
+    accept(tg, ch, path, monkeypatch)
+    monkeypatch.setattr(deals, "fetch", lambda session, url, retries=3: LISTING.replace("59,99", "54,99"))
+    sent = []
+    monkeypatch.setattr(deals, "send_deal", lambda *a: sent.append(a) or 1)
+    assert deals.publish_queued(ch, path, {}, "tag-21", NOW_IN + timedelta(minutes=30), TOKEN, "@canal")
+    assert "54,99" in sent[0][2]
+
+
+def test_queue_waits_when_amazon_does_not_answer(tmp_path, monkeypatch):
+    tg = manual_env(monkeypatch)
+    ch, path = channel(name="concriterio", require_spain=False, manual_queue=True), tmp_path / "concriterio.json"
+    accept(tg, ch, path, monkeypatch)
+
+    def blocked(session, url, retries=3):
+        raise deals.Blocked("HTTP 503")
+    monkeypatch.setattr(deals, "fetch", blocked)
+    assert not deals.publish_queued(ch, path, {}, "tag-21", NOW_IN + timedelta(minutes=30), TOKEN, "@canal")
+    assert len(json.loads(path.read_text())["manual_queue"]) == 1
+
+
+def test_old_queued_offers_expire(tmp_path, monkeypatch):
+    tg = manual_env(monkeypatch)
+    ch, path = channel(name="concriterio", require_spain=False, manual_queue=True), tmp_path / "concriterio.json"
+    accept(tg, ch, path, monkeypatch)
+    sent = []
+    monkeypatch.setattr(deals, "send_deal", lambda *a: sent.append(a) or 1)
+    assert not deals.publish_queued(ch, path, {}, "tag-21", NOW_IN + timedelta(hours=9), TOKEN, "@canal")
+    assert sent == [] and json.loads(path.read_text())["manual_queue"] == []
+    assert "Caducó en la cola" in tg.of("sendMessage")[-1]["text"]
+
+
+def test_telegram_refusals_drop_a_queued_offer_after_three_tries(tmp_path, monkeypatch):
+    tg = manual_env(monkeypatch)
+    ch, path = channel(name="concriterio", require_spain=False, manual_queue=True), tmp_path / "concriterio.json"
+    accept(tg, ch, path, monkeypatch)
+
+    def refused(*a, **k):
+        raise deals.TelegramError("400")
+    monkeypatch.setattr(deals, "send_deal", refused)
+    for n in range(3):
+        deals.publish_queued(ch, path, {}, "tag-21", NOW_IN + timedelta(minutes=30 + n), TOKEN, "@canal")
+    assert json.loads(path.read_text())["manual_queue"] == []
+    assert "Telegram la rechazó" in tg.of("sendMessage")[-1]["text"]
+
+
+def test_queue_eta_says_when_it_will_go_out(tmp_path):
+    ch = channel(name="concriterio", manual_queue=True)
+    path = tmp_path / "c.json"
+    deals.set_state_key(path, "next_at", (NOW_IN + timedelta(minutes=25)).isoformat())
+    assert deals.queue_eta(ch, path, NOW_IN, 1) == "saldrá hacia las 13:25"
+    assert deals.queue_eta(ch, path, NOW_IN, 3) == "saldrá hacia las 14:30"   # + 2 intervalos de 32,5 min
+    late = datetime(2026, 11, 3, 21, 50, tzinfo=timezone.utc)  # 22:50 en Madrid
+    assert deals.queue_eta(ch, path, late, 3) == "saldrá mañana a primera hora"
+
+
+def test_manual_posts_do_not_use_up_the_automatic_store_quota():
+    import storeposts
+    state = {"pp:1": {"t": NOW_IN.isoformat(), "st": "POWERPLANET", "manual": True},
+             "pp:2": {"t": NOW_IN.isoformat(), "st": "POWERPLANET", "auto": True}}
+    assert storeposts.counts_today(state, NOW_IN.date(), timezone.utc)["powerplanet"] == 1
+
+
+def test_preview_compares_with_the_own_price_history(tmp_path, monkeypatch):
+    import pricehist
+    tg = manual_env(monkeypatch)
+    ch, path = channel(name="concriterio", require_spain=False), tmp_path / "concriterio.json"
+    hist = {"p": {"B0CT8W3Y29": [pricehist.day_no(NOW_IN.date()), 8,
+                                 pricehist.day_no(NOW_IN.date()) - 9, 80.0, pricehist.day_no(NOW_IN.date()) - 3, 59.99]}}
+    pricehist.save(tmp_path / "precios_amazon.json", hist)
+    message(tg, "B0CT8W3Y29")
+    deals.process_votes(ch, path, {}, "tag-21", NOW_IN)
+    caption = tg.of("sendPhoto")[0]["caption"]
+    assert "Historial propio" in caption and "mínimo" in caption and "precio más bajo que he visto" in caption
+
+
+def test_preview_without_history_says_so(tmp_path, monkeypatch):
+    tg = manual_env(monkeypatch)
+    message(tg, "B0CT8W3Y29")
+    deals.process_votes(channel(name="concriterio", require_spain=False), tmp_path / "concriterio.json", {}, "tag-21", NOW_IN)
+    assert "Aún no tengo historial propio" in tg.of("sendPhoto")[0]["caption"]
+
+
+def test_concriterio_uses_the_manual_queue():
+    ch = deals.load_channel(Path(__file__).resolve().parent.parent / "channels" / "concriterio.json")
+    assert ch.manual_queue is True and ch.manual_queue_hours == 8

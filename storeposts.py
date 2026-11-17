@@ -50,7 +50,7 @@ def counts_today(state: dict, today: date, tz) -> dict[str, int]:
     by_label = {v: k for k, v in LABELS.items()}
     for entry in state.values():
         store = by_label.get(entry.get("st", "")) if isinstance(entry, dict) else None
-        if not store:
+        if not store or entry.get("manual"):  # lo publicado a mano no gasta el cupo automatico
             continue
         try:
             when = datetime.fromisoformat(entry["t"]).astimezone(tz).date()

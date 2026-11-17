@@ -321,6 +321,10 @@ class Channel:
     store_start: str = ""
     store_daily: dict = field(default_factory=dict)  # {"powerplanet": 2, "aliexpress": 2}
     store_max_delivery_days: int = 5  # PowerPlanet: si la ficha promete la entrega mas tarde, no se publica
+    # Al pulsar "Publicar" en una vista previa, la oferta entra en una cola y sale en el siguiente hueco del ritmo
+    # normal (no al momento). false = se publica nada mas pulsar.
+    manual_queue: bool = False
+    manual_queue_hours: int = 8  # una oferta en cola mas vieja que esto caduca (el precio ya habra cambiado)
 
 
 def load_channel(path: Path) -> Channel:
@@ -366,6 +370,8 @@ def load_channel(path: Path) -> Channel:
     if (not isinstance(ch.store_daily, dict) or set(ch.store_daily) - set(storeposts.STORES)
             or any(not isinstance(v, int) or isinstance(v, bool) or v < 0 for v in ch.store_daily.values())):
         raise ConfigError(f"{path.name}: 'store_daily' debe ser {{\"powerplanet\": n, \"aliexpress\": n}} con enteros >= 0")
+    if ch.manual_queue_hours < 1:
+        raise ConfigError(f"{path.name}: 'manual_queue_hours' debe ser al menos 1")
     if ch.store_max_delivery_days < 1:
         raise ConfigError(f"{path.name}: 'store_max_delivery_days' debe ser al menos 1")
     if ch.same_kind_hours < 0:
@@ -2018,6 +2024,8 @@ MANUAL_PER_TICK = 3      # enlaces atendidos por ejecucion, como mucho
 ASIN_RE = re.compile(r"/(?:dp|gp/product|gp/aw/d|product)/([A-Z0-9]{10})(?=[/?#&]|$)", re.I)
 BARE_ASIN_RE = re.compile(r"(?<![A-Z0-9])(B0[A-Z0-9]{8})(?![A-Z0-9])")
 SHORT_LINK_RE = re.compile(r"https?://(?:www\.)?(?:amzn\.(?:eu|to)|a\.co)/\S+", re.I)
+MANUAL_MAX_LINKS = 15    # enlaces que se aceptan en un solo mensaje
+MANUAL_TODO_HOURS = 1    # un enlace pendiente de atender caduca pasado este tiempo
 MANUAL_HELP = ("Mándame un enlace de Amazon.es (también vale el corto amzn.eu o un ASIN B0…), de PowerPlanet "
                "o de AliExpress y te devuelvo una vista previa con el botón para publicarlo en el canal.")
 OLD_PRICE_SELECTORS = (
@@ -2078,6 +2086,16 @@ def parse_listing(html: str, asin: str) -> Product | None:
     return Product(asin=asin, title=title, price=price, old_price=old, rating=rating, reviews=reviews, image=image)
 
 
+def manual_links(text: str) -> list[str]:
+    """Los enlaces (o ASIN sueltos) de un mensaje, uno por elemento y sin repetir. Vacio si no hay ninguno."""
+    out: list[str] = []
+    for tok in re.split(r"\s+", (text or "").strip()):
+        tok = tok.strip("<>()[]\"',;")
+        if tok and (tok.lower().startswith(("http://", "https://")) or BARE_ASIN_RE.fullmatch(tok)) and tok not in out:
+            out.append(tok)
+    return out[:MANUAL_MAX_LINKS]
+
+
 def manual_keyboard(asin: str) -> dict:
     return {"inline_keyboard": [
         [{"text": "✅ Publicar en el canal", "callback_data": f"mpub:{asin}"}],
@@ -2091,6 +2109,22 @@ def _manual_items(state_path: Path, now: datetime) -> dict:
         return {}
     cutoff = now - timedelta(hours=MANUAL_HOURS)
     return {a: d for a, d in raw.items() if isinstance(d, dict) and _ts(d) > cutoff}
+
+
+def _manual_todo(state_path: Path, now: datetime) -> list[dict]:
+    """Enlaces recibidos que aun no se han atendido (un maximo de MANUAL_PER_TICK por ejecucion)."""
+    raw = _read_state_file(state_path).get("manual_todo")
+    if not isinstance(raw, list):
+        return []
+    cutoff = now - timedelta(hours=MANUAL_TODO_HOURS)
+    out = []
+    for d in raw:
+        try:
+            if isinstance(d, dict) and d.get("text") and datetime.fromisoformat(d["t"]) > cutoff:
+                out.append(d)
+        except (KeyError, ValueError, TypeError):
+            continue
+    return out
 
 
 def _tell(ch: Channel, text: str) -> None:
@@ -2132,10 +2166,31 @@ def handle_manual_request(ch: Channel, state_path: Path, state: dict, text: str,
     return send_preview(ch, state_path, state, p, [], tag, now)
 
 
+def own_history_line(state_dir: Path, p: Product, ch: Channel, now: datetime) -> str:
+    """Contraste rapido con lo que el bot ha visto del producto en Amazon (minimo y mediana de 30 dias)."""
+    try:
+        hist = pricehist.load(state_dir / "precios_amazon.json")
+        ref = pricehist.reference(hist.get("p", {}).get(p.asin), now.astimezone(ZoneInfo(ch.timezone)).date())
+    except Exception:
+        return ""
+    if not ref:
+        return "📈 Aún no tengo historial propio suficiente de este producto."
+    line = f"📈 Historial propio ({ref['span']} días): mínimo {fmt_eur(ref['low30'])}, mediana {fmt_eur(ref['median'])}"
+    if p.price and p.price <= ref["low30"] * 1.005:
+        line += " · 🔥 es el precio más bajo que he visto"
+    elif p.price and p.price > ref["median"]:
+        line += " · ⚠️ por encima de la mediana"
+    return line
+
+
 def send_preview(ch: Channel, state_path: Path, state: dict, p: Product, info: list[str], tag: str | None,
                  now: datetime) -> str:
     """Te manda por privado el mensaje tal y como saldria, con avisos arriba y los botones Publicar/Descartar."""
     key = p.asin
+    if not p.store:
+        line = own_history_line(state_path.parent, p, ch, now)
+        if line:
+            info = [*info, line]
     warn = "".join(f"\n{escape(line)}" for line in info)
     if key in state:
         when = _ts(state[key]).astimezone(ZoneInfo(ch.timezone)).strftime("%d/%m %H:%M")
@@ -2246,7 +2301,29 @@ def handle_manual_action(ch: Channel, state_path: Path, state: dict, action: str
         return "Caducada"
     if action == "mno":
         return "Descartada"
+    if ch.manual_queue:
+        queue = _manual_queue(state_path)
+        if any(d.get("a") == asin for d in queue):
+            return "Ya estaba en cola"
+        queue.append({**item, "q": now.isoformat()})
+        set_state_key(state_path, "manual_queue", queue)
+        eta = queue_eta(ch, state_path, now, len(queue))
+        log.info("%s: %s en cola (nº %d)", ch.name, asin, len(queue))
+        return f"En cola ✅ nº {len(queue)} · {eta}"
     p = product_from_dict(item)
+    if not _post_manual(ch, state_path, state, p, tag, now, token, chat_id):
+        log.warning("%s: no se pudo publicar %s a mano", ch.name, asin)
+        items[asin] = item  # se deja para reintentar con otra vista previa
+        set_state_key(state_path, "manual", items)
+        _tell(ch, f"Telegram no dejó publicar {asin}. Vuelve a mandarme el enlace para reintentarlo.")
+        return "No se pudo publicar"
+    return "Publicada ✅"
+
+
+def _post_manual(ch: Channel, state_path: Path, state: dict, p: Product, tag: str | None, now: datetime,
+                 token: str | None, chat_id: str | None) -> bool:
+    """Publica en el canal un producto que has aprobado a mano y manda su texto para X. False = Telegram lo rechazo."""
+    asin = p.asin
     photo_url = full_size_image(p.image)
     photo = prepare_image(photo_url)
     try:
@@ -2255,10 +2332,7 @@ def handle_manual_action(ch: Channel, state_path: Path, state: dict, action: str
     except TelegramError as exc:
         if not exc.ambiguous:
             log.warning("%s: no se pudo publicar %s a mano (%s)", ch.name, asin, exc)
-            items[asin] = item  # se deja para reintentar con otra vista previa
-            set_state_key(state_path, "manual", items)
-            _tell(ch, f"Telegram no dejó publicar {asin}. Vuelve a mandarme el enlace para reintentarlo.")
-            return "No se pudo publicar"
+            return False
         msg_id = None
     state[asin] = {"t": now.isoformat(), "title": p.title[:200], "p": p.price, "d": p.discount, "c": "", "e": "",
                    "m": msg_id, "v": [], "manual": True}
@@ -2272,7 +2346,88 @@ def handle_manual_action(ch: Channel, state_path: Path, state: dict, action: str
         maybe_send_x_copy(ch, state_path, p, None, tag, photo, photo_url, now, force=True)
     except Exception as err:
         log.warning("%s: texto para X: %s", ch.name, type(err).__name__)
-    return "Publicada ✅"
+    return True
+
+
+QUEUE_TRIES = 3  # intentos de publicar una oferta en cola antes de descartarla
+
+
+def _manual_queue(state_path: Path) -> list[dict]:
+    raw = _read_state_file(state_path).get("manual_queue")
+    return [d for d in raw if isinstance(d, dict) and d.get("a")] if isinstance(raw, list) else []
+
+
+def queue_eta(ch: Channel, state_path: Path, now: datetime, position: int) -> str:
+    """'saldra hacia las 11:35' (hueco siguiente + un intervalo por cada oferta que va delante)."""
+    tz = ZoneInfo(ch.timezone)
+    nxt = load_next_at(state_path)
+    when = max(nxt, now) if nxt else now
+    when += timedelta(minutes=(position - 1) * (ch.interval_min + ch.interval_max) / 2)
+    local = when.astimezone(tz)
+    minutes = local.hour * 60 + local.minute
+    if minutes >= hhmm(ch.window_end):
+        return "saldrá mañana a primera hora"
+    if minutes < hhmm(ch.window_start):
+        return f"saldrá hacia las {ch.window_start}"
+    return f"saldrá hacia las {local.strftime('%H:%M')}"
+
+
+def publish_queued(ch: Channel, state_path: Path, state: dict, tag: str | None, now: datetime,
+                   token: str, chat_id: str, session: requests.Session | None = None) -> bool:
+    """Publica la primera oferta de la cola (la que aprobaste a mano) si toca. True = se ha publicado una.
+
+    Una oferta de Amazon se vuelve a mirar antes: si ya no esta disponible o su precio ha subido mas de un 3 %, se
+    descarta y se te avisa; si Amazon no responde, se deja en la cola para el siguiente intento."""
+    queue = _manual_queue(state_path)
+    if not queue:
+        return False
+    cutoff = now - timedelta(hours=ch.manual_queue_hours)
+    keep = []
+    for d in queue:
+        try:
+            alive = datetime.fromisoformat(d["q"]) > cutoff
+        except (KeyError, ValueError, TypeError):
+            alive = False
+        if alive:
+            keep.append(d)
+        else:
+            _tell(ch, f"⏭️ Caducó en la cola (más de {ch.manual_queue_hours} h): {escape(str(d.get('title', d.get('a'))))[:90]}")
+    queue = keep
+    while queue:
+        item = queue[0]
+        p = product_from_dict(item)
+        why = ""
+        if not p.store:
+            session = session or make_session()
+            try:
+                html = amazon_getter(session, ch)(f"{BASE}/dp/{p.asin}")
+            except (Blocked, LocationError) as exc:
+                log.info("%s: %s en cola, Amazon no responde (%s); se reintenta", ch.name, p.asin, exc)
+                set_state_key(state_path, "manual_queue", queue)
+                return False
+            fresh = parse_listing(html, p.asin)
+            if fresh is None:
+                why = "ya no está disponible o no tiene precio"
+            elif fresh.price and p.price and fresh.price > p.price * 1.03:
+                why = f"el precio ha subido ({fmt_eur(fresh.price)} frente a {fmt_eur(p.price)})"
+            elif fresh.price:
+                p = replace(p, price=fresh.price, old_price=fresh.old_price or p.old_price)
+        if why:
+            queue.pop(0)
+            _tell(ch, f"⏭️ Descartada de la cola, {why}: {escape(p.title)[:90]}")
+            continue
+        if _post_manual(ch, state_path, state, p, tag, now, token, chat_id):
+            queue.pop(0)
+            set_state_key(state_path, "manual_queue", queue)
+            return True
+        item["tries"] = int(item.get("tries", 0)) + 1
+        if item["tries"] >= QUEUE_TRIES:
+            queue.pop(0)
+            _tell(ch, f"⏭️ Descartada de la cola, Telegram la rechazó {QUEUE_TRIES} veces: {escape(p.title)[:90]}")
+            continue
+        break
+    set_state_key(state_path, "manual_queue", queue)
+    return False
 
 
 # --------------------------------------------------------------------------
@@ -2539,15 +2694,23 @@ def process_votes(
             log.info("%s: no se pudo actualizar el contador de %s (%s)", ch.name, asin, exc)
     if new_offset is not None and new_offset != offset:
         set_state_key(state_path, "tg_offset", new_offset)
-    if requests_in:
-        session = make_session()
-        for text in requests_in[:MANUAL_PER_TICK]:
-            try:
-                log.info("%s: enlace a mano: %s", ch.name, handle_manual_request(ch, state_path, state, text, tag, now, session))
-            except Exception as exc:  # un enlace raro no debe tumbar la ejecucion
-                log.warning("%s: enlace a mano: %s", ch.name, type(exc).__name__)
-        if len(requests_in) > MANUAL_PER_TICK:
-            _tell(ch, f"Me has mandado {len(requests_in)} mensajes; he atendido {MANUAL_PER_TICK}. Reenvía el resto.")
+    if manual_chat:
+        pending = _manual_todo(state_path, now)
+        fresh = [{"text": t, "t": now.isoformat()} for text in requests_in for t in (manual_links(text) or [text])]
+        todo = pending + fresh
+        if todo:
+            batch, rest = todo[:MANUAL_PER_TICK], todo[MANUAL_PER_TICK:]
+            set_state_key(state_path, "manual_todo", rest)
+            if rest and fresh:
+                _tell(ch, f"Tengo {len(todo)} enlaces: atiendo {MANUAL_PER_TICK} por ejecución (cada 5 min). "
+                          f"Te van llegando las vistas previas, quedan {len(rest)}.")
+            session = make_session()
+            for entry in batch:
+                try:
+                    log.info("%s: enlace a mano: %s", ch.name,
+                             handle_manual_request(ch, state_path, state, entry["text"], tag, now, session))
+                except Exception as exc:  # un enlace raro no debe tumbar la ejecucion
+                    log.warning("%s: enlace a mano: %s", ch.name, type(exc).__name__)
     if changed:
         set_state_key(state_path, "posted", state)
         log.info("%s: %d mensajes con votos actualizados", ch.name, len(changed))
@@ -2749,6 +2912,13 @@ def run_channel(
         token, chat_id = get_secret(ch.token_env), get_secret(ch.chat_env)
         if not token or not chat_id:
             raise ConfigError(f"{ch.name}: faltan los secretos {ch.token_env} / {ch.chat_env}")
+
+    if publishing and not force and ch.manual_queue and ch.name == REVIEW_CHANNEL and token:
+        try:
+            if publish_queued(ch, state_path, state, tag, now, token, chat_id, session=None):
+                return 1
+        except Exception as exc:  # la cola es un extra: si falla, esta franja sigue su camino normal
+            log.warning("%s: cola de ofertas a mano: %s", ch.name, type(exc).__name__)
 
     if publishing and not force and ch.store_daily and token:
         try:
