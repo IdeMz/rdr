@@ -824,6 +824,12 @@
    "title": "Logitech Ergo M575S ratón con trackball inalámbrico",
    "via": "ean"
   },
+  "5099206126152": {
+   "a": "B0D3WW9GV4",
+   "t": "2026-11-17T02:20:36.394189+00:00",
+   "title": "Logitech Keys-To-Go 2, Teclado Bluetooth portátil para Tablet - Blanco",
+   "via": "nombre"
+  },
   "5702017818023": {
    "a": "B0DWDQYB87",
    "t": "2026-11-14T05:35:19.499764+00:00",
@@ -1020,6 +1026,12 @@
    "a": "B0H6P3KHJ8",
    "t": "2026-11-17T01:35:36.075081+00:00",
    "title": "FiiO RR13 Radio FM estéreo portátil Retro, Altavoz de Cinco imanes, batería de Litio 450mAh extraíble, Antena telescópica, Color Plata",
+   "via": "ean"
+  },
+  "6953175761853": {
+   "a": "B0H6NQ6J8M",
+   "t": "2026-11-17T02:20:36.394189+00:00",
+   "title": "FiiO RR13 Radio FM estéreo portátil Retro, Altavoz de Cinco imanes, batería de Litio 450mAh extraíble, Antena telescópica, Color Negro",
    "via": "ean"
   },
   "6959422615818": {
@@ -3323,6 +3335,45 @@
     ]
    }
   },
+  "46106243512": {
+   "ahorro_vs_amazon": null,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": null,
+   "amz_title": "FiiO RR13 Radio FM estéreo portátil Retro, Altavoz de Cinco imanes, batería de Litio 450mAh extraíble, Antena telescópica, Color Negro",
+   "asin": "B0H6NQ6J8M",
+   "disponible": true,
+   "ean": "6953175761853",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "en Amazon pero sin precio o no disponible",
+   "name": "FiiO RR13 Negro Batería 10440 FM 18h 450mAh Radio portátil recargable",
+   "pista": "1238686 bytes; 1 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pp_drop": 12,
+   "pp_median": 66.95,
+   "pp_price": 58.95,
+   "t": "2026-11-17T02:20:36.394189+00:00",
+   "veredicto": "sin_precio"
+  },
+  "46146890816": {
+   "ahorro_vs_amazon": -13,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 69.99,
+   "amz_title": "Logitech Keys-To-Go 2, Teclado Bluetooth portátil para Tablet - Blanco",
+   "asin": "B0D3WW9GV4",
+   "disponible": true,
+   "ean": "5099206126152",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "Amazon 69.99 frente a 78.95",
+   "name": "Logitech Keys-To-Go 2 Gris Bluetooth Español de tijera Teclado inalámbrico",
+   "pp_drop": 11,
+   "pp_median": 88.95,
+   "pp_price": 78.95,
+   "t": "2026-11-17T02:20:36.394189+00:00",
+   "veredicto": "amazon_mas_barato"
+  },
   "46146892668": {
    "ahorro_vs_amazon": 8,
    "amz_low30": null,
@@ -4501,11 +4552,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Polti StainOver SC30 2000W Aspirador de tapicería",
-   "pista": "1351847 bytes; 16 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1350732 bytes; 17 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 20,
    "pp_median": 251.95,
    "pp_price": 200.94,
-   "t": "2026-11-16T20:01:04.281373+00:00",
+   "t": "2026-11-17T02:20:36.394189+00:00",
    "veredicto": "sin_precio"
   },
   "46599142071": {
@@ -5031,14 +5082,14 @@
    }
   }
  },
- "night_at": "2026-11-17T02:05:24.122592+00:00",
+ "night_at": "2026-11-17T02:20:36.394189+00:00",
  "resumen": {
-  "amazon_mas_barato": 21,
+  "amazon_mas_barato": 22,
   "dudoso": 4,
   "no_esta": 12,
   "oferta_real": 27,
   "pvpr_inflado": 0,
-  "sin_precio": 8
+  "sin_precio": 9
  },
- "updated": "2026-11-17T02:05:24.122592+00:00"
+ "updated": "2026-11-17T02:20:36.394189+00:00"
 }
