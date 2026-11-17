@@ -55,7 +55,7 @@
   "Relojes": "2026-11-17T12:30:54.443182+00:00",
   "Robots de cocina": "2026-11-15T15:15:41.208340+00:00",
   "Salud": "2026-11-16T16:50:42.783335+00:00",
-  "Smartwatch": "2026-11-15T15:50:40.820191+00:00",
+  "Smartwatch": "2026-11-17T19:45:42.626266+00:00",
   "Suplementos": "2026-11-17T14:01:04.582833+00:00",
   "Tablets": "2026-11-17T16:01:10.840347+00:00",
   "Televisores": "2026-11-17T13:01:23.458704+00:00",
@@ -107,7 +107,7 @@
  },
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-17T19:44:02.936435+00:00",
+ "next_at": "2026-11-17T20:10:47.949578+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -2513,6 +2513,17 @@
    "title": "HP 15 Ordenador portátil 15.6\", Intel N100, 4GB, 128GB, Windows 11",
    "v": []
   },
+  "B0FCG4B4C7": {
+   "c": "Smartwatch",
+   "d": 42,
+   "e": "⌚",
+   "m": 377,
+   "p": 219.0,
+   "s": "ambas",
+   "t": "2026-11-17T19:46:42.868789+00:00",
+   "title": "Samsung Galaxy Watch8, 40 mm, Bluetooth, Galaxy AI, Smartwatch, Procesador 3 NM, Asistente de Salud y Sueño, Seguimiento Deportivo, Garantía 3 Años + 1 año Extra, Plata(Versión Española)",
+   "v": []
+  },
   "B0FDL3BK9T": {
    "c": "Climatización",
    "d": 18,
@@ -3369,6 +3380,10 @@
    "t": "2026-11-17T18:45:48.491889+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0897PBMFW": {
+   "t": "2026-11-17T19:45:42.626266+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B08H99BPJN": {
    "t": "2026-11-17T09:01:06.401047+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3389,6 +3404,18 @@
    "t": "2026-11-17T08:01:10.979640+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0DC6ZD31R": {
+   "t": "2026-11-17T19:45:42.626266+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0DSG9VCRH": {
+   "t": "2026-11-17T19:45:42.626266+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0DY1JKTRD": {
+   "t": "2026-11-17T19:45:42.626266+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0F4QWS84P": {
    "t": "2026-11-17T17:31:15.607799+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3403,6 +3430,10 @@
   },
   "B0FR981Z25": {
    "t": "2026-11-16T20:35:50.275747+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0FRG54M5R": {
+   "t": "2026-11-17T19:45:42.626266+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0G52MX15Q": {
@@ -3434,24 +3465,12 @@
    "r": 4.6,
    "t": "2026-11-17T17:01:11.572901+00:00",
    "title": "Hombre Zapatillas Range EXP Suede, Navy/White"
-  },
-  {
-   "a": "B0F3P65X6Q",
-   "c": "Monitores",
-   "e": "🖥️",
-   "img": "https://m.media-amazon.com/images/I/71-tK+SGWCL._AC_UL320_.jpg",
-   "n": 232,
-   "op": 249.0,
-   "p": 159.0,
-   "r": 4.6,
-   "t": "2026-11-17T16:30:56.399108+00:00",
-   "title": "MSI mag 274QF X24, Monitor Gaming 27 Pulgadas WQHD, IPS rápida de 2560 x 1440, 240 Hz, 0,5 ms, Preparado para HDR, AMD FreeSync, Eye Care, AI Vision, inclinación Ajustable, Soporte Vesa, Negro"
   }
  ],
  "summary_day": "2026-11-16",
  "tg_offset": 511048087,
  "x_copy": {
   "day": "2026-11-17",
-  "n": 25
+  "n": 26
  }
 }

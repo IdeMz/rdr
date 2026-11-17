@@ -601,6 +601,24 @@
    "title": "ASUS TUF Gaming VG27AQA1A - Monitor Gaming de 27\" WQHD (2560x1440), Overclock 170Hz (por Encima de 144Hz), Extreme Low Motion Blur, Freesync Premium, 1ms (MPRT)",
    "via": "ean"
   },
+  "4711121381409": {
+   "a": "",
+   "t": "2026-11-17T19:45:42.626266+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "modelo": [
+     "Acer X119H"
+    ],
+    "nombre": [
+     "Acer Predator XB323QKV4 Gaming Monitor 80 cm (31,5\") - 4K UHD, Panel IPS de Splendor ágil, HDMI, Dis",
+     "Acer Monitor Curvo Predator Gaming 1800R | 34 Pulgadas QHD 3440 x 1440 OLED | AMD FreeSync Premium |",
+     "Acer Predator Helios Neo 18 AI Gaming Laptop 18 pulgadas WQXGA IPS 240Hz Intel 24-core Ultra 9 275HX"
+    ]
+   }
+  },
   "4711121527333": {
    "a": "B07NFK9XST",
    "t": "2026-11-13T16:35:32.960175+00:00",
@@ -824,6 +842,21 @@
    "t": "2026-11-14T04:50:24.590570+00:00",
    "title": "Proyector Panasonic PT-LMZ420 4200 LM",
    "via": "ean"
+  },
+  "5030943125466": {
+   "a": "",
+   "t": "2026-11-17T19:45:42.626266+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "EA Sports UFC 6 Standard Edition PlayStation 5 | Disco | Videojuegos | Multilingüe"
+    ],
+    "nombre": [
+     "EA Sports UFC 6 Standard Edition PlayStation 5 | Disco | Videojuegos | Multilingüe",
+     "EA Sports UFC 6 I Standard Edition PlayStation 5 I Disc I",
+     "GIOCO PS5 EA SPORTS UFC 6"
+    ]
+   }
   },
   "5055387600614": {
    "a": "B0HN7FZYK5",
@@ -3869,6 +3902,28 @@
     ]
    }
   },
+  "46186027797": {
+   "ean": "5030943125466",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Videojuego Electronic Arts EA Sports UFC 6 Estándar PS5",
+   "pp_drop": 24,
+   "pp_median": 67.95,
+   "pp_price": 51.95,
+   "t": "2026-11-17T19:45:42.626266+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "EA Sports UFC 6 Standard Edition PlayStation 5 | Disco | Videojuegos | Multilingüe"
+    ],
+    "nombre": [
+     "EA Sports UFC 6 Standard Edition PlayStation 5 | Disco | Videojuegos | Multilingüe",
+     "EA Sports UFC 6 I Standard Edition PlayStation 5 I Disc I",
+     "GIOCO PS5 EA SPORTS UFC 6"
+    ]
+   }
+  },
   "46186036340": {
    "ahorro_vs_amazon": null,
    "amz_low30": null,
@@ -5385,6 +5440,31 @@
     ]
    }
   },
+  "46680832678": {
+   "ean": "4711121381409",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Acer Predator GD712 LED RGB 4K UHD 1600 lúmenes ANSI DLP HDR10 corrección trapezoidal automática altavoz 10W Proyector",
+   "pp_drop": 14,
+   "pp_median": 1065.95,
+   "pp_price": 921.95,
+   "t": "2026-11-17T19:45:42.626266+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "modelo": [
+     "Acer X119H"
+    ],
+    "nombre": [
+     "Acer Predator XB323QKV4 Gaming Monitor 80 cm (31,5\") - 4K UHD, Panel IPS de Splendor ágil, HDMI, Dis",
+     "Acer Monitor Curvo Predator Gaming 1800R | 34 Pulgadas QHD 3440 x 1440 OLED | AMD FreeSync Premium |",
+     "Acer Predator Helios Neo 18 AI Gaming Laptop 18 pulgadas WQXGA IPS 240Hz Intel 24-core Ultra 9 275HX"
+    ]
+   }
+  },
   "46680832923": {
    "ahorro_vs_amazon": 26,
    "amz_low30": null,
@@ -5566,10 +5646,10 @@
  "resumen": {
   "amazon_mas_barato": 16,
   "dudoso": 3,
-  "no_esta": 9,
+  "no_esta": 11,
   "oferta_real": 18,
   "pvpr_inflado": 1,
   "sin_precio": 1
  },
- "updated": "2026-11-17T19:15:39.946523+00:00"
+ "updated": "2026-11-17T19:45:42.626266+00:00"
 }
