@@ -27,7 +27,7 @@
   "Fitness en casa": "2026-11-15T12:15:40.152691+00:00",
   "Fotografía": "2026-11-18T15:01:26.987987+00:00",
   "Freidoras de aire": "2026-11-15T20:15:42.147336+00:00",
-  "Gaming": "2026-11-16T20:35:50.275747+00:00",
+  "Gaming": "2026-11-18T15:31:00.962603+00:00",
   "Gatos": "2026-11-14T18:30:55.099025+00:00",
   "Herramientas": "2026-11-14T21:01:00.449874+00:00",
   "Higiene personal": "2026-11-16T15:05:39.512603+00:00",
@@ -96,7 +96,7 @@
   }
  ],
  "manual_todo": [],
- "next_at": "2026-11-18T15:28:31.295772+00:00",
+ "next_at": "2026-11-18T15:56:02.276163+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2879,6 +2879,17 @@
    "title": "ACCURATEX Almohadas 50x70cm Juego de 2, Espuma Viscoelástica Triturada Ajustable, Relleno Alternativo al Plumón, Funda de Algodón Extraíble - Soporte Firme para Dormir de Lado y Espalda",
    "v": []
   },
+  "B0FR981Z25": {
+   "c": "Gaming",
+   "d": 24,
+   "e": "🕹️",
+   "m": 401,
+   "p": 129.99,
+   "s": "ambas",
+   "t": "2026-11-18T15:31:42.151853+00:00",
+   "title": "CLOUVOU Silla de Oficina Ergonomica con Ruedas [GANADORA DE PUREBAS] Negro",
+   "v": []
+  },
   "B0FRMC8FLH": {
    "c": "Tablets",
    "d": 39,
@@ -3655,10 +3666,6 @@
    "t": "2026-11-17T17:31:15.607799+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0FQGPHDT7": {
-   "t": "2026-11-17T15:30:58.601953+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0FRG54M5R": {
    "t": "2026-11-17T19:45:42.626266+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3669,6 +3676,18 @@
   }
  },
  "reserve": [
+  {
+   "a": "B09BTVGR2C",
+   "c": "Gaming",
+   "e": "🕹️",
+   "img": "https://m.media-amazon.com/images/I/71qVWCTMQTL._AC_UL320_.jpg",
+   "n": 139,
+   "op": 109.99,
+   "p": 81.21,
+   "r": 4.2,
+   "t": "2026-11-18T15:31:00.962603+00:00",
+   "title": "Vinsetto Silla Gaming Reposapiés Retráctil 65x65x119-129 cm Negro y Azul"
+  },
   {
    "a": "B01N4NJ3HX",
    "c": "Lego",
@@ -3698,6 +3717,6 @@
  "tg_offset": 511048116,
  "x_copy": {
   "day": "2026-11-18",
-  "n": 17
+  "n": 18
  }
 }

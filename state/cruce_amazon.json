@@ -3702,10 +3702,10 @@
    "lista": "candidates",
    "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
    "name": "VITURE Pro Neckband 256GB Android 4 horas Banda para el cuello 170 g",
-   "pp_drop": 12,
+   "pp_drop": 17,
    "pp_median": 375.95,
-   "pp_price": 330.95,
-   "t": "2026-11-18T02:05:20.803491+00:00",
+   "pp_price": 310.95,
+   "t": "2026-11-18T15:31:00.962603+00:00",
    "v": 3,
    "veredicto": "no_esta",
    "vistos": {
@@ -3737,7 +3737,7 @@
    "veredicto": "amazon_mas_barato"
   },
   "45570747727": {
-   "ahorro_vs_amazon": 28,
+   "ahorro_vs_amazon": 33,
    "amz_low30": 499.0,
    "amz_median": null,
    "amz_price": 399.0,
@@ -3747,12 +3747,12 @@
    "ean": "8717755779090",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "28 % por debajo del habitual en Amazon (499.00)",
+   "motivo": "33 % por debajo del habitual en Amazon (499.00)",
    "name": "Sonos Sub Mini 2x6 pulgadas WiFi Subwoofer",
-   "pp_drop": 12,
+   "pp_drop": 17,
    "pp_median": 406.95,
-   "pp_price": 357.95,
-   "t": "2026-11-18T01:50:27.420303+00:00",
+   "pp_price": 335.94,
+   "t": "2026-11-18T15:31:00.962603+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -7091,5 +7091,5 @@
   "pvpr_inflado": 3,
   "sin_precio": 6
  },
- "updated": "2026-11-18T15:01:26.987987+00:00"
+ "updated": "2026-11-18T15:31:00.962603+00:00"
 }
