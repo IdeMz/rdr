@@ -19,7 +19,7 @@
   "Colchones y almohadas": "2026-11-17T10:01:21.690221+00:00",
   "Componentes PC": "2026-11-16T16:15:49.892288+00:00",
   "Cuidado de la piel": "2026-11-17T10:31:06.725588+00:00",
-  "Cuidado del cabello": "2026-11-13T21:50:42.988192+00:00",
+  "Cuidado del cabello": "2026-11-18T11:01:05.531917+00:00",
   "Cámaras de seguridad": "2026-11-14T17:20:46.627491+00:00",
   "Decoración navideña": "2026-11-16T20:01:04.281373+00:00",
   "Domótica": "2026-11-17T18:45:48.491889+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-18T10:57:19.068576+00:00",
+ "next_at": "2026-11-18T11:27:42.505249+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -817,6 +817,17 @@
    "s": "ambas",
    "t": "2026-11-13T12:51:02.696112+00:00",
    "title": "Wilkinson Sword Intuition Complete - Cuchillas de afeitar para mujer (3 unidades)",
+   "v": []
+  },
+  "B084QZ2RSL": {
+   "c": "Cuidado del cabello",
+   "d": 53,
+   "e": "💇",
+   "m": 392,
+   "p": 35.19,
+   "s": "ofertas",
+   "t": "2026-11-18T11:01:44.682917+00:00",
+   "title": "BaByliss Waver Ondas Suferas para el cabello – Barril Recubierto de cerámica, 3 ajustes de calor (160°C-200°C), Ondas sueltas, Sin frizz, Calentamiento rápido, Negro/Dorado, W2447E",
    "v": []
   },
   "B086RF6YJQ": {
@@ -3475,6 +3486,10 @@
    "t": "2026-11-17T17:01:11.572901+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B06XC29B5G": {
+   "t": "2026-11-18T11:01:05.531917+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B07YYJRXQR": {
    "t": "2026-11-18T10:30:54.867859+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3530,22 +3545,22 @@
  },
  "reserve": [
   {
-   "a": "B0DJFH4D2K",
-   "c": "Barras de sonido",
-   "e": "🎶",
-   "img": "https://m.media-amazon.com/images/I/41BmmMUHplL._AC_UL320_.jpg",
-   "n": 404,
-   "op": 99.9,
-   "p": 84.9,
-   "r": 4.5,
-   "t": "2026-11-18T08:01:03.545593+00:00",
-   "title": "THOMSON SB401BT Soundbar - 200W de Potencia Musical Total - Bluetooth 5.0 - Entrada Óptica, USB y AUX - Preajustes de Ecualización - Control Remoto - Indicador de Fuente LED - Diseño Blanco y Madera"
+   "a": "B08XZ9BX7C",
+   "c": "Cuidado del cabello",
+   "e": "💇",
+   "img": "https://m.media-amazon.com/images/I/71Iuur1+lkL._AC_UL320_.jpg",
+   "n": 444,
+   "op": 99.99,
+   "p": 69.99,
+   "r": 4.3,
+   "t": "2026-11-18T11:01:05.531917+00:00",
+   "title": "Rowenta Air Care Ultimate Experience - Rizador en Forma de L CF4310"
   }
  ],
  "summary_day": "2026-11-17",
  "tg_offset": 511048112,
  "x_copy": {
   "day": "2026-11-18",
-  "n": 8
+  "n": 9
  }
 }

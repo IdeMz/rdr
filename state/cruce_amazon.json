@@ -1843,6 +1843,13 @@
    "title": "Trust Gaming GXT 867 Acira 60% Teclado Mecánico Alemán QWERTZ Layout, Iluminación RGB, Teclas Dobles, USB Mini Portátil Programable Pequeño Teclado Gaming 60% P",
    "via": "nombre"
   },
+  "8715946669649": {
+   "a": "B07Y59V9LP",
+   "t": "2026-11-18T11:01:05.531917+00:00",
+   "title": "Epson Impresora DE Tickets S0224874 TÉRMICA TM-T20III C31CH51011 Negra - Velocidad 250MM/S - Caracteres ANK - USB - RS232 - Apertura DE C",
+   "v": 3,
+   "via": "ean"
+  },
   "8715946725949": {
    "a": "B0CVQQLLQT",
    "t": "2026-11-15T00:20:27.121298+00:00",
@@ -1861,6 +1868,26 @@
    "title": "Sonos Sub Mini - Subwoofer inalámbrico Compacto - Negro",
    "v": 3,
    "via": "ean"
+  },
+  "8719706428095": {
+   "a": "",
+   "t": "2026-11-18T11:01:05.531917+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "Seagate Exos X22 22 a 3,5p"
+    ],
+    "modelo": [
+     "Seagate Exos X22 - Disco duro interno (22 TB, ST22000NM001E, 3,5\", SATA3, 512 MB) (Reacondicionado)",
+     "Seagate Exos X22 22 a 3,5p",
+     "Seagate IronWolf Pro, 20 TB, Enterprise HDD interno - CMR, 3,5 pulgadas, SATA a 6 Gb/s, 7200 RPM, ca"
+    ],
+    "nombre": [
+     "Seagate Exos X22 - Disco duro interno (22 TB, ST22000NM001E, 3,5\", SATA3, 512 MB) (Reacondicionado)",
+     "Seagate EXOS X22 22TB SATA 3.5 Pulgadas 7200RPM 6GB/S 512E/4K",
+     "Seagate Exos X22 22 a 3,5p"
+    ]
+   }
   },
   "8720689027083": {
    "a": "B0GC4J6L69",
@@ -2969,6 +2996,26 @@
    "t": "2026-11-18T04:35:26.024921+00:00",
    "v": 3,
    "veredicto": "sin_precio"
+  },
+  "45243451754": {
+   "ahorro_vs_amazon": -1,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 170.0,
+   "amz_title": "Epson Impresora DE Tickets S0224874 TÉRMICA TM-T20III C31CH51011 Negra - Velocidad 250MM/S - Caracteres ANK - USB - RS232 - Apertura DE C",
+   "asin": "B07Y59V9LP",
+   "disponible": true,
+   "ean": "8715946669649",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 170.00 frente a 171.78",
+   "name": "Epson TM-T20III USB+Serial Impresora térmica",
+   "pp_drop": 36,
+   "pp_median": 269.95,
+   "pp_price": 171.78,
+   "t": "2026-11-18T11:01:05.531917+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
   },
   "45251942871": {
    "ean": "4894461955711",
@@ -5813,6 +5860,33 @@
    "t": "2026-11-16T07:01:09.494097+00:00",
    "veredicto": "sin_precio"
   },
+  "46599141420": {
+   "ean": "8719706428095",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Seagate Exos X22 ST22000NM001E 22TB SATA 3,5 pulgadas 7200rpm Disco duro",
+   "pp_drop": 26,
+   "pp_median": 1664.95,
+   "pp_price": 1232.95,
+   "t": "2026-11-18T11:01:05.531917+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "Seagate Exos X22 22 a 3,5p"
+    ],
+    "modelo": [
+     "Seagate Exos X22 - Disco duro interno (22 TB, ST22000NM001E, 3,5\", SATA3, 512 MB) (Reacondicionado)",
+     "Seagate Exos X22 22 a 3,5p",
+     "Seagate IronWolf Pro, 20 TB, Enterprise HDD interno - CMR, 3,5 pulgadas, SATA a 6 Gb/s, 7200 RPM, ca"
+    ],
+    "nombre": [
+     "Seagate Exos X22 - Disco duro interno (22 TB, ST22000NM001E, 3,5\", SATA3, 512 MB) (Reacondicionado)",
+     "Seagate EXOS X22 22TB SATA 3.5 Pulgadas 7200RPM 6GB/S 512E/4K",
+     "Seagate Exos X22 22 a 3,5p"
+    ]
+   }
+  },
   "46599141457": {
    "ahorro_vs_amazon": 12,
    "amz_low30": null,
@@ -6594,12 +6668,12 @@
  },
  "night_at": "2026-11-18T06:35:24.193209+00:00",
  "resumen": {
-  "amazon_mas_barato": 29,
-  "dudoso": 5,
-  "no_esta": 18,
-  "oferta_real": 22,
-  "pvpr_inflado": 3,
+  "amazon_mas_barato": 15,
+  "dudoso": 2,
+  "no_esta": 14,
+  "oferta_real": 15,
+  "pvpr_inflado": 2,
   "sin_precio": 4
  },
- "updated": "2026-11-18T10:30:54.867859+00:00"
+ "updated": "2026-11-18T11:01:05.531917+00:00"
 }
