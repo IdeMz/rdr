@@ -2204,11 +2204,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Soundcore Liberty 4 NC Negro ANC Bluetooth 5.3 50h IPX4 Auriculares inalámbricos",
-   "pista": "2326016 bytes; 11 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "2305917 bytes; 12 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 19,
    "pp_median": 79.94,
    "pp_price": 64.95,
-   "t": "2026-11-18T00:35:21.102583+00:00",
+   "t": "2026-11-18T06:35:24.193209+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -6592,7 +6592,7 @@
    }
   }
  },
- "night_at": "2026-11-18T05:09:46.231271+00:00",
+ "night_at": "2026-11-18T06:35:24.193209+00:00",
  "resumen": {
   "amazon_mas_barato": 29,
   "dudoso": 5,
@@ -6601,5 +6601,5 @@
   "pvpr_inflado": 3,
   "sin_precio": 4
  },
- "updated": "2026-11-18T05:09:46.231271+00:00"
+ "updated": "2026-11-18T06:35:24.193209+00:00"
 }
