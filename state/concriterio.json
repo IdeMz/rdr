@@ -64,7 +64,34 @@
   "Zapatillas": "2026-11-17T17:01:11.572901+00:00",
   "eReaders": "2026-11-16T13:55:32.747613+00:00"
  },
- "manual": {},
+ "manual": {
+  "B0DL65SRTR": {
+   "a": "B0DL65SRTR",
+   "c": "",
+   "e": "",
+   "img": "https://m.media-amazon.com/images/I/615rSXpeUEL._AC_SL1184_.jpg",
+   "m": 372,
+   "n": 2,
+   "op": null,
+   "p": 127.19,
+   "r": 5.0,
+   "t": "2026-11-18T07:55:39.668365+00:00",
+   "title": "AIROH WRAAAP Paint Matt XS"
+  },
+  "B0FPQXQMWD": {
+   "a": "B0FPQXQMWD",
+   "c": "",
+   "e": "",
+   "img": "https://m.media-amazon.com/images/I/71k9ys4BacL._AC_SL1500_.jpg",
+   "m": 373,
+   "n": 30,
+   "op": null,
+   "p": 27.17,
+   "r": 4.7,
+   "t": "2026-11-18T07:55:39.668365+00:00",
+   "title": "Trevi RDA 70 BR Radio portátil inalámbrica Multibanda FM Am SW con USB, Micro SD, MP3 y batería Recargable de Litio, compacta, versátil e Ideal para Viajes, Rojo"
+  }
+ },
  "manual_queue": [],
  "manual_todo": [],
  "next_at": "2026-11-18T08:00:12.295792+00:00",
@@ -3477,7 +3504,7 @@
   }
  ],
  "summary_day": "2026-11-17",
- "tg_offset": 511048099,
+ "tg_offset": 511048100,
  "x_copy": {
   "day": "2026-11-18",
   "n": 2
