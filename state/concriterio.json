@@ -67,20 +67,6 @@
  "manual": {},
  "manual_queue": [
   {
-   "a": "B0000D8472",
-   "c": "",
-   "e": "",
-   "img": "https://m.media-amazon.com/images/I/61K13o1IXmL._AC_SL1500_.jpg",
-   "m": 378,
-   "n": 411,
-   "op": null,
-   "p": 151.88,
-   "q": "2026-11-18T08:35:34.004230+00:00",
-   "r": 4.7,
-   "t": "2026-11-18T08:30:52.707124+00:00",
-   "title": "Unold M 160 G Gourmet, Antracita, Blanco, 160 W, 230 V, 50 Hz, 72 x 72 x 348 mm - Licuadora"
-  },
-  {
    "a": "B0DR34N25V",
    "c": "",
    "e": "",
@@ -96,9 +82,20 @@
   }
  ],
  "manual_todo": [],
- "next_at": "2026-11-18T09:27:00.076904+00:00",
+ "next_at": "2026-11-18T09:59:46.448534+00:00",
  "offer": null,
  "posted": {
+  "B0000D8472": {
+   "c": "",
+   "d": 0,
+   "e": "",
+   "m": 389,
+   "manual": true,
+   "p": 151.88,
+   "t": "2026-11-18T09:30:54.362032+00:00",
+   "title": "Unold M 160 G Gourmet, Antracita, Blanco, 160 W, 230 V, 50 Hz, 72 x 72 x 348 mm - Licuadora",
+   "v": []
+  },
   "B0001IOZ98": {
    "c": "Jardín",
    "d": 25,
@@ -3542,6 +3539,6 @@
  "tg_offset": 511048112,
  "x_copy": {
   "day": "2026-11-18",
-  "n": 5
+  "n": 6
  }
 }
