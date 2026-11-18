@@ -2962,11 +2962,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Intel Core Ultra 5 250KF Plus 18 Núcleos LGA1851 Tray 18 hilos 5,3GHz Procesador",
-   "pista": "1003774 bytes; 9 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1013909 bytes; 9 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 17,
    "pp_median": 222.95,
    "pp_price": 186.11,
-   "t": "2026-11-17T22:20:31.920357+00:00",
+   "t": "2026-11-18T04:35:26.024921+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -6592,7 +6592,7 @@
    }
   }
  },
- "night_at": "2026-11-18T03:20:27.361932+00:00",
+ "night_at": "2026-11-18T04:35:26.024921+00:00",
  "resumen": {
   "amazon_mas_barato": 29,
   "dudoso": 5,
@@ -6601,5 +6601,5 @@
   "pvpr_inflado": 3,
   "sin_precio": 4
  },
- "updated": "2026-11-18T03:20:27.361932+00:00"
+ "updated": "2026-11-18T04:35:26.024921+00:00"
 }
