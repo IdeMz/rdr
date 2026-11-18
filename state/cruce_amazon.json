@@ -537,6 +537,20 @@
    "title": "Equip 650315 - Soporte de Pared para televisores de 32\" a 55\" (Acero, articulado, Plano/Curve)",
    "via": "ean"
   },
+  "4020628540203": {
+   "a": "",
+   "t": "2026-11-18T01:05:24.851799+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "MotoGP 26 - Switch 2"
+    ],
+    "nombre": [
+     "MotoGP 26 - Switch 2",
+     "MotoGP 26 (Nintendo Switch 2)"
+    ]
+   }
+  },
   "4038986630795": {
    "a": "",
    "t": "2026-11-17T03:05:20.365221+00:00",
@@ -1453,6 +1467,21 @@
    "t": "2026-11-14T14:40:41.311125+00:00",
    "title": "Creality Sermoon X1 Escáner 3D, láser y luz estructurada, precisión 0,02 mm (Rango 5-4000 mm), sin Polvo con escaneo de Agujeros, móvil inalámbrico para CAD, in",
    "via": "nombre"
+  },
+  "6978252854587": {
+   "a": "",
+   "t": "2026-11-18T01:05:24.851799+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Anker Soundcore Sleep A30 Auriculares para dormir con cancelación de ruido",
+     "Soundcore Auriculares Sleep A30 de Anker: con Cancelación Activa de Ruido, Sistema Adaptativo para B",
+     "Anker soundcore Sleep A30 Auriculares para dormir con cancelación de ruido"
+    ]
+   }
   },
   "6978258900134": {
    "a": "",
@@ -2501,6 +2530,28 @@
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
+  "43261031997": {
+   "ean": "6978252854587",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Soundcore Sleep A30 para dormir Blanco TWS ANC Bluetooth 5.3 45h IPX4 Auriculares inalámbricos",
+   "pp_drop": 15,
+   "pp_median": 159.95,
+   "pp_price": 135.96,
+   "t": "2026-11-18T01:05:24.851799+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Anker Soundcore Sleep A30 Auriculares para dormir con cancelación de ruido",
+     "Soundcore Auriculares Sleep A30 de Anker: con Cancelación Activa de Ruido, Sistema Adaptativo para B",
+     "Anker soundcore Sleep A30 Auriculares para dormir con cancelación de ruido"
+    ]
+   }
+  },
   "43682318148": {
    "ahorro_vs_amazon": -21,
    "amz_low30": null,
@@ -3477,22 +3528,23 @@
    "veredicto": "oferta_real"
   },
   "45956990791": {
-   "ahorro_vs_amazon": 6,
+   "ahorro_vs_amazon": 8,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 1599.75,
+   "amz_price": 1627.22,
    "amz_title": "MSI Gaming RTX 5070 Ti 16G Gaming Trio OC Tarjeta gráfica (16 GB GDDR7, 256 bits, rendimiento extremo: 2580, DisplayPort x 3 2.1a, HDMI 2.1b, NVIDIA Blackwell A",
    "asin": "B0F11KQQF4",
    "disponible": true,
    "ean": "4711377301541",
    "encontrado_por": "nombre",
    "lista": "candidates",
-   "motivo": "solo 6 % por debajo del habitual en Amazon (1599.75)",
+   "motivo": "solo 8 % por debajo del habitual en Amazon (1627.22)",
    "name": "MSI GeForce RTX 5070 Ti Gaming Trio OC 16GB GDDR7 3 ventiladores HDMI 2.1 Tarjeta gráfica",
-   "pp_drop": 11,
-   "pp_median": 1684.95,
+   "pp_drop": 10,
+   "pp_median": 1661.95,
    "pp_price": 1498.95,
-   "t": "2026-11-14T20:20:37.410274+00:00",
+   "t": "2026-11-18T01:05:24.851799+00:00",
+   "v": 3,
    "veredicto": "dudoso"
   },
   "45956990832": {
@@ -5647,6 +5699,27 @@
    "t": "2026-11-17T00:50:28.547812+00:00",
    "veredicto": "oferta_real"
   },
+  "46599142366": {
+   "ean": "4020628540203",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Videojuego Milestone MotoGP 26 Nintendo Switch 2 Estándar",
+   "pp_drop": 20,
+   "pp_median": 48.94,
+   "pp_price": 38.95,
+   "t": "2026-11-18T01:05:24.851799+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "MotoGP 26 - Switch 2"
+    ],
+    "nombre": [
+     "MotoGP 26 - Switch 2",
+     "MotoGP 26 (Nintendo Switch 2)"
+    ]
+   }
+  },
   "46599142725": {
    "ahorro_vs_amazon": -24,
    "amz_low30": null,
@@ -6201,14 +6274,14 @@
    }
   }
  },
- "night_at": "2026-11-18T00:50:38.693542+00:00",
+ "night_at": "2026-11-18T01:05:24.851799+00:00",
  "resumen": {
   "amazon_mas_barato": 23,
   "dudoso": 4,
-  "no_esta": 15,
+  "no_esta": 17,
   "oferta_real": 20,
   "pvpr_inflado": 3,
   "sin_precio": 3
  },
- "updated": "2026-11-18T00:50:38.693542+00:00"
+ "updated": "2026-11-18T01:05:24.851799+00:00"
 }
