@@ -65,24 +65,9 @@
   "eReaders": "2026-11-16T13:55:32.747613+00:00"
  },
  "manual": {},
- "manual_queue": [
-  {
-   "a": "B08SR2VJG1",
-   "c": "",
-   "e": "",
-   "img": "https://m.media-amazon.com/images/I/61r76mE-NmS._AC_SL1482_.jpg",
-   "m": 401,
-   "n": 1248,
-   "op": 32.84,
-   "p": 27.7,
-   "q": "2026-11-18T15:02:35.537667+00:00",
-   "r": 4.6,
-   "t": "2026-11-18T15:01:26.987987+00:00",
-   "title": "Instant Pot Vortex 4 en 1 Freidora de Aire Digital Antiadherente con Temporizador y Función de Horno y Calentador, 1.700 W – 5,7 L"
-  }
- ],
+ "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-18T16:29:20.251113+00:00",
+ "next_at": "2026-11-18T16:59:43.291788+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1092,13 +1077,13 @@
    "v": []
   },
   "B08SR2VJG1": {
-   "c": "Freidoras de aire",
-   "d": 31,
-   "e": "🍟",
-   "m": 306,
-   "p": 32.29,
-   "s": "busqueda",
-   "t": "2026-11-15T08:51:59.835954+00:00",
+   "c": "",
+   "d": 16,
+   "e": "",
+   "m": 403,
+   "manual": true,
+   "p": 27.7,
+   "t": "2026-11-18T16:30:58.262697+00:00",
    "title": "Instant Pot Vortex 4 en 1 Freidora de Aire Digital Antiadherente con Temporizador y Función de Horno y Calentador, 1.700 W – 5,7 L",
    "v": []
   },
@@ -3714,6 +3699,6 @@
  "tg_offset": 511048116,
  "x_copy": {
   "day": "2026-11-18",
-  "n": 19
+  "n": 20
  }
 }
