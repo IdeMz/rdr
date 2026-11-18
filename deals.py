@@ -2600,6 +2600,23 @@ def _publish_store_candidate(ch: Channel, state_path: Path, state: dict, state_d
     return True
 
 
+def telegram_pending(ch: Channel, token: str) -> int:
+    """Avisos que Telegram dice tener pendientes de entregar (0 si no lo dice). Se registra para diagnosticar."""
+    try:
+        info = (tg_call("getWebhookInfo", token, {}, retries=0) or {}).get("result")
+    except TelegramError as exc:
+        log.info("%s: telegram: no se pudo consultar getWebhookInfo (%s)", ch.name, exc)
+        return 0
+    if not isinstance(info, dict):
+        return 0
+    pending = info.get("pending_update_count")
+    pending = pending if isinstance(pending, int) else 0
+    log.info("%s: telegram: pendientes segun Telegram %d%s%s", ch.name, pending,
+             " (hay un webhook configurado)" if info.get("url") else "",
+             f" (ultimo error: {scrub(str(info['last_error_message']))})" if info.get("last_error_message") else "")
+    return pending
+
+
 def process_votes(
     ch: Channel, state_path: Path, state: dict, tag: str | None, now: datetime | None = None
 ) -> int:
@@ -2616,8 +2633,9 @@ def process_votes(
     manual_chat = get_secret(ch.alert_chat_env) if ch.name == REVIEW_CHANNEL else None
     requests_in: list[str] = []
     n_updates = n_messages = n_buttons = 0
-    for _ in range(5):  # 100 avisos por llamada
-        data = {"timeout": 0, "limit": 100, "allowed_updates": json.dumps(["callback_query", "message"])}
+    poll_timeout, checked = 0, False
+    for _ in range(6):  # 100 avisos por llamada
+        data = {"timeout": poll_timeout, "limit": 100, "allowed_updates": json.dumps(["callback_query", "message"])}
         if new_offset is not None:
             data["offset"] = new_offset
         try:
@@ -2626,6 +2644,12 @@ def process_votes(
             log.warning("%s: no se pudieron leer los votos (%s)", ch.name, exc)
             break
         if not updates:
+            if not n_updates and not checked:
+                # ¿tiene Telegram algo pendiente que no nos ha dado? Si es asi, se espera unos segundos a que lo entregue
+                checked = True
+                if telegram_pending(ch, token):
+                    poll_timeout = 5
+                    continue
             break
         for up in updates:
             n_updates += 1

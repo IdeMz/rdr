@@ -3379,3 +3379,44 @@ def test_every_run_logs_what_it_read_from_telegram(tmp_path, monkeypatch, caplog
         deals.process_votes(ch, path, {}, "tag-21", NOW_IN + timedelta(minutes=10))
     assert "telegram: 1 avisos leidos (1 mensajes, 0 botones)" in caplog.text
     assert "telegram: 1 avisos leidos (0 mensajes, 1 botones)" in caplog.text
+
+
+def test_when_telegram_has_pending_updates_the_bot_waits_for_them(tmp_path, monkeypatch, caplog):
+    tg = manual_env(monkeypatch)
+    ch, path = channel(name="concriterio", require_spain=False), tmp_path / "concriterio.json"
+    polls = []
+
+    def fake(method, token, data, **kw):
+        if method == "getWebhookInfo":
+            tg.calls.append((method, data))
+            return {"result": {"pending_update_count": 2, "url": ""}}
+        if method == "getUpdates":
+            polls.append(data["timeout"])
+            if data["timeout"] == 5:  # Telegram lo entrega solo si se espera
+                tg.updates.append({"update_id": 900, "message": {"message_id": 9, "chat": {"id": 777},
+                                                                 "text": "B0CT8W3Y29"}})
+        return tg(method, token, data, **kw)
+
+    monkeypatch.setattr(deals, "tg_call", fake)
+    with caplog.at_level("INFO"):
+        deals.process_votes(ch, path, {}, "tag-21", NOW_IN)
+    assert polls[:2] == [0, 5] and len(tg.of("sendPhoto")) == 1
+    assert "pendientes segun Telegram 2" in caplog.text
+
+
+def test_no_extra_wait_when_telegram_has_nothing_pending(tmp_path, monkeypatch, caplog):
+    tg = manual_env(monkeypatch)
+    ch, path = channel(name="concriterio", require_spain=False), tmp_path / "concriterio.json"
+    polls = []
+
+    def fake(method, token, data, **kw):
+        if method == "getWebhookInfo":
+            return {"result": {"pending_update_count": 0, "url": ""}}
+        if method == "getUpdates":
+            polls.append(data["timeout"])
+        return tg(method, token, data, **kw)
+
+    monkeypatch.setattr(deals, "tg_call", fake)
+    with caplog.at_level("INFO"):
+        deals.process_votes(ch, path, {}, "tag-21", NOW_IN)
+    assert polls == [0] and "pendientes segun Telegram 0" in caplog.text and "sin avisos nuevos" in caplog.text
