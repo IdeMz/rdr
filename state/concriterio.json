@@ -39,7 +39,7 @@
   "Limpieza del hogar": "2026-11-18T07:01:05.386750+00:00",
   "Maquillaje": "2026-11-17T07:01:18.076115+00:00",
   "Menaje de cocina": "2026-11-15T09:25:34.345588+00:00",
-  "Mochilas y maletas": "2026-11-15T20:50:41.317709+00:00",
+  "Mochilas y maletas": "2026-11-18T13:01:08.331588+00:00",
   "Monitores": "2026-11-17T16:30:56.399108+00:00",
   "Móviles": "2026-11-17T15:30:58.601953+00:00",
   "Nutrición deportiva": "2026-11-17T14:30:58.598858+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-18T12:59:16.451819+00:00",
+ "next_at": "2026-11-18T13:27:02.493797+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -776,6 +776,17 @@
    "s": "ambas",
    "t": "2026-11-14T17:55:57.682245+00:00",
    "title": "Logitech MK295 Silent, QWERTY Español - Negro",
+   "v": []
+  },
+  "B07X3X9ZCD": {
+   "c": "Mochilas y maletas",
+   "d": 55,
+   "e": "🎒",
+   "m": 396,
+   "p": 18.0,
+   "s": "ambas",
+   "t": "2026-11-18T13:01:43.416089+00:00",
+   "title": "MAVIS Neceser, 6 L - Black (Negro)",
    "v": []
   },
   "B07XLML2YS": {
@@ -3586,6 +3597,18 @@
  },
  "reserve": [
   {
+   "a": "B07ZV31T1G",
+   "c": "Mochilas y maletas",
+   "e": "🎒",
+   "img": "https://m.media-amazon.com/images/I/81HHAw8MBjL._AC_UL320_.jpg",
+   "n": 751,
+   "op": 30.0,
+   "p": 16.09,
+   "r": 4.7,
+   "t": "2026-11-18T13:01:08.331588+00:00",
+   "title": "Unisex H/H Scout Neceser, Negro, STD"
+  },
+  {
    "a": "B08XZ9BX7C",
    "c": "Cuidado del cabello",
    "e": "💇",
@@ -3602,6 +3625,6 @@
  "tg_offset": 511048112,
  "x_copy": {
   "day": "2026-11-18",
-  "n": 12
+  "n": 13
  }
 }

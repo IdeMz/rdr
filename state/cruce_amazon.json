@@ -1241,6 +1241,13 @@
    "v": 3,
    "via": "ean"
   },
+  "649528946560": {
+   "a": "B0FP9K9C4T",
+   "t": "2026-11-18T13:01:08.331588+00:00",
+   "title": "Micron Crucial P510 - Ssd - 1 Tb - Intern - M.2 2280 - Pci Express 5.0 X4 (nvme) (ct1000p510ssd5)",
+   "v": 3,
+   "via": "modelo"
+  },
   "6920075740950": {
    "a": "B0CFXY26H1",
    "t": "2026-11-16T22:50:28.400882+00:00",
@@ -1435,6 +1442,19 @@
    "title": "EMEET Cámara Web 4K S600L, 4 Modos de Iluminación, Efecto Arcoíris, Sensor de 1/2\", Imágenes con IA, PDAF de 0.2 s, 2 Micrófonos, Control Giratorio, Webcam 4K c",
    "v": 3,
    "via": "modelo"
+  },
+  "6971636400691": {
+   "a": "",
+   "t": "2026-11-18T13:01:08.331588+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Creatorally Archivo de Corte por Láser, Cortes de Grabado de Archivos Digitales(Alcancía de Engranaj"
+    ]
+   }
   },
   "6972147076948": {
    "a": "B0FFT2ZCBP",
@@ -4032,6 +4052,26 @@
     ]
    }
   },
+  "45956991411": {
+   "ahorro_vs_amazon": 31,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 298.16,
+   "amz_title": "Micron Crucial P510 - Ssd - 1 Tb - Intern - M.2 2280 - Pci Express 5.0 X4 (nvme) (ct1000p510ssd5)",
+   "asin": "B0FP9K9C4T",
+   "disponible": true,
+   "ean": "649528946560",
+   "encontrado_por": "modelo",
+   "lista": "candidates",
+   "motivo": "31 % por debajo del habitual en Amazon (298.16)",
+   "name": "Crucial P510 1TB NVMe M.2 PCIe 5.0 2280 11000MB/s SSD",
+   "pp_drop": 22,
+   "pp_median": 262.95,
+   "pp_price": 205.95,
+   "t": "2026-11-18T13:01:08.331588+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "45956991451": {
    "ahorro_vs_amazon": 9,
    "amz_low30": null,
@@ -4510,6 +4550,26 @@
    "t": "2026-11-17T15:01:35.153027+00:00",
    "v": 3,
    "veredicto": "oferta_real"
+  },
+  "46146892377": {
+   "ean": "6971636400691",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Creality Rotary Kit Pro Negro 193x155mm",
+   "pp_drop": 24,
+   "pp_median": 169.99,
+   "pp_price": 129.0,
+   "t": "2026-11-18T13:01:08.331588+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Creatorally Archivo de Corte por Láser, Cortes de Grabado de Archivos Digitales(Alcancía de Engranaj"
+    ]
+   }
   },
   "46146892668": {
    "ahorro_vs_amazon": 8,
@@ -6853,10 +6913,10 @@
  "resumen": {
   "amazon_mas_barato": 19,
   "dudoso": 2,
-  "no_esta": 15,
-  "oferta_real": 15,
+  "no_esta": 16,
+  "oferta_real": 16,
   "pvpr_inflado": 2,
   "sin_precio": 5
  },
- "updated": "2026-11-18T12:30:56.291132+00:00"
+ "updated": "2026-11-18T13:01:08.331588+00:00"
 }
