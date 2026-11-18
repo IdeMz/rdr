@@ -41,7 +41,7 @@
   "Menaje de cocina": "2026-11-15T09:25:34.345588+00:00",
   "Mochilas y maletas": "2026-11-18T13:01:08.331588+00:00",
   "Monitores": "2026-11-17T16:30:56.399108+00:00",
-  "Móviles": "2026-11-17T15:30:58.601953+00:00",
+  "Móviles": "2026-11-18T20:31:00.004559+00:00",
   "Nutrición deportiva": "2026-11-17T14:30:58.598858+00:00",
   "Oficina": "2026-11-16T10:45:46.172773+00:00",
   "Patinetes": "2026-11-18T12:30:56.291132+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-18T20:29:21.091356+00:00",
+ "next_at": "2026-11-18T20:59:19.876229+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2824,6 +2824,17 @@
    "title": "Soundcore C50i de Anker, Auriculares Abiertos con Clip, diseño FlexiClip",
    "v": []
   },
+  "B0FLDLRG94": {
+   "c": "Móviles",
+   "d": 29,
+   "e": "📱",
+   "m": 411,
+   "p": 669.0,
+   "s": "ofertas",
+   "t": "2026-11-18T20:31:30.460320+00:00",
+   "title": "Samsung Galaxy S25 FE 512GB, Teléfono Móvil con IA, Marco Ligero 7,5mm, Pantalla FHD+ 6,7\", Cámara 50MP, Exynos 2400, 8GB RAM, Garantía Fabricante 3 Años+1 Año Extra, Negro Intenso (Versión Española)",
+   "v": []
+  },
   "B0FLPCM6CB": {
    "c": "Cargadores y baterías",
    "d": 39,
@@ -3685,10 +3696,6 @@
    "t": "2026-11-18T12:30:56.291132+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0CBK995CW": {
-   "t": "2026-11-17T20:15:50.874512+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0DWDWK591": {
    "t": "2026-11-18T13:30:55.857399+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3699,6 +3706,18 @@
   }
  },
  "reserve": [
+  {
+   "a": "B0H6XGHLZV",
+   "c": "Móviles",
+   "e": "📱",
+   "img": "https://m.media-amazon.com/images/I/61Bpjk0J8XL._AC_UY218_.jpg",
+   "n": 68,
+   "op": 799.99,
+   "p": 649.9,
+   "r": 4.2,
+   "t": "2026-11-18T20:31:00.004559+00:00",
+   "title": "POCO F9 Pro, Smartphone 12+512, Blanco, batería de 6330mAh, carga de 100 W"
+  },
   {
    "a": "B01J9LPTFG",
    "c": "Pequeño electrodoméstico",
@@ -3722,24 +3741,12 @@
    "r": 4.7,
    "t": "2026-11-18T19:01:22.092208+00:00",
    "title": "Pañales Bambo Nature talla 4 – 7 a 14kg (Pack 6 × 24 Un)"
-  },
-  {
-   "a": "B08T9JTHNK",
-   "c": "Bricolaje",
-   "e": "🪛",
-   "img": "https://m.media-amazon.com/images/I/61x-8HHklaL._AC_UL320_.jpg",
-   "n": 3400,
-   "op": 21.99,
-   "p": 17.59,
-   "r": 4.6,
-   "t": "2026-11-18T17:30:58.281773+00:00",
-   "title": "WORKPRO Pistola de Calafateo Metal 2 Modos 9:1 y 18:1"
   }
  ],
  "summary_day": "2026-11-17",
  "tg_offset": 511048116,
  "x_copy": {
   "day": "2026-11-18",
-  "n": 27
+  "n": 28
  }
 }
