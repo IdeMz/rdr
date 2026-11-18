@@ -64,22 +64,22 @@
   "Zapatillas": "2026-11-17T17:01:11.572901+00:00",
   "eReaders": "2026-11-16T13:55:32.747613+00:00"
  },
- "manual": {},
- "manual_queue": [
-  {
-   "a": "B0FPQXQMWD",
+ "manual": {
+  "B0000D8472": {
+   "a": "B0000D8472",
    "c": "",
    "e": "",
-   "img": "https://m.media-amazon.com/images/I/71k9ys4BacL._AC_SL1500_.jpg",
-   "m": 373,
-   "n": 30,
+   "img": "https://m.media-amazon.com/images/I/61K13o1IXmL._AC_SL1500_.jpg",
+   "m": 378,
+   "n": 411,
    "op": null,
-   "p": 27.17,
-   "q": "2026-11-18T08:20:47.185087+00:00",
+   "p": 151.88,
    "r": 4.7,
-   "t": "2026-11-18T07:55:39.668365+00:00",
-   "title": "Trevi RDA 70 BR Radio portátil inalámbrica Multibanda FM Am SW con USB, Micro SD, MP3 y batería Recargable de Litio, compacta, versátil e Ideal para Viajes, Rojo"
-  },
+   "t": "2026-11-18T08:30:52.707124+00:00",
+   "title": "Unold M 160 G Gourmet, Antracita, Blanco, 160 W, 230 V, 50 Hz, 72 x 72 x 348 mm - Licuadora"
+  }
+ },
+ "manual_queue": [
   {
    "a": "B0DL65SRTR",
    "c": "",
@@ -96,7 +96,7 @@
   }
  ],
  "manual_todo": [],
- "next_at": "2026-11-18T08:26:08.856736+00:00",
+ "next_at": "2026-11-18T09:00:23.174166+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -2717,6 +2717,17 @@
    "title": "JATEKA Banda Elástica Fitness, Banda de Resistencia en Casa y Gym, Gomas Elásticas Musculacion para Hombre Mujer Entrenamiento de Fuerza, Yoga, Pilates, Versátil, Duradera y Portátil",
    "v": []
   },
+  "B0FPQXQMWD": {
+   "c": "",
+   "d": 0,
+   "e": "",
+   "m": 387,
+   "manual": true,
+   "p": 27.17,
+   "t": "2026-11-18T08:30:52.707124+00:00",
+   "title": "Trevi RDA 70 BR Radio portátil inalámbrica Multibanda FM Am SW con USB, Micro SD, MP3 y batería Recargable de Litio, compacta, versátil e Ideal para Viajes, Rojo",
+   "v": []
+  },
   "B0FQ5F2QSQ": {
    "c": "Monitores",
    "d": 24,
@@ -3461,10 +3472,6 @@
    "t": "2026-11-17T10:01:21.690221+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0CX1TJXKV": {
-   "t": "2026-11-17T08:01:10.979640+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0DC6ZD31R": {
    "t": "2026-11-17T19:45:42.626266+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3525,9 +3532,9 @@
   }
  ],
  "summary_day": "2026-11-17",
- "tg_offset": 511048108,
+ "tg_offset": 511048109,
  "x_copy": {
   "day": "2026-11-18",
-  "n": 3
+  "n": 4
  }
 }
