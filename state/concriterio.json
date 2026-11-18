@@ -12,7 +12,7 @@
   "Bricolaje": "2026-11-16T08:10:40.674323+00:00",
   "Cafeteras": "2026-11-17T18:01:13.651055+00:00",
   "Café y cápsulas": "2026-11-15T14:40:39.424977+00:00",
-  "Camping y montaña": "2026-11-16T11:20:40.607767+00:00",
+  "Camping y montaña": "2026-11-18T14:30:58.889249+00:00",
   "Cargadores y baterías": "2026-11-17T19:15:39.946523+00:00",
   "Ciclismo": "2026-11-17T07:30:53.001889+00:00",
   "Climatización": "2026-11-17T15:01:35.153027+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-18T14:29:07.839176+00:00",
+ "next_at": "2026-11-18T15:00:21.974103+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1445,6 +1445,17 @@
    "p": 29.99,
    "t": "2026-11-17T12:01:06.762869+00:00",
    "title": "JACK & JONES Jjimike Jjoriginal JJ 111 Noos - Jeans Hombre",
+   "v": []
+  },
+  "B0B5RR9264": {
+   "c": "Camping y montaña",
+   "d": 40,
+   "e": "🏕️",
+   "m": 399,
+   "p": 64.77,
+   "s": "ofertas",
+   "t": "2026-11-18T14:32:18.862247+00:00",
+   "title": "OLIGHT Perun 2 Linterna Frontal Recargable 2500 Lumen 12 Días Máx 166 Metro",
    "v": []
   },
   "B0B6CKMLQH": {
@@ -3647,6 +3658,6 @@
  "tg_offset": 511048112,
  "x_copy": {
   "day": "2026-11-18",
-  "n": 15
+  "n": 16
  }
 }

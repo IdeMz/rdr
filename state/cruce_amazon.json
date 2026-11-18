@@ -394,6 +394,13 @@
    "v": 3,
    "via": "ean"
   },
+  "0840295405841": {
+   "a": "B0DDYZZMSN",
+   "t": "2026-11-18T14:30:58.889249+00:00",
+   "title": "Therabody SmartGoggles 2.0 Mascarilla Ocular Calefactada, Mascarilla de Sueño Oscurante y Masaje en las Sienes para Relajación Personalizada y Alivio de Dolores",
+   "v": 3,
+   "via": "ean"
+  },
   "0840353958159": {
    "a": "",
    "t": "2026-11-14T01:20:25.760497+00:00",
@@ -503,19 +510,11 @@
    }
   },
   "196786567667": {
-   "a": "",
-   "t": "2026-11-14T04:20:27.040644+00:00",
-   "v": 2,
-   "vistos": {
-    "ean": [
-     "Impresora Multifunción HP Smart Tank 5106"
-    ],
-    "nombre": [
-     "HP Smart Tank 5105, Impresora Multifunción A4 con Depósito de Tinta",
-     "HP Smart Tank 5108, Impresora Multifunción A4 con Deposito de Tinta",
-     "Impresora Multifunción HP Smart Tank 5106"
-    ]
-   }
+   "a": "B0C34DBDRR",
+   "t": "2026-11-18T14:30:58.889249+00:00",
+   "title": "Impresora Multifunción HP Smart Tank 5106",
+   "v": 3,
+   "via": "ean"
   },
   "3045380026261": {
    "a": "B0DH8HYC7P",
@@ -3287,6 +3286,26 @@
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
+  "45368123747": {
+   "ahorro_vs_amazon": 7,
+   "amz_low30": null,
+   "amz_median": 169.0,
+   "amz_price": 158.99,
+   "amz_title": "Therabody SmartGoggles 2.0 Mascarilla Ocular Calefactada, Mascarilla de Sueño Oscurante y Masaje en las Sienes para Relajación Personalizada y Alivio de Dolores",
+   "asin": "B0DDYZZMSN",
+   "disponible": true,
+   "ean": "0840295405841",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 158.99 frente a 157.95",
+   "name": "Therabody SmartGoggles 2.0 Masajeador facial",
+   "pp_drop": 21,
+   "pp_median": 200.94,
+   "pp_price": 157.95,
+   "t": "2026-11-18T14:30:58.889249+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "45368125438": {
    "ahorro_vs_amazon": -16,
    "amz_low30": null,
@@ -3813,26 +3832,24 @@
    }
   },
   "45626822434": {
+   "ahorro_vs_amazon": 0,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 158.0,
+   "amz_title": "Impresora Multifunción HP Smart Tank 5106",
+   "asin": "B0C34DBDRR",
+   "disponible": true,
    "ean": "196786567667",
+   "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "motivo": "Amazon 158.00 frente a 157.95",
    "name": "HP Smart Tank 5106 Multifunción Color WiFi Dúplex Manual 5ppm Impresora de tinta",
-   "pp_drop": 17,
-   "pp_median": 243.45,
-   "pp_price": 200.94,
-   "t": "2026-11-14T04:20:27.040644+00:00",
-   "v": 2,
-   "veredicto": "no_esta",
-   "vistos": {
-    "ean": [
-     "Impresora Multifunción HP Smart Tank 5106"
-    ],
-    "nombre": [
-     "HP Smart Tank 5105, Impresora Multifunción A4 con Depósito de Tinta",
-     "HP Smart Tank 5108, Impresora Multifunción A4 con Deposito de Tinta",
-     "Impresora Multifunción HP Smart Tank 5106"
-    ]
-   }
+   "pp_drop": 21,
+   "pp_median": 200.94,
+   "pp_price": 157.95,
+   "t": "2026-11-18T14:30:58.889249+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
   },
   "45646443496": {
    "ean": "8437026689353",
@@ -7039,12 +7056,12 @@
  },
  "night_at": "2026-11-18T06:35:24.193209+00:00",
  "resumen": {
-  "amazon_mas_barato": 20,
+  "amazon_mas_barato": 22,
   "dudoso": 2,
-  "no_esta": 18,
+  "no_esta": 17,
   "oferta_real": 16,
   "pvpr_inflado": 3,
   "sin_precio": 5
  },
- "updated": "2026-11-18T14:01:13.022640+00:00"
+ "updated": "2026-11-18T14:30:58.889249+00:00"
 }
