@@ -303,6 +303,13 @@
    "title": "Kingston ValueRAM 4GB 1600MHz DDR3 NonECC CL11 SODIMM 1Rx8 1.5V KVR16S11S8/4 Memoria Portátil",
    "via": "ean"
   },
+  "0740617319910": {
+   "a": "B097K5J1SB",
+   "t": "2026-11-18T02:35:23.555406+00:00",
+   "title": "Kingston FURY Beast 8GB 3200MHz DDR4 CL16 Memoria para Ordenadores de sobremesa Módulo único KF432C16BB/8",
+   "v": 3,
+   "via": "ean"
+  },
   "0740617348552": {
    "a": "B0FCZM23H9",
    "t": "2026-11-14T01:20:25.760497+00:00",
@@ -1848,6 +1855,13 @@
    "v": 3,
    "via": "ean"
   },
+  "8720689044011": {
+   "a": "B0H3C1DRDZ",
+   "t": "2026-11-18T02:35:23.555406+00:00",
+   "title": "HX7403 Cepillo de Dientes Eléctrico Recargable 3 Velocidades Temporizador Azul",
+   "v": 3,
+   "via": "ean"
+  },
   "8806094957228": {
    "a": "B0CBMFJF7V",
    "t": "2026-11-16T13:55:32.747613+00:00",
@@ -2122,6 +2136,26 @@
    "pp_price": 252.38,
    "t": "2026-11-17T06:05:20.554247+00:00",
    "veredicto": "sin_precio"
+  },
+  "37600258284": {
+   "ahorro_vs_amazon": 15,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 101.11,
+   "amz_title": "Kingston FURY Beast 8GB 3200MHz DDR4 CL16 Memoria para Ordenadores de sobremesa Módulo único KF432C16BB/8",
+   "asin": "B097K5J1SB",
+   "disponible": true,
+   "ean": "0740617319910",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "15 % por debajo del habitual en Amazon (101.11)",
+   "name": "Kingston FURY Beast 8GB DDR4 3200 MHz CL16 Memoria RAM",
+   "pp_drop": 15,
+   "pp_median": 100.95,
+   "pp_price": 85.95,
+   "t": "2026-11-18T02:35:23.555406+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
   },
   "37600259956": {
    "ahorro_vs_amazon": null,
@@ -3853,7 +3887,8 @@
    "pp_drop": 12,
    "pp_median": 285.95,
    "pp_price": 251.95,
-   "t": "2026-11-16T23:50:25.846029+00:00",
+   "t": "2026-11-18T02:35:23.555406+00:00",
+   "v": 3,
    "veredicto": "dudoso"
   },
   "45956991871": {
@@ -5777,6 +5812,26 @@
    "t": "2026-11-16T23:20:25.910397+00:00",
    "veredicto": "oferta_real"
   },
+  "46599141768": {
+   "ahorro_vs_amazon": 26,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 112.64,
+   "amz_title": "HX7403 Cepillo de Dientes Eléctrico Recargable 3 Velocidades Temporizador Azul",
+   "asin": "B0H3C1DRDZ",
+   "disponible": true,
+   "ean": "8720689044011",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "26 % por debajo del habitual en Amazon (112.64)",
+   "name": "Philips Sonicare 6100 HX7403/05 Sónico 21 días 3 velocidades Cepillo de dientes eléctrico",
+   "pp_drop": 15,
+   "pp_median": 97.95,
+   "pp_price": 83.62,
+   "t": "2026-11-18T02:35:23.555406+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "46599141999": {
    "ahorro_vs_amazon": null,
    "amz_low30": null,
@@ -6478,14 +6533,14 @@
    }
   }
  },
- "night_at": "2026-11-18T02:20:29.775184+00:00",
+ "night_at": "2026-11-18T02:35:23.555406+00:00",
  "resumen": {
   "amazon_mas_barato": 27,
   "dudoso": 4,
   "no_esta": 18,
-  "oferta_real": 21,
+  "oferta_real": 23,
   "pvpr_inflado": 3,
   "sin_precio": 4
  },
- "updated": "2026-11-18T02:20:29.775184+00:00"
+ "updated": "2026-11-18T02:35:23.555406+00:00"
 }
