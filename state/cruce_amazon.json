@@ -548,6 +548,13 @@
    "title": "Thrustmaster T598 Direct Axial Drive Volante y Pedalier - XBOX y PC",
    "via": "ean"
   },
+  "3391892031072": {
+   "a": "B0CW3JT6HK",
+   "t": "2026-11-18T11:30:52.353700+00:00",
+   "title": "Bandai Namco Entertainment Iberica Elden Ring: Shadow Of The Erdtree Collector’S Edition",
+   "v": 3,
+   "via": "nombre"
+  },
   "3660619040247": {
    "a": "B08ZJG6TVT",
    "t": "2026-11-16T10:45:46.172773+00:00",
@@ -862,6 +869,13 @@
    "a": "B089HG351D",
    "t": "2026-11-16T11:55:31.043068+00:00",
    "title": "ASUS Placa ASUS TUF B550-PLUS Gaming AMD AM4 PCIE3.0 M.2 4DDR4 SATA3 USB3.2 ATX, Black, B550",
+   "via": "ean"
+  },
+  "4718755090394": {
+   "a": "B0BS43H3HX",
+   "t": "2026-11-18T11:30:52.353700+00:00",
+   "title": "BenQ Monitor PD3205UA 32\" IPS HDR10 LCD Flicker Free 60 Hz",
+   "v": 3,
    "via": "ean"
   },
   "4719331357559": {
@@ -4762,6 +4776,27 @@
    "v": 3,
    "veredicto": "oferta_real"
   },
+  "46217685549": {
+   "ahorro_vs_amazon": null,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": null,
+   "amz_title": "Bandai Namco Entertainment Iberica Elden Ring: Shadow Of The Erdtree Collector’S Edition",
+   "asin": "B0CW3JT6HK",
+   "disponible": true,
+   "ean": "3391892031072",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "en Amazon pero sin precio o no disponible",
+   "name": "Videojuego Bandai Namco Entertainment Elden Ring: Shadow of the Erdtree Xbox Series X",
+   "pista": "1138460 bytes; 6 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pp_drop": 37,
+   "pp_median": 96.95,
+   "pp_price": 60.95,
+   "t": "2026-11-18T11:30:52.353700+00:00",
+   "v": 3,
+   "veredicto": "sin_precio"
+  },
   "46239681484": {
    "ean": "8886419377108",
    "lista": "candidates",
@@ -5626,6 +5661,26 @@
    "pp_price": 259.0,
    "t": "2026-11-14T22:05:27.466329+00:00",
    "veredicto": "dudoso"
+  },
+  "46599139975": {
+   "ahorro_vs_amazon": -5,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 647.72,
+   "amz_title": "BenQ Monitor PD3205UA 32\" IPS HDR10 LCD Flicker Free 60 Hz",
+   "asin": "B0BS43H3HX",
+   "disponible": true,
+   "ean": "4718755090394",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 647.72 frente a 681.96",
+   "name": "BenQ PD3205UA Negro 31,5 pulgadas 4K IPS 5ms FreeSync Monitor",
+   "pp_drop": 23,
+   "pp_median": 883.95,
+   "pp_price": 681.96,
+   "t": "2026-11-18T11:30:52.353700+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
   },
   "46599140076": {
    "ahorro_vs_amazon": -125,
@@ -6668,12 +6723,12 @@
  },
  "night_at": "2026-11-18T06:35:24.193209+00:00",
  "resumen": {
-  "amazon_mas_barato": 15,
+  "amazon_mas_barato": 16,
   "dudoso": 2,
   "no_esta": 14,
   "oferta_real": 15,
   "pvpr_inflado": 2,
-  "sin_precio": 4
+  "sin_precio": 5
  },
- "updated": "2026-11-18T11:01:05.531917+00:00"
+ "updated": "2026-11-18T11:30:52.353700+00:00"
 }

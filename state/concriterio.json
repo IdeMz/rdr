@@ -21,7 +21,7 @@
   "Cuidado de la piel": "2026-11-17T10:31:06.725588+00:00",
   "Cuidado del cabello": "2026-11-18T11:01:05.531917+00:00",
   "Cámaras de seguridad": "2026-11-14T17:20:46.627491+00:00",
-  "Decoración navideña": "2026-11-16T20:01:04.281373+00:00",
+  "Decoración navideña": "2026-11-18T11:30:52.353700+00:00",
   "Domótica": "2026-11-17T18:45:48.491889+00:00",
   "Droguería": "2026-11-16T21:45:41.113869+00:00",
   "Fitness en casa": "2026-11-15T12:15:40.152691+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-18T11:27:42.505249+00:00",
+ "next_at": "2026-11-18T11:56:34.645196+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -3373,6 +3373,17 @@
    "title": "Reloj Infantil Digital para Niños y Niñas de 4-16 Años",
    "v": []
   },
+  "B0HCPGS988": {
+   "c": "Decoración navideña",
+   "d": 39,
+   "e": "🎄",
+   "m": 393,
+   "p": 121.5,
+   "s": "ofertas",
+   "t": "2026-11-18T11:31:25.929225+00:00",
+   "title": "Purelei calendario adviento joyas 2025 – 25 piezas exclusivas de joyería para cada ocasión – Calendario adviento mujer – Sostenible y reutilizable – Calendario joyas estético",
+   "v": []
+  },
   "B0HCVH7ZZJ": {
    "c": "Nutrición deportiva",
    "d": 38,
@@ -3561,6 +3572,6 @@
  "tg_offset": 511048112,
  "x_copy": {
   "day": "2026-11-18",
-  "n": 9
+  "n": 10
  }
 }
