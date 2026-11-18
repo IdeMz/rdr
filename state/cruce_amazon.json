@@ -209,6 +209,13 @@
     ]
    }
   },
+  "0622356303842": {
+   "a": "B0D7RR2QWV",
+   "t": "2026-11-18T12:30:56.291132+00:00",
+   "title": "Ninja Foodi FlexDrawer, Freidora de Aire con Zona Flex, Blanco",
+   "v": 3,
+   "via": "ean"
+  },
   "0622356320559": {
    "a": "",
    "t": "2026-11-14T14:40:41.311125+00:00",
@@ -1891,6 +1898,13 @@
    "v": 3,
    "via": "ean"
   },
+  "8715946710631": {
+   "a": "B0B984BLMZ",
+   "t": "2026-11-18T12:30:56.291132+00:00",
+   "title": "Epson EH-TW6250 | Proyector 4K Pro-UHD | 2800 lúmenes | 3LCD | Android TV | Pantallas de hasta 500'' | Fácil configuración con corrección Keystone | Uso domésti",
+   "v": 3,
+   "via": "ean"
+  },
   "8715946725949": {
    "a": "B0CVQQLLQT",
    "t": "2026-11-15T00:20:27.121298+00:00",
@@ -2618,6 +2632,26 @@
    "t": "2026-11-17T18:45:48.491889+00:00",
    "v": 3,
    "veredicto": "oferta_real"
+  },
+  "41644272477": {
+   "ahorro_vs_amazon": 2,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 179.99,
+   "amz_title": "Ninja Foodi FlexDrawer, Freidora de Aire con Zona Flex, Blanco",
+   "asin": "B0D7RR2QWV",
+   "disponible": true,
+   "ean": "0622356303842",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 179.99 frente a 175.60",
+   "name": "Ninja Foodi FlexDrawer 10,4 L 2470W 7 programas doble cesta pantalla táctil Freidora de aire",
+   "pp_drop": 23,
+   "pp_median": 228.94,
+   "pp_price": 175.6,
+   "t": "2026-11-18T12:30:56.291132+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
   },
   "41887696311": {
    "ahorro_vs_amazon": -25,
@@ -4036,6 +4070,26 @@
    "t": "2026-11-18T02:35:23.555406+00:00",
    "v": 3,
    "veredicto": "dudoso"
+  },
+  "45956991487": {
+   "ahorro_vs_amazon": 2,
+   "amz_low30": null,
+   "amz_median": 835.82,
+   "amz_price": 811.95,
+   "amz_title": "Epson EH-TW6250 | Proyector 4K Pro-UHD | 2800 lúmenes | 3LCD | Android TV | Pantallas de hasta 500'' | Fácil configuración con corrección Keystone | Uso domésti",
+   "asin": "B0B984BLMZ",
+   "disponible": true,
+   "ean": "8715946710631",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 811.95 frente a 820.95",
+   "name": "Epson EH-TW6250 4K+ (5120x3200) 2800 Lúmenes ANSI 3LCD Android TV WiFi 5 altavoz 10W 36dB Proyector",
+   "pp_drop": 18,
+   "pp_median": 999.94,
+   "pp_price": 820.95,
+   "t": "2026-11-18T12:30:56.291132+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
   },
   "45956991871": {
    "ahorro_vs_amazon": 10,
@@ -6797,12 +6851,12 @@
  },
  "night_at": "2026-11-18T06:35:24.193209+00:00",
  "resumen": {
-  "amazon_mas_barato": 17,
+  "amazon_mas_barato": 19,
   "dudoso": 2,
   "no_esta": 15,
   "oferta_real": 15,
   "pvpr_inflado": 2,
   "sin_precio": 5
  },
- "updated": "2026-11-18T12:01:05.181336+00:00"
+ "updated": "2026-11-18T12:30:56.291132+00:00"
 }

@@ -23,7 +23,7 @@
   "Cámaras de seguridad": "2026-11-18T12:01:05.181336+00:00",
   "Decoración navideña": "2026-11-18T11:30:52.353700+00:00",
   "Domótica": "2026-11-17T18:45:48.491889+00:00",
-  "Droguería": "2026-11-16T21:45:41.113869+00:00",
+  "Droguería": "2026-11-18T12:30:56.291132+00:00",
   "Fitness en casa": "2026-11-15T12:15:40.152691+00:00",
   "Fotografía": "2026-11-16T15:40:40.598894+00:00",
   "Freidoras de aire": "2026-11-15T20:15:42.147336+00:00",
@@ -44,7 +44,7 @@
   "Móviles": "2026-11-17T15:30:58.601953+00:00",
   "Nutrición deportiva": "2026-11-17T14:30:58.598858+00:00",
   "Oficina": "2026-11-16T10:45:46.172773+00:00",
-  "Patinetes": "2026-11-16T11:55:31.043068+00:00",
+  "Patinetes": "2026-11-18T12:30:56.291132+00:00",
   "Pequeño electrodoméstico": "2026-11-16T18:55:32.141614+00:00",
   "Perfumes": "2026-11-15T21:40:42.221187+00:00",
   "Periféricos": "2026-11-17T10:01:21.690221+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-18T12:28:06.607636+00:00",
+ "next_at": "2026-11-18T12:59:16.451819+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2458,6 +2458,17 @@
    "title": "XIAOMI TV F Pro 32 Pulgadas 2025, QLED Smart TV, Fire OS7, L32MB-FPEU",
    "v": []
   },
+  "B0F4XD73CX": {
+   "c": "Patinetes",
+   "d": 51,
+   "e": "🛴",
+   "m": 395,
+   "p": 33.99,
+   "s": "ambas",
+   "t": "2026-11-18T12:31:39.547845+00:00",
+   "title": "HUDORA Scooter Up 145 Junior - Patinete Infantil Seguro a Partir de 3 años - Patinete Urbano Plegable con Ruedas de 145 mm - Ajustable en Altura para niños y niñas de hasta 60 kg - Teal",
+   "v": []
+  },
   "B0F53MJY8T": {
    "c": "Aspiradoras",
    "d": 15,
@@ -3504,6 +3515,10 @@
    "t": "2026-11-17T17:01:11.572901+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B016MKOA6G": {
+   "t": "2026-11-18T12:30:56.291132+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B01LZDYR7N": {
    "t": "2026-11-17T17:01:11.572901+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3527,6 +3542,10 @@
   "B09V8C4QP9": {
    "t": "2026-11-16T19:55:35.023364+00:00",
    "why": "descartada a mano"
+  },
+  "B0C3DGXND9": {
+   "t": "2026-11-18T12:30:56.291132+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0CBK995CW": {
    "t": "2026-11-17T20:15:50.874512+00:00",
@@ -3583,6 +3602,6 @@
  "tg_offset": 511048112,
  "x_copy": {
   "day": "2026-11-18",
-  "n": 11
+  "n": 12
  }
 }
