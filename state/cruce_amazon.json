@@ -19,24 +19,11 @@
    "via": "ean"
   },
   "0194644019075": {
-   "a": "",
-   "t": "2026-11-14T22:50:36.785672+00:00",
-   "v": 2,
-   "vistos": {
-    "ean": [
-     "Eufy Sensor de Movimiento Blanco"
-    ],
-    "modelo": [
-     "Sensor de Movimiento, eufy Security Home Alarm System Motion Detector",
-     "eufy Security by Anker, Sensor de Puerta",
-     "eufy C28 Omni Robot Aspirador y fregasuelos, HydroJet 15.000 Pa"
-    ],
-    "nombre": [
-     "Sensor de Movimiento, eufy Security Home Alarm System Motion Detector",
-     "eufy Security by Anker, Sensor de Puerta",
-     "Tapo T100 - Detector de Movimiento WiFi, Montaje Magnético, Requiere Hub"
-    ]
-   }
+   "a": "B08XYXVC5Q",
+   "t": "2026-11-18T02:05:20.803491+00:00",
+   "title": "Eufy Sensor de Movimiento Blanco",
+   "v": 3,
+   "via": "ean"
   },
   "0194644037574": {
    "a": "B0D2XRXNGY",
@@ -453,6 +440,19 @@
    "t": "2026-11-16T22:24:54.934328+00:00",
    "title": "AKG N5 Hybrid TWS Auriculares – Sonido nítido inalámbrico, Cancelación de Ruido Adaptativa, Calidad de Llamadas certificada por Zoom, 40h de reproducción, Prote",
    "via": "ean"
+  },
+  "1230000160872": {
+   "a": "",
+   "t": "2026-11-18T02:05:20.803491+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Gafas VITURE Pro 2 XR + Neckband 256GB + Pack Pro Mobile Dock"
+    ]
+   }
   },
   "196388599943": {
    "a": "",
@@ -1233,10 +1233,22 @@
    }
   },
   "6941948710320": {
-   "a": "B0H83QMWSJ",
-   "t": "2026-11-16T17:40:44.874656+00:00",
-   "title": "XIAOMI Monitor Gaming 25 Pulgadas, 240Hz, 1ms GTG, Altavoces, P25FEB‑RGGL",
-   "via": "ean"
+   "a": "",
+   "t": "2026-11-18T02:05:20.803491+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "XIAOMI Monitor Gaming 25 Pulgadas, 240Hz, 1ms GTG, Altavoces, P25FEB‑RGGL"
+    ],
+    "modelo": [
+     "Xiaomi Aspiradora inalámbrica G20, 25 kPa / 150 AW, 60 min de autonomía, filtración 99.9%, con luz F"
+    ],
+    "nombre": [
+     "Xiaomi Monitor Gaming 24Pulgadas,200Hz,1ms GTG,FreeSync Premium,P24FDA-RGGL",
+     "MSI mag 256FA E20 Monitor Gaming de 24,5\", 1920 x 1080, FHD Rapid IPS, 200 Hz, 0,5 ms, Compatible co",
+     "XIAOMI Monitor 24 Pulgadas, FHD 144Hz, Free Sync, IPS, P2FDA\nRAGL"
+    ]
+   }
   },
   "6942103154287": {
    "a": "B0F1G8QQLM",
@@ -2283,31 +2295,25 @@
    "veredicto": "oferta_real"
   },
   "39617298396": {
+   "ahorro_vs_amazon": null,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": null,
+   "amz_title": "Eufy Sensor de Movimiento Blanco",
+   "asin": "B08XYXVC5Q",
+   "disponible": true,
    "ean": "0194644019075",
+   "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Eufy Security T8910021 Blanco WiFi Sensor de movimiento",
+   "pista": "1510531 bytes; 12 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 21,
    "pp_median": 33.99,
    "pp_price": 26.9,
-   "t": "2026-11-16T23:20:25.910397+00:00",
-   "v": 2,
-   "veredicto": "no_esta",
-   "vistos": {
-    "ean": [
-     "Eufy Sensor de Movimiento Blanco"
-    ],
-    "modelo": [
-     "Sensor de Movimiento, eufy Security Home Alarm System Motion Detector",
-     "eufy Security by Anker, Sensor de Puerta",
-     "eufy C28 Omni Robot Aspirador y fregasuelos, HydroJet 15.000 Pa"
-    ],
-    "nombre": [
-     "Sensor de Movimiento, eufy Security Home Alarm System Motion Detector",
-     "eufy Security by Anker, Sensor de Puerta",
-     "Tapo T100 - Detector de Movimiento WiFi, Montaje Magnético, Requiere Hub"
-    ]
-   }
+   "t": "2026-11-18T02:05:20.803491+00:00",
+   "v": 3,
+   "veredicto": "sin_precio"
   },
   "39818152139": {
    "ahorro_vs_amazon": 4,
@@ -3317,6 +3323,26 @@
    "t": "2026-11-17T07:01:18.076115+00:00",
    "veredicto": "sin_precio"
   },
+  "45463833398": {
+   "ean": "1230000160872",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "VITURE Pro Neckband 256GB Android 4 horas Banda para el cuello 170 g",
+   "pp_drop": 12,
+   "pp_median": 375.95,
+   "pp_price": 330.95,
+   "t": "2026-11-18T02:05:20.803491+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Gafas VITURE Pro 2 XR + Neckband 256GB + Pack Pro Mobile Dock"
+    ]
+   }
+  },
   "45570747232": {
    "ahorro_vs_amazon": 0,
    "amz_low30": null,
@@ -3957,23 +3983,29 @@
    "veredicto": "amazon_mas_barato"
   },
   "45992963114": {
-   "ahorro_vs_amazon": 19,
-   "amz_low30": null,
-   "amz_median": null,
-   "amz_price": 135.46,
-   "amz_title": "XIAOMI Monitor Gaming 25 Pulgadas, 240Hz, 1ms GTG, Altavoces, P25FEB‑RGGL",
-   "asin": "B0H83QMWSJ",
-   "disponible": true,
    "ean": "6941948710320",
-   "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "19 % por debajo del habitual en Amazon (135.46)",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
    "name": "Xiaomi G25i 2026 24,5 pulgadas Full HD Fast IPS 240Hz 1ms Monitor",
    "pp_drop": 15,
    "pp_median": 129.95,
    "pp_price": 109.9,
-   "t": "2026-11-16T17:40:44.874656+00:00",
-   "veredicto": "oferta_real"
+   "t": "2026-11-18T02:05:20.803491+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "XIAOMI Monitor Gaming 25 Pulgadas, 240Hz, 1ms GTG, Altavoces, P25FEB‑RGGL"
+    ],
+    "modelo": [
+     "Xiaomi Aspiradora inalámbrica G20, 25 kPa / 150 AW, 60 min de autonomía, filtración 99.9%, con luz F"
+    ],
+    "nombre": [
+     "Xiaomi Monitor Gaming 24Pulgadas,200Hz,1ms GTG,FreeSync Premium,P24FDA-RGGL",
+     "MSI mag 256FA E20 Monitor Gaming de 24,5\", 1920 x 1080, FHD Rapid IPS, 200 Hz, 0,5 ms, Compatible co",
+     "XIAOMI Monitor 24 Pulgadas, FHD 144Hz, Free Sync, IPS, P2FDA\nRAGL"
+    ]
+   }
   },
   "45992963335": {
    "ahorro_vs_amazon": 40,
@@ -6417,14 +6449,14 @@
    }
   }
  },
- "night_at": "2026-11-18T01:50:27.420303+00:00",
+ "night_at": "2026-11-18T02:05:20.803491+00:00",
  "resumen": {
   "amazon_mas_barato": 27,
   "dudoso": 4,
-  "no_esta": 17,
-  "oferta_real": 21,
+  "no_esta": 18,
+  "oferta_real": 20,
   "pvpr_inflado": 3,
-  "sin_precio": 3
+  "sin_precio": 4
  },
- "updated": "2026-11-18T01:50:27.420303+00:00"
+ "updated": "2026-11-18T02:05:20.803491+00:00"
 }
