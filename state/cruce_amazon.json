@@ -189,6 +189,13 @@
     ]
    }
   },
+  "0622356294072": {
+   "a": "B0DKXY7JT2",
+   "t": "2026-11-18T13:30:55.857399+00:00",
+   "title": "Ninja SLUSHi, Máquina de Bebidas Heladas sin Hielo, 1,9L, Azul/Gris",
+   "v": 3,
+   "via": "ean"
+  },
   "0622356294607": {
    "a": "",
    "t": "2026-11-16T22:50:28.400882+00:00",
@@ -1844,6 +1851,21 @@
    "t": "2026-11-16T22:05:20.966983+00:00",
    "title": "KROM K-Wheel – Volante de Carreras Multiplataforma con Pedales, Palanca de Cambios y Levas, Efectos de Vibración, 12 Botones, Ángulo de Giro de 180º – Compatibl",
    "via": "ean"
+  },
+  "8436584875093": {
+   "a": "",
+   "t": "2026-11-18T13:30:55.857399+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Salicru SPS 2000 ADVANCE T – Sistema de Alimentación Ininterrumpida (SAI/UPS) de 2000 VA Line-intera",
+     "Salicru SPS Advance RT2 SAI 1800W 2000 VA",
+     "Master U-Power SAI UPS 2000VA 1200W Line Interactive AVR 4 Schuko"
+    ]
+   }
   },
   "8436587976537": {
    "a": "B0GTW4KCLT",
@@ -4551,6 +4573,28 @@
    "v": 3,
    "veredicto": "oferta_real"
   },
+  "46146892164": {
+   "ean": "8436584875093",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Salicru SPS ONE 2000 VA 1200W Línea Interactiva Negro 4 tomas SAI",
+   "pp_drop": 22,
+   "pp_median": 207.95,
+   "pp_price": 161.95,
+   "t": "2026-11-18T13:30:55.857399+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Salicru SPS 2000 ADVANCE T – Sistema de Alimentación Ininterrumpida (SAI/UPS) de 2000 VA Line-intera",
+     "Salicru SPS Advance RT2 SAI 1800W 2000 VA",
+     "Master U-Power SAI UPS 2000VA 1200W Line Interactive AVR 4 Schuko"
+    ]
+   }
+  },
   "46146892377": {
    "ean": "6971636400691",
    "lista": "candidates",
@@ -5167,6 +5211,26 @@
      "VEVOR Horno de Pizza Comercial Eléctrico de Encimera de Doble Piso, Acero Inoxidable con Piedra y Ma"
     ]
    }
+  },
+  "46239685059": {
+   "ahorro_vs_amazon": -39,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 185.07,
+   "amz_title": "Ninja SLUSHi, Máquina de Bebidas Heladas sin Hielo, 1,9L, Azul/Gris",
+   "asin": "B0DKXY7JT2",
+   "disponible": true,
+   "ean": "0622356294072",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 185.07 frente a 256.96",
+   "name": "Heladora Ninja Slushi 1,892L 200W Azul Negro FS301EU",
+   "pp_drop": 20,
+   "pp_median": 322.95,
+   "pp_price": 256.96,
+   "t": "2026-11-18T13:30:55.857399+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
   },
   "46239685068": {
    "ahorro_vs_amazon": 38,
@@ -6911,12 +6975,12 @@
  },
  "night_at": "2026-11-18T06:35:24.193209+00:00",
  "resumen": {
-  "amazon_mas_barato": 19,
+  "amazon_mas_barato": 20,
   "dudoso": 2,
-  "no_esta": 16,
+  "no_esta": 17,
   "oferta_real": 16,
   "pvpr_inflado": 2,
   "sin_precio": 5
  },
- "updated": "2026-11-18T13:01:08.331588+00:00"
+ "updated": "2026-11-18T13:30:55.857399+00:00"
 }

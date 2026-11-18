@@ -35,7 +35,7 @@
   "Impresoras": "2026-11-16T13:05:35.879053+00:00",
   "Jardín": "2026-11-15T11:10:43.114079+00:00",
   "Juguetes": "2026-11-16T09:55:33.695632+00:00",
-  "Lego": "2026-11-15T15:15:41.208340+00:00",
+  "Lego": "2026-11-18T13:30:55.857399+00:00",
   "Limpieza del hogar": "2026-11-18T07:01:05.386750+00:00",
   "Maquillaje": "2026-11-17T07:01:18.076115+00:00",
   "Menaje de cocina": "2026-11-15T09:25:34.345588+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-18T13:27:02.493797+00:00",
+ "next_at": "2026-11-18T14:00:37.832071+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2787,6 +2787,17 @@
    "title": "Trevi RDA 70 BR Radio portátil inalámbrica Multibanda FM Am SW con USB, Micro SD, MP3 y batería Recargable de Litio, compacta, versátil e Ideal para Viajes, Rojo",
    "v": []
   },
+  "B0FPXDXXYR": {
+   "c": "Lego",
+   "d": 20,
+   "e": "🧱",
+   "m": 397,
+   "p": 22.39,
+   "s": "ambas",
+   "t": "2026-11-18T13:31:35.284065+00:00",
+   "title": "LEGO Speed Champions Máquina del Tiempo de Regreso al Futuro 77256",
+   "v": []
+  },
   "B0FQ5F2QSQ": {
    "c": "Monitores",
    "d": 24,
@@ -3570,16 +3581,16 @@
    "t": "2026-11-17T19:45:42.626266+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0DWDWK591": {
+   "t": "2026-11-18T13:30:55.857399+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0DY1JKTRD": {
    "t": "2026-11-17T19:45:42.626266+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0F4QWS84P": {
    "t": "2026-11-17T17:31:15.607799+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0F8QFTXW9": {
-   "t": "2026-11-17T13:01:23.458704+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0FQGPHDT7": {
@@ -3596,6 +3607,18 @@
   }
  },
  "reserve": [
+  {
+   "a": "B01N4NJ3HX",
+   "c": "Lego",
+   "e": "🧱",
+   "img": "https://m.media-amazon.com/images/I/61jLAI-xKlL._AC_UL320_.jpg",
+   "n": 664,
+   "op": 74.99,
+   "p": 59.99,
+   "r": 4.6,
+   "t": "2026-11-18T13:30:55.857399+00:00",
+   "title": "LEGO Icons El Señor de los Anillos: Casco de Sauron 11373"
+  },
   {
    "a": "B07ZV31T1G",
    "c": "Mochilas y maletas",
@@ -3625,6 +3648,6 @@
  "tg_offset": 511048112,
  "x_copy": {
   "day": "2026-11-18",
-  "n": 13
+  "n": 14
  }
 }
