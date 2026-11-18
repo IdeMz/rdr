@@ -177,21 +177,21 @@
   },
   "0622356281096": {
    "a": "",
-   "t": "2026-11-14T22:20:30.510879+00:00",
-   "v": 2,
+   "t": "2026-11-18T01:20:27.102268+00:00",
+   "v": 3,
    "vistos": {
     "ean": [
      "(sin resultados)"
     ],
     "modelo": [
-     "Shark BreatheClear Compact Purificador de aire con NeverChange hasta 6 años*, filtro HEPA, Detección",
      "Shark NeverChange, Purificador de Aire MAX, Alcance 130 m², Blanco",
-     "Shark PowerPro, Aspiradora sin Cable, 50 Min., Azul Metalizado"
+     "Shark BreatheClear Compact Purificador de aire con NeverChange hasta 6 años*, filtro HEPA, Detección",
+     "Shark NeverChange, Purificador de Aire, Alcance 23 m², Silencioso, Gris"
     ],
     "nombre": [
+     "Shark STYLE iQ Secador de pelo y moldeador, 1600 W, secado rápido sin dañar el cabello, iónico, conc",
      "Shark STYLE iQ Secador de pelo y moldeador, 3 en 1, con concentrador, difusor y cepillo de peinado, ",
-     "Shark SpeedStyle Sistema secador de cabello de alta velocidad, compacto y potente, modo protección d",
-     "Shark Glam, Multi-Styler 5 en 1 Secador de Pelo, Moldeador, Plancha"
+     "Shark FlexStyle, Secador de Pelo y Moldeador, Limited Edition Glacial Blue"
     ]
    }
   },
@@ -1533,6 +1533,24 @@
      "Genérico KYRO Ratón Inalámbrico Recargable, Bluetooth 5.2 y USB 2.4 GHz, 3 Niveles dpi 1200/1600/200",
      "TECKNET Pro Ratón Bluetooth Inalámbrico con Dual BT 5.0 y 2,4 GHz, 6400DPI",
      "Rapoo MT760M Wireless Mouse Silent - Ratón inalámbrico USB 2.4G y Bluetooth, hasta 4000 dpi, Clic si"
+    ]
+   }
+  },
+  "7630997902846": {
+   "a": "",
+   "t": "2026-11-18T01:20:27.102268+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "modelo": [
+     "Enerpower Cargador CC 12 V-24 V Li-Ion a 54,6 V (48 V Li-Ion) 1,5 A para SoFlow SO4 PRO 2ND GEN, SoF",
+     "Cargador 54,6V 2A para E-Scooter con 6 Conectores – Adaptador Universal 48V para Baterías de Litio, ",
+     "Puerto de carga con cubierta antipolvo para Kugoo M4 repuesto scooter eléctrico accesorios patinetes"
+    ],
+    "nombre": [
+     "(sin resultados)"
     ]
    }
   },
@@ -3413,22 +3431,22 @@
    "pp_drop": 14,
    "pp_median": 199.95,
    "pp_price": 171.95,
-   "t": "2026-11-16T22:24:54.934328+00:00",
-   "v": 2,
+   "t": "2026-11-18T01:20:27.102268+00:00",
+   "v": 3,
    "veredicto": "no_esta",
    "vistos": {
     "ean": [
      "(sin resultados)"
     ],
     "modelo": [
-     "Shark BreatheClear Compact Purificador de aire con NeverChange hasta 6 años*, filtro HEPA, Detección",
      "Shark NeverChange, Purificador de Aire MAX, Alcance 130 m², Blanco",
-     "Shark PowerPro, Aspiradora sin Cable, 50 Min., Azul Metalizado"
+     "Shark BreatheClear Compact Purificador de aire con NeverChange hasta 6 años*, filtro HEPA, Detección",
+     "Shark NeverChange, Purificador de Aire, Alcance 23 m², Silencioso, Gris"
     ],
     "nombre": [
+     "Shark STYLE iQ Secador de pelo y moldeador, 1600 W, secado rápido sin dañar el cabello, iónico, conc",
      "Shark STYLE iQ Secador de pelo y moldeador, 3 en 1, con concentrador, difusor y cepillo de peinado, ",
-     "Shark SpeedStyle Sistema secador de cabello de alta velocidad, compacto y potente, modo protección d",
-     "Shark Glam, Multi-Styler 5 en 1 Secador de Pelo, Moldeador, Plancha"
+     "Shark FlexStyle, Secador de Pelo y Moldeador, Limited Edition Glacial Blue"
     ]
    }
   },
@@ -4663,7 +4681,8 @@
    "pp_drop": 11,
    "pp_median": 788.94,
    "pp_price": 705.95,
-   "t": "2026-11-16T22:24:54.934328+00:00",
+   "t": "2026-11-18T01:20:27.102268+00:00",
+   "v": 3,
    "veredicto": "amazon_mas_barato"
   },
   "46239685052": {
@@ -5876,6 +5895,31 @@
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
+  "46599143437": {
+   "ean": "7630997902846",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "SoFlow SO One Pro 10 Ah 1200W máx 65km 22km/h 10 pulgadas Verde 120kg 480Wh IPX5 plegable Patinete eléctrico",
+   "pp_drop": 12,
+   "pp_median": 469.0,
+   "pp_price": 413.95,
+   "t": "2026-11-18T01:20:27.102268+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "modelo": [
+     "Enerpower Cargador CC 12 V-24 V Li-Ion a 54,6 V (48 V Li-Ion) 1,5 A para SoFlow SO4 PRO 2ND GEN, SoF",
+     "Cargador 54,6V 2A para E-Scooter con 6 Conectores – Adaptador Universal 48V para Baterías de Litio, ",
+     "Puerto de carga con cubierta antipolvo para Kugoo M4 repuesto scooter eléctrico accesorios patinetes"
+    ],
+    "nombre": [
+     "(sin resultados)"
+    ]
+   }
+  },
   "46599143670": {
    "ean": "6972147076962",
    "lista": "candidates",
@@ -6274,14 +6318,14 @@
    }
   }
  },
- "night_at": "2026-11-18T01:05:24.851799+00:00",
+ "night_at": "2026-11-18T01:20:27.102268+00:00",
  "resumen": {
   "amazon_mas_barato": 23,
   "dudoso": 4,
-  "no_esta": 17,
+  "no_esta": 18,
   "oferta_real": 20,
   "pvpr_inflado": 3,
   "sin_precio": 3
  },
- "updated": "2026-11-18T01:05:24.851799+00:00"
+ "updated": "2026-11-18T01:20:27.102268+00:00"
 }
