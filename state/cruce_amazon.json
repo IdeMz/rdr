@@ -2021,6 +2021,13 @@
    "v": 3,
    "via": "ean"
   },
+  "8806094215038": {
+   "a": "B0B9C4DKKG",
+   "t": "2026-11-18T15:01:26.987987+00:00",
+   "title": "SAMSUNG SSD Memoria Interno 990 Pro 2TB NVME",
+   "v": 3,
+   "via": "ean"
+  },
   "8806094957228": {
    "a": "B0CBMFJF7V",
    "t": "2026-11-16T13:55:32.747613+00:00",
@@ -2259,6 +2266,27 @@
    "pp_price": 57.37,
    "t": "2026-11-16T21:10:41.415586+00:00",
    "veredicto": "oferta_real"
+  },
+  "37600256447": {
+   "ahorro_vs_amazon": null,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": null,
+   "amz_title": "SAMSUNG SSD Memoria Interno 990 Pro 2TB NVME",
+   "asin": "B0B9C4DKKG",
+   "disponible": true,
+   "ean": "8806094215038",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "en Amazon pero sin precio o no disponible",
+   "name": "Samsung 990 PRO 2TB M.2 PCIe 4.0 7450MB/s SSD",
+   "pista": "2128453 bytes; 5 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pp_drop": 17,
+   "pp_median": 430.95,
+   "pp_price": 356.48,
+   "t": "2026-11-18T15:01:26.987987+00:00",
+   "v": 3,
+   "veredicto": "sin_precio"
   },
   "37600256508": {
    "ahorro_vs_amazon": 32,
@@ -6346,11 +6374,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Polti StainOver SC30 2000W Aspirador de tapicería",
-   "pista": "1355801 bytes; 16 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1378388 bytes; 17 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 20,
    "pp_median": 251.95,
    "pp_price": 200.94,
-   "t": "2026-11-18T05:09:46.231271+00:00",
+   "t": "2026-11-18T15:01:26.987987+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -7061,7 +7089,7 @@
   "no_esta": 17,
   "oferta_real": 16,
   "pvpr_inflado": 3,
-  "sin_precio": 5
+  "sin_precio": 6
  },
- "updated": "2026-11-18T14:30:58.889249+00:00"
+ "updated": "2026-11-18T15:01:26.987987+00:00"
 }

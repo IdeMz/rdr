@@ -25,7 +25,7 @@
   "Domótica": "2026-11-17T18:45:48.491889+00:00",
   "Droguería": "2026-11-18T12:30:56.291132+00:00",
   "Fitness en casa": "2026-11-15T12:15:40.152691+00:00",
-  "Fotografía": "2026-11-16T15:40:40.598894+00:00",
+  "Fotografía": "2026-11-18T15:01:26.987987+00:00",
   "Freidoras de aire": "2026-11-15T20:15:42.147336+00:00",
   "Gaming": "2026-11-16T20:35:50.275747+00:00",
   "Gatos": "2026-11-14T18:30:55.099025+00:00",
@@ -65,9 +65,38 @@
   "eReaders": "2026-11-16T13:55:32.747613+00:00"
  },
  "manual": {},
- "manual_queue": [],
+ "manual_queue": [
+  {
+   "a": "B07L9WNYRZ",
+   "c": "",
+   "e": "",
+   "img": "https://m.media-amazon.com/images/I/71twZjtaRvL._AC_SL1500_.jpg",
+   "m": 400,
+   "n": 12,
+   "op": null,
+   "p": 64.76,
+   "q": "2026-11-18T15:02:29.975896+00:00",
+   "r": 4.5,
+   "t": "2026-11-18T15:01:26.987987+00:00",
+   "title": "Itek Case Dark Cave DS - Torre Gaming, ATX, Ventilador ARGB 3x12cm, 2xUSB3, Tipo-C, Panel Frontal y Lateral Temp Glass"
+  },
+  {
+   "a": "B08SR2VJG1",
+   "c": "",
+   "e": "",
+   "img": "https://m.media-amazon.com/images/I/61r76mE-NmS._AC_SL1482_.jpg",
+   "m": 401,
+   "n": 1248,
+   "op": 32.84,
+   "p": 27.7,
+   "q": "2026-11-18T15:02:35.537667+00:00",
+   "r": 4.6,
+   "t": "2026-11-18T15:01:26.987987+00:00",
+   "title": "Instant Pot Vortex 4 en 1 Freidora de Aire Digital Antiadherente con Temporizador y Función de Horno y Calentador, 1.700 W – 5,7 L"
+  }
+ ],
  "manual_todo": [],
- "next_at": "2026-11-18T15:00:21.974103+00:00",
+ "next_at": "2026-11-18T15:28:31.295772+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2955,6 +2984,17 @@
    "title": "LN LENQIN",
    "v": []
   },
+  "B0G34BYXH1": {
+   "c": "Fotografía",
+   "d": 20,
+   "e": "📷",
+   "m": 400,
+   "p": 42.99,
+   "s": "busqueda",
+   "t": "2026-11-18T15:02:16.501302+00:00",
+   "title": "Cámara Digital de 44 MP, FHD 1080P cámara de Fotos, Zoom Digital de 16 x, cámara Digital portátil y Sencilla para niños, Estudiantes, Adolescentes, Principiantes Blanco",
+   "v": []
+  },
   "B0G39CZ4QQ": {
    "c": "Accesorios de coche",
    "d": 29,
@@ -3655,9 +3695,9 @@
   }
  ],
  "summary_day": "2026-11-17",
- "tg_offset": 511048113,
+ "tg_offset": 511048116,
  "x_copy": {
   "day": "2026-11-18",
-  "n": 16
+  "n": 17
  }
 }
