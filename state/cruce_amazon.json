@@ -231,21 +231,21 @@
   },
   "0622356376938": {
    "a": "",
-   "t": "2026-11-14T23:20:25.000542+00:00",
-   "v": 2,
+   "t": "2026-11-18T03:20:27.361932+00:00",
+   "v": 3,
    "vistos": {
     "ean": [
      "Ninja BlendBoss, Batidora de Vaso Portátil, Color Ciberespacio"
     ],
     "modelo": [
-     "Ninja BlendBoss, Batidora de Vaso Portátil, Color Piedra",
      "Ninja Detect Power Pro, Batidora y Procesador de Alimentos, Negro",
-     "Ninja Blendboss - Batidora personal para batidos y bebidas congeladas, taza de viaje de 25 onzas con"
+     "Ninja BlendBoss, Batidora de Vaso Portátil, Color Piedra",
+     "Ninja Blast Batidora Portátil, Minibatidora sin Cable, Recargable"
     ],
     "nombre": [
-     "Ninja BlendBoss, Batidora de Vaso Portátil, Color Piedra",
-     "Ninja CREAMi Deluxe, Heladera Multifunción con 2 Tarrinas, Plateado",
-     "Ninja CREAMi, Heladera Eléctrica Multifunción, Negro y Plata"
+     "Ninja Detect Power Pro, Batidora y Procesador de Alimentos, Negro",
+     "Ninja, Batidora de Vaso 2 en 1, Jarra de 2,1L, 1200W, Negro",
+     "Ninja BlendBoss, Batidora de Vaso Portátil, Color Piedra"
     ]
    }
   },
@@ -3195,7 +3195,8 @@
    "pp_drop": 12,
    "pp_median": 211.96,
    "pp_price": 185.95,
-   "t": "2026-11-16T22:05:20.966983+00:00",
+   "t": "2026-11-18T03:20:27.361932+00:00",
+   "v": 3,
    "veredicto": "amazon_mas_barato"
   },
   "45403198935": {
@@ -5011,22 +5012,22 @@
    "pp_drop": 13,
    "pp_median": 146.95,
    "pp_price": 127.95,
-   "t": "2026-11-16T23:35:20.072320+00:00",
-   "v": 2,
+   "t": "2026-11-18T03:20:27.361932+00:00",
+   "v": 3,
    "veredicto": "no_esta",
    "vistos": {
     "ean": [
      "Ninja BlendBoss, Batidora de Vaso Portátil, Color Ciberespacio"
     ],
     "modelo": [
-     "Ninja BlendBoss, Batidora de Vaso Portátil, Color Piedra",
      "Ninja Detect Power Pro, Batidora y Procesador de Alimentos, Negro",
-     "Ninja Blendboss - Batidora personal para batidos y bebidas congeladas, taza de viaje de 25 onzas con"
+     "Ninja BlendBoss, Batidora de Vaso Portátil, Color Piedra",
+     "Ninja Blast Batidora Portátil, Minibatidora sin Cable, Recargable"
     ],
     "nombre": [
-     "Ninja BlendBoss, Batidora de Vaso Portátil, Color Piedra",
-     "Ninja CREAMi Deluxe, Heladera Multifunción con 2 Tarrinas, Plateado",
-     "Ninja CREAMi, Heladera Eléctrica Multifunción, Negro y Plata"
+     "Ninja Detect Power Pro, Batidora y Procesador de Alimentos, Negro",
+     "Ninja, Batidora de Vaso 2 en 1, Jarra de 2,1L, 1200W, Negro",
+     "Ninja BlendBoss, Batidora de Vaso Portátil, Color Piedra"
     ]
    }
   },
@@ -6591,7 +6592,7 @@
    }
   }
  },
- "night_at": "2026-11-18T03:05:28.957988+00:00",
+ "night_at": "2026-11-18T03:20:27.361932+00:00",
  "resumen": {
   "amazon_mas_barato": 29,
   "dudoso": 5,
@@ -6600,5 +6601,5 @@
   "pvpr_inflado": 3,
   "sin_precio": 4
  },
- "updated": "2026-11-18T03:05:28.957988+00:00"
+ "updated": "2026-11-18T03:20:27.361932+00:00"
 }
