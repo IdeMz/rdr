@@ -5904,11 +5904,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Polti StainOver SC30 2000W Aspirador de tapicería",
-   "pista": "1384262 bytes; 18 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1355801 bytes; 16 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 20,
    "pp_median": 251.95,
    "pp_price": 200.94,
-   "t": "2026-11-17T23:05:21.933104+00:00",
+   "t": "2026-11-18T05:09:46.231271+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -6592,7 +6592,7 @@
    }
   }
  },
- "night_at": "2026-11-18T04:35:26.024921+00:00",
+ "night_at": "2026-11-18T05:09:46.231271+00:00",
  "resumen": {
   "amazon_mas_barato": 29,
   "dudoso": 5,
@@ -6601,5 +6601,5 @@
   "pvpr_inflado": 3,
   "sin_precio": 4
  },
- "updated": "2026-11-18T04:35:26.024921+00:00"
+ "updated": "2026-11-18T05:09:46.231271+00:00"
 }
