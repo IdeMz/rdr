@@ -1469,6 +1469,26 @@
     ]
    }
   },
+  "6971974621826": {
+   "a": "",
+   "t": "2026-11-18T17:01:08.637572+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "101st Airborne Ranger Tabs - Gorra de béisbol retro para mujer, visera solar"
+    ],
+    "modelo": [
+     "Dangbei DBOX02 Pro, Proyector 4K con Google TV, 2000 Lúmenes ISO, Soporte Integrado, 3D, Auto Keysto",
+     "Dangbei N3 Max Proyector 4K Soporte, 1000 ISO Lumen Projetor Portatil,【VIDAA OS, Netflix & App Contr",
+     "Dangbei MP1 MAX, Proyector 4K, 3100 Lúmenes ISO, 110% BT.2020, HDR10+, 3D, Dolby Audio, Pantalla de "
+    ],
+    "nombre": [
+     "Dangbei N2 Mini Proyector 1080p, Proyector Portatil Full HD, Ajustable Soporte y Rotación de 190°, E",
+     "AURZEN Eazze D1 Proyector 4K con Netflix, Dolby, Auto Focus, 1080P Nativo",
+     "Proyector Portatil【Netflix Ready+TV Directo】 Proyector 4K App Integrada Auto Focus/Keystone 1080P FH"
+    ]
+   }
+  },
   "6972147076948": {
    "a": "B0FFT2ZCBP",
    "t": "2026-11-14T17:55:30.798523+00:00",
@@ -3355,7 +3375,7 @@
    "veredicto": "amazon_mas_barato"
   },
   "45368125530": {
-   "ahorro_vs_amazon": 42,
+   "ahorro_vs_amazon": 46,
    "amz_low30": 251.28,
    "amz_median": 262.16,
    "amz_price": 109.0,
@@ -3365,12 +3385,12 @@
    "ean": "5706991026542",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "Amazon 109.00 frente a 150.95",
+   "motivo": "Amazon 109.00 frente a 140.95",
    "name": "Jabra Evolve2 Buds USB-A ANC IP57 con micrófono Auriculares",
-   "pp_drop": 13,
+   "pp_drop": 19,
    "pp_median": 172.95,
-   "pp_price": 150.95,
-   "t": "2026-11-18T02:50:27.531463+00:00",
+   "pp_price": 140.95,
+   "t": "2026-11-18T17:01:08.637572+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -3797,6 +3817,33 @@
    "t": "2026-11-17T19:15:39.946523+00:00",
    "v": 3,
    "veredicto": "oferta_real"
+  },
+  "45605440268": {
+   "ean": "6971974621826",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Dangbei N2 Mini 1080p Full HD 200lúmenes ISO LED LCD WiFi 6 Bluetooth 5.2 altavoz 6W 27dB Proyector",
+   "pp_drop": 17,
+   "pp_median": 300.95,
+   "pp_price": 248.95,
+   "t": "2026-11-18T17:01:08.637572+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "101st Airborne Ranger Tabs - Gorra de béisbol retro para mujer, visera solar"
+    ],
+    "modelo": [
+     "Dangbei DBOX02 Pro, Proyector 4K con Google TV, 2000 Lúmenes ISO, Soporte Integrado, 3D, Auto Keysto",
+     "Dangbei N3 Max Proyector 4K Soporte, 1000 ISO Lumen Projetor Portatil,【VIDAA OS, Netflix & App Contr",
+     "Dangbei MP1 MAX, Proyector 4K, 3100 Lúmenes ISO, 110% BT.2020, HDR10+, 3D, Dolby Audio, Pantalla de "
+    ],
+    "nombre": [
+     "Dangbei N2 Mini Proyector 1080p, Proyector Portatil Full HD, Ajustable Soporte y Rotación de 190°, E",
+     "AURZEN Eazze D1 Proyector 4K con Netflix, Dolby, Auto Focus, 1080P Nativo",
+     "Proyector Portatil【Netflix Ready+TV Directo】 Proyector 4K App Integrada Auto Focus/Keystone 1080P FH"
+    ]
+   }
   },
   "45626822189": {
    "ahorro_vs_amazon": 14,
@@ -7086,10 +7133,10 @@
  "resumen": {
   "amazon_mas_barato": 22,
   "dudoso": 2,
-  "no_esta": 17,
+  "no_esta": 18,
   "oferta_real": 16,
   "pvpr_inflado": 3,
   "sin_precio": 6
  },
- "updated": "2026-11-18T15:31:00.962603+00:00"
+ "updated": "2026-11-18T17:01:08.637572+00:00"
 }
