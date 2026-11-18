@@ -309,6 +309,13 @@
    "title": "Kingston Canvas Select Plus Tarjeta de Memoria microSD 512GB microSDXC Gen3 150MB/s A1 Incluye Adaptador de SD - SDCS3/512GB",
    "via": "ean"
   },
+  "0741365254638": {
+   "a": "B0G2LRC883",
+   "t": "2026-11-18T02:20:29.775184+00:00",
+   "title": "WiiM Sound Lite, altavoz inteligente multiroom inalámbrico, Blanco",
+   "v": 3,
+   "via": "ean"
+  },
   "0766907027891": {
    "a": "B0CMPW1698",
    "t": "2026-11-13T11:40:39.260187+00:00",
@@ -2916,6 +2923,26 @@
    "t": "2026-11-17T05:09:47.495941+00:00",
    "veredicto": "sin_precio"
   },
+  "45368123049": {
+   "ahorro_vs_amazon": 28,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 269.0,
+   "amz_title": "WiiM Sound Lite, altavoz inteligente multiroom inalámbrico, Blanco",
+   "asin": "B0G2LRC883",
+   "disponible": true,
+   "ean": "0741365254638",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "28 % por debajo del habitual en Amazon (269.00)",
+   "name": "Wiim Sound Lite 100W WiFi 6E AirPlay Chromecast compatible con Alexa Altavoz Bluetooth",
+   "pp_drop": 13,
+   "pp_median": 222.95,
+   "pp_price": 194.96,
+   "t": "2026-11-18T02:20:29.775184+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "45368123600": {
    "ean": "3121040095522",
    "lista": "candidates",
@@ -3687,7 +3714,8 @@
    "pp_drop": 17,
    "pp_median": 67.95,
    "pp_price": 56.39,
-   "t": "2026-11-16T21:45:41.113869+00:00",
+   "t": "2026-11-18T02:20:29.775184+00:00",
+   "v": 3,
    "veredicto": "dudoso"
   },
   "45956990874": {
@@ -4878,7 +4906,8 @@
    "pp_drop": 11,
    "pp_median": 559.95,
    "pp_price": 500.95,
-   "t": "2026-11-15T17:05:32.780345+00:00",
+   "t": "2026-11-18T02:20:29.775184+00:00",
+   "v": 3,
    "veredicto": "amazon_mas_barato"
   },
   "46239687234": {
@@ -6449,14 +6478,14 @@
    }
   }
  },
- "night_at": "2026-11-18T02:05:20.803491+00:00",
+ "night_at": "2026-11-18T02:20:29.775184+00:00",
  "resumen": {
   "amazon_mas_barato": 27,
   "dudoso": 4,
   "no_esta": 18,
-  "oferta_real": 20,
+  "oferta_real": 21,
   "pvpr_inflado": 3,
   "sin_precio": 4
  },
- "updated": "2026-11-18T02:05:20.803491+00:00"
+ "updated": "2026-11-18T02:20:29.775184+00:00"
 }
