@@ -36,7 +36,7 @@
   "Jardín": "2026-11-15T11:10:43.114079+00:00",
   "Juguetes": "2026-11-16T09:55:33.695632+00:00",
   "Lego": "2026-11-15T15:15:41.208340+00:00",
-  "Limpieza del hogar": "2026-11-16T12:30:54.116656+00:00",
+  "Limpieza del hogar": "2026-11-18T07:01:05.386750+00:00",
   "Maquillaje": "2026-11-17T07:01:18.076115+00:00",
   "Menaje de cocina": "2026-11-15T09:25:34.345588+00:00",
   "Mochilas y maletas": "2026-11-15T20:50:41.317709+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-17T22:10:55.779481+00:00",
+ "next_at": "2026-11-18T07:28:39.647705+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -2318,6 +2318,17 @@
    "title": "Mellerware - Freidora sin aceite Crunchy Plus 5.5L 1500W | 11 Menús Predefinidos | Capacidad para 3-5 raciones | Temporizador Programable | Pantalla para controlar la temperatura | Air Fryer 80-200º",
    "v": []
   },
+  "B0DX1XK7ZJ": {
+   "c": "Limpieza del hogar",
+   "d": 35,
+   "e": "🧽",
+   "m": 384,
+   "p": 12.99,
+   "s": "ambas",
+   "t": "2026-11-18T07:01:43.260564+00:00",
+   "title": "Swiffer Mopa Seco Y Húmedo Kit (1 Mopa, 8 Paños Secos, 3 Paños Húmedos)",
+   "v": []
+  },
   "B0DXKNBQS6": {
    "c": "Altavoces",
    "d": 30,
@@ -3359,6 +3370,10 @@
  },
  "problem": {},
  "rejected": {
+  "B005U94N9A": {
+   "t": "2026-11-18T07:01:05.386750+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B014GNJWW8": {
    "t": "2026-11-17T17:01:11.572901+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3438,34 +3453,22 @@
  },
  "reserve": [
   {
-   "a": "B087VHVHCV",
-   "c": "Afeitado y depilación",
-   "e": "🪒",
-   "img": "https://m.media-amazon.com/images/I/71av99u9epL._AC_UL320_.jpg",
-   "n": 16500,
-   "op": 24.99,
-   "p": 15.9,
+   "a": "B073367BFL",
+   "c": "Limpieza del hogar",
+   "e": "🧽",
+   "img": "https://m.media-amazon.com/images/I/51Il1bGnIPL._AC_UL320_.jpg",
+   "n": 1900,
+   "op": 199.99,
+   "p": 132.99,
    "r": 4.2,
-   "t": "2026-11-17T20:15:50.874512+00:00",
-   "title": "Recortador de nariz, orejas y cejas Philips Series NT5650/16 5000 que funciona con pilas, negro (paquete de 1), Unisex adultos"
-  },
-  {
-   "a": "B0DCNKDS5B",
-   "c": "Cargadores y baterías",
-   "e": "🔌",
-   "img": "https://m.media-amazon.com/images/I/61NmRnphNJL._AC_UL320_.jpg",
-   "n": 5200,
-   "op": 39.99,
-   "p": 24.99,
-   "r": 4.6,
-   "t": "2026-11-17T19:15:39.946523+00:00",
-   "title": "Anker Zolo Power Bank MagSafe 10 000 mAh, inalámbrica, USB C máxima de 30 W"
+   "t": "2026-11-18T07:01:05.386750+00:00",
+   "title": "Bissell SpinWave Fregona Eléctrica Giratoria 20522"
   }
  ],
  "summary_day": "2026-11-17",
  "tg_offset": 511048098,
  "x_copy": {
-  "day": "2026-11-17",
-  "n": 30
+  "day": "2026-11-18",
+  "n": 1
  }
 }
