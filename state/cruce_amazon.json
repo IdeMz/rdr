@@ -1109,6 +1109,13 @@
    "title": "SanDisk SSD portátil Extremo de 2 TB - hasta 1050 MB/s - USB-C, USB 3.2 Gen 2 - Unidad Externa de Estado sólido - SDSSDE61-2T00-G25B",
    "via": "ean"
   },
+  "622356272889": {
+   "a": "B0CNQ82K3Y",
+   "t": "2026-11-18T00:20:26.737343+00:00",
+   "title": "Ninja Woodfire, Horno Eléctrico Multifunción de Exterior, 8 en 1",
+   "v": 3,
+   "via": "ean"
+  },
   "6920075740950": {
    "a": "B0CFXY26H1",
    "t": "2026-11-16T22:50:28.400882+00:00",
@@ -1292,10 +1299,24 @@
    "via": "modelo"
   },
   "6972147076962": {
-   "a": "B0FFSZK858",
-   "t": "2026-11-14T18:30:55.099025+00:00",
-   "title": "VIOFO A329S 4K 60FPS 2CH Dashcam Del.+Tras., STARVIS 2, Wi-Fi 6",
-   "via": "modelo"
+   "a": "",
+   "t": "2026-11-18T00:20:26.737343+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "modelo": [
+     "VIOFO A229 Plus 2K+2K Dashcam Del.+Tras., STARVIS 2 HDR, Wi-Fi 5GHz, GPS",
+     "VIOFO A229 Pro 4K+2K Dashcam Del.+Tras., STARVIS 2 HDR, Wi-Fi 5G, GPS, CPL",
+     "VIOFO A119 Mini 2 Dashcam para salpicadero delantera, Control por voz"
+    ],
+    "nombre": [
+     "VIOFO A229 Pro 4K+2K Dashcam Del.+Tras., STARVIS 2 HDR, Wi-Fi 5G, GPS, CPL",
+     "VIOFO A329S 4K 60FPS 2CH Dashcam Del.+Tras., STARVIS 2, Wi-Fi 6",
+     "VIOFO A119M Pro 4K HDR Mini Dashcam Delantera, STARVIS 2, Wi-Fi 6, GPS, CPL"
+    ]
+   }
   },
   "6972147077273": {
    "a": "",
@@ -1704,6 +1725,13 @@
    "a": "B08BLFSLHZ",
    "t": "2026-11-15T15:15:41.208340+00:00",
    "title": "Playseat® TV Stand Triple Package",
+   "via": "ean"
+  },
+  "8720689027083": {
+   "a": "B0GC4J6L69",
+   "t": "2026-11-18T00:20:26.737343+00:00",
+   "title": "Depilatore Philips BG7470 15 7000 SERIES Body Groomer Black",
+   "v": 3,
    "via": "ean"
   },
   "8806094957228": {
@@ -4085,6 +4113,26 @@
    "t": "2026-11-16T02:20:24.133415+00:00",
    "veredicto": "oferta_real"
   },
+  "46186024237": {
+   "ahorro_vs_amazon": 3,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 71.95,
+   "amz_title": "Depilatore Philips BG7470 15 7000 SERIES Body Groomer Black",
+   "asin": "B0GC4J6L69",
+   "disponible": true,
+   "ean": "8720689027083",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 71.95 frente a 69.99",
+   "name": "Philips Bodygroom Series 7000 Triple Protect seco y mojado BG7470/15 Negro inalámbrico 120 min Afeitadora corporal",
+   "pp_drop": 19,
+   "pp_median": 86.9,
+   "pp_price": 69.99,
+   "t": "2026-11-18T00:20:26.737343+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "46186024577": {
    "ean": "6924843236393",
    "lista": "candidates",
@@ -4748,6 +4796,26 @@
    "pp_median": 3033.95,
    "pp_price": 1491.95,
    "t": "2026-11-14T10:30:50.359175+00:00",
+   "veredicto": "oferta_real"
+  },
+  "46256205860": {
+   "ahorro_vs_amazon": 14,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 369.99,
+   "amz_title": "Ninja Woodfire, Horno Eléctrico Multifunción de Exterior, 8 en 1",
+   "asin": "B0CNQ82K3Y",
+   "disponible": true,
+   "ean": "622356272889",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "14 % por debajo del habitual en Amazon (369.99)",
+   "name": "Ninja Woodfire OO101EU 2400W Horno de pizza",
+   "pp_drop": 14,
+   "pp_median": 366.94,
+   "pp_price": 316.78,
+   "t": "2026-11-18T00:20:26.737343+00:00",
+   "v": 3,
    "veredicto": "oferta_real"
   },
   "46256205898": {
@@ -5626,23 +5694,31 @@
    "veredicto": "amazon_mas_barato"
   },
   "46599143670": {
-   "ahorro_vs_amazon": 27,
-   "amz_low30": null,
-   "amz_median": null,
-   "amz_price": 439.59,
-   "amz_title": "VIOFO A329S 4K 60FPS 2CH Dashcam Del.+Tras., STARVIS 2, Wi-Fi 6",
-   "asin": "B0FFSZK858",
-   "disponible": true,
    "ean": "6972147076962",
-   "encontrado_por": "modelo",
    "lista": "candidates",
-   "motivo": "27 % por debajo del habitual en Amazon (439.59)",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
    "name": "Dashcam VIOFO T330W 2CH 4K GPS",
    "pp_drop": 14,
    "pp_median": 369.99,
    "pp_price": 319.0,
-   "t": "2026-11-16T20:01:04.281373+00:00",
-   "veredicto": "oferta_real"
+   "t": "2026-11-18T00:20:26.737343+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "modelo": [
+     "VIOFO A229 Plus 2K+2K Dashcam Del.+Tras., STARVIS 2 HDR, Wi-Fi 5GHz, GPS",
+     "VIOFO A229 Pro 4K+2K Dashcam Del.+Tras., STARVIS 2 HDR, Wi-Fi 5G, GPS, CPL",
+     "VIOFO A119 Mini 2 Dashcam para salpicadero delantera, Control por voz"
+    ],
+    "nombre": [
+     "VIOFO A229 Pro 4K+2K Dashcam Del.+Tras., STARVIS 2 HDR, Wi-Fi 5G, GPS, CPL",
+     "VIOFO A329S 4K 60FPS 2CH Dashcam Del.+Tras., STARVIS 2, Wi-Fi 6",
+     "VIOFO A119M Pro 4K HDR Mini Dashcam Delantera, STARVIS 2, Wi-Fi 6, GPS, CPL"
+    ]
+   }
   },
   "46599143671": {
    "ean": "6972147077273",
@@ -6015,14 +6091,14 @@
    }
   }
  },
- "night_at": "2026-11-18T00:05:39.382947+00:00",
+ "night_at": "2026-11-18T00:20:26.737343+00:00",
  "resumen": {
-  "amazon_mas_barato": 20,
+  "amazon_mas_barato": 21,
   "dudoso": 3,
-  "no_esta": 14,
+  "no_esta": 15,
   "oferta_real": 20,
   "pvpr_inflado": 3,
   "sin_precio": 2
  },
- "updated": "2026-11-18T00:05:39.382947+00:00"
+ "updated": "2026-11-18T00:20:26.737343+00:00"
 }
