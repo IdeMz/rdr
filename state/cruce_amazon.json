@@ -2138,6 +2138,13 @@
    "title": "Samsung Galaxy Tab S12+ Tablet Wi-Fi 512GB/12GB 12.6''",
    "via": "ean"
   },
+  "8886307700032": {
+   "a": "B0DTZ441G7",
+   "t": "2026-11-18T19:01:22.092208+00:00",
+   "title": "ZOTAC Tarjeta gráfica Gaming GeForce RTX 5080 AMP Extreme Infinity de 16 GB GDDR7, iluminación RGB, triple ventilador",
+   "v": 3,
+   "via": "nombre"
+  },
   "8886307700155": {
    "a": "B0FDFR71J9",
    "t": "2026-11-13T20:40:48.338068+00:00",
@@ -2503,22 +2510,23 @@
    "veredicto": "amazon_mas_barato"
   },
   "38277783220": {
-   "ahorro_vs_amazon": 52,
+   "ahorro_vs_amazon": 71,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 214.98,
+   "amz_price": 289.37,
    "amz_title": "Jabra Evolve2 65 Auriculares Inalámbricos Monoaurales PC con Cancelación de Ruido - Certificados para Microsoft Teams - Batería de Larga Duración - Adaptador Bl",
    "asin": "B086LLZZ16",
    "disponible": true,
    "ean": "5706991023008",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "52 % por debajo del habitual en Amazon (214.98)",
+   "motivo": "71 % por debajo del habitual en Amazon (289.37)",
    "name": "Jabra Evolve2 65 MS Mono Negro Diadema Bluetooth 5.0 Auriculares inalámbricos",
-   "pp_drop": 16,
-   "pp_median": 122.95,
-   "pp_price": 102.95,
-   "t": "2026-11-16T02:35:20.145846+00:00",
+   "pp_drop": 18,
+   "pp_median": 102.95,
+   "pp_price": 83.95,
+   "t": "2026-11-18T19:01:22.092208+00:00",
+   "v": 3,
    "veredicto": "oferta_real"
   },
   "38404791123": {
@@ -3931,6 +3939,26 @@
    "pp_median": 150.95,
    "pp_price": 121.17,
    "t": "2026-11-17T19:15:39.946523+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
+  "45605440213": {
+   "ahorro_vs_amazon": 71,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 7584.25,
+   "amz_title": "ZOTAC Tarjeta gráfica Gaming GeForce RTX 5080 AMP Extreme Infinity de 16 GB GDDR7, iluminación RGB, triple ventilador",
+   "asin": "B0DTZ441G7",
+   "disponible": true,
+   "ean": "8886307700032",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "71 % por debajo del habitual en Amazon (7584.25)",
+   "name": "ZOTAC GAMING GeForce RTX 5080 AMP Extreme Infinity 16GB Tarjeta gráfica",
+   "pp_drop": 11,
+   "pp_median": 2501.95,
+   "pp_price": 2222.95,
+   "t": "2026-11-18T19:01:22.092208+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -7271,9 +7299,9 @@
   "amazon_mas_barato": 23,
   "dudoso": 2,
   "no_esta": 18,
-  "oferta_real": 18,
+  "oferta_real": 19,
   "pvpr_inflado": 3,
   "sin_precio": 8
  },
- "updated": "2026-11-18T18:30:58.613853+00:00"
+ "updated": "2026-11-18T19:01:22.092208+00:00"
 }

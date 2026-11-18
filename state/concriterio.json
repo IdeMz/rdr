@@ -8,7 +8,7 @@
   "Aspiradoras": "2026-11-14T20:20:37.410274+00:00",
   "Auriculares": "2026-11-17T08:01:10.979640+00:00",
   "Barras de sonido": "2026-11-18T08:01:03.545593+00:00",
-  "Bebé": "2026-11-16T07:35:32.483023+00:00",
+  "Bebé": "2026-11-18T19:01:22.092208+00:00",
   "Bricolaje": "2026-11-18T17:30:58.281773+00:00",
   "Cafeteras": "2026-11-17T18:01:13.651055+00:00",
   "Café y cápsulas": "2026-11-15T14:40:39.424977+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-18T18:59:27.302944+00:00",
+ "next_at": "2026-11-18T19:30:44.013081+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -862,6 +862,17 @@
    "p": 85.0,
    "t": "2026-11-08T12:51:01.244239+00:00",
    "title": "Orbegozo EX 6000 Cafetera Express, 1050 W, 1,5 L, 20 bar, Plata",
+   "v": []
+  },
+  "B082N3H868": {
+   "c": "Bebé",
+   "d": 35,
+   "e": "🍼",
+   "m": 408,
+   "p": 52.59,
+   "s": "ambas",
+   "t": "2026-11-18T19:01:55.164841+00:00",
+   "title": "Dodot Pañales Bebé Sensitive, Talla 2 (4-8 kg), 240 Pañales + Regalo de 40 Toallitas Aqua Pure 99% Agua, Hasta 12 h De Protección Antifugas y Cuidado de la Piel, Pack Mensual",
    "v": []
   },
   "B083JKMXJF": {
@@ -3644,10 +3655,6 @@
    "t": "2026-11-18T10:30:54.867859+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B07Z5JD3T4": {
-   "t": "2026-11-17T18:45:48.491889+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0897PBMFW": {
    "t": "2026-11-17T19:45:42.626266+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3687,13 +3694,21 @@
   "B0FRG54M5R": {
    "t": "2026-11-17T19:45:42.626266+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0G52MX15Q": {
-   "t": "2026-11-17T18:45:48.491889+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
   }
  },
  "reserve": [
+  {
+   "a": "B07Y4MJFWC",
+   "c": "Bebé",
+   "e": "🍼",
+   "img": "https://m.media-amazon.com/images/I/71Bva5ICNsL._AC_UL320_.jpg",
+   "n": 68,
+   "op": 50.9,
+   "p": 35.93,
+   "r": 4.7,
+   "t": "2026-11-18T19:01:22.092208+00:00",
+   "title": "Pañales Bambo Nature talla 4 – 7 a 14kg (Pack 6 × 24 Un)"
+  },
   {
    "a": "B08T9JTHNK",
    "c": "Bricolaje",
@@ -3717,24 +3732,12 @@
    "r": 4.6,
    "t": "2026-11-18T17:01:08.637572+00:00",
    "title": "Logitech Brio 500 HD Webcam Cámara USB C, C, 4K, Grafito"
-  },
-  {
-   "a": "B09BTVGR2C",
-   "c": "Gaming",
-   "e": "🕹️",
-   "img": "https://m.media-amazon.com/images/I/71qVWCTMQTL._AC_UL320_.jpg",
-   "n": 139,
-   "op": 109.99,
-   "p": 81.21,
-   "r": 4.2,
-   "t": "2026-11-18T15:31:00.962603+00:00",
-   "title": "Vinsetto Silla Gaming Reposapiés Retráctil 65x65x119-129 cm Negro y Azul"
   }
  ],
  "summary_day": "2026-11-17",
  "tg_offset": 511048116,
  "x_copy": {
   "day": "2026-11-18",
-  "n": 24
+  "n": 25
  }
 }
