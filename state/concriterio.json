@@ -3,7 +3,7 @@
   "Accesorios de coche": "2026-11-15T10:35:39.916250+00:00",
   "Accesorios de móvil": "2026-11-16T17:40:44.874656+00:00",
   "Afeitado y depilación": "2026-11-17T20:15:50.874512+00:00",
-  "Almacenamiento": "2026-11-15T16:30:50.777266+00:00",
+  "Almacenamiento": "2026-11-18T10:30:54.867859+00:00",
   "Altavoces": "2026-11-17T20:45:44.607165+00:00",
   "Aspiradoras": "2026-11-14T20:20:37.410274+00:00",
   "Auriculares": "2026-11-17T08:01:10.979640+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-18T10:28:58.118146+00:00",
+ "next_at": "2026-11-18T10:57:19.068576+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -224,6 +224,17 @@
    "p": 4.99,
    "t": "2026-11-05T13:01:30.947919+00:00",
    "title": "Vitakraft Magic Clean Classic, arena gatos, no aglomerante (1x 4,2l)",
+   "v": []
+  },
+  "B009WQCIX0": {
+   "c": "Almacenamiento",
+   "d": 17,
+   "e": "💾",
+   "m": 391,
+   "p": 10.73,
+   "s": "busqueda",
+   "t": "2026-11-18T10:31:48.560176+00:00",
+   "title": "Intenso Alu Line - Memoria USB 2.0 de 4 GB, color antracita",
    "v": []
   },
   "B00BEFY1W8": {
@@ -3436,8 +3447,24 @@
  },
  "problem": {},
  "rejected": {
+  "B0011UD7BW": {
+   "t": "2026-11-18T10:30:54.867859+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B005U94N9A": {
    "t": "2026-11-18T07:01:05.386750+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B00BX5FOCK": {
+   "t": "2026-11-18T10:30:54.867859+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B00DQGBYDC": {
+   "t": "2026-11-18T10:30:54.867859+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B00M2X5KFI": {
+   "t": "2026-11-18T10:30:54.867859+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B014GNJWW8": {
@@ -3446,6 +3473,10 @@
   },
   "B01LZDYR7N": {
    "t": "2026-11-17T17:01:11.572901+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B07YYJRXQR": {
+   "t": "2026-11-18T10:30:54.867859+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B07Z5JD3T4": {
@@ -3460,16 +3491,8 @@
    "t": "2026-11-16T19:55:35.023364+00:00",
    "why": "descartada a mano"
   },
-  "B0BWYSWC3V": {
-   "t": "2026-11-17T10:01:21.690221+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0CBK995CW": {
    "t": "2026-11-17T20:15:50.874512+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0CTZMV8JX": {
-   "t": "2026-11-17T10:01:21.690221+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0DC6ZD31R": {
@@ -3517,24 +3540,12 @@
    "r": 4.5,
    "t": "2026-11-18T08:01:03.545593+00:00",
    "title": "THOMSON SB401BT Soundbar - 200W de Potencia Musical Total - Bluetooth 5.0 - Entrada Óptica, USB y AUX - Preajustes de Ecualización - Control Remoto - Indicador de Fuente LED - Diseño Blanco y Madera"
-  },
-  {
-   "a": "B073367BFL",
-   "c": "Limpieza del hogar",
-   "e": "🧽",
-   "img": "https://m.media-amazon.com/images/I/51Il1bGnIPL._AC_UL320_.jpg",
-   "n": 1900,
-   "op": 199.99,
-   "p": 132.99,
-   "r": 4.2,
-   "t": "2026-11-18T07:01:05.386750+00:00",
-   "title": "Bissell SpinWave Fregona Eléctrica Giratoria 20522"
   }
  ],
  "summary_day": "2026-11-17",
  "tg_offset": 511048112,
  "x_copy": {
   "day": "2026-11-18",
-  "n": 7
+  "n": 8
  }
 }
