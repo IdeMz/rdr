@@ -278,6 +278,13 @@
     ]
    }
   },
+  "0681495009480": {
+   "a": "B0CZXWGK79",
+   "t": "2026-11-18T20:01:08.859046+00:00",
+   "title": "Kobo Libra Colour eReader | Pantalla E Ink Kaleido™ 3 de 7\" | Temperatura del Color y Brillo Ajustables | Reducción luz Azul | eBooks y AudioBooks | Memoría 32 ",
+   "v": 3,
+   "via": "ean"
+  },
   "0711719581116": {
    "a": "B0FX5ZLTB3",
    "t": "2026-11-16T16:50:42.783335+00:00",
@@ -560,6 +567,13 @@
    "a": "B01H6KXGDY",
    "t": "2026-11-14T08:45:50.370542+00:00",
    "title": "Thrustmaster T16000M FCS HOTAS - Pack Joystick y Acelerador - PC",
+   "via": "ean"
+  },
+  "3362934112370": {
+   "a": "B0D3MRRD92",
+   "t": "2026-11-18T20:01:08.859046+00:00",
+   "title": "Thrustmaster T598 Direct Axial Drive Volante y Pedalier - PS5 y PC",
+   "v": 3,
    "via": "ean"
   },
   "3362934403409": {
@@ -2968,6 +2982,26 @@
    "t": "2026-11-14T03:20:26.477658+00:00",
    "veredicto": "oferta_real"
   },
+  "42656073016": {
+   "ahorro_vs_amazon": -4,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 239.99,
+   "amz_title": "Kobo Libra Colour eReader | Pantalla E Ink Kaleido™ 3 de 7\" | Temperatura del Color y Brillo Ajustables | Reducción luz Azul | eBooks y AudioBooks | Memoría 32 ",
+   "asin": "B0CZXWGK79",
+   "disponible": true,
+   "ean": "0681495009480",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 239.99 frente a 249.90",
+   "name": "Rakuten Kobo Libra Colour 32GB Blanco 7 pulgadas WiFi eBook",
+   "pp_drop": 14,
+   "pp_median": 289.9,
+   "pp_price": 249.9,
+   "t": "2026-11-18T20:01:08.859046+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "42828137776": {
    "ahorro_vs_amazon": 53,
    "amz_low30": 69.99,
@@ -3206,6 +3240,26 @@
    "pp_median": 191.95,
    "pp_price": 161.95,
    "t": "2026-11-16T06:05:25.856364+00:00",
+   "veredicto": "oferta_real"
+  },
+  "44993315825": {
+   "ahorro_vs_amazon": 15,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 453.99,
+   "amz_title": "Thrustmaster T598 Direct Axial Drive Volante y Pedalier - PS5 y PC",
+   "asin": "B0D3MRRD92",
+   "disponible": true,
+   "ean": "3362934112370",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "15 % por debajo del habitual en Amazon (453.99)",
+   "name": "Thrustmaster T598 PS5/PS4/PC con pedalera Direct Drive 5Nm levas de cambio sensores magnéticos Volante de simulación",
+   "pp_drop": 13,
+   "pp_median": 441.95,
+   "pp_price": 385.24,
+   "t": "2026-11-18T20:01:08.859046+00:00",
+   "v": 3,
    "veredicto": "oferta_real"
   },
   "45020234483": {
@@ -7296,12 +7350,12 @@
  },
  "night_at": "2026-11-18T06:35:24.193209+00:00",
  "resumen": {
-  "amazon_mas_barato": 23,
+  "amazon_mas_barato": 24,
   "dudoso": 2,
   "no_esta": 18,
-  "oferta_real": 19,
+  "oferta_real": 20,
   "pvpr_inflado": 3,
   "sin_precio": 8
  },
- "updated": "2026-11-18T19:30:57.703760+00:00"
+ "updated": "2026-11-18T20:01:08.859046+00:00"
 }

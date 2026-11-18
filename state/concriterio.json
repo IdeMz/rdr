@@ -45,7 +45,7 @@
   "Nutrición deportiva": "2026-11-17T14:30:58.598858+00:00",
   "Oficina": "2026-11-16T10:45:46.172773+00:00",
   "Patinetes": "2026-11-18T12:30:56.291132+00:00",
-  "Pequeño electrodoméstico": "2026-11-16T18:55:32.141614+00:00",
+  "Pequeño electrodoméstico": "2026-11-18T20:01:08.859046+00:00",
   "Perfumes": "2026-11-15T21:40:42.221187+00:00",
   "Periféricos": "2026-11-18T17:01:08.637572+00:00",
   "Perros": "2026-11-17T11:01:06.148601+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-18T19:56:54.690480+00:00",
+ "next_at": "2026-11-18T20:29:21.091356+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -467,6 +467,17 @@
    "p": 48.9,
    "t": "2026-11-17T21:15:46.822418+00:00",
    "title": "Carrera 5041/S XT RCT Gafas de sol, azul (Matt Blue/Blue Sky Grey Speckled), 56 Unisex-Adulto",
+   "v": []
+  },
+  "B01N9XBDTI": {
+   "c": "Pequeño electrodoméstico",
+   "d": 50,
+   "e": "🍞",
+   "m": 410,
+   "p": 15.99,
+   "s": "ambas",
+   "t": "2026-11-18T20:02:05.366859+00:00",
+   "title": "Tostadora Philips Daily Collection, 2 ranuras, 8 niveles, negra",
    "v": []
   },
   "B06W54NMJY": {
@@ -3666,10 +3677,6 @@
    "t": "2026-11-18T10:30:54.867859+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0897PBMFW": {
-   "t": "2026-11-17T19:45:42.626266+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B09V8C4QP9": {
    "t": "2026-11-16T19:55:35.023364+00:00",
    "why": "descartada a mano"
@@ -3682,32 +3689,28 @@
    "t": "2026-11-17T20:15:50.874512+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0DC6ZD31R": {
-   "t": "2026-11-17T19:45:42.626266+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0DSG9VCRH": {
-   "t": "2026-11-17T19:45:42.626266+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0DWDWK591": {
    "t": "2026-11-18T13:30:55.857399+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0DY1JKTRD": {
-   "t": "2026-11-17T19:45:42.626266+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0FB3YQKVJ": {
    "t": "2026-11-18T18:01:04.377917+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0FRG54M5R": {
-   "t": "2026-11-17T19:45:42.626266+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
   }
  },
  "reserve": [
+  {
+   "a": "B01J9LPTFG",
+   "c": "Pequeño electrodoméstico",
+   "e": "🍞",
+   "img": "https://m.media-amazon.com/images/I/61vqhDa+3AL._AC_UL320_.jpg",
+   "n": 7100,
+   "op": 48.11,
+   "p": 25.51,
+   "r": 4.4,
+   "t": "2026-11-18T20:01:08.859046+00:00",
+   "title": "Russell Hobbs Tostadora Retro Roja, 2 Ranuras Anchas, 1100W, 21680-56"
+  },
   {
    "a": "B07Y4MJFWC",
    "c": "Bebé",
@@ -3731,24 +3734,12 @@
    "r": 4.6,
    "t": "2026-11-18T17:30:58.281773+00:00",
    "title": "WORKPRO Pistola de Calafateo Metal 2 Modos 9:1 y 18:1"
-  },
-  {
-   "a": "B07W5JKKFJ",
-   "c": "Periféricos",
-   "e": "⌨️",
-   "img": "https://m.media-amazon.com/images/I/61+9FV3bNwL._AC_UL320_.jpg",
-   "n": 1600,
-   "op": 119.99,
-   "p": 63.88,
-   "r": 4.6,
-   "t": "2026-11-18T17:01:08.637572+00:00",
-   "title": "Logitech Brio 500 HD Webcam Cámara USB C, C, 4K, Grafito"
   }
  ],
  "summary_day": "2026-11-17",
  "tg_offset": 511048116,
  "x_copy": {
   "day": "2026-11-18",
-  "n": 26
+  "n": 27
  }
 }
