@@ -51,7 +51,7 @@
   "Perros": "2026-11-17T11:01:06.148601+00:00",
   "Portátiles": "2026-11-17T08:30:57.514721+00:00",
   "Proyectores": "2026-11-17T17:31:15.607799+00:00",
-  "Redes y wifi": "2026-11-16T08:45:43.168202+00:00",
+  "Redes y wifi": "2026-11-18T07:30:50.769623+00:00",
   "Relojes": "2026-11-17T12:30:54.443182+00:00",
   "Robots de cocina": "2026-11-15T15:15:41.208340+00:00",
   "Salud": "2026-11-16T16:50:42.783335+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-18T07:28:39.647705+00:00",
+ "next_at": "2026-11-18T08:00:12.295792+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -1008,6 +1008,17 @@
    "s": "busqueda",
    "t": "2026-11-15T08:51:59.835954+00:00",
    "title": "Instant Pot Vortex 4 en 1 Freidora de Aire Digital Antiadherente con Temporizador y Función de Horno y Calentador, 1.700 W – 5,7 L",
+   "v": []
+  },
+  "B08W3SPNH7": {
+   "c": "Redes y wifi",
+   "d": 48,
+   "e": "📶",
+   "m": 385,
+   "p": 9.9,
+   "s": "busqueda",
+   "t": "2026-11-18T07:31:17.336303+00:00",
+   "title": "D-Link DGS-105GL Switch Gigabit 5 Puertos, sin gestión, 1000 megas por Puerto, Ethernet LAN, RJ-45, Plug&Play, Perfil bajo, metálico, conmutador, hub, sobremesa, sin Ventiladores, 802.3az EEE, Negro",
    "v": []
   },
   "B08WC4V1PK": {
@@ -3469,6 +3480,6 @@
  "tg_offset": 511048099,
  "x_copy": {
   "day": "2026-11-18",
-  "n": 1
+  "n": 2
  }
 }
