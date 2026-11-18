@@ -64,21 +64,7 @@
   "Zapatillas": "2026-11-17T17:01:11.572901+00:00",
   "eReaders": "2026-11-16T13:55:32.747613+00:00"
  },
- "manual": {
-  "B0000D8472": {
-   "a": "B0000D8472",
-   "c": "",
-   "e": "",
-   "img": "https://m.media-amazon.com/images/I/61K13o1IXmL._AC_SL1500_.jpg",
-   "m": 378,
-   "n": 411,
-   "op": null,
-   "p": 151.88,
-   "r": 4.7,
-   "t": "2026-11-18T08:30:52.707124+00:00",
-   "title": "Unold M 160 G Gourmet, Antracita, Blanco, 160 W, 230 V, 50 Hz, 72 x 72 x 348 mm - Licuadora"
-  }
- },
+ "manual": {},
  "manual_queue": [
   {
    "a": "B0DL65SRTR",
@@ -93,6 +79,20 @@
    "r": 5.0,
    "t": "2026-11-18T07:55:39.668365+00:00",
    "title": "AIROH WRAAAP Paint Matt XS"
+  },
+  {
+   "a": "B0000D8472",
+   "c": "",
+   "e": "",
+   "img": "https://m.media-amazon.com/images/I/61K13o1IXmL._AC_SL1500_.jpg",
+   "m": 378,
+   "n": 411,
+   "op": null,
+   "p": 151.88,
+   "q": "2026-11-18T08:35:34.004230+00:00",
+   "r": 4.7,
+   "t": "2026-11-18T08:30:52.707124+00:00",
+   "title": "Unold M 160 G Gourmet, Antracita, Blanco, 160 W, 230 V, 50 Hz, 72 x 72 x 348 mm - Licuadora"
   }
  ],
  "manual_todo": [],
@@ -3532,7 +3532,7 @@
   }
  ],
  "summary_day": "2026-11-17",
- "tg_offset": 511048109,
+ "tg_offset": 511048110,
  "x_copy": {
   "day": "2026-11-18",
   "n": 4
