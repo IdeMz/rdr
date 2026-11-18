@@ -1014,6 +1014,13 @@
    "v": 3,
    "via": "ean"
   },
+  "4975769470707": {
+   "a": "B0B2CP8722",
+   "t": "2026-11-18T18:30:58.613853+00:00",
+   "title": "JVC HA-NP35T Auricolare True Wireless Stereo (TWS) In-ear Musica e Chiamate Bluetooth Bianco",
+   "v": 3,
+   "via": "ean"
+  },
   "4977766798518": {
    "a": "B07SQGX8JZ",
    "t": "2026-11-14T03:50:27.795156+00:00",
@@ -1682,6 +1689,13 @@
    "a": "B0DCPW2SP5",
    "t": "2026-11-14T02:50:24.306324+00:00",
    "title": "Bowers & Wilkins Pi6 - Verde Bosque",
+   "via": "ean"
+  },
+  "714346345885": {
+   "a": "B0DBRQNW9D",
+   "t": "2026-11-18T18:30:58.613853+00:00",
+   "title": "Bowers & Wilkins Pi6 Auriculares inalámbricos True Wireless con Bluetooth, aptX, cancelación de Ruido Activa y micrófonos Integrados - Glacier Blue",
+   "v": 3,
    "via": "ean"
   },
   "7340055398251": {
@@ -2627,6 +2641,26 @@
    "v": 3,
    "veredicto": "sin_precio"
   },
+  "39633853398": {
+   "ahorro_vs_amazon": 25,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 48.17,
+   "amz_title": "JVC HA-NP35T Auricolare True Wireless Stereo (TWS) In-ear Musica e Chiamate Bluetooth Bianco",
+   "asin": "B0B2CP8722",
+   "disponible": true,
+   "ean": "4975769470707",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "25 % por debajo del habitual en Amazon (48.17)",
+   "name": "JVC HA-NP35T Blanco TWS Bluetooth 5.1 17h IPX4 Auriculares inalámbricos",
+   "pp_drop": 25,
+   "pp_median": 47.95,
+   "pp_price": 35.95,
+   "t": "2026-11-18T18:30:58.613853+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "39818152139": {
    "ahorro_vs_amazon": 4,
    "amz_low30": null,
@@ -3415,6 +3449,26 @@
    "t": "2026-11-18T14:30:58.889249+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
+  },
+  "45368125431": {
+   "ahorro_vs_amazon": 35,
+   "amz_low30": 154.99,
+   "amz_median": null,
+   "amz_price": 140.0,
+   "amz_title": "Bowers & Wilkins Pi6 Auriculares inalámbricos True Wireless con Bluetooth, aptX, cancelación de Ruido Activa y micrófonos Integrados - Glacier Blue",
+   "asin": "B0DBRQNW9D",
+   "disponible": true,
+   "ean": "714346345885",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "35 % por debajo del habitual en Amazon (154.99)",
+   "name": "Bowers & Wilkins Pi6 TWS ANC Bluetooth 5.4 24h IP54 Multipunto Auriculares inalámbricos",
+   "pp_drop": 19,
+   "pp_median": 124.94,
+   "pp_price": 100.95,
+   "t": "2026-11-18T18:30:58.613853+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
   },
   "45368125438": {
    "ahorro_vs_amazon": -16,
@@ -7217,9 +7271,9 @@
   "amazon_mas_barato": 23,
   "dudoso": 2,
   "no_esta": 18,
-  "oferta_real": 16,
+  "oferta_real": 18,
   "pvpr_inflado": 3,
   "sin_precio": 8
  },
- "updated": "2026-11-18T18:01:04.377917+00:00"
+ "updated": "2026-11-18T18:30:58.613853+00:00"
 }
