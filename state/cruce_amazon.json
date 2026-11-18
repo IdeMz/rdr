@@ -847,6 +847,13 @@
     ]
    }
   },
+  "4711474183941": {
+   "a": "B0BD8B6MGH",
+   "t": "2026-11-18T17:30:58.281773+00:00",
+   "title": "acer Vero B247YGbmiprzx",
+   "v": 3,
+   "via": "ean"
+  },
   "4711474211033": {
    "a": "B077JYYQ7V",
    "t": "2026-11-14T08:10:40.297090+00:00",
@@ -5110,11 +5117,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Videojuego Bandai Namco Entertainment Elden Ring: Shadow of the Erdtree Xbox Series X",
-   "pista": "1138460 bytes; 6 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1138939 bytes; 6 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 37,
    "pp_median": 96.95,
    "pp_price": 60.95,
-   "t": "2026-11-18T11:30:52.353700+00:00",
+   "t": "2026-11-18T17:30:58.281773+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -6245,6 +6252,27 @@
    "t": "2026-11-15T17:05:32.780345+00:00",
    "veredicto": "oferta_real"
   },
+  "46599140691": {
+   "ahorro_vs_amazon": null,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": null,
+   "amz_title": "acer Vero B247YGbmiprzx",
+   "asin": "B0BD8B6MGH",
+   "disponible": true,
+   "ean": "4711474183941",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "en Amazon pero sin precio o no disponible",
+   "name": "Monitor Acer Vero B7 B247Y G 23,8 pulgadas FHD IPS 75Hz 4 ms Negro",
+   "pista": "1195318 bytes; 21 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pp_drop": 20,
+   "pp_median": 127.95,
+   "pp_price": 102.95,
+   "t": "2026-11-18T17:30:58.281773+00:00",
+   "v": 3,
+   "veredicto": "sin_precio"
+  },
   "46599140716": {
    "ahorro_vs_amazon": 76,
    "amz_low30": null,
@@ -7136,7 +7164,7 @@
   "no_esta": 18,
   "oferta_real": 16,
   "pvpr_inflado": 3,
-  "sin_precio": 6
+  "sin_precio": 7
  },
- "updated": "2026-11-18T17:01:08.637572+00:00"
+ "updated": "2026-11-18T17:30:58.281773+00:00"
 }

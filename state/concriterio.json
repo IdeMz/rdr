@@ -9,7 +9,7 @@
   "Auriculares": "2026-11-17T08:01:10.979640+00:00",
   "Barras de sonido": "2026-11-18T08:01:03.545593+00:00",
   "Bebé": "2026-11-16T07:35:32.483023+00:00",
-  "Bricolaje": "2026-11-16T08:10:40.674323+00:00",
+  "Bricolaje": "2026-11-18T17:30:58.281773+00:00",
   "Cafeteras": "2026-11-17T18:01:13.651055+00:00",
   "Café y cápsulas": "2026-11-15T14:40:39.424977+00:00",
   "Camping y montaña": "2026-11-18T14:30:58.889249+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-18T17:26:23.911232+00:00",
+ "next_at": "2026-11-18T17:59:00.129318+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -79,6 +79,17 @@
    "p": 151.88,
    "t": "2026-11-18T09:30:54.362032+00:00",
    "title": "Unold M 160 G Gourmet, Antracita, Blanco, 160 W, 230 V, 50 Hz, 72 x 72 x 348 mm - Licuadora",
+   "v": []
+  },
+  "B0001D1Q72": {
+   "c": "Bricolaje",
+   "d": 31,
+   "e": "🪛",
+   "m": 405,
+   "p": 23.99,
+   "s": "ofertas",
+   "t": "2026-11-18T17:31:29.892637+00:00",
+   "title": "Bosch pistola de pegar PKP 18 E (1 boquilla extralarga, adhesivo termofundible, 240 V)",
    "v": []
   },
   "B0001IOZ98": {
@@ -3599,16 +3610,8 @@
    "t": "2026-11-18T10:30:54.867859+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B014GNJWW8": {
-   "t": "2026-11-17T17:01:11.572901+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B016MKOA6G": {
    "t": "2026-11-18T12:30:56.291132+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B01LZDYR7N": {
-   "t": "2026-11-17T17:01:11.572901+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B06XC29B5G": {
@@ -3670,6 +3673,18 @@
  },
  "reserve": [
   {
+   "a": "B08T9JTHNK",
+   "c": "Bricolaje",
+   "e": "🪛",
+   "img": "https://m.media-amazon.com/images/I/61x-8HHklaL._AC_UL320_.jpg",
+   "n": 3400,
+   "op": 21.99,
+   "p": 17.59,
+   "r": 4.6,
+   "t": "2026-11-18T17:30:58.281773+00:00",
+   "title": "WORKPRO Pistola de Calafateo Metal 2 Modos 9:1 y 18:1"
+  },
+  {
    "a": "B07W5JKKFJ",
    "c": "Periféricos",
    "e": "⌨️",
@@ -3698,6 +3713,6 @@
  "tg_offset": 511048116,
  "x_copy": {
   "day": "2026-11-18",
-  "n": 21
+  "n": 22
  }
 }
