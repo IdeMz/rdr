@@ -65,24 +65,9 @@
   "eReaders": "2026-11-16T13:55:32.747613+00:00"
  },
  "manual": {},
- "manual_queue": [
-  {
-   "a": "B0DR34N25V",
-   "c": "",
-   "e": "",
-   "img": "https://m.media-amazon.com/images/I/71rh3o1JPaL._AC_SL1500_.jpg",
-   "m": 382,
-   "n": 12,
-   "op": 99.95,
-   "p": 72.8,
-   "q": "2026-11-18T08:46:01.121579+00:00",
-   "r": 4.2,
-   "t": "2026-11-18T08:45:41.215119+00:00",
-   "title": "Clarks Hombre Newford Mid Botas"
-  }
- ],
+ "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-18T09:59:46.448534+00:00",
+ "next_at": "2026-11-18T10:28:58.118146+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2290,6 +2275,17 @@
    "title": "Aurzen BOOM mini Proyector para exterior con Google TV, Dolby Audio de 20 W",
    "v": []
   },
+  "B0DR34N25V": {
+   "c": "",
+   "d": 27,
+   "e": "",
+   "m": 390,
+   "manual": true,
+   "p": 72.8,
+   "t": "2026-11-18T10:00:22.118374+00:00",
+   "title": "Clarks Hombre Newford Mid Botas",
+   "v": []
+  },
   "B0DSPKPVX3": {
    "c": "Accesorios de móvil",
    "d": 15,
@@ -3539,6 +3535,6 @@
  "tg_offset": 511048112,
  "x_copy": {
   "day": "2026-11-18",
-  "n": 6
+  "n": 7
  }
 }
