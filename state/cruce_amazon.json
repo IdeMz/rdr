@@ -38,6 +38,13 @@
     ]
    }
   },
+  "0194644037574": {
+   "a": "B0D2XRXNGY",
+   "t": "2026-11-18T01:35:20.319820+00:00",
+   "title": "Soundcore Anker V20i Auriculares Open-Ear, Ganchos Ajustables, IPX5, Negro",
+   "v": 3,
+   "via": "modelo"
+  },
   "0194644126124": {
    "a": "B0BZV4QFP8",
    "t": "2026-11-18T00:35:21.102583+00:00",
@@ -355,6 +362,13 @@
    "a": "B0CN41GMDK",
    "t": "2026-11-17T22:35:22.842725+00:00",
    "title": "Amazon Fire TV Stick 4K Select: comienza a reproducir contenido 4K en streaming, ve cientos de miles de películas y episodios de series, encuentra series más rá",
+   "v": 3,
+   "via": "ean"
+  },
+  "0840268970314": {
+   "a": "B0C2RSK776",
+   "t": "2026-11-18T01:35:20.319820+00:00",
+   "title": "Amazon Echo Spot (última generación) | Despertador inteligente con sonido de calidad| Blanco, con Acceso Anticipado a Alexa+",
    "v": 3,
    "via": "ean"
   },
@@ -1071,6 +1085,13 @@
    "a": "B0BKH4FX9Y",
    "t": "2026-11-13T21:50:42.988192+00:00",
    "title": "Jabra Evolve2 Buds, Auriculares Bluetooth Intraaurales Inalámbricos, Cancelación Activa de Ruido y Tecnología MultiSensor con 4 Micrófonos, Certificados para MS",
+   "via": "ean"
+  },
+  "5707119059534": {
+   "a": "B0F5GKLH1P",
+   "t": "2026-11-18T01:35:20.319820+00:00",
+   "title": "SteelSeries Arctis Nova 3P Wireless Auriculares Gaming multiplataforma - App - Batería 40h - Controladores magnéticos de neodimio - 2,4 GHz/Bluetooth - Micro ex",
+   "v": 3,
    "via": "ean"
   },
   "5707119059961": {
@@ -2163,6 +2184,26 @@
    "t": "2026-11-16T02:35:20.145846+00:00",
    "veredicto": "oferta_real"
   },
+  "38404791123": {
+   "ahorro_vs_amazon": 46,
+   "amz_low30": 119.0,
+   "amz_median": null,
+   "amz_price": 59.99,
+   "amz_title": "Amazon Echo Spot (última generación) | Despertador inteligente con sonido de calidad| Blanco, con Acceso Anticipado a Alexa+",
+   "asin": "B0C2RSK776",
+   "disponible": true,
+   "ean": "0840268970314",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 59.99 frente a 63.95",
+   "name": "Amazon Echo Spot 2024 Blanco Bluetooth 5.0 WiFi Altavoz inteligente Alexa",
+   "pp_drop": 17,
+   "pp_median": 76.99,
+   "pp_price": 63.95,
+   "t": "2026-11-18T01:35:20.319820+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "38915518299": {
    "ahorro_vs_amazon": -13,
    "amz_low30": null,
@@ -3159,6 +3200,26 @@
    "pp_price": 61.18,
    "t": "2026-11-14T01:20:25.760497+00:00",
    "veredicto": "oferta_real"
+  },
+  "45403212384": {
+   "ahorro_vs_amazon": -9,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 62.99,
+   "amz_title": "SteelSeries Arctis Nova 3P Wireless Auriculares Gaming multiplataforma - App - Batería 40h - Controladores magnéticos de neodimio - 2,4 GHz/Bluetooth - Micro ex",
+   "asin": "B0F5GKLH1P",
+   "disponible": true,
+   "ean": "5707119059534",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 62.99 frente a 68.95",
+   "name": "SteelSeries Arctis Nova 3P Diadema Bluetooth 5.3 40h Auriculares inalámbricos",
+   "pp_drop": 17,
+   "pp_median": 82.95,
+   "pp_price": 68.95,
+   "t": "2026-11-18T01:35:20.319820+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
   },
   "45403214501": {
    "ahorro_vs_amazon": 48,
@@ -4797,6 +4858,26 @@
     ]
    }
   },
+  "46239687571": {
+   "ahorro_vs_amazon": -8,
+   "amz_low30": 28.75,
+   "amz_median": null,
+   "amz_price": 24.29,
+   "amz_title": "Soundcore Anker V20i Auriculares Open-Ear, Ganchos Ajustables, IPX5, Negro",
+   "asin": "B0D2XRXNGY",
+   "disponible": true,
+   "ean": "0194644037574",
+   "encontrado_por": "modelo",
+   "lista": "candidates",
+   "motivo": "Amazon 24.29 frente a 30.95",
+   "name": "Anker Soundcore V20i Open-Ear Blanco Bluetooth Auriculares de oído abierto",
+   "pp_drop": 21,
+   "pp_median": 38.95,
+   "pp_price": 30.95,
+   "t": "2026-11-18T01:35:20.319820+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "46247661146": {
    "ean": "8592978595500",
    "lista": "candidates",
@@ -6318,14 +6399,14 @@
    }
   }
  },
- "night_at": "2026-11-18T01:20:27.102268+00:00",
+ "night_at": "2026-11-18T01:35:20.319820+00:00",
  "resumen": {
-  "amazon_mas_barato": 23,
+  "amazon_mas_barato": 26,
   "dudoso": 4,
   "no_esta": 18,
   "oferta_real": 20,
   "pvpr_inflado": 3,
   "sin_precio": 3
  },
- "updated": "2026-11-18T01:20:27.102268+00:00"
+ "updated": "2026-11-18T01:35:20.319820+00:00"
 }
