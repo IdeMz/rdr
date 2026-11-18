@@ -59,7 +59,7 @@
   "Suplementos": "2026-11-17T14:01:04.582833+00:00",
   "Tablets": "2026-11-17T16:01:10.840347+00:00",
   "Televisores": "2026-11-17T13:01:23.458704+00:00",
-  "Textil hogar": "2026-11-16T21:10:41.415586+00:00",
+  "Textil hogar": "2026-11-18T14:01:13.022640+00:00",
   "Videojuegos": "2026-11-17T09:01:06.401047+00:00",
   "Zapatillas": "2026-11-17T17:01:11.572901+00:00",
   "eReaders": "2026-11-16T13:55:32.747613+00:00"
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-18T14:00:37.832071+00:00",
+ "next_at": "2026-11-18T14:29:07.839176+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -339,6 +339,17 @@
    "s": "ambas",
    "t": "2026-11-17T07:31:28.243354+00:00",
    "title": "Performance Headband – Diadema para Hombre",
+   "v": []
+  },
+  "B010S5VXKC": {
+   "c": "Textil hogar",
+   "d": 30,
+   "e": "🧺",
+   "m": 398,
+   "p": 14.62,
+   "s": "ambas",
+   "t": "2026-11-18T14:01:43.983565+00:00",
+   "title": "Amazon Basics Juego Toallas Baño 100% Algodón Absorbente Toalla Lavabo 30x30 cm, Blanco, Pack 24 Unidades",
    "v": []
   },
   "B013AYGHT0": {
@@ -3630,24 +3641,12 @@
    "r": 4.7,
    "t": "2026-11-18T13:01:08.331588+00:00",
    "title": "Unisex H/H Scout Neceser, Negro, STD"
-  },
-  {
-   "a": "B08XZ9BX7C",
-   "c": "Cuidado del cabello",
-   "e": "💇",
-   "img": "https://m.media-amazon.com/images/I/71Iuur1+lkL._AC_UL320_.jpg",
-   "n": 444,
-   "op": 99.99,
-   "p": 69.99,
-   "r": 4.3,
-   "t": "2026-11-18T11:01:05.531917+00:00",
-   "title": "Rowenta Air Care Ultimate Experience - Rizador en Forma de L CF4310"
   }
  ],
  "summary_day": "2026-11-17",
  "tg_offset": 511048112,
  "x_copy": {
   "day": "2026-11-18",
-  "n": 14
+  "n": 15
  }
 }

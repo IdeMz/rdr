@@ -994,6 +994,13 @@
    "title": "Iiyama Prolite Xb2797hsn?b1 LeD-Monitor 68,6?cm (27\") Full Hd ? Hdmi/dp/usb?c/lan ? Schwarz",
    "via": "ean"
   },
+  "4948570127405": {
+   "a": "B0GHZBXLPL",
+   "t": "2026-11-18T14:01:13.022640+00:00",
+   "title": "Iiyama Prolite Xb2491hs?b1 LeD-Monitor 60,5?cm (23,8\") Full Hd ? Hdmi/dp ? Schwarz",
+   "v": 3,
+   "via": "ean"
+  },
   "4977766798518": {
    "a": "B07SQGX8JZ",
    "t": "2026-11-14T03:50:27.795156+00:00",
@@ -1803,6 +1810,21 @@
    "title": "SaveFamily Slim 4G | Reloj Inteligente Niño/a con Localizador GPS",
    "via": "ean"
   },
+  "8434388284110": {
+   "a": "",
+   "t": "2026-11-18T14:01:13.022640+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Yisica Correa para 22mm 20mm Reloj Inteligente Hombre Mujer, Liberación Rápida de Silicona Suave Pul",
+     "Yisica 3 Piezas Correa para 22mm Reloj Inteligente Hombre Mujer, Liberación Rápida de Silicona Suave",
+     "Oumida 4 Piezas Correa para 22mm Reloj Inteligente Hombre Mujer, Pulseras de Repuesto de Liberación "
+    ]
+   }
+  },
   "8434388458016": {
    "a": "",
    "t": "2026-11-17T15:01:35.153027+00:00",
@@ -2099,6 +2121,28 @@
   }
  },
  "items": {
+  "37600252522": {
+   "ean": "8434388284110",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Lemfo LEMZ Negro Correa Silicona 1,34 pulgadas AMOLED 5 días IP68 Smartwatch",
+   "pp_drop": 24,
+   "pp_median": 117.95,
+   "pp_price": 89.95,
+   "t": "2026-11-18T14:01:13.022640+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Yisica Correa para 22mm 20mm Reloj Inteligente Hombre Mujer, Liberación Rápida de Silicona Suave Pul",
+     "Yisica 3 Piezas Correa para 22mm Reloj Inteligente Hombre Mujer, Liberación Rápida de Silicona Suave",
+     "Oumida 4 Piezas Correa para 22mm Reloj Inteligente Hombre Mujer, Pulseras de Repuesto de Liberación "
+    ]
+   }
+  },
   "37600254006": {
    "ean": "6921815625049",
    "lista": "candidates",
@@ -6023,6 +6067,26 @@
    "t": "2026-11-14T21:01:00.449874+00:00",
    "veredicto": "dudoso"
   },
+  "46599140415": {
+   "ahorro_vs_amazon": 6,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 112.18,
+   "amz_title": "Iiyama Prolite Xb2491hs?b1 LeD-Monitor 60,5?cm (23,8\") Full Hd ? Hdmi/dp ? Schwarz",
+   "asin": "B0GHZBXLPL",
+   "disponible": true,
+   "ean": "4948570127405",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "antes 137.95 en PowerPlanet, pero en Amazon suele estar a 112.18",
+   "name": "Monitor iiyama ProLite 23,8 pulgadas Full HD IPS 120Hz Negro Mate XB2491HS-B1",
+   "pp_drop": 23,
+   "pp_median": 137.95,
+   "pp_price": 105.95,
+   "t": "2026-11-18T14:01:13.022640+00:00",
+   "v": 3,
+   "veredicto": "pvpr_inflado"
+  },
   "46599140515": {
    "ahorro_vs_amazon": 17,
    "amz_low30": null,
@@ -6977,10 +7041,10 @@
  "resumen": {
   "amazon_mas_barato": 20,
   "dudoso": 2,
-  "no_esta": 17,
+  "no_esta": 18,
   "oferta_real": 16,
-  "pvpr_inflado": 2,
+  "pvpr_inflado": 3,
   "sin_precio": 5
  },
- "updated": "2026-11-18T13:30:55.857399+00:00"
+ "updated": "2026-11-18T14:01:13.022640+00:00"
 }
