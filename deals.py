@@ -2618,7 +2618,8 @@ def telegram_pending(ch: Channel, token: str) -> int:
 
 
 def process_votes(
-    ch: Channel, state_path: Path, state: dict, tag: str | None, now: datetime | None = None
+    ch: Channel, state_path: Path, state: dict, tag: str | None, now: datetime | None = None,
+    poll_timeout: int = 0,
 ) -> int:
     """Lee los toques en 👍 pendientes, actualiza los contadores y los botones. Devuelve cuantos mensajes cambiaron."""
     token, chat_id = get_secret(ch.token_env), get_secret(ch.chat_env)
@@ -2633,7 +2634,7 @@ def process_votes(
     manual_chat = get_secret(ch.alert_chat_env) if ch.name == REVIEW_CHANNEL else None
     requests_in: list[str] = []
     n_updates = n_messages = n_buttons = 0
-    poll_timeout, checked = 0, False
+    checked = poll_timeout > 0  # esperando a proposito: no hace falta preguntar que hay pendiente
     for _ in range(6):  # 100 avisos por llamada
         data = {"timeout": poll_timeout, "limit": 100, "allowed_updates": json.dumps(["callback_query", "message"])}
         if new_offset is not None:
@@ -2847,6 +2848,38 @@ def summary_messages(entries: list[tuple[str, dict]], day: date, tag: str | None
     if len(out) > 1:
         out[0] = out[0].replace(head, f"{head} (1/{len(out)})", 1)
     return out
+
+
+LISTEN_SECONDS = 210   # como mucho esto escuchando toques tras un tick (el siguiente tick llega a los 5 min)
+LISTEN_POLL = 10       # cada llamada a Telegram espera hasta estos segundos a que llegue algo
+
+
+def listen_for_taps(ch: Channel, tag: str | None, deadline: float, clock=time.monotonic,
+                    state_dir: Path | None = None) -> int:
+    """Mientras haya vistas previas sin contestar, escucha a Telegram para atender el toque al momento.
+
+    Telegram descarta los toques en botones que no se leen enseguida (pasados un par de minutos ya no llegan); con
+    una lectura cada 5 minutos se perdian casi todos. Escuchando tras el tick el toque se atiende en segundos y el
+    aviso emergente del boton se ve. Devuelve cuantas lecturas se hicieron."""
+    state_path = (state_dir or ROOT / "state") / f"{ch.name}.json"
+    reads = 0
+    while True:
+        now = datetime.now(timezone.utc)
+        if not (_manual_items(state_path, now) or _manual_todo(state_path, now)):
+            break
+        left = deadline - clock()
+        if left < 2:
+            break
+        state = load_state(state_path, ch.repeat_days, now)
+        before = json.dumps(state, sort_keys=True)
+        process_votes(ch, state_path, state, tag, now, poll_timeout=int(min(LISTEN_POLL, left)))
+        reads += 1
+        if json.dumps(state, sort_keys=True) != before:  # votos en el canal: se guardan sin tocar el resto
+            posted = _read_state_file(state_path).get("posted")
+            posted = posted if isinstance(posted, dict) else {}
+            posted.update(state)
+            set_state_key(state_path, "posted", posted)
+    return reads
 
 
 def maybe_send_summary(ch: Channel, state_path: Path, state: dict, now: datetime) -> bool:
@@ -3252,6 +3285,7 @@ def main(argv: list[str] | None = None) -> int:
         paths = sorted((ROOT / "channels").glob("*.json"))
 
     failed = 0
+    started = time.monotonic()
     for path in paths:
         ch = None
         try:
@@ -3259,6 +3293,10 @@ def main(argv: list[str] | None = None) -> int:
             if args.all and not ch.enabled:
                 continue
             run_channel(ch, dry_run=args.dry_run, html_file=args.html, force=force)
+            if ch.name == REVIEW_CHANNEL and not (args.dry_run or args.html or force):
+                reads = listen_for_taps(ch, get_secret("AMAZON_TAG"), started + LISTEN_SECONDS)
+                if reads:
+                    log.info("%s: escuchando toques: %d lecturas", ch.name, reads)
         except Blocked as exc:
             print(f"::warning::Amazon no ha respondido ({scrub(str(exc))})")
             log.warning("%s: bloqueado (%s)", path.stem, exc)

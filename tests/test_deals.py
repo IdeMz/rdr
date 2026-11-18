@@ -3420,3 +3420,48 @@ def test_no_extra_wait_when_telegram_has_nothing_pending(tmp_path, monkeypatch, 
     with caplog.at_level("INFO"):
         deals.process_votes(ch, path, {}, "tag-21", NOW_IN)
     assert polls == [0] and "pendientes segun Telegram 0" in caplog.text and "sin avisos nuevos" in caplog.text
+
+
+def seed_preview(path, asin="B0CT8W3Y29"):
+    path.write_text(json.dumps({"posted": {}, "manual": {asin: {
+        "a": asin, "c": "", "e": "", "img": "", "m": 5, "n": 10, "op": None, "p": 20.0, "r": 4.5,
+        "t": datetime.now(timezone.utc).isoformat(), "title": "Producto de prueba"}}}))
+
+
+def test_listening_after_the_tick_attends_a_tap_at_once(tmp_path, monkeypatch):
+    tg = manual_env(monkeypatch)
+    ch, path = channel(name="concriterio", require_spain=False, manual_queue=True), tmp_path / "concriterio.json"
+    seed_preview(path)
+    ticks = iter(range(0, 1000, 5))
+    polls = []
+
+    def fake(method, token, data, **kw):
+        if method == "getUpdates":
+            polls.append(data["timeout"])
+            if len(polls) == 2:  # el toque llega mientras se escucha
+                press(tg, "B0CT8W3Y29", "mpub")
+        return tg(method, token, data, **kw)
+
+    monkeypatch.setattr(deals, "tg_call", fake)
+    reads = deals.listen_for_taps(ch, "tag-21", 100, clock=lambda: next(ticks), state_dir=tmp_path)
+    saved = json.loads(path.read_text())
+    assert [d["a"] for d in saved["manual_queue"]] == ["B0CT8W3Y29"] and saved["manual"] == {}
+    assert reads == 2 and all(t > 0 for t in polls)           # se esperaba de verdad
+    assert tg.of("answerCallbackQuery")[0]["text"].startswith("En cola ✅")
+
+
+def test_no_listening_without_pending_previews(tmp_path, monkeypatch):
+    tg = manual_env(monkeypatch)
+    ch, path = channel(name="concriterio", require_spain=False, manual_queue=True), tmp_path / "concriterio.json"
+    path.write_text(json.dumps({"posted": {}}))
+    assert deals.listen_for_taps(ch, "tag-21", 100, clock=lambda: 0, state_dir=tmp_path) == 0
+    assert tg.of("getUpdates") == []
+
+
+def test_listening_stops_at_the_deadline(tmp_path, monkeypatch):
+    tg = manual_env(monkeypatch)
+    ch, path = channel(name="concriterio", require_spain=False, manual_queue=True), tmp_path / "concriterio.json"
+    seed_preview(path)
+    clock = iter([0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50])
+    reads = deals.listen_for_taps(ch, "tag-21", 40, clock=lambda: next(clock), state_dir=tmp_path)
+    assert 1 <= reads <= 8
