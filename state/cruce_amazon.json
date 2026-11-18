@@ -408,6 +408,21 @@
    "v": 3,
    "via": "ean"
   },
+  "0840268989538": {
+   "a": "",
+   "t": "2026-11-18T22:20:27.614650+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Kindle Paperwhite (16 GB) de Amazon (modelo de 2024): pantalla de 7\" sin reflejos y semanas de auton",
+     "Kindle Paperwhite (16 GB) de Amazon (modelo de 2024): pantalla de 7\" sin reflejos y semanas de auton",
+     "Amazon Kindle Paperwhite (última generación): ahora más fino y ligero, con pantalla de 7\" y luz cáli"
+    ]
+   }
+  },
   "0840295405841": {
    "a": "B0DDYZZMSN",
    "t": "2026-11-18T14:30:58.889249+00:00",
@@ -1621,6 +1636,21 @@
    "t": "2026-11-14T05:08:32.344426+00:00",
    "title": "Reolink Argus Series B320 2K telecamera di sicurezza",
    "via": "ean"
+  },
+  "6976367680916": {
+   "a": "",
+   "t": "2026-11-18T22:20:27.614650+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Mibro GT Reloj Inteligente Hombre para Correr, Pantalla AMOLED 1.43\"",
+     "Mibro Reloj inteligente GS Pro (negro) - Pantalla Amoled de 1.4 pulgadas, llamadas Bluetooth, duraci",
+     "Mibro GS Pro 2 Smartwatch Hombre Correr, GPS, Batería de 20 Días, Dark Gray"
+    ]
+   }
   },
   "6977388390044": {
    "a": "B0H6LCS1HS",
@@ -4918,6 +4948,28 @@
    "t": "2026-11-17T08:30:57.514721+00:00",
    "veredicto": "sin_precio"
   },
+  "46124217652": {
+   "ean": "0840268989538",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Amazon Kindle Paperwhite 12ª Gen 16GB Negro 7 pulgadas",
+   "pp_drop": 13,
+   "pp_median": 205.0,
+   "pp_price": 179.0,
+   "t": "2026-11-18T22:20:27.614650+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Kindle Paperwhite (16 GB) de Amazon (modelo de 2024): pantalla de 7\" sin reflejos y semanas de auton",
+     "Kindle Paperwhite (16 GB) de Amazon (modelo de 2024): pantalla de 7\" sin reflejos y semanas de auton",
+     "Amazon Kindle Paperwhite (última generación): ahora más fino y ligero, con pantalla de 7\" y luz cáli"
+    ]
+   }
+  },
   "46146890816": {
    "ahorro_vs_amazon": -13,
    "amz_low30": null,
@@ -6011,6 +6063,28 @@
    "pp_price": 56.95,
    "t": "2026-11-14T23:50:25.477607+00:00",
    "veredicto": "dudoso"
+  },
+  "46599138766": {
+   "ean": "6976367680916",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Mibro Watch GT Acero inoxidable Plata 1,43 pulgadas AMOLED GPS 10 días +100 deportes 5ATM",
+   "pp_drop": 17,
+   "pp_median": 74.95,
+   "pp_price": 61.95,
+   "t": "2026-11-18T22:20:27.614650+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Mibro GT Reloj Inteligente Hombre para Correr, Pantalla AMOLED 1.43\"",
+     "Mibro Reloj inteligente GS Pro (negro) - Pantalla Amoled de 1.4 pulgadas, llamadas Bluetooth, duraci",
+     "Mibro GS Pro 2 Smartwatch Hombre Correr, GPS, Batería de 20 Días, Dark Gray"
+    ]
+   }
   },
   "46599139094": {
    "ahorro_vs_amazon": 4,
@@ -7441,14 +7515,14 @@
    }
   }
  },
- "night_at": "2026-11-18T22:05:20.919615+00:00",
+ "night_at": "2026-11-18T22:20:27.614650+00:00",
  "resumen": {
   "amazon_mas_barato": 25,
   "dudoso": 2,
-  "no_esta": 19,
+  "no_esta": 21,
   "oferta_real": 20,
   "pvpr_inflado": 3,
   "sin_precio": 9
  },
- "updated": "2026-11-18T22:05:20.919615+00:00"
+ "updated": "2026-11-18T22:20:27.614650+00:00"
 }
