@@ -54,7 +54,7 @@
   "Redes y wifi": "2026-11-18T07:30:50.769623+00:00",
   "Relojes": "2026-11-17T12:30:54.443182+00:00",
   "Robots de cocina": "2026-11-15T15:15:41.208340+00:00",
-  "Salud": "2026-11-16T16:50:42.783335+00:00",
+  "Salud": "2026-11-18T21:01:05.865760+00:00",
   "Smartwatch": "2026-11-17T19:45:42.626266+00:00",
   "Suplementos": "2026-11-17T14:01:04.582833+00:00",
   "Tablets": "2026-11-17T16:01:10.840347+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-18T20:59:19.876229+00:00",
+ "next_at": "2026-11-18T21:30:08.157220+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1053,6 +1053,17 @@
    "s": "ambas",
    "t": "2026-11-14T18:31:27.375223+00:00",
    "title": "Arena para Gatos Aglomerante de Cascara de Guisante Go Natural, Lavanda",
+   "v": []
+  },
+  "B08GYKLWVR": {
+   "c": "Salud",
+   "d": 46,
+   "e": "🩺",
+   "m": 412,
+   "p": 7.59,
+   "s": "ofertas",
+   "t": "2026-11-18T21:01:29.823888+00:00",
+   "title": "SwitchBot - Termohigrómetro Digital con Pantalla LCD | Sensor Digital de Temperatura y Humedad | Bluetooth | Alerta Inteligente | Almacenamiento de Datos",
    "v": []
   },
   "B08JLG459W": {
@@ -3747,6 +3758,6 @@
  "tg_offset": 511048116,
  "x_copy": {
   "day": "2026-11-18",
-  "n": 28
+  "n": 29
  }
 }

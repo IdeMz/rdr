@@ -2018,6 +2018,21 @@
    "v": 3,
    "via": "ean"
   },
+  "8700216199483": {
+   "a": "",
+   "t": "2026-11-18T21:01:05.865760+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "Cargador de CA de 65 W y 45 W para IdeaPad 110 110s 110-15ACL Touch-15ACL 110-15ISK 110-15IBR 110-15"
+    ],
+    "nombre": [
+     "Oral-B iO Ultimate Clean Recambios Originales, Blancos, Pack de 6",
+     "Oral-B iO Ultimate Clean Recambios Originales, Negros, Pack de 10",
+     "Oral-B iO Ultimate Clean Cabezales de Recambio Originales, Negro, Pack de 6"
+    ]
+   }
+  },
   "8710103936077": {
    "a": "B08BF3PXPX",
    "t": "2026-11-15T00:50:26.258760+00:00",
@@ -2054,6 +2069,13 @@
    "a": "B08BLFSLHZ",
    "t": "2026-11-15T15:15:41.208340+00:00",
    "title": "Playseat® TV Stand Triple Package",
+   "via": "ean"
+  },
+  "8717496872760": {
+   "a": "B09GKX6NYP",
+   "t": "2026-11-18T21:01:05.865760+00:00",
+   "title": "Playseat REP00262 Evolution PRO ActiFit, Silla gaming universal, Asiento acolchado, Negro",
+   "v": 3,
    "via": "ean"
   },
   "8717755779090": {
@@ -4630,6 +4652,26 @@
    "t": "2026-11-16T09:55:33.695632+00:00",
    "veredicto": "oferta_real"
   },
+  "45956992531": {
+   "ahorro_vs_amazon": 8,
+   "amz_low30": null,
+   "amz_median": 294.9,
+   "amz_price": 259.0,
+   "amz_title": "Playseat REP00262 Evolution PRO ActiFit, Silla gaming universal, Asiento acolchado, Negro",
+   "asin": "B09GKX6NYP",
+   "disponible": true,
+   "ean": "8717496872760",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 259.00 frente a 270.96",
+   "name": "Playseat Evolution PRO ActiFit Negro - Silla gaming carrera",
+   "pp_drop": 13,
+   "pp_median": 309.95,
+   "pp_price": 270.96,
+   "t": "2026-11-18T21:01:05.865760+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "45992962853": {
    "ahorro_vs_amazon": 3,
    "amz_low30": null,
@@ -6615,6 +6657,28 @@
    "t": "2026-11-16T23:20:25.910397+00:00",
    "veredicto": "oferta_real"
   },
+  "46599141746": {
+   "ean": "8700216199483",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Cabezal de recambio Oral-B iO Ultimate Clean Pack 4 Negro",
+   "pp_drop": 21,
+   "pp_median": 38.95,
+   "pp_price": 30.95,
+   "t": "2026-11-18T21:01:05.865760+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "Cargador de CA de 65 W y 45 W para IdeaPad 110 110s 110-15ACL Touch-15ACL 110-15ISK 110-15IBR 110-15"
+    ],
+    "nombre": [
+     "Oral-B iO Ultimate Clean Recambios Originales, Blancos, Pack de 6",
+     "Oral-B iO Ultimate Clean Recambios Originales, Negros, Pack de 10",
+     "Oral-B iO Ultimate Clean Cabezales de Recambio Originales, Negro, Pack de 6"
+    ]
+   }
+  },
   "46599141768": {
    "ahorro_vs_amazon": 26,
    "amz_low30": null,
@@ -7379,12 +7443,12 @@
  },
  "night_at": "2026-11-18T06:35:24.193209+00:00",
  "resumen": {
-  "amazon_mas_barato": 24,
+  "amazon_mas_barato": 25,
   "dudoso": 2,
-  "no_esta": 18,
+  "no_esta": 19,
   "oferta_real": 20,
   "pvpr_inflado": 3,
   "sin_precio": 9
  },
- "updated": "2026-11-18T20:31:00.004559+00:00"
+ "updated": "2026-11-18T21:01:05.865760+00:00"
 }
