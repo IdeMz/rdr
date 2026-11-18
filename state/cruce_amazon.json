@@ -349,6 +349,13 @@
    "title": "ViewSonic Monitor VG2741V-2K MNTN24-C-307",
    "via": "ean"
   },
+  "0810056140830": {
+   "a": "B0CY21PP3D",
+   "t": "2026-11-18T18:01:04.377917+00:00",
+   "title": "SensoryBoost DPS Glides (2 Juegos) – Compatible con Razer Viper 8khz",
+   "v": 3,
+   "via": "modelo"
+  },
   "0810092678687": {
    "a": "B0DD5DFGG5",
    "t": "2026-11-14T00:51:58.629494+00:00",
@@ -1093,6 +1100,13 @@
    "a": "B00VHHWNMI",
    "t": "2026-11-17T03:05:20.365221+00:00",
    "title": "Logitech K400 Teclado Táctil Inalámbrico Plus para TV",
+   "via": "ean"
+  },
+  "5099206064027": {
+   "a": "B01DPNPJ72",
+   "t": "2026-11-18T18:01:04.377917+00:00",
+   "title": "Logitech C925e | Webcam empresarial HD 1080p/30fps, enfoque automático, privacidad, Teams/Meet/Skype/WebEx/Cisco - Negro",
+   "v": 3,
    "via": "ean"
   },
   "5099206066977": {
@@ -2275,6 +2289,27 @@
    "t": "2026-11-16T09:55:33.695632+00:00",
    "veredicto": "amazon_mas_barato"
   },
+  "37600255996": {
+   "ahorro_vs_amazon": null,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": null,
+   "amz_title": "Logitech C925e | Webcam empresarial HD 1080p/30fps, enfoque automático, privacidad, Teams/Meet/Skype/WebEx/Cisco - Negro",
+   "asin": "B01DPNPJ72",
+   "disponible": false,
+   "ean": "5099206064027",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "en Amazon pero sin precio o no disponible",
+   "name": "Logitech C925E Calidad FullHD 30fps micrófono Webcam",
+   "pista": "2229459 bytes; 12 a-price; caja de precio; disponibilidad: No disponible.",
+   "pp_drop": 23,
+   "pp_median": 64.95,
+   "pp_price": 50.08,
+   "t": "2026-11-18T18:01:04.377917+00:00",
+   "v": 3,
+   "veredicto": "sin_precio"
+  },
   "37600255998": {
    "ahorro_vs_amazon": 14,
    "amz_low30": null,
@@ -2692,6 +2727,26 @@
      "Razer Barracuda X Chroma - Auriculares inalámbricos para Juegos multiplataforma con 6 Zonas Chroma R"
     ]
    }
+  },
+  "40773835746": {
+   "ahorro_vs_amazon": -106,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 16.95,
+   "amz_title": "SensoryBoost DPS Glides (2 Juegos) – Compatible con Razer Viper 8khz",
+   "asin": "B0CY21PP3D",
+   "disponible": true,
+   "ean": "0810056140830",
+   "encontrado_por": "modelo",
+   "lista": "candidates",
+   "motivo": "Amazon 16.95 frente a 34.97",
+   "name": "Razer Viper 8KHz 20000 DPI Ratón gaming",
+   "pp_drop": 26,
+   "pp_median": 46.95,
+   "pp_price": 34.97,
+   "t": "2026-11-18T18:01:04.377917+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
   },
   "41405667926": {
    "ahorro_vs_amazon": -13,
@@ -7159,12 +7214,12 @@
  },
  "night_at": "2026-11-18T06:35:24.193209+00:00",
  "resumen": {
-  "amazon_mas_barato": 22,
+  "amazon_mas_barato": 23,
   "dudoso": 2,
   "no_esta": 18,
   "oferta_real": 16,
   "pvpr_inflado": 3,
-  "sin_precio": 7
+  "sin_precio": 8
  },
- "updated": "2026-11-18T17:30:58.281773+00:00"
+ "updated": "2026-11-18T18:01:04.377917+00:00"
 }
