@@ -7,7 +7,7 @@
   "Altavoces": "2026-11-17T20:45:44.607165+00:00",
   "Aspiradoras": "2026-11-14T20:20:37.410274+00:00",
   "Auriculares": "2026-11-17T08:01:10.979640+00:00",
-  "Barras de sonido": "2026-11-16T07:01:09.494097+00:00",
+  "Barras de sonido": "2026-11-18T08:01:03.545593+00:00",
   "Bebé": "2026-11-16T07:35:32.483023+00:00",
   "Bricolaje": "2026-11-16T08:10:40.674323+00:00",
   "Cafeteras": "2026-11-17T18:01:13.651055+00:00",
@@ -94,7 +94,7 @@
  },
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-18T08:00:12.295792+00:00",
+ "next_at": "2026-11-18T08:26:08.856736+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -611,6 +611,17 @@
    "s": "ofertas",
    "t": "2026-11-17T12:31:28.037316+00:00",
    "title": "Pro Diver Stainless Steel Men's Quartz Watch - 40mm",
+   "v": []
+  },
+  "B07GPWY8S6": {
+   "c": "Barras de sonido",
+   "d": 38,
+   "e": "🎶",
+   "m": 386,
+   "p": 18.59,
+   "s": "ofertas",
+   "t": "2026-11-18T08:01:44.635110+00:00",
+   "title": "Trust Arys Barra de Sonido para PC/Ordenador Portátil, 12 W, Negro",
    "v": []
   },
   "B07GS6ZB7T": {
@@ -3416,10 +3427,6 @@
    "t": "2026-11-17T17:01:11.572901+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B01ERZ900O": {
-   "t": "2026-11-17T07:30:53.001889+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B01LZDYR7N": {
    "t": "2026-11-17T17:01:11.572901+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3491,6 +3498,18 @@
  },
  "reserve": [
   {
+   "a": "B0DJFH4D2K",
+   "c": "Barras de sonido",
+   "e": "🎶",
+   "img": "https://m.media-amazon.com/images/I/41BmmMUHplL._AC_UL320_.jpg",
+   "n": 404,
+   "op": 99.9,
+   "p": 84.9,
+   "r": 4.5,
+   "t": "2026-11-18T08:01:03.545593+00:00",
+   "title": "THOMSON SB401BT Soundbar - 200W de Potencia Musical Total - Bluetooth 5.0 - Entrada Óptica, USB y AUX - Preajustes de Ecualización - Control Remoto - Indicador de Fuente LED - Diseño Blanco y Madera"
+  },
+  {
    "a": "B073367BFL",
    "c": "Limpieza del hogar",
    "e": "🧽",
@@ -3507,6 +3526,6 @@
  "tg_offset": 511048100,
  "x_copy": {
   "day": "2026-11-18",
-  "n": 2
+  "n": 3
  }
 }
