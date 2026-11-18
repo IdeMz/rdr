@@ -1205,19 +1205,11 @@
    "via": "ean"
   },
   "6924843236393": {
-   "a": "",
-   "t": "2026-11-15T16:30:50.777266+00:00",
-   "v": 2,
-   "vistos": {
-    "ean": [
-     "(sin resultados)"
-    ],
-    "nombre": [
-     "Vexilar V10Pro Aspiradora sin Cable 45KPa Potente,Aspiradora Fácil Limpieza,Autonomía 45 Min,Batería",
-     "Vexilar V10Pro Aspiradora sin Cable 45KPa Potente,Aspiradora Fácil Limpieza,Autonomía 45 Min,Batería",
-     "Vexilar V10Pro Aspiradora sin Cable 45KPa/45 Min, Potente,Fácil Maneja,Ligera,Accesorios Multiusos,B"
-    ]
-   }
+   "a": "B0HHDSKQTN",
+   "t": "2026-11-18T01:50:27.420303+00:00",
+   "title": "Vexilar V10Pro Aspiradora sin Cable 45KPa Potente,Aspiradora Fácil Limpieza,Autonomía 45 Min,Batería Extraíble,Accesorios Multiusos,Aspirador Escoba Ligero para",
+   "v": 3,
+   "via": "nombre"
   },
   "6935364052522": {
    "a": "B08FX98B59",
@@ -1821,6 +1813,13 @@
    "a": "B08BLFSLHZ",
    "t": "2026-11-15T15:15:41.208340+00:00",
    "title": "Playseat® TV Stand Triple Package",
+   "via": "ean"
+  },
+  "8717755779090": {
+   "a": "B0BF7MD3TS",
+   "t": "2026-11-18T01:50:27.420303+00:00",
+   "title": "Sonos Sub Mini - Subwoofer inalámbrico Compacto - Negro",
+   "v": 3,
    "via": "ean"
   },
   "8720689027083": {
@@ -3337,6 +3336,26 @@
    "t": "2026-11-16T08:45:43.168202+00:00",
    "veredicto": "amazon_mas_barato"
   },
+  "45570747727": {
+   "ahorro_vs_amazon": 28,
+   "amz_low30": 499.0,
+   "amz_median": null,
+   "amz_price": 399.0,
+   "amz_title": "Sonos Sub Mini - Subwoofer inalámbrico Compacto - Negro",
+   "asin": "B0BF7MD3TS",
+   "disponible": true,
+   "ean": "8717755779090",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "28 % por debajo del habitual en Amazon (499.00)",
+   "name": "Sonos Sub Mini 2x6 pulgadas WiFi Subwoofer",
+   "pp_drop": 12,
+   "pp_median": 406.95,
+   "pp_price": 357.95,
+   "t": "2026-11-18T01:50:27.420303+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "45570747758": {
    "ean": "5901969445664",
    "lista": "candidates",
@@ -4337,26 +4356,24 @@
    "veredicto": "amazon_mas_barato"
   },
   "46186024577": {
+   "ahorro_vs_amazon": 17,
+   "amz_low30": 99.99,
+   "amz_median": null,
+   "amz_price": 79.99,
+   "amz_title": "Vexilar V10Pro Aspiradora sin Cable 45KPa Potente,Aspiradora Fácil Limpieza,Autonomía 45 Min,Batería Extraíble,Accesorios Multiusos,Aspirador Escoba Ligero para",
+   "asin": "B0HHDSKQTN",
+   "disponible": true,
    "ean": "6924843236393",
+   "encontrado_por": "nombre",
    "lista": "candidates",
-   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "motivo": "Amazon 79.99 frente a 82.95",
    "name": "Vexilar V10 Pro 45000Pa 450W 45 min sin cable Aspirador escoba",
    "pp_drop": 16,
    "pp_median": 98.95,
    "pp_price": 82.95,
-   "t": "2026-11-15T16:30:50.777266+00:00",
-   "v": 2,
-   "veredicto": "no_esta",
-   "vistos": {
-    "ean": [
-     "(sin resultados)"
-    ],
-    "nombre": [
-     "Vexilar V10Pro Aspiradora sin Cable 45KPa Potente,Aspiradora Fácil Limpieza,Autonomía 45 Min,Batería",
-     "Vexilar V10Pro Aspiradora sin Cable 45KPa Potente,Aspiradora Fácil Limpieza,Autonomía 45 Min,Batería",
-     "Vexilar V10Pro Aspiradora sin Cable 45KPa/45 Min, Potente,Fácil Maneja,Ligera,Accesorios Multiusos,B"
-    ]
-   }
+   "t": "2026-11-18T01:50:27.420303+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
   },
   "46186025333": {
    "ahorro_vs_amazon": -31,
@@ -4374,7 +4391,8 @@
    "pp_drop": 14,
    "pp_median": 180.96,
    "pp_price": 155.94,
-   "t": "2026-11-16T23:05:21.329835+00:00",
+   "t": "2026-11-18T01:50:27.420303+00:00",
+   "v": 3,
    "veredicto": "amazon_mas_barato"
   },
   "46186025334": {
@@ -6399,14 +6417,14 @@
    }
   }
  },
- "night_at": "2026-11-18T01:35:20.319820+00:00",
+ "night_at": "2026-11-18T01:50:27.420303+00:00",
  "resumen": {
-  "amazon_mas_barato": 26,
+  "amazon_mas_barato": 27,
   "dudoso": 4,
-  "no_esta": 18,
-  "oferta_real": 20,
+  "no_esta": 17,
+  "oferta_real": 21,
   "pvpr_inflado": 3,
   "sin_precio": 3
  },
- "updated": "2026-11-18T01:35:20.319820+00:00"
+ "updated": "2026-11-18T01:50:27.420303+00:00"
 }
