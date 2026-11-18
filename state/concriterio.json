@@ -67,20 +67,6 @@
  "manual": {},
  "manual_queue": [
   {
-   "a": "B0DL65SRTR",
-   "c": "",
-   "e": "",
-   "img": "https://m.media-amazon.com/images/I/615rSXpeUEL._AC_SL1184_.jpg",
-   "m": 372,
-   "n": 2,
-   "op": null,
-   "p": 127.19,
-   "q": "2026-11-18T08:20:47.185087+00:00",
-   "r": 5.0,
-   "t": "2026-11-18T07:55:39.668365+00:00",
-   "title": "AIROH WRAAAP Paint Matt XS"
-  },
-  {
    "a": "B0000D8472",
    "c": "",
    "e": "",
@@ -110,7 +96,7 @@
   }
  ],
  "manual_todo": [],
- "next_at": "2026-11-18T09:00:23.174166+00:00",
+ "next_at": "2026-11-18T09:27:00.076904+00:00",
  "offer": null,
  "posted": {
   "B0001IOZ98": {
@@ -2222,6 +2208,17 @@
    "title": "Odoland Casco Bicicleta Adulto con Gafas UV400, Ligero y Ajustable Unisex",
    "v": []
   },
+  "B0DL65SRTR": {
+   "c": "",
+   "d": 0,
+   "e": "",
+   "m": 388,
+   "manual": true,
+   "p": 127.19,
+   "t": "2026-11-18T09:01:10.352196+00:00",
+   "title": "AIROH WRAAAP Paint Matt XS",
+   "v": []
+  },
   "B0DMDT1KYZ": {
    "c": "Fitness en casa",
    "d": 25,
@@ -3466,10 +3463,6 @@
    "t": "2026-11-17T19:45:42.626266+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B08H99BPJN": {
-   "t": "2026-11-17T09:01:06.401047+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B09V8C4QP9": {
    "t": "2026-11-16T19:55:35.023364+00:00",
    "why": "descartada a mano"
@@ -3549,6 +3542,6 @@
  "tg_offset": 511048112,
  "x_copy": {
   "day": "2026-11-18",
-  "n": 4
+  "n": 5
  }
 }
