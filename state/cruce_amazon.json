@@ -945,6 +945,13 @@
    "title": "Brother QL-600R - Impresora de Etiquetas (Interfaz USB, impresión de códigos de Barras, Unidad de Corte automático), 130, QL600RXX1",
    "via": "ean"
   },
+  "5025155118078": {
+   "a": "B0F7LW48NQ",
+   "t": "2026-11-18T02:50:27.531463+00:00",
+   "title": "Dyson Supersonic r™ Secador de Pelo. Secado Rápido, sin daños por calor",
+   "v": 3,
+   "via": "ean"
+  },
   "5025232931552": {
    "a": "B0BXMN8VN8",
    "t": "2026-11-14T04:50:24.590570+00:00",
@@ -2737,6 +2744,26 @@
     ]
    }
   },
+  "44787550158": {
+   "ahorro_vs_amazon": 5,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 399.0,
+   "amz_title": "Dyson Supersonic r™ Secador de Pelo. Secado Rápido, sin daños por calor",
+   "asin": "B0F7LW48NQ",
+   "disponible": true,
+   "ean": "5025155118078",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "solo 5 % por debajo del habitual en Amazon (399.00)",
+   "name": "Dyson Supersonic R Rosa/Oro Secador de pelo",
+   "pp_drop": 11,
+   "pp_median": 428.99,
+   "pp_price": 379.9,
+   "t": "2026-11-18T02:50:27.531463+00:00",
+   "v": 3,
+   "veredicto": "dudoso"
+  },
   "44787550502": {
    "ahorro_vs_amazon": 14,
    "amz_low30": null,
@@ -3044,23 +3071,24 @@
    "veredicto": "amazon_mas_barato"
   },
   "45368125530": {
-   "ahorro_vs_amazon": 37,
-   "amz_low30": null,
-   "amz_median": null,
-   "amz_price": 275.21,
+   "ahorro_vs_amazon": 42,
+   "amz_low30": 251.28,
+   "amz_median": 262.16,
+   "amz_price": 109.0,
    "amz_title": "Jabra Evolve2 Buds, Auriculares Bluetooth Intraaurales Inalámbricos, Cancelación Activa de Ruido y Tecnología MultiSensor con 4 Micrófonos, Certificados para MS",
    "asin": "B0BKH4FX9Y",
    "disponible": true,
    "ean": "5706991026542",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "37 % por debajo del habitual en Amazon (275.21)",
+   "motivo": "Amazon 109.00 frente a 150.95",
    "name": "Jabra Evolve2 Buds USB-A ANC IP57 con micrófono Auriculares",
-   "pp_drop": 15,
-   "pp_median": 203.95,
-   "pp_price": 172.95,
-   "t": "2026-11-15T22:20:24.975541+00:00",
-   "veredicto": "oferta_real"
+   "pp_drop": 13,
+   "pp_median": 172.95,
+   "pp_price": 150.95,
+   "t": "2026-11-18T02:50:27.531463+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
   },
   "45389434011": {
    "ahorro_vs_amazon": 13,
@@ -4653,7 +4681,8 @@
    "pp_drop": 16,
    "pp_median": 69.95,
    "pp_price": 58.95,
-   "t": "2026-11-16T21:45:41.113869+00:00",
+   "t": "2026-11-18T02:50:27.531463+00:00",
+   "v": 3,
    "veredicto": "oferta_real"
   },
   "46239681484": {
@@ -6533,14 +6562,14 @@
    }
   }
  },
- "night_at": "2026-11-18T02:35:23.555406+00:00",
+ "night_at": "2026-11-18T02:50:27.531463+00:00",
  "resumen": {
-  "amazon_mas_barato": 27,
-  "dudoso": 4,
+  "amazon_mas_barato": 28,
+  "dudoso": 5,
   "no_esta": 18,
-  "oferta_real": 23,
+  "oferta_real": 22,
   "pvpr_inflado": 3,
   "sin_precio": 4
  },
- "updated": "2026-11-18T02:35:23.555406+00:00"
+ "updated": "2026-11-18T02:50:27.531463+00:00"
 }
