@@ -878,6 +878,13 @@
    "title": "Philips TAR1609: radio portátil FM/AM con batería interna recargable, pilas AAA y manivela de soporte, energía solar, luz LED y linterna integrada para camping,",
    "via": "ean"
   },
+  "4948570114504": {
+   "a": "B014NH56D6",
+   "t": "2026-11-18T00:50:38.693542+00:00",
+   "title": "Iiyama Prolite T1531sr, 38,1cm (15\"), Wei? Touchmonitor (4:3), 38,1cm (15\"), Resistiv (5-Draht), 1024x768 Pixel, 8ms, Helligkeit: 350cd, Blickwinkel:",
+   "v": 3,
+   "via": "ean"
+  },
   "4948570125630": {
    "a": "B0FCYQHXK4",
    "t": "2026-11-14T21:01:00.449874+00:00",
@@ -1649,6 +1656,13 @@
    "a": "B0BQ13VH9S",
    "t": "2026-11-14T09:55:29.061293+00:00",
    "title": "Cecotec Tostador Toast&Taste Extra Double B, 1350W de Potencia, Doble Ranura larga para 2 Tostadas, Apagado y Pop-up Automático, Varillas Superiores",
+   "via": "ean"
+  },
+  "8435484085922": {
+   "a": "B0BPYTWFHL",
+   "t": "2026-11-18T00:50:38.693542+00:00",
+   "title": "Cecotec Aspirador de Trineo sin Bolsa Conga Rockstar Multicyclonic XXL Animal. 800 W, Multiciclónico, 20 kPa, 4 L, Filtros de Alta Eficiencia, Tubo Telescópico,",
+   "v": 3,
    "via": "ean"
   },
   "843591088541": {
@@ -3554,7 +3568,8 @@
    "pp_drop": 21,
    "pp_median": 44.95,
    "pp_price": 35.36,
-   "t": "2026-11-16T16:15:49.892288+00:00",
+   "t": "2026-11-18T00:50:38.693542+00:00",
+   "v": 3,
    "veredicto": "amazon_mas_barato"
   },
   "45956991042": {
@@ -4560,6 +4575,26 @@
     ]
    }
   },
+  "46239684625": {
+   "ahorro_vs_amazon": -22,
+   "amz_low30": 64.9,
+   "amz_median": null,
+   "amz_price": 60.9,
+   "amz_title": "Cecotec Aspirador de Trineo sin Bolsa Conga Rockstar Multicyclonic XXL Animal. 800 W, Multiciclónico, 20 kPa, 4 L, Filtros de Alta Eficiencia, Tubo Telescópico,",
+   "asin": "B0BPYTWFHL",
+   "disponible": true,
+   "ean": "8435484085922",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 60.90 frente a 79.00",
+   "name": "Cecotec Conga Rockstar Multicyclonic XL Animal Negro 20kPa 800W 9m cable Aspirador de trineo",
+   "pp_drop": 17,
+   "pp_median": 95.0,
+   "pp_price": 79.0,
+   "t": "2026-11-18T00:50:38.693542+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "46239684647": {
    "ahorro_vs_amazon": -2,
    "amz_low30": null,
@@ -5316,6 +5351,26 @@
    "pp_price": 177.95,
    "t": "2026-11-13T11:40:39.260187+00:00",
    "veredicto": "amazon_mas_barato"
+  },
+  "46599140358": {
+   "ahorro_vs_amazon": 9,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 330.99,
+   "amz_title": "Iiyama Prolite T1531sr, 38,1cm (15\"), Wei? Touchmonitor (4:3), 38,1cm (15\"), Resistiv (5-Draht), 1024x768 Pixel, 8ms, Helligkeit: 350cd, Blickwinkel:",
+   "asin": "B014NH56D6",
+   "disponible": true,
+   "ean": "4948570114504",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "solo 9 % por debajo del habitual en Amazon (330.99)",
+   "name": "Monitor táctil iiyama ProLite 15 pulgadas XGA 8 ms Blanco T1531SR-W3",
+   "pp_drop": 13,
+   "pp_median": 345.95,
+   "pp_price": 299.95,
+   "t": "2026-11-18T00:50:38.693542+00:00",
+   "v": 3,
+   "veredicto": "dudoso"
   },
   "46599140414": {
    "ahorro_vs_amazon": 6,
@@ -6146,14 +6201,14 @@
    }
   }
  },
- "night_at": "2026-11-18T00:35:21.102583+00:00",
+ "night_at": "2026-11-18T00:50:38.693542+00:00",
  "resumen": {
-  "amazon_mas_barato": 22,
-  "dudoso": 3,
+  "amazon_mas_barato": 23,
+  "dudoso": 4,
   "no_esta": 15,
   "oferta_real": 20,
   "pvpr_inflado": 3,
   "sin_precio": 3
  },
- "updated": "2026-11-18T00:35:21.102583+00:00"
+ "updated": "2026-11-18T00:50:38.693542+00:00"
 }
