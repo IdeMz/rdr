@@ -2406,11 +2406,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Samsung 990 PRO 2TB M.2 PCIe 4.0 7450MB/s SSD",
-   "pista": "2128453 bytes; 5 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "2128834 bytes; 5 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 17,
    "pp_median": 430.95,
    "pp_price": 356.48,
-   "t": "2026-11-18T15:01:26.987987+00:00",
+   "t": "2026-11-18T21:30:53.368269+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -6712,11 +6712,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Polti StainOver SC30 2000W Aspirador de tapicería",
-   "pista": "1378388 bytes; 17 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1369920 bytes; 17 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 20,
    "pp_median": 251.95,
    "pp_price": 200.94,
-   "t": "2026-11-18T15:01:26.987987+00:00",
+   "t": "2026-11-18T21:30:53.368269+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -7450,5 +7450,5 @@
   "pvpr_inflado": 3,
   "sin_precio": 9
  },
- "updated": "2026-11-18T21:01:05.865760+00:00"
+ "updated": "2026-11-18T21:30:53.368269+00:00"
 }

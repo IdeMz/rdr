@@ -1,7 +1,7 @@
 {
  "cats": {
   "Accesorios de coche": "2026-11-18T19:30:57.703760+00:00",
-  "Accesorios de móvil": "2026-11-16T17:40:44.874656+00:00",
+  "Accesorios de móvil": "2026-11-18T21:30:53.368269+00:00",
   "Afeitado y depilación": "2026-11-17T20:15:50.874512+00:00",
   "Almacenamiento": "2026-11-18T10:30:54.867859+00:00",
   "Altavoces": "2026-11-17T20:45:44.607165+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-18T21:30:08.157220+00:00",
+ "next_at": "2026-11-18T21:56:09.837158+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -606,6 +606,17 @@
    "s": "ofertas",
    "t": "2026-11-13T11:06:06.481003+00:00",
    "title": "EULANT Pequeña Mochila para Bicicleta,12L Mochila de Hidratación Impermeable,Reflectoras Mochila de Ciclismo para MTB Senderismo Correr Natación Playa, con Capa de Aislamiento & red de pelota",
+   "v": []
+  },
+  "B07DBXZZN3": {
+   "c": "Accesorios de móvil",
+   "d": 40,
+   "e": "🤳",
+   "m": 413,
+   "p": 14.99,
+   "s": "ofertas",
+   "t": "2026-11-18T21:31:16.882569+00:00",
+   "title": "Anker 313 Estación de Cargador Inalambrico iPhone 10W Qi",
    "v": []
   },
   "B07DC1YXT3": {
@@ -3758,6 +3769,6 @@
  "tg_offset": 511048116,
  "x_copy": {
   "day": "2026-11-18",
-  "n": 29
+  "n": 30
  }
 }
