@@ -840,6 +840,26 @@
    "title": "Acer B7 B277 bmiprzx LED display 68,6 cm (27\") Full HD Plana Negro - Monitor (68,6 cm (27\"), 1920 x 1080 Pixeles, Full HD, LED, 4 ms, Negro)",
    "via": "modelo"
   },
+  "4711474702432": {
+   "a": "",
+   "t": "2026-11-18T12:01:05.181336+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "Acer Nitro ED320QW0 - Monitor Gaming, 32 Pulgadas, Full HD, 240 Hz"
+    ],
+    "modelo": [
+     "Acer Nitro ED320QW0 - Monitor Gaming, 32 Pulgadas, Full HD, 240 Hz",
+     "Acer Nitro XZ320QU S3 - Monitor Gaming 31,5\" WQHD 180 Hz (80 cm, 2560x1440, 16:9, 250 Nits, Tiempo d",
+     "Acer Nitro ED320QUS3bmiipx (UM.JE0EE.318)"
+    ],
+    "nombre": [
+     "Acer Nitro ED320QW0 - Monitor Gaming, 32 Pulgadas, Full HD, 240 Hz",
+     "Acer Nitro Monitor Gaming 27\" FHD IPS, 200 Hz, AMD FreeSync Premium",
+     "Acer Nitro XZ2 XZ322QU V3, Monitor Gaming Curvo 31,5\" WQHD 180 Hz (2560x1440, 16:9, 400 Nits, Tiempo"
+    ]
+   }
+  },
   "4711636168991": {
    "a": "B09CD57PMJ",
    "t": "2026-11-15T00:50:26.258760+00:00",
@@ -1171,6 +1191,13 @@
    "t": "2026-11-16T11:20:40.607767+00:00",
    "title": "ECOINKO Cartucho 308XL Negro - 730+ Páginas, Reemplazo para Tinta HP 308 Negro, Tinta Impresora 308 XL para HP Envy 6100e 6120e 6122e 6132e 6152e 6520e 6530e 65",
    "via": "modelo"
+  },
+  "5901292531508": {
+   "a": "B0H32W1VGZ",
+   "t": "2026-11-18T12:01:05.181336+00:00",
+   "title": "TCL A65K Barra de Sonido 3.1.2ch con Subwoofer Inalámbrico, Dolby Atmos",
+   "v": 3,
+   "via": "ean"
   },
   "5901969425376": {
    "a": "B08593L2ZQ",
@@ -5838,6 +5865,33 @@
    "v": 3,
    "veredicto": "oferta_real"
   },
+  "46599140633": {
+   "ean": "4711474702432",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Monitor gaming Acer Nitro 31.5 pulgadas 240Hz Curvo FHD VA Negro ED320QW0bmiipx",
+   "pp_drop": 23,
+   "pp_median": 255.95,
+   "pp_price": 197.96,
+   "t": "2026-11-18T12:01:05.181336+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "Acer Nitro ED320QW0 - Monitor Gaming, 32 Pulgadas, Full HD, 240 Hz"
+    ],
+    "modelo": [
+     "Acer Nitro ED320QW0 - Monitor Gaming, 32 Pulgadas, Full HD, 240 Hz",
+     "Acer Nitro XZ320QU S3 - Monitor Gaming 31,5\" WQHD 180 Hz (80 cm, 2560x1440, 16:9, 250 Nits, Tiempo d",
+     "Acer Nitro ED320QUS3bmiipx (UM.JE0EE.318)"
+    ],
+    "nombre": [
+     "Acer Nitro ED320QW0 - Monitor Gaming, 32 Pulgadas, Full HD, 240 Hz",
+     "Acer Nitro Monitor Gaming 27\" FHD IPS, 200 Hz, AMD FreeSync Premium",
+     "Acer Nitro XZ2 XZ322QU V3, Monitor Gaming Curvo 31,5\" WQHD 180 Hz (2560x1440, 16:9, 400 Nits, Tiempo"
+    ]
+   }
+  },
   "46599140681": {
    "ahorro_vs_amazon": 63,
    "amz_low30": null,
@@ -6141,6 +6195,26 @@
      "MotoGP 26 (Nintendo Switch 2)"
     ]
    }
+  },
+  "46599142703": {
+   "ahorro_vs_amazon": 0,
+   "amz_low30": 186.3,
+   "amz_median": 195.0,
+   "amz_price": 175.0,
+   "amz_title": "TCL A65K Barra de Sonido 3.1.2ch con Subwoofer Inalámbrico, Dolby Atmos",
+   "asin": "B0H32W1VGZ",
+   "disponible": true,
+   "ean": "5901292531508",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 175.00 frente a 195.00",
+   "name": "Barra de Sonido TCL A65K Dolby Atmos DTS:X 3.1.2 Subwoofer Inalámbrico Titanio",
+   "pp_drop": 28,
+   "pp_median": 269.0,
+   "pp_price": 195.0,
+   "t": "2026-11-18T12:01:05.181336+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
   },
   "46599142725": {
    "ahorro_vs_amazon": -24,
@@ -6723,12 +6797,12 @@
  },
  "night_at": "2026-11-18T06:35:24.193209+00:00",
  "resumen": {
-  "amazon_mas_barato": 16,
+  "amazon_mas_barato": 17,
   "dudoso": 2,
-  "no_esta": 14,
+  "no_esta": 15,
   "oferta_real": 15,
   "pvpr_inflado": 2,
   "sin_precio": 5
  },
- "updated": "2026-11-18T11:30:52.353700+00:00"
+ "updated": "2026-11-18T12:01:05.181336+00:00"
 }

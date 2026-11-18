@@ -20,7 +20,7 @@
   "Componentes PC": "2026-11-16T16:15:49.892288+00:00",
   "Cuidado de la piel": "2026-11-17T10:31:06.725588+00:00",
   "Cuidado del cabello": "2026-11-18T11:01:05.531917+00:00",
-  "Cámaras de seguridad": "2026-11-14T17:20:46.627491+00:00",
+  "Cámaras de seguridad": "2026-11-18T12:01:05.181336+00:00",
   "Decoración navideña": "2026-11-18T11:30:52.353700+00:00",
   "Domótica": "2026-11-17T18:45:48.491889+00:00",
   "Droguería": "2026-11-16T21:45:41.113869+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-18T11:56:34.645196+00:00",
+ "next_at": "2026-11-18T12:28:06.607636+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1274,6 +1274,17 @@
    "p": 10.99,
    "t": "2026-11-06T14:06:03.337258+00:00",
    "title": "Tapo L520E-Bombilla inteligente WiFi, Blanco Neutro 4000K, 8.7W/ 806lm, E27",
+   "v": []
+  },
+  "B09M2R8JK5": {
+   "c": "Cámaras de seguridad",
+   "d": 48,
+   "e": "📹",
+   "m": 394,
+   "p": 28.49,
+   "s": "busqueda",
+   "t": "2026-11-18T12:01:32.504359+00:00",
+   "title": "Tenda Cámara Vigilancia WiFi Exterior 6MP",
    "v": []
   },
   "B09N6QDPNK": {
@@ -3572,6 +3583,6 @@
  "tg_offset": 511048112,
  "x_copy": {
   "day": "2026-11-18",
-  "n": 10
+  "n": 11
  }
 }
