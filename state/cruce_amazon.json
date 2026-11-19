@@ -2543,25 +2543,24 @@
    "veredicto": "sin_precio"
   },
   "37600261186": {
-   "ahorro_vs_amazon": null,
+   "ahorro_vs_amazon": -27,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": null,
+   "amz_price": 51.29,
    "amz_title": "Soundcore de Anker Liberty 4 NC Auriculares Bluetooth, 50 h",
    "asin": "B0BZV4QFP8",
    "disponible": true,
    "ean": "0194644126124",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "en Amazon pero sin precio o no disponible",
+   "motivo": "Amazon 51.29 frente a 64.95",
    "name": "Soundcore Liberty 4 NC Negro ANC Bluetooth 5.3 50h IPX4 Auriculares inalámbricos",
-   "pista": "2352491 bytes; 16 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 19,
    "pp_median": 79.94,
    "pp_price": 64.95,
-   "t": "2026-11-18T19:30:57.703760+00:00",
+   "t": "2026-11-19T01:35:21.806157+00:00",
    "v": 3,
-   "veredicto": "sin_precio"
+   "veredicto": "amazon_mas_barato"
   },
   "38195159398": {
    "ahorro_vs_amazon": -9,
@@ -3414,11 +3413,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Intel Core Ultra 5 250KF Plus 18 Núcleos LGA1851 Tray 18 hilos 5,3GHz Procesador",
-   "pista": "1122142 bytes; 9 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1012573 bytes; 9 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 15,
    "pp_median": 217.95,
    "pp_price": 186.11,
-   "t": "2026-11-18T19:30:57.703760+00:00",
+   "t": "2026-11-19T01:35:21.806157+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -7515,14 +7514,14 @@
    }
   }
  },
- "night_at": "2026-11-19T00:05:23.251252+00:00",
+ "night_at": "2026-11-19T01:35:21.806157+00:00",
  "resumen": {
-  "amazon_mas_barato": 25,
+  "amazon_mas_barato": 26,
   "dudoso": 2,
   "no_esta": 21,
   "oferta_real": 20,
   "pvpr_inflado": 3,
-  "sin_precio": 9
+  "sin_precio": 8
  },
- "updated": "2026-11-19T00:05:23.251252+00:00"
+ "updated": "2026-11-19T01:35:21.806157+00:00"
 }
