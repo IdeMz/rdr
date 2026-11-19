@@ -368,6 +368,13 @@
    "title": "WD 5TB My Passport Disco Duro Externo Portátil, USB 3.2 Gen 1/USB 3.0, Copia de seguridad y protección con contraseña, Formateado para Windows, ChromeOS y MacOS",
    "via": "ean"
   },
+  "0718037905464": {
+   "a": "B0DZY2TN8T",
+   "t": "2026-11-19T22:20:31.563817+00:00",
+   "title": "WD Red Pro 24TB NAS Disco Duro Interno 3,5\" – 7200 RPM, SATA 6Gb/s, CMR, 512MB Caché",
+   "v": 3,
+   "via": "ean"
+  },
   "0740617207781": {
    "a": "B008CP5R8K",
    "t": "2026-11-14T00:51:58.629494+00:00",
@@ -1561,6 +1568,20 @@
      "GameSir G7 Pro 8K PC Mando Inalámbrico Esports - Frecuencia 8000Hz, Sticks Mag-Res TMR Gen-2, Botone"
     ]
    }
+  },
+  "6939093047620": {
+   "a": "B0HJYW2GT4",
+   "t": "2026-11-19T22:20:31.563817+00:00",
+   "title": "XIAOMI Clip, auriculares abiertos con clip, 38 h de reproducción, Dorado",
+   "v": 3,
+   "via": "ean"
+  },
+  "6941948709614": {
+   "a": "B0HN2ZFG5K",
+   "t": "2026-11-19T22:20:31.563817+00:00",
+   "title": "Xiaomi Router BE19000 Pro EU",
+   "v": 3,
+   "via": "ean"
   },
   "6941948710320": {
    "a": "",
@@ -3875,6 +3896,26 @@
    "v": 3,
    "veredicto": "oferta_real"
   },
+  "45368123358": {
+   "ahorro_vs_amazon": 2,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 1333.64,
+   "amz_title": "WD Red Pro 24TB NAS Disco Duro Interno 3,5\" – 7200 RPM, SATA 6Gb/s, CMR, 512MB Caché",
+   "asin": "B0DZY2TN8T",
+   "disponible": true,
+   "ean": "0718037905464",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 1333.64 frente a 1306.95",
+   "name": "WD Red Pro WD241KFGX 24TB SATA 3,5 pulgadas 7200rpm Disco duro",
+   "pp_drop": 14,
+   "pp_median": 1520.95,
+   "pp_price": 1306.95,
+   "t": "2026-11-19T22:20:31.563817+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "45368123600": {
    "ean": "3121040095522",
    "lista": "candidates",
@@ -5255,6 +5296,26 @@
    "pp_median": 39.95,
    "pp_price": 29.85,
    "t": "2026-11-14T05:35:19.499764+00:00",
+   "veredicto": "oferta_real"
+  },
+  "45992963538": {
+   "ahorro_vs_amazon": 24,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 525.09,
+   "amz_title": "Xiaomi Router BE19000 Pro EU",
+   "asin": "B0HN2ZFG5K",
+   "disponible": true,
+   "ean": "6941948709614",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "24 % por debajo del habitual en Amazon (525.09)",
+   "name": "Xiaomi BE19000 Pro WiFi 7 Triple Banda USB 3.0 Router",
+   "pp_drop": 17,
+   "pp_median": 479.0,
+   "pp_price": 399.95,
+   "t": "2026-11-19T22:20:31.563817+00:00",
+   "v": 3,
    "veredicto": "oferta_real"
   },
   "45992963594": {
@@ -8244,6 +8305,26 @@
    "t": "2026-11-16T18:55:32.141614+00:00",
    "veredicto": "oferta_real"
   },
+  "46680832971": {
+   "ahorro_vs_amazon": 16,
+   "amz_low30": 149.99,
+   "amz_median": null,
+   "amz_price": 126.99,
+   "amz_title": "XIAOMI Clip, auriculares abiertos con clip, 38 h de reproducción, Dorado",
+   "asin": "B0HJYW2GT4",
+   "disponible": true,
+   "ean": "6939093047620",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 126.99 frente a 125.95",
+   "name": "Auriculares Xiaomi Clip Dorado Bluetooth LHDC 5.0 Hi-Res Gold",
+   "pp_drop": 21,
+   "pp_median": 159.0,
+   "pp_price": 125.95,
+   "t": "2026-11-19T22:20:31.563817+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "46693747321": {
    "ahorro_vs_amazon": -35,
    "amz_low30": null,
@@ -8402,14 +8483,14 @@
    }
   }
  },
- "night_at": "2026-11-19T22:05:23.802139+00:00",
+ "night_at": "2026-11-19T22:20:31.563817+00:00",
  "resumen": {
-  "amazon_mas_barato": 26,
+  "amazon_mas_barato": 28,
   "dudoso": 0,
   "no_esta": 15,
-  "oferta_real": 22,
+  "oferta_real": 23,
   "pvpr_inflado": 4,
   "sin_precio": 7
  },
- "updated": "2026-11-19T22:05:23.802139+00:00"
+ "updated": "2026-11-19T22:20:31.563817+00:00"
 }
