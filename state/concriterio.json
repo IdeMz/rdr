@@ -17,7 +17,7 @@
   "Ciclismo": "2026-11-19T12:35:30.987217+00:00",
   "Climatización": "2026-11-19T07:01:21.085197+00:00",
   "Colchones y almohadas": "2026-11-19T10:35:44.498929+00:00",
-  "Componentes PC": "2026-11-16T16:15:49.892288+00:00",
+  "Componentes PC": "2026-11-19T19:45:43.698458+00:00",
   "Cuidado de la piel": "2026-11-19T18:15:40.654642+00:00",
   "Cuidado del cabello": "2026-11-19T17:30:56.735106+00:00",
   "Cámaras de seguridad": "2026-11-18T12:01:05.181336+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-19T19:43:09.931513+00:00",
+ "next_at": "2026-11-19T20:13:18.399702+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -3237,16 +3237,6 @@
    "title": "UPERFECT Monitor Portátil con Soporte Metálico Plegable, 15.6\" 125% sRGB",
    "v": []
   },
-  "B0GF1WDV3V": {
-   "c": "Aspiradoras",
-   "d": 50,
-   "e": "🧹",
-   "m": 71,
-   "p": 99.98,
-   "t": "2026-11-05T19:35:53.964249+00:00",
-   "title": "Lefant  M210 Robot Aspirador, 2200Pa, 120min, Suelos Duros, Modo Silencioso",
-   "v": []
-  },
   "B0GF89DZYF": {
    "c": "Altavoces",
    "d": 16,
@@ -3277,6 +3267,17 @@
    "p": 429.0,
    "t": "2026-11-05T20:46:08.089055+00:00",
    "title": "Google Pixel 10a - 7 años de Nuevas actualizaciones y Funciones, más de 30 Horas de batería, Asistente de Cámara, Gemini Live, Seguridad de Pixel - Obsidiana, 128GB",
+   "v": []
+  },
+  "B0GGJ9YH2D": {
+   "c": "Componentes PC",
+   "d": 14,
+   "e": "🧩",
+   "m": 440,
+   "p": 929.99,
+   "s": "ofertas",
+   "t": "2026-11-19T19:46:34.796166+00:00",
+   "title": "CORSAIR Vengeance RGB RS DDR5 64GB (2 x 32GB) hasta 6000MHz AMD Intel RAM",
    "v": []
   },
   "B0GGJB61JQ": {
@@ -3789,24 +3790,12 @@
    "r": 4.5,
    "t": "2026-11-19T17:01:09.614407+00:00",
    "title": "Amazon Basics Cargador Portátil de Alta Capacidad con 3 Puertos de Salida, 20 000mAh, Negro"
-  },
-  {
-   "a": "B07ZTCDY6R",
-   "c": "Gaming",
-   "e": "🕹️",
-   "img": "https://m.media-amazon.com/images/I/71YNm35y1OL._AC_UL320_.jpg",
-   "n": 17900,
-   "op": 25.63,
-   "p": 19.48,
-   "r": 4.5,
-   "t": "2026-11-19T16:30:56.884084+00:00",
-   "title": "UPGRADE Mando para Switch, Mandos Switch Inalambricos para S-witch/S-witch 2/Lite/OLED con Wake Up, Mando Pro Controller Mando pc con Gyro Axis/Dual Shock/Función Turbo y Captura de pantalla"
   }
  ],
  "summary_day": "2026-11-18",
  "tg_offset": 511048116,
  "x_copy": {
   "day": "2026-11-19",
-  "n": 25
+  "n": 26
  }
 }

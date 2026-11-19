@@ -578,6 +578,13 @@
    "title": "DELL Pro P2726deb Conferencing Monitor 68,6 cm (27\") Qhd? Hdmi/DP/USB?c/LAN? Schwarz",
    "via": "modelo"
   },
+  "0884938373807": {
+   "a": "B07574Y2GY",
+   "t": "2026-11-19T19:45:43.698458+00:00",
+   "title": "Pioneer TS-G1020F - Altavoces, color negro",
+   "v": 3,
+   "via": "ean"
+  },
   "1200130008368": {
    "a": "B0DDCQSYGM",
    "t": "2026-11-16T22:24:54.934328+00:00",
@@ -2274,6 +2281,13 @@
    "title": "Princess Plancha de Asar, 46 x 26 cm, 2500 W, para 4 a 6 Personas",
    "v": 3,
    "via": "ean"
+  },
+  "8713439229912": {
+   "a": "B0C6MR81SM",
+   "t": "2026-11-19T19:45:43.698458+00:00",
+   "title": "Trust Gaming GXT 924W Ybar+ Ratón Gaming, 25600 dpi, 50% Plástico Reciclado, Captor 25K, Iluminación LED RGB, 6 Botones Programables, Mouse Gamer con Cable USB ",
+   "v": 3,
+   "via": "nombre"
   },
   "8713439248852": {
    "a": "B0CYT53J41",
@@ -5667,6 +5681,26 @@
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
+  "46186025386": {
+   "ahorro_vs_amazon": -6,
+   "amz_low30": null,
+   "amz_median": 27.27,
+   "amz_price": 24.75,
+   "amz_title": "Pioneer TS-G1020F - Altavoces, color negro",
+   "asin": "B07574Y2GY",
+   "disponible": true,
+   "ean": "0884938373807",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 24.75 frente a 29.04",
+   "name": "Pioneer Pasivo 2 vías TS-G1020F Negro 30W Altavoces de coche",
+   "pp_drop": 32,
+   "pp_median": 42.96,
+   "pp_price": 29.04,
+   "t": "2026-11-19T19:45:43.698458+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "46186025457": {
    "ahorro_vs_amazon": -9,
    "amz_low30": null,
@@ -6745,6 +6779,26 @@
    "pp_price": 33.17,
    "t": "2026-11-17T03:05:20.365221+00:00",
    "veredicto": "amazon_mas_barato"
+  },
+  "46599139824": {
+   "ahorro_vs_amazon": 9,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 33.97,
+   "amz_title": "Trust Gaming GXT 924W Ybar+ Ratón Gaming, 25600 dpi, 50% Plástico Reciclado, Captor 25K, Iluminación LED RGB, 6 Botones Programables, Mouse Gamer con Cable USB ",
+   "asin": "B0C6MR81SM",
+   "disponible": true,
+   "ean": "8713439229912",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "antes 44.95 en PowerPlanet, pero en Amazon suele estar a 33.97",
+   "name": "Trust GXT 144 Rexx 10000 DPI RGB 135g 6 botones USB Ratón gaming",
+   "pp_drop": 31,
+   "pp_median": 44.95,
+   "pp_price": 30.95,
+   "t": "2026-11-19T19:45:43.698458+00:00",
+   "v": 3,
+   "veredicto": "pvpr_inflado"
   },
   "46599139844": {
    "ahorro_vs_amazon": -4,
@@ -8188,12 +8242,12 @@
  },
  "night_at": "2026-11-19T06:20:27.624429+00:00",
  "resumen": {
-  "amazon_mas_barato": 22,
+  "amazon_mas_barato": 23,
   "dudoso": 0,
   "no_esta": 15,
   "oferta_real": 19,
-  "pvpr_inflado": 3,
+  "pvpr_inflado": 4,
   "sin_precio": 7
  },
- "updated": "2026-11-19T19:15:40.361750+00:00"
+ "updated": "2026-11-19T19:45:43.698458+00:00"
 }
