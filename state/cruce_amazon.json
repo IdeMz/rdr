@@ -1274,6 +1274,13 @@
    "title": "Logitech Keys-To-Go 2, Teclado Bluetooth portátil para Tablet - Blanco",
    "via": "nombre"
   },
+  "5099206133334": {
+   "a": "B0FJ25ZDNQ",
+   "t": "2026-11-19T15:30:55.803469+00:00",
+   "title": "Logitech G Astro A20 X LIGHTSPEED auriculares inalámbricos gaming - Negro",
+   "v": 3,
+   "via": "ean"
+  },
   "5390660195792": {
    "a": "B0C9ZSLNSM",
    "t": "2026-11-17T20:45:44.607165+00:00",
@@ -4091,6 +4098,26 @@
    "pp_median": 82.95,
    "pp_price": 68.95,
    "t": "2026-11-18T01:35:20.319820+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
+  "45403212401": {
+   "ahorro_vs_amazon": 7,
+   "amz_low30": 99.9,
+   "amz_median": null,
+   "amz_price": 94.9,
+   "amz_title": "Logitech G Astro A20 X LIGHTSPEED auriculares inalámbricos gaming - Negro",
+   "asin": "B0FJ25ZDNQ",
+   "disponible": true,
+   "ean": "5099206133334",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 94.90 frente a 92.95",
+   "name": "Logitech G Astro A20 X Diadema Bluetooth 5.3 90h Auriculares gaming inalámbricos",
+   "pp_drop": 28,
+   "pp_median": 129.95,
+   "pp_price": 92.95,
+   "t": "2026-11-19T15:30:55.803469+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -7644,7 +7671,7 @@
    "pp_drop": 35,
    "pp_median": 199.0,
    "pp_price": 129.0,
-   "t": "2026-11-17T15:01:35.153027+00:00",
+   "t": "2026-11-19T15:30:55.803469+00:00",
    "v": 3,
    "veredicto": "no_esta",
    "vistos": {
@@ -8004,12 +8031,12 @@
  },
  "night_at": "2026-11-19T06:20:27.624429+00:00",
  "resumen": {
-  "amazon_mas_barato": 22,
+  "amazon_mas_barato": 23,
   "dudoso": 0,
   "no_esta": 13,
   "oferta_real": 17,
   "pvpr_inflado": 3,
   "sin_precio": 5
  },
- "updated": "2026-11-19T15:01:09.213912+00:00"
+ "updated": "2026-11-19T15:30:55.803469+00:00"
 }
