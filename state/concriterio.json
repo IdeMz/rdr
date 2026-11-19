@@ -48,7 +48,7 @@
   "Pequeño electrodoméstico": "2026-11-18T20:01:08.859046+00:00",
   "Perfumes": "2026-11-19T07:35:31.217586+00:00",
   "Periféricos": "2026-11-18T17:01:08.637572+00:00",
-  "Perros": "2026-11-17T11:01:06.148601+00:00",
+  "Perros": "2026-11-19T08:05:38.436182+00:00",
   "Portátiles": "2026-11-17T08:30:57.514721+00:00",
   "Proyectores": "2026-11-17T17:31:15.607799+00:00",
   "Redes y wifi": "2026-11-18T07:30:50.769623+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-19T08:03:23.358204+00:00",
+ "next_at": "2026-11-19T08:33:09.367439+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -929,6 +929,17 @@
    "title": "De'Longhi Stilosa - Cafetera Espresso Manual con Espumador Manual Negro",
    "v": []
   },
+  "B087PXS519": {
+   "c": "Perros",
+   "d": 45,
+   "e": "🐶",
+   "m": 418,
+   "p": 17.09,
+   "s": "ambas",
+   "t": "2026-11-19T08:06:22.906553+00:00",
+   "title": "Feandrea Cama para Perros, Cojín Central Extraíble y Lavable, 50cm",
+   "v": []
+  },
   "B08835Q74B": {
    "c": "Relojes",
    "d": 39,
@@ -1617,16 +1628,6 @@
    "s": "ambas",
    "t": "2026-11-14T08:46:21.283733+00:00",
    "title": "Casco de bicicleta para hombres y mujeres, casco de ciclismo ligero con luz LED, gafas magnéticas, visera solar, cascos de bicicleta de montaña y carretera para adultos, tamaño ajustable 57-62",
-   "v": []
-  },
-  "B0BL898WJZ": {
-   "c": "Climatización",
-   "d": 23,
-   "e": "🌬️",
-   "m": 50,
-   "p": 399.99,
-   "t": "2026-11-05T07:41:06.685336+00:00",
-   "title": "Philips Air Performer 8000 3en1 Purificador, Calefactor y Ventilador, 70m²",
    "v": []
   },
   "B0BPYVWS6Y": {
@@ -3720,6 +3721,10 @@
    "t": "2026-11-18T12:30:56.291132+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0CMZ5MD2N": {
+   "t": "2026-11-19T08:05:38.436182+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0DWDWK591": {
    "t": "2026-11-18T13:30:55.857399+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3734,6 +3739,18 @@
   }
  },
  "reserve": [
+  {
+   "a": "B0F13RK113",
+   "c": "Perros",
+   "e": "🐶",
+   "img": "https://m.media-amazon.com/images/I/91vfpd9OKJL._AC_UL320_.jpg",
+   "n": 1200,
+   "op": 51.99,
+   "p": 37.53,
+   "r": 4.6,
+   "t": "2026-11-19T08:05:38.436182+00:00",
+   "title": "Bedsure SupportMax™ Extra Gruesa Cama Perro XL Grandes 106x76cm, Gris"
+  },
   {
    "a": "B0D8J5CVPK",
    "c": "Perfumes",
@@ -3763,6 +3780,6 @@
  "tg_offset": 511048116,
  "x_copy": {
   "day": "2026-11-19",
-  "n": 2
+  "n": 3
  }
 }
