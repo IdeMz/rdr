@@ -22,7 +22,7 @@
   "Cuidado del cabello": "2026-11-18T11:01:05.531917+00:00",
   "Cámaras de seguridad": "2026-11-18T12:01:05.181336+00:00",
   "Decoración navideña": "2026-11-18T11:30:52.353700+00:00",
-  "Domótica": "2026-11-17T18:45:48.491889+00:00",
+  "Domótica": "2026-11-19T08:35:31.603489+00:00",
   "Droguería": "2026-11-18T12:30:56.291132+00:00",
   "Fitness en casa": "2026-11-15T12:15:40.152691+00:00",
   "Fotografía": "2026-11-18T15:01:26.987987+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-19T08:33:09.367439+00:00",
+ "next_at": "2026-11-19T09:02:58.134713+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1733,6 +1733,17 @@
    "s": "ofertas",
    "t": "2026-11-17T16:31:30.124922+00:00",
    "title": "Monitor gaming curvo ultrawide KOORUI 34\", 180Hz, HDR400, 34E6UC",
+   "v": []
+  },
+  "B0C2S2J7JP": {
+   "c": "Domótica",
+   "d": 50,
+   "e": "💡",
+   "m": 419,
+   "p": 59.99,
+   "s": "ambas",
+   "t": "2026-11-19T08:36:02.214919+00:00",
+   "title": "Amazon Echo Spot (última generación) | Despertador inteligente con sonido de calidad| Negro, con Acceso Anticipado a Alexa+",
    "v": []
   },
   "B0C33RDGY8": {
@@ -3657,16 +3668,6 @@
    "title": "Reloj Inteligente para Xiaomi Apple Samsung, Llamadas Bluetooth y WhatsApp",
    "v": []
   },
-  "B0HGQG1L2J": {
-   "c": "Robots de cocina",
-   "d": 40,
-   "e": "🥣",
-   "m": 51,
-   "p": 120.02,
-   "t": "2026-11-05T08:16:10.363665+00:00",
-   "title": "Camic Batidora Amasadora 2000W - 10 Velocidades con Asa de Transporte, Bol Acero Inoxidable (7L), Amasadora con Gancho Para Remover, Gancho Para Amasar",
-   "v": []
-  },
   "B0HHN4Q6SN": {
    "c": "Smartwatch",
    "d": 31,
@@ -3780,6 +3781,6 @@
  "tg_offset": 511048116,
  "x_copy": {
   "day": "2026-11-19",
-  "n": 3
+  "n": 4
  }
 }
