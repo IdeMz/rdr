@@ -1374,6 +1374,13 @@
    "v": 3,
    "via": "ean"
   },
+  "5702017583716": {
+   "a": "B0CFVZT2HB",
+   "t": "2026-11-19T22:35:22.253874+00:00",
+   "title": "Lego City Isla Prisión de la Policía 60419",
+   "v": 3,
+   "via": "ean"
+  },
   "5702017818023": {
    "a": "B0DWDQYB87",
    "t": "2026-11-14T05:35:19.499764+00:00",
@@ -4409,24 +4416,24 @@
    "veredicto": "oferta_real"
   },
   "45454760434": {
-   "ahorro_vs_amazon": null,
-   "amz_low30": null,
+   "ahorro_vs_amazon": 7,
+   "amz_low30": 249.0,
    "amz_median": null,
-   "amz_price": null,
+   "amz_price": 211.6,
    "amz_title": "Edifier MR5 - Altavoz de Estudio (3 vías, 110 W, Crossover Tri-Amped), Color Blanco",
    "asin": "B0F19B8FHY",
    "disponible": true,
    "ean": "6923520216765",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "en Amazon pero sin precio o no disponible",
+   "motivo": "Amazon 211.60 frente a 231.94",
    "name": "Edifier MR5 Bluetooth 6.0 LDAC 110W Monitor de estudio",
-   "pista": "2090002 bytes; 14 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
-   "pp_drop": 10,
+   "pp_drop": 18,
    "pp_median": 283.99,
-   "pp_price": 254.95,
-   "t": "2026-11-17T07:01:18.076115+00:00",
-   "veredicto": "sin_precio"
+   "pp_price": 231.94,
+   "t": "2026-11-19T22:35:22.253874+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
   },
   "45463833398": {
    "ean": "1230000160872",
@@ -5079,6 +5086,27 @@
    "t": "2026-11-18T12:30:56.291132+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
+  },
+  "45956991724": {
+   "ahorro_vs_amazon": null,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": null,
+   "amz_title": "Lego City Isla Prisión de la Policía 60419",
+   "asin": "B0CFVZT2HB",
+   "disponible": true,
+   "ean": "5702017583716",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "en Amazon pero sin precio o no disponible",
+   "name": "Set de Construcción LEGO City 60419 Comisaría de Policía en la Isla Prisión",
+   "pista": "1870028 bytes; 9 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pp_drop": 22,
+   "pp_median": 100.95,
+   "pp_price": 78.83,
+   "t": "2026-11-19T22:35:22.253874+00:00",
+   "v": 3,
+   "veredicto": "sin_precio"
   },
   "45956991871": {
    "ahorro_vs_amazon": 10,
@@ -7055,11 +7083,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Monitor AOC 27 pulgadas 144Hz QHD IPS Negro Q27B36X",
-   "pista": "1859967 bytes; 13 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1749404 bytes; 9 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 25,
    "pp_median": 145.95,
    "pp_price": 109.0,
-   "t": "2026-11-19T16:30:56.884084+00:00",
+   "t": "2026-11-19T22:35:22.253874+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -8483,14 +8511,14 @@
    }
   }
  },
- "night_at": "2026-11-19T22:20:31.563817+00:00",
+ "night_at": "2026-11-19T22:35:22.253874+00:00",
  "resumen": {
-  "amazon_mas_barato": 28,
+  "amazon_mas_barato": 29,
   "dudoso": 0,
   "no_esta": 15,
   "oferta_real": 23,
   "pvpr_inflado": 4,
   "sin_precio": 7
  },
- "updated": "2026-11-19T22:20:31.563817+00:00"
+ "updated": "2026-11-19T22:35:22.253874+00:00"
 }
