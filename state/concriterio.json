@@ -34,7 +34,7 @@
   "Iluminación": "2026-11-15T11:45:37.493065+00:00",
   "Impresoras": "2026-11-18T18:01:04.377917+00:00",
   "Jardín": "2026-11-15T11:10:43.114079+00:00",
-  "Juguetes": "2026-11-16T09:55:33.695632+00:00",
+  "Juguetes": "2026-11-19T14:30:58.584339+00:00",
   "Lego": "2026-11-18T13:30:55.857399+00:00",
   "Limpieza del hogar": "2026-11-18T07:01:05.386750+00:00",
   "Maquillaje": "2026-11-17T07:01:18.076115+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-19T14:28:12.537317+00:00",
+ "next_at": "2026-11-19T14:56:41.893911+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -205,6 +205,17 @@
    "p": 58.5,
    "t": "2026-11-08T08:11:16.063062+00:00",
    "title": "Diesel, LOVERDOSE, Eau De Parfum, Colonia Apasionada y Floral para mujer, Mandarina Fresca, Regaliz Seductor y Cálido Acorde de Vainilla, Larga Duración, Perfume de Lujo para Mujer",
+   "v": []
+  },
+  "B005VPR688": {
+   "c": "Juguetes",
+   "d": 40,
+   "e": "🧸",
+   "m": 431,
+   "p": 8.93,
+   "s": "ofertas",
+   "t": "2026-11-19T14:32:18.232897+00:00",
+   "title": "Educa - Puzzle 1000 Piezas Mapamundi | Puzzle 14 Años",
    "v": []
   },
   "B00708ZNK2": {
@@ -996,16 +1007,6 @@
    "p": 489.0,
    "t": "2026-11-06T18:46:25.754489+00:00",
    "title": "Philips 5400 Cafetera Superautomática LatteGo, 12 bebidas, Negro",
-   "v": []
-  },
-  "B08FBQHY35": {
-   "c": "Perfumes",
-   "d": 37,
-   "e": "🌸",
-   "m": 62,
-   "p": 64.95,
-   "t": "2026-11-05T14:11:12.475410+00:00",
-   "title": "Jpg le male le parfum epv 75ml",
    "v": []
   },
   "B08FCFC8B1": {
@@ -3692,6 +3693,10 @@
  },
  "problem": {},
  "rejected": {
+  "B000IZYWI8": {
+   "t": "2026-11-19T14:30:58.584339+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B004W6KEDQ": {
    "t": "2026-11-19T13:05:35.393737+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3715,6 +3720,10 @@
   "B09V8C4QP9": {
    "t": "2026-11-16T19:55:35.023364+00:00",
    "why": "descartada a mano"
+  },
+  "B0BVBPSBYM": {
+   "t": "2026-11-19T14:30:58.584339+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0CMZ5MD2N": {
    "t": "2026-11-19T08:05:38.436182+00:00",
@@ -3771,6 +3780,6 @@
  "tg_offset": 511048116,
  "x_copy": {
   "day": "2026-11-19",
-  "n": 15
+  "n": 16
  }
 }
