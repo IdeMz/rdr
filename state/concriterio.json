@@ -5,7 +5,7 @@
   "Afeitado y depilación": "2026-11-17T20:15:50.874512+00:00",
   "Almacenamiento": "2026-11-18T10:30:54.867859+00:00",
   "Altavoces": "2026-11-17T20:45:44.607165+00:00",
-  "Aspiradoras": "2026-11-14T20:20:37.410274+00:00",
+  "Aspiradoras": "2026-11-19T12:05:32.674217+00:00",
   "Auriculares": "2026-11-17T08:01:10.979640+00:00",
   "Barras de sonido": "2026-11-18T08:01:03.545593+00:00",
   "Bebé": "2026-11-18T19:01:22.092208+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-19T12:01:14.492266+00:00",
+ "next_at": "2026-11-19T12:33:30.784731+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2199,16 +2199,6 @@
    "title": "illy, Café en Grano INTENSO, 500g",
    "v": []
   },
-  "B0D6W8GSL3": {
-   "c": "Altavoces",
-   "d": 40,
-   "e": "🔊",
-   "m": 58,
-   "p": 107.5,
-   "t": "2026-11-05T11:51:14.921640+00:00",
-   "title": "Bose SoundLink Flex (2.ª Gen.), Altavoz portátil inalámbrico con Bluetooth pequeño y Potente para Fiestas al Aire Libre, hasta 12 h de autonomía, Resistente al Agua IP67 y al Polvo, Arenisca",
-   "v": []
-  },
   "B0D79G6RDY": {
    "c": "Cuidado del cabello",
    "d": 44,
@@ -3560,6 +3550,17 @@
    "title": "HOTWAV T8 Móvil Irrompible Android 16, 12GB RAM + 64GB/2TB",
    "v": []
   },
+  "B0H6DZJX44": {
+   "c": "Aspiradoras",
+   "d": 50,
+   "e": "🧹",
+   "m": 426,
+   "p": 99.99,
+   "s": "ambas",
+   "t": "2026-11-19T12:05:58.295976+00:00",
+   "title": "FAMIVAC R10 Robot Aspirador con Fregona,6000Pa Succión Potente,Anti-Enredo",
+   "v": []
+  },
   "B0H6MCJG9F": {
    "c": "Smartwatch",
    "d": 37,
@@ -3762,6 +3763,6 @@
  "tg_offset": 511048116,
  "x_copy": {
   "day": "2026-11-19",
-  "n": 10
+  "n": 11
  }
 }

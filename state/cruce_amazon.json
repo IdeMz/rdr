@@ -382,6 +382,13 @@
    "title": "HP ProBook 450 G7 Ordenador portátil de Negocios, 15,6 Pulgadas FHD (1920x1080), Intel Core i5-10210U, 16 GB de RAM, 512 GB SSD, Teclado QWERTY, Windows 11 Pro ",
    "via": "nombre"
   },
+  "0840006616214": {
+   "a": "B083JL8CLF",
+   "t": "2026-11-19T12:05:32.674217+00:00",
+   "title": "Corsair Scimitar Elite RGB Óptico MOBA/MMO Ratón para Juegos - Negro",
+   "v": 3,
+   "via": "ean"
+  },
   "0840006667278": {
    "a": "B0CT8W3Y29",
    "t": "2026-11-13T11:40:39.260187+00:00",
@@ -745,6 +752,13 @@
    "t": "2026-11-13T19:20:42.278458+00:00",
    "title": "instax Square Link. Impresora para teléfonos, Color Blanco. & Fujifilm Square Black, película instantanea, 10 Fotos",
    "via": "ean"
+  },
+  "4710483936661": {
+   "a": "B0CGQ4HRSM",
+   "t": "2026-11-19T12:05:32.674217+00:00",
+   "title": "Carte Mère ASRock H610M-HDV/M.2+ DDR5 (Intel LGA 1700) Micro ATX",
+   "v": 3,
+   "via": "modelo"
   },
   "4710562245769": {
    "a": "B0H41J37CR",
@@ -4353,6 +4367,26 @@
     ]
    }
   },
+  "45858364586": {
+   "ahorro_vs_amazon": 30,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 85.95,
+   "amz_title": "Corsair Scimitar Elite RGB Óptico MOBA/MMO Ratón para Juegos - Negro",
+   "asin": "B083JL8CLF",
+   "disponible": true,
+   "ean": "0840006616214",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "30 % por debajo del habitual en Amazon (85.95)",
+   "name": "Corsair Scimitar RGB Elite USB 18000 DPI Negro 17 botones 122 g Ratón gaming",
+   "pp_drop": 40,
+   "pp_median": 100.95,
+   "pp_price": 60.11,
+   "t": "2026-11-19T12:05:32.674217+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "45930203409": {
    "ahorro_vs_amazon": 12,
    "amz_low30": null,
@@ -5619,6 +5653,26 @@
    "t": "2026-11-17T19:15:39.946523+00:00",
    "v": 3,
    "veredicto": "oferta_real"
+  },
+  "46239681542": {
+   "ahorro_vs_amazon": -16,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 49.5,
+   "amz_title": "Carte Mère ASRock H610M-HDV/M.2+ DDR5 (Intel LGA 1700) Micro ATX",
+   "asin": "B0CGQ4HRSM",
+   "disponible": true,
+   "ean": "4710483936661",
+   "encontrado_por": "modelo",
+   "lista": "candidates",
+   "motivo": "Amazon 49.50 frente a 57.21",
+   "name": "ASRock H610M-HDV Intel H610 LGA 1700 DDR4 Micro-ATX Negro Placa base",
+   "pp_drop": 43,
+   "pp_median": 99.95,
+   "pp_price": 57.21,
+   "t": "2026-11-19T12:05:32.674217+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
   },
   "46239682291": {
    "ahorro_vs_amazon": 0,
@@ -7704,12 +7758,12 @@
  },
  "night_at": "2026-11-19T06:20:27.624429+00:00",
  "resumen": {
-  "amazon_mas_barato": 17,
+  "amazon_mas_barato": 18,
   "dudoso": 0,
   "no_esta": 10,
-  "oferta_real": 15,
+  "oferta_real": 16,
   "pvpr_inflado": 3,
   "sin_precio": 5
  },
- "updated": "2026-11-19T11:35:32.511367+00:00"
+ "updated": "2026-11-19T12:05:32.674217+00:00"
 }
