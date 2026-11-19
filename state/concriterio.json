@@ -55,7 +55,7 @@
   "Relojes": "2026-11-19T11:35:32.511367+00:00",
   "Robots de cocina": "2026-11-15T15:15:41.208340+00:00",
   "Salud": "2026-11-18T21:01:05.865760+00:00",
-  "Smartwatch": "2026-11-17T19:45:42.626266+00:00",
+  "Smartwatch": "2026-11-19T15:01:09.213912+00:00",
   "Suplementos": "2026-11-17T14:01:04.582833+00:00",
   "Tablets": "2026-11-17T16:01:10.840347+00:00",
   "Televisores": "2026-11-18T18:01:04.377917+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-19T14:56:41.893911+00:00",
+ "next_at": "2026-11-19T15:28:47.210470+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -932,16 +932,6 @@
    "s": "ofertas",
    "t": "2026-11-19T13:06:19.985065+00:00",
    "title": "Netuno 100 hojas de cartulina verjurada color blanco A4 210x297 mm 220g Aster Laid White papel de calidad con textura para invitaciones portadas certificados documentos creativos",
-   "v": []
-  },
-  "B086RF6YJQ": {
-   "c": "Cafeteras",
-   "d": 23,
-   "e": "☕",
-   "m": 63,
-   "p": 99.0,
-   "t": "2026-11-05T14:46:18.914865+00:00",
-   "title": "De'Longhi Stilosa - Cafetera Espresso Manual con Espumador Manual Negro",
    "v": []
   },
   "B087PXS519": {
@@ -1816,6 +1806,17 @@
    "p": 16.99,
    "t": "2026-11-08T18:11:12.426707+00:00",
    "title": "VEEKTOMX Bateria Externa Carga Rapida 22.5W, Mini Power Bank 10000mAh",
+   "v": []
+  },
+  "B0C8CK2TRK": {
+   "c": "Smartwatch",
+   "d": 55,
+   "e": "⌚",
+   "m": 432,
+   "p": 27.07,
+   "s": "busqueda",
+   "t": "2026-11-19T15:01:54.101621+00:00",
+   "title": "RUIMEN Reloj Inteligente Mujer Hombre con Llamada,1,83\" Smartwatch con Pulsómetro,Podómetro,Oxímetro,Monitor Sueño,Esfera de reloj personalizada,Impermeable IP68 Pulsera de actividad para iOS Android",
    "v": []
   },
   "B0C8KBVW16": {
@@ -3733,12 +3734,32 @@
    "t": "2026-11-18T18:01:04.377917+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0FGK8CPX5": {
+   "t": "2026-11-19T15:01:09.213912+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0FRG19TD4": {
+   "t": "2026-11-19T15:01:09.213912+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0HHM2Z9GN": {
    "t": "2026-11-19T07:01:21.085197+00:00",
    "why": "alta hace 29 dias"
   }
  },
  "reserve": [
+  {
+   "a": "B0H5KDLK7M",
+   "c": "Smartwatch",
+   "e": "⌚",
+   "img": "https://m.media-amazon.com/images/I/61jx59P9t4L._AC_UL320_.jpg",
+   "n": 476,
+   "op": 69.99,
+   "p": 56.9,
+   "r": 4.6,
+   "t": "2026-11-19T15:01:09.213912+00:00",
+   "title": "XIAOMI Redmi Watch 6 Lite, hasta 18 días de autonomía, Negro"
+  },
   {
    "a": "B0BQ77QJFM",
    "c": "Higiene personal",
@@ -3762,24 +3783,12 @@
    "r": 4.7,
    "t": "2026-11-19T13:05:35.393737+00:00",
    "title": "Fixo Paper 65009263. Paquete de 100 Hojas de Color Amarillo Intenso, A4, 80 Gramos"
-  },
-  {
-   "a": "B0DZCJYD2C",
-   "c": "Relojes",
-   "e": "🕰️",
-   "img": "https://m.media-amazon.com/images/I/51ax2xsZA4L._AC_UL320_.jpg",
-   "n": 5100,
-   "op": 89.1,
-   "p": 61.86,
-   "r": 4.3,
-   "t": "2026-11-19T11:35:32.511367+00:00",
-   "title": "Ironman Original Shock"
   }
  ],
  "summary_day": "2026-11-18",
  "tg_offset": 511048116,
  "x_copy": {
   "day": "2026-11-19",
-  "n": 16
+  "n": 17
  }
 }

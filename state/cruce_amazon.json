@@ -143,6 +143,13 @@
    "title": "HP 330 Combo de Teclado y Ratón Inalámbricos - (1600 PPP, Puerto USB-A, Indicadores LED, Teclas con Atajos, Windows 10; Windows 11) QWERTY Español, Color Negro",
    "via": "nombre"
   },
+  "0198153734573": {
+   "a": "B0DN6PQGGL",
+   "t": "2026-11-19T15:01:09.213912+00:00",
+   "title": "Lenovo Legion R32qc-30 - Monitor Gaming Curvo 31.5\" (180Hz, 0.5 ms MPRT, 16:9, 2560 x 1440 px, HDMI+DP, Altavoces 3Wx2, EyeSafe) VESA 100mm, Soporte Inclinable,",
+   "v": 3,
+   "via": "ean"
+  },
   "0199251521225": {
    "a": "",
    "t": "2026-11-17T22:50:28.729529+00:00",
@@ -6801,6 +6808,26 @@
    "t": "2026-11-14T23:50:25.477607+00:00",
    "veredicto": "dudoso"
   },
+  "46599140243": {
+   "ahorro_vs_amazon": -42,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 168.43,
+   "amz_title": "Lenovo Legion R32qc-30 - Monitor Gaming Curvo 31.5\" (180Hz, 0.5 ms MPRT, 16:9, 2560 x 1440 px, HDMI+DP, Altavoces 3Wx2, EyeSafe) VESA 100mm, Soporte Inclinable,",
+   "asin": "B0DN6PQGGL",
+   "disponible": true,
+   "ean": "0198153734573",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 168.43 frente a 239.89",
+   "name": "Monitor Lenovo Legion 31.5 pulgadas 180Hz Curvo QHD VA Negro Azabache R32qc-30",
+   "pp_drop": 24,
+   "pp_median": 313.95,
+   "pp_price": 239.89,
+   "t": "2026-11-19T15:01:09.213912+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "46599140285": {
    "ahorro_vs_amazon": 5,
    "amz_low30": null,
@@ -6924,10 +6951,10 @@
    "lista": "candidates",
    "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
    "name": "Monitor gaming Acer Nitro 31.5 pulgadas 240Hz Curvo FHD VA Negro ED320QW0bmiipx",
-   "pp_drop": 23,
+   "pp_drop": 25,
    "pp_median": 255.95,
-   "pp_price": 197.96,
-   "t": "2026-11-18T12:01:05.181336+00:00",
+   "pp_price": 190.95,
+   "t": "2026-11-19T15:01:09.213912+00:00",
    "v": 3,
    "veredicto": "no_esta",
    "vistos": {
@@ -7977,12 +8004,12 @@
  },
  "night_at": "2026-11-19T06:20:27.624429+00:00",
  "resumen": {
-  "amazon_mas_barato": 21,
+  "amazon_mas_barato": 22,
   "dudoso": 0,
   "no_esta": 13,
   "oferta_real": 17,
   "pvpr_inflado": 3,
   "sin_precio": 5
  },
- "updated": "2026-11-19T14:30:58.584339+00:00"
+ "updated": "2026-11-19T15:01:09.213912+00:00"
 }
