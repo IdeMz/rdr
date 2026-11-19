@@ -27,7 +27,7 @@
   "Fitness en casa": "2026-11-15T12:15:40.152691+00:00",
   "Fotografía": "2026-11-18T15:01:26.987987+00:00",
   "Freidoras de aire": "2026-11-18T18:30:58.613853+00:00",
-  "Gaming": "2026-11-18T15:31:00.962603+00:00",
+  "Gaming": "2026-11-19T16:30:56.884084+00:00",
   "Gatos": "2026-11-19T10:05:35.124541+00:00",
   "Herramientas": "2026-11-14T21:01:00.449874+00:00",
   "Higiene personal": "2026-11-19T14:01:04.176634+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-19T16:28:55.229975+00:00",
+ "next_at": "2026-11-19T16:59:13.121012+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2114,16 +2114,6 @@
    "title": "Fokky Gomas Elasticas Musculacion con Anclaje de Puerta y Asas, 5 Niveles",
    "v": []
   },
-  "B0D1KN8DRS": {
-   "c": "Colchones y almohadas",
-   "d": 14,
-   "e": "🛏️",
-   "m": 65,
-   "p": 36.99,
-   "t": "2026-11-05T16:05:56.692103+00:00",
-   "title": "Homey - Almohada Viscoelástica Carbono | Máximo Confort y Excelente Adaptabilidad con Propiedades Antiestrés | 2 Unidades de 70 x 40 cm",
-   "v": []
-  },
   "B0D2CVB8MD": {
    "c": "Iluminación",
    "d": 40,
@@ -2255,6 +2245,17 @@
    "p": 22.99,
    "t": "2026-11-08T15:11:09.144750+00:00",
    "title": "MATEIN",
+   "v": []
+  },
+  "B0D8LJWZPB": {
+   "c": "Gaming",
+   "d": 43,
+   "e": "🕹️",
+   "m": 435,
+   "p": 39.99,
+   "s": "ambas",
+   "t": "2026-11-19T16:31:36.419391+00:00",
+   "title": "Mando inalámbrico Luna",
    "v": []
   },
   "B0D8QQ2LY5": {
@@ -3761,6 +3762,18 @@
  },
  "reserve": [
   {
+   "a": "B07ZTCDY6R",
+   "c": "Gaming",
+   "e": "🕹️",
+   "img": "https://m.media-amazon.com/images/I/71YNm35y1OL._AC_UL320_.jpg",
+   "n": 17900,
+   "op": 25.63,
+   "p": 19.48,
+   "r": 4.5,
+   "t": "2026-11-19T16:30:56.884084+00:00",
+   "title": "UPGRADE Mando para Switch, Mandos Switch Inalambricos para S-witch/S-witch 2/Lite/OLED con Wake Up, Mando Pro Controller Mando pc con Gyro Axis/Dual Shock/Función Turbo y Captura de pantalla"
+  },
+  {
    "a": "B0H5KDLK7M",
    "c": "Smartwatch",
    "e": "⌚",
@@ -3783,24 +3796,12 @@
    "r": 4.6,
    "t": "2026-11-19T14:01:04.176634+00:00",
    "title": "Dove Men +Care Aerosol Para Hombre Clean Comfort 72 h, 150 ML, pack de 6 Unidades,"
-  },
-  {
-   "a": "B08FBD3RJT",
-   "c": "Oficina",
-   "e": "🖊️",
-   "img": "https://m.media-amazon.com/images/I/61ZTEN7R1JL._AC_UL320_.jpg",
-   "n": 366,
-   "op": 6.23,
-   "p": 5.3,
-   "r": 4.7,
-   "t": "2026-11-19T13:05:35.393737+00:00",
-   "title": "Fixo Paper 65009263. Paquete de 100 Hojas de Color Amarillo Intenso, A4, 80 Gramos"
   }
  ],
  "summary_day": "2026-11-18",
  "tg_offset": 511048116,
  "x_copy": {
   "day": "2026-11-19",
-  "n": 19
+  "n": 20
  }
 }
