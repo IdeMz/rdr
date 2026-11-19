@@ -1057,6 +1057,13 @@
     ]
    }
   },
+  "4711474905253": {
+   "a": "B0HCZJLQNV",
+   "t": "2026-11-19T21:45:51.469863+00:00",
+   "title": "Acer PE160Wsmiuux",
+   "v": 3,
+   "via": "ean"
+  },
   "4711636168991": {
    "a": "B09CD57PMJ",
    "t": "2026-11-15T00:50:26.258760+00:00",
@@ -2333,6 +2340,13 @@
    "a": "B0DHYCHGQR",
    "t": "2026-11-19T14:01:04.176634+00:00",
    "title": "Epson EF-21G Mini Smart Laser Projector | Proyector Portátil Full HD, 1920 x 1080p, Altavoz Bluetooth de 5W, Proyección a Pared, Suelo o Techo, 1000 Lúmenes, Go",
+   "v": 3,
+   "via": "ean"
+  },
+  "8715946737980": {
+   "a": "B0FTFNWR45",
+   "t": "2026-11-19T21:45:51.469863+00:00",
+   "title": "Epson EB-L690u (epson EB-L690u - 3lcd Projector - 6500 Lumens - Wuxga [1920 X 1200] - 16:10 - 802.11a/b/g/n/ac Wireless / Lan/ Miracast - White)",
    "v": 3,
    "via": "ean"
   },
@@ -5635,6 +5649,26 @@
    "t": "2026-11-16T02:20:24.133415+00:00",
    "veredicto": "oferta_real"
   },
+  "46186024138": {
+   "ahorro_vs_amazon": 0,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 2749.0,
+   "amz_title": "Epson EB-L690u (epson EB-L690u - 3lcd Projector - 6500 Lumens - Wuxga [1920 X 1200] - 16:10 - 802.11a/b/g/n/ac Wireless / Lan/ Miracast - White)",
+   "asin": "B0FTFNWR45",
+   "disponible": true,
+   "ean": "8715946737980",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 2749.00 frente a 2747.95",
+   "name": "Epson Láser WUXGA 1920x1200 6500 lúmenes ANSI 3LCD Blanco EB-L690U altavoz 10W 32dB Proyector",
+   "pp_drop": 13,
+   "pp_median": 3156.95,
+   "pp_price": 2747.95,
+   "t": "2026-11-19T21:45:51.469863+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "46186024237": {
    "ahorro_vs_amazon": 3,
    "amz_low30": null,
@@ -7282,6 +7316,26 @@
    "t": "2026-11-14T16:45:37.700799+00:00",
    "veredicto": "oferta_real"
   },
+  "46599140761": {
+   "ahorro_vs_amazon": 20,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 289.51,
+   "amz_title": "Acer PE160Wsmiuux",
+   "asin": "B0HCZJLQNV",
+   "disponible": true,
+   "ean": "4711474905253",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "20 % por debajo del habitual en Amazon (289.51)",
+   "name": "Monitor Portátil Acer ProDesigner PE160W S 16 pulgadas WUXGA Plata",
+   "pp_drop": 19,
+   "pp_median": 284.96,
+   "pp_price": 230.95,
+   "t": "2026-11-19T21:45:51.469863+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "46599140953": {
    "ahorro_vs_amazon": 10,
    "amz_low30": null,
@@ -8296,12 +8350,12 @@
  },
  "night_at": "2026-11-19T06:20:27.624429+00:00",
  "resumen": {
-  "amazon_mas_barato": 23,
+  "amazon_mas_barato": 24,
   "dudoso": 0,
   "no_esta": 15,
-  "oferta_real": 21,
+  "oferta_real": 22,
   "pvpr_inflado": 4,
   "sin_precio": 7
  },
- "updated": "2026-11-19T21:15:40.155765+00:00"
+ "updated": "2026-11-19T21:45:51.469863+00:00"
 }

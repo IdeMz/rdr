@@ -12,7 +12,7 @@
   "Bricolaje": "2026-11-18T17:30:58.281773+00:00",
   "Cafeteras": "2026-11-17T18:01:13.651055+00:00",
   "Café y cápsulas": "2026-11-19T11:05:31.132875+00:00",
-  "Camping y montaña": "2026-11-18T14:30:58.889249+00:00",
+  "Camping y montaña": "2026-11-19T21:45:51.469863+00:00",
   "Cargadores y baterías": "2026-11-19T17:01:09.614407+00:00",
   "Ciclismo": "2026-11-19T12:35:30.987217+00:00",
   "Climatización": "2026-11-19T07:01:21.085197+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-19T21:45:01.396448+00:00",
+ "next_at": "2026-11-19T22:11:12.040756+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -903,6 +903,17 @@
    "title": "L'Oréal Paris Accord Parfait Base de Maquillaje Acabado Natural, 3N, 30ml",
    "v": []
   },
+  "B07Y21PLQM": {
+   "c": "Camping y montaña",
+   "d": 24,
+   "e": "🏕️",
+   "m": 444,
+   "p": 15.19,
+   "s": "ambas",
+   "t": "2026-11-19T21:46:25.272278+00:00",
+   "title": "Lepro Linterna Cabeza LED Pila 1300lux (2 Pack), Frontal LED Alta Potencia",
+   "v": []
+  },
   "B082DP67BT": {
    "c": "Cafeteras",
    "d": 20,
@@ -1654,16 +1665,6 @@
    "s": "ofertas",
    "t": "2026-11-16T11:21:12.986415+00:00",
    "title": "OLIGHT Perun 2 Mini Linterna Frontal USB Recargable 1100 Lumens 10 Días Máx",
-   "v": []
-  },
-  "B0BCKHQGJN": {
-   "c": "Auriculares",
-   "d": 53,
-   "e": "🎧",
-   "m": 74,
-   "p": 23.46,
-   "t": "2026-11-05T21:21:06.517914+00:00",
-   "title": "Auriculares Inalámbricos Bluetooth, Auriculares Bluetooth 5.3, HiFi Estéreo",
    "v": []
   },
   "B0BCKSWJGJ": {
@@ -3780,6 +3781,18 @@
  },
  "reserve": [
   {
+   "a": "B08BFJ37TV",
+   "c": "Camping y montaña",
+   "e": "🏕️",
+   "img": "https://m.media-amazon.com/images/I/61ArhnxxKaL._AC_UL320_.jpg",
+   "n": 3100,
+   "op": 29.95,
+   "p": 25.99,
+   "r": 4.6,
+   "t": "2026-11-19T21:45:51.469863+00:00",
+   "title": "klarus HM1 IPX6 antorcha recargable impermeable con sensor de movimiento, 440 lúmenes 70 horas de duración máxima, batería de 1800mAh para correr, acampar, senderismo, caza(HM1-Rojo)"
+  },
+  {
    "a": "B09VB54T5L",
    "c": "Videojuegos",
    "e": "🎮",
@@ -3802,24 +3815,12 @@
    "r": 4.6,
    "t": "2026-11-19T20:45:42.101471+00:00",
    "title": "Optimum Nutrition Opti-Men, Multivitamínico de Alta Potencia para Hombres"
-  },
-  {
-   "a": "B076MTNJCR",
-   "c": "Cuidado de la piel",
-   "e": "🧴",
-   "img": "https://m.media-amazon.com/images/I/51wzf4rVT2L._AC_UL320_.jpg",
-   "n": 1400,
-   "op": 36.9,
-   "p": 17.4,
-   "r": 4.5,
-   "t": "2026-11-19T18:15:40.654642+00:00",
-   "title": "BELLA AURORA Splendor 50 Crema Antiedad Global Día SPF20 50 ml"
   }
  ],
  "summary_day": "2026-11-18",
  "tg_offset": 511048116,
  "x_copy": {
   "day": "2026-11-19",
-  "n": 29
+  "n": 30
  }
 }
