@@ -3812,24 +3812,24 @@
    }
   },
   "45368123613": {
-   "ahorro_vs_amazon": -8,
+   "ahorro_vs_amazon": 39,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 43.73,
+   "amz_price": 77.93,
    "amz_title": "SEVERIN Freidora de aire FryLight Single, cocinado versátil, pantalla táctil, 8 programas automáticos, función de conservación del calor, 4L, revestimiento anti",
    "asin": "B0F9TRBWPD",
    "disponible": true,
    "ean": "4008146046551",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "Amazon 43.73 frente a 47.40",
+   "motivo": "39 % por debajo del habitual en Amazon (77.93)",
    "name": "Severin FR 2461 4L 1300W 8 Programas pantalla táctil Freidora de aire",
    "pp_drop": 29,
    "pp_median": 66.95,
    "pp_price": 47.4,
-   "t": "2026-11-17T16:30:56.399108+00:00",
+   "t": "2026-11-19T18:45:44.590047+00:00",
    "v": 3,
-   "veredicto": "amazon_mas_barato"
+   "veredicto": "oferta_real"
   },
   "45368123747": {
    "ahorro_vs_amazon": 7,
@@ -6910,7 +6910,7 @@
    "pp_drop": 21,
    "pp_median": 264.95,
    "pp_price": 209.95,
-   "t": "2026-11-17T16:30:56.399108+00:00",
+   "t": "2026-11-19T18:45:44.590047+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -8151,12 +8151,12 @@
  },
  "night_at": "2026-11-19T06:20:27.624429+00:00",
  "resumen": {
-  "amazon_mas_barato": 23,
+  "amazon_mas_barato": 22,
   "dudoso": 0,
   "no_esta": 14,
-  "oferta_real": 18,
+  "oferta_real": 19,
   "pvpr_inflado": 3,
   "sin_precio": 7
  },
- "updated": "2026-11-19T18:15:40.654642+00:00"
+ "updated": "2026-11-19T18:45:44.590047+00:00"
 }

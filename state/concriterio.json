@@ -37,7 +37,7 @@
   "Juguetes": "2026-11-19T14:30:58.584339+00:00",
   "Lego": "2026-11-18T13:30:55.857399+00:00",
   "Limpieza del hogar": "2026-11-18T07:01:05.386750+00:00",
-  "Maquillaje": "2026-11-17T07:01:18.076115+00:00",
+  "Maquillaje": "2026-11-19T18:45:44.590047+00:00",
   "Menaje de cocina": "2026-11-19T09:35:35.003414+00:00",
   "Mochilas y maletas": "2026-11-18T13:01:08.331588+00:00",
   "Monitores": "2026-11-17T16:30:56.399108+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-19T18:41:35.896393+00:00",
+ "next_at": "2026-11-19T19:13:57.513867+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -881,6 +881,17 @@
    "title": "MAVIS Neceser, 6 L - Black (Negro)",
    "v": []
   },
+  "B07XNM2SWL": {
+   "c": "Maquillaje",
+   "d": 40,
+   "e": "💄",
+   "m": 438,
+   "p": 10.27,
+   "s": "ofertas",
+   "t": "2026-11-19T18:48:41.716961+00:00",
+   "title": "L'Oréal Paris Accord Parfait Base de Maquillaje Acabado Natural, 3N, 30ml",
+   "v": []
+  },
   "B082DP67BT": {
    "c": "Cafeteras",
    "d": 20,
@@ -1320,16 +1331,6 @@
    "s": "ambas",
    "t": "2026-11-19T15:31:33.763272+00:00",
    "title": "Mercusys ME30 - Repetidor WiFi 5, AC1200, Doble Banda, Antenas externas",
-   "v": []
-  },
-  "B0987W5VK6": {
-   "c": "Herramientas",
-   "d": 22,
-   "e": "🔧",
-   "m": 69,
-   "p": 109.0,
-   "t": "2026-11-05T18:25:55.312078+00:00",
-   "title": "Einhell Set de taladro percutor con batería TE-CD 18/40 Li-i +64 (2x2,0 Ah)",
    "v": []
   },
   "B098TVZ6TS": {
@@ -3801,6 +3802,6 @@
  "tg_offset": 511048116,
  "x_copy": {
   "day": "2026-11-19",
-  "n": 23
+  "n": 24
  }
 }
