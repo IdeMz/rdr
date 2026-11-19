@@ -14,7 +14,7 @@
   "Café y cápsulas": "2026-11-19T11:05:31.132875+00:00",
   "Camping y montaña": "2026-11-18T14:30:58.889249+00:00",
   "Cargadores y baterías": "2026-11-17T19:15:39.946523+00:00",
-  "Ciclismo": "2026-11-17T07:30:53.001889+00:00",
+  "Ciclismo": "2026-11-19T12:35:30.987217+00:00",
   "Climatización": "2026-11-19T07:01:21.085197+00:00",
   "Colchones y almohadas": "2026-11-19T10:35:44.498929+00:00",
   "Componentes PC": "2026-11-16T16:15:49.892288+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-19T12:33:30.784731+00:00",
+ "next_at": "2026-11-19T13:03:18.231631+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -383,16 +383,6 @@
    "p": 283.99,
    "t": "2026-11-08T16:21:09.810813+00:00",
    "title": "Bosch - Robot de cocina, MUM 5, 1000 W, Plateado, MUM58L20",
-   "v": []
-  },
-  "B01AMAYRHY": {
-   "c": "Café y cápsulas",
-   "d": 17,
-   "e": "🫘",
-   "m": 59,
-   "p": 22.5,
-   "t": "2026-11-05T12:25:53.456959+00:00",
-   "title": "NESCAFÉ Dolce Gusto Café Cortado 90 cápsulas (3x30)",
    "v": []
   },
   "B01C8ONNPE": {
@@ -1346,6 +1336,17 @@
    "p": 99.99,
    "t": "2026-11-06T21:06:01.022588+00:00",
    "title": "TECLAST M50T Tablet 10.1 Pulgadas Android 16 Tableta Gemini AI, 32GB RAM+128GB ROM+5TB TF, 2GHz Octa-Core, 7000mAh, 2.4G+5G WiFi, BT 5.4/Widevine L1/13MP+5MP/3.5MM/Face ID/OTG, Tablets con Lápiz, 2026",
+   "v": []
+  },
+  "B09H5MT5GG": {
+   "c": "Ciclismo",
+   "d": 41,
+   "e": "🚴",
+   "m": 427,
+   "p": 11.75,
+   "s": "ambas",
+   "t": "2026-11-19T12:36:00.431123+00:00",
+   "title": "Luces Bicicleta Delantera Y Trasera, Luz Bicicleta Recargable USB",
    "v": []
   },
   "B09HCGGDQD": {
@@ -3680,10 +3681,6 @@
  },
  "problem": {},
  "rejected": {
-  "B016MKOA6G": {
-   "t": "2026-11-18T12:30:56.291132+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B01IUP0Y8E": {
    "t": "2026-11-19T10:05:35.124541+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3699,10 +3696,6 @@
   "B09V8C4QP9": {
    "t": "2026-11-16T19:55:35.023364+00:00",
    "why": "descartada a mano"
-  },
-  "B0C3DGXND9": {
-   "t": "2026-11-18T12:30:56.291132+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0CMZ5MD2N": {
    "t": "2026-11-19T08:05:38.436182+00:00",
@@ -3763,6 +3756,6 @@
  "tg_offset": 511048116,
  "x_copy": {
   "day": "2026-11-19",
-  "n": 11
+  "n": 12
  }
 }
