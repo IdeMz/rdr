@@ -39,6 +39,13 @@
    "v": 3,
    "via": "ean"
   },
+  "0195892131847": {
+   "a": "B0H2YRHZSL",
+   "t": "2026-11-19T11:05:31.132875+00:00",
+   "title": "Lenovo NVIDIA GeForce RTX 5060 8 GB 8 GB DP*3+HDMI*1 GDDR7",
+   "v": 3,
+   "via": "ean"
+  },
   "0195949544163": {
    "a": "B0DGJ74WP3",
    "t": "2026-11-13T15:10:54.425531+00:00",
@@ -556,6 +563,13 @@
    "a": "B0DH8HYC7P",
    "t": "2026-11-17T14:01:04.582833+00:00",
    "title": "Moulinex Inicio Compact, plancha de paninis y grill, placas de cocción antiadherentes, fácil de guardar, fácil de lavar, GI270D10",
+   "v": 3,
+   "via": "ean"
+  },
+  "3045385782698": {
+   "a": "B00MIKJ4MU",
+   "t": "2026-11-19T11:05:31.132875+00:00",
+   "title": "KRUPS Control Line, Tostador 2 Ranuras, 6 Niveles tostado, Inox",
    "v": 3,
    "via": "ean"
   },
@@ -4162,6 +4176,26 @@
     ]
    }
   },
+  "45626822142": {
+   "ahorro_vs_amazon": 11,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 660.29,
+   "amz_title": "Lenovo NVIDIA GeForce RTX 5060 8 GB 8 GB DP*3+HDMI*1 GDDR7",
+   "asin": "B0H2YRHZSL",
+   "disponible": true,
+   "ean": "0195892131847",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "11 % por debajo del habitual en Amazon (660.29)",
+   "name": "Lenovo GeForce RTX 5060 8GB GDDR7 2 ventiladores HDMI 2.1 Tarjeta gráfica",
+   "pp_drop": 35,
+   "pp_median": 897.95,
+   "pp_price": 584.95,
+   "t": "2026-11-19T11:05:31.132875+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "45626822189": {
    "ahorro_vs_amazon": 14,
    "amz_low30": null,
@@ -5369,6 +5403,26 @@
      "GIOCO PS5 EA SPORTS UFC 6"
     ]
    }
+  },
+  "46186034906": {
+   "ahorro_vs_amazon": -31,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 44.99,
+   "amz_title": "KRUPS Control Line, Tostador 2 Ranuras, 6 Niveles tostado, Inox",
+   "asin": "B00MIKJ4MU",
+   "disponible": true,
+   "ean": "3045385782698",
+   "encontrado_por": "ean",
+   "lista": "to_verify",
+   "motivo": "Amazon 44.99 frente a 58.95",
+   "name": "Krups Control Line 850W 2 Ranuras Acero Inoxidable KH442D Tostadora",
+   "pp_drop": 58,
+   "pp_median": 141.95,
+   "pp_price": 58.95,
+   "t": "2026-11-19T11:05:31.132875+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
   },
   "46186036340": {
    "ahorro_vs_amazon": null,
@@ -7576,12 +7630,12 @@
  },
  "night_at": "2026-11-19T06:20:27.624429+00:00",
  "resumen": {
-  "amazon_mas_barato": 15,
+  "amazon_mas_barato": 16,
   "dudoso": 0,
   "no_esta": 9,
-  "oferta_real": 14,
+  "oferta_real": 15,
   "pvpr_inflado": 3,
   "sin_precio": 5
  },
- "updated": "2026-11-19T10:35:44.498929+00:00"
+ "updated": "2026-11-19T11:05:31.132875+00:00"
 }

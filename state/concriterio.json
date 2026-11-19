@@ -11,7 +11,7 @@
   "Bebé": "2026-11-18T19:01:22.092208+00:00",
   "Bricolaje": "2026-11-18T17:30:58.281773+00:00",
   "Cafeteras": "2026-11-17T18:01:13.651055+00:00",
-  "Café y cápsulas": "2026-11-15T14:40:39.424977+00:00",
+  "Café y cápsulas": "2026-11-19T11:05:31.132875+00:00",
   "Camping y montaña": "2026-11-18T14:30:58.889249+00:00",
   "Cargadores y baterías": "2026-11-17T19:15:39.946523+00:00",
   "Ciclismo": "2026-11-17T07:30:53.001889+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-19T11:05:13.514661+00:00",
+ "next_at": "2026-11-19T11:34:20.471985+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -256,16 +256,6 @@
    "p": 21.99,
    "t": "2026-11-10T09:56:05.161991+00:00",
    "title": "Logitech MK270 Combo Teclado y Ratón Inalámbrico para Windows",
-   "v": []
-  },
-  "B00CHJ3DW4": {
-   "c": "Nutrición deportiva",
-   "d": 50,
-   "e": "💪",
-   "m": 56,
-   "p": 16.99,
-   "t": "2026-11-05T10:41:12.221135+00:00",
-   "title": "Myprotein Creatina Monohidrato en Polvo, Sin Sabor, 500g",
    "v": []
   },
   "B00ENMFOSY": {
@@ -1240,6 +1230,17 @@
    "s": "ofertas",
    "t": "2026-11-13T14:36:09.523973+00:00",
    "title": "Olay Regenerist Crema Facial de Día Antiarrugas SPF 30, 50ml",
+   "v": []
+  },
+  "B092DB8RFH": {
+   "c": "Café y cápsulas",
+   "d": 31,
+   "e": "🫘",
+   "m": 424,
+   "p": 17.99,
+   "s": "ambas",
+   "t": "2026-11-19T11:05:58.911891+00:00",
+   "title": "Lavazza, Crema e Gusto Classico, Café en Grano Natural, 1 kg",
    "v": []
   },
   "B092J7CGXT": {
@@ -3685,10 +3686,6 @@
    "t": "2026-11-19T10:05:35.124541+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B06XC29B5G": {
-   "t": "2026-11-18T11:01:05.531917+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B07HGFBXT8": {
    "t": "2026-11-19T07:01:21.085197+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3760,6 +3757,6 @@
  "tg_offset": 511048116,
  "x_copy": {
   "day": "2026-11-19",
-  "n": 8
+  "n": 9
  }
 }
