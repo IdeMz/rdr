@@ -30,7 +30,7 @@
   "Gaming": "2026-11-18T15:31:00.962603+00:00",
   "Gatos": "2026-11-19T10:05:35.124541+00:00",
   "Herramientas": "2026-11-14T21:01:00.449874+00:00",
-  "Higiene personal": "2026-11-16T15:05:39.512603+00:00",
+  "Higiene personal": "2026-11-19T14:01:04.176634+00:00",
   "Iluminación": "2026-11-15T11:45:37.493065+00:00",
   "Impresoras": "2026-11-18T18:01:04.377917+00:00",
   "Jardín": "2026-11-15T11:10:43.114079+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-19T14:00:59.921156+00:00",
+ "next_at": "2026-11-19T14:28:12.537317+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1709,6 +1709,17 @@
    "s": "ambas",
    "t": "2026-11-12T08:46:24.206433+00:00",
    "title": "Cecotec Cafetera Express Power Espresso Touch ColdBrew. 1350W, Café en Frío, Espresso y Cappuccino, 20 Bares de Presión, Vaporizador Orientable, Táctil, Depósito de Agua 1,5L y de Leche 550ml",
+   "v": []
+  },
+  "B0BQRTPB7G": {
+   "c": "Higiene personal",
+   "d": 47,
+   "e": "🪥",
+   "m": 430,
+   "p": 7.99,
+   "s": "ambas",
+   "t": "2026-11-19T14:01:36.830595+00:00",
+   "title": "Dove Advanced Care Desodorante Roll-On 48h Original Sin Alcohol para Mujer, con Aceite Nutritivo 100% Natural y Antitranspirante, Pack de 6 x 50 ml",
    "v": []
   },
   "B0BTDLSQH8": {
@@ -3521,18 +3532,6 @@
    "title": "REDMI Note 17, Smartphone 6+256GB, Morado Celestial, batería de 7700mAh",
    "v": []
   },
-  "B0H4ZJ6MD7": {
-   "c": "Portátiles",
-   "d": 26,
-   "e": "💻",
-   "m": 61,
-   "p": 699.0,
-   "t": "2026-11-05T13:36:01.953859+00:00",
-   "title": "HP 15 Ordenador portátil 15,6\" FHD, Ryzen 5, 16GB, 512SSD, Windows 11",
-   "v": [
-    "5f2e3ed7ec51"
-   ]
-  },
   "B0H4ZJZNX6": {
    "c": "Smartwatch",
    "d": 39,
@@ -3732,6 +3731,18 @@
  },
  "reserve": [
   {
+   "a": "B0BQ77QJFM",
+   "c": "Higiene personal",
+   "e": "🪥",
+   "img": "https://m.media-amazon.com/images/I/71DEITidCPL._AC_UL320_.jpg",
+   "n": 2400,
+   "op": 17.31,
+   "p": 9.49,
+   "r": 4.6,
+   "t": "2026-11-19T14:01:04.176634+00:00",
+   "title": "Dove Men +Care Aerosol Para Hombre Clean Comfort 72 h, 150 ML, pack de 6 Unidades,"
+  },
+  {
    "a": "B08FBD3RJT",
    "c": "Oficina",
    "e": "🖊️",
@@ -3754,24 +3765,12 @@
    "r": 4.3,
    "t": "2026-11-19T11:35:32.511367+00:00",
    "title": "Ironman Original Shock"
-  },
-  {
-   "a": "B0DSVHNLFT",
-   "c": "Colchones y almohadas",
-   "e": "🛏️",
-   "img": "https://m.media-amazon.com/images/I/71FkY4tRHxL._AC_UL320_.jpg",
-   "n": 495,
-   "op": 99.99,
-   "p": 90.24,
-   "r": 4.6,
-   "t": "2026-11-19T10:35:44.498929+00:00",
-   "title": "Z-hom - Colchón Plegable, colchón de Suelo, colchón Plegable de 3 Piezas, Espuma Extra Gruesa, Esponja de Alta Densidad de una dureza H3, Oeko Tex Standard 140 x 195 x 10 cm"
   }
  ],
  "summary_day": "2026-11-18",
  "tg_offset": 511048116,
  "x_copy": {
   "day": "2026-11-19",
-  "n": 14
+  "n": 15
  }
 }

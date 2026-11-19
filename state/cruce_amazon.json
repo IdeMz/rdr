@@ -1036,6 +1036,21 @@
    "title": "GIGABYTE GeForce RTX 5070 WINDFORCE OC SFF 12G Tarjeta Gráfica - 12GB GDDR7, 192 bits, PCI-E 5.0, 2542 MHz Core Clock, 3 x DP 2.1a, 1 x HDMI 2.1b, NVIDIA DLSS 4",
    "via": "nombre"
   },
+  "4894461950730": {
+   "a": "",
+   "t": "2026-11-19T14:01:04.176634+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "Smartphone Tcl T522E 2BLCA112 K70 POWER Nebula blue"
+    ],
+    "nombre": [
+     "Smartphone Tcl T522E 2ALCA112 K70 POWER Space gray",
+     "TCL K70 4G(Midnight Black)",
+     "TCL NXTPAPER 70 Pro Móvil 5G 8GB+256GB, Pantalla 6,9\" 120Hz, Dorado | Smartphone NXTPAPER 4.0, CPL A"
+    ]
+   }
+  },
   "4894461955711": {
    "a": "",
    "t": "2026-11-14T04:50:24.590570+00:00",
@@ -2219,6 +2234,13 @@
    "a": "B0CVQQLLQT",
    "t": "2026-11-15T00:20:27.121298+00:00",
    "title": "Impresora Multifunción Epson Ecotank ET-2860",
+   "via": "ean"
+  },
+  "8715946735023": {
+   "a": "B0DHYCHGQR",
+   "t": "2026-11-19T14:01:04.176634+00:00",
+   "title": "Epson EF-21G Mini Smart Laser Projector | Proyector Portátil Full HD, 1920 x 1080p, Altavoz Bluetooth de 5W, Proyección a Pared, Suelo o Techo, 1000 Lúmenes, Go",
+   "v": 3,
    "via": "ean"
   },
   "8717496872197": {
@@ -3524,6 +3546,28 @@
    "t": "2026-11-17T01:20:27.817734+00:00",
    "veredicto": "oferta_real"
   },
+  "45075379265": {
+   "ean": "4894461950730",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "TCL K70 Power 4G 8GB/256GB Azul Nebulosa 6,8 pulgadas 120Hz 50MP 6500mAh 33W NFC",
+   "pp_drop": 27,
+   "pp_median": 189.99,
+   "pp_price": 138.99,
+   "t": "2026-11-19T14:01:04.176634+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "Smartphone Tcl T522E 2BLCA112 K70 POWER Nebula blue"
+    ],
+    "nombre": [
+     "Smartphone Tcl T522E 2ALCA112 K70 POWER Space gray",
+     "TCL K70 4G(Midnight Black)",
+     "TCL NXTPAPER 70 Pro Móvil 5G 8GB+256GB, Pantalla 6,9\" 120Hz, Dorado | Smartphone NXTPAPER 4.0, CPL A"
+    ]
+   }
+  },
   "45124316529": {
    "ahorro_vs_amazon": null,
    "amz_low30": null,
@@ -3942,6 +3986,26 @@
      "Proyector Acer MR.JSA11.001 SVGA 4000 LM 800 x 600 px 4000LM"
     ]
    }
+  },
+  "45403202117": {
+   "ahorro_vs_amazon": 14,
+   "amz_low30": null,
+   "amz_median": 639.9,
+   "amz_price": 544.81,
+   "amz_title": "Epson EF-21G Mini Smart Laser Projector | Proyector Portátil Full HD, 1920 x 1080p, Altavoz Bluetooth de 5W, Proyección a Pared, Suelo o Techo, 1000 Lúmenes, Go",
+   "asin": "B0DHYCHGQR",
+   "disponible": true,
+   "ean": "8715946735023",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 544.81 frente a 547.95",
+   "name": "Epson EF-21G Láser 3LCD Tiro Corto 1,33m 1080p Full HD 1000 lúmenes ANSI autoenfoque Proyector",
+   "pp_drop": 22,
+   "pp_median": 699.95,
+   "pp_price": 547.95,
+   "t": "2026-11-19T14:01:04.176634+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
   },
   "45403202125": {
    "ahorro_vs_amazon": -24,
@@ -7913,12 +7977,12 @@
  },
  "night_at": "2026-11-19T06:20:27.624429+00:00",
  "resumen": {
-  "amazon_mas_barato": 20,
+  "amazon_mas_barato": 21,
   "dudoso": 0,
-  "no_esta": 12,
+  "no_esta": 13,
   "oferta_real": 17,
   "pvpr_inflado": 3,
   "sin_precio": 5
  },
- "updated": "2026-11-19T13:35:35.066412+00:00"
+ "updated": "2026-11-19T14:01:04.176634+00:00"
 }
