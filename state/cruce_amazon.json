@@ -1247,6 +1247,13 @@
     ]
    }
   },
+  "5038061168112": {
+   "a": "B0DWS7SR2C",
+   "t": "2026-11-19T22:05:23.802139+00:00",
+   "title": "Russell Hobbs Freidora de Aire Satisfry, 4,3L, 9 Programas,1300W, 27610-56",
+   "v": 3,
+   "via": "ean"
+  },
   "5055387600614": {
    "a": "B0HN7FZYK5",
    "t": "2026-11-14T02:20:24.077147+00:00",
@@ -2404,6 +2411,13 @@
    "v": 3,
    "via": "ean"
   },
+  "8806084809438": {
+   "a": "B0CX24PHPY",
+   "t": "2026-11-19T22:05:23.802139+00:00",
+   "title": "LG 39GS95QE-B - Monitor Gaming Ultragear, Panel OLED, WQHD, 240 Hz, 39\"",
+   "v": 3,
+   "via": "ean"
+  },
   "8806094215038": {
    "a": "B0B9C4DKKG",
    "t": "2026-11-18T15:01:26.987987+00:00",
@@ -2955,6 +2969,26 @@
    "pp_price": 75.95,
    "t": "2026-11-17T00:05:35.720255+00:00",
    "veredicto": "oferta_real"
+  },
+  "39603326576": {
+   "ahorro_vs_amazon": 13,
+   "amz_low30": null,
+   "amz_median": 1060.0,
+   "amz_price": 899.0,
+   "amz_title": "LG 39GS95QE-B - Monitor Gaming Ultragear, Panel OLED, WQHD, 240 Hz, 39\"",
+   "asin": "B0CX24PHPY",
+   "disponible": true,
+   "ean": "8806084809438",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 899.00 frente a 919.00",
+   "name": "LG 39GS95QE-B.AEU Negro 39 pulgadas 2K OLED 240Hz 3ms G-Sync curvo UltraWide Monitor",
+   "pp_drop": 15,
+   "pp_median": 1075.94,
+   "pp_price": 919.0,
+   "t": "2026-11-19T22:05:23.802139+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
   },
   "39617298309": {
    "ahorro_vs_amazon": 19,
@@ -4064,7 +4098,7 @@
    "pp_drop": 26,
    "pp_median": 68.95,
    "pp_price": 50.95,
-   "t": "2026-11-17T17:31:15.607799+00:00",
+   "t": "2026-11-19T22:05:23.802139+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -4746,6 +4780,26 @@
    "pp_price": 266.95,
    "t": "2026-11-13T23:20:24.256283+00:00",
    "veredicto": "oferta_real"
+  },
+  "45948306858": {
+   "ahorro_vs_amazon": -7,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 47.67,
+   "amz_title": "Russell Hobbs Freidora de Aire Satisfry, 4,3L, 9 Programas,1300W, 27610-56",
+   "asin": "B0DWS7SR2C",
+   "disponible": true,
+   "ean": "5038061168112",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 47.67 frente a 50.95",
+   "name": "Russell Hobbs SatisFry 4,3L 1300W 9 programas Freidora de aire",
+   "pp_drop": 26,
+   "pp_median": 68.95,
+   "pp_price": 50.95,
+   "t": "2026-11-19T22:05:23.802139+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
   },
   "45948306885": {
    "ahorro_vs_amazon": 12,
@@ -8348,14 +8402,14 @@
    }
   }
  },
- "night_at": "2026-11-19T06:20:27.624429+00:00",
+ "night_at": "2026-11-19T22:05:23.802139+00:00",
  "resumen": {
-  "amazon_mas_barato": 24,
+  "amazon_mas_barato": 26,
   "dudoso": 0,
   "no_esta": 15,
   "oferta_real": 22,
   "pvpr_inflado": 4,
   "sin_precio": 7
  },
- "updated": "2026-11-19T21:45:51.469863+00:00"
+ "updated": "2026-11-19T22:05:23.802139+00:00"
 }
