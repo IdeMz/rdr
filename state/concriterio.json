@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-19T17:58:45.759988+00:00",
+ "next_at": "2026-11-19T18:11:06.515307+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -3476,16 +3476,6 @@
    "title": "Mochila 40x30x20 Expandible 40x30x25 Viaje Cabina Avion para Ryanair",
    "v": []
   },
-  "B0H2TPD39T": {
-   "c": "Menaje de cocina",
-   "d": 27,
-   "e": "🍳",
-   "m": 68,
-   "p": 109.99,
-   "t": "2026-11-05T17:51:13.928517+00:00",
-   "title": "CAROTE Juego de Ollas y Sartenes Antiadherentes 13 Piezas, Marrón Oscuro",
-   "v": []
-  },
   "B0H33NS6RS": {
    "c": "Robots de cocina",
    "d": 21,
@@ -3707,7 +3697,10 @@
    "v": []
   }
  },
- "problem": {},
+ "problem": {
+  "fails": 1,
+  "last": "HTTP 503"
+ },
  "rejected": {
   "B000IZYWI8": {
    "t": "2026-11-19T14:30:58.584339+00:00",
@@ -3743,10 +3736,6 @@
   },
   "B0CMZ5MD2N": {
    "t": "2026-11-19T08:05:38.436182+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0FB3YQKVJ": {
-   "t": "2026-11-18T18:01:04.377917+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0FGK8CPX5": {
