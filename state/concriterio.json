@@ -43,7 +43,7 @@
   "Monitores": "2026-11-17T16:30:56.399108+00:00",
   "Móviles": "2026-11-18T20:31:00.004559+00:00",
   "Nutrición deportiva": "2026-11-17T14:30:58.598858+00:00",
-  "Oficina": "2026-11-16T10:45:46.172773+00:00",
+  "Oficina": "2026-11-19T13:05:35.393737+00:00",
   "Patinetes": "2026-11-18T12:30:56.291132+00:00",
   "Pequeño electrodoméstico": "2026-11-18T20:01:08.859046+00:00",
   "Perfumes": "2026-11-19T07:35:31.217586+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-19T13:03:18.231631+00:00",
+ "next_at": "2026-11-19T13:31:20.452830+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -225,16 +225,6 @@
    "p": 19.99,
    "t": "2026-11-07T14:11:06.408839+00:00",
    "title": "Advance Mini Senior, Pienso para Perros Senior de Razas Pequeñas con Pollo, 3kg",
-   "v": []
-  },
-  "B0095SMIP8": {
-   "c": "Gatos",
-   "d": 31,
-   "e": "🐱",
-   "m": 60,
-   "p": 4.99,
-   "t": "2026-11-05T13:01:30.947919+00:00",
-   "title": "Vitakraft Magic Clean Classic, arena gatos, no aglomerante (1x 4,2l)",
    "v": []
   },
   "B009WQCIX0": {
@@ -909,6 +899,17 @@
    "s": "ofertas",
    "t": "2026-11-18T11:01:44.682917+00:00",
    "title": "BaByliss Waver Ondas Suferas para el cabello – Barril Recubierto de cerámica, 3 ajustes de calor (160°C-200°C), Ondas sueltas, Sin frizz, Calentamiento rápido, Negro/Dorado, W2447E",
+   "v": []
+  },
+  "B085MMH9QS": {
+   "c": "Oficina",
+   "d": 27,
+   "e": "🖊️",
+   "m": 428,
+   "p": 19.38,
+   "s": "ofertas",
+   "t": "2026-11-19T13:06:19.985065+00:00",
+   "title": "Netuno 100 hojas de cartulina verjurada color blanco A4 210x297 mm 220g Aster Laid White papel de calidad con textura para invitaciones portadas certificados documentos creativos",
    "v": []
   },
   "B086RF6YJQ": {
@@ -3681,6 +3682,14 @@
  },
  "problem": {},
  "rejected": {
+  "B004W6KEDQ": {
+   "t": "2026-11-19T13:05:35.393737+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B01EFPYANS": {
+   "t": "2026-11-19T13:05:35.393737+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B01IUP0Y8E": {
    "t": "2026-11-19T10:05:35.124541+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3716,6 +3725,18 @@
  },
  "reserve": [
   {
+   "a": "B08FBD3RJT",
+   "c": "Oficina",
+   "e": "🖊️",
+   "img": "https://m.media-amazon.com/images/I/61ZTEN7R1JL._AC_UL320_.jpg",
+   "n": 366,
+   "op": 6.23,
+   "p": 5.3,
+   "r": 4.7,
+   "t": "2026-11-19T13:05:35.393737+00:00",
+   "title": "Fixo Paper 65009263. Paquete de 100 Hojas de Color Amarillo Intenso, A4, 80 Gramos"
+  },
+  {
    "a": "B0DZCJYD2C",
    "c": "Relojes",
    "e": "🕰️",
@@ -3738,24 +3759,12 @@
    "r": 4.6,
    "t": "2026-11-19T10:35:44.498929+00:00",
    "title": "Z-hom - Colchón Plegable, colchón de Suelo, colchón Plegable de 3 Piezas, Espuma Extra Gruesa, Esponja de Alta Densidad de una dureza H3, Oeko Tex Standard 140 x 195 x 10 cm"
-  },
-  {
-   "a": "B00N4UFEZO",
-   "c": "Gatos",
-   "e": "🐱",
-   "img": "https://m.media-amazon.com/images/I/71K4G+n5TsL._AC_UL320_.jpg",
-   "n": 1900,
-   "op": 40.89,
-   "p": 29.39,
-   "r": 4.3,
-   "t": "2026-11-19T10:05:35.124541+00:00",
-   "title": "Pienso seco Applaws para Gatos Adultos, Pollo con salmón, 7,5 kg (1 Bolsa) – sin Cereales, Rico en proteínas, Ingredientes Naturales"
   }
  ],
  "summary_day": "2026-11-18",
  "tg_offset": 511048116,
  "x_copy": {
   "day": "2026-11-19",
-  "n": 12
+  "n": 13
  }
 }

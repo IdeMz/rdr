@@ -85,6 +85,13 @@
    "v": 3,
    "via": "ean"
   },
+  "0196388781843": {
+   "a": "B0H45KXKC9",
+   "t": "2026-11-19T13:05:35.393737+00:00",
+   "title": "Microsoft Surface Pro, 13\" | Snapdragon X2 Plus | 16GB RAM, 256GB SSD",
+   "v": 3,
+   "via": "nombre"
+  },
   "0196548864997": {
    "a": "",
    "t": "2026-11-14T01:50:35.475157+00:00",
@@ -5618,11 +5625,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Videojuego Bandai Namco Entertainment Elden Ring: Shadow of the Erdtree Xbox Series X",
-   "pista": "1148095 bytes; 6 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1167959 bytes; 6 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 37,
    "pp_median": 96.95,
    "pp_price": 60.95,
-   "t": "2026-11-19T05:50:25.824647+00:00",
+   "t": "2026-11-19T13:05:35.393737+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -7345,6 +7352,26 @@
     ]
    }
   },
+  "46599143226": {
+   "ahorro_vs_amazon": 9,
+   "amz_low30": 1449.0,
+   "amz_median": null,
+   "amz_price": 1199.0,
+   "amz_title": "Microsoft Surface Pro, 13\" | Snapdragon X2 Plus | 16GB RAM, 256GB SSD",
+   "asin": "B0H45KXKC9",
+   "disponible": true,
+   "ean": "0196388781843",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "Amazon 1199.00 frente a 1320.94",
+   "name": "Tablet 2 en 1 Microsoft Surface Pro 13 Snapdragon X Plus 16GB/256GB 13 pulgadas SSD Windows 11 Home Platino",
+   "pp_drop": 20,
+   "pp_median": 1659.95,
+   "pp_price": 1320.94,
+   "t": "2026-11-19T13:05:35.393737+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "46599143318": {
    "ean": "6942785108035",
    "lista": "candidates",
@@ -7812,12 +7839,12 @@
  },
  "night_at": "2026-11-19T06:20:27.624429+00:00",
  "resumen": {
-  "amazon_mas_barato": 19,
+  "amazon_mas_barato": 20,
   "dudoso": 0,
   "no_esta": 10,
   "oferta_real": 17,
   "pvpr_inflado": 3,
   "sin_precio": 5
  },
- "updated": "2026-11-19T12:35:30.987217+00:00"
+ "updated": "2026-11-19T13:05:35.393737+00:00"
 }
