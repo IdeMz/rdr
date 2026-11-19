@@ -1527,6 +1527,21 @@
     ]
    }
   },
+  "6948052904256": {
+   "a": "",
+   "t": "2026-11-19T13:35:35.066412+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "PXN SF U Palanca de Cambios Manual para Simulador de Carreras PC | 7+R Velocidades, Aleación Alumini",
+     "Thrustmaster TFRP T.Flight Rudder Pedals - PS5, XBOX y PC",
+     "Joystick PXN-2113 Pro Flight Control"
+    ]
+   }
+  },
   "6953156299399": {
    "a": "B0FHK3F3DY",
    "t": "2026-11-14T02:20:24.077147+00:00",
@@ -1733,6 +1748,21 @@
    "t": "2026-11-13T14:35:34.102055+00:00",
    "title": "NIIMBOT B31 Impresora de etiquetas con etiquetas, Bluetooth gris y blanco",
    "via": "nombre"
+  },
+  "6977400140022": {
+   "a": "",
+   "t": "2026-11-19T13:35:35.066412+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Honor Auriculares Bluetooth Choice Earbuds Clip con Estuche de Carga- Autonomía 7h- Negros",
+     "Honor Choice Earbuds S8 Auriculares Bluetooth ANC 50dB LDAC",
+     "Honor Earbuds A Pro True - Auriculares in-Ear inalámbricos, Color Blanco"
+    ]
+   }
   },
   "6977728943794": {
    "a": "",
@@ -5592,6 +5622,28 @@
    "t": "2026-11-16T23:35:20.072320+00:00",
    "veredicto": "amazon_mas_barato"
   },
+  "46212467214": {
+   "ean": "6977400140022",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Honor Choice Headphones Pro Negro Diadema ANC Bluetooth 5.4 80h Multipunto Auriculares inalámbricos",
+   "pp_drop": 40,
+   "pp_median": 59.99,
+   "pp_price": 35.95,
+   "t": "2026-11-19T13:35:35.066412+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Honor Auriculares Bluetooth Choice Earbuds Clip con Estuche de Carga- Autonomía 7h- Negros",
+     "Honor Choice Earbuds S8 Auriculares Bluetooth ANC 50dB LDAC",
+     "Honor Earbuds A Pro True - Auriculares in-Ear inalámbricos, Color Blanco"
+    ]
+   }
+  },
   "46212467215": {
    "ahorro_vs_amazon": 27,
    "amz_low30": null,
@@ -7635,6 +7687,28 @@
     ]
    }
   },
+  "46599145192": {
+   "ean": "6948052904256",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Pedalera PXN Vector X PD-LP PC Célula de Carga",
+   "pp_drop": 24,
+   "pp_median": 440.95,
+   "pp_price": 332.96,
+   "t": "2026-11-19T13:35:35.066412+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "PXN SF U Palanca de Cambios Manual para Simulador de Carreras PC | 7+R Velocidades, Aleación Alumini",
+     "Thrustmaster TFRP T.Flight Rudder Pedals - PS5, XBOX y PC",
+     "Joystick PXN-2113 Pro Flight Control"
+    ]
+   }
+  },
   "46680832678": {
    "ean": "4711121381409",
    "lista": "candidates",
@@ -7841,10 +7915,10 @@
  "resumen": {
   "amazon_mas_barato": 20,
   "dudoso": 0,
-  "no_esta": 10,
+  "no_esta": 12,
   "oferta_real": 17,
   "pvpr_inflado": 3,
   "sin_precio": 5
  },
- "updated": "2026-11-19T13:05:35.393737+00:00"
+ "updated": "2026-11-19T13:35:35.066412+00:00"
 }
