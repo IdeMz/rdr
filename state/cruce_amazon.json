@@ -3476,11 +3476,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Sony PlayStation 5 Slim 1TB + 2 Mandos DualSense Blanco",
-   "pista": "1445701 bytes; 6 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1434237 bytes; 6 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 11,
    "pp_median": 999.0,
    "pp_price": 889.89,
-   "t": "2026-11-18T20:31:00.004559+00:00",
+   "t": "2026-11-19T02:35:21.194284+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -6907,11 +6907,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Salicru SPS 1500 ONE 900W 4 tomas SAI",
-   "pista": "1190077 bytes; 3 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1393308 bytes; 16 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 15,
    "pp_median": 160.95,
    "pp_price": 136.95,
-   "t": "2026-11-18T20:31:00.004559+00:00",
+   "t": "2026-11-19T02:35:21.194284+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -7514,7 +7514,7 @@
    }
   }
  },
- "night_at": "2026-11-19T01:35:21.806157+00:00",
+ "night_at": "2026-11-19T02:35:21.194284+00:00",
  "resumen": {
   "amazon_mas_barato": 26,
   "dudoso": 2,
@@ -7523,5 +7523,5 @@
   "pvpr_inflado": 3,
   "sin_precio": 8
  },
- "updated": "2026-11-19T01:35:21.806157+00:00"
+ "updated": "2026-11-19T02:35:21.194284+00:00"
 }
