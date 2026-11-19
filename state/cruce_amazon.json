@@ -742,6 +742,13 @@
     ]
    }
   },
+  "4038986183147": {
+   "a": "B0FR9M5NL6",
+   "t": "2026-11-19T23:20:27.090054+00:00",
+   "title": "AOC Q27G41ZDF Gaming Monitor 27 Pulgadas 240Hz Panel QD-OLED, 0.03ms GtG, HDR10, G-Sync Compatible, (2560x1440 HDMI 1x 2.0 DP 1x 1.4) Negro",
+   "v": 3,
+   "via": "ean"
+  },
   "4038986183208": {
    "a": "B0G4N31XVY",
    "t": "2026-11-19T16:30:56.884084+00:00",
@@ -2471,6 +2478,13 @@
    "title": "LG Smart Monitor 27U731SA-W - 27'', IPS, 4K, 60 Hz, DCI-P3-90%, Blanco",
    "via": "ean"
   },
+  "8806097195290": {
+   "a": "B0F19836RP",
+   "t": "2026-11-19T23:20:27.090054+00:00",
+   "title": "Samsung Galaxy Tab S10 FE, Tableta Android, Pantalla LCD de 10,9 Pulgadas, WiFi, RAM 8 GB, 128 GB, 8000 mAh, S Pen, Android 15, IP68, Azul [versión Italiana]",
+   "v": 3,
+   "via": "nombre"
+  },
   "8806097480167": {
    "a": "B0G2RM5BK9",
    "t": "2026-11-14T12:15:37.671280+00:00",
@@ -3119,22 +3133,22 @@
    "veredicto": "sin_precio"
   },
   "40045392284": {
-   "ahorro_vs_amazon": -2,
+   "ahorro_vs_amazon": -3,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 154.04,
+   "amz_price": 152.0,
    "amz_title": "ASUS VY249HGE - Monitor Gaming Eye Care de 24 Pulgadas FHD (1920x1080), IPS, 144 Hz, IPS, SmoothMotion, 1 ms, FreeSync Premium, Eye Care Plus, antiparpadeos, Tr",
    "asin": "B0C4FY8DC6",
    "disponible": true,
    "ean": "4711387078389",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "Amazon 154.04 frente a 156.99",
+   "motivo": "Amazon 152.00 frente a 156.99",
    "name": "ASUS VY249HGE Negro 23,8 pulgadas Full HD IPS 144Hz 1ms FreeSync Premium Monitor",
    "pp_drop": 18,
    "pp_median": 190.45,
    "pp_price": 156.99,
-   "t": "2026-11-17T22:05:22.962766+00:00",
+   "t": "2026-11-19T23:20:27.090054+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -4866,6 +4880,26 @@
    "pp_median": 263.95,
    "pp_price": 238.26,
    "t": "2026-11-17T01:05:23.235625+00:00",
+   "veredicto": "oferta_real"
+  },
+  "45948307222": {
+   "ahorro_vs_amazon": 36,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 702.58,
+   "amz_title": "Samsung Galaxy Tab S10 FE, Tableta Android, Pantalla LCD de 10,9 Pulgadas, WiFi, RAM 8 GB, 128 GB, 8000 mAh, S Pen, Android 15, IP68, Azul [versión Italiana]",
+   "asin": "B0F19836RP",
+   "disponible": true,
+   "ean": "8806097195290",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "36 % por debajo del habitual en Amazon (702.58)",
+   "name": "Samsung Galaxy Tab S10 FE WiFi 8GB/128GB Plata 10,9 pulgadas LCD 90Hz 13MP 8000mAh",
+   "pp_drop": 15,
+   "pp_median": 529.9,
+   "pp_price": 449.9,
+   "t": "2026-11-19T23:20:27.090054+00:00",
+   "v": 3,
    "veredicto": "oferta_real"
   },
   "45956990791": {
@@ -7091,6 +7125,26 @@
    "v": 3,
    "veredicto": "sin_precio"
   },
+  "46599139882": {
+   "ahorro_vs_amazon": 6,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 340.4,
+   "amz_title": "AOC Q27G41ZDF Gaming Monitor 27 Pulgadas 240Hz Panel QD-OLED, 0.03ms GtG, HDR10, G-Sync Compatible, (2560x1440 HDMI 1x 2.0 DP 1x 1.4) Negro",
+   "asin": "B0FR9M5NL6",
+   "disponible": true,
+   "ean": "4038986183147",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "solo 6 % por debajo del habitual en Amazon (340.40)",
+   "name": "Monitor gaming AOC G4 26,5 pulgadas QD-OLED 240Hz QHD OLED Negro/Rojo Q27G41ZDF",
+   "pp_drop": 16,
+   "pp_median": 379.0,
+   "pp_price": 319.0,
+   "t": "2026-11-19T23:20:27.090054+00:00",
+   "v": 3,
+   "veredicto": "dudoso"
+  },
   "46599139889": {
    "ahorro_vs_amazon": 5,
    "amz_low30": null,
@@ -8511,14 +8565,14 @@
    }
   }
  },
- "night_at": "2026-11-19T23:05:22.619759+00:00",
+ "night_at": "2026-11-19T23:20:27.090054+00:00",
  "resumen": {
   "amazon_mas_barato": 29,
-  "dudoso": 0,
+  "dudoso": 1,
   "no_esta": 15,
-  "oferta_real": 23,
+  "oferta_real": 24,
   "pvpr_inflado": 4,
   "sin_precio": 7
  },
- "updated": "2026-11-19T23:05:22.619759+00:00"
+ "updated": "2026-11-19T23:20:27.090054+00:00"
 }
