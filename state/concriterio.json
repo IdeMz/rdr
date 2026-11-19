@@ -28,7 +28,7 @@
   "Fotografía": "2026-11-18T15:01:26.987987+00:00",
   "Freidoras de aire": "2026-11-18T18:30:58.613853+00:00",
   "Gaming": "2026-11-18T15:31:00.962603+00:00",
-  "Gatos": "2026-11-14T18:30:55.099025+00:00",
+  "Gatos": "2026-11-19T10:05:35.124541+00:00",
   "Herramientas": "2026-11-14T21:01:00.449874+00:00",
   "Higiene personal": "2026-11-16T15:05:39.512603+00:00",
   "Iluminación": "2026-11-15T11:45:37.493065+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-19T10:05:04.697224+00:00",
+ "next_at": "2026-11-19T10:35:06.311593+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2862,6 +2862,17 @@
    "title": "INIU 45W Power Bank, Fino 10000mAh Inalámbrico Magnético Batería Externa",
    "v": []
   },
+  "B0FN4CRR2B": {
+   "c": "Gatos",
+   "d": 46,
+   "e": "🐱",
+   "m": 422,
+   "p": 4.29,
+   "s": "ofertas",
+   "t": "2026-11-19T10:06:12.113341+00:00",
+   "title": "Applaws Comida Húmeda para Gatos 100% Natural – Surtido de Caldos de Pescado, en Bolsas con Boquilla de 85g",
+   "v": []
+  },
   "B0FN8FR84Q": {
    "c": "Aspiradoras",
    "d": 34,
@@ -3694,6 +3705,10 @@
    "t": "2026-11-18T12:30:56.291132+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B01IUP0Y8E": {
+   "t": "2026-11-19T10:05:35.124541+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B06XC29B5G": {
    "t": "2026-11-18T11:01:05.531917+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3733,6 +3748,18 @@
  },
  "reserve": [
   {
+   "a": "B00N4UFEZO",
+   "c": "Gatos",
+   "e": "🐱",
+   "img": "https://m.media-amazon.com/images/I/71K4G+n5TsL._AC_UL320_.jpg",
+   "n": 1900,
+   "op": 40.89,
+   "p": 29.39,
+   "r": 4.3,
+   "t": "2026-11-19T10:05:35.124541+00:00",
+   "title": "Pienso seco Applaws para Gatos Adultos, Pollo con salmón, 7,5 kg (1 Bolsa) – sin Cereales, Rico en proteínas, Ingredientes Naturales"
+  },
+  {
    "a": "B0F13RK113",
    "c": "Perros",
    "e": "🐶",
@@ -3755,24 +3782,12 @@
    "r": 4.5,
    "t": "2026-11-19T07:35:31.217586+00:00",
    "title": "CALVIN KLEIN CK One Essence Parfum Intense – Perfume unisex amaderado cítrico – Con notas de bergamota, té verde y sándalo – Fragancia duradera"
-  },
-  {
-   "a": "B07F6LYVT6",
-   "c": "Climatización",
-   "e": "🌬️",
-   "img": "https://m.media-amazon.com/images/I/71GMq15KvWL._AC_UL320_.jpg",
-   "n": 1100,
-   "op": 15.99,
-   "p": 11.99,
-   "r": 4.3,
-   "t": "2026-11-19T07:01:21.085197+00:00",
-   "title": "Rubson AERO 360º Baño, deshumidificador portátil sin cable para baño, absorbe humedad para la circulación del aire, disipador de condensación antihumedad, dispositivo y tableta (450 g)"
   }
  ],
  "summary_day": "2026-11-18",
  "tg_offset": 511048116,
  "x_copy": {
   "day": "2026-11-19",
-  "n": 6
+  "n": 7
  }
 }
