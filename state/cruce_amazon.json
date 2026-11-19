@@ -887,6 +887,13 @@
    "title": "MSI Gaming RTX 5070 Ti 16G Gaming Trio OC Tarjeta gráfica (16 GB GDDR7, 256 bits, rendimiento extremo: 2580, DisplayPort x 3 2.1a, HDMI 2.1b, NVIDIA Blackwell A",
    "via": "nombre"
   },
+  "4711377343275": {
+   "a": "B0GP9FF1RC",
+   "t": "2026-11-19T17:30:56.735106+00:00",
+   "title": "msi mag 274CF E20 Gaming Monitor 27 Pulgadas 1920 x 1080 (FHD), 200Hz, AMD FreeSync Premium, HDMI, DisplayPort, VESA, inclinación Ajustable, 0,5 ms, Negro",
+   "v": 3,
+   "via": "modelo"
+  },
   "4711377344272": {
    "a": "",
    "t": "2026-11-17T23:35:25.173455+00:00",
@@ -2918,22 +2925,22 @@
    "veredicto": "sin_precio"
   },
   "39633853398": {
-   "ahorro_vs_amazon": 25,
+   "ahorro_vs_amazon": 29,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 48.17,
+   "amz_price": 44.72,
    "amz_title": "JVC HA-NP35T Auricolare True Wireless Stereo (TWS) In-ear Musica e Chiamate Bluetooth Bianco",
    "asin": "B0B2CP8722",
    "disponible": true,
    "ean": "4975769470707",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "25 % por debajo del habitual en Amazon (48.17)",
+   "motivo": "29 % por debajo del habitual en Amazon (44.72)",
    "name": "JVC HA-NP35T Blanco TWS Bluetooth 5.1 17h IPX4 Auriculares inalámbricos",
-   "pp_drop": 25,
+   "pp_drop": 33,
    "pp_median": 47.95,
-   "pp_price": 35.95,
-   "t": "2026-11-18T18:30:58.613853+00:00",
+   "pp_price": 31.94,
+   "t": "2026-11-19T17:30:56.735106+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -5306,6 +5313,27 @@
      "Amazon Kindle Paperwhite (última generación): ahora más fino y ligero, con pantalla de 7\" y luz cáli"
     ]
    }
+  },
+  "46136341768": {
+   "ahorro_vs_amazon": null,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": null,
+   "amz_title": "msi mag 274CF E20 Gaming Monitor 27 Pulgadas 1920 x 1080 (FHD), 200Hz, AMD FreeSync Premium, HDMI, DisplayPort, VESA, inclinación Ajustable, 0,5 ms, Negro",
+   "asin": "B0GP9FF1RC",
+   "disponible": true,
+   "ean": "4711377343275",
+   "encontrado_por": "modelo",
+   "lista": "candidates",
+   "motivo": "en Amazon pero sin precio o no disponible",
+   "name": "MSI MAG 274CF X24 27 pulgadas Full HD Rapid VA 240Hz curvo Monitor",
+   "pista": "1291848 bytes; 7 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pp_drop": 24,
+   "pp_median": 156.95,
+   "pp_price": 119.0,
+   "t": "2026-11-19T17:30:56.735106+00:00",
+   "v": 3,
+   "veredicto": "sin_precio"
   },
   "46146890816": {
    "ahorro_vs_amazon": -13,
@@ -8091,7 +8119,7 @@
   "no_esta": 13,
   "oferta_real": 18,
   "pvpr_inflado": 3,
-  "sin_precio": 6
+  "sin_precio": 7
  },
- "updated": "2026-11-19T17:01:09.614407+00:00"
+ "updated": "2026-11-19T17:30:56.735106+00:00"
 }
