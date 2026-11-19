@@ -56,7 +56,7 @@
   "Robots de cocina": "2026-11-15T15:15:41.208340+00:00",
   "Salud": "2026-11-18T21:01:05.865760+00:00",
   "Smartwatch": "2026-11-19T15:01:09.213912+00:00",
-  "Suplementos": "2026-11-17T14:01:04.582833+00:00",
+  "Suplementos": "2026-11-19T20:45:42.101471+00:00",
   "Tablets": "2026-11-17T16:01:10.840347+00:00",
   "Televisores": "2026-11-18T18:01:04.377917+00:00",
   "Textil hogar": "2026-11-18T14:01:13.022640+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-19T20:45:33.888457+00:00",
+ "next_at": "2026-11-19T21:15:12.099505+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -320,6 +320,17 @@
    "p": 19.99,
    "t": "2026-11-10T13:01:30.414464+00:00",
    "title": "Optimum Nutrition Creatina Monohidrato Micronizada en Polvo, 634g",
+   "v": []
+  },
+  "B00WEODURK": {
+   "c": "Suplementos",
+   "d": 54,
+   "e": "💊",
+   "m": 442,
+   "p": 6.85,
+   "s": "ambas",
+   "t": "2026-11-19T20:46:14.279727+00:00",
+   "title": "Multicentrum Hombre 50+, Multivitamínico Multimineral, 30 Comprimidos",
    "v": []
   },
   "B00XFXQ2EW": {
@@ -3760,6 +3771,18 @@
  },
  "reserve": [
   {
+   "a": "B008FN6YOU",
+   "c": "Suplementos",
+   "e": "💊",
+   "img": "https://m.media-amazon.com/images/I/717HV1eC9SL._AC_UL320_.jpg",
+   "n": 5400,
+   "op": 34.99,
+   "p": 18.99,
+   "r": 4.6,
+   "t": "2026-11-19T20:45:42.101471+00:00",
+   "title": "Optimum Nutrition Opti-Men, Multivitamínico de Alta Potencia para Hombres"
+  },
+  {
    "a": "B076MTNJCR",
    "c": "Cuidado de la piel",
    "e": "🧴",
@@ -3776,6 +3799,6 @@
  "tg_offset": 511048116,
  "x_copy": {
   "day": "2026-11-19",
-  "n": 27
+  "n": 28
  }
 }
