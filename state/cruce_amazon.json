@@ -1562,6 +1562,13 @@
    "v": 3,
    "via": "nombre"
   },
+  "6932554402914": {
+   "a": "B0HJZ5ZL6D",
+   "t": "2026-11-19T23:50:26.107609+00:00",
+   "title": "XIAOMI Watch S5 41mm Smartwatch, AMOLED, 14 Días de Batería, GPS, Azul",
+   "v": 3,
+   "via": "ean"
+  },
   "6935364052522": {
    "a": "B08FX98B59",
    "t": "2026-11-17T03:05:20.365221+00:00",
@@ -2707,11 +2714,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Logitech C925E Calidad FullHD 30fps micrófono Webcam",
-   "pista": "2233533 bytes; 17 a-price; caja de precio; disponibilidad: No disponible.",
+   "pista": "2711080 bytes; 17 a-price; caja de precio; disponibilidad: No disponible.",
    "pp_drop": 23,
    "pp_median": 64.95,
    "pp_price": 50.08,
-   "t": "2026-11-19T06:20:27.624429+00:00",
+   "t": "2026-11-19T23:50:26.107609+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -4406,7 +4413,7 @@
    "pp_drop": 14,
    "pp_median": 699.0,
    "pp_price": 599.0,
-   "t": "2026-11-17T22:20:31.920357+00:00",
+   "t": "2026-11-19T23:50:26.107609+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -6842,6 +6849,26 @@
    "t": "2026-11-14T23:50:25.477607+00:00",
    "veredicto": "dudoso"
   },
+  "46599138672": {
+   "ahorro_vs_amazon": 17,
+   "amz_low30": 229.99,
+   "amz_median": null,
+   "amz_price": 194.99,
+   "amz_title": "XIAOMI Watch S5 41mm Smartwatch, AMOLED, 14 Días de Batería, GPS, Azul",
+   "asin": "B0HJZ5ZL6D",
+   "disponible": true,
+   "ean": "6932554402914",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 194.99 frente a 191.00",
+   "name": "Xiaomi Watch S5 41 mm Azul Claro Versión global 1,48 pulgadas AMOLED GPS doble banda Mapas offline Llamadas Bluetooth 21 días 5ATM",
+   "pp_drop": 17,
+   "pp_median": 229.0,
+   "pp_price": 191.0,
+   "t": "2026-11-19T23:50:26.107609+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "46599138766": {
    "ean": "6976367680916",
    "lista": "candidates",
@@ -8565,14 +8592,14 @@
    }
   }
  },
- "night_at": "2026-11-19T23:35:21.890662+00:00",
+ "night_at": "2026-11-19T23:50:26.107609+00:00",
  "resumen": {
-  "amazon_mas_barato": 29,
+  "amazon_mas_barato": 30,
   "dudoso": 1,
   "no_esta": 15,
   "oferta_real": 24,
   "pvpr_inflado": 4,
   "sin_precio": 7
  },
- "updated": "2026-11-19T23:35:21.890662+00:00"
+ "updated": "2026-11-19T23:50:26.107609+00:00"
 }
