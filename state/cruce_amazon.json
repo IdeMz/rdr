@@ -380,6 +380,21 @@
    "title": "Kingston Canvas Select Plus Tarjeta de Memoria microSD 512GB microSDXC Gen3 150MB/s A1 Incluye Adaptador de SD - SDCS3/512GB",
    "via": "ean"
   },
+  "0740617349504": {
+   "a": "",
+   "t": "2026-11-19T19:15:40.361750+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "Kingston Fury Renegade G5 PCIe 5.0 NVMe M.2 2280 SSD 4T-SFYR2S/4T0"
+    ],
+    "nombre": [
+     "Kingston Fury Renegade G5 PCIe 5.0 NVMe M.2 2280 SSD 2T-SFYR2S/2T0",
+     "Kingston Fury Renegade G5 PCIe 5.0 NVMe M.2 2280 SSD 4T-SFYR2S/4T0",
+     "Kingston FURY Renegade 2000G PCIe 4.0 NVMe SSD W/Disipador térmico, Para jugadores, entusiastas y su"
+    ]
+   }
+  },
   "0741365254638": {
    "a": "B0G2LRC883",
    "t": "2026-11-18T02:20:29.775184+00:00",
@@ -4030,6 +4045,28 @@
    "t": "2026-11-14T17:20:46.627491+00:00",
    "veredicto": "amazon_mas_barato"
   },
+  "45403202059": {
+   "ean": "0740617349504",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Kingston Fury Renegade 4TB NVMe M.2 PCIe 5.0 2280 14800MB/s SSD",
+   "pp_drop": 16,
+   "pp_median": 1189.95,
+   "pp_price": 1000.95,
+   "t": "2026-11-19T19:15:40.361750+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "Kingston Fury Renegade G5 PCIe 5.0 NVMe M.2 2280 SSD 4T-SFYR2S/4T0"
+    ],
+    "nombre": [
+     "Kingston Fury Renegade G5 PCIe 5.0 NVMe M.2 2280 SSD 2T-SFYR2S/2T0",
+     "Kingston Fury Renegade G5 PCIe 5.0 NVMe M.2 2280 SSD 4T-SFYR2S/4T0",
+     "Kingston FURY Renegade 2000G PCIe 4.0 NVMe SSD W/Disipador térmico, Para jugadores, entusiastas y su"
+    ]
+   }
+  },
   "45403202116": {
    "ean": "4711474096838",
    "lista": "candidates",
@@ -5852,11 +5889,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Videojuego Bandai Namco Entertainment Elden Ring: Shadow of the Erdtree Xbox Series X",
-   "pista": "1167959 bytes; 6 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1131240 bytes; 6 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 37,
    "pp_median": 96.95,
    "pp_price": 60.95,
-   "t": "2026-11-19T13:05:35.393737+00:00",
+   "t": "2026-11-19T19:15:40.361750+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -8153,10 +8190,10 @@
  "resumen": {
   "amazon_mas_barato": 22,
   "dudoso": 0,
-  "no_esta": 14,
+  "no_esta": 15,
   "oferta_real": 19,
   "pvpr_inflado": 3,
   "sin_precio": 7
  },
- "updated": "2026-11-19T18:45:44.590047+00:00"
+ "updated": "2026-11-19T19:15:40.361750+00:00"
 }
