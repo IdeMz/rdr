@@ -60,14 +60,14 @@
   "Tablets": "2026-11-17T16:01:10.840347+00:00",
   "Televisores": "2026-11-18T18:01:04.377917+00:00",
   "Textil hogar": "2026-11-18T14:01:13.022640+00:00",
-  "Videojuegos": "2026-11-17T09:01:06.401047+00:00",
+  "Videojuegos": "2026-11-19T21:15:40.155765+00:00",
   "Zapatillas": "2026-11-19T09:05:37.877879+00:00",
   "eReaders": "2026-11-16T13:55:32.747613+00:00"
  },
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-19T21:15:12.099505+00:00",
+ "next_at": "2026-11-19T21:45:01.396448+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1105,6 +1105,17 @@
    "s": "ofertas",
    "t": "2026-11-18T21:01:29.823888+00:00",
    "title": "SwitchBot - Termohigrómetro Digital con Pantalla LCD | Sensor Digital de Temperatura y Humedad | Bluetooth | Alerta Inteligente | Almacenamiento de Datos",
+   "v": []
+  },
+  "B08HLY9X21": {
+   "c": "Videojuegos",
+   "d": 23,
+   "e": "🎮",
+   "m": 443,
+   "p": 35.24,
+   "s": "ofertas",
+   "t": "2026-11-19T21:16:28.494035+00:00",
+   "title": "VASAGLE Mesa de Consola, Tablero de Vidrio Templado, Marco de Metal",
    "v": []
   },
   "B08JLG459W": {
@@ -3262,16 +3273,6 @@
    "title": "Ginour 90Nm Taladro Percutor a Bateria sin escobillas, 21V Atornillador",
    "v": []
   },
-  "B0GGCDV1Q1": {
-   "c": "Móviles",
-   "d": 22,
-   "e": "📱",
-   "m": 73,
-   "p": 429.0,
-   "t": "2026-11-05T20:46:08.089055+00:00",
-   "title": "Google Pixel 10a - 7 años de Nuevas actualizaciones y Funciones, más de 30 Horas de batería, Asistente de Cámara, Gemini Live, Seguridad de Pixel - Obsidiana, 128GB",
-   "v": []
-  },
   "B0GGJ9YH2D": {
    "c": "Componentes PC",
    "d": 14,
@@ -3744,12 +3745,20 @@
    "t": "2026-11-19T11:35:32.511367+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B08H99BPJN": {
+   "t": "2026-11-19T21:15:40.155765+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B09V8C4QP9": {
    "t": "2026-11-16T19:55:35.023364+00:00",
    "why": "descartada a mano"
   },
   "B0BVBPSBYM": {
    "t": "2026-11-19T14:30:58.584339+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0CJJCZMKJ": {
+   "t": "2026-11-19T21:15:40.155765+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0CMZ5MD2N": {
@@ -3770,6 +3779,18 @@
   }
  },
  "reserve": [
+  {
+   "a": "B09VB54T5L",
+   "c": "Videojuegos",
+   "e": "🎮",
+   "img": "https://m.media-amazon.com/images/I/61+sd5d3LbL._AC_UL320_.jpg",
+   "n": 1800,
+   "op": 89.99,
+   "p": 81.22,
+   "r": 4.6,
+   "t": "2026-11-19T21:15:40.155765+00:00",
+   "title": "Consola Yaheetech con 1 cajón, 100 x 30 x 80 cm, Blanca"
+  },
   {
    "a": "B008FN6YOU",
    "c": "Suplementos",
@@ -3799,6 +3820,6 @@
  "tg_offset": 511048116,
  "x_copy": {
   "day": "2026-11-19",
-  "n": 28
+  "n": 29
  }
 }

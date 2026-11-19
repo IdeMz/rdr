@@ -165,6 +165,13 @@
    "v": 3,
    "via": "ean"
   },
+  "0199251426322": {
+   "a": "B0G4SJQSZV",
+   "t": "2026-11-19T21:15:40.155765+00:00",
+   "title": "HP EliteBook 6 G1i, Intel Ultra 5 225U 1.5GHz, 13.3\" WUXGA, 16GB RAM, 512GB SSD, WiFi, Bluetooth, Webcam, Lector de Huellas, Teclado Retroiluminado, Windows 11 ",
+   "v": 3,
+   "via": "modelo"
+  },
   "0199251521225": {
    "a": "",
    "t": "2026-11-17T22:50:28.729529+00:00",
@@ -2836,7 +2843,7 @@
    "veredicto": "amazon_mas_barato"
   },
   "38277783220": {
-   "ahorro_vs_amazon": 71,
+   "ahorro_vs_amazon": 73,
    "amz_low30": null,
    "amz_median": null,
    "amz_price": 289.37,
@@ -2846,12 +2853,12 @@
    "ean": "5706991023008",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "71 % por debajo del habitual en Amazon (289.37)",
+   "motivo": "73 % por debajo del habitual en Amazon (289.37)",
    "name": "Jabra Evolve2 65 MS Mono Negro Diadema Bluetooth 5.0 Auriculares inalámbricos",
-   "pp_drop": 18,
+   "pp_drop": 24,
    "pp_median": 102.95,
-   "pp_price": 83.95,
-   "t": "2026-11-18T19:01:22.092208+00:00",
+   "pp_price": 77.95,
+   "t": "2026-11-19T21:15:40.155765+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -7275,6 +7282,26 @@
    "t": "2026-11-14T16:45:37.700799+00:00",
    "veredicto": "oferta_real"
   },
+  "46599140953": {
+   "ahorro_vs_amazon": 10,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 1124.88,
+   "amz_title": "HP EliteBook 6 G1i, Intel Ultra 5 225U 1.5GHz, 13.3\" WUXGA, 16GB RAM, 512GB SSD, WiFi, Bluetooth, Webcam, Lector de Huellas, Teclado Retroiluminado, Windows 11 ",
+   "asin": "B0G4SJQSZV",
+   "disponible": true,
+   "ean": "0199251426322",
+   "encontrado_por": "modelo",
+   "lista": "candidates",
+   "motivo": "10 % por debajo del habitual en Amazon (1124.88)",
+   "name": "Portátil HP EliteBook 6 G1i Wolf Pro Security Edition 16GB/512GB 13,3 pulgadas WUXGA Intel Core Ultra 5 225U SSD Plata",
+   "pp_drop": 15,
+   "pp_median": 1186.95,
+   "pp_price": 1008.95,
+   "t": "2026-11-19T21:15:40.155765+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "46599141105": {
    "ahorro_vs_amazon": 3,
    "amz_low30": null,
@@ -8272,9 +8299,9 @@
   "amazon_mas_barato": 23,
   "dudoso": 0,
   "no_esta": 15,
-  "oferta_real": 20,
+  "oferta_real": 21,
   "pvpr_inflado": 4,
   "sin_precio": 7
  },
- "updated": "2026-11-19T20:45:42.101471+00:00"
+ "updated": "2026-11-19T21:15:40.155765+00:00"
 }
