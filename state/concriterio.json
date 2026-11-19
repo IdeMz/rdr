@@ -15,7 +15,7 @@
   "Camping y montaña": "2026-11-18T14:30:58.889249+00:00",
   "Cargadores y baterías": "2026-11-17T19:15:39.946523+00:00",
   "Ciclismo": "2026-11-17T07:30:53.001889+00:00",
-  "Climatización": "2026-11-17T15:01:35.153027+00:00",
+  "Climatización": "2026-11-19T07:01:21.085197+00:00",
   "Colchones y almohadas": "2026-11-17T10:01:21.690221+00:00",
   "Componentes PC": "2026-11-16T16:15:49.892288+00:00",
   "Cuidado de la piel": "2026-11-17T10:31:06.725588+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-18T21:56:09.837158+00:00",
+ "next_at": "2026-11-19T07:31:05.925929+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1023,16 +1023,6 @@
    "s": "ofertas",
    "t": "2026-11-12T21:56:31.030360+00:00",
    "title": "Rowenta Optiliss, plancha de pelo, calentamiento rápido, SF3210",
-   "v": []
-  },
-  "B08GDC99PX": {
-   "c": "Domótica",
-   "d": 44,
-   "e": "💡",
-   "m": 48,
-   "p": 9.99,
-   "t": "2026-11-04T23:03:00.315188+00:00",
-   "title": "Tapo L530E - Bombilla Inteligente WiFi, RGB Multicolor, 800lm, 8.3W, E27",
    "v": []
   },
   "B08GV4YYV7": {
@@ -3300,6 +3290,17 @@
    "title": "Ninja MAX PRO, Freidora de Aire sin Aceite, 6,2L, Piedra/Dorado",
    "v": []
   },
+  "B0GSX4BP21": {
+   "c": "Climatización",
+   "d": 36,
+   "e": "🌬️",
+   "m": 416,
+   "p": 102.59,
+   "s": "busqueda",
+   "t": "2026-11-19T07:02:10.057083+00:00",
+   "title": "Devola Deshumidificador 12L de Bajo Consumo con Filtro de Carbón",
+   "v": []
+  },
   "B0GSZ6BPW9": {
    "c": "Aspiradoras",
    "d": 43,
@@ -3682,10 +3683,6 @@
    "t": "2026-11-18T10:30:54.867859+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B005U94N9A": {
-   "t": "2026-11-18T07:01:05.386750+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B00BX5FOCK": {
    "t": "2026-11-18T10:30:54.867859+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3704,6 +3701,10 @@
   },
   "B06XC29B5G": {
    "t": "2026-11-18T11:01:05.531917+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B07HGFBXT8": {
+   "t": "2026-11-19T07:01:21.085197+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B07YYJRXQR": {
@@ -3725,50 +3726,30 @@
   "B0FB3YQKVJ": {
    "t": "2026-11-18T18:01:04.377917+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0HHM2Z9GN": {
+   "t": "2026-11-19T07:01:21.085197+00:00",
+   "why": "alta hace 29 dias"
   }
  },
  "reserve": [
   {
-   "a": "B0H6XGHLZV",
-   "c": "Móviles",
-   "e": "📱",
-   "img": "https://m.media-amazon.com/images/I/61Bpjk0J8XL._AC_UY218_.jpg",
-   "n": 68,
-   "op": 799.99,
-   "p": 649.9,
-   "r": 4.2,
-   "t": "2026-11-18T20:31:00.004559+00:00",
-   "title": "POCO F9 Pro, Smartphone 12+512, Blanco, batería de 6330mAh, carga de 100 W"
-  },
-  {
-   "a": "B01J9LPTFG",
-   "c": "Pequeño electrodoméstico",
-   "e": "🍞",
-   "img": "https://m.media-amazon.com/images/I/61vqhDa+3AL._AC_UL320_.jpg",
-   "n": 7100,
-   "op": 48.11,
-   "p": 25.51,
-   "r": 4.4,
-   "t": "2026-11-18T20:01:08.859046+00:00",
-   "title": "Russell Hobbs Tostadora Retro Roja, 2 Ranuras Anchas, 1100W, 21680-56"
-  },
-  {
-   "a": "B07Y4MJFWC",
-   "c": "Bebé",
-   "e": "🍼",
-   "img": "https://m.media-amazon.com/images/I/71Bva5ICNsL._AC_UL320_.jpg",
-   "n": 68,
-   "op": 50.9,
-   "p": 35.93,
-   "r": 4.7,
-   "t": "2026-11-18T19:01:22.092208+00:00",
-   "title": "Pañales Bambo Nature talla 4 – 7 a 14kg (Pack 6 × 24 Un)"
+   "a": "B07F6LYVT6",
+   "c": "Climatización",
+   "e": "🌬️",
+   "img": "https://m.media-amazon.com/images/I/71GMq15KvWL._AC_UL320_.jpg",
+   "n": 1100,
+   "op": 15.99,
+   "p": 11.99,
+   "r": 4.3,
+   "t": "2026-11-19T07:01:21.085197+00:00",
+   "title": "Rubson AERO 360º Baño, deshumidificador portátil sin cable para baño, absorbe humedad para la circulación del aire, disipador de condensación antihumedad, dispositivo y tableta (450 g)"
   }
  ],
  "summary_day": "2026-11-18",
  "tg_offset": 511048116,
  "x_copy": {
-  "day": "2026-11-18",
-  "n": 30
+  "day": "2026-11-19",
+  "n": 1
  }
 }
