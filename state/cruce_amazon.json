@@ -430,6 +430,13 @@
    "v": 3,
    "via": "ean"
   },
+  "0840353933811": {
+   "a": "B0FJFXL111",
+   "t": "2026-11-19T10:35:44.498929+00:00",
+   "title": "Google Pixel Watch 4 (41 mm) - Smartwatch Android con Seguimiento de la el Estado físico, y la Ayuda de Gemini - Caja de Aluminio en Color Plata Pulida - Correa",
+   "v": 3,
+   "via": "ean"
+  },
   "0840353958159": {
    "a": "",
    "t": "2026-11-14T01:20:25.760497+00:00",
@@ -1923,6 +1930,19 @@
     ]
    }
   },
+  "8434388361248": {
+   "a": "",
+   "t": "2026-11-19T10:35:44.498929+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Acer H6816ATV - Proyector de TV DLP Android (4K UHD (3840 x 2160 píxeles) 4000 lúmenes ANSI, Contras"
+    ]
+   }
+  },
   "8434388458016": {
    "a": "",
    "t": "2026-11-17T15:01:35.153027+00:00",
@@ -2501,6 +2521,26 @@
    "pp_price": 252.38,
    "t": "2026-11-17T06:05:20.554247+00:00",
    "veredicto": "sin_precio"
+  },
+  "37600256580": {
+   "ean": "8434388361248",
+   "lista": "to_verify",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "DLP P16 Smart 2GB/16GB Android 9.0 Verde 65 lúmenes hasta 170 pulgadas Proyector",
+   "pp_drop": 60,
+   "pp_median": 298.95,
+   "pp_price": 119.0,
+   "t": "2026-11-19T10:35:44.498929+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Acer H6816ATV - Proyector de TV DLP Android (4K UHD (3840 x 2160 píxeles) 4000 lúmenes ANSI, Contras"
+    ]
+   }
   },
   "37600258284": {
    "ahorro_vs_amazon": 15,
@@ -3280,6 +3320,26 @@
    "pp_price": 123.95,
    "t": "2026-11-17T04:35:20.825957+00:00",
    "veredicto": "sin_precio"
+  },
+  "44863297593": {
+   "ahorro_vs_amazon": -25,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 258.16,
+   "amz_title": "Google Pixel Watch 4 (41 mm) - Smartwatch Android con Seguimiento de la el Estado físico, y la Ayuda de Gemini - Caja de Aluminio en Color Plata Pulida - Correa",
+   "asin": "B0FJFXL111",
+   "disponible": true,
+   "ean": "0840353933811",
+   "encontrado_por": "ean",
+   "lista": "to_verify",
+   "motivo": "Amazon 258.16 frente a 321.94",
+   "name": "Google Pixel Watch 4 41 mm Plata Correa Lila AMOLED GPS NFC 5ATM",
+   "pp_drop": 56,
+   "pp_median": 724.95,
+   "pp_price": 321.94,
+   "t": "2026-11-19T10:35:44.498929+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
   },
   "44927881022": {
    "ahorro_vs_amazon": 10,
@@ -7516,12 +7576,12 @@
  },
  "night_at": "2026-11-19T06:20:27.624429+00:00",
  "resumen": {
-  "amazon_mas_barato": 26,
-  "dudoso": 2,
-  "no_esta": 21,
-  "oferta_real": 20,
+  "amazon_mas_barato": 15,
+  "dudoso": 0,
+  "no_esta": 9,
+  "oferta_real": 14,
   "pvpr_inflado": 3,
-  "sin_precio": 8
+  "sin_precio": 5
  },
- "updated": "2026-11-19T10:05:35.124541+00:00"
+ "updated": "2026-11-19T10:35:44.498929+00:00"
 }

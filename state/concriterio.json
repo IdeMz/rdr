@@ -16,7 +16,7 @@
   "Cargadores y baterías": "2026-11-17T19:15:39.946523+00:00",
   "Ciclismo": "2026-11-17T07:30:53.001889+00:00",
   "Climatización": "2026-11-19T07:01:21.085197+00:00",
-  "Colchones y almohadas": "2026-11-17T10:01:21.690221+00:00",
+  "Colchones y almohadas": "2026-11-19T10:35:44.498929+00:00",
   "Componentes PC": "2026-11-16T16:15:49.892288+00:00",
   "Cuidado de la piel": "2026-11-17T10:31:06.725588+00:00",
   "Cuidado del cabello": "2026-11-18T11:01:05.531917+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-19T10:35:06.311593+00:00",
+ "next_at": "2026-11-19T11:05:13.514661+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1509,11 +1509,13 @@
   },
   "B0B57J6FFY": {
    "c": "Colchones y almohadas",
-   "d": 22,
+   "d": 36,
    "e": "🛏️",
-   "m": 91,
-   "p": 109.0,
-   "t": "2026-11-06T14:41:15.970354+00:00",
+   "m": 423,
+   "p": 89.9,
+   "pa": 109.0,
+   "s": "ambas",
+   "t": "2026-11-19T10:36:16.790100+00:00",
    "title": "Cecotec Colchón Viscoelástico Flow PureVital 1900 Medida 90x190. Multicapa, Altura 21cm, Firmeza Alta, Núcleo FoamVital, Doble Cara Dual System para Invierno y Verano",
    "v": []
   },
@@ -3242,16 +3244,6 @@
    "title": "roborock Qrevo S Pro Robot Aspirador (Versión Mejorada del QV 35A) Succión de 18500 Pa, Base Todo en Uno, 2,7L Bolsa para Polvo, Sistema antienredos, Evitación de Obstáculos, Negro",
    "v": []
   },
-  "B0GLPDX39K": {
-   "c": "Jardín",
-   "d": 13,
-   "e": "🌱",
-   "m": 55,
-   "p": 13.99,
-   "t": "2026-11-05T10:05:53.748698+00:00",
-   "title": "12M Dispositivo de Enfriamiento por Aspersión, Sistema de Riego de Jardines, 75 Pcs Kit de Pulverización de Jardín, Adecuado para Eventos al Aire Libre, Jardines, Patios, Sombrillas y Techos",
-   "v": []
-  },
   "B0GNMS31J4": {
    "c": "Cafeteras",
    "d": 14,
@@ -3685,22 +3677,6 @@
  },
  "problem": {},
  "rejected": {
-  "B0011UD7BW": {
-   "t": "2026-11-18T10:30:54.867859+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B00BX5FOCK": {
-   "t": "2026-11-18T10:30:54.867859+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B00DQGBYDC": {
-   "t": "2026-11-18T10:30:54.867859+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B00M2X5KFI": {
-   "t": "2026-11-18T10:30:54.867859+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B016MKOA6G": {
    "t": "2026-11-18T12:30:56.291132+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3715,10 +3691,6 @@
   },
   "B07HGFBXT8": {
    "t": "2026-11-19T07:01:21.085197+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B07YYJRXQR": {
-   "t": "2026-11-18T10:30:54.867859+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B09V8C4QP9": {
@@ -3748,6 +3720,18 @@
  },
  "reserve": [
   {
+   "a": "B0DSVHNLFT",
+   "c": "Colchones y almohadas",
+   "e": "🛏️",
+   "img": "https://m.media-amazon.com/images/I/71FkY4tRHxL._AC_UL320_.jpg",
+   "n": 495,
+   "op": 99.99,
+   "p": 90.24,
+   "r": 4.6,
+   "t": "2026-11-19T10:35:44.498929+00:00",
+   "title": "Z-hom - Colchón Plegable, colchón de Suelo, colchón Plegable de 3 Piezas, Espuma Extra Gruesa, Esponja de Alta Densidad de una dureza H3, Oeko Tex Standard 140 x 195 x 10 cm"
+  },
+  {
    "a": "B00N4UFEZO",
    "c": "Gatos",
    "e": "🐱",
@@ -3770,24 +3754,12 @@
    "r": 4.6,
    "t": "2026-11-19T08:05:38.436182+00:00",
    "title": "Bedsure SupportMax™ Extra Gruesa Cama Perro XL Grandes 106x76cm, Gris"
-  },
-  {
-   "a": "B0D8J5CVPK",
-   "c": "Perfumes",
-   "e": "🌸",
-   "img": "https://m.media-amazon.com/images/I/61dcq5O5baL._AC_UL320_.jpg",
-   "n": 2600,
-   "op": 21.99,
-   "p": 17.62,
-   "r": 4.5,
-   "t": "2026-11-19T07:35:31.217586+00:00",
-   "title": "CALVIN KLEIN CK One Essence Parfum Intense – Perfume unisex amaderado cítrico – Con notas de bergamota, té verde y sándalo – Fragancia duradera"
   }
  ],
  "summary_day": "2026-11-18",
  "tg_offset": 511048116,
  "x_copy": {
   "day": "2026-11-19",
-  "n": 7
+  "n": 8
  }
 }
