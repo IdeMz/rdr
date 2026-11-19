@@ -18,7 +18,7 @@
   "Climatización": "2026-11-19T07:01:21.085197+00:00",
   "Colchones y almohadas": "2026-11-19T10:35:44.498929+00:00",
   "Componentes PC": "2026-11-16T16:15:49.892288+00:00",
-  "Cuidado de la piel": "2026-11-17T10:31:06.725588+00:00",
+  "Cuidado de la piel": "2026-11-19T18:15:40.654642+00:00",
   "Cuidado del cabello": "2026-11-19T17:30:56.735106+00:00",
   "Cámaras de seguridad": "2026-11-18T12:01:05.181336+00:00",
   "Decoración navideña": "2026-11-18T11:30:52.353700+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-19T18:11:06.515307+00:00",
+ "next_at": "2026-11-19T18:41:35.896393+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -533,6 +533,17 @@
    "s": "ofertas",
    "t": "2026-11-16T08:11:09.624555+00:00",
    "title": "SONGMICS Escalera Plegable, Escalera 3 Peldaños, Bloqueo de Seguridad",
+   "v": []
+  },
+  "B077S4TX92": {
+   "c": "Cuidado de la piel",
+   "d": 51,
+   "e": "🧴",
+   "m": 437,
+   "p": 10.95,
+   "s": "ofertas",
+   "t": "2026-11-19T18:18:10.633810+00:00",
+   "title": "Neutrogena Rutina Hydro Boost, Gel de Agua 50 ml + Contorno de ojos 15 ml",
    "v": []
   },
   "B0797LMGXH": {
@@ -3697,10 +3708,7 @@
    "v": []
   }
  },
- "problem": {
-  "fails": 1,
-  "last": "HTTP 503"
- },
+ "problem": {},
  "rejected": {
   "B000IZYWI8": {
    "t": "2026-11-19T14:30:58.584339+00:00",
@@ -3753,6 +3761,18 @@
  },
  "reserve": [
   {
+   "a": "B076MTNJCR",
+   "c": "Cuidado de la piel",
+   "e": "🧴",
+   "img": "https://m.media-amazon.com/images/I/51wzf4rVT2L._AC_UL320_.jpg",
+   "n": 1400,
+   "op": 36.9,
+   "p": 17.4,
+   "r": 4.5,
+   "t": "2026-11-19T18:15:40.654642+00:00",
+   "title": "BELLA AURORA Splendor 50 Crema Antiedad Global Día SPF20 50 ml"
+  },
+  {
    "a": "B0FFM4BY6C",
    "c": "Cargadores y baterías",
    "e": "🔌",
@@ -3775,24 +3795,12 @@
    "r": 4.5,
    "t": "2026-11-19T16:30:56.884084+00:00",
    "title": "UPGRADE Mando para Switch, Mandos Switch Inalambricos para S-witch/S-witch 2/Lite/OLED con Wake Up, Mando Pro Controller Mando pc con Gyro Axis/Dual Shock/Función Turbo y Captura de pantalla"
-  },
-  {
-   "a": "B0H5KDLK7M",
-   "c": "Smartwatch",
-   "e": "⌚",
-   "img": "https://m.media-amazon.com/images/I/61jx59P9t4L._AC_UL320_.jpg",
-   "n": 476,
-   "op": 69.99,
-   "p": 56.9,
-   "r": 4.6,
-   "t": "2026-11-19T15:01:09.213912+00:00",
-   "title": "XIAOMI Redmi Watch 6 Lite, hasta 18 días de autonomía, Negro"
   }
  ],
  "summary_day": "2026-11-18",
  "tg_offset": 511048116,
  "x_copy": {
   "day": "2026-11-19",
-  "n": 22
+  "n": 23
  }
 }

@@ -92,6 +92,21 @@
    "v": 3,
    "via": "nombre"
   },
+  "0196388824151": {
+   "a": "",
+   "t": "2026-11-19T18:15:40.654642+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Microsoft Surface Pro, 13\" | Snapdragon X2 Plus | 16GB RAM, 256GB SSD",
+     "Microsoft Surface Pro, 13\" | Snapdragon X2 Plus | 16GB RAM, 256GB SSD",
+     "Microsoft Surface Pro, 13\" | Snapdragon X2 Elite | 16GB RAM, 1TB SSD"
+    ]
+   }
+  },
   "0196548864997": {
    "a": "",
    "t": "2026-11-14T01:50:35.475157+00:00",
@@ -3837,7 +3852,7 @@
    "veredicto": "amazon_mas_barato"
   },
   "45368125431": {
-   "ahorro_vs_amazon": 35,
+   "ahorro_vs_amazon": 39,
    "amz_low30": 154.99,
    "amz_median": null,
    "amz_price": 140.0,
@@ -3847,12 +3862,12 @@
    "ean": "714346345885",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "35 % por debajo del habitual en Amazon (154.99)",
+   "motivo": "39 % por debajo del habitual en Amazon (154.99)",
    "name": "Bowers & Wilkins Pi6 TWS ANC Bluetooth 5.4 24h IP54 Multipunto Auriculares inalámbricos",
-   "pp_drop": 19,
+   "pp_drop": 25,
    "pp_median": 124.94,
-   "pp_price": 100.95,
-   "t": "2026-11-18T18:30:58.613853+00:00",
+   "pp_price": 93.94,
+   "t": "2026-11-19T18:15:40.654642+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -7578,6 +7593,28 @@
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
+  "46599143212": {
+   "ean": "0196388824151",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Microsoft Surface Pro 12 Copilot+ 13 pulgadas 24GB/512GB Platino LCD 120Hz Snapdragon X2 Plus WiFi 7",
+   "pp_drop": 15,
+   "pp_median": 2171.95,
+   "pp_price": 1848.95,
+   "t": "2026-11-19T18:15:40.654642+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Microsoft Surface Pro, 13\" | Snapdragon X2 Plus | 16GB RAM, 256GB SSD",
+     "Microsoft Surface Pro, 13\" | Snapdragon X2 Plus | 16GB RAM, 256GB SSD",
+     "Microsoft Surface Pro, 13\" | Snapdragon X2 Elite | 16GB RAM, 1TB SSD"
+    ]
+   }
+  },
   "46599143223": {
    "ean": "0196388689545",
    "lista": "candidates",
@@ -8116,10 +8153,10 @@
  "resumen": {
   "amazon_mas_barato": 23,
   "dudoso": 0,
-  "no_esta": 13,
+  "no_esta": 14,
   "oferta_real": 18,
   "pvpr_inflado": 3,
   "sin_precio": 7
  },
- "updated": "2026-11-19T17:30:56.735106+00:00"
+ "updated": "2026-11-19T18:15:40.654642+00:00"
 }
