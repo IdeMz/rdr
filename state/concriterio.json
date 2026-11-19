@@ -61,13 +61,13 @@
   "Televisores": "2026-11-18T18:01:04.377917+00:00",
   "Textil hogar": "2026-11-18T14:01:13.022640+00:00",
   "Videojuegos": "2026-11-17T09:01:06.401047+00:00",
-  "Zapatillas": "2026-11-17T17:01:11.572901+00:00",
+  "Zapatillas": "2026-11-19T09:05:37.877879+00:00",
   "eReaders": "2026-11-16T13:55:32.747613+00:00"
  },
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-19T09:02:58.134713+00:00",
+ "next_at": "2026-11-19T09:32:56.469778+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -789,6 +789,17 @@
    "s": "ofertas",
    "t": "2026-11-13T16:01:40.638908+00:00",
    "title": "Healthy Fusion 100% Creatina Monohidrato en Polvo | Promueve el crecimiento muscular y mejora la resistencia física | Alta solubilidad | 300g | 60 Dosis | sabor sandía",
+   "v": []
+  },
+  "B07SD3W9SN": {
+   "c": "Zapatillas",
+   "d": 39,
+   "e": "👟",
+   "m": 420,
+   "p": 39.45,
+   "s": "ambas",
+   "t": "2026-11-19T09:06:10.116632+00:00",
+   "title": "Men's Zapatilla Strutter",
    "v": []
   },
   "B07TJW59YZ": {
@@ -2531,16 +2542,6 @@
    "title": "DIESEL Only The Brave EDP |Un toque energizante de Mandarina y una estela sensual de Acuerdo de Suede|Otro nivel de intensidad y sensualidad",
    "v": []
   },
-  "B0DVLGQX5N": {
-   "c": "Freidoras de aire",
-   "d": 43,
-   "e": "🍟",
-   "m": 52,
-   "p": 39.99,
-   "t": "2026-11-05T08:51:03.417762+00:00",
-   "title": "Mellerware - Freidora sin aceite Crunchy Plus 5.5L 1500W | 11 Menús Predefinidos | Capacidad para 3-5 raciones | Temporizador Programable | Pantalla para controlar la temperatura | Air Fryer 80-200º",
-   "v": []
-  },
   "B0DX1XK7ZJ": {
    "c": "Limpieza del hogar",
    "d": 35,
@@ -3781,6 +3782,6 @@
  "tg_offset": 511048116,
  "x_copy": {
   "day": "2026-11-19",
-  "n": 4
+  "n": 5
  }
 }
