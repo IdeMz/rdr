@@ -6,7 +6,7 @@
   "Almacenamiento": "2026-11-18T10:30:54.867859+00:00",
   "Altavoces": "2026-11-19T16:01:05.937931+00:00",
   "Aspiradoras": "2026-11-19T12:05:32.674217+00:00",
-  "Auriculares": "2026-11-17T08:01:10.979640+00:00",
+  "Auriculares": "2026-11-19T20:15:40.337664+00:00",
   "Barras de sonido": "2026-11-18T08:01:03.545593+00:00",
   "Bebé": "2026-11-18T19:01:22.092208+00:00",
   "Bricolaje": "2026-11-18T17:30:58.281773+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-19T20:13:18.399702+00:00",
+ "next_at": "2026-11-19T20:45:33.888457+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1878,11 +1878,13 @@
   },
   "B0CCDNJS75": {
    "c": "Auriculares",
-   "d": 48,
+   "d": 54,
    "e": "🎧",
-   "m": 157,
-   "p": 25.99,
-   "t": "2026-11-09T09:21:08.056086+00:00",
+   "m": 441,
+   "p": 22.79,
+   "pa": 25.99,
+   "s": "busqueda",
+   "t": "2026-11-19T20:16:14.308255+00:00",
    "title": "Auriculares Inalámbricos Bluetooth, Auriculares Bluetooth 5.3, 4 Mic con Reducción de Ruido ENC, 50H con Graves, Cascos Inalambricos Bluetooth IP7 Impermeable, Carga Rápida USB-C, Ajuste Cómodo",
    "v": []
   },
@@ -3046,16 +3048,6 @@
    "title": "CLOUVOU Silla de Oficina Ergonomica con Ruedas [GANADORA DE PUREBAS] Negro",
    "v": []
   },
-  "B0FRMC8FLH": {
-   "c": "Tablets",
-   "d": 39,
-   "e": "📲",
-   "m": 72,
-   "p": 99.99,
-   "t": "2026-11-05T20:11:04.001227+00:00",
-   "title": "Tablet 10 Pulgadas Android 15 con Gemini AI, 30 GB RAM + Ampliable 2 TB ROM, Octa-Core, Widevine L1, 1280x800 HD, WiFi 5GHz, BT 5.0, Cámara 8 MP + 5 MP, 6000 mAh, con Teclado, Ratón y Funda – Negro",
-   "v": []
-  },
   "B0FRRMD96F": {
    "c": "Altavoces",
    "d": 18,
@@ -3778,24 +3770,12 @@
    "r": 4.5,
    "t": "2026-11-19T18:15:40.654642+00:00",
    "title": "BELLA AURORA Splendor 50 Crema Antiedad Global Día SPF20 50 ml"
-  },
-  {
-   "a": "B0FFM4BY6C",
-   "c": "Cargadores y baterías",
-   "e": "🔌",
-   "img": "https://m.media-amazon.com/images/I/61j44ljOEtL._AC_UL320_.jpg",
-   "n": 467,
-   "op": 28.49,
-   "p": 22.94,
-   "r": 4.5,
-   "t": "2026-11-19T17:01:09.614407+00:00",
-   "title": "Amazon Basics Cargador Portátil de Alta Capacidad con 3 Puertos de Salida, 20 000mAh, Negro"
   }
  ],
  "summary_day": "2026-11-18",
  "tg_offset": 511048116,
  "x_copy": {
   "day": "2026-11-19",
-  "n": 26
+  "n": 27
  }
 }
