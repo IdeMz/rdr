@@ -2025,6 +2025,13 @@
    "title": "Braun MultiQuick 5 - Minipimer de 1000W Vaso 600ml Blanco",
    "via": "ean"
   },
+  "8032958189485": {
+   "a": "B08GMBX8XX",
+   "t": "2026-11-19T17:01:09.614407+00:00",
+   "title": "WP RWA-06604 Armario Mural 6U",
+   "v": 3,
+   "via": "ean"
+  },
   "810050911702": {
    "a": "B0DCCZCR26",
    "t": "2026-11-17T22:35:22.842725+00:00",
@@ -3051,6 +3058,26 @@
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
+  "40832391954": {
+   "ahorro_vs_amazon": 25,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 99.58,
+   "amz_title": "WP RWA-06604 Armario Mural 6U",
+   "asin": "B08GMBX8XX",
+   "disponible": true,
+   "ean": "8032958189485",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "25 % por debajo del habitual en Amazon (99.58)",
+   "name": "WP WPN-RWA-06604-B armario rack 6U",
+   "pp_drop": 27,
+   "pp_median": 101.95,
+   "pp_price": 74.72,
+   "t": "2026-11-19T17:01:09.614407+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "41405667926": {
    "ahorro_vs_amazon": -13,
    "amz_low30": null,
@@ -3843,7 +3870,7 @@
    "veredicto": "amazon_mas_barato"
   },
   "45368125530": {
-   "ahorro_vs_amazon": 46,
+   "ahorro_vs_amazon": 50,
    "amz_low30": 251.28,
    "amz_median": 262.16,
    "amz_price": 109.0,
@@ -3853,12 +3880,12 @@
    "ean": "5706991026542",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "Amazon 109.00 frente a 140.95",
+   "motivo": "Amazon 109.00 frente a 130.95",
    "name": "Jabra Evolve2 Buds USB-A ANC IP57 con micrófono Auriculares",
-   "pp_drop": 19,
+   "pp_drop": 24,
    "pp_median": 172.95,
-   "pp_price": 140.95,
-   "t": "2026-11-18T17:01:08.637572+00:00",
+   "pp_price": 130.95,
+   "t": "2026-11-19T17:01:09.614407+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -8062,9 +8089,9 @@
   "amazon_mas_barato": 23,
   "dudoso": 0,
   "no_esta": 13,
-  "oferta_real": 17,
+  "oferta_real": 18,
   "pvpr_inflado": 3,
   "sin_precio": 6
  },
- "updated": "2026-11-19T16:30:56.884084+00:00"
+ "updated": "2026-11-19T17:01:09.614407+00:00"
 }
