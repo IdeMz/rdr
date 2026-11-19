@@ -3304,22 +3304,22 @@
    "veredicto": "amazon_mas_barato"
   },
   "43757357888": {
-   "ahorro_vs_amazon": 27,
+   "ahorro_vs_amazon": 25,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 110.24,
+   "amz_price": 107.55,
    "amz_title": "Oral-B iO Series 4 Cepillo de dientes eléctrico – Cepillo de dientes eléctrico, incluye 1 cepillo, tecnología magnética, estuche de viaje, 4 modos de cepillado ",
    "asin": "B0B4SGW9YW",
    "disponible": true,
    "ean": "4210201415022",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "27 % por debajo del habitual en Amazon (110.24)",
+   "motivo": "25 % por debajo del habitual en Amazon (107.55)",
    "name": "Oral-B iO Series 4 Negro Cepillo de dientes eléctrico",
    "pp_drop": 28,
    "pp_median": 111.74,
    "pp_price": 80.63,
-   "t": "2026-11-17T15:30:58.601953+00:00",
+   "t": "2026-11-19T16:01:05.937931+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -6281,7 +6281,7 @@
    "pp_drop": 37,
    "pp_median": 45.96,
    "pp_price": 28.92,
-   "t": "2026-11-17T15:30:58.601953+00:00",
+   "t": "2026-11-19T16:01:05.937931+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -8038,5 +8038,5 @@
   "pvpr_inflado": 3,
   "sin_precio": 5
  },
- "updated": "2026-11-19T15:30:55.803469+00:00"
+ "updated": "2026-11-19T16:01:05.937931+00:00"
 }

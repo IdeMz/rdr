@@ -4,7 +4,7 @@
   "Accesorios de móvil": "2026-11-18T21:30:53.368269+00:00",
   "Afeitado y depilación": "2026-11-17T20:15:50.874512+00:00",
   "Almacenamiento": "2026-11-18T10:30:54.867859+00:00",
-  "Altavoces": "2026-11-17T20:45:44.607165+00:00",
+  "Altavoces": "2026-11-19T16:01:05.937931+00:00",
   "Aspiradoras": "2026-11-19T12:05:32.674217+00:00",
   "Auriculares": "2026-11-17T08:01:10.979640+00:00",
   "Barras de sonido": "2026-11-18T08:01:03.545593+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-19T15:56:03.104030+00:00",
+ "next_at": "2026-11-19T16:28:55.229975+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1203,6 +1203,17 @@
    "title": "Final Fantasy VII Remake Intergrade PS5",
    "v": []
   },
+  "B08YRT9T38": {
+   "c": "Altavoces",
+   "d": 32,
+   "e": "🔊",
+   "m": 434,
+   "p": 169.0,
+   "s": "busqueda",
+   "t": "2026-11-19T16:01:32.543364+00:00",
+   "title": "Bang & Olufsen Beosound Explore 360 Grados Altavoz portátil inalámbrico Bluetooth de 360 Grados,Alta Gama Duradera,Hogar y Viajes,IP67 Resistente al Agua y al Polvo,hasta 27 Horas - Black",
+   "v": []
+  },
   "B08ZFKB8ZK": {
    "c": "Perfumes",
    "d": 15,
@@ -1972,16 +1983,6 @@
    "p": 37.99,
    "t": "2026-11-09T15:46:06.341582+00:00",
    "title": "adidas",
-   "v": []
-  },
-  "B0CM4B43DZ": {
-   "c": "Cuidado de la piel",
-   "d": 44,
-   "e": "🧴",
-   "m": 64,
-   "p": 32.0,
-   "t": "2026-11-05T15:31:40.208934+00:00",
-   "title": "La Roche-Posay, Mela B3 Sérum, Hiperpigmentación y manchas post acné, 30 ml",
    "v": []
   },
   "B0CM8Q7WX5": {
@@ -3800,6 +3801,6 @@
  "tg_offset": 511048116,
  "x_copy": {
   "day": "2026-11-19",
-  "n": 18
+  "n": 19
  }
 }
