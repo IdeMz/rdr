@@ -2396,11 +2396,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Logitech C925E Calidad FullHD 30fps micrófono Webcam",
-   "pista": "2583093 bytes; 52 a-price; caja de precio; disponibilidad: No disponible.",
+   "pista": "2233533 bytes; 17 a-price; caja de precio; disponibilidad: No disponible.",
    "pp_drop": 23,
    "pp_median": 64.95,
    "pp_price": 50.08,
-   "t": "2026-11-19T00:05:23.251252+00:00",
+   "t": "2026-11-19T06:20:27.624429+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -7514,7 +7514,7 @@
    }
   }
  },
- "night_at": "2026-11-19T05:50:25.824647+00:00",
+ "night_at": "2026-11-19T06:20:27.624429+00:00",
  "resumen": {
   "amazon_mas_barato": 26,
   "dudoso": 2,
@@ -7523,5 +7523,5 @@
   "pvpr_inflado": 3,
   "sin_precio": 8
  },
- "updated": "2026-11-19T05:50:25.824647+00:00"
+ "updated": "2026-11-19T06:20:27.624429+00:00"
 }
