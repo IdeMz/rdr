@@ -49,10 +49,10 @@
   "Perfumes": "2026-11-19T07:35:31.217586+00:00",
   "Periféricos": "2026-11-18T17:01:08.637572+00:00",
   "Perros": "2026-11-19T08:05:38.436182+00:00",
-  "Portátiles": "2026-11-17T08:30:57.514721+00:00",
+  "Portátiles": "2026-11-19T11:35:32.511367+00:00",
   "Proyectores": "2026-11-17T17:31:15.607799+00:00",
   "Redes y wifi": "2026-11-18T07:30:50.769623+00:00",
-  "Relojes": "2026-11-17T12:30:54.443182+00:00",
+  "Relojes": "2026-11-19T11:35:32.511367+00:00",
   "Robots de cocina": "2026-11-15T15:15:41.208340+00:00",
   "Salud": "2026-11-18T21:01:05.865760+00:00",
   "Smartwatch": "2026-11-17T19:45:42.626266+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-19T11:34:20.471985+00:00",
+ "next_at": "2026-11-19T12:01:14.492266+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1420,6 +1420,17 @@
    "s": "ofertas",
    "t": "2026-11-17T07:01:49.849143+00:00",
    "title": "Maybelline New York SuperStay Vinyl Ink Efecto Vinilo Fijo, 35 Cheeky",
+   "v": []
+  },
+  "B09PV7LM3T": {
+   "c": "Relojes",
+   "d": 32,
+   "e": "🕰️",
+   "m": 425,
+   "p": 33.49,
+   "s": "ofertas",
+   "t": "2026-11-19T11:36:22.589397+00:00",
+   "title": "Expedition Acadia",
    "v": []
   },
   "B09R89BLYH": {
@@ -3633,16 +3644,6 @@
    "title": "FOSMET Reloj Inteligente Mujer Salud ECG/HRV/BMI Presión Arterial, Rosa Oro",
    "v": []
   },
-  "B0HDXYLPHV": {
-   "c": "Smartwatch",
-   "d": 50,
-   "e": "⌚",
-   "m": 57,
-   "p": 49.99,
-   "t": "2026-11-05T11:16:08.344673+00:00",
-   "title": "Reloj Inteligente Mujer Hombre con Llamadas Bluetooth y Voz AI, 1.85'' Smartwatch con Whatsapp Notificación, Pulsómetro/SpO2/Sueño/Podómetro, 110+ Modos Deportivos, Impermeable IP68 para iOS/Android",
-   "v": []
-  },
   "B0HDZ1LBCH": {
    "c": "Smartwatch",
    "d": 53,
@@ -3690,6 +3691,10 @@
    "t": "2026-11-19T07:01:21.085197+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B07KJZM3QP": {
+   "t": "2026-11-19T11:35:32.511367+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B09V8C4QP9": {
    "t": "2026-11-16T19:55:35.023364+00:00",
    "why": "descartada a mano"
@@ -3717,6 +3722,18 @@
  },
  "reserve": [
   {
+   "a": "B0DZCJYD2C",
+   "c": "Relojes",
+   "e": "🕰️",
+   "img": "https://m.media-amazon.com/images/I/51ax2xsZA4L._AC_UL320_.jpg",
+   "n": 5100,
+   "op": 89.1,
+   "p": 61.86,
+   "r": 4.3,
+   "t": "2026-11-19T11:35:32.511367+00:00",
+   "title": "Ironman Original Shock"
+  },
+  {
    "a": "B0DSVHNLFT",
    "c": "Colchones y almohadas",
    "e": "🛏️",
@@ -3739,24 +3756,12 @@
    "r": 4.3,
    "t": "2026-11-19T10:05:35.124541+00:00",
    "title": "Pienso seco Applaws para Gatos Adultos, Pollo con salmón, 7,5 kg (1 Bolsa) – sin Cereales, Rico en proteínas, Ingredientes Naturales"
-  },
-  {
-   "a": "B0F13RK113",
-   "c": "Perros",
-   "e": "🐶",
-   "img": "https://m.media-amazon.com/images/I/91vfpd9OKJL._AC_UL320_.jpg",
-   "n": 1200,
-   "op": 51.99,
-   "p": 37.53,
-   "r": 4.6,
-   "t": "2026-11-19T08:05:38.436182+00:00",
-   "title": "Bedsure SupportMax™ Extra Gruesa Cama Perro XL Grandes 106x76cm, Gris"
   }
  ],
  "summary_day": "2026-11-18",
  "tg_offset": 511048116,
  "x_copy": {
   "day": "2026-11-19",
-  "n": 9
+  "n": 10
  }
 }

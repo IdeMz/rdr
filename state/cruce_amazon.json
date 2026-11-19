@@ -806,6 +806,26 @@
    "title": "Seasonic Netzteil 850w FocuS-GX-850 Atx3 Modular Gold (focuS-GX-850-V4)",
    "via": "ean"
   },
+  "4711377212793": {
+   "a": "",
+   "t": "2026-11-19T11:35:32.511367+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "Tapiz colgante de macramé pequeño tapiz artístico tejido estilo decoración de la habitación del dorm"
+    ],
+    "modelo": [
+     "MSI mag 27C6F Monitor Curvo Gaming FHD de 27\", 1500R 1920 x 1080 Panel VA rápido, 180 Hz / 0,5 ms (G",
+     "MSI mag 275CF X24 de 27\" Monitor Gaming FHD 1500R, 1920 x 1080 Rapid VA, 240 Hz, 0,5 ms, Compatible ",
+     "Ecran PC - MSI - MAG 27CQ6F - 2560 x 1440 - 0.5ms - VA"
+    ],
+    "nombre": [
+     "MSI MAG 276CFA E20 Monitor gaming de 27\" FHD 1500R, 1920 x 1080",
+     "MSI mag 274QF X24, Monitor Gaming 27 Pulgadas WQHD, IPS rápida de 2560 x 1440, 240 Hz, 0,5 ms, Prepa",
+     "msi mag 275QFA E20 27\" Gaming Monitor, 2560x1440 WQHD Rapid IPS, 200 Hz, 0,5 ms, HDR Ready, AMD Free"
+    ]
+   }
+  },
   "4711377301541": {
    "a": "B0F11KQQF4",
    "t": "2026-11-14T20:20:37.410274+00:00",
@@ -2101,6 +2121,13 @@
    "a": "B08BF3PXPX",
    "t": "2026-11-15T00:50:26.258760+00:00",
    "title": "DiamondClean 9000 HX9913/17",
+   "via": "ean"
+  },
+  "8713016057600": {
+   "a": "B07BLB78RP",
+   "t": "2026-11-19T11:35:32.511367+00:00",
+   "title": "Princess Plancha de Asar, 46 x 26 cm, 2500 W, para 4 a 6 Personas",
+   "v": 3,
    "via": "ean"
   },
   "8713439248852": {
@@ -5424,6 +5451,26 @@
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
+  "46186036324": {
+   "ahorro_vs_amazon": 2,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 52.99,
+   "amz_title": "Princess Plancha de Asar, 46 x 26 cm, 2500 W, para 4 a 6 Personas",
+   "asin": "B07BLB78RP",
+   "disponible": true,
+   "ean": "8713016057600",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 52.99 frente a 51.95",
+   "name": "Princess Table Chef Premium XL 2500W 460x260mm Negro Plancha de asar",
+   "pp_drop": 45,
+   "pp_median": 94.95,
+   "pp_price": 51.95,
+   "t": "2026-11-19T11:35:32.511367+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "46186036340": {
    "ahorro_vs_amazon": null,
    "amz_low30": null,
@@ -6476,6 +6523,33 @@
    "pp_price": 1669.0,
    "t": "2026-11-16T05:05:25.139938+00:00",
    "veredicto": "amazon_mas_barato"
+  },
+  "46599140109": {
+   "ean": "4711377212793",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Monitor gaming MSI MAG 275CQPFDE 27 pulgadas 180Hz Curvo QHD Rapid VA Negro",
+   "pp_drop": 40,
+   "pp_median": 299.9,
+   "pp_price": 179.0,
+   "t": "2026-11-19T11:35:32.511367+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "Tapiz colgante de macramé pequeño tapiz artístico tejido estilo decoración de la habitación del dorm"
+    ],
+    "modelo": [
+     "MSI mag 27C6F Monitor Curvo Gaming FHD de 27\", 1500R 1920 x 1080 Panel VA rápido, 180 Hz / 0,5 ms (G",
+     "MSI mag 275CF X24 de 27\" Monitor Gaming FHD 1500R, 1920 x 1080 Rapid VA, 240 Hz, 0,5 ms, Compatible ",
+     "Ecran PC - MSI - MAG 27CQ6F - 2560 x 1440 - 0.5ms - VA"
+    ],
+    "nombre": [
+     "MSI MAG 276CFA E20 Monitor gaming de 27\" FHD 1500R, 1920 x 1080",
+     "MSI mag 274QF X24, Monitor Gaming 27 Pulgadas WQHD, IPS rápida de 2560 x 1440, 240 Hz, 0,5 ms, Prepa",
+     "msi mag 275QFA E20 27\" Gaming Monitor, 2560x1440 WQHD Rapid IPS, 200 Hz, 0,5 ms, HDR Ready, AMD Free"
+    ]
+   }
   },
   "46599140117": {
    "ahorro_vs_amazon": -6,
@@ -7630,12 +7704,12 @@
  },
  "night_at": "2026-11-19T06:20:27.624429+00:00",
  "resumen": {
-  "amazon_mas_barato": 16,
+  "amazon_mas_barato": 17,
   "dudoso": 0,
-  "no_esta": 9,
+  "no_esta": 10,
   "oferta_real": 15,
   "pvpr_inflado": 3,
   "sin_precio": 5
  },
- "updated": "2026-11-19T11:05:31.132875+00:00"
+ "updated": "2026-11-19T11:35:32.511367+00:00"
 }
