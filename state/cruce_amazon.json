@@ -1989,6 +1989,13 @@
    "title": "Reolink Argus Series B320 2K telecamera di sicurezza",
    "via": "ean"
   },
+  "6975485160584": {
+   "a": "B0BKT8N1Z9",
+   "t": "2026-11-20T19:30:58.727153+00:00",
+   "title": "Linsoul Kiwi Ears Cadenza Controlador Dinámico de Berlilio de 10Mm IEM",
+   "v": 3,
+   "via": "ean"
+  },
   "6976367680916": {
    "a": "",
    "t": "2026-11-18T22:20:27.614650+00:00",
@@ -6465,6 +6472,26 @@
    "v": 3,
    "veredicto": "oferta_real"
   },
+  "46212467221": {
+   "ahorro_vs_amazon": 13,
+   "amz_low30": 39.99,
+   "amz_median": null,
+   "amz_price": 31.99,
+   "amz_title": "Linsoul Kiwi Ears Cadenza Controlador Dinámico de Berlilio de 10Mm IEM",
+   "asin": "B0BKT8N1Z9",
+   "disponible": true,
+   "ean": "6975485160584",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 31.99 frente a 34.99",
+   "name": "Kiwi Ears Cadenza Jack 3,5 mm Azul In-Ear Auriculares",
+   "pp_drop": 30,
+   "pp_median": 49.99,
+   "pp_price": 34.99,
+   "t": "2026-11-20T19:30:58.727153+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "46217685549": {
    "ahorro_vs_amazon": null,
    "amz_low30": null,
@@ -7080,11 +7107,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "SteelSeries Apex 3 RGB Portugués 100% Negro Teclado gaming",
-   "pista": "2067806 bytes; 9 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "2063516 bytes; 9 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 43,
    "pp_median": 100.95,
    "pp_price": 57.95,
-   "t": "2026-11-20T12:30:57.920138+00:00",
+   "t": "2026-11-20T19:30:58.727153+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -9084,12 +9111,12 @@
  },
  "night_at": "2026-11-20T06:35:32.446519+00:00",
  "resumen": {
-  "amazon_mas_barato": 29,
+  "amazon_mas_barato": 30,
   "dudoso": 0,
   "no_esta": 14,
   "oferta_real": 20,
   "pvpr_inflado": 2,
   "sin_precio": 8
  },
- "updated": "2026-11-20T18:30:56.920199+00:00"
+ "updated": "2026-11-20T19:30:58.727153+00:00"
 }

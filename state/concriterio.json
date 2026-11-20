@@ -3,7 +3,7 @@
   "Accesorios de coche": "2026-11-20T11:01:13.526266+00:00",
   "Accesorios de móvil": "2026-11-20T12:01:02.865312+00:00",
   "Afeitado y depilación": "2026-11-17T20:15:50.874512+00:00",
-  "Almacenamiento": "2026-11-18T10:30:54.867859+00:00",
+  "Almacenamiento": "2026-11-20T19:30:58.727153+00:00",
   "Altavoces": "2026-11-19T16:01:05.937931+00:00",
   "Aspiradoras": "2026-11-20T13:01:06.821120+00:00",
   "Auriculares": "2026-11-19T20:15:40.337664+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-20T19:26:35.576548+00:00",
+ "next_at": "2026-11-20T19:59:52.996092+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -3324,6 +3324,17 @@
    "title": "roborock Qrevo S Pro Robot Aspirador (Versión Mejorada del QV 35A) Succión de 18500 Pa, Base Todo en Uno, 2,7L Bolsa para Polvo, Sistema antienredos, Evitación de Obstáculos, Negro",
    "v": []
   },
+  "B0GK1FMZWB": {
+   "c": "Almacenamiento",
+   "d": 15,
+   "e": "💾",
+   "m": 472,
+   "p": 108.56,
+   "s": "ambas",
+   "t": "2026-11-20T19:32:48.604934+00:00",
+   "title": "SANDISK Optimus GX 7100 SSD NVMe 500 GB, lectura hasta 6800 MB/s",
+   "v": []
+  },
   "B0GNMS31J4": {
    "c": "Cafeteras",
    "d": 14,
@@ -3783,10 +3794,6 @@
  },
  "problem": {},
  "rejected": {
-  "B01M59ILYN": {
-   "t": "2026-11-19T19:15:40.361750+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B07HGFBXT8": {
    "t": "2026-11-20T13:31:03.874159+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3817,6 +3824,10 @@
   },
   "B0DHG8XRVV": {
    "t": "2026-11-20T07:01:06.896632+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0DVC8Z8CV": {
+   "t": "2026-11-20T19:30:58.727153+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0DWS7SR2C": {
@@ -3889,6 +3900,6 @@
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-20",
-  "n": 25
+  "n": 26
  }
 }
