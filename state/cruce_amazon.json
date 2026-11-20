@@ -2727,7 +2727,7 @@
    "pp_drop": 24,
    "pp_median": 117.95,
    "pp_price": 89.95,
-   "t": "2026-11-18T14:01:13.022640+00:00",
+   "t": "2026-11-20T18:30:56.920199+00:00",
    "v": 3,
    "veredicto": "no_esta",
    "vistos": {
@@ -7839,24 +7839,24 @@
    "veredicto": "dudoso"
   },
   "46599140415": {
-   "ahorro_vs_amazon": 6,
+   "ahorro_vs_amazon": 3,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 112.18,
+   "amz_price": 109.08,
    "amz_title": "Iiyama Prolite Xb2491hs?b1 LeD-Monitor 60,5?cm (23,8\") Full Hd ? Hdmi/dp ? Schwarz",
    "asin": "B0GHZBXLPL",
    "disponible": true,
    "ean": "4948570127405",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "antes 137.95 en PowerPlanet, pero en Amazon suele estar a 112.18",
+   "motivo": "Amazon 109.08 frente a 105.95",
    "name": "Monitor iiyama ProLite 23,8 pulgadas Full HD IPS 120Hz Negro Mate XB2491HS-B1",
    "pp_drop": 23,
    "pp_median": 137.95,
    "pp_price": 105.95,
-   "t": "2026-11-18T14:01:13.022640+00:00",
+   "t": "2026-11-20T18:30:56.920199+00:00",
    "v": 3,
-   "veredicto": "pvpr_inflado"
+   "veredicto": "amazon_mas_barato"
   },
   "46599140515": {
    "ahorro_vs_amazon": 17,
@@ -9084,12 +9084,12 @@
  },
  "night_at": "2026-11-20T06:35:32.446519+00:00",
  "resumen": {
-  "amazon_mas_barato": 28,
+  "amazon_mas_barato": 29,
   "dudoso": 0,
   "no_esta": 14,
   "oferta_real": 20,
-  "pvpr_inflado": 3,
+  "pvpr_inflado": 2,
   "sin_precio": 8
  },
- "updated": "2026-11-20T18:01:04.511345+00:00"
+ "updated": "2026-11-20T18:30:56.920199+00:00"
 }

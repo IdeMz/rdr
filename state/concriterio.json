@@ -31,7 +31,7 @@
   "Gatos": "2026-11-19T10:05:35.124541+00:00",
   "Herramientas": "2026-11-14T21:01:00.449874+00:00",
   "Higiene personal": "2026-11-19T14:01:04.176634+00:00",
-  "Iluminación": "2026-11-15T11:45:37.493065+00:00",
+  "Iluminación": "2026-11-20T18:30:56.920199+00:00",
   "Impresoras": "2026-11-18T18:01:04.377917+00:00",
   "Jardín": "2026-11-15T11:10:43.114079+00:00",
   "Juguetes": "2026-11-20T16:30:59.454749+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-20T18:26:49.760218+00:00",
+ "next_at": "2026-11-20T18:56:57.371603+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -439,6 +439,17 @@
    "p": 6.5,
    "t": "2026-11-08T07:35:59.297719+00:00",
    "title": "L'Oréal Paris Revitalift Clásico Sérum Reparador con Pro Retinol, 30ml",
+   "v": []
+  },
+  "B01KHILJ5O": {
+   "c": "Iluminación",
+   "d": 52,
+   "e": "🪔",
+   "m": 470,
+   "p": 10.59,
+   "s": "ofertas",
+   "t": "2026-11-20T18:32:43.836079+00:00",
+   "title": "Philips Classic Foco LED PAR16 GU10 2700K 355lm 4.6W/50W Blanco, Pack de 6",
    "v": []
   },
   "B01L6L44NU": {
@@ -3215,16 +3226,6 @@
    "title": "Tapo C545D - Cámara de Vigilancia WiFi Exterior 360º, Doble Lente 2K, IA",
    "v": []
   },
-  "B0G7VW141Z": {
-   "c": "Aspiradoras",
-   "d": 55,
-   "e": "🧹",
-   "m": 98,
-   "p": 269.98,
-   "t": "2026-11-06T18:11:18.732164+00:00",
-   "title": "Lefant M210 Omni Robot Aspirador y Fregasuelos, Mopa de Rodillo, 20000 Pa",
-   "v": []
-  },
   "B0G8HQHMDS": {
    "c": "Cafeteras",
    "d": 40,
@@ -3842,6 +3843,18 @@
  },
  "reserve": [
   {
+   "a": "B0CFRD1F39",
+   "c": "Iluminación",
+   "e": "🪔",
+   "img": "https://m.media-amazon.com/images/I/71QYLgbUtxL._AC_UL320_.jpg",
+   "n": 187,
+   "op": 15.79,
+   "p": 10.59,
+   "r": 4.6,
+   "t": "2026-11-20T18:30:56.920199+00:00",
+   "title": "Philips Lighting Bombilla LED Ultraeficiente, 4 W Equivalente a 60 W, E27 A60, Luz Cálida 2700K, Eficiencia Energética A, Pack 2 unidades"
+  },
+  {
    "a": "B01E6XBBE0",
    "c": "Textil hogar",
    "e": "🧺",
@@ -3864,24 +3877,12 @@
    "r": 4.7,
    "t": "2026-11-20T17:01:05.412850+00:00",
    "title": "Creano® „Organic Herbal Tea“ – Caja Bio con 27 Bolsitas en 9 Variedades*"
-  },
-  {
-   "a": "B0FJG53ZS4",
-   "c": "Televisores",
-   "e": "📺",
-   "img": "https://m.media-amazon.com/images/I/81zslYDjHYL._AC_UL320_.jpg",
-   "n": 87,
-   "op": 239.9,
-   "p": 176.83,
-   "r": 4.2,
-   "t": "2026-11-20T15:01:28.964262+00:00",
-   "title": "SHARP TV 40 pulgadas LED Full HD – 40HA1305E"
   }
  ],
  "summary_day": "2026-11-19",
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-20",
-  "n": 23
+  "n": 24
  }
 }
