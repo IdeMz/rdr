@@ -39,6 +39,13 @@
    "v": 3,
    "via": "ean"
   },
+  "0195892103615": {
+   "a": "B0F5HN3KJX",
+   "t": "2026-11-20T00:05:25.220828+00:00",
+   "title": "Lenovo 4XC1Q25245 - Cámara Web (4 MP, 1920 x 1080 píxeles, USB-C), Color Negro",
+   "v": 3,
+   "via": "ean"
+  },
   "0195892131847": {
    "a": "B0H2YRHZSL",
    "t": "2026-11-19T11:05:31.132875+00:00",
@@ -3100,24 +3107,24 @@
    "veredicto": "oferta_real"
   },
   "39818152139": {
-   "ahorro_vs_amazon": 4,
+   "ahorro_vs_amazon": -14,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 69.0,
+   "amz_price": 58.0,
    "amz_title": "Shokz OpenMove Auriculares Conducción Ósea Bluetooth 5.1, Ligeros 29g, Gris",
    "asin": "B09BW29FJS",
    "disponible": true,
    "ean": "0850033806298",
    "encontrado_por": "nombre",
    "lista": "candidates",
-   "motivo": "antes 83.95 en PowerPlanet, pero en Amazon suele estar a 69.00",
+   "motivo": "Amazon 58.00 frente a 65.95",
    "name": "Shokz OpenMove Gris Conducción ósea Bluetooth 5.1 6h IP55 Auriculares inalámbricos",
    "pp_drop": 21,
    "pp_median": 83.95,
    "pp_price": 65.95,
-   "t": "2026-11-17T22:20:31.920357+00:00",
+   "t": "2026-11-20T00:05:25.220828+00:00",
    "v": 3,
-   "veredicto": "pvpr_inflado"
+   "veredicto": "amazon_mas_barato"
   },
   "39856617880": {
    "ahorro_vs_amazon": null,
@@ -5172,19 +5179,19 @@
    "ahorro_vs_amazon": -25,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 139.99,
+   "amz_price": 139.67,
    "amz_title": "HORI Wireless Racing Wheel Apex for Playstation 5, PlayStation 4 and Windows 11/10",
    "asin": "B0DCCZCR26",
    "disponible": true,
    "ean": "810050911702",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "Amazon 139.99 frente a 174.95",
+   "motivo": "Amazon 139.67 frente a 174.95",
    "name": "HORI Wireless Racing Wheel Apex PS5/PS4/PC Pedales incluidos Volante",
    "pp_drop": 17,
    "pp_median": 211.96,
    "pp_price": 174.95,
-   "t": "2026-11-17T22:35:22.842725+00:00",
+   "t": "2026-11-20T00:05:25.220828+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -6954,6 +6961,26 @@
    "v": 3,
    "veredicto": "oferta_real"
   },
+  "46599139463": {
+   "ahorro_vs_amazon": 31,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 81.58,
+   "amz_title": "Lenovo 4XC1Q25245 - Cámara Web (4 MP, 1920 x 1080 píxeles, USB-C), Color Negro",
+   "asin": "B0F5HN3KJX",
+   "disponible": true,
+   "ean": "0195892103615",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "31 % por debajo del habitual en Amazon (81.58)",
+   "name": "Lenovo QHD Webcam Full HD Negro 4XC1Q25245",
+   "pp_drop": 22,
+   "pp_median": 71.95,
+   "pp_price": 55.95,
+   "t": "2026-11-20T00:05:25.220828+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "46599139490": {
    "ean": "0199251521225",
    "lista": "candidates",
@@ -8592,14 +8619,14 @@
    }
   }
  },
- "night_at": "2026-11-19T23:50:26.107609+00:00",
+ "night_at": "2026-11-20T00:05:25.220828+00:00",
  "resumen": {
-  "amazon_mas_barato": 30,
+  "amazon_mas_barato": 31,
   "dudoso": 1,
   "no_esta": 15,
-  "oferta_real": 24,
-  "pvpr_inflado": 4,
+  "oferta_real": 25,
+  "pvpr_inflado": 3,
   "sin_precio": 7
  },
- "updated": "2026-11-19T23:50:26.107609+00:00"
+ "updated": "2026-11-20T00:05:25.220828+00:00"
 }
