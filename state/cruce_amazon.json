@@ -945,6 +945,13 @@
    "title": "acer Nitro VG271U Pbmiipx 27 pulgadas WQHD (2560 x 1440) IPS AMD Radeon FREESYNC Monitor para juegos, 144 Hz, pantalla certificada VESA HDR400, DCI-P3, (2 puert",
    "via": "modelo"
   },
+  "4711121760365": {
+   "a": "B0CYNYJ3NR",
+   "t": "2026-11-20T20:31:08.098759+00:00",
+   "title": "Acer Vero CB3 CB243YEbemipruzxv - UM.QB3EE.E01",
+   "v": 3,
+   "via": "ean"
+  },
   "4711121768279": {
    "a": "B0CWB4MFJM",
    "t": "2026-11-13T22:35:19.548446+00:00",
@@ -6505,11 +6512,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Videojuego Bandai Namco Entertainment Elden Ring: Shadow of the Erdtree Xbox Series X",
-   "pista": "1107885 bytes; 6 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1097378 bytes; 6 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 37,
    "pp_median": 96.95,
    "pp_price": 60.95,
-   "t": "2026-11-20T14:30:58.924631+00:00",
+   "t": "2026-11-20T20:31:08.098759+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -7991,6 +7998,27 @@
    "t": "2026-11-14T16:45:37.700799+00:00",
    "veredicto": "oferta_real"
   },
+  "46599140739": {
+   "ahorro_vs_amazon": null,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": null,
+   "amz_title": "Acer Vero CB3 CB243YEbemipruzxv - UM.QB3EE.E01",
+   "asin": "B0CYNYJ3NR",
+   "disponible": true,
+   "ean": "4711121760365",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "en Amazon pero sin precio o no disponible",
+   "name": "Monitor Acer CB243Y E 23,8 pulgadas Full HD IPS 1 ms HDR10 Negro",
+   "pista": "979339 bytes; 3 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pp_drop": 20,
+   "pp_median": 255.95,
+   "pp_price": 205.95,
+   "t": "2026-11-20T20:31:08.098759+00:00",
+   "v": 3,
+   "veredicto": "sin_precio"
+  },
   "46599140761": {
    "ahorro_vs_amazon": 20,
    "amz_low30": null,
@@ -9116,7 +9144,7 @@
   "no_esta": 14,
   "oferta_real": 20,
   "pvpr_inflado": 2,
-  "sin_precio": 8
+  "sin_precio": 9
  },
- "updated": "2026-11-20T19:30:58.727153+00:00"
+ "updated": "2026-11-20T20:31:08.098759+00:00"
 }

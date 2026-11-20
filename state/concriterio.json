@@ -18,7 +18,7 @@
   "Climatización": "2026-11-20T13:31:03.874159+00:00",
   "Colchones y almohadas": "2026-11-19T10:35:44.498929+00:00",
   "Componentes PC": "2026-11-19T19:45:43.698458+00:00",
-  "Cuidado de la piel": "2026-11-19T18:15:40.654642+00:00",
+  "Cuidado de la piel": "2026-11-20T20:31:08.098759+00:00",
   "Cuidado del cabello": "2026-11-19T17:30:56.735106+00:00",
   "Cámaras de seguridad": "2026-11-20T08:01:03.517934+00:00",
   "Decoración navideña": "2026-11-20T08:30:53.150165+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-20T20:26:21.351030+00:00",
+ "next_at": "2026-11-20T20:56:18.192384+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -311,6 +311,17 @@
    "p": 23.0,
    "t": "2026-11-07T16:51:08.490373+00:00",
    "title": "Arquivet, Arena Gato Silica Crystal 17,8 L",
+   "v": []
+  },
+  "B00PBX3L7K": {
+   "c": "Cuidado de la piel",
+   "d": 51,
+   "e": "🧴",
+   "m": 474,
+   "p": 12.35,
+   "s": "busqueda",
+   "t": "2026-11-20T20:31:40.774312+00:00",
+   "title": "COSRX Snail Mucin 96% Power Face Serum 3.38 fl oz 100ml, Serum Hidratante para el Rostro, Cuidado Personal, Piel Brillante bajo el Maquillaje, Cuidado de la Piel Coreano, Belleza Coreana",
    "v": []
   },
   "B00T7L20EC": {
@@ -3860,6 +3871,18 @@
  },
  "reserve": [
   {
+   "a": "B09BD7L35V",
+   "c": "Cuidado de la piel",
+   "e": "🧴",
+   "img": "https://m.media-amazon.com/images/I/71AgCvUUG-L._AC_UL320_.jpg",
+   "n": 26500,
+   "op": 13.95,
+   "p": 7.49,
+   "r": 4.4,
+   "t": "2026-11-20T20:31:08.098759+00:00",
+   "title": "Garnier Vitamina C Sérum AntiManchas Pieles Sensible, Nº1 del mundo, 30 ml"
+  },
+  {
    "a": "B0CFRD1F39",
    "c": "Iluminación",
    "e": "🪔",
@@ -3882,18 +3905,6 @@
    "r": 4.5,
    "t": "2026-11-20T18:01:04.511345+00:00",
    "title": "Amazon Basics Sabana Bajera Ajustable, 90 x 190 x 30 cm, de Poliéster Microfibra, Blanco"
-  },
-  {
-   "a": "B0BKT9Y94V",
-   "c": "Café y cápsulas",
-   "e": "🫘",
-   "img": "https://m.media-amazon.com/images/I/71oK9ALUIcL._AC_UL320_.jpg",
-   "n": 5200,
-   "op": 13.99,
-   "p": 9.99,
-   "r": 4.7,
-   "t": "2026-11-20T17:01:05.412850+00:00",
-   "title": "Creano® „Organic Herbal Tea“ – Caja Bio con 27 Bolsitas en 9 Variedades*"
   }
  ],
  "store_skip": {
@@ -3903,6 +3914,6 @@
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-20",
-  "n": 26
+  "n": 27
  }
 }
