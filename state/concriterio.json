@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-20T20:56:18.192384+00:00",
+ "next_at": "2026-11-20T21:29:33.230181+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -3804,6 +3804,19 @@
    "title": "Monitor gaming MSI MAG 274QPFDE X30MV 27 pulgadas 300Hz WQHD Rapid VA Negro",
    "u": "https://www.awin1.com/pclick.php?p=46599140093&a=3134713&m=77138",
    "v": []
+  },
+  "pp:46772243198": {
+   "auto": true,
+   "c": "",
+   "d": 18,
+   "e": "",
+   "m": 475,
+   "p": 819.0,
+   "st": "POWERPLANET",
+   "t": "2026-11-20T21:01:07.003652+00:00",
+   "title": "Monitor gaming ASUS ROG Swift OLED 31.5 pulgadas QD-OLED 240Hz 4K Negro PG32UCDMZ",
+   "u": "https://www.awin1.com/pclick.php?p=46772243198&a=3134713&m=77138",
+   "v": []
   }
  },
  "problem": {},
@@ -3914,6 +3927,6 @@
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-20",
-  "n": 27
+  "n": 28
  }
 }
