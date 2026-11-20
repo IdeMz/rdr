@@ -54,7 +54,7 @@
   "Redes y wifi": "2026-11-19T15:30:55.803469+00:00",
   "Relojes": "2026-11-19T11:35:32.511367+00:00",
   "Robots de cocina": "2026-11-15T15:15:41.208340+00:00",
-  "Salud": "2026-11-18T21:01:05.865760+00:00",
+  "Salud": "2026-11-20T14:30:58.924631+00:00",
   "Smartwatch": "2026-11-19T15:01:09.213912+00:00",
   "Suplementos": "2026-11-19T20:45:42.101471+00:00",
   "Tablets": "2026-11-17T16:01:10.840347+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-20T14:27:00.628436+00:00",
+ "next_at": "2026-11-20T14:59:10.600770+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -449,6 +449,17 @@
    "s": "ambas",
    "t": "2026-11-17T10:03:47.553003+00:00",
    "title": "Logitech G G213 Prodigy Teclado Gaming",
+   "v": []
+  },
+  "B01N1UX8RW": {
+   "c": "Salud",
+   "d": 30,
+   "e": "🩺",
+   "m": 462,
+   "p": 20.99,
+   "s": "ambas",
+   "t": "2026-11-20T14:31:37.380530+00:00",
+   "title": "RENPHO Bascula Grasa Corporal y Muscular con App, 13 Métricas, Elis 1",
    "v": []
   },
   "B01N4Q8KO2": {
@@ -1484,16 +1495,6 @@
    "p": 20.89,
    "t": "2026-11-10T08:46:08.788835+00:00",
    "title": "Colageno Hidrolizado Puro, Acido Hialuronico, Coenzima Q10, Zinc",
-   "v": []
-  },
-  "B09KRVN7XG": {
-   "c": "Domótica",
-   "d": 26,
-   "e": "💡",
-   "m": 90,
-   "p": 10.99,
-   "t": "2026-11-06T14:06:03.337258+00:00",
-   "title": "Tapo L520E-Bombilla inteligente WiFi, Blanco Neutro 4000K, 8.7W/ 806lm, E27",
    "v": []
   },
   "B09M2R8JK5": {
@@ -3753,10 +3754,6 @@
  },
  "problem": {},
  "rejected": {
-  "B000IZYWI8": {
-   "t": "2026-11-19T14:30:58.584339+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B01M59ILYN": {
    "t": "2026-11-19T19:15:40.361750+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3772,10 +3769,6 @@
   "B09V8C4QP9": {
    "t": "2026-11-16T19:55:35.023364+00:00",
    "why": "descartada a mano"
-  },
-  "B0BVBPSBYM": {
-   "t": "2026-11-19T14:30:58.584339+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0C8TWSM3R": {
    "t": "2026-11-20T11:01:13.526266+00:00",
@@ -3820,6 +3813,18 @@
  },
  "reserve": [
   {
+   "a": "B07S9PTLNZ",
+   "c": "Salud",
+   "e": "🩺",
+   "img": "https://m.media-amazon.com/images/I/51YkqAwS-sL._AC_UL320_.jpg",
+   "n": 103800,
+   "op": 11.99,
+   "p": 8.85,
+   "r": 4.6,
+   "t": "2026-11-20T14:30:58.924631+00:00",
+   "title": "RENPHO Bascula de Baño, Alta Precisión, Pantalla LED, Perder Peso, Core 1S"
+  },
+  {
    "a": "B07F6LYVT6",
    "c": "Climatización",
    "e": "🌬️",
@@ -3842,24 +3847,12 @@
    "r": 4.7,
    "t": "2026-11-20T12:01:02.865312+00:00",
    "title": "UGREEN Cable USB Tipo C 240W Vídeo 8K@60Hz USB4 GEN3 40Gbps (1M)"
-  },
-  {
-   "a": "B0CKXQPYHJ",
-   "c": "Zapatillas",
-   "e": "👟",
-   "img": "https://m.media-amazon.com/images/I/51LsxxgDvwL._AC_UL320_.jpg",
-   "n": 3000,
-   "op": 75.0,
-   "p": 45.01,
-   "r": 4.4,
-   "t": "2026-11-20T11:30:53.381638+00:00",
-   "title": "Hombre Terrex Anylander Zapatos de Senderismo"
   }
  ],
  "summary_day": "2026-11-19",
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-20",
-  "n": 15
+  "n": 16
  }
 }
