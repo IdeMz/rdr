@@ -437,6 +437,13 @@
    "v": 3,
    "via": "ean"
   },
+  "0753759368777": {
+   "a": "B0GF2FKLHT",
+   "t": "2026-11-20T23:20:42.342812+00:00",
+   "title": "Garmin Venu X1, Smartwatch Premium con GPS, Pantalla AMOLED de 2'', Funciones de Salud y Bienestar 24/7, Altavoz y Micrófono Integrados, Mapas, Linterna LED, ha",
+   "v": 3,
+   "via": "ean"
+  },
   "0766907027891": {
    "a": "B0CMPW1698",
    "t": "2026-11-13T11:40:39.260187+00:00",
@@ -1966,6 +1973,13 @@
     ]
    }
   },
+  "6972476162213": {
+   "a": "B0B9R1YKQP",
+   "t": "2026-11-20T23:20:42.342812+00:00",
+   "title": "SJCAM Cámara Corporal A50",
+   "v": 3,
+   "via": "ean"
+  },
   "6972476162992": {
    "a": "B0DWXX7RH9",
    "t": "2026-11-20T14:01:07.067138+00:00",
@@ -3149,6 +3163,26 @@
    "v": 3,
    "veredicto": "oferta_real"
   },
+  "38299124911": {
+   "ahorro_vs_amazon": 5,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 177.5,
+   "amz_title": "SJCAM Cámara Corporal A50",
+   "asin": "B0B9R1YKQP",
+   "disponible": true,
+   "ean": "6972476162213",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "antes 209.00 en PowerPlanet, pero en Amazon suele estar a 177.50",
+   "name": "SJCAM A50 GPS Negro 4K 30fps WiFi Cámara deportiva",
+   "pp_drop": 19,
+   "pp_median": 209.0,
+   "pp_price": 169.0,
+   "t": "2026-11-20T23:20:42.342812+00:00",
+   "v": 3,
+   "veredicto": "pvpr_inflado"
+  },
   "38404791123": {
    "ahorro_vs_amazon": 50,
    "amz_low30": 119.0,
@@ -3809,6 +3843,26 @@
      "MSI GeForce RTX 5060 8G Ventus 2X OC"
     ]
    }
+  },
+  "43856947347": {
+   "ahorro_vs_amazon": 13,
+   "amz_low30": 494.99,
+   "amz_median": null,
+   "amz_price": 470.24,
+   "amz_title": "Garmin Venu X1, Smartwatch Premium con GPS, Pantalla AMOLED de 2'', Funciones de Salud y Bienestar 24/7, Altavoz y Micrófono Integrados, Mapas, Linterna LED, ha",
+   "asin": "B0GF2FKLHT",
+   "disponible": true,
+   "ean": "0753759368777",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "13 % por debajo del habitual en Amazon (494.99)",
+   "name": "Garmin Venu X1 Caja de titanio Dorado Correa Nailon Gris 2 pulgadas AMOLED 8 días 5ATM Smartwatch",
+   "pp_drop": 16,
+   "pp_median": 509.0,
+   "pp_price": 429.9,
+   "t": "2026-11-20T23:20:42.342812+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
   },
   "44246461455": {
    "ahorro_vs_amazon": 4,
@@ -5453,11 +5507,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Set de Construcción LEGO City 60419 Comisaría de Policía en la Isla Prisión",
-   "pista": "1905334 bytes; 3 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1846616 bytes; 3 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 22,
    "pp_median": 100.95,
    "pp_price": 78.83,
-   "t": "2026-11-20T04:50:25.262478+00:00",
+   "t": "2026-11-20T23:20:42.342812+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -9255,14 +9309,14 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-20T23:05:31.606567+00:00",
+ "night_at": "2026-11-20T23:20:42.342812+00:00",
  "resumen": {
   "amazon_mas_barato": 31,
   "dudoso": 0,
   "no_esta": 15,
-  "oferta_real": 21,
-  "pvpr_inflado": 3,
+  "oferta_real": 22,
+  "pvpr_inflado": 4,
   "sin_precio": 9
  },
- "updated": "2026-11-20T23:05:31.606567+00:00"
+ "updated": "2026-11-20T23:20:42.342812+00:00"
 }
