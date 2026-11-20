@@ -7668,25 +7668,24 @@
    "veredicto": "oferta_real"
   },
   "46599139876": {
-   "ahorro_vs_amazon": null,
+   "ahorro_vs_amazon": -9,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": null,
+   "amz_price": 99.66,
    "amz_title": "AOC Q27B36X Gaming Monitor 27 Pulgadas 144Hz Panel IPS, 4ms GtG, HDR10, (2560x1440 HDMI 1x 2.0 DP 1x 1.4) Negro",
    "asin": "B0G4N31XVY",
    "disponible": true,
    "ean": "4038986183208",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "en Amazon pero sin precio o no disponible",
+   "motivo": "Amazon 99.66 frente a 109.00",
    "name": "Monitor AOC 27 pulgadas 144Hz QHD IPS Negro Q27B36X",
-   "pista": "1921845 bytes; 14 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 25,
    "pp_median": 145.95,
    "pp_price": 109.0,
-   "t": "2026-11-20T17:01:05.412850+00:00",
+   "t": "2026-11-20T23:05:31.606567+00:00",
    "v": 3,
-   "veredicto": "sin_precio"
+   "veredicto": "amazon_mas_barato"
   },
   "46599139882": {
    "ahorro_vs_amazon": 6,
@@ -9256,14 +9255,14 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-20T22:50:37.790383+00:00",
+ "night_at": "2026-11-20T23:05:31.606567+00:00",
  "resumen": {
-  "amazon_mas_barato": 30,
+  "amazon_mas_barato": 31,
   "dudoso": 0,
   "no_esta": 15,
   "oferta_real": 21,
   "pvpr_inflado": 3,
-  "sin_precio": 10
+  "sin_precio": 9
  },
- "updated": "2026-11-20T22:50:37.790383+00:00"
+ "updated": "2026-11-20T23:05:31.606567+00:00"
 }
