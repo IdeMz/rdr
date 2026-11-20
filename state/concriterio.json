@@ -50,7 +50,7 @@
   "Periféricos": "2026-11-18T17:01:08.637572+00:00",
   "Perros": "2026-11-19T08:05:38.436182+00:00",
   "Portátiles": "2026-11-19T11:35:32.511367+00:00",
-  "Proyectores": "2026-11-17T17:31:15.607799+00:00",
+  "Proyectores": "2026-11-20T07:01:06.896632+00:00",
   "Redes y wifi": "2026-11-19T15:30:55.803469+00:00",
   "Relojes": "2026-11-19T11:35:32.511367+00:00",
   "Robots de cocina": "2026-11-15T15:15:41.208340+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-19T22:11:12.040756+00:00",
+ "next_at": "2026-11-20T07:27:30.928820+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2796,16 +2796,6 @@
    "title": "Colageno con Magnesio y Vitamina C - 200 Cápsulas - Colageno Hidrolizado",
    "v": []
   },
-  "B0FBG3ZCK6": {
-   "c": "Zapatillas",
-   "d": 40,
-   "e": "👟",
-   "m": 77,
-   "p": 60.0,
-   "t": "2026-11-05T21:55:57.983634+00:00",
-   "title": "Reebok",
-   "v": []
-  },
   "B0FBR8S87S": {
    "c": "Iluminación",
    "d": 40,
@@ -3432,6 +3422,17 @@
    "title": "XIAOMI REDMI Pad 2 4+256GB Tablet de 11\" 2.5K Gris Batería de 9000 mAh",
    "v": []
   },
+  "B0GXJRXBBG": {
+   "c": "Proyectores",
+   "d": 43,
+   "e": "📽️",
+   "m": 447,
+   "p": 286.68,
+   "s": "ambas",
+   "t": "2026-11-20T07:01:43.372633+00:00",
+   "title": "Proyector 4K【Alto Brillo 2000ANSI/VIDAA SO más rápido/50W Dolby Audio】Proyector Netflix Incluido TV en Directo, FHD1080P, HDR10, Auto Focus/Keystone, Control por Voz, BT5.4, para Exterior/Cine en Casa",
+   "v": []
+  },
   "B0GYFM8Z87": {
    "c": "Cuidado del cabello",
    "d": 36,
@@ -3766,6 +3767,10 @@
    "t": "2026-11-19T08:05:38.436182+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0DHG8XRVV": {
+   "t": "2026-11-20T07:01:06.896632+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0FGK8CPX5": {
    "t": "2026-11-19T15:01:09.213912+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3781,46 +3786,22 @@
  },
  "reserve": [
   {
-   "a": "B08BFJ37TV",
-   "c": "Camping y montaña",
-   "e": "🏕️",
-   "img": "https://m.media-amazon.com/images/I/61ArhnxxKaL._AC_UL320_.jpg",
-   "n": 3100,
-   "op": 29.95,
-   "p": 25.99,
-   "r": 4.6,
-   "t": "2026-11-19T21:45:51.469863+00:00",
-   "title": "klarus HM1 IPX6 antorcha recargable impermeable con sensor de movimiento, 440 lúmenes 70 horas de duración máxima, batería de 1800mAh para correr, acampar, senderismo, caza(HM1-Rojo)"
-  },
-  {
-   "a": "B09VB54T5L",
-   "c": "Videojuegos",
-   "e": "🎮",
-   "img": "https://m.media-amazon.com/images/I/61+sd5d3LbL._AC_UL320_.jpg",
-   "n": 1800,
-   "op": 89.99,
-   "p": 81.22,
-   "r": 4.6,
-   "t": "2026-11-19T21:15:40.155765+00:00",
-   "title": "Consola Yaheetech con 1 cajón, 100 x 30 x 80 cm, Blanca"
-  },
-  {
-   "a": "B008FN6YOU",
-   "c": "Suplementos",
-   "e": "💊",
-   "img": "https://m.media-amazon.com/images/I/717HV1eC9SL._AC_UL320_.jpg",
-   "n": 5400,
-   "op": 34.99,
-   "p": 18.99,
-   "r": 4.6,
-   "t": "2026-11-19T20:45:42.101471+00:00",
-   "title": "Optimum Nutrition Opti-Men, Multivitamínico de Alta Potencia para Hombres"
+   "a": "B0HJ76FDCX",
+   "c": "Proyectores",
+   "e": "📽️",
+   "img": "https://m.media-amazon.com/images/I/71GTr110kTL._AC_UL320_.jpg",
+   "n": 134,
+   "op": 199.99,
+   "p": 132.99,
+   "r": 4.5,
+   "t": "2026-11-20T07:01:06.896632+00:00",
+   "title": "[1500 ANSI] Proyector Inteligente 1080P Nativo - Soporte 4K, Android 14"
   }
  ],
  "summary_day": "2026-11-19",
  "tg_offset": 511048116,
  "x_copy": {
-  "day": "2026-11-19",
-  "n": 30
+  "day": "2026-11-20",
+  "n": 1
  }
 }
