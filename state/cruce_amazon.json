@@ -5273,19 +5273,19 @@
    "ahorro_vs_amazon": 31,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 298.16,
+   "amz_price": 298.06,
    "amz_title": "Micron Crucial P510 - Ssd - 1 Tb - Intern - M.2 2280 - Pci Express 5.0 X4 (nvme) (ct1000p510ssd5)",
    "asin": "B0FP9K9C4T",
    "disponible": true,
    "ean": "649528946560",
    "encontrado_por": "modelo",
    "lista": "candidates",
-   "motivo": "31 % por debajo del habitual en Amazon (298.16)",
+   "motivo": "31 % por debajo del habitual en Amazon (298.06)",
    "name": "Crucial P510 1TB NVMe M.2 PCIe 5.0 2280 11000MB/s SSD",
    "pp_drop": 22,
    "pp_median": 262.95,
    "pp_price": 205.95,
-   "t": "2026-11-18T13:01:08.331588+00:00",
+   "t": "2026-11-20T17:30:54.157924+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -5982,7 +5982,7 @@
    "pp_drop": 24,
    "pp_median": 169.99,
    "pp_price": 129.0,
-   "t": "2026-11-18T13:01:08.331588+00:00",
+   "t": "2026-11-20T17:30:54.157924+00:00",
    "v": 3,
    "veredicto": "no_esta",
    "vistos": {
@@ -9091,5 +9091,5 @@
   "pvpr_inflado": 3,
   "sin_precio": 8
  },
- "updated": "2026-11-20T17:01:05.412850+00:00"
+ "updated": "2026-11-20T17:30:54.157924+00:00"
 }
