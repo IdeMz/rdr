@@ -1143,6 +1143,24 @@
    "title": "GIGABYTE GeForce RTX 5070 WINDFORCE OC SFF 12G Tarjeta Gráfica - 12GB GDDR7, 192 bits, PCI-E 5.0, 2542 MHz Core Clock, 3 x DP 2.1a, 1 x HDMI 2.1b, NVIDIA DLSS 4",
    "via": "nombre"
   },
+  "4823114073267": {
+   "a": "",
+   "t": "2026-11-20T11:01:13.526266+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "modelo": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Ajax Hub 2 Plus Central de Alarma Profesional 4G Doble SIM Blanca, Modelo AJ-HUB2PLUS-W",
+     "Kit de Inicio de Seguridad de alarma/blanco/20288 AJAX",
+     "CENTRAL INCENDIOS CONVENCIONAL 2 ZONAS COFEM"
+    ]
+   }
+  },
   "4894461950730": {
    "a": "",
    "t": "2026-11-19T14:01:04.176634+00:00",
@@ -8037,6 +8055,31 @@
    "t": "2026-11-17T01:35:36.075081+00:00",
    "veredicto": "amazon_mas_barato"
   },
+  "46599142750": {
+   "ean": "4823114073267",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Central de Alarma contra Incendios Ajax Systems Fire Hub EN54 Blanco WiFi 125732",
+   "pp_drop": 41,
+   "pp_median": 845.95,
+   "pp_price": 500.95,
+   "t": "2026-11-20T11:01:13.526266+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "modelo": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Ajax Hub 2 Plus Central de Alarma Profesional 4G Doble SIM Blanca, Modelo AJ-HUB2PLUS-W",
+     "Kit de Inicio de Seguridad de alarma/blanco/20288 AJAX",
+     "CENTRAL INCENDIOS CONVENCIONAL 2 ZONAS COFEM"
+    ]
+   }
+  },
   "46599142905": {
    "ean": "0622356272551",
    "lista": "candidates",
@@ -8705,10 +8748,10 @@
  "resumen": {
   "amazon_mas_barato": 21,
   "dudoso": 0,
-  "no_esta": 12,
+  "no_esta": 13,
   "oferta_real": 17,
   "pvpr_inflado": 3,
   "sin_precio": 7
  },
- "updated": "2026-11-20T10:30:53.027422+00:00"
+ "updated": "2026-11-20T11:01:13.526266+00:00"
 }

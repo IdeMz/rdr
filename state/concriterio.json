@@ -1,6 +1,6 @@
 {
  "cats": {
-  "Accesorios de coche": "2026-11-18T19:30:57.703760+00:00",
+  "Accesorios de coche": "2026-11-20T11:01:13.526266+00:00",
   "Accesorios de móvil": "2026-11-18T21:30:53.368269+00:00",
   "Afeitado y depilación": "2026-11-17T20:15:50.874512+00:00",
   "Almacenamiento": "2026-11-18T10:30:54.867859+00:00",
@@ -41,7 +41,7 @@
   "Menaje de cocina": "2026-11-19T09:35:35.003414+00:00",
   "Mochilas y maletas": "2026-11-20T07:30:55.091992+00:00",
   "Monitores": "2026-11-20T09:30:54.246285+00:00",
-  "Móviles": "2026-11-18T20:31:00.004559+00:00",
+  "Móviles": "2026-11-20T11:01:13.526266+00:00",
   "Nutrición deportiva": "2026-11-17T14:30:58.598858+00:00",
   "Oficina": "2026-11-19T13:05:35.393737+00:00",
   "Patinetes": "2026-11-18T12:30:56.291132+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-20T10:57:01.180592+00:00",
+ "next_at": "2026-11-20T11:28:37.466946+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1784,6 +1784,17 @@
    "title": "Gal Guardians: Demon Purge - PlayStation 5",
    "v": []
   },
+  "B0BV288KNZ": {
+   "c": "Accesorios de coche",
+   "d": 26,
+   "e": "🚗",
+   "m": 455,
+   "p": 51.99,
+   "s": "ofertas",
+   "t": "2026-11-20T11:02:23.361723+00:00",
+   "title": "Einhell Aspiradora de Mano con batería TE-HV 18/06 Li-Solo",
+   "v": []
+  },
   "B0BWXM3RRK": {
    "c": "Altavoces",
    "d": 17,
@@ -1912,16 +1923,6 @@
    "s": "ofertas",
    "t": "2026-11-17T18:48:48.388803+00:00",
    "title": "Philips Hue Enchufes Inteligentes para Lámparas No Inteligentes, Pack de 3",
-   "v": []
-  },
-  "B0CFVZG5TR": {
-   "c": "Lego",
-   "d": 38,
-   "e": "🧱",
-   "m": 84,
-   "p": 39.99,
-   "t": "2026-11-06T10:35:58.852555+00:00",
-   "title": "LEGO Disney Stitch 43249",
    "v": []
   },
   "B0CGDQMT69": {
@@ -3768,6 +3769,10 @@
    "t": "2026-11-19T14:30:58.584339+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0C8TWSM3R": {
+   "t": "2026-11-20T11:01:13.526266+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0CJJCZMKJ": {
    "t": "2026-11-19T21:15:40.155765+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3788,6 +3793,18 @@
    "t": "2026-11-19T15:01:09.213912+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0G4ZFP5NH": {
+   "t": "2026-11-20T11:01:13.526266+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0GR5ZBN8Z": {
+   "t": "2026-11-20T11:01:13.526266+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0HDSV2WJ8": {
+   "t": "2026-11-20T11:01:13.526266+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0HHM2Z9GN": {
    "t": "2026-11-19T07:01:21.085197+00:00",
    "why": "alta hace 29 dias"
@@ -3805,36 +3822,12 @@
    "r": 4.6,
    "t": "2026-11-20T10:30:53.027422+00:00",
    "title": "Mugler, Angel Nova, Eau de Parfum"
-  },
-  {
-   "a": "B0B87X42R1",
-   "c": "Cámaras de seguridad",
-   "e": "📹",
-   "img": "https://m.media-amazon.com/images/I/81rH+IllR9L._AC_UL320_.jpg",
-   "n": 151,
-   "op": 204.21,
-   "p": 128.1,
-   "r": 4.5,
-   "t": "2026-11-20T08:01:03.517934+00:00",
-   "title": "Vimar K40990 Kit videoportero 7in 1Fam.aliment.multiclavija"
-  },
-  {
-   "a": "B074KV9TT4",
-   "c": "Mochilas y maletas",
-   "e": "🎒",
-   "img": "https://m.media-amazon.com/images/I/71Fw+w-s0SL._AC_UL320_.jpg",
-   "n": 51800,
-   "op": 37.98,
-   "p": 26.59,
-   "r": 4.7,
-   "t": "2026-11-20T07:30:55.091992+00:00",
-   "title": "Mochila Portatil Hombre Impermeable, Mochila Ordenador Portatil 15.6"
   }
  ],
  "summary_day": "2026-11-19",
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-20",
-  "n": 8
+  "n": 9
  }
 }
