@@ -1230,6 +1230,13 @@
    "title": "GIGABYTE GeForce RTX 5070 WINDFORCE OC SFF 12G Tarjeta Gráfica - 12GB GDDR7, 192 bits, PCI-E 5.0, 2542 MHz Core Clock, 3 x DP 2.1a, 1 x HDMI 2.1b, NVIDIA DLSS 4",
    "via": "nombre"
   },
+  "4719692019981": {
+   "a": "B08176M1KG",
+   "t": "2026-11-20T23:35:25.778791+00:00",
+   "title": "G.SKILL AEGIS Series DDR4 RAM (XMP) 16GB (2x8GB) 3200MT/s CL16-18-18-38 1.35V Intel AMD Desktop Computer Memory U-DIMM (F4-3200C16D-16GIS)",
+   "v": 3,
+   "via": "modelo"
+  },
   "4823114073267": {
    "a": "",
    "t": "2026-11-20T11:01:13.526266+00:00",
@@ -1524,6 +1531,13 @@
    "a": "B0FPXDRR63",
    "t": "2026-11-15T00:50:26.258760+00:00",
    "title": "LEGO Editions Trofeo Oficial de la Copa Mundial de la FIFA 43020",
+   "via": "ean"
+  },
+  "5706751067112": {
+   "a": "B0BZLR766G",
+   "t": "2026-11-20T23:35:25.778791+00:00",
+   "title": "Denver Radio Solar de Emergencia con Manivela, Radio Portátil Recargable",
+   "v": 3,
    "via": "ean"
   },
   "5706991019599": {
@@ -5515,6 +5529,26 @@
    "v": 3,
    "veredicto": "sin_precio"
   },
+  "45956991831": {
+   "ahorro_vs_amazon": -8,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 144.95,
+   "amz_title": "G.SKILL AEGIS Series DDR4 RAM (XMP) 16GB (2x8GB) 3200MT/s CL16-18-18-38 1.35V Intel AMD Desktop Computer Memory U-DIMM (F4-3200C16D-16GIS)",
+   "asin": "B08176M1KG",
+   "disponible": true,
+   "ean": "4719692019981",
+   "encontrado_por": "modelo",
+   "lista": "candidates",
+   "motivo": "Amazon 144.95 frente a 156.95",
+   "name": "G.Skill Aegis DDR4 16GB 2x8GB 2666MHz CL19 DIMM Memoria RAM",
+   "pp_drop": 19,
+   "pp_median": 193.95,
+   "pp_price": 156.95,
+   "t": "2026-11-20T23:35:25.778791+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "45956991871": {
    "ahorro_vs_amazon": 10,
    "amz_low30": null,
@@ -8102,11 +8136,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Monitor Acer Vero B7 B247Y G 23,8 pulgadas FHD IPS 75Hz 4 ms Negro",
-   "pista": "935523 bytes; 0 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "904791 bytes; 0 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 20,
    "pp_median": 127.95,
    "pp_price": 102.95,
-   "t": "2026-11-20T05:09:51.721664+00:00",
+   "t": "2026-11-20T23:35:25.778791+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -8809,6 +8843,26 @@
     ]
    }
   },
+  "46599143629": {
+   "ahorro_vs_amazon": 7,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 29.95,
+   "amz_title": "Denver Radio Solar de Emergencia con Manivela, Radio Portátil Recargable",
+   "asin": "B0BZLR766G",
+   "disponible": true,
+   "ean": "5706751067112",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "antes 38.95 en PowerPlanet, pero en Amazon suele estar a 29.95",
+   "name": "Radio de emergencia Denver Litio 2000mAh FM/AM Solar y Manivela Rojo/Negro SCR-2010",
+   "pp_drop": 28,
+   "pp_median": 38.95,
+   "pp_price": 27.95,
+   "t": "2026-11-20T23:35:25.778791+00:00",
+   "v": 3,
+   "veredicto": "pvpr_inflado"
+  },
   "46599143670": {
    "ean": "6972147076962",
    "lista": "candidates",
@@ -9309,14 +9363,14 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-20T23:20:42.342812+00:00",
+ "night_at": "2026-11-20T23:35:25.778791+00:00",
  "resumen": {
-  "amazon_mas_barato": 31,
+  "amazon_mas_barato": 32,
   "dudoso": 0,
   "no_esta": 15,
   "oferta_real": 22,
-  "pvpr_inflado": 4,
+  "pvpr_inflado": 5,
   "sin_precio": 9
  },
- "updated": "2026-11-20T23:20:42.342812+00:00"
+ "updated": "2026-11-20T23:35:25.778791+00:00"
 }
