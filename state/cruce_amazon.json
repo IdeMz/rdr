@@ -731,6 +731,22 @@
    "v": 3,
    "via": "ean"
   },
+  "3838783014481": {
+   "a": "",
+   "t": "2026-11-20T13:31:03.874159+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "modelo": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "(sin resultados)"
+    ]
+   }
+  },
   "4008146046551": {
    "a": "B0F9TRBWPD",
    "t": "2026-11-16T10:45:46.172773+00:00",
@@ -2075,6 +2091,13 @@
    "a": "B0H5CX6JHR",
    "t": "2026-11-16T22:50:28.400882+00:00",
    "title": "Marshall Stanmore IV Altavoz Bluetooth - Negro",
+   "via": "ean"
+  },
+  "7340086914642": {
+   "a": "B0D452QG5K",
+   "t": "2026-11-20T13:31:03.874159+00:00",
+   "title": "CHERRY XTRFY M68 Wireless, Ratón Inalámbrico Ultraligero para Juegos, 2,4 GHz, Optimizado para E-sports, Forma Simétrica con Parte Frontal Extra Baja, Negro",
+   "v": 3,
    "via": "ean"
   },
   "7350071401231": {
@@ -5761,6 +5784,26 @@
     ]
    }
   },
+  "46129491527": {
+   "ahorro_vs_amazon": -27,
+   "amz_low30": 40.14,
+   "amz_median": null,
+   "amz_price": 36.99,
+   "amz_title": "CHERRY XTRFY M68 Wireless, Ratón Inalámbrico Ultraligero para Juegos, 2,4 GHz, Optimizado para E-sports, Forma Simétrica con Parte Frontal Extra Baja, Negro",
+   "asin": "B0D452QG5K",
+   "disponible": true,
+   "ean": "7340086914642",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 36.99 frente a 50.95",
+   "name": "Cherry XTRFY M68 Wireless 2,4 GHz 26000 DPI 53g 5 botones Ratón gaming inalámbrico",
+   "pp_drop": 41,
+   "pp_median": 86.95,
+   "pp_price": 50.95,
+   "t": "2026-11-20T13:31:03.874159+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "46136341768": {
    "ahorro_vs_amazon": null,
    "amz_low30": null,
@@ -5920,6 +5963,29 @@
    "pp_price": 1210.96,
    "t": "2026-11-13T17:10:41.240248+00:00",
    "veredicto": "amazon_mas_barato"
+  },
+  "46165551706": {
+   "ean": "3838783014481",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Hisense 11L Doble cesta 2700W Negro HAF2700DCD 8 programas pantalla táctil Freidora de aire",
+   "pp_drop": 31,
+   "pp_median": 234.95,
+   "pp_price": 161.95,
+   "t": "2026-11-20T13:31:03.874159+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "modelo": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "(sin resultados)"
+    ]
+   }
   },
   "46186022867": {
    "ahorro_vs_amazon": 28,
@@ -8909,12 +8975,12 @@
  },
  "night_at": "2026-11-20T06:35:32.446519+00:00",
  "resumen": {
-  "amazon_mas_barato": 26,
+  "amazon_mas_barato": 27,
   "dudoso": 0,
-  "no_esta": 13,
+  "no_esta": 14,
   "oferta_real": 17,
   "pvpr_inflado": 3,
   "sin_precio": 8
  },
- "updated": "2026-11-20T13:01:06.821120+00:00"
+ "updated": "2026-11-20T13:31:03.874159+00:00"
 }

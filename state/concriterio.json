@@ -15,7 +15,7 @@
   "Camping y montaña": "2026-11-19T21:45:51.469863+00:00",
   "Cargadores y baterías": "2026-11-19T17:01:09.614407+00:00",
   "Ciclismo": "2026-11-19T12:35:30.987217+00:00",
-  "Climatización": "2026-11-19T07:01:21.085197+00:00",
+  "Climatización": "2026-11-20T13:31:03.874159+00:00",
   "Colchones y almohadas": "2026-11-19T10:35:44.498929+00:00",
   "Componentes PC": "2026-11-19T19:45:43.698458+00:00",
   "Cuidado de la piel": "2026-11-19T18:15:40.654642+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-20T13:28:20.985696+00:00",
+ "next_at": "2026-11-20T14:00:55.167596+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -3633,6 +3633,17 @@
    "title": "FOSMET Nuevo Reloj Inteligente Hombre con ECG/HRV/BMI, Android iOS Negro",
    "v": []
   },
+  "B0H6XJRGZQ": {
+   "c": "Climatización",
+   "d": 45,
+   "e": "🌬️",
+   "m": 460,
+   "p": 43.72,
+   "s": "ambas",
+   "t": "2026-11-20T13:31:38.235167+00:00",
+   "title": "Deshumidificador Eléctrico 1800 ml 2 Modos, Deshumificadores de Humedad",
+   "v": []
+  },
   "B0H741D676": {
    "c": "Herramientas",
    "d": 29,
@@ -3745,16 +3756,12 @@
    "t": "2026-11-19T14:30:58.584339+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B004W6KEDQ": {
-   "t": "2026-11-19T13:05:35.393737+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B01EFPYANS": {
-   "t": "2026-11-19T13:05:35.393737+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B01M59ILYN": {
    "t": "2026-11-19T19:15:40.361750+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B07HGFBXT8": {
+   "t": "2026-11-20T13:31:03.874159+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B08H99BPJN": {
@@ -3812,6 +3819,18 @@
  },
  "reserve": [
   {
+   "a": "B07F6LYVT6",
+   "c": "Climatización",
+   "e": "🌬️",
+   "img": "https://m.media-amazon.com/images/I/71GMq15KvWL._AC_UL320_.jpg",
+   "n": 1100,
+   "op": 15.99,
+   "p": 11.99,
+   "r": 4.3,
+   "t": "2026-11-20T13:31:03.874159+00:00",
+   "title": "Rubson AERO 360º Baño, deshumidificador portátil sin cable para baño, absorbe humedad para la circulación del aire, disipador de condensación antihumedad, dispositivo y tableta (450 g)"
+  },
+  {
    "a": "B0DZP21RXY",
    "c": "Accesorios de móvil",
    "e": "🤳",
@@ -3834,24 +3853,12 @@
    "r": 4.4,
    "t": "2026-11-20T11:30:53.381638+00:00",
    "title": "Hombre Terrex Anylander Zapatos de Senderismo"
-  },
-  {
-   "a": "B089SMZ76T",
-   "c": "Perfumes",
-   "e": "🌸",
-   "img": "https://m.media-amazon.com/images/I/61KxjtkErrL._AC_UL320_.jpg",
-   "n": 1700,
-   "op": 92.38,
-   "p": 76.0,
-   "r": 4.6,
-   "t": "2026-11-20T10:30:53.027422+00:00",
-   "title": "Mugler, Angel Nova, Eau de Parfum"
   }
  ],
  "summary_day": "2026-11-19",
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-20",
-  "n": 13
+  "n": 14
  }
 }
