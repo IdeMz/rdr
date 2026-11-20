@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-20T18:56:57.371603+00:00",
+ "next_at": "2026-11-20T19:26:35.576548+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1099,16 +1099,6 @@
    "s": "busqueda",
    "t": "2026-11-17T18:03:50.184412+00:00",
    "title": "Philips Serie 5400 Cafetera Superautomática - Sistema de Leche LatteGo, 12 Variedades de Café, Pantalla Intuitiva, 4 Perfiles de Usuario, Cromado (EP5447/90)",
-   "v": []
-  },
-  "B08CBJCQ39": {
-   "c": "Cafeteras",
-   "d": 27,
-   "e": "☕",
-   "m": 99,
-   "p": 489.0,
-   "t": "2026-11-06T18:46:25.754489+00:00",
-   "title": "Philips 5400 Cafetera Superautomática LatteGo, 12 bebidas, Negro",
    "v": []
   },
   "B08FCFC8B1": {
@@ -3776,6 +3766,19 @@
    "t": "2026-11-13T14:01:42.490829+00:00",
    "title": "Reloj Inteligente Hombre Mujer, 1.95\" Smartwatches Reloj Deporte con Funciún Llamadas y Mensajes Bluetooth, 110+ Deportivos SmartWatch con Podómetro/Pulsómetro/Monitor de Sueño, IP68 Pulsera Actividad",
    "v": []
+  },
+  "pp:46599140093": {
+   "auto": true,
+   "c": "",
+   "d": 41,
+   "e": "",
+   "m": 471,
+   "p": 358.99,
+   "st": "POWERPLANET",
+   "t": "2026-11-20T19:01:07.591956+00:00",
+   "title": "Monitor gaming MSI MAG 274QPFDE X30MV 27 pulgadas 300Hz WQHD Rapid VA Negro",
+   "u": "https://www.awin1.com/pclick.php?p=46599140093&a=3134713&m=77138",
+   "v": []
   }
  },
  "problem": {},
@@ -3879,10 +3882,13 @@
    "title": "Creano® „Organic Herbal Tea“ – Caja Bio con 27 Bolsitas en 9 Variedades*"
   }
  ],
+ "store_skip": {
+  "pp:45858364586": "2026-11-20T19:01:07.591956+00:00"
+ },
  "summary_day": "2026-11-19",
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-20",
-  "n": 24
+  "n": 25
  }
 }
