@@ -46,7 +46,7 @@
   "Oficina": "2026-11-19T13:05:35.393737+00:00",
   "Patinetes": "2026-11-18T12:30:56.291132+00:00",
   "Pequeño electrodoméstico": "2026-11-18T20:01:08.859046+00:00",
-  "Perfumes": "2026-11-19T07:35:31.217586+00:00",
+  "Perfumes": "2026-11-20T10:30:53.027422+00:00",
   "Periféricos": "2026-11-18T17:01:08.637572+00:00",
   "Perros": "2026-11-19T08:05:38.436182+00:00",
   "Portátiles": "2026-11-19T11:35:32.511367+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-20T10:27:05.623442+00:00",
+ "next_at": "2026-11-20T10:57:01.180592+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -826,16 +826,6 @@
    "s": "ambas",
    "t": "2026-11-19T09:06:10.116632+00:00",
    "title": "Men's Zapatilla Strutter",
-   "v": []
-  },
-  "B07TJW59YZ": {
-   "c": "Relojes",
-   "d": 38,
-   "e": "🕰️",
-   "m": 83,
-   "p": 49.99,
-   "t": "2026-11-06T10:01:28.431151+00:00",
-   "title": "BENYAR",
    "v": []
   },
   "B07VG82SSM": {
@@ -2287,6 +2277,17 @@
    "p": 22.99,
    "t": "2026-11-08T15:11:09.144750+00:00",
    "title": "MATEIN",
+   "v": []
+  },
+  "B0D8J5CVPK": {
+   "c": "Perfumes",
+   "d": 20,
+   "e": "🌸",
+   "m": 454,
+   "p": 17.62,
+   "s": "ambas",
+   "t": "2026-11-20T10:31:21.963466+00:00",
+   "title": "CALVIN KLEIN CK One Essence Parfum Intense – Perfume unisex amaderado cítrico – Con notas de bergamota, té verde y sándalo – Fragancia duradera",
    "v": []
   },
   "B0D8LJWZPB": {
@@ -3747,10 +3748,6 @@
    "t": "2026-11-19T13:05:35.393737+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B01IUP0Y8E": {
-   "t": "2026-11-19T10:05:35.124541+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B01M59ILYN": {
    "t": "2026-11-19T19:15:40.361750+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3798,6 +3795,18 @@
  },
  "reserve": [
   {
+   "a": "B089SMZ76T",
+   "c": "Perfumes",
+   "e": "🌸",
+   "img": "https://m.media-amazon.com/images/I/61KxjtkErrL._AC_UL320_.jpg",
+   "n": 1700,
+   "op": 92.38,
+   "p": 76.0,
+   "r": 4.6,
+   "t": "2026-11-20T10:30:53.027422+00:00",
+   "title": "Mugler, Angel Nova, Eau de Parfum"
+  },
+  {
    "a": "B0B87X42R1",
    "c": "Cámaras de seguridad",
    "e": "📹",
@@ -3820,24 +3829,12 @@
    "r": 4.7,
    "t": "2026-11-20T07:30:55.091992+00:00",
    "title": "Mochila Portatil Hombre Impermeable, Mochila Ordenador Portatil 15.6"
-  },
-  {
-   "a": "B0HJ76FDCX",
-   "c": "Proyectores",
-   "e": "📽️",
-   "img": "https://m.media-amazon.com/images/I/71GTr110kTL._AC_UL320_.jpg",
-   "n": 134,
-   "op": 199.99,
-   "p": 132.99,
-   "r": 4.5,
-   "t": "2026-11-20T07:01:06.896632+00:00",
-   "title": "[1500 ANSI] Proyector Inteligente 1080P Nativo - Soporte 4K, Android 14"
   }
  ],
  "summary_day": "2026-11-19",
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-20",
-  "n": 7
+  "n": 8
  }
 }

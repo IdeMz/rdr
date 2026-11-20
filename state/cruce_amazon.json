@@ -435,6 +435,13 @@
    "title": "ViewSonic Monitor VG2741V-2K MNTN24-C-307",
    "via": "ean"
   },
+  "0810038858715": {
+   "a": "B0B6WR2NNZ",
+   "t": "2026-11-20T10:30:53.027422+00:00",
+   "title": "Google Fitbit Versa 4 smartwatch, con Google Health Premium",
+   "v": 3,
+   "via": "ean"
+  },
   "0810056140830": {
    "a": "B0CY21PP3D",
    "t": "2026-11-18T18:01:04.377917+00:00",
@@ -2310,6 +2317,13 @@
      "SaveFamily SaveWatch Plus 4G | Reloj Inteligente Niño/a con Localizador GPS"
     ]
    }
+  },
+  "8447420002740": {
+   "a": "B0FKSY8RC2",
+   "t": "2026-11-20T10:30:53.027422+00:00",
+   "title": "Cecotec Freidora de Aire 10L Cecofry DuoLevel 10000 DuoSize Window 2500W",
+   "v": 3,
+   "via": "ean"
   },
   "8592978595500": {
    "a": "",
@@ -5525,6 +5539,26 @@
     ]
    }
   },
+  "46082385630": {
+   "ahorro_vs_amazon": 12,
+   "amz_low30": 161.5,
+   "amz_median": 187.31,
+   "amz_price": 129.0,
+   "amz_title": "Google Fitbit Versa 4 smartwatch, con Google Health Premium",
+   "asin": "B0B6WR2NNZ",
+   "disponible": true,
+   "ean": "0810038858715",
+   "encontrado_por": "ean",
+   "lista": "to_verify",
+   "motivo": "Amazon 129.00 frente a 164.95",
+   "name": "Fitbit Versa 4 Negro AMOLED GPS NFC 6 días +40 deportes 5ATM Smartwatch",
+   "pp_drop": 52,
+   "pp_median": 346.96,
+   "pp_price": 164.95,
+   "t": "2026-11-20T10:30:53.027422+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "46093615448": {
    "ahorro_vs_amazon": 17,
    "amz_low30": null,
@@ -6680,6 +6714,26 @@
      "HP Smart Tank 7008, Impresora multifunción de inyección de Tinta A4 a Color, Wi-Fi, impresión a Dobl"
     ]
    }
+  },
+  "46247661684": {
+   "ahorro_vs_amazon": 22,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 94.9,
+   "amz_title": "Cecotec Freidora de Aire 10L Cecofry DuoLevel 10000 DuoSize Window 2500W",
+   "asin": "B0FKSY8RC2",
+   "disponible": true,
+   "ean": "8447420002740",
+   "encontrado_por": "ean",
+   "lista": "to_verify",
+   "motivo": "22 % por debajo del habitual en Amazon (94.90)",
+   "name": "Cecotec Cecofry DuoLevel 10000 DuoSize Window 10L Doble cesta 2000W Negro 10 programas pantalla táctil Freidora de aire",
+   "pp_drop": 55,
+   "pp_median": 162.95,
+   "pp_price": 73.93,
+   "t": "2026-11-20T10:30:53.027422+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
   },
   "46247662107": {
    "ahorro_vs_amazon": 4,
@@ -8649,12 +8703,12 @@
  },
  "night_at": "2026-11-20T06:35:32.446519+00:00",
  "resumen": {
-  "amazon_mas_barato": 31,
-  "dudoso": 1,
-  "no_esta": 15,
-  "oferta_real": 25,
+  "amazon_mas_barato": 21,
+  "dudoso": 0,
+  "no_esta": 12,
+  "oferta_real": 17,
   "pvpr_inflado": 3,
-  "sin_precio": 8
+  "sin_precio": 7
  },
- "updated": "2026-11-20T10:01:02.046099+00:00"
+ "updated": "2026-11-20T10:30:53.027422+00:00"
 }
