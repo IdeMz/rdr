@@ -39,7 +39,7 @@
   "Limpieza del hogar": "2026-11-19T19:15:40.361750+00:00",
   "Maquillaje": "2026-11-19T18:45:44.590047+00:00",
   "Menaje de cocina": "2026-11-19T09:35:35.003414+00:00",
-  "Mochilas y maletas": "2026-11-18T13:01:08.331588+00:00",
+  "Mochilas y maletas": "2026-11-20T07:30:55.091992+00:00",
   "Monitores": "2026-11-17T16:30:56.399108+00:00",
   "Móviles": "2026-11-18T20:31:00.004559+00:00",
   "Nutrición deportiva": "2026-11-17T14:30:58.598858+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-20T07:27:30.928820+00:00",
+ "next_at": "2026-11-20T08:00:38.686290+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -140,6 +140,17 @@
    "p": 24.94,
    "t": "2026-11-08T11:41:12.275160+00:00",
    "title": "Lavazza, Qualità Rossa, Café en Grano Natural, Ideal para la Máquina de Café Espresso, con Notas Aromáticas de Chocolate y Frutos Secos, Arábica y Robusta, Intensidad 5, Tueste Medio, Paquete de 1 kg",
+   "v": []
+  },
+  "B003OJ8RAE": {
+   "c": "Mochilas y maletas",
+   "d": 53,
+   "e": "🎒",
+   "m": 448,
+   "p": 26.0,
+   "s": "ambas",
+   "t": "2026-11-20T07:31:35.919257+00:00",
+   "title": "PADDED PAK'R Mochila, 24 L - Sunday Grey (Gris)",
    "v": []
   },
   "B0041W2VIM": {
@@ -1833,16 +1844,6 @@
    "s": "ambas",
    "t": "2026-11-19T08:36:02.214919+00:00",
    "title": "Amazon Echo Spot (última generación) | Despertador inteligente con sonido de calidad| Negro, con Acceso Anticipado a Alexa+",
-   "v": []
-  },
-  "B0C33RDGY8": {
-   "c": "Accesorios de coche",
-   "d": 22,
-   "e": "🚗",
-   "m": 78,
-   "p": 69.99,
-   "t": "2026-11-06T07:01:39.101272+00:00",
-   "title": "GKU 4K Dashcam Cámara Coche, 5GHz WiFi Dash CAM Coche con Tarjeta de 64GB, Mini Cámara Coche Grabadora, 170° Gran Angular, Visión Nocturna, WDR, Sensor G, Modo Parking 24H, Control App, Máx 256GB",
    "v": []
   },
   "B0C3HCD34R": {
@@ -3739,10 +3740,6 @@
    "t": "2026-11-19T19:15:40.361750+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B07HGFBXT8": {
-   "t": "2026-11-19T07:01:21.085197+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B07KJZM3QP": {
    "t": "2026-11-19T11:35:32.511367+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3767,6 +3764,10 @@
    "t": "2026-11-19T08:05:38.436182+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0D8KGZH8J": {
+   "t": "2026-11-20T07:30:55.091992+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0DHG8XRVV": {
    "t": "2026-11-20T07:01:06.896632+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3786,6 +3787,18 @@
  },
  "reserve": [
   {
+   "a": "B074KV9TT4",
+   "c": "Mochilas y maletas",
+   "e": "🎒",
+   "img": "https://m.media-amazon.com/images/I/71Fw+w-s0SL._AC_UL320_.jpg",
+   "n": 51800,
+   "op": 37.98,
+   "p": 26.59,
+   "r": 4.7,
+   "t": "2026-11-20T07:30:55.091992+00:00",
+   "title": "Mochila Portatil Hombre Impermeable, Mochila Ordenador Portatil 15.6"
+  },
+  {
    "a": "B0HJ76FDCX",
    "c": "Proyectores",
    "e": "📽️",
@@ -3802,6 +3815,6 @@
  "tg_offset": 511048116,
  "x_copy": {
   "day": "2026-11-20",
-  "n": 1
+  "n": 2
  }
 }
