@@ -8139,7 +8139,7 @@
    "veredicto": "sin_precio"
   },
   "46599142071": {
-   "ahorro_vs_amazon": -46,
+   "ahorro_vs_amazon": -6,
    "amz_low30": null,
    "amz_median": null,
    "amz_price": 157.71,
@@ -8149,12 +8149,12 @@
    "ean": "6978515257926",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "Amazon 157.71 frente a 230.95",
+   "motivo": "Amazon 157.71 frente a 166.96",
    "name": "Dreame Tasti 1500W pantalla táctil Freidora de aire",
-   "pp_drop": 14,
-   "pp_median": 269.95,
-   "pp_price": 230.95,
-   "t": "2026-11-18T00:35:21.102583+00:00",
+   "pp_drop": 28,
+   "pp_median": 230.95,
+   "pp_price": 166.96,
+   "t": "2026-11-20T15:30:53.247753+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -8276,7 +8276,7 @@
    "pp_drop": 28,
    "pp_median": 269.0,
    "pp_price": 195.0,
-   "t": "2026-11-18T12:01:05.181336+00:00",
+   "t": "2026-11-20T15:30:53.247753+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -9037,5 +9037,5 @@
   "pvpr_inflado": 3,
   "sin_precio": 8
  },
- "updated": "2026-11-20T15:01:28.964262+00:00"
+ "updated": "2026-11-20T15:30:53.247753+00:00"
 }

@@ -48,7 +48,7 @@
   "Pequeño electrodoméstico": "2026-11-18T20:01:08.859046+00:00",
   "Perfumes": "2026-11-20T10:30:53.027422+00:00",
   "Periféricos": "2026-11-18T17:01:08.637572+00:00",
-  "Perros": "2026-11-19T08:05:38.436182+00:00",
+  "Perros": "2026-11-20T15:30:53.247753+00:00",
   "Portátiles": "2026-11-20T12:30:57.920138+00:00",
   "Proyectores": "2026-11-20T07:01:06.896632+00:00",
   "Redes y wifi": "2026-11-19T15:30:55.803469+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-20T15:26:30.539658+00:00",
+ "next_at": "2026-11-20T15:58:35.997096+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -342,6 +342,17 @@
    "s": "ambas",
    "t": "2026-11-19T20:46:14.279727+00:00",
    "title": "Multicentrum Hombre 50+, Multivitamínico Multimineral, 30 Comprimidos",
+   "v": []
+  },
+  "B00XA6O95I": {
+   "c": "Perros",
+   "d": 34,
+   "e": "🐶",
+   "m": 464,
+   "p": 22.07,
+   "s": "ambas",
+   "t": "2026-11-20T15:31:19.952845+00:00",
+   "title": "Ultima Medium-Maxi Adult Pollo, Comida seca para perros, 7,5kg",
    "v": []
   },
   "B00XFXQ2EW": {
@@ -2400,16 +2411,6 @@
    "title": "INIU Power Bank, Pequeño 45W Carga Rápida 10000mAh USB C Bateria Externa",
    "v": []
   },
-  "B0DFY4ZZPX": {
-   "c": "Suplementos",
-   "d": 10,
-   "e": "💊",
-   "m": 92,
-   "p": 8.95,
-   "t": "2026-11-06T15:16:09.174346+00:00",
-   "title": "Kneipp Gummies Niños Concentración, 30 gominolas",
-   "v": []
-  },
   "B0DGLC3Y3L": {
    "c": "Freidoras de aire",
    "d": 33,
@@ -3860,6 +3861,6 @@
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-20",
-  "n": 17
+  "n": 18
  }
 }
