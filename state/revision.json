@@ -129,6 +129,7 @@
    "title": "Reloj inteligente con Pantalla AMOLED de 1,04 pulgadas para mujer, Smartwatch con Bluetooth, llamadas, cuerpo de Metal, pantalla pequeña"
   },
   "a1005005875379717": {
+   "answered": "2026-11-20T08:10:39.982289+00:00",
    "drop": 17,
    "id": "1005005875379717",
    "image": "https://ae-pic-a1.aliexpress-media.com/kf/S569bc178484c484580182579363d4a1f3.jpg",
@@ -142,11 +143,12 @@
    "shop": "BASEUS Co.,Ltd. Store",
    "shop_id": "3179007",
    "src": "a",
-   "st": "sent",
+   "st": "ok",
    "t": "2026-11-20T05:09:51.721664+00:00",
    "title": "Auriculares Inalámbricos para Juegos Baseus GH02 con Micrófono, Auriculares Over-Ear, Bluetooth 5.3, Controlador de 40 mm, 2.4G/Inalámbricos/Cable, RGB"
   },
   "a1005005912218367": {
+   "answered": "2026-11-20T08:10:39.982289+00:00",
    "drop": 12,
    "id": "1005005912218367",
    "image": "https://ae-pic-a1.aliexpress-media.com/kf/S7dae3c76478e40edbb8d123289ab5795o.jpg",
@@ -160,7 +162,7 @@
    "shop": "IGRARK Dropship Store",
    "shop_id": "1102669121",
    "src": "a",
-   "st": "sent",
+   "st": "ok",
    "t": "2026-11-20T05:09:51.721664+00:00",
    "title": "Kits de primeros auxilios, mochilas de rescate de emergencia, almacenamiento ordenado de gran capacidad, Kits de supervivencia para acampar al aire libre, Kits "
   },
@@ -377,5 +379,8 @@
    "title": "Lámpara de Techo LED Moderna para Sala de Estar, Dormitorio, Pasillo, Balcón, Cocina, de Montaje Superficial"
   }
  },
- "trusted": {}
+ "trusted": {
+  "1102669121": "IGRARK Dropship Store",
+  "3179007": "BASEUS Co.,Ltd. Store"
+ }
 }
