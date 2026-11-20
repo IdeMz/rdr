@@ -1628,6 +1628,13 @@
    "title": "TP-Link TL-WPA8631P-Powerline WiFi AC1200 en 2GHz/5GHz., 3xPuertos Gigabit",
    "via": "ean"
   },
+  "6935670509369": {
+   "a": "B0FMXY4ZKG",
+   "t": "2026-11-20T13:01:06.821120+00:00",
+   "title": "XGIMI Horizon 20 Pro Proyector Láser Triple RGB 4K, 4100 Lúmenes ISO",
+   "v": 3,
+   "via": "nombre"
+  },
   "6935670515308": {
    "a": "B0GY8V5JKG",
    "t": "2026-11-20T12:30:57.920138+00:00",
@@ -6487,6 +6494,26 @@
    "t": "2026-11-14T07:35:33.414859+00:00",
    "veredicto": "amazon_mas_barato"
   },
+  "46239683786": {
+   "ahorro_vs_amazon": 6,
+   "amz_low30": 1699.0,
+   "amz_median": null,
+   "amz_price": 1599.0,
+   "amz_title": "XGIMI Horizon 20 Pro Proyector Láser Triple RGB 4K, 4100 Lúmenes ISO",
+   "asin": "B0FMXY4ZKG",
+   "disponible": true,
+   "ean": "6935670509369",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "Amazon 1599.00 frente a 1593.95",
+   "name": "XGIMI Horizon 20 Pro Láser Triple RGB 4K UHD 4100 Lúmenes ISO DLP Google TV WiFi 6 Bluetooth 5.2 Proyector",
+   "pp_drop": 22,
+   "pp_median": 2031.95,
+   "pp_price": 1593.95,
+   "t": "2026-11-20T13:01:06.821120+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "46239683789": {
    "ahorro_vs_amazon": -2,
    "amz_low30": null,
@@ -8721,6 +8748,26 @@
    "t": "2026-11-15T12:50:40.627443+00:00",
    "veredicto": "amazon_mas_barato"
   },
+  "46693747561": {
+   "ahorro_vs_amazon": -7,
+   "amz_low30": 1899.0,
+   "amz_median": null,
+   "amz_price": 1699.0,
+   "amz_title": "XGIMI MIRA Pro Proyector Láser 4K Tiro Ultracorto & Laser TV, Dolby Vision",
+   "asin": "B0GY8V5JKG",
+   "disponible": true,
+   "ean": "6935670515308",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "Amazon 1699.00 frente a 2031.95",
+   "name": "Proyector XGIMI MIRA Pro Triple Láser RGB 4K Tiro Ultracorto DLP",
+   "pp_drop": 22,
+   "pp_median": 2605.95,
+   "pp_price": 2031.95,
+   "t": "2026-11-20T13:01:06.821120+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "46693747636": {
    "ean": "8004399141612",
    "lista": "candidates",
@@ -8862,12 +8909,12 @@
  },
  "night_at": "2026-11-20T06:35:32.446519+00:00",
  "resumen": {
-  "amazon_mas_barato": 24,
+  "amazon_mas_barato": 26,
   "dudoso": 0,
   "no_esta": 13,
   "oferta_real": 17,
   "pvpr_inflado": 3,
   "sin_precio": 8
  },
- "updated": "2026-11-20T12:30:57.920138+00:00"
+ "updated": "2026-11-20T13:01:06.821120+00:00"
 }
