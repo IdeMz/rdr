@@ -395,6 +395,13 @@
    "v": 3,
    "via": "ean"
   },
+  "0740617341782": {
+   "a": "B0D9HL9WKZ",
+   "t": "2026-11-20T16:30:59.454749+00:00",
+   "title": "Kingston XS1000 2TB Unidad de Estado Sólido Externa USB 3.2 Gen 2 SSD Portátil Rojo-SXS1000R/2000G",
+   "v": 3,
+   "via": "ean"
+  },
   "0740617348552": {
    "a": "B0FCZM23H9",
    "t": "2026-11-14T01:20:25.760497+00:00",
@@ -3131,6 +3138,26 @@
    "t": "2026-11-15T15:15:41.208340+00:00",
    "veredicto": "amazon_mas_barato"
   },
+  "39262571673": {
+   "ahorro_vs_amazon": 18,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 289.95,
+   "amz_title": "Kingston XS1000 2TB Unidad de Estado Sólido Externa USB 3.2 Gen 2 SSD Portátil Rojo-SXS1000R/2000G",
+   "asin": "B0D9HL9WKZ",
+   "disponible": true,
+   "ean": "0740617341782",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "18 % por debajo del habitual en Amazon (289.95)",
+   "name": "Kingston XS1000 2TB Rojo USB 3.2 Gen 2 1050MB/s SSD externo",
+   "pp_drop": 23,
+   "pp_median": 307.79,
+   "pp_price": 237.77,
+   "t": "2026-11-20T16:30:59.454749+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "39471821088": {
    "ean": "0197498115399",
    "lista": "candidates",
@@ -4185,7 +4212,7 @@
    "veredicto": "amazon_mas_barato"
   },
   "45368125431": {
-   "ahorro_vs_amazon": 39,
+   "ahorro_vs_amazon": 41,
    "amz_low30": 154.99,
    "amz_median": null,
    "amz_price": 140.0,
@@ -4195,12 +4222,12 @@
    "ean": "714346345885",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "39 % por debajo del habitual en Amazon (154.99)",
+   "motivo": "41 % por debajo del habitual en Amazon (154.99)",
    "name": "Bowers & Wilkins Pi6 TWS ANC Bluetooth 5.4 24h IP54 Multipunto Auriculares inalámbricos",
-   "pp_drop": 25,
+   "pp_drop": 27,
    "pp_median": 124.94,
-   "pp_price": 93.94,
-   "t": "2026-11-19T18:15:40.654642+00:00",
+   "pp_price": 90.96,
+   "t": "2026-11-20T16:30:59.454749+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -9060,9 +9087,9 @@
   "amazon_mas_barato": 28,
   "dudoso": 0,
   "no_esta": 14,
-  "oferta_real": 19,
+  "oferta_real": 20,
   "pvpr_inflado": 3,
   "sin_precio": 8
  },
- "updated": "2026-11-20T16:01:13.016736+00:00"
+ "updated": "2026-11-20T16:30:59.454749+00:00"
 }
