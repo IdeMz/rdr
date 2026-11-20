@@ -724,6 +724,13 @@
    "title": "Seagate Expansion, 2 TB, External Hard Drive HDD, 2.5 Inch, USB 3.0, PC & Notebook, 2 Years Rescue Services (STKM2000400)",
    "via": "ean"
   },
+  "3760265541812": {
+   "a": "B08D6QYBN3",
+   "t": "2026-11-20T11:30:53.381638+00:00",
+   "title": "AGFAPHOTO Realishot WP8000 Bleu - Appareil Photo Numérique Étanche",
+   "v": 3,
+   "via": "ean"
+  },
   "4008146046551": {
    "a": "B0F9TRBWPD",
    "t": "2026-11-16T10:45:46.172773+00:00",
@@ -2623,6 +2630,13 @@
      "Razer Barracuda X Chroma - Auriculares inalámbricos para Juegos multiplataforma con 6 Zonas Chroma R"
     ]
    }
+  },
+  "8887910075500": {
+   "a": "B0GX2219JY",
+   "t": "2026-11-20T11:30:53.381638+00:00",
+   "title": "Razer Huntsman V3 HE Magnetic Tenkeyless 8 kHz - Teclado magnético para Gaming y e-Sports con Efecto Hall - Snap Tap - HyperPolling a 8000 Hz - Prioridad de Dob",
+   "v": 3,
+   "via": "ean"
   }
  },
  "items": {
@@ -6332,6 +6346,26 @@
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
+  "46239682013": {
+   "ahorro_vs_amazon": -3,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 149.99,
+   "amz_title": "Razer Huntsman V3 HE Magnetic Tenkeyless 8 kHz - Teclado magnético para Gaming y e-Sports con Efecto Hall - Snap Tap - HyperPolling a 8000 Hz - Prioridad de Dob",
+   "asin": "B0GX2219JY",
+   "disponible": true,
+   "ean": "8887910075500",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 149.99 frente a 153.95",
+   "name": "Razer Huntsman V3 HE Magnetic TKL 8KHz Hall Effect RGB Layout US Negro Teclado gaming",
+   "pp_drop": 47,
+   "pp_median": 292.98,
+   "pp_price": 153.95,
+   "t": "2026-11-20T11:30:53.381638+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "46239682291": {
    "ahorro_vs_amazon": 0,
    "amz_low30": null,
@@ -6887,6 +6921,26 @@
    "pp_median": 138.94,
    "pp_price": 113.95,
    "t": "2026-11-16T05:50:30.678743+00:00",
+   "veredicto": "amazon_mas_barato"
+  },
+  "46265356484": {
+   "ahorro_vs_amazon": -6,
+   "amz_low30": 89.99,
+   "amz_median": 95.0,
+   "amz_price": 79.99,
+   "amz_title": "AGFAPHOTO Realishot WP8000 Bleu - Appareil Photo Numérique Étanche",
+   "asin": "B08D6QYBN3",
+   "disponible": true,
+   "ean": "3760265541812",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 79.99 frente a 100.95",
+   "name": "AgfaPhoto Realishot Azul CMOS 1/3 pulgadas Full HD 1080p 24MP WP8000 Cámara digital",
+   "pp_drop": 45,
+   "pp_median": 183.94,
+   "pp_price": 100.95,
+   "t": "2026-11-20T11:30:53.381638+00:00",
+   "v": 3,
    "veredicto": "amazon_mas_barato"
   },
   "46265356695": {
@@ -8746,12 +8800,12 @@
  },
  "night_at": "2026-11-20T06:35:32.446519+00:00",
  "resumen": {
-  "amazon_mas_barato": 21,
+  "amazon_mas_barato": 23,
   "dudoso": 0,
   "no_esta": 13,
   "oferta_real": 17,
   "pvpr_inflado": 3,
   "sin_precio": 7
  },
- "updated": "2026-11-20T11:01:13.526266+00:00"
+ "updated": "2026-11-20T11:30:53.381638+00:00"
 }
