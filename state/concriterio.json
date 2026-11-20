@@ -62,12 +62,12 @@
   "Textil hogar": "2026-11-18T14:01:13.022640+00:00",
   "Videojuegos": "2026-11-19T21:15:40.155765+00:00",
   "Zapatillas": "2026-11-19T09:05:37.877879+00:00",
-  "eReaders": "2026-11-16T13:55:32.747613+00:00"
+  "eReaders": "2026-11-20T09:01:02.767526+00:00"
  },
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-20T09:00:45.722586+00:00",
+ "next_at": "2026-11-20T09:27:33.720116+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2092,6 +2092,17 @@
    "title": "Kindle Colorsoft de Amazon 16 GB (modelo de 2024): con pantalla a color que da vida a las portadas y al contenido, resaltada ahora en color. Sin publicidad, negro",
    "v": []
   },
+  "B0CX8YKQ2H": {
+   "c": "eReaders",
+   "d": 40,
+   "e": "📖",
+   "m": 451,
+   "p": 199.0,
+   "s": "ambas",
+   "t": "2026-11-20T09:01:27.363368+00:00",
+   "title": "Kindle Colorsoft Signature Edition (32 GB) de Amazon (modelo de 2024) | Con pantalla a color, luz frontal autorregulable, carga inalámbrica y gran duración de la batería | 32 GB",
+   "v": []
+  },
   "B0CX9CT3ZF": {
    "c": "Monitores",
    "d": 20,
@@ -2658,16 +2669,6 @@
    "s": "ambas",
    "t": "2026-11-19T19:16:13.185772+00:00",
    "title": "Vileda H2Pro Sistema de Mopa Plana, Microfibra Gris y Azul",
-   "v": []
-  },
-  "B0F457M449": {
-   "c": "Televisores",
-   "d": 28,
-   "e": "📺",
-   "m": 81,
-   "p": 129.0,
-   "t": "2026-11-06T08:51:01.609226+00:00",
-   "title": "XIAOMI TV F Pro 32 Pulgadas 2025, QLED Smart TV, Fire OS7, L32MB-FPEU",
    "v": []
   },
   "B0F4XD73CX": {
@@ -3825,6 +3826,6 @@
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-20",
-  "n": 4
+  "n": 5
  }
 }
