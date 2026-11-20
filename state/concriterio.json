@@ -1,7 +1,7 @@
 {
  "cats": {
   "Accesorios de coche": "2026-11-20T11:01:13.526266+00:00",
-  "Accesorios de móvil": "2026-11-18T21:30:53.368269+00:00",
+  "Accesorios de móvil": "2026-11-20T12:01:02.865312+00:00",
   "Afeitado y depilación": "2026-11-17T20:15:50.874512+00:00",
   "Almacenamiento": "2026-11-18T10:30:54.867859+00:00",
   "Altavoces": "2026-11-19T16:01:05.937931+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-20T11:56:38.672931+00:00",
+ "next_at": "2026-11-20T12:28:04.889586+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1494,6 +1494,17 @@
    "s": "busqueda",
    "t": "2026-11-18T12:01:32.504359+00:00",
    "title": "Tenda Cámara Vigilancia WiFi Exterior 6MP",
+   "v": []
+  },
+  "B09MQ4KZ27": {
+   "c": "Accesorios de móvil",
+   "d": 40,
+   "e": "🤳",
+   "m": 457,
+   "p": 7.21,
+   "s": "ambas",
+   "t": "2026-11-20T12:01:33.282153+00:00",
+   "title": "INIU Cable USB C a USB C 100W, 2m Cable USB C PD QC Carga Rapida Cargador",
    "v": []
   },
   "B09NQG78ND": {
@@ -2932,16 +2943,6 @@
    "title": "Samsung Galaxy S25 FE 512GB, Teléfono Móvil con IA, Marco Ligero 7,5mm, Pantalla FHD+ 6,7\", Cámara 50MP, Exynos 2400, 8GB RAM, Garantía Fabricante 3 Años+1 Año Extra, Negro Intenso (Versión Española)",
    "v": []
   },
-  "B0FLPCM6CB": {
-   "c": "Cargadores y baterías",
-   "d": 39,
-   "e": "🔌",
-   "m": 86,
-   "p": 24.36,
-   "t": "2026-11-06T11:46:03.973237+00:00",
-   "title": "INIU 45W Power Bank, Fino 10000mAh Inalámbrico Magnético Batería Externa",
-   "v": []
-  },
   "B0FN4CRR2B": {
    "c": "Gatos",
    "d": 46,
@@ -3754,10 +3755,6 @@
    "t": "2026-11-19T19:15:40.361750+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B07KJZM3QP": {
-   "t": "2026-11-19T11:35:32.511367+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B08H99BPJN": {
    "t": "2026-11-19T21:15:40.155765+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3813,6 +3810,18 @@
  },
  "reserve": [
   {
+   "a": "B0DZP21RXY",
+   "c": "Accesorios de móvil",
+   "e": "🤳",
+   "img": "https://m.media-amazon.com/images/I/71OYsPRYalL._AC_UL320_.jpg",
+   "n": 2100,
+   "op": 16.99,
+   "p": 11.04,
+   "r": 4.7,
+   "t": "2026-11-20T12:01:02.865312+00:00",
+   "title": "UGREEN Cable USB Tipo C 240W Vídeo 8K@60Hz USB4 GEN3 40Gbps (1M)"
+  },
+  {
    "a": "B0CKXQPYHJ",
    "c": "Zapatillas",
    "e": "👟",
@@ -3841,6 +3850,6 @@
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-20",
-  "n": 10
+  "n": 11
  }
 }

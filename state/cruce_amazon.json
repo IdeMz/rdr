@@ -2205,6 +2205,13 @@
    "title": "CORSAIR K55 CORE RGB Teclado de Membrana con Cable Para Juegos – Negro",
    "via": "ean"
   },
+  "840006684367": {
+   "a": "B0DG385QD8",
+   "t": "2026-11-20T12:01:02.865312+00:00",
+   "title": "Corsair K70 Core Tkl Rgb - Tastatur - Tkl - Hintergrundbeleuchtet - Usb - Qwertz - Deutsch - Tastenschalter: Corsair Mlx Red V2 - Schwarz (cH-911911e",
+   "v": 3,
+   "via": "nombre"
+  },
   "8421078040040": {
    "a": "B0FY3RB7T8",
    "t": "2026-11-17T00:50:28.547812+00:00",
@@ -3935,10 +3942,10 @@
    "lista": "candidates",
    "motivo": "Amazon 170.00 frente a 171.78",
    "name": "Epson TM-T20III USB+Serial Impresora térmica",
-   "pp_drop": 36,
-   "pp_median": 269.95,
+   "pp_drop": 35,
+   "pp_median": 264.95,
    "pp_price": 171.78,
-   "t": "2026-11-18T11:01:05.531917+00:00",
+   "t": "2026-11-20T12:01:02.865312+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -5048,6 +5055,26 @@
    "pp_price": 609.95,
    "t": "2026-11-14T05:50:24.845085+00:00",
    "veredicto": "oferta_real"
+  },
+  "45956990875": {
+   "ahorro_vs_amazon": -7,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 102.6,
+   "amz_title": "Corsair K70 Core Tkl Rgb - Tastatur - Tkl - Hintergrundbeleuchtet - Usb - Qwertz - Deutsch - Tastenschalter: Corsair Mlx Red V2 - Schwarz (cH-911911e",
+   "asin": "B0DG385QD8",
+   "disponible": true,
+   "ean": "840006684367",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "Amazon 102.60 frente a 109.95",
+   "name": "Corsair K70 Core TKL RGB CH-911911E-PT MLX Layout PT Rojo Teclado gaming mecánico",
+   "pp_drop": 44,
+   "pp_median": 197.96,
+   "pp_price": 109.95,
+   "t": "2026-11-20T12:01:02.865312+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
   },
   "45956990981": {
    "ahorro_vs_amazon": 6,
@@ -8800,12 +8827,12 @@
  },
  "night_at": "2026-11-20T06:35:32.446519+00:00",
  "resumen": {
-  "amazon_mas_barato": 23,
+  "amazon_mas_barato": 24,
   "dudoso": 0,
   "no_esta": 13,
   "oferta_real": 17,
   "pvpr_inflado": 3,
   "sin_precio": 7
  },
- "updated": "2026-11-20T11:30:53.381638+00:00"
+ "updated": "2026-11-20T12:01:02.865312+00:00"
 }
