@@ -10,7 +10,7 @@
   "Barras de sonido": "2026-11-18T08:01:03.545593+00:00",
   "Bebé": "2026-11-18T19:01:22.092208+00:00",
   "Bricolaje": "2026-11-18T17:30:58.281773+00:00",
-  "Cafeteras": "2026-11-17T18:01:13.651055+00:00",
+  "Cafeteras": "2026-11-20T10:01:02.046099+00:00",
   "Café y cápsulas": "2026-11-19T11:05:31.132875+00:00",
   "Camping y montaña": "2026-11-19T21:45:51.469863+00:00",
   "Cargadores y baterías": "2026-11-19T17:01:09.614407+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-20T09:56:10.078379+00:00",
+ "next_at": "2026-11-20T10:27:05.623442+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -3204,6 +3204,17 @@
    "title": "Lefant M210 Omni Robot Aspirador y Fregasuelos, Mopa de Rodillo, 20000 Pa",
    "v": []
   },
+  "B0G8HQHMDS": {
+   "c": "Cafeteras",
+   "d": 40,
+   "e": "☕",
+   "m": 453,
+   "p": 65.9,
+   "s": "ambas",
+   "t": "2026-11-20T10:01:23.797250+00:00",
+   "title": "Cuisinart Molino eléctrico cónico café y espresso | 35 ajustes de molienda | Tecnología antiestática | Tolva 225 g con tapa sellada | Compatible con portafiltro | Selector 1–14 tazas | Incluye cuchara",
+   "v": []
+  },
   "B0GC69WYZ3": {
    "c": "Freidoras de aire",
    "d": 17,
@@ -3827,6 +3838,6 @@
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-20",
-  "n": 6
+  "n": 7
  }
 }
