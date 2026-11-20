@@ -49,7 +49,7 @@
   "Perfumes": "2026-11-20T10:30:53.027422+00:00",
   "Periféricos": "2026-11-18T17:01:08.637572+00:00",
   "Perros": "2026-11-19T08:05:38.436182+00:00",
-  "Portátiles": "2026-11-19T11:35:32.511367+00:00",
+  "Portátiles": "2026-11-20T12:30:57.920138+00:00",
   "Proyectores": "2026-11-20T07:01:06.896632+00:00",
   "Redes y wifi": "2026-11-19T15:30:55.803469+00:00",
   "Relojes": "2026-11-19T11:35:32.511367+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-20T12:28:04.889586+00:00",
+ "next_at": "2026-11-20T13:00:35.893320+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2471,16 +2471,6 @@
    "title": "Amazon Basics Pesas ajustables para tobillo y muñeca para mujeres y hombres, 1.13kg cada una, juego de 2",
    "v": []
   },
-  "B0DN6B2BWP": {
-   "c": "Perros",
-   "d": 30,
-   "e": "🐶",
-   "m": 87,
-   "p": 12.59,
-   "t": "2026-11-06T12:21:03.387466+00:00",
-   "title": "Arquivet Fresh Puppy Junior Pavo & Salmón 2,5Kg - Pienso Semihúmedo",
-   "v": []
-  },
   "B0DP4SB367": {
    "c": "Zapatillas",
    "d": 32,
@@ -3348,6 +3338,17 @@
    "title": "GKU Dashcam Kit de Cableado con 8 Fusibles, Puerto USB-C 3,2 Metros, 12V-24V a 5V/3A, Voltaje Ajustable 11,3 V y 13,5 V, Protección de Bajo Voltaje y Vigilancia de Estacionamiento para GKU Dash CAM",
    "v": []
   },
+  "B0GR1SB84G": {
+   "c": "Portátiles",
+   "d": 10,
+   "e": "💻",
+   "m": 458,
+   "p": 1279.0,
+   "s": "busqueda",
+   "t": "2026-11-20T12:31:34.693833+00:00",
+   "title": "Apple MacBook Air de 13,6 Pulgadas con Chip M5: Pantalla Liquid Retina, CPU de 10 núcleos, GPU de 8 núcleos, 16 GB de Memoria unificada, 512 GB de SSD, Wi-Fi 7,Teclado español; Medianoche",
+   "v": []
+  },
   "B0GSS34ZYM": {
    "c": "Freidoras de aire",
    "d": 37,
@@ -3850,6 +3851,6 @@
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-20",
-  "n": 11
+  "n": 12
  }
 }
