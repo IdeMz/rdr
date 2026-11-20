@@ -20,7 +20,7 @@
   "Componentes PC": "2026-11-19T19:45:43.698458+00:00",
   "Cuidado de la piel": "2026-11-19T18:15:40.654642+00:00",
   "Cuidado del cabello": "2026-11-19T17:30:56.735106+00:00",
-  "Cámaras de seguridad": "2026-11-18T12:01:05.181336+00:00",
+  "Cámaras de seguridad": "2026-11-20T08:01:03.517934+00:00",
   "Decoración navideña": "2026-11-18T11:30:52.353700+00:00",
   "Domótica": "2026-11-19T08:35:31.603489+00:00",
   "Droguería": "2026-11-19T13:35:35.066412+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-20T08:00:38.686290+00:00",
+ "next_at": "2026-11-20T08:28:34.608868+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -491,16 +491,6 @@
    "p": 11.93,
    "t": "2026-11-11T11:41:14.007969+00:00",
    "title": "L'Oréal Paris Revitalift Laser Crema SPF25 Nº1 AntiEdad y AntiManchas, 50ml",
-   "v": []
-  },
-  "B06XK8H7DM": {
-   "c": "Ciclismo",
-   "d": 41,
-   "e": "🚴",
-   "m": 79,
-   "p": 21.78,
-   "t": "2026-11-06T07:41:06.854876+00:00",
-   "title": "Fischer Urban Levin Bicicleta Casco",
    "v": []
   },
   "B072Q7K86H": {
@@ -2872,6 +2862,17 @@
    "title": "Rowenta Intense Comfort, calefactor, calentamiento rápido, SO9330",
    "v": []
   },
+  "B0FHJ91JY5": {
+   "c": "Cámaras de seguridad",
+   "d": 50,
+   "e": "📹",
+   "m": 449,
+   "p": 49.99,
+   "s": "busqueda",
+   "t": "2026-11-20T08:01:33.957188+00:00",
+   "title": "Ring Videotimbre 2K con batería (Battery Video Doorbell 2K, última gen.) | Videotimbre inalámbrico, Retinal 2K, Zoom 6x, Comunicación bidireccional, Prueba gratuita de 30 días de suscripción Ring",
+   "v": []
+  },
   "B0FHKXPWKS": {
    "c": "Monitores",
    "d": 47,
@@ -3787,6 +3788,18 @@
  },
  "reserve": [
   {
+   "a": "B0B87X42R1",
+   "c": "Cámaras de seguridad",
+   "e": "📹",
+   "img": "https://m.media-amazon.com/images/I/81rH+IllR9L._AC_UL320_.jpg",
+   "n": 151,
+   "op": 204.21,
+   "p": 128.1,
+   "r": 4.5,
+   "t": "2026-11-20T08:01:03.517934+00:00",
+   "title": "Vimar K40990 Kit videoportero 7in 1Fam.aliment.multiclavija"
+  },
+  {
    "a": "B074KV9TT4",
    "c": "Mochilas y maletas",
    "e": "🎒",
@@ -3815,6 +3828,6 @@
  "tg_offset": 511048116,
  "x_copy": {
   "day": "2026-11-20",
-  "n": 2
+  "n": 3
  }
 }
