@@ -167,6 +167,7 @@
    "title": "Kits de primeros auxilios, mochilas de rescate de emergencia, almacenamiento ordenado de gran capacidad, Kits de supervivencia para acampar al aire libre, Kits "
   },
   "a1005005915367379": {
+   "answered": "2026-11-20T08:15:42.195978+00:00",
    "drop": 10,
    "id": "1005005915367379",
    "image": "https://ae-pic-a1.aliexpress-media.com/kf/S6f7344bfe91242be9859bfc13d58296fS.jpg",
@@ -180,7 +181,7 @@
    "shop": "Life Dreamer Store",
    "shop_id": "1102856219",
    "src": "a",
-   "st": "sent",
+   "st": "ok",
    "t": "2026-11-20T05:09:51.721664+00:00",
    "title": "Manos libres inalámbrico portátil Caixa De Som Altavoz Bluetooth caja De sonido De música Bluetooth para manos libres Bluetooth manos libres Mini Audio"
   },
@@ -381,6 +382,7 @@
  },
  "trusted": {
   "1102669121": "IGRARK Dropship Store",
+  "1102856219": "Life Dreamer Store",
   "3179007": "BASEUS Co.,Ltd. Store"
  }
 }
