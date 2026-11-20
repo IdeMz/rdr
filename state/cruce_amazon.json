@@ -1122,6 +1122,13 @@
    "v": 3,
    "via": "ean"
   },
+  "4711636059459": {
+   "a": "B0F94H18X8",
+   "t": "2026-11-20T14:01:07.067138+00:00",
+   "title": "ASUS ROG Swift PG32UCDMZ - Monitor OLED Gaming QD-OLED 4K 240Hz de 32\"",
+   "v": 3,
+   "via": "ean"
+  },
   "4711636168991": {
    "a": "B09CD57PMJ",
    "t": "2026-11-15T00:50:26.258760+00:00",
@@ -1908,6 +1915,13 @@
      "VIOFO A119M Pro 4K HDR Mini Dashcam Delantera, STARVIS 2, Wi-Fi 6, GPS, CPL"
     ]
    }
+  },
+  "6972476162992": {
+   "a": "B0DWXX7RH9",
+   "t": "2026-11-20T14:01:07.067138+00:00",
+   "title": "Cámara de acción C110+ C110 4K 30FPS Cámara Deportiva WiFi con corrección de distorsión Estabilización giroscópica de 6 Ejes IP65 Resistente al Agua(B C110 Plus",
+   "v": 3,
+   "via": "nombre"
   },
   "6972884752242": {
    "a": "B0H7HZTXYC",
@@ -3589,6 +3603,26 @@
    "t": "2026-11-20T00:20:29.083235+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
+  },
+  "43041482733": {
+   "ahorro_vs_amazon": 59,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 219.53,
+   "amz_title": "Cámara de acción C110+ C110 4K 30FPS Cámara Deportiva WiFi con corrección de distorsión Estabilización giroscópica de 6 Ejes IP65 Resistente al Agua(B C110 Plus",
+   "asin": "B0DWXX7RH9",
+   "disponible": true,
+   "ean": "6972476162992",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "59 % por debajo del habitual en Amazon (219.53)",
+   "name": "SJCAM C110+ Negro 20MP 1100mAh Cámara deportiva",
+   "pp_drop": 35,
+   "pp_median": 139.0,
+   "pp_price": 89.99,
+   "t": "2026-11-20T14:01:07.067138+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
   },
   "43261031997": {
    "ean": "6978252854587",
@@ -8978,9 +9012,9 @@
   "amazon_mas_barato": 27,
   "dudoso": 0,
   "no_esta": 14,
-  "oferta_real": 17,
+  "oferta_real": 18,
   "pvpr_inflado": 3,
   "sin_precio": 8
  },
- "updated": "2026-11-20T13:31:03.874159+00:00"
+ "updated": "2026-11-20T14:01:07.067138+00:00"
 }

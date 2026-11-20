@@ -14,7 +14,7 @@
   "Café y cápsulas": "2026-11-19T11:05:31.132875+00:00",
   "Camping y montaña": "2026-11-19T21:45:51.469863+00:00",
   "Cargadores y baterías": "2026-11-19T17:01:09.614407+00:00",
-  "Ciclismo": "2026-11-19T12:35:30.987217+00:00",
+  "Ciclismo": "2026-11-20T14:01:07.067138+00:00",
   "Climatización": "2026-11-20T13:31:03.874159+00:00",
   "Colchones y almohadas": "2026-11-19T10:35:44.498929+00:00",
   "Componentes PC": "2026-11-19T19:45:43.698458+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-20T14:00:55.167596+00:00",
+ "next_at": "2026-11-20T14:27:00.628436+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1118,6 +1118,17 @@
    "s": "ambas",
    "t": "2026-11-14T18:31:27.375223+00:00",
    "title": "Arena para Gatos Aglomerante de Cascara de Guisante Go Natural, Lavanda",
+   "v": []
+  },
+  "B08GWVZSXS": {
+   "c": "Ciclismo",
+   "d": 25,
+   "e": "🚴",
+   "m": 461,
+   "p": 31.46,
+   "s": "ambas",
+   "t": "2026-11-20T14:01:40.744399+00:00",
+   "title": "OLIGHT RN 120C LED Linterna de Bici Trasera 120 Lúmenes MAX Recargable USB",
    "v": []
   },
   "B08GYKLWVR": {
@@ -3093,16 +3104,6 @@
    "title": "Zapatillas de Running Flyer Lite 4 Unisex",
    "v": []
   },
-  "B0FWCPNPCV": {
-   "c": "Monitores",
-   "d": 28,
-   "e": "🖥️",
-   "m": 89,
-   "p": 109.0,
-   "t": "2026-11-06T13:31:21.219338+00:00",
-   "title": "MSI mag 276CFA E20 Monitor Gaming de 27\" FHD 1500R, 1920 x 1080 Rapid VA, 200 Hz, 0,5 ms, Compatible con HDR, AMD FreeSync™ Premium, Eye-Care, visión AI, HDMI 2.0b, DP 1.2a, Frameless, Negro",
-   "v": []
-  },
   "B0FX5217CY": {
    "c": "Freidoras de aire",
    "d": 38,
@@ -3859,6 +3860,6 @@
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-20",
-  "n": 14
+  "n": 15
  }
 }
