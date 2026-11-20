@@ -58,7 +58,7 @@
   "Smartwatch": "2026-11-19T15:01:09.213912+00:00",
   "Suplementos": "2026-11-19T20:45:42.101471+00:00",
   "Tablets": "2026-11-17T16:01:10.840347+00:00",
-  "Televisores": "2026-11-18T18:01:04.377917+00:00",
+  "Televisores": "2026-11-20T15:01:28.964262+00:00",
   "Textil hogar": "2026-11-18T14:01:13.022640+00:00",
   "Videojuegos": "2026-11-19T21:15:40.155765+00:00",
   "Zapatillas": "2026-11-20T11:30:53.381638+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-20T14:59:10.600770+00:00",
+ "next_at": "2026-11-20T15:26:30.539658+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2913,6 +2913,17 @@
    "title": "SwitchBot Matter RGBICWW Lampara de Pie, Blanco Cálido & Frío, Lámpara de Pie LED compatible con Apple Home, Alexa, Google Home, 16 Millones Colores, 1200lm, Sincronización de Música, Modos de Escena",
    "v": []
   },
+  "B0FKN1WNMS": {
+   "c": "Televisores",
+   "d": 45,
+   "e": "📺",
+   "m": 463,
+   "p": 643.8,
+   "s": "busqueda",
+   "t": "2026-11-20T15:02:08.922380+00:00",
+   "title": "LG 27LX6TDGA - Smart Monitor StanbyMe 2, Pantalla Táctil, QHD, 27\"",
+   "v": []
+  },
   "B0FKSV2GW2": {
    "c": "Auriculares",
    "d": 46,
@@ -3786,20 +3797,16 @@
    "t": "2026-11-20T07:01:06.896632+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0FGK8CPX5": {
-   "t": "2026-11-19T15:01:09.213912+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0FRG19TD4": {
-   "t": "2026-11-19T15:01:09.213912+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0G4ZFP5NH": {
    "t": "2026-11-20T11:01:13.526266+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0GR5ZBN8Z": {
    "t": "2026-11-20T11:01:13.526266+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0H448WZ71": {
+   "t": "2026-11-20T15:01:28.964262+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0HDSV2WJ8": {
@@ -3812,6 +3819,18 @@
   }
  },
  "reserve": [
+  {
+   "a": "B0FJG53ZS4",
+   "c": "Televisores",
+   "e": "📺",
+   "img": "https://m.media-amazon.com/images/I/81zslYDjHYL._AC_UL320_.jpg",
+   "n": 87,
+   "op": 239.9,
+   "p": 176.83,
+   "r": 4.2,
+   "t": "2026-11-20T15:01:28.964262+00:00",
+   "title": "SHARP TV 40 pulgadas LED Full HD – 40HA1305E"
+  },
   {
    "a": "B07S9PTLNZ",
    "c": "Salud",
@@ -3835,24 +3854,12 @@
    "r": 4.3,
    "t": "2026-11-20T13:31:03.874159+00:00",
    "title": "Rubson AERO 360º Baño, deshumidificador portátil sin cable para baño, absorbe humedad para la circulación del aire, disipador de condensación antihumedad, dispositivo y tableta (450 g)"
-  },
-  {
-   "a": "B0DZP21RXY",
-   "c": "Accesorios de móvil",
-   "e": "🤳",
-   "img": "https://m.media-amazon.com/images/I/71OYsPRYalL._AC_UL320_.jpg",
-   "n": 2100,
-   "op": 16.99,
-   "p": 11.04,
-   "r": 4.7,
-   "t": "2026-11-20T12:01:02.865312+00:00",
-   "title": "UGREEN Cable USB Tipo C 240W Vídeo 8K@60Hz USB4 GEN3 40Gbps (1M)"
   }
  ],
  "summary_day": "2026-11-19",
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-20",
-  "n": 16
+  "n": 17
  }
 }
