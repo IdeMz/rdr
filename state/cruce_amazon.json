@@ -494,6 +494,21 @@
    "title": "Corsair M75 Ratón para Juegos FPS Ligero RGB con Cable – 26.000 PPP – Botones Laterales Intercambiables – PC – Negro",
    "via": "ean"
   },
+  "0840023294266": {
+   "a": "",
+   "t": "2026-11-20T22:50:37.790383+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "Moto Buds Loop - Verde"
+    ],
+    "nombre": [
+     "Motorola Moto Buds 2 Bluetooth 6.0, ANC, IP54 Pantone Carbon",
+     "Auriculares Moto Buds Loop Color Pantone Trekking Green, Diseño Open-Ear, Integración con Smartphone",
+     "Moto Buds Loop - Verde"
+    ]
+   }
+  },
   "0840080523972": {
    "a": "B09B8RF4PY",
    "t": "2026-11-18T03:05:28.957988+00:00",
@@ -670,6 +685,13 @@
    "a": "B0DH8HYC7P",
    "t": "2026-11-17T14:01:04.582833+00:00",
    "title": "Moulinex Inicio Compact, plancha de paninis y grill, placas de cocción antiadherentes, fácil de guardar, fácil de lavar, GI270D10",
+   "v": 3,
+   "via": "ean"
+  },
+  "3045380027114": {
+   "a": "B0FW4ZFT3W",
+   "t": "2026-11-20T22:50:37.790383+00:00",
+   "title": "Moulinex Freidora de aire Easy Fry XL Surface 4L, AL402HF0, gris",
    "v": 3,
    "via": "ean"
   },
@@ -2045,6 +2067,13 @@
      "Honor Earbuds A Pro True - Auriculares in-Ear inalámbricos, Color Blanco"
     ]
    }
+  },
+  "6977726815802": {
+   "a": "B0D2KQ2TGP",
+   "t": "2026-11-20T22:50:37.790383+00:00",
+   "title": "Creality Ender 3 V3 Plus Impresora 3D CoreXZ 600mm/s Alta Velocidad 300x300x330mm Nivelación Automática Extrusora de Accionamiento Directo Boquilla Trimetálica ",
+   "v": 3,
+   "via": "nombre"
   },
   "6977728943794": {
    "a": "",
@@ -4016,6 +4045,28 @@
      "Smartphone Tcl T522E 2ALCA112 K70 POWER Space gray",
      "TCL K70 4G(Midnight Black)",
      "TCL NXTPAPER 70 Pro Móvil 5G 8GB+256GB, Pantalla 6,9\" 120Hz, Dorado | Smartphone NXTPAPER 4.0, CPL A"
+    ]
+   }
+  },
+  "45082936495": {
+   "ean": "0840023294266",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Motorola Moto Buds Loop Verde Conducción ósea Bluetooth 5.4 8h IP54 Multipunto Auriculares inalámbricos",
+   "pp_drop": 23,
+   "pp_median": 99.95,
+   "pp_price": 76.96,
+   "t": "2026-11-20T22:50:37.790383+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "Moto Buds Loop - Verde"
+    ],
+    "nombre": [
+     "Motorola Moto Buds 2 Bluetooth 6.0, ANC, IP54 Pantone Carbon",
+     "Auriculares Moto Buds Loop Color Pantone Trekking Green, Diseño Open-Ear, Integración con Smartphone",
+     "Moto Buds Loop - Verde"
     ]
    }
   },
@@ -8294,6 +8345,27 @@
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
+  "46599142076": {
+   "ahorro_vs_amazon": null,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": null,
+   "amz_title": "Moulinex Freidora de aire Easy Fry XL Surface 4L, AL402HF0, gris",
+   "asin": "B0FW4ZFT3W",
+   "disponible": true,
+   "ean": "3045380027114",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "en Amazon pero sin precio o no disponible",
+   "name": "Moulinex Easy Fry XL Surface 4L 2200W 10 programas Gris AL402H pantalla táctil Freidora de aire",
+   "pista": "1315502 bytes; 9 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pp_drop": 19,
+   "pp_median": 225.96,
+   "pp_price": 182.95,
+   "t": "2026-11-20T22:50:37.790383+00:00",
+   "v": 3,
+   "veredicto": "sin_precio"
+  },
   "46599142100": {
    "ahorro_vs_amazon": -3,
    "amz_low30": null,
@@ -9143,6 +9215,26 @@
     ]
    }
   },
+  "46725328510": {
+   "ahorro_vs_amazon": 23,
+   "amz_low30": null,
+   "amz_median": 349.0,
+   "amz_price": 395.0,
+   "amz_title": "Creality Ender 3 V3 Plus Impresora 3D CoreXZ 600mm/s Alta Velocidad 300x300x330mm Nivelación Automática Extrusora de Accionamiento Directo Boquilla Trimetálica ",
+   "asin": "B0D2KQ2TGP",
+   "disponible": true,
+   "ean": "6977726815802",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "23 % por debajo del habitual en Amazon (349.00)",
+   "name": "Impresora 3D Creality Ender-3 V3 Neo Negro FDM 120mm/s",
+   "pp_drop": 18,
+   "pp_median": 329.0,
+   "pp_price": 269.0,
+   "t": "2026-11-20T22:50:37.790383+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "46772243198": {
    "ahorro_vs_amazon": 13,
    "amz_low30": null,
@@ -9164,14 +9256,14 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-20T22:35:24.093461+00:00",
+ "night_at": "2026-11-20T22:50:37.790383+00:00",
  "resumen": {
   "amazon_mas_barato": 30,
   "dudoso": 0,
-  "no_esta": 14,
-  "oferta_real": 20,
+  "no_esta": 15,
+  "oferta_real": 21,
   "pvpr_inflado": 3,
-  "sin_precio": 9
+  "sin_precio": 10
  },
- "updated": "2026-11-20T22:35:24.093461+00:00"
+ "updated": "2026-11-20T22:50:37.790383+00:00"
 }
