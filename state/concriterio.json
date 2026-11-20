@@ -11,7 +11,7 @@
   "Bebé": "2026-11-18T19:01:22.092208+00:00",
   "Bricolaje": "2026-11-18T17:30:58.281773+00:00",
   "Cafeteras": "2026-11-20T10:01:02.046099+00:00",
-  "Café y cápsulas": "2026-11-19T11:05:31.132875+00:00",
+  "Café y cápsulas": "2026-11-20T17:01:05.412850+00:00",
   "Camping y montaña": "2026-11-19T21:45:51.469863+00:00",
   "Cargadores y baterías": "2026-11-19T17:01:09.614407+00:00",
   "Ciclismo": "2026-11-20T14:01:07.067138+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-20T16:58:52.498407+00:00",
+ "next_at": "2026-11-20T17:30:24.901915+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -836,6 +836,17 @@
    "s": "ofertas",
    "t": "2026-11-13T16:01:40.638908+00:00",
    "title": "Healthy Fusion 100% Creatina Monohidrato en Polvo | Promueve el crecimiento muscular y mejora la resistencia física | Alta solubilidad | 300g | 60 Dosis | sabor sandía",
+   "v": []
+  },
+  "B07RBN3ZMJ": {
+   "c": "Café y cápsulas",
+   "d": 38,
+   "e": "🫘",
+   "m": 467,
+   "p": 30.94,
+   "s": "ambas",
+   "t": "2026-11-20T17:01:43.353538+00:00",
+   "title": "VAHDAM Bloom Set Regalo De Té | 12 Mezclas En Caja De Lujo",
    "v": []
   },
   "B07SD3W9SN": {
@@ -3774,6 +3785,10 @@
    "t": "2026-11-20T13:31:03.874159+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0813YSMGN": {
+   "t": "2026-11-20T17:01:05.412850+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B08H99BPJN": {
    "t": "2026-11-19T21:15:40.155765+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3825,6 +3840,18 @@
  },
  "reserve": [
   {
+   "a": "B0BKT9Y94V",
+   "c": "Café y cápsulas",
+   "e": "🫘",
+   "img": "https://m.media-amazon.com/images/I/71oK9ALUIcL._AC_UL320_.jpg",
+   "n": 5200,
+   "op": 13.99,
+   "p": 9.99,
+   "r": 4.7,
+   "t": "2026-11-20T17:01:05.412850+00:00",
+   "title": "Creano® „Organic Herbal Tea“ – Caja Bio con 27 Bolsitas en 9 Variedades*"
+  },
+  {
    "a": "B0FJG53ZS4",
    "c": "Televisores",
    "e": "📺",
@@ -3847,24 +3874,12 @@
    "r": 4.6,
    "t": "2026-11-20T14:30:58.924631+00:00",
    "title": "RENPHO Bascula de Baño, Alta Precisión, Pantalla LED, Perder Peso, Core 1S"
-  },
-  {
-   "a": "B07F6LYVT6",
-   "c": "Climatización",
-   "e": "🌬️",
-   "img": "https://m.media-amazon.com/images/I/71GMq15KvWL._AC_UL320_.jpg",
-   "n": 1100,
-   "op": 15.99,
-   "p": 11.99,
-   "r": 4.3,
-   "t": "2026-11-20T13:31:03.874159+00:00",
-   "title": "Rubson AERO 360º Baño, deshumidificador portátil sin cable para baño, absorbe humedad para la circulación del aire, disipador de condensación antihumedad, dispositivo y tableta (450 g)"
   }
  ],
  "summary_day": "2026-11-19",
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-20",
-  "n": 20
+  "n": 21
  }
 }
