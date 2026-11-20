@@ -25,7 +25,7 @@
   "Domótica": "2026-11-19T08:35:31.603489+00:00",
   "Droguería": "2026-11-19T13:35:35.066412+00:00",
   "Fitness en casa": "2026-11-15T12:15:40.152691+00:00",
-  "Fotografía": "2026-11-18T15:01:26.987987+00:00",
+  "Fotografía": "2026-11-20T16:01:13.016736+00:00",
   "Freidoras de aire": "2026-11-18T18:30:58.613853+00:00",
   "Gaming": "2026-11-19T16:30:56.884084+00:00",
   "Gatos": "2026-11-19T10:05:35.124541+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-20T15:58:35.997096+00:00",
+ "next_at": "2026-11-20T16:27:52.787815+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -579,18 +579,6 @@
    "t": "2026-11-19T18:18:10.633810+00:00",
    "title": "Neutrogena Rutina Hydro Boost, Gel de Agua 50 ml + Contorno de ojos 15 ml",
    "v": []
-  },
-  "B0797LMGXH": {
-   "c": "Periféricos",
-   "d": 33,
-   "e": "⌨️",
-   "m": 93,
-   "p": 39.99,
-   "t": "2026-11-06T15:51:11.319109+00:00",
-   "title": "Logitech MK540 Advanced Combo Teclado y Ratón Inalámbrico - QWERTY ESP",
-   "v": [
-    "5f2e3ed7ec51"
-   ]
   },
   "B079QQ34RL": {
    "c": "Relojes",
@@ -3711,6 +3699,17 @@
    "title": "Bulk Pure Whey Protein + Colágeno, Vainilla, 900g",
    "v": []
   },
+  "B0HCZT6663": {
+   "c": "Fotografía",
+   "d": 34,
+   "e": "📷",
+   "m": 465,
+   "p": 66.49,
+   "s": "ambas",
+   "t": "2026-11-20T16:01:39.048989+00:00",
+   "title": "Cámara Digital 4K 64 MP, Cámara Compacta con Autofoco y Zoom 16x Negro",
+   "v": []
+  },
   "B0HDBF863N": {
    "c": "Cargadores y baterías",
    "d": 32,
@@ -3861,6 +3860,6 @@
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-20",
-  "n": 18
+  "n": 19
  }
 }
