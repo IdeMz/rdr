@@ -40,7 +40,7 @@
   "Maquillaje": "2026-11-19T18:45:44.590047+00:00",
   "Menaje de cocina": "2026-11-19T09:35:35.003414+00:00",
   "Mochilas y maletas": "2026-11-20T07:30:55.091992+00:00",
-  "Monitores": "2026-11-17T16:30:56.399108+00:00",
+  "Monitores": "2026-11-20T09:30:54.246285+00:00",
   "Móviles": "2026-11-18T20:31:00.004559+00:00",
   "Nutrición deportiva": "2026-11-17T14:30:58.598858+00:00",
   "Oficina": "2026-11-19T13:05:35.393737+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-20T09:27:33.720116+00:00",
+ "next_at": "2026-11-20T09:56:10.078379+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2362,16 +2362,6 @@
    "title": "Poppy Playtime Triple Pack - PS5",
    "v": []
   },
-  "B0DDCHNPBR": {
-   "c": "Cuidado del cabello",
-   "d": 42,
-   "e": "💇",
-   "m": 82,
-   "p": 34.9,
-   "t": "2026-11-06T09:25:54.127040+00:00",
-   "title": "BaByliss Smooth Finish 1200 – Cepillo de Aire Caliente 4-en-1 para Secar, Alisar, Dar Volumen y Moldear, Tecnología Iónica & Cerámica, 4 Accesorios, 1200W, Negro/Rosa, AS122E",
-   "v": []
-  },
   "B0DDDGTKCR": {
    "c": "Patinetes",
    "d": 25,
@@ -3289,6 +3279,17 @@
    "title": "Band 11 Smartwatch, 1,62″ AMOLED 1500 Nits, para Android iOS, Negro",
    "v": []
   },
+  "B0GGRHTZQ5": {
+   "c": "Monitores",
+   "d": 27,
+   "e": "🖥️",
+   "m": 452,
+   "p": 101.25,
+   "s": "busqueda",
+   "t": "2026-11-20T09:31:24.680706+00:00",
+   "title": "DELL 27 Monitor Gaming - SE2726HG, Full HD (1920x1080), 240Hz, Fast IPS",
+   "v": []
+  },
   "B0GHN9DR1C": {
    "c": "Aspiradoras",
    "d": 41,
@@ -3826,6 +3827,6 @@
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-20",
-  "n": 5
+  "n": 6
  }
 }
