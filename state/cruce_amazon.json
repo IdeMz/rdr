@@ -7568,11 +7568,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Monitor Acer Vero B7 B247Y G 23,8 pulgadas FHD IPS 75Hz 4 ms Negro",
-   "pista": "944551 bytes; 0 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "935523 bytes; 0 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 20,
    "pp_median": 127.95,
    "pp_price": 102.95,
-   "t": "2026-11-19T23:05:22.619759+00:00",
+   "t": "2026-11-20T05:09:51.721664+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -8647,7 +8647,7 @@
    }
   }
  },
- "night_at": "2026-11-20T04:50:25.262478+00:00",
+ "night_at": "2026-11-20T05:09:51.721664+00:00",
  "resumen": {
   "amazon_mas_barato": 31,
   "dudoso": 1,
@@ -8656,5 +8656,5 @@
   "pvpr_inflado": 3,
   "sin_precio": 8
  },
- "updated": "2026-11-20T04:50:25.262478+00:00"
+ "updated": "2026-11-20T05:09:51.721664+00:00"
 }
