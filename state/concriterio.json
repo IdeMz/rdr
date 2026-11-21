@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-20T22:00:08.131352+00:00",
+ "next_at": "2026-11-21T07:27:16.336663+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2278,16 +2278,6 @@
    "title": "illy, Café en Grano INTENSO, 500g",
    "v": []
   },
-  "B0D79G6RDY": {
-   "c": "Cuidado del cabello",
-   "d": 44,
-   "e": "💇",
-   "m": 103,
-   "p": 99.9,
-   "t": "2026-11-06T21:41:07.314026+00:00",
-   "title": "Cecotec Cepillo de Aire 14 Cabezales CeramicCare 14in1 AirGlisse Black",
-   "v": []
-  },
   "B0D7BSGM9H": {
    "c": "Mochilas y maletas",
    "d": 30,
@@ -3795,6 +3785,19 @@
    "u": "https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3C4kKF00PIxjUH7oWEJYYeR8cxIQunUxPvpv0PypKUw49ItLKrd9LRYKYa0uPRYg8TnqAjUOV3BSpU31Zew2kdUr1VY2Qaum6TF8CqmdSVyHDjIBljPt7PhryLCph63Sq3OFQpnBdfCcKL0hvU7vCgHUudibekCt9unORTOkuS5NSntY3yChfsy2TlyvAcFYk6rxgXUbcIHjswrS3YagHFuH1kiC8xVMGRat4XWfbFZiCn4ZumPiP8FLhW3PdLMAOuOfQgvPmRrOPZdgFEevYVy4ZCsvc3PVv20luow3G9IhwqkClLuOZJvArrzCyxQKGTCtbMC5MJZ2XeIJorspSmLOyxFiygzRjbQQVljgkEHaELKyysXenuvbTw7O9JRpTz9cnbh5ZnyifDETEoqiIfu7GOYnyccsxACUwft3tZDnPn6ys8sNBkUWImh9Qxyn5SFtrcZIANEkRGhN8Tp27Dl4QH33n8NfRENIhgKpGAZOnTkQLHaXOCaCFXNtVEP3xfNyOHC0rBpAC4oO5cPBhotBYB7bsJ0wtpkbpgeKhb8zT5FpnJ11UfgCHbWyUHBTL9b2Npmr5a6oRAFOYjNGv0cPstWn1b9xcBLjuBRsNJ9WNhLoXXW7XRWkHZtqyCMG7LXhGxTC3jrrNi2h8nuF4Er4FLiww9jy7zrruEsktIw1bnI190gbepablqfBJDCErbHlQOFxxK1QSRU",
    "v": []
   },
+  "pp:40832391954": {
+   "auto": true,
+   "c": "",
+   "d": 34,
+   "e": "",
+   "m": 479,
+   "p": 74.72,
+   "st": "POWERPLANET",
+   "t": "2026-11-21T07:01:05.044033+00:00",
+   "title": "WP WPN-RWA-06604-B armario rack 6U",
+   "u": "https://www.awin1.com/pclick.php?p=40832391954&a=3134713&m=77138",
+   "v": []
+  },
   "pp:46599140093": {
    "auto": true,
    "c": "",
@@ -3916,12 +3919,14 @@
   }
  ],
  "store_skip": {
+  "pp:39262571673": "2026-11-21T07:01:05.044033+00:00",
+  "pp:43757357888": "2026-11-21T07:01:05.044033+00:00",
   "pp:45858364586": "2026-11-20T19:01:07.591956+00:00"
  },
  "summary_day": "2026-11-20",
  "tg_offset": 511048123,
  "x_copy": {
-  "day": "2026-11-20",
-  "n": 28
+  "day": "2026-11-21",
+  "n": 1
  }
 }
