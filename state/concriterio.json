@@ -47,7 +47,7 @@
   "Patinetes": "2026-11-18T12:30:56.291132+00:00",
   "Pequeño electrodoméstico": "2026-11-18T20:01:08.859046+00:00",
   "Perfumes": "2026-11-20T10:30:53.027422+00:00",
-  "Periféricos": "2026-11-18T17:01:08.637572+00:00",
+  "Periféricos": "2026-11-21T08:01:01.895573+00:00",
   "Perros": "2026-11-20T15:30:53.247753+00:00",
   "Portátiles": "2026-11-20T12:30:57.920138+00:00",
   "Proyectores": "2026-11-20T07:01:06.896632+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-21T07:58:20.684065+00:00",
+ "next_at": "2026-11-21T08:26:07.375352+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -219,16 +219,6 @@
    "title": "Educa - Puzzle 1000 Piezas Mapamundi | Puzzle 14 Años",
    "v": []
   },
-  "B00708ZNK2": {
-   "c": "Café y cápsulas",
-   "d": 17,
-   "e": "🫘",
-   "m": 106,
-   "p": 19.38,
-   "t": "2026-11-07T07:35:58.973498+00:00",
-   "title": "Marcilla Gran Aroma Café en Grano Natural | 1000g",
-   "v": []
-  },
   "B007XPB79I": {
    "c": "Perros",
    "d": 20,
@@ -364,6 +354,17 @@
    "p": 16.69,
    "t": "2026-11-11T07:01:39.104213+00:00",
    "title": "bosch HPC SOFT Pollo y Plátano | Alimento semi-húmedo para perros adultos de todas las razas | Sin cereales | 1 x 2,5 kg",
+   "v": []
+  },
+  "B00XYTTEAQ": {
+   "c": "Periféricos",
+   "d": 46,
+   "e": "⌨️",
+   "m": 481,
+   "p": 24.24,
+   "s": "ambas",
+   "t": "2026-11-21T08:01:47.942937+00:00",
+   "title": "Logitech K400 Teclado Táctil Inalámbrico Plus para TV",
    "v": []
   },
   "B00Y4SN790": {
@@ -3866,6 +3867,18 @@
  },
  "reserve": [
   {
+   "a": "B0CTQQDGV3",
+   "c": "Periféricos",
+   "e": "⌨️",
+   "img": "https://m.media-amazon.com/images/I/717oeHyOVeL._AC_UL320_.jpg",
+   "n": 119,
+   "op": 99.99,
+   "p": 69.99,
+   "r": 4.4,
+   "t": "2026-11-21T08:01:01.895573+00:00",
+   "title": "Logitech MK950 Signature Slim - QWERTY ESP"
+  },
+  {
    "a": "B0DMV3BMGP",
    "c": "Altavoces",
    "e": "🔊",
@@ -3887,6 +3900,6 @@
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-21",
-  "n": 2
+  "n": 3
  }
 }
