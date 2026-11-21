@@ -2221,6 +2221,13 @@
     ]
    }
   },
+  "760557839859": {
+   "a": "B075P1LD28",
+   "t": "2026-11-21T11:30:53.777938+00:00",
+   "title": "Transcend SSD MTS400S M.2 SATA III 2242 128GB, caché DRAM, clave B+M",
+   "v": 3,
+   "via": "ean"
+  },
   "7630997902846": {
    "a": "",
    "t": "2026-11-18T01:20:27.102268+00:00",
@@ -3045,7 +3052,7 @@
    "pp_drop": 60,
    "pp_median": 298.95,
    "pp_price": 119.0,
-   "t": "2026-11-19T10:35:44.498929+00:00",
+   "t": "2026-11-21T11:30:53.777938+00:00",
    "v": 3,
    "veredicto": "no_esta",
    "vistos": {
@@ -5428,6 +5435,26 @@
      "Rapoo MT760M Wireless Mouse Silent - Ratón inalámbrico USB 2.4G y Bluetooth, hasta 4000 dpi, Clic si"
     ]
    }
+  },
+  "45956991395": {
+   "ahorro_vs_amazon": -8,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 185.85,
+   "amz_title": "Transcend SSD MTS400S M.2 SATA III 2242 128GB, caché DRAM, clave B+M",
+   "asin": "B075P1LD28",
+   "disponible": true,
+   "ean": "760557839859",
+   "encontrado_por": "ean",
+   "lista": "to_verify",
+   "motivo": "Amazon 185.85 frente a 200.94",
+   "name": "Transcend MTS400S 2242 128GB M.2 SATA III 530MB/s SSD",
+   "pp_drop": 67,
+   "pp_median": 609.95,
+   "pp_price": 200.94,
+   "t": "2026-11-21T11:30:53.777938+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
   },
   "45956991411": {
    "ahorro_vs_amazon": 31,
@@ -9365,12 +9392,12 @@
  },
  "night_at": "2026-11-21T06:05:25.549133+00:00",
  "resumen": {
-  "amazon_mas_barato": 32,
+  "amazon_mas_barato": 28,
   "dudoso": 0,
-  "no_esta": 15,
-  "oferta_real": 22,
-  "pvpr_inflado": 5,
-  "sin_precio": 9
+  "no_esta": 11,
+  "oferta_real": 16,
+  "pvpr_inflado": 2,
+  "sin_precio": 7
  },
- "updated": "2026-11-21T10:30:51.209383+00:00"
+ "updated": "2026-11-21T11:30:53.777938+00:00"
 }
