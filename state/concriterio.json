@@ -17,7 +17,7 @@
   "Ciclismo": "2026-11-20T14:01:07.067138+00:00",
   "Climatización": "2026-11-20T13:31:03.874159+00:00",
   "Colchones y almohadas": "2026-11-19T10:35:44.498929+00:00",
-  "Componentes PC": "2026-11-19T19:45:43.698458+00:00",
+  "Componentes PC": "2026-11-21T09:01:01.501496+00:00",
   "Cuidado de la piel": "2026-11-20T20:31:08.098759+00:00",
   "Cuidado del cabello": "2026-11-19T17:30:56.735106+00:00",
   "Cámaras de seguridad": "2026-11-20T08:01:03.517934+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-21T09:00:28.454690+00:00",
+ "next_at": "2026-11-21T09:27:45.622807+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2313,16 +2313,6 @@
    "title": "Mando inalámbrico Luna",
    "v": []
   },
-  "B0D8QQ2LY5": {
-   "c": "Robots de cocina",
-   "d": 33,
-   "e": "🥣",
-   "m": 108,
-   "p": 187.7,
-   "t": "2026-11-07T08:46:01.344537+00:00",
-   "title": "Ninja Detect Power Pro, Batidora y Procesador de Alimentos, Negro",
-   "v": []
-  },
   "B0D947FZQX": {
    "c": "Tablets",
    "d": 32,
@@ -2653,6 +2643,17 @@
    "s": "ofertas",
    "t": "2026-11-21T08:31:39.329014+00:00",
    "title": "Meross Programador Riego WiFi MST100, Riego Automatico - APP",
+   "v": []
+  },
+  "B0F3DSJWBG": {
+   "c": "Componentes PC",
+   "d": 43,
+   "e": "🧩",
+   "m": 483,
+   "p": 84.95,
+   "s": "ambas",
+   "t": "2026-11-21T09:01:28.870669+00:00",
+   "title": "CORSAIR RM850e (2025) Fuente de Alimentación ATX con 12V-2x6 – Blanco",
    "v": []
   },
   "B0F3JF1YBR": {
@@ -3921,6 +3922,6 @@
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-21",
-  "n": 4
+  "n": 5
  }
 }
