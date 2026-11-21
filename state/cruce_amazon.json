@@ -6347,10 +6347,10 @@
    "lista": "candidates",
    "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
    "name": "Hisense 11L Doble cesta 2700W Negro HAF2700DCD 8 programas pantalla táctil Freidora de aire",
-   "pp_drop": 31,
+   "pp_drop": 33,
    "pp_median": 234.95,
-   "pp_price": 161.95,
-   "t": "2026-11-20T13:31:03.874159+00:00",
+   "pp_price": 156.95,
+   "t": "2026-11-21T14:30:51.598433+00:00",
    "v": 3,
    "veredicto": "no_esta",
    "vistos": {
@@ -6839,22 +6839,22 @@
    "veredicto": "oferta_real"
   },
   "46239681542": {
-   "ahorro_vs_amazon": -16,
+   "ahorro_vs_amazon": -1,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 49.5,
+   "amz_price": 56.69,
    "amz_title": "Carte Mère ASRock H610M-HDV/M.2+ DDR5 (Intel LGA 1700) Micro ATX",
    "asin": "B0CGQ4HRSM",
    "disponible": true,
    "ean": "4710483936661",
    "encontrado_por": "modelo",
    "lista": "candidates",
-   "motivo": "Amazon 49.50 frente a 57.21",
+   "motivo": "Amazon 56.69 frente a 57.21",
    "name": "ASRock H610M-HDV Intel H610 LGA 1700 DDR4 Micro-ATX Negro Placa base",
    "pp_drop": 43,
    "pp_median": 99.95,
    "pp_price": 57.21,
-   "t": "2026-11-19T12:05:32.674217+00:00",
+   "t": "2026-11-21T14:30:51.598433+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -9546,5 +9546,5 @@
   "pvpr_inflado": 3,
   "sin_precio": 9
  },
- "updated": "2026-11-21T14:01:11.161162+00:00"
+ "updated": "2026-11-21T14:30:51.598433+00:00"
 }

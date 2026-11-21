@@ -12,7 +12,7 @@
   "Bricolaje": "2026-11-18T17:30:58.281773+00:00",
   "Cafeteras": "2026-11-20T10:01:02.046099+00:00",
   "Café y cápsulas": "2026-11-20T17:01:05.412850+00:00",
-  "Camping y montaña": "2026-11-19T21:45:51.469863+00:00",
+  "Camping y montaña": "2026-11-21T14:30:51.598433+00:00",
   "Cargadores y baterías": "2026-11-19T17:01:09.614407+00:00",
   "Ciclismo": "2026-11-20T14:01:07.067138+00:00",
   "Climatización": "2026-11-20T13:31:03.874159+00:00",
@@ -50,7 +50,7 @@
   "Periféricos": "2026-11-21T08:01:01.895573+00:00",
   "Perros": "2026-11-20T15:30:53.247753+00:00",
   "Portátiles": "2026-11-20T12:30:57.920138+00:00",
-  "Proyectores": "2026-11-20T07:01:06.896632+00:00",
+  "Proyectores": "2026-11-21T14:30:51.598433+00:00",
   "Redes y wifi": "2026-11-19T15:30:55.803469+00:00",
   "Relojes": "2026-11-20T17:30:54.157924+00:00",
   "Robots de cocina": "2026-11-21T13:01:04.571347+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-21T14:27:39.400269+00:00",
+ "next_at": "2026-11-21T14:56:26.978756+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -228,16 +228,6 @@
    "s": "ofertas",
    "t": "2026-11-19T14:32:18.232897+00:00",
    "title": "Educa - Puzzle 1000 Piezas Mapamundi | Puzzle 14 Años",
-   "v": []
-  },
-  "B007XPB79I": {
-   "c": "Perros",
-   "d": 20,
-   "e": "🐶",
-   "m": 116,
-   "p": 19.99,
-   "t": "2026-11-07T14:11:06.408839+00:00",
-   "title": "Advance Mini Senior, Pienso para Perros Senior de Razas Pequeñas con Pollo, 3kg",
    "v": []
   },
   "B009WQCIX0": {
@@ -3549,6 +3539,17 @@
    "title": "Mochila 40x30x20 Expandible 40x30x25 Viaje Cabina Avion para Ryanair",
    "v": []
   },
+  "B0H1M9GBWB": {
+   "c": "Proyectores",
+   "d": 48,
+   "e": "📽️",
+   "m": 494,
+   "p": 176.69,
+   "s": "busqueda",
+   "t": "2026-11-21T14:31:39.479438+00:00",
+   "title": "Google TV Proyector Portátil, 1200 ANSI, Decodificación 4K, Dolby Audio 36W",
+   "v": []
+  },
   "B0H29D4R26": {
    "c": "Barras de sonido",
    "d": 44,
@@ -3867,6 +3868,10 @@
    "t": "2026-11-21T08:30:51.750516+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B00T4BHYLY": {
+   "t": "2026-11-21T14:30:51.598433+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0813YSMGN": {
    "t": "2026-11-20T17:01:05.412850+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3877,6 +3882,10 @@
   },
   "B0BNLNR62K": {
    "t": "2026-11-21T08:30:51.750516+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0CXPPNL5C": {
+   "t": "2026-11-21T14:30:51.598433+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0DVC8Z8CV": {
@@ -3947,6 +3956,6 @@
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-21",
-  "n": 15
+  "n": 16
  }
 }
