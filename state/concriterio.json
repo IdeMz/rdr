@@ -42,7 +42,7 @@
   "Mochilas y maletas": "2026-11-20T07:30:55.091992+00:00",
   "Monitores": "2026-11-20T09:30:54.246285+00:00",
   "Móviles": "2026-11-20T11:01:13.526266+00:00",
-  "Nutrición deportiva": "2026-11-17T14:30:58.598858+00:00",
+  "Nutrición deportiva": "2026-11-21T20:00:58.767855+00:00",
   "Oficina": "2026-11-21T12:01:05.183305+00:00",
   "Patinetes": "2026-11-21T18:01:02.914601+00:00",
   "Pequeño electrodoméstico": "2026-11-18T20:01:08.859046+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-21T20:00:27.574124+00:00",
+ "next_at": "2026-11-21T20:29:59.580977+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -260,6 +260,17 @@
    "p": 21.99,
    "t": "2026-11-10T09:56:05.161991+00:00",
    "title": "Logitech MK270 Combo Teclado y Ratón Inalámbrico para Windows",
+   "v": []
+  },
+  "B00CHO4PZI": {
+   "c": "Nutrición deportiva",
+   "d": 26,
+   "e": "💪",
+   "m": 505,
+   "p": 40.0,
+   "s": "busqueda",
+   "t": "2026-11-21T20:01:36.338861+00:00",
+   "title": "AMIX - Creatina Monohidratada - 500 Gramos + 250 Gramos Gratis - Complemento Alimenticio - Mejora el Rendimiento Físico - Ideal para Deportistas - 100% Micronizada - Proteína Masa Muscular",
    "v": []
   },
   "B00ENMFOSY": {
@@ -1059,16 +1070,6 @@
    "s": "ambas",
    "t": "2026-11-18T19:01:55.164841+00:00",
    "title": "Dodot Pañales Bebé Sensitive, Talla 2 (4-8 kg), 240 Pañales + Regalo de 40 Toallitas Aqua Pure 99% Agua, Hasta 12 h De Protección Antifugas y Cuidado de la Piel, Pack Mensual",
-   "v": []
-  },
-  "B083JKMXJF": {
-   "c": "Ciclismo",
-   "d": 40,
-   "e": "🚴",
-   "m": 121,
-   "p": 22.27,
-   "t": "2026-11-07T19:46:06.937509+00:00",
-   "title": "Fischer Urban Lano - Casco de Ciclismo para Adultos con Sistema de Anillo Interior Iluminado",
    "v": []
   },
   "B083ZJZ8K2": {
@@ -3946,6 +3947,10 @@
    "t": "2026-11-21T15:01:05.254496+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B071W264LM": {
+   "t": "2026-11-21T20:00:58.767855+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B07TXJHYKB": {
    "t": "2026-11-21T15:31:01.080016+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3970,10 +3975,6 @@
    "t": "2026-11-21T15:01:05.254496+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0DVC8Z8CV": {
-   "t": "2026-11-20T19:30:58.727153+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0GJTBKGDV": {
    "t": "2026-11-21T12:30:56.768648+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3984,6 +3985,18 @@
   }
  },
  "reserve": [
+  {
+   "a": "B0DYP5KG5J",
+   "c": "Nutrición deportiva",
+   "e": "💪",
+   "img": "https://m.media-amazon.com/images/I/7100nkpORlL._AC_UL320_.jpg",
+   "n": 1100,
+   "op": 28.9,
+   "p": 22.25,
+   "r": 4.6,
+   "t": "2026-11-21T20:00:58.767855+00:00",
+   "title": "Creatina Monohidratada 3000mg, 400 Pastillas, 100 Días, Hombre y Mujer"
+  },
   {
    "a": "B0B716HTS1",
    "c": "Ciclismo",
@@ -4018,6 +4031,6 @@
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-21",
-  "n": 26
+  "n": 27
  }
 }
