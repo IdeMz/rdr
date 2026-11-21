@@ -13,7 +13,7 @@
   "Cafeteras": "2026-11-20T10:01:02.046099+00:00",
   "Café y cápsulas": "2026-11-20T17:01:05.412850+00:00",
   "Camping y montaña": "2026-11-21T14:30:51.598433+00:00",
-  "Cargadores y baterías": "2026-11-19T17:01:09.614407+00:00",
+  "Cargadores y baterías": "2026-11-21T17:01:04.157306+00:00",
   "Ciclismo": "2026-11-20T14:01:07.067138+00:00",
   "Climatización": "2026-11-20T13:31:03.874159+00:00",
   "Colchones y almohadas": "2026-11-19T10:35:44.498929+00:00",
@@ -49,7 +49,7 @@
   "Perfumes": "2026-11-20T10:30:53.027422+00:00",
   "Periféricos": "2026-11-21T08:01:01.895573+00:00",
   "Perros": "2026-11-20T15:30:53.247753+00:00",
-  "Portátiles": "2026-11-20T12:30:57.920138+00:00",
+  "Portátiles": "2026-11-21T17:01:04.157306+00:00",
   "Proyectores": "2026-11-21T14:30:51.598433+00:00",
   "Redes y wifi": "2026-11-19T15:30:55.803469+00:00",
   "Relojes": "2026-11-20T17:30:54.157924+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-21T16:57:10.666360+00:00",
+ "next_at": "2026-11-21T17:30:11.434370+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -303,16 +303,6 @@
    "s": "ofertas",
    "t": "2026-11-21T15:31:47.306460+00:00",
    "title": "L'Oréal Paris Panorama Máscara de Pestañas Voluminizadora, Bleu Suede",
-   "v": []
-  },
-  "B00O4AXMQG": {
-   "c": "Gatos",
-   "d": 38,
-   "e": "🐱",
-   "m": 119,
-   "p": 23.0,
-   "t": "2026-11-07T16:51:08.490373+00:00",
-   "title": "Arquivet, Arena Gato Silica Crystal 17,8 L",
    "v": []
   },
   "B00PBX3L7K": {
@@ -2553,6 +2543,17 @@
    "title": "GXTrust Forta Cascos PS5 Licencia Oficial para PlayStation 5, Azul",
    "v": []
   },
+  "B0DSZKKJTK": {
+   "c": "Cargadores y baterías",
+   "d": 38,
+   "e": "🔌",
+   "m": 499,
+   "p": 28.49,
+   "s": "ambas",
+   "t": "2026-11-21T17:01:46.160881+00:00",
+   "title": "Anker Zolo Power Bank con Cable USB C Integrado (45W, 20000mAh, 2 cables)",
+   "v": []
+  },
   "B0DSZRL2W9": {
    "c": "Accesorios de coche",
    "d": 30,
@@ -3932,10 +3933,6 @@
    "t": "2026-11-20T19:30:58.727153+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0DWS7SR2C": {
-   "t": "2026-11-20T16:30:59.454749+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0GJTBKGDV": {
    "t": "2026-11-21T12:30:56.768648+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3992,6 +3989,6 @@
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-21",
-  "n": 20
+  "n": 21
  }
 }

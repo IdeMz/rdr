@@ -7121,22 +7121,22 @@
    }
   },
   "46239685059": {
-   "ahorro_vs_amazon": -39,
+   "ahorro_vs_amazon": -35,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 185.07,
+   "amz_price": 176.01,
    "amz_title": "Ninja SLUSHi, Máquina de Bebidas Heladas sin Hielo, 1,9L, Azul/Gris",
    "asin": "B0DKXY7JT2",
    "disponible": true,
    "ean": "0622356294072",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "Amazon 185.07 frente a 256.96",
+   "motivo": "Amazon 176.01 frente a 237.95",
    "name": "Heladora Ninja Slushi 1,892L 200W Azul Negro FS301EU",
-   "pp_drop": 20,
+   "pp_drop": 26,
    "pp_median": 322.95,
-   "pp_price": 256.96,
-   "t": "2026-11-18T13:30:55.857399+00:00",
+   "pp_price": 237.95,
+   "t": "2026-11-21T17:01:04.157306+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -8985,22 +8985,22 @@
    }
   },
   "46599143226": {
-   "ahorro_vs_amazon": 9,
-   "amz_low30": 1449.0,
+   "ahorro_vs_amazon": -14,
+   "amz_low30": null,
    "amz_median": null,
-   "amz_price": 1199.0,
+   "amz_price": 1163.03,
    "amz_title": "Microsoft Surface Pro, 13\" | Snapdragon X2 Plus | 16GB RAM, 256GB SSD",
    "asin": "B0H45KXKC9",
    "disponible": true,
    "ean": "0196388781843",
    "encontrado_por": "nombre",
    "lista": "candidates",
-   "motivo": "Amazon 1199.00 frente a 1320.94",
+   "motivo": "Amazon 1163.03 frente a 1320.94",
    "name": "Tablet 2 en 1 Microsoft Surface Pro 13 Snapdragon X Plus 16GB/256GB 13 pulgadas SSD Windows 11 Home Platino",
    "pp_drop": 20,
    "pp_median": 1659.95,
    "pp_price": 1320.94,
-   "t": "2026-11-19T13:05:35.393737+00:00",
+   "t": "2026-11-21T17:01:04.157306+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -9600,5 +9600,5 @@
   "pvpr_inflado": 4,
   "sin_precio": 9
  },
- "updated": "2026-11-21T16:30:54.650507+00:00"
+ "updated": "2026-11-21T17:01:04.157306+00:00"
 }
