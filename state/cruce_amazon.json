@@ -8256,11 +8256,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "SSD Silicon Power Ace A55 4TB 2.5 pulgadas SATA III Negro",
-   "pista": "1833136 bytes; 7 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1918895 bytes; 9 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 25,
    "pp_median": 553.95,
    "pp_price": 416.95,
-   "t": "2026-11-20T22:20:32.538256+00:00",
+   "t": "2026-11-21T04:20:36.208648+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -9363,7 +9363,7 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-21T02:35:25.420567+00:00",
+ "night_at": "2026-11-21T04:20:36.208648+00:00",
  "resumen": {
   "amazon_mas_barato": 32,
   "dudoso": 0,
@@ -9372,5 +9372,5 @@
   "pvpr_inflado": 5,
   "sin_precio": 9
  },
- "updated": "2026-11-21T02:35:25.420567+00:00"
+ "updated": "2026-11-21T04:20:36.208648+00:00"
 }
