@@ -2622,6 +2622,13 @@
     ]
    }
   },
+  "8436584875727": {
+   "a": "B0FQHVCTXL",
+   "t": "2026-11-21T22:50:34.667735+00:00",
+   "title": "Salicru SPS 1250 Soho+ – Sistema de Alimentación Ininterrumpida (SAI/UPS) de 1250 VA Line-Interactive y con Doble Cargador USB",
+   "v": 3,
+   "via": "ean"
+  },
   "8436587976537": {
    "a": "B0GTW4KCLT",
    "t": "2026-11-17T12:30:54.443182+00:00",
@@ -4555,24 +4562,24 @@
    }
   },
   "45368123613": {
-   "ahorro_vs_amazon": 39,
-   "amz_low30": null,
-   "amz_median": null,
-   "amz_price": 77.93,
+   "ahorro_vs_amazon": 0,
+   "amz_low30": 48.36,
+   "amz_median": 47.45,
+   "amz_price": 45.08,
    "amz_title": "SEVERIN Freidora de aire FryLight Single, cocinado versátil, pantalla táctil, 8 programas automáticos, función de conservación del calor, 4L, revestimiento anti",
    "asin": "B0F9TRBWPD",
    "disponible": true,
    "ean": "4008146046551",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "39 % por debajo del habitual en Amazon (77.93)",
+   "motivo": "Amazon 45.08 frente a 47.40",
    "name": "Severin FR 2461 4L 1300W 8 Programas pantalla táctil Freidora de aire",
    "pp_drop": 29,
    "pp_median": 66.95,
    "pp_price": 47.4,
-   "t": "2026-11-19T18:45:44.590047+00:00",
+   "t": "2026-11-21T22:50:34.667735+00:00",
    "v": 3,
-   "veredicto": "oferta_real"
+   "veredicto": "amazon_mas_barato"
   },
   "45368123747": {
    "ahorro_vs_amazon": 7,
@@ -4779,9 +4786,9 @@
    "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
    "name": "Kingston Fury Renegade 4TB NVMe M.2 PCIe 5.0 2280 14800MB/s SSD",
    "pp_drop": 16,
-   "pp_median": 1189.95,
+   "pp_median": 1184.95,
    "pp_price": 1000.95,
-   "t": "2026-11-19T19:15:40.361750+00:00",
+   "t": "2026-11-21T22:50:34.667735+00:00",
    "v": 3,
    "veredicto": "no_esta",
    "vistos": {
@@ -6508,6 +6515,26 @@
      "Master U-Power SAI UPS 2000VA 1200W Line Interactive AVR 4 Schuko"
     ]
    }
+  },
+  "46146892179": {
+   "ahorro_vs_amazon": 31,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 217.28,
+   "amz_title": "Salicru SPS 1250 Soho+ – Sistema de Alimentación Ininterrumpida (SAI/UPS) de 1250 VA Line-Interactive y con Doble Cargador USB",
+   "asin": "B0FQHVCTXL",
+   "disponible": true,
+   "ean": "8436584875727",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "31 % por debajo del habitual en Amazon (217.28)",
+   "name": "Salicru SPS 1250 SOHO+ Línea Interactiva 1250VA 720W Schuko Negro 4 tomas SAI",
+   "pp_drop": 22,
+   "pp_median": 192.95,
+   "pp_price": 150.95,
+   "t": "2026-11-21T22:50:34.667735+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
   },
   "46146892377": {
    "ean": "6971636400691",
@@ -9889,14 +9916,14 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-21T22:35:26.067828+00:00",
+ "night_at": "2026-11-21T22:50:34.667735+00:00",
  "resumen": {
-  "amazon_mas_barato": 30,
+  "amazon_mas_barato": 31,
   "dudoso": 0,
   "no_esta": 15,
   "oferta_real": 21,
   "pvpr_inflado": 4,
   "sin_precio": 10
  },
- "updated": "2026-11-21T22:35:26.067828+00:00"
+ "updated": "2026-11-21T22:50:34.667735+00:00"
 }
