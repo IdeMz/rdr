@@ -53,6 +53,13 @@
    "v": 3,
    "via": "ean"
   },
+  "0195949116759": {
+   "a": "B0D3JHKYNG",
+   "t": "2026-11-21T16:01:07.900587+00:00",
+   "title": "Beats Solo Buds Auriculares inalámbricos - Rojo Transparente",
+   "v": 3,
+   "via": "ean"
+  },
   "0195949544163": {
    "a": "B0DGJ74WP3",
    "t": "2026-11-13T15:10:54.425531+00:00",
@@ -6815,11 +6822,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Videojuego Bandai Namco Entertainment Elden Ring: Shadow of the Erdtree Xbox Series X",
-   "pista": "1114556 bytes; 5 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1096284 bytes; 6 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 37,
    "pp_median": 96.95,
    "pp_price": 60.95,
-   "t": "2026-11-21T09:01:01.501496+00:00",
+   "t": "2026-11-21T16:01:07.900587+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -7218,6 +7225,26 @@
      "Ninja BlendBoss, Batidora de Vaso Portátil, Color Piedra"
     ]
    }
+  },
+  "46239687260": {
+   "ahorro_vs_amazon": -6,
+   "amz_low30": 69.99,
+   "amz_median": null,
+   "amz_price": 49.0,
+   "amz_title": "Beats Solo Buds Auriculares inalámbricos - Rojo Transparente",
+   "asin": "B0D3JHKYNG",
+   "disponible": true,
+   "ean": "0195949116759",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 49.00 frente a 73.96",
+   "name": "Apple Beats Solo Buds MUW03ZM/A TWS ANC Auriculares inalámbricos",
+   "pp_drop": 35,
+   "pp_median": 112.99,
+   "pp_price": 73.96,
+   "t": "2026-11-21T16:01:07.900587+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
   },
   "46239687571": {
    "ahorro_vs_amazon": -8,
@@ -9566,12 +9593,12 @@
  },
  "night_at": "2026-11-21T06:05:25.549133+00:00",
  "resumen": {
-  "amazon_mas_barato": 29,
+  "amazon_mas_barato": 30,
   "dudoso": 0,
   "no_esta": 12,
   "oferta_real": 16,
   "pvpr_inflado": 4,
   "sin_precio": 9
  },
- "updated": "2026-11-21T15:31:01.080016+00:00"
+ "updated": "2026-11-21T16:01:07.900587+00:00"
 }
