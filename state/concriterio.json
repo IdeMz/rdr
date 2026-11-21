@@ -44,7 +44,7 @@
   "Móviles": "2026-11-20T11:01:13.526266+00:00",
   "Nutrición deportiva": "2026-11-17T14:30:58.598858+00:00",
   "Oficina": "2026-11-21T12:01:05.183305+00:00",
-  "Patinetes": "2026-11-18T12:30:56.291132+00:00",
+  "Patinetes": "2026-11-21T18:01:02.914601+00:00",
   "Pequeño electrodoméstico": "2026-11-18T20:01:08.859046+00:00",
   "Perfumes": "2026-11-20T10:30:53.027422+00:00",
   "Periféricos": "2026-11-21T08:01:01.895573+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-21T17:59:38.579416+00:00",
+ "next_at": "2026-11-21T18:26:47.356569+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1491,6 +1491,17 @@
    "p": 12.3,
    "t": "2026-11-10T07:36:05.124558+00:00",
    "title": "L'Oréal Paris Revitalift Filler Crema Hidratante Día Nº1 con SPF 50, 50ml",
+   "v": []
+  },
+  "B096JZMNG1": {
+   "c": "Patinetes",
+   "d": 20,
+   "e": "🛴",
+   "m": 501,
+   "p": 39.99,
+   "s": "ambas",
+   "t": "2026-11-21T18:01:31.286629+00:00",
+   "title": "Sawyer Bikes - Patinete Ajustable Ruedas LED - Niños 2 a 8 Años",
    "v": []
   },
   "B0971K7H8L": {
@@ -3996,6 +4007,6 @@
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-21",
-  "n": 22
+  "n": 23
  }
 }

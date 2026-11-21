@@ -1699,6 +1699,26 @@
    "v": 3,
    "via": "ean"
   },
+  "622356301824": {
+   "a": "",
+   "t": "2026-11-21T18:01:02.914601+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "modelo": [
+     "Ninja Luxe Premier, Cafetera 3 en 1, con Molinillo y Espumador, Plata",
+     "Ninja Luxe Premier, Cafetera 3 en 1 para Expreso, Gris Metalizado",
+     "Ninja Speedi, Olla Eléctrica Multifunción Rápida 10 en 1, Piedra/Dorado"
+    ],
+    "nombre": [
+     "Ninja Luxe Café Mini Cafetera 2 en 1 para café de filtro y espresso y molinillo integrado, espumador",
+     "Ninja Luxe Café Mini Cafetera 2 en 1 para café de filtro y espresso con espumador automático de lech",
+     "Neretva 40 Precisión Molinillo Café Electrico con Conicas Acero Inoxidable"
+    ]
+   }
+  },
   "649528946560": {
    "a": "B0FP9K9C4T",
    "t": "2026-11-18T13:01:08.331588+00:00",
@@ -4166,7 +4186,7 @@
    "pp_drop": 27,
    "pp_median": 189.99,
    "pp_price": 138.99,
-   "t": "2026-11-19T14:01:04.176634+00:00",
+   "t": "2026-11-21T18:01:02.914601+00:00",
    "v": 3,
    "veredicto": "no_esta",
    "vistos": {
@@ -5294,6 +5314,33 @@
    "pp_price": 266.95,
    "t": "2026-11-13T23:20:24.256283+00:00",
    "veredicto": "oferta_real"
+  },
+  "45948306857": {
+   "ean": "622356301824",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Ninja Luxe Café Essential ES501EU Molinillo Cónico Integrado 1650W 9 bares vaporizador de leche Cafetera",
+   "pp_drop": 22,
+   "pp_median": 654.95,
+   "pp_price": 509.95,
+   "t": "2026-11-21T18:01:02.914601+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "modelo": [
+     "Ninja Luxe Premier, Cafetera 3 en 1, con Molinillo y Espumador, Plata",
+     "Ninja Luxe Premier, Cafetera 3 en 1 para Expreso, Gris Metalizado",
+     "Ninja Speedi, Olla Eléctrica Multifunción Rápida 10 en 1, Piedra/Dorado"
+    ],
+    "nombre": [
+     "Ninja Luxe Café Mini Cafetera 2 en 1 para café de filtro y espresso y molinillo integrado, espumador",
+     "Ninja Luxe Café Mini Cafetera 2 en 1 para café de filtro y espresso con espumador automático de lech",
+     "Neretva 40 Precisión Molinillo Café Electrico con Conicas Acero Inoxidable"
+    ]
+   }
   },
   "45948306858": {
    "ahorro_vs_amazon": -7,
@@ -9596,10 +9643,10 @@
  "resumen": {
   "amazon_mas_barato": 29,
   "dudoso": 0,
-  "no_esta": 12,
+  "no_esta": 13,
   "oferta_real": 16,
   "pvpr_inflado": 4,
   "sin_precio": 10
  },
- "updated": "2026-11-21T17:30:53.662722+00:00"
+ "updated": "2026-11-21T18:01:02.914601+00:00"
 }
