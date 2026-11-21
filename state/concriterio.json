@@ -7,7 +7,7 @@
   "Altavoces": "2026-11-21T07:31:01.189028+00:00",
   "Aspiradoras": "2026-11-20T13:01:06.821120+00:00",
   "Auriculares": "2026-11-19T20:15:40.337664+00:00",
-  "Barras de sonido": "2026-11-18T08:01:03.545593+00:00",
+  "Barras de sonido": "2026-11-21T14:01:11.161162+00:00",
   "Bebé": "2026-11-18T19:01:22.092208+00:00",
   "Bricolaje": "2026-11-18T17:30:58.281773+00:00",
   "Cafeteras": "2026-11-20T10:01:02.046099+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-21T13:57:48.667747+00:00",
+ "next_at": "2026-11-21T14:27:39.400269+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2189,17 +2189,6 @@
    "title": "Kindle Colorsoft Signature Edition (32 GB) de Amazon (modelo de 2024) | Con pantalla a color, luz frontal autorregulable, carga inalámbrica y gran duración de la batería | 32 GB",
    "v": []
   },
-  "B0CXDXP8VR": {
-   "c": "Cargadores y baterías",
-   "d": 20,
-   "e": "🔌",
-   "m": 115,
-   "manual": true,
-   "p": 39.99,
-   "t": "2026-11-07T13:35:29.080896+00:00",
-   "title": "Anker Power bank 20.000 mAh 87 W con cable USB C integrado",
-   "v": []
-  },
   "B0CZ7GFP9C": {
    "c": "Droguería",
    "d": 43,
@@ -3560,6 +3549,17 @@
    "title": "Mochila 40x30x20 Expandible 40x30x25 Viaje Cabina Avion para Ryanair",
    "v": []
   },
+  "B0H29D4R26": {
+   "c": "Barras de sonido",
+   "d": 44,
+   "e": "🎶",
+   "m": 493,
+   "p": 179.18,
+   "s": "busqueda",
+   "t": "2026-11-21T14:01:36.812373+00:00",
+   "title": "Proyector 4K【Google TV 14.0/Official Apps/Auto Focus/Keystone】 Proyector portatil Control por Voz 1080P FHD Nativo HDR10,WiFi 6 & Bluetooth 5.3 SmartProyector para Exterior/Cine en Casa/Techo/HDMI",
+   "v": []
+  },
   "B0H33NS6RS": {
    "c": "Robots de cocina",
    "d": 21,
@@ -3867,10 +3867,6 @@
    "t": "2026-11-21T08:30:51.750516+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B07HGFBXT8": {
-   "t": "2026-11-20T13:31:03.874159+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0813YSMGN": {
    "t": "2026-11-20T17:01:05.412850+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3951,6 +3947,6 @@
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-21",
-  "n": 14
+  "n": 15
  }
 }
