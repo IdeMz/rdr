@@ -4,7 +4,7 @@
   "Accesorios de móvil": "2026-11-20T12:01:02.865312+00:00",
   "Afeitado y depilación": "2026-11-17T20:15:50.874512+00:00",
   "Almacenamiento": "2026-11-20T19:30:58.727153+00:00",
-  "Altavoces": "2026-11-19T16:01:05.937931+00:00",
+  "Altavoces": "2026-11-21T07:31:01.189028+00:00",
   "Aspiradoras": "2026-11-20T13:01:06.821120+00:00",
   "Auriculares": "2026-11-19T20:15:40.337664+00:00",
   "Barras de sonido": "2026-11-18T08:01:03.545593+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-21T07:27:16.336663+00:00",
+ "next_at": "2026-11-21T07:58:20.684065+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2208,11 +2208,13 @@
   },
   "B0D3X3YKVF": {
    "c": "Altavoces",
-   "d": 33,
+   "d": 44,
    "e": "🔊",
-   "m": 160,
-   "p": 69.99,
-   "t": "2026-11-09T11:06:08.436992+00:00",
+   "m": 480,
+   "p": 58.55,
+   "pa": 69.99,
+   "s": "ambas",
+   "t": "2026-11-21T07:31:34.676546+00:00",
    "title": "Ultimate Ears WONDERBOOM 4, altavoz Bluetooth portátil resistente al agua",
    "v": []
   },
@@ -2350,16 +2352,6 @@
    "p": 18.99,
    "t": "2026-11-11T08:46:05.718440+00:00",
    "title": "Soundcore Select 4 Go de Anker Altavoz Bluetooth Portátil Mini(Negro)",
-   "v": []
-  },
-  "B0DBHLNQK2": {
-   "c": "Menaje de cocina",
-   "d": 29,
-   "e": "🍳",
-   "m": 105,
-   "p": 142.94,
-   "t": "2026-11-07T07:01:40.046413+00:00",
-   "title": "Kitchen Academy Juego de Ollas y Sartenes Antiadherentes 30 Piezas Verde",
    "v": []
   },
   "B0DDCFZBQD": {
@@ -3843,14 +3835,6 @@
    "t": "2026-11-20T11:01:13.526266+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0D8KGZH8J": {
-   "t": "2026-11-20T07:30:55.091992+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0DHG8XRVV": {
-   "t": "2026-11-20T07:01:06.896632+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0DVC8Z8CV": {
    "t": "2026-11-20T19:30:58.727153+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3882,40 +3866,16 @@
  },
  "reserve": [
   {
-   "a": "B09BD7L35V",
-   "c": "Cuidado de la piel",
-   "e": "🧴",
-   "img": "https://m.media-amazon.com/images/I/71AgCvUUG-L._AC_UL320_.jpg",
-   "n": 26500,
-   "op": 13.95,
-   "p": 7.49,
-   "r": 4.4,
-   "t": "2026-11-20T20:31:08.098759+00:00",
-   "title": "Garnier Vitamina C Sérum AntiManchas Pieles Sensible, Nº1 del mundo, 30 ml"
-  },
-  {
-   "a": "B0CFRD1F39",
-   "c": "Iluminación",
-   "e": "🪔",
-   "img": "https://m.media-amazon.com/images/I/71QYLgbUtxL._AC_UL320_.jpg",
-   "n": 187,
-   "op": 15.79,
-   "p": 10.59,
-   "r": 4.6,
-   "t": "2026-11-20T18:30:56.920199+00:00",
-   "title": "Philips Lighting Bombilla LED Ultraeficiente, 4 W Equivalente a 60 W, E27 A60, Luz Cálida 2700K, Eficiencia Energética A, Pack 2 unidades"
-  },
-  {
-   "a": "B01E6XBBE0",
-   "c": "Textil hogar",
-   "e": "🧺",
-   "img": "https://m.media-amazon.com/images/I/71e9UFjWD4L._AC_UL320_.jpg",
-   "n": 142600,
-   "op": 8.54,
-   "p": 6.83,
+   "a": "B0DMV3BMGP",
+   "c": "Altavoces",
+   "e": "🔊",
+   "img": "https://m.media-amazon.com/images/I/81aJ4547UeL._AC_UL320_.jpg",
+   "n": 4900,
+   "op": 106.0,
+   "p": 94.99,
    "r": 4.5,
-   "t": "2026-11-20T18:01:04.511345+00:00",
-   "title": "Amazon Basics Sabana Bajera Ajustable, 90 x 190 x 30 cm, de Poliéster Microfibra, Blanco"
+   "t": "2026-11-21T07:31:01.189028+00:00",
+   "title": "JBL Flip 7 - Tragbarer, wasserdichter und sturzsicherer Lautsprecher - Schwarz"
   }
  ],
  "store_skip": {
@@ -3927,6 +3887,6 @@
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-21",
-  "n": 1
+  "n": 2
  }
 }
