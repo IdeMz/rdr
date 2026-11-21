@@ -28,7 +28,7 @@
   "Fotografía": "2026-11-20T16:01:13.016736+00:00",
   "Freidoras de aire": "2026-11-20T16:30:59.454749+00:00",
   "Gaming": "2026-11-19T16:30:56.884084+00:00",
-  "Gatos": "2026-11-19T10:05:35.124541+00:00",
+  "Gatos": "2026-11-21T10:00:59.555709+00:00",
   "Herramientas": "2026-11-14T21:01:00.449874+00:00",
   "Higiene personal": "2026-11-19T14:01:04.176634+00:00",
   "Iluminación": "2026-11-20T18:30:56.920199+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-21T09:57:18.739727+00:00",
+ "next_at": "2026-11-21T10:27:09.952294+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -452,6 +452,17 @@
    "s": "ofertas",
    "t": "2026-11-15T07:01:39.810191+00:00",
    "title": "bosch HPC Maxi Junior | Alimento seco para perros de cría de razas grandes (a partir de 25 kg de peso final) | 1 x 3 kg",
+   "v": []
+  },
+  "B01GKL1Y7A": {
+   "c": "Gatos",
+   "d": 43,
+   "e": "🐱",
+   "m": 485,
+   "p": 49.29,
+   "s": "ofertas",
+   "t": "2026-11-21T10:01:24.262895+00:00",
+   "title": "JOSERA NatureCat (1 x 10 kg) | Adultos | Pienso seco de Primera Calidad para Gatos Adultos | Salmón y Aves | Hierbas selectas y Frutas saludables | Sin Cereales | Comida para Gatos | Pack 1",
    "v": []
   },
   "B01H5VO9QM": {
@@ -2132,16 +2143,6 @@
    "s": "ambas",
    "t": "2026-11-20T09:01:27.363368+00:00",
    "title": "Kindle Colorsoft Signature Edition (32 GB) de Amazon (modelo de 2024) | Con pantalla a color, luz frontal autorregulable, carga inalámbrica y gran duración de la batería | 32 GB",
-   "v": []
-  },
-  "B0CX9CT3ZF": {
-   "c": "Monitores",
-   "d": 20,
-   "e": "🖥️",
-   "m": 110,
-   "p": 79.35,
-   "t": "2026-11-07T09:55:57.439854+00:00",
-   "title": "PHILIPS 24E1N1100A Monitor 24 Pulgadas 120Hz Panel IPS, 4ms GtG, Altavoces, (1920x1080 HDMI 1x 1.4) Negro",
    "v": []
   },
   "B0CXDXP8VR": {
@@ -3923,6 +3924,6 @@
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-21",
-  "n": 6
+  "n": 7
  }
 }
