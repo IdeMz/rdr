@@ -26,7 +26,7 @@
   "Droguería": "2026-11-19T13:35:35.066412+00:00",
   "Fitness en casa": "2026-11-15T12:15:40.152691+00:00",
   "Fotografía": "2026-11-20T16:01:13.016736+00:00",
-  "Freidoras de aire": "2026-11-20T16:30:59.454749+00:00",
+  "Freidoras de aire": "2026-11-21T21:30:54.860893+00:00",
   "Gaming": "2026-11-21T17:30:53.662722+00:00",
   "Gatos": "2026-11-21T10:00:59.555709+00:00",
   "Herramientas": "2026-11-14T21:01:00.449874+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-21T21:29:05.664158+00:00",
+ "next_at": "2026-11-21T22:00:27.487235+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2227,6 +2227,17 @@
    "title": "Fairy Platinum Cápsulas Lavavajillas Para Máquina Limón, 126 Cápsulas",
    "v": []
   },
+  "B0CZY23DYB": {
+   "c": "Freidoras de aire",
+   "d": 37,
+   "e": "🍟",
+   "m": 508,
+   "p": 169.99,
+   "s": "ambas",
+   "t": "2026-11-21T21:31:23.092342+00:00",
+   "title": "Ninja Double Stack XL, Freidora de Aire de Doble Cajón, 9,5L, Negro/Cobre",
+   "v": []
+  },
   "B0D1CSN1QR": {
    "c": "Altavoces",
    "d": 28,
@@ -2935,16 +2946,6 @@
    "s": "ambas",
    "t": "2026-11-13T07:01:39.298391+00:00",
    "title": "Levoit Purificador de Aire con Filtro Hepa, Flitro Personalizado, Core 300",
-   "v": []
-  },
-  "B0FGY2HN51": {
-   "c": "Climatización",
-   "d": 46,
-   "e": "🌬️",
-   "m": 123,
-   "p": 44.99,
-   "t": "2026-11-07T21:05:56.553500+00:00",
-   "title": "Rowenta Intense Comfort, calefactor, calentamiento rápido, SO9330",
    "v": []
   },
   "B0FHJ91JY5": {
@@ -4020,18 +4021,6 @@
    "r": 4.2,
    "t": "2026-11-21T19:30:53.184977+00:00",
    "title": "CXWXC Rodillo Bicicleta para Bicicleta de 26 a 29 Pulgadas Rodillo Bicicleta Carretera Plegable Rodillo Bicicleta Montaña 150 kg Cargables Rodillos para Bicicletas 6 Velocidades"
-  },
-  {
-   "a": "B0CZPMXGSH",
-   "c": "Auriculares",
-   "e": "🎧",
-   "img": "https://m.media-amazon.com/images/I/51sZFm7L2BL._AC_UY218_.jpg",
-   "n": 3100,
-   "op": 229.95,
-   "p": 109.0,
-   "r": 4.6,
-   "t": "2026-11-21T18:30:52.916571+00:00",
-   "title": "Beats Solo 4 - Auriculares Wireless Bluetooth on-Ear, compatibles con Apple y Android, con hasta 50 Horas de batería - Nergo Mate"
   }
  ],
  "store_skip": {
@@ -4043,6 +4032,6 @@
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-21",
-  "n": 29
+  "n": 30
  }
 }

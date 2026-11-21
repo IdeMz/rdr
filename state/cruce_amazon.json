@@ -2473,6 +2473,23 @@
    "v": 3,
    "via": "nombre"
   },
+  "840353956629": {
+   "a": "",
+   "t": "2026-11-21T21:30:54.860893+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "Google Pixel 11 Pro – Smartphone Android libre - Obsidiana, 512GB",
+     "Google Pixel 11 Pro - Obsidiana, 512GB + Funda Pixelsnap Transparente",
+     "Google Pixel 11 Pro - Obsidiana, 512GB + Pixel Buds Pro 2 - Verde Liquen"
+    ],
+    "nombre": [
+     "Google Pixel 11 Pro – Smartphone Android libre - Obsidiana, 256GB",
+     "Google Pixel 11 Pro – Smartphone Android libre - Obsidiana, 512GB",
+     "Google Pixel 11 - Smartphone Android libre - Obsidiana, 512GB"
+    ]
+   }
+  },
   "8421078040040": {
    "a": "B0FY3RB7T8",
    "t": "2026-11-17T00:50:28.547812+00:00",
@@ -2811,6 +2828,13 @@
    "a": "B0F38QGFFB",
    "t": "2026-11-14T22:05:27.466329+00:00",
    "title": "LG Smart Monitor 27U731SA-W - 27'', IPS, 4K, 60 Hz, DCI-P3-90%, Blanco",
+   "via": "ean"
+  },
+  "8806096826331": {
+   "a": "B0H2F8LR5G",
+   "t": "2026-11-21T21:30:54.860893+00:00",
+   "title": "LG gram 16UD55U-G.AX85BN - Ordenador Portátil, 32 GB RAM, 512 GB SSD, 16\"",
+   "v": 3,
    "via": "ean"
   },
   "8806097195290": {
@@ -5970,6 +5994,30 @@
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
+  "45966405179": {
+   "ean": "840353956629",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Google Pixel 11 Pro 5G 16GB/512GB Obsidiana 6,3 pulgadas OLED 120Hz 50MP 4850mAh NFC",
+   "pp_drop": 17,
+   "pp_median": 1329.0,
+   "pp_price": 1098.99,
+   "t": "2026-11-21T21:30:54.860893+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "Google Pixel 11 Pro – Smartphone Android libre - Obsidiana, 512GB",
+     "Google Pixel 11 Pro - Obsidiana, 512GB + Funda Pixelsnap Transparente",
+     "Google Pixel 11 Pro - Obsidiana, 512GB + Pixel Buds Pro 2 - Verde Liquen"
+    ],
+    "nombre": [
+     "Google Pixel 11 Pro – Smartphone Android libre - Obsidiana, 256GB",
+     "Google Pixel 11 Pro – Smartphone Android libre - Obsidiana, 512GB",
+     "Google Pixel 11 - Smartphone Android libre - Obsidiana, 512GB"
+    ]
+   }
+  },
   "45992962853": {
    "ahorro_vs_amazon": 3,
    "amz_low30": null,
@@ -8600,6 +8648,26 @@
    "v": 3,
    "veredicto": "oferta_real"
   },
+  "46599141089": {
+   "ahorro_vs_amazon": -17,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 979.0,
+   "amz_title": "LG gram 16UD55U-G.AX85BN - Ordenador Portátil, 32 GB RAM, 512 GB SSD, 16\"",
+   "asin": "B0H2F8LR5G",
+   "disponible": true,
+   "ean": "8806096826331",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 979.00 frente a 1148.96",
+   "name": "Portátil LG Gram 32GB/512GB 16 pulgadas IPS WUXGA AMD Ryzen AI 7 445 SSD Sin Sistema Operativo Negro carbón 16UD55U-G.AX85BN",
+   "pp_drop": 17,
+   "pp_median": 1377.95,
+   "pp_price": 1148.96,
+   "t": "2026-11-21T21:30:54.860893+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "46599141105": {
    "ahorro_vs_amazon": 3,
    "amz_low30": null,
@@ -9742,12 +9810,12 @@
  },
  "night_at": "2026-11-21T06:05:25.549133+00:00",
  "resumen": {
-  "amazon_mas_barato": 29,
+  "amazon_mas_barato": 30,
   "dudoso": 0,
-  "no_esta": 14,
+  "no_esta": 15,
   "oferta_real": 18,
   "pvpr_inflado": 4,
   "sin_precio": 10
  },
- "updated": "2026-11-21T21:01:07.500201+00:00"
+ "updated": "2026-11-21T21:30:54.860893+00:00"
 }
