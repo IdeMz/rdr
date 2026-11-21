@@ -1775,6 +1775,13 @@
     ]
    }
   },
+  "6923520216291": {
+   "a": "B0D95QG8W4",
+   "t": "2026-11-21T22:35:26.067828+00:00",
+   "title": "Edifier M60 Altavoces Multimedia Bluetooth con 66W RMS & Audio Hi-Res，Negro",
+   "v": 3,
+   "via": "ean"
+  },
   "6923520216765": {
    "a": "B0F19B8FHY",
    "t": "2026-11-17T00:50:28.547812+00:00",
@@ -4375,6 +4382,26 @@
      "GameSir G7 Pro 8K PC Mando Inalámbrico Esports - Frecuencia 8000Hz, Sticks Mag-Res TMR Gen-2, Botone"
     ]
    }
+  },
+  "45227024753": {
+   "ahorro_vs_amazon": 29,
+   "amz_low30": 148.99,
+   "amz_median": null,
+   "amz_price": 119.2,
+   "amz_title": "Edifier M60 Altavoces Multimedia Bluetooth con 66W RMS & Audio Hi-Res，Negro",
+   "asin": "B0D95QG8W4",
+   "disponible": true,
+   "ean": "6923520216291",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "29 % por debajo del habitual en Amazon (148.99)",
+   "name": "Edifier M60 Negro 66W entrada AUX Altavoz Bluetooth",
+   "pp_drop": 24,
+   "pp_median": 138.94,
+   "pp_price": 105.95,
+   "t": "2026-11-21T22:35:26.067828+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
   },
   "45243451387": {
    "ahorro_vs_amazon": null,
@@ -8754,11 +8781,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "SSD Silicon Power Ace A55 4TB 2.5 pulgadas SATA III Negro",
-   "pista": "1833540 bytes; 7 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1832018 bytes; 7 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 25,
    "pp_median": 553.95,
    "pp_price": 416.95,
-   "t": "2026-11-21T16:30:54.650507+00:00",
+   "t": "2026-11-21T22:35:26.067828+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -9214,7 +9241,7 @@
    "pp_drop": 15,
    "pp_median": 2171.95,
    "pp_price": 1848.95,
-   "t": "2026-11-19T18:15:40.654642+00:00",
+   "t": "2026-11-21T22:35:26.067828+00:00",
    "v": 3,
    "veredicto": "no_esta",
    "vistos": {
@@ -9862,14 +9889,14 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-21T22:20:36.998561+00:00",
+ "night_at": "2026-11-21T22:35:26.067828+00:00",
  "resumen": {
   "amazon_mas_barato": 30,
   "dudoso": 0,
   "no_esta": 15,
-  "oferta_real": 20,
+  "oferta_real": 21,
   "pvpr_inflado": 4,
   "sin_precio": 10
  },
- "updated": "2026-11-21T22:20:36.998561+00:00"
+ "updated": "2026-11-21T22:35:26.067828+00:00"
 }
