@@ -6,7 +6,7 @@
   "Almacenamiento": "2026-11-20T19:30:58.727153+00:00",
   "Altavoces": "2026-11-21T07:31:01.189028+00:00",
   "Aspiradoras": "2026-11-20T13:01:06.821120+00:00",
-  "Auriculares": "2026-11-19T20:15:40.337664+00:00",
+  "Auriculares": "2026-11-21T18:30:52.916571+00:00",
   "Barras de sonido": "2026-11-21T14:01:11.161162+00:00",
   "Bebé": "2026-11-18T19:01:22.092208+00:00",
   "Bricolaje": "2026-11-18T17:30:58.281773+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-21T18:26:47.356569+00:00",
+ "next_at": "2026-11-21T18:57:06.589989+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -196,6 +196,17 @@
    "s": "ofertas",
    "t": "2026-11-12T21:06:04.878599+00:00",
    "title": "ESN Creatina Monohidrato Ultrapura, 500 g, 142 porciones",
+   "v": []
+  },
+  "B005BFCNYU": {
+   "c": "Auriculares",
+   "d": 53,
+   "e": "🎧",
+   "m": 502,
+   "p": 18.93,
+   "s": "busqueda",
+   "t": "2026-11-21T18:31:24.496868+00:00",
+   "title": "Logitech H390 Auriculares con Cable, USB-A, Color Negro",
    "v": []
   },
   "B005GWRNQQ": {
@@ -3962,6 +3973,18 @@
  },
  "reserve": [
   {
+   "a": "B0CZPMXGSH",
+   "c": "Auriculares",
+   "e": "🎧",
+   "img": "https://m.media-amazon.com/images/I/51sZFm7L2BL._AC_UY218_.jpg",
+   "n": 3100,
+   "op": 229.95,
+   "p": 109.0,
+   "r": 4.6,
+   "t": "2026-11-21T18:30:52.916571+00:00",
+   "title": "Beats Solo 4 - Auriculares Wireless Bluetooth on-Ear, compatibles con Apple y Android, con hasta 50 Horas de batería - Nergo Mate"
+  },
+  {
    "a": "B0F2B1M9TB",
    "c": "Smartwatch",
    "e": "⌚",
@@ -3984,18 +4007,6 @@
    "r": 4.3,
    "t": "2026-11-21T15:31:01.080016+00:00",
    "title": "KIKO Milano Maxi Mod Mascara"
-  },
-  {
-   "a": "B0CYTFC9C8",
-   "c": "Zapatillas",
-   "e": "👟",
-   "img": "https://m.media-amazon.com/images/I/41bZqHmNINL._AC_UL320_.jpg",
-   "n": 1700,
-   "op": 65.0,
-   "p": 40.51,
-   "r": 4.2,
-   "t": "2026-11-21T15:01:05.254496+00:00",
-   "title": "Duramo SL 2 Running Shoes Zapatillas para correrMujer"
   }
  ],
  "store_skip": {
@@ -4007,6 +4018,6 @@
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-21",
-  "n": 23
+  "n": 24
  }
 }
