@@ -58,7 +58,7 @@
   "Smartwatch": "2026-11-21T16:01:07.900587+00:00",
   "Suplementos": "2026-11-19T20:45:42.101471+00:00",
   "Tablets": "2026-11-21T11:30:53.777938+00:00",
-  "Televisores": "2026-11-20T15:01:28.964262+00:00",
+  "Televisores": "2026-11-21T20:30:51.971542+00:00",
   "Textil hogar": "2026-11-20T18:01:04.511345+00:00",
   "Videojuegos": "2026-11-19T21:15:40.155765+00:00",
   "Zapatillas": "2026-11-21T15:01:05.254496+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-21T20:29:59.580977+00:00",
+ "next_at": "2026-11-21T21:00:19.169158+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2989,6 +2989,17 @@
    "title": "SwitchBot Matter RGBICWW Lampara de Pie, Blanco Cálido & Frío, Lámpara de Pie LED compatible con Apple Home, Alexa, Google Home, 16 Millones Colores, 1200lm, Sincronización de Música, Modos de Escena",
    "v": []
   },
+  "B0FJG53ZS4": {
+   "c": "Televisores",
+   "d": 26,
+   "e": "📺",
+   "m": 506,
+   "p": 176.83,
+   "s": "busqueda",
+   "t": "2026-11-21T20:31:17.587285+00:00",
+   "title": "SHARP TV 40 pulgadas LED Full HD – 40HA1305E",
+   "v": []
+  },
   "B0FKN1WNMS": {
    "c": "Televisores",
    "d": 45,
@@ -4031,6 +4042,6 @@
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-21",
-  "n": 27
+  "n": 28
  }
 }

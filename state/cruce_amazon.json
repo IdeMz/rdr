@@ -1835,6 +1835,26 @@
    "v": 3,
    "via": "ean"
   },
+  "6940017323171": {
+   "a": "",
+   "t": "2026-11-21T20:30:51.971542+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "modelo": [
+     "KOORUI Monitor Oficina 22 Pulgadas VA FHD 120Hz Eye Care Pantalla E2212H",
+     "KOORUI 27 Pulgada Monitor Gaming Curvo 180Hz QHD 1ms Adaptive Sync HDMI/DP",
+     "KOORUI Pantalla de 23,8 Pulgadas, IPS FHD Monitor,1920x1080,Monitor para PC de 100 Hz,con tecnología"
+    ],
+    "nombre": [
+     "KOORUI Monitor Gaming 27 Pulgadas 180Hz IPS FHD Pantalla PC Plana G2711V",
+     "KOORUI E2721H 27\" Monitor QHD 100Hz IPS 1MS Adaptive Sync VESA",
+     "KOORUI Monitor Oficina 24 Pulgadas VA FHD 100Hz Eye Care Pantalla E2412F"
+    ]
+   }
+  },
   "6941948709614": {
    "a": "B0HN2ZFG5K",
    "t": "2026-11-19T22:20:31.563817+00:00",
@@ -8533,6 +8553,33 @@
    "v": 3,
    "veredicto": "oferta_real"
   },
+  "46599140767": {
+   "ean": "6940017323171",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Monitor Koorui 27 pulgadas FHD IPS 100Hz 5 ms Negro B2742A",
+   "pp_drop": 23,
+   "pp_median": 262.95,
+   "pp_price": 201.95,
+   "t": "2026-11-21T20:30:51.971542+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "modelo": [
+     "KOORUI Monitor Oficina 22 Pulgadas VA FHD 120Hz Eye Care Pantalla E2212H",
+     "KOORUI 27 Pulgada Monitor Gaming Curvo 180Hz QHD 1ms Adaptive Sync HDMI/DP",
+     "KOORUI Pantalla de 23,8 Pulgadas, IPS FHD Monitor,1920x1080,Monitor para PC de 100 Hz,con tecnología"
+    ],
+    "nombre": [
+     "KOORUI Monitor Gaming 27 Pulgadas 180Hz IPS FHD Pantalla PC Plana G2711V",
+     "KOORUI E2721H 27\" Monitor QHD 100Hz IPS 1MS Adaptive Sync VESA",
+     "KOORUI Monitor Oficina 24 Pulgadas VA FHD 100Hz Eye Care Pantalla E2412F"
+    ]
+   }
+  },
   "46599140953": {
    "ahorro_vs_amazon": 10,
    "amz_low30": null,
@@ -8754,11 +8801,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Dreame Tasti 1500W pantalla táctil Freidora de aire",
-   "pista": "1308880 bytes; 11 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1320505 bytes; 11 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 35,
    "pp_median": 230.95,
    "pp_price": 150.95,
-   "t": "2026-11-21T14:01:11.161162+00:00",
+   "t": "2026-11-21T20:30:51.971542+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -9697,10 +9744,10 @@
  "resumen": {
   "amazon_mas_barato": 29,
   "dudoso": 0,
-  "no_esta": 13,
+  "no_esta": 14,
   "oferta_real": 18,
   "pvpr_inflado": 4,
   "sin_precio": 10
  },
- "updated": "2026-11-21T20:00:58.767855+00:00"
+ "updated": "2026-11-21T20:30:51.971542+00:00"
 }
