@@ -20,7 +20,7 @@
   "Componentes PC": "2026-11-21T09:01:01.501496+00:00",
   "Cuidado de la piel": "2026-11-20T20:31:08.098759+00:00",
   "Cuidado del cabello": "2026-11-19T17:30:56.735106+00:00",
-  "Cámaras de seguridad": "2026-11-20T08:01:03.517934+00:00",
+  "Cámaras de seguridad": "2026-11-21T10:30:51.209383+00:00",
   "Decoración navideña": "2026-11-20T08:30:53.150165+00:00",
   "Domótica": "2026-11-19T08:35:31.603489+00:00",
   "Droguería": "2026-11-19T13:35:35.066412+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-21T10:27:09.952294+00:00",
+ "next_at": "2026-11-21T10:57:07.566456+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -970,6 +970,17 @@
    "s": "ambas",
    "t": "2026-11-18T13:01:43.416089+00:00",
    "title": "MAVIS Neceser, 6 L - Black (Negro)",
+   "v": []
+  },
+  "B07XLML2YS": {
+   "c": "Cámaras de seguridad",
+   "d": 50,
+   "e": "📹",
+   "m": 486,
+   "p": 19.99,
+   "s": "ambas",
+   "t": "2026-11-21T10:31:18.276940+00:00",
+   "title": "Tapo C200 - Cámara de Vigilancia WiFi Interior 360º, 1080p, Detección IA",
    "v": []
   },
   "B07XNM2SWL": {
@@ -3924,6 +3935,6 @@
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-21",
-  "n": 7
+  "n": 8
  }
 }
