@@ -1598,6 +1598,13 @@
    "title": "LEGO One Piece Barco Pirata Going Merry 75639",
    "via": "ean"
   },
+  "5702018060407": {
+   "a": "B0FPXDT6R3",
+   "t": "2026-11-21T23:50:35.131094+00:00",
+   "title": "LEGO Friends Casa Familiar de Liann 42687",
+   "v": 3,
+   "via": "ean"
+  },
   "5702018069608": {
    "a": "B0FPXDRR63",
    "t": "2026-11-15T00:50:26.258760+00:00",
@@ -3517,7 +3524,7 @@
    "pp_drop": 15,
    "pp_median": 1075.94,
    "pp_price": 919.0,
-   "t": "2026-11-19T22:05:23.802139+00:00",
+   "t": "2026-11-21T23:50:35.131094+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -4771,7 +4778,7 @@
    "pp_drop": 26,
    "pp_median": 68.95,
    "pp_price": 50.95,
-   "t": "2026-11-19T22:05:23.802139+00:00",
+   "t": "2026-11-21T23:50:35.131094+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -7492,6 +7499,26 @@
    "t": "2026-11-13T14:01:00.760700+00:00",
    "veredicto": "oferta_real"
   },
+  "46239685512": {
+   "ahorro_vs_amazon": -1,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 59.49,
+   "amz_title": "LEGO Friends Casa Familiar de Liann 42687",
+   "asin": "B0FPXDT6R3",
+   "disponible": true,
+   "ean": "5702018060407",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 59.49 frente a 59.96",
+   "name": "Set de construcción LEGO Friends 42687 Casa Familiar de Liann 946 piezas 7+",
+   "pp_drop": 25,
+   "pp_median": 79.94,
+   "pp_price": 59.96,
+   "t": "2026-11-21T23:50:35.131094+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "46239687126": {
    "ahorro_vs_amazon": -17,
    "amz_low30": null,
@@ -9971,14 +9998,14 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-21T23:35:24.240901+00:00",
+ "night_at": "2026-11-21T23:50:35.131094+00:00",
  "resumen": {
-  "amazon_mas_barato": 32,
+  "amazon_mas_barato": 33,
   "dudoso": 0,
   "no_esta": 15,
   "oferta_real": 21,
   "pvpr_inflado": 4,
   "sin_precio": 11
  },
- "updated": "2026-11-21T23:35:24.240901+00:00"
+ "updated": "2026-11-21T23:50:35.131094+00:00"
 }
