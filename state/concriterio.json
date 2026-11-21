@@ -14,7 +14,7 @@
   "Café y cápsulas": "2026-11-20T17:01:05.412850+00:00",
   "Camping y montaña": "2026-11-21T14:30:51.598433+00:00",
   "Cargadores y baterías": "2026-11-21T17:01:04.157306+00:00",
-  "Ciclismo": "2026-11-20T14:01:07.067138+00:00",
+  "Ciclismo": "2026-11-21T19:30:53.184977+00:00",
   "Climatización": "2026-11-20T13:31:03.874159+00:00",
   "Colchones y almohadas": "2026-11-19T10:35:44.498929+00:00",
   "Componentes PC": "2026-11-21T09:01:01.501496+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-21T19:29:08.404418+00:00",
+ "next_at": "2026-11-21T20:00:27.574124+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -3021,6 +3021,17 @@
    "title": "Samsung Galaxy S25 FE 512GB, Teléfono Móvil con IA, Marco Ligero 7,5mm, Pantalla FHD+ 6,7\", Cámara 50MP, Exynos 2400, 8GB RAM, Garantía Fabricante 3 Años+1 Año Extra, Negro Intenso (Versión Española)",
    "v": []
   },
+  "B0FLQDCR7X": {
+   "c": "Ciclismo",
+   "d": 27,
+   "e": "🚴",
+   "m": 504,
+   "p": 399.99,
+   "s": "ofertas",
+   "t": "2026-11-21T19:31:54.294143+00:00",
+   "title": "Wahoo Fitness KICKR Core 2 ZWIFT Cog and Click - Orange Cog 3ª generación",
+   "v": []
+  },
   "B0FN4CRR2B": {
    "c": "Gatos",
    "d": 46,
@@ -3974,6 +3985,18 @@
  },
  "reserve": [
   {
+   "a": "B0B716HTS1",
+   "c": "Ciclismo",
+   "e": "🚴",
+   "img": "https://m.media-amazon.com/images/I/717HnFj1jkL._AC_UL320_.jpg",
+   "n": 330,
+   "op": 109.5,
+   "p": 93.58,
+   "r": 4.2,
+   "t": "2026-11-21T19:30:53.184977+00:00",
+   "title": "CXWXC Rodillo Bicicleta para Bicicleta de 26 a 29 Pulgadas Rodillo Bicicleta Carretera Plegable Rodillo Bicicleta Montaña 150 kg Cargables Rodillos para Bicicletas 6 Velocidades"
+  },
+  {
    "a": "B0CZPMXGSH",
    "c": "Auriculares",
    "e": "🎧",
@@ -3984,18 +4007,6 @@
    "r": 4.6,
    "t": "2026-11-21T18:30:52.916571+00:00",
    "title": "Beats Solo 4 - Auriculares Wireless Bluetooth on-Ear, compatibles con Apple y Android, con hasta 50 Horas de batería - Nergo Mate"
-  },
-  {
-   "a": "B0F2B1M9TB",
-   "c": "Smartwatch",
-   "e": "⌚",
-   "img": "https://m.media-amazon.com/images/I/818DToRchOL._AC_UL320_.jpg",
-   "n": 1500,
-   "op": 169.0,
-   "p": 99.0,
-   "r": 4.5,
-   "t": "2026-11-21T16:01:07.900587+00:00",
-   "title": "HUAWEI WATCH FIT 4 Smartwatch, Brillo Máximo 2,000 nits, Barómetro, Gris"
   }
  ],
  "store_skip": {
@@ -4007,6 +4018,6 @@
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-21",
-  "n": 25
+  "n": 26
  }
 }
