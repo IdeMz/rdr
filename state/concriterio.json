@@ -36,7 +36,7 @@
   "Jardín": "2026-11-21T08:30:51.750516+00:00",
   "Juguetes": "2026-11-20T16:30:59.454749+00:00",
   "Lego": "2026-11-18T13:30:55.857399+00:00",
-  "Limpieza del hogar": "2026-11-19T19:15:40.361750+00:00",
+  "Limpieza del hogar": "2026-11-21T09:30:52.306969+00:00",
   "Maquillaje": "2026-11-19T18:45:44.590047+00:00",
   "Menaje de cocina": "2026-11-19T09:35:35.003414+00:00",
   "Mochilas y maletas": "2026-11-20T07:30:55.091992+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-21T09:27:45.622807+00:00",
+ "next_at": "2026-11-21T09:57:18.739727+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -206,6 +206,17 @@
    "p": 58.5,
    "t": "2026-11-08T08:11:16.063062+00:00",
    "title": "Diesel, LOVERDOSE, Eau De Parfum, Colonia Apasionada y Floral para mujer, Mandarina Fresca, Regaliz Seductor y Cálido Acorde de Vainilla, Larga Duración, Perfume de Lujo para Mujer",
+   "v": []
+  },
+  "B005U94N9A": {
+   "c": "Limpieza del hogar",
+   "d": 30,
+   "e": "🧽",
+   "m": 484,
+   "p": 29.0,
+   "s": "busqueda",
+   "t": "2026-11-21T09:31:22.587466+00:00",
+   "title": "Vileda Ultramax, mopa con Cubo Escurridor",
    "v": []
   },
   "B005VPR688": {
@@ -2176,16 +2187,6 @@
    "title": "Fokky Gomas Elasticas Musculacion con Anclaje de Puerta y Asas, 5 Niveles",
    "v": []
   },
-  "B0D2CVB8MD": {
-   "c": "Iluminación",
-   "d": 40,
-   "e": "🪔",
-   "m": 109,
-   "p": 10.12,
-   "t": "2026-11-07T09:21:03.962929+00:00",
-   "title": "OUILA Plafon LED Techo Redondo Lámpara de Techo Blanco Frio 6500K Ø22CM",
-   "v": []
-  },
   "B0D2Q5M35Y": {
    "c": "Accesorios de coche",
    "d": 39,
@@ -3922,6 +3923,6 @@
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-21",
-  "n": 5
+  "n": 6
  }
 }
