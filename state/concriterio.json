@@ -59,7 +59,7 @@
   "Suplementos": "2026-11-19T20:45:42.101471+00:00",
   "Tablets": "2026-11-21T11:30:53.777938+00:00",
   "Televisores": "2026-11-21T20:30:51.971542+00:00",
-  "Textil hogar": "2026-11-20T18:01:04.511345+00:00",
+  "Textil hogar": "2026-11-21T21:01:07.500201+00:00",
   "Videojuegos": "2026-11-19T21:15:40.155765+00:00",
   "Zapatillas": "2026-11-21T15:01:05.254496+00:00",
   "eReaders": "2026-11-20T09:01:02.767526+00:00"
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-21T21:00:19.169158+00:00",
+ "next_at": "2026-11-21T21:29:05.664158+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -561,6 +561,17 @@
    "p": 11.93,
    "t": "2026-11-11T11:41:14.007969+00:00",
    "title": "L'Oréal Paris Revitalift Laser Crema SPF25 Nº1 AntiEdad y AntiManchas, 50ml",
+   "v": []
+  },
+  "B072FFV1MS": {
+   "c": "Textil hogar",
+   "d": 28,
+   "e": "🧺",
+   "m": 507,
+   "p": 13.25,
+   "s": "ambas",
+   "t": "2026-11-21T21:01:36.145875+00:00",
+   "title": "PONY DANCE Cortina Gris Opaca y Termica Aislante Puerta, 140x240cm(AnxAl)",
    "v": []
   },
   "B072Q7K86H": {
@@ -3823,16 +3834,6 @@
    "title": "Power Bank 25800 mAh, 22,5 W, PD3.0 QC4.0, batería Externa para teléfono móvil, Carga rápida, Pantalla LCD, batería Externa con Cable USB-C, Salidas y entradas, Cargador portátil para Smartphone",
    "v": []
   },
-  "B0HDP4SP9K": {
-   "c": "Smartwatch",
-   "d": 53,
-   "e": "⌚",
-   "m": 122,
-   "p": 47.15,
-   "t": "2026-11-07T20:31:22.232194+00:00",
-   "title": "FOSMET Reloj Inteligente Mujer Salud ECG/HRV/BMI Presión Arterial, Rosa Oro",
-   "v": []
-  },
   "B0HDZ1LBCH": {
    "c": "Smartwatch",
    "d": 53,
@@ -4042,6 +4043,6 @@
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-21",
-  "n": 28
+  "n": 29
  }
 }
