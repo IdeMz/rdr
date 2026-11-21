@@ -1504,6 +1504,13 @@
    "v": 3,
    "via": "ean"
   },
+  "5099206090460": {
+   "a": "B07W5JKPJX",
+   "t": "2026-11-21T19:01:06.061997+00:00",
+   "title": "Logitech G PRO X SUPERLIGHT Ratón Gaming Inalámbrico",
+   "v": 3,
+   "via": "ean"
+  },
   "5099206099784": {
    "a": "B0FHQ5XXTK",
    "t": "2026-11-15T00:20:27.121298+00:00",
@@ -2963,6 +2970,26 @@
    "t": "2026-11-17T22:50:28.729529+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
+  },
+  "37600255358": {
+   "ahorro_vs_amazon": 25,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 147.71,
+   "amz_title": "Logitech G PRO X SUPERLIGHT Ratón Gaming Inalámbrico",
+   "asin": "B07W5JKPJX",
+   "disponible": true,
+   "ean": "5099206090460",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "25 % por debajo del habitual en Amazon (147.71)",
+   "name": "Logitech G Pro X Superlight USB 25600 DPI Negro 5 botones 2.4GHz 63 g Ratón",
+   "pp_drop": 27,
+   "pp_median": 149.96,
+   "pp_price": 110.18,
+   "t": "2026-11-21T19:01:06.061997+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
   },
   "37600255371": {
    "ahorro_vs_amazon": 71,
@@ -8451,11 +8478,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Monitor Acer CB243Y E 23,8 pulgadas Full HD IPS 1 ms HDR10 Negro",
-   "pista": "1290525 bytes; 3 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
-   "pp_drop": 20,
+   "pista": "980428 bytes; 3 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pp_drop": 25,
    "pp_median": 255.95,
-   "pp_price": 205.95,
-   "t": "2026-11-21T09:01:01.501496+00:00",
+   "pp_price": 190.95,
+   "t": "2026-11-21T19:01:06.061997+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -9644,9 +9671,9 @@
   "amazon_mas_barato": 28,
   "dudoso": 0,
   "no_esta": 13,
-  "oferta_real": 17,
+  "oferta_real": 18,
   "pvpr_inflado": 4,
   "sin_precio": 10
  },
- "updated": "2026-11-21T18:30:52.916571+00:00"
+ "updated": "2026-11-21T19:01:06.061997+00:00"
 }

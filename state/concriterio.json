@@ -1,7 +1,7 @@
 {
  "cats": {
   "Accesorios de coche": "2026-11-20T11:01:13.526266+00:00",
-  "Accesorios de móvil": "2026-11-20T12:01:02.865312+00:00",
+  "Accesorios de móvil": "2026-11-21T19:01:06.061997+00:00",
   "Afeitado y depilación": "2026-11-17T20:15:50.874512+00:00",
   "Almacenamiento": "2026-11-20T19:30:58.727153+00:00",
   "Altavoces": "2026-11-21T07:31:01.189028+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-21T18:57:06.589989+00:00",
+ "next_at": "2026-11-21T19:29:08.404418+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1690,16 +1690,6 @@
    "title": "Anker Zolo Power bank 24.000mAh 140W con Tres puertos USB C",
    "v": []
   },
-  "B09W9867V2": {
-   "c": "Relojes",
-   "d": 40,
-   "e": "🕰️",
-   "m": 120,
-   "p": 11.99,
-   "t": "2026-11-07T18:46:08.772342+00:00",
-   "title": "HANPOSH",
-   "v": []
-  },
   "B09X3FTL7F": {
    "c": "Redes y wifi",
    "d": 47,
@@ -2771,6 +2761,17 @@
    "s": "ofertas",
    "t": "2026-11-21T11:31:28.041599+00:00",
    "title": "Nueva Amazon Alexa Tablet 11, 8 GB de RAM, 128 GB, espectacular pantalla 2.5K de 11″, batería para todo el día, con Google Play, diseñada para Alexa+, Grafito",
+   "v": []
+  },
+  "B0F71BG423": {
+   "c": "Accesorios de móvil",
+   "d": 37,
+   "e": "🤳",
+   "m": 503,
+   "p": 7.55,
+   "s": "ofertas",
+   "t": "2026-11-21T19:02:52.780335+00:00",
+   "title": "NEW'C Protector Pantalla para iPhone 17, 17 Pro/16 Pro",
    "v": []
   },
   "B0F7RPDTJ5": {
@@ -3995,18 +3996,6 @@
    "r": 4.5,
    "t": "2026-11-21T16:01:07.900587+00:00",
    "title": "HUAWEI WATCH FIT 4 Smartwatch, Brillo Máximo 2,000 nits, Barómetro, Gris"
-  },
-  {
-   "a": "B0CHYK6KT7",
-   "c": "Maquillaje",
-   "e": "💄",
-   "img": "https://m.media-amazon.com/images/I/61JB4idZ1HL._AC_UL320_.jpg",
-   "n": 1000,
-   "op": 14.99,
-   "p": 9.43,
-   "r": 4.3,
-   "t": "2026-11-21T15:31:01.080016+00:00",
-   "title": "KIKO Milano Maxi Mod Mascara"
   }
  ],
  "store_skip": {
@@ -4018,6 +4007,6 @@
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-21",
-  "n": 24
+  "n": 25
  }
 }
