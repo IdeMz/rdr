@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-21T10:57:07.566456+00:00",
+ "next_at": "2026-11-21T11:30:28.333701+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -3140,16 +3140,6 @@
    "title": "Moulinex Easy Fry XL Surface, Freidora de aire 2200W, Doble resistencia",
    "v": []
   },
-  "B0FXHDBB1R": {
-   "c": "Videojuegos",
-   "d": 18,
-   "e": "🎮",
-   "m": 111,
-   "p": 32.99,
-   "t": "2026-11-07T10:31:22.323082+00:00",
-   "title": "Assassin's Creed Shadows (Switch 2)",
-   "v": []
-  },
   "B0G1M86BG9": {
    "c": "Aspiradoras",
    "d": 41,
@@ -3806,6 +3796,19 @@
    "u": "https://www.awin1.com/pclick.php?p=40832391954&a=3134713&m=77138",
    "v": []
   },
+  "pp:41644272430": {
+   "auto": true,
+   "c": "",
+   "d": 35,
+   "e": "",
+   "m": 487,
+   "p": 76.96,
+   "st": "POWERPLANET",
+   "t": "2026-11-21T11:01:09.768261+00:00",
+   "title": "Marshall Minor IV Negro TWS 30h IPX4 Auriculares inalámbricos",
+   "u": "https://www.awin1.com/pclick.php?p=41644272430&a=3134713&m=77138",
+   "v": []
+  },
   "pp:46599140093": {
    "auto": true,
    "c": "",
@@ -3935,6 +3938,6 @@
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-21",
-  "n": 8
+  "n": 9
  }
 }
