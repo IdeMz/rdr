@@ -1571,6 +1571,13 @@
    "v": 3,
    "via": "nombre"
   },
+  "5707119047043": {
+   "a": "B0B9T6S5S4",
+   "t": "2026-11-21T12:01:05.183305+00:00",
+   "title": "SteelSeries Apex 9 TKL - Teclado Mecánico de Gaming - Interruptores ópticos - Accionamiento de 2 puntos - Factor forma compacto Esports TKL - Interruptores inte",
+   "v": 3,
+   "via": "ean"
+  },
   "5707119059534": {
    "a": "B0F5GKLH1P",
    "t": "2026-11-18T01:35:20.319820+00:00",
@@ -2203,6 +2210,13 @@
    "a": "B0D452QG5K",
    "t": "2026-11-20T13:31:03.874159+00:00",
    "title": "CHERRY XTRFY M68 Wireless, Ratón Inalámbrico Ultraligero para Juegos, 2,4 GHz, Optimizado para E-sports, Forma Simétrica con Parte Frontal Extra Baja, Negro",
+   "v": 3,
+   "via": "ean"
+  },
+  "7340086914697": {
+   "a": "B0D4596YTN",
+   "t": "2026-11-21T12:01:05.183305+00:00",
+   "title": "CHERRY XTRFY M68 Pro Wireless, Ratón Inalámbrico de Gaming Ultra Rápido, 2.4 GHz RF, Optimizado para esports, 8K, Forma Simétrica con Parte Frontal Baja, Blanco",
    "v": 3,
    "via": "ean"
   },
@@ -7703,6 +7717,27 @@
    "t": "2026-11-17T03:05:20.365221+00:00",
    "veredicto": "amazon_mas_barato"
   },
+  "46599139781": {
+   "ahorro_vs_amazon": null,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": null,
+   "amz_title": "SteelSeries Apex 9 TKL - Teclado Mecánico de Gaming - Interruptores ópticos - Accionamiento de 2 puntos - Factor forma compacto Esports TKL - Interruptores inte",
+   "asin": "B0B9T6S5S4",
+   "disponible": true,
+   "ean": "5707119047043",
+   "encontrado_por": "ean",
+   "lista": "to_verify",
+   "motivo": "en Amazon pero sin precio o no disponible",
+   "name": "SteelSeries Apex 9 TKL Switch Optomecánico RGB US Layout Negro Teclado gaming",
+   "pista": "1890319 bytes; 13 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pp_drop": 58,
+   "pp_median": 99.95,
+   "pp_price": 41.95,
+   "t": "2026-11-21T12:01:05.183305+00:00",
+   "v": 3,
+   "veredicto": "sin_precio"
+  },
   "46599139824": {
    "ahorro_vs_amazon": 9,
    "amz_low30": null,
@@ -7722,6 +7757,26 @@
    "t": "2026-11-19T19:45:43.698458+00:00",
    "v": 3,
    "veredicto": "pvpr_inflado"
+  },
+  "46599139841": {
+   "ahorro_vs_amazon": -27,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 40.25,
+   "amz_title": "CHERRY XTRFY M68 Pro Wireless, Ratón Inalámbrico de Gaming Ultra Rápido, 2.4 GHz RF, Optimizado para esports, 8K, Forma Simétrica con Parte Frontal Baja, Blanco",
+   "asin": "B0D4596YTN",
+   "disponible": true,
+   "ean": "7340086914697",
+   "encontrado_por": "ean",
+   "lista": "to_verify",
+   "motivo": "Amazon 40.25 frente a 50.95",
+   "name": "Cherry Xtrfy M68 Pro Wireless 2,4 GHz 26000 DPI 5 botones USB 55 g Ratón gaming inalámbrico",
+   "pp_drop": 57,
+   "pp_median": 118.96,
+   "pp_price": 50.95,
+   "t": "2026-11-21T12:01:05.183305+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
   },
   "46599139844": {
    "ahorro_vs_amazon": -4,
@@ -9392,12 +9447,12 @@
  },
  "night_at": "2026-11-21T06:05:25.549133+00:00",
  "resumen": {
-  "amazon_mas_barato": 28,
+  "amazon_mas_barato": 29,
   "dudoso": 0,
   "no_esta": 11,
   "oferta_real": 16,
   "pvpr_inflado": 2,
-  "sin_precio": 7
+  "sin_precio": 8
  },
- "updated": "2026-11-21T11:30:53.777938+00:00"
+ "updated": "2026-11-21T12:01:05.183305+00:00"
 }

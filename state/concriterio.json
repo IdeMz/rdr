@@ -43,7 +43,7 @@
   "Monitores": "2026-11-20T09:30:54.246285+00:00",
   "Móviles": "2026-11-20T11:01:13.526266+00:00",
   "Nutrición deportiva": "2026-11-17T14:30:58.598858+00:00",
-  "Oficina": "2026-11-19T13:05:35.393737+00:00",
+  "Oficina": "2026-11-21T12:01:05.183305+00:00",
   "Patinetes": "2026-11-18T12:30:56.291132+00:00",
   "Pequeño electrodoméstico": "2026-11-18T20:01:08.859046+00:00",
   "Perfumes": "2026-11-20T10:30:53.027422+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-21T11:56:06.040417+00:00",
+ "next_at": "2026-11-21T12:30:54.952496+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2017,6 +2017,17 @@
    "title": "Take2Cabin - Ryanair Bolsa de Cabina 25 x 20 x 40 cm, 24 l, 0,40 kg, Equipaje de Mano, Mochila de Avión S Bajo Asiento, Grün (Dark Forest)",
    "v": []
   },
+  "B0CH9SBG5G": {
+   "c": "Oficina",
+   "d": 30,
+   "e": "🖊️",
+   "m": 489,
+   "p": 60.01,
+   "s": "busqueda",
+   "t": "2026-11-21T12:01:41.482146+00:00",
+   "title": "Bestier Escritorio en Forma de L con Tomas de Corriente y Luces LED, Escritorio Esquinero con Estantes, Reversible para Ordenador para el Hogar, Oficina, Dormitorio, Espacio Pequeño, 106,5 cm",
+   "v": []
+  },
   "B0CHDV5VFR": {
    "c": "Iluminación",
    "d": 23,
@@ -2722,16 +2733,6 @@
    "s": "ofertas",
    "t": "2026-11-21T11:31:28.041599+00:00",
    "title": "Nueva Amazon Alexa Tablet 11, 8 GB de RAM, 128 GB, espectacular pantalla 2.5K de 11″, batería para todo el día, con Google Play, diseñada para Alexa+, Grafito",
-   "v": []
-  },
-  "B0F6TYQT12": {
-   "c": "Cargadores y baterías",
-   "d": 32,
-   "e": "🔌",
-   "m": 113,
-   "p": 16.99,
-   "t": "2026-11-07T11:41:06.214880+00:00",
-   "title": "Batería Externa 27000mAh 22.5W PD3.0 QC4.0 Power Bank Carga Rapida, 3A USB C Cargador Portátil con Pantalla LED, 2 Entradas y 3 Salidas Powerbank para Smartphones, Tablets y más (black1)",
    "v": []
   },
   "B0F7RPDTJ5": {
@@ -3878,6 +3879,18 @@
  },
  "reserve": [
   {
+   "a": "B07KG4VRBK",
+   "c": "Oficina",
+   "e": "🖊️",
+   "img": "https://m.media-amazon.com/images/I/71Y6Bp8sTHL._AC_UL320_.jpg",
+   "n": 2500,
+   "op": 89.99,
+   "p": 67.49,
+   "r": 4.7,
+   "t": "2026-11-21T12:01:05.183305+00:00",
+   "title": "VASAGLE Oficina, Acero, 138 x 138 x 76 cm"
+  },
+  {
    "a": "B0G14W2ZWW",
    "c": "Tablets",
    "e": "📲",
@@ -3899,6 +3912,6 @@
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-21",
-  "n": 10
+  "n": 11
  }
 }
