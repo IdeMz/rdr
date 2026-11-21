@@ -19,7 +19,7 @@
   "Colchones y almohadas": "2026-11-19T10:35:44.498929+00:00",
   "Componentes PC": "2026-11-21T09:01:01.501496+00:00",
   "Cuidado de la piel": "2026-11-20T20:31:08.098759+00:00",
-  "Cuidado del cabello": "2026-11-19T17:30:56.735106+00:00",
+  "Cuidado del cabello": "2026-11-21T16:30:54.650507+00:00",
   "Cámaras de seguridad": "2026-11-21T10:30:51.209383+00:00",
   "Decoración navideña": "2026-11-20T08:30:53.150165+00:00",
   "Domótica": "2026-11-21T13:30:55.681011+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-21T16:26:17.282184+00:00",
+ "next_at": "2026-11-21T16:57:10.666360+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1158,6 +1158,17 @@
    "title": "Philips Serie 5400 Cafetera Superautomática - Sistema de Leche LatteGo, 12 Variedades de Café, Pantalla Intuitiva, 4 Perfiles de Usuario, Cromado (EP5447/90)",
    "v": []
   },
+  "B08DJ18C85": {
+   "c": "Cuidado del cabello",
+   "d": 40,
+   "e": "💇",
+   "m": 498,
+   "p": 17.99,
+   "s": "ambas",
+   "t": "2026-11-21T16:31:30.752056+00:00",
+   "title": "Remington Secador de Pelo Ionic Dry 2200, Iónico, Cabello Sin Encrespamiento, 2200 W, Concentrador y Difusor, 3 Temperaturas, 2 Velocidades, Rejilla Trasera Desmontable, Gancho Para Colgar, D3198",
+   "v": []
+  },
   "B08FCFC8B1": {
    "c": "",
    "d": 47,
@@ -2221,16 +2232,6 @@
    "s": "ofertas",
    "t": "2026-11-18T19:31:22.411701+00:00",
    "title": "UGREEN Soporte Móvil Coche MagSafe 360° Rotación  Suporte Telemovel Carro",
-   "v": []
-  },
-  "B0D2RNPY7Q": {
-   "c": "Suplementos",
-   "d": 40,
-   "e": "💊",
-   "m": 118,
-   "p": 8.99,
-   "t": "2026-11-07T16:16:09.939538+00:00",
-   "title": "Multivitaminas y Minerales para Hombre y Mujer, 180 Tabletas",
    "v": []
   },
   "B0D3X3YKVF": {
@@ -3991,6 +3992,6 @@
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-21",
-  "n": 19
+  "n": 20
  }
 }
