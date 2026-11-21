@@ -1656,6 +1656,13 @@
    "title": "SanDisk SSD portátil Extremo de 2 TB - hasta 1050 MB/s - USB-C, USB 3.2 Gen 2 - Unidad Externa de Estado sólido - SDSSDE61-2T00-G25B",
    "via": "ean"
   },
+  "622356245050": {
+   "a": "B09N3VQBMX",
+   "t": "2026-11-21T12:30:56.768648+00:00",
+   "title": "Ninja Foodi MAX, Olla Eléctrica Multifunción Slow Cooker con SmartLid, 7,5L",
+   "v": 3,
+   "via": "ean"
+  },
   "622356272889": {
    "a": "B0CNQ82K3Y",
    "t": "2026-11-18T00:20:26.737343+00:00",
@@ -4019,22 +4026,22 @@
    "veredicto": "sin_precio"
   },
   "44863297593": {
-   "ahorro_vs_amazon": -25,
+   "ahorro_vs_amazon": -26,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 258.16,
+   "amz_price": 254.51,
    "amz_title": "Google Pixel Watch 4 (41 mm) - Smartwatch Android con Seguimiento de la el Estado físico, y la Ayuda de Gemini - Caja de Aluminio en Color Plata Pulida - Correa",
    "asin": "B0FJFXL111",
    "disponible": true,
    "ean": "0840353933811",
    "encontrado_por": "ean",
-   "lista": "to_verify",
-   "motivo": "Amazon 258.16 frente a 321.94",
+   "lista": "candidates",
+   "motivo": "Amazon 254.51 frente a 321.94",
    "name": "Google Pixel Watch 4 41 mm Plata Correa Lila AMOLED GPS NFC 5ATM",
-   "pp_drop": 56,
-   "pp_median": 724.95,
+   "pp_drop": 49,
+   "pp_median": 633.96,
    "pp_price": 321.94,
-   "t": "2026-11-19T10:35:44.498929+00:00",
+   "t": "2026-11-21T12:30:56.768648+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -5546,6 +5553,26 @@
    "pp_median": 999.94,
    "pp_price": 820.95,
    "t": "2026-11-18T12:30:56.291132+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
+  "45956991606": {
+   "ahorro_vs_amazon": -1,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 299.99,
+   "amz_title": "Ninja Foodi MAX, Olla Eléctrica Multifunción Slow Cooker con SmartLid, 7,5L",
+   "asin": "B09N3VQBMX",
+   "disponible": true,
+   "ean": "622356245050",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 299.99 frente a 302.95",
+   "name": "Ninja Foodi MAX 14-in-1 SmartLid OL750EU 1760W 7,5L Multicooker",
+   "pp_drop": 39,
+   "pp_median": 492.95,
+   "pp_price": 302.95,
+   "t": "2026-11-21T12:30:56.768648+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -9447,12 +9474,12 @@
  },
  "night_at": "2026-11-21T06:05:25.549133+00:00",
  "resumen": {
-  "amazon_mas_barato": 29,
+  "amazon_mas_barato": 30,
   "dudoso": 0,
   "no_esta": 11,
   "oferta_real": 16,
   "pvpr_inflado": 2,
   "sin_precio": 8
  },
- "updated": "2026-11-21T12:01:05.183305+00:00"
+ "updated": "2026-11-21T12:30:56.768648+00:00"
 }
