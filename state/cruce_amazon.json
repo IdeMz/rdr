@@ -4684,24 +4684,25 @@
    }
   },
   "45403202117": {
-   "ahorro_vs_amazon": 14,
+   "ahorro_vs_amazon": null,
    "amz_low30": null,
-   "amz_median": 639.9,
-   "amz_price": 544.81,
+   "amz_median": null,
+   "amz_price": null,
    "amz_title": "Epson EF-21G Mini Smart Laser Projector | Proyector Portátil Full HD, 1920 x 1080p, Altavoz Bluetooth de 5W, Proyección a Pared, Suelo o Techo, 1000 Lúmenes, Go",
    "asin": "B0DHYCHGQR",
    "disponible": true,
    "ean": "8715946735023",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "Amazon 544.81 frente a 547.95",
+   "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Epson EF-21G Láser 3LCD Tiro Corto 1,33m 1080p Full HD 1000 lúmenes ANSI autoenfoque Proyector",
+   "pista": "1856695 bytes; 9 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 22,
    "pp_median": 699.95,
    "pp_price": 547.95,
-   "t": "2026-11-19T14:01:04.176634+00:00",
+   "t": "2026-11-21T17:30:53.662722+00:00",
    "v": 3,
-   "veredicto": "amazon_mas_barato"
+   "veredicto": "sin_precio"
   },
   "45403202125": {
    "ahorro_vs_amazon": -24,
@@ -9295,7 +9296,7 @@
    "pp_drop": 24,
    "pp_median": 440.95,
    "pp_price": 332.96,
-   "t": "2026-11-19T13:35:35.066412+00:00",
+   "t": "2026-11-21T17:30:53.662722+00:00",
    "v": 3,
    "veredicto": "no_esta",
    "vistos": {
@@ -9593,12 +9594,12 @@
  },
  "night_at": "2026-11-21T06:05:25.549133+00:00",
  "resumen": {
-  "amazon_mas_barato": 30,
+  "amazon_mas_barato": 29,
   "dudoso": 0,
   "no_esta": 12,
   "oferta_real": 16,
   "pvpr_inflado": 4,
-  "sin_precio": 9
+  "sin_precio": 10
  },
- "updated": "2026-11-21T17:01:04.157306+00:00"
+ "updated": "2026-11-21T17:30:53.662722+00:00"
 }

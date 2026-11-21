@@ -27,7 +27,7 @@
   "Fitness en casa": "2026-11-15T12:15:40.152691+00:00",
   "Fotografía": "2026-11-20T16:01:13.016736+00:00",
   "Freidoras de aire": "2026-11-20T16:30:59.454749+00:00",
-  "Gaming": "2026-11-19T16:30:56.884084+00:00",
+  "Gaming": "2026-11-21T17:30:53.662722+00:00",
   "Gatos": "2026-11-21T10:00:59.555709+00:00",
   "Herramientas": "2026-11-14T21:01:00.449874+00:00",
   "Higiene personal": "2026-11-19T14:01:04.176634+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-21T17:30:11.434370+00:00",
+ "next_at": "2026-11-21T17:59:38.579416+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -939,6 +939,17 @@
    "s": "ofertas",
    "t": "2026-11-15T16:31:41.016134+00:00",
    "title": "Logitech MK295 Combo de Ratón y Teclado Inalámbricos - QWERTY Portugués",
+   "v": []
+  },
+  "B07W5JKFQC": {
+   "c": "Gaming",
+   "d": 48,
+   "e": "🕹️",
+   "m": 500,
+   "p": 18.1,
+   "s": "ambas",
+   "t": "2026-11-21T17:31:20.481359+00:00",
+   "title": "Logitech G G203 LIGHTSYNC Ratón Gaming Negro, 6 Botones Programables",
    "v": []
   },
   "B07W7KGYN1": {
@@ -3905,10 +3916,6 @@
    "t": "2026-11-21T15:31:01.080016+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0813YSMGN": {
-   "t": "2026-11-20T17:01:05.412850+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B09V8C4QP9": {
    "t": "2026-11-16T19:55:35.023364+00:00",
    "why": "descartada a mano"
@@ -3989,6 +3996,6 @@
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-21",
-  "n": 21
+  "n": 22
  }
 }
