@@ -1402,6 +1402,13 @@
    "title": "Brother QL-600R - Impresora de Etiquetas (Interfaz USB, impresión de códigos de Barras, Unidad de Corte automático), 130, QL600RXX1",
    "via": "ean"
   },
+  "5011423003542": {
+   "a": "B098TJ8YCW",
+   "t": "2026-11-21T22:05:30.161730+00:00",
+   "title": "Kenwood Easy Chop, Picadora con Recipiente de 0,5L, 2 Velocidades, Cuatro Cuchillas, Anillo Antideslizante para Mayor Estabilidad, 500W, Apta para Lavavajillas,",
+   "v": 3,
+   "via": "ean"
+  },
   "5025155118078": {
    "a": "B0F7LW48NQ",
    "t": "2026-11-18T02:50:27.531463+00:00",
@@ -3676,7 +3683,7 @@
    "pp_drop": 27,
    "pp_median": 101.95,
    "pp_price": 74.72,
-   "t": "2026-11-19T17:01:09.614407+00:00",
+   "t": "2026-11-21T22:05:30.161730+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -6811,6 +6818,26 @@
     ]
    }
   },
+  "46186033225": {
+   "ahorro_vs_amazon": 26,
+   "amz_low30": 39.76,
+   "amz_median": 44.3,
+   "amz_price": 34.9,
+   "amz_title": "Kenwood Easy Chop, Picadora con Recipiente de 0,5L, 2 Velocidades, Cuatro Cuchillas, Anillo Antideslizante para Mayor Estabilidad, 500W, Apta para Lavavajillas,",
+   "asin": "B098TJ8YCW",
+   "disponible": true,
+   "ean": "5011423003542",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "26 % por debajo del habitual en Amazon (44.30)",
+   "name": "Kenwood Easy Chop 0,5L 500W Función Pulse Blanco CHP61.100WH Picadora",
+   "pp_drop": 34,
+   "pp_median": 49.95,
+   "pp_price": 32.95,
+   "t": "2026-11-21T22:05:30.161730+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "46186034906": {
    "ahorro_vs_amazon": -31,
    "amz_low30": null,
@@ -6992,11 +7019,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Videojuego Bandai Namco Entertainment Elden Ring: Shadow of the Erdtree Xbox Series X",
-   "pista": "1096284 bytes; 6 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1077721 bytes; 6 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 37,
    "pp_median": 96.95,
    "pp_price": 60.95,
-   "t": "2026-11-21T16:01:07.900587+00:00",
+   "t": "2026-11-21T22:05:30.161730+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -9808,14 +9835,14 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-21T06:05:25.549133+00:00",
+ "night_at": "2026-11-21T22:05:30.161730+00:00",
  "resumen": {
   "amazon_mas_barato": 30,
   "dudoso": 0,
   "no_esta": 15,
-  "oferta_real": 18,
+  "oferta_real": 19,
   "pvpr_inflado": 4,
   "sin_precio": 10
  },
- "updated": "2026-11-21T21:30:54.860893+00:00"
+ "updated": "2026-11-21T22:05:30.161730+00:00"
 }
