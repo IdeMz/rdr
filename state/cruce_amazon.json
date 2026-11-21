@@ -5521,11 +5521,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Set de Construcción LEGO City 60419 Comisaría de Policía en la Isla Prisión",
-   "pista": "1846616 bytes; 3 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1889467 bytes; 3 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 22,
    "pp_median": 100.95,
    "pp_price": 78.83,
-   "t": "2026-11-20T23:20:42.342812+00:00",
+   "t": "2026-11-21T05:35:33.608584+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -8136,11 +8136,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Monitor Acer Vero B7 B247Y G 23,8 pulgadas FHD IPS 75Hz 4 ms Negro",
-   "pista": "904791 bytes; 0 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "912901 bytes; 0 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 20,
    "pp_median": 127.95,
    "pp_price": 102.95,
-   "t": "2026-11-20T23:35:25.778791+00:00",
+   "t": "2026-11-21T05:35:33.608584+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -9363,7 +9363,7 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-21T05:09:59.437510+00:00",
+ "night_at": "2026-11-21T05:35:33.608584+00:00",
  "resumen": {
   "amazon_mas_barato": 32,
   "dudoso": 0,
@@ -9372,5 +9372,5 @@
   "pvpr_inflado": 5,
   "sin_precio": 9
  },
- "updated": "2026-11-21T05:09:59.437510+00:00"
+ "updated": "2026-11-21T05:35:33.608584+00:00"
 }
