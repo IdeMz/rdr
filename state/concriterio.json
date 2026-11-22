@@ -11,7 +11,7 @@
   "Bebé": "2026-11-18T19:01:22.092208+00:00",
   "Bricolaje": "2026-11-18T17:30:58.281773+00:00",
   "Cafeteras": "2026-11-20T10:01:02.046099+00:00",
-  "Café y cápsulas": "2026-11-20T17:01:05.412850+00:00",
+  "Café y cápsulas": "2026-11-22T07:01:03.565904+00:00",
   "Camping y montaña": "2026-11-21T14:30:51.598433+00:00",
   "Cargadores y baterías": "2026-11-21T17:01:04.157306+00:00",
   "Ciclismo": "2026-11-21T19:30:53.184977+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-21T22:00:27.487235+00:00",
+ "next_at": "2026-11-22T07:28:26.045432+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1768,6 +1768,17 @@
    "title": "OLIGHT Perun 2 Linterna Frontal Recargable 2500 Lumen 12 Días Máx 166 Metro",
    "v": []
   },
+  "B0B68Y8PLD": {
+   "c": "Café y cápsulas",
+   "d": 45,
+   "e": "🫘",
+   "m": 511,
+   "p": 14.85,
+   "s": "ambas",
+   "t": "2026-11-22T07:01:33.467499+00:00",
+   "title": "NESCAFÉ Dolce Gusto Café con Leche Delicato, 48 cápsulas (3x16), 561,6 g",
+   "v": []
+  },
   "B0B6CKMLQH": {
    "c": "Domótica",
    "d": 13,
@@ -2311,16 +2322,6 @@
    "p": 69.99,
    "t": "2026-11-10T08:11:08.798584+00:00",
    "title": "iZEEKER 3 Canales 4K Dashcam con Tarjeta de 32GB GRATIS, Cámara Coche Frontal, Trasera e Interior 4K+1080P+1080P con WDR, Visión Nocturna IR, WiFi 6, Ángulo 170°, G-Sensor, Modo de Estacionamiento 24H",
-   "v": []
-  },
-  "B0D5B6L569": {
-   "c": "Nutrición deportiva",
-   "d": 28,
-   "e": "💪",
-   "m": 124,
-   "p": 44.9,
-   "t": "2026-11-07T21:40:59.316434+00:00",
-   "title": "BIG - Proteinas Whey - Proteina en Polvo para Desarrollo de Masa Muscular y Recuperación - Materia Prima Premium - Whey Protein Sin Lactosa, Sin Grumos (1Kg, Cacaolat)",
    "v": []
   },
   "B0D6NLJHQ3": {
@@ -3997,32 +3998,7 @@
    "why": "alta hace 29 dias"
   }
  },
- "reserve": [
-  {
-   "a": "B0DYP5KG5J",
-   "c": "Nutrición deportiva",
-   "e": "💪",
-   "img": "https://m.media-amazon.com/images/I/7100nkpORlL._AC_UL320_.jpg",
-   "n": 1100,
-   "op": 28.9,
-   "p": 22.25,
-   "r": 4.6,
-   "t": "2026-11-21T20:00:58.767855+00:00",
-   "title": "Creatina Monohidratada 3000mg, 400 Pastillas, 100 Días, Hombre y Mujer"
-  },
-  {
-   "a": "B0B716HTS1",
-   "c": "Ciclismo",
-   "e": "🚴",
-   "img": "https://m.media-amazon.com/images/I/717HnFj1jkL._AC_UL320_.jpg",
-   "n": 330,
-   "op": 109.5,
-   "p": 93.58,
-   "r": 4.2,
-   "t": "2026-11-21T19:30:53.184977+00:00",
-   "title": "CXWXC Rodillo Bicicleta para Bicicleta de 26 a 29 Pulgadas Rodillo Bicicleta Carretera Plegable Rodillo Bicicleta Montaña 150 kg Cargables Rodillos para Bicicletas 6 Velocidades"
-  }
- ],
+ "reserve": [],
  "store_skip": {
   "pp:39262571673": "2026-11-21T07:01:05.044033+00:00",
   "pp:43757357888": "2026-11-21T07:01:05.044033+00:00",
@@ -4031,7 +4007,7 @@
  "summary_day": "2026-11-21",
  "tg_offset": 511048123,
  "x_copy": {
-  "day": "2026-11-21",
-  "n": 30
+  "day": "2026-11-22",
+  "n": 1
  }
 }
