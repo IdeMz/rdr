@@ -24,7 +24,7 @@
   "Decoración navideña": "2026-11-20T08:30:53.150165+00:00",
   "Domótica": "2026-11-21T13:30:55.681011+00:00",
   "Droguería": "2026-11-22T10:01:06.437573+00:00",
-  "Fitness en casa": "2026-11-15T12:15:40.152691+00:00",
+  "Fitness en casa": "2026-11-22T19:30:51.638631+00:00",
   "Fotografía": "2026-11-20T16:01:13.016736+00:00",
   "Freidoras de aire": "2026-11-21T21:30:54.860893+00:00",
   "Gaming": "2026-11-21T17:30:53.662722+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-22T19:26:38.585164+00:00",
+ "next_at": "2026-11-22T19:58:24.698431+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1613,6 +1613,17 @@
    "title": "Lavazza, Qualità Oro, 100 Cápsulas de Café Compatibles con las Máquinas Nespresso* Original, con Notas Aromáticas Florales y Afrutadas, 100% Arábica, Intensidad 8, Tueste Ligero",
    "v": []
   },
+  "B09CTVQWK8": {
+   "c": "Fitness en casa",
+   "d": 49,
+   "e": "🏋️",
+   "m": 537,
+   "p": 6.64,
+   "s": "ambas",
+   "t": "2026-11-22T19:32:10.742964+00:00",
+   "title": "Fokky Gomas Elasticas Musculacion [Set de 5], Látex Natural",
+   "v": []
+  },
   "B09H5MT5GG": {
    "c": "Ciclismo",
    "d": 41,
@@ -1924,16 +1935,6 @@
    "s": "ofertas",
    "t": "2026-11-15T15:16:57.926323+00:00",
    "title": "Cecotec Batidora Amasadora Cecomixer Merengue 5L 1200 Ice-Cream Verde, 1200 W, 5 Función y Hielo, Bol de Acero de 5 L y Accesorios para Batir y Amasar, Incluye Función para Hacer Helado",
-   "v": []
-  },
-  "B0BQ14QLPJ": {
-   "c": "Ciclismo",
-   "d": 17,
-   "e": "🚴",
-   "m": 146,
-   "p": 19.9,
-   "t": "2026-11-08T19:16:03.684305+00:00",
-   "title": "Cecotec Casco Urbano y Montaña para Bicicletas y Patinetes Eléctricos BrainGuard Urban y Sprinter, Tallas S-M y L-XL, Homologado para Cumplir con la Máxima Seguridad",
    "v": []
   },
   "B0BQ1TCC6F": {
@@ -4104,6 +4105,6 @@
  "tg_offset": 511048137,
  "x_copy": {
   "day": "2026-11-22",
-  "n": 24
+  "n": 25
  }
 }

@@ -39,6 +39,13 @@
    "v": 3,
    "via": "ean"
   },
+  "0195892018278": {
+   "a": "B09S2B2QX2",
+   "t": "2026-11-22T19:30:51.638631+00:00",
+   "title": "Lenovo 510",
+   "v": 3,
+   "via": "ean"
+  },
   "0195892103615": {
    "a": "B0F5HN3KJX",
    "t": "2026-11-20T00:05:25.220828+00:00",
@@ -6204,11 +6211,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Logitech G923 SE TrueForce Doble Motor PC/PS5/PS4 Force Feedback 2,3Nm Volante",
-   "pista": "883023 bytes; 0 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "880692 bytes; 0 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 19,
    "pp_median": 284.96,
    "pp_price": 231.94,
-   "t": "2026-11-22T05:50:32.939635+00:00",
+   "t": "2026-11-22T19:30:51.638631+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -9025,6 +9032,26 @@
     ]
    }
   },
+  "46599140832": {
+   "ahorro_vs_amazon": -6,
+   "amz_low30": null,
+   "amz_median": 48.25,
+   "amz_price": 45.51,
+   "amz_title": "Lenovo 510",
+   "asin": "B09S2B2QX2",
+   "disponible": true,
+   "ean": "0195892018278",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 45.51 frente a 50.95",
+   "name": "Webcam Lenovo 510 FHD Full HD Gris",
+   "pp_drop": 25,
+   "pp_median": 67.95,
+   "pp_price": 50.95,
+   "t": "2026-11-22T19:30:51.638631+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "46599140953": {
    "ahorro_vs_amazon": 10,
    "amz_low30": null,
@@ -10227,12 +10254,12 @@
  },
  "night_at": "2026-11-22T06:50:31.982607+00:00",
  "resumen": {
-  "amazon_mas_barato": 26,
+  "amazon_mas_barato": 27,
   "dudoso": 2,
   "no_esta": 17,
   "oferta_real": 25,
   "pvpr_inflado": 7,
   "sin_precio": 9
  },
- "updated": "2026-11-22T19:00:59.176158+00:00"
+ "updated": "2026-11-22T19:30:51.638631+00:00"
 }
