@@ -45,7 +45,7 @@
   "Nutrición deportiva": "2026-11-21T20:00:58.767855+00:00",
   "Oficina": "2026-11-21T12:01:05.183305+00:00",
   "Patinetes": "2026-11-21T18:01:02.914601+00:00",
-  "Pequeño electrodoméstico": "2026-11-18T20:01:08.859046+00:00",
+  "Pequeño electrodoméstico": "2026-11-22T14:01:03.209389+00:00",
   "Perfumes": "2026-11-20T10:30:53.027422+00:00",
   "Periféricos": "2026-11-22T11:01:05.146615+00:00",
   "Perros": "2026-11-22T13:01:16.626545+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-22T13:56:45.500574+00:00",
+ "next_at": "2026-11-22T14:26:19.294599+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -879,6 +879,17 @@
    "p": 79.99,
    "t": "2026-11-08T15:46:07.157868+00:00",
    "title": "Cosori Freidora de Aire 5,7L, Interior Metálico, 11 Modos, 97% Sin Aceite",
+   "v": []
+  },
+  "B07ND8MYKY": {
+   "c": "Pequeño electrodoméstico",
+   "d": 49,
+   "e": "🍞",
+   "m": 525,
+   "p": 23.88,
+   "s": "ofertas",
+   "t": "2026-11-22T14:01:37.740011+00:00",
+   "title": "Russell Hobbs Hervidor Eléctrico Colours Plus+ Rojo, 1L, 2400W, 24992-70",
    "v": []
   },
   "B07Q37YLQT": {
@@ -4021,6 +4032,18 @@
  },
  "reserve": [
   {
+   "a": "B0CF2S646P",
+   "c": "Pequeño electrodoméstico",
+   "e": "🍞",
+   "img": "https://m.media-amazon.com/images/I/61y7ushkxYL._AC_UL320_.jpg",
+   "n": 357,
+   "op": 39.99,
+   "p": 23.99,
+   "r": 4.6,
+   "t": "2026-11-22T14:01:03.209389+00:00",
+   "title": "Bosch - Hervidor de Agua, MyMoment, Triple Seguridad, Filtro Anti-Impurezas, 1,7 litros, Blanco, TWK2M161"
+  },
+  {
    "a": "B00U5PW0QC",
    "c": "Perros",
    "e": "🐶",
@@ -4043,18 +4066,6 @@
    "r": 4.7,
    "t": "2026-11-22T12:01:04.879461+00:00",
    "title": "Seagate Expansion, 5 TB, External Hard Drive HDD, 3.5 Inch, USB 3.0, PC & Notebook, 2 Years Rescue Services (STKM5000400)"
-  },
-  {
-   "a": "B0811CNVCJ",
-   "c": "Herramientas",
-   "e": "🔧",
-   "img": "https://m.media-amazon.com/images/I/71ZKbS8UDxL._AC_UL320_.jpg",
-   "n": 4200,
-   "op": 82.99,
-   "p": 47.21,
-   "r": 4.2,
-   "t": "2026-11-22T10:30:56.212290+00:00",
-   "title": "HYCHIKA 18V Sierra Sable Inalámbrica, Sierra Alternativa de 2 Baterías 2.0Ah, 0-2800 SPM, 2 Hojas de sierra, Cargador Rápido, Luces LED, Ideal para Cortar Madera y Metal"
   }
  ],
  "store_skip": {
@@ -4066,6 +4077,6 @@
  "tg_offset": 511048137,
  "x_copy": {
   "day": "2026-11-22",
-  "n": 13
+  "n": 14
  }
 }
