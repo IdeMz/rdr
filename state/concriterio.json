@@ -44,7 +44,7 @@
   "Móviles": "2026-11-22T09:30:55.932995+00:00",
   "Nutrición deportiva": "2026-11-21T20:00:58.767855+00:00",
   "Oficina": "2026-11-21T12:01:05.183305+00:00",
-  "Patinetes": "2026-11-21T18:01:02.914601+00:00",
+  "Patinetes": "2026-11-22T21:30:54.359902+00:00",
   "Pequeño electrodoméstico": "2026-11-22T14:01:03.209389+00:00",
   "Perfumes": "2026-11-22T15:30:58.871968+00:00",
   "Periféricos": "2026-11-22T11:01:05.146615+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-22T21:27:20.070041+00:00",
+ "next_at": "2026-11-22T21:57:13.702740+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -861,6 +861,17 @@
    "p": 64.76,
    "t": "2026-11-18T16:01:07.217823+00:00",
    "title": "Itek Case Dark Cave DS - Torre Gaming, ATX, Ventilador ARGB 3x12cm, 2xUSB3, Tipo-C, Panel Frontal y Lateral Temp Glass",
+   "v": []
+  },
+  "B07M63LBWP": {
+   "c": "Patinetes",
+   "d": 15,
+   "e": "🛴",
+   "m": 541,
+   "p": 161.49,
+   "s": "ambas",
+   "t": "2026-11-22T21:31:32.297176+00:00",
+   "title": "RCB Hoverboard 6.5\" Overboard Hover Borad con LED Luces/Bluetooth Regalo para Adultos y Niños Monopatín Hoverboards, Regalo para niños",
    "v": []
   },
   "B07MM4V7NR": {
@@ -4063,6 +4074,18 @@
  },
  "reserve": [
   {
+   "a": "B0DJ34VSZ2",
+   "c": "Patinetes",
+   "e": "🛴",
+   "img": "https://m.media-amazon.com/images/I/71BdzkFrhWL._AC_UL320_.jpg",
+   "n": 415,
+   "op": 219.99,
+   "p": 189.95,
+   "r": 4.2,
+   "t": "2026-11-22T21:30:54.359902+00:00",
+   "title": "MASCOOTER S1 | Patinete Eléctrico Adultos Homologado con Talleres en España"
+  },
+  {
    "a": "B004LZSP6Q",
    "c": "Iluminación",
    "e": "🪔",
@@ -4085,18 +4108,6 @@
    "r": 4.5,
    "t": "2026-11-22T20:30:52.079808+00:00",
    "title": "Nutribullet Pro 900 - Batidora Personal Multifunción, Blender Frutas y Verduras, Diseño Compacto, Fácil de Usar y Limpieza Rápida, Extracción de Nutrientes, 900W, Mineral Gris Paloma (NB904MASN)"
-  },
-  {
-   "a": "B0DZ2Z9TMK",
-   "c": "Videojuegos",
-   "e": "🎮",
-   "img": "https://m.media-amazon.com/images/I/81PhaRgwNXL._AC_UY218_.jpg",
-   "n": 191,
-   "op": 55.99,
-   "p": 31.32,
-   "r": 4.6,
-   "t": "2026-11-22T18:01:40.272854+00:00",
-   "title": "Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles 2 - SWITCH"
   }
  ],
  "store_skip": {
@@ -4108,6 +4119,6 @@
  "tg_offset": 511048137,
  "x_copy": {
   "day": "2026-11-22",
-  "n": 28
+  "n": 29
  }
 }
