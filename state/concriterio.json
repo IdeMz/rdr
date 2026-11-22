@@ -47,7 +47,7 @@
   "Patinetes": "2026-11-21T18:01:02.914601+00:00",
   "Pequeño electrodoméstico": "2026-11-18T20:01:08.859046+00:00",
   "Perfumes": "2026-11-20T10:30:53.027422+00:00",
-  "Periféricos": "2026-11-21T08:01:01.895573+00:00",
+  "Periféricos": "2026-11-22T11:01:05.146615+00:00",
   "Perros": "2026-11-20T15:30:53.247753+00:00",
   "Portátiles": "2026-11-21T17:01:04.157306+00:00",
   "Proyectores": "2026-11-21T14:30:51.598433+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-22T10:59:29.105304+00:00",
+ "next_at": "2026-11-22T11:26:31.038692+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -196,6 +196,17 @@
    "s": "ofertas",
    "t": "2026-11-14T11:41:16.404514+00:00",
    "title": "ESN Designer Whey Protein, Chocolate, 1 kg",
+   "v": []
+  },
+  "B00564NI9U": {
+   "c": "Periféricos",
+   "d": 37,
+   "e": "⌨️",
+   "m": 519,
+   "p": 9.39,
+   "s": "busqueda",
+   "t": "2026-11-22T11:01:34.302306+00:00",
+   "title": "Logitech K120 Teclado con Cable Business para Windows",
    "v": []
   },
   "B0057ED9AM": {
@@ -2187,16 +2198,6 @@
    "title": "Marcilla Puro Arábica Café en Grano Sudamérica 100% Arábica | 400g",
    "v": []
   },
-  "B0CWY22136": {
-   "c": "Cámaras de seguridad",
-   "d": 40,
-   "e": "📹",
-   "m": 132,
-   "p": 21.65,
-   "t": "2026-11-08T10:31:30.210947+00:00",
-   "title": "SYMYNELEC Cámara de Vigilancia WiFi Interior 2K 4MP, 5GHz/2,4GHz, 360°",
-   "v": []
-  },
   "B0CX8MQF7R": {
    "c": "eReaders",
    "d": 45,
@@ -4060,6 +4061,6 @@
  "tg_offset": 511048137,
  "x_copy": {
   "day": "2026-11-22",
-  "n": 8
+  "n": 9
  }
 }

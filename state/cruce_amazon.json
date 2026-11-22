@@ -895,6 +895,28 @@
    "v": 3,
    "via": "modelo"
   },
+  "4251442509385": {
+   "a": "B0DG5XQTS7",
+   "t": "2026-11-22T11:01:05.146615+00:00",
+   "title": "Endgame Gear OP1w 4k Wireless Gaming Maus, kabellos - White Frost",
+   "v": 3,
+   "via": "ean"
+  },
+  "4251442511210": {
+   "a": "",
+   "t": "2026-11-22T11:01:05.146615+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Endgame Gear XM2 8K V2 Ratón Gaming con Cable, 8000 Hz, Negro",
+     "Endgame Gear XM2 8k Ratón Gaming con Cable",
+     "Endgame Gear XM2 8K V2 Ratón Gaming con Cable, 8000 Hz, Dark Frost"
+    ]
+   }
+  },
   "4260499852320": {
    "a": "B08S7MYYL7",
    "t": "2026-11-13T20:40:48.338068+00:00",
@@ -5470,6 +5492,28 @@
    "t": "2026-11-13T22:35:19.548446+00:00",
    "veredicto": "amazon_mas_barato"
   },
+  "45948306728": {
+   "ean": "4251442511210",
+   "lista": "to_verify",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Endgame Gear XM2 8K Gaming Mouse 26000 CPI 6 botones 52 g Ratón gaming",
+   "pp_drop": 56,
+   "pp_median": 67.95,
+   "pp_price": 29.95,
+   "t": "2026-11-22T11:01:05.146615+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Endgame Gear XM2 8K V2 Ratón Gaming con Cable, 8000 Hz, Negro",
+     "Endgame Gear XM2 8k Ratón Gaming con Cable",
+     "Endgame Gear XM2 8K V2 Ratón Gaming con Cable, 8000 Hz, Dark Frost"
+    ]
+   }
+  },
   "45948306775": {
    "ahorro_vs_amazon": 23,
    "amz_low30": null,
@@ -5734,6 +5778,26 @@
      "Rapoo MT760M Wireless Mouse Silent - Ratón inalámbrico USB 2.4G y Bluetooth, hasta 4000 dpi, Clic si"
     ]
    }
+  },
+  "45956991055": {
+   "ahorro_vs_amazon": 28,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 60.81,
+   "amz_title": "Endgame Gear OP1w 4k Wireless Gaming Maus, kabellos - White Frost",
+   "asin": "B0DG5XQTS7",
+   "disponible": true,
+   "ean": "4251442509385",
+   "encontrado_por": "ean",
+   "lista": "to_verify",
+   "motivo": "28 % por debajo del habitual en Amazon (60.81)",
+   "name": "Endgame Gear OP1w 4K Wireless 2,4 GHz 26000 DPI 7 botones 60 g Ratón gaming inalámbrico",
+   "pp_drop": 56,
+   "pp_median": 99.95,
+   "pp_price": 43.95,
+   "t": "2026-11-22T11:01:05.146615+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
   },
   "45956991395": {
    "ahorro_vs_amazon": -8,
@@ -10029,10 +10093,10 @@
  "resumen": {
   "amazon_mas_barato": 28,
   "dudoso": 2,
-  "no_esta": 16,
-  "oferta_real": 19,
+  "no_esta": 17,
+  "oferta_real": 20,
   "pvpr_inflado": 6,
   "sin_precio": 8
  },
- "updated": "2026-11-22T10:30:56.212290+00:00"
+ "updated": "2026-11-22T11:01:05.146615+00:00"
 }
