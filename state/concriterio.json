@@ -62,12 +62,12 @@
   "Textil hogar": "2026-11-21T21:01:07.500201+00:00",
   "Videojuegos": "2026-11-19T21:15:40.155765+00:00",
   "Zapatillas": "2026-11-21T15:01:05.254496+00:00",
-  "eReaders": "2026-11-20T09:01:02.767526+00:00"
+  "eReaders": "2026-11-22T11:30:51.877087+00:00"
  },
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-22T11:26:31.038692+00:00",
+ "next_at": "2026-11-22T11:58:04.304517+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2070,6 +2070,17 @@
    "title": "Philips Hue Enchufes Inteligentes para Lámparas No Inteligentes, Pack de 3",
    "v": []
   },
+  "B0CFPR32B1": {
+   "c": "eReaders",
+   "d": 31,
+   "e": "📖",
+   "m": 520,
+   "p": 144.0,
+   "s": "ambas",
+   "t": "2026-11-22T11:31:16.387187+00:00",
+   "title": "Kindle Paperwhite (16 GB) de Amazon (modelo de 2024): pantalla de 7\" sin reflejos y semanas de autonomía | Con publicidad | Frambuesa",
+   "v": []
+  },
   "B0CGDS7RZ1": {
    "c": "Mochilas y maletas",
    "d": 42,
@@ -2876,16 +2887,6 @@
    "s": "ambas",
    "t": "2026-11-21T12:31:32.706171+00:00",
    "title": "Brother DCPJ1360DW, Multifunción Tinta Color, 16 ppm, impresión dúplex",
-   "v": []
-  },
-  "B0FBR8S87S": {
-   "c": "Iluminación",
-   "d": 40,
-   "e": "🪔",
-   "m": 133,
-   "p": 17.91,
-   "t": "2026-11-08T11:06:00.018812+00:00",
-   "title": "Lámpara Escritorio, Flexo Led Escritorio, 5 Modos,10 Niveles de Brillo",
    "v": []
   },
   "B0FBSB1V4L": {
@@ -4061,6 +4062,6 @@
  "tg_offset": 511048137,
  "x_copy": {
   "day": "2026-11-22",
-  "n": 9
+  "n": 10
  }
 }

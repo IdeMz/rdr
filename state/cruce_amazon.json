@@ -902,6 +902,20 @@
    "v": 3,
    "via": "ean"
   },
+  "4251442511180": {
+   "a": "B0DG5YN8VT",
+   "t": "2026-11-22T11:30:51.877087+00:00",
+   "title": "Endgame Gear XM2 8k Ratón Gaming con Cable, Negro",
+   "v": 3,
+   "via": "ean"
+  },
+  "4251442511203": {
+   "a": "B0DG5YKCDT",
+   "t": "2026-11-22T11:30:51.877087+00:00",
+   "title": "Endgame Gear XM2 8k Ratón Gaming con Cable",
+   "v": 3,
+   "via": "ean"
+  },
   "4251442511210": {
    "a": "",
    "t": "2026-11-22T11:01:05.146615+00:00",
@@ -5388,6 +5402,26 @@
     ]
    }
   },
+  "45699875504": {
+   "ahorro_vs_amazon": 58,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 76.28,
+   "amz_title": "Endgame Gear XM2 8k Ratón Gaming con Cable, Negro",
+   "asin": "B0DG5YN8VT",
+   "disponible": true,
+   "ean": "4251442511180",
+   "encontrado_por": "ean",
+   "lista": "to_verify",
+   "motivo": "58 % por debajo del habitual en Amazon (76.28)",
+   "name": "Endgame Gear XM2 8k Gaming Mouse 26000 DPI 52g Ultraligero Ratón gaming",
+   "pp_drop": 54,
+   "pp_median": 69.95,
+   "pp_price": 31.94,
+   "t": "2026-11-22T11:30:51.877087+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "45790863679": {
    "ean": "0622356281096",
    "lista": "candidates",
@@ -5491,6 +5525,27 @@
    "pp_price": 55.95,
    "t": "2026-11-13T22:35:19.548446+00:00",
    "veredicto": "amazon_mas_barato"
+  },
+  "45948306723": {
+   "ahorro_vs_amazon": null,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": null,
+   "amz_title": "Endgame Gear XM2 8k Ratón Gaming con Cable",
+   "asin": "B0DG5YKCDT",
+   "disponible": true,
+   "ean": "4251442511203",
+   "encontrado_por": "ean",
+   "lista": "to_verify",
+   "motivo": "en Amazon pero sin precio o no disponible",
+   "name": "Endgame Gear XM2 8k 30000 DPI 51,5g 6 botones Ratón gaming",
+   "pista": "2193094 bytes; 24 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pp_drop": 54,
+   "pp_median": 69.95,
+   "pp_price": 31.94,
+   "t": "2026-11-22T11:30:51.877087+00:00",
+   "v": 3,
+   "veredicto": "sin_precio"
   },
   "45948306728": {
    "ean": "4251442511210",
@@ -10094,9 +10149,9 @@
   "amazon_mas_barato": 28,
   "dudoso": 2,
   "no_esta": 17,
-  "oferta_real": 20,
+  "oferta_real": 21,
   "pvpr_inflado": 6,
-  "sin_precio": 8
+  "sin_precio": 9
  },
- "updated": "2026-11-22T11:01:05.146615+00:00"
+ "updated": "2026-11-22T11:30:51.877087+00:00"
 }
