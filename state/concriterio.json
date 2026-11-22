@@ -34,7 +34,7 @@
   "Iluminación": "2026-11-20T18:30:56.920199+00:00",
   "Impresoras": "2026-11-21T12:30:56.768648+00:00",
   "Jardín": "2026-11-21T08:30:51.750516+00:00",
-  "Juguetes": "2026-11-20T16:30:59.454749+00:00",
+  "Juguetes": "2026-11-22T16:01:04.070626+00:00",
   "Lego": "2026-11-18T13:30:55.857399+00:00",
   "Limpieza del hogar": "2026-11-21T09:30:52.306969+00:00",
   "Maquillaje": "2026-11-21T15:31:01.080016+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-22T15:56:59.993947+00:00",
+ "next_at": "2026-11-22T16:28:21.129978+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -231,6 +231,17 @@
    "s": "busqueda",
    "t": "2026-11-21T18:31:24.496868+00:00",
    "title": "Logitech H390 Auriculares con Cable, USB-A, Color Negro",
+   "v": []
+  },
+  "B005I5M2F8": {
+   "c": "Juguetes",
+   "d": 39,
+   "e": "🧸",
+   "m": 529,
+   "p": 7.32,
+   "s": "busqueda",
+   "t": "2026-11-22T16:01:38.751852+00:00",
+   "title": "Mattel Games Juego de Cartas UNO, 7+ años, 2-10 Jugadores",
    "v": []
   },
   "B005U94N9A": {
@@ -881,16 +892,6 @@
    "s": "ambas",
    "t": "2026-11-18T17:01:56.922129+00:00",
    "title": "Logitech Webcam C920S Pro HD, Camara para PC/Mac/Xbox, 1080p",
-   "v": []
-  },
-  "B07N8N6C85": {
-   "c": "Freidoras de aire",
-   "d": 20,
-   "e": "🍟",
-   "m": 141,
-   "p": 79.99,
-   "t": "2026-11-08T15:46:07.157868+00:00",
-   "title": "Cosori Freidora de Aire 5,7L, Interior Metálico, 11 Modos, 97% Sin Aceite",
    "v": []
   },
   "B07ND8MYKY": {
@@ -4000,17 +4001,9 @@
    "t": "2026-11-21T20:00:58.767855+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B07TXJHYKB": {
-   "t": "2026-11-21T15:31:01.080016+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B09V8C4QP9": {
    "t": "2026-11-16T19:55:35.023364+00:00",
    "why": "descartada a mano"
-  },
-  "B0C78G8ZPR": {
-   "t": "2026-11-21T15:31:01.080016+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0FQGPHDT7": {
    "t": "2026-11-22T09:30:55.932995+00:00",
@@ -4068,6 +4061,6 @@
  "tg_offset": 511048137,
  "x_copy": {
   "day": "2026-11-22",
-  "n": 17
+  "n": 18
  }
 }
