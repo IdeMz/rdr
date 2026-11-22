@@ -9087,11 +9087,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Moulinex Easy Fry XL Surface 4L 2200W 10 programas Gris AL402H pantalla táctil Freidora de aire",
-   "pista": "1485626 bytes; 14 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1495461 bytes; 15 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 33,
    "pp_median": 225.96,
    "pp_price": 150.95,
-   "t": "2026-11-21T21:01:07.500201+00:00",
+   "t": "2026-11-22T03:05:28.671340+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -10025,7 +10025,7 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-22T02:32:07.629209+00:00",
+ "night_at": "2026-11-22T03:05:28.671340+00:00",
  "resumen": {
   "amazon_mas_barato": 33,
   "dudoso": 1,
@@ -10034,5 +10034,5 @@
   "pvpr_inflado": 4,
   "sin_precio": 11
  },
- "updated": "2026-11-22T02:32:07.629209+00:00"
+ "updated": "2026-11-22T03:05:28.671340+00:00"
 }
