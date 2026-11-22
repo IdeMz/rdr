@@ -3,7 +3,7 @@
   "Accesorios de coche": "2026-11-20T11:01:13.526266+00:00",
   "Accesorios de móvil": "2026-11-21T19:01:06.061997+00:00",
   "Afeitado y depilación": "2026-11-17T20:15:50.874512+00:00",
-  "Almacenamiento": "2026-11-20T19:30:58.727153+00:00",
+  "Almacenamiento": "2026-11-22T12:01:04.879461+00:00",
   "Altavoces": "2026-11-21T07:31:01.189028+00:00",
   "Aspiradoras": "2026-11-20T13:01:06.821120+00:00",
   "Auriculares": "2026-11-21T18:30:52.916571+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-22T11:58:04.304517+00:00",
+ "next_at": "2026-11-22T12:29:40.747586+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -131,16 +131,6 @@
    "s": "ambas",
    "t": "2026-11-22T10:31:36.430177+00:00",
    "title": "Bosch Sierra circular PKS 55 A (Disco de sierra, tope paralelo, caja de cartón, 1200 vatios)",
-   "v": []
-  },
-  "B002PM23YC": {
-   "c": "Café y cápsulas",
-   "d": 13,
-   "e": "🫘",
-   "m": 134,
-   "p": 24.94,
-   "t": "2026-11-08T11:41:12.275160+00:00",
-   "title": "Lavazza, Qualità Rossa, Café en Grano Natural, Ideal para la Máquina de Café Espresso, con Notas Aromáticas de Chocolate y Frutos Secos, Arábica y Robusta, Intensidad 5, Tueste Medio, Paquete de 1 kg",
    "v": []
   },
   "B003OJ8RAE": {
@@ -997,6 +987,17 @@
    "s": "ofertas",
    "t": "2026-11-20T18:02:05.295653+00:00",
    "title": "Juego de sábanas Utopia Bedding, 4 piezas, King, Beige",
+   "v": []
+  },
+  "B07WW1RJ9R": {
+   "c": "Almacenamiento",
+   "d": 27,
+   "e": "💾",
+   "m": 521,
+   "p": 205.19,
+   "s": "ofertas",
+   "t": "2026-11-22T12:01:40.665557+00:00",
+   "title": "LaCie 5TB Rugged Mini Disco Duro Portátil | USB 3.0 (STJJ5000400)",
    "v": []
   },
   "B07X3X9ZCD": {
@@ -4017,6 +4018,18 @@
  },
  "reserve": [
   {
+   "a": "B08ZJFYB9J",
+   "c": "Almacenamiento",
+   "e": "💾",
+   "img": "https://m.media-amazon.com/images/I/81IcUFokGcL._AC_UL320_.jpg",
+   "n": 33600,
+   "op": 227.99,
+   "p": 176.73,
+   "r": 4.7,
+   "t": "2026-11-22T12:01:04.879461+00:00",
+   "title": "Seagate Expansion, 5 TB, External Hard Drive HDD, 3.5 Inch, USB 3.0, PC & Notebook, 2 Years Rescue Services (STKM5000400)"
+  },
+  {
    "a": "B0811CNVCJ",
    "c": "Herramientas",
    "e": "🔧",
@@ -4039,18 +4052,6 @@
    "r": 4.3,
    "t": "2026-11-22T09:30:55.932995+00:00",
    "title": "POCO F9 Pro, Smartphone 12+256, Verde, batería de 6330mAh, carga de 100 W"
-  },
-  {
-   "a": "B0FZ9W84PD",
-   "c": "Bricolaje",
-   "e": "🪛",
-   "img": "https://m.media-amazon.com/images/I/61g9GsmKW6L._AC_UL320_.jpg",
-   "n": 265,
-   "op": 37.99,
-   "p": 34.19,
-   "r": 4.6,
-   "t": "2026-11-22T09:01:04.030897+00:00",
-   "title": "SONGMICS Folding Ladder, Folding Stool, 3 Step Ladder, Load up to 150 kg"
   }
  ],
  "store_skip": {
@@ -4062,6 +4063,6 @@
  "tg_offset": 511048137,
  "x_copy": {
   "day": "2026-11-22",
-  "n": 10
+  "n": 11
  }
 }
