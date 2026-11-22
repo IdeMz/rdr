@@ -9,7 +9,7 @@
   "Auriculares": "2026-11-21T18:30:52.916571+00:00",
   "Barras de sonido": "2026-11-21T14:01:11.161162+00:00",
   "Bebé": "2026-11-18T19:01:22.092208+00:00",
-  "Bricolaje": "2026-11-18T17:30:58.281773+00:00",
+  "Bricolaje": "2026-11-22T09:01:04.030897+00:00",
   "Cafeteras": "2026-11-20T10:01:02.046099+00:00",
   "Café y cápsulas": "2026-11-22T07:01:03.565904+00:00",
   "Camping y montaña": "2026-11-21T14:30:51.598433+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-22T08:56:52.417572+00:00",
+ "next_at": "2026-11-22T09:29:20.282116+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -858,16 +858,6 @@
    "title": "Logitech Webcam C920S Pro HD, Camara para PC/Mac/Xbox, 1080p",
    "v": []
   },
-  "B07MNT79M4": {
-   "c": "Cuidado del cabello",
-   "d": 38,
-   "e": "💇",
-   "m": 129,
-   "p": 15.6,
-   "t": "2026-11-08T08:46:01.200043+00:00",
-   "title": "Philips Plancha Alisadora con Placas de Cerámica y Queratina de 100 mm, Cepillo Alisador para Estilizar y Peinar con Tecnología ThermoProtect, hasta 220°C en 1 minuto, en Negro y Rosa, BHS375/00",
-   "v": []
-  },
   "B07N8N6C85": {
    "c": "Freidoras de aire",
    "d": 20,
@@ -1105,6 +1095,17 @@
    "s": "ofertas",
    "t": "2026-11-19T13:06:19.985065+00:00",
    "title": "Netuno 100 hojas de cartulina verjurada color blanco A4 210x297 mm 220g Aster Laid White papel de calidad con textura para invitaciones portadas certificados documentos creativos",
+   "v": []
+  },
+  "B086ZDGPBW": {
+   "c": "Bricolaje",
+   "d": 24,
+   "e": "🪛",
+   "m": 515,
+   "p": 22.79,
+   "s": "ofertas",
+   "t": "2026-11-22T09:01:42.696654+00:00",
+   "title": "SONGMICS Escalera Plegable de 2 Peldaños, Escalera Pequeña, Acero, Carga de 150 kg",
    "v": []
   },
   "B087PXS519": {
@@ -3997,6 +3998,18 @@
  },
  "reserve": [
   {
+   "a": "B0FZ9W84PD",
+   "c": "Bricolaje",
+   "e": "🪛",
+   "img": "https://m.media-amazon.com/images/I/61g9GsmKW6L._AC_UL320_.jpg",
+   "n": 265,
+   "op": 37.99,
+   "p": 34.19,
+   "r": 4.6,
+   "t": "2026-11-22T09:01:04.030897+00:00",
+   "title": "SONGMICS Folding Ladder, Folding Stool, 3 Step Ladder, Load up to 150 kg"
+  },
+  {
    "a": "B09GS83QV1",
    "c": "Colchones y almohadas",
    "e": "🛏️",
@@ -4018,6 +4031,6 @@
  "tg_offset": 511048137,
  "x_copy": {
   "day": "2026-11-22",
-  "n": 4
+  "n": 5
  }
 }
