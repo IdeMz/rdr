@@ -2559,6 +2559,13 @@
    "title": "Braun MultiQuick 5 - Minipimer de 1000W Vaso 600ml Blanco",
    "via": "ean"
   },
+  "8021098004611": {
+   "a": "B0D7PXVNL9",
+   "t": "2026-11-22T20:00:59.130943+00:00",
+   "title": "Braun MultiFry 5 - Freidora de aire caliente para cocinar sin grasa - Preparación fácil con 8 programas de cocción - Cesta de cocción sin PFAS con capacidad de ",
+   "v": 3,
+   "via": "ean"
+  },
   "8032958189485": {
    "a": "B08GMBX8XX",
    "t": "2026-11-19T17:01:09.614407+00:00",
@@ -7654,6 +7661,26 @@
    "v": 3,
    "veredicto": "oferta_real"
   },
+  "46239685089": {
+   "ahorro_vs_amazon": 22,
+   "amz_low30": null,
+   "amz_median": 118.45,
+   "amz_price": 93.51,
+   "amz_title": "Braun MultiFry 5 - Freidora de aire caliente para cocinar sin grasa - Preparación fácil con 8 programas de cocción - Cesta de cocción sin PFAS con capacidad de ",
+   "asin": "B0D7PXVNL9",
+   "disponible": true,
+   "ean": "8021098004611",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 93.51 frente a 92.95",
+   "name": "Braun MultiFry 5 HF 5034I 6L 1700W 8 programas Negro pantalla táctil Freidora de aire",
+   "pp_drop": 21,
+   "pp_median": 117.95,
+   "pp_price": 92.95,
+   "t": "2026-11-22T20:00:59.130943+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "46239685097": {
    "ahorro_vs_amazon": 23,
    "amz_low30": null,
@@ -9978,7 +10005,7 @@
    "pp_drop": 14,
    "pp_median": 1065.95,
    "pp_price": 921.95,
-   "t": "2026-11-19T22:50:30.836320+00:00",
+   "t": "2026-11-22T20:00:59.130943+00:00",
    "v": 3,
    "veredicto": "no_esta",
    "vistos": {
@@ -10254,12 +10281,12 @@
  },
  "night_at": "2026-11-22T06:50:31.982607+00:00",
  "resumen": {
-  "amazon_mas_barato": 27,
+  "amazon_mas_barato": 28,
   "dudoso": 2,
   "no_esta": 17,
   "oferta_real": 25,
   "pvpr_inflado": 7,
   "sin_precio": 9
  },
- "updated": "2026-11-22T19:30:51.638631+00:00"
+ "updated": "2026-11-22T20:00:59.130943+00:00"
 }

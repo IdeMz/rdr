@@ -56,7 +56,7 @@
   "Robots de cocina": "2026-11-21T13:01:04.571347+00:00",
   "Salud": "2026-11-20T14:30:58.924631+00:00",
   "Smartwatch": "2026-11-21T16:01:07.900587+00:00",
-  "Suplementos": "2026-11-19T20:45:42.101471+00:00",
+  "Suplementos": "2026-11-22T20:00:59.130943+00:00",
   "Tablets": "2026-11-22T16:30:48.501662+00:00",
   "Televisores": "2026-11-21T20:30:51.971542+00:00",
   "Textil hogar": "2026-11-21T21:01:07.500201+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-22T19:58:24.698431+00:00",
+ "next_at": "2026-11-22T20:26:32.695297+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -893,6 +893,17 @@
    "s": "ofertas",
    "t": "2026-11-22T14:01:37.740011+00:00",
    "title": "Russell Hobbs Hervidor Eléctrico Colours Plus+ Rojo, 1L, 2400W, 24992-70",
+   "v": []
+  },
+  "B07P5K7DQP": {
+   "c": "Suplementos",
+   "d": 42,
+   "e": "💊",
+   "m": 538,
+   "p": 17.96,
+   "s": "busqueda",
+   "t": "2026-11-22T20:01:33.981143+00:00",
+   "title": "Pure Encapsulations Magnesio Bisglicinato | Energía | 90 cápsulas",
    "v": []
   },
   "B07Q37YLQT": {
@@ -3485,16 +3496,6 @@
    "title": "KRUPS Harmony, Cafetera Superautomática, 4 Bebidas, Espumador Leche, Carbón",
    "v": []
   },
-  "B0GQHGGWHX": {
-   "c": "Televisores",
-   "d": 40,
-   "e": "📺",
-   "m": 147,
-   "p": 299.0,
-   "t": "2026-11-08T19:51:09.950070+00:00",
-   "title": "TCL 55V6D Televisor 55 Pulgadas 4K UHD Smart TV, Fire TV, Alexa Integrado, Dolby Vision & Atmos, Game Master, HDR10+, Control por Voz",
-   "v": []
-  },
   "B0GQX6JT42": {
    "c": "Accesorios de coche",
    "d": 10,
@@ -4037,10 +4038,6 @@
    "t": "2026-11-22T15:01:08.377622+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B071W264LM": {
-   "t": "2026-11-21T20:00:58.767855+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B09V8C4QP9": {
    "t": "2026-11-16T19:55:35.023364+00:00",
    "why": "descartada a mano"
@@ -4105,6 +4102,6 @@
  "tg_offset": 511048137,
  "x_copy": {
   "day": "2026-11-22",
-  "n": 25
+  "n": 26
  }
 }
