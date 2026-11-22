@@ -19,7 +19,7 @@
   "Colchones y almohadas": "2026-11-22T07:30:51.234738+00:00",
   "Componentes PC": "2026-11-22T17:30:50.627813+00:00",
   "Cuidado de la piel": "2026-11-20T20:31:08.098759+00:00",
-  "Cuidado del cabello": "2026-11-21T16:30:54.650507+00:00",
+  "Cuidado del cabello": "2026-11-22T18:30:51.920701+00:00",
   "Cámaras de seguridad": "2026-11-21T10:30:51.209383+00:00",
   "Decoración navideña": "2026-11-20T08:30:53.150165+00:00",
   "Domótica": "2026-11-21T13:30:55.681011+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-22T18:28:04.713428+00:00",
+ "next_at": "2026-11-22T18:58:52.957641+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1070,6 +1070,17 @@
    "title": "Lepro Linterna Cabeza LED Pila 1300lux (2 Pack), Frontal LED Alta Potencia",
    "v": []
   },
+  "B07ZHNJN7Z": {
+   "c": "Cuidado del cabello",
+   "d": 45,
+   "e": "💇",
+   "m": 535,
+   "p": 27.5,
+   "s": "ambas",
+   "t": "2026-11-22T18:31:18.729470+00:00",
+   "title": "Secador de Pelo BaByliss Retráctil – Secador potente de 2000 W, Cable retráctil para mayor comodidad, Tecnología iónica antiencrespamiento, 3 ajustes de temperatura y 2 velocidades, Negro, D373E",
+   "v": []
+  },
   "B08153WM1C": {
    "c": "Decoración navideña",
    "d": 22,
@@ -2021,16 +2032,6 @@
    "s": "ofertas",
    "t": "2026-11-12T12:21:20.635700+00:00",
    "title": "soundcore Q20i de Anker Cascos Bluetooth con ANC Híbrida, Hi-Res, 40H",
-   "v": []
-  },
-  "B0C6TH55LD": {
-   "c": "Cargadores y baterías",
-   "d": 28,
-   "e": "🔌",
-   "m": 145,
-   "p": 16.99,
-   "t": "2026-11-08T18:11:12.426707+00:00",
-   "title": "VEEKTOMX Bateria Externa Carga Rapida 22.5W, Mini Power Bank 10000mAh",
    "v": []
   },
   "B0C6XK77HJ": {
@@ -4092,6 +4093,6 @@
  "tg_offset": 511048137,
  "x_copy": {
   "day": "2026-11-22",
-  "n": 22
+  "n": 23
  }
 }

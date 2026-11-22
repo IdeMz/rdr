@@ -6753,7 +6753,7 @@
    "pp_drop": 24,
    "pp_median": 169.99,
    "pp_price": 129.0,
-   "t": "2026-11-20T17:30:54.157924+00:00",
+   "t": "2026-11-22T18:30:51.920701+00:00",
    "v": 3,
    "veredicto": "no_esta",
    "vistos": {
@@ -9389,11 +9389,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Salicru SPS 1500 ONE 900W 4 tomas SAI",
-   "pista": "1345212 bytes; 15 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1280935 bytes; 14 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 24,
    "pp_median": 160.95,
    "pp_price": 122.95,
-   "t": "2026-11-22T04:35:24.742819+00:00",
+   "t": "2026-11-22T18:30:51.920701+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -10234,5 +10234,5 @@
   "pvpr_inflado": 7,
   "sin_precio": 9
  },
- "updated": "2026-11-22T18:01:40.272854+00:00"
+ "updated": "2026-11-22T18:30:51.920701+00:00"
 }
