@@ -7716,7 +7716,7 @@
    "pp_drop": 55,
    "pp_median": 162.95,
    "pp_price": 73.93,
-   "t": "2026-11-20T10:30:53.027422+00:00",
+   "t": "2026-11-22T10:30:56.212290+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -7878,7 +7878,7 @@
    "veredicto": "amazon_mas_barato"
   },
   "46265356484": {
-   "ahorro_vs_amazon": -6,
+   "ahorro_vs_amazon": 11,
    "amz_low30": 89.99,
    "amz_median": 95.0,
    "amz_price": 79.99,
@@ -7887,13 +7887,13 @@
    "disponible": true,
    "ean": "3760265541812",
    "encontrado_por": "ean",
-   "lista": "candidates",
-   "motivo": "Amazon 79.99 frente a 100.95",
+   "lista": "to_verify",
+   "motivo": "Amazon 79.99 frente a 84.95",
    "name": "AgfaPhoto Realishot Azul CMOS 1/3 pulgadas Full HD 1080p 24MP WP8000 Cámara digital",
-   "pp_drop": 45,
+   "pp_drop": 54,
    "pp_median": 183.94,
-   "pp_price": 100.95,
-   "t": "2026-11-20T11:30:53.381638+00:00",
+   "pp_price": 84.95,
+   "t": "2026-11-22T10:30:56.212290+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -10027,12 +10027,12 @@
  },
  "night_at": "2026-11-22T06:50:31.982607+00:00",
  "resumen": {
-  "amazon_mas_barato": 33,
-  "dudoso": 1,
-  "no_esta": 15,
-  "oferta_real": 21,
-  "pvpr_inflado": 4,
-  "sin_precio": 11
+  "amazon_mas_barato": 28,
+  "dudoso": 2,
+  "no_esta": 16,
+  "oferta_real": 19,
+  "pvpr_inflado": 6,
+  "sin_precio": 8
  },
- "updated": "2026-11-22T10:01:06.437573+00:00"
+ "updated": "2026-11-22T10:30:56.212290+00:00"
 }
