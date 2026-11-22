@@ -48,7 +48,7 @@
   "Pequeño electrodoméstico": "2026-11-18T20:01:08.859046+00:00",
   "Perfumes": "2026-11-20T10:30:53.027422+00:00",
   "Periféricos": "2026-11-22T11:01:05.146615+00:00",
-  "Perros": "2026-11-20T15:30:53.247753+00:00",
+  "Perros": "2026-11-22T13:01:16.626545+00:00",
   "Portátiles": "2026-11-21T17:01:04.157306+00:00",
   "Proyectores": "2026-11-21T14:30:51.598433+00:00",
   "Redes y wifi": "2026-11-22T08:01:00.717908+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-22T12:56:10.830073+00:00",
+ "next_at": "2026-11-22T13:27:59.527885+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -762,6 +762,17 @@
    "title": "Trust Arys Barra de Sonido para PC/Ordenador Portátil, 12 W, Negro",
    "v": []
   },
+  "B07GPYLNKN": {
+   "c": "Perros",
+   "d": 33,
+   "e": "🐶",
+   "m": 523,
+   "p": 13.39,
+   "s": "ofertas",
+   "t": "2026-11-22T13:01:47.311314+00:00",
+   "title": "MjAMjAM - comida húmeda premium para perros - Mixpaket II - con pollo y pato, ternera, pavo, ternera, pavo, cordero, pack de 6 (6 x 400 g), natural con extra de carne",
+   "v": []
+  },
   "B07GS6ZB7T": {
    "c": "Periféricos",
    "d": 52,
@@ -1053,16 +1064,6 @@
    "s": "ofertas",
    "t": "2026-11-20T08:31:24.987247+00:00",
    "title": "COM-FOUR® 56 piezas Juego de estrellas de paja, estrellas, campanas",
-   "v": []
-  },
-  "B082DP67BT": {
-   "c": "Cafeteras",
-   "d": 20,
-   "e": "☕",
-   "m": 136,
-   "p": 85.0,
-   "t": "2026-11-08T12:51:01.244239+00:00",
-   "title": "Orbegozo EX 6000 Cafetera Express, 1050 W, 1,5 L, 20 bar, Plata",
    "v": []
   },
   "B082N3H868": {
@@ -4017,6 +4018,18 @@
  },
  "reserve": [
   {
+   "a": "B00U5PW0QC",
+   "c": "Perros",
+   "e": "🐶",
+   "img": "https://m.media-amazon.com/images/I/61kh1W93z9L._AC_UL320_.jpg",
+   "n": 640,
+   "op": 34.59,
+   "p": 24.39,
+   "r": 4.6,
+   "t": "2026-11-22T13:01:16.626545+00:00",
+   "title": "Cesar Country Stew 24 x 150 g Selección Recetas Campesinas en Salsa"
+  },
+  {
    "a": "B08ZJFYB9J",
    "c": "Almacenamiento",
    "e": "💾",
@@ -4039,18 +4052,6 @@
    "r": 4.2,
    "t": "2026-11-22T10:30:56.212290+00:00",
    "title": "HYCHIKA 18V Sierra Sable Inalámbrica, Sierra Alternativa de 2 Baterías 2.0Ah, 0-2800 SPM, 2 Hojas de sierra, Cargador Rápido, Luces LED, Ideal para Cortar Madera y Metal"
-  },
-  {
-   "a": "B0H6XHDKSH",
-   "c": "Móviles",
-   "e": "📱",
-   "img": "https://m.media-amazon.com/images/I/61lf0oTxCEL._AC_UY218_.jpg",
-   "n": 71,
-   "op": 899.9,
-   "p": 599.9,
-   "r": 4.3,
-   "t": "2026-11-22T09:30:55.932995+00:00",
-   "title": "POCO F9 Pro, Smartphone 12+256, Verde, batería de 6330mAh, carga de 100 W"
   }
  ],
  "store_skip": {
@@ -4062,6 +4063,6 @@
  "tg_offset": 511048137,
  "x_copy": {
   "day": "2026-11-22",
-  "n": 11
+  "n": 12
  }
 }
