@@ -9066,11 +9066,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Dreame Tasti 1500W pantalla táctil Freidora de aire",
-   "pista": "1320505 bytes; 11 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1229770 bytes; 7 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 35,
    "pp_median": 230.95,
    "pp_price": 150.95,
-   "t": "2026-11-21T20:30:51.971542+00:00",
+   "t": "2026-11-22T02:32:07.629209+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -10025,7 +10025,7 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-22T02:05:32.130260+00:00",
+ "night_at": "2026-11-22T02:32:07.629209+00:00",
  "resumen": {
   "amazon_mas_barato": 33,
   "dudoso": 1,
@@ -10034,5 +10034,5 @@
   "pvpr_inflado": 4,
   "sin_precio": 11
  },
- "updated": "2026-11-22T02:05:32.130260+00:00"
+ "updated": "2026-11-22T02:32:07.629209+00:00"
 }
