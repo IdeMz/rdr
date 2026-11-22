@@ -6496,11 +6496,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "MSI MAG 274CF X24 27 pulgadas Full HD Rapid VA 240Hz curvo Monitor",
-   "pista": "1288472 bytes; 7 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1297388 bytes; 7 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 24,
    "pp_median": 156.95,
    "pp_price": 119.0,
-   "t": "2026-11-21T22:20:36.998561+00:00",
+   "t": "2026-11-22T04:35:24.742819+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -9189,11 +9189,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Salicru SPS 1500 ONE 900W 4 tomas SAI",
-   "pista": "1271928 bytes; 14 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1345212 bytes; 15 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 24,
    "pp_median": 160.95,
    "pp_price": 122.95,
-   "t": "2026-11-21T22:20:36.998561+00:00",
+   "t": "2026-11-22T04:35:24.742819+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -10025,7 +10025,7 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-22T04:05:31.441136+00:00",
+ "night_at": "2026-11-22T04:35:24.742819+00:00",
  "resumen": {
   "amazon_mas_barato": 33,
   "dudoso": 1,
@@ -10034,5 +10034,5 @@
   "pvpr_inflado": 4,
   "sin_precio": 11
  },
- "updated": "2026-11-22T04:05:31.441136+00:00"
+ "updated": "2026-11-22T04:35:24.742819+00:00"
 }
