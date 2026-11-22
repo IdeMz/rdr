@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-22T13:27:59.527885+00:00",
+ "next_at": "2026-11-22T13:56:45.500574+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -273,16 +273,6 @@
    "s": "busqueda",
    "t": "2026-11-21T20:01:36.338861+00:00",
    "title": "AMIX - Creatina Monohidratada - 500 Gramos + 250 Gramos Gratis - Complemento Alimenticio - Mejora el Rendimiento Físico - Ideal para Deportistas - 100% Micronizada - Proteína Masa Muscular",
-   "v": []
-  },
-  "B00ENMFOSY": {
-   "c": "Perros",
-   "d": 26,
-   "e": "🐶",
-   "m": 137,
-   "p": 44.99,
-   "t": "2026-11-08T13:25:53.955113+00:00",
-   "title": "Advance Maxi Chicken, Pienso para Perros Adultos de Razas Grandes con Pollo, 14kg",
    "v": []
   },
   "B00FFYQQ8G": {
@@ -3907,6 +3897,19 @@
    "u": "https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3C4kKF00PIxjUH7oWEJYYeR8cxIQunUxPvpv0PypKUw49ItLKrd9LRYKYa0uPRYg8TnqAjUOV3BSpU31Zew2kdUr1VY2Qaum6TF8CqmdSVyHDjIBljPt7PhryLCph63Sq3OFQpnBdfCcKL0hvU7vCgHUudibekCt9unORTOkuS5NSntY3yChfsy2TlyvAcFYk6rxgXUbcIHjswrS3YagHFuH1kiC8xVMGRat4XWfbFZiCn4ZumPiP8FLhW3PdLMAOuOfQgvPmRrOPZdgFEevYVy4ZCsvc3PVv20luow3G9IhwqkClLuOZJvArrzCyxQKGTCtbMC5MJZ2XeIJorspSmLOyxFiygzRjbQQVljgkEHaELKyysXenuvbTw7O9JRpTz9cnbh5ZnyifDETEoqiIfu7GOYnyccsxACUwft3tZDnPn6ys8sNBkUWImh9Qxyn5SFtrcZIANEkRGhN8Tp27Dl4QH33n8NfRENIhgKpGAZOnTkQLHaXOCaCFXNtVEP3xfNyOHC0rBpAC4oO5cPBhotBYB7bsJ0wtpkbpgeKhb8zT5FpnJ11UfgCHbWyUHBTL9b2Npmr5a6oRAFOYjNGv0cPstWn1b9xcBLjuBRsNJ9WNhLoXXW7XRWkHZtqyCMG7LXhGxTC3jrrNi2h8nuF4Er4FLiww9jy7zrruEsktIw1bnI190gbepablqfBJDCErbHlQOFxxK1QSRU",
    "v": []
   },
+  "pp:39633853398": {
+   "auto": true,
+   "c": "",
+   "d": 81,
+   "e": "",
+   "m": 524,
+   "p": 30.95,
+   "st": "POWERPLANET",
+   "t": "2026-11-22T13:30:52.673280+00:00",
+   "title": "JVC HA-NP35T Blanco TWS Bluetooth 5.1 17h IPX4 Auriculares inalámbricos",
+   "u": "https://www.awin1.com/pclick.php?p=39633853398&a=3134713&m=77138",
+   "v": []
+  },
   "pp:40832391954": {
    "auto": true,
    "c": "",
@@ -4063,6 +4066,6 @@
  "tg_offset": 511048137,
  "x_copy": {
   "day": "2026-11-22",
-  "n": 12
+  "n": 13
  }
 }
