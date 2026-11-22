@@ -57,7 +57,7 @@
   "Salud": "2026-11-20T14:30:58.924631+00:00",
   "Smartwatch": "2026-11-21T16:01:07.900587+00:00",
   "Suplementos": "2026-11-19T20:45:42.101471+00:00",
-  "Tablets": "2026-11-21T11:30:53.777938+00:00",
+  "Tablets": "2026-11-22T16:30:48.501662+00:00",
   "Televisores": "2026-11-21T20:30:51.971542+00:00",
   "Textil hogar": "2026-11-21T21:01:07.500201+00:00",
   "Videojuegos": "2026-11-19T21:15:40.155765+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-22T16:28:21.129978+00:00",
+ "next_at": "2026-11-22T17:00:39.473918+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -448,16 +448,6 @@
    "s": "ambas",
    "t": "2026-11-17T14:31:21.891010+00:00",
    "title": "Optimum Nutrition Amino Energy Polvo Pre Entrenamiento, Bebida Energética con Aminoácidos, BCAA, L-Glutamina y L-Leucina, Complemento con Vitamina C y Cafeína, Sabor Fruit Fusion, 30 Porciones, 270 g",
-   "v": []
-  },
-  "B013DQEJF4": {
-   "c": "Robots de cocina",
-   "d": 19,
-   "e": "🥣",
-   "m": 142,
-   "p": 283.99,
-   "t": "2026-11-08T16:21:09.810813+00:00",
-   "title": "Bosch - Robot de cocina, MUM 5, 1000 W, Plateado, MUM58L20",
    "v": []
   },
   "B01C8ONNPE": {
@@ -3187,6 +3177,17 @@
    "title": "CLOUVOU Silla de Oficina Ergonomica con Ruedas [GANADORA DE PUREBAS] Negro",
    "v": []
   },
+  "B0FRMC8FLH": {
+   "c": "Tablets",
+   "d": 39,
+   "e": "📲",
+   "m": 530,
+   "p": 99.99,
+   "s": "busqueda",
+   "t": "2026-11-22T16:31:26.231614+00:00",
+   "title": "Tablet 10 Pulgadas Android 15 con Gemini AI, 30 GB RAM + Ampliable 2 TB ROM, Octa-Core, Widevine L1, 1280x800 HD, WiFi 5GHz, BT 5.0, Cámara 8 MP + 5 MP, 6000 mAh, con Teclado, Ratón y Funda – Negro",
+   "v": []
+  },
   "B0FRRMD96F": {
    "c": "Altavoces",
    "d": 18,
@@ -4038,18 +4039,6 @@
    "r": 4.6,
    "t": "2026-11-22T14:01:03.209389+00:00",
    "title": "Bosch - Hervidor de Agua, MyMoment, Triple Seguridad, Filtro Anti-Impurezas, 1,7 litros, Blanco, TWK2M161"
-  },
-  {
-   "a": "B00U5PW0QC",
-   "c": "Perros",
-   "e": "🐶",
-   "img": "https://m.media-amazon.com/images/I/61kh1W93z9L._AC_UL320_.jpg",
-   "n": 640,
-   "op": 34.59,
-   "p": 24.39,
-   "r": 4.6,
-   "t": "2026-11-22T13:01:16.626545+00:00",
-   "title": "Cesar Country Stew 24 x 150 g Selección Recetas Campesinas en Salsa"
   }
  ],
  "store_skip": {
@@ -4061,6 +4050,6 @@
  "tg_offset": 511048137,
  "x_copy": {
   "day": "2026-11-22",
-  "n": 18
+  "n": 19
  }
 }
