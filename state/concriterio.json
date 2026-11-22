@@ -46,7 +46,7 @@
   "Oficina": "2026-11-21T12:01:05.183305+00:00",
   "Patinetes": "2026-11-21T18:01:02.914601+00:00",
   "Pequeño electrodoméstico": "2026-11-22T14:01:03.209389+00:00",
-  "Perfumes": "2026-11-20T10:30:53.027422+00:00",
+  "Perfumes": "2026-11-22T15:30:58.871968+00:00",
   "Periféricos": "2026-11-22T11:01:05.146615+00:00",
   "Perros": "2026-11-22T13:01:16.626545+00:00",
   "Portátiles": "2026-11-21T17:01:04.157306+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-22T15:27:19.896693+00:00",
+ "next_at": "2026-11-22T15:56:59.993947+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -100,6 +100,17 @@
    "p": 20.59,
    "t": "2026-11-11T12:16:09.504099+00:00",
    "title": "Chopard Wish 75 ml, Eau de Parfum para Mujer",
+   "v": []
+  },
+  "B000CCZ7ZE": {
+   "c": "Perfumes",
+   "d": 34,
+   "e": "🌸",
+   "m": 528,
+   "p": 58.46,
+   "s": "ambas",
+   "t": "2026-11-22T15:31:26.865134+00:00",
+   "title": "Polo Blue Edt Vapo 200 Ml",
    "v": []
   },
   "B000LAKYW8": {
@@ -2354,16 +2365,6 @@
    "title": "Bose SoundLink Flex (2.ª Gen.), Altavoz portátil inalámbrico con Bluetooth pequeño y Potente para Fiestas al Aire Libre, hasta 12 h de autonomía, Resistente al Agua IP67 y al Polvo, Arenisca",
    "v": []
   },
-  "B0D7BSGM9H": {
-   "c": "Mochilas y maletas",
-   "d": 30,
-   "e": "🎒",
-   "m": 140,
-   "p": 22.99,
-   "t": "2026-11-08T15:11:09.144750+00:00",
-   "title": "MATEIN",
-   "v": []
-  },
   "B0D8J5CVPK": {
    "c": "Perfumes",
    "d": 20,
@@ -4067,6 +4068,6 @@
  "tg_offset": 511048137,
  "x_copy": {
   "day": "2026-11-22",
-  "n": 16
+  "n": 17
  }
 }
