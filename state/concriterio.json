@@ -51,7 +51,7 @@
   "Perros": "2026-11-20T15:30:53.247753+00:00",
   "Portátiles": "2026-11-21T17:01:04.157306+00:00",
   "Proyectores": "2026-11-21T14:30:51.598433+00:00",
-  "Redes y wifi": "2026-11-19T15:30:55.803469+00:00",
+  "Redes y wifi": "2026-11-22T08:01:00.717908+00:00",
   "Relojes": "2026-11-20T17:30:54.157924+00:00",
   "Robots de cocina": "2026-11-21T13:01:04.571347+00:00",
   "Salud": "2026-11-20T14:30:58.924631+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-22T07:56:23.220153+00:00",
+ "next_at": "2026-11-22T08:29:27.089276+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -476,16 +476,6 @@
    "s": "ofertas",
    "t": "2026-11-21T10:01:24.262895+00:00",
    "title": "JOSERA NatureCat (1 x 10 kg) | Adultos | Pienso seco de Primera Calidad para Gatos Adultos | Salmón y Aves | Hierbas selectas y Frutas saludables | Sin Cereales | Comida para Gatos | Pack 1",
-   "v": []
-  },
-  "B01H5VO9QM": {
-   "c": "Cuidado de la piel",
-   "d": 42,
-   "e": "🧴",
-   "m": 127,
-   "p": 6.5,
-   "t": "2026-11-08T07:35:59.297719+00:00",
-   "title": "L'Oréal Paris Revitalift Clásico Sérum Reparador con Pro Retinol, 30ml",
    "v": []
   },
   "B01KHILJ5O": {
@@ -2927,6 +2917,17 @@
    "title": "Govee Christmas Sparkle String Lights 30M, Control por Aplicación con Alexa",
    "v": []
   },
+  "B0FCFRKLLM": {
+   "c": "Redes y wifi",
+   "d": 43,
+   "e": "📶",
+   "m": 513,
+   "p": 20.34,
+   "s": "ambas",
+   "t": "2026-11-22T08:01:25.737459+00:00",
+   "title": "Tenda A18 AC1200 Repetidor WiFi, Extensor Amplificador Doble Banda 2.4/5 GHz, Cobertura hasta 150 m², Puerto Ethernet, Modo Ap, Indicador LED, WPS, WPA2",
+   "v": []
+  },
   "B0FCG24X9S": {
    "c": "Portátiles",
    "d": 14,
@@ -4022,6 +4023,6 @@
  "tg_offset": 511048123,
  "x_copy": {
   "day": "2026-11-22",
-  "n": 2
+  "n": 3
  }
 }
