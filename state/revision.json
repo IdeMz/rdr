@@ -20,6 +20,7 @@
    "title": "50 Uds 5g 10g 15g 20g 30g 50g 60g 80g 100g tarros de aluminio de estaño Metal vacío cosmético cuidado de la cara crema de ojos bálsamo labial brillo embalaje"
   },
   "a1005005212504555": {
+   "answered": "2026-11-22T08:17:33.004944+00:00",
    "drop": 32,
    "id": "1005005212504555",
    "image": "https://ae-pic-a1.aliexpress-media.com/kf/H560d700a79bf43dcb351331fc6a7ec26T.jpg",
@@ -33,7 +34,7 @@
    "shop": "BOOTEELY Store",
    "shop_id": "1102636624",
    "src": "a",
-   "st": "sent",
+   "st": "ok",
    "t": "2026-11-22T05:09:53.302818+00:00",
    "title": "Nueva comodidad para dormir profundo en invierno, Cama para gatos, estera para hielo, cesta, productos para el hogar para perros pequeños, tienda para mascotas,"
   },
@@ -330,6 +331,7 @@
    "title": "Coche teledirigido Oike 4WD todoterreno 4x4, buggy de alta velocidad, súper sin escobillas, 50 o 80 km/h, juguete de carreras de derrape rápido, regalo."
   },
   "a1005006997417042": {
+   "answered": "2026-11-22T08:18:43.721672+00:00",
    "drop": 12,
    "id": "1005006997417042",
    "image": "https://ae-pic-a1.aliexpress-media.com/kf/Sb50fda6295f44e6aac15289ce0082d0cS.jpg",
@@ -343,11 +345,12 @@
    "shop": "Stone's Store",
    "shop_id": "1103573332",
    "src": "a",
-   "st": "sent",
+   "st": "no",
    "t": "2026-11-21T05:09:59.437510+00:00",
    "title": "Funda inteligente para Kindle Scribe 2022, cubierta con soporte plegable múltiple de 10,2 pulgadas, carcasa de protección completa magnética a prueba de golpes,"
   },
   "a1005007602409740": {
+   "answered": "2026-11-22T08:16:33.437607+00:00",
    "drop": 10,
    "id": "1005007602409740",
    "image": "https://ae-pic-a1.aliexpress-media.com/kf/E3db5bd11762e44a8bfcdf6c29ff1d790A.jpg",
@@ -361,7 +364,7 @@
    "shop": "PERFUMES ÁRABES DUBAI Store",
    "shop_id": "1104101208",
    "src": "a",
-   "st": "sent",
+   "st": "ok",
    "t": "2026-11-22T05:09:53.302818+00:00",
    "title": "Lattafa Qaed Al Fursan Eau de Parfum para hombre 90 ml Lattafa Perfume hombre Hombre Perfume"
   },
@@ -492,6 +495,7 @@
    "title": "Soporte de Metal para tableta, brazo de soporte para teléfono de 4,7-12,9 pulgadas, iPad, Xiaomi, Huawei, Samsung, Kindle Switch, soporte de escritorio ajustabl"
   },
   "a1005012010813985": {
+   "answered": "2026-11-22T08:17:40.387389+00:00",
    "drop": 10,
    "id": "1005012010813985",
    "image": "https://ae-pic-a1.aliexpress-media.com/kf/S3f07bc40714745b387f9a992bf3d0f4bV.jpg",
@@ -505,7 +509,7 @@
    "shop": "Stone's Store",
    "shop_id": "1103573332",
    "src": "a",
-   "st": "sent",
+   "st": "no",
    "t": "2026-11-21T05:09:59.437510+00:00",
    "title": "Nuevos delantales de cocina de lona a la moda para mujer y hombre, delantales de trabajo para chef, para parrilla, restaurante, bar, tienda, cafeterías, salones"
   },
@@ -546,6 +550,7 @@
    "title": "Figura Grande de Guerrero Orco Olog-hai del Ejército Medieval de El Señor de los Anillos, Troll con Armadura, Bloques de Construcción, Figuras, Ladrillos, Jugue"
   },
   "a1005013135476857": {
+   "answered": "2026-11-22T08:17:09.064069+00:00",
    "drop": 13,
    "id": "1005013135476857",
    "image": "https://ae-pic-a1.aliexpress-media.com/kf/Sea46ed933ea845ba999b1ba0d366442be.jpg",
@@ -559,7 +564,7 @@
    "shop": "Shop1105788975 Store",
    "shop_id": "1105788975",
    "src": "a",
-   "st": "sent",
+   "st": "no",
    "t": "2026-11-22T05:09:53.302818+00:00",
    "title": "XTEINK, lector electrónico de bolsillo con tecnología de tinta electrónica, modelo X3, desbloqueado, con pantalla de 3,7 pulgadas, 5,1 mm de grosor, tarjeta Mic"
   },
@@ -601,8 +606,10 @@
   }
  },
  "trusted": {
+  "1102636624": "BOOTEELY Store",
   "1102669121": "IGRARK Dropship Store",
   "1102856219": "Life Dreamer Store",
+  "1104101208": "PERFUMES ÁRABES DUBAI Store",
   "3179007": "BASEUS Co.,Ltd. Store"
  }
 }
