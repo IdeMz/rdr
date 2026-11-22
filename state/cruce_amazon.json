@@ -8770,11 +8770,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Monitor Acer CB243Y E 23,8 pulgadas Full HD IPS 1 ms HDR10 Negro",
-   "pista": "980428 bytes; 3 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "988667 bytes; 3 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 25,
    "pp_median": 255.95,
    "pp_price": 190.95,
-   "t": "2026-11-21T19:01:06.061997+00:00",
+   "t": "2026-11-22T01:05:27.261202+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -10025,7 +10025,7 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-22T00:35:28.124726+00:00",
+ "night_at": "2026-11-22T01:05:27.261202+00:00",
  "resumen": {
   "amazon_mas_barato": 33,
   "dudoso": 1,
@@ -10034,5 +10034,5 @@
   "pvpr_inflado": 4,
   "sin_precio": 11
  },
- "updated": "2026-11-22T00:35:28.124726+00:00"
+ "updated": "2026-11-22T01:05:27.261202+00:00"
 }
