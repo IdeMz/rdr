@@ -38,7 +38,7 @@
   "Lego": "2026-11-22T17:30:50.627813+00:00",
   "Limpieza del hogar": "2026-11-21T09:30:52.306969+00:00",
   "Maquillaje": "2026-11-21T15:31:01.080016+00:00",
-  "Menaje de cocina": "2026-11-19T09:35:35.003414+00:00",
+  "Menaje de cocina": "2026-11-22T19:00:59.176158+00:00",
   "Mochilas y maletas": "2026-11-20T07:30:55.091992+00:00",
   "Monitores": "2026-11-20T09:30:54.246285+00:00",
   "Móviles": "2026-11-22T09:30:55.932995+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-22T18:58:52.957641+00:00",
+ "next_at": "2026-11-22T19:26:38.585164+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2423,6 +2423,17 @@
    "title": "SKYEGG Tablet 10 Pulgadas Android 15 con Gemini AI, 22GB RAM + 128GB ROM (Ampliable 2TB), Tablet con Teclado y Ratón, Widevine L1, WiFi 5G, Batería 8000mAh, Pantalla IPS HD, Cuerpo Metálico – Gris",
    "v": []
   },
+  "B0D9B67WJS": {
+   "c": "Menaje de cocina",
+   "d": 42,
+   "e": "🍳",
+   "m": 536,
+   "p": 9.79,
+   "s": "ofertas",
+   "t": "2026-11-22T19:01:48.008993+00:00",
+   "title": "TATAY Porta Embutidos Fresh 17x3,2x25,2 cm Set de 4 Estándar Apilable",
+   "v": []
+  },
   "B0D9JS9XS1": {
    "c": "Mochilas y maletas",
    "d": 34,
@@ -4093,6 +4104,6 @@
  "tg_offset": 511048137,
  "x_copy": {
   "day": "2026-11-22",
-  "n": 23
+  "n": 24
  }
 }
