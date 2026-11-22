@@ -4720,24 +4720,24 @@
    "veredicto": "amazon_mas_barato"
   },
   "45368125530": {
-   "ahorro_vs_amazon": 52,
-   "amz_low30": 251.28,
-   "amz_median": 262.16,
-   "amz_price": 109.0,
+   "ahorro_vs_amazon": 58,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 303.99,
    "amz_title": "Jabra Evolve2 Buds, Auriculares Bluetooth Intraaurales Inalámbricos, Cancelación Activa de Ruido y Tecnología MultiSensor con 4 Micrófonos, Certificados para MS",
    "asin": "B0BKH4FX9Y",
    "disponible": true,
    "ean": "5706991026542",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "Amazon 109.00 frente a 126.95",
+   "motivo": "58 % por debajo del habitual en Amazon (303.99)",
    "name": "Jabra Evolve2 Buds USB-A ANC IP57 con micrófono Auriculares",
    "pp_drop": 27,
    "pp_median": 172.95,
    "pp_price": 126.95,
-   "t": "2026-11-20T16:01:13.016736+00:00",
+   "t": "2026-11-22T17:01:01.698969+00:00",
    "v": 3,
-   "veredicto": "amazon_mas_barato"
+   "veredicto": "oferta_real"
   },
   "45389434011": {
    "ahorro_vs_amazon": 13,
@@ -7640,7 +7640,7 @@
    "veredicto": "oferta_real"
   },
   "46239685512": {
-   "ahorro_vs_amazon": -1,
+   "ahorro_vs_amazon": 8,
    "amz_low30": null,
    "amz_median": null,
    "amz_price": 59.49,
@@ -7650,14 +7650,14 @@
    "ean": "5702018060407",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "Amazon 59.49 frente a 59.96",
+   "motivo": "antes 79.94 en PowerPlanet, pero en Amazon suele estar a 59.49",
    "name": "Set de construcción LEGO Friends 42687 Casa Familiar de Liann 946 piezas 7+",
-   "pp_drop": 25,
+   "pp_drop": 31,
    "pp_median": 79.94,
-   "pp_price": 59.96,
-   "t": "2026-11-21T23:50:35.131094+00:00",
+   "pp_price": 54.95,
+   "t": "2026-11-22T17:01:01.698969+00:00",
    "v": 3,
-   "veredicto": "amazon_mas_barato"
+   "veredicto": "pvpr_inflado"
   },
   "46239687126": {
    "ahorro_vs_amazon": -17,
@@ -10200,12 +10200,12 @@
  },
  "night_at": "2026-11-22T06:50:31.982607+00:00",
  "resumen": {
-  "amazon_mas_barato": 28,
+  "amazon_mas_barato": 26,
   "dudoso": 2,
   "no_esta": 17,
-  "oferta_real": 23,
-  "pvpr_inflado": 6,
+  "oferta_real": 24,
+  "pvpr_inflado": 7,
   "sin_precio": 9
  },
- "updated": "2026-11-22T16:30:48.501662+00:00"
+ "updated": "2026-11-22T17:01:01.698969+00:00"
 }

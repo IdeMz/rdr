@@ -10,7 +10,7 @@
   "Barras de sonido": "2026-11-21T14:01:11.161162+00:00",
   "Bebé": "2026-11-18T19:01:22.092208+00:00",
   "Bricolaje": "2026-11-22T09:01:04.030897+00:00",
-  "Cafeteras": "2026-11-20T10:01:02.046099+00:00",
+  "Cafeteras": "2026-11-22T17:01:01.698969+00:00",
   "Café y cápsulas": "2026-11-22T07:01:03.565904+00:00",
   "Camping y montaña": "2026-11-21T14:30:51.598433+00:00",
   "Cargadores y baterías": "2026-11-21T17:01:04.157306+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-22T17:00:39.473918+00:00",
+ "next_at": "2026-11-22T17:30:50.359245+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1123,6 +1123,17 @@
    "s": "ofertas",
    "t": "2026-11-19T13:06:19.985065+00:00",
    "title": "Netuno 100 hojas de cartulina verjurada color blanco A4 210x297 mm 220g Aster Laid White papel de calidad con textura para invitaciones portadas certificados documentos creativos",
+   "v": []
+  },
+  "B086RF6YJQ": {
+   "c": "Cafeteras",
+   "d": 34,
+   "e": "☕",
+   "m": 531,
+   "p": 83.99,
+   "s": "ambas",
+   "t": "2026-11-22T17:01:36.412246+00:00",
+   "title": "De'Longhi Stilosa - Cafetera Espresso Manual con Espumador Manual Negro",
    "v": []
   },
   "B086ZDGPBW": {
@@ -2974,16 +2985,6 @@
    "title": "Lenovo Legion 27-10 Monitor Gaming FHD 27\" (IPS, 240 Hz, 0.5 ms, 16:9, HDMI 2.1 - DP 1.4, AMD FreeSync Premium, VESA Adaptive Sync, Montaje VESA 100 mm, Ajuste Inclinación/Altura/Pivote/Giro) Negro",
    "v": []
   },
-  "B0FJ85FBC9": {
-   "c": "Smartwatch",
-   "d": 48,
-   "e": "⌚",
-   "m": 143,
-   "p": 26.18,
-   "t": "2026-11-08T16:55:52.981883+00:00",
-   "title": "Reloj Inteligente Mujer Smartwatch con llamada: 1.27\"TFT Pantalla Táctil Smart Watch Bluetooth con Frecuencia Cardíaca SpO2 Sangre Presión Arterial Sueño Deportivo IP68 Impermeable para iOS Android",
-   "v": []
-  },
   "B0FJFS513J": {
    "c": "Afeitado y depilación",
    "d": 33,
@@ -4017,6 +4018,18 @@
  },
  "reserve": [
   {
+   "a": "B0CTCQKJ1B",
+   "c": "Cafeteras",
+   "e": "☕",
+   "img": "https://m.media-amazon.com/images/I/61wUUgUQYoL._AC_UL320_.jpg",
+   "n": 2200,
+   "op": 719.99,
+   "p": 516.6,
+   "r": 4.4,
+   "t": "2026-11-22T17:01:01.698969+00:00",
+   "title": "Philips 5500 Cafetera Superautomática LatteGo, 20 bebidas, Gris"
+  },
+  {
    "a": "B0039UT5OK",
    "c": "Relojes",
    "e": "🕰️",
@@ -4050,6 +4063,6 @@
  "tg_offset": 511048137,
  "x_copy": {
   "day": "2026-11-22",
-  "n": 19
+  "n": 20
  }
 }
