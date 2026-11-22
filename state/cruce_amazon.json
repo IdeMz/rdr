@@ -755,6 +755,13 @@
    "title": "Thrustmaster T16000M FCS HOTAS - Pack Joystick y Acelerador - PC",
    "via": "ean"
   },
+  "3362934112295": {
+   "a": "B09834HL7F",
+   "t": "2026-11-22T00:05:27.168899+00:00",
+   "title": "Thrustmaster T-GT II Pack - Base Motor y Aro de Volante para PS5 / PS4 /PC - Licencia Oficial PlayStation 5 y Gran Turismo",
+   "v": 3,
+   "via": "ean"
+  },
   "3362934112370": {
    "a": "B0D3MRRD92",
    "t": "2026-11-18T20:01:08.859046+00:00",
@@ -6172,22 +6179,22 @@
    "veredicto": "oferta_real"
   },
   "45992963538": {
-   "ahorro_vs_amazon": 24,
+   "ahorro_vs_amazon": 18,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 525.09,
+   "amz_price": 485.8,
    "amz_title": "Xiaomi Router BE19000 Pro EU",
    "asin": "B0HN2ZFG5K",
    "disponible": true,
    "ean": "6941948709614",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "24 % por debajo del habitual en Amazon (525.09)",
+   "motivo": "18 % por debajo del habitual en Amazon (485.80)",
    "name": "Xiaomi BE19000 Pro WiFi 7 Triple Banda USB 3.0 Router",
    "pp_drop": 17,
    "pp_median": 479.0,
    "pp_price": 399.95,
-   "t": "2026-11-19T22:20:31.563817+00:00",
+   "t": "2026-11-22T00:05:27.168899+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -9672,6 +9679,26 @@
    "t": "2026-11-13T20:40:48.338068+00:00",
    "veredicto": "pvpr_inflado"
   },
+  "46599145141": {
+   "ahorro_vs_amazon": 7,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 599.89,
+   "amz_title": "Thrustmaster T-GT II Pack - Base Motor y Aro de Volante para PS5 / PS4 /PC - Licencia Oficial PlayStation 5 y Gran Turismo",
+   "asin": "B09834HL7F",
+   "disponible": true,
+   "ean": "3362934112295",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "solo 7 % por debajo del habitual en Amazon (599.89)",
+   "name": "Thrustmaster T-GT II Force Feedback PS5 PS4 PC Servo Base + Volante",
+   "pp_drop": 16,
+   "pp_median": 668.95,
+   "pp_price": 558.95,
+   "t": "2026-11-22T00:05:27.168899+00:00",
+   "v": 3,
+   "veredicto": "dudoso"
+  },
   "46599145173": {
    "ean": "6948052904089",
    "lista": "candidates",
@@ -9764,19 +9791,19 @@
    "ahorro_vs_amazon": 16,
    "amz_low30": 149.99,
    "amz_median": null,
-   "amz_price": 126.99,
+   "amz_price": 126.0,
    "amz_title": "XIAOMI Clip, auriculares abiertos con clip, 38 h de reproducción, Dorado",
    "asin": "B0HJYW2GT4",
    "disponible": true,
    "ean": "6939093047620",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "Amazon 126.99 frente a 125.95",
+   "motivo": "Amazon 126.00 frente a 125.95",
    "name": "Auriculares Xiaomi Clip Dorado Bluetooth LHDC 5.0 Hi-Res Gold",
    "pp_drop": 21,
    "pp_median": 159.0,
    "pp_price": 125.95,
-   "t": "2026-11-19T22:20:31.563817+00:00",
+   "t": "2026-11-22T00:05:27.168899+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -9998,14 +10025,14 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-21T23:50:35.131094+00:00",
+ "night_at": "2026-11-22T00:05:27.168899+00:00",
  "resumen": {
   "amazon_mas_barato": 33,
-  "dudoso": 0,
+  "dudoso": 1,
   "no_esta": 15,
   "oferta_real": 21,
   "pvpr_inflado": 4,
   "sin_precio": 11
  },
- "updated": "2026-11-21T23:50:35.131094+00:00"
+ "updated": "2026-11-22T00:05:27.168899+00:00"
 }
