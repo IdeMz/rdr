@@ -2534,8 +2534,20 @@ def test_review_button_updates_the_list_and_removes_the_keyboard(tmp_path, monke
     assert "confianza" in reply and "1 más" in reply
     data = json.loads((tmp_path / "revision.json").read_text(encoding="utf-8"))
     assert data["trusted"] == {"s1": "Tienda Uno"} and data["items"]["a2"]["st"] == "ok"
-    assert [c[0] for c in calls] == ["editMessageReplyMarkup", "editMessageReplyMarkup"]
+    assert [c[0] for c in calls] == ["editMessageReplyMarkup", "editMessageReplyMarkup", "sendMessage"]
+    assert calls[-1][1]["text"].startswith("✅ Aprobada:") and "huecos de tienda" in calls[-1][1]["text"]
     assert deals.handle_review_action(ch, tmp_path / "revision.json", "basura", {}, NOW_IN) == "Botón no válido"
+
+
+def test_review_buttons_confirm_in_the_chat(tmp_path, monkeypatch):
+    calls = _review_env(monkeypatch, tmp_path, [_review_cand("1"), _review_cand("2")])
+    ch = channel(alert_chat_env="TG_A")
+    deals.send_reviews(ch, tmp_path, NOW_IN)
+    calls.clear()
+    deals.handle_review_action(ch, tmp_path / "revision.json", "rv:no:a1", {"message_id": 901}, NOW_IN)
+    deals.handle_review_action(ch, tmp_path / "revision.json", "rv:shop:a2", {"message_id": 902}, NOW_IN)
+    texts = [c[1]["text"] for c in calls if c[0] == "sendMessage"]
+    assert texts[0].startswith("🗑️ Descartada:") and texts[1].startswith("🚫 Tienda descartada:")
 
 
 def test_process_votes_routes_review_buttons_from_the_private_chat(tmp_path, monkeypatch):
@@ -3465,3 +3477,42 @@ def test_listening_stops_at_the_deadline(tmp_path, monkeypatch):
     clock = iter([0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50])
     reads = deals.listen_for_taps(ch, "tag-21", 40, clock=lambda: next(clock), state_dir=tmp_path)
     assert 1 <= reads <= 8
+
+
+def test_listening_also_waits_for_open_aliexpress_reviews(tmp_path, monkeypatch):
+    tg = manual_env(monkeypatch)
+    monkeypatch.setenv("TG_A", "777")
+    ch = channel(name="concriterio", require_spain=False, manual_queue=True, alert_chat_env="TG_A")
+    (tmp_path / "concriterio.json").write_text(json.dumps({"posted": {}}))
+    (tmp_path / "revision.json").write_text(json.dumps({"trusted": {}, "blocked": {}, "items": {"a1": {
+        "src": "a", "id": "1", "st": "sent", "t": NOW_IN.isoformat(), "title": "Producto uno", "price": 10.0,
+        "shop_id": "", "shop": "", "m": 901}}}))
+    ticks = iter(range(0, 1000, 5))
+    polls = []
+
+    def fake(method, token, data, **kw):
+        if method == "getUpdates":
+            polls.append(data["timeout"])
+            if len(polls) == 2:  # el toque llega mientras se escucha
+                tg.updates.append({"update_id": 700, "callback_query": {
+                    "id": "cbr", "data": "rv:ok:a1", "from": {"id": 1},
+                    "message": {"message_id": 901, "chat": {"id": 777}}}})
+        return tg(method, token, data, **kw)
+
+    monkeypatch.setattr(deals, "tg_call", fake)
+    reads = deals.listen_for_taps(ch, "tag-21", 100, clock=lambda: next(ticks), state_dir=tmp_path)
+    data = json.loads((tmp_path / "revision.json").read_text())
+    assert data["items"]["a1"]["st"] == "ok"          # el toque se ha leido y aplicado
+    assert reads >= 2 and all(t > 0 for t in polls)   # se esperaba de verdad
+    assert tg.of("answerCallbackQuery")[0]["text"].startswith("Aprobado")
+    assert any(m["text"].startswith("✅ Aprobada:") for m in tg.of("sendMessage"))
+
+
+def test_listening_does_not_start_without_previews_or_open_reviews(tmp_path, monkeypatch):
+    tg = manual_env(monkeypatch)
+    ch = channel(name="concriterio", require_spain=False, manual_queue=True)
+    (tmp_path / "concriterio.json").write_text(json.dumps({"posted": {}}))
+    (tmp_path / "revision.json").write_text(json.dumps({"trusted": {}, "blocked": {}, "items": {"a1": {
+        "src": "a", "id": "1", "st": "ok", "t": NOW_IN.isoformat(), "title": "Ya aprobado", "price": 10.0}}}))
+    assert deals.listen_for_taps(ch, "tag-21", 100, clock=lambda: 0, state_dir=tmp_path) == 0
+    assert tg.of("getUpdates") == []

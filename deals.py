@@ -1969,6 +1969,13 @@ def handle_review_action(ch: Channel, path: Path, cb: str, msg: dict, now: datet
                 pass
     if also:
         reply += f" · {len(also)} más de la misma tienda"
+    title = html.escape(str((data["items"].get(rid) or {}).get("title") or rid)[:60])
+    if action == "ok":
+        _tell(ch, f"✅ Aprobada: {title}\nSaldrá en uno de los huecos de tienda de hoy.")
+    elif action == "shop":
+        _tell(ch, f"🚫 Tienda descartada: {title}")
+    else:
+        _tell(ch, f"🗑️ Descartada: {title}")
     log.info("%s: revision %s %s -> %s", ch.name, action, rid, reply)
     note(f"{ch.name}: revision {action} {rid}")
     return reply
@@ -2856,7 +2863,8 @@ LISTEN_POLL = 10       # cada llamada a Telegram espera hasta estos segundos a q
 
 def listen_for_taps(ch: Channel, tag: str | None, deadline: float, clock=time.monotonic,
                     state_dir: Path | None = None) -> int:
-    """Mientras haya vistas previas sin contestar, escucha a Telegram para atender el toque al momento.
+    """Mientras haya vistas previas o revisiones de AliExpress sin contestar, escucha a Telegram para atender el
+    toque al momento.
 
     Telegram descarta los toques en botones que no se leen enseguida (pasados un par de minutos ya no llegan); con
     una lectura cada 5 minutos se perdian casi todos. Escuchando tras el tick el toque se atiende en segundos y el
@@ -2865,7 +2873,9 @@ def listen_for_taps(ch: Channel, tag: str | None, deadline: float, clock=time.mo
     reads = 0
     while True:
         now = datetime.now(timezone.utc)
-        if not (_manual_items(state_path, now) or _manual_todo(state_path, now)):
+        state_dir_ = state_path.parent
+        if not (_manual_items(state_path, now) or _manual_todo(state_path, now)
+                or review.has_open(review.load(state_dir_ / review.FILE))):
             break
         left = deadline - clock()
         if left < 2:
