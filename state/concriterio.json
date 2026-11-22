@@ -31,7 +31,7 @@
   "Gatos": "2026-11-21T10:00:59.555709+00:00",
   "Herramientas": "2026-11-22T10:30:56.212290+00:00",
   "Higiene personal": "2026-11-19T14:01:04.176634+00:00",
-  "Iluminación": "2026-11-20T18:30:56.920199+00:00",
+  "Iluminación": "2026-11-22T21:01:10.291765+00:00",
   "Impresoras": "2026-11-21T12:30:56.768648+00:00",
   "Jardín": "2026-11-21T08:30:51.750516+00:00",
   "Juguetes": "2026-11-22T16:01:04.070626+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-22T20:56:42.497147+00:00",
+ "next_at": "2026-11-22T21:27:20.070041+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1734,6 +1734,17 @@
    "title": "Tefal Ingenio Easy On - Juego de 2 Sartenes, NO APTO INDUCCIÓN",
    "v": []
   },
+  "B09TZZXSK2": {
+   "c": "Iluminación",
+   "d": 40,
+   "e": "🪔",
+   "m": 540,
+   "p": 53.99,
+   "s": "ambas",
+   "t": "2026-11-22T21:01:42.512289+00:00",
+   "title": "Govee Lámpara de Pie LED, RGBIC Lámpara Regulable 2700-6500K, Color Negro",
+   "v": []
+  },
   "B09VN62HF3": {
    "c": "Perfumes",
    "d": 27,
@@ -3323,16 +3334,6 @@
    "title": "Gel-Nimbus 28 SneakerHombre",
    "v": []
   },
-  "B0G2XKZW44": {
-   "c": "Relojes",
-   "d": 35,
-   "e": "🕰️",
-   "m": 149,
-   "p": 12.99,
-   "t": "2026-11-08T20:55:55.464054+00:00",
-   "title": "LN LENQIN",
-   "v": []
-  },
   "B0G34BYXH1": {
    "c": "Fotografía",
    "d": 20,
@@ -4062,6 +4063,18 @@
  },
  "reserve": [
   {
+   "a": "B004LZSP6Q",
+   "c": "Iluminación",
+   "e": "🪔",
+   "img": "https://m.media-amazon.com/images/I/51j2LrxB9uL._AC_UL320_.jpg",
+   "n": 10800,
+   "op": 29.99,
+   "p": 22.77,
+   "r": 4.5,
+   "t": "2026-11-22T21:01:10.291765+00:00",
+   "title": "BRILLIANT lámpara Spari uplighter brazo de lectura negro/blanco | 1x A60,"
+  },
+  {
    "a": "B0FX2Q566X",
    "c": "Robots de cocina",
    "e": "🥣",
@@ -4095,6 +4108,6 @@
  "tg_offset": 511048137,
  "x_copy": {
   "day": "2026-11-22",
-  "n": 27
+  "n": 28
  }
 }
