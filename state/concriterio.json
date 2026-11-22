@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-22T08:29:27.089276+00:00",
+ "next_at": "2026-11-22T08:56:52.417572+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -207,16 +207,6 @@
    "s": "busqueda",
    "t": "2026-11-21T18:31:24.496868+00:00",
    "title": "Logitech H390 Auriculares con Cable, USB-A, Color Negro",
-   "v": []
-  },
-  "B005GWRNQQ": {
-   "c": "Perfumes",
-   "d": 31,
-   "e": "🌸",
-   "m": 128,
-   "p": 58.5,
-   "t": "2026-11-08T08:11:16.063062+00:00",
-   "title": "Diesel, LOVERDOSE, Eau De Parfum, Colonia Apasionada y Floral para mujer, Mandarina Fresca, Regaliz Seductor y Cálido Acorde de Vainilla, Larga Duración, Perfume de Lujo para Mujer",
    "v": []
   },
   "B005U94N9A": {
@@ -3935,6 +3925,19 @@
    "u": "https://www.awin1.com/pclick.php?p=46599140093&a=3134713&m=77138",
    "v": []
   },
+  "pp:46599140243": {
+   "auto": true,
+   "c": "",
+   "d": 40,
+   "e": "",
+   "m": 514,
+   "p": 205.95,
+   "st": "POWERPLANET",
+   "t": "2026-11-22T08:30:52.384309+00:00",
+   "title": "Monitor Lenovo Legion 31.5 pulgadas 180Hz Curvo QHD VA Negro Azabache R32qc-30",
+   "u": "https://www.awin1.com/pclick.php?p=46599140243&a=3134713&m=77138",
+   "v": []
+  },
   "pp:46772243198": {
    "auto": true,
    "c": "",
@@ -3951,10 +3954,6 @@
  },
  "problem": {},
  "rejected": {
-  "B0001E3RZ0": {
-   "t": "2026-11-21T08:30:51.750516+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B00T4BHYLY": {
    "t": "2026-11-21T14:30:51.598433+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -3974,10 +3973,6 @@
   "B09V8C4QP9": {
    "t": "2026-11-16T19:55:35.023364+00:00",
    "why": "descartada a mano"
-  },
-  "B0BNLNR62K": {
-   "t": "2026-11-21T08:30:51.750516+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0C78G8ZPR": {
    "t": "2026-11-21T15:31:01.080016+00:00",
@@ -4023,6 +4018,6 @@
  "tg_offset": 511048137,
  "x_copy": {
   "day": "2026-11-22",
-  "n": 3
+  "n": 4
  }
 }
