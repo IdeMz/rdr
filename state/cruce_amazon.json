@@ -938,6 +938,13 @@
     ]
    }
   },
+  "4251442511296": {
+   "a": "B0DG612SH5",
+   "t": "2026-11-22T17:30:50.627813+00:00",
+   "title": "Endgame Gear XM2w 4k Ratón Gaming Inalámbrico, Blanco",
+   "v": 3,
+   "via": "ean"
+  },
   "4260499852320": {
    "a": "B08S7MYYL7",
    "t": "2026-11-13T20:40:48.338068+00:00",
@@ -3626,22 +3633,22 @@
    "veredicto": "sin_precio"
   },
   "39633853398": {
-   "ahorro_vs_amazon": 31,
+   "ahorro_vs_amazon": 28,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 44.56,
+   "amz_price": 42.72,
    "amz_title": "JVC HA-NP35T Auricolare True Wireless Stereo (TWS) In-ear Musica e Chiamate Bluetooth Bianco",
    "asin": "B0B2CP8722",
    "disponible": true,
    "ean": "4975769470707",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "31 % por debajo del habitual en Amazon (44.56)",
+   "motivo": "28 % por debajo del habitual en Amazon (42.72)",
    "name": "JVC HA-NP35T Blanco TWS Bluetooth 5.1 17h IPX4 Auriculares inalámbricos",
    "pp_drop": 35,
    "pp_median": 47.95,
    "pp_price": 30.95,
-   "t": "2026-11-20T17:01:05.412850+00:00",
+   "t": "2026-11-22T17:30:50.627813+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -5539,6 +5546,26 @@
    "pp_price": 55.95,
    "t": "2026-11-13T22:35:19.548446+00:00",
    "veredicto": "amazon_mas_barato"
+  },
+  "45948306722": {
+   "ahorro_vs_amazon": 40,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 72.96,
+   "amz_title": "Endgame Gear XM2w 4k Ratón Gaming Inalámbrico, Blanco",
+   "asin": "B0DG612SH5",
+   "disponible": true,
+   "ean": "4251442511296",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "40 % por debajo del habitual en Amazon (72.96)",
+   "name": "Endgame Gear XM2w White Frost 4K Wireless 2,4 GHz 26000 DPI 7 botones 62 g Ratón gaming inalámbrico",
+   "pp_drop": 31,
+   "pp_median": 63.95,
+   "pp_price": 43.95,
+   "t": "2026-11-22T17:30:50.627813+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
   },
   "45948306723": {
    "ahorro_vs_amazon": null,
@@ -10203,9 +10230,9 @@
   "amazon_mas_barato": 26,
   "dudoso": 2,
   "no_esta": 17,
-  "oferta_real": 24,
+  "oferta_real": 25,
   "pvpr_inflado": 7,
   "sin_precio": 9
  },
- "updated": "2026-11-22T17:01:01.698969+00:00"
+ "updated": "2026-11-22T17:30:50.627813+00:00"
 }
