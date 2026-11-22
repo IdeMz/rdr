@@ -4,7 +4,7 @@
   "Accesorios de móvil": "2026-11-21T19:01:06.061997+00:00",
   "Afeitado y depilación": "2026-11-17T20:15:50.874512+00:00",
   "Almacenamiento": "2026-11-22T12:01:04.879461+00:00",
-  "Altavoces": "2026-11-21T07:31:01.189028+00:00",
+  "Altavoces": "2026-11-22T14:30:56.434630+00:00",
   "Aspiradoras": "2026-11-20T13:01:06.821120+00:00",
   "Auriculares": "2026-11-21T18:30:52.916571+00:00",
   "Barras de sonido": "2026-11-21T14:01:11.161162+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-22T14:26:19.294599+00:00",
+ "next_at": "2026-11-22T14:59:05.809793+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1922,16 +1922,6 @@
    "title": "Yves Rocher Eau de Parfum para Mujeres Verte Envolée PLEINES NATURES 100 ml",
    "v": []
   },
-  "B0BTJ6QWM7": {
-   "c": "Videojuegos",
-   "d": 28,
-   "e": "🎮",
-   "m": 138,
-   "p": 15.83,
-   "t": "2026-11-08T14:01:31.780178+00:00",
-   "title": "Gal Guardians: Demon Purge - PlayStation 5",
-   "v": []
-  },
   "B0BV288KNZ": {
    "c": "Accesorios de coche",
    "d": 26,
@@ -2350,6 +2340,17 @@
    "s": "busqueda",
    "t": "2026-11-12T18:01:26.910811+00:00",
    "title": "illy, Café en Grano INTENSO, 500g",
+   "v": []
+  },
+  "B0D6W8GSL3": {
+   "c": "Altavoces",
+   "d": 44,
+   "e": "🔊",
+   "m": 526,
+   "p": 99.95,
+   "s": "ofertas",
+   "t": "2026-11-22T14:31:24.628144+00:00",
+   "title": "Bose SoundLink Flex (2.ª Gen.), Altavoz portátil inalámbrico con Bluetooth pequeño y Potente para Fiestas al Aire Libre, hasta 12 h de autonomía, Resistente al Agua IP67 y al Polvo, Arenisca",
    "v": []
   },
   "B0D7BSGM9H": {
@@ -3989,10 +3990,6 @@
  },
  "problem": {},
  "rejected": {
-  "B00T4BHYLY": {
-   "t": "2026-11-21T14:30:51.598433+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B01LZDYR7N": {
    "t": "2026-11-21T15:01:05.254496+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4011,10 +4008,6 @@
   },
   "B0C78G8ZPR": {
    "t": "2026-11-21T15:31:01.080016+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0CXPPNL5C": {
-   "t": "2026-11-21T14:30:51.598433+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0CYTCZXFH": {
@@ -4077,6 +4070,6 @@
  "tg_offset": 511048137,
  "x_copy": {
   "day": "2026-11-22",
-  "n": 14
+  "n": 15
  }
 }
