@@ -53,7 +53,7 @@
   "Proyectores": "2026-11-21T14:30:51.598433+00:00",
   "Redes y wifi": "2026-11-22T08:01:00.717908+00:00",
   "Relojes": "2026-11-22T15:01:08.377622+00:00",
-  "Robots de cocina": "2026-11-21T13:01:04.571347+00:00",
+  "Robots de cocina": "2026-11-22T20:30:52.079808+00:00",
   "Salud": "2026-11-20T14:30:58.924631+00:00",
   "Smartwatch": "2026-11-21T16:01:07.900587+00:00",
   "Suplementos": "2026-11-22T20:00:59.130943+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-22T20:26:32.695297+00:00",
+ "next_at": "2026-11-22T20:56:42.497147+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -839,16 +839,6 @@
    "s": "ambas",
    "t": "2026-11-16T18:56:28.250492+00:00",
    "title": "Cecotec Microondas ProClean 3030. 700 W, Capacidad 20L, Revestimiento Ready2Clean, 6 Niveles Funcionamiento, Temporizador 30 min, Modo Descongelar, Color Negro",
-   "v": []
-  },
-  "B07K142D5Q": {
-   "c": "Suplementos",
-   "d": 11,
-   "e": "💊",
-   "m": 148,
-   "p": 34.9,
-   "t": "2026-11-08T20:24:03.737762+00:00",
-   "title": "SWISSE - Omega 3 IFOS Certificado 5 Estrellas, 200 Cápsulas Blandas con 1500 mg de Aceite de Pescado, Vitamina E, 233 mg EPA y 135 mg DHA por Dosis - Suplementos para Cerebro y Corazón, Made in Italy",
    "v": []
   },
   "B07L5BKBZV": {
@@ -2194,6 +2184,17 @@
    "p": 37.99,
    "t": "2026-11-09T15:46:06.341582+00:00",
    "title": "adidas",
+   "v": []
+  },
+  "B0CLY983L7": {
+   "c": "Robots de cocina",
+   "d": 33,
+   "e": "🥣",
+   "m": 539,
+   "p": 39.99,
+   "s": "ambas",
+   "t": "2026-11-22T20:31:28.441913+00:00",
+   "title": "Ninja Blast Batidora Portátil, Minibatidora sin Cable, Recargable",
    "v": []
   },
   "B0CM8Q7WX5": {
@@ -4038,6 +4039,10 @@
    "t": "2026-11-22T15:01:08.377622+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B07SB18XRL": {
+   "t": "2026-11-22T20:30:52.079808+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B09V8C4QP9": {
    "t": "2026-11-16T19:55:35.023364+00:00",
    "why": "descartada a mano"
@@ -4057,6 +4062,18 @@
  },
  "reserve": [
   {
+   "a": "B0FX2Q566X",
+   "c": "Robots de cocina",
+   "e": "🥣",
+   "img": "https://m.media-amazon.com/images/I/61XWVJEVNAL._AC_UL320_.jpg",
+   "n": 155,
+   "op": 99.9,
+   "p": 54.9,
+   "r": 4.5,
+   "t": "2026-11-22T20:30:52.079808+00:00",
+   "title": "Nutribullet Pro 900 - Batidora Personal Multifunción, Blender Frutas y Verduras, Diseño Compacto, Fácil de Usar y Limpieza Rápida, Extracción de Nutrientes, 900W, Mineral Gris Paloma (NB904MASN)"
+  },
+  {
    "a": "B0DZ2Z9TMK",
    "c": "Videojuegos",
    "e": "🎮",
@@ -4067,30 +4084,6 @@
    "r": 4.6,
    "t": "2026-11-22T18:01:40.272854+00:00",
    "title": "Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles 2 - SWITCH"
-  },
-  {
-   "a": "B01N6CJ1QW",
-   "c": "Lego",
-   "e": "🧱",
-   "img": "https://m.media-amazon.com/images/I/61oCbN8IQwL._AC_UL320_.jpg",
-   "n": 19600,
-   "op": 29.99,
-   "p": 21.99,
-   "r": 4.9,
-   "t": "2026-11-22T17:30:50.627813+00:00",
-   "title": "LEGO Botanicals Miniorquídea 10343"
-  },
-  {
-   "a": "B0CTCQKJ1B",
-   "c": "Cafeteras",
-   "e": "☕",
-   "img": "https://m.media-amazon.com/images/I/61wUUgUQYoL._AC_UL320_.jpg",
-   "n": 2200,
-   "op": 719.99,
-   "p": 516.6,
-   "r": 4.4,
-   "t": "2026-11-22T17:01:01.698969+00:00",
-   "title": "Philips 5500 Cafetera Superautomática LatteGo, 20 bebidas, Gris"
   }
  ],
  "store_skip": {
@@ -4102,6 +4095,6 @@
  "tg_offset": 511048137,
  "x_copy": {
   "day": "2026-11-22",
-  "n": 26
+  "n": 27
  }
 }

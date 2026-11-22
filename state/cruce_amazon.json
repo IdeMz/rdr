@@ -1154,6 +1154,21 @@
     ]
    }
   },
+  "4711377421379": {
+   "a": "",
+   "t": "2026-11-22T20:30:52.079808+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Junsun Cargador EV Portátil Tipo 2 3,6 kW, 6A-16A Corriente Ajustable, Cargador para Coche Eléctrico",
+     "bokman Cargador Coche Electrico Tipo 2 3,68kW 8 Metros",
+     "Cargador EV Tipo 2 Schuko Portátil Wallbox con Bolsa de Transporte para Todos los Vehículos Eléctric"
+    ]
+   }
+  },
   "4711387078389": {
    "a": "B0C4FY8DC6",
    "t": "2026-11-16T15:05:39.512603+00:00",
@@ -6419,7 +6434,7 @@
    "pp_drop": 16,
    "pp_median": 387.95,
    "pp_price": 325.95,
-   "t": "2026-11-19T23:05:22.619759+00:00",
+   "t": "2026-11-22T20:30:52.079808+00:00",
    "v": 3,
    "veredicto": "no_esta",
    "vistos": {
@@ -9838,6 +9853,28 @@
     ]
    }
   },
+  "46599143712": {
+   "ean": "4711377421379",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Cargador de coche eléctrico MSI EVSE EZgo Gris 3,6kW Tipo 2 Cable 5m 16A monofásico pantalla LCD IP66",
+   "pp_drop": 18,
+   "pp_median": 229.89,
+   "pp_price": 189.0,
+   "t": "2026-11-22T20:30:52.079808+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Junsun Cargador EV Portátil Tipo 2 3,6 kW, 6A-16A Corriente Ajustable, Cargador para Coche Eléctrico",
+     "bokman Cargador Coche Electrico Tipo 2 3,68kW 8 Metros",
+     "Cargador EV Tipo 2 Schuko Portátil Wallbox con Bolsa de Transporte para Todos los Vehículos Eléctric"
+    ]
+   }
+  },
   "46599143782": {
    "ahorro_vs_amazon": -20,
    "amz_low30": null,
@@ -10283,10 +10320,10 @@
  "resumen": {
   "amazon_mas_barato": 28,
   "dudoso": 2,
-  "no_esta": 17,
+  "no_esta": 18,
   "oferta_real": 25,
   "pvpr_inflado": 7,
   "sin_precio": 9
  },
- "updated": "2026-11-22T20:00:59.130943+00:00"
+ "updated": "2026-11-22T20:30:52.079808+00:00"
 }
