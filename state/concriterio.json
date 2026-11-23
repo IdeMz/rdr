@@ -5,7 +5,7 @@
   "Afeitado y depilación": "2026-11-23T07:01:04.565029+00:00",
   "Almacenamiento": "2026-11-23T16:01:16.579464+00:00",
   "Altavoces": "2026-11-22T14:30:56.434630+00:00",
-  "Aspiradoras": "2026-11-20T13:01:06.821120+00:00",
+  "Aspiradoras": "2026-11-23T19:31:10.357756+00:00",
   "Auriculares": "2026-11-21T18:30:52.916571+00:00",
   "Barras de sonido": "2026-11-21T14:01:11.161162+00:00",
   "Bebé": "2026-11-23T11:05:30.542682+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-23T19:29:30.181492+00:00",
+ "next_at": "2026-11-23T19:58:01.421758+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -3685,6 +3685,17 @@
    "title": "Proyector 4K【Alto Brillo 2000ANSI/VIDAA SO más rápido/50W Dolby Audio】Proyector Netflix Incluido TV en Directo, FHD1080P, HDR10, Auto Focus/Keystone, Control por Voz, BT5.4, para Exterior/Cine en Casa",
    "v": []
   },
+  "B0GXWTLMJT": {
+   "c": "Aspiradoras",
+   "d": 46,
+   "e": "🧹",
+   "m": 569,
+   "p": 379.0,
+   "s": "busqueda",
+   "t": "2026-11-23T19:33:46.196672+00:00",
+   "title": "iRobot Roomba Plus 575 Combo + Base AutoWash multifunción, 25KPa, Mopas DualClean PerfectEdge, Lava y Seca con Calor, IA Precision Vision, SmartClean, Clearview Pro LiDAR, 90 Días Autonomía, Blanco",
+   "v": []
+  },
   "B0GYFM8Z87": {
    "c": "Cuidado del cabello",
    "d": 36,
@@ -4227,6 +4238,18 @@
  },
  "reserve": [
   {
+   "a": "B0FL2JGPYH",
+   "c": "Aspiradoras",
+   "e": "🧹",
+   "img": "https://m.media-amazon.com/images/I/9189DpGCbIL._AC_UL320_.jpg",
+   "n": 819,
+   "op": 118.29,
+   "p": 84.9,
+   "r": 4.2,
+   "t": "2026-11-23T19:31:10.357756+00:00",
+   "title": "Cecotec Robot Aspirador Navegación Giroscópica Conga M10 Advance Aqua Pro"
+  },
+  {
    "a": "B0F2FXRH8D",
    "c": "Zapatillas",
    "e": "👟",
@@ -4249,18 +4272,6 @@
    "r": 4.4,
    "t": "2026-11-23T18:01:07.710591+00:00",
    "title": "Freidora de aire VIOMI VORTEX 7L Air Fryer, 2000 W, Calor Superior e Inferior, 12 Programas De Cocción Preestablecidos Con Ventana De Visualización, Antiadherente, Apta Para Lavavajillas, Negra"
-  },
-  {
-   "a": "B0CHYKNH5G",
-   "c": "Cafeteras",
-   "e": "☕",
-   "img": "https://m.media-amazon.com/images/I/61-FAgpdsBL._AC_UL320_.jpg",
-   "n": 353,
-   "op": 734.9,
-   "p": 568.98,
-   "r": 4.3,
-   "t": "2026-11-23T16:31:04.905592+00:00",
-   "title": "De'Longhi Dinamica Plus ECAM382.70.B, Máquina Automática de Café en Grano, Máquina Cappuccino con LatteCrema Hot, Cafetera Espresso, Taza con 18 Recetas, Pantalla TFT 3,5'', 1450W, Negro"
   }
  ],
  "store_skip": {
@@ -4276,6 +4287,6 @@
  "tg_offset": 511048143,
  "x_copy": {
   "day": "2026-11-23",
-  "n": 24
+  "n": 25
  }
 }
