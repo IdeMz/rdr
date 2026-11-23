@@ -7174,7 +7174,7 @@
    "pp_drop": 32,
    "pp_median": 42.96,
    "pp_price": 29.04,
-   "t": "2026-11-21T23:05:27.481303+00:00",
+   "t": "2026-11-23T23:35:30.677145+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -9288,11 +9288,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "SSD Silicon Power Ace A55 4TB 2.5 pulgadas SATA III Negro",
-   "pista": "1828552 bytes; 6 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1816902 bytes; 5 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 25,
    "pp_median": 553.95,
    "pp_price": 416.95,
-   "t": "2026-11-23T17:30:52.802500+00:00",
+   "t": "2026-11-23T23:35:30.677145+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -9499,11 +9499,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Moulinex Easy Fry XL Surface 4L 2200W 10 programas Gris AL402H pantalla táctil Freidora de aire",
-   "pista": "1321699 bytes; 9 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1327441 bytes; 9 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 33,
    "pp_median": 225.96,
    "pp_price": 150.95,
-   "t": "2026-11-23T17:30:52.802500+00:00",
+   "t": "2026-11-23T23:35:30.677145+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -10459,7 +10459,7 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-23T23:20:42.191775+00:00",
+ "night_at": "2026-11-23T23:35:30.677145+00:00",
  "resumen": {
   "amazon_mas_barato": 29,
   "dudoso": 0,
@@ -10468,5 +10468,5 @@
   "pvpr_inflado": 4,
   "sin_precio": 11
  },
- "updated": "2026-11-23T23:20:42.191775+00:00"
+ "updated": "2026-11-23T23:35:30.677145+00:00"
 }
