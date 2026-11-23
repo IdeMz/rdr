@@ -6861,7 +6861,7 @@
    "pp_drop": 33,
    "pp_median": 234.95,
    "pp_price": 156.95,
-   "t": "2026-11-21T14:30:51.598433+00:00",
+   "t": "2026-11-23T14:35:35.101359+00:00",
    "v": 3,
    "veredicto": "no_esta",
    "vistos": {
@@ -7393,19 +7393,19 @@
    "ahorro_vs_amazon": -1,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 56.69,
+   "amz_price": 56.67,
    "amz_title": "Carte Mère ASRock H610M-HDV/M.2+ DDR5 (Intel LGA 1700) Micro ATX",
    "asin": "B0CGQ4HRSM",
    "disponible": true,
    "ean": "4710483936661",
    "encontrado_por": "modelo",
    "lista": "candidates",
-   "motivo": "Amazon 56.69 frente a 57.21",
+   "motivo": "Amazon 56.67 frente a 57.21",
    "name": "ASRock H610M-HDV Intel H610 LGA 1700 DDR4 Micro-ATX Negro Placa base",
    "pp_drop": 43,
    "pp_median": 99.95,
    "pp_price": 57.21,
-   "t": "2026-11-21T14:30:51.598433+00:00",
+   "t": "2026-11-23T14:35:35.101359+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -10327,5 +10327,5 @@
   "pvpr_inflado": 5,
   "sin_precio": 11
  },
- "updated": "2026-11-23T14:05:36.956011+00:00"
+ "updated": "2026-11-23T14:35:35.101359+00:00"
 }

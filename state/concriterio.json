@@ -9,7 +9,7 @@
   "Auriculares": "2026-11-21T18:30:52.916571+00:00",
   "Barras de sonido": "2026-11-21T14:01:11.161162+00:00",
   "Bebé": "2026-11-23T11:05:30.542682+00:00",
-  "Bricolaje": "2026-11-22T09:01:04.030897+00:00",
+  "Bricolaje": "2026-11-23T14:35:35.101359+00:00",
   "Cafeteras": "2026-11-22T17:01:01.698969+00:00",
   "Café y cápsulas": "2026-11-22T07:01:03.565904+00:00",
   "Camping y montaña": "2026-11-21T14:30:51.598433+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-23T14:34:58.435046+00:00",
+ "next_at": "2026-11-23T15:02:35.812369+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -188,6 +188,17 @@
    "s": "ofertas",
    "t": "2026-11-14T11:41:16.404514+00:00",
    "title": "ESN Designer Whey Protein, Chocolate, 1 kg",
+   "v": []
+  },
+  "B0051E16LW": {
+   "c": "Bricolaje",
+   "d": 36,
+   "e": "🪛",
+   "m": 559,
+   "p": 52.99,
+   "s": "ambas",
+   "t": "2026-11-23T14:36:14.732604+00:00",
+   "title": "Brüder Mannesmann Surtido de herramientas 89 pzs maletín plegable | M29085",
    "v": []
   },
   "B00564NI9U": {
@@ -4110,6 +4121,10 @@
    "t": "2026-11-22T15:01:08.377622+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B06XCBPFRN": {
+   "t": "2026-11-23T14:35:35.101359+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B07SB18XRL": {
    "t": "2026-11-22T20:30:52.079808+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4153,6 +4168,18 @@
  },
  "reserve": [
   {
+   "a": "B008DHZXY0",
+   "c": "Bricolaje",
+   "e": "🪛",
+   "img": "https://m.media-amazon.com/images/I/71O45Plwr6L._AC_UL320_.jpg",
+   "n": 6300,
+   "op": 30.95,
+   "p": 22.75,
+   "r": 4.6,
+   "t": "2026-11-23T14:35:35.101359+00:00",
+   "title": "STANLEY Caja de almacenamiento multiusos, organizador 39 cajones, 1-93-981"
+  },
+  {
    "a": "B08H2G67JK",
    "c": "Maquillaje",
    "e": "💄",
@@ -4186,6 +4213,6 @@
  "tg_offset": 511048143,
  "x_copy": {
   "day": "2026-11-23",
-  "n": 14
+  "n": 15
  }
 }
