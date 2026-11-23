@@ -2947,6 +2947,13 @@
    "v": 3,
    "via": "ean"
   },
+  "8806090572227": {
+   "a": "B08THW4S3T",
+   "t": "2026-11-23T15:05:33.976238+00:00",
+   "title": "Samsung 980 500 GB PCIe 3.0 (up to 3500mbs) NVMe M.2 Internal Solid State Drive (SSD) (MZ-V8V500BW)",
+   "v": 3,
+   "via": "ean"
+  },
   "8806094215038": {
    "a": "B0B9C4DKKG",
    "t": "2026-11-18T15:01:26.987987+00:00",
@@ -4918,24 +4925,24 @@
    }
   },
   "45403202111": {
-   "ahorro_vs_amazon": 9,
+   "ahorro_vs_amazon": -1,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 1103.18,
+   "amz_price": 995.0,
    "amz_title": "Acer HL1810U - Proyector ultracorto de 3500 lúmenes ANSI DLP UHD 4K (3840 x 2160) 3D Blanco",
    "asin": "B0HPVWX8SV",
    "disponible": true,
    "ean": "4711474818300",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "antes 1298.95 en PowerPlanet, pero en Amazon suele estar a 1103.18",
+   "motivo": "Amazon 995.00 frente a 1000.95",
    "name": "Acer HL1810U Láser RGB 4K UHD Tiro Ultracorto 0,25:1 3500 lúmenes ANSI altavoz 10W Proyector",
    "pp_drop": 23,
    "pp_median": 1298.95,
    "pp_price": 1000.95,
-   "t": "2026-11-21T15:01:05.254496+00:00",
+   "t": "2026-11-23T15:05:33.976238+00:00",
    "v": 3,
-   "veredicto": "pvpr_inflado"
+   "veredicto": "amazon_mas_barato"
   },
   "45403202116": {
    "ean": "4711474096838",
@@ -9223,6 +9230,27 @@
    "v": 3,
    "veredicto": "oferta_real"
   },
+  "46599141521": {
+   "ahorro_vs_amazon": null,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": null,
+   "amz_title": "Samsung 980 500 GB PCIe 3.0 (up to 3500mbs) NVMe M.2 Internal Solid State Drive (SSD) (MZ-V8V500BW)",
+   "asin": "B08THW4S3T",
+   "disponible": true,
+   "ean": "8806090572227",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "en Amazon pero sin precio o no disponible",
+   "name": "Samsung 980 500GB NVMe M.2 PCIe 3.0 3500MB/s SSD",
+   "pista": "2189154 bytes; 13 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pp_drop": 24,
+   "pp_median": 264.95,
+   "pp_price": 200.94,
+   "t": "2026-11-23T15:05:33.976238+00:00",
+   "v": 3,
+   "veredicto": "sin_precio"
+  },
   "46599141566": {
    "ahorro_vs_amazon": -70,
    "amz_low30": null,
@@ -10320,12 +10348,12 @@
  },
  "night_at": "2026-11-23T06:35:25.984196+00:00",
  "resumen": {
-  "amazon_mas_barato": 26,
+  "amazon_mas_barato": 27,
   "dudoso": 0,
   "no_esta": 15,
   "oferta_real": 24,
-  "pvpr_inflado": 5,
-  "sin_precio": 11
+  "pvpr_inflado": 4,
+  "sin_precio": 12
  },
- "updated": "2026-11-23T14:35:35.101359+00:00"
+ "updated": "2026-11-23T15:05:33.976238+00:00"
 }

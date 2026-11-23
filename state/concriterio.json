@@ -47,7 +47,7 @@
   "Patinetes": "2026-11-22T21:30:54.359902+00:00",
   "Pequeño electrodoméstico": "2026-11-22T14:01:03.209389+00:00",
   "Perfumes": "2026-11-22T15:30:58.871968+00:00",
-  "Periféricos": "2026-11-22T11:01:05.146615+00:00",
+  "Periféricos": "2026-11-23T15:05:33.976238+00:00",
   "Perros": "2026-11-22T13:01:16.626545+00:00",
   "Portátiles": "2026-11-21T17:01:04.157306+00:00",
   "Proyectores": "2026-11-23T12:35:32.005006+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-23T15:02:35.812369+00:00",
+ "next_at": "2026-11-23T15:30:46.952219+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1149,6 +1149,17 @@
    "title": "Dodot Pañales Bebé Sensitive, Talla 2 (4-8 kg), 240 Pañales + Regalo de 40 Toallitas Aqua Pure 99% Agua, Hasta 12 h De Protección Antifugas y Cuidado de la Piel, Pack Mensual",
    "v": []
   },
+  "B082YRCL4T": {
+   "c": "Periféricos",
+   "d": 48,
+   "e": "⌨️",
+   "m": 560,
+   "p": 41.31,
+   "s": "ambas",
+   "t": "2026-11-23T15:05:57.742255+00:00",
+   "title": "SteelSeries Apex 3 - Teclado Gaming - Iluminación RGB de 10 zonas - Resistencia al agua IP32 - Reposamuñecas magnético superior - Teclado QWERTY Español",
+   "v": []
+  },
   "B083ZJZ8K2": {
    "c": "Cuidado del cabello",
    "d": 38,
@@ -1302,16 +1313,6 @@
    "s": "ambas",
    "t": "2026-11-21T13:31:24.569822+00:00",
    "title": "Tapo L530E - Bombilla Inteligente WiFi, RGB Multicolor, 800lm, 8.3W, E27",
-   "v": []
-  },
-  "B08GV4YYV7": {
-   "c": "Almacenamiento",
-   "d": 22,
-   "e": "💾",
-   "m": 165,
-   "p": 358.23,
-   "t": "2026-11-09T14:36:02.093294+00:00",
-   "title": "SanDisk Extreme pro SSD externo Portátil 2 TB (Disco duro externo SSD con velodidad de lectura e de escritura hasta 2000 MB/s, 256-bit AES hardware encryption, Clasificación IP65)",
    "v": []
   },
   "B08GVXR7V9": {
@@ -4117,10 +4118,6 @@
  },
  "problem": {},
  "rejected": {
-  "B004KPKUBU": {
-   "t": "2026-11-22T15:01:08.377622+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B06XCBPFRN": {
    "t": "2026-11-23T14:35:35.101359+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4213,6 +4210,6 @@
  "tg_offset": 511048143,
  "x_copy": {
   "day": "2026-11-23",
-  "n": 15
+  "n": 16
  }
 }
