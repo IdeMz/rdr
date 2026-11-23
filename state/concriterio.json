@@ -22,7 +22,7 @@
   "Cuidado del cabello": "2026-11-22T18:30:51.920701+00:00",
   "Cámaras de seguridad": "2026-11-21T10:30:51.209383+00:00",
   "Decoración navideña": "2026-11-20T08:30:53.150165+00:00",
-  "Domótica": "2026-11-21T13:30:55.681011+00:00",
+  "Domótica": "2026-11-23T09:01:11.110279+00:00",
   "Droguería": "2026-11-22T10:01:06.437573+00:00",
   "Fitness en casa": "2026-11-22T19:30:51.638631+00:00",
   "Fotografía": "2026-11-20T16:01:13.016736+00:00",
@@ -30,7 +30,7 @@
   "Gaming": "2026-11-21T17:30:53.662722+00:00",
   "Gatos": "2026-11-21T10:00:59.555709+00:00",
   "Herramientas": "2026-11-22T10:30:56.212290+00:00",
-  "Higiene personal": "2026-11-19T14:01:04.176634+00:00",
+  "Higiene personal": "2026-11-23T09:01:11.110279+00:00",
   "Iluminación": "2026-11-22T21:01:10.291765+00:00",
   "Impresoras": "2026-11-21T12:30:56.768648+00:00",
   "Jardín": "2026-11-21T08:30:51.750516+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-23T08:57:05.781907+00:00",
+ "next_at": "2026-11-23T09:27:07.894794+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -307,6 +307,17 @@
    "s": "ofertas",
    "t": "2026-11-14T21:36:06.326323+00:00",
    "title": "CATEYE Kit-Front, Trasera y Rueda Luces y reflectores, Ciclismo – Negro, no tamaño",
+   "v": []
+  },
+  "B00FONFFQ2": {
+   "c": "Higiene personal",
+   "d": 47,
+   "e": "🪥",
+   "m": 548,
+   "p": 10.49,
+   "s": "busqueda",
+   "t": "2026-11-23T09:02:01.306798+00:00",
+   "title": "Rexona Desodorante Stick Antitranspirante para hombre Cobalt Dry 50ml - Pack de 6",
    "v": []
   },
   "B00KIDBV0M": {
@@ -2385,16 +2396,6 @@
    "title": "iZEEKER 3 Canales 4K Dashcam con Tarjeta de 32GB GRATIS, Cámara Coche Frontal, Trasera e Interior 4K+1080P+1080P con WDR, Visión Nocturna IR, WiFi 6, Ángulo 170°, G-Sensor, Modo de Estacionamiento 24H",
    "v": []
   },
-  "B0D6NLJHQ3": {
-   "c": "Domótica",
-   "d": 24,
-   "e": "💡",
-   "m": 156,
-   "p": 38.16,
-   "t": "2026-11-09T08:46:01.559437+00:00",
-   "title": "Philips Hue Bombilla Foco GU10, 2 Uds.",
-   "v": []
-  },
   "B0D6RW3DH5": {
    "c": "Café y cápsulas",
    "d": 27,
@@ -4059,6 +4060,10 @@
    "t": "2026-11-22T20:30:52.079808+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B07Z5JD3T4": {
+   "t": "2026-11-23T09:01:11.110279+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B09V8C4QP9": {
    "t": "2026-11-16T19:55:35.023364+00:00",
    "why": "descartada a mano"
@@ -4081,6 +4086,10 @@
   },
   "B0FQGPHDT7": {
    "t": "2026-11-22T09:30:55.932995+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0G52MX15Q": {
+   "t": "2026-11-23T09:01:11.110279+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0HHM2Z9GN": {
@@ -4135,6 +4144,6 @@
  "tg_offset": 511048137,
  "x_copy": {
   "day": "2026-11-23",
-  "n": 4
+  "n": 5
  }
 }
