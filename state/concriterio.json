@@ -37,7 +37,7 @@
   "Juguetes": "2026-11-22T16:01:04.070626+00:00",
   "Lego": "2026-11-22T17:30:50.627813+00:00",
   "Limpieza del hogar": "2026-11-21T09:30:52.306969+00:00",
-  "Maquillaje": "2026-11-21T15:31:01.080016+00:00",
+  "Maquillaje": "2026-11-23T13:35:33.211339+00:00",
   "Menaje de cocina": "2026-11-22T19:00:59.176158+00:00",
   "Mochilas y maletas": "2026-11-20T07:30:55.091992+00:00",
   "Monitores": "2026-11-20T09:30:54.246285+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-23T13:34:56.849960+00:00",
+ "next_at": "2026-11-23T14:02:36.437276+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2191,16 +2191,6 @@
    "title": "Bestier Escritorio en Forma de L con Tomas de Corriente y Luces LED, Escritorio Esquinero con Estantes, Reversible para Ordenador para el Hogar, Oficina, Dormitorio, Espacio Pequeño, 106,5 cm",
    "v": []
   },
-  "B0CHDV5VFR": {
-   "c": "Iluminación",
-   "d": 23,
-   "e": "🪔",
-   "m": 163,
-   "p": 15.43,
-   "t": "2026-11-09T13:26:04.092605+00:00",
-   "title": "Luz LED Armario 30cm con Sensor de Movimiento 3000mAh USB-C Recargable，2",
-   "v": []
-  },
   "B0CJZF9VBD": {
    "c": "Ciclismo",
    "d": 36,
@@ -2374,6 +2364,17 @@
    "s": "ofertas",
    "t": "2026-11-18T19:31:22.411701+00:00",
    "title": "UGREEN Soporte Móvil Coche MagSafe 360° Rotación  Suporte Telemovel Carro",
+   "v": []
+  },
+  "B0D35X3H8C": {
+   "c": "Maquillaje",
+   "d": 38,
+   "e": "💄",
+   "m": 557,
+   "p": 9.22,
+   "s": "ofertas",
+   "t": "2026-11-23T13:36:08.315796+00:00",
+   "title": "KIKO Milano Unlimited Double Touch - Tono 103 Natural Rose",
    "v": []
   },
   "B0D3X3YKVF": {
@@ -4151,6 +4152,18 @@
  },
  "reserve": [
   {
+   "a": "B08H2G67JK",
+   "c": "Maquillaje",
+   "e": "💄",
+   "img": "https://m.media-amazon.com/images/I/714EVS7nzXL._AC_UL320_.jpg",
+   "n": 27300,
+   "op": 7.99,
+   "p": 5.14,
+   "r": 4.2,
+   "t": "2026-11-23T13:35:33.211339+00:00",
+   "title": "OULAC Pintalabios Oro Desnudo Brillo Metálico, Brillo 3D de Larga Duración, Barras de Labios de Alta Pigmentación y Cobertura Total, Fórmula Cremosa e Hidratante, Vegan, 4.3 g, (10) Sahara Gold"
+  },
+  {
    "a": "B0D1Y883G2",
    "c": "eReaders",
    "e": "📖",
@@ -4173,18 +4186,6 @@
    "r": 4.4,
    "t": "2026-11-23T11:05:30.542682+00:00",
    "title": "HelloBaby Cámara Vigilancia Bebé sin WiFi, Pantalla 3.2\" IPS, Cámara PTZ"
-  },
-  {
-   "a": "B08NCPXCP9",
-   "c": "Textil hogar",
-   "e": "🧺",
-   "img": "https://m.media-amazon.com/images/I/619NYphfUnL._AC_UL320_.jpg",
-   "n": 4300,
-   "op": 21.9,
-   "p": 17.49,
-   "r": 4.6,
-   "t": "2026-11-23T10:35:32.957931+00:00",
-   "title": "Todocama - Edredón/Relleno nórdico de Fibra antiácaros, Otoño-Invierno, 300 g/m², Color Blanco, 80 x 160 cm"
   }
  ],
  "store_skip": {
@@ -4196,6 +4197,6 @@
  "tg_offset": 511048143,
  "x_copy": {
   "day": "2026-11-23",
-  "n": 12
+  "n": 13
  }
 }
