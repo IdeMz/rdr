@@ -10,7 +10,7 @@
   "Barras de sonido": "2026-11-21T14:01:11.161162+00:00",
   "Bebé": "2026-11-23T11:05:30.542682+00:00",
   "Bricolaje": "2026-11-23T14:35:35.101359+00:00",
-  "Cafeteras": "2026-11-22T17:01:01.698969+00:00",
+  "Cafeteras": "2026-11-23T16:31:04.905592+00:00",
   "Café y cápsulas": "2026-11-22T07:01:03.565904+00:00",
   "Camping y montaña": "2026-11-21T14:30:51.598433+00:00",
   "Cargadores y baterías": "2026-11-23T08:01:05.337225+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-23T16:26:39.529031+00:00",
+ "next_at": "2026-11-23T16:56:50.292528+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -939,16 +939,6 @@
    "s": "busqueda",
    "t": "2026-11-22T20:01:33.981143+00:00",
    "title": "Pure Encapsulations Magnesio Bisglicinato | Energía | 90 cápsulas",
-   "v": []
-  },
-  "B07Q37YLQT": {
-   "c": "Café y cápsulas",
-   "d": 13,
-   "e": "🫘",
-   "m": 168,
-   "p": 19.9,
-   "t": "2026-11-09T16:21:18.177704+00:00",
-   "title": "Granos de Café Enteros Kimbo Crema Intensa, Tueste Medio, Bolsa 1kg",
    "v": []
   },
   "B07QDB3KMS": {
@@ -2322,6 +2312,17 @@
    "p": 23.99,
    "t": "2026-11-11T07:35:57.800070+00:00",
    "title": "Soundcore P30i de Anker Auriculares con Cancelación de Ruido, 45h",
+   "v": []
+  },
+  "B0CTCQKJ1B": {
+   "c": "Cafeteras",
+   "d": 28,
+   "e": "☕",
+   "m": 563,
+   "p": 516.6,
+   "s": "ambas",
+   "t": "2026-11-23T16:31:48.697770+00:00",
+   "title": "Philips 5500 Cafetera Superautomática LatteGo, 20 bebidas, Gris",
    "v": []
   },
   "B0CW22BX7M": {
@@ -4189,6 +4190,18 @@
  },
  "reserve": [
   {
+   "a": "B0CHYKNH5G",
+   "c": "Cafeteras",
+   "e": "☕",
+   "img": "https://m.media-amazon.com/images/I/61-FAgpdsBL._AC_UL320_.jpg",
+   "n": 353,
+   "op": 734.9,
+   "p": 568.98,
+   "r": 4.3,
+   "t": "2026-11-23T16:31:04.905592+00:00",
+   "title": "De'Longhi Dinamica Plus ECAM382.70.B, Máquina Automática de Café en Grano, Máquina Cappuccino con LatteCrema Hot, Cafetera Espresso, Taza con 18 Recetas, Pantalla TFT 3,5'', 1450W, Negro"
+  },
+  {
    "a": "B008DHZXY0",
    "c": "Bricolaje",
    "e": "🪛",
@@ -4211,29 +4224,20 @@
    "r": 4.2,
    "t": "2026-11-23T13:35:33.211339+00:00",
    "title": "OULAC Pintalabios Oro Desnudo Brillo Metálico, Brillo 3D de Larga Duración, Barras de Labios de Alta Pigmentación y Cobertura Total, Fórmula Cremosa e Hidratante, Vegan, 4.3 g, (10) Sahara Gold"
-  },
-  {
-   "a": "B0D1Y883G2",
-   "c": "eReaders",
-   "e": "📖",
-   "img": "https://m.media-amazon.com/images/I/71JN1U1s+3L._AC_UL320_.jpg",
-   "n": 137,
-   "op": 246.22,
-   "p": 219.0,
-   "r": 4.2,
-   "t": "2026-11-23T13:05:32.398802+00:00",
-   "title": "eBook Pocketbook Era Color Stormy Sea 32 GB 7\""
   }
  ],
  "store_skip": {
   "pp:37600255358": "2026-11-23T09:31:06.199793+00:00",
   "pp:45948306722": "2026-11-23T09:31:06.199793+00:00",
+  "pp:45956992173": "2026-11-23T16:31:04.905592+00:00",
+  "pp:46146892179": "2026-11-23T16:31:04.905592+00:00",
+  "pp:46186037860": "2026-11-23T16:31:04.905592+00:00",
   "pp:46599140756": "2026-11-23T09:31:06.199793+00:00"
  },
  "summary_day": "2026-11-22",
  "tg_offset": 511048143,
  "x_copy": {
   "day": "2026-11-23",
-  "n": 18
+  "n": 19
  }
 }
