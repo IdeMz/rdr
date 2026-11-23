@@ -3191,10 +3191,10 @@
    "lista": "candidates",
    "motivo": "25 % por debajo del habitual en Amazon (147.71)",
    "name": "Logitech G Pro X Superlight USB 25600 DPI Negro 5 botones 2.4GHz 63 g Ratón",
-   "pp_drop": 27,
-   "pp_median": 149.96,
+   "pp_drop": 25,
+   "pp_median": 146.95,
    "pp_price": 110.18,
-   "t": "2026-11-21T19:01:06.061997+00:00",
+   "t": "2026-11-23T22:05:32.105364+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -3832,7 +3832,7 @@
    "pp_drop": 27,
    "pp_median": 101.95,
    "pp_price": 74.72,
-   "t": "2026-11-21T22:05:30.161730+00:00",
+   "t": "2026-11-23T22:05:32.105364+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -9391,11 +9391,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Dreame Tasti 1500W pantalla táctil Freidora de aire",
-   "pista": "1346708 bytes; 13 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1306412 bytes; 11 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 35,
    "pp_median": 230.95,
    "pp_price": 150.95,
-   "t": "2026-11-23T16:01:16.579464+00:00",
+   "t": "2026-11-23T22:05:32.105364+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -10372,7 +10372,7 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-23T06:35:25.984196+00:00",
+ "night_at": "2026-11-23T22:05:32.105364+00:00",
  "resumen": {
   "amazon_mas_barato": 28,
   "dudoso": 0,
@@ -10381,5 +10381,5 @@
   "pvpr_inflado": 4,
   "sin_precio": 11
  },
- "updated": "2026-11-23T21:45:48.617233+00:00"
+ "updated": "2026-11-23T22:05:32.105364+00:00"
 }
