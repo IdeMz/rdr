@@ -6,7 +6,7 @@
   "Almacenamiento": "2026-11-23T16:01:16.579464+00:00",
   "Altavoces": "2026-11-22T14:30:56.434630+00:00",
   "Aspiradoras": "2026-11-23T19:31:10.357756+00:00",
-  "Auriculares": "2026-11-21T18:30:52.916571+00:00",
+  "Auriculares": "2026-11-23T21:15:38.951661+00:00",
   "Barras de sonido": "2026-11-21T14:01:11.161162+00:00",
   "Bebé": "2026-11-23T11:05:30.542682+00:00",
   "Bricolaje": "2026-11-23T14:35:35.101359+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-23T21:11:32.169721+00:00",
+ "next_at": "2026-11-23T21:45:07.972927+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1934,6 +1934,17 @@
    "s": "ofertas",
    "t": "2026-11-16T11:21:12.986415+00:00",
    "title": "OLIGHT Perun 2 Mini Linterna Frontal USB Recargable 1100 Lumens 10 Días Máx",
+   "v": []
+  },
+  "B0BCKHQGJN": {
+   "c": "Auriculares",
+   "d": 55,
+   "e": "🎧",
+   "m": 572,
+   "p": 22.29,
+   "s": "ambas",
+   "t": "2026-11-23T21:16:13.496235+00:00",
+   "title": "Auriculares Inalámbricos Bluetooth, Auriculares Bluetooth 5.3, HiFi Estéreo",
    "v": []
   },
   "B0BF54SNKB": {
@@ -4210,6 +4221,10 @@
    "t": "2026-11-23T08:01:05.337225+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0DHL93XCN": {
+   "t": "2026-11-23T21:15:38.951661+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0DQ54YKH9": {
    "t": "2026-11-23T08:01:05.337225+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4263,18 +4278,6 @@
    "r": 4.2,
    "t": "2026-11-23T19:01:08.273550+00:00",
    "title": "Mujer BREAKNET Sleek Zapatos"
-  },
-  {
-   "a": "B0FS5JHH27",
-   "c": "Freidoras de aire",
-   "e": "🍟",
-   "img": "https://m.media-amazon.com/images/I/61Vx8Ms13GL._AC_UL320_.jpg",
-   "n": 154,
-   "op": 74.99,
-   "p": 54.99,
-   "r": 4.4,
-   "t": "2026-11-23T18:01:07.710591+00:00",
-   "title": "Freidora de aire VIOMI VORTEX 7L Air Fryer, 2000 W, Calor Superior e Inferior, 12 Programas De Cocción Preestablecidos Con Ventana De Visualización, Antiadherente, Apta Para Lavavajillas, Negra"
   }
  ],
  "store_skip": {
@@ -4290,6 +4293,6 @@
  "tg_offset": 511048143,
  "x_copy": {
   "day": "2026-11-23",
-  "n": 27
+  "n": 28
  }
 }

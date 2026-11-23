@@ -7984,22 +7984,22 @@
    "veredicto": "dudoso"
   },
   "46256205677": {
-   "ahorro_vs_amazon": 42,
+   "ahorro_vs_amazon": 31,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 49.99,
+   "amz_price": 41.88,
    "amz_title": "Trust Gaming GXT 867 Acira 60% Teclado Mecánico Alemán QWERTZ Layout, Iluminación RGB, Teclas Dobles, USB Mini Portátil Programable Pequeño Teclado Gaming 60% P",
    "asin": "B0CYT53J41",
    "disponible": true,
    "ean": "8713439248852",
    "encontrado_por": "nombre",
    "lista": "candidates",
-   "motivo": "42 % por debajo del habitual en Amazon (49.99)",
+   "motivo": "31 % por debajo del habitual en Amazon (41.88)",
    "name": "Trust Gaming GXT 867 Acira 60% Outemu Red RGB Español Negro Teclado gaming mecánico",
    "pp_drop": 37,
    "pp_median": 45.96,
    "pp_price": 28.92,
-   "t": "2026-11-21T20:00:58.767855+00:00",
+   "t": "2026-11-23T21:15:38.951661+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -9269,11 +9269,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Samsung 980 500GB NVMe M.2 PCIe 3.0 3500MB/s SSD",
-   "pista": "2189154 bytes; 13 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "2181115 bytes; 13 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 24,
    "pp_median": 264.95,
    "pp_price": 200.94,
-   "t": "2026-11-23T15:05:33.976238+00:00",
+   "t": "2026-11-23T21:15:38.951661+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -10381,5 +10381,5 @@
   "pvpr_inflado": 4,
   "sin_precio": 11
  },
- "updated": "2026-11-23T20:45:37.029920+00:00"
+ "updated": "2026-11-23T21:15:38.951661+00:00"
 }
