@@ -8,7 +8,7 @@
   "Aspiradoras": "2026-11-20T13:01:06.821120+00:00",
   "Auriculares": "2026-11-21T18:30:52.916571+00:00",
   "Barras de sonido": "2026-11-21T14:01:11.161162+00:00",
-  "Bebé": "2026-11-18T19:01:22.092208+00:00",
+  "Bebé": "2026-11-23T11:05:30.542682+00:00",
   "Bricolaje": "2026-11-22T09:01:04.030897+00:00",
   "Cafeteras": "2026-11-22T17:01:01.698969+00:00",
   "Café y cápsulas": "2026-11-22T07:01:03.565904+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-23T11:04:48.231142+00:00",
+ "next_at": "2026-11-23T11:31:23.619418+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -763,6 +763,17 @@
    "s": "ofertas",
    "t": "2026-11-17T12:31:28.037316+00:00",
    "title": "Pro Diver Stainless Steel Men's Quartz Watch - 40mm",
+   "v": []
+  },
+  "B07FMM2W12": {
+   "c": "Bebé",
+   "d": 40,
+   "e": "🍼",
+   "m": 552,
+   "p": 44.99,
+   "s": "ambas",
+   "t": "2026-11-23T11:06:00.675244+00:00",
+   "title": "Philips Avent, vigilabebés con Audio DECT, Audio bidireccional, sin interferencias, Rango de 330 m, 24 Horas de duración de la batería, Modo ecológico Inteligente, luz Nocturna, SCD503/26",
    "v": []
   },
   "B07GPWY8S6": {
@@ -4110,6 +4121,18 @@
  },
  "reserve": [
   {
+   "a": "B0CB8MNFXF",
+   "c": "Bebé",
+   "e": "🍼",
+   "img": "https://m.media-amazon.com/images/I/61wBSZoww2L._AC_UL320_.jpg",
+   "n": 3000,
+   "op": 79.99,
+   "p": 49.99,
+   "r": 4.4,
+   "t": "2026-11-23T11:05:30.542682+00:00",
+   "title": "HelloBaby Cámara Vigilancia Bebé sin WiFi, Pantalla 3.2\" IPS, Cámara PTZ"
+  },
+  {
    "a": "B08NCPXCP9",
    "c": "Textil hogar",
    "e": "🧺",
@@ -4132,18 +4155,6 @@
    "r": 4.5,
    "t": "2026-11-23T10:01:04.650566+00:00",
    "title": "VASAGLE Marco de Cama de Metal, 135 x 190 cm"
-  },
-  {
-   "a": "B0GT66C9CL",
-   "c": "Cargadores y baterías",
-   "e": "🔌",
-   "img": "https://m.media-amazon.com/images/I/519g2lZ7DXL._AC_UL320_.jpg",
-   "n": 498,
-   "op": 26.99,
-   "p": 23.72,
-   "r": 4.8,
-   "t": "2026-11-23T08:01:05.337225+00:00",
-   "title": "Xiaomi 100W Charging Combo (Tipo-A) EU"
   }
  ],
  "store_skip": {
@@ -4155,6 +4166,6 @@
  "tg_offset": 511048138,
  "x_copy": {
   "day": "2026-11-23",
-  "n": 7
+  "n": 8
  }
 }

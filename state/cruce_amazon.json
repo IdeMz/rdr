@@ -3662,7 +3662,7 @@
    "veredicto": "sin_precio"
   },
   "39633853398": {
-   "ahorro_vs_amazon": 28,
+   "ahorro_vs_amazon": 30,
    "amz_low30": null,
    "amz_median": null,
    "amz_price": 42.72,
@@ -3672,12 +3672,12 @@
    "ean": "4975769470707",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "28 % por debajo del habitual en Amazon (42.72)",
+   "motivo": "30 % por debajo del habitual en Amazon (42.72)",
    "name": "JVC HA-NP35T Blanco TWS Bluetooth 5.1 17h IPX4 Auriculares inalámbricos",
-   "pp_drop": 35,
+   "pp_drop": 38,
    "pp_median": 47.95,
-   "pp_price": 30.95,
-   "t": "2026-11-22T17:30:50.627813+00:00",
+   "pp_price": 29.95,
+   "t": "2026-11-23T11:05:30.542682+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -4757,24 +4757,24 @@
    "veredicto": "amazon_mas_barato"
   },
   "45368125530": {
-   "ahorro_vs_amazon": 58,
-   "amz_low30": null,
-   "amz_median": null,
-   "amz_price": 303.99,
+   "ahorro_vs_amazon": 53,
+   "amz_low30": 251.28,
+   "amz_median": 262.16,
+   "amz_price": 109.0,
    "amz_title": "Jabra Evolve2 Buds, Auriculares Bluetooth Intraaurales Inalámbricos, Cancelación Activa de Ruido y Tecnología MultiSensor con 4 Micrófonos, Certificados para MS",
    "asin": "B0BKH4FX9Y",
    "disponible": true,
    "ean": "5706991026542",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "58 % por debajo del habitual en Amazon (303.99)",
+   "motivo": "Amazon 109.00 frente a 122.95",
    "name": "Jabra Evolve2 Buds USB-A ANC IP57 con micrófono Auriculares",
-   "pp_drop": 27,
+   "pp_drop": 29,
    "pp_median": 172.95,
-   "pp_price": 126.95,
-   "t": "2026-11-22T17:01:01.698969+00:00",
+   "pp_price": 122.95,
+   "t": "2026-11-23T11:05:30.542682+00:00",
    "v": 3,
-   "veredicto": "oferta_real"
+   "veredicto": "amazon_mas_barato"
   },
   "45389434011": {
    "ahorro_vs_amazon": 13,
@@ -10320,12 +10320,12 @@
  },
  "night_at": "2026-11-23T06:35:25.984196+00:00",
  "resumen": {
-  "amazon_mas_barato": 25,
+  "amazon_mas_barato": 26,
   "dudoso": 0,
   "no_esta": 15,
-  "oferta_real": 25,
+  "oferta_real": 24,
   "pvpr_inflado": 5,
   "sin_precio": 11
  },
- "updated": "2026-11-23T10:35:32.957931+00:00"
+ "updated": "2026-11-23T11:05:30.542682+00:00"
 }
