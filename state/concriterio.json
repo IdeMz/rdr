@@ -14,7 +14,7 @@
   "Café y cápsulas": "2026-11-22T07:01:03.565904+00:00",
   "Camping y montaña": "2026-11-21T14:30:51.598433+00:00",
   "Cargadores y baterías": "2026-11-23T08:01:05.337225+00:00",
-  "Ciclismo": "2026-11-21T19:30:53.184977+00:00",
+  "Ciclismo": "2026-11-23T08:31:06.436266+00:00",
   "Climatización": "2026-11-20T13:31:03.874159+00:00",
   "Colchones y almohadas": "2026-11-22T07:30:51.234738+00:00",
   "Componentes PC": "2026-11-22T17:30:50.627813+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-23T08:28:18.399348+00:00",
+ "next_at": "2026-11-23T08:57:05.781907+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2167,6 +2167,17 @@
    "title": "Luz LED Armario 30cm con Sensor de Movimiento 3000mAh USB-C Recargable，2",
    "v": []
   },
+  "B0CJZF9VBD": {
+   "c": "Ciclismo",
+   "d": 36,
+   "e": "🚴",
+   "m": 547,
+   "p": 7.68,
+   "s": "ofertas",
+   "t": "2026-11-23T08:31:40.939523+00:00",
+   "title": "Mangas de Brazo para Hombres y Mujeres Deporte Compresión Protección",
+   "v": []
+  },
   "B0CKHL1VMM": {
    "c": "Proyectores",
    "d": 37,
@@ -2328,16 +2339,6 @@
    "s": "ambas",
    "t": "2026-11-13T08:11:33.192775+00:00",
    "title": "Bose SoundLink Max, Altavoz portátil con bluetooth para exterior con graves potentes, Resistente al agua estéreo con Bluetooth y conexión USB-C , Hasta 20 horas de autonomía, AUX de 3,5 mm, Negro",
-   "v": []
-  },
-  "B0D1DV9NHZ": {
-   "c": "Fitness en casa",
-   "d": 35,
-   "e": "🏋️",
-   "m": 155,
-   "p": 20.12,
-   "t": "2026-11-09T08:11:10.219735+00:00",
-   "title": "Fokky Gomas Elasticas Musculacion con Anclaje de Puerta y Asas, 5 Niveles",
    "v": []
   },
   "B0D2Q5M35Y": {
@@ -4134,6 +4135,6 @@
  "tg_offset": 511048137,
  "x_copy": {
   "day": "2026-11-23",
-  "n": 3
+  "n": 4
  }
 }
