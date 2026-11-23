@@ -50,7 +50,7 @@
   "Periféricos": "2026-11-22T11:01:05.146615+00:00",
   "Perros": "2026-11-22T13:01:16.626545+00:00",
   "Portátiles": "2026-11-21T17:01:04.157306+00:00",
-  "Proyectores": "2026-11-21T14:30:51.598433+00:00",
+  "Proyectores": "2026-11-23T12:35:32.005006+00:00",
   "Redes y wifi": "2026-11-22T08:01:00.717908+00:00",
   "Relojes": "2026-11-22T15:01:08.377622+00:00",
   "Robots de cocina": "2026-11-22T20:30:52.079808+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-23T12:32:16.262961+00:00",
+ "next_at": "2026-11-23T13:01:08.293337+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -122,16 +122,6 @@
    "s": "busqueda",
    "t": "2026-11-22T15:01:47.283230+00:00",
    "title": "Colección Reloj Unisex Adultos A168WA",
-   "v": []
-  },
-  "B001RYWCWM": {
-   "c": "Afeitado y depilación",
-   "d": 39,
-   "e": "🪒",
-   "m": 161,
-   "p": 4.24,
-   "t": "2026-11-09T12:16:44.090689+00:00",
-   "title": "Wilkinson Sword Xtreme 3 Comfort - 6 Maquinillas Desechables Depilatorias Femeninas de 3 Hojas Flexibles con Aceite de Coco Hidratante",
    "v": []
   },
   "B002EX2Y6E": {
@@ -3879,6 +3869,17 @@
    "title": "Reloj Infantil Digital para Niños y Niñas de 4-16 Años",
    "v": []
   },
+  "B0H8BM3745": {
+   "c": "Proyectores",
+   "d": 44,
+   "e": "📽️",
+   "m": 555,
+   "p": 199.99,
+   "s": "ambas",
+   "t": "2026-11-23T12:35:57.836598+00:00",
+   "title": "Proyector Portatil 4K【Netflix Incluido&Live TV|Rotación 270°】 Proyector 4K Oficial Apps Auto Focus/Keystone,1000 ANSI,HDR10,1080p FHD Nativo,WiFi6 Bluetooth proyectores Cine en Casa/Exterior/HDMI ARC",
+   "v": []
+  },
   "B0HCPGS988": {
    "c": "Decoración navideña",
    "d": 39,
@@ -4190,6 +4191,6 @@
  "tg_offset": 511048143,
  "x_copy": {
   "day": "2026-11-23",
-  "n": 10
+  "n": 11
  }
 }
