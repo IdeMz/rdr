@@ -4961,10 +4961,10 @@
    "lista": "candidates",
    "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
    "name": "Kingston Fury Renegade 4TB NVMe M.2 PCIe 5.0 2280 14800MB/s SSD",
-   "pp_drop": 16,
-   "pp_median": 1184.95,
+   "pp_drop": 15,
+   "pp_median": 1182.94,
    "pp_price": 1000.95,
-   "t": "2026-11-21T22:50:34.667735+00:00",
+   "t": "2026-11-23T23:05:26.944392+00:00",
    "v": 3,
    "veredicto": "no_esta",
    "vistos": {
@@ -6335,11 +6335,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Logitech G923 SE TrueForce Doble Motor PC/PS5/PS4 Force Feedback 2,3Nm Volante",
-   "pista": "881505 bytes; 0 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "995233 bytes; 10 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 19,
    "pp_median": 284.96,
    "pp_price": 231.94,
-   "t": "2026-11-23T08:01:05.337225+00:00",
+   "t": "2026-11-23T23:05:26.944392+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -6857,22 +6857,22 @@
    }
   },
   "46146892179": {
-   "ahorro_vs_amazon": 31,
+   "ahorro_vs_amazon": 18,
    "amz_low30": null,
-   "amz_median": null,
-   "amz_price": 217.28,
+   "amz_median": 184.06,
+   "amz_price": 177.49,
    "amz_title": "Salicru SPS 1250 Soho+ – Sistema de Alimentación Ininterrumpida (SAI/UPS) de 1250 VA Line-Interactive y con Doble Cargador USB",
    "asin": "B0FQHVCTXL",
    "disponible": true,
    "ean": "8436584875727",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "31 % por debajo del habitual en Amazon (217.28)",
+   "motivo": "18 % por debajo del habitual en Amazon (184.06)",
    "name": "Salicru SPS 1250 SOHO+ Línea Interactiva 1250VA 720W Schuko Negro 4 tomas SAI",
    "pp_drop": 22,
    "pp_median": 192.95,
    "pp_price": 150.95,
-   "t": "2026-11-21T22:50:34.667735+00:00",
+   "t": "2026-11-23T23:05:26.944392+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -10459,7 +10459,7 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-23T22:50:30.310943+00:00",
+ "night_at": "2026-11-23T23:05:26.944392+00:00",
  "resumen": {
   "amazon_mas_barato": 29,
   "dudoso": 0,
@@ -10468,5 +10468,5 @@
   "pvpr_inflado": 4,
   "sin_precio": 11
  },
- "updated": "2026-11-23T22:50:30.310943+00:00"
+ "updated": "2026-11-23T23:05:26.944392+00:00"
 }
