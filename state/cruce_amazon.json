@@ -7287,22 +7287,22 @@
    }
   },
   "46186037860": {
-   "ahorro_vs_amazon": 30,
+   "ahorro_vs_amazon": 29,
    "amz_low30": null,
-   "amz_median": 79.0,
-   "amz_price": 73.89,
+   "amz_median": null,
+   "amz_price": 77.39,
    "amz_title": "CREATIVE Aurvana Ace 2 Auriculares in-Ear True Wireless, Ligeros con Controlador xMEMS, aptX Lossless y Audio Bluetooth LE, aptX Adaptable, ANC adaptativo, Modo",
    "asin": "B0CTQNC9GV",
    "disponible": true,
    "ean": "5390660196034",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "30 % por debajo del habitual en Amazon (79.00)",
+   "motivo": "29 % por debajo del habitual en Amazon (77.39)",
    "name": "Creative Labs Aurvana Ace 2 Negro TWS ANC Bluetooth 5.3 24h IPX5 Auriculares inalámbricos",
    "pp_drop": 29,
    "pp_median": 76.96,
    "pp_price": 54.95,
-   "t": "2026-11-21T22:20:36.998561+00:00",
+   "t": "2026-11-23T22:35:27.592127+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -7400,11 +7400,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Videojuego Bandai Namco Entertainment Elden Ring: Shadow of the Erdtree Xbox Series X",
-   "pista": "1106078 bytes; 6 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1085163 bytes; 6 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 37,
    "pp_median": 96.95,
    "pp_price": 60.95,
-   "t": "2026-11-23T16:31:04.905592+00:00",
+   "t": "2026-11-23T22:35:27.592127+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -9709,7 +9709,7 @@
    "pp_drop": 15,
    "pp_median": 2171.95,
    "pp_price": 1848.95,
-   "t": "2026-11-21T22:35:26.067828+00:00",
+   "t": "2026-11-23T22:35:27.592127+00:00",
    "v": 3,
    "veredicto": "no_esta",
    "vistos": {
@@ -10399,7 +10399,7 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-23T22:20:36.435121+00:00",
+ "night_at": "2026-11-23T22:35:27.592127+00:00",
  "resumen": {
   "amazon_mas_barato": 29,
   "dudoso": 0,
@@ -10408,5 +10408,5 @@
   "pvpr_inflado": 4,
   "sin_precio": 11
  },
- "updated": "2026-11-23T22:20:36.435121+00:00"
+ "updated": "2026-11-23T22:35:27.592127+00:00"
 }
