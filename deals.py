@@ -1736,8 +1736,17 @@ def maybe_send_x_copy(
         if markup else "Toca el texto para copiarlo y guarda la foto"
     )
     caption = f"📝 <b>Para X</b> ({sent_today + 1}/{ch.x_max_per_day} de hoy). {how}:\n\n<code>{escape(text)}</code>"
-    if len(caption) > 1024 and photo is not None:  # titulo largo: el pie de foto de Telegram tiene tope
-        caption = caption[:1020] + "…"
+    if len(caption) > 1024:
+        # No cabe en el pie de foto (tope 1024), sobre todo por los enlaces largos de AliExpress. Antes se
+        # recortaba y el corte rompia la etiqueta <code>: Telegram lo rechazaba y no llegaba nada. Ahora la foto
+        # va sola y el texto, entero, en un mensaje aparte (tope 4096).
+        if photo is not None or photo_url:
+            try:
+                send_deal(token, alert_chat, "📝 <b>Para X</b>: foto de la oferta (el texto va en el siguiente mensaje)",
+                          photo, photo_url)
+            except TelegramError as exc:
+                log.warning("%s: no se pudo enviar la foto para X (%s)", ch.name, exc)
+        photo, photo_url = None, None
     try:
         try:
             send_deal(token, alert_chat, caption, photo, photo_url, markup)

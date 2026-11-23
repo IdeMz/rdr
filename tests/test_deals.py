@@ -2298,6 +2298,24 @@ def test_x_copy_is_sent_privately_with_the_text_in_a_code_block(tmp_path, monkey
     assert [d for m, d in tg.calls if m == "sendPhoto" and d.get("chat_id") == "@canal"]  # y el canal, como siempre
 
 
+def test_x_copy_with_a_very_long_link_sends_photo_and_whole_text_apart(tmp_path, monkeypatch):
+    """Los enlaces de AliExpress miden ~1.700 caracteres: el texto no cabe en el pie de foto. Antes se recortaba,
+    se rompia la etiqueta <code> y Telegram no aceptaba nada."""
+    calls = []
+    monkeypatch.setattr(deals, "send_deal", lambda *a, **k: calls.append(a) or 1)
+    monkeypatch.setattr(deals, "get_secret", lambda n: {"TG_T": TOKEN, "TG_A": "777"}.get(n))
+    long_url = "https://s.click.aliexpress.com/s/" + "x" * 1700
+    p = deals.Product(asin="ae:1", title="Altavoz Bluetooth portatil", price=26.82, old_price=29.8, url=long_url,
+                      store="ALIEXPRESS")
+    ch = channel(x_copy=True, x_min_discount=0, alert_chat_env="TG_A", token_env="TG_T")
+    path = tmp_path / "c.json"
+    assert deals.maybe_send_x_copy(ch, path, p, None, "tag-21", b"jpg", "https://img/a.jpg", NOW_IN)
+    (_, _, first, photo1, _), (_, _, text, photo2, url2, *_) = calls[0][:5], calls[1]
+    assert photo1 == b"jpg" and "<code>" not in first
+    assert photo2 is None and url2 is None and long_url in text and text.endswith("</code>")
+    assert json.loads(path.read_text())["x_copy"]["n"] == 1
+
+
 def test_x_copy_is_off_by_default_and_respects_min_discount(tmp_path, monkeypatch):
     tg = x_env(monkeypatch)
     deals.run_channel(channel(), state_dir=tmp_path, now=NOW_IN)
