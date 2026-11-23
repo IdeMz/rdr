@@ -4323,22 +4323,22 @@
    "veredicto": "sin_precio"
   },
   "44863297593": {
-   "ahorro_vs_amazon": -26,
+   "ahorro_vs_amazon": 1,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 254.51,
+   "amz_price": 325.45,
    "amz_title": "Google Pixel Watch 4 (41 mm) - Smartwatch Android con Seguimiento de la el Estado físico, y la Ayuda de Gemini - Caja de Aluminio en Color Plata Pulida - Correa",
    "asin": "B0FJFXL111",
    "disponible": true,
    "ean": "0840353933811",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "Amazon 254.51 frente a 321.94",
+   "motivo": "Amazon 325.45 frente a 321.94",
    "name": "Google Pixel Watch 4 41 mm Plata Correa Lila AMOLED GPS NFC 5ATM",
-   "pp_drop": 49,
-   "pp_median": 633.96,
+   "pp_drop": 42,
+   "pp_median": 550.95,
    "pp_price": 321.94,
-   "t": "2026-11-21T12:30:56.768648+00:00",
+   "t": "2026-11-23T13:05:32.398802+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -6060,7 +6060,7 @@
    "pp_drop": 39,
    "pp_median": 492.95,
    "pp_price": 302.95,
-   "t": "2026-11-21T12:30:56.768648+00:00",
+   "t": "2026-11-23T13:05:32.398802+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -10327,5 +10327,5 @@
   "pvpr_inflado": 5,
   "sin_precio": 11
  },
- "updated": "2026-11-23T12:35:32.005006+00:00"
+ "updated": "2026-11-23T13:05:32.398802+00:00"
 }

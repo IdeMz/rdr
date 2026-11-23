@@ -62,12 +62,12 @@
   "Textil hogar": "2026-11-23T10:35:32.957931+00:00",
   "Videojuegos": "2026-11-22T18:01:40.272854+00:00",
   "Zapatillas": "2026-11-21T15:01:05.254496+00:00",
-  "eReaders": "2026-11-22T11:30:51.877087+00:00"
+  "eReaders": "2026-11-23T13:05:32.398802+00:00"
  },
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-23T13:01:08.293337+00:00",
+ "next_at": "2026-11-23T13:34:56.849960+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2234,16 +2234,6 @@
    "title": "St Runner V3 Nl Zapatillas Deportivas, Unisex Adulto",
    "v": []
   },
-  "B0CKM2SSK3": {
-   "c": "Perfumes",
-   "d": 22,
-   "e": "🌸",
-   "m": 162,
-   "p": 36.87,
-   "t": "2026-11-09T12:51:09.578543+00:00",
-   "title": "Rasasi Hawas Ice 100 ml Eau de Parfum",
-   "v": []
-  },
   "B0CKXT51LV": {
    "c": "Zapatillas",
    "d": 37,
@@ -2983,6 +2973,17 @@
    "s": "ambas",
    "t": "2026-11-16T20:01:46.875316+00:00",
    "title": "Govee Christmas Sparkle String Lights 30M, Control por Aplicación con Alexa",
+   "v": []
+  },
+  "B0FC1K5QZ9": {
+   "c": "eReaders",
+   "d": 31,
+   "e": "📖",
+   "m": 556,
+   "p": 486.0,
+   "s": "ofertas",
+   "t": "2026-11-23T13:06:10.560430+00:00",
+   "title": "Amazon Kindle Scribe Colorsoft (última gen.): fino, ligero y rápido, con pantalla a color de 11\" similar al papel y luz frontal; escribe en cuadernos integrados, documentos y libros (64 GB, grafito)",
    "v": []
   },
   "B0FCFRKLLM": {
@@ -4119,6 +4120,10 @@
    "t": "2026-11-16T19:55:35.023364+00:00",
    "why": "descartada a mano"
   },
+  "B0CZXWGK79": {
+   "t": "2026-11-23T13:05:32.398802+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0DB26KDSF": {
    "t": "2026-11-23T08:01:05.337225+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4146,6 +4151,18 @@
  },
  "reserve": [
   {
+   "a": "B0D1Y883G2",
+   "c": "eReaders",
+   "e": "📖",
+   "img": "https://m.media-amazon.com/images/I/71JN1U1s+3L._AC_UL320_.jpg",
+   "n": 137,
+   "op": 246.22,
+   "p": 219.0,
+   "r": 4.2,
+   "t": "2026-11-23T13:05:32.398802+00:00",
+   "title": "eBook Pocketbook Era Color Stormy Sea 32 GB 7\""
+  },
+  {
    "a": "B0CB8MNFXF",
    "c": "Bebé",
    "e": "🍼",
@@ -4168,18 +4185,6 @@
    "r": 4.6,
    "t": "2026-11-23T10:35:32.957931+00:00",
    "title": "Todocama - Edredón/Relleno nórdico de Fibra antiácaros, Otoño-Invierno, 300 g/m², Color Blanco, 80 x 160 cm"
-  },
-  {
-   "a": "B0DQD2Q28K",
-   "c": "Colchones y almohadas",
-   "e": "🛏️",
-   "img": "https://m.media-amazon.com/images/I/812AY5-vlpL._AC_UL320_.jpg",
-   "n": 2300,
-   "op": 59.99,
-   "p": 50.99,
-   "r": 4.5,
-   "t": "2026-11-23T10:01:04.650566+00:00",
-   "title": "VASAGLE Marco de Cama de Metal, 135 x 190 cm"
   }
  ],
  "store_skip": {
@@ -4191,6 +4196,6 @@
  "tg_offset": 511048143,
  "x_copy": {
   "day": "2026-11-23",
-  "n": 11
+  "n": 12
  }
 }
