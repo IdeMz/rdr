@@ -3,7 +3,7 @@
   "Accesorios de coche": "2026-11-23T08:01:05.337225+00:00",
   "Accesorios de móvil": "2026-11-23T14:05:36.956011+00:00",
   "Afeitado y depilación": "2026-11-23T07:01:04.565029+00:00",
-  "Almacenamiento": "2026-11-22T12:01:04.879461+00:00",
+  "Almacenamiento": "2026-11-23T16:01:16.579464+00:00",
   "Altavoces": "2026-11-22T14:30:56.434630+00:00",
   "Aspiradoras": "2026-11-20T13:01:06.821120+00:00",
   "Auriculares": "2026-11-21T18:30:52.916571+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-23T15:56:02.991452+00:00",
+ "next_at": "2026-11-23T16:26:39.529031+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1814,6 +1814,17 @@
    "title": "TP-Link Archer TX20U Plus - Adaptador WiFi 6 USB, AX1800 Doble Banda",
    "v": []
   },
+  "B09X7DNF6G": {
+   "c": "Almacenamiento",
+   "d": 31,
+   "e": "💾",
+   "m": 562,
+   "p": 27.26,
+   "s": "ambas",
+   "t": "2026-11-23T16:01:40.782128+00:00",
+   "title": "SANDISK Extreme PRO Tarjeta microSD 128 GB, lectura hasta 200 MB/s",
+   "v": []
+  },
   "B09YRMZFSM": {
    "c": "Textil hogar",
    "d": 27,
@@ -2256,16 +2267,6 @@
    "s": "ofertas",
    "t": "2026-11-17T17:01:55.476971+00:00",
    "title": "St Runner V3 Nl Zapatillas Deportivas, Unisex Adulto",
-   "v": []
-  },
-  "B0CKXT51LV": {
-   "c": "Zapatillas",
-   "d": 37,
-   "e": "👟",
-   "m": 167,
-   "p": 37.99,
-   "t": "2026-11-09T15:46:06.341582+00:00",
-   "title": "adidas",
    "v": []
   },
   "B0CLY983L7": {
@@ -4233,6 +4234,6 @@
  "tg_offset": 511048143,
  "x_copy": {
   "day": "2026-11-23",
-  "n": 17
+  "n": 18
  }
 }
