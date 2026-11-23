@@ -236,7 +236,7 @@
    "shop": "Life Dreamer Store",
    "shop_id": "1102856219",
    "src": "a",
-   "st": "ok",
+   "st": "pub",
    "t": "2026-11-20T05:09:51.721664+00:00",
    "title": "Manos libres inalámbrico portátil Caixa De Som Altavoz Bluetooth caja De sonido De música Bluetooth para manos libres Bluetooth manos libres Mini Audio"
   },
@@ -551,6 +551,7 @@
    "title": "Figura Grande de Guerrero Orco Olog-hai del Ejército Medieval de El Señor de los Anillos, Troll con Armadura, Bloques de Construcción, Figuras, Ladrillos, Jugue"
   },
   "a1005013072345390": {
+   "answered": "2026-11-23T09:32:51.194867+00:00",
    "drop": 11,
    "id": "1005013072345390",
    "image": "https://ae-pic-a1.aliexpress-media.com/kf/S748a9329ea784a099683cc531c4d66eaF.jpg",
@@ -564,7 +565,7 @@
    "shop": "Stone's Store",
    "shop_id": "1103573332",
    "src": "a",
-   "st": "sent",
+   "st": "ok",
    "t": "2026-11-23T05:09:21.855595+00:00",
    "title": "Cable adaptador convertidor de USB a SATA, USB 3.2 y 3.0 a SATA, para discos duros SSD y HDD de 2,5 pulgadas, adaptador externo y accesorios."
   },
@@ -628,6 +629,7 @@
   "1102636624": "BOOTEELY Store",
   "1102669121": "IGRARK Dropship Store",
   "1102856219": "Life Dreamer Store",
+  "1103573332": "Stone's Store",
   "1104101208": "PERFUMES ÁRABES DUBAI Store",
   "3179007": "BASEUS Co.,Ltd. Store"
  }
