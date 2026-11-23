@@ -2,7 +2,7 @@
  "cats": {
   "Accesorios de coche": "2026-11-20T11:01:13.526266+00:00",
   "Accesorios de móvil": "2026-11-21T19:01:06.061997+00:00",
-  "Afeitado y depilación": "2026-11-17T20:15:50.874512+00:00",
+  "Afeitado y depilación": "2026-11-23T07:01:04.565029+00:00",
   "Almacenamiento": "2026-11-22T12:01:04.879461+00:00",
   "Altavoces": "2026-11-22T14:30:56.434630+00:00",
   "Aspiradoras": "2026-11-20T13:01:06.821120+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-22T21:57:13.702740+00:00",
+ "next_at": "2026-11-23T07:27:27.785156+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1212,16 +1212,6 @@
    "s": "ambas",
    "t": "2026-11-14T10:31:21.948303+00:00",
    "title": "TechStone Juego de Bandas de Resistencia para Hombres y Mujeres, Paquete de 5 Niveles de Resistencia Diferentes, Banda elástica para Gimnasio en casa, Entrenamiento de Ejercicio Largo",
-   "v": []
-  },
-  "B08B21PRLM": {
-   "c": "Cuidado de la piel",
-   "d": 36,
-   "e": "🧴",
-   "m": 150,
-   "p": 15.2,
-   "t": "2026-11-08T21:31:30.332152+00:00",
-   "title": "L'Oréal Paris Revitalift Filler Sérum Facial Ácido Hialurónico y PDRN, 30ml",
    "v": []
   },
   "B08CBJ8W9W": {
@@ -3679,6 +3669,17 @@
    "title": "Mochila 40x30x20 Expandible 40x30x25 Viaje Cabina Avion para Ryanair",
    "v": []
   },
+  "B0H1CWKZ8J": {
+   "c": "Afeitado y depilación",
+   "d": 43,
+   "e": "🪒",
+   "m": 544,
+   "p": 19.99,
+   "s": "ambas",
+   "t": "2026-11-23T07:01:37.677712+00:00",
+   "title": "Braun Mini Depiladora Facial para Mujer, FS1005, Blanco",
+   "v": []
+  },
   "B0H1M9GBWB": {
    "c": "Proyectores",
    "d": 48,
@@ -4074,40 +4075,16 @@
  },
  "reserve": [
   {
-   "a": "B0DJ34VSZ2",
-   "c": "Patinetes",
-   "e": "🛴",
-   "img": "https://m.media-amazon.com/images/I/71BdzkFrhWL._AC_UL320_.jpg",
-   "n": 415,
-   "op": 219.99,
-   "p": 189.95,
-   "r": 4.2,
-   "t": "2026-11-22T21:30:54.359902+00:00",
-   "title": "MASCOOTER S1 | Patinete Eléctrico Adultos Homologado con Talleres en España"
-  },
-  {
-   "a": "B004LZSP6Q",
-   "c": "Iluminación",
-   "e": "🪔",
-   "img": "https://m.media-amazon.com/images/I/51j2LrxB9uL._AC_UL320_.jpg",
-   "n": 10800,
-   "op": 29.99,
-   "p": 22.77,
-   "r": 4.5,
-   "t": "2026-11-22T21:01:10.291765+00:00",
-   "title": "BRILLIANT lámpara Spari uplighter brazo de lectura negro/blanco | 1x A60,"
-  },
-  {
-   "a": "B0FX2Q566X",
-   "c": "Robots de cocina",
-   "e": "🥣",
-   "img": "https://m.media-amazon.com/images/I/61XWVJEVNAL._AC_UL320_.jpg",
-   "n": 155,
-   "op": 99.9,
-   "p": 54.9,
-   "r": 4.5,
-   "t": "2026-11-22T20:30:52.079808+00:00",
-   "title": "Nutribullet Pro 900 - Batidora Personal Multifunción, Blender Frutas y Verduras, Diseño Compacto, Fácil de Usar y Limpieza Rápida, Extracción de Nutrientes, 900W, Mineral Gris Paloma (NB904MASN)"
+   "a": "B07HX2KMXK",
+   "c": "Afeitado y depilación",
+   "e": "🪒",
+   "img": "https://m.media-amazon.com/images/I/71bc67Q0twL._AC_UL320_.jpg",
+   "n": 3600,
+   "op": 579.99,
+   "p": 279.99,
+   "r": 4.4,
+   "t": "2026-11-23T07:01:04.565029+00:00",
+   "title": "Philips Lumea serie 8000, dispositivo de depilación IPL, alternativa de depilación láser, tecnología SenseIQ, 4 accesorios para el cuerpo, lápiz recortador compacto satén, BRI949/00"
   }
  ],
  "store_skip": {
@@ -4118,7 +4095,7 @@
  "summary_day": "2026-11-22",
  "tg_offset": 511048137,
  "x_copy": {
-  "day": "2026-11-22",
-  "n": 29
+  "day": "2026-11-23",
+  "n": 1
  }
 }
