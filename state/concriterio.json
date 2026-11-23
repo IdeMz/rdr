@@ -7,7 +7,7 @@
   "Altavoces": "2026-11-22T14:30:56.434630+00:00",
   "Aspiradoras": "2026-11-23T19:31:10.357756+00:00",
   "Auriculares": "2026-11-23T21:15:38.951661+00:00",
-  "Barras de sonido": "2026-11-21T14:01:11.161162+00:00",
+  "Barras de sonido": "2026-11-23T21:45:48.617233+00:00",
   "Bebé": "2026-11-23T11:05:30.542682+00:00",
   "Bricolaje": "2026-11-23T14:35:35.101359+00:00",
   "Cafeteras": "2026-11-23T16:31:04.905592+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-23T21:45:07.972927+00:00",
+ "next_at": "2026-11-23T22:11:41.942255+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2927,6 +2927,17 @@
    "title": "Nueva Amazon Alexa Tablet 11, 8 GB de RAM, 128 GB, espectacular pantalla 2.5K de 11″, batería para todo el día, con Google Play, diseñada para Alexa+, Grafito",
    "v": []
   },
+  "B0F6CBYQD8": {
+   "c": "Barras de sonido",
+   "d": 49,
+   "e": "🎶",
+   "m": 573,
+   "p": 179.0,
+   "s": "ofertas",
+   "t": "2026-11-23T21:48:00.228018+00:00",
+   "title": "TCL Q65H Barra de Sonido 5.1ch con Subwoofer Inalámbrico, Dolby Atmos",
+   "v": []
+  },
   "B0F71BG423": {
    "c": "Accesorios de móvil",
    "d": 37,
@@ -4293,6 +4304,6 @@
  "tg_offset": 511048143,
  "x_copy": {
   "day": "2026-11-23",
-  "n": 28
+  "n": 29
  }
 }
