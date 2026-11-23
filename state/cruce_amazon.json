@@ -2413,6 +2413,13 @@
    "v": 3,
    "via": "ean"
   },
+  "6978526550016": {
+   "a": "B0HC3KVK2G",
+   "t": "2026-11-23T22:50:30.310943+00:00",
+   "title": "HONOR Projector Air Pro N5 Proyector Portátil Blanco (White)",
+   "v": 3,
+   "via": "ean"
+  },
   "714346345854": {
    "a": "B0DCPW2SP5",
    "t": "2026-11-14T02:50:24.306324+00:00",
@@ -2715,6 +2722,19 @@
    "title": "Cecotec Aspirador de Trineo sin Bolsa Conga Rockstar Multicyclonic XXL Animal. 800 W, Multiciclónico, 20 kPa, 4 L, Filtros de Alta Eficiencia, Tubo Telescópico,",
    "v": 3,
    "via": "ean"
+  },
+  "8435484092746": {
+   "a": "",
+   "t": "2026-11-23T22:50:30.310943+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "(sin resultados)"
+    ]
+   }
   },
   "843591088541": {
    "a": "B01G26166W",
@@ -4562,7 +4582,7 @@
    "pp_drop": 24,
    "pp_median": 138.94,
    "pp_price": 105.95,
-   "t": "2026-11-21T22:35:26.067828+00:00",
+   "t": "2026-11-23T22:50:30.310943+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -6006,6 +6026,26 @@
    "v": 3,
    "veredicto": "oferta_real"
   },
+  "45956991449": {
+   "ahorro_vs_amazon": 13,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 135.99,
+   "amz_title": "HONOR Projector Air Pro N5 Proyector Portátil Blanco (White)",
+   "asin": "B0HC3KVK2G",
+   "disponible": true,
+   "ean": "6978526550016",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "13 % por debajo del habitual en Amazon (135.99)",
+   "name": "HONOR Choice Projector Air Pro N5 1080p Full HD 292 lúmenes ANSI LCD WiFi 6 Bluetooth 5.0 Proyector",
+   "pp_drop": 22,
+   "pp_median": 151.95,
+   "pp_price": 118.14,
+   "t": "2026-11-23T22:50:30.310943+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "45956991451": {
    "ahorro_vs_amazon": 9,
    "amz_low30": null,
@@ -6874,6 +6914,26 @@
    "pp_price": 25.53,
    "t": "2026-11-14T09:55:29.061293+00:00",
    "veredicto": "pvpr_inflado"
+  },
+  "46146892838": {
+   "ean": "8435484092746",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Cecotec Bongo Y65 Connected 500W 65km 25km/h 10 pulgadas Negro/Verde Azulado 120kg plegable Patinete eléctrico",
+   "pp_drop": 17,
+   "pp_median": 545.95,
+   "pp_price": 454.95,
+   "t": "2026-11-23T22:50:30.310943+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "(sin resultados)"
+    ]
+   }
   },
   "46146892943": {
    "ahorro_vs_amazon": null,
@@ -10399,14 +10459,14 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-23T22:35:27.592127+00:00",
+ "night_at": "2026-11-23T22:50:30.310943+00:00",
  "resumen": {
   "amazon_mas_barato": 29,
   "dudoso": 0,
-  "no_esta": 15,
-  "oferta_real": 25,
+  "no_esta": 16,
+  "oferta_real": 26,
   "pvpr_inflado": 4,
   "sin_precio": 11
  },
- "updated": "2026-11-23T22:35:27.592127+00:00"
+ "updated": "2026-11-23T22:50:30.310943+00:00"
 }
