@@ -8778,22 +8778,22 @@
    "veredicto": "dudoso"
   },
   "46599140243": {
-   "ahorro_vs_amazon": 10,
+   "ahorro_vs_amazon": 11,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 265.62,
+   "amz_price": 268.28,
    "amz_title": "Lenovo Legion R32qc-30 - Monitor Gaming Curvo 31.5\" (180Hz, 0.5 ms MPRT, 16:9, 2560 x 1440 px, HDMI+DP, Altavoces 3Wx2, EyeSafe) VESA 100mm, Soporte Inclinable,",
    "asin": "B0DN6PQGGL",
    "disponible": true,
    "ean": "0198153734573",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "10 % por debajo del habitual en Amazon (265.62)",
+   "motivo": "11 % por debajo del habitual en Amazon (268.28)",
    "name": "Monitor Lenovo Legion 31.5 pulgadas 180Hz Curvo QHD VA Negro Azabache R32qc-30",
    "pp_drop": 24,
    "pp_median": 313.95,
    "pp_price": 239.89,
-   "t": "2026-11-21T18:30:52.916571+00:00",
+   "t": "2026-11-23T20:15:43.714745+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -9034,11 +9034,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Monitor Acer CB243Y E 23,8 pulgadas Full HD IPS 1 ms HDR10 Negro",
-   "pista": "979144 bytes; 3 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "982672 bytes; 3 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 25,
    "pp_median": 255.95,
    "pp_price": 190.95,
-   "t": "2026-11-23T14:05:36.956011+00:00",
+   "t": "2026-11-23T20:15:43.714745+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -10381,5 +10381,5 @@
   "pvpr_inflado": 4,
   "sin_precio": 11
  },
- "updated": "2026-11-23T19:31:10.357756+00:00"
+ "updated": "2026-11-23T20:15:43.714745+00:00"
 }

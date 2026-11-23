@@ -28,7 +28,7 @@
   "Fotografía": "2026-11-23T15:30:54.461995+00:00",
   "Freidoras de aire": "2026-11-23T18:01:07.710591+00:00",
   "Gaming": "2026-11-23T17:30:52.802500+00:00",
-  "Gatos": "2026-11-21T10:00:59.555709+00:00",
+  "Gatos": "2026-11-23T20:15:43.714745+00:00",
   "Herramientas": "2026-11-22T10:30:56.212290+00:00",
   "Higiene personal": "2026-11-23T09:01:11.110279+00:00",
   "Iluminación": "2026-11-22T21:01:10.291765+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-23T20:11:04.419652+00:00",
+ "next_at": "2026-11-23T20:42:36.908060+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2062,6 +2062,17 @@
    "s": "ofertas",
    "t": "2026-11-20T11:02:23.361723+00:00",
    "title": "Einhell Aspiradora de Mano con batería TE-HV 18/06 Li-Solo",
+   "v": []
+  },
+  "B0BWHFS3PK": {
+   "c": "Gatos",
+   "d": 41,
+   "e": "🐱",
+   "m": 570,
+   "p": 47.19,
+   "s": "busqueda",
+   "t": "2026-11-23T20:16:21.086085+00:00",
+   "title": "FEELNEEDY Fuente para Gatos Acero Inoxidable con Sensor de Movimiento-4L",
    "v": []
   },
   "B0BWXM3RRK": {
@@ -4158,10 +4169,7 @@
    "v": []
   }
  },
- "problem": {
-  "fails": 1,
-  "last": "HTTP 503"
- },
+ "problem": {},
  "rejected": {
   "B06XCBPFRN": {
    "t": "2026-11-23T14:35:35.101359+00:00",
@@ -4275,6 +4283,6 @@
  "tg_offset": 511048143,
  "x_copy": {
   "day": "2026-11-23",
-  "n": 25
+  "n": 26
  }
 }
