@@ -61,13 +61,13 @@
   "Televisores": "2026-11-21T20:30:51.971542+00:00",
   "Textil hogar": "2026-11-23T10:35:32.957931+00:00",
   "Videojuegos": "2026-11-22T18:01:40.272854+00:00",
-  "Zapatillas": "2026-11-21T15:01:05.254496+00:00",
+  "Zapatillas": "2026-11-23T19:01:08.273550+00:00",
   "eReaders": "2026-11-23T13:05:32.398802+00:00"
  },
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-23T18:58:44.189512+00:00",
+ "next_at": "2026-11-23T19:29:30.181492+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1444,6 +1444,17 @@
    "p": 27.7,
    "t": "2026-11-18T16:30:58.262697+00:00",
    "title": "Instant Pot Vortex 4 en 1 Freidora de Aire Digital Antiadherente con Temporizador y Función de Horno y Calentador, 1.700 W – 5,7 L",
+   "v": []
+  },
+  "B08TN1P3L2": {
+   "c": "Zapatillas",
+   "d": 40,
+   "e": "👟",
+   "m": 568,
+   "p": 56.95,
+   "s": "ambas",
+   "t": "2026-11-23T19:04:17.162187+00:00",
+   "title": "Mujer D'Lites 4.0 Fresh Diva Trainers",
    "v": []
   },
   "B08W3SPNH7": {
@@ -4161,9 +4172,17 @@
    "t": "2026-11-23T09:01:11.110279+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B09PZ8675X": {
+   "t": "2026-11-23T19:01:08.273550+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B09V8C4QP9": {
    "t": "2026-11-16T19:55:35.023364+00:00",
    "why": "descartada a mano"
+  },
+  "B0C59CXZVX": {
+   "t": "2026-11-23T19:01:08.273550+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0C8TWSM3R": {
    "t": "2026-11-23T15:30:54.461995+00:00",
@@ -4208,6 +4227,18 @@
  },
  "reserve": [
   {
+   "a": "B0F2FXRH8D",
+   "c": "Zapatillas",
+   "e": "👟",
+   "img": "https://m.media-amazon.com/images/I/61Hk7xqiUIL._AC_UL320_.jpg",
+   "n": 5600,
+   "op": 60.0,
+   "p": 37.92,
+   "r": 4.2,
+   "t": "2026-11-23T19:01:08.273550+00:00",
+   "title": "Mujer BREAKNET Sleek Zapatos"
+  },
+  {
    "a": "B0FS5JHH27",
    "c": "Freidoras de aire",
    "e": "🍟",
@@ -4245,6 +4276,6 @@
  "tg_offset": 511048143,
  "x_copy": {
   "day": "2026-11-23",
-  "n": 23
+  "n": 24
  }
 }
