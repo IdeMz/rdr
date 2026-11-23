@@ -26,7 +26,7 @@
   "Droguería": "2026-11-22T10:01:06.437573+00:00",
   "Fitness en casa": "2026-11-22T19:30:51.638631+00:00",
   "Fotografía": "2026-11-23T15:30:54.461995+00:00",
-  "Freidoras de aire": "2026-11-21T21:30:54.860893+00:00",
+  "Freidoras de aire": "2026-11-23T18:01:07.710591+00:00",
   "Gaming": "2026-11-23T17:30:52.802500+00:00",
   "Gatos": "2026-11-21T10:00:59.555709+00:00",
   "Herramientas": "2026-11-22T10:30:56.212290+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-23T17:58:01.950920+00:00",
+ "next_at": "2026-11-23T18:27:02.337395+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1565,16 +1565,6 @@
    "title": "Matnature | Platinum | Colchón Gran Confort Pro Múltiple Descanso | Muelles Ensacados y Viscoelástica | Altura 30 cm | Transpirable, Antideslizante y Antiácaros (90 x 200 cm)",
    "v": []
   },
-  "B093WKG8RF": {
-   "c": "Herramientas",
-   "d": 29,
-   "e": "🔧",
-   "m": 170,
-   "p": 99.0,
-   "t": "2026-11-09T17:35:56.108251+00:00",
-   "title": "metabo PowerMaxx BS Basic Taladro Atornillador de 12 V con Luz LED",
-   "v": []
-  },
   "B094TYNC9T": {
    "c": "Cuidado de la piel",
    "d": 46,
@@ -2334,6 +2324,17 @@
    "s": "busqueda",
    "t": "2026-11-14T16:46:09.761248+00:00",
    "title": "Marcilla Puro Arábica Café en Grano Sudamérica 100% Arábica | 400g",
+   "v": []
+  },
+  "B0CWP7M17B": {
+   "c": "Freidoras de aire",
+   "d": 43,
+   "e": "🍟",
+   "m": 566,
+   "p": 65.99,
+   "s": "ambas",
+   "t": "2026-11-23T18:02:00.528582+00:00",
+   "title": "Philips 2000 Airfryer - Freidora de Aire 6,2L, 13 opciones, Táctil, Negro",
    "v": []
   },
   "B0CX8MQF7R": {
@@ -4204,6 +4205,18 @@
  },
  "reserve": [
   {
+   "a": "B0FS5JHH27",
+   "c": "Freidoras de aire",
+   "e": "🍟",
+   "img": "https://m.media-amazon.com/images/I/61Vx8Ms13GL._AC_UL320_.jpg",
+   "n": 154,
+   "op": 74.99,
+   "p": 54.99,
+   "r": 4.4,
+   "t": "2026-11-23T18:01:07.710591+00:00",
+   "title": "Freidora de aire VIOMI VORTEX 7L Air Fryer, 2000 W, Calor Superior e Inferior, 12 Programas De Cocción Preestablecidos Con Ventana De Visualización, Antiadherente, Apta Para Lavavajillas, Negra"
+  },
+  {
    "a": "B0CHYKNH5G",
    "c": "Cafeteras",
    "e": "☕",
@@ -4214,18 +4227,6 @@
    "r": 4.3,
    "t": "2026-11-23T16:31:04.905592+00:00",
    "title": "De'Longhi Dinamica Plus ECAM382.70.B, Máquina Automática de Café en Grano, Máquina Cappuccino con LatteCrema Hot, Cafetera Espresso, Taza con 18 Recetas, Pantalla TFT 3,5'', 1450W, Negro"
-  },
-  {
-   "a": "B008DHZXY0",
-   "c": "Bricolaje",
-   "e": "🪛",
-   "img": "https://m.media-amazon.com/images/I/71O45Plwr6L._AC_UL320_.jpg",
-   "n": 6300,
-   "op": 30.95,
-   "p": 22.75,
-   "r": 4.6,
-   "t": "2026-11-23T14:35:35.101359+00:00",
-   "title": "STANLEY Caja de almacenamiento multiusos, organizador 39 cajones, 1-93-981"
   }
  ],
  "store_skip": {
@@ -4241,6 +4242,6 @@
  "tg_offset": 511048143,
  "x_copy": {
   "day": "2026-11-23",
-  "n": 21
+  "n": 22
  }
 }

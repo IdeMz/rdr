@@ -9670,7 +9670,7 @@
    "pp_drop": 20,
    "pp_median": 2142.95,
    "pp_price": 1704.95,
-   "t": "2026-11-21T16:30:54.650507+00:00",
+   "t": "2026-11-23T18:01:07.710591+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -9737,9 +9737,9 @@
    "motivo": "Amazon 1163.03 frente a 1320.94",
    "name": "Tablet 2 en 1 Microsoft Surface Pro 13 Snapdragon X Plus 16GB/256GB 13 pulgadas SSD Windows 11 Home Platino",
    "pp_drop": 20,
-   "pp_median": 1659.95,
+   "pp_median": 1648.95,
    "pp_price": 1320.94,
-   "t": "2026-11-21T17:01:04.157306+00:00",
+   "t": "2026-11-23T18:01:07.710591+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -10381,5 +10381,5 @@
   "pvpr_inflado": 4,
   "sin_precio": 11
  },
- "updated": "2026-11-23T17:30:52.802500+00:00"
+ "updated": "2026-11-23T18:01:07.710591+00:00"
 }
