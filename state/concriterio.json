@@ -65,26 +65,9 @@
   "eReaders": "2026-11-22T11:30:51.877087+00:00"
  },
  "manual": {},
- "manual_queue": [
-  {
-   "a": "ae:1005013072345390",
-   "c": "",
-   "e": "",
-   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S748a9329ea784a099683cc531c4d66eaF.jpg",
-   "m": 590,
-   "n": null,
-   "op": 25.49,
-   "p": 12.79,
-   "q": "2026-11-23T11:45:43.323815+00:00",
-   "r": 4.9,
-   "st": "ALIEXPRESS",
-   "t": "2026-11-23T11:40:40.015939+00:00",
-   "title": "Cable adaptador convertidor de USB a SATA, USB 3.2 y 3.0 a SATA, para discos duros SSD y HDD de 2,5 pulgadas, adaptador externo y accesorios.",
-   "u": "https://s.click.aliexpress.com/e/_c4PuCWk5"
-  }
- ],
+ "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-23T12:02:03.009912+00:00",
+ "next_at": "2026-11-23T12:32:16.262961+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -4025,6 +4008,19 @@
    "u": "https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3C4aryoDzIYNvK0cZJMwGl0ydzeuwFZcTjDtgk6pjtyxtBaMxadEbJBiIAKv9agopzwVIpSKFSW3h6DZQVjL4LBR8XB5tODK55vXZn8XXXIv6V1MSEEwKFrTQP8AQTaBzVMvXozurGEAeWLLvm6y8wOmHZBfbTbDv3lQNED3WzsxsIjqIX0bG4CSFed72qtAGAsUY3EMh1MoVoasu4pVZTlMbzU3mC2kXOUclCzYBarlQ4EgIRE6k5Ob6asAdVKy0PuEmAuiN0bYOx2MMhlhvtE7qkTats3hd1GMZlulFtrErU1HIeydFF5sbDBhkZATr48ZDndG5zHixZmC5n5b8LE4ZFHW3m1wQgS5lycxkQ4ptcyFLd1KpmGVq2PSWxkFmY8S9emvBrqSmFJAxSAQ1O85SF3osTrLgYxqDoR8QlKb26gzPjRkle26qSK1sitMsQozZMMDMKbx0tUezBxSRyD3PnkzBTz7YTZdnocdDSQlgbHF7MtZqnwKcys8s6at5C942wmkCEGQKUJVuWDhRKVktcspAlTklgiBMyuQfotpZyvxAJGareQGx5FD5QXqrjCmo6D1usEaCNJpaDm8FpdGtNuh37llKNxvDRPnfFyHxxXYmj5EejIr1Xgg9kiybFFrt3CiRp4MtafQPnDOYzDN7s5bHFhcozLDbn82cFRQpPkrPWS4hRzpFcQqJP0TYTL7yDO8ooNIiJ2",
    "v": []
   },
+  "ae:1005013072345390": {
+   "c": "",
+   "d": 50,
+   "e": "",
+   "m": 554,
+   "manual": true,
+   "p": 12.79,
+   "st": "ALIEXPRESS",
+   "t": "2026-11-23T12:05:40.865184+00:00",
+   "title": "Cable adaptador convertidor de USB a SATA, USB 3.2 y 3.0 a SATA, para discos duros SSD y HDD de 2,5 pulgadas, adaptador externo y accesorios.",
+   "u": "https://s.click.aliexpress.com/e/_c4PuCWk5",
+   "v": []
+  },
   "pp:39633853398": {
    "auto": true,
    "c": "",
@@ -4194,6 +4190,6 @@
  "tg_offset": 511048143,
  "x_copy": {
   "day": "2026-11-23",
-  "n": 9
+  "n": 10
  }
 }
