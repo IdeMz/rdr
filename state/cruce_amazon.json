@@ -1407,6 +1407,13 @@
     ]
    }
   },
+  "4894461993157": {
+   "a": "B0FGXYNZKQ",
+   "t": "2026-11-23T15:30:54.461995+00:00",
+   "title": "TCL T-Pen Lápiz Stylus EMR | Compatible con NXTPAPER 11 Plus | NXTPAPER 14 | Tab 11 Gen 2 | Tab 11 FE | NXTPAPER 11 | Tab 10 Gen 2 | 4096 Niveles de Presión | p",
+   "v": 3,
+   "via": "ean"
+  },
   "4894827003674": {
    "a": "",
    "t": "2026-11-14T08:10:40.297090+00:00",
@@ -6171,6 +6178,26 @@
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
+  "45956992173": {
+   "ahorro_vs_amazon": 32,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 50.0,
+   "amz_title": "TCL T-Pen Lápiz Stylus EMR | Compatible con NXTPAPER 11 Plus | NXTPAPER 14 | Tab 11 Gen 2 | Tab 11 FE | NXTPAPER 11 | Tab 10 Gen 2 | 4096 Niveles de Presión | p",
+   "asin": "B0FGXYNZKQ",
+   "disponible": true,
+   "ean": "4894461993157",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "32 % por debajo del habitual en Amazon (50.00)",
+   "name": "Lápiz digital TCL T-Pen Tablets TCL USI",
+   "pp_drop": 33,
+   "pp_median": 50.95,
+   "pp_price": 34.01,
+   "t": "2026-11-23T15:30:54.461995+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "45956992353": {
    "ahorro_vs_amazon": -1,
    "amz_low30": null,
@@ -8567,25 +8594,24 @@
    "veredicto": "oferta_real"
   },
   "46599139876": {
-   "ahorro_vs_amazon": null,
+   "ahorro_vs_amazon": -28,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": null,
+   "amz_price": 84.97,
    "amz_title": "AOC Q27B36X Gaming Monitor 27 Pulgadas 144Hz Panel IPS, 4ms GtG, HDR10, (2560x1440 HDMI 1x 2.0 DP 1x 1.4) Negro",
    "asin": "B0G4N31XVY",
    "disponible": true,
    "ean": "4038986183208",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "en Amazon pero sin precio o no disponible",
+   "motivo": "Amazon 84.97 frente a 109.00",
    "name": "Monitor AOC 27 pulgadas 144Hz QHD IPS Negro Q27B36X",
-   "pista": "2007068 bytes; 18 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 25,
    "pp_median": 145.95,
    "pp_price": 109.0,
-   "t": "2026-11-23T05:35:24.203918+00:00",
+   "t": "2026-11-23T15:30:54.461995+00:00",
    "v": 3,
-   "veredicto": "sin_precio"
+   "veredicto": "amazon_mas_barato"
   },
   "46599139882": {
    "ahorro_vs_amazon": 0,
@@ -10348,12 +10374,12 @@
  },
  "night_at": "2026-11-23T06:35:25.984196+00:00",
  "resumen": {
-  "amazon_mas_barato": 27,
+  "amazon_mas_barato": 28,
   "dudoso": 0,
   "no_esta": 15,
-  "oferta_real": 24,
+  "oferta_real": 25,
   "pvpr_inflado": 4,
-  "sin_precio": 12
+  "sin_precio": 11
  },
- "updated": "2026-11-23T15:05:33.976238+00:00"
+ "updated": "2026-11-23T15:30:54.461995+00:00"
 }
