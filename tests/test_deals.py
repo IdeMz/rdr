@@ -2806,18 +2806,23 @@ def test_aliexpress_link_uses_the_api(tmp_path, monkeypatch):
     asked = []
 
     def fake_call(method, params, key, secret, **kw):
+        if method == aliexpress.LINK_METHOD:
+            asked.append((method, params["source_values"]))
+            return {"r": {"promotion_links": [{"promotion_link": "https://s.click.aliexpress.com/e/_Dcorto"}]}}
         asked.append((method, params["product_ids"]))
         return {"resp_result": {"result": {"products": {"product": [{
             "product_id": 33039312461, "product_title": "Luz LED nocturna de búho", "target_sale_price": "14.19",
-            "target_original_price": "29.90", "promotion_link": "https://s.click.aliexpress.com/e/_abc",
+            "target_original_price": "29.90", "promotion_link": "https://s.click.aliexpress.com/s/_abc" + "x" * 1600,
             "product_main_image_url": "https://ae-pic-a1.aliexpress-media.com/kf/a.jpg", "evaluate_rate": "99.3%",
             "lastest_volume": "384", "shop_id": "5046292", "shop_name": "STARNIGHT Official Store"}]}}}}
     monkeypatch.setattr(aliexpress, "call", fake_call)
     message(tg, "https://es.aliexpress.com/item/33039312461.html?spm=abc")
     deals.process_votes(channel(name="concriterio", require_spain=False), tmp_path / "concriterio.json", {}, "t", NOW_IN)
-    assert asked == [(aliexpress.DETAIL_METHOD, "33039312461")]
+    assert asked == [(aliexpress.DETAIL_METHOD, "33039312461"),
+                     (aliexpress.LINK_METHOD, "https://es.aliexpress.com/item/33039312461.html")]
     prev = tg.of("sendPhoto")[0]
-    assert "Ver en AliExpress" in prev["caption"] and "s.click.aliexpress.com/e/_abc" in prev["caption"]
+    assert "Ver en AliExpress" in prev["caption"] and "s.click.aliexpress.com/e/_Dcorto" in prev["caption"]
+    assert "_abc" not in prev["caption"] and "🔗 Enlace corto" in prev["caption"]
     assert "Europa" in prev["caption"] and "mpub:ae:33039312461" in prev["reply_markup"]
 
 
@@ -3120,6 +3125,23 @@ def test_aliexpress_offer_is_marked_published_and_uses_the_fresh_affiliate_link(
     assert ok and "https://s.click.aliexpress.com/e/fresh" in sent[0][2] and "#publicidad" in sent[0][2]
     assert json.loads((tmp_path / "revision.json").read_text())["items"]["a55"]["st"] == "pub"
     assert state["ae:55"]["st"] == "ALIEXPRESS"
+
+
+def test_aliexpress_offer_uses_the_short_link_when_the_api_gives_it(tmp_path, monkeypatch):
+    sent = store_env(tmp_path, monkeypatch)
+    monkeypatch.setattr(deals.aliexpress, "short_link", lambda pid, *a, **k: (f"https://s.click.aliexpress.com/e/_D{pid}", ""))
+    ok, state, _ = run_store(tmp_path, store_channel(store_daily={"aliexpress": 1}))
+    assert ok and "https://s.click.aliexpress.com/e/_D55" in sent[0][2]
+    assert state["ae:55"]["u"] == "https://s.click.aliexpress.com/e/_D55"
+
+
+def test_aliexpress_offer_keeps_the_long_link_if_the_short_one_fails(tmp_path, monkeypatch):
+    sent = store_env(tmp_path, monkeypatch)
+    def boom(*a, **k):
+        raise RuntimeError("x")
+    monkeypatch.setattr(deals.aliexpress, "short_link", boom)
+    ok, state, _ = run_store(tmp_path, store_channel(store_daily={"aliexpress": 1}))
+    assert ok and "https://s.click.aliexpress.com/e/fresh" in sent[0][2]
 
 
 def test_powerplanet_offer_is_dropped_when_the_page_price_is_higher(tmp_path, monkeypatch):

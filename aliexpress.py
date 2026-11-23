@@ -42,6 +42,8 @@ ENDPOINT = "https://api-sg.aliexpress.com/sync"
 HOT_METHOD = "aliexpress.affiliate.hotproduct.query"
 SEARCH_METHOD = "aliexpress.affiliate.product.query"
 DETAIL_METHOD = "aliexpress.affiliate.productdetail.get"
+LINK_METHOD = "aliexpress.affiliate.link.generate"
+SHORT_LINK_MAX = 120      # un enlace corto ronda los 40 caracteres; los de productdetail, ~1.700
 PAGE_SIZE = 50
 GLOBAL_PAGES = 0          # las paginas generales de "hot products" dan casi solo productos de 2-4 EUR: no se piden
 QUERY_METHOD = SEARCH_METHOD  # la busqueda normal da mas resultados que "hot products" (7 contra 1 con la misma palabra)
@@ -118,6 +120,40 @@ def call(method: str, params: dict, key: str, secret: str, post=requests.post, n
         if isinstance(result, dict) and str(result.get("resp_code", "200")) != "200":
             raise ApiError(f"resp_code {result.get('resp_code')}: {str(result.get('resp_msg', ''))[:120]}")
     return data
+
+
+def _links_in(data) -> list[str]:
+    """Todos los valores 'promotion_link' de una respuesta (la estructura anidada varia)."""
+    if isinstance(data, dict):
+        out = [v for k, v in data.items() if k == "promotion_link" and isinstance(v, str)]
+        for v in data.values():
+            if isinstance(v, (dict, list)):
+                out += _links_in(v)
+        return out
+    if isinstance(data, list):
+        return [x for v in data for x in _links_in(v)]
+    return []
+
+
+def short_link(product_id: str, key: str, secret: str, tracking: str, post=requests.post,
+               now=time.time) -> tuple[str | None, str]:
+    """Enlace de afiliado corto (s.click.aliexpress.com/e/...) generado por la API para la ficha del producto.
+
+    No se visita nada: solo se le pasa a la API la direccion de la ficha. Devuelve (enlace, "") o (None, motivo)
+    y en ese caso se sigue usando el enlace largo."""
+    params = {"promotion_link_type": "0", "source_values": f"https://es.aliexpress.com/item/{product_id}.html",
+              "tracking_id": tracking}
+    try:
+        data = call(LINK_METHOD, params, key, secret, post=post, now=now)
+    except ApiError as exc:
+        return None, f"la API no lo genera ({exc})"
+    links = [x for x in _links_in(data) if x.startswith("https://s.click.aliexpress.com/")]
+    if not links:
+        return None, "la respuesta no trae enlace"
+    best = min(links, key=len)
+    if len(best) > SHORT_LINK_MAX:
+        return None, f"el enlace que da tambien es largo ({len(best)} caracteres)"
+    return best, ""
 
 
 def find_products(data) -> list[dict]:

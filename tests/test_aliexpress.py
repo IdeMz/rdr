@@ -448,3 +448,34 @@ def test_run_collects_with_the_legacy_words_when_the_channel_has_no_k_urls(tmp_p
     text = ax.run((KEY, SECRET, TRACK), tmp_path, ch, TODAY, 8, post=poster([product("1", 10.0)], calls=calls),
                   sleep=lambda s: None, legacy=("tablet", "portatil"))
     assert [c.get("keywords") for c in calls][:3] == ["tablet", "portatil", "smartphone libre"] and "1 productos" in text
+
+
+# ---------------------------------------------------------------- enlace corto
+
+def link_response(*links):
+    return {"aliexpress_affiliate_link_generate_response": {"resp_result": {"resp_code": 200, "result": {
+        "promotion_links": {"promotion_link": [{"promotion_link": x, "source_value": "s"} for x in links]}}}}}
+
+
+def test_short_link_is_taken_from_the_nested_response_and_sent_with_the_product_page():
+    seen = {}
+
+    def post(url, params, data, timeout):
+        seen.update(data)
+        return FakeResp(link_response("https://s.click.aliexpress.com/e/_DlongerOne123", "https://s.click.aliexpress.com/e/_Dab"))
+
+    link, why = ax.short_link("1005", "k", "s", "trk", post=post, now=lambda: 0)
+    assert link == "https://s.click.aliexpress.com/e/_Dab" and why == ""
+    assert seen["source_values"] == "https://es.aliexpress.com/item/1005.html" and seen["tracking_id"] == "trk"
+    assert seen["promotion_link_type"] == "0"
+
+
+@pytest.mark.parametrize("resp,msg", [
+    (link_response("https://s.click.aliexpress.com/s/" + "x" * 300), "tambien es largo"),
+    (link_response(), "no trae enlace"),
+    (link_response("https://otra.web/e/x"), "no trae enlace"),
+    ({"error_response": {"code": "InsufficientPermission", "msg": "no"}}, "no lo genera"),
+])
+def test_short_link_falls_back_when_the_api_gives_nothing_usable(resp, msg):
+    link, why = ax.short_link("1005", "k", "s", "t", post=lambda *a, **k: FakeResp(resp), now=lambda: 0)
+    assert link is None and msg in why

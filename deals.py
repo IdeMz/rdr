@@ -2292,6 +2292,12 @@ def other_store_product(ch: Channel, state_path: Path, store: str, link: str, no
             return f"AliExpress no devuelve el producto {pid} (puede que no esté en el programa de afiliados)."
         rv = review.load(state_path.parent / review.FILE)
         found, info = manual.ae_item(api_item, rv.get("trusted", {}), rv.get("blocked", {}))
+        before = found["url"]
+        found["url"] = _ae_short(ch, found["key"], pid, before, key, secret, tracking)
+        if found["url"] != before:
+            info.append(f"🔗 Enlace corto: {found['url']}")
+        elif len(before) > aliexpress.SHORT_LINK_MAX:
+            info.append(f"🔗 Sin enlace corto: se usa el largo ({len(before)} caracteres)")
         if "s.click.aliexpress.com" not in found["url"]:
             info.append("⚠️ La API no ha dado enlace de afiliado: revisa el enlace antes de publicar.")
     p = Product(asin=found["key"], title=found["title"], price=found["price"], old_price=found["old"],
@@ -2501,6 +2507,19 @@ def _check_powerplanet(cand: dict, ch: Channel, today: date) -> tuple[dict | Non
     return out, ""
 
 
+def _ae_short(ch: Channel, key_name: str, pid: str, url: str, key: str, secret: str, tracking: str) -> str:
+    """El enlace corto de afiliado si la API lo da (cabe en el boton de X y queda limpio); si no, el que habia."""
+    try:
+        short, why = aliexpress.short_link(pid, key, secret, tracking)
+    except Exception as exc:  # nunca impide publicar
+        short, why = None, type(exc).__name__
+    if short and len(short) < len(url or "x" * 9999):
+        log.info("%s: %s enlace corto de AliExpress: %s (antes %d caracteres)", ch.name, key_name, short, len(url))
+        return short
+    log.info("%s: %s sin enlace corto de AliExpress: %s", ch.name, key_name, why)
+    return url
+
+
 def _check_aliexpress(cand: dict, ch: Channel) -> tuple[dict | None, str]:
     """Vuelve a pedir el producto a la API: sigue existiendo y su precio no ha subido mas de un 5 %.
     Motivo "api" = no se pudo comprobar (no se apunta como descartado)."""
@@ -2527,6 +2546,7 @@ def _check_aliexpress(cand: dict, ch: Channel) -> tuple[dict | None, str]:
     out["price"] = api["price"]
     if api.get("link"):
         out["url"] = api["link"]
+    out["url"] = _ae_short(ch, cand["key"], cand["id"], out.get("url", ""), key, secret, tracking)
     if api.get("image") and not out.get("image"):
         out["image"] = api["image"]
     return out, ""
