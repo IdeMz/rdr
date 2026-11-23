@@ -3852,7 +3852,7 @@
    "pp_drop": 29,
    "pp_median": 106.95,
    "pp_price": 75.95,
-   "t": "2026-11-21T19:30:53.184977+00:00",
+   "t": "2026-11-23T20:45:37.029920+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -5083,19 +5083,19 @@
    "ahorro_vs_amazon": 7,
    "amz_low30": 99.9,
    "amz_median": null,
-   "amz_price": 94.9,
+   "amz_price": 92.95,
    "amz_title": "Logitech G Astro A20 X LIGHTSPEED auriculares inalámbricos gaming - Negro",
    "asin": "B0FJ25ZDNQ",
    "disponible": true,
    "ean": "5099206133334",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "Amazon 94.90 frente a 92.95",
+   "motivo": "Amazon 92.95 frente a 92.95",
    "name": "Logitech G Astro A20 X Diadema Bluetooth 5.3 90h Auriculares gaming inalámbricos",
    "pp_drop": 28,
    "pp_median": 129.95,
    "pp_price": 92.95,
-   "t": "2026-11-21T19:30:53.184977+00:00",
+   "t": "2026-11-23T20:45:37.029920+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -10381,5 +10381,5 @@
   "pvpr_inflado": 4,
   "sin_precio": 11
  },
- "updated": "2026-11-23T20:15:43.714745+00:00"
+ "updated": "2026-11-23T20:45:37.029920+00:00"
 }

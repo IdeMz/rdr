@@ -24,7 +24,7 @@
   "Decoración navideña": "2026-11-20T08:30:53.150165+00:00",
   "Domótica": "2026-11-23T09:01:11.110279+00:00",
   "Droguería": "2026-11-22T10:01:06.437573+00:00",
-  "Fitness en casa": "2026-11-22T19:30:51.638631+00:00",
+  "Fitness en casa": "2026-11-23T20:45:37.029920+00:00",
   "Fotografía": "2026-11-23T15:30:54.461995+00:00",
   "Freidoras de aire": "2026-11-23T18:01:07.710591+00:00",
   "Gaming": "2026-11-23T17:30:52.802500+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-23T20:42:36.908060+00:00",
+ "next_at": "2026-11-23T21:11:32.169721+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2762,6 +2762,17 @@
    "title": "Dashcam 4K, Dash CAM Coche con CPL, WiFi Camara Coche Grabadora con Tarjeta 64G, Super Visión, Gran 170°, Control App, Sensor G, Monitor de Aparcamiento, Grabación de Bucle",
    "v": []
   },
+  "B0DTK2CLTX": {
+   "c": "Fitness en casa",
+   "d": 32,
+   "e": "🏋️",
+   "m": 571,
+   "p": 26.34,
+   "s": "ofertas",
+   "t": "2026-11-23T20:46:01.718515+00:00",
+   "title": "PROIRON Esterilla Yoga,Grosor 10/15mm,Ideal para Ejercicio,183x66/61cm",
+   "v": []
+  },
   "B0DTTK2RVR": {
    "c": "Almacenamiento",
    "d": 10,
@@ -4175,10 +4186,6 @@
    "t": "2026-11-23T14:35:35.101359+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B07SB18XRL": {
-   "t": "2026-11-22T20:30:52.079808+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B07Z5JD3T4": {
    "t": "2026-11-23T09:01:11.110279+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4283,6 +4290,6 @@
  "tg_offset": 511048143,
  "x_copy": {
   "day": "2026-11-23",
-  "n": 26
+  "n": 27
  }
 }
