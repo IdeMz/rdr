@@ -8572,11 +8572,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Monitor AOC 27 pulgadas 144Hz QHD IPS Negro Q27B36X",
-   "pista": "1744508 bytes; 9 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "2007068 bytes; 18 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 25,
    "pp_median": 145.95,
    "pp_price": 109.0,
-   "t": "2026-11-22T23:20:29.625039+00:00",
+   "t": "2026-11-23T05:35:24.203918+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -9001,11 +9001,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Monitor Acer CB243Y E 23,8 pulgadas Full HD IPS 1 ms HDR10 Negro",
-   "pista": "981524 bytes; 3 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "979631 bytes; 3 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 25,
    "pp_median": 255.95,
    "pp_price": 190.95,
-   "t": "2026-11-22T22:50:31.565111+00:00",
+   "t": "2026-11-23T05:35:24.203918+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -10318,7 +10318,7 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-23T05:09:21.855595+00:00",
+ "night_at": "2026-11-23T05:35:24.203918+00:00",
  "resumen": {
   "amazon_mas_barato": 29,
   "dudoso": 1,
@@ -10327,5 +10327,5 @@
   "pvpr_inflado": 5,
   "sin_precio": 11
  },
- "updated": "2026-11-23T05:09:21.855595+00:00"
+ "updated": "2026-11-23T05:35:24.203918+00:00"
 }
