@@ -1,6 +1,6 @@
 {
  "cats": {
-  "Accesorios de coche": "2026-11-20T11:01:13.526266+00:00",
+  "Accesorios de coche": "2026-11-23T08:01:05.337225+00:00",
   "Accesorios de móvil": "2026-11-21T19:01:06.061997+00:00",
   "Afeitado y depilación": "2026-11-23T07:01:04.565029+00:00",
   "Almacenamiento": "2026-11-22T12:01:04.879461+00:00",
@@ -13,7 +13,7 @@
   "Cafeteras": "2026-11-22T17:01:01.698969+00:00",
   "Café y cápsulas": "2026-11-22T07:01:03.565904+00:00",
   "Camping y montaña": "2026-11-21T14:30:51.598433+00:00",
-  "Cargadores y baterías": "2026-11-21T17:01:04.157306+00:00",
+  "Cargadores y baterías": "2026-11-23T08:01:05.337225+00:00",
   "Ciclismo": "2026-11-21T19:30:53.184977+00:00",
   "Climatización": "2026-11-20T13:31:03.874159+00:00",
   "Colchones y almohadas": "2026-11-22T07:30:51.234738+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-23T08:00:10.418837+00:00",
+ "next_at": "2026-11-23T08:28:18.399348+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2114,6 +2114,17 @@
    "title": "Philips Hue Enchufes Inteligentes para Lámparas No Inteligentes, Pack de 3",
    "v": []
   },
+  "B0CF8X4H77": {
+   "c": "Cargadores y baterías",
+   "d": 44,
+   "e": "🔌",
+   "m": 546,
+   "p": 8.99,
+   "s": "ambas",
+   "t": "2026-11-23T08:02:11.562591+00:00",
+   "title": "Anker Cargador iPhone Carga Rapida USB C 20W con 2 Puertos",
+   "v": []
+  },
   "B0CFPR32B1": {
    "c": "eReaders",
    "d": 31,
@@ -2574,16 +2585,6 @@
    "s": "ambas",
    "t": "2026-11-16T07:36:06.223878+00:00",
    "title": "Dodot Toallitas Pure Aqua Para Bebé, 1152 Toallitas (24 Packs x 48 uds)",
-   "v": []
-  },
-  "B0DQ5KNY6Y": {
-   "c": "Aspiradoras",
-   "d": 55,
-   "e": "🧹",
-   "m": 154,
-   "p": 499.0,
-   "t": "2026-11-09T07:36:01.665974+00:00",
-   "title": "DREAME L50 Pro Ultra Robot Aspirador y Fregasuelos, 19500 Pa, Autolimpieza de la Mopa, Detección de Obstáculos Inteligente, Limpieza con Agua Caliente a 75°, Robot Aspitador con Cámara para Mascotas",
    "v": []
   },
   "B0DQWQJ1MY": {
@@ -4061,8 +4062,20 @@
    "t": "2026-11-16T19:55:35.023364+00:00",
    "why": "descartada a mano"
   },
+  "B0DB26KDSF": {
+   "t": "2026-11-23T08:01:05.337225+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0DHSFBRPB": {
    "t": "2026-11-22T17:30:50.627813+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0DQ54YKH9": {
+   "t": "2026-11-23T08:01:05.337225+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0DZ745RCW": {
+   "t": "2026-11-23T08:01:05.337225+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0FQGPHDT7": {
@@ -4075,6 +4088,18 @@
   }
  },
  "reserve": [
+  {
+   "a": "B0GT66C9CL",
+   "c": "Cargadores y baterías",
+   "e": "🔌",
+   "img": "https://m.media-amazon.com/images/I/519g2lZ7DXL._AC_UL320_.jpg",
+   "n": 498,
+   "op": 26.99,
+   "p": 23.72,
+   "r": 4.8,
+   "t": "2026-11-23T08:01:05.337225+00:00",
+   "title": "Xiaomi 100W Charging Combo (Tipo-A) EU"
+  },
   {
    "a": "B0F2B1M9TB",
    "c": "Smartwatch",
@@ -4109,6 +4134,6 @@
  "tg_offset": 511048137,
  "x_copy": {
   "day": "2026-11-23",
-  "n": 2
+  "n": 3
  }
 }
