@@ -55,7 +55,7 @@
   "Relojes": "2026-11-22T15:01:08.377622+00:00",
   "Robots de cocina": "2026-11-22T20:30:52.079808+00:00",
   "Salud": "2026-11-20T14:30:58.924631+00:00",
-  "Smartwatch": "2026-11-21T16:01:07.900587+00:00",
+  "Smartwatch": "2026-11-23T07:30:55.380763+00:00",
   "Suplementos": "2026-11-22T20:00:59.130943+00:00",
   "Tablets": "2026-11-22T16:30:48.501662+00:00",
   "Televisores": "2026-11-21T20:30:51.971542+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-23T07:27:27.785156+00:00",
+ "next_at": "2026-11-23T08:00:10.418837+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2363,16 +2363,6 @@
    "title": "Lepro BP1 AI Bombilla LED E14, G45 Bombilla Inteligente Alexa 2Pcs",
    "v": []
   },
-  "B0D544WSFP": {
-   "c": "Cámaras de seguridad",
-   "d": 25,
-   "e": "📹",
-   "m": 153,
-   "p": 59.99,
-   "t": "2026-11-09T07:01:45.166249+00:00",
-   "title": "Tapo C410 Kit - Cámara de Vigilancia WiFi Exterior, Panel Solar, 2K 3MP, IA",
-   "v": []
-  },
   "B0D58HZF7P": {
    "c": "Accesorios de coche",
    "d": 30,
@@ -2638,6 +2628,17 @@
    "s": "ambas",
    "t": "2026-11-22T07:31:27.893845+00:00",
    "title": "VASAGLE Marco de Cama Matrimonio, 140 x 200 cm, 4 Cajones, Metal, LED",
+   "v": []
+  },
+  "B0DSC8GLRX": {
+   "c": "Smartwatch",
+   "d": 40,
+   "e": "⌚",
+   "m": 545,
+   "p": 239.0,
+   "s": "busqueda",
+   "t": "2026-11-23T07:31:26.732230+00:00",
+   "title": "Garmin Instinct 3 50 mm, Reloj Inteligente con GPS, Negro",
    "v": []
   },
   "B0DSPKPVX3": {
@@ -4075,6 +4076,18 @@
  },
  "reserve": [
   {
+   "a": "B0F2B1M9TB",
+   "c": "Smartwatch",
+   "e": "⌚",
+   "img": "https://m.media-amazon.com/images/I/818DToRchOL._AC_UY218_.jpg",
+   "n": 1500,
+   "op": 169.0,
+   "p": 99.0,
+   "r": 4.5,
+   "t": "2026-11-23T07:30:55.380763+00:00",
+   "title": "HUAWEI WATCH FIT 4 Smartwatch, Brillo Máximo 2,000 nits, Barómetro, Gris"
+  },
+  {
    "a": "B07HX2KMXK",
    "c": "Afeitado y depilación",
    "e": "🪒",
@@ -4096,6 +4109,6 @@
  "tg_offset": 511048137,
  "x_copy": {
   "day": "2026-11-23",
-  "n": 1
+  "n": 2
  }
 }
