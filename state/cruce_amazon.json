@@ -3349,7 +3349,7 @@
    "pp_drop": 60,
    "pp_median": 298.95,
    "pp_price": 119.0,
-   "t": "2026-11-21T11:30:53.777938+00:00",
+   "t": "2026-11-23T11:35:39.474985+00:00",
    "v": 3,
    "veredicto": "no_esta",
    "vistos": {
@@ -5929,19 +5929,19 @@
    "ahorro_vs_amazon": -8,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 185.85,
+   "amz_price": 185.95,
    "amz_title": "Transcend SSD MTS400S M.2 SATA III 2242 128GB, caché DRAM, clave B+M",
    "asin": "B075P1LD28",
    "disponible": true,
    "ean": "760557839859",
    "encontrado_por": "ean",
    "lista": "to_verify",
-   "motivo": "Amazon 185.85 frente a 200.94",
+   "motivo": "Amazon 185.95 frente a 200.94",
    "name": "Transcend MTS400S 2242 128GB M.2 SATA III 530MB/s SSD",
    "pp_drop": 67,
    "pp_median": 609.95,
    "pp_price": 200.94,
-   "t": "2026-11-21T11:30:53.777938+00:00",
+   "t": "2026-11-23T11:35:39.474985+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -10327,5 +10327,5 @@
   "pvpr_inflado": 5,
   "sin_precio": 11
  },
- "updated": "2026-11-23T11:05:30.542682+00:00"
+ "updated": "2026-11-23T11:35:39.474985+00:00"
 }

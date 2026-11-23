@@ -18,7 +18,7 @@
   "Climatización": "2026-11-20T13:31:03.874159+00:00",
   "Colchones y almohadas": "2026-11-23T10:01:04.650566+00:00",
   "Componentes PC": "2026-11-22T17:30:50.627813+00:00",
-  "Cuidado de la piel": "2026-11-20T20:31:08.098759+00:00",
+  "Cuidado de la piel": "2026-11-23T11:35:39.474985+00:00",
   "Cuidado del cabello": "2026-11-22T18:30:51.920701+00:00",
   "Cámaras de seguridad": "2026-11-21T10:30:51.209383+00:00",
   "Decoración navideña": "2026-11-20T08:30:53.150165+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-23T11:31:23.619418+00:00",
+ "next_at": "2026-11-23T12:02:03.009912+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -588,6 +588,17 @@
    "p": 25.03,
    "t": "2026-11-11T13:25:58.129727+00:00",
    "title": "Tassimo Cápsulas de Café Marcilla Largo| 80 Cápsulas Compatibles con Cafetera Tassimo - 5PACK - Amazon Exclusive",
+   "v": []
+  },
+  "B073Y72LJ8": {
+   "c": "Cuidado de la piel",
+   "d": 49,
+   "e": "🧴",
+   "m": 553,
+   "p": 15.25,
+   "s": "ambas",
+   "t": "2026-11-23T11:36:13.096349+00:00",
+   "title": "Olay Eyes Ultimate Contorno de Ojos Antiarrugas para Ojeras y Bolsas, 15ml",
    "v": []
   },
   "B074P8RR96": {
@@ -4166,6 +4177,6 @@
  "tg_offset": 511048140,
  "x_copy": {
   "day": "2026-11-23",
-  "n": 8
+  "n": 9
  }
 }
