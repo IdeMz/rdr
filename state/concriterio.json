@@ -59,7 +59,7 @@
   "Suplementos": "2026-11-22T20:00:59.130943+00:00",
   "Tablets": "2026-11-22T16:30:48.501662+00:00",
   "Televisores": "2026-11-21T20:30:51.971542+00:00",
-  "Textil hogar": "2026-11-21T21:01:07.500201+00:00",
+  "Textil hogar": "2026-11-23T10:35:32.957931+00:00",
   "Videojuegos": "2026-11-22T18:01:40.272854+00:00",
   "Zapatillas": "2026-11-21T15:01:05.254496+00:00",
   "eReaders": "2026-11-22T11:30:51.877087+00:00"
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-23T10:31:03.726166+00:00",
+ "next_at": "2026-11-23T11:04:48.231142+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1790,6 +1790,17 @@
    "title": "TP-Link Archer TX20U Plus - Adaptador WiFi 6 USB, AX1800 Doble Banda",
    "v": []
   },
+  "B09YRMZFSM": {
+   "c": "Textil hogar",
+   "d": 27,
+   "e": "🧺",
+   "m": 551,
+   "p": 29.32,
+   "s": "ambas",
+   "t": "2026-11-23T10:36:05.634426+00:00",
+   "title": "Bedsure Edredon Cama 135/150 Nordico - Relleno Nordico 220x240, Gris Claro",
+   "v": []
+  },
   "B0B4SCYCLS": {
    "c": "Higiene personal",
    "d": 37,
@@ -2523,16 +2534,6 @@
    "p": 35.01,
    "t": "2026-11-11T15:11:22.102210+00:00",
    "title": "Cecotec Freidora de Aire 4 L Cecofry&Grill Duoheat 4000 1900W",
-   "v": []
-  },
-  "B0DHSBBV6R": {
-   "c": "Lego",
-   "d": 30,
-   "e": "🧱",
-   "m": 159,
-   "p": 18.99,
-   "t": "2026-11-09T10:31:21.761000+00:00",
-   "title": "LEGO Speed Champions Coche de Carreras Ferrari SF-24 F1 77242",
    "v": []
   },
   "B0DK13SSYG": {
@@ -4109,6 +4110,18 @@
  },
  "reserve": [
   {
+   "a": "B08NCPXCP9",
+   "c": "Textil hogar",
+   "e": "🧺",
+   "img": "https://m.media-amazon.com/images/I/619NYphfUnL._AC_UL320_.jpg",
+   "n": 4300,
+   "op": 21.9,
+   "p": 17.49,
+   "r": 4.6,
+   "t": "2026-11-23T10:35:32.957931+00:00",
+   "title": "Todocama - Edredón/Relleno nórdico de Fibra antiácaros, Otoño-Invierno, 300 g/m², Color Blanco, 80 x 160 cm"
+  },
+  {
    "a": "B0DQD2Q28K",
    "c": "Colchones y almohadas",
    "e": "🛏️",
@@ -4131,18 +4144,6 @@
    "r": 4.8,
    "t": "2026-11-23T08:01:05.337225+00:00",
    "title": "Xiaomi 100W Charging Combo (Tipo-A) EU"
-  },
-  {
-   "a": "B0F2B1M9TB",
-   "c": "Smartwatch",
-   "e": "⌚",
-   "img": "https://m.media-amazon.com/images/I/818DToRchOL._AC_UY218_.jpg",
-   "n": 1500,
-   "op": 169.0,
-   "p": 99.0,
-   "r": 4.5,
-   "t": "2026-11-23T07:30:55.380763+00:00",
-   "title": "HUAWEI WATCH FIT 4 Smartwatch, Brillo Máximo 2,000 nits, Barómetro, Gris"
   }
  ],
  "store_skip": {
@@ -4154,6 +4155,6 @@
  "tg_offset": 511048138,
  "x_copy": {
   "day": "2026-11-23",
-  "n": 6
+  "n": 7
  }
 }
