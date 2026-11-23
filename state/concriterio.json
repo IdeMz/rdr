@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-23T19:58:01.421758+00:00",
+ "next_at": "2026-11-23T20:11:04.419652+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2587,17 +2587,6 @@
    "title": "Cecotec Freidora de Aire 4 L Cecofry&Grill Duoheat 4000 1900W",
    "v": []
   },
-  "B0DK13SSYG": {
-   "c": "Ciclismo",
-   "d": 10,
-   "e": "🚴",
-   "m": 172,
-   "manual": true,
-   "p": 41.39,
-   "t": "2026-11-09T19:55:35.904719+00:00",
-   "title": "Odoland Casco Bicicleta Adulto con Gafas UV400, Ligero y Ajustable Unisex",
-   "v": []
-  },
   "B0DL65SRTR": {
    "c": "",
    "d": 0,
@@ -4169,7 +4158,10 @@
    "v": []
   }
  },
- "problem": {},
+ "problem": {
+  "fails": 1,
+  "last": "HTTP 503"
+ },
  "rejected": {
   "B06XCBPFRN": {
    "t": "2026-11-23T14:35:35.101359+00:00",
@@ -4186,10 +4178,6 @@
   "B09PZ8675X": {
    "t": "2026-11-23T19:01:08.273550+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B09V8C4QP9": {
-   "t": "2026-11-16T19:55:35.023364+00:00",
-   "why": "descartada a mano"
   },
   "B0C59CXZVX": {
    "t": "2026-11-23T19:01:08.273550+00:00",
