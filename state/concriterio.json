@@ -15,7 +15,7 @@
   "Camping y montaña": "2026-11-24T07:01:03.526450+00:00",
   "Cargadores y baterías": "2026-11-24T12:01:19.033341+00:00",
   "Ciclismo": "2026-11-23T08:31:06.436266+00:00",
-  "Climatización": "2026-11-20T13:31:03.874159+00:00",
+  "Climatización": "2026-11-24T18:35:37.637788+00:00",
   "Colchones y almohadas": "2026-11-24T16:30:59.602669+00:00",
   "Componentes PC": "2026-11-22T17:30:50.627813+00:00",
   "Cuidado de la piel": "2026-11-23T11:35:39.474985+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-24T18:31:02.181422+00:00",
+ "next_at": "2026-11-24T19:04:34.661504+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -856,6 +856,17 @@
    "s": "ofertas",
    "t": "2026-11-12T10:01:34.650708+00:00",
    "title": "Logitech G G502 Hero Ratón Gaming con Cable, 25,600 dpi, Negro",
+   "v": []
+  },
+  "B07HGFBXT8": {
+   "c": "Climatización",
+   "d": 36,
+   "e": "🌬️",
+   "m": 599,
+   "p": 264.9,
+   "s": "busqueda",
+   "t": "2026-11-24T18:36:11.567069+00:00",
+   "title": "De'Longhi Tasciugo AriaDry Light - Deshumidificador 7,5L/Día 16m²",
    "v": []
   },
   "B07HKRBK1S": {
@@ -3736,16 +3747,6 @@
    "title": "Devola Deshumidificador 12L de Bajo Consumo con Filtro de Carbón",
    "v": []
   },
-  "B0GTRP6G9Y": {
-   "c": "Televisores",
-   "d": 16,
-   "e": "📺",
-   "m": 193,
-   "p": 379.0,
-   "t": "2026-11-10T18:16:16.149428+00:00",
-   "title": "LG 43QNED70B6C - Smart TV QNED MiniLED AI 43\" 4K Sin Reflejos 94%, 2026",
-   "v": []
-  },
   "B0GTZLF677": {
    "c": "Televisores",
    "d": 27,
@@ -4340,6 +4341,18 @@
  },
  "reserve": [
   {
+   "a": "B073XPF4JD",
+   "c": "Climatización",
+   "e": "🌬️",
+   "img": "https://m.media-amazon.com/images/I/81Era3Iy8jL._AC_UL320_.jpg",
+   "n": 9600,
+   "op": 134.99,
+   "p": 113.99,
+   "r": 4.6,
+   "t": "2026-11-24T18:35:37.637788+00:00",
+   "title": "Pro Breeze Deshumidificador Silencioso 12L, Depósito Extraíble y Desagüe Continuo, 3 Modos, Temporizador 24h, Sensor de Humedad, Absorbe Humedad y Elimina el Moho de Habitaciones (20 m²)"
+  },
+  {
    "a": "B08NCPXCP9",
    "c": "Colchones y almohadas",
    "e": "🛏️",
@@ -4362,18 +4375,6 @@
    "r": 4.6,
    "t": "2026-11-24T16:01:07.815808+00:00",
    "title": "CALVIN KLEIN CK ONE Eau de Toilette"
-  },
-  {
-   "a": "B00002N8NN",
-   "c": "Jardín",
-   "e": "🌱",
-   "img": "https://m.media-amazon.com/images/I/819jL-JorWL._AC_UL320_.jpg",
-   "n": 702,
-   "op": 34.12,
-   "p": 25.65,
-   "r": 4.7,
-   "t": "2026-11-24T14:30:59.149182+00:00",
-   "title": "Rain Bird Válvula de aspersor automática en línea CP100 de 1 pulgada, rosca hembra de 1 pulgada, color negro"
   }
  ],
  "store_skip": {
@@ -4388,6 +4389,6 @@
  "tg_offset": 511048146,
  "x_copy": {
   "day": "2026-11-24",
-  "n": 23
+  "n": 24
  }
 }
