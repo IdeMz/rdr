@@ -7738,7 +7738,7 @@
    "pp_drop": 47,
    "pp_median": 292.98,
    "pp_price": 153.95,
-   "t": "2026-11-22T12:01:04.879461+00:00",
+   "t": "2026-11-24T12:01:19.033341+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -8814,24 +8814,25 @@
    "veredicto": "amazon_mas_barato"
   },
   "46599139847": {
-   "ahorro_vs_amazon": 65,
+   "ahorro_vs_amazon": null,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 79.15,
+   "amz_price": null,
    "amz_title": "Endgame Gear OP1 RGB Ratón Gaming con Cable",
    "asin": "B0CSP7NKLF",
    "disponible": true,
    "ean": "4251442509026",
    "encontrado_por": "ean",
    "lista": "to_verify",
-   "motivo": "65 % por debajo del habitual en Amazon (79.15)",
+   "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Endgame Gear OP1 RGB Cableado USB-A 26000 DPI 51.5g 6 botones Ratón gaming",
+   "pista": "2112481 bytes; 17 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 52,
    "pp_median": 57.95,
    "pp_price": 27.95,
-   "t": "2026-11-22T12:01:04.879461+00:00",
+   "t": "2026-11-24T12:01:19.033341+00:00",
    "v": 3,
-   "veredicto": "oferta_real"
+   "veredicto": "sin_precio"
   },
   "46599139855": {
    "ahorro_vs_amazon": -25,
@@ -10656,9 +10657,9 @@
   "amazon_mas_barato": 28,
   "dudoso": 0,
   "no_esta": 16,
-  "oferta_real": 17,
+  "oferta_real": 16,
   "pvpr_inflado": 4,
-  "sin_precio": 8
+  "sin_precio": 9
  },
- "updated": "2026-11-24T11:30:52.354758+00:00"
+ "updated": "2026-11-24T12:01:19.033341+00:00"
 }

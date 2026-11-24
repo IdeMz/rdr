@@ -13,7 +13,7 @@
   "Cafeteras": "2026-11-23T16:31:04.905592+00:00",
   "Café y cápsulas": "2026-11-22T07:01:03.565904+00:00",
   "Camping y montaña": "2026-11-24T07:01:03.526450+00:00",
-  "Cargadores y baterías": "2026-11-23T08:01:05.337225+00:00",
+  "Cargadores y baterías": "2026-11-24T12:01:19.033341+00:00",
   "Ciclismo": "2026-11-23T08:31:06.436266+00:00",
   "Climatización": "2026-11-20T13:31:03.874159+00:00",
   "Colchones y almohadas": "2026-11-23T10:01:04.650566+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-24T11:59:38.788557+00:00",
+ "next_at": "2026-11-24T12:31:10.813332+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -776,6 +776,17 @@
    "s": "ofertas",
    "t": "2026-11-17T12:31:28.037316+00:00",
    "title": "Pro Diver Stainless Steel Men's Quartz Watch - 40mm",
+   "v": []
+  },
+  "B07FK76SLQ": {
+   "c": "Cargadores y baterías",
+   "d": 54,
+   "e": "🔌",
+   "m": 586,
+   "p": 5.06,
+   "s": "ambas",
+   "t": "2026-11-24T12:01:52.825316+00:00",
+   "title": "Energizer - Recargables, Pack de 4 pilas AAA 500 mAh, precargada, para dispositivos uso frecuente y cientos de recargas, sin sulfatación",
    "v": []
   },
   "B07FMM2W12": {
@@ -3810,16 +3821,6 @@
    "title": "WOLFANG Dashcam 4K+4K Delantera y Trasera con STARVIS 2,Pantalla IPS de 3,69 Pulgadas, WiFi de 5,8 GHz, GPS, Cámara de Coche, WDR Gran Angular de 170°, Monitor de Aparcamiento 24H",
    "v": []
   },
-  "B0H1BGRHCV": {
-   "c": "Fitness en casa",
-   "d": 27,
-   "e": "🏋️",
-   "m": 182,
-   "p": 14.66,
-   "t": "2026-11-10T11:51:14.322412+00:00",
-   "title": "Gomas Elasticas Musculacion 4 Niveles Anclaje Protectores Trasporto",
-   "v": []
-  },
   "B0H1BQNV25": {
    "c": "Mochilas y maletas",
    "d": 49,
@@ -4329,6 +4330,18 @@
  },
  "reserve": [
   {
+   "a": "B00NTCH52W",
+   "c": "Cargadores y baterías",
+   "e": "🔌",
+   "img": "https://m.media-amazon.com/images/I/81x9-Q9qLfL._AC_UL320_.jpg",
+   "n": 292600,
+   "op": 10.41,
+   "p": 7.93,
+   "r": 4.6,
+   "t": "2026-11-24T12:01:19.033341+00:00",
+   "title": "Amazon Basics - Paquete de 20 pilas alcalinas AA de alto rendimiento, 1,5 voltios, vida útil de 10 años"
+  },
+  {
    "a": "B0GVFXDBZ3",
    "c": "Monitores",
    "e": "🖥️",
@@ -4357,6 +4370,6 @@
  "tg_offset": 511048146,
  "x_copy": {
   "day": "2026-11-24",
-  "n": 10
+  "n": 11
  }
 }
