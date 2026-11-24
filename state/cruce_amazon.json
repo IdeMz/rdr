@@ -127,6 +127,26 @@
    "v": 3,
    "via": "ean"
   },
+  "0196388769667": {
+   "a": "",
+   "t": "2026-11-24T15:01:05.679895+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "Microsoft Surface Pro 13\" (12. Edition) Touch Dune Snapdragon X2 Elite 16GB/1TB SSD Win11 EP2-65078 "
+    ],
+    "modelo": [
+     "G3HTA038H Laptop Batería Compatible with Microsoft Surface Pro 5 1796 Book Series Tablet DYNM02 2(1I",
+     "BLESYS Batería G3HTA038H DYNM02 para Microsoft Surface Pro 5 5th Generation 1796 2017 Edition/Pro 6 ",
+     "Cargador 65W 15V 4A Adaptador de Corriente para Microsoft Surface Pro 11/10/9/8/Pro 7/7+/6/5/ 4/3/X,"
+    ],
+    "nombre": [
+     "Microsoft Surface Pro, 13\" | Snapdragon X2 Plus | 16GB RAM, 256GB SSD",
+     "Microsoft Surface Pro, 13\" | Snapdragon X2 Plus | 16GB RAM, 512GB SSD",
+     "Microsoft Surface Pro, 13\" | Snapdragon X2 Plus | 16GB RAM, 256GB SSD"
+    ]
+   }
+  },
   "0196388781843": {
    "a": "B0H45KXKC9",
    "t": "2026-11-19T13:05:35.393737+00:00",
@@ -4261,7 +4281,7 @@
    "pp_drop": 35,
    "pp_median": 139.0,
    "pp_price": 89.99,
-   "t": "2026-11-22T14:30:56.434630+00:00",
+   "t": "2026-11-24T15:01:05.679895+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -10010,6 +10030,33 @@
     ]
    }
   },
+  "46599143214": {
+   "ean": "0196388769667",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Microsoft Surface Pro 13 12ª Edición Snapdragon X2 Elite 16GB/1TB Dorado 13 pulgadas OLED 120Hz 53Wh 15,5h",
+   "pp_drop": 20,
+   "pp_median": 2142.95,
+   "pp_price": 1704.95,
+   "t": "2026-11-24T15:01:05.679895+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "Microsoft Surface Pro 13\" (12. Edition) Touch Dune Snapdragon X2 Elite 16GB/1TB SSD Win11 EP2-65078 "
+    ],
+    "modelo": [
+     "G3HTA038H Laptop Batería Compatible with Microsoft Surface Pro 5 1796 Book Series Tablet DYNM02 2(1I",
+     "BLESYS Batería G3HTA038H DYNM02 para Microsoft Surface Pro 5 5th Generation 1796 2017 Edition/Pro 6 ",
+     "Cargador 65W 15V 4A Adaptador de Corriente para Microsoft Surface Pro 11/10/9/8/Pro 7/7+/6/5/ 4/3/X,"
+    ],
+    "nombre": [
+     "Microsoft Surface Pro, 13\" | Snapdragon X2 Plus | 16GB RAM, 256GB SSD",
+     "Microsoft Surface Pro, 13\" | Snapdragon X2 Plus | 16GB RAM, 512GB SSD",
+     "Microsoft Surface Pro, 13\" | Snapdragon X2 Plus | 16GB RAM, 256GB SSD"
+    ]
+   }
+  },
   "46599143223": {
    "ean": "0196388689545",
    "lista": "candidates",
@@ -10710,10 +10757,10 @@
  "resumen": {
   "amazon_mas_barato": 28,
   "dudoso": 0,
-  "no_esta": 16,
+  "no_esta": 17,
   "oferta_real": 18,
   "pvpr_inflado": 4,
   "sin_precio": 9
  },
- "updated": "2026-11-24T14:30:59.149182+00:00"
+ "updated": "2026-11-24T15:01:05.679895+00:00"
 }
