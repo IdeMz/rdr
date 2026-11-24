@@ -249,6 +249,21 @@
     ]
    }
   },
+  "0619659171520": {
+   "a": "",
+   "t": "2026-11-24T20:05:32.905580+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "SANDISK Tarjeta microSD 128 GB, lectura hasta 100 MB/s, Super Mario"
+    ],
+    "nombre": [
+     "SANDISK Tarjeta microSD 128 GB, lectura hasta 100 MB/s, Super Mario",
+     "SANDISK Tarjeta microSD 128 GB, lectura hasta 100 MB/s, pack de 2",
+     "SANDISK Tarjeta microSD 512 GB, lectura hasta 100 MB/s, Animal Crossing"
+    ]
+   }
+  },
   "0619659184704": {
    "a": "B08RX4QKXS",
    "t": "2026-11-13T14:01:00.760700+00:00",
@@ -3553,6 +3568,28 @@
    "t": "2026-11-18T02:35:23.555406+00:00",
    "v": 3,
    "veredicto": "oferta_real"
+  },
+  "37600259089": {
+   "ean": "0619659171520",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "SanDisk Licencia Nintendo 128GB para Nintendo Switch Rojo 100MB/s U3 Tarjeta microSD",
+   "pp_drop": 37,
+   "pp_median": 40.95,
+   "pp_price": 25.77,
+   "t": "2026-11-24T20:05:32.905580+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "SANDISK Tarjeta microSD 128 GB, lectura hasta 100 MB/s, Super Mario"
+    ],
+    "nombre": [
+     "SANDISK Tarjeta microSD 128 GB, lectura hasta 100 MB/s, Super Mario",
+     "SANDISK Tarjeta microSD 128 GB, lectura hasta 100 MB/s, pack de 2",
+     "SANDISK Tarjeta microSD 512 GB, lectura hasta 100 MB/s, Animal Crossing"
+    ]
+   }
   },
   "37600259956": {
    "ahorro_vs_amazon": null,
@@ -7761,11 +7798,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Videojuego Bandai Namco Entertainment Elden Ring: Shadow of the Erdtree Xbox Series X",
-   "pista": "1119114 bytes; 6 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1545860 bytes; 16 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 37,
    "pp_median": 96.95,
    "pp_price": 60.95,
-   "t": "2026-11-24T14:01:02.613248+00:00",
+   "t": "2026-11-24T20:05:32.905580+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -10892,10 +10929,10 @@
  "resumen": {
   "amazon_mas_barato": 32,
   "dudoso": 0,
-  "no_esta": 17,
+  "no_esta": 18,
   "oferta_real": 19,
   "pvpr_inflado": 4,
   "sin_precio": 9
  },
- "updated": "2026-11-24T19:35:37.316644+00:00"
+ "updated": "2026-11-24T20:05:32.905580+00:00"
 }

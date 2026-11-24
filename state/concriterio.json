@@ -58,7 +58,7 @@
   "Smartwatch": "2026-11-24T11:01:09.384811+00:00",
   "Suplementos": "2026-11-22T20:00:59.130943+00:00",
   "Tablets": "2026-11-22T16:30:48.501662+00:00",
-  "Televisores": "2026-11-21T20:30:51.971542+00:00",
+  "Televisores": "2026-11-24T20:05:32.905580+00:00",
   "Textil hogar": "2026-11-23T10:35:32.957931+00:00",
   "Videojuegos": "2026-11-24T13:35:33.816258+00:00",
   "Zapatillas": "2026-11-23T19:01:08.273550+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-24T20:01:27.498833+00:00",
+ "next_at": "2026-11-24T20:33:24.369338+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -3366,16 +3366,6 @@
    "title": "Lefant M210P Robot Aspirador,Control Mediante WiFi, Bluetooth,Alexa y App",
    "v": []
   },
-  "B0FPM18556": {
-   "c": "Menaje de cocina",
-   "d": 22,
-   "e": "🍳",
-   "m": 196,
-   "p": 69.99,
-   "t": "2026-11-10T20:01:37.201163+00:00",
-   "title": "GiPP Juego de Ollas y Sartenes Cerámicas Antiadherente - Juego de Cocina con Mangos Desmontables, No Tóxico, Apto para Inducción, Horno y Lavavajillas(Blanc 11PCS)",
-   "v": []
-  },
   "B0FPQR9572": {
    "c": "Fitness en casa",
    "d": 27,
@@ -3702,6 +3692,17 @@
    "s": "ambas",
    "t": "2026-11-14T14:41:19.463299+00:00",
    "title": "KRUPS Harmony, Cafetera Superautomática, 4 Bebidas, Espumador Leche, Carbón",
+   "v": []
+  },
+  "B0GQHGGWHX": {
+   "c": "Televisores",
+   "d": 40,
+   "e": "📺",
+   "m": 602,
+   "p": 299.0,
+   "s": "busqueda",
+   "t": "2026-11-24T20:06:03.698879+00:00",
+   "title": "TCL 55V6D Televisor 55 Pulgadas 4K UHD Smart TV, Fire TV, Alexa Integrado, Dolby Vision & Atmos, Game Master, HDR10+, Control por Voz",
    "v": []
   },
   "B0GQX6JT42": {
