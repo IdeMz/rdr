@@ -33,7 +33,7 @@
   "Higiene personal": "2026-11-23T09:01:11.110279+00:00",
   "Iluminación": "2026-11-22T21:01:10.291765+00:00",
   "Impresoras": "2026-11-21T12:30:56.768648+00:00",
-  "Jardín": "2026-11-21T08:30:51.750516+00:00",
+  "Jardín": "2026-11-24T14:30:59.149182+00:00",
   "Juguetes": "2026-11-24T13:05:37.513094+00:00",
   "Lego": "2026-11-24T10:31:05.706189+00:00",
   "Limpieza del hogar": "2026-11-24T07:31:06.167251+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-24T14:28:08.556575+00:00",
+ "next_at": "2026-11-24T14:58:26.620123+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -657,6 +657,17 @@
    "s": "ofertas",
    "t": "2026-11-16T08:11:09.624555+00:00",
    "title": "SONGMICS Escalera Plegable, Escalera 3 Peldaños, Bloqueo de Seguridad",
+   "v": []
+  },
+  "B076CZ6DHR": {
+   "c": "Jardín",
+   "d": 25,
+   "e": "🌱",
+   "m": 591,
+   "p": 60.03,
+   "s": "ambas",
+   "t": "2026-11-24T14:31:28.782985+00:00",
+   "title": "Netro Sprite 6 Zone Programador Riego WiFi Para Césped Con App, Con 24 CA",
    "v": []
   },
   "B077S4TX92": {
@@ -2211,16 +2222,6 @@
    "s": "busqueda",
    "t": "2026-11-19T20:16:14.308255+00:00",
    "title": "Auriculares Inalámbricos Bluetooth, Auriculares Bluetooth 5.3, 4 Mic con Reducción de Ruido ENC, 50H con Graves, Cascos Inalambricos Bluetooth IP7 Impermeable, Carga Rápida USB-C, Ajuste Cómodo",
-   "v": []
-  },
-  "B0CCYPDLCQ": {
-   "c": "Cuidado del cabello",
-   "d": 33,
-   "e": "💇",
-   "m": 186,
-   "p": 167.98,
-   "t": "2026-11-10T14:11:06.914629+00:00",
-   "title": "ghd Gold - Plancha de Pelo Profesional Avanzada",
    "v": []
   },
   "B0CDHC6HXX": {
@@ -4340,6 +4341,18 @@
  },
  "reserve": [
   {
+   "a": "B00002N8NN",
+   "c": "Jardín",
+   "e": "🌱",
+   "img": "https://m.media-amazon.com/images/I/819jL-JorWL._AC_UL320_.jpg",
+   "n": 702,
+   "op": 34.12,
+   "p": 25.65,
+   "r": 4.7,
+   "t": "2026-11-24T14:30:59.149182+00:00",
+   "title": "Rain Bird Válvula de aspersor automática en línea CP100 de 1 pulgada, rosca hembra de 1 pulgada, color negro"
+  },
+  {
    "a": "B07ZYCNZTZ",
    "c": "Juguetes",
    "e": "🧸",
@@ -4362,18 +4375,6 @@
    "r": 4.6,
    "t": "2026-11-24T12:01:19.033341+00:00",
    "title": "Amazon Basics - Paquete de 20 pilas alcalinas AA de alto rendimiento, 1,5 voltios, vida útil de 10 años"
-  },
-  {
-   "a": "B0GVFXDBZ3",
-   "c": "Monitores",
-   "e": "🖥️",
-   "img": "https://m.media-amazon.com/images/I/713+XldJJFL._AC_UL320_.jpg",
-   "n": 72,
-   "op": 135.0,
-   "p": 108.0,
-   "r": 4.7,
-   "t": "2026-11-24T11:30:52.354758+00:00",
-   "title": "DELL 27 Monitor - SE2726HS, Full HD (1920x1080), 144Hz, IPS, 1ms MPRT"
   }
  ],
  "store_skip": {
@@ -4392,6 +4393,6 @@
  "tg_offset": 511048146,
  "x_copy": {
   "day": "2026-11-24",
-  "n": 15
+  "n": 16
  }
 }
