@@ -6244,11 +6244,11 @@
    "lista": "to_verify",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Endgame Gear OP1w 4K Wireless 2,4 GHz 26000 DPI 7 botones 60 g Ratón gaming inalámbrico",
-   "pista": "1932556 bytes; 15 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1833801 bytes; 9 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 56,
    "pp_median": 99.95,
    "pp_price": 43.95,
-   "t": "2026-11-24T11:01:09.384811+00:00",
+   "t": "2026-11-24T17:30:51.708019+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -8160,7 +8160,7 @@
    "pp_drop": 31,
    "pp_median": 79.94,
    "pp_price": 54.95,
-   "t": "2026-11-22T17:01:01.698969+00:00",
+   "t": "2026-11-24T17:30:51.708019+00:00",
    "v": 3,
    "veredicto": "pvpr_inflado"
   },
@@ -10843,5 +10843,5 @@
   "pvpr_inflado": 4,
   "sin_precio": 9
  },
- "updated": "2026-11-24T17:01:06.823751+00:00"
+ "updated": "2026-11-24T17:30:51.708019+00:00"
 }
