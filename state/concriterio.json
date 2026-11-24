@@ -34,7 +34,7 @@
   "Iluminación": "2026-11-22T21:01:10.291765+00:00",
   "Impresoras": "2026-11-21T12:30:56.768648+00:00",
   "Jardín": "2026-11-21T08:30:51.750516+00:00",
-  "Juguetes": "2026-11-22T16:01:04.070626+00:00",
+  "Juguetes": "2026-11-24T13:05:37.513094+00:00",
   "Lego": "2026-11-24T10:31:05.706189+00:00",
   "Limpieza del hogar": "2026-11-24T07:31:06.167251+00:00",
   "Maquillaje": "2026-11-23T13:35:33.211339+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-24T13:04:03.664927+00:00",
+ "next_at": "2026-11-24T13:33:58.945410+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -267,6 +267,17 @@
    "title": "Educa - Puzzle 1000 Piezas Mapamundi | Puzzle 14 Años",
    "v": []
   },
+  "B0083F2XCW": {
+   "c": "Juguetes",
+   "d": 50,
+   "e": "🧸",
+   "m": 588,
+   "p": 8.99,
+   "s": "busqueda",
+   "t": "2026-11-24T13:06:18.303034+00:00",
+   "title": "MEGA BLOKS First Builders Bolsa Grande de Bloques Azul",
+   "v": []
+  },
   "B009WQCIX0": {
    "c": "Almacenamiento",
    "d": 17,
@@ -353,16 +364,6 @@
    "s": "busqueda",
    "t": "2026-11-20T20:31:40.774312+00:00",
    "title": "COSRX Snail Mucin 96% Power Face Serum 3.38 fl oz 100ml, Serum Hidratante para el Rostro, Cuidado Personal, Piel Brillante bajo el Maquillaje, Cuidado de la Piel Coreano, Belleza Coreana",
-   "v": []
-  },
-  "B00T7L20EC": {
-   "c": "Nutrición deportiva",
-   "d": 33,
-   "e": "💪",
-   "m": 184,
-   "p": 19.99,
-   "t": "2026-11-10T13:01:30.414464+00:00",
-   "title": "Optimum Nutrition Creatina Monohidrato Micronizada en Polvo, 634g",
    "v": []
   },
   "B00WEODURK": {
@@ -4288,10 +4289,6 @@
    "t": "2026-11-24T07:01:03.526450+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0CZXWGK79": {
-   "t": "2026-11-23T13:05:32.398802+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0DC71V3ZD": {
    "t": "2026-11-24T11:01:09.384811+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4330,6 +4327,18 @@
   }
  },
  "reserve": [
+  {
+   "a": "B07ZYCNZTZ",
+   "c": "Juguetes",
+   "e": "🧸",
+   "img": "https://m.media-amazon.com/images/I/611s6qYGmvL._AC_UL320_.jpg",
+   "n": 24000,
+   "op": 14.99,
+   "p": 6.99,
+   "r": 4.7,
+   "t": "2026-11-24T13:05:37.513094+00:00",
+   "title": "Hasbro Nerf 2.0 Commander RC-6, Lanzador de Dardos de Juguete, 12 Piezas, Juegos al Aire Libre para Niños y Niñas de 8 Años o Más, Tambor Giratorio"
+  },
   {
    "a": "B00NTCH52W",
    "c": "Cargadores y baterías",
@@ -4371,6 +4380,6 @@
  "tg_offset": 511048146,
  "x_copy": {
   "day": "2026-11-24",
-  "n": 12
+  "n": 13
  }
 }

@@ -6058,7 +6058,7 @@
    "pp_drop": 44,
    "pp_median": 197.96,
    "pp_price": 109.95,
-   "t": "2026-11-22T13:01:16.626545+00:00",
+   "t": "2026-11-24T13:05:37.513094+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -6803,10 +6803,10 @@
    "lista": "candidates",
    "motivo": "Amazon 129.00 frente a 164.95",
    "name": "Fitbit Versa 4 Negro AMOLED GPS NFC 6 días +40 deportes 5ATM Smartwatch",
-   "pp_drop": 45,
-   "pp_median": 301.96,
+   "pp_drop": 36,
+   "pp_median": 256.96,
    "pp_price": 164.95,
-   "t": "2026-11-22T13:01:16.626545+00:00",
+   "t": "2026-11-24T13:05:37.513094+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -10688,5 +10688,5 @@
   "pvpr_inflado": 4,
   "sin_precio": 9
  },
- "updated": "2026-11-24T12:35:31.161899+00:00"
+ "updated": "2026-11-24T13:05:37.513094+00:00"
 }
