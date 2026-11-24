@@ -1188,6 +1188,13 @@
    "title": "ASUS GeForce GT 710 2GB GDDR5 EVO - Tarjeta gráfica",
    "via": "ean"
   },
+  "4711387452943": {
+   "a": "B0D84FBQZR",
+   "t": "2026-11-24T00:50:33.890785+00:00",
+   "title": "ASUS RT-BE58U - Router Extensible WiFi 7 Doble Banda",
+   "v": 3,
+   "via": "ean"
+  },
   "4711387754818": {
    "a": "B0DJDFTS7R",
    "t": "2026-11-15T12:50:40.627443+00:00",
@@ -2296,6 +2303,13 @@
    "a": "B0BKT8N1Z9",
    "t": "2026-11-20T19:30:58.727153+00:00",
    "title": "Linsoul Kiwi Ears Cadenza Controlador Dinámico de Berlilio de 10Mm IEM",
+   "v": 3,
+   "via": "ean"
+  },
+  "6976057790239": {
+   "a": "B0H2DMTC5Z",
+   "t": "2026-11-24T00:50:33.890785+00:00",
+   "title": "Rokid Station 2 - Dispositivo de computación espacial portátil para gafas Rokid AR Max 2, 8 GB de RAM, 128 GB de almacenamiento, batería de 5000 mAh, Wi-Fi 6, B",
    "v": 3,
    "via": "ean"
   },
@@ -4276,11 +4290,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Garmin Forerunner 265S 42 mm Blanco/Verde 1,1 pulgadas AMOLED GPS NFC 15 días 5ATM Smartwatch",
-   "pista": "1988796 bytes; 16 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "2000439 bytes; 16 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 18,
    "pp_median": 329.95,
    "pp_price": 269.9,
-   "t": "2026-11-23T04:35:27.195693+00:00",
+   "t": "2026-11-24T00:50:33.890785+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -5087,6 +5101,26 @@
     ]
    }
   },
+  "45403204187": {
+   "ahorro_vs_amazon": 48,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 261.02,
+   "amz_title": "Rokid Station 2 - Dispositivo de computación espacial portátil para gafas Rokid AR Max 2, 8 GB de RAM, 128 GB de almacenamiento, batería de 5000 mAh, Wi-Fi 6, B",
+   "asin": "B0H2DMTC5Z",
+   "disponible": true,
+   "ean": "6976057790239",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "48 % por debajo del habitual en Amazon (261.02)",
+   "name": "Rokid Station 2 8GB/128GB Controlador AR 128GB Snapdragon AR 5h",
+   "pp_drop": 20,
+   "pp_median": 168.95,
+   "pp_price": 135.96,
+   "t": "2026-11-24T00:50:33.890785+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "45403207735": {
    "ahorro_vs_amazon": 33,
    "amz_low30": null,
@@ -5182,6 +5216,26 @@
    "pp_median": 64.95,
    "pp_price": 48.94,
    "t": "2026-11-16T02:20:24.133415+00:00",
+   "veredicto": "amazon_mas_barato"
+  },
+  "45410578658": {
+   "ahorro_vs_amazon": 12,
+   "amz_low30": null,
+   "amz_median": 128.95,
+   "amz_price": 109.9,
+   "amz_title": "ASUS RT-BE58U - Router Extensible WiFi 7 Doble Banda",
+   "asin": "B0D84FBQZR",
+   "disponible": true,
+   "ean": "4711387452943",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 109.90 frente a 113.99",
+   "name": "ASUS RT-BE58U WiFi 7 compatible con AiMesh 3600Mbps 5 puertos 2,5G 4 antenas Router de doble banda",
+   "pp_drop": 21,
+   "pp_median": 143.99,
+   "pp_price": 113.99,
+   "t": "2026-11-24T00:50:33.890785+00:00",
+   "v": 3,
    "veredicto": "amazon_mas_barato"
   },
   "45454760411": {
@@ -10459,14 +10513,14 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-24T00:35:26.329902+00:00",
+ "night_at": "2026-11-24T00:50:33.890785+00:00",
  "resumen": {
-  "amazon_mas_barato": 29,
+  "amazon_mas_barato": 30,
   "dudoso": 0,
   "no_esta": 16,
-  "oferta_real": 26,
+  "oferta_real": 27,
   "pvpr_inflado": 4,
   "sin_precio": 11
  },
- "updated": "2026-11-24T00:35:26.329902+00:00"
+ "updated": "2026-11-24T00:50:33.890785+00:00"
 }
