@@ -40,7 +40,7 @@
   "Maquillaje": "2026-11-23T13:35:33.211339+00:00",
   "Menaje de cocina": "2026-11-22T19:00:59.176158+00:00",
   "Mochilas y maletas": "2026-11-20T07:30:55.091992+00:00",
-  "Monitores": "2026-11-20T09:30:54.246285+00:00",
+  "Monitores": "2026-11-24T11:30:52.354758+00:00",
   "Móviles": "2026-11-23T15:30:54.461995+00:00",
   "Nutrición deportiva": "2026-11-21T20:00:58.767855+00:00",
   "Oficina": "2026-11-21T12:01:05.183305+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-24T11:29:58.740773+00:00",
+ "next_at": "2026-11-24T11:59:38.788557+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2396,6 +2396,17 @@
    "title": "Kindle Colorsoft Signature Edition (32 GB) de Amazon (modelo de 2024) | Con pantalla a color, luz frontal autorregulable, carga inalámbrica y gran duración de la batería | 32 GB",
    "v": []
   },
+  "B0CX9CT3ZF": {
+   "c": "Monitores",
+   "d": 31,
+   "e": "🖥️",
+   "m": 585,
+   "p": 68.51,
+   "s": "busqueda",
+   "t": "2026-11-24T11:31:45.312179+00:00",
+   "title": "PHILIPS 24E1N1100A Monitor 24 Pulgadas 120Hz Panel IPS, 4ms GtG, Altavoces, (1920x1080 HDMI 1x 1.4) Negro",
+   "v": []
+  },
   "B0CZ7GFP9C": {
    "c": "Droguería",
    "d": 43,
@@ -4015,16 +4026,6 @@
    "title": "Cámara Digital 4K 64 MP, Cámara Compacta con Autofoco y Zoom 16x Negro",
    "v": []
   },
-  "B0HDBF863N": {
-   "c": "Cargadores y baterías",
-   "d": 32,
-   "e": "🔌",
-   "m": 181,
-   "p": 16.99,
-   "t": "2026-11-10T11:16:10.170210+00:00",
-   "title": "Power Bank 25800 mAh, 22,5 W, PD3.0 QC4.0, batería Externa para teléfono móvil, Carga rápida, Pantalla LCD, batería Externa con Cable USB-C, Salidas y entradas, Cargador portátil para Smartphone",
-   "v": []
-  },
   "B0HDZ1LBCH": {
    "c": "Smartwatch",
    "d": 53,
@@ -4261,6 +4262,10 @@
    "t": "2026-11-23T19:01:08.273550+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0BY2R4BHW": {
+   "t": "2026-11-24T11:30:52.354758+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0C59CXZVX": {
    "t": "2026-11-23T19:01:08.273550+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4301,6 +4306,10 @@
    "t": "2026-11-23T17:30:52.802500+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0F3P65X6Q": {
+   "t": "2026-11-24T11:30:52.354758+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0F7ZGDDCX": {
    "t": "2026-11-24T11:01:09.384811+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4320,16 +4329,16 @@
  },
  "reserve": [
   {
-   "a": "B07S9PTLNZ",
-   "c": "Salud",
-   "e": "🩺",
-   "img": "https://m.media-amazon.com/images/I/51YkqAwS-sL._AC_UL320_.jpg",
-   "n": 103900,
-   "op": 11.99,
-   "p": 8.85,
-   "r": 4.6,
-   "t": "2026-11-24T08:30:50.826050+00:00",
-   "title": "RENPHO Bascula de Baño, Alta Precisión, Pantalla LED, Perder Peso, Core 1S"
+   "a": "B0GVFXDBZ3",
+   "c": "Monitores",
+   "e": "🖥️",
+   "img": "https://m.media-amazon.com/images/I/713+XldJJFL._AC_UL320_.jpg",
+   "n": 72,
+   "op": 135.0,
+   "p": 108.0,
+   "r": 4.7,
+   "t": "2026-11-24T11:30:52.354758+00:00",
+   "title": "DELL 27 Monitor - SE2726HS, Full HD (1920x1080), 144Hz, IPS, 1ms MPRT"
   }
  ],
  "store_skip": {
@@ -4348,6 +4357,6 @@
  "tg_offset": 511048146,
  "x_copy": {
   "day": "2026-11-24",
-  "n": 9
+  "n": 10
  }
 }

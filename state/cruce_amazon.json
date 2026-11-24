@@ -3094,6 +3094,21 @@
    "title": "Samsung Galaxy LTE (2025) Ultra Smart Watch, tamaño de caja de 47 mm, azul - [Versiones italiano, húngaro, polaco, rumano, austriaco y suizo]",
    "via": "ean"
   },
+  "8806097711032": {
+   "a": "",
+   "t": "2026-11-24T11:30:52.354758+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Samsung Galaxy Tab S11 Ultra 512GB 5G, Tablet con IA, Ligera, Herramientas IA, Dex, 12 GB de Memoria",
+     "Samsung Galaxy Tab S11 Ultra 5G 512GB/12GB Gris [versión Rumana]",
+     "Samsung Galaxy Tab S12 Ultra, 512GB, 12GB RAM, 11600mAh, IP68, Gris"
+    ]
+   }
+  },
   "8806097712169": {
    "a": "B0G2RPG83D",
    "t": "2026-11-14T03:20:26.477658+00:00",
@@ -5673,19 +5688,19 @@
    "ahorro_vs_amazon": 58,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 76.28,
+   "amz_price": 76.45,
    "amz_title": "Endgame Gear XM2 8k Ratón Gaming con Cable, Negro",
    "asin": "B0DG5YN8VT",
    "disponible": true,
    "ean": "4251442511180",
    "encontrado_por": "ean",
    "lista": "to_verify",
-   "motivo": "58 % por debajo del habitual en Amazon (76.28)",
+   "motivo": "58 % por debajo del habitual en Amazon (76.45)",
    "name": "Endgame Gear XM2 8k Gaming Mouse 26000 DPI 52g Ultraligero Ratón gaming",
    "pp_drop": 54,
    "pp_median": 69.95,
    "pp_price": 31.94,
-   "t": "2026-11-22T11:30:51.877087+00:00",
+   "t": "2026-11-24T11:30:52.354758+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -6907,6 +6922,28 @@
      "Kindle Paperwhite (16 GB) de Amazon (modelo de 2024): pantalla de 7\" sin reflejos y semanas de auton",
      "Kindle Paperwhite (16 GB) de Amazon (modelo de 2024): pantalla de 7\" sin reflejos y semanas de auton",
      "Amazon Kindle Paperwhite (última generación): ahora más fino y ligero, con pantalla de 7\" y luz cáli"
+    ]
+   }
+  },
+  "46124217668": {
+   "ean": "8806097711032",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Samsung Galaxy Tab S11 Ultra 5G 12GB/512GB Plata 14,6 pulgadas AMOLED 120Hz 13MP 11600mAh",
+   "pp_drop": 27,
+   "pp_median": 1818.99,
+   "pp_price": 1329.0,
+   "t": "2026-11-24T11:30:52.354758+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Samsung Galaxy Tab S11 Ultra 512GB 5G, Tablet con IA, Ligera, Herramientas IA, Dex, 12 GB de Memoria",
+     "Samsung Galaxy Tab S11 Ultra 5G 512GB/12GB Gris [versión Rumana]",
+     "Samsung Galaxy Tab S12 Ultra, 512GB, 12GB RAM, 11600mAh, IP68, Gris"
     ]
    }
   },
@@ -10618,10 +10655,10 @@
  "resumen": {
   "amazon_mas_barato": 28,
   "dudoso": 0,
-  "no_esta": 15,
+  "no_esta": 16,
   "oferta_real": 17,
   "pvpr_inflado": 4,
   "sin_precio": 8
  },
- "updated": "2026-11-24T11:01:09.384811+00:00"
+ "updated": "2026-11-24T11:30:52.354758+00:00"
 }
