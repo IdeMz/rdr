@@ -38,7 +38,7 @@
   "Lego": "2026-11-24T10:31:05.706189+00:00",
   "Limpieza del hogar": "2026-11-24T07:31:06.167251+00:00",
   "Maquillaje": "2026-11-23T13:35:33.211339+00:00",
-  "Menaje de cocina": "2026-11-22T19:00:59.176158+00:00",
+  "Menaje de cocina": "2026-11-24T17:01:06.823751+00:00",
   "Mochilas y maletas": "2026-11-20T07:30:55.091992+00:00",
   "Monitores": "2026-11-24T11:30:52.354758+00:00",
   "Móviles": "2026-11-23T15:30:54.461995+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-24T16:58:27.495741+00:00",
+ "next_at": "2026-11-24T17:30:35.613899+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -287,6 +287,17 @@
    "s": "busqueda",
    "t": "2026-11-18T10:31:48.560176+00:00",
    "title": "Intenso Alu Line - Memoria USB 2.0 de 4 GB, color antracita",
+   "v": []
+  },
+  "B00BD1DKIE": {
+   "c": "Menaje de cocina",
+   "d": 55,
+   "e": "🍳",
+   "m": 596,
+   "p": 15.79,
+   "s": "busqueda",
+   "t": "2026-11-24T17:01:37.525601+00:00",
+   "title": "WMF Touch - Juego de 2 Cuchillos con Fundas Protectoras, Hojas de Acero Especial con Antiadherente de 13 cm y 9 cm, Color Negro",
    "v": []
   },
   "B00CHO4PZI": {
@@ -1984,16 +1995,6 @@
    "s": "ofertas",
    "t": "2026-11-22T18:02:26.267506+00:00",
    "title": "Electronic Arts It Takes Two | Nintendo Switch |Videojuegos Castellano",
-   "v": []
-  },
-  "B0BFB8B1RL": {
-   "c": "Jardín",
-   "d": 16,
-   "e": "🌱",
-   "m": 190,
-   "p": 10.95,
-   "t": "2026-11-10T16:31:21.289762+00:00",
-   "title": "S&M 180040 Grifo de jardín antihielo con dos salidas y toma automática, Negro Y Azul",
    "v": []
   },
   "B0BG6DQRL9": {
@@ -4391,6 +4392,6 @@
  "tg_offset": 511048146,
  "x_copy": {
   "day": "2026-11-24",
-  "n": 20
+  "n": 21
  }
 }
