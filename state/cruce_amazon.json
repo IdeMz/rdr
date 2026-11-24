@@ -5848,11 +5848,11 @@
    "lista": "to_verify",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Endgame Gear XM2 8k 30000 DPI 51,5g 6 botones Ratón gaming",
-   "pista": "2199676 bytes; 25 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "2209394 bytes; 25 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 54,
    "pp_median": 69.95,
    "pp_price": 31.94,
-   "t": "2026-11-24T07:31:06.167251+00:00",
+   "t": "2026-11-24T13:35:33.816258+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -9719,11 +9719,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Moulinex Easy Fry XL Surface 4L 2200W 10 programas Gris AL402H pantalla táctil Freidora de aire",
-   "pista": "1753758 bytes; 46 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1324770 bytes; 9 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 33,
    "pp_median": 225.96,
    "pp_price": 150.95,
-   "t": "2026-11-24T05:50:32.257961+00:00",
+   "t": "2026-11-24T13:35:33.816258+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -10688,5 +10688,5 @@
   "pvpr_inflado": 4,
   "sin_precio": 9
  },
- "updated": "2026-11-24T13:05:37.513094+00:00"
+ "updated": "2026-11-24T13:35:33.816258+00:00"
 }

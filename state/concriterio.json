@@ -60,14 +60,14 @@
   "Tablets": "2026-11-22T16:30:48.501662+00:00",
   "Televisores": "2026-11-21T20:30:51.971542+00:00",
   "Textil hogar": "2026-11-23T10:35:32.957931+00:00",
-  "Videojuegos": "2026-11-22T18:01:40.272854+00:00",
+  "Videojuegos": "2026-11-24T13:35:33.816258+00:00",
   "Zapatillas": "2026-11-23T19:01:08.273550+00:00",
   "eReaders": "2026-11-23T13:05:32.398802+00:00"
  },
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-24T13:33:58.945410+00:00",
+ "next_at": "2026-11-24T14:00:57.560818+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1305,6 +1305,17 @@
    "p": 26.99,
    "t": "2026-11-17T11:30:56.030322+00:00",
    "title": "Tognana Big Family - Sartén (36 cm)",
+   "v": []
+  },
+  "B08FHXNT8X": {
+   "c": "Videojuegos",
+   "d": 46,
+   "e": "🎮",
+   "m": 589,
+   "p": 16.48,
+   "s": "ambas",
+   "t": "2026-11-24T13:36:01.949522+00:00",
+   "title": "Paladone Luz de Iconos Xbox - Lámpara Decorativa, Modo Dinámico, Accesorio de Escritorio, Producto Oficial",
    "v": []
   },
   "B08GCDYC89": {
@@ -4380,6 +4391,6 @@
  "tg_offset": 511048146,
  "x_copy": {
   "day": "2026-11-24",
-  "n": 13
+  "n": 14
  }
 }
