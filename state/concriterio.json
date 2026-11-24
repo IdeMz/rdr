@@ -52,7 +52,7 @@
   "Portátiles": "2026-11-23T15:30:54.461995+00:00",
   "Proyectores": "2026-11-23T12:35:32.005006+00:00",
   "Redes y wifi": "2026-11-22T08:01:00.717908+00:00",
-  "Relojes": "2026-11-22T15:01:08.377622+00:00",
+  "Relojes": "2026-11-24T14:01:02.613248+00:00",
   "Robots de cocina": "2026-11-24T08:01:02.036825+00:00",
   "Salud": "2026-11-24T08:30:50.826050+00:00",
   "Smartwatch": "2026-11-24T11:01:09.384811+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-24T14:00:57.560818+00:00",
+ "next_at": "2026-11-24T14:28:08.556575+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -486,6 +486,17 @@
    "title": "JOSERA NatureCat (1 x 10 kg) | Adultos | Pienso seco de Primera Calidad para Gatos Adultos | Salmón y Aves | Hierbas selectas y Frutas saludables | Sin Cereales | Comida para Gatos | Pack 1",
    "v": []
   },
+  "B01HP3C2T6": {
+   "c": "Relojes",
+   "d": 30,
+   "e": "🕰️",
+   "m": 590,
+   "p": 104.3,
+   "s": "ambas",
+   "t": "2026-11-24T14:01:37.836618+00:00",
+   "title": "D-Bear SQ - Reloj de Pulsera de Acero",
+   "v": []
+  },
   "B01KHILJ5O": {
    "c": "Iluminación",
    "d": 52,
@@ -657,16 +668,6 @@
    "s": "ofertas",
    "t": "2026-11-19T18:18:10.633810+00:00",
    "title": "Neutrogena Rutina Hydro Boost, Gel de Agua 50 ml + Contorno de ojos 15 ml",
-   "v": []
-  },
-  "B079QQ34RL": {
-   "c": "Relojes",
-   "d": 29,
-   "e": "🕰️",
-   "m": 185,
-   "p": 126.75,
-   "t": "2026-11-10T13:36:05.516695+00:00",
-   "title": "Reloj Analógico Multifuncional de Cuarzo para Hombres con Correa de Silicona, Acero Inoxidable o Cuero, Subesferas para Día y Fecha, Resistente al Agua hasta 5ATM.",
    "v": []
   },
   "B07BCNS9YB": {
@@ -4391,6 +4392,6 @@
  "tg_offset": 511048146,
  "x_copy": {
   "day": "2026-11-24",
-  "n": 14
+  "n": 15
  }
 }
