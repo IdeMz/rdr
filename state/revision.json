@@ -1,5 +1,8 @@
 {
- "blocked": {},
+ "blocked": {
+  "1102743142": "Lemorele Expand Store",
+  "1103839682": "Shop1103839682 Store"
+ },
  "items": {
   "a1005004871254002": {
    "drop": 13,
@@ -76,6 +79,7 @@
    "title": "JANGKLIFE-minitaladro eléctrico de 9V, pluma de tallado, Kit de herramientas rotativas de velocidad Variable, grabador para pulido"
   },
   "a1005005428182249": {
+   "answered": "2026-11-24T09:10:56.315688+00:00",
    "drop": 12,
    "id": "1005005428182249",
    "image": "https://ae-pic-a1.aliexpress-media.com/kf/S4884114f40cb4c42a8d243cd6ca71029p.jpg",
@@ -89,7 +93,7 @@
    "shop": "Lemorele Expand Store",
    "shop_id": "1102743142",
    "src": "a",
-   "st": "sent",
+   "st": "no",
    "t": "2026-11-24T05:09:25.740566+00:00",
    "title": "Lemorele inalámbrico HDMI Wifi transmisor receptor 50M 1080P60Hz extensor adaptador de pantalla Dongle para TV Stick Monitor proyector PC"
   },
@@ -331,6 +335,7 @@
    "title": "Manguera de jardín más vendida, manguera Flexible, tubo de riego de jardín, manguera de lavado de coches de alta presión de látex doble, suministros de riego pa"
   },
   "a1005006058922932": {
+   "answered": "2026-11-24T09:10:52.763425+00:00",
    "drop": 14,
    "id": "1005006058922932",
    "image": "https://ae-pic-a1.aliexpress-media.com/kf/S7ee7342718f047b7bd952bef402a48512.jpg",
@@ -344,7 +349,7 @@
    "shop": "Shop1103839682 Store",
    "shop_id": "1103839682",
    "src": "a",
-   "st": "sent",
+   "st": "no",
    "t": "2026-11-24T05:09:25.740566+00:00",
    "title": "Aspiradora de Mano Multifuncional con Gran Potencia de Succión, Filtro HEPA, Inalámbrica, para Auto, Piso y Hogar"
   },
@@ -587,6 +592,7 @@
    "title": "Figura Grande de Guerrero Orco Olog-hai del Ejército Medieval de El Señor de los Anillos, Troll con Armadura, Bloques de Construcción, Figuras, Ladrillos, Jugue"
   },
   "a1005012536387411": {
+   "answered": "2026-11-24T09:10:52.763425+00:00",
    "drop": 13,
    "id": "1005012536387411",
    "image": "https://ae-pic-a1.aliexpress-media.com/kf/A981a9078c22b466390de47bdfc28e01fu.jpg",
@@ -600,7 +606,7 @@
    "shop": "Shop1105233629 Store",
    "shop_id": "1105233629",
    "src": "a",
-   "st": "sent",
+   "st": "ok",
    "t": "2026-11-24T05:09:25.740566+00:00",
    "title": "WOOX 40\" fresco verano ventiladores de techo luz con control remoto viento fuerte nivel 6,ventilador conjunto separado o lámpara led,motorcobre DC silencioso,lu"
   },
@@ -702,6 +708,7 @@
   "1102856219": "Life Dreamer Store",
   "1103573332": "Stone's Store",
   "1104101208": "PERFUMES ÁRABES DUBAI Store",
+  "1105233629": "Shop1105233629 Store",
   "3179007": "BASEUS Co.,Ltd. Store"
  }
 }
