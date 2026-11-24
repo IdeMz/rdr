@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-24T18:00:45.419498+00:00",
+ "next_at": "2026-11-24T18:31:02.181422+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -572,16 +572,6 @@
    "s": "ambas",
    "t": "2026-11-18T20:02:05.366859+00:00",
    "title": "Tostadora Philips Daily Collection, 2 ranuras, 8 niveles, negra",
-   "v": []
-  },
-  "B06W54NMJY": {
-   "c": "Café y cápsulas",
-   "d": 22,
-   "e": "🫘",
-   "m": 192,
-   "p": 17.11,
-   "t": "2026-11-10T17:41:26.340276+00:00",
-   "title": "Caffè Borbone Respresso, Mezcla de Café Roja - 100 Cápsulas -Compatibles con Máquinas de Café Nespresso®* para uso doméstico",
    "v": []
   },
   "B06XDS7J69": {
@@ -4171,6 +4161,19 @@
    "u": "https://s.click.aliexpress.com/e/_c4PuCWk5",
    "v": []
   },
+  "ae:1005013118388153": {
+   "auto": true,
+   "c": "",
+   "d": 12,
+   "e": "",
+   "m": 598,
+   "p": 18.17,
+   "st": "ALIEXPRESS",
+   "t": "2026-11-24T18:01:08.415530+00:00",
+   "title": "Bloques de Construcción de Mini Auto de Carreras Fantasma, 562 Piezas, MOC RetroAmbulancia, Ladrillos para Armar, Juguete DIY para Adultos, Regalo de Halloween,",
+   "u": "https://s.click.aliexpress.com/e/_c3WdVZFT",
+   "v": []
+  },
   "pp:39633853398": {
    "auto": true,
    "c": "",
@@ -4322,10 +4325,6 @@
    "t": "2026-11-24T11:01:09.384811+00:00",
    "why": "referencia: precio mediano 79,99€, hoy 189,99€ (138% por encima); el descuento es solo contra el PVPR"
   },
-  "B0F2Q8S4HN": {
-   "t": "2026-11-23T17:30:52.802500+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0F3P65X6Q": {
    "t": "2026-11-24T11:30:52.354758+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4378,21 +4377,17 @@
   }
  ],
  "store_skip": {
-  "pp:37600255358": "2026-11-23T09:31:06.199793+00:00",
+  "pp:37600255358": "2026-11-24T18:01:08.415530+00:00",
   "pp:45227024753": "2026-11-24T09:30:54.762871+00:00",
   "pp:45403198935": "2026-11-24T09:30:54.762871+00:00",
-  "pp:45948306722": "2026-11-23T09:31:06.199793+00:00",
   "pp:45956991449": "2026-11-24T09:30:54.762871+00:00",
-  "pp:45956992173": "2026-11-23T16:31:04.905592+00:00",
-  "pp:45992963594": "2026-11-23T17:01:08.030273+00:00",
-  "pp:46146892179": "2026-11-23T16:31:04.905592+00:00",
-  "pp:46186037860": "2026-11-23T16:31:04.905592+00:00",
-  "pp:46599140756": "2026-11-23T09:31:06.199793+00:00"
+  "pp:46247661145": "2026-11-24T18:01:08.415530+00:00",
+  "pp:46599140756": "2026-11-24T18:01:08.415530+00:00"
  },
  "summary_day": "2026-11-23",
  "tg_offset": 511048146,
  "x_copy": {
   "day": "2026-11-24",
-  "n": 22
+  "n": 23
  }
 }
