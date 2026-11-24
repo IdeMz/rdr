@@ -943,6 +943,13 @@
    "v": 3,
    "via": "modelo"
   },
+  "4242005525997": {
+   "a": "B0FGJS65NS",
+   "t": "2026-11-24T15:30:53.979529+00:00",
+   "title": "Bosch - Freidora de Aire, Serie 6, negro, MAF671B1",
+   "v": 3,
+   "via": "ean"
+  },
   "4251442509026": {
    "a": "B0CSP7NKLF",
    "t": "2026-11-22T12:01:04.879461+00:00",
@@ -5369,22 +5376,22 @@
    "veredicto": "amazon_mas_barato"
   },
   "45410578658": {
-   "ahorro_vs_amazon": 12,
+   "ahorro_vs_amazon": 22,
    "amz_low30": null,
    "amz_median": 128.95,
-   "amz_price": 109.9,
+   "amz_price": 99.99,
    "amz_title": "ASUS RT-BE58U - Router Extensible WiFi 7 Doble Banda",
    "asin": "B0D84FBQZR",
    "disponible": true,
    "ean": "4711387452943",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "Amazon 109.90 frente a 113.99",
+   "motivo": "Amazon 99.99 frente a 99.99",
    "name": "ASUS RT-BE58U WiFi 7 compatible con AiMesh 3600Mbps 5 puertos 2,5G 4 antenas Router de doble banda",
-   "pp_drop": 21,
+   "pp_drop": 31,
    "pp_median": 143.99,
-   "pp_price": 113.99,
-   "t": "2026-11-24T00:50:33.890785+00:00",
+   "pp_price": 99.99,
+   "t": "2026-11-24T15:30:53.979529+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -8023,6 +8030,26 @@
    "t": "2026-11-17T23:05:21.933104+00:00",
    "v": 3,
    "veredicto": "oferta_real"
+  },
+  "46239685084": {
+   "ahorro_vs_amazon": -31,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 147.21,
+   "amz_title": "Bosch - Freidora de Aire, Serie 6, negro, MAF671B1",
+   "asin": "B0FGJS65NS",
+   "disponible": true,
+   "ean": "4242005525997",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 147.21 frente a 192.95",
+   "name": "Bosch Serie 6 7,2L 1800W 7 programas Negro MAF671B1 pantalla táctil Freidora de aire",
+   "pp_drop": 28,
+   "pp_median": 266.95,
+   "pp_price": 192.95,
+   "t": "2026-11-24T15:30:53.979529+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
   },
   "46239685089": {
    "ahorro_vs_amazon": 22,
@@ -10755,12 +10782,12 @@
  },
  "night_at": "2026-11-24T06:50:35.886268+00:00",
  "resumen": {
-  "amazon_mas_barato": 28,
+  "amazon_mas_barato": 29,
   "dudoso": 0,
   "no_esta": 17,
   "oferta_real": 18,
   "pvpr_inflado": 4,
   "sin_precio": 9
  },
- "updated": "2026-11-24T15:01:05.679895+00:00"
+ "updated": "2026-11-24T15:30:53.979529+00:00"
 }

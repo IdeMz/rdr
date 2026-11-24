@@ -21,7 +21,7 @@
   "Cuidado de la piel": "2026-11-23T11:35:39.474985+00:00",
   "Cuidado del cabello": "2026-11-22T18:30:51.920701+00:00",
   "Cámaras de seguridad": "2026-11-24T15:01:05.679895+00:00",
-  "Decoración navideña": "2026-11-20T08:30:53.150165+00:00",
+  "Decoración navideña": "2026-11-24T15:30:53.979529+00:00",
   "Domótica": "2026-11-23T09:01:11.110279+00:00",
   "Droguería": "2026-11-22T10:01:06.437573+00:00",
   "Fitness en casa": "2026-11-23T20:45:37.029920+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-24T15:27:54.358434+00:00",
+ "next_at": "2026-11-24T15:59:58.906184+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2694,6 +2694,17 @@
    "title": "Amazon Basics Pesas ajustables para tobillo y muñeca para mujeres y hombres, 1.13kg cada una, juego de 2",
    "v": []
   },
+  "B0DMWL2XDY": {
+   "c": "Decoración navideña",
+   "d": 44,
+   "e": "🎄",
+   "m": 593,
+   "p": 13.99,
+   "s": "ambas",
+   "t": "2026-11-24T15:31:18.863907+00:00",
+   "title": "Furby Minis, Calendario de Adviento",
+   "v": []
+  },
   "B0DN6B2BWP": {
    "c": "Perros",
    "d": 35,
@@ -3445,16 +3456,6 @@
    "s": "ofertas",
    "t": "2026-11-12T11:46:36.756650+00:00",
    "title": "Mujer Adizero Pacer W Shoes",
-   "v": []
-  },
-  "B0FT8PMRW4": {
-   "c": "Móviles",
-   "d": 11,
-   "e": "📱",
-   "m": 188,
-   "p": 177.0,
-   "t": "2026-11-10T15:21:10.062687+00:00",
-   "title": "Samsung SM-A175 A17 4+128GB 6.7\" 4G Black DS ITA",
    "v": []
   },
   "B0FV8PMMLP": {
@@ -4360,18 +4361,6 @@
    "r": 4.7,
    "t": "2026-11-24T13:05:37.513094+00:00",
    "title": "Hasbro Nerf 2.0 Commander RC-6, Lanzador de Dardos de Juguete, 12 Piezas, Juegos al Aire Libre para Niños y Niñas de 8 Años o Más, Tambor Giratorio"
-  },
-  {
-   "a": "B00NTCH52W",
-   "c": "Cargadores y baterías",
-   "e": "🔌",
-   "img": "https://m.media-amazon.com/images/I/81x9-Q9qLfL._AC_UL320_.jpg",
-   "n": 292600,
-   "op": 10.41,
-   "p": 7.93,
-   "r": 4.6,
-   "t": "2026-11-24T12:01:19.033341+00:00",
-   "title": "Amazon Basics - Paquete de 20 pilas alcalinas AA de alto rendimiento, 1,5 voltios, vida útil de 10 años"
   }
  ],
  "store_skip": {
@@ -4390,6 +4379,6 @@
  "tg_offset": 511048146,
  "x_copy": {
   "day": "2026-11-24",
-  "n": 17
+  "n": 18
  }
 }
