@@ -1578,6 +1578,13 @@
    "v": 3,
    "via": "ean"
   },
+  "5025232838363": {
+   "a": "B01G8JR3TM",
+   "t": "2026-11-24T19:05:34.869773+00:00",
+   "title": "Panasonic ER-GC71 - Cortador de barba / cabello con 39 configuraciones de longitud, para hombres, peinado y cuidado para cabello y barba",
+   "v": 3,
+   "via": "ean"
+  },
   "5025232931552": {
    "a": "B0BXMN8VN8",
    "t": "2026-11-14T04:50:24.590570+00:00",
@@ -2248,6 +2255,13 @@
      "Creatorally Archivo de Corte por Láser, Cortes de Grabado de Archivos Digitales(Alcancía de Engranaj"
     ]
    }
+  },
+  "6971889231141": {
+   "a": "B0G63LXK6R",
+   "t": "2026-11-24T19:05:34.869773+00:00",
+   "title": "OBSBOT Tiny 3 Lite AI-Powered Spatial Audio 4K Webcam, AI Tracking PTZ",
+   "v": 3,
+   "via": "nombre"
   },
   "6971974621826": {
    "a": "",
@@ -8769,6 +8783,26 @@
    "v": 3,
    "veredicto": "oferta_real"
   },
+  "46599139486": {
+   "ahorro_vs_amazon": -74,
+   "amz_low30": 209.0,
+   "amz_median": 209.0,
+   "amz_price": 159.0,
+   "amz_title": "OBSBOT Tiny 3 Lite AI-Powered Spatial Audio 4K Webcam, AI Tracking PTZ",
+   "asin": "B0G63LXK6R",
+   "disponible": true,
+   "ean": "6971889231141",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "Amazon 159.00 frente a 362.95",
+   "name": "Webcam OBSBOT Tiny 3 4K con Micrófono Negro",
+   "pp_drop": 21,
+   "pp_median": 456.94,
+   "pp_price": 362.95,
+   "t": "2026-11-24T19:05:34.869773+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "46599139490": {
    "ean": "0199251521225",
    "lista": "candidates",
@@ -9769,6 +9803,26 @@
    "pp_median": 97.95,
    "pp_price": 83.62,
    "t": "2026-11-18T02:35:23.555406+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
+  "46599141816": {
+   "ahorro_vs_amazon": 26,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 74.62,
+   "amz_title": "Panasonic ER-GC71 - Cortador de barba / cabello con 39 configuraciones de longitud, para hombres, peinado y cuidado para cabello y barba",
+   "asin": "B01G8JR3TM",
+   "disponible": true,
+   "ean": "5025232838363",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "26 % por debajo del habitual en Amazon (74.62)",
+   "name": "Panasonic ER-GC71 seco y mojado Plata inalámbrico 40 min Cortapelos",
+   "pp_drop": 31,
+   "pp_median": 79.9,
+   "pp_price": 54.9,
+   "t": "2026-11-24T19:05:34.869773+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -10836,12 +10890,12 @@
  },
  "night_at": "2026-11-24T06:50:35.886268+00:00",
  "resumen": {
-  "amazon_mas_barato": 31,
+  "amazon_mas_barato": 32,
   "dudoso": 0,
   "no_esta": 17,
-  "oferta_real": 18,
+  "oferta_real": 19,
   "pvpr_inflado": 4,
   "sin_precio": 9
  },
- "updated": "2026-11-24T18:35:37.637788+00:00"
+ "updated": "2026-11-24T19:05:34.869773+00:00"
 }

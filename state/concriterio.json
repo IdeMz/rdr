@@ -30,7 +30,7 @@
   "Gaming": "2026-11-23T17:30:52.802500+00:00",
   "Gatos": "2026-11-23T20:15:43.714745+00:00",
   "Herramientas": "2026-11-24T10:01:04.425858+00:00",
-  "Higiene personal": "2026-11-23T09:01:11.110279+00:00",
+  "Higiene personal": "2026-11-24T19:05:34.869773+00:00",
   "Iluminación": "2026-11-22T21:01:10.291765+00:00",
   "Impresoras": "2026-11-21T12:30:56.768648+00:00",
   "Jardín": "2026-11-24T14:30:59.149182+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-24T19:04:34.661504+00:00",
+ "next_at": "2026-11-24T19:33:46.788236+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2271,16 +2271,6 @@
    "title": "Kindle Paperwhite (16 GB) de Amazon (modelo de 2024): pantalla de 7\" sin reflejos y semanas de autonomía | Con publicidad | Frambuesa",
    "v": []
   },
-  "B0CGDS7RZ1": {
-   "c": "Mochilas y maletas",
-   "d": 42,
-   "e": "🎒",
-   "m": 194,
-   "p": 25.99,
-   "t": "2026-11-10T18:51:08.337543+00:00",
-   "title": "Take2Cabin - Ryanair Bolsa de Cabina 25 x 20 x 40 cm, 24 l, 0,40 kg, Equipaje de Mano, Mochila de Avión S Bajo Asiento, Grün (Dark Forest)",
-   "v": []
-  },
   "B0CH9SBG5G": {
    "c": "Oficina",
    "d": 30,
@@ -3473,6 +3463,17 @@
    "title": "Mujer Adizero Pacer W Shoes",
    "v": []
   },
+  "B0FTTG6JNC": {
+   "c": "Higiene personal",
+   "d": 55,
+   "e": "🪥",
+   "m": 600,
+   "p": 6.75,
+   "s": "ambas",
+   "t": "2026-11-24T19:06:17.190914+00:00",
+   "title": "Oral-B Pro 3D White Clinical Dentífrico Blanqueante, 3x75ml",
+   "v": []
+  },
   "B0FV8PMMLP": {
    "c": "Zapatillas",
    "d": 38,
@@ -4290,16 +4291,8 @@
    "t": "2026-11-24T09:01:20.372772+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B09PZ8675X": {
-   "t": "2026-11-23T19:01:08.273550+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0BY2R4BHW": {
    "t": "2026-11-24T11:30:52.354758+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0C59CXZVX": {
-   "t": "2026-11-23T19:01:08.273550+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0CG6LMQHH": {
@@ -4341,6 +4334,18 @@
  },
  "reserve": [
   {
+   "a": "B00AI5NZDG",
+   "c": "Higiene personal",
+   "e": "🪥",
+   "img": "https://m.media-amazon.com/images/I/61+nybEl1LL._AC_UL320_.jpg",
+   "n": 4700,
+   "op": 6.95,
+   "p": 3.98,
+   "r": 4.7,
+   "t": "2026-11-24T19:05:34.869773+00:00",
+   "title": "Weleda Perineum - pasta dental para niños, 50 ml, 1 unidad"
+  },
+  {
    "a": "B073XPF4JD",
    "c": "Climatización",
    "e": "🌬️",
@@ -4363,18 +4368,6 @@
    "r": 4.6,
    "t": "2026-11-24T16:30:59.602669+00:00",
    "title": "Todocama - Edredón/Relleno nórdico de Fibra antiácaros, Otoño-Invierno, 300 g/m², Color Blanco, 80 x 160 cm"
-  },
-  {
-   "a": "B00S2WDIGG",
-   "c": "Perfumes",
-   "e": "🌸",
-   "img": "https://m.media-amazon.com/images/I/41N95TJjnSL._AC_UL320_.jpg",
-   "n": 40400,
-   "op": 35.36,
-   "p": 26.54,
-   "r": 4.6,
-   "t": "2026-11-24T16:01:07.815808+00:00",
-   "title": "CALVIN KLEIN CK ONE Eau de Toilette"
   }
  ],
  "store_skip": {
@@ -4389,6 +4382,6 @@
  "tg_offset": 511048146,
  "x_copy": {
   "day": "2026-11-24",
-  "n": 24
+  "n": 25
  }
 }
