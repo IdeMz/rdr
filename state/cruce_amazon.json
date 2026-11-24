@@ -4344,11 +4344,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Garmin Forerunner 265S 42 mm Blanco/Verde 1,1 pulgadas AMOLED GPS NFC 15 días 5ATM Smartwatch",
-   "pista": "2000439 bytes; 16 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1909907 bytes; 10 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 18,
    "pp_median": 329.95,
    "pp_price": 269.9,
-   "t": "2026-11-24T00:50:33.890785+00:00",
+   "t": "2026-11-24T06:50:35.886268+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -10566,7 +10566,7 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-24T05:50:32.257961+00:00",
+ "night_at": "2026-11-24T06:50:35.886268+00:00",
  "resumen": {
   "amazon_mas_barato": 30,
   "dudoso": 0,
@@ -10575,5 +10575,5 @@
   "pvpr_inflado": 5,
   "sin_precio": 10
  },
- "updated": "2026-11-24T05:50:32.257961+00:00"
+ "updated": "2026-11-24T06:50:35.886268+00:00"
 }
