@@ -4933,7 +4933,7 @@
    "pp_drop": 26,
    "pp_median": 68.95,
    "pp_price": 50.95,
-   "t": "2026-11-21T23:50:35.131094+00:00",
+   "t": "2026-11-24T00:35:26.329902+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -6470,22 +6470,22 @@
    "veredicto": "oferta_real"
   },
   "45992963538": {
-   "ahorro_vs_amazon": 18,
+   "ahorro_vs_amazon": 20,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 485.8,
+   "amz_price": 500.15,
    "amz_title": "Xiaomi Router BE19000 Pro EU",
    "asin": "B0HN2ZFG5K",
    "disponible": true,
    "ean": "6941948709614",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "18 % por debajo del habitual en Amazon (485.80)",
+   "motivo": "20 % por debajo del habitual en Amazon (500.15)",
    "name": "Xiaomi BE19000 Pro WiFi 7 Triple Banda USB 3.0 Router",
    "pp_drop": 17,
    "pp_median": 479.0,
    "pp_price": 399.95,
-   "t": "2026-11-22T00:05:27.168899+00:00",
+   "t": "2026-11-24T00:35:26.329902+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -10237,7 +10237,7 @@
    "pp_drop": 21,
    "pp_median": 159.0,
    "pp_price": 125.95,
-   "t": "2026-11-22T00:05:27.168899+00:00",
+   "t": "2026-11-24T00:35:26.329902+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -10459,7 +10459,7 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-24T00:20:32.325848+00:00",
+ "night_at": "2026-11-24T00:35:26.329902+00:00",
  "resumen": {
   "amazon_mas_barato": 29,
   "dudoso": 0,
@@ -10468,5 +10468,5 @@
   "pvpr_inflado": 4,
   "sin_precio": 11
  },
- "updated": "2026-11-24T00:20:32.325848+00:00"
+ "updated": "2026-11-24T00:35:26.329902+00:00"
 }
