@@ -1251,6 +1251,13 @@
    "v": 3,
    "via": "ean"
   },
+  "4711387546321": {
+   "a": "B09TJGD3RS",
+   "t": "2026-11-24T20:35:34.454164+00:00",
+   "title": "ASUS TUF Gaming BE6500 - Router WiFi 7 de Doble Banda",
+   "v": 3,
+   "via": "ean"
+  },
   "4711387754818": {
    "a": "B0DJDFTS7R",
    "t": "2026-11-15T12:50:40.627443+00:00",
@@ -5480,6 +5487,26 @@
    "t": "2026-11-16T02:20:24.133415+00:00",
    "veredicto": "amazon_mas_barato"
   },
+  "45410578656": {
+   "ahorro_vs_amazon": 6,
+   "amz_low30": 151.95,
+   "amz_median": 158.0,
+   "amz_price": 119.99,
+   "amz_title": "ASUS TUF Gaming BE6500 - Router WiFi 7 de Doble Banda",
+   "asin": "B09TJGD3RS",
+   "disponible": true,
+   "ean": "4711387546321",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 119.99 frente a 147.99",
+   "name": "ASUS TUF Gaming BE6500 WiFi 7 Router de Doble Banda Gaming",
+   "pp_drop": 24,
+   "pp_median": 195.0,
+   "pp_price": 147.99,
+   "t": "2026-11-24T20:35:34.454164+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "45410578658": {
    "ahorro_vs_amazon": 22,
    "amz_low30": null,
@@ -5955,22 +5982,22 @@
    "veredicto": "amazon_mas_barato"
   },
   "45948306722": {
-   "ahorro_vs_amazon": 40,
+   "ahorro_vs_amazon": 39,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 72.96,
+   "amz_price": 72.53,
    "amz_title": "Endgame Gear XM2w 4k Ratón Gaming Inalámbrico, Blanco",
    "asin": "B0DG612SH5",
    "disponible": true,
    "ean": "4251442511296",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "40 % por debajo del habitual en Amazon (72.96)",
+   "motivo": "39 % por debajo del habitual en Amazon (72.53)",
    "name": "Endgame Gear XM2w White Frost 4K Wireless 2,4 GHz 26000 DPI 7 botones 62 g Ratón gaming inalámbrico",
    "pp_drop": 31,
    "pp_median": 63.95,
    "pp_price": 43.95,
-   "t": "2026-11-22T17:30:50.627813+00:00",
+   "t": "2026-11-24T20:35:34.454164+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -10927,12 +10954,12 @@
  },
  "night_at": "2026-11-24T06:50:35.886268+00:00",
  "resumen": {
-  "amazon_mas_barato": 32,
+  "amazon_mas_barato": 33,
   "dudoso": 0,
   "no_esta": 18,
   "oferta_real": 19,
   "pvpr_inflado": 4,
   "sin_precio": 9
  },
- "updated": "2026-11-24T20:05:32.905580+00:00"
+ "updated": "2026-11-24T20:35:34.454164+00:00"
 }
