@@ -3744,19 +3744,19 @@
    "ahorro_vs_amazon": 5,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 177.5,
+   "amz_price": 177.6,
    "amz_title": "SJCAM Cámara Corporal A50",
    "asin": "B0B9R1YKQP",
    "disponible": true,
    "ean": "6972476162213",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "antes 209.00 en PowerPlanet, pero en Amazon suele estar a 177.50",
+   "motivo": "antes 209.00 en PowerPlanet, pero en Amazon suele estar a 177.60",
    "name": "SJCAM A50 GPS Negro 4K 30fps WiFi Cámara deportiva",
    "pp_drop": 19,
    "pp_median": 209.0,
    "pp_price": 169.0,
-   "t": "2026-11-22T23:50:30.459647+00:00",
+   "t": "2026-11-24T23:50:40.387410+00:00",
    "v": 3,
    "veredicto": "pvpr_inflado"
   },
@@ -4529,22 +4529,22 @@
    }
   },
   "43856947347": {
-   "ahorro_vs_amazon": 13,
-   "amz_low30": 494.99,
+   "ahorro_vs_amazon": 21,
+   "amz_low30": null,
    "amz_median": null,
-   "amz_price": 470.24,
+   "amz_price": 546.08,
    "amz_title": "Garmin Venu X1, Smartwatch Premium con GPS, Pantalla AMOLED de 2'', Funciones de Salud y Bienestar 24/7, Altavoz y Micrófono Integrados, Mapas, Linterna LED, ha",
    "asin": "B0GF2FKLHT",
    "disponible": true,
    "ean": "0753759368777",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "13 % por debajo del habitual en Amazon (494.99)",
+   "motivo": "21 % por debajo del habitual en Amazon (546.08)",
    "name": "Garmin Venu X1 Caja de titanio Dorado Correa Nailon Gris 2 pulgadas AMOLED 8 días 5ATM Smartwatch",
    "pp_drop": 16,
    "pp_median": 509.0,
    "pp_price": 429.9,
-   "t": "2026-11-22T23:50:30.459647+00:00",
+   "t": "2026-11-24T23:50:40.387410+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -11114,7 +11114,7 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-24T23:35:24.876857+00:00",
+ "night_at": "2026-11-24T23:50:40.387410+00:00",
  "resumen": {
   "amazon_mas_barato": 37,
   "dudoso": 0,
@@ -11123,5 +11123,5 @@
   "pvpr_inflado": 4,
   "sin_precio": 9
  },
- "updated": "2026-11-24T23:35:24.876857+00:00"
+ "updated": "2026-11-24T23:50:40.387410+00:00"
 }
