@@ -6,6 +6,13 @@
    "title": "Bose Auriculares de Diadema QuietComfort (2.ª Gen): circumaurales inalámbricos, cancelación Activa de Ruido, Mic, Audio inmersivo, USB-C, Audio sin pérdida, has",
    "via": "nombre"
   },
+  "0045496513016": {
+   "a": "B0FBMC37JM",
+   "t": "2026-11-24T01:05:24.134016+00:00",
+   "title": "Pokémon Legends: Z-A - Nintendo Switch 2 Edition",
+   "v": 3,
+   "via": "nombre"
+  },
   "0194253097297": {
    "a": "B0BJMMFCDX",
    "t": "2026-11-13T12:15:38.991127+00:00",
@@ -1205,6 +1212,13 @@
    "a": "B0DZPCGF7T",
    "t": "2026-11-13T20:05:35.325047+00:00",
    "title": "ASUS ROG Strix 1000W Platinum - Fuente de Alimentación",
+   "via": "ean"
+  },
+  "4711387880555": {
+   "a": "B0FBWRZMQ6",
+   "t": "2026-11-24T01:05:24.134016+00:00",
+   "title": "ASUS ROG Strix GS-BE18000 - Router WiFi 7 tribanda",
+   "v": 3,
    "via": "ean"
   },
   "4711387951224": {
@@ -4135,6 +4149,26 @@
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
+  "42910824055": {
+   "ahorro_vs_amazon": 9,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 58.35,
+   "amz_title": "Pokémon Legends: Z-A - Nintendo Switch 2 Edition",
+   "asin": "B0FBMC37JM",
+   "disponible": true,
+   "ean": "0045496513016",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "antes 69.95 en PowerPlanet, pero en Amazon suele estar a 58.35",
+   "name": "Leyendas Pokémon: Z-A - Nintendo Switch",
+   "pp_drop": 24,
+   "pp_median": 69.95,
+   "pp_price": 53.39,
+   "t": "2026-11-24T01:05:24.134016+00:00",
+   "v": 3,
+   "veredicto": "pvpr_inflado"
+  },
   "43041482733": {
    "ahorro_vs_amazon": 59,
    "amz_low30": null,
@@ -4274,6 +4308,26 @@
    "pp_median": 509.0,
    "pp_price": 429.9,
    "t": "2026-11-22T23:50:30.459647+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
+  "44113598070": {
+   "ahorro_vs_amazon": 17,
+   "amz_low30": null,
+   "amz_median": 379.86,
+   "amz_price": 356.97,
+   "amz_title": "ASUS ROG Strix GS-BE18000 - Router WiFi 7 tribanda",
+   "asin": "B0FBWRZMQ6",
+   "disponible": true,
+   "ean": "4711387880555",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "17 % por debajo del habitual en Amazon (379.86)",
+   "name": "ASUS ROG Strix GS-BE18000 WiFi 7 18000 Mbps Router de Triple Banda Gaming",
+   "pp_drop": 17,
+   "pp_median": 378.98,
+   "pp_price": 315.99,
+   "t": "2026-11-24T01:05:24.134016+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -5725,11 +5779,11 @@
    "lista": "to_verify",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Endgame Gear XM2 8k 30000 DPI 51,5g 6 botones Ratón gaming",
-   "pista": "2289138 bytes; 45 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "2199097 bytes; 25 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 54,
    "pp_median": 69.95,
    "pp_price": 31.94,
-   "t": "2026-11-23T19:01:08.273550+00:00",
+   "t": "2026-11-24T01:05:24.134016+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -10513,14 +10567,14 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-24T00:50:33.890785+00:00",
+ "night_at": "2026-11-24T01:05:24.134016+00:00",
  "resumen": {
   "amazon_mas_barato": 30,
   "dudoso": 0,
   "no_esta": 16,
-  "oferta_real": 27,
-  "pvpr_inflado": 4,
+  "oferta_real": 28,
+  "pvpr_inflado": 5,
   "sin_precio": 11
  },
- "updated": "2026-11-24T00:50:33.890785+00:00"
+ "updated": "2026-11-24T01:05:24.134016+00:00"
 }
