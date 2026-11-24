@@ -2106,6 +2106,26 @@
     ]
    }
   },
+  "6952268959511": {
+   "a": "",
+   "t": "2026-11-24T10:31:05.706189+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "modelo": [
+     "Chuwi Hi10X Tablet PC 10.1\" Sistema Operativo Windows 10 (Intel Gemini-Lake N4100) Quad-Core hasta 2",
+     "CHUWI CoreBook - Ordenador portátil de 14 Pulgadas Intel Core i3-10100Y, 8 GB de RAM, 256 GB SSD, W1",
+     "Tablet Android 15 Gemini AI, 128GB ROM+2TB TF, 30 RAM, 10 Pulgadas Tableta táctil con Teclado y rató"
+    ],
+    "nombre": [
+     "Hipen H7 - Lápiz capacitivo para UBook X, 4096 Pressure",
+     "Metapen M2 Lápiz para Surface Stylus Pen con 4096 Nivel de Presión",
+     "Lápiz MoKo MPP 2.0 Inclinable Para Portátiles 2en1 HP,4096 Niveles Presión"
+    ]
+   }
+  },
   "6953156299399": {
    "a": "B0FHK3F3DY",
    "t": "2026-11-14T02:20:24.077147+00:00",
@@ -3628,6 +3648,33 @@
    "t": "2026-11-20T16:30:59.454749+00:00",
    "v": 3,
    "veredicto": "oferta_real"
+  },
+  "39374754693": {
+   "ean": "6952268959511",
+   "lista": "to_verify",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Stylus Chuwi HiPen H7 para UBook/UBook Pro/Ubook X/Hi 10X/Hi10 Max/SurPad/FreeBook",
+   "pp_drop": 57,
+   "pp_median": 69.99,
+   "pp_price": 29.9,
+   "t": "2026-11-24T10:31:05.706189+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "modelo": [
+     "Chuwi Hi10X Tablet PC 10.1\" Sistema Operativo Windows 10 (Intel Gemini-Lake N4100) Quad-Core hasta 2",
+     "CHUWI CoreBook - Ordenador portátil de 14 Pulgadas Intel Core i3-10100Y, 8 GB de RAM, 256 GB SSD, W1",
+     "Tablet Android 15 Gemini AI, 128GB ROM+2TB TF, 30 RAM, 10 Pulgadas Tableta táctil con Teclado y rató"
+    ],
+    "nombre": [
+     "Hipen H7 - Lápiz capacitivo para UBook X, 4096 Pressure",
+     "Metapen M2 Lápiz para Surface Stylus Pen con 4096 Nivel de Presión",
+     "Lápiz MoKo MPP 2.0 Inclinable Para Portátiles 2en1 HP,4096 Niveles Presión"
+    ]
+   }
   },
   "39471821088": {
    "ean": "0197498115399",
@@ -8331,7 +8378,7 @@
    "pp_drop": 54,
    "pp_median": 183.94,
    "pp_price": 84.95,
-   "t": "2026-11-22T10:30:56.212290+00:00",
+   "t": "2026-11-24T10:31:05.706189+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -10568,12 +10615,12 @@
  },
  "night_at": "2026-11-24T06:50:35.886268+00:00",
  "resumen": {
-  "amazon_mas_barato": 30,
+  "amazon_mas_barato": 28,
   "dudoso": 0,
-  "no_esta": 16,
-  "oferta_real": 29,
-  "pvpr_inflado": 5,
-  "sin_precio": 10
+  "no_esta": 15,
+  "oferta_real": 18,
+  "pvpr_inflado": 4,
+  "sin_precio": 7
  },
- "updated": "2026-11-24T10:01:04.425858+00:00"
+ "updated": "2026-11-24T10:31:05.706189+00:00"
 }
