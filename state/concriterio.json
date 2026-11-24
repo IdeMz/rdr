@@ -29,7 +29,7 @@
   "Freidoras de aire": "2026-11-23T18:01:07.710591+00:00",
   "Gaming": "2026-11-23T17:30:52.802500+00:00",
   "Gatos": "2026-11-23T20:15:43.714745+00:00",
-  "Herramientas": "2026-11-22T10:30:56.212290+00:00",
+  "Herramientas": "2026-11-24T10:01:04.425858+00:00",
   "Higiene personal": "2026-11-23T09:01:11.110279+00:00",
   "Iluminación": "2026-11-22T21:01:10.291765+00:00",
   "Impresoras": "2026-11-21T12:30:56.768648+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-24T10:00:37.988012+00:00",
+ "next_at": "2026-11-24T10:28:17.010430+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -276,16 +276,6 @@
    "s": "busqueda",
    "t": "2026-11-18T10:31:48.560176+00:00",
    "title": "Intenso Alu Line - Memoria USB 2.0 de 4 GB, color antracita",
-   "v": []
-  },
-  "B00BEFY1W8": {
-   "c": "Periféricos",
-   "d": 27,
-   "e": "⌨️",
-   "m": 179,
-   "p": 21.99,
-   "t": "2026-11-10T09:56:05.161991+00:00",
-   "title": "Logitech MK270 Combo Teclado y Ratón Inalámbrico para Windows",
    "v": []
   },
   "B00CHO4PZI": {
@@ -1270,6 +1260,17 @@
    "s": "busqueda",
    "t": "2026-11-17T18:03:50.184412+00:00",
    "title": "Philips Serie 5400 Cafetera Superautomática - Sistema de Leche LatteGo, 12 Variedades de Café, Pantalla Intuitiva, 4 Perfiles de Usuario, Cromado (EP5447/90)",
+   "v": []
+  },
+  "B08CVT3QKL": {
+   "c": "Herramientas",
+   "d": 35,
+   "e": "🔧",
+   "m": 582,
+   "p": 61.99,
+   "s": "ambas",
+   "t": "2026-11-24T10:01:31.508826+00:00",
+   "title": "Bosch taladro/atornillador a batería EasyDrill 1200 (batería de 2,0 Ah, sistema de 12 V, juego de brocas y puntas de atornillar, en funda blanda) - Amazon Edición",
    "v": []
   },
   "B08DJ18C85": {
@@ -4339,6 +4340,6 @@
  "tg_offset": 511048146,
  "x_copy": {
   "day": "2026-11-24",
-  "n": 6
+  "n": 7
  }
 }
