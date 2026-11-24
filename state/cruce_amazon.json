@@ -6883,25 +6883,24 @@
    "veredicto": "amazon_mas_barato"
   },
   "46136341768": {
-   "ahorro_vs_amazon": null,
+   "ahorro_vs_amazon": 15,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": null,
+   "amz_price": 140.61,
    "amz_title": "msi mag 274CF E20 Gaming Monitor 27 Pulgadas 1920 x 1080 (FHD), 200Hz, AMD FreeSync Premium, HDMI, DisplayPort, VESA, inclinación Ajustable, 0,5 ms, Negro",
    "asin": "B0GP9FF1RC",
    "disponible": true,
    "ean": "4711377343275",
    "encontrado_por": "modelo",
    "lista": "candidates",
-   "motivo": "en Amazon pero sin precio o no disponible",
+   "motivo": "15 % por debajo del habitual en Amazon (140.61)",
    "name": "MSI MAG 274CF X24 27 pulgadas Full HD Rapid VA 240Hz curvo Monitor",
-   "pista": "1287571 bytes; 7 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 24,
    "pp_median": 156.95,
    "pp_price": 119.0,
-   "t": "2026-11-23T22:20:36.435121+00:00",
+   "t": "2026-11-24T04:35:30.220742+00:00",
    "v": 3,
-   "veredicto": "sin_precio"
+   "veredicto": "oferta_real"
   },
   "46146890816": {
    "ahorro_vs_amazon": -13,
@@ -7568,11 +7567,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Videojuego Bandai Namco Entertainment Elden Ring: Shadow of the Erdtree Xbox Series X",
-   "pista": "1085163 bytes; 6 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1137935 bytes; 5 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 37,
    "pp_median": 96.95,
    "pp_price": 60.95,
-   "t": "2026-11-23T22:35:27.592127+00:00",
+   "t": "2026-11-24T04:35:30.220742+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -9709,11 +9708,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Salicru SPS 1500 ONE 900W 4 tomas SAI",
-   "pista": "1425518 bytes; 34 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1381267 bytes; 21 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 24,
    "pp_median": 160.95,
    "pp_price": 122.95,
-   "t": "2026-11-23T22:20:36.435121+00:00",
+   "t": "2026-11-24T04:35:30.220742+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -10567,14 +10566,14 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-24T04:20:35.189887+00:00",
+ "night_at": "2026-11-24T04:35:30.220742+00:00",
  "resumen": {
   "amazon_mas_barato": 30,
   "dudoso": 0,
   "no_esta": 16,
-  "oferta_real": 28,
+  "oferta_real": 29,
   "pvpr_inflado": 5,
-  "sin_precio": 11
+  "sin_precio": 10
  },
- "updated": "2026-11-24T04:20:35.189887+00:00"
+ "updated": "2026-11-24T04:35:30.220742+00:00"
 }
