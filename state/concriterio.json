@@ -55,7 +55,7 @@
   "Relojes": "2026-11-22T15:01:08.377622+00:00",
   "Robots de cocina": "2026-11-24T08:01:02.036825+00:00",
   "Salud": "2026-11-24T08:30:50.826050+00:00",
-  "Smartwatch": "2026-11-23T07:30:55.380763+00:00",
+  "Smartwatch": "2026-11-24T11:01:09.384811+00:00",
   "Suplementos": "2026-11-22T20:00:59.130943+00:00",
   "Tablets": "2026-11-22T16:30:48.501662+00:00",
   "Televisores": "2026-11-21T20:30:51.971542+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-24T10:56:18.183742+00:00",
+ "next_at": "2026-11-24T11:29:58.740773+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -3107,6 +3107,17 @@
    "title": "Samsung Galaxy Watch8, 40 mm, Bluetooth, Galaxy AI, Smartwatch, Procesador 3 NM, Asistente de Salud y Sueño, Seguimiento Deportivo, Garantía 3 Años + 1 año Extra, Plata(Versión Española)",
    "v": []
   },
+  "B0FCYL9TPT": {
+   "c": "Smartwatch",
+   "d": 33,
+   "e": "⌚",
+   "m": 584,
+   "p": 469.0,
+   "s": "ambas",
+   "t": "2026-11-24T11:02:04.569758+00:00",
+   "title": "Garmin Venu X1, Smartwatch con GPS, Negro",
+   "v": []
+  },
   "B0FDL3BK9T": {
    "c": "Climatización",
    "d": 18,
@@ -4025,16 +4036,6 @@
    "title": "Reloj Inteligente Niño, 4G Smartwatch con Videollamadas, Chat de Voz, GPS",
    "v": []
   },
-  "B0HGQCFCBF": {
-   "c": "Smartwatch",
-   "d": 50,
-   "e": "⌚",
-   "m": 180,
-   "p": 49.99,
-   "t": "2026-11-10T10:31:21.865279+00:00",
-   "title": "Reloj Inteligente para Xiaomi Apple Samsung, Llamadas Bluetooth y WhatsApp",
-   "v": []
-  },
   "B0HHN4Q6SN": {
    "c": "Smartwatch",
    "d": 31,
@@ -4268,6 +4269,14 @@
    "t": "2026-11-23T15:30:54.461995+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0CG6LMQHH": {
+   "t": "2026-11-24T11:01:09.384811+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0CT3VBDTV": {
+   "t": "2026-11-24T11:01:09.384811+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0CXPPNL5C": {
    "t": "2026-11-24T07:01:03.526450+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4276,12 +4285,24 @@
    "t": "2026-11-23T13:05:32.398802+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0DC71V3ZD": {
+   "t": "2026-11-24T11:01:09.384811+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0DHL93XCN": {
    "t": "2026-11-23T21:15:38.951661+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0DRZ1WN36": {
+   "t": "2026-11-24T11:01:09.384811+00:00",
+   "why": "referencia: precio mediano 79,99€, hoy 189,99€ (138% por encima); el descuento es solo contra el PVPR"
+  },
   "B0F2Q8S4HN": {
    "t": "2026-11-23T17:30:52.802500+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0F7ZGDDCX": {
+   "t": "2026-11-24T11:01:09.384811+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0G4ZFP5NH": {
@@ -4309,30 +4330,6 @@
    "r": 4.6,
    "t": "2026-11-24T08:30:50.826050+00:00",
    "title": "RENPHO Bascula de Baño, Alta Precisión, Pantalla LED, Perder Peso, Core 1S"
-  },
-  {
-   "a": "B00EQB0Q2G",
-   "c": "Robots de cocina",
-   "e": "🥣",
-   "img": "https://m.media-amazon.com/images/I/51SjtEya2nL._AC_UL320_.jpg",
-   "n": 2400,
-   "op": 24.9,
-   "p": 16.9,
-   "r": 4.7,
-   "t": "2026-11-24T08:01:02.036825+00:00",
-   "title": "Braun MQ 30 WH Accesorio Picador con Sistema EasyClick"
-  },
-  {
-   "a": "B01M59ILYN",
-   "c": "Limpieza del hogar",
-   "e": "🧽",
-   "img": "https://m.media-amazon.com/images/I/81Z7nSlGyLL._AC_UL320_.jpg",
-   "n": 23600,
-   "op": 15.49,
-   "p": 11.99,
-   "r": 4.6,
-   "t": "2026-11-24T07:31:06.167251+00:00",
-   "title": "Vileda Turbo Recambio Original para Fregona, Pack de 2, Suelos Duros"
   }
  ],
  "store_skip": {
@@ -4351,6 +4348,6 @@
  "tg_offset": 511048146,
  "x_copy": {
   "day": "2026-11-24",
-  "n": 8
+  "n": 9
  }
 }

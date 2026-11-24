@@ -5842,7 +5842,7 @@
    "pp_drop": 56,
    "pp_median": 67.95,
    "pp_price": 29.95,
-   "t": "2026-11-22T11:01:05.146615+00:00",
+   "t": "2026-11-24T11:01:09.384811+00:00",
    "v": 3,
    "veredicto": "no_esta",
    "vistos": {
@@ -6122,24 +6122,25 @@
    }
   },
   "45956991055": {
-   "ahorro_vs_amazon": 28,
+   "ahorro_vs_amazon": null,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 60.81,
+   "amz_price": null,
    "amz_title": "Endgame Gear OP1w 4k Wireless Gaming Maus, kabellos - White Frost",
    "asin": "B0DG5XQTS7",
    "disponible": true,
    "ean": "4251442509385",
    "encontrado_por": "ean",
    "lista": "to_verify",
-   "motivo": "28 % por debajo del habitual en Amazon (60.81)",
+   "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Endgame Gear OP1w 4K Wireless 2,4 GHz 26000 DPI 7 botones 60 g Ratón gaming inalámbrico",
+   "pista": "1932556 bytes; 15 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 56,
    "pp_median": 99.95,
    "pp_price": 43.95,
-   "t": "2026-11-22T11:01:05.146615+00:00",
+   "t": "2026-11-24T11:01:09.384811+00:00",
    "v": 3,
-   "veredicto": "oferta_real"
+   "veredicto": "sin_precio"
   },
   "45956991395": {
    "ahorro_vs_amazon": -8,
@@ -10618,9 +10619,9 @@
   "amazon_mas_barato": 28,
   "dudoso": 0,
   "no_esta": 15,
-  "oferta_real": 18,
+  "oferta_real": 17,
   "pvpr_inflado": 4,
-  "sin_precio": 7
+  "sin_precio": 8
  },
- "updated": "2026-11-24T10:31:05.706189+00:00"
+ "updated": "2026-11-24T11:01:09.384811+00:00"
 }
