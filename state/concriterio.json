@@ -37,7 +37,7 @@
   "Juguetes": "2026-11-24T13:05:37.513094+00:00",
   "Lego": "2026-11-24T10:31:05.706189+00:00",
   "Limpieza del hogar": "2026-11-24T07:31:06.167251+00:00",
-  "Maquillaje": "2026-11-23T13:35:33.211339+00:00",
+  "Maquillaje": "2026-11-24T21:35:33.439110+00:00",
   "Menaje de cocina": "2026-11-24T17:01:06.823751+00:00",
   "Mochilas y maletas": "2026-11-24T17:30:51.708019+00:00",
   "Monitores": "2026-11-24T11:30:52.354758+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-24T21:34:40.495856+00:00",
+ "next_at": "2026-11-24T22:01:42.734252+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -910,6 +910,17 @@
    "s": "ambas",
    "t": "2026-11-20T11:31:25.525079+00:00",
    "title": "Crestwood, Zapatillas De Senderismo Y Trekking para Hombre",
+   "v": []
+  },
+  "B07JHP1K81": {
+   "c": "Maquillaje",
+   "d": 40,
+   "e": "💄",
+   "m": 605,
+   "p": 8.05,
+   "s": "ofertas",
+   "t": "2026-11-24T21:35:59.932708+00:00",
+   "title": "Max Factor Miracle Touch Compact Foundation Base de maquillaje Tono 70 Natural - 11.5 gr",
    "v": []
   },
   "B07JZ5V5LG": {
@@ -2645,16 +2656,6 @@
    "title": "Soundcore Select 4 Go de Anker Altavoz Bluetooth Portátil Mini(Negro)",
    "v": []
   },
-  "B0DDCFZBQD": {
-   "c": "Videojuegos",
-   "d": 13,
-   "e": "🎮",
-   "m": 198,
-   "p": 25.99,
-   "t": "2026-11-10T21:11:03.933507+00:00",
-   "title": "Poppy Playtime Triple Pack - PS5",
-   "v": []
-  },
   "B0DDDGTKCR": {
    "c": "Patinetes",
    "d": 25,
@@ -4325,10 +4326,6 @@
    "t": "2026-11-24T11:01:09.384811+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0DHL93XCN": {
-   "t": "2026-11-23T21:15:38.951661+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0DRZ1WN36": {
    "t": "2026-11-24T11:01:09.384811+00:00",
    "why": "referencia: precio mediano 79,99€, hoy 189,99€ (138% por encima); el descuento es solo contra el PVPR"
@@ -4401,6 +4398,6 @@
  "tg_offset": 511048146,
  "x_copy": {
   "day": "2026-11-24",
-  "n": 28
+  "n": 29
  }
 }

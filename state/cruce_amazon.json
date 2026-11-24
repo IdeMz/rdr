@@ -100,6 +100,13 @@
    "v": 3,
    "via": "nombre"
   },
+  "0196388684168": {
+   "a": "B0HKFGMNMV",
+   "t": "2026-11-24T21:35:33.439110+00:00",
+   "title": "Microsoft Surface Pro for Business 12th Edition - Tablet - Intel Core Ultra 7 366H / 2GHz - Win11Pro - Intel Graphics - 64GB RAM - 1TB SSD - 13\" OLED Touch 2880",
+   "v": 3,
+   "via": "ean"
+  },
   "0196388689545": {
    "a": "",
    "t": "2026-11-14T16:45:37.700799+00:00",
@@ -3291,7 +3298,7 @@
    "pp_drop": 24,
    "pp_median": 117.95,
    "pp_price": 89.95,
-   "t": "2026-11-22T19:00:59.176158+00:00",
+   "t": "2026-11-24T21:35:33.439110+00:00",
    "v": 3,
    "veredicto": "no_esta",
    "vistos": {
@@ -10214,6 +10221,26 @@
    "t": "2026-11-14T04:20:27.040644+00:00",
    "veredicto": "dudoso"
   },
+  "46599143195": {
+   "ahorro_vs_amazon": 18,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 5848.56,
+   "amz_title": "Microsoft Surface Pro for Business 12th Edition - Tablet - Intel Core Ultra 7 366H / 2GHz - Win11Pro - Intel Graphics - 64GB RAM - 1TB SSD - 13\" OLED Touch 2880",
+   "asin": "B0HKFGMNMV",
+   "disponible": true,
+   "ean": "0196388684168",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "18 % por debajo del habitual en Amazon (5848.56)",
+   "name": "Microsoft Surface Pro 12 64GB/1TB 5G 13 pulgadas OLED 120Hz Intel Core Ultra 7 366H",
+   "pp_drop": 13,
+   "pp_median": 5466.95,
+   "pp_price": 4777.95,
+   "t": "2026-11-24T21:35:33.439110+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "46599143210": {
    "ahorro_vs_amazon": -20,
    "amz_low30": null,
@@ -10984,9 +11011,9 @@
   "amazon_mas_barato": 34,
   "dudoso": 0,
   "no_esta": 18,
-  "oferta_real": 19,
+  "oferta_real": 20,
   "pvpr_inflado": 4,
   "sin_precio": 9
  },
- "updated": "2026-11-24T21:05:36.253651+00:00"
+ "updated": "2026-11-24T21:35:33.439110+00:00"
 }
