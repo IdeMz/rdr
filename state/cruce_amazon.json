@@ -1861,6 +1861,13 @@
    "v": 3,
    "via": "ean"
   },
+  "5901292531560": {
+   "a": "B0GTZS35X6",
+   "t": "2026-11-24T16:30:59.602669+00:00",
+   "title": "TCL 55C8L 55 Pulgadas SQD-Mini LED 4K HDR10+ Smart TV, 3.000 Nits",
+   "v": 3,
+   "via": "ean"
+  },
   "5901969425376": {
    "a": "B08593L2ZQ",
    "t": "2026-11-17T22:35:22.842725+00:00",
@@ -4574,6 +4581,26 @@
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
+  "44905996777": {
+   "ahorro_vs_amazon": 7,
+   "amz_low30": 862.22,
+   "amz_median": null,
+   "amz_price": 799.0,
+   "amz_title": "TCL 55C8L 55 Pulgadas SQD-Mini LED 4K HDR10+ Smart TV, 3.000 Nits",
+   "asin": "B0GTZS35X6",
+   "disponible": true,
+   "ean": "5901292531560",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 799.00 frente a 799.89",
+   "name": "TCL 55C8L 55 pulgadas 4K QD-Mini LED 144Hz Dolby Vision HDR10+ Google TV",
+   "pp_drop": 20,
+   "pp_median": 999.0,
+   "pp_price": 799.89,
+   "t": "2026-11-24T16:30:59.602669+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "44927881022": {
    "ahorro_vs_amazon": 10,
    "amz_low30": null,
@@ -6783,22 +6810,22 @@
    "veredicto": "amazon_mas_barato"
   },
   "46071185385": {
-   "ahorro_vs_amazon": -11,
+   "ahorro_vs_amazon": 2,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 496.02,
+   "amz_price": 561.77,
    "amz_title": "BenQ MOBIUZ EX3210U Monitor Gaming Blanco 32” 4K UHD IPS, 144Hz 1ms, HDMI 2.1, FreeSync, HDR600, 98% P3, 99% Adobe RGB, Eye-Care, Control Remoto, Altavoces 2.1,",
    "asin": "B09QLHFRNH",
    "disponible": true,
    "ean": "4718755077098",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "Amazon 496.02 frente a 549.95",
+   "motivo": "Amazon 561.77 frente a 549.95",
    "name": "BenQ Mobiuz EX3210U 32 pulgadas 4K IPS 144Hz 1ms Monitor",
    "pp_drop": 21,
    "pp_median": 699.95,
    "pp_price": 549.95,
-   "t": "2026-11-22T16:30:48.501662+00:00",
+   "t": "2026-11-24T16:30:59.602669+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -10782,12 +10809,12 @@
  },
  "night_at": "2026-11-24T06:50:35.886268+00:00",
  "resumen": {
-  "amazon_mas_barato": 29,
+  "amazon_mas_barato": 30,
   "dudoso": 0,
   "no_esta": 17,
   "oferta_real": 18,
   "pvpr_inflado": 4,
   "sin_precio": 9
  },
- "updated": "2026-11-24T16:01:07.815808+00:00"
+ "updated": "2026-11-24T16:30:59.602669+00:00"
 }

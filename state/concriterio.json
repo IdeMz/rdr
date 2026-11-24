@@ -16,7 +16,7 @@
   "Cargadores y baterías": "2026-11-24T12:01:19.033341+00:00",
   "Ciclismo": "2026-11-23T08:31:06.436266+00:00",
   "Climatización": "2026-11-20T13:31:03.874159+00:00",
-  "Colchones y almohadas": "2026-11-23T10:01:04.650566+00:00",
+  "Colchones y almohadas": "2026-11-24T16:30:59.602669+00:00",
   "Componentes PC": "2026-11-22T17:30:50.627813+00:00",
   "Cuidado de la piel": "2026-11-23T11:35:39.474985+00:00",
   "Cuidado del cabello": "2026-11-22T18:30:51.920701+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-24T16:28:08.203027+00:00",
+ "next_at": "2026-11-24T16:58:27.495741+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2803,6 +2803,17 @@
    "title": "Garmin Instinct 3 50 mm, Reloj Inteligente con GPS, Negro",
    "v": []
   },
+  "B0DSFZXHPZ": {
+   "c": "Colchones y almohadas",
+   "d": 45,
+   "e": "🛏️",
+   "m": 595,
+   "p": 17.99,
+   "s": "ambas",
+   "t": "2026-11-24T16:31:39.384935+00:00",
+   "title": "Dreamzie - Edredón Ligero 150g/m² - 220x240 cm - para Cama 135/150",
+   "v": []
+  },
   "B0DSPKPVX3": {
    "c": "Accesorios de móvil",
    "d": 15,
@@ -4328,6 +4339,18 @@
  },
  "reserve": [
   {
+   "a": "B08NCPXCP9",
+   "c": "Colchones y almohadas",
+   "e": "🛏️",
+   "img": "https://m.media-amazon.com/images/I/619NYphfUnL._AC_UL320_.jpg",
+   "n": 4300,
+   "op": 21.9,
+   "p": 17.49,
+   "r": 4.6,
+   "t": "2026-11-24T16:30:59.602669+00:00",
+   "title": "Todocama - Edredón/Relleno nórdico de Fibra antiácaros, Otoño-Invierno, 300 g/m², Color Blanco, 80 x 160 cm"
+  },
+  {
    "a": "B00S2WDIGG",
    "c": "Perfumes",
    "e": "🌸",
@@ -4350,18 +4373,6 @@
    "r": 4.7,
    "t": "2026-11-24T14:30:59.149182+00:00",
    "title": "Rain Bird Válvula de aspersor automática en línea CP100 de 1 pulgada, rosca hembra de 1 pulgada, color negro"
-  },
-  {
-   "a": "B07ZYCNZTZ",
-   "c": "Juguetes",
-   "e": "🧸",
-   "img": "https://m.media-amazon.com/images/I/611s6qYGmvL._AC_UL320_.jpg",
-   "n": 24000,
-   "op": 14.99,
-   "p": 6.99,
-   "r": 4.7,
-   "t": "2026-11-24T13:05:37.513094+00:00",
-   "title": "Hasbro Nerf 2.0 Commander RC-6, Lanzador de Dardos de Juguete, 12 Piezas, Juegos al Aire Libre para Niños y Niñas de 8 Años o Más, Tambor Giratorio"
   }
  ],
  "store_skip": {
@@ -4380,6 +4391,6 @@
  "tg_offset": 511048146,
  "x_copy": {
   "day": "2026-11-24",
-  "n": 19
+  "n": 20
  }
 }
