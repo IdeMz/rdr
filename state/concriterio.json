@@ -48,7 +48,7 @@
   "Pequeño electrodoméstico": "2026-11-22T14:01:03.209389+00:00",
   "Perfumes": "2026-11-22T15:30:58.871968+00:00",
   "Periféricos": "2026-11-23T15:05:33.976238+00:00",
-  "Perros": "2026-11-22T13:01:16.626545+00:00",
+  "Perros": "2026-11-24T09:01:20.372772+00:00",
   "Portátiles": "2026-11-23T15:30:54.461995+00:00",
   "Proyectores": "2026-11-23T12:35:32.005006+00:00",
   "Redes y wifi": "2026-11-22T08:01:00.717908+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-24T08:56:21.168227+00:00",
+ "next_at": "2026-11-24T09:27:44.289958+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1686,16 +1686,6 @@
    "title": "Mellerware Homy Calefactor Baño Bajo Consumo 2000W IP24 con Termostato ECO",
    "v": []
   },
-  "B09HHNZ5Q4": {
-   "c": "Suplementos",
-   "d": 30,
-   "e": "💊",
-   "m": 177,
-   "p": 20.89,
-   "t": "2026-11-10T08:46:08.788835+00:00",
-   "title": "Colageno Hidrolizado Puro, Acido Hialuronico, Coenzima Q10, Zinc",
-   "v": []
-  },
   "B09M2R8JK5": {
    "c": "Cámaras de seguridad",
    "d": 48,
@@ -2642,6 +2632,17 @@
    "s": "ofertas",
    "t": "2026-11-13T09:55:59.354032+00:00",
    "title": "Amazon Basics Pesas ajustables para tobillo y muñeca para mujeres y hombres, 1.13kg cada una, juego de 2",
+   "v": []
+  },
+  "B0DN6B2BWP": {
+   "c": "Perros",
+   "d": 35,
+   "e": "🐶",
+   "m": 580,
+   "p": 11.66,
+   "s": "ofertas",
+   "t": "2026-11-24T09:01:52.346651+00:00",
+   "title": "Arquivet Fresh Puppy Junior Pavo & Salmón 2,5Kg - Pienso Semihúmedo",
    "v": []
   },
   "B0DP4SB367": {
@@ -4236,8 +4237,8 @@
    "t": "2026-11-23T14:35:35.101359+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B07Z5JD3T4": {
-   "t": "2026-11-23T09:01:11.110279+00:00",
+  "B079HFDPRF": {
+   "t": "2026-11-24T09:01:20.372772+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B09PZ8675X": {
@@ -4270,10 +4271,6 @@
   },
   "B0G4ZFP5NH": {
    "t": "2026-11-23T15:30:54.461995+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0G52MX15Q": {
-   "t": "2026-11-23T09:01:11.110279+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0GR5ZBN8Z": {
@@ -4336,6 +4333,6 @@
  "tg_offset": 511048143,
  "x_copy": {
   "day": "2026-11-24",
-  "n": 4
+  "n": 5
  }
 }
