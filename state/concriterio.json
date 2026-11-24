@@ -46,7 +46,7 @@
   "Oficina": "2026-11-21T12:01:05.183305+00:00",
   "Patinetes": "2026-11-24T12:35:31.161899+00:00",
   "Pequeño electrodoméstico": "2026-11-22T14:01:03.209389+00:00",
-  "Perfumes": "2026-11-22T15:30:58.871968+00:00",
+  "Perfumes": "2026-11-24T16:01:07.815808+00:00",
   "Periféricos": "2026-11-23T15:05:33.976238+00:00",
   "Perros": "2026-11-24T09:01:20.372772+00:00",
   "Portátiles": "2026-11-23T15:30:54.461995+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-24T15:59:58.906184+00:00",
+ "next_at": "2026-11-24T16:28:08.203027+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2224,6 +2224,17 @@
    "title": "Auriculares Inalámbricos Bluetooth, Auriculares Bluetooth 5.3, 4 Mic con Reducción de Ruido ENC, 50H con Graves, Cascos Inalambricos Bluetooth IP7 Impermeable, Carga Rápida USB-C, Ajuste Cómodo",
    "v": []
   },
+  "B0CD7N84JW": {
+   "c": "Perfumes",
+   "d": 38,
+   "e": "🌸",
+   "m": 594,
+   "p": 3.89,
+   "s": "ambas",
+   "t": "2026-11-24T16:01:38.919471+00:00",
+   "title": "Nenuco Agua de Colonia, Fragancia Original, con Menos Alcohol, Formato Ahorro 1100 ml",
+   "v": []
+  },
   "B0CDHC6HXX": {
    "c": "Domótica",
    "d": 33,
@@ -3382,16 +3393,6 @@
    "title": "LEGO Speed Champions Máquina del Tiempo de Regreso al Futuro 77256",
    "v": []
   },
-  "B0FQCNKYW4": {
-   "c": "Perfumes",
-   "d": 29,
-   "e": "🌸",
-   "m": 189,
-   "p": 20.55,
-   "t": "2026-11-10T15:56:04.484080+00:00",
-   "title": "Hugo Deep Red Eau de Parfum para Mujer",
-   "v": []
-  },
   "B0FR981Z25": {
    "c": "Gaming",
    "d": 24,
@@ -4284,10 +4285,6 @@
    "t": "2026-11-23T19:01:08.273550+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0C8TWSM3R": {
-   "t": "2026-11-23T15:30:54.461995+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0CG6LMQHH": {
    "t": "2026-11-24T11:01:09.384811+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4324,20 +4321,24 @@
    "t": "2026-11-24T11:01:09.384811+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0G4ZFP5NH": {
-   "t": "2026-11-23T15:30:54.461995+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0GR5ZBN8Z": {
-   "t": "2026-11-23T15:30:54.461995+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0HHM2Z9GN": {
    "t": "2026-11-19T07:01:21.085197+00:00",
    "why": "alta hace 29 dias"
   }
  },
  "reserve": [
+  {
+   "a": "B00S2WDIGG",
+   "c": "Perfumes",
+   "e": "🌸",
+   "img": "https://m.media-amazon.com/images/I/41N95TJjnSL._AC_UL320_.jpg",
+   "n": 40400,
+   "op": 35.36,
+   "p": 26.54,
+   "r": 4.6,
+   "t": "2026-11-24T16:01:07.815808+00:00",
+   "title": "CALVIN KLEIN CK ONE Eau de Toilette"
+  },
   {
    "a": "B00002N8NN",
    "c": "Jardín",
@@ -4379,6 +4380,6 @@
  "tg_offset": 511048146,
  "x_copy": {
   "day": "2026-11-24",
-  "n": 18
+  "n": 19
  }
 }
