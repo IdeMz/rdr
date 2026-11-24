@@ -521,6 +521,13 @@
    "v": 3,
    "via": "ean"
   },
+  "0753759313760": {
+   "a": "B0C2QG2D3Y",
+   "t": "2026-11-24T22:20:35.735761+00:00",
+   "title": "Garmin Forerunner 265S, Reloj inteligente con GPS, Rosa",
+   "v": 3,
+   "via": "ean"
+  },
   "0753759368777": {
    "a": "B0GF2FKLHT",
    "t": "2026-11-20T23:20:42.342812+00:00",
@@ -3180,6 +3187,13 @@
    "v": 3,
    "via": "ean"
   },
+  "8806096933725": {
+   "a": "B0HF4MYTD2",
+   "t": "2026-11-24T22:20:35.735761+00:00",
+   "title": "LG 25G590B - Monitor Gaming UltraGear 25'' IPS, FHD, 1000Hz",
+   "v": 3,
+   "via": "ean"
+  },
   "8806097195290": {
    "a": "B0F19836RP",
    "t": "2026-11-19T23:20:27.090054+00:00",
@@ -4588,6 +4602,26 @@
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
+  "44263991779": {
+   "ahorro_vs_amazon": 10,
+   "amz_low30": 299.0,
+   "amz_median": null,
+   "amz_price": 264.0,
+   "amz_title": "Garmin Forerunner 265S, Reloj inteligente con GPS, Rosa",
+   "asin": "B0C2QG2D3Y",
+   "disponible": true,
+   "ean": "0753759313760",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 264.00 frente a 269.90",
+   "name": "Garmin Forerunner 265S Rosa/Blanco 1,1 pulgadas AMOLED NFC 15 días 5ATM Smartwatch",
+   "pp_drop": 18,
+   "pp_median": 329.95,
+   "pp_price": 269.9,
+   "t": "2026-11-24T22:20:35.735761+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "44787548911": {
    "ahorro_vs_amazon": 51,
    "amz_low30": 89.99,
@@ -5162,7 +5196,7 @@
    "veredicto": "amazon_mas_barato"
   },
   "45368125530": {
-   "ahorro_vs_amazon": 53,
+   "ahorro_vs_amazon": 55,
    "amz_low30": 251.28,
    "amz_median": 262.16,
    "amz_price": 109.0,
@@ -5172,12 +5206,12 @@
    "ean": "5706991026542",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "Amazon 109.00 frente a 122.95",
+   "motivo": "Amazon 109.00 frente a 118.96",
    "name": "Jabra Evolve2 Buds USB-A ANC IP57 con micrófono Auriculares",
-   "pp_drop": 29,
-   "pp_median": 172.95,
-   "pp_price": 122.95,
-   "t": "2026-11-23T11:05:30.542682+00:00",
+   "pp_drop": 21,
+   "pp_median": 150.95,
+   "pp_price": 118.96,
+   "t": "2026-11-24T22:20:35.735761+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -9226,6 +9260,26 @@
    "t": "2026-11-14T22:05:27.466329+00:00",
    "veredicto": "dudoso"
   },
+  "46599139898": {
+   "ahorro_vs_amazon": 11,
+   "amz_low30": 990.0,
+   "amz_median": null,
+   "amz_price": 799.0,
+   "amz_title": "LG 25G590B - Monitor Gaming UltraGear 25'' IPS, FHD, 1000Hz",
+   "asin": "B0HF4MYTD2",
+   "disponible": true,
+   "ean": "8806096933725",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 799.00 frente a 879.00",
+   "name": "Monitor gaming LG UltraGear 24,5 pulgadas 1000Hz FHD IPS Negro 25G590B-B",
+   "pp_drop": 15,
+   "pp_median": 1039.0,
+   "pp_price": 879.0,
+   "t": "2026-11-24T22:20:35.735761+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "46599139975": {
    "ahorro_vs_amazon": -5,
    "amz_low30": null,
@@ -11033,14 +11087,14 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-24T22:05:26.610187+00:00",
+ "night_at": "2026-11-24T22:20:35.735761+00:00",
  "resumen": {
-  "amazon_mas_barato": 35,
+  "amazon_mas_barato": 37,
   "dudoso": 0,
   "no_esta": 18,
   "oferta_real": 20,
   "pvpr_inflado": 4,
   "sin_precio": 9
  },
- "updated": "2026-11-24T22:05:26.610187+00:00"
+ "updated": "2026-11-24T22:20:35.735761+00:00"
 }
