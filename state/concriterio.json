@@ -54,7 +54,7 @@
   "Redes y wifi": "2026-11-22T08:01:00.717908+00:00",
   "Relojes": "2026-11-22T15:01:08.377622+00:00",
   "Robots de cocina": "2026-11-24T08:01:02.036825+00:00",
-  "Salud": "2026-11-20T14:30:58.924631+00:00",
+  "Salud": "2026-11-24T08:30:50.826050+00:00",
   "Smartwatch": "2026-11-23T07:30:55.380763+00:00",
   "Suplementos": "2026-11-22T20:00:59.130943+00:00",
   "Tablets": "2026-11-22T16:30:48.501662+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-24T08:29:01.715410+00:00",
+ "next_at": "2026-11-24T08:56:21.168227+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2339,6 +2339,17 @@
    "title": "Soundcore Boom 2 Altavoz Bluetooth Potente 80 W, 24 h, IPX7",
    "v": []
   },
+  "B0CQY78HV6": {
+   "c": "Salud",
+   "d": 36,
+   "e": "🩺",
+   "m": 579,
+   "p": 24.29,
+   "s": "ambas",
+   "t": "2026-11-24T08:31:21.493152+00:00",
+   "title": "Báscula de Café Mini Recargable con Temporizador, Maestri House, Precisión 0.1g/2kg, para Espresso y Café de Filtro, Báscula Digital Portátil con Cronometraje Automático-Negro y Plata",
+   "v": []
+  },
   "B0CRTYZG5C": {
    "c": "Auriculares",
    "d": 40,
@@ -2480,16 +2491,6 @@
    "s": "ofertas",
    "t": "2026-11-12T16:11:30.507516+00:00",
    "title": "Lepro BP1 AI Bombilla LED E14, G45 Bombilla Inteligente Alexa 2Pcs",
-   "v": []
-  },
-  "B0D58HZF7P": {
-   "c": "Accesorios de coche",
-   "d": 30,
-   "e": "🚗",
-   "m": 176,
-   "p": 69.99,
-   "t": "2026-11-10T08:11:08.798584+00:00",
-   "title": "iZEEKER 3 Canales 4K Dashcam con Tarjeta de 32GB GRATIS, Cámara Coche Frontal, Trasera e Interior 4K+1080P+1080P con WDR, Visión Nocturna IR, WiFi 6, Ángulo 170°, G-Sensor, Modo de Estacionamiento 24H",
    "v": []
   },
   "B0D6RW3DH5": {
@@ -4259,20 +4260,8 @@
    "t": "2026-11-23T13:05:32.398802+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0DB26KDSF": {
-   "t": "2026-11-23T08:01:05.337225+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0DHL93XCN": {
    "t": "2026-11-23T21:15:38.951661+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0DQ54YKH9": {
-   "t": "2026-11-23T08:01:05.337225+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0DZ745RCW": {
-   "t": "2026-11-23T08:01:05.337225+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0F2Q8S4HN": {
@@ -4297,6 +4286,18 @@
   }
  },
  "reserve": [
+  {
+   "a": "B07S9PTLNZ",
+   "c": "Salud",
+   "e": "🩺",
+   "img": "https://m.media-amazon.com/images/I/51YkqAwS-sL._AC_UL320_.jpg",
+   "n": 103900,
+   "op": 11.99,
+   "p": 8.85,
+   "r": 4.6,
+   "t": "2026-11-24T08:30:50.826050+00:00",
+   "title": "RENPHO Bascula de Baño, Alta Precisión, Pantalla LED, Perder Peso, Core 1S"
+  },
   {
    "a": "B00EQB0Q2G",
    "c": "Robots de cocina",
@@ -4335,6 +4336,6 @@
  "tg_offset": 511048143,
  "x_copy": {
   "day": "2026-11-24",
-  "n": 3
+  "n": 4
  }
 }
