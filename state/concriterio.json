@@ -12,7 +12,7 @@
   "Bricolaje": "2026-11-23T14:35:35.101359+00:00",
   "Cafeteras": "2026-11-23T16:31:04.905592+00:00",
   "Café y cápsulas": "2026-11-22T07:01:03.565904+00:00",
-  "Camping y montaña": "2026-11-21T14:30:51.598433+00:00",
+  "Camping y montaña": "2026-11-24T07:01:03.526450+00:00",
   "Cargadores y baterías": "2026-11-23T08:01:05.337225+00:00",
   "Ciclismo": "2026-11-23T08:31:06.436266+00:00",
   "Climatización": "2026-11-20T13:31:03.874159+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-23T22:11:41.942255+00:00",
+ "next_at": "2026-11-24T07:27:18.587279+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -3448,6 +3448,17 @@
    "title": "BOTSLAB 4K Cámara Doble para Salpicadero Delantera y Trasera, Sensor STARVIS 2, GPS Integrado, Control por Voz, Cámara WiFi de 5 GHz para Automóviles, Tarjeta de 64 GB Incluida.",
    "v": []
   },
+  "B0G4RDJ2CC": {
+   "c": "Camping y montaña",
+   "d": 39,
+   "e": "🏕️",
+   "m": 576,
+   "p": 16.99,
+   "s": "ambas",
+   "t": "2026-11-24T07:01:48.585870+00:00",
+   "title": "Saco de Dormir Adulto 900g Ultraligero Compacto",
+   "v": []
+  },
   "B0G66ZCDL1": {
    "c": "Robots de cocina",
    "d": 31,
@@ -4204,6 +4215,10 @@
  },
  "problem": {},
  "rejected": {
+  "B00T4BHYLY": {
+   "t": "2026-11-24T07:01:03.526450+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B06XCBPFRN": {
    "t": "2026-11-23T14:35:35.101359+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4222,6 +4237,10 @@
   },
   "B0C8TWSM3R": {
    "t": "2026-11-23T15:30:54.461995+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0CXPPNL5C": {
+   "t": "2026-11-24T07:01:03.526450+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0CZXWGK79": {
@@ -4265,32 +4284,7 @@
    "why": "alta hace 29 dias"
   }
  },
- "reserve": [
-  {
-   "a": "B0FL2JGPYH",
-   "c": "Aspiradoras",
-   "e": "🧹",
-   "img": "https://m.media-amazon.com/images/I/9189DpGCbIL._AC_UL320_.jpg",
-   "n": 819,
-   "op": 118.29,
-   "p": 84.9,
-   "r": 4.2,
-   "t": "2026-11-23T19:31:10.357756+00:00",
-   "title": "Cecotec Robot Aspirador Navegación Giroscópica Conga M10 Advance Aqua Pro"
-  },
-  {
-   "a": "B0F2FXRH8D",
-   "c": "Zapatillas",
-   "e": "👟",
-   "img": "https://m.media-amazon.com/images/I/61Hk7xqiUIL._AC_UL320_.jpg",
-   "n": 5600,
-   "op": 60.0,
-   "p": 37.92,
-   "r": 4.2,
-   "t": "2026-11-23T19:01:08.273550+00:00",
-   "title": "Mujer BREAKNET Sleek Zapatos"
-  }
- ],
+ "reserve": [],
  "store_skip": {
   "pp:37600255358": "2026-11-23T09:31:06.199793+00:00",
   "pp:45948306722": "2026-11-23T09:31:06.199793+00:00",
@@ -4303,7 +4297,7 @@
  "summary_day": "2026-11-23",
  "tg_offset": 511048143,
  "x_copy": {
-  "day": "2026-11-23",
-  "n": 29
+  "day": "2026-11-24",
+  "n": 1
  }
 }
