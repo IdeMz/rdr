@@ -10,7 +10,7 @@
   "Barras de sonido": "2026-11-23T21:45:48.617233+00:00",
   "Bebé": "2026-11-23T11:05:30.542682+00:00",
   "Bricolaje": "2026-11-23T14:35:35.101359+00:00",
-  "Cafeteras": "2026-11-23T16:31:04.905592+00:00",
+  "Cafeteras": "2026-11-24T19:35:37.316644+00:00",
   "Café y cápsulas": "2026-11-22T07:01:03.565904+00:00",
   "Camping y montaña": "2026-11-24T07:01:03.526450+00:00",
   "Cargadores y baterías": "2026-11-24T12:01:19.033341+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-24T19:33:46.788236+00:00",
+ "next_at": "2026-11-24T20:01:27.498833+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -3323,6 +3323,17 @@
    "title": "Applaws Comida Húmeda para Gatos 100% Natural – Surtido de Caldos de Pescado, en Bolsas con Boquilla de 85g",
    "v": []
   },
+  "B0FN7STVNH": {
+   "c": "Cafeteras",
+   "d": 38,
+   "e": "☕",
+   "m": 601,
+   "p": 449.0,
+   "s": "ambas",
+   "t": "2026-11-24T19:36:14.765301+00:00",
+   "title": "Sage Barista Express, Cafetera con Molinillo, Acero Inoxidable Cepillado",
+   "v": []
+  },
   "B0FN8FR84Q": {
    "c": "Aspiradoras",
    "d": 34,
@@ -3713,16 +3724,6 @@
    "s": "busqueda",
    "t": "2026-11-20T12:31:34.693833+00:00",
    "title": "Apple MacBook Air de 13,6 Pulgadas con Chip M5: Pantalla Liquid Retina, CPU de 10 núcleos, GPU de 8 núcleos, 16 GB de Memoria unificada, 512 GB de SSD, Wi-Fi 7,Teclado español; Medianoche",
-   "v": []
-  },
-  "B0GSS34ZYM": {
-   "c": "Freidoras de aire",
-   "d": 37,
-   "e": "🍟",
-   "m": 195,
-   "p": 169.99,
-   "t": "2026-11-10T19:26:01.738396+00:00",
-   "title": "Ninja Foodi FlexDrawer, Freidora de Aire con Compartimento Doble, 10,4L",
    "v": []
   },
   "B0GSS73FLQ": {
@@ -4334,6 +4335,18 @@
  },
  "reserve": [
   {
+   "a": "B0D92CZC7Z",
+   "c": "Cafeteras",
+   "e": "☕",
+   "img": "https://m.media-amazon.com/images/I/41P-hHmAGdL._AC_UL320_.jpg",
+   "n": 904,
+   "op": 129.99,
+   "p": 79.99,
+   "r": 4.2,
+   "t": "2026-11-24T19:35:37.316644+00:00",
+   "title": "KRUPS Authentic, Cafetera Espresso Manual, Depósito de 2L, Inox"
+  },
+  {
    "a": "B00AI5NZDG",
    "c": "Higiene personal",
    "e": "🪥",
@@ -4356,32 +4369,23 @@
    "r": 4.6,
    "t": "2026-11-24T18:35:37.637788+00:00",
    "title": "Pro Breeze Deshumidificador Silencioso 12L, Depósito Extraíble y Desagüe Continuo, 3 Modos, Temporizador 24h, Sensor de Humedad, Absorbe Humedad y Elimina el Moho de Habitaciones (20 m²)"
-  },
-  {
-   "a": "B08NCPXCP9",
-   "c": "Colchones y almohadas",
-   "e": "🛏️",
-   "img": "https://m.media-amazon.com/images/I/619NYphfUnL._AC_UL320_.jpg",
-   "n": 4300,
-   "op": 21.9,
-   "p": 17.49,
-   "r": 4.6,
-   "t": "2026-11-24T16:30:59.602669+00:00",
-   "title": "Todocama - Edredón/Relleno nórdico de Fibra antiácaros, Otoño-Invierno, 300 g/m², Color Blanco, 80 x 160 cm"
   }
  ],
  "store_skip": {
   "pp:37600255358": "2026-11-24T18:01:08.415530+00:00",
   "pp:45227024753": "2026-11-24T09:30:54.762871+00:00",
   "pp:45403198935": "2026-11-24T09:30:54.762871+00:00",
+  "pp:45948306722": "2026-11-24T19:35:37.316644+00:00",
   "pp:45956991449": "2026-11-24T09:30:54.762871+00:00",
+  "pp:46186037860": "2026-11-24T19:35:37.316644+00:00",
   "pp:46247661145": "2026-11-24T18:01:08.415530+00:00",
-  "pp:46599140756": "2026-11-24T18:01:08.415530+00:00"
+  "pp:46599140756": "2026-11-24T18:01:08.415530+00:00",
+  "pp:46599141816": "2026-11-24T19:35:37.316644+00:00"
  },
  "summary_day": "2026-11-23",
  "tg_offset": 511048146,
  "x_copy": {
   "day": "2026-11-24",
-  "n": 25
+  "n": 26
  }
 }
