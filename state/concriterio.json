@@ -57,7 +57,7 @@
   "Salud": "2026-11-24T08:30:50.826050+00:00",
   "Smartwatch": "2026-11-24T11:01:09.384811+00:00",
   "Suplementos": "2026-11-25T07:30:56.306804+00:00",
-  "Tablets": "2026-11-22T16:30:48.501662+00:00",
+  "Tablets": "2026-11-25T08:30:59.592319+00:00",
   "Televisores": "2026-11-24T20:05:32.905580+00:00",
   "Textil hogar": "2026-11-23T10:35:32.957931+00:00",
   "Videojuegos": "2026-11-24T13:35:33.816258+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-25T08:30:05.446672+00:00",
+ "next_at": "2026-11-25T08:59:29.906861+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2043,16 +2043,6 @@
    "title": "Electronic Arts It Takes Two | Nintendo Switch |Videojuegos Castellano",
    "v": []
   },
-  "B0BG6DQRL9": {
-   "c": "Domótica",
-   "d": 15,
-   "e": "💡",
-   "m": 204,
-   "p": 16.14,
-   "t": "2026-11-11T08:11:06.848421+00:00",
-   "title": "Tapo L630(2-Pack) - Bombilla inteligente WiFi, 16M colores, 1100 lm, E27",
-   "v": []
-  },
   "B0BGJC5GZ1": {
    "c": "Nutrición deportiva",
    "d": 40,
@@ -3522,6 +3512,17 @@
    "title": "Moulinex Easy Fry XL Surface, Freidora de aire 2200W, Doble resistencia",
    "v": []
   },
+  "B0G14W2ZWW": {
+   "c": "Tablets",
+   "d": 30,
+   "e": "📲",
+   "m": 611,
+   "p": 229.0,
+   "s": "ambas",
+   "t": "2026-11-25T08:31:35.635010+00:00",
+   "title": "Samsung Galaxy Tab A11+ 128GB, Tableta con IA, Pantalla de 11\" con 90 Hz, 6GB de Memoria, Altavoces Cuádruples Dolby, Garantía del Fabricante 3 Años + 1 Año Extra, Gris (Versión Española)",
+   "v": []
+  },
   "B0G1M86BG9": {
    "c": "Aspiradoras",
    "d": 41,
@@ -4344,6 +4345,18 @@
  },
  "reserve": [
   {
+   "a": "B09FL1TK77",
+   "c": "Tablets",
+   "e": "📲",
+   "img": "https://m.media-amazon.com/images/I/71Y4v1z5D+L._AC_UL320_.jpg",
+   "n": 1100,
+   "op": 129.99,
+   "p": 99.99,
+   "r": 4.2,
+   "t": "2026-11-25T08:30:59.592319+00:00",
+   "title": "TECLAST M50T Tablet 10.1 Pulgadas Android 16 Tableta Gemini AI, 32GB RAM+128GB ROM+5TB TF, 2GHz Octa-Core, 7000mAh, 2.4G+5G WiFi, BT 5.4/Widevine L1/13MP+5MP/3.5MM/Face ID/OTG, Tablets con Lápiz, 2026"
+  },
+  {
    "a": "B001ATHYXQ",
    "c": "Suplementos",
    "e": "💊",
@@ -4382,9 +4395,9 @@
   "pp:46599141816": "2026-11-24T19:35:37.316644+00:00"
  },
  "summary_day": "2026-11-24",
- "tg_offset": 511048146,
+ "tg_offset": 511048149,
  "x_copy": {
   "day": "2026-11-25",
-  "n": 3
+  "n": 4
  }
 }
