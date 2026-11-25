@@ -40,7 +40,7 @@
   "Maquillaje": "2026-11-24T21:35:33.439110+00:00",
   "Menaje de cocina": "2026-11-24T17:01:06.823751+00:00",
   "Mochilas y maletas": "2026-11-24T17:30:51.708019+00:00",
-  "Monitores": "2026-11-24T11:30:52.354758+00:00",
+  "Monitores": "2026-11-25T20:15:53.484095+00:00",
   "Móviles": "2026-11-23T15:30:54.461995+00:00",
   "Nutrición deportiva": "2026-11-21T20:00:58.767855+00:00",
   "Oficina": "2026-11-21T12:01:05.183305+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-25T20:10:59.734061+00:00",
+ "next_at": "2026-11-25T20:42:27.691695+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -3275,6 +3275,17 @@
    "title": "Lenor Aire Fresco Suavizante Ropa Brisa Limpia, Pack 8x50 Lavados (400)",
    "v": []
   },
+  "B0FFNDHNHB": {
+   "c": "Monitores",
+   "d": 28,
+   "e": "🖥️",
+   "m": 634,
+   "p": 684.42,
+   "s": "ofertas",
+   "t": "2026-11-25T20:16:28.125498+00:00",
+   "title": "ASUS ROG Strix XG32UCWG - Monitor OLED Gaming 4K 165Hz de 32\"",
+   "v": []
+  },
   "B0FHJ91JY5": {
    "c": "Cámaras de seguridad",
    "d": 50,
@@ -4439,6 +4450,18 @@
  },
  "reserve": [
   {
+   "a": "B0FWCLJ51V",
+   "c": "Monitores",
+   "e": "🖥️",
+   "img": "https://m.media-amazon.com/images/I/71ixHRkWm8L._AC_UL320_.jpg",
+   "n": 58,
+   "op": 171.99,
+   "p": 129.0,
+   "r": 4.7,
+   "t": "2026-11-25T20:15:53.484095+00:00",
+   "title": "MSI Pro MP275QA E14 de 27\" WQHD, 2560 x 1440 IPS, 144 Hz, 1 ms, Compatible con HDR, Adaptive-Sync, Eye-Care, Altavoz Integrado, HDMI 2.0b, DP 1.2a, sin Marco, inclinación Ajustable, Negro"
+  },
+  {
    "a": "B0D6S1BY13",
    "c": "Bebé",
    "e": "🍼",
@@ -4480,6 +4503,6 @@
  "tg_offset": 511048149,
  "x_copy": {
   "day": "2026-11-25",
-  "n": 26
+  "n": 27
  }
 }
