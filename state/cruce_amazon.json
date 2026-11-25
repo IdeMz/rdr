@@ -46,6 +46,19 @@
    "v": 3,
    "via": "ean"
   },
+  "0194644279967": {
+   "a": "",
+   "t": "2026-11-25T11:01:10.670462+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "(sin resultados)"
+    ]
+   }
+  },
   "0195892018278": {
    "a": "B09S2B2QX2",
    "t": "2026-11-22T19:30:51.638631+00:00",
@@ -572,6 +585,13 @@
    "a": "B0DD5DFGG5",
    "t": "2026-11-14T00:51:58.629494+00:00",
    "title": "SHOKZ Openfit Air Auriculares Open-Ear Bluetooth Rosas",
+   "via": "ean"
+  },
+  "0810160666967": {
+   "a": "B0FCD9YRC2",
+   "t": "2026-11-25T11:01:10.670462+00:00",
+   "title": "Ecouteurs sans fil Shokz OpenFit 2 à conduction aérienne Noir",
+   "v": 3,
    "via": "ean"
   },
   "0826581572633": {
@@ -4293,6 +4313,27 @@
    "t": "2026-11-17T18:45:48.491889+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
+  },
+  "41955007624": {
+   "ahorro_vs_amazon": null,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": null,
+   "amz_title": "Ecouteurs sans fil Shokz OpenFit 2 à conduction aérienne Noir",
+   "asin": "B0FCD9YRC2",
+   "disponible": true,
+   "ean": "0810160666967",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "en Amazon pero sin precio o no disponible",
+   "name": "Shokz OpenFit 2 Negro Bluetooth 5.4 48h IP55 Auriculares inalámbricos",
+   "pista": "1132718 bytes; 9 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pp_drop": 35,
+   "pp_median": 221.95,
+   "pp_price": 143.95,
+   "t": "2026-11-25T11:01:10.670462+00:00",
+   "v": 3,
+   "veredicto": "sin_precio"
   },
   "42520354709": {
    "ahorro_vs_amazon": 25,
@@ -10203,6 +10244,26 @@
     ]
    }
   },
+  "46599142618": {
+   "ean": "0194644279967",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Estación base Eufy HomeBase Professional S1 32GB WiFi Blanco",
+   "pp_drop": 29,
+   "pp_median": 729.0,
+   "pp_price": 516.99,
+   "t": "2026-11-25T11:01:10.670462+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "(sin resultados)"
+    ]
+   }
+  },
   "46599142622": {
    "ahorro_vs_amazon": null,
    "amz_low30": null,
@@ -11145,10 +11206,10 @@
  "resumen": {
   "amazon_mas_barato": 29,
   "dudoso": 0,
-  "no_esta": 16,
+  "no_esta": 17,
   "oferta_real": 17,
   "pvpr_inflado": 2,
-  "sin_precio": 8
+  "sin_precio": 9
  },
- "updated": "2026-11-25T10:31:05.699201+00:00"
+ "updated": "2026-11-25T11:01:10.670462+00:00"
 }

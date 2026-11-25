@@ -35,7 +35,7 @@
   "Impresoras": "2026-11-21T12:30:56.768648+00:00",
   "Jardín": "2026-11-24T14:30:59.149182+00:00",
   "Juguetes": "2026-11-24T13:05:37.513094+00:00",
-  "Lego": "2026-11-24T10:31:05.706189+00:00",
+  "Lego": "2026-11-25T11:01:10.670462+00:00",
   "Limpieza del hogar": "2026-11-24T07:31:06.167251+00:00",
   "Maquillaje": "2026-11-24T21:35:33.439110+00:00",
   "Menaje de cocina": "2026-11-24T17:01:06.823751+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-25T10:56:19.275986+00:00",
+ "next_at": "2026-11-25T11:29:45.482954+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2704,6 +2704,17 @@
    "title": "LEGO Speed Champions Coche de Carreras Ferrari SF-24 F1 77242",
    "v": []
   },
+  "B0DHSD9VPK": {
+   "c": "Lego",
+   "d": 30,
+   "e": "🧱",
+   "m": 616,
+   "p": 18.85,
+   "s": "ofertas",
+   "t": "2026-11-25T11:01:51.929400+00:00",
+   "title": "LEGO Speed Champions Coche de Carreras Williams Racing FW46 F1 77249",
+   "v": []
+  },
   "B0DL65SRTR": {
    "c": "",
    "d": 0,
@@ -3866,16 +3877,6 @@
    "title": "SIEMENS, Cafetera superautomática EQ500 iAroma, Negro, TP551E07",
    "v": []
   },
-  "B0H14S7JK9": {
-   "c": "Accesorios de coche",
-   "d": 20,
-   "e": "🚗",
-   "m": 208,
-   "p": 119.69,
-   "t": "2026-11-11T10:31:37.172664+00:00",
-   "title": "WOLFANG Dashcam 4K+4K Delantera y Trasera con STARVIS 2,Pantalla IPS de 3,69 Pulgadas, WiFi de 5,8 GHz, GPS, Cámara de Coche, WDR Gran Angular de 170°, Monitor de Aparcamiento 24H",
-   "v": []
-  },
   "B0H1BQNV25": {
    "c": "Mochilas y maletas",
    "d": 49,
@@ -4332,32 +4333,16 @@
    "t": "2026-11-24T11:30:52.354758+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0CG6LMQHH": {
-   "t": "2026-11-24T11:01:09.384811+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0CT3VBDTV": {
-   "t": "2026-11-24T11:01:09.384811+00:00",
+  "B0CFVZ74KT": {
+   "t": "2026-11-25T11:01:10.670462+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0CXPPNL5C": {
    "t": "2026-11-25T10:01:04.002472+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0DC71V3ZD": {
-   "t": "2026-11-24T11:01:09.384811+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0DRZ1WN36": {
-   "t": "2026-11-24T11:01:09.384811+00:00",
-   "why": "referencia: precio mediano 79,99€, hoy 189,99€ (138% por encima); el descuento es solo contra el PVPR"
-  },
   "B0F3P65X6Q": {
    "t": "2026-11-24T11:30:52.354758+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0F7ZGDDCX": {
-   "t": "2026-11-24T11:01:09.384811+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0HHM2Z9GN": {
@@ -4366,6 +4351,18 @@
   }
  },
  "reserve": [
+  {
+   "a": "B0DWDMKNK2",
+   "c": "Lego",
+   "e": "🧱",
+   "img": "https://m.media-amazon.com/images/I/715MFPLod8L._AC_UL320_.jpg",
+   "n": 1200,
+   "op": 229.99,
+   "p": 160.95,
+   "r": 4.8,
+   "t": "2026-11-25T11:01:10.670462+00:00",
+   "title": "LEGO Fortnite Líder del Equipo Meca 77078"
+  },
   {
    "a": "B00N4UFEZO",
    "c": "Gatos",
@@ -4408,6 +4405,6 @@
  "tg_offset": 511048149,
  "x_copy": {
   "day": "2026-11-25",
-  "n": 8
+  "n": 9
  }
 }
