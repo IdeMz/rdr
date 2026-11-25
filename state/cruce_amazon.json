@@ -2585,6 +2585,13 @@
    "title": "Creality Sermoon X1 Escáner 3D, láser y luz estructurada, precisión 0,02 mm (Rango 5-4000 mm), sin Polvo con escaneo de Agujeros, móvil inalámbrico para CAD, in",
    "via": "nombre"
   },
+  "6978061958209": {
+   "a": "B0GQ9R1WM1",
+   "t": "2026-11-25T18:01:11.294449+00:00",
+   "title": "NIIMBOT M3 Impresora de Etiquetas Transferencia Térmica",
+   "v": 3,
+   "via": "nombre"
+  },
   "6978252854587": {
    "a": "",
    "t": "2026-11-18T01:05:24.851799+00:00",
@@ -7928,6 +7935,26 @@
    "t": "2026-11-16T09:20:39.431359+00:00",
    "veredicto": "sin_precio"
   },
+  "46186036344": {
+   "ahorro_vs_amazon": 33,
+   "amz_low30": 199.99,
+   "amz_median": 180.49,
+   "amz_price": 171.47,
+   "amz_title": "NIIMBOT M3 Impresora de Etiquetas Transferencia Térmica",
+   "asin": "B0GQ9R1WM1",
+   "disponible": true,
+   "ean": "6978061958209",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "33 % por debajo del habitual en Amazon (180.49)",
+   "name": "NiiMbot M3 Blanco Impresora de etiquetas",
+   "pp_drop": 31,
+   "pp_median": 174.95,
+   "pp_price": 120.92,
+   "t": "2026-11-25T18:01:11.294449+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "46186036352": {
    "ean": "0622356294607",
    "lista": "candidates",
@@ -10669,22 +10696,22 @@
    "veredicto": "oferta_real"
   },
   "46599143226": {
-   "ahorro_vs_amazon": -14,
-   "amz_low30": null,
+   "ahorro_vs_amazon": 9,
+   "amz_low30": 1449.0,
    "amz_median": null,
-   "amz_price": 1163.03,
+   "amz_price": 1199.0,
    "amz_title": "Microsoft Surface Pro, 13\" | Snapdragon X2 Plus | 16GB RAM, 256GB SSD",
    "asin": "B0H45KXKC9",
    "disponible": true,
    "ean": "0196388781843",
    "encontrado_por": "nombre",
    "lista": "candidates",
-   "motivo": "Amazon 1163.03 frente a 1320.94",
+   "motivo": "Amazon 1199.00 frente a 1320.94",
    "name": "Tablet 2 en 1 Microsoft Surface Pro 13 Snapdragon X Plus 16GB/256GB 13 pulgadas SSD Windows 11 Home Platino",
    "pp_drop": 20,
    "pp_median": 1648.95,
    "pp_price": 1320.94,
-   "t": "2026-11-23T18:01:07.710591+00:00",
+   "t": "2026-11-25T18:01:11.294449+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -11322,9 +11349,9 @@
   "amazon_mas_barato": 30,
   "dudoso": 0,
   "no_esta": 18,
-  "oferta_real": 18,
+  "oferta_real": 19,
   "pvpr_inflado": 2,
   "sin_precio": 10
  },
- "updated": "2026-11-25T17:30:57.888678+00:00"
+ "updated": "2026-11-25T18:01:11.294449+00:00"
 }

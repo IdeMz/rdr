@@ -9,7 +9,7 @@
   "Auriculares": "2026-11-23T21:15:38.951661+00:00",
   "Barras de sonido": "2026-11-23T21:45:48.617233+00:00",
   "Bebé": "2026-11-23T11:05:30.542682+00:00",
-  "Bricolaje": "2026-11-23T14:35:35.101359+00:00",
+  "Bricolaje": "2026-11-25T18:01:11.294449+00:00",
   "Cafeteras": "2026-11-24T19:35:37.316644+00:00",
   "Café y cápsulas": "2026-11-25T08:01:01.356229+00:00",
   "Camping y montaña": "2026-11-25T10:01:04.002472+00:00",
@@ -49,7 +49,7 @@
   "Perfumes": "2026-11-24T16:01:07.815808+00:00",
   "Periféricos": "2026-11-23T15:05:33.976238+00:00",
   "Perros": "2026-11-24T09:01:20.372772+00:00",
-  "Portátiles": "2026-11-23T15:30:54.461995+00:00",
+  "Portátiles": "2026-11-25T18:01:11.294449+00:00",
   "Proyectores": "2026-11-23T12:35:32.005006+00:00",
   "Redes y wifi": "2026-11-22T08:01:00.717908+00:00",
   "Relojes": "2026-11-24T14:01:02.613248+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-25T18:00:30.860826+00:00",
+ "next_at": "2026-11-25T18:26:12.924076+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -112,6 +112,17 @@
    "s": "busqueda",
    "t": "2026-11-22T15:01:47.283230+00:00",
    "title": "Colección Reloj Unisex Adultos A168WA",
+   "v": []
+  },
+  "B000YBXU6G": {
+   "c": "Bricolaje",
+   "d": 42,
+   "e": "🪛",
+   "m": 630,
+   "p": 23.19,
+   "s": "ambas",
+   "t": "2026-11-25T18:02:12.913835+00:00",
+   "title": "Brennenstuhl Super-Solid, Regleta de 8 Tomas con protección contra sobretensión (Regleta de enchufes múltiples con Cable de 2,5m e Interruptor - de policarbonato inastillable) Plata",
    "v": []
   },
   "B002EX2Y6E": {
@@ -1618,16 +1629,6 @@
    "s": "ambas",
    "t": "2026-11-25T17:31:27.908814+00:00",
    "title": "Imou Cámara IP WiFi Interior 2K/3MP Cámara de Vigilancia WiFi Interior 360°",
-   "v": []
-  },
-  "B08XRNCFZX": {
-   "c": "Videojuegos",
-   "d": 22,
-   "e": "🎮",
-   "m": 220,
-   "p": 29.9,
-   "t": "2026-11-11T17:46:31.652013+00:00",
-   "title": "Final Fantasy VII Remake Intergrade PS5",
    "v": []
   },
   "B08YRT9T38": {
@@ -4483,6 +4484,6 @@
  "tg_offset": 511048149,
  "x_copy": {
   "day": "2026-11-25",
-  "n": 22
+  "n": 23
  }
 }
