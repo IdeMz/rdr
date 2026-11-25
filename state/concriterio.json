@@ -55,7 +55,7 @@
   "Relojes": "2026-11-24T14:01:02.613248+00:00",
   "Robots de cocina": "2026-11-25T13:01:04.295203+00:00",
   "Salud": "2026-11-24T08:30:50.826050+00:00",
-  "Smartwatch": "2026-11-24T11:01:09.384811+00:00",
+  "Smartwatch": "2026-11-25T14:30:53.699678+00:00",
   "Suplementos": "2026-11-25T07:30:56.306804+00:00",
   "Tablets": "2026-11-25T08:30:59.592319+00:00",
   "Televisores": "2026-11-24T20:05:32.905580+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-25T14:27:47.043906+00:00",
+ "next_at": "2026-11-25T14:57:36.398783+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1421,16 +1421,6 @@
    "s": "ambas",
    "t": "2026-11-21T13:31:24.569822+00:00",
    "title": "Tapo L530E - Bombilla Inteligente WiFi, RGB Multicolor, 800lm, 8.3W, E27",
-   "v": []
-  },
-  "B08GVXR7V9": {
-   "c": "Gatos",
-   "d": 40,
-   "e": "🐱",
-   "m": 214,
-   "p": 13.53,
-   "t": "2026-11-11T14:01:45.946424+00:00",
-   "title": "Catit Go Natural! Arena Guisantes, Aroma Vainilla 5.6 kg",
    "v": []
   },
   "B08GW3KGYG": {
@@ -3750,6 +3740,17 @@
    "title": "TCL 55V6D Televisor 55 Pulgadas 4K UHD Smart TV, Fire TV, Alexa Integrado, Dolby Vision & Atmos, Game Master, HDR10+, Control por Voz",
    "v": []
   },
+  "B0GQL9JZS7": {
+   "c": "Smartwatch",
+   "d": 27,
+   "e": "⌚",
+   "m": 623,
+   "p": 79.99,
+   "s": "busqueda",
+   "t": "2026-11-25T14:31:33.002496+00:00",
+   "title": "Xiaomi Redmi Watch 6, smartwatch hombre y mujer, 24 días, negro",
+   "v": []
+  },
   "B0GQX6JT42": {
    "c": "Accesorios de coche",
    "d": 10,
@@ -4361,6 +4362,10 @@
    "t": "2026-11-25T11:01:10.670462+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0CT3VBDTV": {
+   "t": "2026-11-25T14:30:53.699678+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0CXPPNL5C": {
    "t": "2026-11-25T10:01:04.002472+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4372,6 +4377,18 @@
  },
  "reserve": [
   {
+   "a": "B0HJB44KZS",
+   "c": "Smartwatch",
+   "e": "⌚",
+   "img": "https://m.media-amazon.com/images/I/61+wIbnzNGL._AC_UL320_.jpg",
+   "n": 975,
+   "op": 269.0,
+   "p": 225.0,
+   "r": 4.6,
+   "t": "2026-11-25T14:30:53.699678+00:00",
+   "title": "Apple Watch SE 3 GPS 40 mm, Caja de Aluminio en Blanco Estrella"
+  },
+  {
    "a": "B0GR4YQW6S",
    "c": "Herramientas",
    "e": "🔧",
@@ -4382,30 +4399,6 @@
    "r": 4.2,
    "t": "2026-11-25T11:31:00.165429+00:00",
    "title": "Mini Motosierra Batería 6 Pulgadas 2×4000mAh, Sierra Eléctrica Inalámbrica con Depósito de Aceite, Portátil para Podar Jardinería y Árboles"
-  },
-  {
-   "a": "B0DWDMKNK2",
-   "c": "Lego",
-   "e": "🧱",
-   "img": "https://m.media-amazon.com/images/I/715MFPLod8L._AC_UL320_.jpg",
-   "n": 1200,
-   "op": 229.99,
-   "p": 160.95,
-   "r": 4.8,
-   "t": "2026-11-25T11:01:10.670462+00:00",
-   "title": "LEGO Fortnite Líder del Equipo Meca 77078"
-  },
-  {
-   "a": "B00N4UFEZO",
-   "c": "Gatos",
-   "e": "🐱",
-   "img": "https://m.media-amazon.com/images/I/71K4G+n5TsL._AC_UL320_.jpg",
-   "n": 1900,
-   "op": 40.89,
-   "p": 29.39,
-   "r": 4.3,
-   "t": "2026-11-25T10:31:05.699201+00:00",
-   "title": "Pienso seco Applaws para Gatos Adultos, Pollo con salmón, 7,5 kg (1 Bolsa) – sin Cereales, Rico en proteínas, Ingredientes Naturales"
   }
  ],
  "store_skip": {
@@ -4423,6 +4416,6 @@
  "tg_offset": 511048149,
  "x_copy": {
   "day": "2026-11-25",
-  "n": 15
+  "n": 16
  }
 }
