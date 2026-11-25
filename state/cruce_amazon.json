@@ -3222,6 +3222,13 @@
    "title": "Samsung Monitor Curvo Gaming Odyssey G9 G95C Dual QHD 49\" con 240Hz y AMD Freesync Pro",
    "via": "modelo"
   },
+  "8806095660981": {
+   "a": "B0D4B3616C",
+   "t": "2026-11-25T16:30:57.642581+00:00",
+   "title": "Samsung L310 Galaxy Watch7, 44mm, Green",
+   "v": 3,
+   "via": "modelo"
+  },
   "8806096444061": {
    "a": "B0F38QGFFB",
    "t": "2026-11-14T22:05:27.466329+00:00",
@@ -3800,6 +3807,26 @@
    "t": "2026-11-24T23:50:40.387410+00:00",
    "v": 3,
    "veredicto": "pvpr_inflado"
+  },
+  "38383446133": {
+   "ahorro_vs_amazon": -26,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 169.24,
+   "amz_title": "Samsung L310 Galaxy Watch7, 44mm, Green",
+   "asin": "B0D4B3616C",
+   "disponible": true,
+   "ean": "8806095660981",
+   "encontrado_por": "modelo",
+   "lista": "candidates",
+   "motivo": "Amazon 169.24 frente a 213.95",
+   "name": "Samsung Galaxy Watch7 L310 BT 44 mm Verde 1,5 pulgadas AMOLED GPS 5ATM",
+   "pp_drop": 29,
+   "pp_median": 302.95,
+   "pp_price": 213.95,
+   "t": "2026-11-25T16:30:57.642581+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
   },
   "38404791123": {
    "ahorro_vs_amazon": 50,
@@ -4409,7 +4436,7 @@
    "veredicto": "amazon_mas_barato"
   },
   "42729794985": {
-   "ahorro_vs_amazon": 48,
+   "ahorro_vs_amazon": 56,
    "amz_low30": null,
    "amz_median": 279.11,
    "amz_price": 125.43,
@@ -4419,12 +4446,12 @@
    "ean": "0195950384888",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "Amazon 125.43 frente a 143.95",
+   "motivo": "Amazon 125.43 frente a 123.95",
    "name": "Beats Powerbeats Fit Naranja Eléctrico TWS 30h IPX4 Auriculares inalámbricos",
-   "pp_drop": 21,
+   "pp_drop": 32,
    "pp_median": 181.95,
-   "pp_price": 143.95,
-   "t": "2026-11-24T22:05:26.610187+00:00",
+   "pp_price": 123.95,
+   "t": "2026-11-25T16:30:57.642581+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -11259,12 +11286,12 @@
  },
  "night_at": "2026-11-25T06:50:35.620278+00:00",
  "resumen": {
-  "amazon_mas_barato": 29,
+  "amazon_mas_barato": 30,
   "dudoso": 0,
   "no_esta": 17,
   "oferta_real": 18,
   "pvpr_inflado": 2,
   "sin_precio": 10
  },
- "updated": "2026-11-25T16:01:12.511497+00:00"
+ "updated": "2026-11-25T16:30:57.642581+00:00"
 }
