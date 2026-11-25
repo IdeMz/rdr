@@ -7273,7 +7273,7 @@
    "pp_drop": 17,
    "pp_median": 599.0,
    "pp_price": 499.9,
-   "t": "2026-11-23T23:50:33.201950+00:00",
+   "t": "2026-11-25T23:50:34.635931+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -7980,10 +7980,10 @@
    "lista": "candidates",
    "motivo": "Amazon 27.50 frente a 29.04",
    "name": "Pioneer Pasivo 2 vías TS-G1020F Negro 30W Altavoces de coche",
-   "pp_drop": 32,
-   "pp_median": 42.96,
+   "pp_drop": 31,
+   "pp_median": 41.95,
    "pp_price": 29.04,
-   "t": "2026-11-23T23:35:30.677145+00:00",
+   "t": "2026-11-25T23:50:34.635931+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -9547,7 +9547,7 @@
    "pp_drop": 31,
    "pp_median": 44.95,
    "pp_price": 30.95,
-   "t": "2026-11-23T23:50:33.201950+00:00",
+   "t": "2026-11-25T23:50:34.635931+00:00",
    "v": 3,
    "veredicto": "pvpr_inflado"
   },
@@ -11618,7 +11618,7 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-25T23:35:26.842035+00:00",
+ "night_at": "2026-11-25T23:50:34.635931+00:00",
  "resumen": {
   "amazon_mas_barato": 31,
   "dudoso": 0,
@@ -11627,5 +11627,5 @@
   "pvpr_inflado": 3,
   "sin_precio": 11
  },
- "updated": "2026-11-25T23:35:26.842035+00:00"
+ "updated": "2026-11-25T23:50:34.635931+00:00"
 }
