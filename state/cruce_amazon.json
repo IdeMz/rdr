@@ -2115,6 +2115,13 @@
    "title": "Edifier T5s Active Subwoofer – woofer de 8 pulgadas – 70 W – Filtro de paso bajo – Frecuencia hasta 35 Hz – Carcasa MDF para reducir la resonancia – En espera –",
    "via": "ean"
   },
+  "6923520248544": {
+   "a": "B0D2VH915C",
+   "t": "2026-11-25T23:18:49.346459+00:00",
+   "title": "Edifier W830NB - Auriculares inalámbricos con -45 dB ANC, batería de 94 Horas, Sonido LDAC Hi-Res, Audio Espacial, Carga rápida, Bluetooth V5.4, Color Negro",
+   "v": 3,
+   "via": "modelo"
+  },
   "6923520286775": {
    "a": "B0D9GJ4SZR",
    "t": "2026-11-17T01:05:23.235625+00:00",
@@ -4232,6 +4239,26 @@
      "Razer Barracuda X Chroma - Auriculares inalámbricos para Juegos multiplataforma con 6 Zonas Chroma R"
     ]
    }
+  },
+  "40543773419": {
+   "ahorro_vs_amazon": 48,
+   "amz_low30": 79.98,
+   "amz_median": 79.98,
+   "amz_price": 63.98,
+   "amz_title": "Edifier W830NB - Auriculares inalámbricos con -45 dB ANC, batería de 94 Horas, Sonido LDAC Hi-Res, Audio Espacial, Carga rápida, Bluetooth V5.4, Color Negro",
+   "asin": "B0D2VH915C",
+   "disponible": true,
+   "ean": "6923520248544",
+   "encontrado_por": "modelo",
+   "lista": "candidates",
+   "motivo": "48 % por debajo del habitual en Amazon (79.98)",
+   "name": "Edifier W830NB Marfil ANC Bluetooth 5.4 94h Multipunto Auriculares inalámbricos",
+   "pp_drop": 28,
+   "pp_median": 57.95,
+   "pp_price": 41.95,
+   "t": "2026-11-25T23:18:49.346459+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
   },
   "40773835746": {
    "ahorro_vs_amazon": -106,
@@ -7706,7 +7733,7 @@
    "pp_drop": 17,
    "pp_median": 545.95,
    "pp_price": 454.95,
-   "t": "2026-11-23T22:50:30.310943+00:00",
+   "t": "2026-11-25T23:18:49.346459+00:00",
    "v": 3,
    "veredicto": "no_esta",
    "vistos": {
@@ -10852,10 +10879,10 @@
    "lista": "candidates",
    "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
    "name": "Microsoft Surface Pro 12 Copilot+ 13 pulgadas 24GB/512GB Platino LCD 120Hz Snapdragon X2 Plus WiFi 7",
-   "pp_drop": 15,
-   "pp_median": 2171.95,
+   "pp_drop": 14,
+   "pp_median": 2161.96,
    "pp_price": 1848.95,
-   "t": "2026-11-23T22:35:27.592127+00:00",
+   "t": "2026-11-25T23:18:49.346459+00:00",
    "v": 3,
    "veredicto": "no_esta",
    "vistos": {
@@ -11592,14 +11619,14 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-25T23:05:27.756853+00:00",
+ "night_at": "2026-11-25T23:18:49.346459+00:00",
  "resumen": {
   "amazon_mas_barato": 31,
   "dudoso": 0,
   "no_esta": 20,
-  "oferta_real": 21,
+  "oferta_real": 22,
   "pvpr_inflado": 3,
   "sin_precio": 12
  },
- "updated": "2026-11-25T23:05:27.756853+00:00"
+ "updated": "2026-11-25T23:18:49.346459+00:00"
 }
