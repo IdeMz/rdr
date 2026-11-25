@@ -2923,6 +2923,13 @@
     ]
    }
   },
+  "840414699014": {
+   "a": "B0DKLFHZDH",
+   "t": "2026-11-25T22:50:31.304790+00:00",
+   "title": "Amazon Echo Dot Max (última generación): altavoz con sonido envolvente y controlador de Hogar digital integrado, Grafito, con Acceso Anticipado a Alexa+",
+   "v": 3,
+   "via": "ean"
+  },
   "8421078040040": {
    "a": "B0FY3RB7T8",
    "t": "2026-11-17T00:50:28.547812+00:00",
@@ -3141,6 +3148,13 @@
    "a": "B08BF3PXPX",
    "t": "2026-11-15T00:50:26.258760+00:00",
    "title": "DiamondClean 9000 HX9913/17",
+   "via": "ean"
+  },
+  "8710103975045": {
+   "a": "B08W29MNWG",
+   "t": "2026-11-25T22:50:31.304790+00:00",
+   "title": "Philips Sonicare DiamondClean Prestige 9900: cepillo dental eléctrico sónico con un cabezal de cepillado Premium All-in-One A3 y estuche de carga en color azul ",
+   "v": 3,
    "via": "ean"
   },
   "8713016057600": {
@@ -4613,6 +4627,26 @@
     ]
    }
   },
+  "43310049323": {
+   "ahorro_vs_amazon": 43,
+   "amz_low30": 129.0,
+   "amz_median": null,
+   "amz_price": 54.99,
+   "amz_title": "Amazon Echo Dot Max (última generación): altavoz con sonido envolvente y controlador de Hogar digital integrado, Grafito, con Acceso Anticipado a Alexa+",
+   "asin": "B0DKLFHZDH",
+   "disponible": true,
+   "ean": "840414699014",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 54.99 frente a 73.00",
+   "name": "Amazon Echo Dot Max 2025 Grafito WiFi Altavoz inteligente Alexa",
+   "pp_drop": 27,
+   "pp_median": 99.95,
+   "pp_price": 73.0,
+   "t": "2026-11-25T22:50:31.304790+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "43682318148": {
    "ahorro_vs_amazon": -21,
    "amz_low30": null,
@@ -5368,7 +5402,7 @@
    "veredicto": "amazon_mas_barato"
   },
   "45368125530": {
-   "ahorro_vs_amazon": 55,
+   "ahorro_vs_amazon": 56,
    "amz_low30": 251.28,
    "amz_median": 262.16,
    "amz_price": 109.0,
@@ -5378,12 +5412,12 @@
    "ean": "5706991026542",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "Amazon 109.00 frente a 118.96",
+   "motivo": "Amazon 109.00 frente a 114.95",
    "name": "Jabra Evolve2 Buds USB-A ANC IP57 con micrófono Auriculares",
-   "pp_drop": 21,
+   "pp_drop": 24,
    "pp_median": 150.95,
-   "pp_price": 118.96,
-   "t": "2026-11-24T22:20:35.735761+00:00",
+   "pp_price": 114.95,
+   "t": "2026-11-25T22:50:31.304790+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -8970,6 +9004,26 @@
    "t": "2026-11-14T10:30:50.359175+00:00",
    "veredicto": "oferta_real"
   },
+  "46256205834": {
+   "ahorro_vs_amazon": 3,
+   "amz_low30": null,
+   "amz_median": 218.99,
+   "amz_price": 184.0,
+   "amz_title": "Philips Sonicare DiamondClean Prestige 9900: cepillo dental eléctrico sónico con un cabezal de cepillado Premium All-in-One A3 y estuche de carga en color azul ",
+   "asin": "B08W29MNWG",
+   "disponible": true,
+   "ean": "8710103975045",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 184.00 frente a 212.95",
+   "name": "Philips Sonicare DiamondClean Prestige 9900 336h 5 Modos HX9992/12 Azul 3 velocidades Cepillo de dientes eléctrico",
+   "pp_drop": 21,
+   "pp_median": 270.96,
+   "pp_price": 212.95,
+   "t": "2026-11-25T22:50:31.304790+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "46256205860": {
    "ahorro_vs_amazon": 14,
    "amz_low30": null,
@@ -11510,14 +11564,14 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-25T22:35:27.695284+00:00",
+ "night_at": "2026-11-25T22:50:31.304790+00:00",
  "resumen": {
-  "amazon_mas_barato": 29,
+  "amazon_mas_barato": 31,
   "dudoso": 0,
   "no_esta": 20,
   "oferta_real": 21,
   "pvpr_inflado": 3,
   "sin_precio": 11
  },
- "updated": "2026-11-25T22:35:27.695284+00:00"
+ "updated": "2026-11-25T22:50:31.304790+00:00"
 }
