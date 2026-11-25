@@ -53,7 +53,7 @@
   "Proyectores": "2026-11-23T12:35:32.005006+00:00",
   "Redes y wifi": "2026-11-22T08:01:00.717908+00:00",
   "Relojes": "2026-11-24T14:01:02.613248+00:00",
-  "Robots de cocina": "2026-11-24T08:01:02.036825+00:00",
+  "Robots de cocina": "2026-11-25T13:01:04.295203+00:00",
   "Salud": "2026-11-24T08:30:50.826050+00:00",
   "Smartwatch": "2026-11-24T11:01:09.384811+00:00",
   "Suplementos": "2026-11-25T07:30:56.306804+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-25T12:56:55.230240+00:00",
+ "next_at": "2026-11-25T13:27:01.592849+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2761,16 +2761,6 @@
    "title": "Arquivet Fresh Puppy Junior Pavo & Salmón 2,5Kg - Pienso Semihúmedo",
    "v": []
   },
-  "B0DP4SB367": {
-   "c": "Zapatillas",
-   "d": 32,
-   "e": "👟",
-   "m": 212,
-   "p": 27.06,
-   "t": "2026-11-11T12:51:32.468193+00:00",
-   "title": "Barefoot Hombre Mujer Zapatillas de Trail Running Ligeras Cómodas Minimalistas Zapatos Descalzos GR.36-48",
-   "v": []
-  },
   "B0DP7K72L5": {
    "c": "Bebé",
    "d": 40,
@@ -3526,6 +3516,17 @@
    "s": "ofertas",
    "t": "2026-11-13T19:21:32.519131+00:00",
    "title": "Zapatillas de Running Flyer Lite 4 Unisex",
+   "v": []
+  },
+  "B0FX2Q566X": {
+   "c": "Robots de cocina",
+   "d": 45,
+   "e": "🥣",
+   "m": 620,
+   "p": 54.9,
+   "s": "ambas",
+   "t": "2026-11-25T13:01:37.979561+00:00",
+   "title": "Nutribullet Pro 900 - Batidora Personal Multifunción, Blender Frutas y Verduras, Diseño Compacto, Fácil de Usar y Limpieza Rápida, Extracción de Nutrientes, 900W, Mineral Gris Paloma (NB904MASN)",
    "v": []
   },
   "B0FX5217CY": {
@@ -4334,6 +4335,10 @@
    "t": "2026-11-25T10:31:05.699201+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B07SB18XRL": {
+   "t": "2026-11-25T13:01:04.295203+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B094WLFGD3": {
    "t": "2026-11-25T12:30:56.628057+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4404,6 +4409,6 @@
  "tg_offset": 511048149,
  "x_copy": {
   "day": "2026-11-25",
-  "n": 12
+  "n": 13
  }
 }
