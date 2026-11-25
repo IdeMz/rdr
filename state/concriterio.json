@@ -28,7 +28,7 @@
   "Fotografía": "2026-11-25T07:01:09.936457+00:00",
   "Freidoras de aire": "2026-11-23T18:01:07.710591+00:00",
   "Gaming": "2026-11-23T17:30:52.802500+00:00",
-  "Gatos": "2026-11-23T20:15:43.714745+00:00",
+  "Gatos": "2026-11-25T10:31:05.699201+00:00",
   "Herramientas": "2026-11-24T10:01:04.425858+00:00",
   "Higiene personal": "2026-11-24T19:05:34.869773+00:00",
   "Iluminación": "2026-11-25T10:01:04.002472+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-25T10:30:29.180764+00:00",
+ "next_at": "2026-11-25T10:56:19.275986+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -529,6 +529,17 @@
    "s": "ambas",
    "t": "2026-11-24T14:01:37.836618+00:00",
    "title": "D-Bear SQ - Reloj de Pulsera de Acero",
+   "v": []
+  },
+  "B01IUP0Y8E": {
+   "c": "Gatos",
+   "d": 26,
+   "e": "🐱",
+   "m": 615,
+   "p": 9.96,
+   "s": "busqueda",
+   "t": "2026-11-25T10:31:45.806411+00:00",
+   "title": "Brekkies Pienso para Gatos Delicious con una Selección de Aves y Verduras - 3000 gr",
    "v": []
   },
   "B01KHILJ5O": {
@@ -4313,6 +4324,10 @@
    "t": "2026-11-25T10:01:04.002472+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B01MFDF226": {
+   "t": "2026-11-25T10:31:05.699201+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0BY2R4BHW": {
    "t": "2026-11-24T11:30:52.354758+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4352,6 +4367,18 @@
  },
  "reserve": [
   {
+   "a": "B00N4UFEZO",
+   "c": "Gatos",
+   "e": "🐱",
+   "img": "https://m.media-amazon.com/images/I/71K4G+n5TsL._AC_UL320_.jpg",
+   "n": 1900,
+   "op": 40.89,
+   "p": 29.39,
+   "r": 4.3,
+   "t": "2026-11-25T10:31:05.699201+00:00",
+   "title": "Pienso seco Applaws para Gatos Adultos, Pollo con salmón, 7,5 kg (1 Bolsa) – sin Cereales, Rico en proteínas, Ingredientes Naturales"
+  },
+  {
    "a": "B09FL1TK77",
    "c": "Tablets",
    "e": "📲",
@@ -4362,30 +4389,6 @@
    "r": 4.2,
    "t": "2026-11-25T08:30:59.592319+00:00",
    "title": "TECLAST M50T Tablet 10.1 Pulgadas Android 16 Tableta Gemini AI, 32GB RAM+128GB ROM+5TB TF, 2GHz Octa-Core, 7000mAh, 2.4G+5G WiFi, BT 5.4/Widevine L1/13MP+5MP/3.5MM/Face ID/OTG, Tablets con Lápiz, 2026"
-  },
-  {
-   "a": "B001ATHYXQ",
-   "c": "Suplementos",
-   "e": "💊",
-   "img": "https://m.media-amazon.com/images/I/61kVXHxr+xL._AC_UL320_.jpg",
-   "n": 2200,
-   "op": 20.74,
-   "p": 13.52,
-   "r": 4.6,
-   "t": "2026-11-25T07:30:56.306804+00:00",
-   "title": "Solgar Fórmula VM-75 | Multivitamínico y Mineral | 30 Cápsulas"
-  },
-  {
-   "a": "B0BN5QRC5F",
-   "c": "Fotografía",
-   "e": "📷",
-   "img": "https://m.media-amazon.com/images/I/51I9jDUTH+L._AC_UL320_.jpg",
-   "n": 187,
-   "op": 22.99,
-   "p": 13.77,
-   "r": 4.6,
-   "t": "2026-11-25T07:01:09.936457+00:00",
-   "title": "CAMBOFOTO Trípode para Móvil y Cámara 168 cm Aluminio Ligero para Viaje"
   }
  ],
  "store_skip": {
@@ -4405,6 +4408,6 @@
  "tg_offset": 511048149,
  "x_copy": {
   "day": "2026-11-25",
-  "n": 7
+  "n": 8
  }
 }

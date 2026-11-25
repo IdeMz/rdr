@@ -2148,6 +2148,13 @@
     ]
    }
   },
+  "6942103105081": {
+   "a": "B0CFPCBG15",
+   "t": "2026-11-25T10:31:05.699201+00:00",
+   "title": "Huawei Watch GT 4, 41mm, Silver",
+   "v": 3,
+   "via": "ean"
+  },
   "6942103154287": {
    "a": "B0F1G8QQLM",
    "t": "2026-11-13T21:15:42.495405+00:00",
@@ -6852,6 +6859,26 @@
     ]
    }
   },
+  "45992962768": {
+   "ahorro_vs_amazon": 10,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 195.99,
+   "amz_title": "Huawei Watch GT 4, 41mm, Silver",
+   "asin": "B0CFPCBG15",
+   "disponible": true,
+   "ean": "6942103105081",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "10 % por debajo del habitual en Amazon (195.99)",
+   "name": "Huawei Watch GT 4 41 mm Plata 1,32 pulgadas AMOLED GPS NFC 5ATM",
+   "pp_drop": 50,
+   "pp_median": 352.94,
+   "pp_price": 176.95,
+   "t": "2026-11-25T10:31:05.699201+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "45992962853": {
    "ahorro_vs_amazon": 3,
    "amz_low30": null,
@@ -7017,7 +7044,7 @@
    "veredicto": "amazon_mas_barato"
   },
   "46071185385": {
-   "ahorro_vs_amazon": 2,
+   "ahorro_vs_amazon": 20,
    "amz_low30": null,
    "amz_median": null,
    "amz_price": 561.77,
@@ -7027,14 +7054,14 @@
    "ean": "4718755077098",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "Amazon 561.77 frente a 549.95",
+   "motivo": "20 % por debajo del habitual en Amazon (561.77)",
    "name": "BenQ Mobiuz EX3210U 32 pulgadas 4K IPS 144Hz 1ms Monitor",
-   "pp_drop": 21,
+   "pp_drop": 36,
    "pp_median": 699.95,
-   "pp_price": 549.95,
-   "t": "2026-11-24T16:30:59.602669+00:00",
+   "pp_price": 447.82,
+   "t": "2026-11-25T10:31:05.699201+00:00",
    "v": 3,
-   "veredicto": "amazon_mas_barato"
+   "veredicto": "oferta_real"
   },
   "46071185419": {
    "ean": "6977728943794",
@@ -11116,12 +11143,12 @@
  },
  "night_at": "2026-11-25T06:50:35.620278+00:00",
  "resumen": {
-  "amazon_mas_barato": 37,
+  "amazon_mas_barato": 29,
   "dudoso": 0,
-  "no_esta": 18,
-  "oferta_real": 21,
-  "pvpr_inflado": 4,
-  "sin_precio": 9
+  "no_esta": 16,
+  "oferta_real": 17,
+  "pvpr_inflado": 2,
+  "sin_precio": 8
  },
- "updated": "2026-11-25T10:01:04.002472+00:00"
+ "updated": "2026-11-25T10:31:05.699201+00:00"
 }
