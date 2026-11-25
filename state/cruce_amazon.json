@@ -1668,6 +1668,13 @@
    "v": 3,
    "via": "ean"
   },
+  "5011423176987": {
+   "a": "B00R6BO42G",
+   "t": "2026-11-25T21:15:41.908814+00:00",
+   "title": "Kenwood - Accesorio Picadora de Carne para Robots de Cocina Chef Plateado",
+   "v": 3,
+   "via": "ean"
+  },
   "5025155118078": {
    "a": "B0F7LW48NQ",
    "t": "2026-11-18T02:50:27.531463+00:00",
@@ -2452,6 +2459,21 @@
    "t": "2026-11-16T15:40:40.598894+00:00",
    "title": "CATLINK Scoop Robot Pro Arenero Gatos Autolimpiable, Arenero Automático con Doble Cámara IA y App, Interior 82 L, Depósito 15 L, 30 dB, para Gatos Grandes y Var",
    "via": "nombre"
+  },
+  "6973014172275": {
+   "a": "",
+   "t": "2026-11-25T21:15:41.908814+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "KOSPET PULSE 2 Reloj Inteligente con GPS, 5 ATM e IP69, Batería 15 Días",
+     "Reloj Inteligente Mujer Hombre,1.96\" Smartwatch con Llamada Bluetooth",
+     "Reloj Inteligente Mujer Hombre,1.96\" Smartwatch con Llamada Bluetooth"
+    ]
+   }
   },
   "6973137270278": {
    "a": "B0FY2WK8G3",
@@ -6988,6 +7010,28 @@
    "v": 3,
    "veredicto": "oferta_real"
   },
+  "45992962816": {
+   "ean": "6973014172275",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Kumi KU7 Negro 1,96 pulgadas AMOLED 5 días +100 deportes IP68 Smartwatch",
+   "pp_drop": 36,
+   "pp_median": 54.99,
+   "pp_price": 34.94,
+   "t": "2026-11-25T21:15:41.908814+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "KOSPET PULSE 2 Reloj Inteligente con GPS, 5 ATM e IP69, Batería 15 Días",
+     "Reloj Inteligente Mujer Hombre,1.96\" Smartwatch con Llamada Bluetooth",
+     "Reloj Inteligente Mujer Hombre,1.96\" Smartwatch con Llamada Bluetooth"
+    ]
+   }
+  },
   "45992962853": {
    "ahorro_vs_amazon": 3,
    "amz_low30": null,
@@ -7901,6 +7945,26 @@
    "t": "2026-11-19T11:05:31.132875+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
+  },
+  "46186036000": {
+   "ahorro_vs_amazon": 23,
+   "amz_low30": 99.19,
+   "amz_median": 103.75,
+   "amz_price": 94.23,
+   "amz_title": "Kenwood - Accesorio Picadora de Carne para Robots de Cocina Chef Plateado",
+   "asin": "B00R6BO42G",
+   "disponible": true,
+   "ean": "5011423176987",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "23 % por debajo del habitual en Amazon (103.75)",
+   "name": "Picadora de carne Kenwood Acero Inoxidable KAX950ME",
+   "pp_drop": 29,
+   "pp_median": 112.95,
+   "pp_price": 79.64,
+   "t": "2026-11-25T21:15:41.908814+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
   },
   "46186036324": {
    "ahorro_vs_amazon": 2,
@@ -11375,10 +11439,10 @@
  "resumen": {
   "amazon_mas_barato": 30,
   "dudoso": 0,
-  "no_esta": 18,
-  "oferta_real": 19,
+  "no_esta": 19,
+  "oferta_real": 20,
   "pvpr_inflado": 3,
   "sin_precio": 10
  },
- "updated": "2026-11-25T20:45:41.682692+00:00"
+ "updated": "2026-11-25T21:15:41.908814+00:00"
 }
