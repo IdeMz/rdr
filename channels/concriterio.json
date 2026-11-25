@@ -26,6 +26,7 @@
   "manual_queue": true,
   "store_start": "2026-11-20",
   "store_daily": {"powerplanet": 2, "aliexpress": 2},
+  "store_max_delivery_days": 7,
   "summary_time": "22:50",
   "store": "AMAZON",
   "website_url": "https://www.concriterio.eu",
