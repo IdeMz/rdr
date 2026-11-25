@@ -18,7 +18,7 @@
   "Climatización": "2026-11-24T18:35:37.637788+00:00",
   "Colchones y almohadas": "2026-11-24T16:30:59.602669+00:00",
   "Componentes PC": "2026-11-25T10:01:04.002472+00:00",
-  "Cuidado de la piel": "2026-11-23T11:35:39.474985+00:00",
+  "Cuidado de la piel": "2026-11-25T15:01:06.717368+00:00",
   "Cuidado del cabello": "2026-11-22T18:30:51.920701+00:00",
   "Cámaras de seguridad": "2026-11-24T15:01:05.679895+00:00",
   "Decoración navideña": "2026-11-24T15:30:53.979529+00:00",
@@ -62,12 +62,12 @@
   "Textil hogar": "2026-11-25T13:30:55.439683+00:00",
   "Videojuegos": "2026-11-24T13:35:33.816258+00:00",
   "Zapatillas": "2026-11-25T09:01:05.992602+00:00",
-  "eReaders": "2026-11-23T13:05:32.398802+00:00"
+  "eReaders": "2026-11-25T15:01:06.717368+00:00"
  },
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-25T14:57:36.398783+00:00",
+ "next_at": "2026-11-25T15:28:55.443639+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2566,6 +2566,17 @@
    "title": "Lepro BP1 AI Bombilla LED E14, G45 Bombilla Inteligente Alexa 2Pcs",
    "v": []
   },
+  "B0D6QNPBSC": {
+   "c": "Cuidado de la piel",
+   "d": 43,
+   "e": "🧴",
+   "m": 624,
+   "p": 9.4,
+   "s": "ofertas",
+   "t": "2026-11-25T15:02:11.672463+00:00",
+   "title": "[MIZON] INOUT Soothing Sunscreen SPF50+PA++++ (50ml) Crema Solar y Skincare Coreano, Protección 24H, Antienrojecimiento, Ácido Hialurónico y Centella Asiática, 100% Vegano y Seguro para los Arrecifes",
+   "v": []
+  },
   "B0D6RW3DH5": {
    "c": "Café y cápsulas",
    "d": 27,
@@ -3387,16 +3398,6 @@
    "s": "ambas",
    "t": "2026-11-15T17:41:22.235825+00:00",
    "title": "Tapo L430P-Bombilla inteligente WiFi, 16 millones de colores, regulable,E27",
-   "v": []
-  },
-  "B0FPQR9572": {
-   "c": "Fitness en casa",
-   "d": 27,
-   "e": "🏋️",
-   "m": 215,
-   "p": 9.03,
-   "t": "2026-11-11T14:36:02.315625+00:00",
-   "title": "JATEKA Banda Elástica Fitness, Banda de Resistencia en Casa y Gym, Gomas Elásticas Musculacion para Hombre Mujer Entrenamiento de Fuerza, Yoga, Pilates, Versátil, Duradera y Portátil",
    "v": []
   },
   "B0FPQXQMWD": {
@@ -4346,16 +4347,32 @@
    "t": "2026-11-25T10:01:04.002472+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B00X9TZ0RC": {
+   "t": "2026-11-25T15:01:06.717368+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B01MFDF226": {
    "t": "2026-11-25T10:31:05.699201+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B072DXLHFS": {
+   "t": "2026-11-25T15:01:06.717368+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B07SB18XRL": {
    "t": "2026-11-25T13:01:04.295203+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B08T19GT85": {
+   "t": "2026-11-25T15:01:06.717368+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B094WLFGD3": {
    "t": "2026-11-25T12:30:56.628057+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0B5PJ41ZT": {
+   "t": "2026-11-25T15:01:06.717368+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0CFVZ74KT": {
@@ -4368,6 +4385,14 @@
   },
   "B0CXPPNL5C": {
    "t": "2026-11-25T10:01:04.002472+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0DPNBNJVS": {
+   "t": "2026-11-25T15:01:06.717368+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0G1NHVHPF": {
+   "t": "2026-11-25T15:01:06.717368+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0HHM2Z9GN": {
@@ -4387,18 +4412,6 @@
    "r": 4.6,
    "t": "2026-11-25T14:30:53.699678+00:00",
    "title": "Apple Watch SE 3 GPS 40 mm, Caja de Aluminio en Blanco Estrella"
-  },
-  {
-   "a": "B0GR4YQW6S",
-   "c": "Herramientas",
-   "e": "🔧",
-   "img": "https://m.media-amazon.com/images/I/81QqSKTq-GL._AC_UL320_.jpg",
-   "n": 5500,
-   "op": 89.99,
-   "p": 56.99,
-   "r": 4.2,
-   "t": "2026-11-25T11:31:00.165429+00:00",
-   "title": "Mini Motosierra Batería 6 Pulgadas 2×4000mAh, Sierra Eléctrica Inalámbrica con Depósito de Aceite, Portátil para Podar Jardinería y Árboles"
   }
  ],
  "store_skip": {
@@ -4416,6 +4429,6 @@
  "tg_offset": 511048149,
  "x_copy": {
   "day": "2026-11-25",
-  "n": 16
+  "n": 17
  }
 }
