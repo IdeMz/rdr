@@ -20,7 +20,7 @@
   "Componentes PC": "2026-11-25T10:01:04.002472+00:00",
   "Cuidado de la piel": "2026-11-25T15:01:06.717368+00:00",
   "Cuidado del cabello": "2026-11-22T18:30:51.920701+00:00",
-  "Cámaras de seguridad": "2026-11-24T15:01:05.679895+00:00",
+  "Cámaras de seguridad": "2026-11-25T17:30:57.888678+00:00",
   "Decoración navideña": "2026-11-24T15:30:53.979529+00:00",
   "Domótica": "2026-11-23T09:01:11.110279+00:00",
   "Droguería": "2026-11-24T20:35:34.454164+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-25T17:28:10.261578+00:00",
+ "next_at": "2026-11-25T18:00:30.860826+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1607,6 +1607,17 @@
    "s": "ambas",
    "t": "2026-11-16T16:51:09.258914+00:00",
    "title": "Braun YK-81CEU - Pulsioxímetro Braun 1 (Saturación de Oxígeno, Niveles de Oxígeno en Sangre, Dispositivo Médico Certificado Clínicamente Preciso) Yk-81Ceu",
+   "v": []
+  },
+  "B08X6DCJT2": {
+   "c": "Cámaras de seguridad",
+   "d": 28,
+   "e": "📹",
+   "m": 629,
+   "p": 19.84,
+   "s": "ambas",
+   "t": "2026-11-25T17:31:27.908814+00:00",
+   "title": "Imou Cámara IP WiFi Interior 2K/3MP Cámara de Vigilancia WiFi Interior 360°",
    "v": []
   },
   "B08XRNCFZX": {
@@ -4418,6 +4429,18 @@
  },
  "reserve": [
   {
+   "a": "B0982WVMVC",
+   "c": "Cámaras de seguridad",
+   "e": "📹",
+   "img": "https://m.media-amazon.com/images/I/51i++1bRShL._AC_UY218_.jpg",
+   "n": 1600,
+   "op": 129.99,
+   "p": 103.99,
+   "r": 4.4,
+   "t": "2026-11-25T17:30:57.888678+00:00",
+   "title": "Reolink 4K 8MP Camara Vigilancia PoE con Foco, Zoom óptico 5X, RLC-811A"
+  },
+  {
    "a": "B07RLDW1VZ",
    "c": "Fitness en casa",
    "e": "🏋️",
@@ -4440,18 +4463,6 @@
    "r": 4.7,
    "t": "2026-11-25T15:30:57.153436+00:00",
    "title": "Cyberpunk 2077 Ultimate Edition"
-  },
-  {
-   "a": "B0HJB44KZS",
-   "c": "Smartwatch",
-   "e": "⌚",
-   "img": "https://m.media-amazon.com/images/I/61+wIbnzNGL._AC_UL320_.jpg",
-   "n": 975,
-   "op": 269.0,
-   "p": 225.0,
-   "r": 4.6,
-   "t": "2026-11-25T14:30:53.699678+00:00",
-   "title": "Apple Watch SE 3 GPS 40 mm, Caja de Aluminio en Blanco Estrella"
   }
  ],
  "store_skip": {
@@ -4472,6 +4483,6 @@
  "tg_offset": 511048149,
  "x_copy": {
   "day": "2026-11-25",
-  "n": 21
+  "n": 22
  }
 }
