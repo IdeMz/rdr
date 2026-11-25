@@ -47,7 +47,7 @@
   "Patinetes": "2026-11-24T12:35:31.161899+00:00",
   "Pequeño electrodoméstico": "2026-11-22T14:01:03.209389+00:00",
   "Perfumes": "2026-11-24T16:01:07.815808+00:00",
-  "Periféricos": "2026-11-23T15:05:33.976238+00:00",
+  "Periféricos": "2026-11-25T21:45:38.616662+00:00",
   "Perros": "2026-11-25T18:30:56.405059+00:00",
   "Portátiles": "2026-11-25T18:01:11.294449+00:00",
   "Proyectores": "2026-11-23T12:35:32.005006+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-25T21:43:29.576746+00:00",
+ "next_at": "2026-11-25T22:12:14.492478+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1719,6 +1719,17 @@
    "s": "ambas",
    "t": "2026-11-19T15:31:33.763272+00:00",
    "title": "Mercusys ME30 - Repetidor WiFi 5, AC1200, Doble Banda, Antenas externas",
+   "v": []
+  },
+  "B097F5QSTB": {
+   "c": "Periféricos",
+   "d": 45,
+   "e": "⌨️",
+   "m": 637,
+   "p": 66.1,
+   "s": "ambas",
+   "t": "2026-11-25T21:46:03.639567+00:00",
+   "title": "Razer BlackWidow V3 Tenkeyless (Yellow Switch) - Teclado Compacto para Juegos con interruptores mecánicos (Teclas ABS, iluminación RGB Chroma) QWERTY Teclado ES | Negro",
    "v": []
   },
   "B098TVZ6TS": {
@@ -3981,16 +3992,6 @@
    "title": "Google Pixel 11 - Smartphone Android libre - Pistacho, 256GB",
    "v": []
   },
-  "B0H69P2TQP": {
-   "c": "Móviles",
-   "d": 13,
-   "e": "📱",
-   "m": 226,
-   "p": 147.24,
-   "t": "2026-11-11T21:36:25.840819+00:00",
-   "title": "HOTWAV T8 Móvil Irrompible Android 16, 12GB RAM + 64GB/2TB",
-   "v": []
-  },
   "B0H6DZJX44": {
    "c": "Aspiradoras",
    "d": 50,
@@ -4505,6 +4506,6 @@
  "tg_offset": 511048149,
  "x_copy": {
   "day": "2026-11-25",
-  "n": 29
+  "n": 30
  }
 }
