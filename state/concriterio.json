@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-25T19:44:41.113224+00:00",
+ "next_at": "2026-11-25T20:10:59.734061+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1509,16 +1509,6 @@
    "s": "ofertas",
    "t": "2026-11-19T21:16:28.494035+00:00",
    "title": "VASAGLE Mesa de Consola, Tablero de Vidrio Templado, Marco de Metal",
-   "v": []
-  },
-  "B08JLG459W": {
-   "c": "Jardín",
-   "d": 22,
-   "e": "🌱",
-   "m": 223,
-   "p": 23.46,
-   "t": "2026-11-11T19:41:17.797229+00:00",
-   "title": "DEWINNER Aspersor de Jardín Automático, Aspersor Giratorio de Césped de 360 °, Suministros de Jardinería Ajustables, Sistema de Riego con Boquilla de 3 Brazos para Equipos",
    "v": []
   },
   "B08JZ6MPF3": {
@@ -4341,6 +4331,19 @@
    "u": "https://www.awin1.com/pclick.php?p=46599140243&a=3134713&m=77138",
    "v": []
   },
+  "pp:46599141816": {
+   "auto": true,
+   "c": "",
+   "d": 31,
+   "e": "",
+   "m": 633,
+   "p": 54.9,
+   "st": "POWERPLANET",
+   "t": "2026-11-25T19:45:38.936384+00:00",
+   "title": "Panasonic ER-GC71 seco y mojado Plata inalámbrico 40 min Cortapelos",
+   "u": "https://www.awin1.com/pclick.php?p=46599141816&a=3134713&m=77138",
+   "v": []
+  },
   "pp:46772243198": {
    "auto": true,
    "c": "",
@@ -4477,6 +4480,6 @@
  "tg_offset": 511048149,
  "x_copy": {
   "day": "2026-11-25",
-  "n": 25
+  "n": 26
  }
 }
