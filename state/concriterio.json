@@ -61,13 +61,13 @@
   "Televisores": "2026-11-24T20:05:32.905580+00:00",
   "Textil hogar": "2026-11-23T10:35:32.957931+00:00",
   "Videojuegos": "2026-11-24T13:35:33.816258+00:00",
-  "Zapatillas": "2026-11-23T19:01:08.273550+00:00",
+  "Zapatillas": "2026-11-25T09:01:05.992602+00:00",
   "eReaders": "2026-11-23T13:05:32.398802+00:00"
  },
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-25T08:59:29.906861+00:00",
+ "next_at": "2026-11-25T09:28:26.289781+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2638,16 +2638,6 @@
    "title": "Mochila 40x30x20, Mochilas Cabina para Ryanair 40x20x30cm",
    "v": []
   },
-  "B0DB1753RZ": {
-   "c": "Altavoces",
-   "d": 37,
-   "e": "🔊",
-   "m": 205,
-   "p": 18.99,
-   "t": "2026-11-11T08:46:05.718440+00:00",
-   "title": "Soundcore Select 4 Go de Anker Altavoz Bluetooth Portátil Mini(Negro)",
-   "v": []
-  },
   "B0DDDGTKCR": {
    "c": "Patinetes",
    "d": 25,
@@ -3073,6 +3063,17 @@
    "s": "busqueda",
    "t": "2026-11-18T18:02:13.452206+00:00",
    "title": "Amazon Fire TV Stick 4K Plus, compatible con Wi-Fi 6, Dolby Vision, Dolby Atmos y HDR10+, encuentra series más rápido con Alexa+",
+   "v": []
+  },
+  "B0F84KSKLY": {
+   "c": "Zapatillas",
+   "d": 37,
+   "e": "👟",
+   "m": 612,
+   "p": 19.92,
+   "s": "busqueda",
+   "t": "2026-11-25T09:01:43.617527+00:00",
+   "title": "Kingpin - Clásico Skate Legendario, Cupsole Reforzada, sensación Acolchada, Zapatillas diarias",
    "v": []
   },
   "B0F8BJ7PW6": {
@@ -4398,6 +4399,6 @@
  "tg_offset": 511048149,
  "x_copy": {
   "day": "2026-11-25",
-  "n": 4
+  "n": 5
  }
 }
