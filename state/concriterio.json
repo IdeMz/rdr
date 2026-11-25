@@ -60,14 +60,14 @@
   "Tablets": "2026-11-25T08:30:59.592319+00:00",
   "Televisores": "2026-11-24T20:05:32.905580+00:00",
   "Textil hogar": "2026-11-25T13:30:55.439683+00:00",
-  "Videojuegos": "2026-11-24T13:35:33.816258+00:00",
+  "Videojuegos": "2026-11-25T15:30:57.153436+00:00",
   "Zapatillas": "2026-11-25T09:01:05.992602+00:00",
   "eReaders": "2026-11-25T15:01:06.717368+00:00"
  },
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-25T15:28:55.443639+00:00",
+ "next_at": "2026-11-25T15:57:56.292135+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2687,16 +2687,6 @@
    "title": "INIU Power Bank, Pequeño 45W Carga Rápida 10000mAh USB C Bateria Externa",
    "v": []
   },
-  "B0DGLC3Y3L": {
-   "c": "Freidoras de aire",
-   "d": 33,
-   "e": "🍟",
-   "m": 216,
-   "p": 35.01,
-   "t": "2026-11-11T15:11:22.102210+00:00",
-   "title": "Cecotec Freidora de Aire 4 L Cecofry&Grill Duoheat 4000 1900W",
-   "v": []
-  },
   "B0DHSBBV6R": {
    "c": "Lego",
    "d": 37,
@@ -2772,6 +2762,17 @@
    "s": "ambas",
    "t": "2026-11-16T07:36:06.223878+00:00",
    "title": "Dodot Toallitas Pure Aqua Para Bebé, 1152 Toallitas (24 Packs x 48 uds)",
+   "v": []
+  },
+  "B0DQ5WMN4H": {
+   "c": "Videojuegos",
+   "d": 52,
+   "e": "🎮",
+   "m": 625,
+   "p": 23.88,
+   "s": "ambas",
+   "t": "2026-11-25T15:31:28.740178+00:00",
+   "title": "Split Fiction PS5 | Disco |Videojuegos | Castellano",
    "v": []
   },
   "B0DQWQJ1MY": {
@@ -4402,6 +4403,18 @@
  },
  "reserve": [
   {
+   "a": "B0CNS4MB7R",
+   "c": "Videojuegos",
+   "e": "🎮",
+   "img": "https://m.media-amazon.com/images/I/81xFgFFptML._AC_UL320_.jpg",
+   "n": 232,
+   "op": 61.99,
+   "p": 33.99,
+   "r": 4.7,
+   "t": "2026-11-25T15:30:57.153436+00:00",
+   "title": "Cyberpunk 2077 Ultimate Edition"
+  },
+  {
    "a": "B0HJB44KZS",
    "c": "Smartwatch",
    "e": "⌚",
@@ -4429,6 +4442,6 @@
  "tg_offset": 511048149,
  "x_copy": {
   "day": "2026-11-25",
-  "n": 17
+  "n": 18
  }
 }
