@@ -5,7 +5,7 @@
   "Afeitado y depilación": "2026-11-23T07:01:04.565029+00:00",
   "Almacenamiento": "2026-11-23T16:01:16.579464+00:00",
   "Altavoces": "2026-11-25T16:30:57.642581+00:00",
-  "Aspiradoras": "2026-11-23T19:31:10.357756+00:00",
+  "Aspiradoras": "2026-11-25T17:01:09.744818+00:00",
   "Auriculares": "2026-11-23T21:15:38.951661+00:00",
   "Barras de sonido": "2026-11-23T21:45:48.617233+00:00",
   "Bebé": "2026-11-23T11:05:30.542682+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-25T16:59:45.919270+00:00",
+ "next_at": "2026-11-25T17:28:10.261578+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2046,16 +2046,6 @@
    "s": "ofertas",
    "t": "2026-11-22T18:02:26.267506+00:00",
    "title": "Electronic Arts It Takes Two | Nintendo Switch |Videojuegos Castellano",
-   "v": []
-  },
-  "B0BGJC5GZ1": {
-   "c": "Nutrición deportiva",
-   "d": 40,
-   "e": "💪",
-   "m": 219,
-   "p": 13.25,
-   "t": "2026-11-11T16:55:59.247682+00:00",
-   "title": "Foodelis Creatina Monohidratada 1 kg en Polvo, 333 Dosis de 3 g, Sin Sabor",
    "v": []
   },
   "B0BL39SF8P": {
@@ -4061,6 +4051,17 @@
    "title": "Palo Selfie y Trípode para Móvi 170cm Tripe Telemovel Portátil",
    "v": []
   },
+  "B0H9YW4LLT": {
+   "c": "Aspiradoras",
+   "d": 41,
+   "e": "🧹",
+   "m": 628,
+   "p": 499.0,
+   "s": "busqueda",
+   "t": "2026-11-25T17:01:38.008030+00:00",
+   "title": "Roomba Plus 676 Robot Aspirador 2 en 1 + Base AutoWash, Fregado Caliente",
+   "v": []
+  },
   "B0HCPGS988": {
    "c": "Decoración navideña",
    "d": 39,
@@ -4471,6 +4472,6 @@
  "tg_offset": 511048149,
  "x_copy": {
   "day": "2026-11-25",
-  "n": 20
+  "n": 21
  }
 }

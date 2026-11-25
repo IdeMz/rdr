@@ -860,6 +860,19 @@
     ]
    }
   },
+  "3307216292623": {
+   "a": "",
+   "t": "2026-11-25T17:01:09.744818+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "(sin resultados)"
+    ]
+   }
+  },
   "3362932914846": {
    "a": "B01H6KXGDY",
    "t": "2026-11-14T08:45:50.370542+00:00",
@@ -7225,6 +7238,26 @@
    "t": "2026-11-15T00:50:26.258760+00:00",
    "veredicto": "oferta_real"
   },
+  "46093615974": {
+   "ean": "3307216292623",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Assassin's Creed Shadows Edición Estándar PS5",
+   "pp_drop": 43,
+   "pp_median": 62.94,
+   "pp_price": 35.95,
+   "t": "2026-11-25T17:01:09.744818+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "(sin resultados)"
+    ]
+   }
+  },
   "46093615979": {
    "ean": "196388599943",
    "lista": "candidates",
@@ -9492,7 +9525,7 @@
    "pp_drop": 27,
    "pp_median": 489.0,
    "pp_price": 358.99,
-   "t": "2026-11-23T16:31:04.905592+00:00",
+   "t": "2026-11-25T17:01:09.744818+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -11288,10 +11321,10 @@
  "resumen": {
   "amazon_mas_barato": 30,
   "dudoso": 0,
-  "no_esta": 17,
+  "no_esta": 18,
   "oferta_real": 18,
   "pvpr_inflado": 2,
   "sin_precio": 10
  },
- "updated": "2026-11-25T16:30:57.642581+00:00"
+ "updated": "2026-11-25T17:01:09.744818+00:00"
 }
