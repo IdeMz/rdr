@@ -56,7 +56,7 @@
   "Robots de cocina": "2026-11-24T08:01:02.036825+00:00",
   "Salud": "2026-11-24T08:30:50.826050+00:00",
   "Smartwatch": "2026-11-24T11:01:09.384811+00:00",
-  "Suplementos": "2026-11-22T20:00:59.130943+00:00",
+  "Suplementos": "2026-11-25T07:30:56.306804+00:00",
   "Tablets": "2026-11-22T16:30:48.501662+00:00",
   "Televisores": "2026-11-24T20:05:32.905580+00:00",
   "Textil hogar": "2026-11-23T10:35:32.957931+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-25T07:27:29.168923+00:00",
+ "next_at": "2026-11-25T08:00:23.706795+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -278,6 +278,17 @@
    "title": "MEGA BLOKS First Builders Bolsa Grande de Bloques Azul",
    "v": []
   },
+  "B008FN6YOU": {
+   "c": "Suplementos",
+   "d": 46,
+   "e": "💊",
+   "m": 609,
+   "p": 18.99,
+   "s": "ambas",
+   "t": "2026-11-25T07:31:38.299632+00:00",
+   "title": "Optimum Nutrition Opti-Men, Multivitamínico de Alta Potencia para Hombres",
+   "v": []
+  },
   "B009SIVCNE": {
    "c": "Mochilas y maletas",
    "d": 50,
@@ -408,16 +419,6 @@
    "s": "ambas",
    "t": "2026-11-20T15:31:19.952845+00:00",
    "title": "Ultima Medium-Maxi Adult Pollo, Comida seca para perros, 7,5kg",
-   "v": []
-  },
-  "B00XFXQ2EW": {
-   "c": "Perros",
-   "d": 23,
-   "e": "🐶",
-   "m": 202,
-   "p": 16.69,
-   "t": "2026-11-11T07:01:39.104213+00:00",
-   "title": "bosch HPC SOFT Pollo y Plátano | Alimento semi-húmedo para perros adultos de todas las razas | Sin cereales | 1 x 2,5 kg",
    "v": []
   },
   "B00XYTTEAQ": {
@@ -4299,6 +4300,10 @@
  },
  "problem": {},
  "rejected": {
+  "B00GY2JCXE": {
+   "t": "2026-11-25T07:30:56.306804+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B079HFDPRF": {
    "t": "2026-11-24T09:01:20.372772+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4338,6 +4343,18 @@
  },
  "reserve": [
   {
+   "a": "B001ATHYXQ",
+   "c": "Suplementos",
+   "e": "💊",
+   "img": "https://m.media-amazon.com/images/I/61kVXHxr+xL._AC_UL320_.jpg",
+   "n": 2200,
+   "op": 20.74,
+   "p": 13.52,
+   "r": 4.6,
+   "t": "2026-11-25T07:30:56.306804+00:00",
+   "title": "Solgar Fórmula VM-75 | Multivitamínico y Mineral | 30 Cápsulas"
+  },
+  {
    "a": "B0BN5QRC5F",
    "c": "Fotografía",
    "e": "📷",
@@ -4367,6 +4384,6 @@
  "tg_offset": 511048146,
  "x_copy": {
   "day": "2026-11-25",
-  "n": 1
+  "n": 2
  }
 }
