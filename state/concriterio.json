@@ -12,12 +12,12 @@
   "Bricolaje": "2026-11-23T14:35:35.101359+00:00",
   "Cafeteras": "2026-11-24T19:35:37.316644+00:00",
   "Café y cápsulas": "2026-11-25T08:01:01.356229+00:00",
-  "Camping y montaña": "2026-11-24T07:01:03.526450+00:00",
+  "Camping y montaña": "2026-11-25T10:01:04.002472+00:00",
   "Cargadores y baterías": "2026-11-24T12:01:19.033341+00:00",
   "Ciclismo": "2026-11-25T09:30:55.349814+00:00",
   "Climatización": "2026-11-24T18:35:37.637788+00:00",
   "Colchones y almohadas": "2026-11-24T16:30:59.602669+00:00",
-  "Componentes PC": "2026-11-22T17:30:50.627813+00:00",
+  "Componentes PC": "2026-11-25T10:01:04.002472+00:00",
   "Cuidado de la piel": "2026-11-23T11:35:39.474985+00:00",
   "Cuidado del cabello": "2026-11-22T18:30:51.920701+00:00",
   "Cámaras de seguridad": "2026-11-24T15:01:05.679895+00:00",
@@ -31,7 +31,7 @@
   "Gatos": "2026-11-23T20:15:43.714745+00:00",
   "Herramientas": "2026-11-24T10:01:04.425858+00:00",
   "Higiene personal": "2026-11-24T19:05:34.869773+00:00",
-  "Iluminación": "2026-11-22T21:01:10.291765+00:00",
+  "Iluminación": "2026-11-25T10:01:04.002472+00:00",
   "Impresoras": "2026-11-21T12:30:56.768648+00:00",
   "Jardín": "2026-11-24T14:30:59.149182+00:00",
   "Juguetes": "2026-11-24T13:05:37.513094+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-25T10:00:00.317836+00:00",
+ "next_at": "2026-11-25T10:30:29.180764+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2351,6 +2351,17 @@
    "title": "St Runner V3 Nl Zapatillas Deportivas, Unisex Adulto",
    "v": []
   },
+  "B0CL6KNT72": {
+   "c": "Iluminación",
+   "d": 40,
+   "e": "🪔",
+   "m": 614,
+   "p": 53.99,
+   "s": "ambas",
+   "t": "2026-11-25T10:01:51.711881+00:00",
+   "title": "Govee TV Backlight 3 Lite, 3,6m para TVs 55-65 pulgadas",
+   "v": []
+  },
   "B0CLY983L7": {
    "c": "Robots de cocina",
    "d": 33,
@@ -3668,16 +3679,6 @@
    "title": "CORSAIR Vengeance RGB RS DDR5 64GB (2 x 32GB) hasta 6000MHz AMD Intel RAM",
    "v": []
   },
-  "B0GGJB61JQ": {
-   "c": "Relojes",
-   "d": 36,
-   "e": "🕰️",
-   "m": 207,
-   "p": 35.01,
-   "t": "2026-11-11T09:56:06.099177+00:00",
-   "title": "Band 11 Smartwatch, 1,62″ AMOLED 1500 Nits, para Android iOS, Negro",
-   "v": []
-  },
   "B0GGRHTZQ5": {
    "c": "Monitores",
    "d": 27,
@@ -4308,6 +4309,10 @@
    "t": "2026-11-25T07:30:56.306804+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B00T4BHYLY": {
+   "t": "2026-11-25T10:01:04.002472+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0BY2R4BHW": {
    "t": "2026-11-24T11:30:52.354758+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4318,6 +4323,10 @@
   },
   "B0CT3VBDTV": {
    "t": "2026-11-24T11:01:09.384811+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0CXPPNL5C": {
+   "t": "2026-11-25T10:01:04.002472+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0DC71V3ZD": {
@@ -4396,6 +4405,6 @@
  "tg_offset": 511048149,
  "x_copy": {
   "day": "2026-11-25",
-  "n": 6
+  "n": 7
  }
 }
