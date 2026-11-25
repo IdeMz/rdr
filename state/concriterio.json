@@ -43,7 +43,7 @@
   "Monitores": "2026-11-25T20:15:53.484095+00:00",
   "Móviles": "2026-11-23T15:30:54.461995+00:00",
   "Nutrición deportiva": "2026-11-21T20:00:58.767855+00:00",
-  "Oficina": "2026-11-21T12:01:05.183305+00:00",
+  "Oficina": "2026-11-25T20:45:41.682692+00:00",
   "Patinetes": "2026-11-24T12:35:31.161899+00:00",
   "Pequeño electrodoméstico": "2026-11-22T14:01:03.209389+00:00",
   "Perfumes": "2026-11-24T16:01:07.815808+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-25T20:42:27.691695+00:00",
+ "next_at": "2026-11-25T21:13:36.855735+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1751,6 +1751,17 @@
    "s": "ofertas",
    "t": "2026-11-17T19:16:31.786783+00:00",
    "title": "VRURC Bateria Externa 20000mAh Carga Rapida Powerbank con 4 Cable Integrado",
+   "v": []
+  },
+  "B09B82GM22": {
+   "c": "Oficina",
+   "d": 49,
+   "e": "🖊️",
+   "m": 635,
+   "p": 55.85,
+   "s": "busqueda",
+   "t": "2026-11-25T20:46:08.846516+00:00",
+   "title": "Amazon Basics Silla de oficina ergonómica, silla de escritorio, reposabrazos ajustables, soporte lumbar, agradable en la espalda, silla ejecutiva de malla, fácil montaje, 63,5 x 58,4 x 91,4 cm, Negro",
    "v": []
   },
   "B09BFG8NQQ": {
@@ -3815,16 +3826,6 @@
    "title": "Devola Deshumidificador 12L de Bajo Consumo con Filtro de Carbón",
    "v": []
   },
-  "B0GTZLF677": {
-   "c": "Televisores",
-   "d": 27,
-   "e": "📺",
-   "m": 224,
-   "p": 1099.0,
-   "t": "2026-11-11T20:16:33.015307+00:00",
-   "title": "TCL 65C8L 65 Pulgadas SQD-Mini LED 4K HDR10+ Smart TV, 5.000 Nits",
-   "v": []
-  },
   "B0GVKBF3JR": {
    "c": "Auriculares",
    "d": 42,
@@ -4472,18 +4473,6 @@
    "r": 4.5,
    "t": "2026-11-25T19:15:38.789832+00:00",
    "title": "Nattou Pañal Dropy, A prueba de olores, Fácil de abrir con una mano, 49,5 x 28 cm, Polipropileno/ABS, Topo"
-  },
-  {
-   "a": "B0982WVMVC",
-   "c": "Cámaras de seguridad",
-   "e": "📹",
-   "img": "https://m.media-amazon.com/images/I/51i++1bRShL._AC_UY218_.jpg",
-   "n": 1600,
-   "op": 129.99,
-   "p": 103.99,
-   "r": 4.4,
-   "t": "2026-11-25T17:30:57.888678+00:00",
-   "title": "Reolink 4K 8MP Camara Vigilancia PoE con Foco, Zoom óptico 5X, RLC-811A"
   }
  ],
  "store_skip": {
@@ -4503,6 +4492,6 @@
  "tg_offset": 511048149,
  "x_copy": {
   "day": "2026-11-25",
-  "n": 27
+  "n": 28
  }
 }
