@@ -9161,11 +9161,11 @@
    "lista": "to_verify",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Endgame Gear OP1 RGB Cableado USB-A 26000 DPI 51.5g 6 botones Ratón gaming",
-   "pista": "3026939 bytes; 46 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "2162601 bytes; 19 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 52,
    "pp_median": 57.95,
    "pp_price": 27.95,
-   "t": "2026-11-24T18:35:37.637788+00:00",
+   "t": "2026-11-25T00:50:31.429221+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -10066,11 +10066,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Dreame Tasti 1500W pantalla táctil Freidora de aire",
-   "pista": "2120871 bytes; 43 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1355770 bytes; 11 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 35,
    "pp_median": 230.95,
    "pp_price": 150.95,
-   "t": "2026-11-24T18:35:37.637788+00:00",
+   "t": "2026-11-25T00:50:31.429221+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -11114,7 +11114,7 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-24T23:50:40.387410+00:00",
+ "night_at": "2026-11-25T00:50:31.429221+00:00",
  "resumen": {
   "amazon_mas_barato": 37,
   "dudoso": 0,
@@ -11123,5 +11123,5 @@
   "pvpr_inflado": 4,
   "sin_precio": 9
  },
- "updated": "2026-11-24T23:50:40.387410+00:00"
+ "updated": "2026-11-25T00:50:31.429221+00:00"
 }
