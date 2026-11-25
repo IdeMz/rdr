@@ -25,7 +25,7 @@
   "Domótica": "2026-11-23T09:01:11.110279+00:00",
   "Droguería": "2026-11-24T20:35:34.454164+00:00",
   "Fitness en casa": "2026-11-23T20:45:37.029920+00:00",
-  "Fotografía": "2026-11-23T15:30:54.461995+00:00",
+  "Fotografía": "2026-11-25T07:01:09.936457+00:00",
   "Freidoras de aire": "2026-11-23T18:01:07.710591+00:00",
   "Gaming": "2026-11-23T17:30:52.802500+00:00",
   "Gatos": "2026-11-23T20:15:43.714745+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-24T22:01:42.734252+00:00",
+ "next_at": "2026-11-25T07:27:29.168923+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -4000,16 +4000,6 @@
    "title": "Deshumidificador Eléctrico 1800 ml 2 Modos, Deshumificadores de Humedad",
    "v": []
   },
-  "B0H741D676": {
-   "c": "Herramientas",
-   "d": 29,
-   "e": "🔧",
-   "m": 199,
-   "p": 49.99,
-   "t": "2026-11-10T21:46:14.949007+00:00",
-   "title": "Taladro Atornillador Batería, LEEIKOO Atornillador Electrico 21V, 42N.m con 2 Baterías 2.0Ah, 18+1 Ajuste de Par, 2 Velocidad, LED Luz, 14 Accesorios Para Hogar, Bricolaje, Gris",
-   "v": []
-  },
   "B0H75TB7ZC": {
    "c": "Smartwatch",
    "d": 19,
@@ -4041,6 +4031,17 @@
    "s": "ambas",
    "t": "2026-11-23T12:35:57.836598+00:00",
    "title": "Proyector Portatil 4K【Netflix Incluido&Live TV|Rotación 270°】 Proyector 4K Oficial Apps Auto Focus/Keystone,1000 ANSI,HDR10,1080p FHD Nativo,WiFi6 Bluetooth proyectores Cine en Casa/Exterior/HDMI ARC",
+   "v": []
+  },
+  "B0H8L2Y79J": {
+   "c": "Fotografía",
+   "d": 44,
+   "e": "📷",
+   "m": 608,
+   "p": 10.04,
+   "s": "ambas",
+   "t": "2026-11-25T07:01:46.370031+00:00",
+   "title": "Palo Selfie y Trípode para Móvi 170cm Tripe Telemovel Portátil",
    "v": []
   },
   "B0HCPGS988": {
@@ -4298,10 +4299,6 @@
  },
  "problem": {},
  "rejected": {
-  "B00T4BHYLY": {
-   "t": "2026-11-24T07:01:03.526450+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B079HFDPRF": {
    "t": "2026-11-24T09:01:20.372772+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4316,10 +4313,6 @@
   },
   "B0CT3VBDTV": {
    "t": "2026-11-24T11:01:09.384811+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0CXPPNL5C": {
-   "t": "2026-11-24T07:01:03.526450+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0DC71V3ZD": {
@@ -4345,40 +4338,16 @@
  },
  "reserve": [
   {
-   "a": "B0D92CZC7Z",
-   "c": "Cafeteras",
-   "e": "☕",
-   "img": "https://m.media-amazon.com/images/I/41P-hHmAGdL._AC_UL320_.jpg",
-   "n": 904,
-   "op": 129.99,
-   "p": 79.99,
-   "r": 4.2,
-   "t": "2026-11-24T19:35:37.316644+00:00",
-   "title": "KRUPS Authentic, Cafetera Espresso Manual, Depósito de 2L, Inox"
-  },
-  {
-   "a": "B00AI5NZDG",
-   "c": "Higiene personal",
-   "e": "🪥",
-   "img": "https://m.media-amazon.com/images/I/61+nybEl1LL._AC_UL320_.jpg",
-   "n": 4700,
-   "op": 6.95,
-   "p": 3.98,
-   "r": 4.7,
-   "t": "2026-11-24T19:05:34.869773+00:00",
-   "title": "Weleda Perineum - pasta dental para niños, 50 ml, 1 unidad"
-  },
-  {
-   "a": "B073XPF4JD",
-   "c": "Climatización",
-   "e": "🌬️",
-   "img": "https://m.media-amazon.com/images/I/81Era3Iy8jL._AC_UL320_.jpg",
-   "n": 9600,
-   "op": 134.99,
-   "p": 113.99,
+   "a": "B0BN5QRC5F",
+   "c": "Fotografía",
+   "e": "📷",
+   "img": "https://m.media-amazon.com/images/I/51I9jDUTH+L._AC_UL320_.jpg",
+   "n": 187,
+   "op": 22.99,
+   "p": 13.77,
    "r": 4.6,
-   "t": "2026-11-24T18:35:37.637788+00:00",
-   "title": "Pro Breeze Deshumidificador Silencioso 12L, Depósito Extraíble y Desagüe Continuo, 3 Modos, Temporizador 24h, Sensor de Humedad, Absorbe Humedad y Elimina el Moho de Habitaciones (20 m²)"
+   "t": "2026-11-25T07:01:09.936457+00:00",
+   "title": "CAMBOFOTO Trípode para Móvil y Cámara 168 cm Aluminio Ligero para Viaje"
   }
  ],
  "store_skip": {
@@ -4397,7 +4366,7 @@
  "summary_day": "2026-11-24",
  "tg_offset": 511048146,
  "x_copy": {
-  "day": "2026-11-24",
-  "n": 29
+  "day": "2026-11-25",
+  "n": 1
  }
 }
