@@ -29,7 +29,7 @@
   "Freidoras de aire": "2026-11-23T18:01:07.710591+00:00",
   "Gaming": "2026-11-23T17:30:52.802500+00:00",
   "Gatos": "2026-11-25T10:31:05.699201+00:00",
-  "Herramientas": "2026-11-24T10:01:04.425858+00:00",
+  "Herramientas": "2026-11-25T11:31:00.165429+00:00",
   "Higiene personal": "2026-11-24T19:05:34.869773+00:00",
   "Iluminación": "2026-11-25T10:01:04.002472+00:00",
   "Impresoras": "2026-11-21T12:30:56.768648+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-25T11:29:45.482954+00:00",
+ "next_at": "2026-11-25T11:59:14.267936+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -199,6 +199,17 @@
    "s": "ambas",
    "t": "2026-11-23T14:36:14.732604+00:00",
    "title": "Brüder Mannesmann Surtido de herramientas 89 pzs maletín plegable | M29085",
+   "v": []
+  },
+  "B00531AOZM": {
+   "c": "Herramientas",
+   "d": 42,
+   "e": "🔧",
+   "m": 617,
+   "p": 165.79,
+   "s": "busqueda",
+   "t": "2026-11-25T11:31:33.850805+00:00",
+   "title": "Bosch PRO Sierra sable GSA 1300 PCE",
    "v": []
   },
   "B00564NI9U": {
@@ -3406,16 +3417,6 @@
    "title": "Tapo L430P-Bombilla inteligente WiFi, 16 millones de colores, regulable,E27",
    "v": []
   },
-  "B0FNWFTJKQ": {
-   "c": "Aspiradoras",
-   "d": 55,
-   "e": "🧹",
-   "m": 209,
-   "p": 89.93,
-   "t": "2026-11-11T11:06:22.175805+00:00",
-   "title": "Lefant M210P Robot Aspirador,Control Mediante WiFi, Bluetooth,Alexa y App",
-   "v": []
-  },
   "B0FPQR9572": {
    "c": "Fitness en casa",
    "d": 27,
@@ -4329,10 +4330,6 @@
    "t": "2026-11-25T10:31:05.699201+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0BY2R4BHW": {
-   "t": "2026-11-24T11:30:52.354758+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0CFVZ74KT": {
    "t": "2026-11-25T11:01:10.670462+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4341,16 +4338,24 @@
    "t": "2026-11-25T10:01:04.002472+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0F3P65X6Q": {
-   "t": "2026-11-24T11:30:52.354758+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0HHM2Z9GN": {
    "t": "2026-11-19T07:01:21.085197+00:00",
    "why": "alta hace 29 dias"
   }
  },
  "reserve": [
+  {
+   "a": "B0GR4YQW6S",
+   "c": "Herramientas",
+   "e": "🔧",
+   "img": "https://m.media-amazon.com/images/I/81QqSKTq-GL._AC_UL320_.jpg",
+   "n": 5500,
+   "op": 89.99,
+   "p": 56.99,
+   "r": 4.2,
+   "t": "2026-11-25T11:31:00.165429+00:00",
+   "title": "Mini Motosierra Batería 6 Pulgadas 2×4000mAh, Sierra Eléctrica Inalámbrica con Depósito de Aceite, Portátil para Podar Jardinería y Árboles"
+  },
   {
    "a": "B0DWDMKNK2",
    "c": "Lego",
@@ -4374,18 +4379,6 @@
    "r": 4.3,
    "t": "2026-11-25T10:31:05.699201+00:00",
    "title": "Pienso seco Applaws para Gatos Adultos, Pollo con salmón, 7,5 kg (1 Bolsa) – sin Cereales, Rico en proteínas, Ingredientes Naturales"
-  },
-  {
-   "a": "B09FL1TK77",
-   "c": "Tablets",
-   "e": "📲",
-   "img": "https://m.media-amazon.com/images/I/71Y4v1z5D+L._AC_UL320_.jpg",
-   "n": 1100,
-   "op": 129.99,
-   "p": 99.99,
-   "r": 4.2,
-   "t": "2026-11-25T08:30:59.592319+00:00",
-   "title": "TECLAST M50T Tablet 10.1 Pulgadas Android 16 Tableta Gemini AI, 32GB RAM+128GB ROM+5TB TF, 2GHz Octa-Core, 7000mAh, 2.4G+5G WiFi, BT 5.4/Widevine L1/13MP+5MP/3.5MM/Face ID/OTG, Tablets con Lápiz, 2026"
   }
  ],
  "store_skip": {
@@ -4405,6 +4398,6 @@
  "tg_offset": 511048149,
  "x_copy": {
   "day": "2026-11-25",
-  "n": 9
+  "n": 10
  }
 }
