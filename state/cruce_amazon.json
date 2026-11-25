@@ -4480,25 +4480,24 @@
    "veredicto": "amazon_mas_barato"
   },
   "41955007624": {
-   "ahorro_vs_amazon": null,
+   "ahorro_vs_amazon": 23,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": null,
+   "amz_price": 187.79,
    "amz_title": "Ecouteurs sans fil Shokz OpenFit 2 à conduction aérienne Noir",
    "asin": "B0FCD9YRC2",
    "disponible": true,
    "ean": "0810160666967",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "en Amazon pero sin precio o no disponible",
+   "motivo": "23 % por debajo del habitual en Amazon (187.79)",
    "name": "Shokz OpenFit 2 Negro Bluetooth 5.4 48h IP55 Auriculares inalámbricos",
-   "pista": "1121226 bytes; 9 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 35,
    "pp_median": 221.95,
    "pp_price": 143.95,
-   "t": "2026-11-25T17:30:57.888678+00:00",
+   "t": "2026-11-25T23:35:26.842035+00:00",
    "v": 3,
-   "veredicto": "sin_precio"
+   "veredicto": "oferta_real"
   },
   "42520354709": {
    "ahorro_vs_amazon": 25,
@@ -5580,9 +5579,9 @@
    "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
    "name": "Kingston Fury Renegade 4TB NVMe M.2 PCIe 5.0 2280 14800MB/s SSD",
    "pp_drop": 15,
-   "pp_median": 1182.94,
+   "pp_median": 1179.96,
    "pp_price": 1000.95,
-   "t": "2026-11-23T23:05:26.944392+00:00",
+   "t": "2026-11-25T23:35:26.842035+00:00",
    "v": 3,
    "veredicto": "no_esta",
    "vistos": {
@@ -8310,11 +8309,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Videojuego Bandai Namco Entertainment Elden Ring: Shadow of the Erdtree Xbox Series X",
-   "pista": "1097439 bytes; 6 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1075270 bytes; 6 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 37,
    "pp_median": 96.95,
    "pp_price": 60.95,
-   "t": "2026-11-25T17:30:57.888678+00:00",
+   "t": "2026-11-25T23:35:26.842035+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -11619,14 +11618,14 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-25T23:18:49.346459+00:00",
+ "night_at": "2026-11-25T23:35:26.842035+00:00",
  "resumen": {
   "amazon_mas_barato": 31,
   "dudoso": 0,
   "no_esta": 20,
-  "oferta_real": 22,
+  "oferta_real": 23,
   "pvpr_inflado": 3,
-  "sin_precio": 12
+  "sin_precio": 11
  },
- "updated": "2026-11-25T23:18:49.346459+00:00"
+ "updated": "2026-11-25T23:35:26.842035+00:00"
 }
