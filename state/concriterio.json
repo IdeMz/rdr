@@ -8,7 +8,7 @@
   "Aspiradoras": "2026-11-25T17:01:09.744818+00:00",
   "Auriculares": "2026-11-23T21:15:38.951661+00:00",
   "Barras de sonido": "2026-11-23T21:45:48.617233+00:00",
-  "Bebé": "2026-11-23T11:05:30.542682+00:00",
+  "Bebé": "2026-11-25T19:15:38.789832+00:00",
   "Bricolaje": "2026-11-25T18:01:11.294449+00:00",
   "Cafeteras": "2026-11-24T19:35:37.316644+00:00",
   "Café y cápsulas": "2026-11-25T08:01:01.356229+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-25T19:11:08.947456+00:00",
+ "next_at": "2026-11-25T19:44:41.113224+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1354,6 +1354,17 @@
    "s": "ambas",
    "t": "2026-11-19T08:06:22.906553+00:00",
    "title": "Feandrea Cama para Perros, Cojín Central Extraíble y Lavable, 50cm",
+   "v": []
+  },
+  "B087XPGLZT": {
+   "c": "Bebé",
+   "d": 37,
+   "e": "🍼",
+   "m": 632,
+   "p": 25.19,
+   "s": "ofertas",
+   "t": "2026-11-25T19:16:28.797223+00:00",
+   "title": "DODOT Splashers Baby Shark Talla 5-6, 80 Pañales Bebé Bañadores Desechables, 14kg+, Protección Anti-fugas En El Agua",
    "v": []
   },
   "B08835Q74B": {
@@ -3285,16 +3296,6 @@
    "title": "Ring Videotimbre 2K con batería (Battery Video Doorbell 2K, última gen.) | Videotimbre inalámbrico, Retinal 2K, Zoom 6x, Comunicación bidireccional, Prueba gratuita de 30 días de suscripción Ring",
    "v": []
   },
-  "B0FHKXPWKS": {
-   "c": "Monitores",
-   "d": 47,
-   "e": "🖥️",
-   "m": 222,
-   "p": 100.63,
-   "t": "2026-11-11T19:06:15.972353+00:00",
-   "title": "Lenovo Legion 27-10 Monitor Gaming FHD 27\" (IPS, 240 Hz, 0.5 ms, 16:9, HDMI 2.1 - DP 1.4, AMD FreeSync Premium, VESA Adaptive Sync, Montaje VESA 100 mm, Ajuste Inclinación/Altura/Pivote/Giro) Negro",
-   "v": []
-  },
   "B0FJFS513J": {
    "c": "Afeitado y depilación",
    "d": 33,
@@ -4354,10 +4355,7 @@
    "v": []
   }
  },
- "problem": {
-  "fails": 1,
-  "last": "HTTP 503"
- },
+ "problem": {},
  "rejected": {
   "B000FNFSPY": {
    "t": "2026-11-25T18:30:56.405059+00:00",
@@ -4438,6 +4436,18 @@
  },
  "reserve": [
   {
+   "a": "B0D6S1BY13",
+   "c": "Bebé",
+   "e": "🍼",
+   "img": "https://m.media-amazon.com/images/I/615Sl1yi9-L._AC_UL320_.jpg",
+   "n": 262,
+   "op": 49.99,
+   "p": 38.17,
+   "r": 4.5,
+   "t": "2026-11-25T19:15:38.789832+00:00",
+   "title": "Nattou Pañal Dropy, A prueba de olores, Fácil de abrir con una mano, 49,5 x 28 cm, Polipropileno/ABS, Topo"
+  },
+  {
    "a": "B0982WVMVC",
    "c": "Cámaras de seguridad",
    "e": "📹",
@@ -4448,30 +4458,6 @@
    "r": 4.4,
    "t": "2026-11-25T17:30:57.888678+00:00",
    "title": "Reolink 4K 8MP Camara Vigilancia PoE con Foco, Zoom óptico 5X, RLC-811A"
-  },
-  {
-   "a": "B07RLDW1VZ",
-   "c": "Fitness en casa",
-   "e": "🏋️",
-   "img": "https://m.media-amazon.com/images/I/71tP2TMmkTL._AC_UL320_.jpg",
-   "n": 25900,
-   "op": 34.99,
-   "p": 30.39,
-   "r": 4.6,
-   "t": "2026-11-25T16:01:12.511497+00:00",
-   "title": "PROIRON Mancuerna de Neopreno, Antirrodadura,1-10 kg, para Gimnasio en Casa"
-  },
-  {
-   "a": "B0CNS4MB7R",
-   "c": "Videojuegos",
-   "e": "🎮",
-   "img": "https://m.media-amazon.com/images/I/81xFgFFptML._AC_UL320_.jpg",
-   "n": 232,
-   "op": 61.99,
-   "p": 33.99,
-   "r": 4.7,
-   "t": "2026-11-25T15:30:57.153436+00:00",
-   "title": "Cyberpunk 2077 Ultimate Edition"
   }
  ],
  "store_skip": {
@@ -4491,6 +4477,6 @@
  "tg_offset": 511048149,
  "x_copy": {
   "day": "2026-11-25",
-  "n": 24
+  "n": 25
  }
 }
