@@ -1,6 +1,6 @@
 {
  "cats": {
-  "Accesorios de coche": "2026-11-23T08:01:05.337225+00:00",
+  "Accesorios de coche": "2026-11-25T16:01:12.511497+00:00",
   "Accesorios de móvil": "2026-11-24T21:05:36.253651+00:00",
   "Afeitado y depilación": "2026-11-23T07:01:04.565029+00:00",
   "Almacenamiento": "2026-11-23T16:01:16.579464+00:00",
@@ -24,7 +24,7 @@
   "Decoración navideña": "2026-11-24T15:30:53.979529+00:00",
   "Domótica": "2026-11-23T09:01:11.110279+00:00",
   "Droguería": "2026-11-24T20:35:34.454164+00:00",
-  "Fitness en casa": "2026-11-23T20:45:37.029920+00:00",
+  "Fitness en casa": "2026-11-25T16:01:12.511497+00:00",
   "Fotografía": "2026-11-25T07:01:09.936457+00:00",
   "Freidoras de aire": "2026-11-23T18:01:07.710591+00:00",
   "Gaming": "2026-11-25T12:30:56.628057+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-25T15:57:56.292135+00:00",
+ "next_at": "2026-11-25T16:30:33.420037+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -684,6 +684,17 @@
    "s": "ambas",
    "t": "2026-11-24T14:31:28.782985+00:00",
    "title": "Netro Sprite 6 Zone Programador Riego WiFi Para Césped Con App, Con 24 CA",
+   "v": []
+  },
+  "B0775PGLD7": {
+   "c": "Fitness en casa",
+   "d": 50,
+   "e": "🏋️",
+   "m": 626,
+   "p": 24.2,
+   "s": "ambas",
+   "t": "2026-11-25T16:02:03.380327+00:00",
+   "title": "SONGMICS 2 mancuernas hexagonales con revestimiento de neopreno para entrenamiento de fuerza, fitness y hogar",
    "v": []
   },
   "B077S4TX92": {
@@ -2067,16 +2078,6 @@
    "s": "ofertas",
    "t": "2026-11-24T07:31:40.664671+00:00",
    "title": "Qaestfy Limpia Zócalos con Mango Largo Mopa para Limpiar Azulejos y Paredes Piso Limpiacristales mopa Extensible con articulación de 360° 4 Almohadillas Reutilizables",
-   "v": []
-  },
-  "B0BPYVWS6Y": {
-   "c": "Climatización",
-   "d": 40,
-   "e": "🌬️",
-   "m": 217,
-   "p": 17.93,
-   "t": "2026-11-11T15:46:06.545820+00:00",
-   "title": "Cecotec Calefactor Cerámico de Sobremesa ReadyWarm 1500 Max Ceramic, 1500 W, Termostato Regulable y 3 Modos de Funcionamiento, Área de Cobertura de 15m2",
    "v": []
   },
   "B0BPZQRWGC": {
@@ -4388,8 +4389,20 @@
    "t": "2026-11-25T10:01:04.002472+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0D9JFQS7P": {
+   "t": "2026-11-25T16:01:12.511497+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0DG3T1K2W": {
+   "t": "2026-11-25T16:01:12.511497+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0DPNBNJVS": {
    "t": "2026-11-25T15:01:06.717368+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0DQ54YKH9": {
+   "t": "2026-11-25T16:01:12.511497+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0G1NHVHPF": {
@@ -4402,6 +4415,18 @@
   }
  },
  "reserve": [
+  {
+   "a": "B07RLDW1VZ",
+   "c": "Fitness en casa",
+   "e": "🏋️",
+   "img": "https://m.media-amazon.com/images/I/71tP2TMmkTL._AC_UL320_.jpg",
+   "n": 25900,
+   "op": 34.99,
+   "p": 30.39,
+   "r": 4.6,
+   "t": "2026-11-25T16:01:12.511497+00:00",
+   "title": "PROIRON Mancuerna de Neopreno, Antirrodadura,1-10 kg, para Gimnasio en Casa"
+  },
   {
    "a": "B0CNS4MB7R",
    "c": "Videojuegos",
@@ -4442,6 +4467,6 @@
  "tg_offset": 511048149,
  "x_copy": {
   "day": "2026-11-25",
-  "n": 18
+  "n": 19
  }
 }
