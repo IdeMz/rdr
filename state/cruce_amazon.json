@@ -1622,6 +1622,13 @@
    "v": 3,
    "via": "ean"
   },
+  "4948570124992": {
+   "a": "B0D8VPVDJN",
+   "t": "2026-11-25T22:05:31.434324+00:00",
+   "title": "Iiyama Prolite Xub2797hsN-W2 68,58cm (27\") LeD-Monitor - 1920x1080 - 1x Displayport 1.2 / 1xhdmi 1.4 - Wei? (xub2797hsN-W2)",
+   "v": 3,
+   "via": "ean"
+  },
   "4948570125401": {
    "a": "B0FS1SPNPQ",
    "t": "2026-11-21T23:05:27.481303+00:00",
@@ -1850,6 +1857,26 @@
    "title": "DELL TECHNOLOGIES Discos Duros Marca Modelo 480GB SSD SATA RI 6GBPS 512E",
    "v": 3,
    "via": "ean"
+  },
+  "5397184967478": {
+   "a": "",
+   "t": "2026-11-25T22:05:31.434324+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "modelo": [
+     "Dell Pro Slim Essential QVS1260 - Schlanker Desktop",
+     "DELL 27 Plus USB-C Monitor - S2725DC, QHD (2560x1440), 144Hz, IPS, 1ms MPRT",
+     "DELL 27 Plus Monitor - S2725QS, 4K UHD (3840x2160), 120Hz, IPS, 4ms, AMD FreeSync Premium, 99% sRGB,"
+    ],
+    "nombre": [
+     "Portátil Gaming Alienware 16 - Intel Core 7 240H, RTX 5060",
+     "Portátil Alienware 15 - Intel Core 7 240H, RTX 5060",
+     "Dell Pro Qvs1260 Intel? Core? I5 I5-14400 16 Gb Ddr5-Sdram 512 Gb Ssd Windows 11 Pro Slim Pc Pc Nero"
+    ]
+   }
   },
   "5702017583716": {
    "a": "B0CFVZT2HB",
@@ -6570,6 +6597,33 @@
    "v": 3,
    "veredicto": "sin_precio"
   },
+  "45956991203": {
+   "ean": "5397184967478",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Dell Alienware 16X Aurora 32GB DDR5/1TB SSD 16 pulgadas QHD+ 240Hz Intel Core Ultra 9 275HX NVMe PCIe 4.0 RTX 5070 8GB GDDR7 Windows 11 Portátil gamin",
+   "pp_drop": 16,
+   "pp_median": 2936.95,
+   "pp_price": 2464.95,
+   "t": "2026-11-25T22:05:31.434324+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "modelo": [
+     "Dell Pro Slim Essential QVS1260 - Schlanker Desktop",
+     "DELL 27 Plus USB-C Monitor - S2725DC, QHD (2560x1440), 144Hz, IPS, 1ms MPRT",
+     "DELL 27 Plus Monitor - S2725QS, 4K UHD (3840x2160), 120Hz, IPS, 4ms, AMD FreeSync Premium, 99% sRGB,"
+    ],
+    "nombre": [
+     "Portátil Gaming Alienware 16 - Intel Core 7 240H, RTX 5060",
+     "Portátil Alienware 15 - Intel Core 7 240H, RTX 5060",
+     "Dell Pro Qvs1260 Intel? Core? I5 I5-14400 16 Gb Ddr5-Sdram 512 Gb Ssd Windows 11 Pro Slim Pc Pc Nero"
+    ]
+   }
+  },
   "45956991395": {
    "ahorro_vs_amazon": 1,
    "amz_low30": null,
@@ -9302,11 +9356,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "MSI GeForce RTX 5090 SUPRIM SOC 32GB GDDR7 Negro",
-   "pista": "1718235 bytes; 9 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1587609 bytes; 5 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 17,
    "pp_median": 11389.95,
    "pp_price": 9461.95,
-   "t": "2026-11-25T16:01:12.511497+00:00",
+   "t": "2026-11-25T22:05:31.434324+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -9850,6 +9904,26 @@
    "t": "2026-11-21T23:05:27.481303+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
+  },
+  "46599140473": {
+   "ahorro_vs_amazon": 28,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 239.41,
+   "amz_title": "Iiyama Prolite Xub2797hsN-W2 68,58cm (27\") LeD-Monitor - 1920x1080 - 1x Displayport 1.2 / 1xhdmi 1.4 - Wei? (xub2797hsN-W2)",
+   "asin": "B0D8VPVDJN",
+   "disponible": true,
+   "ean": "4948570124992",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "28 % por debajo del habitual en Amazon (239.41)",
+   "name": "Monitor iiyama ProLite 27 pulgadas Full HD IPS 100Hz 1 ms Blanco XUB2797HSN-W2",
+   "pp_drop": 24,
+   "pp_median": 225.96,
+   "pp_price": 171.95,
+   "t": "2026-11-25T22:05:31.434324+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
   },
   "46599140515": {
    "ahorro_vs_amazon": 17,
@@ -11435,14 +11509,14 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-25T06:50:35.620278+00:00",
+ "night_at": "2026-11-25T22:05:31.434324+00:00",
  "resumen": {
   "amazon_mas_barato": 30,
   "dudoso": 0,
-  "no_esta": 19,
-  "oferta_real": 20,
+  "no_esta": 20,
+  "oferta_real": 21,
   "pvpr_inflado": 3,
   "sin_precio": 10
  },
- "updated": "2026-11-25T21:45:38.616662+00:00"
+ "updated": "2026-11-25T22:05:31.434324+00:00"
 }
