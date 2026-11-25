@@ -14,7 +14,7 @@
   "Café y cápsulas": "2026-11-25T08:01:01.356229+00:00",
   "Camping y montaña": "2026-11-24T07:01:03.526450+00:00",
   "Cargadores y baterías": "2026-11-24T12:01:19.033341+00:00",
-  "Ciclismo": "2026-11-23T08:31:06.436266+00:00",
+  "Ciclismo": "2026-11-25T09:30:55.349814+00:00",
   "Climatización": "2026-11-24T18:35:37.637788+00:00",
   "Colchones y almohadas": "2026-11-24T16:30:59.602669+00:00",
   "Componentes PC": "2026-11-22T17:30:50.627813+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-25T09:28:26.289781+00:00",
+ "next_at": "2026-11-25T10:00:00.317836+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -496,6 +496,17 @@
    "s": "ofertas",
    "t": "2026-11-15T07:01:39.810191+00:00",
    "title": "bosch HPC Maxi Junior | Alimento seco para perros de cría de razas grandes (a partir de 25 kg de peso final) | 1 x 3 kg",
+   "v": []
+  },
+  "B01ERZ900O": {
+   "c": "Ciclismo",
+   "d": 38,
+   "e": "🚴",
+   "m": 613,
+   "p": 7.49,
+   "s": "busqueda",
+   "t": "2026-11-25T09:31:21.193785+00:00",
+   "title": "Camiseta Deportiva Manga Corta Hombre , 6XS - 3XL - Transpirable y Secado Rápido, Ideal para Running y Gym - Combi",
    "v": []
   },
   "B01GKL1Y7A": {
@@ -1592,16 +1603,6 @@
    "s": "ambas",
    "t": "2026-11-16T16:51:09.258914+00:00",
    "title": "Braun YK-81CEU - Pulsioxímetro Braun 1 (Saturación de Oxígeno, Niveles de Oxígeno en Sangre, Dispositivo Médico Certificado Clínicamente Preciso) Yk-81Ceu",
-   "v": []
-  },
-  "B08X6DCJT2": {
-   "c": "Cámaras de seguridad",
-   "d": 28,
-   "e": "📹",
-   "m": 206,
-   "p": 19.84,
-   "t": "2026-11-11T09:21:10.526575+00:00",
-   "title": "Imou Cámara IP WiFi Interior 2K/3MP Cámara de Vigilancia WiFi Interior 360°",
    "v": []
   },
   "B08XRNCFZX": {
@@ -4307,10 +4308,6 @@
    "t": "2026-11-25T07:30:56.306804+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B079HFDPRF": {
-   "t": "2026-11-24T09:01:20.372772+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0BY2R4BHW": {
    "t": "2026-11-24T11:30:52.354758+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4399,6 +4396,6 @@
  "tg_offset": 511048149,
  "x_copy": {
   "day": "2026-11-25",
-  "n": 5
+  "n": 6
  }
 }
