@@ -3539,9 +3539,9 @@
    "motivo": "25 % por debajo del habitual en Amazon (147.71)",
    "name": "Logitech G Pro X Superlight USB 25600 DPI Negro 5 botones 2.4GHz 63 g Ratón",
    "pp_drop": 25,
-   "pp_median": 146.95,
+   "pp_median": 145.95,
    "pp_price": 110.18,
-   "t": "2026-11-23T22:05:32.105364+00:00",
+   "t": "2026-11-25T22:20:34.648681+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -7028,7 +7028,7 @@
    "pp_drop": 17,
    "pp_median": 1329.0,
    "pp_price": 1098.99,
-   "t": "2026-11-23T21:45:48.617233+00:00",
+   "t": "2026-11-25T22:20:34.648681+00:00",
    "v": 3,
    "veredicto": "no_esta",
    "vistos": {
@@ -10100,7 +10100,7 @@
    "pp_drop": 23,
    "pp_median": 262.95,
    "pp_price": 201.95,
-   "t": "2026-11-23T21:45:48.617233+00:00",
+   "t": "2026-11-25T22:20:34.648681+00:00",
    "v": 3,
    "veredicto": "no_esta",
    "vistos": {
@@ -11509,7 +11509,7 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-25T22:05:31.434324+00:00",
+ "night_at": "2026-11-25T22:20:34.648681+00:00",
  "resumen": {
   "amazon_mas_barato": 30,
   "dudoso": 0,
@@ -11518,5 +11518,5 @@
   "pvpr_inflado": 3,
   "sin_precio": 10
  },
- "updated": "2026-11-25T22:05:31.434324+00:00"
+ "updated": "2026-11-25T22:20:34.648681+00:00"
 }
