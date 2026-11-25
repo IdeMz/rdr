@@ -11,7 +11,7 @@
   "Bebé": "2026-11-23T11:05:30.542682+00:00",
   "Bricolaje": "2026-11-23T14:35:35.101359+00:00",
   "Cafeteras": "2026-11-24T19:35:37.316644+00:00",
-  "Café y cápsulas": "2026-11-22T07:01:03.565904+00:00",
+  "Café y cápsulas": "2026-11-25T08:01:01.356229+00:00",
   "Camping y montaña": "2026-11-24T07:01:03.526450+00:00",
   "Cargadores y baterías": "2026-11-24T12:01:19.033341+00:00",
   "Ciclismo": "2026-11-23T08:31:06.436266+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-25T08:00:23.706795+00:00",
+ "next_at": "2026-11-25T08:30:05.446672+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -988,6 +988,17 @@
    "s": "ofertas",
    "t": "2026-11-22T14:01:37.740011+00:00",
    "title": "Russell Hobbs Hervidor Eléctrico Colours Plus+ Rojo, 1L, 2400W, 24992-70",
+   "v": []
+  },
+  "B07NVVWY6X": {
+   "c": "Café y cápsulas",
+   "d": 36,
+   "e": "🫘",
+   "m": 610,
+   "p": 15.9,
+   "s": "ambas",
+   "t": "2026-11-25T08:01:26.419143+00:00",
+   "title": "Caffè Borbone Mezcla de Café Roja - 90 Cápsulas - Compatibles con Máquinas de Café Nescafè®* Dolce Gusto®*",
    "v": []
   },
   "B07P5K7DQP": {
@@ -2403,16 +2414,6 @@
    "s": "ambas",
    "t": "2026-11-24T08:31:21.493152+00:00",
    "title": "Báscula de Café Mini Recargable con Temporizador, Maestri House, Precisión 0.1g/2kg, para Espresso y Café de Filtro, Báscula Digital Portátil con Cronometraje Automático-Negro y Plata",
-   "v": []
-  },
-  "B0CRTYZG5C": {
-   "c": "Auriculares",
-   "d": 40,
-   "e": "🎧",
-   "m": 203,
-   "p": 23.99,
-   "t": "2026-11-11T07:35:57.800070+00:00",
-   "title": "Soundcore P30i de Anker Auriculares con Cancelación de Ruido, 45h",
    "v": []
   },
   "B0CTCQKJ1B": {
@@ -4384,6 +4385,6 @@
  "tg_offset": 511048146,
  "x_copy": {
   "day": "2026-11-25",
-  "n": 2
+  "n": 3
  }
 }
