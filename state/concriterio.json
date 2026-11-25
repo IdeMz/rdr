@@ -48,10 +48,10 @@
   "Pequeño electrodoméstico": "2026-11-22T14:01:03.209389+00:00",
   "Perfumes": "2026-11-24T16:01:07.815808+00:00",
   "Periféricos": "2026-11-23T15:05:33.976238+00:00",
-  "Perros": "2026-11-24T09:01:20.372772+00:00",
+  "Perros": "2026-11-25T18:30:56.405059+00:00",
   "Portátiles": "2026-11-25T18:01:11.294449+00:00",
   "Proyectores": "2026-11-23T12:35:32.005006+00:00",
-  "Redes y wifi": "2026-11-22T08:01:00.717908+00:00",
+  "Redes y wifi": "2026-11-25T18:30:56.405059+00:00",
   "Relojes": "2026-11-24T14:01:02.613248+00:00",
   "Robots de cocina": "2026-11-25T13:01:04.295203+00:00",
   "Salud": "2026-11-24T08:30:50.826050+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-25T18:26:12.924076+00:00",
+ "next_at": "2026-11-25T18:56:31.110152+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -717,6 +717,17 @@
    "s": "ofertas",
    "t": "2026-11-19T18:18:10.633810+00:00",
    "title": "Neutrogena Rutina Hydro Boost, Gel de Agua 50 ml + Contorno de ojos 15 ml",
+   "v": []
+  },
+  "B079HFDPRF": {
+   "c": "Perros",
+   "d": 37,
+   "e": "🐶",
+   "m": 631,
+   "p": 53.09,
+   "s": "ofertas",
+   "t": "2026-11-25T18:31:37.487120+00:00",
+   "title": "Nature's Variety No Grain Pienso para Perros Adultos con Pollo - 12kg",
    "v": []
   },
   "B07BCNS9YB": {
@@ -4355,6 +4366,10 @@
  },
  "problem": {},
  "rejected": {
+  "B000FNFSPY": {
+   "t": "2026-11-25T18:30:56.405059+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B00GY2JCXE": {
    "t": "2026-11-25T07:30:56.306804+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4484,6 +4499,6 @@
  "tg_offset": 511048149,
  "x_copy": {
   "day": "2026-11-25",
-  "n": 23
+  "n": 24
  }
 }
