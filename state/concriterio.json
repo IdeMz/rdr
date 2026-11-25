@@ -59,7 +59,7 @@
   "Suplementos": "2026-11-25T07:30:56.306804+00:00",
   "Tablets": "2026-11-25T08:30:59.592319+00:00",
   "Televisores": "2026-11-24T20:05:32.905580+00:00",
-  "Textil hogar": "2026-11-23T10:35:32.957931+00:00",
+  "Textil hogar": "2026-11-25T13:30:55.439683+00:00",
   "Videojuegos": "2026-11-24T13:35:33.816258+00:00",
   "Zapatillas": "2026-11-25T09:01:05.992602+00:00",
   "eReaders": "2026-11-23T13:05:32.398802+00:00"
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-25T13:27:01.592849+00:00",
+ "next_at": "2026-11-25T13:59:38.146660+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -618,16 +618,6 @@
    "s": "ambas",
    "t": "2026-11-21T21:01:36.145875+00:00",
    "title": "PONY DANCE Cortina Gris Opaca y Termica Aislante Puerta, 140x240cm(AnxAl)",
-   "v": []
-  },
-  "B072Q7K86H": {
-   "c": "Café y cápsulas",
-   "d": 28,
-   "e": "🫘",
-   "m": 213,
-   "p": 25.03,
-   "t": "2026-11-11T13:25:58.129727+00:00",
-   "title": "Tassimo Cápsulas de Café Marcilla Largo| 80 Cápsulas Compatibles con Cafetera Tassimo - 5PACK - Amazon Exclusive",
    "v": []
   },
   "B073Y72LJ8": {
@@ -2229,6 +2219,17 @@
    "s": "ofertas",
    "t": "2026-11-12T12:21:20.635700+00:00",
    "title": "soundcore Q20i de Anker Cascos Bluetooth con ANC Híbrida, Hi-Res, 40H",
+   "v": []
+  },
+  "B0C4L6ZGLD": {
+   "c": "Textil hogar",
+   "d": 34,
+   "e": "🧺",
+   "m": 621,
+   "p": 17.23,
+   "s": "ambas",
+   "t": "2026-11-25T13:31:23.541060+00:00",
+   "title": "Bedsure manta sofa plaid cama - mantas para sofa, regalo, 150×200cm, Verde",
    "v": []
   },
   "B0C6XK77HJ": {
@@ -4409,6 +4410,6 @@
  "tg_offset": 511048149,
  "x_copy": {
   "day": "2026-11-25",
-  "n": 13
+  "n": 14
  }
 }
