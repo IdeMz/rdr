@@ -27,7 +27,7 @@
   "Fitness en casa": "2026-11-23T20:45:37.029920+00:00",
   "Fotografía": "2026-11-25T07:01:09.936457+00:00",
   "Freidoras de aire": "2026-11-23T18:01:07.710591+00:00",
-  "Gaming": "2026-11-23T17:30:52.802500+00:00",
+  "Gaming": "2026-11-25T12:30:56.628057+00:00",
   "Gatos": "2026-11-25T10:31:05.699201+00:00",
   "Herramientas": "2026-11-25T11:31:00.165429+00:00",
   "Higiene personal": "2026-11-24T19:05:34.869773+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-25T12:26:47.777436+00:00",
+ "next_at": "2026-11-25T12:56:55.230240+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -90,16 +90,6 @@
    "s": "ofertas",
    "t": "2026-11-18T17:31:29.892637+00:00",
    "title": "Bosch pistola de pegar PKP 18 E (1 boquilla extralarga, adhesivo termofundible, 240 V)",
-   "v": []
-  },
-  "B000C1UC8C": {
-   "c": "Perfumes",
-   "d": 28,
-   "e": "🌸",
-   "m": 211,
-   "p": 20.59,
-   "t": "2026-11-11T12:16:09.504099+00:00",
-   "title": "Chopard Wish 75 ml, Eau de Parfum para Mujer",
    "v": []
   },
   "B000CCZ7ZE": {
@@ -1220,6 +1210,17 @@
    "s": "ambas",
    "t": "2026-11-22T18:31:18.729470+00:00",
    "title": "Secador de Pelo BaByliss Retráctil – Secador potente de 2000 W, Cable retráctil para mayor comodidad, Tecnología iónica antiencrespamiento, 3 ajustes de temperatura y 2 velocidades, Negro, D373E",
+   "v": []
+  },
+  "B07ZTCDY6R": {
+   "c": "Gaming",
+   "d": 24,
+   "e": "🕹️",
+   "m": 619,
+   "p": 19.48,
+   "s": "busqueda",
+   "t": "2026-11-25T12:31:27.236714+00:00",
+   "title": "UPGRADE Mando para Switch, Mandos Switch Inalambricos para S-witch/S-witch 2/Lite/OLED con Wake Up, Mando Pro Controller Mando pc con Gyro Axis/Dual Shock/Función Turbo y Captura de pantalla",
    "v": []
   },
   "B08153WM1C": {
@@ -4333,6 +4334,10 @@
    "t": "2026-11-25T10:31:05.699201+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B094WLFGD3": {
+   "t": "2026-11-25T12:30:56.628057+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0CFVZ74KT": {
    "t": "2026-11-25T11:01:10.670462+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4399,6 +4404,6 @@
  "tg_offset": 511048149,
  "x_copy": {
   "day": "2026-11-25",
-  "n": 11
+  "n": 12
  }
 }
