@@ -59,7 +59,7 @@
   "Suplementos": "2026-11-25T07:30:56.306804+00:00",
   "Tablets": "2026-11-26T09:01:09.131171+00:00",
   "Televisores": "2026-11-25T21:15:41.908814+00:00",
-  "Textil hogar": "2026-11-25T13:30:55.439683+00:00",
+  "Textil hogar": "2026-11-26T14:30:54.648040+00:00",
   "Videojuegos": "2026-11-25T15:30:57.153436+00:00",
   "Zapatillas": "2026-11-25T09:01:05.992602+00:00",
   "eReaders": "2026-11-25T15:01:06.717368+00:00"
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-26T14:27:39.046142+00:00",
+ "next_at": "2026-11-26T14:58:50.168937+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1919,6 +1919,17 @@
    "title": "Tefal Ingenio Easy On - Juego de 2 Sartenes, NO APTO INDUCCIÓN",
    "v": []
   },
+  "B09TZFKDV6": {
+   "c": "Textil hogar",
+   "d": 35,
+   "e": "🧺",
+   "m": 655,
+   "p": 12.88,
+   "s": "ambas",
+   "t": "2026-11-26T14:31:27.848764+00:00",
+   "title": "PONY DANCE Cortinas Dormitorio Cortas Blancas, 140x160cm(AnxAl)",
+   "v": []
+  },
   "B09TZZXSK2": {
    "c": "Iluminación",
    "d": 40,
@@ -2988,17 +2999,6 @@
    "s": "ambas",
    "t": "2026-11-12T19:11:14.073041+00:00",
    "title": "AOC Q27G42XE Gaming Monitor 27 Pulgadas 180Hz Panel Fast IPS, 1ms GtG, HDR10, G-Sync Compatible, Altavoces, (2560x1440 HDMI 2X 2.0 DP 1x 1.4) Negro",
-   "v": []
-  },
-  "B0DTCF14RM": {
-   "c": "Accesorios de coche",
-   "d": 14,
-   "e": "🚗",
-   "m": 240,
-   "p": 37.45,
-   "s": "ambas",
-   "t": "2026-11-12T14:06:28.037136+00:00",
-   "title": "Dashcam 4K, Dash CAM Coche con CPL, WiFi Camara Coche Grabadora con Tarjeta 64G, Super Visión, Gran 170°, Control App, Sensor G, Monitor de Aparcamiento, Grabación de Bucle",
    "v": []
   },
   "B0DTK2CLTX": {
@@ -4452,10 +4452,6 @@
    "t": "2026-11-26T11:30:57.919122+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0CT3VBDTV": {
-   "t": "2026-11-25T14:30:53.699678+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0D9JFQS7P": {
    "t": "2026-11-25T16:01:12.511497+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4487,6 +4483,18 @@
  },
  "reserve": [
   {
+   "a": "B07JNL7K5B",
+   "c": "Textil hogar",
+   "e": "🧺",
+   "img": "https://m.media-amazon.com/images/I/81gaCsNtopL._AC_UL320_.jpg",
+   "n": 13000,
+   "op": 17.49,
+   "p": 12.62,
+   "r": 4.4,
+   "t": "2026-11-26T14:30:54.648040+00:00",
+   "title": "MIULEE Cortinas Salon Modernas con Ojales 2 Piezas Blanco 140x245 cm"
+  },
+  {
    "a": "B0842871RM",
    "c": "Camping y montaña",
    "e": "🏕️",
@@ -4509,18 +4517,6 @@
    "r": 4.5,
    "t": "2026-11-26T12:01:05.059758+00:00",
    "title": "Govee RGBIC LED Plafón,30cm Lámpara Techo Inteligente, Plafon Techo 2400LM"
-  },
-  {
-   "a": "B09GKM3K7H",
-   "c": "Higiene personal",
-   "e": "🪥",
-   "img": "https://m.media-amazon.com/images/I/813dIologJL._AC_UL320_.jpg",
-   "n": 1800,
-   "op": 13.96,
-   "p": 9.49,
-   "r": 4.7,
-   "t": "2026-11-26T11:01:09.682153+00:00",
-   "title": "Axe Gel de Ducha y Champú para Hombre Dark Temptation 3en1 400ml - Pack de 4"
   }
  ],
  "store_skip": {
@@ -4535,6 +4531,6 @@
  "tg_offset": 511048157,
  "x_copy": {
   "day": "2026-11-26",
-  "n": 15
+  "n": 16
  }
 }
