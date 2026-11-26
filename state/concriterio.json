@@ -14,7 +14,7 @@
   "Café y cápsulas": "2026-11-26T12:30:59.615384+00:00",
   "Camping y montaña": "2026-11-26T13:01:08.844723+00:00",
   "Cargadores y baterías": "2026-11-26T09:30:58.520121+00:00",
-  "Ciclismo": "2026-11-25T09:30:55.349814+00:00",
+  "Ciclismo": "2026-11-26T15:01:06.505667+00:00",
   "Climatización": "2026-11-24T18:35:37.637788+00:00",
   "Colchones y almohadas": "2026-11-24T16:30:59.602669+00:00",
   "Componentes PC": "2026-11-25T10:01:04.002472+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-26T14:58:50.168937+00:00",
+ "next_at": "2026-11-26T15:29:18.920946+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2671,6 +2671,17 @@
    "title": "[MIZON] INOUT Soothing Sunscreen SPF50+PA++++ (50ml) Crema Solar y Skincare Coreano, Protección 24H, Antienrojecimiento, Ácido Hialurónico y Centella Asiática, 100% Vegano y Seguro para los Arrecifes",
    "v": []
   },
+  "B0D6QT83K3": {
+   "c": "Ciclismo",
+   "d": 28,
+   "e": "🚴",
+   "m": 656,
+   "p": 18.99,
+   "s": "ofertas",
+   "t": "2026-11-26T15:01:42.954413+00:00",
+   "title": "OSRAM LEDsBIKE Race",
+   "v": []
+  },
   "B0D6RW3DH5": {
    "c": "Café y cápsulas",
    "d": 27,
@@ -4483,6 +4494,18 @@
  },
  "reserve": [
   {
+   "a": "B0C7RVCX6M",
+   "c": "Ciclismo",
+   "e": "🚴",
+   "img": "https://m.media-amazon.com/images/I/61NTb7XA-KL._AC_UL320_.jpg",
+   "n": 100,
+   "op": 54.6,
+   "p": 40.72,
+   "r": 4.6,
+   "t": "2026-11-26T15:01:06.505667+00:00",
+   "title": "Lezyne Strip Drive Pro Luz trasera para bicicleta, LED rojo, carretera, montaña, grava, bicicleta de grava, recargable por USB"
+  },
+  {
    "a": "B07JNL7K5B",
    "c": "Textil hogar",
    "e": "🧺",
@@ -4505,18 +4528,6 @@
    "r": 4.2,
    "t": "2026-11-26T13:01:08.844723+00:00",
    "title": "Grand Canyon Richmond 1 - Tienda de Trekking (1 Tienda unipersonal)"
-  },
-  {
-   "a": "B0CXT4W9C3",
-   "c": "Iluminación",
-   "e": "🪔",
-   "img": "https://m.media-amazon.com/images/I/71mmbV2HA3L._AC_UL320_.jpg",
-   "n": 2700,
-   "op": 69.99,
-   "p": 39.89,
-   "r": 4.5,
-   "t": "2026-11-26T12:01:05.059758+00:00",
-   "title": "Govee RGBIC LED Plafón,30cm Lámpara Techo Inteligente, Plafon Techo 2400LM"
   }
  ],
  "store_skip": {
@@ -4531,6 +4542,6 @@
  "tg_offset": 511048157,
  "x_copy": {
   "day": "2026-11-26",
-  "n": 16
+  "n": 17
  }
 }

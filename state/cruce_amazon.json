@@ -4497,23 +4497,24 @@
    "veredicto": "amazon_mas_barato"
   },
   "41887696311": {
-   "ahorro_vs_amazon": -25,
+   "ahorro_vs_amazon": 23,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 319.0,
+   "amz_price": 399.87,
    "amz_title": "Samsung Galaxy Watch8 Classic 46mm LTE Negro (Black) L505 - [Versiones italiano, húngaro, polaco, rumano, austriaco y suizo]",
    "asin": "B0G2RM5BK9",
    "disponible": true,
    "ean": "8806097480167",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "Amazon 319.00 frente a 399.00",
+   "motivo": "23 % por debajo del habitual en Amazon (399.87)",
    "name": "Samsung Galaxy Watch8 Classic L505 46 mm LTE Negro 1,34 pulgadas AMOLED GPS 5ATM",
-   "pp_drop": 26,
-   "pp_median": 538.95,
-   "pp_price": 399.0,
-   "t": "2026-11-14T12:15:37.671280+00:00",
-   "veredicto": "amazon_mas_barato"
+   "pp_drop": 32,
+   "pp_median": 449.95,
+   "pp_price": 306.18,
+   "t": "2026-11-26T15:01:06.505667+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
   },
   "41887696313": {
    "ahorro_vs_amazon": 17,
@@ -10281,22 +10282,22 @@
    "veredicto": "sin_precio"
   },
   "46599140756": {
-   "ahorro_vs_amazon": 15,
+   "ahorro_vs_amazon": 14,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 1211.0,
+   "amz_price": 1198.02,
    "amz_title": "PE320QXTBMIIPHCUZX",
    "asin": "B0H2NC3X1X",
    "disponible": true,
    "ean": "4711721026571",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "15 % por debajo del habitual en Amazon (1211.00)",
+   "motivo": "14 % por debajo del habitual en Amazon (1198.02)",
    "name": "Monitor Acer ProCreator PE 31,5 pulgadas 6K TFT Negro PE320QXT",
    "pp_drop": 28,
    "pp_median": 1419.95,
    "pp_price": 1026.95,
-   "t": "2026-11-24T14:30:59.149182+00:00",
+   "t": "2026-11-26T15:01:06.505667+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -11835,12 +11836,12 @@
  },
  "night_at": "2026-11-26T06:50:34.193285+00:00",
  "resumen": {
-  "amazon_mas_barato": 24,
+  "amazon_mas_barato": 23,
   "dudoso": 0,
   "no_esta": 15,
-  "oferta_real": 18,
+  "oferta_real": 19,
   "pvpr_inflado": 4,
   "sin_precio": 10
  },
- "updated": "2026-11-26T14:30:54.648040+00:00"
+ "updated": "2026-11-26T15:01:06.505667+00:00"
 }
