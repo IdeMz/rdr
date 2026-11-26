@@ -55,7 +55,7 @@
   "Relojes": "2026-11-24T14:01:02.613248+00:00",
   "Robots de cocina": "2026-11-26T19:45:40.861388+00:00",
   "Salud": "2026-11-26T20:15:39.035535+00:00",
-  "Smartwatch": "2026-11-25T14:30:53.699678+00:00",
+  "Smartwatch": "2026-11-26T20:45:45.883777+00:00",
   "Suplementos": "2026-11-25T07:30:56.306804+00:00",
   "Tablets": "2026-11-26T09:01:09.131171+00:00",
   "Televisores": "2026-11-25T21:15:41.908814+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-26T20:43:29.082986+00:00",
+ "next_at": "2026-11-26T21:13:05.416330+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -3144,6 +3144,17 @@
    "title": "Tapo L430C(4-Pack) - Bombilla inteligente WiFi,2500K-6500K, 40W 470Lm, E27",
    "v": []
   },
+  "B0F2B1M9TB": {
+   "c": "Smartwatch",
+   "d": 41,
+   "e": "⌚",
+   "m": 667,
+   "p": 99.0,
+   "s": "ofertas",
+   "t": "2026-11-26T20:46:42.794700+00:00",
+   "title": "HUAWEI WATCH FIT 4 Smartwatch, Brillo Máximo 2,000 nits, Barómetro, Gris",
+   "v": []
+  },
   "B0F2SYP93M": {
    "c": "Jardín",
    "d": 33,
@@ -4058,17 +4069,6 @@
    "title": "FAMIVAC R10 Robot Aspirador con Fregona,6000Pa Succión Potente,Anti-Enredo",
    "v": []
   },
-  "B0H6MCJG9F": {
-   "c": "Smartwatch",
-   "d": 37,
-   "e": "⌚",
-   "m": 248,
-   "p": 43.95,
-   "s": "ambas",
-   "t": "2026-11-12T20:31:41.790103+00:00",
-   "title": "FOSMET Nuevo Reloj Inteligente Hombre con ECG/HRV/BMI, Android iOS Negro",
-   "v": []
-  },
   "B0H6XJRGZQ": {
    "c": "Climatización",
    "d": 45,
@@ -4495,6 +4495,18 @@
  },
  "reserve": [
   {
+   "a": "B0HJTY4CPK",
+   "c": "Smartwatch",
+   "e": "⌚",
+   "img": "https://m.media-amazon.com/images/I/81HdDODrI0L._AC_UL320_.jpg",
+   "n": 157,
+   "op": 99.99,
+   "p": 49.99,
+   "r": 4.4,
+   "t": "2026-11-26T20:45:45.883777+00:00",
+   "title": "Reloj Inteligente para Xiaomi Apple Samsung, Llamadas Bluetooth y WhatsApp"
+  },
+  {
    "a": "B0DCGC3SDW",
    "c": "Videojuegos",
    "e": "🎮",
@@ -4517,18 +4529,6 @@
    "r": 4.4,
    "t": "2026-11-26T18:01:05.764618+00:00",
    "title": "Anker Soundcore Sport X20 Auriculares Deportivos con Cancelación de Ruido"
-  },
-  {
-   "a": "B0DJGZVS99",
-   "c": "Gatos",
-   "e": "🐱",
-   "img": "https://m.media-amazon.com/images/I/61i13m+1TqL._AC_UL320_.jpg",
-   "n": 1200,
-   "op": 22.4,
-   "p": 13.39,
-   "r": 4.4,
-   "t": "2026-11-26T17:30:54.854401+00:00",
-   "title": "Arena Aglomerante Mix para Muchos Gatos Catit Go Natural"
   }
  ],
  "store_skip": {
@@ -4539,6 +4539,6 @@
  "tg_offset": 511048157,
  "x_copy": {
   "day": "2026-11-26",
-  "n": 27
+  "n": 28
  }
 }
