@@ -3,7 +3,7 @@
   "Accesorios de coche": "2026-11-25T16:01:12.511497+00:00",
   "Accesorios de móvil": "2026-11-24T21:05:36.253651+00:00",
   "Afeitado y depilación": "2026-11-26T08:01:06.074359+00:00",
-  "Almacenamiento": "2026-11-23T16:01:16.579464+00:00",
+  "Almacenamiento": "2026-11-26T11:30:57.919122+00:00",
   "Altavoces": "2026-11-25T16:30:57.642581+00:00",
   "Aspiradoras": "2026-11-25T17:01:09.744818+00:00",
   "Auriculares": "2026-11-23T21:15:38.951661+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-26T11:30:16.649687+00:00",
+ "next_at": "2026-11-26T11:59:25.862345+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -3012,6 +3012,17 @@
    "title": "DIESEL Only The Brave EDP |Un toque energizante de Mandarina y una estela sensual de Acuerdo de Suede|Otro nivel de intensidad y sensualidad",
    "v": []
   },
+  "B0DWFMD52T": {
+   "c": "Almacenamiento",
+   "d": 28,
+   "e": "💾",
+   "m": 649,
+   "p": 218.95,
+   "s": "ofertas",
+   "t": "2026-11-26T11:31:41.314091+00:00",
+   "title": "Samsung Memoria MZ- VAP1T0BW 9100 PRO SSD Interna 1TB, PCIe 5.0 x4, NVMe 2.0, Memoria Diseñada para Profesionales y Jugadores, Compatible con PC, Móvil y Consola de Juegos",
+   "v": []
+  },
   "B0DX1XK7ZJ": {
    "c": "Limpieza del hogar",
    "d": 35,
@@ -3970,17 +3981,6 @@
    "title": "Proyector 4K【Google TV 14.0/Official Apps/Auto Focus/Keystone】 Proyector portatil Control por Voz 1080P FHD Nativo HDR10,WiFi 6 & Bluetooth 5.3 SmartProyector para Exterior/Cine en Casa/Techo/HDMI",
    "v": []
   },
-  "B0H33NS6RS": {
-   "c": "Robots de cocina",
-   "d": 21,
-   "e": "🥣",
-   "m": 236,
-   "p": 47.49,
-   "s": "ofertas",
-   "t": "2026-11-12T11:11:25.178010+00:00",
-   "title": "TopStrong Procesador de Alimentos Multifunción, 800W Robot de Cocina, Compacto, Recipiente de 2L, Incluye 3 Discos de Corte, Picadora, Amasadora y Batidor",
-   "v": []
-  },
   "B0H448LDSH": {
    "c": "Televisores",
    "d": 21,
@@ -4432,8 +4432,8 @@
    "t": "2026-11-26T10:30:55.810022+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0CFVZ74KT": {
-   "t": "2026-11-25T11:01:10.670462+00:00",
+  "B0CGQ466W8": {
+   "t": "2026-11-26T11:30:57.919122+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0CT3VBDTV": {
@@ -4512,6 +4512,6 @@
  "tg_offset": 511048157,
  "x_copy": {
   "day": "2026-11-26",
-  "n": 9
+  "n": 10
  }
 }

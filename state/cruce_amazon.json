@@ -6202,19 +6202,19 @@
    "ahorro_vs_amazon": 58,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 76.45,
+   "amz_price": 76.22,
    "amz_title": "Endgame Gear XM2 8k Ratón Gaming con Cable, Negro",
    "asin": "B0DG5YN8VT",
    "disponible": true,
    "ean": "4251442511180",
    "encontrado_por": "ean",
    "lista": "to_verify",
-   "motivo": "58 % por debajo del habitual en Amazon (76.45)",
+   "motivo": "58 % por debajo del habitual en Amazon (76.22)",
    "name": "Endgame Gear XM2 8k Gaming Mouse 26000 DPI 52g Ultraligero Ratón gaming",
    "pp_drop": 54,
    "pp_median": 69.95,
    "pp_price": 31.94,
-   "t": "2026-11-24T11:30:52.354758+00:00",
+   "t": "2026-11-26T11:30:57.919122+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -6392,7 +6392,7 @@
    "pp_drop": 56,
    "pp_median": 67.95,
    "pp_price": 29.95,
-   "t": "2026-11-24T11:01:09.384811+00:00",
+   "t": "2026-11-26T11:30:57.919122+00:00",
    "v": 3,
    "veredicto": "no_esta",
    "vistos": {
@@ -11656,5 +11656,5 @@
   "pvpr_inflado": 4,
   "sin_precio": 9
  },
- "updated": "2026-11-26T11:01:09.682153+00:00"
+ "updated": "2026-11-26T11:30:57.919122+00:00"
 }
