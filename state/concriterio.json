@@ -30,7 +30,7 @@
   "Gaming": "2026-11-25T12:30:56.628057+00:00",
   "Gatos": "2026-11-25T10:31:05.699201+00:00",
   "Herramientas": "2026-11-25T11:31:00.165429+00:00",
-  "Higiene personal": "2026-11-24T19:05:34.869773+00:00",
+  "Higiene personal": "2026-11-26T11:01:09.682153+00:00",
   "Iluminación": "2026-11-25T10:01:04.002472+00:00",
   "Impresoras": "2026-11-21T12:30:56.768648+00:00",
   "Jardín": "2026-11-24T14:30:59.149182+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-26T10:57:21.387283+00:00",
+ "next_at": "2026-11-26T11:30:16.649687+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -607,6 +607,17 @@
    "s": "ambas",
    "t": "2026-11-18T20:02:05.366859+00:00",
    "title": "Tostadora Philips Daily Collection, 2 ranuras, 8 niveles, negra",
+   "v": []
+  },
+  "B01N9XZ7Z4": {
+   "c": "Higiene personal",
+   "d": 52,
+   "e": "🪥",
+   "m": 648,
+   "p": 9.87,
+   "s": "ofertas",
+   "t": "2026-11-26T11:01:42.391194+00:00",
+   "title": "Elizabeth Arden White Tea Gel de Baño y Ducha Mujer 390 ml",
    "v": []
   },
   "B072271WPB": {
@@ -3441,17 +3452,6 @@
    "title": "Sage Barista Express, Cafetera con Molinillo, Acero Inoxidable Cepillado",
    "v": []
   },
-  "B0FN8FR84Q": {
-   "c": "Aspiradoras",
-   "d": 34,
-   "e": "🧹",
-   "m": 235,
-   "p": 329.0,
-   "s": "ambas",
-   "t": "2026-11-12T10:36:16.170943+00:00",
-   "title": "dreame L10s Ultra Gen 3 Kit Robot Aspirador y Fregasuelos, Succión 25.000Pa",
-   "v": []
-  },
   "B0FNRQQTZR": {
    "c": "Domótica",
    "d": 29,
@@ -4408,10 +4408,6 @@
    "t": "2026-11-25T15:01:06.717368+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B01MFDF226": {
-   "t": "2026-11-25T10:31:05.699201+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B072DXLHFS": {
    "t": "2026-11-25T15:01:06.717368+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4475,6 +4471,18 @@
  },
  "reserve": [
   {
+   "a": "B09GKM3K7H",
+   "c": "Higiene personal",
+   "e": "🪥",
+   "img": "https://m.media-amazon.com/images/I/813dIologJL._AC_UL320_.jpg",
+   "n": 1800,
+   "op": 13.96,
+   "p": 9.49,
+   "r": 4.7,
+   "t": "2026-11-26T11:01:09.682153+00:00",
+   "title": "Axe Gel de Ducha y Champú para Hombre Dark Temptation 3en1 400ml - Pack de 4"
+  },
+  {
    "a": "B08XBG9XFF",
    "c": "Fotografía",
    "e": "📷",
@@ -4485,30 +4493,6 @@
    "r": 4.6,
    "t": "2026-11-26T10:01:05.790556+00:00",
    "title": "Sigma 28-70mm F2.8 DG DN (C) para Sony E, Negro"
-  },
-  {
-   "a": "B08ZJLMNZS",
-   "c": "Afeitado y depilación",
-   "e": "🪒",
-   "img": "https://m.media-amazon.com/images/I/71SraH33iSL._AC_UL320_.jpg",
-   "n": 3700,
-   "op": 20.36,
-   "p": 16.78,
-   "r": 4.2,
-   "t": "2026-11-26T08:01:06.074359+00:00",
-   "title": "BIC Hybrid 5 Flex Maquinilla Recargable para Hombre, 1 Mango con Contrapeso y Recambios de Hojas Móviles Recubiertas de Titanio con Nanotecnología - Pack de 1+10"
-  },
-  {
-   "a": "B0H25WD25X",
-   "c": "Droguería",
-   "e": "🧴",
-   "img": "https://m.media-amazon.com/images/I/81u5MAl9AGL._AC_UL320_.jpg",
-   "n": 98,
-   "op": 59.94,
-   "p": 35.96,
-   "r": 4.8,
-   "t": "2026-11-26T07:30:56.599929+00:00",
-   "title": "Fairy Platinum Cápsulas De Lavavajillas, Limón, 34 Cápsulas, Potente Incluso Con Los Restos De Comida Más Difíciles, Platos Limpios, Lavavajillas Brillante, Filtro Limpio Sinasa (Paquete de 6)"
   }
  ],
  "store_skip": {
@@ -4528,6 +4512,6 @@
  "tg_offset": 511048157,
  "x_copy": {
   "day": "2026-11-26",
-  "n": 8
+  "n": 9
  }
 }
