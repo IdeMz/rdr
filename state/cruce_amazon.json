@@ -59,6 +59,21 @@
     ]
    }
   },
+  "0194644280031": {
+   "a": "",
+   "t": "2026-11-26T19:45:40.861388+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "eufy Security by Anker, Sensor de Puerta",
+     "eufy by Anker 5 Piezas Smart Home Set, Sistema de Seguridad",
+     "Sensor de Movimiento, eufy Security Home Alarm System Motion Detector"
+    ]
+   }
+  },
   "0194644293307": {
    "a": "",
    "t": "2026-11-26T12:30:59.615384+00:00",
@@ -2185,6 +2200,21 @@
    "title": "XIAOMI Watch S5 41mm Smartwatch, AMOLED, 14 Días de Batería, GPS, Azul",
    "v": 3,
    "via": "ean"
+  },
+  "6934399224638": {
+   "a": "",
+   "t": "2026-11-26T19:45:40.861388+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Oneisall Fuente de agua para gato de 3,5 L, inalámbrico, ABS/304 de acero",
+     "oneisall Fuente para Gatos sin Cables, Fuente de 3,2L con Sensor",
+     "FEELNEEDY 2.8L Fuente para Gatos Acero Inoxidable con 3 Filtros"
+    ]
+   }
   },
   "6935364052522": {
    "a": "B08FX98B59",
@@ -8449,6 +8479,28 @@
    "v": 3,
    "veredicto": "sin_precio"
   },
+  "46239681210": {
+   "ean": "6934399224638",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Oneisall 2L Acero Inoxidable PWF-001-1 30dB Bebedero automático",
+   "pp_drop": 43,
+   "pp_median": 52.99,
+   "pp_price": 29.95,
+   "t": "2026-11-26T19:45:40.861388+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Oneisall Fuente de agua para gato de 3,5 L, inalámbrico, ABS/304 de acero",
+     "oneisall Fuente para Gatos sin Cables, Fuente de 3,2L con Sensor",
+     "FEELNEEDY 2.8L Fuente para Gatos Acero Inoxidable con 3 Filtros"
+    ]
+   }
+  },
   "46239681484": {
    "ean": "8886419377108",
    "lista": "candidates",
@@ -10965,6 +11017,28 @@
     ]
    }
   },
+  "46599142766": {
+   "ean": "0194644280031",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Sirena de alarma Eufy E20 Blanco",
+   "pp_drop": 37,
+   "pp_median": 69.99,
+   "pp_price": 43.99,
+   "t": "2026-11-26T19:45:40.861388+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "eufy Security by Anker, Sensor de Puerta",
+     "eufy by Anker 5 Piezas Smart Home Set, Sistema de Seguridad",
+     "Sensor de Movimiento, eufy Security Home Alarm System Motion Detector"
+    ]
+   }
+  },
   "46599142776": {
    "ean": "0194644293307",
    "lista": "candidates",
@@ -11891,10 +11965,10 @@
  "resumen": {
   "amazon_mas_barato": 25,
   "dudoso": 0,
-  "no_esta": 15,
+  "no_esta": 17,
   "oferta_real": 20,
   "pvpr_inflado": 4,
   "sin_precio": 9
  },
- "updated": "2026-11-26T18:45:39.384119+00:00"
+ "updated": "2026-11-26T19:45:40.861388+00:00"
 }
