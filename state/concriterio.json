@@ -25,7 +25,7 @@
   "Domótica": "2026-11-23T09:01:11.110279+00:00",
   "Droguería": "2026-11-26T07:30:56.599929+00:00",
   "Fitness en casa": "2026-11-25T16:01:12.511497+00:00",
-  "Fotografía": "2026-11-25T07:01:09.936457+00:00",
+  "Fotografía": "2026-11-26T10:01:05.790556+00:00",
   "Freidoras de aire": "2026-11-23T18:01:07.710591+00:00",
   "Gaming": "2026-11-25T12:30:56.628057+00:00",
   "Gatos": "2026-11-25T10:31:05.699201+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-26T09:59:43.181100+00:00",
+ "next_at": "2026-11-26T10:26:28.836552+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1190,6 +1190,17 @@
    "s": "ambas",
    "t": "2026-11-18T13:01:43.416089+00:00",
    "title": "MAVIS Neceser, 6 L - Black (Negro)",
+   "v": []
+  },
+  "B07X5DGGMQ": {
+   "c": "Fotografía",
+   "d": 35,
+   "e": "📷",
+   "m": 646,
+   "p": 589.0,
+   "s": "ofertas",
+   "t": "2026-11-26T10:01:39.898081+00:00",
+   "title": "Sony SEL70350G, Objetivo 70-350 mm F4.5-6.3 G Superteleobjetivo zoom APS-C, con OSS, montura E. Ideal para naturaleza, deportes y viajes (compatible con ZV-E10, A6400, A6700)",
    "v": []
   },
   "B07XLML2YS": {
@@ -4389,10 +4400,6 @@
    "t": "2026-11-25T18:30:56.405059+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B00T4BHYLY": {
-   "t": "2026-11-25T10:01:04.002472+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B00X9TZ0RC": {
    "t": "2026-11-25T15:01:06.717368+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4429,10 +4436,6 @@
    "t": "2026-11-25T14:30:53.699678+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0CXPPNL5C": {
-   "t": "2026-11-25T10:01:04.002472+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0D9JFQS7P": {
    "t": "2026-11-25T16:01:12.511497+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4464,6 +4467,18 @@
  },
  "reserve": [
   {
+   "a": "B08XBG9XFF",
+   "c": "Fotografía",
+   "e": "📷",
+   "img": "https://m.media-amazon.com/images/I/61o8GwWDGxL._AC_UL320_.jpg",
+   "n": 693,
+   "op": 879.0,
+   "p": 679.0,
+   "r": 4.6,
+   "t": "2026-11-26T10:01:05.790556+00:00",
+   "title": "Sigma 28-70mm F2.8 DG DN (C) para Sony E, Negro"
+  },
+  {
    "a": "B08ZJLMNZS",
    "c": "Afeitado y depilación",
    "e": "🪒",
@@ -4486,18 +4501,6 @@
    "r": 4.8,
    "t": "2026-11-26T07:30:56.599929+00:00",
    "title": "Fairy Platinum Cápsulas De Lavavajillas, Limón, 34 Cápsulas, Potente Incluso Con Los Restos De Comida Más Difíciles, Platos Limpios, Lavavajillas Brillante, Filtro Limpio Sinasa (Paquete de 6)"
-  },
-  {
-   "a": "B0FT8PMRW4",
-   "c": "Móviles",
-   "e": "📱",
-   "img": "https://m.media-amazon.com/images/I/616gwh5LgOL._AC_UL320_.jpg",
-   "n": 641,
-   "op": 199.55,
-   "p": 172.5,
-   "r": 4.3,
-   "t": "2026-11-26T07:01:05.477452+00:00",
-   "title": "Samsung SM-A175 A17 4+128GB 6.7\" 4G Black DS ITA"
   }
  ],
  "store_skip": {
@@ -4517,6 +4520,6 @@
  "tg_offset": 511048157,
  "x_copy": {
   "day": "2026-11-26",
-  "n": 6
+  "n": 7
  }
 }
