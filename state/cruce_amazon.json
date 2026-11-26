@@ -3635,6 +3635,24 @@
    "title": "Razer Huntsman V3 HE Magnetic Tenkeyless 8 kHz - Teclado magnético para Gaming y e-Sports con Efecto Hall - Snap Tap - HyperPolling a 8000 Hz - Prioridad de Dob",
    "v": 3,
    "via": "ean"
+  },
+  "9331911828744": {
+   "a": "",
+   "t": "2026-11-26T22:20:33.778537+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "modelo": [
+     "AMZCHEF Placa de Inducción 60 cm, 4 Zonas con 2 Flex, Boost 7200W"
+    ],
+    "nombre": [
+     "AMZCHEF Placa de Inducción 60 cm, 4 Zonas con 2 Flex, Boost 7200W",
+     "AMZCHEF Placa de Inducción 60cm, 4 zonas (2 Flex 2-en-1), 7200W, 9 niveles",
+     "AMZCHEF Placa inducción 80cm, placa de inducción encastrable 5 zonas con booster y 9 niveles, funció"
+    ]
+   }
   }
  },
  "items": {
@@ -6558,11 +6576,11 @@
    "lista": "to_verify",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Endgame Gear XM2 8k 30000 DPI 51,5g 6 botones Ratón gaming",
-   "pista": "2110348 bytes; 19 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1989011 bytes; 15 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 54,
    "pp_median": 69.95,
    "pp_price": 31.94,
-   "t": "2026-11-26T15:30:59.307083+00:00",
+   "t": "2026-11-26T22:20:33.778537+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -8183,6 +8201,31 @@
      "AMZCHEF Placa de Inducción 60cm, 4 zonas (2 Flex 2-en-1), 7200W, 9 niveles",
      "AMZCHEF Placa de Inducción 60 cm, 4 Zonas con 2 Flex, Boost 7200W",
      "AMZCHEF Placa de inducción de 60 cm, 7200 W, 4 zonas, con zona flexible 2"
+    ]
+   }
+  },
+  "46186024602": {
+   "ean": "9331911828744",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Placa de inducción Amzchef Función Boost 7400W Negro CE-FS-I74S-FFDD10",
+   "pp_drop": 28,
+   "pp_median": 150.95,
+   "pp_price": 108.95,
+   "t": "2026-11-26T22:20:33.778537+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "modelo": [
+     "AMZCHEF Placa de Inducción 60 cm, 4 Zonas con 2 Flex, Boost 7200W"
+    ],
+    "nombre": [
+     "AMZCHEF Placa de Inducción 60 cm, 4 Zonas con 2 Flex, Boost 7200W",
+     "AMZCHEF Placa de Inducción 60cm, 4 zonas (2 Flex 2-en-1), 7200W, 9 niveles",
+     "AMZCHEF Placa inducción 80cm, placa de inducción encastrable 5 zonas con booster y 9 niveles, funció"
     ]
    }
   },
@@ -10920,11 +10963,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Dreame Tasti 1500W pantalla táctil Freidora de aire",
-   "pista": "1293650 bytes; 11 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1194937 bytes; 9 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 35,
    "pp_median": 230.95,
    "pp_price": 150.95,
-   "t": "2026-11-26T16:01:04.848160+00:00",
+   "t": "2026-11-26T22:20:33.778537+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -12078,14 +12121,14 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-26T22:05:25.170967+00:00",
+ "night_at": "2026-11-26T22:20:33.778537+00:00",
  "resumen": {
   "amazon_mas_barato": 25,
   "dudoso": 0,
-  "no_esta": 20,
+  "no_esta": 21,
   "oferta_real": 20,
   "pvpr_inflado": 4,
   "sin_precio": 9
  },
- "updated": "2026-11-26T22:05:25.170967+00:00"
+ "updated": "2026-11-26T22:20:33.778537+00:00"
 }
