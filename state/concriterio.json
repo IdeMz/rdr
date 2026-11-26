@@ -31,7 +31,7 @@
   "Gatos": "2026-11-25T10:31:05.699201+00:00",
   "Herramientas": "2026-11-25T11:31:00.165429+00:00",
   "Higiene personal": "2026-11-26T11:01:09.682153+00:00",
-  "Iluminación": "2026-11-25T10:01:04.002472+00:00",
+  "Iluminación": "2026-11-26T12:01:05.059758+00:00",
   "Impresoras": "2026-11-21T12:30:56.768648+00:00",
   "Jardín": "2026-11-24T14:30:59.149182+00:00",
   "Juguetes": "2026-11-24T13:05:37.513094+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-26T11:59:25.862345+00:00",
+ "next_at": "2026-11-26T12:29:37.617511+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2294,6 +2294,17 @@
    "title": "JUPPLIES Silla Escritorio Ergonomica - Silla Oficina con Apoyo Lumbar, Estructura de Plastico, Malla Transpirable, Ruedas Giratorias 360° Soporta hasta 110kg",
    "v": []
   },
+  "B0CBPL4RKH": {
+   "c": "Iluminación",
+   "d": 42,
+   "e": "🪔",
+   "m": 650,
+   "p": 10.29,
+   "s": "ambas",
+   "t": "2026-11-26T12:01:45.344822+00:00",
+   "title": "Gritin 19 LED Luz de Lectura, 360° Flexible Ajustable Lámpara de Lectura",
+   "v": []
+  },
   "B0CCDNJS75": {
    "c": "Auriculares",
    "d": 54,
@@ -3540,17 +3551,6 @@
    "title": "adidas Men's Zapatilla de Senderismo Terrex Skychaser AX5 Gore-Tex",
    "v": []
   },
-  "B0FT44FP1R": {
-   "c": "Zapatillas",
-   "d": 36,
-   "e": "👟",
-   "m": 237,
-   "p": 64.0,
-   "s": "ofertas",
-   "t": "2026-11-12T11:46:36.756650+00:00",
-   "title": "Mujer Adizero Pacer W Shoes",
-   "v": []
-  },
   "B0FTTG6JNC": {
    "c": "Higiene personal",
    "d": 55,
@@ -4471,6 +4471,18 @@
  },
  "reserve": [
   {
+   "a": "B0CXT4W9C3",
+   "c": "Iluminación",
+   "e": "🪔",
+   "img": "https://m.media-amazon.com/images/I/71mmbV2HA3L._AC_UL320_.jpg",
+   "n": 2700,
+   "op": 69.99,
+   "p": 39.89,
+   "r": 4.5,
+   "t": "2026-11-26T12:01:05.059758+00:00",
+   "title": "Govee RGBIC LED Plafón,30cm Lámpara Techo Inteligente, Plafon Techo 2400LM"
+  },
+  {
    "a": "B09GKM3K7H",
    "c": "Higiene personal",
    "e": "🪥",
@@ -4512,6 +4524,6 @@
  "tg_offset": 511048157,
  "x_copy": {
   "day": "2026-11-26",
-  "n": 10
+  "n": 11
  }
 }
