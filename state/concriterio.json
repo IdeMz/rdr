@@ -12,7 +12,7 @@
   "Bricolaje": "2026-11-25T18:01:11.294449+00:00",
   "Cafeteras": "2026-11-24T19:35:37.316644+00:00",
   "Café y cápsulas": "2026-11-26T12:30:59.615384+00:00",
-  "Camping y montaña": "2026-11-25T10:01:04.002472+00:00",
+  "Camping y montaña": "2026-11-26T13:01:08.844723+00:00",
   "Cargadores y baterías": "2026-11-26T09:30:58.520121+00:00",
   "Ciclismo": "2026-11-25T09:30:55.349814+00:00",
   "Climatización": "2026-11-24T18:35:37.637788+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-26T12:56:47.373163+00:00",
+ "next_at": "2026-11-26T13:26:16.594647+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2383,6 +2383,17 @@
    "title": "KIKO Milano Maxi Mod Mascara",
    "v": []
   },
+  "B0CJ8Y2XX5": {
+   "c": "Camping y montaña",
+   "d": 37,
+   "e": "🏕️",
+   "m": 652,
+   "p": 139.66,
+   "s": "busqueda",
+   "t": "2026-11-26T13:01:49.751689+00:00",
+   "title": "UNP Tienda de campaña SUV para 6 Personas, fácil instalación (300 x 270 x 200 cm)",
+   "v": []
+  },
   "B0CJZF9VBD": {
    "c": "Ciclismo",
    "d": 36,
@@ -4412,10 +4423,6 @@
    "t": "2026-11-25T15:01:06.717368+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B07SB18XRL": {
-   "t": "2026-11-25T13:01:04.295203+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B08T19GT85": {
    "t": "2026-11-25T15:01:06.717368+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4467,6 +4474,18 @@
  },
  "reserve": [
   {
+   "a": "B0842871RM",
+   "c": "Camping y montaña",
+   "e": "🏕️",
+   "img": "https://m.media-amazon.com/images/I/41UVel4tkGL._AC_UL320_.jpg",
+   "n": 537,
+   "op": 78.0,
+   "p": 52.95,
+   "r": 4.2,
+   "t": "2026-11-26T13:01:08.844723+00:00",
+   "title": "Grand Canyon Richmond 1 - Tienda de Trekking (1 Tienda unipersonal)"
+  },
+  {
    "a": "B0CXT4W9C3",
    "c": "Iluminación",
    "e": "🪔",
@@ -4489,18 +4508,6 @@
    "r": 4.7,
    "t": "2026-11-26T11:01:09.682153+00:00",
    "title": "Axe Gel de Ducha y Champú para Hombre Dark Temptation 3en1 400ml - Pack de 4"
-  },
-  {
-   "a": "B08XBG9XFF",
-   "c": "Fotografía",
-   "e": "📷",
-   "img": "https://m.media-amazon.com/images/I/61o8GwWDGxL._AC_UL320_.jpg",
-   "n": 693,
-   "op": 879.0,
-   "p": 679.0,
-   "r": 4.6,
-   "t": "2026-11-26T10:01:05.790556+00:00",
-   "title": "Sigma 28-70mm F2.8 DG DN (C) para Sony E, Negro"
   }
  ],
  "store_skip": {
@@ -4520,6 +4527,6 @@
  "tg_offset": 511048157,
  "x_copy": {
   "day": "2026-11-26",
-  "n": 12
+  "n": 13
  }
 }

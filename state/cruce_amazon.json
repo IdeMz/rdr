@@ -2207,6 +2207,26 @@
    "v": 3,
    "via": "ean"
   },
+  "6939236145275": {
+   "a": "",
+   "t": "2026-11-26T13:01:08.844723+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "modelo": [
+     "TERRAMASTER F8 SSD NAS 8 bahías todo SSD N95 8GB DDR5 (sin discos)",
+     "UGREEN NASync DXP4800 Plus, NAS de Escritorio de 4 Bahías Servidor NAS",
+     "TERRAMASTER F4-425 Pro NAS de 4 bahías, Intel N305/N300 de 8 núcleos de 8"
+    ],
+    "nombre": [
+     "TERRAMASTER Caja RAID USB D2-320 de 2 bahías (sin disco)",
+     "TERRAMASTER D8 Hybrid 2 Caja híbrida 4 HDD + 4 NVMe SSD (sin discos)",
+     "TERRAMASTER F8 SSD NAS 8 bahías todo SSD N95 8GB DDR5 (sin discos)"
+    ]
+   }
+  },
   "6940017323171": {
    "a": "",
    "t": "2026-11-21T20:30:51.971542+00:00",
@@ -8750,7 +8770,7 @@
    "veredicto": "oferta_real"
   },
   "46239685110": {
-   "ahorro_vs_amazon": 13,
+   "ahorro_vs_amazon": 19,
    "amz_low30": null,
    "amz_median": null,
    "amz_price": 222.04,
@@ -8760,12 +8780,12 @@
    "ean": "8720389072215",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "13 % por debajo del habitual en Amazon (222.04)",
+   "motivo": "19 % por debajo del habitual en Amazon (222.04)",
    "name": "Philips Airfryer 10L Doble Cesta 2750W Negro NA461/00 6 programas pantalla táctil Freidora de aire",
-   "pp_drop": 33,
+   "pp_drop": 38,
    "pp_median": 289.95,
-   "pp_price": 192.95,
-   "t": "2026-11-25T11:31:00.165429+00:00",
+   "pp_price": 179.95,
+   "t": "2026-11-26T13:01:08.844723+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -10392,6 +10412,33 @@
    "t": "2026-11-16T05:20:26.504563+00:00",
    "veredicto": "dudoso"
   },
+  "46599141134": {
+   "ean": "6939236145275",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Terramaster 9 Bahías Sin Discos 2 × 10GbE T9-500 Pro 16GB Gris Servidor NAS",
+   "pp_drop": 30,
+   "pp_median": 1531.94,
+   "pp_price": 1074.95,
+   "t": "2026-11-26T13:01:08.844723+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "modelo": [
+     "TERRAMASTER F8 SSD NAS 8 bahías todo SSD N95 8GB DDR5 (sin discos)",
+     "UGREEN NASync DXP4800 Plus, NAS de Escritorio de 4 Bahías Servidor NAS",
+     "TERRAMASTER F4-425 Pro NAS de 4 bahías, Intel N305/N300 de 8 núcleos de 8"
+    ],
+    "nombre": [
+     "TERRAMASTER Caja RAID USB D2-320 de 2 bahías (sin disco)",
+     "TERRAMASTER D8 Hybrid 2 Caja híbrida 4 HDD + 4 NVMe SSD (sin discos)",
+     "TERRAMASTER F8 SSD NAS 8 bahías todo SSD N95 8GB DDR5 (sin discos)"
+    ]
+   }
+  },
   "46599141412": {
    "ahorro_vs_amazon": null,
    "amz_low30": null,
@@ -11736,10 +11783,10 @@
  "resumen": {
   "amazon_mas_barato": 22,
   "dudoso": 0,
-  "no_esta": 14,
+  "no_esta": 15,
   "oferta_real": 18,
   "pvpr_inflado": 4,
   "sin_precio": 10
  },
- "updated": "2026-11-26T12:30:59.615384+00:00"
+ "updated": "2026-11-26T13:01:08.844723+00:00"
 }
