@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-26T18:26:41.658317+00:00",
+ "next_at": "2026-11-26T18:40:52.825793+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2726,17 +2726,6 @@
    "title": "OSRAM LEDsBIKE Race",
    "v": []
   },
-  "B0D6RW3DH5": {
-   "c": "Café y cápsulas",
-   "d": 27,
-   "e": "🫘",
-   "m": 245,
-   "p": 12.33,
-   "s": "busqueda",
-   "t": "2026-11-12T18:01:26.910811+00:00",
-   "title": "illy, Café en Grano INTENSO, 500g",
-   "v": []
-  },
   "B0D6W8GSL3": {
    "c": "Altavoces",
    "d": 44,
@@ -4453,7 +4442,10 @@
    "v": []
   }
  },
- "problem": {},
+ "problem": {
+  "fails": 1,
+  "last": "HTTP 503"
+ },
  "rejected": {
   "B000FNFSPY": {
    "t": "2026-11-25T18:30:56.405059+00:00",
