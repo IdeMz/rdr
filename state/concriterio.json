@@ -6,7 +6,7 @@
   "Almacenamiento": "2026-11-26T11:30:57.919122+00:00",
   "Altavoces": "2026-11-25T16:30:57.642581+00:00",
   "Aspiradoras": "2026-11-25T17:01:09.744818+00:00",
-  "Auriculares": "2026-11-23T21:15:38.951661+00:00",
+  "Auriculares": "2026-11-26T18:01:05.764618+00:00",
   "Barras de sonido": "2026-11-23T21:45:48.617233+00:00",
   "Bebé": "2026-11-25T19:15:38.789832+00:00",
   "Bricolaje": "2026-11-25T18:01:11.294449+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-26T17:57:38.583733+00:00",
+ "next_at": "2026-11-26T18:26:41.658317+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2305,6 +2305,17 @@
    "title": "Amazon Echo Spot (última generación) | Despertador inteligente con sonido de calidad| Negro, con Acceso Anticipado a Alexa+",
    "v": []
   },
+  "B0C3HCD34R": {
+   "c": "Auriculares",
+   "d": 40,
+   "e": "🎧",
+   "m": 662,
+   "p": 29.99,
+   "s": "ambas",
+   "t": "2026-11-26T18:03:41.181684+00:00",
+   "title": "Soundcore Q20i de Anker Cascos Bluetooth con ANC Híbrida, Hi-Res, 40H",
+   "v": []
+  },
   "B0C4L6ZGLD": {
    "c": "Textil hogar",
    "d": 34,
@@ -4471,6 +4482,18 @@
  },
  "reserve": [
   {
+   "a": "B0CRT6HQ82",
+   "c": "Auriculares",
+   "e": "🎧",
+   "img": "https://m.media-amazon.com/images/I/51vqMmvB4-L._AC_UL320_.jpg",
+   "n": 17400,
+   "op": 99.99,
+   "p": 63.99,
+   "r": 4.4,
+   "t": "2026-11-26T18:01:05.764618+00:00",
+   "title": "Anker Soundcore Sport X20 Auriculares Deportivos con Cancelación de Ruido"
+  },
+  {
    "a": "B0DJGZVS99",
    "c": "Gatos",
    "e": "🐱",
@@ -4507,6 +4530,6 @@
  "tg_offset": 511048157,
  "x_copy": {
   "day": "2026-11-26",
-  "n": 22
+  "n": 23
  }
 }
