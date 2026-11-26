@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-26T16:59:59.810204+00:00",
+ "next_at": "2026-11-26T17:30:47.427975+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -3727,17 +3727,6 @@
    "title": "Ninja BlendBoss, Batidora de Vaso Portátil, Color Piedra",
    "v": []
   },
-  "B0G6BMWHYN": {
-   "c": "Cámaras de seguridad",
-   "d": 24,
-   "e": "📹",
-   "m": 243,
-   "p": 75.95,
-   "s": "ambas",
-   "t": "2026-11-12T16:46:11.511232+00:00",
-   "title": "Tapo C545D - Cámara de Vigilancia WiFi Exterior 360º, Doble Lente 2K, IA",
-   "v": []
-  },
   "B0G8HQHMDS": {
    "c": "Cafeteras",
    "d": 40,
@@ -4270,6 +4259,19 @@
    "u": "https://s.click.aliexpress.com/e/_c3yd0m8l",
    "v": []
   },
+  "ae:1005012807963036": {
+   "auto": true,
+   "c": "",
+   "d": 10,
+   "e": "",
+   "m": 660,
+   "p": 350.79,
+   "st": "ALIEXPRESS",
+   "t": "2026-11-26T17:01:07.425795+00:00",
+   "title": "Versión Global Xiaomi Redmi Note 15 Pro Plus 5G NFC Teléfono Celular Redmi Note 15 Pro+ Pantalla AMOLED de 6.83'' Snapdragon 7S Gen 4 Cámara de 200MP Smartphone",
+   "u": "https://s.click.aliexpress.com/e/_c33fMi8Z",
+   "v": []
+  },
   "ae:1005013072345390": {
    "c": "",
    "d": 50,
@@ -4505,6 +4507,6 @@
  "tg_offset": 511048157,
  "x_copy": {
   "day": "2026-11-26",
-  "n": 20
+  "n": 21
  }
 }
