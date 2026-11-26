@@ -1,7 +1,7 @@
 {
  "cats": {
   "Accesorios de coche": "2026-11-25T16:01:12.511497+00:00",
-  "Accesorios de móvil": "2026-11-24T21:05:36.253651+00:00",
+  "Accesorios de móvil": "2026-11-26T21:15:40.564504+00:00",
   "Afeitado y depilación": "2026-11-26T08:01:06.074359+00:00",
   "Almacenamiento": "2026-11-26T11:30:57.919122+00:00",
   "Altavoces": "2026-11-25T16:30:57.642581+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-26T21:13:05.416330+00:00",
+ "next_at": "2026-11-26T21:45:29.430491+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -244,17 +244,6 @@
    "s": "busqueda",
    "t": "2026-11-22T11:01:34.302306+00:00",
    "title": "Logitech K120 Teclado con Cable Business para Windows",
-   "v": []
-  },
-  "B0057ED9AM": {
-   "c": "Nutrición deportiva",
-   "d": 30,
-   "e": "💪",
-   "m": 249,
-   "p": 20.93,
-   "s": "ofertas",
-   "t": "2026-11-12T21:06:04.878599+00:00",
-   "title": "ESN Creatina Monohidrato Ultrapura, 500 g, 142 porciones",
    "v": []
   },
   "B005BFCNYU": {
@@ -2182,6 +2171,17 @@
    "s": "ambas",
    "t": "2026-11-23T21:16:13.496235+00:00",
    "title": "Auriculares Inalámbricos Bluetooth, Auriculares Bluetooth 5.3, HiFi Estéreo",
+   "v": []
+  },
+  "B0BDKJFRX4": {
+   "c": "Accesorios de móvil",
+   "d": 27,
+   "e": "🤳",
+   "m": 668,
+   "p": 7.29,
+   "s": "busqueda",
+   "t": "2026-11-26T21:18:38.260506+00:00",
+   "title": "ProCase Protector de Pantalla 2 Piezas iPad A16 11ª/10ª Gen 2025/2022",
    "v": []
   },
   "B0BF54SNKB": {
@@ -4517,18 +4517,6 @@
    "r": 4.4,
    "t": "2026-11-26T18:45:39.384119+00:00",
    "title": "Thrustmaster SimTask FarmStick - Joystick Multifunción - PS5 y PC"
-  },
-  {
-   "a": "B0CRT6HQ82",
-   "c": "Auriculares",
-   "e": "🎧",
-   "img": "https://m.media-amazon.com/images/I/51vqMmvB4-L._AC_UL320_.jpg",
-   "n": 17400,
-   "op": 99.99,
-   "p": 63.99,
-   "r": 4.4,
-   "t": "2026-11-26T18:01:05.764618+00:00",
-   "title": "Anker Soundcore Sport X20 Auriculares Deportivos con Cancelación de Ruido"
   }
  ],
  "store_skip": {
@@ -4539,6 +4527,6 @@
  "tg_offset": 511048157,
  "x_copy": {
   "day": "2026-11-26",
-  "n": 28
+  "n": 29
  }
 }

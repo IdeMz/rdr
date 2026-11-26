@@ -2100,6 +2100,26 @@
     ]
    }
   },
+  "5905156109643": {
+   "a": "",
+   "t": "2026-11-26T21:15:40.564504+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "modelo": [
+     "AMZCHEF Placa de Inducción 60cm, 4 zonas (2 Flex 2-en-1), 7200W, 9 niveles",
+     "AMZCHEF Extractor de Zumos, Licuadora de Prensado en Frío con Boca de 160MM",
+     "AMZCHEF Extractor de Zumo Automático Multifuncional de 250W, 150MM de Apertura, Exprimidor de Frutas"
+    ],
+    "nombre": [
+     "AMZCHEF Placa de Inducción 60cm, 4 zonas (2 Flex 2-en-1), 7200W, 9 niveles",
+     "AMZCHEF Placa de Inducción 60 cm, 4 Zonas con 2 Flex, Boost 7200W",
+     "AMZCHEF Placa de inducción de 60 cm, 7200 W, 4 zonas, con zona flexible 2"
+    ]
+   }
+  },
   "619659205058": {
    "a": "B0C5SC2V95",
    "t": "2026-11-13T11:05:30.316413+00:00",
@@ -8139,6 +8159,33 @@
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
+  "46186024598": {
+   "ean": "5905156109643",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Placa de inducción Amzchef 7200W Negro CE-FS-I72S-FFDD06",
+   "pp_drop": 28,
+   "pp_median": 158.95,
+   "pp_price": 114.95,
+   "t": "2026-11-26T21:15:40.564504+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "modelo": [
+     "AMZCHEF Placa de Inducción 60cm, 4 zonas (2 Flex 2-en-1), 7200W, 9 niveles",
+     "AMZCHEF Extractor de Zumos, Licuadora de Prensado en Frío con Boca de 160MM",
+     "AMZCHEF Extractor de Zumo Automático Multifuncional de 250W, 150MM de Apertura, Exprimidor de Frutas"
+    ],
+    "nombre": [
+     "AMZCHEF Placa de Inducción 60cm, 4 zonas (2 Flex 2-en-1), 7200W, 9 niveles",
+     "AMZCHEF Placa de Inducción 60 cm, 4 Zonas con 2 Flex, Boost 7200W",
+     "AMZCHEF Placa de inducción de 60 cm, 7200 W, 4 zonas, con zona flexible 2"
+    ]
+   }
+  },
   "46186025333": {
    "ahorro_vs_amazon": -31,
    "amz_low30": null,
@@ -12035,10 +12082,10 @@
  "resumen": {
   "amazon_mas_barato": 25,
   "dudoso": 0,
-  "no_esta": 19,
+  "no_esta": 20,
   "oferta_real": 20,
   "pvpr_inflado": 4,
   "sin_precio": 9
  },
- "updated": "2026-11-26T20:45:45.883777+00:00"
+ "updated": "2026-11-26T21:15:40.564504+00:00"
 }
