@@ -470,6 +470,19 @@
     ]
    }
   },
+  "0630130439571": {
+   "a": "",
+   "t": "2026-11-26T20:15:39.035535+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "(sin resultados)"
+    ]
+   }
+  },
   "0681495009480": {
    "a": "B0CZXWGK79",
    "t": "2026-11-18T20:01:08.859046+00:00",
@@ -2213,6 +2226,21 @@
      "Oneisall Fuente de agua para gato de 3,5 L, inalámbrico, ABS/304 de acero",
      "oneisall Fuente para Gatos sin Cables, Fuente de 3,2L con Sensor",
      "FEELNEEDY 2.8L Fuente para Gatos Acero Inoxidable con 3 Filtros"
+    ]
+   }
+  },
+  "6934911797435": {
+   "a": "",
+   "t": "2026-11-26T20:15:39.035535+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Tribit StormBox Blast 2 Altavoz Bluetooth Potente, 200 W, subwoofer",
+     "Tribit StormBox Blast Altavoz Bluetooth Potente, 90 W, 30 Horas",
+     "Tribit StormBox Micro 2 Altavoz Bluetooth Portátil, 10 W, IP67 Impermeable"
     ]
    }
   },
@@ -7766,6 +7794,28 @@
    "v": 3,
    "veredicto": "sin_precio"
   },
+  "46146890207": {
+   "ean": "6934911797435",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Tribit Stormbox Blast 2 Negro 200W 30h IP67 luces LED entrada AUX Altavoz Bluetooth 5.4",
+   "pp_drop": 27,
+   "pp_median": 229.0,
+   "pp_price": 166.96,
+   "t": "2026-11-26T20:15:39.035535+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Tribit StormBox Blast 2 Altavoz Bluetooth Potente, 200 W, subwoofer",
+     "Tribit StormBox Blast Altavoz Bluetooth Potente, 90 W, 30 Horas",
+     "Tribit StormBox Micro 2 Altavoz Bluetooth Portátil, 10 W, IP67 Impermeable"
+    ]
+   }
+  },
   "46146890816": {
    "ahorro_vs_amazon": -13,
    "amz_low30": null,
@@ -8929,6 +8979,26 @@
    "t": "2026-11-24T17:30:51.708019+00:00",
    "v": 3,
    "veredicto": "pvpr_inflado"
+  },
+  "46239686184": {
+   "ean": "0630130439571",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Bublue Bubot 800P Bluesonic Path IA 150W Ilimitada (cable) Robot limpiapiscinas",
+   "pp_drop": 23,
+   "pp_median": 499.95,
+   "pp_price": 382.95,
+   "t": "2026-11-26T20:15:39.035535+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "(sin resultados)"
+    ]
+   }
   },
   "46239687126": {
    "ahorro_vs_amazon": -17,
@@ -11965,10 +12035,10 @@
  "resumen": {
   "amazon_mas_barato": 25,
   "dudoso": 0,
-  "no_esta": 17,
+  "no_esta": 19,
   "oferta_real": 20,
   "pvpr_inflado": 4,
   "sin_precio": 9
  },
- "updated": "2026-11-26T19:45:40.861388+00:00"
+ "updated": "2026-11-26T20:15:39.035535+00:00"
 }
