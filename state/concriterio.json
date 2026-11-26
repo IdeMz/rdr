@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-26T19:10:52.772362+00:00",
+ "next_at": "2026-11-26T19:42:07.754542+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -3045,17 +3045,6 @@
    "title": "BOTSLAB Dash Cam Delantera y Trasera, Kit de Cableado, 64 GB",
    "v": []
   },
-  "B0DT4R1N9N": {
-   "c": "Monitores",
-   "d": 34,
-   "e": "🖥️",
-   "m": 247,
-   "p": 119.0,
-   "s": "ambas",
-   "t": "2026-11-12T19:11:14.073041+00:00",
-   "title": "AOC Q27G42XE Gaming Monitor 27 Pulgadas 180Hz Panel Fast IPS, 1ms GtG, HDR10, G-Sync Compatible, Altavoces, (2560x1440 HDMI 2X 2.0 DP 1x 1.4) Negro",
-   "v": []
-  },
   "B0DTK2CLTX": {
    "c": "Fitness en casa",
    "d": 32,
@@ -4337,6 +4326,19 @@
    "u": "https://www.awin1.com/pclick.php?p=41644272430&a=3134713&m=77138",
    "v": []
   },
+  "pp:41887696311": {
+   "auto": true,
+   "c": "",
+   "d": 61,
+   "e": "",
+   "m": 664,
+   "p": 272.95,
+   "st": "POWERPLANET",
+   "t": "2026-11-26T19:15:44.271556+00:00",
+   "title": "Samsung Galaxy Watch8 Classic L505 46 mm LTE Negro 1,34 pulgadas AMOLED GPS 5ATM",
+   "u": "https://www.awin1.com/pclick.php?p=41887696311&a=3134713&m=77138",
+   "v": []
+  },
   "pp:41955007624": {
    "auto": true,
    "c": "",
@@ -4508,17 +4510,13 @@
   }
  ],
  "store_skip": {
-  "pp:37600255358": "2026-11-25T19:01:08.947456+00:00",
-  "pp:45227024753": "2026-11-25T16:30:57.642581+00:00",
   "pp:45992962768": "2026-11-26T14:01:04.437909+00:00",
-  "pp:46239685110": "2026-11-25T16:30:57.642581+00:00",
-  "pp:46599140756": "2026-11-25T19:01:08.947456+00:00",
-  "pp:46599143195": "2026-11-25T16:30:57.642581+00:00"
+  "pp:46599140756": "2026-11-26T19:15:44.271556+00:00"
  },
  "summary_day": "2026-11-25",
  "tg_offset": 511048157,
  "x_copy": {
   "day": "2026-11-26",
-  "n": 24
+  "n": 25
  }
 }
