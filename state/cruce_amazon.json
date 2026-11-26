@@ -7061,11 +7061,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Logitech G923 SE TrueForce Doble Motor PC/PS5/PS4 Force Feedback 2,3Nm Volante",
-   "pista": "890405 bytes; 0 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "879556 bytes; 0 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 19,
    "pp_median": 284.96,
    "pp_price": 231.94,
-   "t": "2026-11-25T04:05:29.435437+00:00",
+   "t": "2026-11-26T00:05:24.328327+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -11618,7 +11618,7 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-25T23:50:34.635931+00:00",
+ "night_at": "2026-11-26T00:05:24.328327+00:00",
  "resumen": {
   "amazon_mas_barato": 31,
   "dudoso": 0,
@@ -11627,5 +11627,5 @@
   "pvpr_inflado": 3,
   "sin_precio": 11
  },
- "updated": "2026-11-25T23:50:34.635931+00:00"
+ "updated": "2026-11-26T00:05:24.328327+00:00"
 }
