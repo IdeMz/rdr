@@ -7585,24 +7585,25 @@
    "veredicto": "amazon_mas_barato"
   },
   "46136341768": {
-   "ahorro_vs_amazon": 15,
+   "ahorro_vs_amazon": null,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 140.61,
+   "amz_price": null,
    "amz_title": "msi mag 274CF E20 Gaming Monitor 27 Pulgadas 1920 x 1080 (FHD), 200Hz, AMD FreeSync Premium, HDMI, DisplayPort, VESA, inclinación Ajustable, 0,5 ms, Negro",
    "asin": "B0GP9FF1RC",
    "disponible": true,
    "ean": "4711377343275",
    "encontrado_por": "modelo",
    "lista": "candidates",
-   "motivo": "15 % por debajo del habitual en Amazon (140.61)",
+   "motivo": "en Amazon pero sin precio o no disponible",
    "name": "MSI MAG 274CF X24 27 pulgadas Full HD Rapid VA 240Hz curvo Monitor",
+   "pista": "1298035 bytes; 7 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 24,
    "pp_median": 156.95,
    "pp_price": 119.0,
-   "t": "2026-11-24T04:35:30.220742+00:00",
+   "t": "2026-11-26T04:50:34.575261+00:00",
    "v": 3,
-   "veredicto": "oferta_real"
+   "veredicto": "sin_precio"
   },
   "46146890816": {
    "ahorro_vs_amazon": -13,
@@ -9664,11 +9665,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Monitor AOC 27 pulgadas 144Hz QHD IPS Negro Q27B36X",
-   "pista": "1788785 bytes; 9 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "2009830 bytes; 18 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 25,
    "pp_median": 145.95,
    "pp_price": 109.0,
-   "t": "2026-11-25T22:35:27.695284+00:00",
+   "t": "2026-11-26T04:50:34.575261+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -11618,14 +11619,14 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-26T04:20:38.791692+00:00",
+ "night_at": "2026-11-26T04:50:34.575261+00:00",
  "resumen": {
   "amazon_mas_barato": 31,
   "dudoso": 0,
   "no_esta": 20,
-  "oferta_real": 23,
+  "oferta_real": 22,
   "pvpr_inflado": 3,
-  "sin_precio": 11
+  "sin_precio": 12
  },
- "updated": "2026-11-26T04:20:38.791692+00:00"
+ "updated": "2026-11-26T04:50:34.575261+00:00"
 }
