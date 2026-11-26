@@ -44,7 +44,7 @@
   "Móviles": "2026-11-26T07:01:05.477452+00:00",
   "Nutrición deportiva": "2026-11-21T20:00:58.767855+00:00",
   "Oficina": "2026-11-25T20:45:41.682692+00:00",
-  "Patinetes": "2026-11-24T12:35:31.161899+00:00",
+  "Patinetes": "2026-11-26T16:01:04.848160+00:00",
   "Pequeño electrodoméstico": "2026-11-26T15:30:59.307083+00:00",
   "Perfumes": "2026-11-24T16:01:07.815808+00:00",
   "Periféricos": "2026-11-25T21:45:38.616662+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-26T16:00:52.140894+00:00",
+ "next_at": "2026-11-26T16:27:52.809886+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -167,6 +167,17 @@
    "s": "ambas",
    "t": "2026-11-17T11:01:42.805962+00:00",
    "title": "Julius-K9, Arnés IDC Power, Tamaño: L / 1, Rosa",
+   "v": []
+  },
+  "B00465S2PU": {
+   "c": "Patinetes",
+   "d": 18,
+   "e": "🛴",
+   "m": 658,
+   "p": 64.99,
+   "s": "ambas",
+   "t": "2026-11-26T16:01:30.722327+00:00",
+   "title": "HUDORA BigWheel Scooter 205 I Scooter Robusto de Aluminio I Scooter Urbano Regulable en Altura y Plegable I Scooter para niños y Adultos de hasta 100 kg I Scooter a Pedales con Pata de Cabra",
    "v": []
   },
   "B004NBZB2Y": {
@@ -3848,17 +3859,6 @@
    "title": "Xiaomi Redmi Watch 6, smartwatch hombre y mujer, 24 días, negro",
    "v": []
   },
-  "B0GQX6JT42": {
-   "c": "Accesorios de coche",
-   "d": 10,
-   "e": "🚗",
-   "m": 241,
-   "manual": true,
-   "p": 26.99,
-   "t": "2026-11-12T15:35:36.961465+00:00",
-   "title": "GKU Dashcam Kit de Cableado con 8 Fusibles, Puerto USB-C 3,2 Metros, 12V-24V a 5V/3A, Voltaje Ajustable 11,3 V y 13,5 V, Protección de Bajo Voltaje y Vigilancia de Estacionamiento para GKU Dash CAM",
-   "v": []
-  },
   "B0GR1SB84G": {
    "c": "Portátiles",
    "d": 10,
@@ -4529,6 +4529,6 @@
  "tg_offset": 511048157,
  "x_copy": {
   "day": "2026-11-26",
-  "n": 18
+  "n": 19
  }
 }
