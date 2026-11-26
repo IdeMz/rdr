@@ -2,7 +2,7 @@
  "cats": {
   "Accesorios de coche": "2026-11-25T16:01:12.511497+00:00",
   "Accesorios de móvil": "2026-11-24T21:05:36.253651+00:00",
-  "Afeitado y depilación": "2026-11-23T07:01:04.565029+00:00",
+  "Afeitado y depilación": "2026-11-26T08:01:06.074359+00:00",
   "Almacenamiento": "2026-11-23T16:01:16.579464+00:00",
   "Altavoces": "2026-11-25T16:30:57.642581+00:00",
   "Aspiradoras": "2026-11-25T17:01:09.744818+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-26T07:56:25.519834+00:00",
+ "next_at": "2026-11-26T08:28:45.741901+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2957,6 +2957,17 @@
    "title": "1TB NVMe PCIe 3.0x4 SSD 3500MB/s Para Mac Air 2013-2017",
    "v": []
   },
+  "B0DTTLWTQ6": {
+   "c": "Afeitado y depilación",
+   "d": 40,
+   "e": "🪒",
+   "m": 642,
+   "p": 29.99,
+   "s": "ambas",
+   "t": "2026-11-26T08:01:44.612043+00:00",
+   "title": "Gillette Fusion5 Cuchillas de Afeitar Hombre, Pack de 12",
+   "v": []
+  },
   "B0DV11JVBN": {
    "c": "Perfumes",
    "d": 37,
@@ -3483,17 +3494,6 @@
    "s": "busqueda",
    "t": "2026-11-22T16:31:26.231614+00:00",
    "title": "Tablet 10 Pulgadas Android 15 con Gemini AI, 30 GB RAM + Ampliable 2 TB ROM, Octa-Core, Widevine L1, 1280x800 HD, WiFi 5GHz, BT 5.0, Cámara 8 MP + 5 MP, 6000 mAh, con Teclado, Ratón y Funda – Negro",
-   "v": []
-  },
-  "B0FRRMD96F": {
-   "c": "Altavoces",
-   "d": 18,
-   "e": "🔊",
-   "m": 230,
-   "p": 27.99,
-   "s": "ambas",
-   "t": "2026-11-12T07:36:39.495153+00:00",
-   "title": "Anker soundcore 2 Altavoz Bluetooth Portátil 12 W, BassUp, IPX7(Beige)",
    "v": []
   },
   "B0FT3ZCKNG": {
@@ -4452,9 +4452,25 @@
   "B0G1NHVHPF": {
    "t": "2026-11-25T15:01:06.717368+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0GF9MXR7D": {
+   "t": "2026-11-26T08:01:06.074359+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
   }
  },
  "reserve": [
+  {
+   "a": "B08ZJLMNZS",
+   "c": "Afeitado y depilación",
+   "e": "🪒",
+   "img": "https://m.media-amazon.com/images/I/71SraH33iSL._AC_UL320_.jpg",
+   "n": 3700,
+   "op": 20.36,
+   "p": 16.78,
+   "r": 4.2,
+   "t": "2026-11-26T08:01:06.074359+00:00",
+   "title": "BIC Hybrid 5 Flex Maquinilla Recargable para Hombre, 1 Mango con Contrapeso y Recambios de Hojas Móviles Recubiertas de Titanio con Nanotecnología - Pack de 1+10"
+  },
   {
    "a": "B0H25WD25X",
    "c": "Droguería",
@@ -4497,6 +4513,6 @@
  "tg_offset": 511048157,
  "x_copy": {
   "day": "2026-11-26",
-  "n": 2
+  "n": 3
  }
 }
