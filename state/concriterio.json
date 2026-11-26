@@ -23,7 +23,7 @@
   "Cámaras de seguridad": "2026-11-25T17:30:57.888678+00:00",
   "Decoración navideña": "2026-11-24T15:30:53.979529+00:00",
   "Domótica": "2026-11-23T09:01:11.110279+00:00",
-  "Droguería": "2026-11-24T20:35:34.454164+00:00",
+  "Droguería": "2026-11-26T07:30:56.599929+00:00",
   "Fitness en casa": "2026-11-25T16:01:12.511497+00:00",
   "Fotografía": "2026-11-25T07:01:09.936457+00:00",
   "Freidoras de aire": "2026-11-23T18:01:07.710591+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-26T07:30:27.135343+00:00",
+ "next_at": "2026-11-26T07:56:25.519834+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -717,6 +717,17 @@
    "s": "ofertas",
    "t": "2026-11-19T18:18:10.633810+00:00",
    "title": "Neutrogena Rutina Hydro Boost, Gel de Agua 50 ml + Contorno de ojos 15 ml",
+   "v": []
+  },
+  "B078WTSHCF": {
+   "c": "Droguería",
+   "d": 50,
+   "e": "🧴",
+   "m": 641,
+   "p": 12.49,
+   "s": "ambas",
+   "t": "2026-11-26T07:31:27.377630+00:00",
+   "title": "Finish Power All in One, Pastillas para el lavavajillas todo en uno - 104",
    "v": []
   },
   "B079HFDPRF": {
@@ -1499,17 +1510,6 @@
    "s": "ofertas",
    "t": "2026-11-19T21:16:28.494035+00:00",
    "title": "VASAGLE Mesa de Consola, Tablero de Vidrio Templado, Marco de Metal",
-   "v": []
-  },
-  "B08JZ6MPF3": {
-   "c": "Suplementos",
-   "d": 37,
-   "e": "💊",
-   "m": 229,
-   "p": 12.63,
-   "s": "ambas",
-   "t": "2026-11-12T07:01:42.629400+00:00",
-   "title": "Moller’s ® | Cápsulas de omega 3 | Aceite de pescado | Suplemento dietético nórdico con omega 3 y EPA, DHA, vitaminas A, D y E | Marca con 166 años de historia | Daily Health | 112 cápsulas",
    "v": []
   },
   "B08NDSNVD4": {
@@ -4389,10 +4389,6 @@
    "t": "2026-11-25T18:30:56.405059+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B00GY2JCXE": {
-   "t": "2026-11-25T07:30:56.306804+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B00T4BHYLY": {
    "t": "2026-11-25T10:01:04.002472+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4456,13 +4452,21 @@
   "B0G1NHVHPF": {
    "t": "2026-11-25T15:01:06.717368+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0HHM2Z9GN": {
-   "t": "2026-11-19T07:01:21.085197+00:00",
-   "why": "alta hace 29 dias"
   }
  },
  "reserve": [
+  {
+   "a": "B0H25WD25X",
+   "c": "Droguería",
+   "e": "🧴",
+   "img": "https://m.media-amazon.com/images/I/81u5MAl9AGL._AC_UL320_.jpg",
+   "n": 98,
+   "op": 59.94,
+   "p": 35.96,
+   "r": 4.8,
+   "t": "2026-11-26T07:30:56.599929+00:00",
+   "title": "Fairy Platinum Cápsulas De Lavavajillas, Limón, 34 Cápsulas, Potente Incluso Con Los Restos De Comida Más Difíciles, Platos Limpios, Lavavajillas Brillante, Filtro Limpio Sinasa (Paquete de 6)"
+  },
   {
    "a": "B0FT8PMRW4",
    "c": "Móviles",
@@ -4493,6 +4497,6 @@
  "tg_offset": 511048157,
  "x_copy": {
   "day": "2026-11-26",
-  "n": 1
+  "n": 2
  }
 }
