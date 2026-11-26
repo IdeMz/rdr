@@ -8310,11 +8310,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Videojuego Bandai Namco Entertainment Elden Ring: Shadow of the Erdtree Xbox Series X",
-   "pista": "1075270 bytes; 6 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1119024 bytes; 6 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 37,
    "pp_median": 96.95,
    "pp_price": 60.95,
-   "t": "2026-11-25T23:35:26.842035+00:00",
+   "t": "2026-11-26T05:35:29.360171+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -11619,7 +11619,7 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-26T05:09:49.693601+00:00",
+ "night_at": "2026-11-26T05:35:29.360171+00:00",
  "resumen": {
   "amazon_mas_barato": 31,
   "dudoso": 0,
@@ -11628,5 +11628,5 @@
   "pvpr_inflado": 3,
   "sin_precio": 12
  },
- "updated": "2026-11-26T05:09:49.693601+00:00"
+ "updated": "2026-11-26T05:35:29.360171+00:00"
 }
