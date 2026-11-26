@@ -59,6 +59,22 @@
     ]
    }
   },
+  "0194644293307": {
+   "a": "",
+   "t": "2026-11-26T12:30:59.615384+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "eufy by Anker SoloCam S4 NVR PoE: 8 Canales (ampliables a 16), IA Local",
+     "eufy Security NVR PoE S4 + CAM E40 + CAM E41 (Lote)"
+    ],
+    "nombre": [
+     "Reolink 4K PoE NVR 8 Canales Sistema de Cámara Vigilancia IP, RLN8-410",
+     "ZOSI 4K 8MP Video Grabador NVR de Seguridad con 2TB Disco Duro para Grabación 24/7, Funciona con ZOS",
+     "Grabador N118W NVR 18 canales Wi-Fi 6. HDD hasta 16Tb. 4K - 90Mbps - Salida de vídeo HDMI y VGA. H.2"
+    ]
+   }
+  },
   "0195892018278": {
    "a": "B09S2B2QX2",
    "t": "2026-11-22T19:30:51.638631+00:00",
@@ -8422,7 +8438,7 @@
    "pp_drop": 47,
    "pp_median": 292.98,
    "pp_price": 153.95,
-   "t": "2026-11-24T12:01:19.033341+00:00",
+   "t": "2026-11-26T12:30:59.615384+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -10814,6 +10830,29 @@
     ]
    }
   },
+  "46599142776": {
+   "ean": "0194644293307",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Grabador de vídeo NVR Eufy S4 2TB 4K Negro/Gris",
+   "pp_drop": 37,
+   "pp_median": 749.0,
+   "pp_price": 471.99,
+   "t": "2026-11-26T12:30:59.615384+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "eufy by Anker SoloCam S4 NVR PoE: 8 Canales (ampliables a 16), IA Local",
+     "eufy Security NVR PoE S4 + CAM E40 + CAM E41 (Lote)"
+    ],
+    "nombre": [
+     "Reolink 4K PoE NVR 8 Canales Sistema de Cámara Vigilancia IP, RLN8-410",
+     "ZOSI 4K 8MP Video Grabador NVR de Seguridad con 2TB Disco Duro para Grabación 24/7, Funciona con ZOS",
+     "Grabador N118W NVR 18 canales Wi-Fi 6. HDD hasta 16Tb. 4K - 90Mbps - Salida de vídeo HDMI y VGA. H.2"
+    ]
+   }
+  },
   "46599142905": {
    "ean": "0622356272551",
    "lista": "candidates",
@@ -11697,10 +11736,10 @@
  "resumen": {
   "amazon_mas_barato": 22,
   "dudoso": 0,
-  "no_esta": 13,
+  "no_esta": 14,
   "oferta_real": 18,
   "pvpr_inflado": 4,
   "sin_precio": 10
  },
- "updated": "2026-11-26T12:01:05.059758+00:00"
+ "updated": "2026-11-26T12:30:59.615384+00:00"
 }

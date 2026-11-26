@@ -11,7 +11,7 @@
   "Bebé": "2026-11-25T19:15:38.789832+00:00",
   "Bricolaje": "2026-11-25T18:01:11.294449+00:00",
   "Cafeteras": "2026-11-24T19:35:37.316644+00:00",
-  "Café y cápsulas": "2026-11-25T08:01:01.356229+00:00",
+  "Café y cápsulas": "2026-11-26T12:30:59.615384+00:00",
   "Camping y montaña": "2026-11-25T10:01:04.002472+00:00",
   "Cargadores y baterías": "2026-11-26T09:30:58.520121+00:00",
   "Ciclismo": "2026-11-25T09:30:55.349814+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-26T12:29:37.617511+00:00",
+ "next_at": "2026-11-26T12:56:47.373163+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -145,6 +145,17 @@
    "s": "ambas",
    "t": "2026-11-20T07:31:35.919257+00:00",
    "title": "PADDED PAK'R Mochila, 24 L - Sunday Grey (Gris)",
+   "v": []
+  },
+  "B003XUCSNQ": {
+   "c": "Café y cápsulas",
+   "d": 32,
+   "e": "🫘",
+   "m": 651,
+   "p": 13.89,
+   "s": "ambas",
+   "t": "2026-11-26T12:31:27.901133+00:00",
+   "title": "Marcilla Gran Aroma Café en Grano Mezcla | 1000g",
    "v": []
   },
   "B0041W2VIM": {
@@ -2237,17 +2248,6 @@
    "s": "ambas",
    "t": "2026-11-19T08:36:02.214919+00:00",
    "title": "Amazon Echo Spot (última generación) | Despertador inteligente con sonido de calidad| Negro, con Acceso Anticipado a Alexa+",
-   "v": []
-  },
-  "B0C3HCD34R": {
-   "c": "Auriculares",
-   "d": 40,
-   "e": "🎧",
-   "m": 238,
-   "p": 29.99,
-   "s": "ofertas",
-   "t": "2026-11-12T12:21:20.635700+00:00",
-   "title": "soundcore Q20i de Anker Cascos Bluetooth con ANC Híbrida, Hi-Res, 40H",
    "v": []
   },
   "B0C4L6ZGLD": {
@@ -4420,10 +4420,6 @@
    "t": "2026-11-25T15:01:06.717368+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B094WLFGD3": {
-   "t": "2026-11-25T12:30:56.628057+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0B5PJ41ZT": {
    "t": "2026-11-25T15:01:06.717368+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4524,6 +4520,6 @@
  "tg_offset": 511048157,
  "x_copy": {
   "day": "2026-11-26",
-  "n": 11
+  "n": 12
  }
 }
