@@ -37,7 +37,7 @@
   "Juguetes": "2026-11-24T13:05:37.513094+00:00",
   "Lego": "2026-11-25T11:01:10.670462+00:00",
   "Limpieza del hogar": "2026-11-24T07:31:06.167251+00:00",
-  "Maquillaje": "2026-11-24T21:35:33.439110+00:00",
+  "Maquillaje": "2026-11-26T10:30:55.810022+00:00",
   "Menaje de cocina": "2026-11-24T17:01:06.823751+00:00",
   "Mochilas y maletas": "2026-11-24T17:30:51.708019+00:00",
   "Monitores": "2026-11-25T20:15:53.484095+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-26T10:26:28.836552+00:00",
+ "next_at": "2026-11-26T10:57:21.387283+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -893,17 +893,6 @@
    "s": "ofertas",
    "t": "2026-11-22T13:01:47.311314+00:00",
    "title": "MjAMjAM - comida húmeda premium para perros - Mixpaket II - con pollo y pato, ternera, pavo, ternera, pavo, cordero, pack de 6 (6 x 400 g), natural con extra de carne",
-   "v": []
-  },
-  "B07GS6ZB7T": {
-   "c": "Periféricos",
-   "d": 52,
-   "e": "⌨️",
-   "m": 234,
-   "p": 28.78,
-   "s": "ofertas",
-   "t": "2026-11-12T10:01:34.650708+00:00",
-   "title": "Logitech G G502 Hero Ratón Gaming con Cable, 25,600 dpi, Negro",
    "v": []
   },
   "B07HGFBXT8": {
@@ -2359,6 +2348,17 @@
    "s": "busqueda",
    "t": "2026-11-21T12:01:41.482146+00:00",
    "title": "Bestier Escritorio en Forma de L con Tomas de Corriente y Luces LED, Escritorio Esquinero con Estantes, Reversible para Ordenador para el Hogar, Oficina, Dormitorio, Espacio Pequeño, 106,5 cm",
+   "v": []
+  },
+  "B0CHYK6KT7": {
+   "c": "Maquillaje",
+   "d": 37,
+   "e": "💄",
+   "m": 647,
+   "p": 9.43,
+   "s": "ambas",
+   "t": "2026-11-26T10:31:37.127058+00:00",
+   "title": "KIKO Milano Maxi Mod Mascara",
    "v": []
   },
   "B0CJZF9VBD": {
@@ -4400,6 +4400,10 @@
    "t": "2026-11-25T18:30:56.405059+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B00T0C9XRK": {
+   "t": "2026-11-26T10:30:55.810022+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B00X9TZ0RC": {
    "t": "2026-11-25T15:01:06.717368+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4426,6 +4430,10 @@
   },
   "B0B5PJ41ZT": {
    "t": "2026-11-25T15:01:06.717368+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0C78G8ZPR": {
+   "t": "2026-11-26T10:30:55.810022+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0CFVZ74KT": {
@@ -4520,6 +4528,6 @@
  "tg_offset": 511048157,
  "x_copy": {
   "day": "2026-11-26",
-  "n": 7
+  "n": 8
  }
 }
