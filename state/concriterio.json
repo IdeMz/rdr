@@ -34,7 +34,7 @@
   "Iluminación": "2026-11-26T12:01:05.059758+00:00",
   "Impresoras": "2026-11-21T12:30:56.768648+00:00",
   "Jardín": "2026-11-24T14:30:59.149182+00:00",
-  "Juguetes": "2026-11-24T13:05:37.513094+00:00",
+  "Juguetes": "2026-11-26T13:30:53.798593+00:00",
   "Lego": "2026-11-25T11:01:10.670462+00:00",
   "Limpieza del hogar": "2026-11-24T07:31:06.167251+00:00",
   "Maquillaje": "2026-11-26T10:30:55.810022+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-26T13:26:16.594647+00:00",
+ "next_at": "2026-11-26T13:58:10.124779+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2471,6 +2471,17 @@
    "title": "PANTUM M7108DW Impresora Multifunción Láser, 33ppm Impresión Automática a Doble Cara, impresión/Copia/escaneado, Blanco y Negro(A4, Wi-Fi Direct, Bluetooth, USB, AirPrint, Mopria)",
    "v": []
   },
+  "B0CP481DTZ": {
+   "c": "Juguetes",
+   "d": 55,
+   "e": "🧸",
+   "m": 653,
+   "p": 13.49,
+   "s": "ofertas",
+   "t": "2026-11-26T13:31:19.641049+00:00",
+   "title": "Hasbro Spidey and His Amazing Friends Pack de Amigos y Enemigos de Spidey, 5 Figuras de Acción de Superhéroes y Villanos de 10 cm, Juguete de Superhéroes, Niños y Niñas de 3 Años o Más",
+   "v": []
+  },
   "B0CQ53RVTW": {
    "c": "Altavoces",
    "d": 38,
@@ -4527,6 +4538,6 @@
  "tg_offset": 511048157,
  "x_copy": {
   "day": "2026-11-26",
-  "n": 13
+  "n": 14
  }
 }

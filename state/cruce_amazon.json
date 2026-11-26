@@ -129,6 +129,13 @@
    "v": 3,
    "via": "nombre"
   },
+  "0196388499953": {
+   "a": "B0FR2NBQWD",
+   "t": "2026-11-26T13:30:53.798593+00:00",
+   "title": "Microsoft Surface Pro For Business - 12-Inch - Tablet - Snapdragon X Plus X1P-42-100 / 3.2 Ghz - Win 11 Pro - Qualcomm Adreno - 24 Gb Ram - 1 Tb Ssd",
+   "v": 3,
+   "via": "ean"
+  },
   "0196388684168": {
    "a": "B0HKFGMNMV",
    "t": "2026-11-24T21:35:33.439110+00:00",
@@ -2967,6 +2974,13 @@
    "t": "2026-11-13T22:35:19.548446+00:00",
    "title": "CORSAIR K55 CORE RGB Teclado de Membrana con Cable Para Juegos – Negro",
    "via": "ean"
+  },
+  "840006681410": {
+   "a": "B0CNY34TS1",
+   "t": "2026-11-26T13:30:53.798593+00:00",
+   "title": "Corsair K55 CORE Teclado para juegos con membrana RGB, interruptores silenciosos y receptivos - Resistencia a derrames - RGB de 10 zonas - teclas multimedia - C",
+   "v": 3,
+   "via": "nombre"
   },
   "840006684367": {
    "a": "B0DG385QD8",
@@ -6359,6 +6373,26 @@
    "pp_price": 552.95,
    "t": "2026-11-15T14:01:02.981281+00:00",
    "veredicto": "oferta_real"
+  },
+  "45948306649": {
+   "ahorro_vs_amazon": -4,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 49.13,
+   "amz_title": "Corsair K55 CORE Teclado para juegos con membrana RGB, interruptores silenciosos y receptivos - Resistencia a derrames - RGB de 10 zonas - teclas multimedia - C",
+   "asin": "B0CNY34TS1",
+   "disponible": true,
+   "ean": "840006681410",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "Amazon 49.13 frente a 50.95",
+   "name": "Corsair K55 Core RGB 10 zonas Portugués Teclado gaming",
+   "pp_drop": 50,
+   "pp_median": 100.95,
+   "pp_price": 50.95,
+   "t": "2026-11-26T13:30:53.798593+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
   },
   "45948306665": {
    "ahorro_vs_amazon": 13,
@@ -10968,6 +11002,26 @@
    "t": "2026-11-14T04:20:27.040644+00:00",
    "veredicto": "dudoso"
   },
+  "46599143189": {
+   "ahorro_vs_amazon": -2,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 1449.9,
+   "amz_title": "Microsoft Surface Pro For Business - 12-Inch - Tablet - Snapdragon X Plus X1P-42-100 / 3.2 Ghz - Win 11 Pro - Qualcomm Adreno - 24 Gb Ram - 1 Tb Ssd",
+   "asin": "B0FR2NBQWD",
+   "disponible": true,
+   "ean": "0196388499953",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 1449.90 frente a 1483.94",
+   "name": "Microsoft Surface Pro 12 pulgadas Snapdragon X Plus 24GB/1TB LCD PixelSense 90Hz Táctil 38,8Wh 16h WiFi 7 Platino",
+   "pp_drop": 27,
+   "pp_median": 2034.01,
+   "pp_price": 1483.94,
+   "t": "2026-11-26T13:30:53.798593+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "46599143195": {
    "ahorro_vs_amazon": 18,
    "amz_low30": null,
@@ -11781,12 +11835,12 @@
  },
  "night_at": "2026-11-26T06:50:34.193285+00:00",
  "resumen": {
-  "amazon_mas_barato": 22,
+  "amazon_mas_barato": 24,
   "dudoso": 0,
   "no_esta": 15,
   "oferta_real": 18,
   "pvpr_inflado": 4,
   "sin_precio": 10
  },
- "updated": "2026-11-26T13:01:08.844723+00:00"
+ "updated": "2026-11-26T13:30:53.798593+00:00"
 }
