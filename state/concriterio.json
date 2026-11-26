@@ -41,7 +41,7 @@
   "Menaje de cocina": "2026-11-24T17:01:06.823751+00:00",
   "Mochilas y maletas": "2026-11-24T17:30:51.708019+00:00",
   "Monitores": "2026-11-25T20:15:53.484095+00:00",
-  "Móviles": "2026-11-23T15:30:54.461995+00:00",
+  "Móviles": "2026-11-26T07:01:05.477452+00:00",
   "Nutrición deportiva": "2026-11-21T20:00:58.767855+00:00",
   "Oficina": "2026-11-25T20:45:41.682692+00:00",
   "Patinetes": "2026-11-24T12:35:31.161899+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-25T22:12:14.492478+00:00",
+ "next_at": "2026-11-26T07:30:27.135343+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -4124,6 +4124,17 @@
    "title": "Reloj Inteligente Hombre Mujer, 1.95\" Smartwatches Reloj Deporte con Funciún Llamadas y Mensajes Bluetooth, 110+ Deportivos SmartWatch con Podómetro/Pulsómetro/Monitor de Sueño, IP68 Pulsera Actividad",
    "v": []
   },
+  "B0HJ1V5P7Z": {
+   "c": "Móviles",
+   "d": 35,
+   "e": "📱",
+   "m": 640,
+   "p": 169.99,
+   "s": "ofertas",
+   "t": "2026-11-26T07:01:42.097491+00:00",
+   "title": "HOTWAV T8 Móvil Irrompible Android 16, 12GB RAM + 128GB ROM",
+   "v": []
+  },
   "ae:1005005212504555": {
    "auto": true,
    "c": "",
@@ -4453,40 +4464,16 @@
  },
  "reserve": [
   {
-   "a": "B0F227Q92B",
-   "c": "Televisores",
-   "e": "📺",
-   "img": "https://m.media-amazon.com/images/I/71UgTKuqOrL._AC_UL320_.jpg",
-   "n": 210,
-   "op": 289.0,
-   "p": 232.0,
+   "a": "B0FT8PMRW4",
+   "c": "Móviles",
+   "e": "📱",
+   "img": "https://m.media-amazon.com/images/I/616gwh5LgOL._AC_UL320_.jpg",
+   "n": 641,
+   "op": 199.55,
+   "p": 172.5,
    "r": 4.3,
-   "t": "2026-11-25T21:15:41.908814+00:00",
-   "title": "LG 32LR60006LA - TV 32\" FHD (80 cm), Smart TV webOS 23, Procesador α5 AI Gen6, HDR10/HLG, Dolby Digital Plus, AI Sound, Google Assistant, Apple AirPlay, ThinQ, HDMI, USB, Bluetooth, Wi-Fi"
-  },
-  {
-   "a": "B0FWCLJ51V",
-   "c": "Monitores",
-   "e": "🖥️",
-   "img": "https://m.media-amazon.com/images/I/71ixHRkWm8L._AC_UL320_.jpg",
-   "n": 58,
-   "op": 171.99,
-   "p": 129.0,
-   "r": 4.7,
-   "t": "2026-11-25T20:15:53.484095+00:00",
-   "title": "MSI Pro MP275QA E14 de 27\" WQHD, 2560 x 1440 IPS, 144 Hz, 1 ms, Compatible con HDR, Adaptive-Sync, Eye-Care, Altavoz Integrado, HDMI 2.0b, DP 1.2a, sin Marco, inclinación Ajustable, Negro"
-  },
-  {
-   "a": "B0D6S1BY13",
-   "c": "Bebé",
-   "e": "🍼",
-   "img": "https://m.media-amazon.com/images/I/615Sl1yi9-L._AC_UL320_.jpg",
-   "n": 262,
-   "op": 49.99,
-   "p": 38.17,
-   "r": 4.5,
-   "t": "2026-11-25T19:15:38.789832+00:00",
-   "title": "Nattou Pañal Dropy, A prueba de olores, Fácil de abrir con una mano, 49,5 x 28 cm, Polipropileno/ABS, Topo"
+   "t": "2026-11-26T07:01:05.477452+00:00",
+   "title": "Samsung SM-A175 A17 4+128GB 6.7\" 4G Black DS ITA"
   }
  ],
  "store_skip": {
@@ -4505,7 +4492,7 @@
  "summary_day": "2026-11-25",
  "tg_offset": 511048157,
  "x_copy": {
-  "day": "2026-11-25",
-  "n": 30
+  "day": "2026-11-26",
+  "n": 1
  }
 }
