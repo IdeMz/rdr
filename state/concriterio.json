@@ -19,7 +19,7 @@
   "Colchones y almohadas": "2026-11-24T16:30:59.602669+00:00",
   "Componentes PC": "2026-11-25T10:01:04.002472+00:00",
   "Cuidado de la piel": "2026-11-25T15:01:06.717368+00:00",
-  "Cuidado del cabello": "2026-11-22T18:30:51.920701+00:00",
+  "Cuidado del cabello": "2026-11-26T08:30:56.405277+00:00",
   "Cámaras de seguridad": "2026-11-25T17:30:57.888678+00:00",
   "Decoración navideña": "2026-11-24T15:30:53.979529+00:00",
   "Domótica": "2026-11-23T09:01:11.110279+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-26T08:28:45.741901+00:00",
+ "next_at": "2026-11-26T08:59:10.131838+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1302,6 +1302,17 @@
    "title": "Wilkinson Sword Intuition Complete - Cuchillas de afeitar para mujer (3 unidades)",
    "v": []
   },
+  "B084QXY478": {
+   "c": "Cuidado del cabello",
+   "d": 41,
+   "e": "💇",
+   "m": 643,
+   "p": 136.0,
+   "s": "busqueda",
+   "t": "2026-11-26T08:31:30.489184+00:00",
+   "title": "ghd Helios - Secador de Pelo Profesional Iónico - Más ligero, Más rápido",
+   "v": []
+  },
   "B084QZ2RSL": {
    "c": "Cuidado del cabello",
    "d": 53,
@@ -1510,17 +1521,6 @@
    "s": "ofertas",
    "t": "2026-11-19T21:16:28.494035+00:00",
    "title": "VASAGLE Mesa de Consola, Tablero de Vidrio Templado, Marco de Metal",
-   "v": []
-  },
-  "B08NDSNVD4": {
-   "c": "Almacenamiento",
-   "d": 19,
-   "e": "💾",
-   "m": 231,
-   "p": 112.99,
-   "s": "busqueda",
-   "t": "2026-11-12T08:11:27.235153+00:00",
-   "title": "WD_BLACK P10 2TB Game Drive for Xbox One para obtener acceso a su colección de juegos de Xbox en cualquier lugar",
    "v": []
   },
   "B08PVDQFQQ": {
@@ -4513,6 +4513,6 @@
  "tg_offset": 511048157,
  "x_copy": {
   "day": "2026-11-26",
-  "n": 3
+  "n": 4
  }
 }
