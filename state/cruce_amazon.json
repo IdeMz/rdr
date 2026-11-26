@@ -9427,11 +9427,11 @@
    "lista": "to_verify",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Impresora fotográfica Canon SELPHY QX20 Color WiFi Blanco",
-   "pista": "2226043 bytes; 16 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "2225599 bytes; 17 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 58,
    "pp_median": 323.95,
    "pp_price": 136.95,
-   "t": "2026-11-26T10:30:55.810022+00:00",
+   "t": "2026-11-26T16:31:04.591910+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -10733,25 +10733,24 @@
    "veredicto": "sin_precio"
   },
   "46599142076": {
-   "ahorro_vs_amazon": null,
+   "ahorro_vs_amazon": -56,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": null,
+   "amz_price": 96.99,
    "amz_title": "Moulinex Freidora de aire Easy Fry XL Surface 4L, AL402HF0, gris",
    "asin": "B0FW4ZFT3W",
    "disponible": true,
    "ean": "3045380027114",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "en Amazon pero sin precio o no disponible",
+   "motivo": "Amazon 96.99 frente a 150.95",
    "name": "Moulinex Easy Fry XL Surface 4L 2200W 10 programas Gris AL402H pantalla táctil Freidora de aire",
-   "pista": "1469987 bytes; 14 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 33,
    "pp_median": 225.96,
    "pp_price": 150.95,
-   "t": "2026-11-26T10:01:05.790556+00:00",
+   "t": "2026-11-26T16:31:04.591910+00:00",
    "v": 3,
-   "veredicto": "sin_precio"
+   "veredicto": "amazon_mas_barato"
   },
   "46599142100": {
    "ahorro_vs_amazon": -3,
@@ -11863,12 +11862,12 @@
  },
  "night_at": "2026-11-26T06:50:34.193285+00:00",
  "resumen": {
-  "amazon_mas_barato": 24,
+  "amazon_mas_barato": 25,
   "dudoso": 0,
   "no_esta": 15,
   "oferta_real": 19,
   "pvpr_inflado": 4,
-  "sin_precio": 10
+  "sin_precio": 9
  },
- "updated": "2026-11-26T16:01:04.848160+00:00"
+ "updated": "2026-11-26T16:31:04.591910+00:00"
 }

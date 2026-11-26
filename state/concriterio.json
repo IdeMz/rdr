@@ -22,7 +22,7 @@
   "Cuidado del cabello": "2026-11-26T08:30:56.405277+00:00",
   "Cámaras de seguridad": "2026-11-25T17:30:57.888678+00:00",
   "Decoración navideña": "2026-11-24T15:30:53.979529+00:00",
-  "Domótica": "2026-11-23T09:01:11.110279+00:00",
+  "Domótica": "2026-11-26T16:31:04.591910+00:00",
   "Droguería": "2026-11-26T07:30:56.599929+00:00",
   "Fitness en casa": "2026-11-25T16:01:12.511497+00:00",
   "Fotografía": "2026-11-26T10:01:05.790556+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-26T16:27:52.809886+00:00",
+ "next_at": "2026-11-26T16:59:59.810204+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1798,6 +1798,17 @@
    "title": "VRURC Bateria Externa 20000mAh Carga Rapida Powerbank con 4 Cable Integrado",
    "v": []
   },
+  "B09B2S8WKD": {
+   "c": "Domótica",
+   "d": 46,
+   "e": "💡",
+   "m": 659,
+   "p": 64.99,
+   "s": "ambas",
+   "t": "2026-11-26T16:31:31.474106+00:00",
+   "title": "Echo Show 5 (Última generación) | Pantalla táctil inteligente diseñada para controlar tus dispositivos de Hogar digital y más | Antracita, con Acceso Anticipado a Alexa+",
+   "v": []
+  },
   "B09B82GM22": {
    "c": "Oficina",
    "d": 49,
@@ -2669,17 +2680,6 @@
    "s": "ambas",
    "t": "2026-11-21T07:31:34.676546+00:00",
    "title": "Ultimate Ears WONDERBOOM 4, altavoz Bluetooth portátil resistente al agua",
-   "v": []
-  },
-  "B0D4TXJTXQ": {
-   "c": "Domótica",
-   "d": 32,
-   "e": "💡",
-   "m": 242,
-   "p": 20.51,
-   "s": "ofertas",
-   "t": "2026-11-12T16:11:30.507516+00:00",
-   "title": "Lepro BP1 AI Bombilla LED E14, G45 Bombilla Inteligente Alexa 2Pcs",
    "v": []
   },
   "B0D6QNPBSC": {
@@ -4458,20 +4458,8 @@
    "t": "2026-11-26T11:30:57.919122+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0D9JFQS7P": {
-   "t": "2026-11-25T16:01:12.511497+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0DB26KDSF": {
    "t": "2026-11-26T09:30:58.520121+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0DG3T1K2W": {
-   "t": "2026-11-25T16:01:12.511497+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0DQ54YKH9": {
-   "t": "2026-11-25T16:01:12.511497+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0GF9MXR7D": {
@@ -4503,18 +4491,6 @@
    "r": 4.4,
    "t": "2026-11-26T14:30:54.648040+00:00",
    "title": "MIULEE Cortinas Salon Modernas con Ojales 2 Piezas Blanco 140x245 cm"
-  },
-  {
-   "a": "B0842871RM",
-   "c": "Camping y montaña",
-   "e": "🏕️",
-   "img": "https://m.media-amazon.com/images/I/41UVel4tkGL._AC_UL320_.jpg",
-   "n": 537,
-   "op": 78.0,
-   "p": 52.95,
-   "r": 4.2,
-   "t": "2026-11-26T13:01:08.844723+00:00",
-   "title": "Grand Canyon Richmond 1 - Tienda de Trekking (1 Tienda unipersonal)"
   }
  ],
  "store_skip": {
@@ -4529,6 +4505,6 @@
  "tg_offset": 511048157,
  "x_copy": {
   "day": "2026-11-26",
-  "n": 19
+  "n": 20
  }
 }
