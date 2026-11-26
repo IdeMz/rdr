@@ -7238,22 +7238,22 @@
    "veredicto": "oferta_real"
   },
   "45992963538": {
-   "ahorro_vs_amazon": 20,
+   "ahorro_vs_amazon": 18,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 500.15,
+   "amz_price": 490.15,
    "amz_title": "Xiaomi Router BE19000 Pro EU",
    "asin": "B0HN2ZFG5K",
    "disponible": true,
    "ean": "6941948709614",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "20 % por debajo del habitual en Amazon (500.15)",
+   "motivo": "18 % por debajo del habitual en Amazon (490.15)",
    "name": "Xiaomi BE19000 Pro WiFi 7 Triple Banda USB 3.0 Router",
    "pp_drop": 17,
    "pp_median": 479.0,
    "pp_price": 399.95,
-   "t": "2026-11-24T00:35:26.329902+00:00",
+   "t": "2026-11-26T00:35:29.231157+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -10153,11 +10153,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Monitor Acer CB243Y E 23,8 pulgadas Full HD IPS 1 ms HDR10 Negro",
-   "pista": "979031 bytes; 3 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "980837 bytes; 3 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 25,
    "pp_median": 255.95,
    "pp_price": 190.95,
-   "t": "2026-11-25T18:30:56.405059+00:00",
+   "t": "2026-11-26T00:35:29.231157+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -11618,7 +11618,7 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-26T00:20:36.495830+00:00",
+ "night_at": "2026-11-26T00:35:29.231157+00:00",
  "resumen": {
   "amazon_mas_barato": 31,
   "dudoso": 0,
@@ -11627,5 +11627,5 @@
   "pvpr_inflado": 3,
   "sin_precio": 11
  },
- "updated": "2026-11-26T00:20:36.495830+00:00"
+ "updated": "2026-11-26T00:35:29.231157+00:00"
 }
