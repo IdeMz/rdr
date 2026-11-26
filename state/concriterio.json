@@ -13,7 +13,7 @@
   "Cafeteras": "2026-11-24T19:35:37.316644+00:00",
   "Café y cápsulas": "2026-11-25T08:01:01.356229+00:00",
   "Camping y montaña": "2026-11-25T10:01:04.002472+00:00",
-  "Cargadores y baterías": "2026-11-24T12:01:19.033341+00:00",
+  "Cargadores y baterías": "2026-11-26T09:30:58.520121+00:00",
   "Ciclismo": "2026-11-25T09:30:55.349814+00:00",
   "Climatización": "2026-11-24T18:35:37.637788+00:00",
   "Colchones y almohadas": "2026-11-24T16:30:59.602669+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-26T09:27:54.439459+00:00",
+ "next_at": "2026-11-26T09:59:43.181100+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1972,6 +1972,17 @@
    "s": "ambas",
    "t": "2026-11-23T15:31:52.099834+00:00",
    "title": "SMALLRIG Trípode/monopié para cámara de 72\", Carga Máxima 15kg - 3935",
+   "v": []
+  },
+  "B0B2VQ462Z": {
+   "c": "Cargadores y baterías",
+   "d": 38,
+   "e": "🔌",
+   "m": 645,
+   "p": 9.99,
+   "s": "ambas",
+   "t": "2026-11-26T09:31:31.735706+00:00",
+   "title": "Anker 511 Nano 3 Cargador USB-C GaN 30W Carga Rapida",
    "v": []
   },
   "B0B3RZDXLT": {
@@ -4036,17 +4047,6 @@
    "title": "Reloj Inteligente Hombre con Llamadas con Linterna y Brújula, 960mAh Batería 1.45\" Militar Smartwatch Hombre con,123 Modos Deporte,Monitor Cardíaco 24h/SpO2/Sueño,Podómetro,IP68,2Correas(iOS/Android)",
    "v": []
   },
-  "B0H7WSYTSX": {
-   "c": "Relojes",
-   "d": 25,
-   "e": "🕰️",
-   "m": 233,
-   "p": 11.99,
-   "s": "ofertas",
-   "t": "2026-11-12T09:21:34.610341+00:00",
-   "title": "Reloj Infantil Digital para Niños y Niñas de 4-16 Años",
-   "v": []
-  },
   "B0H8BM3745": {
    "c": "Proyectores",
    "d": 44,
@@ -4437,6 +4437,10 @@
    "t": "2026-11-25T16:01:12.511497+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0DB26KDSF": {
+   "t": "2026-11-26T09:30:58.520121+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0DG3T1K2W": {
    "t": "2026-11-25T16:01:12.511497+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4513,6 +4517,6 @@
  "tg_offset": 511048157,
  "x_copy": {
   "day": "2026-11-26",
-  "n": 5
+  "n": 6
  }
 }
