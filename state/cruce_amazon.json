@@ -1235,6 +1235,13 @@
    "title": "acer Nitro VG271U Pbmiipx 27 pulgadas WQHD (2560 x 1440) IPS AMD Radeon FREESYNC Monitor para juegos, 144 Hz, pantalla certificada VESA HDR400, DCI-P3, (2 puert",
    "via": "modelo"
   },
+  "4711121619854": {
+   "a": "B0CWQ6494G",
+   "t": "2026-11-26T18:45:39.384119+00:00",
+   "title": "Acer Business B8 B278Kbemiqprcuzx - UM.HB8EE.010",
+   "v": 3,
+   "via": "ean"
+  },
   "4711121760365": {
    "a": "B0CYNYJ3NR",
    "t": "2026-11-20T20:31:08.098759+00:00",
@@ -10201,6 +10208,26 @@
    "v": 3,
    "veredicto": "oferta_real"
   },
+  "46599140629": {
+   "ahorro_vs_amazon": 11,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 537.9,
+   "amz_title": "Acer Business B8 B278Kbemiqprcuzx - UM.HB8EE.010",
+   "asin": "B0CWQ6494G",
+   "disponible": true,
+   "ean": "4711121619854",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "11 % por debajo del habitual en Amazon (537.90)",
+   "name": "Monitor Acer 27 pulgadas 4K IPS 60Hz 4 ms Negro B278Kbemiqprcuzx",
+   "pp_drop": 24,
+   "pp_median": 630.95,
+   "pp_price": 480.95,
+   "t": "2026-11-26T18:45:39.384119+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "46599140633": {
    "ean": "4711474702432",
    "lista": "candidates",
@@ -11119,7 +11146,7 @@
    "pp_drop": 20,
    "pp_median": 2142.95,
    "pp_price": 1704.95,
-   "t": "2026-11-24T15:01:05.679895+00:00",
+   "t": "2026-11-26T18:45:39.384119+00:00",
    "v": 3,
    "veredicto": "no_esta",
    "vistos": {
@@ -11865,9 +11892,9 @@
   "amazon_mas_barato": 25,
   "dudoso": 0,
   "no_esta": 15,
-  "oferta_real": 19,
+  "oferta_real": 20,
   "pvpr_inflado": 4,
   "sin_precio": 9
  },
- "updated": "2026-11-26T18:01:05.764618+00:00"
+ "updated": "2026-11-26T18:45:39.384119+00:00"
 }

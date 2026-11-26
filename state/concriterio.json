@@ -60,14 +60,14 @@
   "Tablets": "2026-11-26T09:01:09.131171+00:00",
   "Televisores": "2026-11-25T21:15:41.908814+00:00",
   "Textil hogar": "2026-11-26T14:30:54.648040+00:00",
-  "Videojuegos": "2026-11-25T15:30:57.153436+00:00",
+  "Videojuegos": "2026-11-26T18:45:39.384119+00:00",
   "Zapatillas": "2026-11-25T09:01:05.992602+00:00",
   "eReaders": "2026-11-25T15:01:06.717368+00:00"
  },
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-26T18:40:52.825793+00:00",
+ "next_at": "2026-11-26T19:10:52.772362+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1752,6 +1752,17 @@
    "s": "ofertas",
    "t": "2026-11-13T08:46:24.380023+00:00",
    "title": "Matnature | Platinum | Colchón Gran Confort Pro Múltiple Descanso | Muelles Ensacados y Viscoelástica | Altura 30 cm | Transpirable, Antideslizante y Antiácaros (90 x 200 cm)",
+   "v": []
+  },
+  "B094WRT8PD": {
+   "c": "Videojuegos",
+   "d": 27,
+   "e": "🎮",
+   "m": 663,
+   "p": 54.99,
+   "s": "ofertas",
+   "t": "2026-11-26T18:48:03.257674+00:00",
+   "title": "PlayStation 5 - Mando Inalámbrico DualSense Cosmic Red | Mando Original para PS5 con Retroalimentación Háptica y gatillos Adaptativos - Color Rojo",
    "v": []
   },
   "B096JZMNG1": {
@@ -3639,17 +3650,6 @@
    "title": "Nutribullet Pro 900 - Batidora Personal Multifunción, Blender Frutas y Verduras, Diseño Compacto, Fácil de Usar y Limpieza Rápida, Extracción de Nutrientes, 900W, Mineral Gris Paloma (NB904MASN)",
    "v": []
   },
-  "B0FX5217CY": {
-   "c": "Freidoras de aire",
-   "d": 38,
-   "e": "🍟",
-   "m": 246,
-   "p": 99.98,
-   "s": "ambas",
-   "t": "2026-11-12T18:36:04.259733+00:00",
-   "title": "Moulinex Easy Fry XL Surface, Freidora de aire 2200W, Doble resistencia",
-   "v": []
-  },
   "B0G14W2ZWW": {
    "c": "Tablets",
    "d": 30,
@@ -4442,17 +4442,14 @@
    "v": []
   }
  },
- "problem": {
-  "fails": 1,
-  "last": "HTTP 503"
- },
+ "problem": {},
  "rejected": {
-  "B000FNFSPY": {
-   "t": "2026-11-25T18:30:56.405059+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B00T0C9XRK": {
    "t": "2026-11-26T10:30:55.810022+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B08H97WTBL": {
+   "t": "2026-11-26T18:45:39.384119+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0C78G8ZPR": {
@@ -4473,6 +4470,18 @@
   }
  },
  "reserve": [
+  {
+   "a": "B0DCGC3SDW",
+   "c": "Videojuegos",
+   "e": "🎮",
+   "img": "https://m.media-amazon.com/images/I/71CwLBM-ctL._AC_UL320_.jpg",
+   "n": 224,
+   "op": 119.99,
+   "p": 89.99,
+   "r": 4.4,
+   "t": "2026-11-26T18:45:39.384119+00:00",
+   "title": "Thrustmaster SimTask FarmStick - Joystick Multifunción - PS5 y PC"
+  },
   {
    "a": "B0CRT6HQ82",
    "c": "Auriculares",
@@ -4496,18 +4505,6 @@
    "r": 4.4,
    "t": "2026-11-26T17:30:54.854401+00:00",
    "title": "Arena Aglomerante Mix para Muchos Gatos Catit Go Natural"
-  },
-  {
-   "a": "B0C7RVCX6M",
-   "c": "Ciclismo",
-   "e": "🚴",
-   "img": "https://m.media-amazon.com/images/I/61NTb7XA-KL._AC_UL320_.jpg",
-   "n": 100,
-   "op": 54.6,
-   "p": 40.72,
-   "r": 4.6,
-   "t": "2026-11-26T15:01:06.505667+00:00",
-   "title": "Lezyne Strip Drive Pro Luz trasera para bicicleta, LED rojo, carretera, montaña, grava, bicicleta de grava, recargable por USB"
   }
  ],
  "store_skip": {
@@ -4522,6 +4519,6 @@
  "tg_offset": 511048157,
  "x_copy": {
   "day": "2026-11-26",
-  "n": 23
+  "n": 24
  }
 }
