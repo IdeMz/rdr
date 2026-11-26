@@ -6369,11 +6369,11 @@
    "lista": "to_verify",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Endgame Gear XM2 8k 30000 DPI 51,5g 6 botones Ratón gaming",
-   "pista": "2086067 bytes; 19 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "2200118 bytes; 25 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 54,
    "pp_median": 69.95,
    "pp_price": 31.94,
-   "t": "2026-11-25T20:45:41.682692+00:00",
+   "t": "2026-11-26T02:50:34.306294+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -11618,7 +11618,7 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-26T02:20:35.916208+00:00",
+ "night_at": "2026-11-26T02:50:34.306294+00:00",
  "resumen": {
   "amazon_mas_barato": 31,
   "dudoso": 0,
@@ -11627,5 +11627,5 @@
   "pvpr_inflado": 3,
   "sin_precio": 11
  },
- "updated": "2026-11-26T02:20:35.916208+00:00"
+ "updated": "2026-11-26T02:50:34.306294+00:00"
 }
