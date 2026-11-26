@@ -28,7 +28,7 @@
   "Fotografía": "2026-11-26T10:01:05.790556+00:00",
   "Freidoras de aire": "2026-11-23T18:01:07.710591+00:00",
   "Gaming": "2026-11-25T12:30:56.628057+00:00",
-  "Gatos": "2026-11-25T10:31:05.699201+00:00",
+  "Gatos": "2026-11-26T17:30:54.854401+00:00",
   "Herramientas": "2026-11-25T11:31:00.165429+00:00",
   "Higiene personal": "2026-11-26T11:01:09.682153+00:00",
   "Iluminación": "2026-11-26T12:01:05.059758+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-26T17:30:47.427975+00:00",
+ "next_at": "2026-11-26T17:57:38.583733+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1521,6 +1521,17 @@
    "s": "ambas",
    "t": "2026-11-21T13:31:24.569822+00:00",
    "title": "Tapo L530E - Bombilla Inteligente WiFi, RGB Multicolor, 800lm, 8.3W, E27",
+   "v": []
+  },
+  "B08GVXR7V9": {
+   "c": "Gatos",
+   "d": 40,
+   "e": "🐱",
+   "m": 661,
+   "p": 13.53,
+   "s": "ofertas",
+   "t": "2026-11-26T17:31:43.260924+00:00",
+   "title": "Catit Go Natural! Arena Guisantes, Aroma Vainilla 5.6 kg",
    "v": []
   },
   "B08GW3KGYG": {
@@ -3067,17 +3078,6 @@
    "title": "Gillette Fusion5 Cuchillas de Afeitar Hombre, Pack de 12",
    "v": []
   },
-  "B0DV11JVBN": {
-   "c": "Perfumes",
-   "d": 37,
-   "e": "🌸",
-   "m": 244,
-   "p": 66.38,
-   "s": "ofertas",
-   "t": "2026-11-12T17:26:11.342813+00:00",
-   "title": "DIESEL Only The Brave EDP |Un toque energizante de Mandarina y una estela sensual de Acuerdo de Suede|Otro nivel de intensidad y sensualidad",
-   "v": []
-  },
   "B0DWFMD52T": {
    "c": "Almacenamiento",
    "d": 28,
@@ -4471,6 +4471,18 @@
  },
  "reserve": [
   {
+   "a": "B0DJGZVS99",
+   "c": "Gatos",
+   "e": "🐱",
+   "img": "https://m.media-amazon.com/images/I/61i13m+1TqL._AC_UL320_.jpg",
+   "n": 1200,
+   "op": 22.4,
+   "p": 13.39,
+   "r": 4.4,
+   "t": "2026-11-26T17:30:54.854401+00:00",
+   "title": "Arena Aglomerante Mix para Muchos Gatos Catit Go Natural"
+  },
+  {
    "a": "B0C7RVCX6M",
    "c": "Ciclismo",
    "e": "🚴",
@@ -4481,18 +4493,6 @@
    "r": 4.6,
    "t": "2026-11-26T15:01:06.505667+00:00",
    "title": "Lezyne Strip Drive Pro Luz trasera para bicicleta, LED rojo, carretera, montaña, grava, bicicleta de grava, recargable por USB"
-  },
-  {
-   "a": "B07JNL7K5B",
-   "c": "Textil hogar",
-   "e": "🧺",
-   "img": "https://m.media-amazon.com/images/I/81gaCsNtopL._AC_UL320_.jpg",
-   "n": 13000,
-   "op": 17.49,
-   "p": 12.62,
-   "r": 4.4,
-   "t": "2026-11-26T14:30:54.648040+00:00",
-   "title": "MIULEE Cortinas Salon Modernas con Ojales 2 Piezas Blanco 140x245 cm"
   }
  ],
  "store_skip": {
@@ -4507,6 +4507,6 @@
  "tg_offset": 511048157,
  "x_copy": {
   "day": "2026-11-26",
-  "n": 21
+  "n": 22
  }
 }

@@ -2418,16 +2418,16 @@
   },
   "6959422615818": {
    "a": "",
-   "t": "2026-11-13T23:50:27.854573+00:00",
-   "v": 2,
+   "t": "2026-11-26T17:30:54.854401+00:00",
+   "v": 3,
    "vistos": {
     "ean": [
      "(sin resultados)"
     ],
     "nombre": [
-     "JMGO N3 Ultimate 4K Proyector Triple Láser, 5800 lúmenes ISO, Google TV",
      "JMGO N1S 4K Proyector Portatil, Triple Laser, 1700 ISO Lumens, Google TV",
-     "JMGO O2S Ultra Proyector UHD 4K Tiro Corto, Triple Laser UST, Dolby Vision"
+     "JMGO N3 Ultimate 4K Proyector Triple Láser, 5800 lúmenes ISO, Google TV",
+     "JMGO N1S Ultimate Proyector 4K Triple Laser 3300 ISO Lúmenes, GTV, Netflix"
     ]
    }
   },
@@ -4718,7 +4718,7 @@
    "pp_drop": 35,
    "pp_median": 139.0,
    "pp_price": 89.99,
-   "t": "2026-11-24T15:01:05.679895+00:00",
+   "t": "2026-11-26T17:30:54.854401+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -6216,20 +6216,20 @@
    "lista": "candidates",
    "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
    "name": "JMGO PicoPlay+ 1080p Full HD 450 ISO Lúmenes DLP LED Google TV WiFi 5 Bluetooth 5.4 altavoz 10W Proyector",
-   "pp_drop": 21,
+   "pp_drop": 29,
    "pp_median": 418.95,
-   "pp_price": 329.95,
-   "t": "2026-11-13T23:50:27.854573+00:00",
-   "v": 2,
+   "pp_price": 297.95,
+   "t": "2026-11-26T17:30:54.854401+00:00",
+   "v": 3,
    "veredicto": "no_esta",
    "vistos": {
     "ean": [
      "(sin resultados)"
     ],
     "nombre": [
-     "JMGO N3 Ultimate 4K Proyector Triple Láser, 5800 lúmenes ISO, Google TV",
      "JMGO N1S 4K Proyector Portatil, Triple Laser, 1700 ISO Lumens, Google TV",
-     "JMGO O2S Ultra Proyector UHD 4K Tiro Corto, Triple Laser UST, Dolby Vision"
+     "JMGO N3 Ultimate 4K Proyector Triple Láser, 5800 lúmenes ISO, Google TV",
+     "JMGO N1S Ultimate Proyector 4K Triple Laser 3300 ISO Lúmenes, GTV, Netflix"
     ]
    }
   },
@@ -11869,5 +11869,5 @@
   "pvpr_inflado": 4,
   "sin_precio": 9
  },
- "updated": "2026-11-26T16:31:04.591910+00:00"
+ "updated": "2026-11-26T17:30:54.854401+00:00"
 }
