@@ -1860,6 +1860,13 @@
    "title": "Logitech Keys-To-Go 2, Teclado Bluetooth portátil para Tablet - Blanco",
    "via": "nombre"
   },
+  "5099206128033": {
+   "a": "B0FKGV88JX",
+   "t": "2026-11-26T15:30:59.307083+00:00",
+   "title": "Logitech G RS50 System, Volante simulador de conducción Sim Racing PS/PC",
+   "v": 3,
+   "via": "ean"
+  },
   "5099206133334": {
    "a": "B0FJ25ZDNQ",
    "t": "2026-11-19T15:30:55.803469+00:00",
@@ -6466,11 +6473,11 @@
    "lista": "to_verify",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Endgame Gear XM2 8k 30000 DPI 51,5g 6 botones Ratón gaming",
-   "pista": "2206968 bytes; 24 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "2110348 bytes; 19 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 54,
    "pp_median": 69.95,
    "pp_price": 31.94,
-   "t": "2026-11-26T09:01:09.131171+00:00",
+   "t": "2026-11-26T15:30:59.307083+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -7414,6 +7421,26 @@
      "FiiO JM21 - Reproductor de Audio Digital portátil de Alta resolución (Azul Claro)"
     ]
    }
+  },
+  "46009647959": {
+   "ahorro_vs_amazon": 0,
+   "amz_low30": 492.49,
+   "amz_median": 499.99,
+   "amz_price": 449.0,
+   "amz_title": "Logitech G RS50 System, Volante simulador de conducción Sim Racing PS/PC",
+   "asin": "B0FKGV88JX",
+   "disponible": true,
+   "ean": "5099206128033",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 449.00 frente a 500.95",
+   "name": "Logitech G RS50 System Force Feedback PS4/PS5/PC 13 botones Volante de simulación",
+   "pp_drop": 29,
+   "pp_median": 700.95,
+   "pp_price": 500.95,
+   "t": "2026-11-26T15:30:59.307083+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
   },
   "46034946303": {
    "ahorro_vs_amazon": 14,
@@ -11836,12 +11863,12 @@
  },
  "night_at": "2026-11-26T06:50:34.193285+00:00",
  "resumen": {
-  "amazon_mas_barato": 23,
+  "amazon_mas_barato": 24,
   "dudoso": 0,
   "no_esta": 15,
   "oferta_real": 19,
   "pvpr_inflado": 4,
   "sin_precio": 10
  },
- "updated": "2026-11-26T15:01:06.505667+00:00"
+ "updated": "2026-11-26T15:30:59.307083+00:00"
 }

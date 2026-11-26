@@ -45,7 +45,7 @@
   "Nutrición deportiva": "2026-11-21T20:00:58.767855+00:00",
   "Oficina": "2026-11-25T20:45:41.682692+00:00",
   "Patinetes": "2026-11-24T12:35:31.161899+00:00",
-  "Pequeño electrodoméstico": "2026-11-22T14:01:03.209389+00:00",
+  "Pequeño electrodoméstico": "2026-11-26T15:30:59.307083+00:00",
   "Perfumes": "2026-11-24T16:01:07.815808+00:00",
   "Periféricos": "2026-11-25T21:45:38.616662+00:00",
   "Perros": "2026-11-25T18:30:56.405059+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-26T15:29:18.920946+00:00",
+ "next_at": "2026-11-26T16:00:52.140894+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1278,6 +1278,17 @@
    "s": "ofertas",
    "t": "2026-11-20T08:31:24.987247+00:00",
    "title": "COM-FOUR® 56 piezas Juego de estrellas de paja, estrellas, campanas",
+   "v": []
+  },
+  "B0822N3B24": {
+   "c": "Pequeño electrodoméstico",
+   "d": 37,
+   "e": "🍞",
+   "m": 657,
+   "p": 29.9,
+   "s": "ambas",
+   "t": "2026-11-26T15:31:29.977755+00:00",
+   "title": "Cecotec Parrilla Eléctrica Rock'nGrill 1500 Rapid. 1500 W, Revestimiento de Piedra RockStone, Placa Superior Flotante Ajustable en Altura, Bandeja Recogegrasas, Grill Contacto, 12,4 x 30,8 x 33,2 cm",
    "v": []
   },
   "B082N3H868": {
@@ -4439,22 +4450,6 @@
    "t": "2026-11-26T10:30:55.810022+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B00X9TZ0RC": {
-   "t": "2026-11-25T15:01:06.717368+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B072DXLHFS": {
-   "t": "2026-11-25T15:01:06.717368+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B08T19GT85": {
-   "t": "2026-11-25T15:01:06.717368+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0B5PJ41ZT": {
-   "t": "2026-11-25T15:01:06.717368+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0C78G8ZPR": {
    "t": "2026-11-26T10:30:55.810022+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4475,16 +4470,8 @@
    "t": "2026-11-25T16:01:12.511497+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0DPNBNJVS": {
-   "t": "2026-11-25T15:01:06.717368+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0DQ54YKH9": {
    "t": "2026-11-25T16:01:12.511497+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0G1NHVHPF": {
-   "t": "2026-11-25T15:01:06.717368+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0GF9MXR7D": {
@@ -4542,6 +4529,6 @@
  "tg_offset": 511048157,
  "x_copy": {
   "day": "2026-11-26",
-  "n": 17
+  "n": 18
  }
 }
