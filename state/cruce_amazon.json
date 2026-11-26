@@ -4075,7 +4075,7 @@
    "pp_drop": 15,
    "pp_median": 1075.94,
    "pp_price": 919.0,
-   "t": "2026-11-24T00:20:32.325848+00:00",
+   "t": "2026-11-26T00:20:36.495830+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -7868,22 +7868,22 @@
    "veredicto": "oferta_real"
   },
   "46186024138": {
-   "ahorro_vs_amazon": 0,
+   "ahorro_vs_amazon": 2,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 2749.0,
+   "amz_price": 2799.0,
    "amz_title": "Epson EB-L690u (epson EB-L690u - 3lcd Projector - 6500 Lumens - Wuxga [1920 X 1200] - 16:10 - 802.11a/b/g/n/ac Wireless / Lan/ Miracast - White)",
    "asin": "B0FTFNWR45",
    "disponible": true,
    "ean": "8715946737980",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "Amazon 2749.00 frente a 2747.95",
+   "motivo": "Amazon 2799.00 frente a 2747.95",
    "name": "Epson Láser WUXGA 1920x1200 6500 lúmenes ANSI 3LCD Blanco EB-L690U altavoz 10W 32dB Proyector",
    "pp_drop": 13,
    "pp_median": 3156.95,
    "pp_price": 2747.95,
-   "t": "2026-11-24T00:20:32.325848+00:00",
+   "t": "2026-11-26T00:20:36.495830+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -11618,7 +11618,7 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-26T00:05:24.328327+00:00",
+ "night_at": "2026-11-26T00:20:36.495830+00:00",
  "resumen": {
   "amazon_mas_barato": 31,
   "dudoso": 0,
@@ -11627,5 +11627,5 @@
   "pvpr_inflado": 3,
   "sin_precio": 11
  },
- "updated": "2026-11-26T00:05:24.328327+00:00"
+ "updated": "2026-11-26T00:20:36.495830+00:00"
 }
