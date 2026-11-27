@@ -5175,22 +5175,22 @@
    "veredicto": "amazon_mas_barato"
   },
   "41955007624": {
-   "ahorro_vs_amazon": 23,
+   "ahorro_vs_amazon": 21,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 187.79,
+   "amz_price": 182.23,
    "amz_title": "Ecouteurs sans fil Shokz OpenFit 2 à conduction aérienne Noir",
    "asin": "B0FCD9YRC2",
    "disponible": true,
    "ean": "0810160666967",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "23 % por debajo del habitual en Amazon (187.79)",
+   "motivo": "21 % por debajo del habitual en Amazon (182.23)",
    "name": "Shokz OpenFit 2 Negro Bluetooth 5.4 48h IP55 Auriculares inalámbricos",
    "pp_drop": 35,
    "pp_median": 221.95,
    "pp_price": 143.95,
-   "t": "2026-11-25T23:35:26.842035+00:00",
+   "t": "2026-11-27T23:50:33.923316+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -10228,28 +10228,6 @@
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
-  "46265356695": {
-   "ean": "4711387951224",
-   "lista": "candidates",
-   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
-   "name": "ASUS ROG Keris II Origin 42000 DPI RGB Negro 6 botones 2.4GHz 113 g Ratón gaming inalámbrico",
-   "pp_drop": 26,
-   "pp_median": 144.95,
-   "pp_price": 106.95,
-   "t": "2026-11-13T23:50:27.854573+00:00",
-   "v": 2,
-   "veredicto": "no_esta",
-   "vistos": {
-    "ean": [
-     "ASUS ROG Keris II Origin - Ratón Gaming Inalámbrico Ergonómico - Negro"
-    ],
-    "nombre": [
-     "ASUS ROG Keris II Origin - Ratón Gaming Inalámbrico Ergonómico - Negro",
-     "ASUS - Souris ROG Keris II Origin Kojima Edition",
-     "ASUS ROG Keris II Origin - Ratón Gaming Inalámbrico Ergonómico - Blanco"
-    ]
-   }
-  },
   "46265356697": {
    "ean": "4038986630795",
    "lista": "candidates",
@@ -13136,7 +13114,7 @@
    "veredicto": "pvpr_inflado"
   }
  },
- "night_at": "2026-11-27T23:20:33.888400+00:00",
+ "night_at": "2026-11-27T23:50:33.923316+00:00",
  "resumen": {
   "amazon_mas_barato": 26,
   "dudoso": 1,
@@ -13145,5 +13123,5 @@
   "pvpr_inflado": 7,
   "sin_precio": 9
  },
- "updated": "2026-11-27T23:20:33.888400+00:00"
+ "updated": "2026-11-27T23:50:33.923316+00:00"
 }
