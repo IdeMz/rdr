@@ -747,6 +747,13 @@
    "title": "Corsair M75 Ratón para Juegos FPS Ligero RGB con Cable – 26.000 PPP – Botones Laterales Intercambiables – PC – Negro",
    "via": "ean"
   },
+  "0840023264559": {
+   "a": "B0D3VKDQSN",
+   "t": "2026-11-27T14:05:32.612136+00:00",
+   "title": "Motorola Moto Buds: Auriculares inalámbricos, Sonido de óptima Calidad y Audio de Alta resolución, cancelación Activa de Ruido dinámica, integración óptima con ",
+   "v": 3,
+   "via": "ean"
+  },
   "0840023294266": {
    "a": "",
    "t": "2026-11-20T22:50:37.790383+00:00",
@@ -4396,6 +4403,26 @@
    "pp_price": 442.94,
    "t": "2026-11-15T15:15:41.208340+00:00",
    "veredicto": "amazon_mas_barato"
+  },
+  "39108444502": {
+   "ahorro_vs_amazon": 9,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 51.69,
+   "amz_title": "Motorola Moto Buds: Auriculares inalámbricos, Sonido de óptima Calidad y Audio de Alta resolución, cancelación Activa de Ruido dinámica, integración óptima con ",
+   "asin": "B0D3VKDQSN",
+   "disponible": true,
+   "ean": "0840023264559",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "antes 88.95 en PowerPlanet, pero en Amazon suele estar a 51.69",
+   "name": "Motorola Moto Buds Azul Brillante TWS ANC Bluetooth 5.3 42h Auriculares inalámbricos",
+   "pp_drop": 47,
+   "pp_median": 88.95,
+   "pp_price": 46.95,
+   "t": "2026-11-27T14:05:32.612136+00:00",
+   "v": 3,
+   "veredicto": "pvpr_inflado"
   },
   "39262571673": {
    "ahorro_vs_amazon": 18,
@@ -9428,25 +9455,6 @@
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
-  "46239685097": {
-   "ahorro_vs_amazon": 23,
-   "amz_low30": null,
-   "amz_median": null,
-   "amz_price": 125.96,
-   "amz_title": "Ariete 00c462800ar0 Hei?luftfritteuse 7 L Antihaftbeschichtung, BpA-Frei, Digitaler Timer, F?r Lebensmittel, Hei?lufT-Funktion, LcD-Display, UmlufT-F",
-   "asin": "B0C59JRLM4",
-   "disponible": true,
-   "ean": "8003705121379",
-   "encontrado_por": "ean",
-   "lista": "candidates",
-   "motivo": "23 % por debajo del habitual en Amazon (125.96)",
-   "name": "Ariete Airy Fryer Metal 7L 1800W 12 programas Negro 4628/00 pantalla táctil Freidora de aire",
-   "pp_drop": 36,
-   "pp_median": 150.95,
-   "pp_price": 96.95,
-   "t": "2026-11-13T14:01:00.760700+00:00",
-   "veredicto": "oferta_real"
-  },
   "46239685110": {
    "ahorro_vs_amazon": 19,
    "amz_low30": null,
@@ -11422,11 +11430,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Dreame Tasti 1500W pantalla táctil Freidora de aire",
-   "pista": "1383887 bytes; 13 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1427418 bytes; 17 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 35,
    "pp_median": 230.95,
    "pp_price": 150.95,
-   "t": "2026-11-27T04:20:34.013530+00:00",
+   "t": "2026-11-27T14:05:32.612136+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -12690,8 +12698,8 @@
   "dudoso": 0,
   "no_esta": 18,
   "oferta_real": 17,
-  "pvpr_inflado": 4,
+  "pvpr_inflado": 5,
   "sin_precio": 6
  },
- "updated": "2026-11-27T13:35:33.037664+00:00"
+ "updated": "2026-11-27T14:05:32.612136+00:00"
 }

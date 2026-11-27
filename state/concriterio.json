@@ -47,7 +47,7 @@
   "Patinetes": "2026-11-26T16:01:04.848160+00:00",
   "Pequeño electrodoméstico": "2026-11-26T15:30:59.307083+00:00",
   "Perfumes": "2026-11-24T16:01:07.815808+00:00",
-  "Periféricos": "2026-11-25T21:45:38.616662+00:00",
+  "Periféricos": "2026-11-27T14:05:32.612136+00:00",
   "Perros": "2026-11-25T18:30:56.405059+00:00",
   "Portátiles": "2026-11-27T09:35:32.611631+00:00",
   "Proyectores": "2026-11-23T12:35:32.005006+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-27T14:01:07.000496+00:00",
+ "next_at": "2026-11-27T14:33:34.990008+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -354,6 +354,17 @@
    "s": "busqueda",
    "t": "2026-11-24T17:01:37.525601+00:00",
    "title": "WMF Touch - Juego de 2 Cuchillos con Fundas Protectoras, Hojas de Acero Especial con Antiadherente de 13 cm y 9 cm, Color Negro",
+   "v": []
+  },
+  "B00CHHDY66": {
+   "c": "Periféricos",
+   "d": 45,
+   "e": "⌨️",
+   "m": 686,
+   "p": 16.4,
+   "s": "ambas",
+   "t": "2026-11-27T14:07:04.814229+00:00",
+   "title": "Logitech MK270 Combo Teclado y Ratón Inalámbrico para Windows",
    "v": []
   },
   "B00CHO4PZI": {
@@ -4157,17 +4168,6 @@
    "title": "Reloj Inteligente Niño, 4G Smartwatch con Videollamadas, Chat de Voz, GPS",
    "v": []
   },
-  "B0HHN4Q6SN": {
-   "c": "Smartwatch",
-   "d": 31,
-   "e": "⌚",
-   "m": 264,
-   "p": 15.19,
-   "s": "busqueda",
-   "t": "2026-11-13T14:01:42.490829+00:00",
-   "title": "Reloj Inteligente Hombre Mujer, 1.95\" Smartwatches Reloj Deporte con Funciún Llamadas y Mensajes Bluetooth, 110+ Deportivos SmartWatch con Podómetro/Pulsómetro/Monitor de Sueño, IP68 Pulsera Actividad",
-   "v": []
-  },
   "B0HJ1V5P7Z": {
    "c": "Móviles",
    "d": 35,
@@ -4550,6 +4550,6 @@
  "tg_offset": 511048177,
  "x_copy": {
   "day": "2026-11-27",
-  "n": 14
+  "n": 15
  }
 }
