@@ -2,7 +2,7 @@
  "cats": {
   "Accesorios de coche": "2026-11-27T07:30:56.540921+00:00",
   "Accesorios de móvil": "2026-11-26T21:15:40.564504+00:00",
-  "Afeitado y depilación": "2026-11-26T08:01:06.074359+00:00",
+  "Afeitado y depilación": "2026-11-27T12:35:34.223179+00:00",
   "Almacenamiento": "2026-11-26T11:30:57.919122+00:00",
   "Altavoces": "2026-11-25T16:30:57.642581+00:00",
   "Aspiradoras": "2026-11-27T11:05:34.014357+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-27T12:31:08.396841+00:00",
+ "next_at": "2026-11-27T13:04:54.465176+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -970,6 +970,17 @@
    "s": "ambas",
    "t": "2026-11-16T16:16:25.540983+00:00",
    "title": "Bosch - Procesador de alimentos, MultiTalent 8, 1250 W, Negro, Acero inoxidable, MC812M844",
+   "v": []
+  },
+  "B07HX2KMXK": {
+   "c": "Afeitado y depilación",
+   "d": 52,
+   "e": "🪒",
+   "m": 683,
+   "p": 279.99,
+   "s": "ambas",
+   "t": "2026-11-27T12:36:08.346185+00:00",
+   "title": "Philips Lumea serie 8000, dispositivo de depilación IPL, alternativa de depilación láser, tecnología SenseIQ, 4 accesorios para el cuerpo, lápiz recortador compacto satén, BRI949/00",
    "v": []
   },
   "B07J9N9ZP4": {
@@ -3970,17 +3981,6 @@
    "title": "ghd Glide+ Max - Cepillo Alisador de Pelo Profesional Térmico más Amplio",
    "v": []
   },
-  "B0GZL6RZ7Z": {
-   "c": "Cafeteras",
-   "d": 21,
-   "e": "☕",
-   "m": 261,
-   "p": 473.99,
-   "s": "ofertas",
-   "t": "2026-11-13T12:16:10.637869+00:00",
-   "title": "SIEMENS, Cafetera superautomática EQ500 iAroma, Negro, TP551E07",
-   "v": []
-  },
   "B0H1BQNV25": {
    "c": "Mochilas y maletas",
    "d": 49,
@@ -4550,6 +4550,6 @@
  "tg_offset": 511048177,
  "x_copy": {
   "day": "2026-11-27",
-  "n": 11
+  "n": 12
  }
 }

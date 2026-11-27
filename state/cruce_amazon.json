@@ -137,6 +137,13 @@
    "title": "Apple MacBook Air de 13,6 Pulgadas con Chip M5: Pantalla Liquid Retina, CPU de 10 núcleos, GPU de 8 núcleos, 16 GB de Memoria unificada, 512 GB de SSD, Wi-Fi 7,",
    "via": "ean"
   },
+  "0196388419647": {
+   "a": "B0DQV76PH7",
+   "t": "2026-11-27T12:35:34.223179+00:00",
+   "title": "Microsoft Surface Pro (no Incluye el Cargador) | Copilot+ PC | Pantalla táctil OLED 13”| Snapdragon® X Elite | 16GB RAM | 512GB SSD | Último Modelo, 11a edición",
+   "v": 3,
+   "via": "ean"
+  },
   "0196388446032": {
    "a": "B0F9SQVPDS",
    "t": "2026-11-24T14:01:02.613248+00:00",
@@ -2297,6 +2304,13 @@
    "v": 3,
    "via": "nombre"
   },
+  "6925281982088": {
+   "a": "B08VD857CR",
+   "t": "2026-11-27T12:35:34.223179+00:00",
+   "title": "JBL Charge 5 Altavoz inalámbrico portátil con Bluetooth y batería integrada, resistente al agua (IP67), con PartyBoost para subir el nivel de la fiesta, hasta 2",
+   "v": 3,
+   "via": "nombre"
+  },
   "6932554402914": {
    "a": "B0HJZ5ZL6D",
    "t": "2026-11-19T23:50:26.107609+00:00",
@@ -4195,6 +4209,26 @@
    "t": "2026-11-19T01:35:21.806157+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
+  },
+  "38135637657": {
+   "ahorro_vs_amazon": 35,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 214.95,
+   "amz_title": "JBL Charge 5 Altavoz inalámbrico portátil con Bluetooth y batería integrada, resistente al agua (IP67), con PartyBoost para subir el nivel de la fiesta, hasta 2",
+   "asin": "B08VD857CR",
+   "disponible": true,
+   "ean": "6925281982088",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "35 % por debajo del habitual en Amazon (214.95)",
+   "name": "JBL Charge 5 Negro 40W 20h IP67 7500mAh PartyBoost Altavoz Bluetooth",
+   "pp_drop": 44,
+   "pp_median": 251.95,
+   "pp_price": 139.95,
+   "t": "2026-11-27T12:35:34.223179+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
   },
   "38195159398": {
    "ahorro_vs_amazon": -9,
@@ -11706,6 +11740,26 @@
    "v": 3,
    "veredicto": "oferta_real"
   },
+  "46599143208": {
+   "ahorro_vs_amazon": 32,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 1728.57,
+   "amz_title": "Microsoft Surface Pro (no Incluye el Cargador) | Copilot+ PC | Pantalla táctil OLED 13”| Snapdragon® X Elite | 16GB RAM | 512GB SSD | Último Modelo, 11a edición",
+   "asin": "B0DQV76PH7",
+   "disponible": true,
+   "ean": "0196388419647",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "32 % por debajo del habitual en Amazon (1728.57)",
+   "name": "Microsoft Surface Pro 11 Copilot+ PC Snapdragon X Elite 13 pulgadas 16GB/512GB Arena PixelSense Flow 120Hz",
+   "pp_drop": 31,
+   "pp_median": 1681.95,
+   "pp_price": 1168.94,
+   "t": "2026-11-27T12:35:34.223179+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "46599143210": {
    "ahorro_vs_amazon": -20,
    "amz_low30": null,
@@ -12544,9 +12598,9 @@
   "amazon_mas_barato": 19,
   "dudoso": 0,
   "no_esta": 17,
-  "oferta_real": 14,
+  "oferta_real": 16,
   "pvpr_inflado": 4,
   "sin_precio": 6
  },
- "updated": "2026-11-27T12:05:34.336208+00:00"
+ "updated": "2026-11-27T12:35:34.223179+00:00"
 }
