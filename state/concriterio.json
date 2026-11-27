@@ -7,7 +7,7 @@
   "Altavoces": "2026-11-25T16:30:57.642581+00:00",
   "Aspiradoras": "2026-11-27T11:05:34.014357+00:00",
   "Auriculares": "2026-11-26T18:01:05.764618+00:00",
-  "Barras de sonido": "2026-11-23T21:45:48.617233+00:00",
+  "Barras de sonido": "2026-11-27T12:05:34.336208+00:00",
   "Bebé": "2026-11-25T19:15:38.789832+00:00",
   "Bricolaje": "2026-11-27T07:01:05.022940+00:00",
   "Cafeteras": "2026-11-24T19:35:37.316644+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-27T12:01:18.735247+00:00",
+ "next_at": "2026-11-27T12:31:08.396841+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2405,6 +2405,17 @@
    "title": "Auriculares Inalámbricos Bluetooth, Auriculares Bluetooth 5.3, 4 Mic con Reducción de Ruido ENC, 50H con Graves, Cascos Inalambricos Bluetooth IP7 Impermeable, Carga Rápida USB-C, Ajuste Cómodo",
    "v": []
   },
+  "B0CCRDYSNS": {
+   "c": "Barras de sonido",
+   "d": 36,
+   "e": "🎶",
+   "m": 682,
+   "p": 95.98,
+   "s": "busqueda",
+   "t": "2026-11-27T12:06:09.607193+00:00",
+   "title": "Hisense HS2100 - Barra de Sonido 2.1, 240W, Dolby Audio, DTS Virtual X, Bluetooth 5.3, HDMI ARC/Optical/AUX/USB, 6 Modos de Sonido, Modo TV, EzPlay",
+   "v": []
+  },
   "B0CD7N84JW": {
    "c": "Perfumes",
    "d": 38,
@@ -3285,17 +3296,6 @@
    "s": "ambas",
    "t": "2026-11-14T07:36:35.708894+00:00",
    "title": "Lenovo L24-4e - Monitor FHD 23.8\" (IPS, 1920x1080, Tasa de Refresco 48 Hz – 100 Hz, Tiempo de Respuesta de 4 ms, HDMI 1.4, VGA, VESA 100 x 100 mm) Soporte de Inclinación, Negro",
-   "v": []
-  },
-  "B0F9XBMM3M": {
-   "c": "Perros",
-   "d": 32,
-   "e": "🐶",
-   "m": 260,
-   "p": 35.89,
-   "s": "ambas",
-   "t": "2026-11-13T11:41:13.817542+00:00",
-   "title": "JOSERA SensiPlus (1 x 12,5 kg) | Adultos | Pienso seco con Pato y arroz para Perros Adultos con Piel Sensible | con Gran cantidad de biotina para una Piel y un Pelaje sanos | Altamente digestible",
    "v": []
   },
   "B0FB3GM1R1": {
@@ -4505,6 +4505,18 @@
  },
  "reserve": [
   {
+   "a": "B0D1CR2C3J",
+   "c": "Barras de sonido",
+   "e": "🎶",
+   "img": "https://m.media-amazon.com/images/I/61amW9S4iuL._AC_UL320_.jpg",
+   "n": 2100,
+   "op": 199.95,
+   "p": 149.95,
+   "r": 4.4,
+   "t": "2026-11-27T12:05:34.336208+00:00",
+   "title": "Bose Solo Soundbar Series 2 Altavoz Bluetooth para TV, Negro"
+  },
+  {
    "a": "B0GXKW8GYG",
    "c": "Aspiradoras",
    "e": "🧹",
@@ -4527,18 +4539,6 @@
    "r": 4.5,
    "t": "2026-11-27T10:05:33.632197+00:00",
    "title": "Omega 3 Cápsulas 2000mg - 1000mg EPA + 500mg DHA - Alta dosificación"
-  },
-  {
-   "a": "B07GZ4BWZ2",
-   "c": "Herramientas",
-   "e": "🔧",
-   "img": "https://m.media-amazon.com/images/I/61yShXJHWXL._AC_UL320_.jpg",
-   "n": 5500,
-   "op": 45.77,
-   "p": 37.5,
-   "r": 4.6,
-   "t": "2026-11-27T09:05:33.373522+00:00",
-   "title": "BLACK+DECKER Taladro percutor con cable de 710 W, BEH710K-QS"
   }
  ],
  "store_skip": {
@@ -4550,6 +4550,6 @@
  "tg_offset": 511048177,
  "x_copy": {
   "day": "2026-11-27",
-  "n": 10
+  "n": 11
  }
 }

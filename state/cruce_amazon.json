@@ -830,6 +830,13 @@
     ]
    }
   },
+  "0840440492276": {
+   "a": "B0F6NGCDFN",
+   "t": "2026-11-27T12:05:34.336208+00:00",
+   "title": "Corsair Scimitar Elite Wireless SE MMO Ratón para Juegos – Gunmetal",
+   "v": 3,
+   "via": "ean"
+  },
   "0843367134168": {
    "a": "B0DJC6KPJJ",
    "t": "2026-11-27T01:50:42.494749+00:00",
@@ -7843,7 +7850,7 @@
    "pp_drop": 36,
    "pp_median": 699.95,
    "pp_price": 447.82,
-   "t": "2026-11-25T10:31:05.699201+00:00",
+   "t": "2026-11-27T12:05:34.336208+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -9669,25 +9676,6 @@
    "v": 3,
    "veredicto": "oferta_real"
   },
-  "46256205684": {
-   "ahorro_vs_amazon": -5,
-   "amz_low30": null,
-   "amz_median": null,
-   "amz_price": 156.0,
-   "amz_title": "CORSAIR K65 PLUS WIRELESS 75% RGB Teclado Mecánico para Juegos Intercambiable en Caliente - Interruptores Lineales Rojos CORSAIR MLX Prelubricados - Insonorizac",
-   "asin": "B0CT8W3Y29",
-   "disponible": true,
-   "ean": "0840006667278",
-   "encontrado_por": "ean",
-   "lista": "candidates",
-   "motivo": "Amazon 156.00 frente a 163.96",
-   "name": "Corsair K65 Plus Wireless 75% MLX Red RGB Negro Teclado gaming inalámbrico mecánico",
-   "pp_drop": 49,
-   "pp_median": 319.95,
-   "pp_price": 163.96,
-   "t": "2026-11-13T11:40:39.260187+00:00",
-   "veredicto": "amazon_mas_barato"
-  },
   "46256205685": {
    "ahorro_vs_amazon": null,
    "amz_low30": null,
@@ -9708,6 +9696,26 @@
    "t": "2026-11-22T09:01:04.030897+00:00",
    "v": 3,
    "veredicto": "sin_precio"
+  },
+  "46256205688": {
+   "ahorro_vs_amazon": 18,
+   "amz_low30": 121.14,
+   "amz_median": null,
+   "amz_price": 99.99,
+   "amz_title": "Corsair Scimitar Elite Wireless SE MMO Ratón para Juegos – Gunmetal",
+   "asin": "B0F6NGCDFN",
+   "disponible": true,
+   "ean": "0840440492276",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 99.99 frente a 98.95",
+   "name": "Corsair Scimitar Elite Wireless SE 33000 DPI RGB Blanco 16 botones Ratón gaming inalámbrico",
+   "pp_drop": 50,
+   "pp_median": 196.95,
+   "pp_price": 98.95,
+   "t": "2026-11-27T12:05:34.336208+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
   },
   "46256205805": {
    "ahorro_vs_amazon": 16,
@@ -10626,25 +10634,6 @@
    "t": "2026-11-25T18:30:56.405059+00:00",
    "v": 3,
    "veredicto": "pvpr_inflado"
-  },
-  "46599140303": {
-   "ahorro_vs_amazon": -13,
-   "amz_low30": null,
-   "amz_median": null,
-   "amz_price": 158.05,
-   "amz_title": "ViewSonic VX2758A-2K-PRO QHD - Monitor de Juego (IPS, Plano, 27\", sin Marco, 1 ms, MPRT 170 Hz, 2 HDMI, DisplayPort, HDR10)",
-   "asin": "B0CMPW1698",
-   "disponible": true,
-   "ean": "0766907027891",
-   "encontrado_por": "nombre",
-   "lista": "to_verify",
-   "motivo": "Amazon 158.05 frente a 177.95",
-   "name": "Monitor ViewSonic 27 pulgadas 240Hz QHD IPS Negro VX2758A-2K-PRO-3",
-   "pp_drop": 57,
-   "pp_median": 413.95,
-   "pp_price": 177.95,
-   "t": "2026-11-13T11:40:39.260187+00:00",
-   "veredicto": "amazon_mas_barato"
   },
   "46599140358": {
    "ahorro_vs_amazon": 9,
@@ -12552,12 +12541,12 @@
  },
  "night_at": "2026-11-27T06:20:34.547635+00:00",
  "resumen": {
-  "amazon_mas_barato": 18,
+  "amazon_mas_barato": 19,
   "dudoso": 0,
   "no_esta": 17,
   "oferta_real": 14,
   "pvpr_inflado": 4,
   "sin_precio": 6
  },
- "updated": "2026-11-27T11:35:38.294873+00:00"
+ "updated": "2026-11-27T12:05:34.336208+00:00"
 }
