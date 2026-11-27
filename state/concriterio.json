@@ -38,7 +38,7 @@
   "Lego": "2026-11-25T11:01:10.670462+00:00",
   "Limpieza del hogar": "2026-11-27T08:04:46.322734+00:00",
   "Maquillaje": "2026-11-26T10:30:55.810022+00:00",
-  "Menaje de cocina": "2026-11-24T17:01:06.823751+00:00",
+  "Menaje de cocina": "2026-11-27T11:35:38.294873+00:00",
   "Mochilas y maletas": "2026-11-24T17:30:51.708019+00:00",
   "Monitores": "2026-11-25T20:15:53.484095+00:00",
   "Móviles": "2026-11-26T07:01:05.477452+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-27T11:35:30.791972+00:00",
+ "next_at": "2026-11-27T12:01:18.735247+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -609,6 +609,17 @@
    "title": "Logitech G G213 Prodigy Teclado Gaming",
    "v": []
   },
+  "B01LZUSF8H": {
+   "c": "Menaje de cocina",
+   "d": 44,
+   "e": "🍳",
+   "m": 681,
+   "p": 183.99,
+   "s": "ofertas",
+   "t": "2026-11-27T11:36:05.493046+00:00",
+   "title": "ZWILLING Vitality Batería de Cocina 5 Piezas, Inducción, Acero Inoxidable",
+   "v": []
+  },
   "B01N1UX8RW": {
    "c": "Salud",
    "d": 30,
@@ -838,17 +849,6 @@
    "s": "ofertas",
    "t": "2026-11-20T17:31:29.315166+00:00",
    "title": "Pyper Watch for Women",
-   "v": []
-  },
-  "B07D14W78C": {
-   "c": "Ciclismo",
-   "d": 28,
-   "e": "🚴",
-   "m": 259,
-   "p": 15.64,
-   "s": "ofertas",
-   "t": "2026-11-13T11:06:06.481003+00:00",
-   "title": "EULANT Pequeña Mochila para Bicicleta,12L Mochila de Hidratación Impermeable,Reflectoras Mochila de Ciclismo para MTB Senderismo Correr Natación Playa, con Capa de Aislamiento & red de pelota",
    "v": []
   },
   "B07DBXZZN3": {
@@ -4498,10 +4498,6 @@
    "t": "2026-11-26T18:45:39.384119+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0CGQ466W8": {
-   "t": "2026-11-26T11:30:57.919122+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0F6NRJNTR": {
    "t": "2026-11-27T07:30:56.540921+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4554,6 +4550,6 @@
  "tg_offset": 511048177,
  "x_copy": {
   "day": "2026-11-27",
-  "n": 9
+  "n": 10
  }
 }

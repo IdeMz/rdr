@@ -7597,7 +7597,7 @@
    "pp_drop": 50,
    "pp_median": 352.94,
    "pp_price": 176.95,
-   "t": "2026-11-25T10:31:05.699201+00:00",
+   "t": "2026-11-27T11:35:38.294873+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -9993,11 +9993,11 @@
    "lista": "to_verify",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Impresora fotográfica Canon SELPHY QX20 Color WiFi Blanco",
-   "pista": "2409963 bytes; 26 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "2343093 bytes; 23 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 58,
    "pp_median": 323.95,
    "pp_price": 136.95,
-   "t": "2026-11-27T05:09:40.059668+00:00",
+   "t": "2026-11-27T11:35:38.294873+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -12559,5 +12559,5 @@
   "pvpr_inflado": 4,
   "sin_precio": 6
  },
- "updated": "2026-11-27T11:05:34.014357+00:00"
+ "updated": "2026-11-27T11:35:38.294873+00:00"
 }
