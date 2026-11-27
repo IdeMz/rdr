@@ -29,7 +29,7 @@
   "Freidoras de aire": "2026-11-23T18:01:07.710591+00:00",
   "Gaming": "2026-11-25T12:30:56.628057+00:00",
   "Gatos": "2026-11-26T17:30:54.854401+00:00",
-  "Herramientas": "2026-11-25T11:31:00.165429+00:00",
+  "Herramientas": "2026-11-27T09:05:33.373522+00:00",
   "Higiene personal": "2026-11-26T11:01:09.682153+00:00",
   "Iluminación": "2026-11-26T12:01:05.059758+00:00",
   "Impresoras": "2026-11-21T12:30:56.768648+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-27T09:04:38.125000+00:00",
+ "next_at": "2026-11-27T09:32:34.277179+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1589,6 +1589,17 @@
    "title": "VASAGLE Mesa de Consola, Tablero de Vidrio Templado, Marco de Metal",
    "v": []
   },
+  "B08LP6MB7H": {
+   "c": "Herramientas",
+   "d": 40,
+   "e": "🔧",
+   "m": 676,
+   "p": 73.23,
+   "s": "busqueda",
+   "t": "2026-11-27T09:06:06.180007+00:00",
+   "title": "Bosch taladro/atornillador a batería UniversalDrill 18V (2 baterías, sistema de 18 V, en maletín)",
+   "v": []
+  },
   "B08PVDQFQQ": {
    "c": "Robots de cocina",
    "d": 26,
@@ -1752,17 +1763,6 @@
    "s": "ambas",
    "t": "2026-11-17T15:02:02.984875+00:00",
    "title": "Cecotec Ventilador de Pie con Mando a Distancia y Temporizador EnergySilence 1030 SmartExtreme. 28 W, 10 Aspas 40cm de Diámetro, Oscilante, 24 Velocidades, Ajustable 115-135cm, Motor DC, Blanco",
-   "v": []
-  },
-  "B0937LZJ3X": {
-   "c": "Colchones y almohadas",
-   "d": 19,
-   "e": "🛏️",
-   "m": 255,
-   "p": 144.7,
-   "s": "ofertas",
-   "t": "2026-11-13T08:46:24.380023+00:00",
-   "title": "Matnature | Platinum | Colchón Gran Confort Pro Múltiple Descanso | Muelles Ensacados y Viscoelástica | Altura 30 cm | Transpirable, Antideslizante y Antiácaros (90 x 200 cm)",
    "v": []
   },
   "B094WRT8PD": {
@@ -4510,6 +4510,18 @@
  },
  "reserve": [
   {
+   "a": "B07GZ4BWZ2",
+   "c": "Herramientas",
+   "e": "🔧",
+   "img": "https://m.media-amazon.com/images/I/61yShXJHWXL._AC_UL320_.jpg",
+   "n": 5500,
+   "op": 45.77,
+   "p": 37.5,
+   "r": 4.6,
+   "t": "2026-11-27T09:05:33.373522+00:00",
+   "title": "BLACK+DECKER Taladro percutor con cable de 710 W, BEH710K-QS"
+  },
+  {
    "a": "B0H5WSD37M",
    "c": "Limpieza del hogar",
    "e": "🧽",
@@ -4543,6 +4555,6 @@
  "tg_offset": 511048177,
  "x_copy": {
   "day": "2026-11-27",
-  "n": 4
+  "n": 5
  }
 }
