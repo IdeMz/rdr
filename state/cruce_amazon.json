@@ -620,6 +620,26 @@
    "v": 3,
    "via": "ean"
   },
+  "0766907020021": {
+   "a": "",
+   "t": "2026-11-27T01:35:24.238434+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "ViewSonic 4000 ANSI, VS19344"
+    ],
+    "modelo": [
+     "ViewSonic 4000 ANSI, VS19344",
+     "ViewSonic PS502W Proyector de 4.000 lúmenes ANSI WXGA de Corto Alcance para Negocios y educación, HD",
+     "ViewSonic PA503X Proyector, 4000 ANSI Lumen, XGA 1024x768, Contraste 22.000:1, Imagen hasta 300\", HD"
+    ],
+    "nombre": [
+     "ViewSonic PA503X Proyector, 4000 ANSI Lumen, XGA 1024x768, Contraste 22.000:1, Imagen hasta 300\", HD",
+     "ViewSonic PA700X XGA 4500LUM DLP HDMI, VGA, USB, Ethernet White",
+     "ViewSonic PA503W Proyector, 4000 ANSI Lumen, WXGA 1280x800, Contraste 22.000:1, Imagen hasta 300\", H"
+    ]
+   }
+  },
   "0766907027891": {
    "a": "B0CMPW1698",
    "t": "2026-11-13T11:40:39.260187+00:00",
@@ -7066,6 +7086,33 @@
    "t": "2026-11-16T08:10:40.674323+00:00",
    "veredicto": "dudoso"
   },
+  "45956991469": {
+   "ean": "0766907020021",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "ViewSonic PS502X Tiro Corto 0.616 XGA 1024x768 4000 Lúmenes ANSI altavoz 16W 34dB Proyector",
+   "pp_drop": 18,
+   "pp_median": 693.95,
+   "pp_price": 568.95,
+   "t": "2026-11-27T01:35:24.238434+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "ViewSonic 4000 ANSI, VS19344"
+    ],
+    "modelo": [
+     "ViewSonic 4000 ANSI, VS19344",
+     "ViewSonic PS502W Proyector de 4.000 lúmenes ANSI WXGA de Corto Alcance para Negocios y educación, HD",
+     "ViewSonic PA503X Proyector, 4000 ANSI Lumen, XGA 1024x768, Contraste 22.000:1, Imagen hasta 300\", HD"
+    ],
+    "nombre": [
+     "ViewSonic PA503X Proyector, 4000 ANSI Lumen, XGA 1024x768, Contraste 22.000:1, Imagen hasta 300\", HD",
+     "ViewSonic PA700X XGA 4500LUM DLP HDMI, VGA, USB, Ethernet White",
+     "ViewSonic PA503W Proyector, 4000 ANSI Lumen, WXGA 1280x800, Contraste 22.000:1, Imagen hasta 300\", H"
+    ]
+   }
+  },
   "45956991485": {
    "ahorro_vs_amazon": 6,
    "amz_low30": null,
@@ -7880,25 +7927,24 @@
    "veredicto": "amazon_mas_barato"
   },
   "46136341768": {
-   "ahorro_vs_amazon": null,
+   "ahorro_vs_amazon": 1,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": null,
+   "amz_price": 120.0,
    "amz_title": "msi mag 274CF E20 Gaming Monitor 27 Pulgadas 1920 x 1080 (FHD), 200Hz, AMD FreeSync Premium, HDMI, DisplayPort, VESA, inclinación Ajustable, 0,5 ms, Negro",
    "asin": "B0GP9FF1RC",
    "disponible": true,
    "ean": "4711377343275",
    "encontrado_por": "modelo",
    "lista": "candidates",
-   "motivo": "en Amazon pero sin precio o no disponible",
+   "motivo": "Amazon 120.00 frente a 119.00",
    "name": "MSI MAG 274CF X24 27 pulgadas Full HD Rapid VA 240Hz curvo Monitor",
-   "pista": "1298035 bytes; 7 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 24,
    "pp_median": 156.95,
    "pp_price": 119.0,
-   "t": "2026-11-26T04:50:34.575261+00:00",
+   "t": "2026-11-27T01:35:24.238434+00:00",
    "v": 3,
-   "veredicto": "sin_precio"
+   "veredicto": "amazon_mas_barato"
   },
   "46146890207": {
    "ean": "6934911797435",
@@ -12130,10 +12176,10 @@
    "lista": "candidates",
    "motivo": "Amazon 1699.00 frente a 2031.95",
    "name": "Proyector XGIMI MIRA Pro Triple Láser RGB 4K Tiro Ultracorto DLP",
-   "pp_drop": 22,
-   "pp_median": 2605.95,
+   "pp_drop": 15,
+   "pp_median": 2387.95,
    "pp_price": 2031.95,
-   "t": "2026-11-20T13:01:06.821120+00:00",
+   "t": "2026-11-27T01:35:24.238434+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -12316,14 +12362,14 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-27T01:20:29.658236+00:00",
+ "night_at": "2026-11-27T01:35:24.238434+00:00",
  "resumen": {
-  "amazon_mas_barato": 29,
+  "amazon_mas_barato": 30,
   "dudoso": 0,
-  "no_esta": 24,
+  "no_esta": 25,
   "oferta_real": 20,
   "pvpr_inflado": 4,
-  "sin_precio": 8
+  "sin_precio": 7
  },
- "updated": "2026-11-27T01:20:29.658236+00:00"
+ "updated": "2026-11-27T01:35:24.238434+00:00"
 }
