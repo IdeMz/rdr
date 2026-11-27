@@ -36,7 +36,7 @@
   "Jardín": "2026-11-24T14:30:59.149182+00:00",
   "Juguetes": "2026-11-26T13:30:53.798593+00:00",
   "Lego": "2026-11-25T11:01:10.670462+00:00",
-  "Limpieza del hogar": "2026-11-24T07:31:06.167251+00:00",
+  "Limpieza del hogar": "2026-11-27T08:04:46.322734+00:00",
   "Maquillaje": "2026-11-26T10:30:55.810022+00:00",
   "Menaje de cocina": "2026-11-24T17:01:06.823751+00:00",
   "Mochilas y maletas": "2026-11-24T17:30:51.708019+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-27T08:31:02.134563+00:00",
+ "next_at": "2026-11-27T08:32:51.804050+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -640,6 +640,17 @@
    "s": "ofertas",
    "t": "2026-11-26T11:01:42.391194+00:00",
    "title": "Elizabeth Arden White Tea Gel de Baño y Ducha Mujer 390 ml",
+   "v": []
+  },
+  "B06XRDTQFP": {
+   "c": "Limpieza del hogar",
+   "d": 32,
+   "e": "🧽",
+   "m": 674,
+   "p": 108.44,
+   "s": "ambas",
+   "t": "2026-11-27T08:05:21.339524+00:00",
+   "title": "Bosch limpiadora de alta presión UniversalAquatak 135 (1900 W, presión: 135 bar, caudal máx.: 410 l/h, en caja)",
    "v": []
   },
   "B072271WPB": {
@@ -4493,13 +4504,21 @@
   "B0F6NRJNTR": {
    "t": "2026-11-27T07:30:56.540921+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0GF9MXR7D": {
-   "t": "2026-11-26T08:01:06.074359+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
   }
  },
  "reserve": [
+  {
+   "a": "B0H5WSD37M",
+   "c": "Limpieza del hogar",
+   "e": "🧽",
+   "img": "https://m.media-amazon.com/images/I/71SnPgI9KpL._AC_UL320_.jpg",
+   "n": 62,
+   "op": 149.99,
+   "p": 85.49,
+   "r": 4.4,
+   "t": "2026-11-27T08:04:46.322734+00:00",
+   "title": "2026NEW Hidrolimpiadora de Alta Presión 180 Bar, 420 l/h, con Carrete para Manguera, Depósito de Espuma y Boquilla Ajustable 6 en 1, Rendimiento de hasta 50 m²/h, para Coche, Terraza y Jardín"
+  },
   {
    "a": "B08T9JTHNK",
    "c": "Bricolaje",
