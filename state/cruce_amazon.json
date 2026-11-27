@@ -144,6 +144,13 @@
    "v": 3,
    "via": "nombre"
   },
+  "0196388499632": {
+   "a": "B0FR2JHW42",
+   "t": "2026-11-27T00:20:32.263469+00:00",
+   "title": "Microsoft Surface Pro For Business - 12-Inch - Tablet - Snapdragon X Plus X1P-42-100 / 3.2 Ghz - Win 11 Pro - Qualcomm Adreno - 16 Gb Ram - 512 Gb ss",
+   "v": 3,
+   "via": "ean"
+  },
   "0196388499953": {
    "a": "B0FR2NBQWD",
    "t": "2026-11-26T13:30:53.798593+00:00",
@@ -9794,7 +9801,7 @@
    "pp_drop": 21,
    "pp_median": 456.94,
    "pp_price": 362.95,
-   "t": "2026-11-24T19:05:34.869773+00:00",
+   "t": "2026-11-27T00:20:32.263469+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -10951,24 +10958,24 @@
    "veredicto": "oferta_real"
   },
   "46599141816": {
-   "ahorro_vs_amazon": 26,
-   "amz_low30": null,
+   "ahorro_vs_amazon": -1,
+   "amz_low30": 54.6,
    "amz_median": null,
-   "amz_price": 74.62,
+   "amz_price": 32.29,
    "amz_title": "Panasonic ER-GC71 - Cortador de barba / cabello con 39 configuraciones de longitud, para hombres, peinado y cuidado para cabello y barba",
    "asin": "B01G8JR3TM",
    "disponible": true,
    "ean": "5025232838363",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "26 % por debajo del habitual en Amazon (74.62)",
+   "motivo": "Amazon 32.29 frente a 54.90",
    "name": "Panasonic ER-GC71 seco y mojado Plata inalámbrico 40 min Cortapelos",
    "pp_drop": 31,
    "pp_median": 79.9,
    "pp_price": 54.9,
-   "t": "2026-11-24T19:05:34.869773+00:00",
+   "t": "2026-11-27T00:20:32.263469+00:00",
    "v": 3,
-   "veredicto": "oferta_real"
+   "veredicto": "amazon_mas_barato"
   },
   "46599141999": {
    "ahorro_vs_amazon": null,
@@ -11504,6 +11511,26 @@
    "pp_median": 1648.95,
    "pp_price": 1320.94,
    "t": "2026-11-25T18:01:11.294449+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
+  "46599143241": {
+   "ahorro_vs_amazon": -1,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 1464.84,
+   "amz_title": "Microsoft Surface Pro For Business - 12-Inch - Tablet - Snapdragon X Plus X1P-42-100 / 3.2 Ghz - Win 11 Pro - Qualcomm Adreno - 16 Gb Ram - 512 Gb ss",
+   "asin": "B0FR2JHW42",
+   "disponible": true,
+   "ean": "0196388499632",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 1464.84 frente a 1479.95",
+   "name": "Microsoft Surface Pro 12 16GB/512GB 12 pulgadas PixelSense Táctil Snapdragon X Plus X1P-42-100 UFS Platino",
+   "pp_drop": 17,
+   "pp_median": 1784.96,
+   "pp_price": 1479.95,
+   "t": "2026-11-27T00:20:32.263469+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -12162,14 +12189,14 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-27T00:05:32.488695+00:00",
+ "night_at": "2026-11-27T00:20:32.263469+00:00",
  "resumen": {
-  "amazon_mas_barato": 26,
+  "amazon_mas_barato": 28,
   "dudoso": 0,
   "no_esta": 22,
-  "oferta_real": 20,
+  "oferta_real": 19,
   "pvpr_inflado": 3,
   "sin_precio": 9
  },
- "updated": "2026-11-27T00:05:32.488695+00:00"
+ "updated": "2026-11-27T00:20:32.263469+00:00"
 }
