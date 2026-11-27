@@ -26,7 +26,7 @@
   "Droguería": "2026-11-26T07:30:56.599929+00:00",
   "Fitness en casa": "2026-11-25T16:01:12.511497+00:00",
   "Fotografía": "2026-11-26T10:01:05.790556+00:00",
-  "Freidoras de aire": "2026-11-23T18:01:07.710591+00:00",
+  "Freidoras de aire": "2026-11-27T13:05:37.929990+00:00",
   "Gaming": "2026-11-25T12:30:56.628057+00:00",
   "Gatos": "2026-11-26T17:30:54.854401+00:00",
   "Herramientas": "2026-11-27T09:05:33.373522+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-27T13:04:54.465176+00:00",
+ "next_at": "2026-11-27T13:34:02.157122+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1366,17 +1366,6 @@
    "s": "ambas",
    "t": "2026-11-19T17:31:25.992402+00:00",
    "title": "ghd Curve - Rizador de Pelo Profesional - Rizos y Ondas Duraderas",
-   "v": []
-  },
-  "B084QRY7WR": {
-   "c": "Afeitado y depilación",
-   "d": 55,
-   "e": "🪒",
-   "m": 262,
-   "p": 5.44,
-   "s": "ambas",
-   "t": "2026-11-13T12:51:02.696112+00:00",
-   "title": "Wilkinson Sword Intuition Complete - Cuchillas de afeitar para mujer (3 unidades)",
    "v": []
   },
   "B084QXY478": {
@@ -3111,6 +3100,17 @@
    "title": "Samsung Memoria MZ- VAP1T0BW 9100 PRO SSD Interna 1TB, PCIe 5.0 x4, NVMe 2.0, Memoria Diseñada para Profesionales y Jugadores, Compatible con PC, Móvil y Consola de Juegos",
    "v": []
   },
+  "B0DWSLJ7HQ": {
+   "c": "Freidoras de aire",
+   "d": 45,
+   "e": "🍟",
+   "m": 684,
+   "p": 59.99,
+   "s": "busqueda",
+   "t": "2026-11-27T13:07:18.201251+00:00",
+   "title": "Russell Hobbs Freidora de Aire Satisfry, 8,3L XXL, Compacta, 27632-56",
+   "v": []
+  },
   "B0DX1XK7ZJ": {
    "c": "Limpieza del hogar",
    "d": 35,
@@ -4505,6 +4505,18 @@
  },
  "reserve": [
   {
+   "a": "B0DVLZ2H2C",
+   "c": "Freidoras de aire",
+   "e": "🍟",
+   "img": "https://m.media-amazon.com/images/I/51ASLySzRKL._AC_UL320_.jpg",
+   "n": 1200,
+   "op": 69.99,
+   "p": 49.99,
+   "r": 4.5,
+   "t": "2026-11-27T13:05:37.929990+00:00",
+   "title": "Instant Pot Vortex Compact Trufa Freidora sin aceite gris con cesta de 5 litros, 4 en 1: freír, deshidratar alimentos, hornear, recalentar, antiadherente, apta para lavavajillas, eléctrica."
+  },
+  {
    "a": "B0D1CR2C3J",
    "c": "Barras de sonido",
    "e": "🎶",
@@ -4527,18 +4539,6 @@
    "r": 4.2,
    "t": "2026-11-27T11:05:34.014357+00:00",
    "title": "Topipop Aspiradora de Mano, 25000Pa de Succión con Base de Carga"
-  },
-  {
-   "a": "B096B2TZR2",
-   "c": "Suplementos",
-   "e": "💊",
-   "img": "https://m.media-amazon.com/images/I/61n9rH3Mz1L._AC_UL320_.jpg",
-   "n": 2700,
-   "op": 27.99,
-   "p": 20.99,
-   "r": 4.5,
-   "t": "2026-11-27T10:05:33.632197+00:00",
-   "title": "Omega 3 Cápsulas 2000mg - 1000mg EPA + 500mg DHA - Alta dosificación"
   }
  ],
  "store_skip": {
@@ -4550,6 +4550,6 @@
  "tg_offset": 511048177,
  "x_copy": {
   "day": "2026-11-27",
-  "n": 12
+  "n": 13
  }
 }

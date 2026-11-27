@@ -755,6 +755,21 @@
     ]
    }
   },
+  "0840023294310": {
+   "a": "",
+   "t": "2026-11-27T13:05:37.929990+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Auriculares Moto Buds Loop Color Pantone Trekking Green, Diseño Open-Ear, Integración con Smartphone",
+     "Moto Buds Loop - Verde",
+     "Energy Sistem ChicPods Auriculares Inalambricos Bluetooth, Champagne"
+    ]
+   }
+  },
   "0840080523972": {
    "a": "B09B8RF4PY",
    "t": "2026-11-18T03:05:28.957988+00:00",
@@ -7808,6 +7823,28 @@
     ]
    }
   },
+  "46009647947": {
+   "ean": "0840023294310",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Motorola Moto Buds Loop Swarovski Beige Open-Ear ANC Bluetooth 5.0 37h Auriculares inalámbricos",
+   "pp_drop": 39,
+   "pp_median": 270.96,
+   "pp_price": 165.95,
+   "t": "2026-11-27T13:05:37.929990+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Auriculares Moto Buds Loop Color Pantone Trekking Green, Diseño Open-Ear, Integración con Smartphone",
+     "Moto Buds Loop - Verde",
+     "Energy Sistem ChicPods Auriculares Inalambricos Bluetooth, Champagne"
+    ]
+   }
+  },
   "46009647959": {
    "ahorro_vs_amazon": 0,
    "amz_low30": 492.49,
@@ -10307,22 +10344,22 @@
    "veredicto": "pvpr_inflado"
   },
   "46599139841": {
-   "ahorro_vs_amazon": -30,
+   "ahorro_vs_amazon": -11,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 39.18,
+   "amz_price": 46.0,
    "amz_title": "CHERRY XTRFY M68 Pro Wireless, Ratón Inalámbrico de Gaming Ultra Rápido, 2.4 GHz RF, Optimizado para esports, 8K, Forma Simétrica con Parte Frontal Baja, Blanco",
    "asin": "B0D4596YTN",
    "disponible": true,
    "ean": "7340086914697",
    "encontrado_por": "ean",
    "lista": "to_verify",
-   "motivo": "Amazon 39.18 frente a 50.95",
+   "motivo": "Amazon 46.00 frente a 50.95",
    "name": "Cherry Xtrfy M68 Pro Wireless 2,4 GHz 26000 DPI 5 botones USB 55 g Ratón gaming inalámbrico",
    "pp_drop": 57,
    "pp_median": 118.96,
    "pp_price": 50.95,
-   "t": "2026-11-25T13:01:04.295203+00:00",
+   "t": "2026-11-27T13:05:37.929990+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -12597,10 +12634,10 @@
  "resumen": {
   "amazon_mas_barato": 19,
   "dudoso": 0,
-  "no_esta": 17,
+  "no_esta": 18,
   "oferta_real": 16,
   "pvpr_inflado": 4,
   "sin_precio": 6
  },
- "updated": "2026-11-27T12:35:34.223179+00:00"
+ "updated": "2026-11-27T13:05:37.929990+00:00"
 }
