@@ -30,7 +30,7 @@
   "Gaming": "2026-11-25T12:30:56.628057+00:00",
   "Gatos": "2026-11-26T17:30:54.854401+00:00",
   "Herramientas": "2026-11-27T09:05:33.373522+00:00",
-  "Higiene personal": "2026-11-26T11:01:09.682153+00:00",
+  "Higiene personal": "2026-11-27T14:35:44.289056+00:00",
   "Iluminación": "2026-11-26T12:01:05.059758+00:00",
   "Impresoras": "2026-11-21T12:30:56.768648+00:00",
   "Jardín": "2026-11-24T14:30:59.149182+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-27T14:33:34.990008+00:00",
+ "next_at": "2026-11-27T15:01:44.996023+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2935,6 +2935,17 @@
    "title": "Arquivet Fresh Puppy Junior Pavo & Salmón 2,5Kg - Pienso Semihúmedo",
    "v": []
   },
+  "B0DP3C6613": {
+   "c": "Higiene personal",
+   "d": 52,
+   "e": "🪥",
+   "m": 687,
+   "p": 6.6,
+   "s": "ambas",
+   "t": "2026-11-27T14:36:14.784852+00:00",
+   "title": "Colgate Total Prevención Activa Cuidado de Encías 4x75ml",
+   "v": []
+  },
   "B0DP7K72L5": {
    "c": "Bebé",
    "d": 40,
@@ -4505,6 +4516,18 @@
  },
  "reserve": [
   {
+   "a": "B0BNNXVY1W",
+   "c": "Higiene personal",
+   "e": "🪥",
+   "img": "https://m.media-amazon.com/images/I/81P8DEDi9oL._AC_UL320_.jpg",
+   "n": 4200,
+   "op": 12.77,
+   "p": 7.77,
+   "r": 4.6,
+   "t": "2026-11-27T14:35:44.289056+00:00",
+   "title": "Colgate Max White Carbón Pasta de Dientes 4x75ml"
+  },
+  {
    "a": "B0DVLZ2H2C",
    "c": "Freidoras de aire",
    "e": "🍟",
@@ -4527,18 +4550,6 @@
    "r": 4.4,
    "t": "2026-11-27T12:05:34.336208+00:00",
    "title": "Bose Solo Soundbar Series 2 Altavoz Bluetooth para TV, Negro"
-  },
-  {
-   "a": "B0GXKW8GYG",
-   "c": "Aspiradoras",
-   "e": "🧹",
-   "img": "https://m.media-amazon.com/images/I/71uUtxxNYnL._AC_UL320_.jpg",
-   "n": 486,
-   "op": 49.99,
-   "p": 29.99,
-   "r": 4.2,
-   "t": "2026-11-27T11:05:34.014357+00:00",
-   "title": "Topipop Aspiradora de Mano, 25000Pa de Succión con Base de Carga"
   }
  ],
  "store_skip": {
@@ -4550,6 +4561,6 @@
  "tg_offset": 511048177,
  "x_copy": {
   "day": "2026-11-27",
-  "n": 15
+  "n": 16
  }
 }

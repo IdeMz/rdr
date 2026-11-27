@@ -747,6 +747,13 @@
    "title": "Corsair M75 Ratón para Juegos FPS Ligero RGB con Cable – 26.000 PPP – Botones Laterales Intercambiables – PC – Negro",
    "via": "ean"
   },
+  "0840006678427": {
+   "a": "B0D47FMZH3",
+   "t": "2026-11-27T14:35:44.289056+00:00",
+   "title": "Corsair TC500 Luxe Silla para Juegos – Tejido Transpirable Premium – Asientos Anchos – Reposabrazos Ajustables en 5 Direcciones – Soporte Lumbar Ajustable – Rec",
+   "v": 3,
+   "via": "ean"
+  },
   "0840023264559": {
    "a": "B0D3VKDQSN",
    "t": "2026-11-27T14:05:32.612136+00:00",
@@ -10868,22 +10875,22 @@
    "veredicto": "oferta_real"
   },
   "46599140629": {
-   "ahorro_vs_amazon": 11,
+   "ahorro_vs_amazon": 14,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 537.9,
+   "amz_price": 538.0,
    "amz_title": "Acer Business B8 B278Kbemiqprcuzx - UM.HB8EE.010",
    "asin": "B0CWQ6494G",
    "disponible": true,
    "ean": "4711121619854",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "11 % por debajo del habitual en Amazon (537.90)",
+   "motivo": "14 % por debajo del habitual en Amazon (538.00)",
    "name": "Monitor Acer 27 pulgadas 4K IPS 60Hz 4 ms Negro B278Kbemiqprcuzx",
-   "pp_drop": 24,
+   "pp_drop": 27,
    "pp_median": 630.95,
-   "pp_price": 480.95,
-   "t": "2026-11-26T18:45:39.384119+00:00",
+   "pp_price": 461.95,
+   "t": "2026-11-27T14:35:44.289056+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -12690,16 +12697,36 @@
    "t": "2026-11-20T14:30:58.924631+00:00",
    "v": 3,
    "veredicto": "oferta_real"
+  },
+  "46853995970": {
+   "ahorro_vs_amazon": -2,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 449.0,
+   "amz_title": "Corsair TC500 Luxe Silla para Juegos – Tejido Transpirable Premium – Asientos Anchos – Reposabrazos Ajustables en 5 Direcciones – Soporte Lumbar Ajustable – Rec",
+   "asin": "B0D47FMZH3",
+   "disponible": true,
+   "ean": "0840006678427",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 449.00 frente a 459.95",
+   "name": "Silla Gaming Corsair TC500 LUXE Negro Tela Transpirable Reposabrazos 3D 120kg",
+   "pp_drop": 27,
+   "pp_median": 627.95,
+   "pp_price": 459.95,
+   "t": "2026-11-27T14:35:44.289056+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
   }
  },
  "night_at": "2026-11-27T06:20:34.547635+00:00",
  "resumen": {
-  "amazon_mas_barato": 20,
+  "amazon_mas_barato": 21,
   "dudoso": 0,
   "no_esta": 18,
   "oferta_real": 17,
   "pvpr_inflado": 5,
   "sin_precio": 6
  },
- "updated": "2026-11-27T14:05:32.612136+00:00"
+ "updated": "2026-11-27T14:35:44.289056+00:00"
 }
