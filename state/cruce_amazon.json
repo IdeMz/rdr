@@ -3596,6 +3596,13 @@
    "v": 3,
    "via": "ean"
   },
+  "8712836972476": {
+   "a": "B0B5GHCHWV",
+   "t": "2026-11-27T20:45:38.822386+00:00",
+   "title": "Tristar Sandwichera 3 en 1, Placas Extraíbles, 2 Porciones, 750 W",
+   "v": 3,
+   "via": "ean"
+  },
   "8713016057600": {
    "a": "B07BLB78RP",
    "t": "2026-11-19T11:35:32.511367+00:00",
@@ -3899,6 +3906,13 @@
      "Razer Barracuda X Chroma - Auriculares inalámbricos para Juegos multiplataforma con 6 Zonas Chroma R"
     ]
    }
+  },
+  "8887910000601": {
+   "a": "B0FK4KHF2L",
+   "t": "2026-11-27T20:45:38.822386+00:00",
+   "title": "Razer Kiyo V2 X - Full-HD-Webcam 1080p, 60 FPS para creadores - Enfoque automático - Objetivo gran angular - Micrófono integrado -Compatible con Open Broadcaste",
+   "v": 3,
+   "via": "ean"
   },
   "8887910075500": {
    "a": "B0GX2219JY",
@@ -8738,6 +8752,26 @@
     ]
    }
   },
+  "46186025321": {
+   "ahorro_vs_amazon": 3,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 31.99,
+   "amz_title": "Tristar Sandwichera 3 en 1, Placas Extraíbles, 2 Porciones, 750 W",
+   "asin": "B0B5GHCHWV",
+   "disponible": true,
+   "ean": "8712836972476",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "antes 47.32 en PowerPlanet, pero en Amazon suele estar a 31.99",
+   "name": "TriStar 3 en 1 750W 2 bocadillos Negro SA-3071 Sandwichera",
+   "pp_drop": 35,
+   "pp_median": 47.32,
+   "pp_price": 30.95,
+   "t": "2026-11-27T20:45:38.822386+00:00",
+   "v": 3,
+   "veredicto": "pvpr_inflado"
+  },
   "46186025333": {
    "ahorro_vs_amazon": -31,
    "amz_low30": null,
@@ -10255,6 +10289,26 @@
    "v": 3,
    "veredicto": "oferta_real"
   },
+  "46599139446": {
+   "ahorro_vs_amazon": -2,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 79.99,
+   "amz_title": "Razer Kiyo V2 X - Full-HD-Webcam 1080p, 60 FPS para creadores - Enfoque automático - Objetivo gran angular - Micrófono integrado -Compatible con Open Broadcaste",
+   "asin": "B0FK4KHF2L",
+   "disponible": true,
+   "ean": "8887910000601",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 79.99 frente a 81.95",
+   "name": "Razer Kiyo V2 X 1440p 30fps 1080p 60fps Rosa autoenfoque micrófono Webcam",
+   "pp_drop": 27,
+   "pp_median": 112.95,
+   "pp_price": 81.95,
+   "t": "2026-11-27T20:45:38.822386+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "46599139463": {
    "ahorro_vs_amazon": 31,
    "amz_low30": null,
@@ -10375,25 +10429,6 @@
    "t": "2026-11-27T15:35:41.315716+00:00",
    "v": 3,
    "veredicto": "sin_precio"
-  },
-  "46599139733": {
-   "ahorro_vs_amazon": 12,
-   "amz_low30": null,
-   "amz_median": null,
-   "amz_price": 2477.97,
-   "amz_title": "Inno3D GeForce RTX 5080 iCHILL Frostbite 16GB GDDR7 Reflex 2 RTX AI DLSS4",
-   "asin": "B0FDFR71J9",
-   "disponible": true,
-   "ean": "8886307700155",
-   "encontrado_por": "ean",
-   "lista": "candidates",
-   "motivo": "12 % por debajo del habitual en Amazon (2477.97)",
-   "name": "INNO3D GeForce RTX 5080 ICHILL FROSTBITE 16GB Tarjeta gráfica",
-   "pp_drop": 15,
-   "pp_median": 2549.95,
-   "pp_price": 2168.95,
-   "t": "2026-11-13T20:40:48.338068+00:00",
-   "veredicto": "oferta_real"
   },
   "46599139740": {
    "ahorro_vs_amazon": -1,
@@ -12439,25 +12474,6 @@
    "t": "2026-11-14T22:05:27.466329+00:00",
    "veredicto": "amazon_mas_barato"
   },
-  "46599144084": {
-   "ahorro_vs_amazon": 7,
-   "amz_low30": null,
-   "amz_median": null,
-   "amz_price": 108.43,
-   "amz_title": "BLAUPUNKT Milano 200 BT - Bluetooth 1-DIN Radio MIT CD mit USB | Autoradio",
-   "asin": "B08S7MYYL7",
-   "disponible": true,
-   "ean": "4260499852320",
-   "encontrado_por": "nombre",
-   "lista": "candidates",
-   "motivo": "antes 133.95 en PowerPlanet, pero en Amazon suele estar a 108.43",
-   "name": "Blaupunkt Madrid 200 BT Negro 1 DIN Bluetooth Autorradio",
-   "pp_drop": 25,
-   "pp_median": 133.95,
-   "pp_price": 100.95,
-   "t": "2026-11-13T20:40:48.338068+00:00",
-   "veredicto": "pvpr_inflado"
-  },
   "46599145141": {
    "ahorro_vs_amazon": 7,
    "amz_low30": null,
@@ -12846,12 +12862,12 @@
  },
  "night_at": "2026-11-27T06:20:34.547635+00:00",
  "resumen": {
-  "amazon_mas_barato": 22,
+  "amazon_mas_barato": 23,
   "dudoso": 0,
   "no_esta": 20,
   "oferta_real": 19,
-  "pvpr_inflado": 6,
+  "pvpr_inflado": 7,
   "sin_precio": 6
  },
- "updated": "2026-11-27T20:15:42.816939+00:00"
+ "updated": "2026-11-27T20:45:38.822386+00:00"
 }
