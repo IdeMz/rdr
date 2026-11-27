@@ -17,9 +17,9 @@
   "Ciclismo": "2026-11-26T15:01:06.505667+00:00",
   "Climatización": "2026-11-24T18:35:37.637788+00:00",
   "Colchones y almohadas": "2026-11-24T16:30:59.602669+00:00",
-  "Componentes PC": "2026-11-25T10:01:04.002472+00:00",
+  "Componentes PC": "2026-11-27T15:05:34.336700+00:00",
   "Cuidado de la piel": "2026-11-25T15:01:06.717368+00:00",
-  "Cuidado del cabello": "2026-11-26T08:30:56.405277+00:00",
+  "Cuidado del cabello": "2026-11-27T15:05:34.336700+00:00",
   "Cámaras de seguridad": "2026-11-25T17:30:57.888678+00:00",
   "Decoración navideña": "2026-11-27T09:35:32.611631+00:00",
   "Domótica": "2026-11-26T16:31:04.591910+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-27T15:01:44.996023+00:00",
+ "next_at": "2026-11-27T15:31:30.579425+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1754,17 +1754,6 @@
    "title": "Azzaro",
    "v": []
   },
-  "B091JT7CSN": {
-   "c": "Cuidado de la piel",
-   "d": 55,
-   "e": "🧴",
-   "m": 265,
-   "p": 13.48,
-   "s": "ofertas",
-   "t": "2026-11-13T14:36:09.523973+00:00",
-   "title": "Olay Regenerist Crema Facial de Día Antiarrugas SPF 30, 50ml",
-   "v": []
-  },
   "B092DB8RFH": {
    "c": "Café y cápsulas",
    "d": 31,
@@ -2579,6 +2568,17 @@
    "s": "ambas",
    "t": "2026-11-16T13:06:01.404806+00:00",
    "title": "PANTUM M7108DW Impresora Multifunción Láser, 33ppm Impresión Automática a Doble Cara, impresión/Copia/escaneado, Blanco y Negro(A4, Wi-Fi Direct, Bluetooth, USB, AirPrint, Mopria)",
+   "v": []
+  },
+  "B0CNS4SHT7": {
+   "c": "Cuidado del cabello",
+   "d": 47,
+   "e": "💇",
+   "m": 688,
+   "p": 36.99,
+   "s": "ambas",
+   "t": "2026-11-27T15:07:32.573277+00:00",
+   "title": "Remington Secador de Pelo Professional ONE, sensor Thermacare para proteger cabello, iónico, 8 ajustes, 4 accesorios, reductor encrespamiento, neceser para guardar, D6078",
    "v": []
   },
   "B0CP481DTZ": {
@@ -4516,6 +4516,18 @@
  },
  "reserve": [
   {
+   "a": "B08R57HZ4Z",
+   "c": "Cuidado del cabello",
+   "e": "💇",
+   "img": "https://m.media-amazon.com/images/I/71skkMNcooL._AC_UL320_.jpg",
+   "n": 9900,
+   "op": 29.99,
+   "p": 19.99,
+   "r": 4.5,
+   "t": "2026-11-27T15:05:34.336700+00:00",
+   "title": "Secador con ThermoProtect Series 3000 de Philips (modelo BHD350/10)"
+  },
+  {
    "a": "B0BNNXVY1W",
    "c": "Higiene personal",
    "e": "🪥",
@@ -4538,29 +4550,21 @@
    "r": 4.5,
    "t": "2026-11-27T13:05:37.929990+00:00",
    "title": "Instant Pot Vortex Compact Trufa Freidora sin aceite gris con cesta de 5 litros, 4 en 1: freír, deshidratar alimentos, hornear, recalentar, antiadherente, apta para lavavajillas, eléctrica."
-  },
-  {
-   "a": "B0D1CR2C3J",
-   "c": "Barras de sonido",
-   "e": "🎶",
-   "img": "https://m.media-amazon.com/images/I/61amW9S4iuL._AC_UL320_.jpg",
-   "n": 2100,
-   "op": 199.95,
-   "p": 149.95,
-   "r": 4.4,
-   "t": "2026-11-27T12:05:34.336208+00:00",
-   "title": "Bose Solo Soundbar Series 2 Altavoz Bluetooth para TV, Negro"
   }
  ],
  "store_skip": {
-  "pp:45992962768": "2026-11-26T14:01:04.437909+00:00",
+  "ae:1005011584722293": "2026-11-27T15:05:34.336700+00:00",
+  "ae:1005012793917941": "2026-11-27T15:05:34.336700+00:00",
+  "pp:45992962768": "2026-11-27T15:05:34.336700+00:00",
   "pp:46239685110": "2026-11-27T08:01:05.056718+00:00",
-  "pp:46599140756": "2026-11-26T19:15:44.271556+00:00"
+  "pp:46599140600": "2026-11-27T15:05:34.336700+00:00",
+  "pp:46599140756": "2026-11-26T19:15:44.271556+00:00",
+  "pp:46599143208": "2026-11-27T15:05:34.336700+00:00"
  },
  "summary_day": "2026-11-26",
  "tg_offset": 511048177,
  "x_copy": {
   "day": "2026-11-27",
-  "n": 16
+  "n": 17
  }
 }

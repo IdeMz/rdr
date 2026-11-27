@@ -4313,7 +4313,7 @@
    "veredicto": "oferta_real"
   },
   "38299124911": {
-   "ahorro_vs_amazon": 5,
+   "ahorro_vs_amazon": 22,
    "amz_low30": null,
    "amz_median": null,
    "amz_price": 177.6,
@@ -4323,14 +4323,14 @@
    "ean": "6972476162213",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "antes 209.00 en PowerPlanet, pero en Amazon suele estar a 177.60",
+   "motivo": "22 % por debajo del habitual en Amazon (177.60)",
    "name": "SJCAM A50 GPS Negro 4K 30fps WiFi Cámara deportiva",
-   "pp_drop": 19,
+   "pp_drop": 33,
    "pp_median": 209.0,
-   "pp_price": 169.0,
-   "t": "2026-11-24T23:50:40.387410+00:00",
+   "pp_price": 139.0,
+   "t": "2026-11-27T15:05:34.336700+00:00",
    "v": 3,
-   "veredicto": "pvpr_inflado"
+   "veredicto": "oferta_real"
   },
   "38334868147": {
    "ahorro_vs_amazon": -24,
@@ -11287,19 +11287,19 @@
    "ahorro_vs_amazon": 6,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 464.91,
+   "amz_price": 434.16,
    "amz_title": "WD_BLACK SN850X NVMe SSD, 2TB M.2 2280, NVMe SSD con disipador de calor, Velocidades de lectura hasta 7300 MB/s, escritura 6600 MB/s, SSD para Juegos internos, ",
    "asin": "B0B7CKZGN6",
    "disponible": true,
    "ean": "0718037891309",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "antes 545.95 en PowerPlanet, pero en Amazon suele estar a 464.91",
+   "motivo": "antes 545.95 en PowerPlanet, pero en Amazon suele estar a 434.16",
    "name": "WD Black SN850X 2TB NVMe M.2 PCIe 4.0 7300MB/s SSD",
-   "pp_drop": 20,
+   "pp_drop": 26,
    "pp_median": 545.95,
-   "pp_price": 438.95,
-   "t": "2026-11-27T00:35:32.565296+00:00",
+   "pp_price": 405.96,
+   "t": "2026-11-27T15:05:34.336700+00:00",
    "v": 3,
    "veredicto": "pvpr_inflado"
   },
@@ -12724,9 +12724,9 @@
   "amazon_mas_barato": 21,
   "dudoso": 0,
   "no_esta": 18,
-  "oferta_real": 17,
-  "pvpr_inflado": 5,
+  "oferta_real": 18,
+  "pvpr_inflado": 4,
   "sin_precio": 6
  },
- "updated": "2026-11-27T14:35:44.289056+00:00"
+ "updated": "2026-11-27T15:05:34.336700+00:00"
 }
