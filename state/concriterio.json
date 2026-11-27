@@ -44,7 +44,7 @@
   "Móviles": "2026-11-26T07:01:05.477452+00:00",
   "Nutrición deportiva": "2026-11-27T13:35:33.037664+00:00",
   "Oficina": "2026-11-25T20:45:41.682692+00:00",
-  "Patinetes": "2026-11-26T16:01:04.848160+00:00",
+  "Patinetes": "2026-11-27T18:35:32.648553+00:00",
   "Pequeño electrodoméstico": "2026-11-26T15:30:59.307083+00:00",
   "Perfumes": "2026-11-24T16:01:07.815808+00:00",
   "Periféricos": "2026-11-27T14:05:32.612136+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-27T18:35:04.862051+00:00",
+ "next_at": "2026-11-27T19:04:18.251930+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -3496,6 +3496,17 @@
    "title": "Topipop Aspiradora de Man Sin Cable Potente",
    "v": []
   },
+  "B0FH26VC52": {
+   "c": "Patinetes",
+   "d": 18,
+   "e": "🛴",
+   "m": 695,
+   "p": 246.99,
+   "s": "busqueda",
+   "t": "2026-11-27T18:38:19.707730+00:00",
+   "title": "RCB hoverboards SUV y Kart,con Bluetooth, Control de Aplicaciones, Hoverboards Todo Terreno 8.5\" Hummer, Mejor Regalo para Niños",
+   "v": []
+  },
   "B0FHJ91JY5": {
    "c": "Cámaras de seguridad",
    "d": 50,
@@ -4531,6 +4542,18 @@
  },
  "reserve": [
   {
+   "a": "B0DJ34VSZ2",
+   "c": "Patinetes",
+   "e": "🛴",
+   "img": "https://m.media-amazon.com/images/I/71BdzkFrhWL._AC_UL320_.jpg",
+   "n": 418,
+   "op": 219.99,
+   "p": 189.95,
+   "r": 4.2,
+   "t": "2026-11-27T18:35:32.648553+00:00",
+   "title": "MASCOOTER S1 | Patinete Eléctrico Adultos Homologado con Talleres en España"
+  },
+  {
    "a": "B0B2RQTHSL",
    "c": "Iluminación",
    "e": "🪔",
@@ -4553,18 +4576,6 @@
    "r": 4.5,
    "t": "2026-11-27T16:35:45.254038+00:00",
    "title": "L'Oréal Paris Accord Parfait Sérum con Color, Light (2 - 3), 30ml"
-  },
-  {
-   "a": "B08R57HZ4Z",
-   "c": "Cuidado del cabello",
-   "e": "💇",
-   "img": "https://m.media-amazon.com/images/I/71skkMNcooL._AC_UL320_.jpg",
-   "n": 9900,
-   "op": 29.99,
-   "p": 19.99,
-   "r": 4.5,
-   "t": "2026-11-27T15:05:34.336700+00:00",
-   "title": "Secador con ThermoProtect Series 3000 de Philips (modelo BHD350/10)"
   }
  ],
  "store_skip": {
@@ -4580,6 +4591,6 @@
  "tg_offset": 511048177,
  "x_copy": {
   "day": "2026-11-27",
-  "n": 23
+  "n": 24
  }
 }

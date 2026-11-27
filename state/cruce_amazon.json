@@ -2816,6 +2816,21 @@
    "v": 3,
    "via": "nombre"
   },
+  "6972596104797": {
+   "a": "",
+   "t": "2026-11-27T18:35:32.648553+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Amazfit Bip 6 Smartwatch 46mm, Batería 14 días, AMOLED 1,97\", GPS con Mapas, IA, Llamadas Bluetooth,",
+     "Amazfit Bip MAX Smartwatch Reloj Inteligente 50mm, Batería 20 Días, 4 GB",
+     "Amazfit Bip MAX Smartwatch Reloj Inteligente 50mm, Batería 20 Días, 4 GB"
+    ]
+   }
+  },
   "6972884752242": {
    "a": "B0H7HZTXYC",
    "t": "2026-11-16T15:40:40.598894+00:00",
@@ -3917,6 +3932,28 @@
      "Yisica Correa para 22mm 20mm Reloj Inteligente Hombre Mujer, Liberación Rápida de Silicona Suave Pul",
      "Yisica 3 Piezas Correa para 22mm Reloj Inteligente Hombre Mujer, Liberación Rápida de Silicona Suave",
      "Oumida 4 Piezas Correa para 22mm Reloj Inteligente Hombre Mujer, Pulseras de Repuesto de Liberación "
+    ]
+   }
+  },
+  "37600252530": {
+   "ean": "6972596104797",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Amazfit Bip 3 Pro Rosa 1,69 pulgadas TFT 14 días +60 deportes 5ATM Smartwatch",
+   "pp_drop": 35,
+   "pp_median": 77.95,
+   "pp_price": 50.95,
+   "t": "2026-11-27T18:35:32.648553+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Amazfit Bip 6 Smartwatch 46mm, Batería 14 días, AMOLED 1,97\", GPS con Mapas, IA, Llamadas Bluetooth,",
+     "Amazfit Bip MAX Smartwatch Reloj Inteligente 50mm, Batería 20 Días, 4 GB",
+     "Amazfit Bip MAX Smartwatch Reloj Inteligente 50mm, Batería 20 Días, 4 GB"
     ]
    }
   },
@@ -10742,7 +10779,7 @@
    "pp_drop": 30,
    "pp_median": 133.67,
    "pp_price": 93.94,
-   "t": "2026-11-25T18:30:56.405059+00:00",
+   "t": "2026-11-27T18:35:32.648553+00:00",
    "v": 3,
    "veredicto": "pvpr_inflado"
   },
@@ -12776,10 +12813,10 @@
  "resumen": {
   "amazon_mas_barato": 22,
   "dudoso": 0,
-  "no_esta": 19,
+  "no_esta": 20,
   "oferta_real": 18,
   "pvpr_inflado": 5,
   "sin_precio": 6
  },
- "updated": "2026-11-27T18:05:30.612634+00:00"
+ "updated": "2026-11-27T18:35:32.648553+00:00"
 }
