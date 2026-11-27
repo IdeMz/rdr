@@ -815,6 +815,13 @@
     ]
    }
   },
+  "0843367134168": {
+   "a": "B0DJC6KPJJ",
+   "t": "2026-11-27T01:50:42.494749+00:00",
+   "title": "Lexar Tarjeta SD 1 TB Silver, hasta 205 MB/s de Lectura, Tarjeta de Memoria SDXC UHS-I, Clase 10, U3, V30, SD Card para Fotógrafos Profesionales, Videógrafos y ",
+   "v": 3,
+   "via": "nombre"
+  },
   "0850033806298": {
    "a": "B09BW29FJS",
    "t": "2026-11-17T22:20:31.920357+00:00",
@@ -2782,6 +2789,13 @@
    "v": 3,
    "via": "ean"
   },
+  "6976297860655": {
+   "a": "B0CYZFP4YR",
+   "t": "2026-11-27T01:50:42.494749+00:00",
+   "title": "CYCPLUS Ciclocomputador GPS Bicicleta Inalámbrico M2 Pantalla LCD 2,5\" IPX6",
+   "v": 3,
+   "via": "ean"
+  },
   "6976367680916": {
    "a": "",
    "t": "2026-11-18T22:20:27.614650+00:00",
@@ -4185,6 +4199,26 @@
    "t": "2026-11-24T23:50:40.387410+00:00",
    "v": 3,
    "veredicto": "pvpr_inflado"
+  },
+  "38334868147": {
+   "ahorro_vs_amazon": -24,
+   "amz_low30": 33.99,
+   "amz_median": 33.99,
+   "amz_price": 32.29,
+   "amz_title": "CYCPLUS Ciclocomputador GPS Bicicleta Inalámbrico M2 Pantalla LCD 2,5\" IPX6",
+   "asin": "B0CYZFP4YR",
+   "disponible": true,
+   "ean": "6976297860655",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 32.29 frente a 41.99",
+   "name": "Cycplus M2 BLE/ANT+ Negro",
+   "pp_drop": 30,
+   "pp_median": 59.96,
+   "pp_price": 41.99,
+   "t": "2026-11-27T01:50:42.494749+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
   },
   "38383446133": {
    "ahorro_vs_amazon": -26,
@@ -8504,6 +8538,26 @@
    "v": 3,
    "veredicto": "oferta_real"
   },
+  "46186033233": {
+   "ahorro_vs_amazon": 29,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 324.49,
+   "amz_title": "Lexar Tarjeta SD 1 TB Silver, hasta 205 MB/s de Lectura, Tarjeta de Memoria SDXC UHS-I, Clase 10, U3, V30, SD Card para Fotógrafos Profesionales, Videógrafos y ",
+   "asin": "B0DJC6KPJJ",
+   "disponible": true,
+   "ean": "0843367134168",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "29 % por debajo del habitual en Amazon (324.49)",
+   "name": "Lexar Professional Silver Plus 1TB 205MB/s V30 UHS-I Tarjeta de memoria SDXC",
+   "pp_drop": 20,
+   "pp_median": 285.95,
+   "pp_price": 228.94,
+   "t": "2026-11-27T01:50:42.494749+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "46186034906": {
    "ahorro_vs_amazon": -31,
    "amz_low30": null,
@@ -11547,7 +11601,7 @@
    "pp_drop": 13,
    "pp_median": 5466.95,
    "pp_price": 4777.95,
-   "t": "2026-11-24T21:35:33.439110+00:00",
+   "t": "2026-11-27T01:50:42.494749+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -12362,14 +12416,14 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-27T01:35:24.238434+00:00",
+ "night_at": "2026-11-27T01:50:42.494749+00:00",
  "resumen": {
-  "amazon_mas_barato": 30,
+  "amazon_mas_barato": 31,
   "dudoso": 0,
   "no_esta": 25,
-  "oferta_real": 20,
+  "oferta_real": 21,
   "pvpr_inflado": 4,
   "sin_precio": 7
  },
- "updated": "2026-11-27T01:35:24.238434+00:00"
+ "updated": "2026-11-27T01:50:42.494749+00:00"
 }
