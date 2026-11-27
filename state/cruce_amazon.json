@@ -4412,11 +4412,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Apple TV 4K 3ª Gen 128GB WiFi 6 Bluetooth 5.0 A15 Gigabit",
-   "pista": "1909386 bytes; 11 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1880861 bytes; 10 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 47,
    "pp_median": 637.95,
    "pp_price": 339.95,
-   "t": "2026-11-27T17:05:36.166528+00:00",
+   "t": "2026-11-27T23:20:33.888400+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -7145,11 +7145,11 @@
    "lista": "to_verify",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Endgame Gear XM2 8k 30000 DPI 51,5g 6 botones Ratón gaming",
-   "pista": "2121790 bytes; 20 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1948327 bytes; 9 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 54,
    "pp_median": 69.95,
    "pp_price": 31.94,
-   "t": "2026-11-27T17:05:36.166528+00:00",
+   "t": "2026-11-27T23:20:33.888400+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -7174,25 +7174,6 @@
      "Endgame Gear XM2 8K V2 Ratón Gaming con Cable, 8000 Hz, Dark Frost"
     ]
    }
-  },
-  "45948306775": {
-   "ahorro_vs_amazon": 23,
-   "amz_low30": null,
-   "amz_median": null,
-   "amz_price": 348.89,
-   "amz_title": "SanDisk SSD portátil Extremo de 2 TB - hasta 1050 MB/s - USB-C, USB 3.2 Gen 2 - Unidad Externa de Estado sólido - SDSSDE61-2T00-G25B",
-   "asin": "B0C5SC2V95",
-   "disponible": true,
-   "ean": "619659205058",
-   "encontrado_por": "ean",
-   "lista": "to_verify",
-   "motivo": "23 % por debajo del habitual en Amazon (348.89)",
-   "name": "SanDisk Extreme Portable V2 2TB NVMe USB 3.2 Gen 2 1050MB/s IP65 SSD externo",
-   "pp_drop": 58,
-   "pp_median": 631.95,
-   "pp_price": 266.95,
-   "t": "2026-11-13T23:20:24.256283+00:00",
-   "veredicto": "oferta_real"
   },
   "45948306832": {
    "ahorro_vs_amazon": -6,
@@ -8660,7 +8641,7 @@
    "pp_drop": 17,
    "pp_median": 545.95,
    "pp_price": 454.95,
-   "t": "2026-11-25T23:18:49.346459+00:00",
+   "t": "2026-11-27T23:20:33.888400+00:00",
    "v": 3,
    "veredicto": "no_esta",
    "vistos": {
@@ -13011,33 +12992,6 @@
     ]
    }
   },
-  "46693747648": {
-   "ean": "8004399143500",
-   "lista": "candidates",
-   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
-   "name": "Termoventilador De'Longhi Blanco Termostato 2000W 2 Niveles HFS50A20.WH",
-   "pp_drop": 32,
-   "pp_median": 75.95,
-   "pp_price": 51.95,
-   "t": "2026-11-13T23:20:24.256283+00:00",
-   "v": 2,
-   "veredicto": "no_esta",
-   "vistos": {
-    "ean": [
-     "De'Longhi Calefactor Vertical Edge 1 Bianco"
-    ],
-    "modelo": [
-     "De'Longhi Calefactor Vertical Edge 1 Bianco",
-     "De'Longhi Calentador rápido HFS50F24 - Calefactor (2400 W, hasta 70 m³), color blanco",
-     "De 'Longhi calefactor rápido, hva 3220"
-    ],
-    "nombre": [
-     "De'Longhi Termoventilador Cerámico de Torre, Calentamiento Rápido con 2 Niveles, Mando a Distancia, ",
-     "De'longhi HFX65v20 - Calefactor cerámico, 2000 w, temporizador digital, 2 niveles de calefacción, ma",
-     "De'Longhi Calefactor Vertical Edge 1 Bianco"
-    ]
-   }
-  },
   "46693747965": {
    "ean": "4260499852771",
    "lista": "candidates",
@@ -13182,7 +13136,7 @@
    "veredicto": "pvpr_inflado"
   }
  },
- "night_at": "2026-11-27T23:05:26.359502+00:00",
+ "night_at": "2026-11-27T23:20:33.888400+00:00",
  "resumen": {
   "amazon_mas_barato": 26,
   "dudoso": 1,
@@ -13191,5 +13145,5 @@
   "pvpr_inflado": 7,
   "sin_precio": 9
  },
- "updated": "2026-11-27T23:05:26.359502+00:00"
+ "updated": "2026-11-27T23:20:33.888400+00:00"
 }
