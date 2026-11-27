@@ -2816,6 +2816,21 @@
     ]
    }
   },
+  "6972476160066": {
+   "a": "",
+   "t": "2026-11-27T21:15:42.612919+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "SJCAM C110Plus 4K Mini Cámara Deportiva,Zoom 8X Portátil para POV Cámara",
+     "SJCAM C300 Vlog Pack(64G),Camara Vlog con Batería de 7 Horas",
+     "SJCAM SJ4K Cámara Deportiva 4K,40MP Camara de Acción 32G Tarjeta,170°Gran Angular,Estabilización EIS"
+    ]
+   }
+  },
   "6972476162213": {
    "a": "B0B9R1YKQP",
    "t": "2026-11-20T23:20:42.342812+00:00",
@@ -3408,6 +3423,13 @@
      "(sin resultados)"
     ]
    }
+  },
+  "8434388447881": {
+   "a": "B0DRVDWPV1",
+   "t": "2026-11-27T21:15:42.612919+00:00",
+   "title": "Consola de Juegos portátil ANBERNIC RG 34XX, 64 GB Integrados con más de 5000 Juegos, Pantalla IPS de 3,4 Pulgadas, 3500 mAh, Compatible con Consola Retro, mult",
+   "v": 3,
+   "via": "nombre"
   },
   "8434388458016": {
    "a": "",
@@ -4899,25 +4921,6 @@
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
-  "41405667926": {
-   "ahorro_vs_amazon": -13,
-   "amz_low30": null,
-   "amz_median": null,
-   "amz_price": 397.83,
-   "amz_title": "Montre connectée Huawei Watch 5 42 mm Bluetooth Beige avec bracelet en fluoroélastomère Beige",
-   "asin": "B0F1G8QQLM",
-   "disponible": true,
-   "ean": "6942103154287",
-   "encontrado_por": "ean",
-   "lista": "candidates",
-   "motivo": "Amazon 397.83 frente a 449.95",
-   "name": "Huawei Watch 5 42 mm Beige 1,38 pulgadas AMOLED GPS NFC 3 días +100 deportes 5ATM",
-   "pp_drop": 18,
-   "pp_median": 545.95,
-   "pp_price": 449.95,
-   "t": "2026-11-13T21:15:42.495405+00:00",
-   "veredicto": "amazon_mas_barato"
-  },
   "41436482383": {
    "ahorro_vs_amazon": 53,
    "amz_low30": null,
@@ -5078,6 +5081,28 @@
    "t": "2026-11-25T23:35:26.842035+00:00",
    "v": 3,
    "veredicto": "oferta_real"
+  },
+  "42063874716": {
+   "ean": "6972476160066",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "SJCAM A10 Negro Full HD 12MP WiFi Cámara deportiva",
+   "pp_drop": 26,
+   "pp_median": 129.0,
+   "pp_price": 95.0,
+   "t": "2026-11-27T21:15:42.612919+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "SJCAM C110Plus 4K Mini Cámara Deportiva,Zoom 8X Portátil para POV Cámara",
+     "SJCAM C300 Vlog Pack(64G),Camara Vlog con Batería de 7 Horas",
+     "SJCAM SJ4K Cámara Deportiva 4K,40MP Camara de Acción 32G Tarjeta,170°Gran Angular,Estabilización EIS"
+    ]
+   }
   },
   "42520354709": {
    "ahorro_vs_amazon": 25,
@@ -5500,6 +5525,26 @@
    "t": "2026-11-18T02:50:27.531463+00:00",
    "v": 3,
    "veredicto": "dudoso"
+  },
+  "44787550480": {
+   "ahorro_vs_amazon": 27,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 109.0,
+   "amz_title": "Consola de Juegos portátil ANBERNIC RG 34XX, 64 GB Integrados con más de 5000 Juegos, Pantalla IPS de 3,4 Pulgadas, 3500 mAh, Compatible con Consola Retro, mult",
+   "asin": "B0DRVDWPV1",
+   "disponible": true,
+   "ean": "8434388447881",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "27 % por debajo del habitual en Amazon (109.00)",
+   "name": "Anbernic RG DS Negra - Consola retro",
+   "pp_drop": 27,
+   "pp_median": 109.0,
+   "pp_price": 79.99,
+   "t": "2026-11-27T21:15:42.612919+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
   },
   "44787550502": {
    "ahorro_vs_amazon": 14,
@@ -12864,10 +12909,10 @@
  "resumen": {
   "amazon_mas_barato": 23,
   "dudoso": 0,
-  "no_esta": 20,
-  "oferta_real": 19,
+  "no_esta": 21,
+  "oferta_real": 20,
   "pvpr_inflado": 7,
   "sin_precio": 6
  },
- "updated": "2026-11-27T20:45:38.822386+00:00"
+ "updated": "2026-11-27T21:15:42.612919+00:00"
 }

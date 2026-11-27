@@ -4,7 +4,7 @@
   "Accesorios de móvil": "2026-11-26T21:15:40.564504+00:00",
   "Afeitado y depilación": "2026-11-27T12:35:34.223179+00:00",
   "Almacenamiento": "2026-11-26T11:30:57.919122+00:00",
-  "Altavoces": "2026-11-25T16:30:57.642581+00:00",
+  "Altavoces": "2026-11-27T21:15:42.612919+00:00",
   "Aspiradoras": "2026-11-27T11:05:34.014357+00:00",
   "Auriculares": "2026-11-26T18:01:05.764618+00:00",
   "Barras de sonido": "2026-11-27T12:05:34.336208+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-27T21:14:26.806725+00:00",
+ "next_at": "2026-11-27T21:40:53.456945+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2759,6 +2759,17 @@
    "title": "Ultimate Ears WONDERBOOM 4, altavoz Bluetooth portátil resistente al agua",
    "v": []
   },
+  "B0D4XDRRCQ": {
+   "c": "Altavoces",
+   "d": 44,
+   "e": "🔊",
+   "m": 700,
+   "p": 95.0,
+   "s": "ofertas",
+   "t": "2026-11-27T21:16:24.447096+00:00",
+   "title": "Beats Pill Altavoz Bluetooth - 24 h de batería - Champán",
+   "v": []
+  },
   "B0D6FY1MKJ": {
    "c": "Bricolaje",
    "d": 30,
@@ -4544,6 +4555,18 @@
  },
  "reserve": [
   {
+   "a": "B0FM8LZ89W",
+   "c": "Altavoces",
+   "e": "🔊",
+   "img": "https://m.media-amazon.com/images/I/71B9Cs4CtmL._AC_UL320_.jpg",
+   "n": 1200,
+   "op": 129.99,
+   "p": 98.97,
+   "r": 4.6,
+   "t": "2026-11-27T21:15:42.612919+00:00",
+   "title": "JBL Tuner 3, Radio Portátil Dab/Dab+/FM Bluetooth, Negro"
+  },
+  {
    "a": "B0BL898WJZ",
    "c": "Climatización",
    "e": "🌬️",
@@ -4566,18 +4589,6 @@
    "r": 4.2,
    "t": "2026-11-27T18:35:32.648553+00:00",
    "title": "MASCOOTER S1 | Patinete Eléctrico Adultos Homologado con Talleres en España"
-  },
-  {
-   "a": "B0B2RQTHSL",
-   "c": "Iluminación",
-   "e": "🪔",
-   "img": "https://m.media-amazon.com/images/I/51jfmYIt6wL._AC_UL320_.jpg",
-   "n": 1300,
-   "op": 29.39,
-   "p": 20.46,
-   "r": 4.3,
-   "t": "2026-11-27T18:05:30.612634+00:00",
-   "title": "Philips - Lámpara LED de mesa tipo Flexo Philips Tilpa 5W 5000K con 3 escenas de luz - Carga USB"
   }
  ],
  "store_skip": {
@@ -4593,6 +4604,6 @@
  "tg_offset": 511048177,
  "x_copy": {
   "day": "2026-11-27",
-  "n": 28
+  "n": 29
  }
 }
