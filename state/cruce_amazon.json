@@ -4140,11 +4140,12 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Apple TV 4K 3ª Gen 128GB WiFi 6 Bluetooth 5.0 A15 Gigabit",
-   "pista": "1895730 bytes; 6 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
-   "pp_drop": 11,
-   "pp_median": 421.95,
-   "pp_price": 374.95,
-   "t": "2026-11-17T04:05:26.884298+00:00",
+   "pista": "1893946 bytes; 10 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pp_drop": 47,
+   "pp_median": 637.95,
+   "pp_price": 339.95,
+   "t": "2026-11-27T11:05:34.014357+00:00",
+   "v": 3,
    "veredicto": "sin_precio"
   },
   "37600261042": {
@@ -6770,11 +6771,11 @@
    "lista": "to_verify",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Endgame Gear XM2 8k 30000 DPI 51,5g 6 botones Ratón gaming",
-   "pista": "2207700 bytes; 25 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "2215425 bytes; 24 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 54,
    "pp_median": 69.95,
    "pp_price": 31.94,
-   "t": "2026-11-27T04:20:34.013530+00:00",
+   "t": "2026-11-27T11:05:34.014357+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -12558,5 +12559,5 @@
   "pvpr_inflado": 4,
   "sin_precio": 6
  },
- "updated": "2026-11-27T10:35:40.471392+00:00"
+ "updated": "2026-11-27T11:05:34.014357+00:00"
 }
