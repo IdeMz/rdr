@@ -35,7 +35,7 @@
   "Impresoras": "2026-11-21T12:30:56.768648+00:00",
   "Jardín": "2026-11-24T14:30:59.149182+00:00",
   "Juguetes": "2026-11-26T13:30:53.798593+00:00",
-  "Lego": "2026-11-25T11:01:10.670462+00:00",
+  "Lego": "2026-11-27T21:45:38.691716+00:00",
   "Limpieza del hogar": "2026-11-27T08:04:46.322734+00:00",
   "Maquillaje": "2026-11-26T10:30:55.810022+00:00",
   "Menaje de cocina": "2026-11-27T11:35:38.294873+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-27T21:40:53.456945+00:00",
+ "next_at": "2026-11-27T22:14:56.747074+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2007,17 +2007,6 @@
    "title": "Govee Lámpara de Pie LED, RGBIC Lámpara Regulable 2700-6500K, Color Negro",
    "v": []
   },
-  "B09VPHVT2Z": {
-   "c": "Cargadores y baterías",
-   "d": 52,
-   "e": "🔌",
-   "m": 275,
-   "p": 72.18,
-   "s": "ofertas",
-   "t": "2026-11-13T21:16:15.823061+00:00",
-   "title": "Anker Zolo Power bank 24.000mAh 140W con Tres puertos USB C",
-   "v": []
-  },
   "B09X3FTL7F": {
    "c": "Redes y wifi",
    "d": 47,
@@ -2635,6 +2624,17 @@
    "s": "ambas",
    "t": "2026-11-24T08:31:21.493152+00:00",
    "title": "Báscula de Café Mini Recargable con Temporizador, Maestri House, Precisión 0.1g/2kg, para Espresso y Café de Filtro, Báscula Digital Portátil con Cronometraje Automático-Negro y Plata",
+   "v": []
+  },
+  "B0CSZ5R9DB": {
+   "c": "Lego",
+   "d": 46,
+   "e": "🧱",
+   "m": 701,
+   "p": 14.99,
+   "s": "ofertas",
+   "t": "2026-11-27T21:46:11.495667+00:00",
+   "title": "Ravensburger - Puzzle 3D BB-8 Star Wars 99 Piezas, +8 años",
    "v": []
   },
   "B0CTCQKJ1B": {
@@ -4577,18 +4577,6 @@
    "r": 4.2,
    "t": "2026-11-27T20:15:42.816939+00:00",
    "title": "Philips Air Performer 8000 3en1 Purificador, Calefactor y Ventilador, 70m²"
-  },
-  {
-   "a": "B0DJ34VSZ2",
-   "c": "Patinetes",
-   "e": "🛴",
-   "img": "https://m.media-amazon.com/images/I/71BdzkFrhWL._AC_UL320_.jpg",
-   "n": 418,
-   "op": 219.99,
-   "p": 189.95,
-   "r": 4.2,
-   "t": "2026-11-27T18:35:32.648553+00:00",
-   "title": "MASCOOTER S1 | Patinete Eléctrico Adultos Homologado con Talleres en España"
   }
  ],
  "store_skip": {
@@ -4604,6 +4592,6 @@
  "tg_offset": 511048177,
  "x_copy": {
   "day": "2026-11-27",
-  "n": 29
+  "n": 30
  }
 }

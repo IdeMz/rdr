@@ -4917,7 +4917,7 @@
    "pp_drop": 29,
    "pp_median": 106.95,
    "pp_price": 75.95,
-   "t": "2026-11-25T21:45:38.616662+00:00",
+   "t": "2026-11-27T21:45:38.691716+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -10467,11 +10467,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "MSI GeForce RTX 5090 SUPRIM SOC 32GB GDDR7 Negro",
-   "pista": "1667020 bytes; 7 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1618335 bytes; 13 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 17,
    "pp_median": 11389.95,
    "pp_price": 9461.95,
-   "t": "2026-11-27T15:35:41.315716+00:00",
+   "t": "2026-11-27T21:45:38.691716+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -12914,5 +12914,5 @@
   "pvpr_inflado": 7,
   "sin_precio": 6
  },
- "updated": "2026-11-27T21:15:42.612919+00:00"
+ "updated": "2026-11-27T21:45:38.691716+00:00"
 }
