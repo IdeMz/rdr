@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-27T08:32:51.804050+00:00",
+ "next_at": "2026-11-27T09:04:38.125000+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2681,17 +2681,6 @@
    "title": "Ninja Double Stack XL, Freidora de Aire de Doble Cajón, 9,5L, Negro/Cobre",
    "v": []
   },
-  "B0D1CSN1QR": {
-   "c": "Altavoces",
-   "d": 28,
-   "e": "🔊",
-   "m": 254,
-   "p": 289.95,
-   "s": "ambas",
-   "t": "2026-11-13T08:11:33.192775+00:00",
-   "title": "Bose SoundLink Max, Altavoz portátil con bluetooth para exterior con graves potentes, Resistente al agua estéreo con Bluetooth y conexión USB-C , Hasta 20 horas de autonomía, AUX de 3,5 mm, Negro",
-   "v": []
-  },
   "B0D2Q5M35Y": {
    "c": "Accesorios de coche",
    "d": 39,
@@ -4257,6 +4246,19 @@
    "u": "https://s.click.aliexpress.com/e/_c2u5lKuD",
    "v": []
   },
+  "ae:1005012105662413": {
+   "auto": true,
+   "c": "",
+   "d": 36,
+   "e": "",
+   "m": 675,
+   "p": 266.18,
+   "st": "ALIEXPRESS",
+   "t": "2026-11-27T08:35:36.191735+00:00",
+   "title": "POCO X8 Pro 5G 8GB 256GB 12GB 512GB NFC Smartphone Dimensity 8500-Ultra Batería de 6500mAh",
+   "u": "https://s.click.aliexpress.com/e/_c3Riec3n",
+   "v": []
+  },
   "ae:1005012536387411": {
    "auto": true,
    "c": "",
@@ -4541,6 +4543,6 @@
  "tg_offset": 511048164,
  "x_copy": {
   "day": "2026-11-27",
-  "n": 3
+  "n": 4
  }
 }
