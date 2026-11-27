@@ -9,7 +9,7 @@
   "Auriculares": "2026-11-26T18:01:05.764618+00:00",
   "Barras de sonido": "2026-11-23T21:45:48.617233+00:00",
   "Bebé": "2026-11-25T19:15:38.789832+00:00",
-  "Bricolaje": "2026-11-25T18:01:11.294449+00:00",
+  "Bricolaje": "2026-11-27T07:01:05.022940+00:00",
   "Cafeteras": "2026-11-24T19:35:37.316644+00:00",
   "Café y cápsulas": "2026-11-26T12:30:59.615384+00:00",
   "Camping y montaña": "2026-11-26T13:01:08.844723+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-26T21:55:39.841228+00:00",
+ "next_at": "2026-11-27T07:30:11.164410+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1501,17 +1501,6 @@
    "title": "Paladone Luz de Iconos Xbox - Lámpara Decorativa, Modo Dinámico, Accesorio de Escritorio, Producto Oficial",
    "v": []
   },
-  "B08GCDYC89": {
-   "c": "Cuidado del cabello",
-   "d": 30,
-   "e": "💇",
-   "m": 251,
-   "p": 20.89,
-   "s": "ofertas",
-   "t": "2026-11-12T21:56:31.030360+00:00",
-   "title": "Rowenta Optiliss, plancha de pelo, calentamiento rápido, SF3210",
-   "v": []
-  },
   "B08GDC99PX": {
    "c": "Domótica",
    "d": 47,
@@ -2724,6 +2713,17 @@
    "s": "ambas",
    "t": "2026-11-21T07:31:34.676546+00:00",
    "title": "Ultimate Ears WONDERBOOM 4, altavoz Bluetooth portátil resistente al agua",
+   "v": []
+  },
+  "B0D6FY1MKJ": {
+   "c": "Bricolaje",
+   "d": 30,
+   "e": "🪛",
+   "m": 671,
+   "p": 10.44,
+   "s": "ambas",
+   "t": "2026-11-27T07:01:37.340097+00:00",
+   "title": "MAXDONE Pistola Silicona Caliente 60W - Pistola de Silicona Caliente 60W con 50 Barras 7mm de Pegamento, Para Bricolaje Artesanía, Reparaciones Industriales y Decoración Festiva, Oficina y Escuela",
    "v": []
   },
   "B0D6QNPBSC": {
@@ -4466,10 +4466,7 @@
    "v": []
   }
  },
- "problem": {
-  "fails": 1,
-  "last": "HTTP 503"
- },
+ "problem": {},
  "rejected": {
   "B00T0C9XRK": {
    "t": "2026-11-26T10:30:55.810022+00:00",
@@ -4498,28 +4495,16 @@
  },
  "reserve": [
   {
-   "a": "B0HJTY4CPK",
-   "c": "Smartwatch",
-   "e": "⌚",
-   "img": "https://m.media-amazon.com/images/I/81HdDODrI0L._AC_UL320_.jpg",
-   "n": 157,
-   "op": 99.99,
-   "p": 49.99,
-   "r": 4.4,
-   "t": "2026-11-26T20:45:45.883777+00:00",
-   "title": "Reloj Inteligente para Xiaomi Apple Samsung, Llamadas Bluetooth y WhatsApp"
-  },
-  {
-   "a": "B0DCGC3SDW",
-   "c": "Videojuegos",
-   "e": "🎮",
-   "img": "https://m.media-amazon.com/images/I/71CwLBM-ctL._AC_UL320_.jpg",
-   "n": 224,
-   "op": 119.99,
-   "p": 89.99,
-   "r": 4.4,
-   "t": "2026-11-26T18:45:39.384119+00:00",
-   "title": "Thrustmaster SimTask FarmStick - Joystick Multifunción - PS5 y PC"
+   "a": "B08T9JTHNK",
+   "c": "Bricolaje",
+   "e": "🪛",
+   "img": "https://m.media-amazon.com/images/I/61x-8HHklaL._AC_UL320_.jpg",
+   "n": 3400,
+   "op": 21.99,
+   "p": 17.59,
+   "r": 4.6,
+   "t": "2026-11-27T07:01:05.022940+00:00",
+   "title": "WORKPRO Pistola de Calafateo Metal 2 Modos 9:1 y 18:1"
   }
  ],
  "store_skip": {
@@ -4529,7 +4514,7 @@
  "summary_day": "2026-11-26",
  "tg_offset": 511048164,
  "x_copy": {
-  "day": "2026-11-26",
-  "n": 29
+  "day": "2026-11-27",
+  "n": 1
  }
 }
