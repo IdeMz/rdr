@@ -1705,6 +1705,13 @@
    "v": 3,
    "via": "ean"
   },
+  "4718755096327": {
+   "a": "B0FPQDW1P1",
+   "t": "2026-11-27T19:05:34.051750+00:00",
+   "title": "BenQ TK705i Proyector Home Cinema 4K HDR, 3000 LM, Google TV",
+   "v": 3,
+   "via": "ean"
+  },
   "4719331357559": {
    "a": "B0DTGP2WMT",
    "t": "2026-11-15T12:50:40.627443+00:00",
@@ -5123,10 +5130,10 @@
    "lista": "candidates",
    "motivo": "Amazon 125.43 frente a 123.95",
    "name": "Beats Powerbeats Fit Naranja Eléctrico TWS 30h IPX4 Auriculares inalámbricos",
-   "pp_drop": 32,
-   "pp_median": 181.95,
+   "pp_drop": 27,
+   "pp_median": 169.94,
    "pp_price": 123.95,
-   "t": "2026-11-25T16:30:57.642581+00:00",
+   "t": "2026-11-27T19:05:34.051750+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -6700,6 +6707,26 @@
      "JMGO N1S Ultimate Proyector 4K Triple Laser 3300 ISO Lúmenes, GTV, Netflix"
     ]
    }
+  },
+  "45626822225": {
+   "ahorro_vs_amazon": 15,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 1311.13,
+   "amz_title": "BenQ TK705i Proyector Home Cinema 4K HDR, 3000 LM, Google TV",
+   "asin": "B0FPQDW1P1",
+   "disponible": true,
+   "ean": "4718755096327",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "15 % por debajo del habitual en Amazon (1311.13)",
+   "name": "BenQ TK705i LED 20000h 4K UHD 3000 lúmenes ANSI DLP Google TV WiFi 6 Bluetooth 5.2 altavoz 8W 26dB Proyector",
+   "pp_drop": 18,
+   "pp_median": 1345.96,
+   "pp_price": 1109.95,
+   "t": "2026-11-27T19:05:34.051750+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
   },
   "45626822434": {
    "ahorro_vs_amazon": 0,
@@ -12814,9 +12841,9 @@
   "amazon_mas_barato": 22,
   "dudoso": 0,
   "no_esta": 20,
-  "oferta_real": 18,
+  "oferta_real": 19,
   "pvpr_inflado": 5,
   "sin_precio": 6
  },
- "updated": "2026-11-27T18:35:32.648553+00:00"
+ "updated": "2026-11-27T19:05:34.051750+00:00"
 }

@@ -16,7 +16,7 @@
   "Cargadores y baterías": "2026-11-26T09:30:58.520121+00:00",
   "Ciclismo": "2026-11-26T15:01:06.505667+00:00",
   "Climatización": "2026-11-24T18:35:37.637788+00:00",
-  "Colchones y almohadas": "2026-11-24T16:30:59.602669+00:00",
+  "Colchones y almohadas": "2026-11-27T19:05:34.051750+00:00",
   "Componentes PC": "2026-11-27T15:05:34.336700+00:00",
   "Cuidado de la piel": "2026-11-27T16:35:45.254038+00:00",
   "Cuidado del cabello": "2026-11-27T15:05:34.336700+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-27T19:04:18.251930+00:00",
+ "next_at": "2026-11-27T19:34:47.085201+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -3254,17 +3254,6 @@
    "title": "HUDORA Scooter Up 145 Junior - Patinete Infantil Seguro a Partir de 3 años - Patinete Urbano Plegable con Ruedas de 145 mm - Ajustable en Altura para niños y niñas de hasta 60 kg - Teal",
    "v": []
   },
-  "B0F53MJY8T": {
-   "c": "Aspiradoras",
-   "d": 15,
-   "e": "🧹",
-   "m": 271,
-   "p": 339.0,
-   "s": "ambas",
-   "t": "2026-11-13T18:46:52.241190+00:00",
-   "title": "dreame L40 Ultra Ae Robot Aspirador, 19,000 Pa de Succión, Cepillo TriCut",
-   "v": []
-  },
   "B0F5BTWP9T": {
    "c": "Monitores",
    "d": 34,
@@ -3329,6 +3318,17 @@
    "s": "busqueda",
    "t": "2026-11-25T09:01:43.617527+00:00",
    "title": "Kingpin - Clásico Skate Legendario, Cupsole Reforzada, sensación Acolchada, Zapatillas diarias",
+   "v": []
+  },
+  "B0F8BH1V7R": {
+   "c": "Colchones y almohadas",
+   "d": 33,
+   "e": "🛏️",
+   "m": 696,
+   "p": 62.99,
+   "s": "ambas",
+   "t": "2026-11-27T19:06:04.369128+00:00",
+   "title": "Novilla Topper Colchón 150x190 7.5cm Viscoelástica Espuma Alta Densidad",
    "v": []
   },
   "B0F8BJ7PW6": {
@@ -4527,8 +4527,8 @@
  },
  "problem": {},
  "rejected": {
-  "B08H97WTBL": {
-   "t": "2026-11-26T18:45:39.384119+00:00",
+  "B0BWYSWC3V": {
+   "t": "2026-11-27T19:05:34.051750+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0CM4B43DZ": {
@@ -4591,6 +4591,6 @@
  "tg_offset": 511048177,
  "x_copy": {
   "day": "2026-11-27",
-  "n": 24
+  "n": 25
  }
 }
