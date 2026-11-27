@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-27T08:00:30.138041+00:00",
+ "next_at": "2026-11-27T08:31:02.134563+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1961,17 +1961,6 @@
    "s": "ambas",
    "t": "2026-11-17T10:31:38.435517+00:00",
    "title": "L'Oréal Paris Revitalift Filler Sérum Ojos con Cafeína Antiarrugas, 20ml",
-   "v": []
-  },
-  "B09TL86RB6": {
-   "c": "Menaje de cocina",
-   "d": 20,
-   "e": "🍳",
-   "m": 253,
-   "p": 48.98,
-   "s": "ofertas",
-   "t": "2026-11-13T07:37:04.738191+00:00",
-   "title": "Tefal Ingenio Easy On - Juego de 2 Sartenes, NO APTO INDUCCIÓN",
    "v": []
   },
   "B09TZFKDV6": {
@@ -4439,6 +4428,19 @@
    "u": "https://www.awin1.com/pclick.php?p=46599140243&a=3134713&m=77138",
    "v": []
   },
+  "pp:46599140629": {
+   "auto": true,
+   "c": "",
+   "d": 41,
+   "e": "",
+   "m": 673,
+   "p": 461.95,
+   "st": "POWERPLANET",
+   "t": "2026-11-27T08:01:05.056718+00:00",
+   "title": "Monitor Acer 27 pulgadas 4K IPS 60Hz 4 ms Negro B278Kbemiqprcuzx",
+   "u": "https://www.awin1.com/pclick.php?p=46599140629&a=3134713&m=77138",
+   "v": []
+  },
   "pp:46599141816": {
    "auto": true,
    "c": "",
@@ -4513,12 +4515,13 @@
  ],
  "store_skip": {
   "pp:45992962768": "2026-11-26T14:01:04.437909+00:00",
+  "pp:46239685110": "2026-11-27T08:01:05.056718+00:00",
   "pp:46599140756": "2026-11-26T19:15:44.271556+00:00"
  },
  "summary_day": "2026-11-26",
  "tg_offset": 511048164,
  "x_copy": {
   "day": "2026-11-27",
-  "n": 2
+  "n": 3
  }
 }
