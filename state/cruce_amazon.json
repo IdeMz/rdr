@@ -657,6 +657,13 @@
    "v": 3,
    "via": "ean"
   },
+  "0753759342760": {
+   "a": "B0FCYL9TPT",
+   "t": "2026-11-27T22:20:32.285749+00:00",
+   "title": "Garmin Venu X1, Smartwatch con GPS, Negro",
+   "v": 3,
+   "via": "ean"
+  },
   "0753759368777": {
    "a": "B0GF2FKLHT",
    "t": "2026-11-20T23:20:42.342812+00:00",
@@ -1089,6 +1096,13 @@
    "a": "B08ZJG6TVT",
    "t": "2026-11-16T10:45:46.172773+00:00",
    "title": "Seagate Expansion, 2 TB, External Hard Drive HDD, 2.5 Inch, USB 3.0, PC & Notebook, 2 Years Rescue Services (STKM2000400)",
+   "via": "ean"
+  },
+  "3700460206840": {
+   "a": "B07TJYPSKF",
+   "t": "2026-11-27T22:20:32.285749+00:00",
+   "title": "Muse M-278 BT - Auriculares Bluetooth (reproducción inalámbrica hasta 12 Horas, Plegables, Auriculares Integrados), Color Gris y marrón",
+   "v": 3,
    "via": "ean"
   },
   "3760265541812": {
@@ -3604,6 +3618,13 @@
      "AMD EPYC 4564P 16 x 4,5 GHz 64 MB L3 Cache CPU socket AM5 Boxed sin radiador"
     ]
    }
+  },
+  "8592978653767": {
+   "a": "B0DRPRP35G",
+   "t": "2026-11-27T22:20:32.285749+00:00",
+   "title": "Procesador Intel Core Ultra 7 265K TRAY 3,9 GHz LGA1851 Boxless Fanless",
+   "v": 3,
+   "via": "modelo"
   },
   "8592978840310": {
    "a": "B0GZWCX9TK",
@@ -10296,6 +10317,26 @@
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
+  "46599138677": {
+   "ahorro_vs_amazon": 18,
+   "amz_low30": 499.0,
+   "amz_median": null,
+   "amz_price": 469.0,
+   "amz_title": "Garmin Venu X1, Smartwatch con GPS, Negro",
+   "asin": "B0FCYL9TPT",
+   "disponible": true,
+   "ean": "0753759342760",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "18 % por debajo del habitual en Amazon (499.00)",
+   "name": "Garmin Venu X1 Caja de titanio Gris Correa Nailon Negro 2 pulgadas AMOLED 8 días 5ATM Smartwatch",
+   "pp_drop": 18,
+   "pp_median": 499.9,
+   "pp_price": 409.9,
+   "t": "2026-11-27T22:20:32.285749+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "46599138766": {
    "ean": "6976367680916",
    "lista": "candidates",
@@ -10524,6 +10565,27 @@
    "pp_price": 253.95,
    "t": "2026-11-15T20:15:42.147336+00:00",
    "veredicto": "amazon_mas_barato"
+  },
+  "46599139604": {
+   "ahorro_vs_amazon": null,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": null,
+   "amz_title": "Procesador Intel Core Ultra 7 265K TRAY 3,9 GHz LGA1851 Boxless Fanless",
+   "asin": "B0DRPRP35G",
+   "disponible": true,
+   "ean": "8592978653767",
+   "encontrado_por": "modelo",
+   "lista": "candidates",
+   "motivo": "en Amazon pero sin precio o no disponible",
+   "name": "Intel Core Ultra 5 225 10 Núcleos LGA1851 Tray",
+   "pista": "1091557 bytes; 9 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pp_drop": 21,
+   "pp_median": 273.94,
+   "pp_price": 216.95,
+   "t": "2026-11-27T22:20:32.285749+00:00",
+   "v": 3,
+   "veredicto": "sin_precio"
   },
   "46599139698": {
    "ahorro_vs_amazon": null,
@@ -12611,6 +12673,26 @@
    "t": "2026-11-14T22:05:27.466329+00:00",
    "veredicto": "amazon_mas_barato"
   },
+  "46599144599": {
+   "ahorro_vs_amazon": 21,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 36.5,
+   "amz_title": "Muse M-278 BT - Auriculares Bluetooth (reproducción inalámbrica hasta 12 Horas, Plegables, Auriculares Integrados), Color Gris y marrón",
+   "asin": "B07TJYPSKF",
+   "disponible": true,
+   "ean": "3700460206840",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "21 % por debajo del habitual en Amazon (36.50)",
+   "name": "Auriculares Muse BT Diadema Bluetooth 12h Marrón/Plata M-278",
+   "pp_drop": 34,
+   "pp_median": 43.95,
+   "pp_price": 28.96,
+   "t": "2026-11-27T22:20:32.285749+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "46599145141": {
    "ahorro_vs_amazon": 7,
    "amz_low30": null,
@@ -12997,14 +13079,14 @@
    "veredicto": "pvpr_inflado"
   }
  },
- "night_at": "2026-11-27T22:05:29.728384+00:00",
+ "night_at": "2026-11-27T22:20:32.285749+00:00",
  "resumen": {
   "amazon_mas_barato": 23,
   "dudoso": 0,
   "no_esta": 22,
-  "oferta_real": 21,
+  "oferta_real": 23,
   "pvpr_inflado": 7,
-  "sin_precio": 7
+  "sin_precio": 8
  },
- "updated": "2026-11-27T22:05:29.728384+00:00"
+ "updated": "2026-11-27T22:20:32.285749+00:00"
 }
