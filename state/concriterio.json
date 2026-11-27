@@ -42,7 +42,7 @@
   "Mochilas y maletas": "2026-11-24T17:30:51.708019+00:00",
   "Monitores": "2026-11-25T20:15:53.484095+00:00",
   "Móviles": "2026-11-26T07:01:05.477452+00:00",
-  "Nutrición deportiva": "2026-11-21T20:00:58.767855+00:00",
+  "Nutrición deportiva": "2026-11-27T13:35:33.037664+00:00",
   "Oficina": "2026-11-25T20:45:41.682692+00:00",
   "Patinetes": "2026-11-26T16:01:04.848160+00:00",
   "Pequeño electrodoméstico": "2026-11-26T15:30:59.307083+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-27T13:34:02.157122+00:00",
+ "next_at": "2026-11-27T14:01:07.000496+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1479,6 +1479,17 @@
    "title": "Philips Serie 5400 Cafetera Superautomática - Sistema de Leche LatteGo, 12 Variedades de Café, Pantalla Intuitiva, 4 Perfiles de Usuario, Cromado (EP5447/90)",
    "v": []
   },
+  "B08CLC8JGJ": {
+   "c": "Nutrición deportiva",
+   "d": 47,
+   "e": "💪",
+   "m": 685,
+   "p": 12.71,
+   "s": "ofertas",
+   "t": "2026-11-27T13:36:11.105336+00:00",
+   "title": "Warrior EAA Aminoácidos Polvo 360 g, Esenciales – Ponche de Frutas",
+   "v": []
+  },
   "B08CVT3QKL": {
    "c": "Herramientas",
    "d": 35,
@@ -1994,17 +2005,6 @@
    "s": "ambas",
    "t": "2026-11-22T21:01:42.512289+00:00",
    "title": "Govee Lámpara de Pie LED, RGBIC Lámpara Regulable 2700-6500K, Color Negro",
-   "v": []
-  },
-  "B09VN62HF3": {
-   "c": "Perfumes",
-   "d": 27,
-   "e": "🌸",
-   "m": 263,
-   "p": 51.27,
-   "s": "busqueda",
-   "t": "2026-11-13T13:26:02.261876+00:00",
-   "title": "Azzaro, The Most Wanted, Parfum, perfume de hombre fougère, 100 ml",
    "v": []
   },
   "B09VPHVT2Z": {
@@ -4550,6 +4550,6 @@
  "tg_offset": 511048177,
  "x_copy": {
   "day": "2026-11-27",
-  "n": 13
+  "n": 14
  }
 }

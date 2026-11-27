@@ -74,6 +74,13 @@
     ]
    }
   },
+  "0194644293185": {
+   "a": "B0F7Y1PZH4",
+   "t": "2026-11-27T13:35:33.037664+00:00",
+   "title": "eufy by Anker S4 Camaras de vigilancia Exterior PoE NVR",
+   "v": 3,
+   "via": "ean"
+  },
   "0194644293307": {
    "a": "",
    "t": "2026-11-26T12:30:59.615384+00:00",
@@ -1292,6 +1299,13 @@
    "title": "Carte Mère ASRock H610M-HDV/M.2+ DDR5 (Intel LGA 1700) Micro ATX",
    "v": 3,
    "via": "modelo"
+  },
+  "4710483947599": {
+   "a": "B0FLVC992F",
+   "t": "2026-11-27T13:35:33.037664+00:00",
+   "title": "Monitor ASROCK PGO27QFV,27\",QHD (2560X1440),360HZ,1500:1,0.03MS,2HDMI+DP,WiFi,Negro",
+   "v": 3,
+   "via": "ean"
   },
   "4710562245769": {
    "a": "B0H41J37CR",
@@ -10825,6 +10839,26 @@
    "v": 3,
    "veredicto": "oferta_real"
   },
+  "46599140600": {
+   "ahorro_vs_amazon": 45,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 570.53,
+   "amz_title": "Monitor ASROCK PGO27QFV,27\",QHD (2560X1440),360HZ,1500:1,0.03MS,2HDMI+DP,WiFi,Negro",
+   "asin": "B0FLVC992F",
+   "disponible": true,
+   "ean": "4710483947599",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "45 % por debajo del habitual en Amazon (570.53)",
+   "name": "Monitor ASRock 27 pulgadas QD-OLED 240Hz QHD Negro PGO27QFV",
+   "pp_drop": 34,
+   "pp_median": 471.95,
+   "pp_price": 311.95,
+   "t": "2026-11-27T13:35:33.037664+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "46599140629": {
    "ahorro_vs_amazon": 11,
    "amz_low30": null,
@@ -11601,6 +11635,26 @@
      "CENTRAL INCENDIOS CONVENCIONAL 2 ZONAS COFEM"
     ]
    }
+  },
+  "46599142764": {
+   "ahorro_vs_amazon": 16,
+   "amz_low30": 1099.0,
+   "amz_median": null,
+   "amz_price": 649.99,
+   "amz_title": "eufy by Anker S4 Camaras de vigilancia Exterior PoE NVR",
+   "asin": "B0F7Y1PZH4",
+   "disponible": true,
+   "ean": "0194644293185",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 649.99 frente a 924.99",
+   "name": "Sistema de seguridad Eufy NVR Security System S4 4K Exterior IP67 Visión Nocturna Negro",
+   "pp_drop": 29,
+   "pp_median": 1299.0,
+   "pp_price": 924.99,
+   "t": "2026-11-27T13:35:33.037664+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
   },
   "46599142766": {
    "ean": "0194644280031",
@@ -12632,12 +12686,12 @@
  },
  "night_at": "2026-11-27T06:20:34.547635+00:00",
  "resumen": {
-  "amazon_mas_barato": 19,
+  "amazon_mas_barato": 20,
   "dudoso": 0,
   "no_esta": 18,
-  "oferta_real": 16,
+  "oferta_real": 17,
   "pvpr_inflado": 4,
   "sin_precio": 6
  },
- "updated": "2026-11-27T13:05:37.929990+00:00"
+ "updated": "2026-11-27T13:35:33.037664+00:00"
 }
