@@ -530,6 +530,13 @@
    "title": "WD 5TB My Passport Disco Duro Externo Portátil, USB 3.2 Gen 1/USB 3.0, Copia de seguridad y protección con contraseña, Formateado para Windows, ChromeOS y MacOS",
    "via": "ean"
   },
+  "0718037891309": {
+   "a": "B0B7CKZGN6",
+   "t": "2026-11-27T00:35:32.565296+00:00",
+   "title": "WD_BLACK SN850X NVMe SSD, 2TB M.2 2280, NVMe SSD con disipador de calor, Velocidades de lectura hasta 7300 MB/s, escritura 6600 MB/s, SSD para Juegos internos, ",
+   "v": 3,
+   "via": "ean"
+  },
   "0718037905464": {
    "a": "B0DZY2TN8T",
    "t": "2026-11-19T22:20:31.563817+00:00",
@@ -1517,6 +1524,13 @@
    "title": "Acer PE160Wsmiuux",
    "v": 3,
    "via": "ean"
+  },
+  "4711527002151": {
+   "a": "B0DRRVYJBT",
+   "t": "2026-11-27T00:35:32.565296+00:00",
+   "title": "darkFlash DH360D V1.2 - Enfriador líquido todo en uno para CPU con pantalla, monitoreo de CPU, sincronización ARGB, ventiladores PWM de 360 mm AIO, radiador de ",
+   "v": 3,
+   "via": "modelo"
   },
   "4711636059459": {
    "a": "B0F94H18X8",
@@ -7644,10 +7658,10 @@
    "lista": "candidates",
    "motivo": "Amazon 129.00 frente a 164.95",
    "name": "Fitbit Versa 4 Negro AMOLED GPS NFC 6 días +40 deportes 5ATM Smartwatch",
-   "pp_drop": 36,
-   "pp_median": 256.96,
+   "pp_drop": 24,
+   "pp_median": 217.95,
    "pp_price": 164.95,
-   "t": "2026-11-24T13:05:37.513094+00:00",
+   "t": "2026-11-27T00:35:32.565296+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -8097,6 +8111,26 @@
    "pp_median": 74.95,
    "pp_price": 59.35,
    "t": "2026-11-17T22:50:28.729529+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
+  "46186023051": {
+   "ahorro_vs_amazon": 54,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 129.05,
+   "amz_title": "darkFlash DH360D V1.2 - Enfriador líquido todo en uno para CPU con pantalla, monitoreo de CPU, sincronización ARGB, ventiladores PWM de 360 mm AIO, radiador de ",
+   "asin": "B0DRRVYJBT",
+   "disponible": true,
+   "ean": "4711527002151",
+   "encontrado_por": "modelo",
+   "lista": "candidates",
+   "motivo": "54 % por debajo del habitual en Amazon (129.05)",
+   "name": "Darkflash 3x120mm 360mm Blanco DH360D Refrigeración líquida",
+   "pp_drop": 30,
+   "pp_median": 83.95,
+   "pp_price": 58.95,
+   "t": "2026-11-27T00:35:32.565296+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -10877,6 +10911,26 @@
    "v": 3,
    "veredicto": "sin_precio"
   },
+  "46599141528": {
+   "ahorro_vs_amazon": 6,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 464.91,
+   "amz_title": "WD_BLACK SN850X NVMe SSD, 2TB M.2 2280, NVMe SSD con disipador de calor, Velocidades de lectura hasta 7300 MB/s, escritura 6600 MB/s, SSD para Juegos internos, ",
+   "asin": "B0B7CKZGN6",
+   "disponible": true,
+   "ean": "0718037891309",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "antes 545.95 en PowerPlanet, pero en Amazon suele estar a 464.91",
+   "name": "WD Black SN850X 2TB NVMe M.2 PCIe 4.0 7300MB/s SSD",
+   "pp_drop": 20,
+   "pp_median": 545.95,
+   "pp_price": 438.95,
+   "t": "2026-11-27T00:35:32.565296+00:00",
+   "v": 3,
+   "veredicto": "pvpr_inflado"
+  },
   "46599141566": {
    "ahorro_vs_amazon": -70,
    "amz_low30": null,
@@ -12189,14 +12243,14 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-27T00:20:32.263469+00:00",
+ "night_at": "2026-11-27T00:35:32.565296+00:00",
  "resumen": {
   "amazon_mas_barato": 28,
   "dudoso": 0,
   "no_esta": 22,
-  "oferta_real": 19,
-  "pvpr_inflado": 3,
+  "oferta_real": 20,
+  "pvpr_inflado": 4,
   "sin_precio": 9
  },
- "updated": "2026-11-27T00:20:32.263469+00:00"
+ "updated": "2026-11-27T00:35:32.565296+00:00"
 }
