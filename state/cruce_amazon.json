@@ -234,6 +234,21 @@
     ]
    }
   },
+  "0196388824182": {
+   "a": "",
+   "t": "2026-11-27T02:20:40.416077+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Microsoft Surface Pro, 13\" | Snapdragon X2 Plus | 16GB RAM, 512GB SSD",
+     "Microsoft Surface Pro, 13\" | Snapdragon X2 Elite | 16GB RAM, 512GB SSD",
+     "Microsoft Surface Pro, 13\" | Snapdragon X2 Plus | 16GB RAM, 256GB SSD"
+    ]
+   }
+  },
   "0196548864997": {
    "a": "",
    "t": "2026-11-14T01:50:35.475157+00:00",
@@ -5150,15 +5165,15 @@
    "lista": "candidates",
    "motivo": "Amazon 264.00 frente a 259.90",
    "name": "Garmin Forerunner 265 46 mm Turquesa/Negro 1,3 pulgadas AMOLED GPS 15 días 5ATM Smartwatch",
-   "pp_drop": 21,
-   "pp_median": 329.95,
+   "pp_drop": 19,
+   "pp_median": 319.9,
    "pp_price": 259.9,
-   "t": "2026-11-24T21:05:36.253651+00:00",
+   "t": "2026-11-27T02:20:40.416077+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
   "44263991779": {
-   "ahorro_vs_amazon": 10,
+   "ahorro_vs_amazon": 13,
    "amz_low30": 299.0,
    "amz_median": null,
    "amz_price": 264.0,
@@ -5168,12 +5183,12 @@
    "ean": "0753759313760",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "Amazon 264.00 frente a 269.90",
+   "motivo": "Amazon 264.00 frente a 259.90",
    "name": "Garmin Forerunner 265S Rosa/Blanco 1,1 pulgadas AMOLED NFC 15 días 5ATM Smartwatch",
-   "pp_drop": 18,
-   "pp_median": 329.95,
-   "pp_price": 269.9,
-   "t": "2026-11-24T22:20:35.735761+00:00",
+   "pp_drop": 19,
+   "pp_median": 319.9,
+   "pp_price": 259.9,
+   "t": "2026-11-27T02:20:40.416077+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -11701,6 +11716,28 @@
     ]
    }
   },
+  "46599143217": {
+   "ean": "0196388824182",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Microsoft Surface Pro 12 Copilot+ 24GB/512GB Negro 13 pulgadas LCD 120Hz PixelSense Snapdragon X2 Plus",
+   "pp_drop": 14,
+   "pp_median": 2161.96,
+   "pp_price": 1848.95,
+   "t": "2026-11-27T02:20:40.416077+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Microsoft Surface Pro, 13\" | Snapdragon X2 Plus | 16GB RAM, 512GB SSD",
+     "Microsoft Surface Pro, 13\" | Snapdragon X2 Elite | 16GB RAM, 512GB SSD",
+     "Microsoft Surface Pro, 13\" | Snapdragon X2 Plus | 16GB RAM, 256GB SSD"
+    ]
+   }
+  },
   "46599143223": {
    "ean": "0196388689545",
    "lista": "candidates",
@@ -12443,14 +12480,14 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-27T02:05:36.542126+00:00",
+ "night_at": "2026-11-27T02:20:40.416077+00:00",
  "resumen": {
   "amazon_mas_barato": 32,
   "dudoso": 0,
-  "no_esta": 25,
+  "no_esta": 26,
   "oferta_real": 21,
   "pvpr_inflado": 4,
   "sin_precio": 7
  },
- "updated": "2026-11-27T02:05:36.542126+00:00"
+ "updated": "2026-11-27T02:20:40.416077+00:00"
 }
