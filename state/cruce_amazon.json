@@ -588,6 +588,13 @@
    "v": 3,
    "via": "ean"
   },
+  "0718037898612": {
+   "a": "B0BNGL4BND",
+   "t": "2026-11-27T23:05:26.359502+00:00",
+   "title": "WD Blue 6TB para Ordenadores de Sobremesa, Disco Duro Interno 3,5” - 5400 RPM, SATA 6 GB/s, 256 MB caché",
+   "v": 3,
+   "via": "ean"
+  },
   "0718037905464": {
    "a": "B0DZY2TN8T",
    "t": "2026-11-19T22:20:31.563817+00:00",
@@ -1820,6 +1827,13 @@
    "a": "B0FGXYNZKQ",
    "t": "2026-11-23T15:30:54.461995+00:00",
    "title": "TCL T-Pen Lápiz Stylus EMR | Compatible con NXTPAPER 11 Plus | NXTPAPER 14 | Tab 11 Gen 2 | Tab 11 FE | NXTPAPER 11 | Tab 10 Gen 2 | 4096 Niveles de Presión | p",
+   "v": 3,
+   "via": "ean"
+  },
+  "4894461994673": {
+   "a": "B0DB1NG88R",
+   "t": "2026-11-27T23:05:26.359502+00:00",
+   "title": "TCL NXTPAPER 14 WiFi - Tablet de 14.25\" 2.4K, Octa-Core, 8GB de RAM (+8GB Extensión RAM), Memoria de 256GB, 10000 mAh de Batería, Carga rápida 33W, Android 14, ",
    "v": 3,
    "via": "ean"
   },
@@ -3416,6 +3430,13 @@
     ]
    }
   },
+  "840414681804": {
+   "a": "B0DKLVWZPF",
+   "t": "2026-11-27T23:05:26.359502+00:00",
+   "title": "Amazon Echo Dot Max (última generación): altavoz con sonido envolvente y controlador de Hogar digital integrado, Blanco, con Acceso Anticipado a Alexa+",
+   "v": 3,
+   "via": "ean"
+  },
   "840414699014": {
    "a": "B0DKLFHZDH",
    "t": "2026-11-25T22:50:31.304790+00:00",
@@ -4598,6 +4619,26 @@
    "t": "2026-11-15T15:15:41.208340+00:00",
    "veredicto": "amazon_mas_barato"
   },
+  "38992135779": {
+   "ahorro_vs_amazon": 9,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 349.99,
+   "amz_title": "TCL NXTPAPER 14 WiFi - Tablet de 14.25\" 2.4K, Octa-Core, 8GB de RAM (+8GB Extensión RAM), Memoria de 256GB, 10000 mAh de Batería, Carga rápida 33W, Android 14, ",
+   "asin": "B0DB1NG88R",
+   "disponible": true,
+   "ean": "4894461994673",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "solo 9 % por debajo del habitual en Amazon (349.99)",
+   "name": "TCL NXTPAPER 14 WiFi 8GB/256GB Gris 14,3 pulgadas 8MP 10000mAh Tablet",
+   "pp_drop": 18,
+   "pp_median": 389.9,
+   "pp_price": 319.9,
+   "t": "2026-11-27T23:05:26.359502+00:00",
+   "v": 3,
+   "veredicto": "dudoso"
+  },
   "39108444502": {
    "ahorro_vs_amazon": 9,
    "amz_low30": null,
@@ -5353,6 +5394,26 @@
    "pp_median": 99.95,
    "pp_price": 73.0,
    "t": "2026-11-25T22:50:31.304790+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
+  "43310049324": {
+   "ahorro_vs_amazon": 41,
+   "amz_low30": 129.0,
+   "amz_median": null,
+   "amz_price": 54.99,
+   "amz_title": "Amazon Echo Dot Max (última generación): altavoz con sonido envolvente y controlador de Hogar digital integrado, Blanco, con Acceso Anticipado a Alexa+",
+   "asin": "B0DKLVWZPF",
+   "disponible": true,
+   "ean": "840414681804",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 54.99 frente a 75.95",
+   "name": "Amazon Echo Dot Max 2025 Blanco WiFi Altavoz inteligente Alexa",
+   "pp_drop": 24,
+   "pp_median": 99.95,
+   "pp_price": 75.95,
+   "t": "2026-11-27T23:05:26.359502+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -11538,6 +11599,26 @@
     ]
    }
   },
+  "46599141430": {
+   "ahorro_vs_amazon": 21,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 304.78,
+   "amz_title": "WD Blue 6TB para Ordenadores de Sobremesa, Disco Duro Interno 3,5” - 5400 RPM, SATA 6 GB/s, 256 MB caché",
+   "asin": "B0BNGL4BND",
+   "disponible": true,
+   "ean": "0718037898612",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "21 % por debajo del habitual en Amazon (304.78)",
+   "name": "Disco duro WD Blue 6TB 3,5 pulgadas 5400RPM WD60EZAX",
+   "pp_drop": 19,
+   "pp_median": 297.95,
+   "pp_price": 240.95,
+   "t": "2026-11-27T23:05:26.359502+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "46599141457": {
    "ahorro_vs_amazon": 14,
    "amz_low30": null,
@@ -13101,14 +13182,14 @@
    "veredicto": "pvpr_inflado"
   }
  },
- "night_at": "2026-11-27T22:50:37.797029+00:00",
+ "night_at": "2026-11-27T23:05:26.359502+00:00",
  "resumen": {
-  "amazon_mas_barato": 25,
-  "dudoso": 0,
+  "amazon_mas_barato": 26,
+  "dudoso": 1,
   "no_esta": 22,
-  "oferta_real": 23,
+  "oferta_real": 24,
   "pvpr_inflado": 7,
   "sin_precio": 9
  },
- "updated": "2026-11-27T22:50:37.797029+00:00"
+ "updated": "2026-11-27T23:05:26.359502+00:00"
 }
