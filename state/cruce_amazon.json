@@ -2416,6 +2416,13 @@
    "v": 3,
    "via": "ean"
   },
+  "6941487294800": {
+   "a": "B0C6D2DH5D",
+   "t": "2026-11-27T10:35:40.471392+00:00",
+   "title": "HUAWEI Watch Fit SE Black",
+   "v": 3,
+   "via": "ean"
+  },
   "6941948709614": {
    "a": "B0HN2ZFG5K",
    "t": "2026-11-19T22:20:31.563817+00:00",
@@ -3266,6 +3273,24 @@
     ],
     "nombre": [
      "Acer H6816ATV - Proyector de TV DLP Android (4K UHD (3840 x 2160 píxeles) 4000 lúmenes ANSI, Contras"
+    ]
+   }
+  },
+  "8434388427968": {
+   "a": "",
+   "t": "2026-11-27T10:35:40.471392+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "modelo": [
+     "Epson EcoTank ET-8500 Impresora de Depósito de Tinta | Impresión Fotográfica | Tintas 6 Colores | Wi",
+     "Epson EcoTank ET-8550 Impresora de Depósito de Tinta | Impresión Fotográfica | Tintas 6 Colores | Wi",
+     "Epson Impresora multifunción EcoTank ET-5805 A4 con depósito de Tinta, conexión Wi-Fi y fax"
+    ],
+    "nombre": [
+     "(sin resultados)"
     ]
    }
   },
@@ -4508,6 +4533,31 @@
    "pp_price": 63.95,
    "t": "2026-11-16T04:20:26.885230+00:00",
    "veredicto": "sin_precio"
+  },
+  "40001582052": {
+   "ean": "8434388427968",
+   "lista": "to_verify",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Hello ET585 Silicona Azul 2,04 pulgadas AMOLED NFC 10 días +130 deportes IP68 - Reloj inteligente",
+   "pp_drop": 58,
+   "pp_median": 71.95,
+   "pp_price": 29.95,
+   "t": "2026-11-27T10:35:40.471392+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "modelo": [
+     "Epson EcoTank ET-8500 Impresora de Depósito de Tinta | Impresión Fotográfica | Tintas 6 Colores | Wi",
+     "Epson EcoTank ET-8550 Impresora de Depósito de Tinta | Impresión Fotográfica | Tintas 6 Colores | Wi",
+     "Epson Impresora multifunción EcoTank ET-5805 A4 con depósito de Tinta, conexión Wi-Fi y fax"
+    ],
+    "nombre": [
+     "(sin resultados)"
+    ]
+   }
   },
   "40045392284": {
    "ahorro_vs_amazon": -3,
@@ -7733,6 +7783,26 @@
    "pp_median": 700.95,
    "pp_price": 500.95,
    "t": "2026-11-26T15:30:59.307083+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
+  "46034945786": {
+   "ahorro_vs_amazon": 3,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 66.65,
+   "amz_title": "HUAWEI Watch Fit SE Black",
+   "asin": "B0C6D2DH5D",
+   "disponible": true,
+   "ean": "6941487294800",
+   "encontrado_por": "ean",
+   "lista": "to_verify",
+   "motivo": "Amazon 66.65 frente a 64.95",
+   "name": "Huawei Watch Fit Special Edition Negro 1,64 pulgadas AMOLED GPS 5ATM",
+   "pp_drop": 54,
+   "pp_median": 139.95,
+   "pp_price": 64.95,
+   "t": "2026-11-27T10:35:40.471392+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -12481,12 +12551,12 @@
  },
  "night_at": "2026-11-27T06:20:34.547635+00:00",
  "resumen": {
-  "amazon_mas_barato": 32,
+  "amazon_mas_barato": 18,
   "dudoso": 0,
-  "no_esta": 26,
-  "oferta_real": 22,
+  "no_esta": 17,
+  "oferta_real": 14,
   "pvpr_inflado": 4,
   "sin_precio": 6
  },
- "updated": "2026-11-27T10:05:33.632197+00:00"
+ "updated": "2026-11-27T10:35:40.471392+00:00"
 }

@@ -62,12 +62,12 @@
   "Textil hogar": "2026-11-26T14:30:54.648040+00:00",
   "Videojuegos": "2026-11-26T18:45:39.384119+00:00",
   "Zapatillas": "2026-11-25T09:01:05.992602+00:00",
-  "eReaders": "2026-11-25T15:01:06.717368+00:00"
+  "eReaders": "2026-11-27T10:35:40.471392+00:00"
  },
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-27T10:32:15.700946+00:00",
+ "next_at": "2026-11-27T11:01:16.615896+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1686,17 +1686,6 @@
    "s": "busqueda",
    "t": "2026-11-18T07:31:17.336303+00:00",
    "title": "D-Link DGS-105GL Switch Gigabit 5 Puertos, sin gestión, 1000 megas por Puerto, Ethernet LAN, RJ-45, Plug&Play, Perfil bajo, metálico, conmutador, hub, sobremesa, sin Ventiladores, 802.3az EEE, Negro",
-   "v": []
-  },
-  "B08WC4V1PK": {
-   "c": "Suplementos",
-   "d": 36,
-   "e": "💊",
-   "m": 258,
-   "p": 10.74,
-   "s": "ofertas",
-   "t": "2026-11-13T10:31:34.560950+00:00",
-   "title": "Moller’s ® | Omega 3 para niños | Omega-3 Cápsulas de Aceite de Pescado con Ácidos Grasos Omega 3 | Con DHA y EPA, Sin Gluten, Sin Lactosa, Sin Azucares Añadidos | Tutti Frutti | 36 Uds",
    "v": []
   },
   "B08WPRCV9Z": {
@@ -3727,6 +3716,17 @@
    "title": "Saco de Dormir Adulto 900g Ultraligero Compacto",
    "v": []
   },
+  "B0G4SHPH5K": {
+   "c": "eReaders",
+   "d": 20,
+   "e": "📖",
+   "m": 679,
+   "p": 139.99,
+   "s": "ambas",
+   "t": "2026-11-27T10:36:05.234632+00:00",
+   "title": "Amazon Kindle (última generación): ahora más fino, ligero y rápido, con pantalla de 6\" | 16 GB | Sin publicidad | Morado Ube",
+   "v": []
+  },
   "B0G66ZCDL1": {
    "c": "Robots de cocina",
    "d": 31,
@@ -4483,16 +4483,8 @@
  },
  "problem": {},
  "rejected": {
-  "B00T0C9XRK": {
-   "t": "2026-11-26T10:30:55.810022+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B08H97WTBL": {
    "t": "2026-11-26T18:45:39.384119+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0C78G8ZPR": {
-   "t": "2026-11-26T10:30:55.810022+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0CGQ466W8": {
@@ -4551,6 +4543,6 @@
  "tg_offset": 511048177,
  "x_copy": {
   "day": "2026-11-27",
-  "n": 7
+  "n": 8
  }
 }
