@@ -9444,11 +9444,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "AMD EPYC 9355P 32 Núcleos Socket SP5 Bandeja 64 hilos 4,4GHz Procesador",
-   "pista": "925250 bytes; 3 a-price; caja de precio; disponibilidad: No disponible.; sin vendedor destacado",
+   "pista": "925242 bytes; 3 a-price; caja de precio; disponibilidad: No disponible.; sin vendedor destacado",
    "pp_drop": 33,
    "pp_median": 3198.95,
    "pp_price": 2145.95,
-   "t": "2026-11-27T00:05:32.488695+00:00",
+   "t": "2026-11-27T06:20:34.547635+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -10106,11 +10106,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "MSI GeForce RTX 5090 SUPRIM SOC 32GB GDDR7 Negro",
-   "pista": "1603315 bytes; 5 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1708386 bytes; 9 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 17,
    "pp_median": 11389.95,
    "pp_price": 9461.95,
-   "t": "2026-11-27T00:05:32.488695+00:00",
+   "t": "2026-11-27T06:20:34.547635+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -12480,7 +12480,7 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-27T05:09:40.059668+00:00",
+ "night_at": "2026-11-27T06:20:34.547635+00:00",
  "resumen": {
   "amazon_mas_barato": 32,
   "dudoso": 0,
@@ -12489,5 +12489,5 @@
   "pvpr_inflado": 4,
   "sin_precio": 7
  },
- "updated": "2026-11-27T05:09:40.059668+00:00"
+ "updated": "2026-11-27T06:20:34.547635+00:00"
 }

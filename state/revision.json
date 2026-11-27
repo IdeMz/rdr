@@ -859,6 +859,7 @@
    "title": "Perfume Unisex Amaderado de 100 ml, Cuero, Oud, Ámbar, Vainilla, Incienso, Eau de Parfum de Larga Duración, Fragancia de Nicho de Lujo, Regalo"
   },
   "a1005012212440046": {
+   "answered": "2026-11-27T06:20:34.547635+00:00",
    "drop": 11,
    "id": "1005012212440046",
    "image": "https://ae-pic-a1.aliexpress-media.com/kf/S218379070f2d4ac784456df8f31eb830f.jpg",
@@ -872,7 +873,7 @@
    "shop": "Local Depot Store",
    "shop_id": "1105346322",
    "src": "a",
-   "st": "sent",
+   "st": "no",
    "t": "2026-11-27T05:09:40.059668+00:00",
    "title": "Silla de Juego Ergonómica de Malla con Respaldo Alto, Reposacabezas Ajustable, Respaldo Reclinable, Silla Giratoria para Computadora con Reposapiés para Oficina"
   },
@@ -915,6 +916,7 @@
    "title": "WOOX 40\" fresco verano ventiladores de techo luz con control remoto viento fuerte nivel 6,ventilador conjunto separado o lámpara led,motorcobre DC silencioso,lu"
   },
   "a1005012793773424": {
+   "answered": "2026-11-27T06:20:34.547635+00:00",
    "drop": 12,
    "id": "1005012793773424",
    "image": "https://ae-pic-a1.aliexpress-media.com/kf/Ac213c0b5a5814e199b41b6e949e1aa47h.jpg",
@@ -928,11 +930,13 @@
    "shop": "HomeFitHub Store",
    "shop_id": "1105474783",
    "src": "a",
-   "st": "sent",
+   "st": "ok",
    "t": "2026-11-27T05:09:40.059668+00:00",
    "title": "Silla de oficina ergonómica Gartistgo con reposabrazos abatibles, gris |       Silla de oficina giratoria tapizada en malla con soporte lumbar, función de balan"
   },
   "a1005012793917941": {
+   "answered": "2026-11-27T06:20:34.547635+00:00",
+   "auto": true,
    "drop": 12,
    "id": "1005012793917941",
    "image": "https://ae-pic-a1.aliexpress-media.com/kf/Aa74b72ac6d894575bb4761449c1881f5U.jpg",
@@ -946,7 +950,7 @@
    "shop": "HomeFitHub Store",
    "shop_id": "1105474783",
    "src": "a",
-   "st": "sent",
+   "st": "ok",
    "t": "2026-11-27T05:09:40.059668+00:00",
    "title": "Silla ergonómica para videojuegos, silla de oficina para PC, silla transpirable para videojuegos con cojín y respaldo reclinable."
   },
@@ -1119,6 +1123,7 @@
   "1104063038": "70mai Overseas Store",
   "1104101208": "PERFUMES ÁRABES DUBAI Store",
   "1105233629": "Shop1105233629 Store",
+  "1105474783": "HomeFitHub Store",
   "3179007": "BASEUS Co.,Ltd. Store"
  }
 }
