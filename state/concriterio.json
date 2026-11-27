@@ -1,6 +1,6 @@
 {
  "cats": {
-  "Accesorios de coche": "2026-11-25T16:01:12.511497+00:00",
+  "Accesorios de coche": "2026-11-27T07:30:56.540921+00:00",
   "Accesorios de móvil": "2026-11-26T21:15:40.564504+00:00",
   "Afeitado y depilación": "2026-11-26T08:01:06.074359+00:00",
   "Almacenamiento": "2026-11-26T11:30:57.919122+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-27T07:30:11.164410+00:00",
+ "next_at": "2026-11-27T08:00:30.138041+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1102,6 +1102,17 @@
    "s": "ambas",
    "t": "2026-11-19T09:06:10.116632+00:00",
    "title": "Men's Zapatilla Strutter",
+   "v": []
+  },
+  "B07SSSCBDM": {
+   "c": "Accesorios de coche",
+   "d": 33,
+   "e": "🚗",
+   "m": 672,
+   "p": 40.41,
+   "s": "busqueda",
+   "t": "2026-11-27T07:31:29.004730+00:00",
+   "title": "Cecotec Aspirador de Mano Conga Immortal ExtremeSuction 22,2 V Animal Hand. 22,2 V. Potente. para sólidos y líquidos. Accesorio para Mascotas, casa y Coche. Tecnología ciclónica. Autonomía 25 min.",
    "v": []
   },
   "B07V8HGM7T": {
@@ -3408,17 +3419,6 @@
    "title": "Garmin Venu X1, Smartwatch con GPS, Negro",
    "v": []
   },
-  "B0FDL3BK9T": {
-   "c": "Climatización",
-   "d": 18,
-   "e": "🌬️",
-   "m": 252,
-   "p": 89.99,
-   "s": "ambas",
-   "t": "2026-11-13T07:01:39.298391+00:00",
-   "title": "Levoit Purificador de Aire con Filtro Hepa, Flitro Personalizado, Core 300",
-   "v": []
-  },
   "B0FDQT2KFR": {
    "c": "Droguería",
    "d": 49,
@@ -4488,6 +4488,10 @@
    "t": "2026-11-26T09:30:58.520121+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0F6NRJNTR": {
+   "t": "2026-11-27T07:30:56.540921+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0GF9MXR7D": {
    "t": "2026-11-26T08:01:06.074359+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4515,6 +4519,6 @@
  "tg_offset": 511048164,
  "x_copy": {
   "day": "2026-11-27",
-  "n": 1
+  "n": 2
  }
 }
