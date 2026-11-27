@@ -2418,6 +2418,21 @@
    "title": "HUAWEI FreeClip 2 Auriculares Bluetooth, hasta 38h Autonomía, Oro Rosa",
    "via": "nombre"
   },
+  "6942103179631": {
+   "a": "",
+   "t": "2026-11-27T00:50:36.966847+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "HUAWEI MatePad 11.5 2025 Tablet, Pantalla PaperMatte de 2.5K y 120 Hz",
+     "HUAWEI MatePad 11.5, Tablet 8+256GB, PaperMatte Edition, Pantalla FullView de 11,5 Pulgadas, 2.2K Re",
+     "HUAWEI MatePad 11.5 2025 Tablet, Pantalla FullView de 2.5K 120 Hz, 8+128 GB"
+    ]
+   }
+  },
   "6942785108035": {
    "a": "",
    "t": "2026-11-14T02:50:24.306324+00:00",
@@ -2634,6 +2649,21 @@
      "VIOFO A229 Pro 4K 3CH Dashcam Del.+Tras.+Int., STARVIS 2 HDR, Wi-Fi 5G, GPS",
      "VIOFO A329S 4K 3CH Dashcam Del.+Tras.+Int., Wi-Fi 6, Eco, 210° Interior",
      "VIOFO A119M Pro 4K HDR Mini Dashcam Delantera, STARVIS 2, Wi-Fi 6, GPS, CPL"
+    ]
+   }
+  },
+  "6972467710218": {
+   "a": "",
+   "t": "2026-11-27T00:50:36.966847+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "AOCHUAN Smart XE Gimbal Estabilizador para Celular, Estabilizador de Teléfono Plegable de 3 Ejes con",
+     "AOCHUAN Phone Gimbal Stabilizer - Estabilizador de 3 Ejes para iPhone Gimbal con Focus Wheel TikTok ",
+     "AOCHUAN XE AI Gimbal Estabilizador para Móvil, Seguimiento IA sin App, Estabilizador Plegable de 3 E"
     ]
    }
   },
@@ -4002,7 +4032,7 @@
    "pp_drop": 37,
    "pp_median": 40.95,
    "pp_price": 25.77,
-   "t": "2026-11-24T20:05:32.905580+00:00",
+   "t": "2026-11-27T00:50:36.966847+00:00",
    "v": 3,
    "veredicto": "no_esta",
    "vistos": {
@@ -9715,6 +9745,28 @@
     ]
    }
   },
+  "46599139072": {
+   "ean": "6972467710218",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Gimbal AOCHUAN Smart S2 Negro 3 Ejes USB-C 16h",
+   "pp_drop": 27,
+   "pp_median": 119.95,
+   "pp_price": 87.95,
+   "t": "2026-11-27T00:50:36.966847+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "AOCHUAN Smart XE Gimbal Estabilizador para Celular, Estabilizador de Teléfono Plegable de 3 Ejes con",
+     "AOCHUAN Phone Gimbal Stabilizer - Estabilizador de 3 Ejes para iPhone Gimbal con Focus Wheel TikTok ",
+     "AOCHUAN XE AI Gimbal Estabilizador para Móvil, Seguimiento IA sin App, Estabilizador Plegable de 3 E"
+    ]
+   }
+  },
   "46599139090": {
    "ahorro_vs_amazon": null,
    "amz_low30": null,
@@ -11392,6 +11444,28 @@
    "t": "2026-11-14T04:20:27.040644+00:00",
    "veredicto": "dudoso"
   },
+  "46599143175": {
+   "ean": "6942103179631",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Huawei MatePad 11.5 2025 PaperMatte Edition WiFi 8GB/256GB Gris M-Pencil 3ª Gen 11,5 pulgadas IPS 120Hz",
+   "pp_drop": 21,
+   "pp_median": 409.9,
+   "pp_price": 324.95,
+   "t": "2026-11-27T00:50:36.966847+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "HUAWEI MatePad 11.5 2025 Tablet, Pantalla PaperMatte de 2.5K y 120 Hz",
+     "HUAWEI MatePad 11.5, Tablet 8+256GB, PaperMatte Edition, Pantalla FullView de 11,5 Pulgadas, 2.2K Re",
+     "HUAWEI MatePad 11.5 2025 Tablet, Pantalla FullView de 2.5K 120 Hz, 8+128 GB"
+    ]
+   }
+  },
   "46599143189": {
    "ahorro_vs_amazon": -2,
    "amz_low30": null,
@@ -12243,14 +12317,14 @@
    "veredicto": "oferta_real"
   }
  },
- "night_at": "2026-11-27T00:35:32.565296+00:00",
+ "night_at": "2026-11-27T00:50:36.966847+00:00",
  "resumen": {
   "amazon_mas_barato": 28,
   "dudoso": 0,
-  "no_esta": 22,
+  "no_esta": 24,
   "oferta_real": 20,
   "pvpr_inflado": 4,
   "sin_precio": 9
  },
- "updated": "2026-11-27T00:35:32.565296+00:00"
+ "updated": "2026-11-27T00:50:36.966847+00:00"
 }
