@@ -3819,6 +3819,13 @@
    "title": "INNO3D NVIDIA GeForce RTX 5060 Ti X3 OC 8 GB GDDR7 Gaming Graphics Card (Triple Fan, 2 Ranuras, Reflex 2 RTX AI DLSS4)",
    "via": "ean"
   },
+  "8886419354796": {
+   "a": "B0FZVDRNK2",
+   "t": "2026-11-27T16:35:45.254038+00:00",
+   "title": "Razer Iskur V2 NewGen - Silla Gamer ergonómica con Comodidad Transpirable Cuero EPU 2.ª generación con tecnología Cooltouch - Sistema de Soporte Lumbar Hyperfle",
+   "v": 3,
+   "via": "nombre"
+  },
   "8886419377108": {
    "a": "",
    "t": "2026-11-14T05:35:19.499764+00:00",
@@ -4360,22 +4367,22 @@
    "veredicto": "amazon_mas_barato"
   },
   "38383446133": {
-   "ahorro_vs_amazon": -26,
+   "ahorro_vs_amazon": -24,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 169.24,
+   "amz_price": 171.93,
    "amz_title": "Samsung L310 Galaxy Watch7, 44mm, Green",
    "asin": "B0D4B3616C",
    "disponible": true,
    "ean": "8806095660981",
    "encontrado_por": "modelo",
    "lista": "candidates",
-   "motivo": "Amazon 169.24 frente a 213.95",
+   "motivo": "Amazon 171.93 frente a 213.95",
    "name": "Samsung Galaxy Watch7 L310 BT 44 mm Verde 1,5 pulgadas AMOLED GPS 5ATM",
    "pp_drop": 29,
    "pp_median": 302.95,
    "pp_price": 213.95,
-   "t": "2026-11-25T16:30:57.642581+00:00",
+   "t": "2026-11-27T16:35:45.254038+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -12725,6 +12732,26 @@
    "t": "2026-11-27T14:35:44.289056+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
+  },
+  "46853995977": {
+   "ahorro_vs_amazon": 7,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 699.99,
+   "amz_title": "Razer Iskur V2 NewGen - Silla Gamer ergonómica con Comodidad Transpirable Cuero EPU 2.ª generación con tecnología Cooltouch - Sistema de Soporte Lumbar Hyperfle",
+   "asin": "B0FZVDRNK2",
+   "disponible": true,
+   "ean": "8886419354796",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "antes 842.95 en PowerPlanet, pero en Amazon suele estar a 699.99",
+   "name": "Silla Gaming Razer Iskur V2 NewGen Negro Cuero Reposabrazos 4D 136kg",
+   "pp_drop": 23,
+   "pp_median": 842.95,
+   "pp_price": 652.95,
+   "t": "2026-11-27T16:35:45.254038+00:00",
+   "v": 3,
+   "veredicto": "pvpr_inflado"
   }
  },
  "night_at": "2026-11-27T06:20:34.547635+00:00",
@@ -12733,8 +12760,8 @@
   "dudoso": 0,
   "no_esta": 18,
   "oferta_real": 18,
-  "pvpr_inflado": 4,
+  "pvpr_inflado": 5,
   "sin_precio": 6
  },
- "updated": "2026-11-27T16:05:35.742384+00:00"
+ "updated": "2026-11-27T16:35:45.254038+00:00"
 }

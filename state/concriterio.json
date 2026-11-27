@@ -18,7 +18,7 @@
   "Climatización": "2026-11-24T18:35:37.637788+00:00",
   "Colchones y almohadas": "2026-11-24T16:30:59.602669+00:00",
   "Componentes PC": "2026-11-27T15:05:34.336700+00:00",
-  "Cuidado de la piel": "2026-11-25T15:01:06.717368+00:00",
+  "Cuidado de la piel": "2026-11-27T16:35:45.254038+00:00",
   "Cuidado del cabello": "2026-11-27T15:05:34.336700+00:00",
   "Cámaras de seguridad": "2026-11-25T17:30:57.888678+00:00",
   "Decoración navideña": "2026-11-27T09:35:32.611631+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-27T16:35:34.400593+00:00",
+ "next_at": "2026-11-27T17:04:27.211710+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1851,6 +1851,17 @@
    "s": "busqueda",
    "t": "2026-11-25T20:46:08.846516+00:00",
    "title": "Amazon Basics Silla de oficina ergonómica, silla de escritorio, reposabrazos ajustables, soporte lumbar, agradable en la espalda, silla ejecutiva de malla, fácil montaje, 63,5 x 58,4 x 91,4 cm, Negro",
+   "v": []
+  },
+  "B09BD7L35V": {
+   "c": "Cuidado de la piel",
+   "d": 46,
+   "e": "🧴",
+   "m": 691,
+   "p": 7.49,
+   "s": "ambas",
+   "t": "2026-11-27T16:36:26.070597+00:00",
+   "title": "Garnier Vitamina C Sérum AntiManchas Pieles Sensible, Nº1 del mundo, 30 ml",
    "v": []
   },
   "B09BFG8NQQ": {
@@ -4509,12 +4520,28 @@
    "t": "2026-11-26T18:45:39.384119+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0CM4B43DZ": {
+   "t": "2026-11-27T16:35:45.254038+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0F6NRJNTR": {
    "t": "2026-11-27T07:30:56.540921+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   }
  },
  "reserve": [
+  {
+   "a": "B097WL6QWT",
+   "c": "Cuidado de la piel",
+   "e": "🧴",
+   "img": "https://m.media-amazon.com/images/I/61xJbvpEIaL._AC_UL320_.jpg",
+   "n": 9400,
+   "op": 19.59,
+   "p": 9.99,
+   "r": 4.5,
+   "t": "2026-11-27T16:35:45.254038+00:00",
+   "title": "L'Oréal Paris Accord Parfait Sérum con Color, Light (2 - 3), 30ml"
+  },
   {
    "a": "B08R57HZ4Z",
    "c": "Cuidado del cabello",
@@ -4538,18 +4565,6 @@
    "r": 4.6,
    "t": "2026-11-27T14:35:44.289056+00:00",
    "title": "Colgate Max White Carbón Pasta de Dientes 4x75ml"
-  },
-  {
-   "a": "B0DVLZ2H2C",
-   "c": "Freidoras de aire",
-   "e": "🍟",
-   "img": "https://m.media-amazon.com/images/I/51ASLySzRKL._AC_UL320_.jpg",
-   "n": 1200,
-   "op": 69.99,
-   "p": 49.99,
-   "r": 4.5,
-   "t": "2026-11-27T13:05:37.929990+00:00",
-   "title": "Instant Pot Vortex Compact Trufa Freidora sin aceite gris con cesta de 5 litros, 4 en 1: freír, deshidratar alimentos, hornear, recalentar, antiadherente, apta para lavavajillas, eléctrica."
   }
  ],
  "store_skip": {
@@ -4565,6 +4580,6 @@
  "tg_offset": 511048177,
  "x_copy": {
   "day": "2026-11-27",
-  "n": 19
+  "n": 20
  }
 }
