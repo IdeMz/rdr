@@ -31,7 +31,7 @@
   "Gatos": "2026-11-26T17:30:54.854401+00:00",
   "Herramientas": "2026-11-27T09:05:33.373522+00:00",
   "Higiene personal": "2026-11-27T14:35:44.289056+00:00",
-  "Iluminación": "2026-11-26T12:01:05.059758+00:00",
+  "Iluminación": "2026-11-27T18:05:30.612634+00:00",
   "Impresoras": "2026-11-21T12:30:56.768648+00:00",
   "Jardín": "2026-11-24T14:30:59.149182+00:00",
   "Juguetes": "2026-11-26T13:30:53.798593+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-27T18:03:39.560715+00:00",
+ "next_at": "2026-11-27T18:35:04.862051+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -3111,17 +3111,6 @@
    "title": "PROIRON Esterilla Yoga,Grosor 10/15mm,Ideal para Ejercicio,183x66/61cm",
    "v": []
   },
-  "B0DTTK2RVR": {
-   "c": "Almacenamiento",
-   "d": 10,
-   "e": "💾",
-   "m": 270,
-   "p": 170.99,
-   "s": "ambas",
-   "t": "2026-11-13T17:46:10.058900+00:00",
-   "title": "1TB NVMe PCIe 3.0x4 SSD 3500MB/s Para Mac Air 2013-2017",
-   "v": []
-  },
   "B0DTTLWTQ6": {
    "c": "Afeitado y depilación",
    "d": 40,
@@ -3384,6 +3373,17 @@
    "s": "ambas",
    "t": "2026-11-21T12:31:32.706171+00:00",
    "title": "Brother DCPJ1360DW, Multifunción Tinta Color, 16 ppm, impresión dúplex",
+   "v": []
+  },
+  "B0FBRBXX94": {
+   "c": "Iluminación",
+   "d": 43,
+   "e": "🪔",
+   "m": 694,
+   "p": 17.01,
+   "s": "ofertas",
+   "t": "2026-11-27T18:06:04.255058+00:00",
+   "title": "Lámpara Escritorio,Flexo Led Escritorio,5 Modos,10 Niveles de Brillo",
    "v": []
   },
   "B0FBSB1V4L": {
@@ -4531,6 +4531,18 @@
  },
  "reserve": [
   {
+   "a": "B0B2RQTHSL",
+   "c": "Iluminación",
+   "e": "🪔",
+   "img": "https://m.media-amazon.com/images/I/51jfmYIt6wL._AC_UL320_.jpg",
+   "n": 1300,
+   "op": 29.39,
+   "p": 20.46,
+   "r": 4.3,
+   "t": "2026-11-27T18:05:30.612634+00:00",
+   "title": "Philips - Lámpara LED de mesa tipo Flexo Philips Tilpa 5W 5000K con 3 escenas de luz - Carga USB"
+  },
+  {
    "a": "B097WL6QWT",
    "c": "Cuidado de la piel",
    "e": "🧴",
@@ -4553,18 +4565,6 @@
    "r": 4.5,
    "t": "2026-11-27T15:05:34.336700+00:00",
    "title": "Secador con ThermoProtect Series 3000 de Philips (modelo BHD350/10)"
-  },
-  {
-   "a": "B0BNNXVY1W",
-   "c": "Higiene personal",
-   "e": "🪥",
-   "img": "https://m.media-amazon.com/images/I/81P8DEDi9oL._AC_UL320_.jpg",
-   "n": 4200,
-   "op": 12.77,
-   "p": 7.77,
-   "r": 4.6,
-   "t": "2026-11-27T14:35:44.289056+00:00",
-   "title": "Colgate Max White Carbón Pasta de Dientes 4x75ml"
   }
  ],
  "store_skip": {
@@ -4580,6 +4580,6 @@
  "tg_offset": 511048177,
  "x_copy": {
   "day": "2026-11-27",
-  "n": 22
+  "n": 23
  }
 }
