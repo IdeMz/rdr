@@ -15,7 +15,7 @@
   "Camping y montaña": "2026-11-26T13:01:08.844723+00:00",
   "Cargadores y baterías": "2026-11-26T09:30:58.520121+00:00",
   "Ciclismo": "2026-11-26T15:01:06.505667+00:00",
-  "Climatización": "2026-11-24T18:35:37.637788+00:00",
+  "Climatización": "2026-11-27T20:15:42.816939+00:00",
   "Colchones y almohadas": "2026-11-27T19:05:34.051750+00:00",
   "Componentes PC": "2026-11-27T15:05:34.336700+00:00",
   "Cuidado de la piel": "2026-11-27T16:35:45.254038+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-27T20:14:43.443980+00:00",
+ "next_at": "2026-11-27T20:44:05.821004+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2316,6 +2316,17 @@
    "title": "Soundcore Motion X600 Altavoz Bluetooth Portátil Hi-Res 50W, IPX7(Negro)",
    "v": []
   },
+  "B0BX49FQF8": {
+   "c": "Climatización",
+   "d": 47,
+   "e": "🌬️",
+   "m": 698,
+   "p": 52.99,
+   "s": "ambas",
+   "t": "2026-11-27T20:16:19.297459+00:00",
+   "title": "Philips Purificador de Aire Serie 600 Ultrasilencioso y de bajo consumo, para alérgicos, el filtro HEPA elimina el 99,97% de los contaminantes, cubre hasta 44m2, controlado por app, blanco (AC0650/10)",
+   "v": []
+  },
   "B0BZYP24JC": {
    "c": "Monitores",
    "d": 41,
@@ -3529,17 +3540,6 @@
    "title": "Afeitadora Philips Serie 8000 - Afeitadora sin cable para uso en seco y en mojado, sistema de 3 cuchillas, luz LED, para la cara, las piernas, el cuerpo y la zona del bikini, Modelo BRL159/00",
    "v": []
   },
-  "B0FJFX6JK9": {
-   "c": "Iluminación",
-   "d": 49,
-   "e": "🪔",
-   "m": 273,
-   "p": 45.99,
-   "s": "ofertas",
-   "t": "2026-11-13T20:06:05.760522+00:00",
-   "title": "SwitchBot Matter RGBICWW Lampara de Pie, Blanco Cálido & Frío, Lámpara de Pie LED compatible con Apple Home, Alexa, Google Home, 16 Millones Colores, 1200lm, Sincronización de Música, Modos de Escena",
-   "v": []
-  },
   "B0FJG53ZS4": {
    "c": "Televisores",
    "d": 26,
@@ -4527,10 +4527,7 @@
    "v": []
   }
  },
- "problem": {
-  "fails": 1,
-  "last": "HTTP 503"
- },
+ "problem": {},
  "rejected": {
   "B0BWYSWC3V": {
    "t": "2026-11-27T19:05:34.051750+00:00",
@@ -4546,6 +4543,18 @@
   }
  },
  "reserve": [
+  {
+   "a": "B0BL898WJZ",
+   "c": "Climatización",
+   "e": "🌬️",
+   "img": "https://m.media-amazon.com/images/I/71mk3cRsy3L._AC_UL320_.jpg",
+   "n": 1000,
+   "op": 539.99,
+   "p": 349.99,
+   "r": 4.2,
+   "t": "2026-11-27T20:15:42.816939+00:00",
+   "title": "Philips Air Performer 8000 3en1 Purificador, Calefactor y Ventilador, 70m²"
+  },
   {
    "a": "B0DJ34VSZ2",
    "c": "Patinetes",
@@ -4569,18 +4578,6 @@
    "r": 4.3,
    "t": "2026-11-27T18:05:30.612634+00:00",
    "title": "Philips - Lámpara LED de mesa tipo Flexo Philips Tilpa 5W 5000K con 3 escenas de luz - Carga USB"
-  },
-  {
-   "a": "B097WL6QWT",
-   "c": "Cuidado de la piel",
-   "e": "🧴",
-   "img": "https://m.media-amazon.com/images/I/61xJbvpEIaL._AC_UL320_.jpg",
-   "n": 9400,
-   "op": 19.59,
-   "p": 9.99,
-   "r": 4.5,
-   "t": "2026-11-27T16:35:45.254038+00:00",
-   "title": "L'Oréal Paris Accord Parfait Sérum con Color, Light (2 - 3), 30ml"
   }
  ],
  "store_skip": {
@@ -4596,6 +4593,6 @@
  "tg_offset": 511048177,
  "x_copy": {
   "day": "2026-11-27",
-  "n": 26
+  "n": 27
  }
 }

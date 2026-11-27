@@ -1937,6 +1937,13 @@
    "title": "Optoma Hz147x Proiettore A Raggio Standard Dlp 1080p [1920x1080] Compatibilit? 3d Nero (hz147x Duracore Laser Projector)",
    "via": "ean"
   },
+  "5055387664791": {
+   "a": "B08VH8NG6W",
+   "t": "2026-11-27T20:15:42.816939+00:00",
+   "title": "W400LVe",
+   "v": 3,
+   "via": "ean"
+  },
   "5055387669734": {
    "a": "B0HN7P41N9",
    "t": "2026-11-14T10:30:50.359175+00:00",
@@ -7371,6 +7378,26 @@
    "v": 3,
    "veredicto": "oferta_real"
   },
+  "45956991434": {
+   "ahorro_vs_amazon": 8,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 547.0,
+   "amz_title": "W400LVe",
+   "asin": "B08VH8NG6W",
+   "disponible": true,
+   "ean": "5055387664791",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "antes 634.95 en PowerPlanet, pero en Amazon suele estar a 547.00",
+   "name": "Optoma W400LVe 4000 Lúmenes WXGA HDMI-VGA Negro altavoz 10W 27dB Proyector",
+   "pp_drop": 20,
+   "pp_median": 634.95,
+   "pp_price": 505.95,
+   "t": "2026-11-27T20:15:42.816939+00:00",
+   "v": 3,
+   "veredicto": "pvpr_inflado"
+  },
   "45956991449": {
    "ahorro_vs_amazon": 13,
    "amz_low30": null,
@@ -7819,25 +7846,6 @@
      "Reloj Inteligente Mujer Hombre,1.96\" Smartwatch con Llamada Bluetooth"
     ]
    }
-  },
-  "45992962853": {
-   "ahorro_vs_amazon": 3,
-   "amz_low30": null,
-   "amz_median": null,
-   "amz_price": 112.99,
-   "amz_title": "instax Square Link. Impresora para teléfonos, Color Blanco. & Fujifilm Square Black, película instantanea, 10 Fotos",
-   "asin": "B0BV2L3WM7",
-   "disponible": true,
-   "ean": "4547410487671",
-   "encontrado_por": "ean",
-   "lista": "candidates",
-   "motivo": "Amazon 112.99 frente a 109.95",
-   "name": "Fujifilm Instax Square Link Bluetooth + USB-C Impresora fotográfica térmica",
-   "pp_drop": 25,
-   "pp_median": 145.95,
-   "pp_price": 109.95,
-   "t": "2026-11-13T19:20:42.278458+00:00",
-   "veredicto": "amazon_mas_barato"
   },
   "45992963114": {
    "ean": "6941948710320",
@@ -11512,11 +11520,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Dreame Tasti 1500W pantalla táctil Freidora de aire",
-   "pista": "1427418 bytes; 17 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1677454 bytes; 49 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 35,
    "pp_median": 230.95,
    "pp_price": 150.95,
-   "t": "2026-11-27T14:05:32.612136+00:00",
+   "t": "2026-11-27T20:15:42.816939+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -12842,8 +12850,8 @@
   "dudoso": 0,
   "no_esta": 20,
   "oferta_real": 19,
-  "pvpr_inflado": 5,
+  "pvpr_inflado": 6,
   "sin_precio": 6
  },
- "updated": "2026-11-27T19:05:34.051750+00:00"
+ "updated": "2026-11-27T20:15:42.816939+00:00"
 }
