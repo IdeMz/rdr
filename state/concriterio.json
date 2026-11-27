@@ -56,7 +56,7 @@
   "Robots de cocina": "2026-11-26T19:45:40.861388+00:00",
   "Salud": "2026-11-26T20:15:39.035535+00:00",
   "Smartwatch": "2026-11-26T20:45:45.883777+00:00",
-  "Suplementos": "2026-11-25T07:30:56.306804+00:00",
+  "Suplementos": "2026-11-27T10:05:33.632197+00:00",
   "Tablets": "2026-11-26T09:01:09.131171+00:00",
   "Televisores": "2026-11-25T21:15:41.908814+00:00",
   "Textil hogar": "2026-11-26T14:30:54.648040+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-27T10:02:16.723575+00:00",
+ "next_at": "2026-11-27T10:32:15.700946+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -112,6 +112,17 @@
    "s": "busqueda",
    "t": "2026-11-22T15:01:47.283230+00:00",
    "title": "Colección Reloj Unisex Adultos A168WA",
+   "v": []
+  },
+  "B000NI6WHY": {
+   "c": "Suplementos",
+   "d": 40,
+   "e": "💊",
+   "m": 678,
+   "p": 33.38,
+   "s": "ambas",
+   "t": "2026-11-27T10:06:06.616215+00:00",
+   "title": "Solgar Omega 3 Triple Potencia | Apoya Cerebro y Ojos | 100 Cápsulas",
    "v": []
   },
   "B000YBXU6G": {
@@ -2891,17 +2902,6 @@
    "title": "AIROH WRAAAP Paint Matt XS",
    "v": []
   },
-  "B0DMDT1KYZ": {
-   "c": "Fitness en casa",
-   "d": 25,
-   "e": "🏋️",
-   "m": 257,
-   "p": 9.71,
-   "s": "ofertas",
-   "t": "2026-11-13T09:55:59.354032+00:00",
-   "title": "Amazon Basics Pesas ajustables para tobillo y muñeca para mujeres y hombres, 1.13kg cada una, juego de 2",
-   "v": []
-  },
   "B0DMWL2XDY": {
    "c": "Decoración navideña",
    "d": 44,
@@ -4506,6 +4506,18 @@
  },
  "reserve": [
   {
+   "a": "B096B2TZR2",
+   "c": "Suplementos",
+   "e": "💊",
+   "img": "https://m.media-amazon.com/images/I/61n9rH3Mz1L._AC_UL320_.jpg",
+   "n": 2700,
+   "op": 27.99,
+   "p": 20.99,
+   "r": 4.5,
+   "t": "2026-11-27T10:05:33.632197+00:00",
+   "title": "Omega 3 Cápsulas 2000mg - 1000mg EPA + 500mg DHA - Alta dosificación"
+  },
+  {
    "a": "B07GZ4BWZ2",
    "c": "Herramientas",
    "e": "🔧",
@@ -4528,18 +4540,6 @@
    "r": 4.4,
    "t": "2026-11-27T08:04:46.322734+00:00",
    "title": "2026NEW Hidrolimpiadora de Alta Presión 180 Bar, 420 l/h, con Carrete para Manguera, Depósito de Espuma y Boquilla Ajustable 6 en 1, Rendimiento de hasta 50 m²/h, para Coche, Terraza y Jardín"
-  },
-  {
-   "a": "B08T9JTHNK",
-   "c": "Bricolaje",
-   "e": "🪛",
-   "img": "https://m.media-amazon.com/images/I/61x-8HHklaL._AC_UL320_.jpg",
-   "n": 3400,
-   "op": 21.99,
-   "p": 17.59,
-   "r": 4.6,
-   "t": "2026-11-27T07:01:05.022940+00:00",
-   "title": "WORKPRO Pistola de Calafateo Metal 2 Modos 9:1 y 18:1"
   }
  ],
  "store_skip": {
@@ -4551,6 +4551,6 @@
  "tg_offset": 511048177,
  "x_copy": {
   "day": "2026-11-27",
-  "n": 6
+  "n": 7
  }
 }
