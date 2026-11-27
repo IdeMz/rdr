@@ -916,6 +916,13 @@
    "v": 3,
    "via": "nombre"
   },
+  "0843367135363": {
+   "a": "B0DRSRHLV4",
+   "t": "2026-11-27T22:50:37.797029+00:00",
+   "title": "LEXAR Carte microSDXC Silver Plus UHS-1 1TB V30 R205/W150MB/s",
+   "v": 3,
+   "via": "ean"
+  },
   "0850033806298": {
    "a": "B09BW29FJS",
    "t": "2026-11-17T22:20:31.920357+00:00",
@@ -2624,6 +2631,13 @@
      "HUAWEI MatePad 11.5 2025 Tablet, Pantalla FullView de 2.5K 120 Hz, 8+128 GB"
     ]
    }
+  },
+  "6942351427010": {
+   "a": "B0GLR3LC89",
+   "t": "2026-11-27T22:50:37.797029+00:00",
+   "title": "Hisense C3 - Proyector Láser Trichroma UHD 4K Smart TV, 65-300\"",
+   "v": 3,
+   "via": "ean"
   },
   "6942785108035": {
    "a": "",
@@ -6175,28 +6189,6 @@
    "t": "2026-11-14T05:08:32.344426+00:00",
    "veredicto": "oferta_real"
   },
-  "45403196290": {
-   "ean": "0840414637900",
-   "lista": "candidates",
-   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
-   "name": "Amazon Echo Dot Kids 5ª Gen WiFi Altavoz inteligente Alexa",
-   "pp_drop": 37,
-   "pp_median": 73.96,
-   "pp_price": 46.95,
-   "t": "2026-11-13T22:50:26.355987+00:00",
-   "v": 2,
-   "veredicto": "no_esta",
-   "vistos": {
-    "ean": [
-     "(sin resultados)"
-    ],
-    "nombre": [
-     "Amazon Echo Dot (última gen.): altavoz inteligente compacto con sonido espectacular y controlador de",
-     "Echo Dot (modelo de 2022) | Altavoz inteligente wifi y Bluetooth, con sonido más potente y de mayor ",
-     "Amazon Echo Dot Max (última generación): altavoz con sonido envolvente y controlador de Hogar digita"
-    ]
-   }
-  },
   "45403196307": {
    "ahorro_vs_amazon": 13,
    "amz_low30": null,
@@ -6946,11 +6938,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Samsung VS15A60AGR5 Negro 40 min sin cable Aspirador escoba",
-   "pista": "1795676 bytes; 9 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "2196149 bytes; 12 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 21,
    "pp_median": 214.94,
    "pp_price": 168.95,
-   "t": "2026-11-27T09:05:33.373522+00:00",
+   "t": "2026-11-27T22:50:37.797029+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -9285,6 +9277,26 @@
    "v": 3,
    "veredicto": "sin_precio"
   },
+  "46217685664": {
+   "ahorro_vs_amazon": 11,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 378.8,
+   "amz_title": "LEXAR Carte microSDXC Silver Plus UHS-1 1TB V30 R205/W150MB/s",
+   "asin": "B0DRSRHLV4",
+   "disponible": true,
+   "ean": "0843367135363",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "11 % por debajo del habitual en Amazon (378.80)",
+   "name": "Lexar Professional Plus 1TB Plata 205MB/s V30 U3 A2 Tarjeta microSD",
+   "pp_drop": 18,
+   "pp_median": 412.95,
+   "pp_price": 338.95,
+   "t": "2026-11-27T22:50:37.797029+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "46239681210": {
    "ean": "6934399224638",
    "lista": "candidates",
@@ -11587,6 +11599,26 @@
    "v": 3,
    "veredicto": "pvpr_inflado"
   },
+  "46599141531": {
+   "ahorro_vs_amazon": 2,
+   "amz_low30": null,
+   "amz_median": 1202.48,
+   "amz_price": 1149.0,
+   "amz_title": "Hisense C3 - Proyector Láser Trichroma UHD 4K Smart TV, 65-300\"",
+   "asin": "B0GLR3LC89",
+   "disponible": true,
+   "ean": "6942351427010",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 1149.00 frente a 1172.82",
+   "name": "Hisense C3 Láser Triple RGB 4K UHD 2500 Lúmenes ANSI VIDAA U9 Autofoco WiFi Bluetooth 5.3 hasta 300 pulgadas Proyector",
+   "pp_drop": 15,
+   "pp_median": 1385.95,
+   "pp_price": 1172.82,
+   "t": "2026-11-27T22:50:37.797029+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "46599141708": {
    "ahorro_vs_amazon": 23,
    "amz_low30": null,
@@ -13069,14 +13101,14 @@
    "veredicto": "pvpr_inflado"
   }
  },
- "night_at": "2026-11-27T22:35:27.465115+00:00",
+ "night_at": "2026-11-27T22:50:37.797029+00:00",
  "resumen": {
-  "amazon_mas_barato": 24,
+  "amazon_mas_barato": 25,
   "dudoso": 0,
   "no_esta": 22,
-  "oferta_real": 22,
+  "oferta_real": 23,
   "pvpr_inflado": 7,
   "sin_precio": 9
  },
- "updated": "2026-11-27T22:35:27.465115+00:00"
+ "updated": "2026-11-27T22:50:37.797029+00:00"
 }
