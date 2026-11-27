@@ -81,6 +81,21 @@
    "v": 3,
    "via": "ean"
   },
+  "0194644293208": {
+   "a": "",
+   "t": "2026-11-27T17:35:29.806458+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "eufy by Anker E41 Camaras de vigilancia Exterior PoE NVR"
+    ],
+    "nombre": [
+     "eufy by Anker E41 Camaras de vigilancia Exterior PoE NVR",
+     "eufy by Anker E41 Camaras de vigilancia Exterior PoE NVR",
+     "eufy by Anker S4 Camaras de vigilancia PoE NVR MAX"
+    ]
+   }
+  },
   "0194644293307": {
    "a": "",
    "t": "2026-11-26T12:30:59.615384+00:00",
@@ -8095,7 +8110,7 @@
    "pp_drop": 43,
    "pp_median": 62.94,
    "pp_price": 35.95,
-   "t": "2026-11-25T17:01:09.744818+00:00",
+   "t": "2026-11-27T17:35:29.806458+00:00",
    "v": 3,
    "veredicto": "no_esta",
    "vistos": {
@@ -8434,25 +8449,6 @@
    "pp_price": 58.95,
    "t": "2026-11-17T08:01:10.979640+00:00",
    "veredicto": "sin_precio"
-  },
-  "46165551484": {
-   "ahorro_vs_amazon": -143,
-   "amz_low30": null,
-   "amz_median": null,
-   "amz_price": 499.0,
-   "amz_title": "HP ProBook 450 G7 Ordenador portátil de Negocios, 15,6 Pulgadas FHD (1920x1080), Intel Core i5-10210U, 16 GB de RAM, 512 GB SSD, Teclado QWERTY, Windows 11 Pro ",
-   "asin": "B0G12ZC81W",
-   "disponible": true,
-   "ean": "0826581572633",
-   "encontrado_por": "nombre",
-   "lista": "candidates",
-   "motivo": "Amazon 499.00 frente a 1210.96",
-   "name": "HP ProBook 4 G2i 16GB/512GB SSD 16 pulgadas IPS WUXGA Intel Core 7 350 NVMe M.2 Windows 11 Pro Plata WiFi 7 Portátil",
-   "pp_drop": 18,
-   "pp_median": 1468.95,
-   "pp_price": 1210.96,
-   "t": "2026-11-13T17:10:41.240248+00:00",
-   "veredicto": "amazon_mas_barato"
   },
   "46165551706": {
    "ean": "3838783014481",
@@ -11731,6 +11727,28 @@
     ]
    }
   },
+  "46599142779": {
+   "ean": "0194644293208",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Sistema de videovigilancia Eufy NVR E41 2TB 3840x2160",
+   "pp_drop": 21,
+   "pp_median": 919.0,
+   "pp_price": 723.99,
+   "t": "2026-11-27T17:35:29.806458+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "eufy by Anker E41 Camaras de vigilancia Exterior PoE NVR"
+    ],
+    "nombre": [
+     "eufy by Anker E41 Camaras de vigilancia Exterior PoE NVR",
+     "eufy by Anker E41 Camaras de vigilancia Exterior PoE NVR",
+     "eufy by Anker S4 Camaras de vigilancia PoE NVR MAX"
+    ]
+   }
+  },
   "46599142905": {
    "ean": "0622356272551",
    "lista": "candidates",
@@ -12758,10 +12776,10 @@
  "resumen": {
   "amazon_mas_barato": 22,
   "dudoso": 0,
-  "no_esta": 18,
+  "no_esta": 19,
   "oferta_real": 18,
   "pvpr_inflado": 5,
   "sin_precio": 6
  },
- "updated": "2026-11-27T17:05:36.166528+00:00"
+ "updated": "2026-11-27T17:35:29.806458+00:00"
 }

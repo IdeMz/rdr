@@ -51,7 +51,7 @@
   "Perros": "2026-11-25T18:30:56.405059+00:00",
   "Portátiles": "2026-11-27T09:35:32.611631+00:00",
   "Proyectores": "2026-11-23T12:35:32.005006+00:00",
-  "Redes y wifi": "2026-11-25T18:30:56.405059+00:00",
+  "Redes y wifi": "2026-11-27T17:35:29.806458+00:00",
   "Relojes": "2026-11-24T14:01:02.613248+00:00",
   "Robots de cocina": "2026-11-26T19:45:40.861388+00:00",
   "Salud": "2026-11-26T20:15:39.035535+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-27T17:34:28.154382+00:00",
+ "next_at": "2026-11-27T18:03:39.560715+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2504,6 +2504,17 @@
    "title": "UNP Tienda de campaña SUV para 6 Personas, fácil instalación (300 x 270 x 200 cm)",
    "v": []
   },
+  "B0CJ9SX156": {
+   "c": "Redes y wifi",
+   "d": 42,
+   "e": "📶",
+   "m": 693,
+   "p": 23.99,
+   "s": "busqueda",
+   "t": "2026-11-27T17:35:56.384447+00:00",
+   "title": "Mercusys MR1500X - Router WiFi 6, AX1500, Doble Banda, Puerto multigigabit",
+   "v": []
+  },
   "B0CJZF9VBD": {
    "c": "Ciclismo",
    "d": 36,
@@ -3793,17 +3804,6 @@
    "title": "Amazon Kindle (última generación): ahora más fino, ligero y rápido, con pantalla de 6\" | 16 GB | Sin publicidad | Morado Ube",
    "v": []
   },
-  "B0G66ZCDL1": {
-   "c": "Robots de cocina",
-   "d": 31,
-   "e": "🥣",
-   "m": 269,
-   "p": 89.99,
-   "s": "ofertas",
-   "t": "2026-11-13T17:11:12.379008+00:00",
-   "title": "Ninja BlendBoss, Batidora de Vaso Portátil, Color Piedra",
-   "v": []
-  },
   "B0G8HQHMDS": {
    "c": "Cafeteras",
    "d": 40,
@@ -4580,6 +4580,6 @@
  "tg_offset": 511048177,
  "x_copy": {
   "day": "2026-11-27",
-  "n": 21
+  "n": 22
  }
 }
