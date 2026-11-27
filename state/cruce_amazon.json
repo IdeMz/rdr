@@ -4340,7 +4340,7 @@
    "veredicto": "oferta_real"
   },
   "38334868147": {
-   "ahorro_vs_amazon": -24,
+   "ahorro_vs_amazon": 0,
    "amz_low30": 33.99,
    "amz_median": 33.99,
    "amz_price": 32.29,
@@ -4350,12 +4350,12 @@
    "ean": "6976297860655",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "Amazon 32.29 frente a 41.99",
+   "motivo": "Amazon 32.29 frente a 33.99",
    "name": "Cycplus M2 BLE/ANT+ Negro",
-   "pp_drop": 30,
+   "pp_drop": 43,
    "pp_median": 59.96,
-   "pp_price": 41.99,
-   "t": "2026-11-27T01:50:42.494749+00:00",
+   "pp_price": 33.99,
+   "t": "2026-11-27T16:05:35.742384+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -6104,7 +6104,7 @@
    "pp_drop": 23,
    "pp_median": 1298.95,
    "pp_price": 1000.95,
-   "t": "2026-11-25T16:01:12.511497+00:00",
+   "t": "2026-11-27T16:05:35.742384+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -12736,5 +12736,5 @@
   "pvpr_inflado": 4,
   "sin_precio": 6
  },
- "updated": "2026-11-27T15:35:41.315716+00:00"
+ "updated": "2026-11-27T16:05:35.742384+00:00"
 }

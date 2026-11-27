@@ -23,7 +23,7 @@
   "Cámaras de seguridad": "2026-11-25T17:30:57.888678+00:00",
   "Decoración navideña": "2026-11-27T09:35:32.611631+00:00",
   "Domótica": "2026-11-26T16:31:04.591910+00:00",
-  "Droguería": "2026-11-26T07:30:56.599929+00:00",
+  "Droguería": "2026-11-27T16:05:35.742384+00:00",
   "Fitness en casa": "2026-11-25T16:01:12.511497+00:00",
   "Fotografía": "2026-11-26T10:01:05.790556+00:00",
   "Freidoras de aire": "2026-11-27T13:05:37.929990+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-27T16:03:15.197951+00:00",
+ "next_at": "2026-11-27T16:35:34.400593+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1104,17 +1104,6 @@
    "title": "Pure Encapsulations Magnesio Bisglicinato | Energía | 90 cápsulas",
    "v": []
   },
-  "B07QDB3KMS": {
-   "c": "Nutrición deportiva",
-   "d": 22,
-   "e": "💪",
-   "m": 267,
-   "p": 15.5,
-   "s": "ofertas",
-   "t": "2026-11-13T16:01:40.638908+00:00",
-   "title": "Healthy Fusion 100% Creatina Monohidrato en Polvo | Promueve el crecimiento muscular y mejora la resistencia física | Alta solubilidad | 300g | 60 Dosis | sabor sandía",
-   "v": []
-  },
   "B07RBN3ZMJ": {
    "c": "Café y cápsulas",
    "d": 38,
@@ -1322,6 +1311,17 @@
    "s": "ofertas",
    "t": "2026-11-20T08:31:24.987247+00:00",
    "title": "COM-FOUR® 56 piezas Juego de estrellas de paja, estrellas, campanas",
+   "v": []
+  },
+  "B081CW6CVX": {
+   "c": "Droguería",
+   "d": 42,
+   "e": "🧴",
+   "m": 690,
+   "p": 17.99,
+   "s": "ofertas",
+   "t": "2026-11-27T16:06:28.979528+00:00",
+   "title": "Botanical Origins Suavizante para Ropa Ecológico Apto para Pieles Sensibles, Fragancia Jazmín Fresco y Lavanda Silvestre 6x900ml - 270 lavados",
    "v": []
   },
   "B0822N3B24": {
@@ -4565,6 +4565,6 @@
  "tg_offset": 511048177,
  "x_copy": {
   "day": "2026-11-27",
-  "n": 18
+  "n": 19
  }
 }
