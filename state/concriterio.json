@@ -21,7 +21,7 @@
   "Cuidado de la piel": "2026-11-25T15:01:06.717368+00:00",
   "Cuidado del cabello": "2026-11-26T08:30:56.405277+00:00",
   "Cámaras de seguridad": "2026-11-25T17:30:57.888678+00:00",
-  "Decoración navideña": "2026-11-24T15:30:53.979529+00:00",
+  "Decoración navideña": "2026-11-27T09:35:32.611631+00:00",
   "Domótica": "2026-11-26T16:31:04.591910+00:00",
   "Droguería": "2026-11-26T07:30:56.599929+00:00",
   "Fitness en casa": "2026-11-25T16:01:12.511497+00:00",
@@ -49,7 +49,7 @@
   "Perfumes": "2026-11-24T16:01:07.815808+00:00",
   "Periféricos": "2026-11-25T21:45:38.616662+00:00",
   "Perros": "2026-11-25T18:30:56.405059+00:00",
-  "Portátiles": "2026-11-25T18:01:11.294449+00:00",
+  "Portátiles": "2026-11-27T09:35:32.611631+00:00",
   "Proyectores": "2026-11-23T12:35:32.005006+00:00",
   "Redes y wifi": "2026-11-25T18:30:56.405059+00:00",
   "Relojes": "2026-11-24T14:01:02.613248+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-27T09:32:34.277179+00:00",
+ "next_at": "2026-11-27T10:02:16.723575+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1148,17 +1148,6 @@
    "title": "Amonax Bandas Elasticas Fitness, Cintas Elasticas Fitness Látex Natural con 4 Niveles Ejercicios en Piernas, Glúteos y Brazos, 4 Bandas Resistencia para Yoga, Pilates, Crossfit, Estiramientos, Fuerza",
    "v": []
   },
-  "B07W4DGPGF": {
-   "c": "Periféricos",
-   "d": 47,
-   "e": "⌨️",
-   "m": 256,
-   "p": 84.99,
-   "s": "ofertas",
-   "t": "2026-11-13T09:21:15.455920+00:00",
-   "title": "Logitech G PRO X SUPERLIGHT 2, Ratón inalámbrico para gaming - Blanco",
-   "v": []
-  },
   "B07W5JK124": {
    "c": "Periféricos",
    "d": 33,
@@ -1587,6 +1576,17 @@
    "s": "ofertas",
    "t": "2026-11-19T21:16:28.494035+00:00",
    "title": "VASAGLE Mesa de Consola, Tablero de Vidrio Templado, Marco de Metal",
+   "v": []
+  },
+  "B08LFYYWNR": {
+   "c": "Decoración navideña",
+   "d": 30,
+   "e": "🎄",
+   "m": 677,
+   "p": 9.03,
+   "s": "ofertas",
+   "t": "2026-11-27T09:36:14.155774+00:00",
+   "title": "Luces de Hadas de Copo de Nieve, 20ft 40 luces LED alimentadas por batería, 2 modos, decorativas para interiores y exteriores, dormitorio, boda, fiesta, cumpleaños, San Valentín, Navidad",
    "v": []
   },
   "B08LP6MB7H": {
@@ -4499,10 +4499,6 @@
    "t": "2026-11-26T11:30:57.919122+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
-  "B0DB26KDSF": {
-   "t": "2026-11-26T09:30:58.520121+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
-  },
   "B0F6NRJNTR": {
    "t": "2026-11-27T07:30:56.540921+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4555,6 +4551,6 @@
  "tg_offset": 511048177,
  "x_copy": {
   "day": "2026-11-27",
-  "n": 5
+  "n": 6
  }
 }
