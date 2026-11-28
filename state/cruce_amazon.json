@@ -9343,25 +9343,6 @@
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
-  "46239683789": {
-   "ahorro_vs_amazon": -2,
-   "amz_low30": null,
-   "amz_median": null,
-   "amz_price": 1429.0,
-   "amz_title": "Proyector Panasonic PT-LMZ420 4200 LM",
-   "asin": "B0BXMN8VN8",
-   "disponible": true,
-   "ean": "5025232931552",
-   "encontrado_por": "ean",
-   "lista": "candidates",
-   "motivo": "Amazon 1429.00 frente a 1457.95",
-   "name": "Panasonic Láser WUXGA 1920x1200 4200 lúmenes ANSI LCD Blanco PT-LMZ420 altavoz 10W 33dB Proyector",
-   "pp_drop": 12,
-   "pp_median": 1653.66,
-   "pp_price": 1457.95,
-   "t": "2026-11-14T04:50:24.590570+00:00",
-   "veredicto": "amazon_mas_barato"
-  },
   "46239684598": {
    "ean": "5061112450973",
    "lista": "candidates",
@@ -12153,11 +12134,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Microsoft Surface Pro 11 Core Ultra 7 266V 16GB/1TB 13 pulgadas Platino OLED 120Hz 14h WiFi 7",
-   "pista": "1063539 bytes; 9 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1059411 bytes; 9 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 14,
    "pp_median": 2567.95,
    "pp_price": 2199.95,
-   "t": "2026-11-27T22:35:27.465115+00:00",
+   "t": "2026-11-28T04:50:35.441811+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -12809,7 +12790,7 @@
    "veredicto": "pvpr_inflado"
   }
  },
- "night_at": "2026-11-28T04:20:34.193078+00:00",
+ "night_at": "2026-11-28T04:50:35.441811+00:00",
  "resumen": {
   "amazon_mas_barato": 27,
   "dudoso": 1,
@@ -12818,5 +12799,5 @@
   "pvpr_inflado": 7,
   "sin_precio": 8
  },
- "updated": "2026-11-28T04:20:34.193078+00:00"
+ "updated": "2026-11-28T04:50:35.441811+00:00"
 }
