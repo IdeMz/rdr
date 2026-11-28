@@ -40,7 +40,7 @@
   "Maquillaje": "2026-11-28T09:01:08.430266+00:00",
   "Menaje de cocina": "2026-11-28T15:30:55.396586+00:00",
   "Mochilas y maletas": "2026-11-24T17:30:51.708019+00:00",
-  "Monitores": "2026-11-25T20:15:53.484095+00:00",
+  "Monitores": "2026-11-28T19:01:05.786744+00:00",
   "Móviles": "2026-11-28T14:30:55.156579+00:00",
   "Nutrición deportiva": "2026-11-27T13:35:33.037664+00:00",
   "Oficina": "2026-11-28T17:01:04.835738+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-28T18:58:21.612547+00:00",
+ "next_at": "2026-11-28T19:28:45.191421+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1565,17 +1565,6 @@
    "s": "ofertas",
    "t": "2026-11-26T17:31:43.260924+00:00",
    "title": "Catit Go Natural! Arena Guisantes, Aroma Vainilla 5.6 kg",
-   "v": []
-  },
-  "B08GW3KGYG": {
-   "c": "Gatos",
-   "d": 38,
-   "e": "🐱",
-   "m": 297,
-   "p": 13.79,
-   "s": "ambas",
-   "t": "2026-11-14T18:31:27.375223+00:00",
-   "title": "Arena para Gatos Aglomerante de Cascara de Guisante Go Natural, Lavanda",
    "v": []
   },
   "B08GWVZSXS": {
@@ -4223,6 +4212,17 @@
    "title": "Tablet Android, 7 Pulgadas Tablets, 64 GB ROM+1 TB, WiFi, GPS, BT 5.0, Táctil HD, TUV Certificación, Juegos Educativos, Control Parental, con Funda EVA, Azul",
    "v": []
   },
+  "B0HD9Y8W59": {
+   "c": "Monitores",
+   "d": 38,
+   "e": "🖥️",
+   "m": 728,
+   "p": 159.99,
+   "s": "ofertas",
+   "t": "2026-11-28T19:03:00.558449+00:00",
+   "title": "KOORUI Monitor 32 Pulgadas 4k UHD 60Hz Pantalla PC Altavoces Integrados",
+   "v": []
+  },
   "B0HJ1V5P7Z": {
    "c": "Móviles",
    "d": 35,
@@ -4644,6 +4644,18 @@
  },
  "reserve": [
   {
+   "a": "B0H2YX72X2",
+   "c": "Monitores",
+   "e": "🖥️",
+   "img": "https://m.media-amazon.com/images/I/71VW4a6l2OL._AC_UY218_.jpg",
+   "n": 140,
+   "op": 399.0,
+   "p": 279.9,
+   "r": 4.3,
+   "t": "2026-11-28T19:01:05.786744+00:00",
+   "title": "TCL 32G64 Monitor Gaming QD-Mini LED QHD 31,5 Pulgadas, 180Hz, 1ms"
+  },
+  {
    "a": "B07K96BMXB",
    "c": "Oficina",
    "e": "🖊️",
@@ -4654,35 +4666,14 @@
    "r": 4.6,
    "t": "2026-11-28T17:01:04.835738+00:00",
    "title": "Amazon Basics Rectangular Organizador de cartas apilable de oficina, bandeja de escritorio, paquete de 2, Tamaño carta, negro"
-  },
-  {
-   "a": "B0FBWRZPY5",
-   "c": "Proyectores",
-   "e": "📽️",
-   "img": "https://m.media-amazon.com/images/I/71aDhrw4umL._AC_UY218_.jpg",
-   "n": 658,
-   "op": 439.0,
-   "p": 299.0,
-   "r": 4.4,
-   "t": "2026-11-28T16:01:01.710112+00:00",
-   "title": "XGIMI MoGo 2 Pro (New) 1080P Mini Proyector Portátil, Google TV con Netflix"
-  },
-  {
-   "a": "B0FHBDDBNT",
-   "c": "Accesorios de coche",
-   "e": "🚗",
-   "img": "https://m.media-amazon.com/images/I/71YjLgUqWDL._AC_UL320_.jpg",
-   "n": 4500,
-   "op": 16.34,
-   "p": 11.0,
-   "r": 4.5,
-   "t": "2026-11-28T15:01:04.744991+00:00",
-   "title": "help flash IoT+, Luz de Emergencia V16 con Geolocalización y más de 290 candelas de potencia, Exigible a partir de 2026, Conectada con DGT 3.0, Señal V-16 para Coches, plan de datos incluido"
   }
  ],
  "store_skip": {
   "ae:1005011865415932": "2026-11-28T10:01:07.327694+00:00",
+  "ae:1005012793773424": "2026-11-28T19:01:05.786744+00:00",
+  "ae:1005012793917941": "2026-11-28T19:01:05.786744+00:00",
   "ae:1005013107884505": "2026-11-28T10:01:07.327694+00:00",
+  "ae:1005013630599641": "2026-11-28T19:01:05.786744+00:00",
   "pp:45626822225": "2026-11-28T09:30:57.804373+00:00",
   "pp:45948306722": "2026-11-28T09:30:57.804373+00:00",
   "pp:45992962768": "2026-11-28T18:30:54.645779+00:00",
@@ -4693,6 +4684,6 @@
  "tg_offset": 511048185,
  "x_copy": {
   "day": "2026-11-28",
-  "n": 24
+  "n": 25
  }
 }
