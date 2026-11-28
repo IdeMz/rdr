@@ -54,7 +54,7 @@
   "Redes y wifi": "2026-11-27T17:35:29.806458+00:00",
   "Relojes": "2026-11-24T14:01:02.613248+00:00",
   "Robots de cocina": "2026-11-26T19:45:40.861388+00:00",
-  "Salud": "2026-11-26T20:15:39.035535+00:00",
+  "Salud": "2026-11-28T07:01:04.551651+00:00",
   "Smartwatch": "2026-11-26T20:45:45.883777+00:00",
   "Suplementos": "2026-11-27T10:05:33.632197+00:00",
   "Tablets": "2026-11-26T09:01:09.131171+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-27T22:14:56.747074+00:00",
+ "next_at": "2026-11-28T07:28:52.347790+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1763,6 +1763,17 @@
    "s": "ofertas",
    "t": "2026-11-26T18:48:03.257674+00:00",
    "title": "PlayStation 5 - Mando Inalámbrico DualSense Cosmic Red | Mando Original para PS5 con Retroalimentación Háptica y gatillos Adaptativos - Color Rojo",
+   "v": []
+  },
+  "B095BRHR7X": {
+   "c": "Salud",
+   "d": 34,
+   "e": "🩺",
+   "m": 704,
+   "p": 11.89,
+   "s": "ofertas",
+   "t": "2026-11-28T07:01:43.037410+00:00",
+   "title": "NOKLEAD Higrómetro Termómetro Digital Interior con Temperatura Humedad",
    "v": []
   },
   "B096JZMNG1": {
@@ -4014,17 +4025,6 @@
    "title": "iRobot Roomba Plus 575 Combo + Base AutoWash multifunción, 25KPa, Mopas DualClean PerfectEdge, Lava y Seca con Calor, IA Precision Vision, SmartClean, Clearview Pro LiDAR, 90 Días Autonomía, Blanco",
    "v": []
   },
-  "B0GYFM8Z87": {
-   "c": "Cuidado del cabello",
-   "d": 36,
-   "e": "💇",
-   "m": 278,
-   "p": 128.19,
-   "s": "ambas",
-   "t": "2026-11-13T21:51:45.177670+00:00",
-   "title": "ghd Glide+ Max - Cepillo Alisador de Pelo Profesional Térmico más Amplio",
-   "v": []
-  },
   "B0H1BQNV25": {
    "c": "Mochilas y maletas",
    "d": 49,
@@ -4540,6 +4540,10 @@
  },
  "problem": {},
  "rejected": {
+  "B0009G5BRW": {
+   "t": "2026-11-28T07:01:04.551651+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0BWYSWC3V": {
    "t": "2026-11-27T19:05:34.051750+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4555,28 +4559,16 @@
  },
  "reserve": [
   {
-   "a": "B0FM8LZ89W",
-   "c": "Altavoces",
-   "e": "🔊",
-   "img": "https://m.media-amazon.com/images/I/71B9Cs4CtmL._AC_UL320_.jpg",
+   "a": "B00E0JFQM4",
+   "c": "Salud",
+   "e": "🩺",
+   "img": "https://m.media-amazon.com/images/I/51aa9Er5IhL._AC_UL320_.jpg",
    "n": 1200,
-   "op": 129.99,
-   "p": 98.97,
-   "r": 4.6,
-   "t": "2026-11-27T21:15:42.612919+00:00",
-   "title": "JBL Tuner 3, Radio Portátil Dab/Dab+/FM Bluetooth, Negro"
-  },
-  {
-   "a": "B0BL898WJZ",
-   "c": "Climatización",
-   "e": "🌬️",
-   "img": "https://m.media-amazon.com/images/I/71mk3cRsy3L._AC_UL320_.jpg",
-   "n": 1000,
-   "op": 539.99,
-   "p": 349.99,
+   "op": 9.75,
+   "p": 6.9,
    "r": 4.2,
-   "t": "2026-11-27T20:15:42.816939+00:00",
-   "title": "Philips Air Performer 8000 3en1 Purificador, Calefactor y Ventilador, 70m²"
+   "t": "2026-11-28T07:01:04.551651+00:00",
+   "title": "ACOFAR TERMOMETRO GALISNTAN (El emabalaje puede variar)"
   }
  ],
  "store_skip": {
@@ -4591,7 +4583,7 @@
  "summary_day": "2026-11-27",
  "tg_offset": 511048177,
  "x_copy": {
-  "day": "2026-11-27",
-  "n": 30
+  "day": "2026-11-28",
+  "n": 1
  }
 }

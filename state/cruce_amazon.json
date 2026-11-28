@@ -7182,25 +7182,6 @@
    "v": 3,
    "veredicto": "dudoso"
   },
-  "45956990874": {
-   "ahorro_vs_amazon": 16,
-   "amz_low30": null,
-   "amz_median": null,
-   "amz_price": 724.07,
-   "amz_title": "INNO3D NVIDIA GeForce RTX 5060 Ti X3 OC 8 GB GDDR7 Gaming Graphics Card (Triple Fan, 2 Ranuras, Reflex 2 RTX AI DLSS4)",
-   "asin": "B0GCVSLCRY",
-   "disponible": true,
-   "ean": "8886307700766",
-   "encontrado_por": "ean",
-   "lista": "candidates",
-   "motivo": "16 % por debajo del habitual en Amazon (724.07)",
-   "name": "Inno3D GeForce RTX 5060 Ti TWIN X3 OC 8GB GDDR7 Tarjeta gráfica",
-   "pp_drop": 13,
-   "pp_median": 699.95,
-   "pp_price": 609.95,
-   "t": "2026-11-14T05:50:24.845085+00:00",
-   "veredicto": "oferta_real"
-  },
   "45956990875": {
    "ahorro_vs_amazon": 6,
    "amz_low30": null,
@@ -12739,5 +12720,5 @@
   "pvpr_inflado": 7,
   "sin_precio": 8
  },
- "updated": "2026-11-28T05:35:28.330938+00:00"
+ "updated": "2026-11-28T07:01:04.551651+00:00"
 }
