@@ -2530,6 +2530,13 @@
    "v": 3,
    "via": "ean"
   },
+  "6934177745430": {
+   "a": "B096SYTYJK",
+   "t": "2026-11-28T19:30:53.919598+00:00",
+   "title": "vhbw Filtro HEPA compatible con Xiaomi Mi Air Purifier 2H",
+   "v": 3,
+   "via": "nombre"
+  },
   "6934399224638": {
    "a": "",
    "t": "2026-11-26T19:45:40.861388+00:00",
@@ -3647,6 +3654,13 @@
    "title": "KROM K-Wheel – Volante de Carreras Multiplataforma con Pedales, Palanca de Cambios y Levas, Efectos de Vibración, 12 Botones, Ángulo de Giro de 180º – Compatibl",
    "via": "ean"
   },
+  "8436533796677": {
+   "a": "B09VQPNJR4",
+   "t": "2026-11-28T19:30:53.919598+00:00",
+   "title": "Batidora de Vaso Blaupunkt BP4002 Negro 1000 W",
+   "v": 3,
+   "via": "ean"
+  },
   "8436584870210": {
    "a": "B08GZR5T44",
    "t": "2026-11-18T20:31:00.004559+00:00",
@@ -4565,6 +4579,26 @@
    "t": "2026-11-19T01:35:21.806157+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
+  },
+  "37690389189": {
+   "ahorro_vs_amazon": 14,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 38.29,
+   "amz_title": "Batidora de Vaso Blaupunkt BP4002 Negro 1000 W",
+   "asin": "B09VQPNJR4",
+   "disponible": true,
+   "ean": "8436533796677",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "14 % por debajo del habitual en Amazon (38.29)",
+   "name": "Blaupunkt BP4002 1000W Batidora de vaso",
+   "pp_drop": 34,
+   "pp_median": 50.24,
+   "pp_price": 32.95,
+   "t": "2026-11-28T19:30:53.919598+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
   },
   "38135637657": {
    "ahorro_vs_amazon": 35,
@@ -11470,6 +11504,26 @@
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
+  "46599141843": {
+   "ahorro_vs_amazon": -31,
+   "amz_low30": null,
+   "amz_median": 27.42,
+   "amz_price": 24.28,
+   "amz_title": "vhbw Filtro HEPA compatible con Xiaomi Mi Air Purifier 2H",
+   "asin": "B096SYTYJK",
+   "disponible": true,
+   "ean": "6934177745430",
+   "encontrado_por": "nombre",
+   "lista": "candidates",
+   "motivo": "Amazon 24.28 frente a 35.99",
+   "name": "Filtro HEPA Purificador de Aire Xiaomi Mi Purifier 4",
+   "pp_drop": 35,
+   "pp_median": 55.0,
+   "pp_price": 35.99,
+   "t": "2026-11-28T19:30:53.919598+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "46599141999": {
    "ahorro_vs_amazon": null,
    "amz_low30": null,
@@ -12708,12 +12762,12 @@
  },
  "night_at": "2026-11-28T05:35:28.330938+00:00",
  "resumen": {
-  "amazon_mas_barato": 26,
+  "amazon_mas_barato": 27,
   "dudoso": 1,
   "no_esta": 23,
-  "oferta_real": 25,
+  "oferta_real": 26,
   "pvpr_inflado": 5,
   "sin_precio": 5
  },
- "updated": "2026-11-28T19:01:05.786744+00:00"
+ "updated": "2026-11-28T19:30:53.919598+00:00"
 }
