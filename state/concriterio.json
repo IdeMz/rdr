@@ -12,7 +12,7 @@
   "Bricolaje": "2026-11-27T07:01:05.022940+00:00",
   "Cafeteras": "2026-11-28T10:31:04.381463+00:00",
   "Café y cápsulas": "2026-11-27T17:05:36.166528+00:00",
-  "Camping y montaña": "2026-11-26T13:01:08.844723+00:00",
+  "Camping y montaña": "2026-11-28T13:30:53.661281+00:00",
   "Cargadores y baterías": "2026-11-27T20:45:38.822386+00:00",
   "Ciclismo": "2026-11-28T13:01:13.368766+00:00",
   "Climatización": "2026-11-27T20:15:42.816939+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-28T13:29:33.504403+00:00",
+ "next_at": "2026-11-28T13:57:01.768915+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2637,6 +2637,17 @@
    "title": "Soundcore Boom 2 Altavoz Bluetooth Potente 80 W, 24 h, IPX7",
    "v": []
   },
+  "B0CQ5FYZY3": {
+   "c": "Camping y montaña",
+   "d": 46,
+   "e": "🏕️",
+   "m": 717,
+   "p": 107.19,
+   "s": "ambas",
+   "t": "2026-11-28T13:31:30.267875+00:00",
+   "title": "Millet Hanang 40",
+   "v": []
+  },
   "B0CQY78HV6": {
    "c": "Salud",
    "d": 36,
@@ -3142,17 +3153,6 @@
    "s": "ambas",
    "t": "2026-11-21T17:01:46.160881+00:00",
    "title": "Anker Zolo Power Bank con Cable USB C Integrado (45W, 20000mAh, 2 cables)",
-   "v": []
-  },
-  "B0DSZRL2W9": {
-   "c": "Accesorios de coche",
-   "d": 30,
-   "e": "🚗",
-   "m": 290,
-   "p": 132.99,
-   "s": "ofertas",
-   "t": "2026-11-14T13:25:53.225142+00:00",
-   "title": "BOTSLAB Dash Cam Delantera y Trasera, Kit de Cableado, 64 GB",
    "v": []
   },
   "B0DTK2CLTX": {
@@ -4567,6 +4567,10 @@
    "t": "2026-11-27T19:05:34.051750+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0C5M5JWN4": {
+   "t": "2026-11-28T13:30:53.661281+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0CM4B43DZ": {
    "t": "2026-11-27T16:35:45.254038+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4642,6 +4646,6 @@
  "tg_offset": 511048185,
  "x_copy": {
   "day": "2026-11-28",
-  "n": 13
+  "n": 14
  }
 }

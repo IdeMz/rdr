@@ -581,6 +581,13 @@
    "title": "WD 5TB My Passport Disco Duro Externo Portátil, USB 3.2 Gen 1/USB 3.0, Copia de seguridad y protección con contraseña, Formateado para Windows, ChromeOS y MacOS",
    "via": "ean"
   },
+  "0718037884660": {
+   "a": "B0CFLSHNL3",
+   "t": "2026-11-28T13:30:53.661281+00:00",
+   "title": "WD Blue SA510 SATA SSD 2TB (con hasta 560 MB/s, M.2 2280, Acronis True Image, Clona al completo el disco Actualización del ordenador, SANDISK Dashboard, panel d",
+   "v": 3,
+   "via": "modelo"
+  },
   "0718037891309": {
    "a": "B0B7CKZGN6",
    "t": "2026-11-27T00:35:32.565296+00:00",
@@ -9486,22 +9493,22 @@
    "veredicto": "amazon_mas_barato"
   },
   "46239685110": {
-   "ahorro_vs_amazon": 19,
+   "ahorro_vs_amazon": 18,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 222.04,
+   "amz_price": 220.47,
    "amz_title": "Friggitrice ad aria PHILIPS - Serie 4000 Vertical Duo NA461/00 - Capacit? 10 litri - Doppio serbatoio - 2750 W",
    "asin": "B0GTMQ4L22",
    "disponible": true,
    "ean": "8720389072215",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "19 % por debajo del habitual en Amazon (222.04)",
+   "motivo": "18 % por debajo del habitual en Amazon (220.47)",
    "name": "Philips Airfryer 10L Doble Cesta 2750W Negro NA461/00 6 programas pantalla táctil Freidora de aire",
    "pp_drop": 38,
-   "pp_median": 289.95,
+   "pp_median": 288.95,
    "pp_price": 179.95,
-   "t": "2026-11-26T13:01:08.844723+00:00",
+   "t": "2026-11-28T13:30:53.661281+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -11244,6 +11251,26 @@
    "v": 3,
    "veredicto": "oferta_real"
   },
+  "46599141437": {
+   "ahorro_vs_amazon": 16,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 304.95,
+   "amz_title": "WD Blue SA510 SATA SSD 2TB (con hasta 560 MB/s, M.2 2280, Acronis True Image, Clona al completo el disco Actualización del ordenador, SANDISK Dashboard, panel d",
+   "asin": "B0CFLSHNL3",
+   "disponible": true,
+   "ean": "0718037884660",
+   "encontrado_por": "modelo",
+   "lista": "candidates",
+   "motivo": "16 % por debajo del habitual en Amazon (304.95)",
+   "name": "WD Blue SA510 2TB SATA III 2,5 pulgadas 560MB/s SSD",
+   "pp_drop": 35,
+   "pp_median": 394.94,
+   "pp_price": 255.95,
+   "t": "2026-11-28T13:30:53.661281+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "46599141457": {
    "ahorro_vs_amazon": 14,
    "amz_low30": null,
@@ -12653,9 +12680,9 @@
   "amazon_mas_barato": 23,
   "dudoso": 1,
   "no_esta": 22,
-  "oferta_real": 22,
+  "oferta_real": 23,
   "pvpr_inflado": 4,
   "sin_precio": 5
  },
- "updated": "2026-11-28T13:01:13.368766+00:00"
+ "updated": "2026-11-28T13:30:53.661281+00:00"
 }
