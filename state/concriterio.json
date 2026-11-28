@@ -28,7 +28,7 @@
   "Fotografía": "2026-11-26T10:01:05.790556+00:00",
   "Freidoras de aire": "2026-11-27T13:05:37.929990+00:00",
   "Gaming": "2026-11-25T12:30:56.628057+00:00",
-  "Gatos": "2026-11-26T17:30:54.854401+00:00",
+  "Gatos": "2026-11-28T07:30:51.960611+00:00",
   "Herramientas": "2026-11-27T09:05:33.373522+00:00",
   "Higiene personal": "2026-11-27T14:35:44.289056+00:00",
   "Iluminación": "2026-11-27T18:05:30.612634+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-28T07:28:52.347790+00:00",
+ "next_at": "2026-11-28T07:56:41.575283+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2327,6 +2327,17 @@
    "title": "Monitor gaming curvo ultrawide KOORUI 34\", 180Hz, HDR400, 34E6UC",
    "v": []
   },
+  "B0C288NXTF": {
+   "c": "Gatos",
+   "d": 30,
+   "e": "🐱",
+   "m": 705,
+   "p": 27.98,
+   "s": "ambas",
+   "t": "2026-11-28T07:31:20.848136+00:00",
+   "title": "PETKIT CYBERTAIL Fuente de Agua para Gatos, con Bomba de Agua inalámbrica, Menos de 25 dB, Filtro 3.0, con Luces LED, Capacidad de 1,8 l, para Gatos, Perros y Otras Mascotas, Gris",
+   "v": []
+  },
   "B0C2S2J7JP": {
    "c": "Domótica",
    "d": 50,
@@ -3362,17 +3373,6 @@
    "s": "ambas",
    "t": "2026-11-27T19:06:04.369128+00:00",
    "title": "Novilla Topper Colchón 150x190 7.5cm Viscoelástica Espuma Alta Densidad",
-   "v": []
-  },
-  "B0F8BJ7PW6": {
-   "c": "Altavoces",
-   "d": 47,
-   "e": "🔊",
-   "m": 279,
-   "p": 79.99,
-   "s": "ofertas",
-   "t": "2026-11-14T07:01:44.820311+00:00",
-   "title": "Edifier MP330 Altavoz Bluetooth Portátil con 40W RMS & Audio Hi-Res，Negro",
    "v": []
   },
   "B0F8F1GXCV": {
@@ -4559,6 +4559,18 @@
  },
  "reserve": [
   {
+   "a": "B0F8HP4S9V",
+   "c": "Gatos",
+   "e": "🐱",
+   "img": "https://m.media-amazon.com/images/I/71O48DjjM7L._AC_UL320_.jpg",
+   "n": 1600,
+   "op": 25.99,
+   "p": 23.46,
+   "r": 4.3,
+   "t": "2026-11-28T07:30:51.960611+00:00",
+   "title": "Fuente para Gatos Acero Inoxidable, 2,2L Bebedero Gatos con Cable Filtración Cuádruple, Ultra Silencioso, Fácil de Limpiar, con LED 3 Filtros y 3 Esponjas"
+  },
+  {
    "a": "B00E0JFQM4",
    "c": "Salud",
    "e": "🩺",
@@ -4584,6 +4596,6 @@
  "tg_offset": 511048177,
  "x_copy": {
   "day": "2026-11-28",
-  "n": 1
+  "n": 2
  }
 }
