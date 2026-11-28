@@ -37,7 +37,7 @@
   "Juguetes": "2026-11-26T13:30:53.798593+00:00",
   "Lego": "2026-11-27T21:45:38.691716+00:00",
   "Limpieza del hogar": "2026-11-27T08:04:46.322734+00:00",
-  "Maquillaje": "2026-11-26T10:30:55.810022+00:00",
+  "Maquillaje": "2026-11-28T09:01:08.430266+00:00",
   "Menaje de cocina": "2026-11-27T11:35:38.294873+00:00",
   "Mochilas y maletas": "2026-11-24T17:30:51.708019+00:00",
   "Monitores": "2026-11-25T20:15:53.484095+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-28T09:00:22.485461+00:00",
+ "next_at": "2026-11-28T09:30:15.850499+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2129,6 +2129,17 @@
    "title": "JACK & JONES Jjimike Jjoriginal JJ 111 Noos - Jeans Hombre",
    "v": []
   },
+  "B0B5MG6PHQ": {
+   "c": "Maquillaje",
+   "d": 40,
+   "e": "💄",
+   "m": 708,
+   "p": 9.6,
+   "s": "busqueda",
+   "t": "2026-11-28T09:01:35.841859+00:00",
+   "title": "e.l.f. Cosmetics Halo Glow Liquid Filter, iluminador líquido brillo Booster para una tez radiante, infundido con ácido hialurónico, luz justa",
+   "v": []
+  },
   "B0B5RR9264": {
    "c": "Camping y montaña",
    "d": 40,
@@ -2204,17 +2215,6 @@
    "s": "ofertas",
    "t": "2026-11-22T18:02:26.267506+00:00",
    "title": "Electronic Arts It Takes Two | Nintendo Switch |Videojuegos Castellano",
-   "v": []
-  },
-  "B0BL39SF8P": {
-   "c": "Ciclismo",
-   "d": 11,
-   "e": "🚴",
-   "m": 282,
-   "p": 29.44,
-   "s": "ambas",
-   "t": "2026-11-14T08:46:21.283733+00:00",
-   "title": "Casco de bicicleta para hombres y mujeres, casco de ciclismo ligero con luz LED, gafas magnéticas, visera solar, cascos de bicicleta de montaña y carretera para adultos, tamaño ajustable 57-62",
    "v": []
   },
   "B0BNZ8CH3W": {
@@ -4604,6 +4604,6 @@
  "tg_offset": 511048185,
  "x_copy": {
   "day": "2026-11-28",
-  "n": 4
+  "n": 5
  }
 }

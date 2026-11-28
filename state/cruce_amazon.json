@@ -5033,28 +5033,6 @@
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
-  "41465570933": {
-   "ean": "0711719592068",
-   "lista": "candidates",
-   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
-   "name": "Astro Bot PS5",
-   "pp_drop": 20,
-   "pp_median": 54.95,
-   "pp_price": 43.9,
-   "t": "2026-11-14T08:45:50.370542+00:00",
-   "v": 2,
-   "veredicto": "no_esta",
-   "vistos": {
-    "ean": [
-     "(sin resultados)"
-    ],
-    "nombre": [
-     "Astro Bot /PS5",
-     "Astrobot - Gioco Per Ps5",
-     "ASTRO BOT"
-    ]
-   }
-  },
   "41644272430": {
    "ahorro_vs_amazon": 22,
    "amz_low30": null,
@@ -12679,5 +12657,5 @@
   "pvpr_inflado": 7,
   "sin_precio": 8
  },
- "updated": "2026-11-28T08:30:57.743236+00:00"
+ "updated": "2026-11-28T09:01:08.430266+00:00"
 }
