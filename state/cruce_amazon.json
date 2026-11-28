@@ -1432,6 +1432,13 @@
    "v": 3,
    "via": "ean"
   },
+  "4711081757726": {
+   "a": "B0BNSXBQTL",
+   "t": "2026-11-28T17:01:04.835738+00:00",
+   "title": "ASUS ROG Gladius III Wireless AimPoint - Ratón Gaming Inalámbrico - Negro",
+   "v": 3,
+   "via": "ean"
+  },
   "4711081875369": {
    "a": "B0BRB3TWKC",
    "t": "2026-11-28T13:01:13.368766+00:00",
@@ -8416,6 +8423,26 @@
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
+  "46146890979": {
+   "ahorro_vs_amazon": 11,
+   "amz_low30": 90.99,
+   "amz_median": 90.99,
+   "amz_price": 81.99,
+   "amz_title": "ASUS ROG Gladius III Wireless AimPoint - Ratón Gaming Inalámbrico - Negro",
+   "asin": "B0BNSXBQTL",
+   "disponible": true,
+   "ean": "4711081757726",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 81.99 frente a 80.95",
+   "name": "ASUS ROG Gladius III Wireless AimPoint 36000 DPI Negro 6 botones Bluetooth + 2.4GHz 79 g Ratón gaming inalámbrico",
+   "pp_drop": 32,
+   "pp_median": 118.96,
+   "pp_price": 80.95,
+   "t": "2026-11-28T17:01:04.835738+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "46146891071": {
    "ahorro_vs_amazon": 35,
    "amz_low30": null,
@@ -10973,25 +11000,6 @@
    "v": 3,
    "veredicto": "sin_precio"
   },
-  "46599140716": {
-   "ahorro_vs_amazon": 76,
-   "amz_low30": null,
-   "amz_median": null,
-   "amz_price": 749.64,
-   "amz_title": "Acer B7 B277 bmiprzx LED display 68,6 cm (27\") Full HD Plana Negro - Monitor (68,6 cm (27\"), 1920 x 1080 Pixeles, Full HD, LED, 4 ms, Negro)",
-   "asin": "B077JYYQ7V",
-   "disponible": true,
-   "ean": "4711474211033",
-   "encontrado_por": "modelo",
-   "lista": "candidates",
-   "motivo": "76 % por debajo del habitual en Amazon (749.64)",
-   "name": "Monitor Acer Vero B7 B277 D6 27 pulgadas Full HD 4 ms Negro",
-   "pp_drop": 18,
-   "pp_median": 217.16,
-   "pp_price": 177.95,
-   "t": "2026-11-14T16:45:37.700799+00:00",
-   "veredicto": "oferta_real"
-  },
   "46599140739": {
    "ahorro_vs_amazon": null,
    "amz_low30": null,
@@ -11514,7 +11522,7 @@
    "pp_drop": 33,
    "pp_median": 225.96,
    "pp_price": 150.95,
-   "t": "2026-11-26T16:31:04.591910+00:00",
+   "t": "2026-11-28T17:01:04.835738+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -12008,33 +12016,6 @@
     "nombre": [
      "Microsoft Surface Pro, 13\" | Snapdragon X2 Plus | 16GB RAM, 512GB SSD",
      "Microsoft Surface Pro, 13\" | Snapdragon X2 Elite | 16GB RAM, 512GB SSD",
-     "Microsoft Surface Pro, 13\" | Snapdragon X2 Plus | 16GB RAM, 256GB SSD"
-    ]
-   }
-  },
-  "46599143223": {
-   "ean": "0196388689545",
-   "lista": "candidates",
-   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
-   "name": "Microsoft Surface Pro 12 64GB/512GB 13 pulgadas Negro OLED 120Hz Intel Core Ultra 7 366H WiFi 7",
-   "pp_drop": 11,
-   "pp_median": 5155.76,
-   "pp_price": 4585.95,
-   "t": "2026-11-14T16:45:37.700799+00:00",
-   "v": 2,
-   "veredicto": "no_esta",
-   "vistos": {
-    "ean": [
-     "Microsoft Surface Pro para Business Platinum (12th)・13\" Touch・Core Ultra 7 366H・64GB・512GB・W11P (EP2"
-    ],
-    "modelo": [
-     "Microsoft Surface Pro for Business - 12th Edition - Intel Core Ultra 7 366H / 2GHz - Win11Pro - Inte",
-     "Microsoft Surface Laptop 8 13.8 Copilot+ Pc Intel Core Ultra 7 366h Computer Portatile 35 Cm [13.8] ",
-     "Microsoft Surface Laptop 8 13.8 Copilot+ Pc Intel Core Ultra 7 366h Computer Portatile 35 Cm [13.8] "
-    ],
-    "nombre": [
-     "Microsoft Surface Pro, 12\" | Snapdragon X Plus | 16GB RAM, 512GB SSD",
-     "Microsoft Surface Pro, 12\" | Snapdragon X Plus | 16GB RAM, 512GB SSD",
      "Microsoft Surface Pro, 13\" | Snapdragon X2 Plus | 16GB RAM, 256GB SSD"
     ]
    }
@@ -12701,12 +12682,12 @@
  },
  "night_at": "2026-11-28T05:35:28.330938+00:00",
  "resumen": {
-  "amazon_mas_barato": 25,
+  "amazon_mas_barato": 26,
   "dudoso": 1,
   "no_esta": 22,
   "oferta_real": 24,
   "pvpr_inflado": 5,
   "sin_precio": 5
  },
- "updated": "2026-11-28T16:30:54.179349+00:00"
+ "updated": "2026-11-28T17:01:04.835738+00:00"
 }
