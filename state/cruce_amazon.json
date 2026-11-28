@@ -4074,6 +4074,21 @@
    "v": 3,
    "via": "nombre"
   },
+  "8886419354901": {
+   "a": "",
+   "t": "2026-11-28T18:01:04.464191+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Razer Iskur V2 NewGen - Silla Gamer ergonómica con Comodidad Transpirable Cuero EPU 2.ª generación c",
+     "Razer Iskur V2 - Silla para Gamers con Soporte Lumbar adaptativo (Cojines de Espuma de Alta Densidad",
+     "Razer Enki - Silla de Juego con Soporte Lumbar Integrado, Silla de Oficina (Cuero sintético Multicap"
+    ]
+   }
+  },
   "8886419377108": {
    "a": "",
    "t": "2026-11-14T05:35:19.499764+00:00",
@@ -8929,6 +8944,28 @@
    "v": 3,
    "veredicto": "oferta_real"
   },
+  "46186036011": {
+   "ean": "8886419354901",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "Razer Iskur V2 NewGen Rosa Cuero sintético 4D 136kg reclinable reposacabezas pistón clase 4 Silla gaming",
+   "pp_drop": 20,
+   "pp_median": 813.95,
+   "pp_price": 652.95,
+   "t": "2026-11-28T18:01:04.464191+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "(sin resultados)"
+    ],
+    "nombre": [
+     "Razer Iskur V2 NewGen - Silla Gamer ergonómica con Comodidad Transpirable Cuero EPU 2.ª generación c",
+     "Razer Iskur V2 - Silla para Gamers con Soporte Lumbar adaptativo (Cojines de Espuma de Alta Densidad",
+     "Razer Enki - Silla de Juego con Soporte Lumbar Integrado, Silla de Oficina (Cuero sintético Multicap"
+    ]
+   }
+  },
   "46186036324": {
    "ahorro_vs_amazon": 2,
    "amz_low30": null,
@@ -10178,7 +10215,7 @@
    "veredicto": "oferta_real"
   },
   "46599139446": {
-   "ahorro_vs_amazon": -2,
+   "ahorro_vs_amazon": 1,
    "amz_low30": null,
    "amz_median": null,
    "amz_price": 79.99,
@@ -10188,12 +10225,12 @@
    "ean": "8887910000601",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "Amazon 79.99 frente a 81.95",
+   "motivo": "Amazon 79.99 frente a 78.95",
    "name": "Razer Kiyo V2 X 1440p 30fps 1080p 60fps Rosa autoenfoque micrófono Webcam",
-   "pp_drop": 27,
+   "pp_drop": 30,
    "pp_median": 112.95,
-   "pp_price": 81.95,
-   "t": "2026-11-27T20:45:38.822386+00:00",
+   "pp_price": 78.95,
+   "t": "2026-11-28T18:01:04.464191+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -12673,10 +12710,10 @@
  "resumen": {
   "amazon_mas_barato": 26,
   "dudoso": 1,
-  "no_esta": 22,
+  "no_esta": 23,
   "oferta_real": 25,
   "pvpr_inflado": 5,
   "sin_precio": 5
  },
- "updated": "2026-11-28T17:30:55.422804+00:00"
+ "updated": "2026-11-28T18:01:04.464191+00:00"
 }

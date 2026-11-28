@@ -7,7 +7,7 @@
   "Altavoces": "2026-11-27T21:15:42.612919+00:00",
   "Aspiradoras": "2026-11-27T11:05:34.014357+00:00",
   "Auriculares": "2026-11-28T14:30:55.156579+00:00",
-  "Barras de sonido": "2026-11-27T12:05:34.336208+00:00",
+  "Barras de sonido": "2026-11-28T18:01:04.464191+00:00",
   "Bebé": "2026-11-25T19:15:38.789832+00:00",
   "Bricolaje": "2026-11-27T07:01:05.022940+00:00",
   "Cafeteras": "2026-11-28T10:31:04.381463+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-28T17:59:16.791963+00:00",
+ "next_at": "2026-11-28T18:29:42.124995+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1190,17 +1190,6 @@
    "s": "ambas",
    "t": "2026-11-21T17:31:20.481359+00:00",
    "title": "Logitech G G203 LIGHTSYNC Ratón Gaming Negro, 6 Botones Programables",
-   "v": []
-  },
-  "B07W7KGYN1": {
-   "c": "Periféricos",
-   "d": 33,
-   "e": "⌨️",
-   "m": 296,
-   "p": 23.4,
-   "s": "ambas",
-   "t": "2026-11-14T17:55:57.682245+00:00",
-   "title": "Logitech MK295 Silent, QWERTY Español - Negro",
    "v": []
   },
   "B07WLMV14S": {
@@ -3430,6 +3419,17 @@
    "title": "Brother DCPJ1360DW, Multifunción Tinta Color, 16 ppm, impresión dúplex",
    "v": []
   },
+  "B0FB9NLXXZ": {
+   "c": "Barras de sonido",
+   "d": 49,
+   "e": "🎶",
+   "m": 726,
+   "p": 179.0,
+   "s": "ambas",
+   "t": "2026-11-28T18:02:00.971514+00:00",
+   "title": "LG DS60TR - Barra de Sonido, Bluetooth, 440W, Negro",
+   "v": []
+  },
   "B0FBRBXX94": {
    "c": "Iluminación",
    "d": 43,
@@ -4592,6 +4592,10 @@
    "t": "2026-11-28T07:01:04.551651+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B003LNXT7Y": {
+   "t": "2026-11-28T18:01:04.464191+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B08923YLTD": {
    "t": "2026-11-28T12:01:08.412880+00:00",
    "why": "referencia: precio mediano 79,99€, hoy 122,95€ (54% por encima); el descuento es solo contra el PVPR"
@@ -4679,6 +4683,6 @@
  "tg_offset": 511048185,
  "x_copy": {
   "day": "2026-11-28",
-  "n": 22
+  "n": 23
  }
 }
