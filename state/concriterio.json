@@ -25,7 +25,7 @@
   "Domótica": "2026-11-28T16:30:54.179349+00:00",
   "Droguería": "2026-11-27T16:05:35.742384+00:00",
   "Fitness en casa": "2026-11-25T16:01:12.511497+00:00",
-  "Fotografía": "2026-11-26T10:01:05.790556+00:00",
+  "Fotografía": "2026-11-28T17:30:55.422804+00:00",
   "Freidoras de aire": "2026-11-27T13:05:37.929990+00:00",
   "Gaming": "2026-11-28T11:30:56.628055+00:00",
   "Gatos": "2026-11-28T07:30:51.960611+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-28T17:30:13.696146+00:00",
+ "next_at": "2026-11-28T17:59:16.791963+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1840,17 +1840,6 @@
    "s": "ambas",
    "t": "2026-11-25T21:46:03.639567+00:00",
    "title": "Razer BlackWidow V3 Tenkeyless (Yellow Switch) - Teclado Compacto para Juegos con interruptores mecánicos (Teclas ABS, iluminación RGB Chroma) QWERTY Teclado ES | Negro",
-   "v": []
-  },
-  "B098TVZ6TS": {
-   "c": "Cámaras de seguridad",
-   "d": 17,
-   "e": "📹",
-   "m": 295,
-   "p": 39.99,
-   "s": "busqueda",
-   "t": "2026-11-14T17:21:20.225849+00:00",
-   "title": "Tapo C320WS - Cámara de Vigilancia WiFi Exterior, 2K QHD, Detección IA",
    "v": []
   },
   "B099DXRF1G": {
@@ -3716,6 +3705,17 @@
    "title": "CLOUVOU Silla de Oficina Ergonomica con Ruedas [GANADORA DE PUREBAS] Negro",
    "v": []
   },
+  "B0FRFQC6PT": {
+   "c": "Fotografía",
+   "d": 27,
+   "e": "📷",
+   "m": 725,
+   "p": 58.51,
+   "s": "ambas",
+   "t": "2026-11-28T17:31:35.329887+00:00",
+   "title": "Apexcam M90 Cámara Deportiva 4K64MP con 64GB Tarjeta y Pantalla Táctil EIS",
+   "v": []
+  },
   "B0FRFRMDRP": {
    "c": "Gaming",
    "d": 34,
@@ -4604,6 +4604,10 @@
    "t": "2026-11-28T13:30:53.661281+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B0CKML3W6R": {
+   "t": "2026-11-28T17:30:55.422804+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
   "B0CT3VBDTV": {
    "t": "2026-11-28T12:01:08.412880+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
@@ -4675,6 +4679,6 @@
  "tg_offset": 511048185,
  "x_copy": {
   "day": "2026-11-28",
-  "n": 21
+  "n": 22
  }
 }

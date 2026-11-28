@@ -201,6 +201,13 @@
    "v": 3,
    "via": "ean"
   },
+  "0196388684618": {
+   "a": "B0HFNYD2FL",
+   "t": "2026-11-28T17:30:55.422804+00:00",
+   "title": "Microsoft Surface Laptop 8 13.8 Copilot+ Pc Intel Core Ultra 7 366h Computer Portatile 35 Cm [13.8] Touch Screen 64 Gb Lpddr5X-Sdram 1 Tb Ssd WI-Fi 7",
+   "v": 3,
+   "via": "modelo"
+  },
   "0196388689545": {
    "a": "",
    "t": "2026-11-14T16:45:37.700799+00:00",
@@ -6314,25 +6321,6 @@
    "v": 3,
    "veredicto": "oferta_real"
   },
-  "45403200458": {
-   "ahorro_vs_amazon": 2,
-   "amz_low30": null,
-   "amz_median": 103.99,
-   "amz_price": 89.99,
-   "amz_title": "ASUS ROG Keris II Origin - Ratón Gaming Inalámbrico Ergonómico - Blanco",
-   "asin": "B0F8ZYXBCC",
-   "disponible": true,
-   "ean": "4711387951262",
-   "encontrado_por": "ean",
-   "lista": "candidates",
-   "motivo": "Amazon 89.99 frente a 101.95",
-   "name": "ASUS ROG Keris II Origin 42000 DPI RGB 6 botones 65 g Ratón gaming inalámbrico",
-   "pp_drop": 19,
-   "pp_median": 125.95,
-   "pp_price": 101.95,
-   "t": "2026-11-14T17:20:46.627491+00:00",
-   "veredicto": "amazon_mas_barato"
-  },
   "45403202059": {
    "ean": "0740617349504",
    "lista": "candidates",
@@ -6807,25 +6795,6 @@
    "v": 3,
    "veredicto": "oferta_real"
   },
-  "45626822189": {
-   "ahorro_vs_amazon": 14,
-   "amz_low30": null,
-   "amz_median": null,
-   "amz_price": 2585.6,
-   "amz_title": "Gainward RTX5080 Python III 16GB GDDR7 NE75080019T2-GB2035T",
-   "asin": "B0H7XR3NMW",
-   "disponible": true,
-   "ean": "4710562245783",
-   "encontrado_por": "ean",
-   "lista": "candidates",
-   "motivo": "14 % por debajo del habitual en Amazon (2585.60)",
-   "name": "Gainward GeForce RTX 5080 Python III 16GB GDDR7 Tarjeta gráfica",
-   "pp_drop": 11,
-   "pp_median": 2498.95,
-   "pp_price": 2216.95,
-   "t": "2026-11-14T17:20:46.627491+00:00",
-   "veredicto": "oferta_real"
-  },
   "45626822190": {
    "ahorro_vs_amazon": 17,
    "amz_low30": null,
@@ -6854,7 +6823,7 @@
    "pp_drop": 29,
    "pp_median": 418.95,
    "pp_price": 297.95,
-   "t": "2026-11-26T17:30:54.854401+00:00",
+   "t": "2026-11-28T17:30:55.422804+00:00",
    "v": 3,
    "veredicto": "no_esta",
    "vistos": {
@@ -12020,6 +11989,26 @@
     ]
    }
   },
+  "46599143218": {
+   "ahorro_vs_amazon": 29,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 6686.99,
+   "amz_title": "Microsoft Surface Laptop 8 13.8 Copilot+ Pc Intel Core Ultra 7 366h Computer Portatile 35 Cm [13.8] Touch Screen 64 Gb Lpddr5X-Sdram 1 Tb Ssd WI-Fi 7",
+   "asin": "B0HFNYD2FL",
+   "disponible": true,
+   "ean": "0196388684618",
+   "encontrado_por": "modelo",
+   "lista": "candidates",
+   "motivo": "29 % por debajo del habitual en Amazon (6686.99)",
+   "name": "Microsoft Surface Pro 12 Intel Core Ultra 7 366H 64GB/1TB 13 pulgadas OLED 120Hz WiFi 7",
+   "pp_drop": 16,
+   "pp_median": 5647.95,
+   "pp_price": 4740.95,
+   "t": "2026-11-28T17:30:55.422804+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "46599143225": {
    "ahorro_vs_amazon": 37,
    "amz_low30": null,
@@ -12685,9 +12674,9 @@
   "amazon_mas_barato": 26,
   "dudoso": 1,
   "no_esta": 22,
-  "oferta_real": 24,
+  "oferta_real": 25,
   "pvpr_inflado": 5,
   "sin_precio": 5
  },
- "updated": "2026-11-28T17:01:04.835738+00:00"
+ "updated": "2026-11-28T17:30:55.422804+00:00"
 }
