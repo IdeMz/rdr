@@ -27,7 +27,7 @@
   "Fitness en casa": "2026-11-25T16:01:12.511497+00:00",
   "Fotografía": "2026-11-26T10:01:05.790556+00:00",
   "Freidoras de aire": "2026-11-27T13:05:37.929990+00:00",
-  "Gaming": "2026-11-25T12:30:56.628057+00:00",
+  "Gaming": "2026-11-28T11:30:56.628055+00:00",
   "Gatos": "2026-11-28T07:30:51.960611+00:00",
   "Herramientas": "2026-11-27T09:05:33.373522+00:00",
   "Higiene personal": "2026-11-27T14:35:44.289056+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-28T11:28:55.019651+00:00",
+ "next_at": "2026-11-28T11:57:49.064955+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -948,6 +948,17 @@
    "s": "ofertas",
    "t": "2026-11-22T13:01:47.311314+00:00",
    "title": "MjAMjAM - comida húmeda premium para perros - Mixpaket II - con pollo y pato, ternera, pavo, ternera, pavo, cordero, pack de 6 (6 x 400 g), natural con extra de carne",
+   "v": []
+  },
+  "B07GS6ZB7T": {
+   "c": "Gaming",
+   "d": 55,
+   "e": "🕹️",
+   "m": 713,
+   "p": 27.19,
+   "s": "busqueda",
+   "t": "2026-11-28T11:31:30.122455+00:00",
+   "title": "Logitech G G502 Hero Ratón Gaming con Cable, 25,600 dpi, Negro",
    "v": []
   },
   "B07HGFBXT8": {
@@ -1928,17 +1939,6 @@
    "s": "busqueda",
    "t": "2026-11-15T09:26:12.520712+00:00",
    "title": "ZWILLING Simplify Batería de Cocina 5 Piezas, Colador Integrado, Inducción",
-   "v": []
-  },
-  "B09HCH4T22": {
-   "c": "Climatización",
-   "d": 27,
-   "e": "🌬️",
-   "m": 286,
-   "p": 21.99,
-   "s": "ofertas",
-   "t": "2026-11-14T11:05:59.888684+00:00",
-   "title": "Mellerware Homy Calefactor Baño Bajo Consumo 2000W IP24 con Termostato ECO",
    "v": []
   },
   "B09M2R8JK5": {
@@ -4570,6 +4570,18 @@
  },
  "reserve": [
   {
+   "a": "B07W7KMK4W",
+   "c": "Gaming",
+   "e": "🕹️",
+   "img": "https://m.media-amazon.com/images/I/61Rqvrdp61L._AC_UL320_.jpg",
+   "n": 483,
+   "op": 69.99,
+   "p": 39.99,
+   "r": 4.6,
+   "t": "2026-11-28T11:30:56.628055+00:00",
+   "title": "Logitech G G413 TKL SE Teclado Mecánico Gaming"
+  },
+  {
    "a": "B0CDCFRXPN",
    "c": "Cafeteras",
    "e": "☕",
@@ -4598,6 +4610,6 @@
  "tg_offset": 511048185,
  "x_copy": {
   "day": "2026-11-28",
-  "n": 9
+  "n": 10
  }
 }

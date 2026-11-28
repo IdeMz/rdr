@@ -2600,6 +2600,13 @@
    "v": 3,
    "via": "ean"
   },
+  "6941487277506": {
+   "a": "B0BZZL4NZK",
+   "t": "2026-11-28T11:30:56.628055+00:00",
+   "title": "HUAWEI FreeBuds 5 Auriculares inalámbricos Bluetooth 5.2, iOS & Android, con Certificado de Alta resolución, diseño Open-fit, Doble conexión, 30 Horas de duraci",
+   "v": 3,
+   "via": "ean"
+  },
   "6941487294800": {
    "a": "B0C6D2DH5D",
    "t": "2026-11-27T10:35:40.471392+00:00",
@@ -5322,6 +5329,26 @@
    "v": 3,
    "veredicto": "oferta_real"
   },
+  "43126889727": {
+   "ahorro_vs_amazon": 12,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 114.99,
+   "amz_title": "HUAWEI FreeBuds 5 Auriculares inalámbricos Bluetooth 5.2, iOS & Android, con Certificado de Alta resolución, diseño Open-fit, Doble conexión, 30 Horas de duraci",
+   "asin": "B0BZZL4NZK",
+   "disponible": true,
+   "ean": "6941487277506",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "12 % por debajo del habitual en Amazon (114.99)",
+   "name": "Huawei FreeBuds 5 Plata Bluetooth 5.2 30h IP54 Auriculares inalámbricos",
+   "pp_drop": 45,
+   "pp_median": 181.95,
+   "pp_price": 100.95,
+   "t": "2026-11-28T11:30:56.628055+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "43261031997": {
    "ean": "6978252854587",
    "lista": "candidates",
@@ -7984,10 +8011,10 @@
    "lista": "candidates",
    "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
    "name": "Motorola Moto Buds Loop Swarovski Beige Open-Ear ANC Bluetooth 5.0 37h Auriculares inalámbricos",
-   "pp_drop": 39,
+   "pp_drop": 42,
    "pp_median": 270.96,
-   "pp_price": 165.95,
-   "t": "2026-11-27T13:05:37.929990+00:00",
+   "pp_price": 156.95,
+   "t": "2026-11-28T11:30:56.628055+00:00",
    "v": 3,
    "veredicto": "no_esta",
    "vistos": {
@@ -12541,28 +12568,6 @@
    "t": "2026-11-14T16:10:41.956036+00:00",
    "veredicto": "oferta_real"
   },
-  "46725327773": {
-   "ean": "6975165000599",
-   "lista": "candidates",
-   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
-   "name": "Cinta de correr UREVO Strol 2E Negro Plegable 2,5CV 10km/h",
-   "pp_drop": 40,
-   "pp_median": 499.0,
-   "pp_price": 299.0,
-   "t": "2026-11-14T11:05:31.708608+00:00",
-   "v": 2,
-   "veredicto": "no_esta",
-   "vistos": {
-    "ean": [
-     "(sin resultados)"
-    ],
-    "nombre": [
-     "UREVO Cinta de Correr Plegable 2 en 1 con aplicación para el hogar",
-     "Vannect 6 en 1 Cinta de Correr Plegable, 9% Inclinación Cinta de Andar con 12KM/H, Dual Pantalla LED",
-     "UREVO CyberPad Smart Walking Pad - Cinta de correr de escritorio con inclinación automática del 14% "
-    ]
-   }
-  },
   "46725328510": {
    "ahorro_vs_amazon": 23,
    "amz_low30": null,
@@ -12669,9 +12674,9 @@
   "amazon_mas_barato": 22,
   "dudoso": 1,
   "no_esta": 22,
-  "oferta_real": 21,
+  "oferta_real": 22,
   "pvpr_inflado": 4,
   "sin_precio": 5
  },
- "updated": "2026-11-28T11:01:13.692355+00:00"
+ "updated": "2026-11-28T11:30:56.628055+00:00"
 }
