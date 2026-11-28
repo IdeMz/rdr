@@ -1577,6 +1577,13 @@
    "title": "ASUS VY249HGE - Monitor Gaming Eye Care de 24 Pulgadas FHD (1920x1080), IPS, 144 Hz, IPS, SmoothMotion, 1 ms, FreeSync Premium, Eye Care Plus, antiparpadeos, Tr",
    "via": "ean"
   },
+  "4711387334386": {
+   "a": "B07M6J19V9",
+   "t": "2026-11-28T16:01:01.710112+00:00",
+   "title": "ASUS ROG Falchion RX Low Profile - Teclado Gaming Óptico Inalámbrico",
+   "v": 3,
+   "via": "ean"
+  },
   "4711387418680": {
    "a": "B0D58PZ1V6",
    "t": "2026-11-16T21:45:41.113869+00:00",
@@ -4080,6 +4087,13 @@
    "a": "B0FK4KHF2L",
    "t": "2026-11-27T20:45:38.822386+00:00",
    "title": "Razer Kiyo V2 X - Full-HD-Webcam 1080p, 60 FPS para creadores - Enfoque automático - Objetivo gran angular - Micrófono integrado -Compatible con Open Broadcaste",
+   "v": 3,
+   "via": "ean"
+  },
+  "8887910073490": {
+   "a": "B0CVS74DSZ",
+   "t": "2026-11-28T16:01:01.710112+00:00",
+   "title": "Razer Huntsman V3 Pro Tenkeyless - TKL Analogue Optical Esports PC Keyboard - Snap Tap & Rapid Trigger (Ajustes a Bordo, Rueda multifunción con 2 Teclas dedicad",
    "v": 3,
    "via": "ean"
   },
@@ -7282,6 +7296,26 @@
    "v": 3,
    "veredicto": "pvpr_inflado"
   },
+  "45956990939": {
+   "ahorro_vs_amazon": -15,
+   "amz_low30": 173.99,
+   "amz_median": 173.99,
+   "amz_price": 163.55,
+   "amz_title": "Razer Huntsman V3 Pro Tenkeyless - TKL Analogue Optical Esports PC Keyboard - Snap Tap & Rapid Trigger (Ajustes a Bordo, Rueda multifunción con 2 Teclas dedicad",
+   "asin": "B0CVS74DSZ",
+   "disponible": true,
+   "ean": "8887910073490",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 163.55 frente a 200.94",
+   "name": "Razer Huntsman V3 Pro Tenkeyless Óptico Analógico US Layout RGB Teclado gaming mecánico",
+   "pp_drop": 33,
+   "pp_median": 298.95,
+   "pp_price": 200.94,
+   "t": "2026-11-28T16:01:01.710112+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "45956990981": {
    "ahorro_vs_amazon": 6,
    "amz_low30": null,
@@ -9244,6 +9278,26 @@
    "t": "2026-11-17T16:01:10.840347+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
+  },
+  "46239682305": {
+   "ahorro_vs_amazon": 4,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 146.25,
+   "amz_title": "ASUS ROG Falchion RX Low Profile - Teclado Gaming Óptico Inalámbrico",
+   "asin": "B07M6J19V9",
+   "disponible": true,
+   "ean": "4711387334386",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "antes 199.95 en PowerPlanet, pero en Amazon suele estar a 146.25",
+   "name": "ASUS ROG Falchion RX Low Profile RGB Blanco 65% Teclado gaming inalámbrico",
+   "pp_drop": 30,
+   "pp_median": 199.95,
+   "pp_price": 140.95,
+   "t": "2026-11-28T16:01:01.710112+00:00",
+   "v": 3,
+   "veredicto": "pvpr_inflado"
   },
   "46239682368": {
    "ean": "0196548939664",
@@ -12639,12 +12693,12 @@
  },
  "night_at": "2026-11-28T05:35:28.330938+00:00",
  "resumen": {
-  "amazon_mas_barato": 23,
+  "amazon_mas_barato": 24,
   "dudoso": 1,
   "no_esta": 22,
   "oferta_real": 24,
-  "pvpr_inflado": 4,
+  "pvpr_inflado": 5,
   "sin_precio": 5
  },
- "updated": "2026-11-28T15:30:55.396586+00:00"
+ "updated": "2026-11-28T16:01:01.710112+00:00"
 }

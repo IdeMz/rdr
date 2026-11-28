@@ -50,7 +50,7 @@
   "Periféricos": "2026-11-27T14:05:32.612136+00:00",
   "Perros": "2026-11-25T18:30:56.405059+00:00",
   "Portátiles": "2026-11-27T09:35:32.611631+00:00",
-  "Proyectores": "2026-11-23T12:35:32.005006+00:00",
+  "Proyectores": "2026-11-28T16:01:01.710112+00:00",
   "Redes y wifi": "2026-11-27T17:35:29.806458+00:00",
   "Relojes": "2026-11-24T14:01:02.613248+00:00",
   "Robots de cocina": "2026-11-26T19:45:40.861388+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-28T15:57:40.167481+00:00",
+ "next_at": "2026-11-28T16:26:03.875111+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -3001,6 +3001,17 @@
    "title": "INIU Power Bank, Pequeño 45W Carga Rápida 10000mAh USB C Bateria Externa",
    "v": []
   },
+  "B0DHG8XRVV": {
+   "c": "Proyectores",
+   "d": 40,
+   "e": "📽️",
+   "m": 722,
+   "p": 59.99,
+   "s": "busqueda",
+   "t": "2026-11-28T16:01:35.427705+00:00",
+   "title": "Proyector Portátil 2026 Upgraded 1920x1080P 4K Supote WiFi 6 Bluetooth 5.4",
+   "v": []
+  },
   "B0DHSBBV6R": {
    "c": "Lego",
    "d": 37,
@@ -4616,6 +4627,18 @@
  },
  "reserve": [
   {
+   "a": "B0FBWRZPY5",
+   "c": "Proyectores",
+   "e": "📽️",
+   "img": "https://m.media-amazon.com/images/I/71aDhrw4umL._AC_UY218_.jpg",
+   "n": 658,
+   "op": 439.0,
+   "p": 299.0,
+   "r": 4.4,
+   "t": "2026-11-28T16:01:01.710112+00:00",
+   "title": "XGIMI MoGo 2 Pro (New) 1080P Mini Proyector Portátil, Google TV con Netflix"
+  },
+  {
    "a": "B0FHBDDBNT",
    "c": "Accesorios de coche",
    "e": "🚗",
@@ -4638,18 +4661,6 @@
    "r": 4.4,
    "t": "2026-11-28T14:01:03.749514+00:00",
    "title": "TECLAST P30T 120Hz Tablet 10\" con 10 Accesorios Android 16, 16GB+128GB+5TB"
-  },
-  {
-   "a": "B07N1JP56L",
-   "c": "Juguetes",
-   "e": "🧸",
-   "img": "https://m.media-amazon.com/images/I/61naATggdjL._AC_UL320_.jpg",
-   "n": 65300,
-   "op": 42.99,
-   "p": 23.33,
-   "r": 4.7,
-   "t": "2026-11-28T12:31:03.056564+00:00",
-   "title": "Fisher-Price Peluche Nutria para Bebés Snoogle & Soothe"
   }
  ],
  "store_skip": {
@@ -4668,6 +4679,6 @@
  "tg_offset": 511048185,
  "x_copy": {
   "day": "2026-11-28",
-  "n": 18
+  "n": 19
  }
 }
