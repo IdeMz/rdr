@@ -3,7 +3,7 @@
   "Accesorios de coche": "2026-11-28T15:01:04.744991+00:00",
   "Accesorios de móvil": "2026-11-26T21:15:40.564504+00:00",
   "Afeitado y depilación": "2026-11-27T12:35:34.223179+00:00",
-  "Almacenamiento": "2026-11-26T11:30:57.919122+00:00",
+  "Almacenamiento": "2026-11-28T20:01:06.583241+00:00",
   "Altavoces": "2026-11-27T21:15:42.612919+00:00",
   "Aspiradoras": "2026-11-27T11:05:34.014357+00:00",
   "Auriculares": "2026-11-28T14:30:55.156579+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-28T19:57:27.986083+00:00",
+ "next_at": "2026-11-28T20:28:04.599716+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1622,17 +1622,6 @@
    "title": "Bosch taladro/atornillador a batería UniversalDrill 18V (2 baterías, sistema de 18 V, en maletín)",
    "v": []
   },
-  "B08PVDQFQQ": {
-   "c": "Robots de cocina",
-   "d": 26,
-   "e": "🥣",
-   "m": 298,
-   "p": 29.56,
-   "s": "ofertas",
-   "t": "2026-11-14T19:46:43.508950+00:00",
-   "title": "Cecotec Batidora de mano Power TitanBlack 1200 XL Cream&Crush. Potencia 1200 W, Tecnología CrossBlades, Pie XL, Campana antisalpicaduras, Velocidad ajustable, Función Turbo",
-   "v": []
-  },
   "B08PZ787ZJ": {
    "c": "Mochilas y maletas",
    "d": 50,
@@ -1763,6 +1752,17 @@
    "s": "ambas",
    "t": "2026-11-17T15:02:02.984875+00:00",
    "title": "Cecotec Ventilador de Pie con Mando a Distancia y Temporizador EnergySilence 1030 SmartExtreme. 28 W, 10 Aspas 40cm de Diámetro, Oscilante, 24 Velocidades, Ajustable 115-135cm, Motor DC, Blanco",
+   "v": []
+  },
+  "B093BVQYYM": {
+   "c": "Almacenamiento",
+   "d": 29,
+   "e": "💾",
+   "m": 730,
+   "p": 179.83,
+   "s": "ambas",
+   "t": "2026-11-28T20:01:36.134161+00:00",
+   "title": "Seagate Expansion Desktop 6TB, Unidad De Disco Duro Externa HDD, 3.5 Pulgadas, USB 3.0, PC & Notebook, Rescue Services (STKP6000400)",
    "v": []
   },
   "B094WRT8PD": {
@@ -4651,6 +4651,18 @@
  },
  "reserve": [
   {
+   "a": "B0H4HHBHY8",
+   "c": "Almacenamiento",
+   "e": "💾",
+   "img": "https://m.media-amazon.com/images/I/81AU7KLC+kL._AC_UY218_.jpg",
+   "n": 244,
+   "op": 379.99,
+   "p": 309.99,
+   "r": 4.7,
+   "t": "2026-11-28T20:01:06.583241+00:00",
+   "title": "SANDISK Portable SSD 2 TB, velocidades de lectura de hasta 1000 MB/s"
+  },
+  {
    "a": "B0GL9CPFR6",
    "c": "Freidoras de aire",
    "e": "🍟",
@@ -4673,18 +4685,6 @@
    "r": 4.3,
    "t": "2026-11-28T19:01:05.786744+00:00",
    "title": "TCL 32G64 Monitor Gaming QD-Mini LED QHD 31,5 Pulgadas, 180Hz, 1ms"
-  },
-  {
-   "a": "B07K96BMXB",
-   "c": "Oficina",
-   "e": "🖊️",
-   "img": "https://m.media-amazon.com/images/I/71SQF+ZHmSL._AC_UL320_.jpg",
-   "n": 3500,
-   "op": 17.29,
-   "p": 14.61,
-   "r": 4.6,
-   "t": "2026-11-28T17:01:04.835738+00:00",
-   "title": "Amazon Basics Rectangular Organizador de cartas apilable de oficina, bandeja de escritorio, paquete de 2, Tamaño carta, negro"
   }
  ],
  "store_skip": {
@@ -4703,6 +4703,6 @@
  "tg_offset": 511048185,
  "x_copy": {
   "day": "2026-11-28",
-  "n": 26
+  "n": 27
  }
 }
