@@ -3984,6 +3984,13 @@
    "title": "INNO3D NVIDIA GeForce RTX 5060 Ti X3 OC 8 GB GDDR7 Gaming Graphics Card (Triple Fan, 2 Ranuras, Reflex 2 RTX AI DLSS4)",
    "via": "ean"
   },
+  "8886419354512": {
+   "a": "B0CL9T5BSH",
+   "t": "2026-11-28T10:31:04.381463+00:00",
+   "title": "Razer Iskur V2 - Silla para Gamers con Soporte Lumbar adaptativo (Cojines de Espuma de Alta Densidad, Cuero sintético de Calidad EPU, Reposabrazos 4D) Negro",
+   "v": 3,
+   "via": "ean"
+  },
   "8886419354796": {
    "a": "B0FZVDRNK2",
    "t": "2026-11-27T16:35:45.254038+00:00",
@@ -7176,7 +7183,7 @@
    "pp_drop": 52,
    "pp_median": 197.96,
    "pp_price": 95.95,
-   "t": "2026-11-26T10:30:55.810022+00:00",
+   "t": "2026-11-28T10:31:04.381463+00:00",
    "v": 3,
    "veredicto": "pvpr_inflado"
   },
@@ -8127,26 +8134,6 @@
     ]
    }
   },
-  "46093615979": {
-   "ean": "196388599943",
-   "lista": "candidates",
-   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
-   "name": "Ninja Gaiden 4 Standard Edition - PlayStation 5",
-   "pp_drop": 19,
-   "pp_median": 63.95,
-   "pp_price": 51.95,
-   "t": "2026-11-14T09:20:40.743974+00:00",
-   "v": 2,
-   "veredicto": "no_esta",
-   "vistos": {
-    "ean": [
-     "(sin resultados)"
-    ],
-    "nombre": [
-     "(sin resultados)"
-    ]
-   }
-  },
   "46106243512": {
    "ahorro_vs_amazon": null,
    "amz_low30": null,
@@ -8373,25 +8360,6 @@
      "Creatorally Archivo de Corte por Láser, Cortes de Grabado de Archivos Digitales(Alcancía de Engranaj"
     ]
    }
-  },
-  "46146892668": {
-   "ahorro_vs_amazon": 8,
-   "amz_low30": null,
-   "amz_median": null,
-   "amz_price": 27.9,
-   "amz_title": "Cecotec Tostador Toast&Taste Extra Double B, 1350W de Potencia, Doble Ranura larga para 2 Tostadas, Apagado y Pop-up Automático, Varillas Superiores",
-   "asin": "B0BQ13VH9S",
-   "disponible": true,
-   "ean": "8435484021807",
-   "encontrado_por": "ean",
-   "lista": "candidates",
-   "motivo": "antes 32.95 en PowerPlanet, pero en Amazon suele estar a 27.90",
-   "name": "Cecotec Toast&Taste Extra Double 1350W 4 Rebanadas Negro 02180 Tostadora",
-   "pp_drop": 23,
-   "pp_median": 32.95,
-   "pp_price": 25.53,
-   "t": "2026-11-14T09:55:29.061293+00:00",
-   "veredicto": "pvpr_inflado"
   },
   "46146892838": {
    "ean": "8435484092746",
@@ -9770,25 +9738,6 @@
    "t": "2026-11-27T12:05:34.336208+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
-  },
-  "46256205805": {
-   "ahorro_vs_amazon": 16,
-   "amz_low30": null,
-   "amz_median": null,
-   "amz_price": 1773.19,
-   "amz_title": "Optoma Uhz36ste Proiettore A Corto Raggio Dlp Uhd 4k [3840x2160] Compatibilit? 3d Nero (optoma Uhz36ste Projektor - Uhd 4k [3840)",
-   "asin": "B0HN7P41N9",
-   "disponible": true,
-   "ean": "5055387669734",
-   "encontrado_por": "ean",
-   "lista": "to_verify",
-   "motivo": "16 % por debajo del habitual en Amazon (1773.19)",
-   "name": "Optoma Láser DLP 4K UHD Tiro Corto 0.496:1 4000 Lúmenes ISO Negro UHZ36STe altavoz 15W 35dB Proyector",
-   "pp_drop": 51,
-   "pp_median": 3033.95,
-   "pp_price": 1491.95,
-   "t": "2026-11-14T10:30:50.359175+00:00",
-   "veredicto": "oferta_real"
   },
   "46256205834": {
    "ahorro_vs_amazon": 3,
@@ -12627,6 +12576,26 @@
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
+  "46853995976": {
+   "ahorro_vs_amazon": 14,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 556.86,
+   "amz_title": "Razer Iskur V2 - Silla para Gamers con Soporte Lumbar adaptativo (Cojines de Espuma de Alta Densidad, Cuero sintético de Calidad EPU, Reposabrazos 4D) Negro",
+   "asin": "B0CL9T5BSH",
+   "disponible": true,
+   "ean": "8886419354512",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "14 % por debajo del habitual en Amazon (556.86)",
+   "name": "Silla Gaming Razer Iskur V2 Negro Imitación piel Reposabrazos 4D 136kg",
+   "pp_drop": 43,
+   "pp_median": 840.95,
+   "pp_price": 477.95,
+   "t": "2026-11-28T10:31:04.381463+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "46853995977": {
    "ahorro_vs_amazon": 7,
    "amz_low30": null,
@@ -12650,12 +12619,12 @@
  },
  "night_at": "2026-11-28T05:35:28.330938+00:00",
  "resumen": {
-  "amazon_mas_barato": 27,
+  "amazon_mas_barato": 22,
   "dudoso": 1,
-  "no_esta": 22,
-  "oferta_real": 24,
-  "pvpr_inflado": 7,
-  "sin_precio": 8
+  "no_esta": 21,
+  "oferta_real": 21,
+  "pvpr_inflado": 4,
+  "sin_precio": 5
  },
- "updated": "2026-11-28T09:01:08.430266+00:00"
+ "updated": "2026-11-28T10:31:04.381463+00:00"
 }

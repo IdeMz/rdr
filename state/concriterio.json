@@ -10,7 +10,7 @@
   "Barras de sonido": "2026-11-27T12:05:34.336208+00:00",
   "Bebé": "2026-11-25T19:15:38.789832+00:00",
   "Bricolaje": "2026-11-27T07:01:05.022940+00:00",
-  "Cafeteras": "2026-11-24T19:35:37.316644+00:00",
+  "Cafeteras": "2026-11-28T10:31:04.381463+00:00",
   "Café y cápsulas": "2026-11-27T17:05:36.166528+00:00",
   "Camping y montaña": "2026-11-26T13:01:08.844723+00:00",
   "Cargadores y baterías": "2026-11-27T20:45:38.822386+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-28T10:30:12.114603+00:00",
+ "next_at": "2026-11-28T10:57:28.238646+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2891,6 +2891,17 @@
    "title": "Mando inalámbrico Luna",
    "v": []
   },
+  "B0D92CZC7Z": {
+   "c": "Cafeteras",
+   "d": 43,
+   "e": "☕",
+   "m": 711,
+   "p": 74.0,
+   "s": "busqueda",
+   "t": "2026-11-28T10:31:34.855879+00:00",
+   "title": "KRUPS Authentic, Cafetera Espresso Manual, Depósito de 2L, Inox",
+   "v": []
+  },
   "B0D947FZQX": {
    "c": "Tablets",
    "d": 32,
@@ -4559,6 +4570,18 @@
  },
  "reserve": [
   {
+   "a": "B0CDCFRXPN",
+   "c": "Cafeteras",
+   "e": "☕",
+   "img": "https://m.media-amazon.com/images/I/61w6-XowuZL._AC_UL320_.jpg",
+   "n": 1000,
+   "op": 459.99,
+   "p": 319.0,
+   "r": 4.2,
+   "t": "2026-11-28T10:31:04.381463+00:00",
+   "title": "Philips 3300 Cafetera Superautomática, Espumador de leche, 5 bebidas, Negro"
+  },
+  {
    "a": "B00XVN7T70",
    "c": "Pequeño electrodoméstico",
    "e": "🍞",
@@ -4569,30 +4592,6 @@
    "r": 4.2,
    "t": "2026-11-28T08:01:01.835032+00:00",
    "title": "Tristar Tostadora, 2 Rebanadas, Soporte para Panecillos, 800 W"
-  },
-  {
-   "a": "B0F8HP4S9V",
-   "c": "Gatos",
-   "e": "🐱",
-   "img": "https://m.media-amazon.com/images/I/71O48DjjM7L._AC_UL320_.jpg",
-   "n": 1600,
-   "op": 25.99,
-   "p": 23.46,
-   "r": 4.3,
-   "t": "2026-11-28T07:30:51.960611+00:00",
-   "title": "Fuente para Gatos Acero Inoxidable, 2,2L Bebedero Gatos con Cable Filtración Cuádruple, Ultra Silencioso, Fácil de Limpiar, con LED 3 Filtros y 3 Esponjas"
-  },
-  {
-   "a": "B00E0JFQM4",
-   "c": "Salud",
-   "e": "🩺",
-   "img": "https://m.media-amazon.com/images/I/51aa9Er5IhL._AC_UL320_.jpg",
-   "n": 1200,
-   "op": 9.75,
-   "p": 6.9,
-   "r": 4.2,
-   "t": "2026-11-28T07:01:04.551651+00:00",
-   "title": "ACOFAR TERMOMETRO GALISNTAN (El emabalaje puede variar)"
   }
  ],
  "store_skip": {
@@ -4611,6 +4610,6 @@
  "tg_offset": 511048185,
  "x_copy": {
   "day": "2026-11-28",
-  "n": 7
+  "n": 8
  }
 }
