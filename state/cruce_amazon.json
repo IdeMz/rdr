@@ -439,6 +439,13 @@
     ]
    }
   },
+  "0622356282222": {
+   "a": "B0CZPKSGFV",
+   "t": "2026-11-28T16:30:54.179349+00:00",
+   "title": "Ninja Combi, Olla Eléctrica Multifunción 12 en 1, Comidas Familiares, Gris",
+   "v": 3,
+   "via": "ean"
+  },
   "0622356294072": {
    "a": "B0DKXY7JT2",
    "t": "2026-11-18T13:30:55.857399+00:00",
@@ -7158,7 +7165,7 @@
    "pp_drop": 27,
    "pp_median": 654.95,
    "pp_price": 480.95,
-   "t": "2026-11-26T16:01:04.848160+00:00",
+   "t": "2026-11-28T16:30:54.179349+00:00",
    "v": 3,
    "veredicto": "no_esta",
    "vistos": {
@@ -9902,6 +9909,26 @@
    "v": 3,
    "veredicto": "oferta_real"
   },
+  "46256205894": {
+   "ahorro_vs_amazon": -55,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 189.91,
+   "amz_title": "Ninja Combi, Olla Eléctrica Multifunción 12 en 1, Comidas Familiares, Gris",
+   "asin": "B0CZPKSGFV",
+   "disponible": true,
+   "ean": "0622356282222",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 189.91 frente a 293.95",
+   "name": "Ninja Combi 12,5L 1780W 12 Programas Gris SFP700EU pantalla táctil Freidora de aire",
+   "pp_drop": 25,
+   "pp_median": 390.95,
+   "pp_price": 293.95,
+   "t": "2026-11-28T16:30:54.179349+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "46256205935": {
    "ahorro_vs_amazon": -10,
    "amz_low30": null,
@@ -12551,25 +12578,6 @@
     ]
    }
   },
-  "46693747967": {
-   "ahorro_vs_amazon": 10,
-   "amz_low30": null,
-   "amz_median": null,
-   "amz_price": 6099.0,
-   "amz_title": "Creality Sermoon X1 Escáner 3D, láser y luz estructurada, precisión 0,02 mm (Rango 5-4000 mm), sin Polvo con escaneo de Agujeros, móvil inalámbrico para CAD, in",
-   "asin": "B0FWJMXXBL",
-   "disponible": true,
-   "ean": "6977905742240",
-   "encontrado_por": "nombre",
-   "lista": "candidates",
-   "motivo": "10 % por debajo del habitual en Amazon (6099.00)",
-   "name": "Escáner 3D Creality X1 Negro Inalámbrico Precisión 0,02mm",
-   "pp_drop": 11,
-   "pp_median": 6199.0,
-   "pp_price": 5490.0,
-   "t": "2026-11-14T16:10:41.956036+00:00",
-   "veredicto": "oferta_real"
-  },
   "46725328510": {
    "ahorro_vs_amazon": 23,
    "amz_low30": null,
@@ -12693,12 +12701,12 @@
  },
  "night_at": "2026-11-28T05:35:28.330938+00:00",
  "resumen": {
-  "amazon_mas_barato": 24,
+  "amazon_mas_barato": 25,
   "dudoso": 1,
   "no_esta": 22,
   "oferta_real": 24,
   "pvpr_inflado": 5,
   "sin_precio": 5
  },
- "updated": "2026-11-28T16:01:01.710112+00:00"
+ "updated": "2026-11-28T16:30:54.179349+00:00"
 }

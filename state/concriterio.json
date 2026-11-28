@@ -22,7 +22,7 @@
   "Cuidado del cabello": "2026-11-27T15:05:34.336700+00:00",
   "Cámaras de seguridad": "2026-11-25T17:30:57.888678+00:00",
   "Decoración navideña": "2026-11-27T09:35:32.611631+00:00",
-  "Domótica": "2026-11-26T16:31:04.591910+00:00",
+  "Domótica": "2026-11-28T16:30:54.179349+00:00",
   "Droguería": "2026-11-27T16:05:35.742384+00:00",
   "Fitness en casa": "2026-11-25T16:01:12.511497+00:00",
   "Fotografía": "2026-11-26T10:01:05.790556+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-28T16:26:03.875111+00:00",
+ "next_at": "2026-11-28T16:59:34.722947+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -3870,17 +3870,6 @@
    "title": "Cuisinart Molino eléctrico cónico café y espresso | 35 ajustes de molienda | Tecnología antiestática | Tolva 225 g con tapa sellada | Compatible con portafiltro | Selector 1–14 tazas | Incluye cuchara",
    "v": []
   },
-  "B0GCKXNHDB": {
-   "c": "Afeitado y depilación",
-   "d": 37,
-   "e": "🪒",
-   "m": 293,
-   "p": 18.99,
-   "s": "ofertas",
-   "t": "2026-11-14T16:11:22.888290+00:00",
-   "title": "Afeitadora Eléctrica para Mujer y Hombre, Cortadora de Bikini con Pantalla LED, IPX7 Impermeable Uso Húmedo y Seco, 2 en 1 Recargable para Zona del Bikini, Rostro",
-   "v": []
-  },
   "B0GF89DZYF": {
    "c": "Altavoces",
    "d": 16,
@@ -4188,6 +4177,17 @@
    "s": "busqueda",
    "t": "2026-11-25T17:01:38.008030+00:00",
    "title": "Roomba Plus 676 Robot Aspirador 2 en 1 + Base AutoWash, Fregado Caliente",
+   "v": []
+  },
+  "B0HB43Y11Z": {
+   "c": "Domótica",
+   "d": 38,
+   "e": "💡",
+   "m": 723,
+   "p": 99.99,
+   "s": "ambas",
+   "t": "2026-11-28T16:31:19.068071+00:00",
+   "title": "SwitchBot 2K Videoportero Wifi, Pantalla a color de 4,3 pulgadas",
    "v": []
   },
   "B0HCPGS988": {
@@ -4679,6 +4679,6 @@
  "tg_offset": 511048185,
  "x_copy": {
   "day": "2026-11-28",
-  "n": 19
+  "n": 20
  }
 }
