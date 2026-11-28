@@ -5033,25 +5033,6 @@
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
-  "41436482383": {
-   "ahorro_vs_amazon": 53,
-   "amz_low30": null,
-   "amz_median": null,
-   "amz_price": 78.44,
-   "amz_title": "Jabra Evolve 30 UC - Auriculares Estéreo de Comunicaciones Unificadas para VoIP Softphone - Cancelación Pasiva de Ruido - Cable USB con Unidad de Control - Negr",
-   "asin": "B01K6TUC20",
-   "disponible": true,
-   "ean": "5706991019971",
-   "encontrado_por": "ean",
-   "lista": "candidates",
-   "motivo": "53 % por debajo del habitual en Amazon (78.44)",
-   "name": "Jabra Evolve 30 II UC Stereo USB-A Diadema con micrófono Auriculares",
-   "pp_drop": 27,
-   "pp_median": 50.95,
-   "pp_price": 36.95,
-   "t": "2026-11-14T01:50:35.475157+00:00",
-   "veredicto": "oferta_real"
-  },
   "41465570933": {
    "ean": "0711719592068",
    "lista": "candidates",
@@ -6458,25 +6439,6 @@
    "pp_price": 135.96,
    "t": "2026-11-24T00:50:33.890785+00:00",
    "v": 3,
-   "veredicto": "oferta_real"
-  },
-  "45403207735": {
-   "ahorro_vs_amazon": 33,
-   "amz_low30": null,
-   "amz_median": null,
-   "amz_price": 91.16,
-   "amz_title": "Kingston Canvas Select Plus Tarjeta de Memoria microSD 512GB microSDXC Gen3 150MB/s A1 Incluye Adaptador de SD - SDCS3/512GB",
-   "asin": "B0FCZM23H9",
-   "disponible": true,
-   "ean": "0740617348552",
-   "encontrado_por": "ean",
-   "lista": "candidates",
-   "motivo": "33 % por debajo del habitual en Amazon (91.16)",
-   "name": "Kingston Canvas Select Plus 512GB 150MB/s U3 V30 A1 Tarjeta microSD",
-   "pp_drop": 24,
-   "pp_median": 80.95,
-   "pp_price": 61.18,
-   "t": "2026-11-14T01:20:25.760497+00:00",
    "veredicto": "oferta_real"
   },
   "45403212384": {
@@ -8061,25 +8023,6 @@
    "v": 3,
    "veredicto": "oferta_real"
   },
-  "46001913812": {
-   "ahorro_vs_amazon": -2,
-   "amz_low30": null,
-   "amz_median": null,
-   "amz_price": 35.29,
-   "amz_title": "Kingston ValueRAM 4GB 1600MHz DDR3 NonECC CL11 SODIMM 1Rx8 1.5V KVR16S11S8/4 Memoria Portátil",
-   "asin": "B008CP5R8K",
-   "disponible": true,
-   "ean": "0740617207781",
-   "encontrado_por": "ean",
-   "lista": "candidates",
-   "motivo": "Amazon 35.29 frente a 35.95",
-   "name": "Kingston ValueRAM 4GB DDR3 SODIMM 1600MHz CL11 Memoria RAM",
-   "pp_drop": 29,
-   "pp_median": 50.95,
-   "pp_price": 35.95,
-   "t": "2026-11-14T00:51:58.629494+00:00",
-   "veredicto": "amazon_mas_barato"
-  },
   "46009647780": {
    "ean": "6953175761143",
    "lista": "candidates",
@@ -9444,25 +9387,6 @@
     ]
    }
   },
-  "46239682507": {
-   "ahorro_vs_amazon": -64,
-   "amz_low30": null,
-   "amz_median": null,
-   "amz_price": 30.99,
-   "amz_title": "SteelSeries Rival 3 Wireless Gen 2 - Raton Gaming - 2,4GHz y Bluetooth - Sensor óptico TrueMove Air de 18000 dpi - Durabilidad de 60 M de clics - Ligero - Desli",
-   "asin": "B0F5QHBD4P",
-   "disponible": true,
-   "ean": "5707119062299",
-   "encontrado_por": "ean",
-   "lista": "candidates",
-   "motivo": "Amazon 30.99 frente a 50.95",
-   "name": "SteelSeries Rival 3 Wireless Gen 2 18000 DPI RGB Azul Claro 6 botones Bluetooth + 2.4GHz 84 g Ratón gaming inalámbrico",
-   "pp_drop": 25,
-   "pp_median": 68.27,
-   "pp_price": 50.95,
-   "t": "2026-11-14T01:50:35.475157+00:00",
-   "veredicto": "amazon_mas_barato"
-  },
   "46239683053": {
    "ahorro_vs_amazon": 0,
    "amz_low30": null,
@@ -10379,30 +10303,6 @@
    "t": "2026-11-28T00:20:34.919851+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
-  },
-  "46599139139": {
-   "ean": "0840353958159",
-   "lista": "candidates",
-   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
-   "name": "Google Pixel 11 Pro XL 12GB/256GB Fog 6,8 pulgadas OLED 120Hz 50MP 5115mAh 45W NFC",
-   "pp_drop": 14,
-   "pp_median": 1399.0,
-   "pp_price": 1199.0,
-   "t": "2026-11-14T01:20:25.760497+00:00",
-   "v": 2,
-   "veredicto": "no_esta",
-   "vistos": {
-    "ean": [
-     "Google Pixel 11 Pro XL – Smartphone Android Libre - Gris Niebla, 256GB",
-     "Google Pixel 11 Pro XL, Gris Niebla, 256GB + Pixel Buds Pro 2, Verde Liquen",
-     "Google Pixel 11 Pro XL - Gris Niebla, 256GB + Funda Pixelsnap Transparente"
-    ],
-    "nombre": [
-     "Google Pixel 11 Pro XL – Smartphone Android Libre - Obsidiana, 256GB",
-     "Google Pixel 11 Pro XL – Smartphone Android Libre - Gris Niebla, 512GB",
-     "Google Pixel 11 Pro – Smartphone Android Libre - Gris Niebla, 256GB"
-    ]
-   }
   },
   "46599139445": {
    "ahorro_vs_amazon": 25,
@@ -11732,11 +11632,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Dreame Tasti 1500W pantalla táctil Freidora de aire",
-   "pista": "1677454 bytes; 49 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1436541 bytes; 18 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 35,
    "pp_median": 230.95,
    "pp_price": 150.95,
-   "t": "2026-11-27T20:15:42.816939+00:00",
+   "t": "2026-11-28T02:20:30.998507+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -13072,7 +12972,7 @@
    "veredicto": "pvpr_inflado"
   }
  },
- "night_at": "2026-11-28T00:20:34.919851+00:00",
+ "night_at": "2026-11-28T02:20:30.998507+00:00",
  "resumen": {
   "amazon_mas_barato": 27,
   "dudoso": 1,
@@ -13081,5 +12981,5 @@
   "pvpr_inflado": 7,
   "sin_precio": 8
  },
- "updated": "2026-11-28T00:20:34.919851+00:00"
+ "updated": "2026-11-28T02:20:30.998507+00:00"
 }
