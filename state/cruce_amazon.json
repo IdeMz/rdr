@@ -5129,22 +5129,22 @@
    "veredicto": "amazon_mas_barato"
   },
   "41887696311": {
-   "ahorro_vs_amazon": 23,
+   "ahorro_vs_amazon": 30,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 399.87,
+   "amz_price": 439.58,
    "amz_title": "Samsung Galaxy Watch8 Classic 46mm LTE Negro (Black) L505 - [Versiones italiano, húngaro, polaco, rumano, austriaco y suizo]",
    "asin": "B0G2RM5BK9",
    "disponible": true,
    "ean": "8806097480167",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "23 % por debajo del habitual en Amazon (399.87)",
+   "motivo": "30 % por debajo del habitual en Amazon (439.58)",
    "name": "Samsung Galaxy Watch8 Classic L505 46 mm LTE Negro 1,34 pulgadas AMOLED GPS 5ATM",
    "pp_drop": 32,
    "pp_median": 449.95,
    "pp_price": 306.18,
-   "t": "2026-11-26T15:01:06.505667+00:00",
+   "t": "2026-11-28T15:30:55.396586+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -10936,19 +10936,19 @@
    "ahorro_vs_amazon": 14,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 1198.02,
+   "amz_price": 1192.48,
    "amz_title": "PE320QXTBMIIPHCUZX",
    "asin": "B0H2NC3X1X",
    "disponible": true,
    "ean": "4711721026571",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "14 % por debajo del habitual en Amazon (1198.02)",
+   "motivo": "14 % por debajo del habitual en Amazon (1192.48)",
    "name": "Monitor Acer ProCreator PE 31,5 pulgadas 6K TFT Negro PE320QXT",
    "pp_drop": 28,
    "pp_median": 1419.95,
    "pp_price": 1026.95,
-   "t": "2026-11-26T15:01:06.505667+00:00",
+   "t": "2026-11-28T15:30:55.396586+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -12646,5 +12646,5 @@
   "pvpr_inflado": 4,
   "sin_precio": 5
  },
- "updated": "2026-11-28T15:01:04.744991+00:00"
+ "updated": "2026-11-28T15:30:55.396586+00:00"
 }

@@ -38,7 +38,7 @@
   "Lego": "2026-11-27T21:45:38.691716+00:00",
   "Limpieza del hogar": "2026-11-27T08:04:46.322734+00:00",
   "Maquillaje": "2026-11-28T09:01:08.430266+00:00",
-  "Menaje de cocina": "2026-11-27T11:35:38.294873+00:00",
+  "Menaje de cocina": "2026-11-28T15:30:55.396586+00:00",
   "Mochilas y maletas": "2026-11-24T17:30:51.708019+00:00",
   "Monitores": "2026-11-25T20:15:53.484095+00:00",
   "Móviles": "2026-11-28T14:30:55.156579+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-28T15:28:46.319900+00:00",
+ "next_at": "2026-11-28T15:57:40.167481+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -90,6 +90,17 @@
    "s": "ofertas",
    "t": "2026-11-18T17:31:29.892637+00:00",
    "title": "Bosch pistola de pegar PKP 18 E (1 boquilla extralarga, adhesivo termofundible, 240 V)",
+   "v": []
+  },
+  "B00080XCIE": {
+   "c": "Menaje de cocina",
+   "d": 36,
+   "e": "🍳",
+   "m": 721,
+   "p": 86.99,
+   "s": "ambas",
+   "t": "2026-11-28T15:31:21.893735+00:00",
+   "title": "WMF - Olla Alta para Sopa de Verduras de Inducción de 28 cm, Tapa de Metal con Apertura de Vapor, Cacerola Grande de 14 l, Acero Inoxidable Cromargan Mate, Sin Recubrimiento, Apta para Hornos",
    "v": []
   },
   "B000CCZ7ZE": {
@@ -4657,6 +4668,6 @@
  "tg_offset": 511048185,
  "x_copy": {
   "day": "2026-11-28",
-  "n": 17
+  "n": 18
  }
 }
