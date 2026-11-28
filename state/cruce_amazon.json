@@ -11412,11 +11412,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Dreame Tasti 1500W pantalla táctil Freidora de aire",
-   "pista": "1436541 bytes; 18 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1440329 bytes; 19 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 35,
    "pp_median": 230.95,
    "pp_price": 150.95,
-   "t": "2026-11-28T02:20:30.998507+00:00",
+   "t": "2026-11-28T08:30:57.743236+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -11760,28 +11760,6 @@
    "t": "2026-11-28T04:20:34.193078+00:00",
    "v": 3,
    "veredicto": "sin_precio"
-  },
-  "46599143121": {
-   "ean": "4894827003674",
-   "lista": "candidates",
-   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
-   "name": "TCL TAB A1 Plus NXTPAPER 6GB/256GB Gris Aerolito T-Pen 120Hz 12,2 pulgadas",
-   "pp_drop": 13,
-   "pp_median": 389.9,
-   "pp_price": 339.9,
-   "t": "2026-11-14T08:10:40.297090+00:00",
-   "v": 2,
-   "veredicto": "no_esta",
-   "vistos": {
-    "ean": [
-     "Tableta Android TCL Tab A1 Plus, NXTPAPER, 12,2 Pulgadas, 2,4 K, 120 Hz, 6+256 GB, con T-Pen 2 y Fun"
-    ],
-    "nombre": [
-     "Tableta Android TCL Tab A1 Plus, NXTPAPER, 12,2 Pulgadas, 2,4 K, 120 Hz, 6+256 GB, con T-Pen 2 y Fun",
-     "TCL NXTPAPER 11 Plus Tablet, 11.45\" 2.2K NXTPAPER 4.0 Display, MediaTek Helio G100, 256GB ROM (8GB +",
-     "TCL Tab A1 Plus Tablet Android 12,2\" 2.4K 120Hz con Funda y Lápiz | 6GB+128GB, Procesador 4 NM, Dise"
-    ]
-   }
   },
   "46599143175": {
    "ean": "6942103179631",
@@ -12701,5 +12679,5 @@
   "pvpr_inflado": 7,
   "sin_precio": 8
  },
- "updated": "2026-11-28T08:01:01.835032+00:00"
+ "updated": "2026-11-28T08:30:57.743236+00:00"
 }
