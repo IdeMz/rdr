@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-28T09:30:15.850499+00:00",
+ "next_at": "2026-11-28T09:56:41.556902+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -4025,17 +4025,6 @@
    "title": "iRobot Roomba Plus 575 Combo + Base AutoWash multifunción, 25KPa, Mopas DualClean PerfectEdge, Lava y Seca con Calor, IA Precision Vision, SmartClean, Clearview Pro LiDAR, 90 Días Autonomía, Blanco",
    "v": []
   },
-  "B0H1BQNV25": {
-   "c": "Mochilas y maletas",
-   "d": 49,
-   "e": "🎒",
-   "m": 283,
-   "p": 20.35,
-   "s": "ofertas",
-   "t": "2026-11-14T09:21:14.730528+00:00",
-   "title": "Mochila 40x30x20 Expandible 40x30x25 Viaje Cabina Avion para Ryanair",
-   "v": []
-  },
   "B0H1CWKZ8J": {
    "c": "Afeitado y depilación",
    "d": 43,
@@ -4446,6 +4435,19 @@
    "u": "https://www.awin1.com/pclick.php?p=43856947347&a=3134713&m=77138",
    "v": []
   },
+  "pp:43985378931": {
+   "auto": true,
+   "c": "",
+   "d": 29,
+   "e": "",
+   "m": 709,
+   "p": 319.0,
+   "st": "POWERPLANET",
+   "t": "2026-11-28T09:30:57.804373+00:00",
+   "title": "Huion Kamvas Pro 16 GT156 Pantalla Laminada IPS 15,6\" Full HD - Tableta Gráfica",
+   "u": "https://www.awin1.com/pclick.php?p=43985378931&a=3134713&m=77138",
+   "v": []
+  },
   "pp:45992963538": {
    "auto": true,
    "c": "",
@@ -4594,8 +4596,9 @@
  "store_skip": {
   "ae:1005011584722293": "2026-11-27T15:05:34.336700+00:00",
   "ae:1005012793917941": "2026-11-27T15:05:34.336700+00:00",
+  "pp:45626822225": "2026-11-28T09:30:57.804373+00:00",
+  "pp:45948306722": "2026-11-28T09:30:57.804373+00:00",
   "pp:45992962768": "2026-11-27T15:05:34.336700+00:00",
-  "pp:46239685110": "2026-11-27T08:01:05.056718+00:00",
   "pp:46599140600": "2026-11-27T15:05:34.336700+00:00",
   "pp:46599140756": "2026-11-27T19:45:41.482106+00:00",
   "pp:46599143208": "2026-11-27T15:05:34.336700+00:00"
@@ -4604,6 +4607,6 @@
  "tg_offset": 511048185,
  "x_copy": {
   "day": "2026-11-28",
-  "n": 5
+  "n": 6
  }
 }
