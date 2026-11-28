@@ -2,7 +2,7 @@
  "cats": {
   "Accesorios de coche": "2026-11-28T15:01:04.744991+00:00",
   "Accesorios de móvil": "2026-11-26T21:15:40.564504+00:00",
-  "Afeitado y depilación": "2026-11-27T12:35:34.223179+00:00",
+  "Afeitado y depilación": "2026-11-28T21:01:01.824847+00:00",
   "Almacenamiento": "2026-11-28T20:01:06.583241+00:00",
   "Altavoces": "2026-11-27T21:15:42.612919+00:00",
   "Aspiradoras": "2026-11-27T11:05:34.014357+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-28T20:57:37.493424+00:00",
+ "next_at": "2026-11-28T21:26:05.627455+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2049,6 +2049,17 @@
    "s": "ambas",
    "t": "2026-11-23T10:36:05.634426+00:00",
    "title": "Bedsure Edredon Cama 135/150 Nordico - Relleno Nordico 220x240, Gris Claro",
+   "v": []
+  },
+  "B09YYJWG4J": {
+   "c": "Afeitado y depilación",
+   "d": 47,
+   "e": "🪒",
+   "m": 732,
+   "p": 7.93,
+   "s": "ofertas",
+   "t": "2026-11-28T21:02:55.026908+00:00",
+   "title": "Gillette Blue II Máquinilla de Afeitar Desechable para Hombre, Pack de 40",
    "v": []
   },
   "B0B1DBB1NJ": {
@@ -4703,6 +4714,6 @@
  "tg_offset": 511048185,
  "x_copy": {
   "day": "2026-11-28",
-  "n": 28
+  "n": 29
  }
 }

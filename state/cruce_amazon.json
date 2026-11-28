@@ -1276,6 +1276,13 @@
    "v": 3,
    "via": "modelo"
   },
+  "4242005162000": {
+   "a": "B0BRB7JXR5",
+   "t": "2026-11-28T21:01:01.824847+00:00",
+   "title": "ACER Odkurzacz piorÄ…cy Aqua Wash&Clean BWD41740",
+   "v": 3,
+   "via": "ean"
+  },
   "4242005525997": {
    "a": "B0FGJS65NS",
    "t": "2026-11-24T15:30:53.979529+00:00",
@@ -5877,24 +5884,25 @@
    "veredicto": "amazon_mas_barato"
   },
   "44905996777": {
-   "ahorro_vs_amazon": 7,
-   "amz_low30": 862.22,
+   "ahorro_vs_amazon": null,
+   "amz_low30": null,
    "amz_median": null,
-   "amz_price": 799.0,
+   "amz_price": null,
    "amz_title": "TCL 55C8L 55 Pulgadas SQD-Mini LED 4K HDR10+ Smart TV, 3.000 Nits",
    "asin": "B0GTZS35X6",
    "disponible": true,
    "ean": "5901292531560",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "Amazon 799.00 frente a 799.89",
+   "motivo": "en Amazon pero sin precio o no disponible",
    "name": "TCL 55C8L 55 pulgadas 4K QD-Mini LED 144Hz Dolby Vision HDR10+ Google TV",
+   "pista": "2124171 bytes; 12 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 20,
    "pp_median": 999.0,
    "pp_price": 799.89,
-   "t": "2026-11-26T20:45:45.883777+00:00",
+   "t": "2026-11-28T21:01:01.824847+00:00",
    "v": 3,
-   "veredicto": "amazon_mas_barato"
+   "veredicto": "sin_precio"
   },
   "44927881022": {
    "ahorro_vs_amazon": 10,
@@ -9477,6 +9485,26 @@
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
+  "46239684649": {
+   "ahorro_vs_amazon": 17,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 267.87,
+   "amz_title": "ACER Odkurzacz piorÄ…cy Aqua Wash&Clean BWD41740",
+   "asin": "B0BRB7JXR5",
+   "disponible": true,
+   "ean": "4242005162000",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "17 % por debajo del habitual en Amazon (267.87)",
+   "name": "Bosch AquaWash&Clean BWD41740 Violeta 1700W Aspirador en seco y húmedo",
+   "pp_drop": 20,
+   "pp_median": 276.94,
+   "pp_price": 221.7,
+   "t": "2026-11-28T21:01:01.824847+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "46239685051": {
    "ean": "6977132450390",
    "lista": "candidates",
@@ -10832,25 +10860,6 @@
    "pp_price": 299.95,
    "t": "2026-11-18T00:50:38.693542+00:00",
    "v": 3,
-   "veredicto": "dudoso"
-  },
-  "46599140414": {
-   "ahorro_vs_amazon": 6,
-   "amz_low30": null,
-   "amz_median": null,
-   "amz_price": 656.57,
-   "amz_title": "iiyama G-Master G4380UHSU-B2 43 Pulgadas VA, 144Hz, 0.3ms (MPRT), 4K UHD, FreeSync Premium, 2 x HDMI 2.1/DP/USB/USB-C (7.5W), 2 x 7W Altavoces, Control Remoto",
-   "asin": "B0FCYQHXK4",
-   "disponible": true,
-   "ean": "4948570125630",
-   "encontrado_por": "ean",
-   "lista": "candidates",
-   "motivo": "solo 6 % por debajo del habitual en Amazon (656.57)",
-   "name": "Monitor iiyama G-MASTER 42,5 pulgadas 144Hz 4K VA Negro Mate G4380UHSU-B2",
-   "pp_drop": 12,
-   "pp_median": 699.95,
-   "pp_price": 613.95,
-   "t": "2026-11-14T21:01:00.449874+00:00",
    "veredicto": "dudoso"
   },
   "46599140415": {
@@ -12762,12 +12771,12 @@
  },
  "night_at": "2026-11-28T05:35:28.330938+00:00",
  "resumen": {
-  "amazon_mas_barato": 27,
+  "amazon_mas_barato": 26,
   "dudoso": 1,
   "no_esta": 23,
-  "oferta_real": 26,
+  "oferta_real": 27,
   "pvpr_inflado": 5,
-  "sin_precio": 5
+  "sin_precio": 6
  },
- "updated": "2026-11-28T20:30:56.017224+00:00"
+ "updated": "2026-11-28T21:01:01.824847+00:00"
 }
