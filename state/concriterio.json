@@ -1,6 +1,6 @@
 {
  "cats": {
-  "Accesorios de coche": "2026-11-27T07:30:56.540921+00:00",
+  "Accesorios de coche": "2026-11-28T15:01:04.744991+00:00",
   "Accesorios de móvil": "2026-11-26T21:15:40.564504+00:00",
   "Afeitado y depilación": "2026-11-27T12:35:34.223179+00:00",
   "Almacenamiento": "2026-11-26T11:30:57.919122+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-28T14:56:02.177495+00:00",
+ "next_at": "2026-11-28T15:28:46.319900+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1675,6 +1675,17 @@
    "s": "ambas",
    "t": "2026-11-23T19:04:17.162187+00:00",
    "title": "Mujer D'Lites 4.0 Fresh Diva Trainers",
+   "v": []
+  },
+  "B08VJ2VH2J": {
+   "c": "Accesorios de coche",
+   "d": 34,
+   "e": "🚗",
+   "m": 720,
+   "p": 6.64,
+   "s": "ofertas",
+   "t": "2026-11-28T15:01:41.924532+00:00",
+   "title": "INIU Cargador Coche 60W, Carga RÁPIDA Cargador de Automóviles, Accesorios",
    "v": []
   },
   "B08W3SPNH7": {
@@ -3914,17 +3925,6 @@
    "title": "SANDISK Optimus GX 7100 SSD NVMe 500 GB, lectura hasta 6800 MB/s",
    "v": []
   },
-  "B0GNMS31J4": {
-   "c": "Cafeteras",
-   "d": 14,
-   "e": "☕",
-   "m": 292,
-   "p": 239.99,
-   "s": "ambas",
-   "t": "2026-11-14T14:41:19.463299+00:00",
-   "title": "KRUPS Harmony, Cafetera Superautomática, 4 Bebidas, Espumador Leche, Carbón",
-   "v": []
-  },
   "B0GQHGGWHX": {
    "c": "Televisores",
    "d": 40,
@@ -4605,6 +4605,18 @@
  },
  "reserve": [
   {
+   "a": "B0FHBDDBNT",
+   "c": "Accesorios de coche",
+   "e": "🚗",
+   "img": "https://m.media-amazon.com/images/I/71YjLgUqWDL._AC_UL320_.jpg",
+   "n": 4500,
+   "op": 16.34,
+   "p": 11.0,
+   "r": 4.5,
+   "t": "2026-11-28T15:01:04.744991+00:00",
+   "title": "help flash IoT+, Luz de Emergencia V16 con Geolocalización y más de 290 candelas de potencia, Exigible a partir de 2026, Conectada con DGT 3.0, Señal V-16 para Coches, plan de datos incluido"
+  },
+  {
    "a": "B09FL1SNPF",
    "c": "Tablets",
    "e": "📲",
@@ -4627,18 +4639,6 @@
    "r": 4.7,
    "t": "2026-11-28T12:31:03.056564+00:00",
    "title": "Fisher-Price Peluche Nutria para Bebés Snoogle & Soothe"
-  },
-  {
-   "a": "B07W7KMK4W",
-   "c": "Gaming",
-   "e": "🕹️",
-   "img": "https://m.media-amazon.com/images/I/61Rqvrdp61L._AC_UL320_.jpg",
-   "n": 483,
-   "op": 69.99,
-   "p": 39.99,
-   "r": 4.6,
-   "t": "2026-11-28T11:30:56.628055+00:00",
-   "title": "Logitech G G413 TKL SE Teclado Mecánico Gaming"
   }
  ],
  "store_skip": {
@@ -4657,6 +4657,6 @@
  "tg_offset": 511048185,
  "x_copy": {
   "day": "2026-11-28",
-  "n": 16
+  "n": 17
  }
 }

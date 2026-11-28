@@ -797,6 +797,13 @@
    "v": 3,
    "via": "ean"
   },
+  "0840006678465": {
+   "a": "B0D47CZT4G",
+   "t": "2026-11-28T15:01:04.744991+00:00",
+   "title": "Corsair TC500 Luxe Silla para Juegos – Tejido Transpirable Premium – Asientos Anchos – Reposabrazos Ajustables en 5 Direcciones – Soporte Lumbar Ajustable – Rec",
+   "v": 3,
+   "via": "ean"
+  },
   "0840023264559": {
    "a": "B0D3VKDQSN",
    "t": "2026-11-27T14:05:32.612136+00:00",
@@ -9366,33 +9373,6 @@
     ]
    }
   },
-  "46239685052": {
-   "ean": "0622356320559",
-   "lista": "candidates",
-   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
-   "name": "Horno para pizza Ninja Artisan 1760W Acero Inoxidable MO201EU",
-   "pp_drop": 18,
-   "pp_median": 347.95,
-   "pp_price": 285.95,
-   "t": "2026-11-14T14:40:41.311125+00:00",
-   "v": 2,
-   "veredicto": "no_esta",
-   "vistos": {
-    "ean": [
-     "Ninja Artisan Horno con Función Air Fry y Pizza de Exterior, Gris"
-    ],
-    "modelo": [
-     "Ninja Woodfire, Horno Eléctrico Multifunción de Exterior, 8 en 1",
-     "Ninja CREAMi Scoop & Swirl, Heladera con 2 Tarrinas de 480 ml, Plata",
-     "Ninja CREAMi Deluxe, Heladera Multifunción con 2 Tarrinas, Plateado"
-    ],
-    "nombre": [
-     "Ninja Artisan Horno con Función Air Fry y Pizza de Exterior, Gris",
-     "Ninja Woodfire, Horno Eléctrico Multifunción de Exterior, 8 en 1",
-     "VEVOR Horno de Pizza Comercial Eléctrico de Encimera de Doble Piso, Acero Inoxidable con Piedra y Ma"
-    ]
-   }
-  },
   "46239685059": {
    "ahorro_vs_amazon": -32,
    "amz_low30": null,
@@ -11429,11 +11409,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Dreame Tasti 1500W pantalla táctil Freidora de aire",
-   "pista": "1440329 bytes; 19 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1333868 bytes; 13 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 35,
    "pp_median": 230.95,
    "pp_price": 150.95,
-   "t": "2026-11-28T08:30:57.743236+00:00",
+   "t": "2026-11-28T15:01:04.744991+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -12576,6 +12556,26 @@
    "v": 3,
    "veredicto": "oferta_real"
   },
+  "46853995958": {
+   "ahorro_vs_amazon": 18,
+   "amz_low30": null,
+   "amz_median": null,
+   "amz_price": 532.99,
+   "amz_title": "Corsair TC500 Luxe Silla para Juegos – Tejido Transpirable Premium – Asientos Anchos – Reposabrazos Ajustables en 5 Direcciones – Soporte Lumbar Ajustable – Rec",
+   "asin": "B0D47CZT4G",
+   "disponible": true,
+   "ean": "0840006678465",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "18 % por debajo del habitual en Amazon (532.99)",
+   "name": "Silla Gaming Corsair TC500 LUXE Verde Tela Transpirable Reposabrazos 4D 120kg",
+   "pp_drop": 29,
+   "pp_median": 619.0,
+   "pp_price": 437.95,
+   "t": "2026-11-28T15:01:04.744991+00:00",
+   "v": 3,
+   "veredicto": "oferta_real"
+  },
   "46853995970": {
    "ahorro_vs_amazon": -2,
    "amz_low30": null,
@@ -12642,9 +12642,9 @@
   "amazon_mas_barato": 23,
   "dudoso": 1,
   "no_esta": 22,
-  "oferta_real": 23,
+  "oferta_real": 24,
   "pvpr_inflado": 4,
   "sin_precio": 5
  },
- "updated": "2026-11-28T14:30:55.156579+00:00"
+ "updated": "2026-11-28T15:01:04.744991+00:00"
 }
