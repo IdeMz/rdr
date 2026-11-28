@@ -34,7 +34,7 @@
   "Iluminación": "2026-11-27T18:05:30.612634+00:00",
   "Impresoras": "2026-11-28T08:30:57.743236+00:00",
   "Jardín": "2026-11-28T11:01:13.692355+00:00",
-  "Juguetes": "2026-11-26T13:30:53.798593+00:00",
+  "Juguetes": "2026-11-28T12:31:03.056564+00:00",
   "Lego": "2026-11-27T21:45:38.691716+00:00",
   "Limpieza del hogar": "2026-11-27T08:04:46.322734+00:00",
   "Maquillaje": "2026-11-28T09:01:08.430266+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-28T12:29:40.541306+00:00",
+ "next_at": "2026-11-28T12:57:15.889124+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -1302,6 +1302,17 @@
    "title": "UPGRADE Mando para Switch, Mandos Switch Inalambricos para S-witch/S-witch 2/Lite/OLED con Wake Up, Mando Pro Controller Mando pc con Gyro Axis/Dual Shock/Función Turbo y Captura de pantalla",
    "v": []
   },
+  "B07ZYCNZTZ": {
+   "c": "Juguetes",
+   "d": 53,
+   "e": "🧸",
+   "m": 715,
+   "p": 6.99,
+   "s": "busqueda",
+   "t": "2026-11-28T12:31:34.588679+00:00",
+   "title": "Hasbro Nerf 2.0 Commander RC-6, Lanzador de Dardos de Juguete, 12 Piezas, Juegos al Aire Libre para Niños y Niñas de 8 Años o Más, Tambor Giratorio",
+   "v": []
+  },
   "B08153WM1C": {
    "c": "Decoración navideña",
    "d": 22,
@@ -1642,17 +1653,6 @@
    "s": "ofertas",
    "t": "2026-11-15T20:51:13.985296+00:00",
    "title": "Mysight - Mochila Para Portátil con ruedas de 17,3 Pulgadas, Mochila con ruedas de 48 cm, con funciones inteligentes, Ergonómica, 25,5 L, Negra",
-   "v": []
-  },
-  "B08QZXJ8T4": {
-   "c": "Menaje de cocina",
-   "d": 19,
-   "e": "🍳",
-   "m": 288,
-   "p": 30.91,
-   "s": "busqueda",
-   "t": "2026-11-14T12:16:15.569594+00:00",
-   "title": "San Ignacio Bateria 5pcs Acero Inoxidable: cazo Ø16x7,5 Cacerolas de Ø18x8,5 y Ø20x9,5 cms, inducción, colección Cassel, 5 Piezas",
    "v": []
   },
   "B08RZZVKNZ": {
@@ -4590,6 +4590,18 @@
  },
  "reserve": [
   {
+   "a": "B07N1JP56L",
+   "c": "Juguetes",
+   "e": "🧸",
+   "img": "https://m.media-amazon.com/images/I/61naATggdjL._AC_UL320_.jpg",
+   "n": 65300,
+   "op": 42.99,
+   "p": 23.33,
+   "r": 4.7,
+   "t": "2026-11-28T12:31:03.056564+00:00",
+   "title": "Fisher-Price Peluche Nutria para Bebés Snoogle & Soothe"
+  },
+  {
    "a": "B07W7KMK4W",
    "c": "Gaming",
    "e": "🕹️",
@@ -4630,6 +4642,6 @@
  "tg_offset": 511048185,
  "x_copy": {
   "day": "2026-11-28",
-  "n": 11
+  "n": 12
  }
 }
