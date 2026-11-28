@@ -9225,25 +9225,6 @@
     ]
    }
   },
-  "46239683053": {
-   "ahorro_vs_amazon": 0,
-   "amz_low30": null,
-   "amz_median": null,
-   "amz_price": 1329.0,
-   "amz_title": "Apple MacBook Air de 13,6 Pulgadas con Chip M5: Pantalla Liquid Retina, CPU de 10 núcleos, GPU de 8 núcleos, 16 GB de Memoria unificada, 512 GB de SSD, Wi-Fi 7,",
-   "asin": "B0GR1N7ND2",
-   "disponible": true,
-   "ean": "0195950687569",
-   "encontrado_por": "ean",
-   "lista": "candidates",
-   "motivo": "Amazon 1329.00 frente a 1327.95",
-   "name": "Apple MacBook Air 13 pulgadas M5 16GB/512GB SSD Liquid Retina macOS Plata WiFi 7 Portátil",
-   "pp_drop": 11,
-   "pp_median": 1498.95,
-   "pp_price": 1327.95,
-   "t": "2026-11-14T07:35:33.414859+00:00",
-   "veredicto": "amazon_mas_barato"
-  },
   "46239683786": {
    "ahorro_vs_amazon": 6,
    "amz_low30": 1699.0,
@@ -12720,5 +12701,5 @@
   "pvpr_inflado": 7,
   "sin_precio": 8
  },
- "updated": "2026-11-28T07:30:51.960611+00:00"
+ "updated": "2026-11-28T08:01:01.835032+00:00"
 }

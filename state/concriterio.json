@@ -45,7 +45,7 @@
   "Nutrición deportiva": "2026-11-27T13:35:33.037664+00:00",
   "Oficina": "2026-11-25T20:45:41.682692+00:00",
   "Patinetes": "2026-11-27T18:35:32.648553+00:00",
-  "Pequeño electrodoméstico": "2026-11-26T15:30:59.307083+00:00",
+  "Pequeño electrodoméstico": "2026-11-28T08:01:01.835032+00:00",
   "Perfumes": "2026-11-24T16:01:07.815808+00:00",
   "Periféricos": "2026-11-27T14:05:32.612136+00:00",
   "Perros": "2026-11-25T18:30:56.405059+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-28T07:56:41.575283+00:00",
+ "next_at": "2026-11-28T08:28:54.835733+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -596,6 +596,17 @@
    "s": "busqueda",
    "t": "2026-11-25T10:31:45.806411+00:00",
    "title": "Brekkies Pienso para Gatos Delicious con una Selección de Aves y Verduras - 3000 gr",
+   "v": []
+  },
+  "B01J9LPTFG": {
+   "c": "Pequeño electrodoméstico",
+   "d": 47,
+   "e": "🍞",
+   "m": 706,
+   "p": 25.51,
+   "s": "ambas",
+   "t": "2026-11-28T08:01:40.165088+00:00",
+   "title": "Russell Hobbs Tostadora Retro Roja, 2 Ranuras Anchas, 1100W, 21680-56",
    "v": []
   },
   "B01KHILJ5O": {
@@ -3375,17 +3386,6 @@
    "title": "Novilla Topper Colchón 150x190 7.5cm Viscoelástica Espuma Alta Densidad",
    "v": []
   },
-  "B0F8F1GXCV": {
-   "c": "Monitores",
-   "d": 23,
-   "e": "🖥️",
-   "m": 280,
-   "p": 57.72,
-   "s": "ambas",
-   "t": "2026-11-14T07:36:35.708894+00:00",
-   "title": "Lenovo L24-4e - Monitor FHD 23.8\" (IPS, 1920x1080, Tasa de Refresco 48 Hz – 100 Hz, Tiempo de Respuesta de 4 ms, HDMI 1.4, VGA, VESA 100 x 100 mm) Soporte de Inclinación, Negro",
-   "v": []
-  },
   "B0FB3GM1R1": {
    "c": "Suplementos",
    "d": 44,
@@ -4551,13 +4551,21 @@
   "B0CM4B43DZ": {
    "t": "2026-11-27T16:35:45.254038+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
-  },
-  "B0F6NRJNTR": {
-   "t": "2026-11-27T07:30:56.540921+00:00",
-   "why": "referencia: la ficha no trae precio de referencia"
   }
  },
  "reserve": [
+  {
+   "a": "B00XVN7T70",
+   "c": "Pequeño electrodoméstico",
+   "e": "🍞",
+   "img": "https://m.media-amazon.com/images/I/71dG04HyxRL._AC_UL320_.jpg",
+   "n": 4600,
+   "op": 21.99,
+   "p": 14.05,
+   "r": 4.2,
+   "t": "2026-11-28T08:01:01.835032+00:00",
+   "title": "Tristar Tostadora, 2 Rebanadas, Soporte para Panecillos, 800 W"
+  },
   {
    "a": "B0F8HP4S9V",
    "c": "Gatos",
@@ -4596,6 +4604,6 @@
  "tg_offset": 511048177,
  "x_copy": {
   "day": "2026-11-28",
-  "n": 2
+  "n": 3
  }
 }
