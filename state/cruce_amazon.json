@@ -5182,7 +5182,7 @@
    "veredicto": "amazon_mas_barato"
   },
   "41955007624": {
-   "ahorro_vs_amazon": 21,
+   "ahorro_vs_amazon": 24,
    "amz_low30": null,
    "amz_median": null,
    "amz_price": 182.23,
@@ -5192,12 +5192,12 @@
    "ean": "0810160666967",
    "encontrado_por": "ean",
    "lista": "candidates",
-   "motivo": "21 % por debajo del habitual en Amazon (182.23)",
+   "motivo": "24 % por debajo del habitual en Amazon (182.23)",
    "name": "Shokz OpenFit 2 Negro Bluetooth 5.4 48h IP55 Auriculares inalámbricos",
-   "pp_drop": 35,
+   "pp_drop": 37,
    "pp_median": 221.95,
-   "pp_price": 143.95,
-   "t": "2026-11-27T23:50:33.923316+00:00",
+   "pp_price": 138.94,
+   "t": "2026-11-28T14:01:03.749514+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -7011,19 +7011,19 @@
    "ahorro_vs_amazon": -4,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 49.13,
+   "amz_price": 49.17,
    "amz_title": "Corsair K55 CORE Teclado para juegos con membrana RGB, interruptores silenciosos y receptivos - Resistencia a derrames - RGB de 10 zonas - teclas multimedia - C",
    "asin": "B0CNY34TS1",
    "disponible": true,
    "ean": "840006681410",
    "encontrado_por": "nombre",
    "lista": "candidates",
-   "motivo": "Amazon 49.13 frente a 50.95",
+   "motivo": "Amazon 49.17 frente a 50.95",
    "name": "Corsair K55 Core RGB 10 zonas Portugués Teclado gaming",
    "pp_drop": 50,
    "pp_median": 100.95,
    "pp_price": 50.95,
-   "t": "2026-11-26T13:30:53.798593+00:00",
+   "t": "2026-11-28T14:01:03.749514+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
@@ -12684,5 +12684,5 @@
   "pvpr_inflado": 4,
   "sin_precio": 5
  },
- "updated": "2026-11-28T13:30:53.661281+00:00"
+ "updated": "2026-11-28T14:01:03.749514+00:00"
 }
