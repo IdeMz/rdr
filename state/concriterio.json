@@ -55,7 +55,7 @@
   "Relojes": "2026-11-24T14:01:02.613248+00:00",
   "Robots de cocina": "2026-11-26T19:45:40.861388+00:00",
   "Salud": "2026-11-28T07:01:04.551651+00:00",
-  "Smartwatch": "2026-11-26T20:45:45.883777+00:00",
+  "Smartwatch": "2026-11-28T12:01:08.412880+00:00",
   "Suplementos": "2026-11-27T10:05:33.632197+00:00",
   "Tablets": "2026-11-26T09:01:09.131171+00:00",
   "Televisores": "2026-11-27T15:35:41.315716+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-28T11:57:49.064955+00:00",
+ "next_at": "2026-11-28T12:29:40.541306+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -211,17 +211,6 @@
    "s": "ambas",
    "t": "2026-11-16T07:02:13.013829+00:00",
    "title": "Logitech Z906 5.1 Sistema de Altavoces Sonido Envolvente THX",
-   "v": []
-  },
-  "B004U4WUFU": {
-   "c": "Nutrición deportiva",
-   "d": 30,
-   "e": "💪",
-   "m": 287,
-   "p": 35.63,
-   "s": "ofertas",
-   "t": "2026-11-14T11:41:16.404514+00:00",
-   "title": "ESN Designer Whey Protein, Chocolate, 1 kg",
    "v": []
   },
   "B0051E16LW": {
@@ -2493,6 +2482,17 @@
    "title": "Kindle Paperwhite (16 GB) de Amazon (modelo de 2024): pantalla de 7\" sin reflejos y semanas de autonomía | Con publicidad | Frambuesa",
    "v": []
   },
+  "B0CG6NBJ61": {
+   "c": "Smartwatch",
+   "d": 31,
+   "e": "⌚",
+   "m": 714,
+   "p": 164.99,
+   "s": "ambas",
+   "t": "2026-11-28T12:02:13.750590+00:00",
+   "title": "Garmin Vívoactive 5, Smartwatch con GPS, Pantalla AMOLED, Funciones Esenciales de Salud y Forma física y hasta 11 días de autonomía",
+   "v": []
+  },
   "B0CH9SBG5G": {
    "c": "Oficina",
    "d": 30,
@@ -4559,12 +4559,32 @@
    "t": "2026-11-28T07:01:04.551651+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
+  "B08923YLTD": {
+   "t": "2026-11-28T12:01:08.412880+00:00",
+   "why": "referencia: precio mediano 79,99€, hoy 122,95€ (54% por encima); el descuento es solo contra el PVPR"
+  },
   "B0BWYSWC3V": {
    "t": "2026-11-27T19:05:34.051750+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   },
   "B0CM4B43DZ": {
    "t": "2026-11-27T16:35:45.254038+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0CT3VBDTV": {
+   "t": "2026-11-28T12:01:08.412880+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0CWB662HK": {
+   "t": "2026-11-28T12:01:08.412880+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0DC71V3ZD": {
+   "t": "2026-11-28T12:01:08.412880+00:00",
+   "why": "referencia: la ficha no trae precio de referencia"
+  },
+  "B0F7ZGDDCX": {
+   "t": "2026-11-28T12:01:08.412880+00:00",
    "why": "referencia: la ficha no trae precio de referencia"
   }
  },
@@ -4610,6 +4630,6 @@
  "tg_offset": 511048185,
  "x_copy": {
   "day": "2026-11-28",
-  "n": 10
+  "n": 11
  }
 }

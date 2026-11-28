@@ -6860,22 +6860,22 @@
    "veredicto": "amazon_mas_barato"
   },
   "45699875504": {
-   "ahorro_vs_amazon": 58,
+   "ahorro_vs_amazon": 62,
    "amz_low30": null,
    "amz_median": null,
-   "amz_price": 76.22,
+   "amz_price": 83.72,
    "amz_title": "Endgame Gear XM2 8k Ratón Gaming con Cable, Negro",
    "asin": "B0DG5YN8VT",
    "disponible": true,
    "ean": "4251442511180",
    "encontrado_por": "ean",
    "lista": "to_verify",
-   "motivo": "58 % por debajo del habitual en Amazon (76.22)",
+   "motivo": "62 % por debajo del habitual en Amazon (83.72)",
    "name": "Endgame Gear XM2 8k Gaming Mouse 26000 DPI 52g Ultraligero Ratón gaming",
    "pp_drop": 54,
    "pp_median": 69.95,
    "pp_price": 31.94,
-   "t": "2026-11-26T11:30:57.919122+00:00",
+   "t": "2026-11-28T12:01:08.412880+00:00",
    "v": 3,
    "veredicto": "oferta_real"
   },
@@ -7081,7 +7081,7 @@
    "pp_drop": 56,
    "pp_median": 67.95,
    "pp_price": 29.95,
-   "t": "2026-11-26T11:30:57.919122+00:00",
+   "t": "2026-11-28T12:01:08.412880+00:00",
    "v": 3,
    "veredicto": "no_esta",
    "vistos": {
@@ -12479,28 +12479,6 @@
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
-  "46693747636": {
-   "ean": "8004399141612",
-   "lista": "candidates",
-   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
-   "name": "Termoventilador De'Longhi Caldobagno Blanco Termostato 2000W HBC 3030",
-   "pp_drop": 46,
-   "pp_median": 130.95,
-   "pp_price": 70.95,
-   "t": "2026-11-14T11:40:39.802795+00:00",
-   "v": 2,
-   "veredicto": "no_esta",
-   "vistos": {
-    "ean": [
-     "DeLonghi Caldobagno HBC 3030 Calefactor, Eléctrico, ajustes de termostato, 2200 W, blanco"
-    ],
-    "nombre": [
-     "De'Longhi Termoventilador Cerámico de Torre, Calentamiento Rápido con 2 Niveles, Mando a Distancia, ",
-     "De'Longhi HFX30c18.IW - Calefactor cerámico vertical, 2 ajustes de potencia de 900 y 1800 w, auto re",
-     "De'Longhi TRNS 0808M - Radiador de aceite, 800 w, termostato de seguridad, función Eco, controles di"
-    ]
-   }
-  },
   "46693747642": {
    "ean": "8004399021167",
    "lista": "candidates",
@@ -12678,5 +12656,5 @@
   "pvpr_inflado": 4,
   "sin_precio": 5
  },
- "updated": "2026-11-28T11:30:56.628055+00:00"
+ "updated": "2026-11-28T12:01:08.412880+00:00"
 }
