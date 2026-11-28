@@ -18,7 +18,7 @@
   "Climatización": "2026-11-27T20:15:42.816939+00:00",
   "Colchones y almohadas": "2026-11-27T19:05:34.051750+00:00",
   "Componentes PC": "2026-11-27T15:05:34.336700+00:00",
-  "Cuidado de la piel": "2026-11-27T16:35:45.254038+00:00",
+  "Cuidado de la piel": "2026-11-28T20:30:56.017224+00:00",
   "Cuidado del cabello": "2026-11-27T15:05:34.336700+00:00",
   "Cámaras de seguridad": "2026-11-25T17:30:57.888678+00:00",
   "Decoración navideña": "2026-11-27T09:35:32.611631+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-28T20:28:04.599716+00:00",
+ "next_at": "2026-11-28T20:57:37.493424+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -321,6 +321,17 @@
    "s": "ambas",
    "t": "2026-11-25T07:31:38.299632+00:00",
    "title": "Optimum Nutrition Opti-Men, Multivitamínico de Alta Potencia para Hombres",
+   "v": []
+  },
+  "B008KMZ8FC": {
+   "c": "Cuidado de la piel",
+   "d": 44,
+   "e": "🧴",
+   "m": 731,
+   "p": 31.38,
+   "s": "ofertas",
+   "t": "2026-11-28T20:33:00.940442+00:00",
+   "title": "Kiehl's Creamy Eye Treatment with Avocado crema contorno de ojos hidratante 28 gr",
    "v": []
   },
   "B009SIVCNE": {
@@ -3903,17 +3914,6 @@
    "title": "DELL 27 Monitor Gaming - SE2726HG, Full HD (1920x1080), 240Hz, Fast IPS",
    "v": []
   },
-  "B0GHN9DR1C": {
-   "c": "Aspiradoras",
-   "d": 41,
-   "e": "🧹",
-   "m": 299,
-   "p": 349.99,
-   "s": "busqueda",
-   "t": "2026-11-14T20:21:40.396554+00:00",
-   "title": "roborock Qrevo S Pro Robot Aspirador (Versión Mejorada del QV 35A) Succión de 18500 Pa, Base Todo en Uno, 2,7L Bolsa para Polvo, Sistema antienredos, Evitación de Obstáculos, Negro",
-   "v": []
-  },
   "B0GJTBKGDV": {
    "c": "Impresoras",
    "d": 39,
@@ -4689,6 +4689,7 @@
  ],
  "store_skip": {
   "ae:1005011865415932": "2026-11-28T10:01:07.327694+00:00",
+  "ae:1005011872827575": "2026-11-28T20:30:56.017224+00:00",
   "ae:1005012793773424": "2026-11-28T19:01:05.786744+00:00",
   "ae:1005012793917941": "2026-11-28T19:01:05.786744+00:00",
   "ae:1005013107884505": "2026-11-28T10:01:07.327694+00:00",
@@ -4696,13 +4697,12 @@
   "pp:45626822225": "2026-11-28T09:30:57.804373+00:00",
   "pp:45948306722": "2026-11-28T09:30:57.804373+00:00",
   "pp:45992962768": "2026-11-28T18:30:54.645779+00:00",
-  "pp:46599140756": "2026-11-27T19:45:41.482106+00:00",
   "pp:46853995976": "2026-11-28T18:30:54.645779+00:00"
  },
  "summary_day": "2026-11-27",
  "tg_offset": 511048185,
  "x_copy": {
   "day": "2026-11-28",
-  "n": 27
+  "n": 28
  }
 }
