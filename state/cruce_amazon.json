@@ -1562,6 +1562,26 @@
    "title": "ASUS GeForce GT 710 2GB GDDR5 EVO - Tarjeta gráfica",
    "via": "ean"
   },
+  "4711387430323": {
+   "a": "",
+   "t": "2026-11-28T11:01:13.692355+00:00",
+   "v": 3,
+   "vistos": {
+    "ean": [
+     "ASUS Dual Radeon RX 7700 XT OC Edition 12 GB GDDR6 - Tarjeta gráfica (AMD RDNA 3, PCIe 4.0, 12 GB de"
+    ],
+    "modelo": [
+     "ASUS Dual Radeon RX 7700 XT OC Edition 12 GB GDDR6 - Tarjeta gráfica (AMD RDNA 3, PCIe 4.0, 12 GB de",
+     "ASUS Dual Radeon RX 7600 EVO OC Edition - Tarjeta gráfica",
+     "ASUS Dual Radeon RX 7600 XT OC Edition 16GB GDDR6 - Tarjeta gráfica (AMD RDNA 3, PCIe 4.0, 16GB de M"
+    ],
+    "nombre": [
+     "ASUS Dual NVIDIA GeForce RTX 3060 V2 OC Edition Tarjeta gráfica Gaming (PCIe 4.0, 12 GB GDDR6, HDMI ",
+     "ASUS Dual Radeon RX 7600 EVO OC Edition - Tarjeta gráfica",
+     "ASUS Dual NVIDIA GeForce RTX 3060 V2 - Tarjeta gráfica Gaming (PCIe 4.0, 12 GB GDDR6, HDMI 2.1, Disp"
+    ]
+   }
+  },
   "4711387452943": {
    "a": "B0D84FBQZR",
    "t": "2026-11-24T00:50:33.890785+00:00",
@@ -4694,7 +4714,7 @@
    "pp_drop": 57,
    "pp_median": 69.99,
    "pp_price": 29.9,
-   "t": "2026-11-26T11:01:09.682153+00:00",
+   "t": "2026-11-28T11:01:13.692355+00:00",
    "v": 3,
    "veredicto": "no_esta",
    "vistos": {
@@ -6899,6 +6919,33 @@
    "t": "2026-11-19T12:05:32.674217+00:00",
    "v": 3,
    "veredicto": "oferta_real"
+  },
+  "45912508461": {
+   "ean": "4711387430323",
+   "lista": "candidates",
+   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
+   "name": "ASUS Dual RX7700XT 12GB GDDR6 PCIe 4.0 2 ventiladores HDMI 2.1 3 DisplayPort Tarjeta gráfica",
+   "pp_drop": 38,
+   "pp_median": 1151.94,
+   "pp_price": 719.95,
+   "t": "2026-11-28T11:01:13.692355+00:00",
+   "v": 3,
+   "veredicto": "no_esta",
+   "vistos": {
+    "ean": [
+     "ASUS Dual Radeon RX 7700 XT OC Edition 12 GB GDDR6 - Tarjeta gráfica (AMD RDNA 3, PCIe 4.0, 12 GB de"
+    ],
+    "modelo": [
+     "ASUS Dual Radeon RX 7700 XT OC Edition 12 GB GDDR6 - Tarjeta gráfica (AMD RDNA 3, PCIe 4.0, 12 GB de",
+     "ASUS Dual Radeon RX 7600 EVO OC Edition - Tarjeta gráfica",
+     "ASUS Dual Radeon RX 7600 XT OC Edition 16GB GDDR6 - Tarjeta gráfica (AMD RDNA 3, PCIe 4.0, 16GB de M"
+    ],
+    "nombre": [
+     "ASUS Dual NVIDIA GeForce RTX 3060 V2 OC Edition Tarjeta gráfica Gaming (PCIe 4.0, 12 GB GDDR6, HDMI ",
+     "ASUS Dual Radeon RX 7600 EVO OC Edition - Tarjeta gráfica",
+     "ASUS Dual NVIDIA GeForce RTX 3060 V2 - Tarjeta gráfica Gaming (PCIe 4.0, 12 GB GDDR6, HDMI 2.1, Disp"
+    ]
+   }
   },
   "45930203409": {
    "ahorro_vs_amazon": 12,
@@ -12621,10 +12668,10 @@
  "resumen": {
   "amazon_mas_barato": 22,
   "dudoso": 1,
-  "no_esta": 21,
+  "no_esta": 22,
   "oferta_real": 21,
   "pvpr_inflado": 4,
   "sin_precio": 5
  },
- "updated": "2026-11-28T10:31:04.381463+00:00"
+ "updated": "2026-11-28T11:01:13.692355+00:00"
 }
