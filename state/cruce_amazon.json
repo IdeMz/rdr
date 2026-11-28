@@ -7651,25 +7651,6 @@
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
-  "45956991871": {
-   "ahorro_vs_amazon": 10,
-   "amz_low30": null,
-   "amz_median": null,
-   "amz_price": 402.69,
-   "amz_title": "Corsair Vengeance SODIMM 32GB (2x16GB) DDR4 hasta 2400MHz CL16 Memoria para Portátiles/Notebooks (Soporte para Procesadores Intel Core™ i5 e i7 de 6ª Generación",
-   "asin": "B01G26166W",
-   "disponible": true,
-   "ean": "843591088541",
-   "encontrado_por": "ean",
-   "lista": "candidates",
-   "motivo": "10 % por debajo del habitual en Amazon (402.69)",
-   "name": "Corsair Vengeance DDR4 32GB 2x16GB 2400MHz SO-DIMM Memoria RAM",
-   "pp_drop": 18,
-   "pp_median": 439.96,
-   "pp_price": 362.95,
-   "t": "2026-11-14T14:01:05.199813+00:00",
-   "veredicto": "oferta_real"
-  },
   "45956992056": {
    "ahorro_vs_amazon": -25,
    "amz_low30": null,
@@ -8272,7 +8253,7 @@
    "pp_drop": 27,
    "pp_median": 1818.99,
    "pp_price": 1329.0,
-   "t": "2026-11-26T14:30:54.648040+00:00",
+   "t": "2026-11-28T14:30:55.156579+00:00",
    "v": 3,
    "veredicto": "no_esta",
    "vistos": {
@@ -10293,11 +10274,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "MSI GeForce RTX 5090 SUPRIM SOC 32GB GDDR7 Negro",
-   "pista": "1710664 bytes; 9 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
-   "pp_drop": 17,
+   "pista": "1679080 bytes; 7 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pp_drop": 20,
    "pp_median": 11389.95,
-   "pp_price": 9461.95,
-   "t": "2026-11-28T03:50:33.495710+00:00",
+   "pp_price": 9056.95,
+   "t": "2026-11-28T14:30:55.156579+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -10440,25 +10421,6 @@
    "t": "2026-11-17T14:30:58.598858+00:00",
    "v": 3,
    "veredicto": "amazon_mas_barato"
-  },
-  "46599139865": {
-   "ahorro_vs_amazon": 21,
-   "amz_low30": null,
-   "amz_median": null,
-   "amz_price": 42.97,
-   "amz_title": "Acer - Ratón inalámbrico RF M501 (Funciona con Chromebook, con USB Plug and Play para diestros/Zurdos (para Chromebooks, Windows PC y Mac)",
-   "asin": "B08BZY1MRQ",
-   "disponible": true,
-   "ean": "4710886001201",
-   "encontrado_por": "modelo",
-   "lista": "candidates",
-   "motivo": "21 % por debajo del habitual en Amazon (42.97)",
-   "name": "Acer M501 Blanco 1600 DPI 3 botones 2.4GHz 55 g Ratón inalámbrico",
-   "pp_drop": 32,
-   "pp_median": 49.95,
-   "pp_price": 33.95,
-   "t": "2026-11-14T14:01:05.199813+00:00",
-   "veredicto": "oferta_real"
   },
   "46599139876": {
    "ahorro_vs_amazon": 16,
@@ -12684,5 +12646,5 @@
   "pvpr_inflado": 4,
   "sin_precio": 5
  },
- "updated": "2026-11-28T14:01:03.749514+00:00"
+ "updated": "2026-11-28T14:30:55.156579+00:00"
 }

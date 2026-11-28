@@ -6,7 +6,7 @@
   "Almacenamiento": "2026-11-26T11:30:57.919122+00:00",
   "Altavoces": "2026-11-27T21:15:42.612919+00:00",
   "Aspiradoras": "2026-11-27T11:05:34.014357+00:00",
-  "Auriculares": "2026-11-26T18:01:05.764618+00:00",
+  "Auriculares": "2026-11-28T14:30:55.156579+00:00",
   "Barras de sonido": "2026-11-27T12:05:34.336208+00:00",
   "Bebé": "2026-11-25T19:15:38.789832+00:00",
   "Bricolaje": "2026-11-27T07:01:05.022940+00:00",
@@ -41,7 +41,7 @@
   "Menaje de cocina": "2026-11-27T11:35:38.294873+00:00",
   "Mochilas y maletas": "2026-11-24T17:30:51.708019+00:00",
   "Monitores": "2026-11-25T20:15:53.484095+00:00",
-  "Móviles": "2026-11-26T07:01:05.477452+00:00",
+  "Móviles": "2026-11-28T14:30:55.156579+00:00",
   "Nutrición deportiva": "2026-11-27T13:35:33.037664+00:00",
   "Oficina": "2026-11-25T20:45:41.682692+00:00",
   "Patinetes": "2026-11-27T18:35:32.648553+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-28T14:29:37.070692+00:00",
+ "next_at": "2026-11-28T14:56:02.177495+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -2305,6 +2305,17 @@
    "title": "Philips Purificador de Aire Serie 600 Ultrasilencioso y de bajo consumo, para alérgicos, el filtro HEPA elimina el 99,97% de los contaminantes, cubre hasta 44m2, controlado por app, blanco (AC0650/10)",
    "v": []
   },
+  "B0BYWMLVG1": {
+   "c": "Auriculares",
+   "d": 50,
+   "e": "🎧",
+   "m": 719,
+   "p": 29.99,
+   "s": "ambas",
+   "t": "2026-11-28T14:32:00.977434+00:00",
+   "title": "JBL Auriculares Tune 520 BT, inálambricos por Bluetooth, 57 horas de reproducción con JBL Pure Bass, plegables, negro",
+   "v": []
+  },
   "B0BZYP24JC": {
    "c": "Monitores",
    "d": 41,
@@ -4190,17 +4201,6 @@
    "title": "Tablet Android, 7 Pulgadas Tablets, 64 GB ROM+1 TB, WiFi, GPS, BT 5.0, Táctil HD, TUV Certificación, Juegos Educativos, Control Parental, con Funda EVA, Azul",
    "v": []
   },
-  "B0HDZ1LBCH": {
-   "c": "Smartwatch",
-   "d": 53,
-   "e": "⌚",
-   "m": 291,
-   "p": 56.99,
-   "s": "busqueda",
-   "t": "2026-11-14T14:01:56.352013+00:00",
-   "title": "Reloj Inteligente Niño, 4G Smartwatch con Videollamadas, Chat de Voz, GPS",
-   "v": []
-  },
   "B0HJ1V5P7Z": {
    "c": "Móviles",
    "d": 35,
@@ -4657,6 +4657,6 @@
  "tg_offset": 511048185,
  "x_copy": {
   "day": "2026-11-28",
-  "n": 15
+  "n": 16
  }
 }
