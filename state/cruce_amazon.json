@@ -6174,25 +6174,6 @@
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
-  "45389434011": {
-   "ahorro_vs_amazon": 13,
-   "amz_low30": null,
-   "amz_median": null,
-   "amz_price": 89.29,
-   "amz_title": "Reolink Argus Series B320 2K telecamera di sicurezza",
-   "asin": "B0CVVT1HCW",
-   "disponible": true,
-   "ean": "6975253983131",
-   "encontrado_por": "ean",
-   "lista": "candidates",
-   "motivo": "13 % por debajo del habitual en Amazon (89.29)",
-   "name": "Reolink Argus Series B320 Blanco 3MP 4800mAh Exterior Solar batería Cámara de vigilancia",
-   "pp_drop": 20,
-   "pp_median": 96.99,
-   "pp_price": 77.99,
-   "t": "2026-11-14T05:08:32.344426+00:00",
-   "veredicto": "oferta_real"
-  },
   "45403196307": {
    "ahorro_vs_amazon": 13,
    "amz_low30": null,
@@ -6879,11 +6860,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Samsung VS15A60AGR5 Negro 40 min sin cable Aspirador escoba",
-   "pista": "2196149 bytes; 12 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1874567 bytes; 12 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 21,
    "pp_median": 214.94,
    "pp_price": 168.95,
-   "t": "2026-11-27T22:50:37.797029+00:00",
+   "t": "2026-11-28T05:09:49.668173+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -8223,28 +8204,6 @@
     ],
     "nombre": [
      "(sin resultados)"
-    ]
-   }
-  },
-  "46106243328": {
-   "ean": "5060777122928",
-   "lista": "candidates",
-   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
-   "name": "GHD Original Styler Cerámica single-zone 75W Plancha de pelo",
-   "pp_drop": 18,
-   "pp_median": 141.95,
-   "pp_price": 115.83,
-   "t": "2026-11-14T05:08:32.344426+00:00",
-   "v": 2,
-   "veredicto": "no_esta",
-   "vistos": {
-    "ean": [
-     "ghd Original Styler - Plancha de Pelo Profesional"
-    ],
-    "nombre": [
-     "ghd Original Styler - Plancha de Pelo Profesional",
-     "ghd Gold - Plancha de Pelo Profesional Avanzada",
-     "ghd Platinum+ - Plancha de Pelo Profesional Inteligente"
     ]
    }
   },
@@ -12790,7 +12749,7 @@
    "veredicto": "pvpr_inflado"
   }
  },
- "night_at": "2026-11-28T04:50:35.441811+00:00",
+ "night_at": "2026-11-28T05:09:49.668173+00:00",
  "resumen": {
   "amazon_mas_barato": 27,
   "dudoso": 1,
@@ -12799,5 +12758,5 @@
   "pvpr_inflado": 7,
   "sin_precio": 8
  },
- "updated": "2026-11-28T04:50:35.441811+00:00"
+ "updated": "2026-11-28T05:09:49.668173+00:00"
 }
