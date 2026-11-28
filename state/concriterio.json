@@ -14,7 +14,7 @@
   "Café y cápsulas": "2026-11-27T17:05:36.166528+00:00",
   "Camping y montaña": "2026-11-26T13:01:08.844723+00:00",
   "Cargadores y baterías": "2026-11-27T20:45:38.822386+00:00",
-  "Ciclismo": "2026-11-26T15:01:06.505667+00:00",
+  "Ciclismo": "2026-11-28T13:01:13.368766+00:00",
   "Climatización": "2026-11-27T20:15:42.816939+00:00",
   "Colchones y almohadas": "2026-11-27T19:05:34.051750+00:00",
   "Componentes PC": "2026-11-27T15:05:34.336700+00:00",
@@ -67,7 +67,7 @@
  "manual": {},
  "manual_queue": [],
  "manual_todo": [],
- "next_at": "2026-11-28T12:57:15.889124+00:00",
+ "next_at": "2026-11-28T13:29:33.504403+00:00",
  "offer": null,
  "posted": {
   "B0000D8472": {
@@ -871,17 +871,6 @@
    "s": "ofertas",
    "t": "2026-11-15T10:01:40.573396+00:00",
    "title": "Unisex Leader Vt SL Training Shoes",
-   "v": []
-  },
-  "B07DNGPVRP": {
-   "c": "Perfumes",
-   "d": 31,
-   "e": "🌸",
-   "m": 289,
-   "p": 26.99,
-   "s": "busqueda",
-   "t": "2026-11-14T12:51:00.937147+00:00",
-   "title": "Yves Rocher Perfume COMME UNE EVIDENCE Eau de Parfum para Mujeres 100ml",
    "v": []
   },
   "B07FCLBWD9": {
@@ -3540,6 +3529,17 @@
    "title": "RCB hoverboards SUV y Kart,con Bluetooth, Control de Aplicaciones, Hoverboards Todo Terreno 8.5\" Hummer, Mejor Regalo para Niños",
    "v": []
   },
+  "B0FHHDZ5X4": {
+   "c": "Ciclismo",
+   "d": 34,
+   "e": "🚴",
+   "m": 716,
+   "p": 23.23,
+   "s": "ofertas",
+   "t": "2026-11-28T13:01:40.561061+00:00",
+   "title": "CIRYCASE Luz Bicicleta Potente LED, 3+6 Modos & USB Recargable",
+   "v": []
+  },
   "B0FHJ91JY5": {
    "c": "Cámaras de seguridad",
    "d": 50,
@@ -4642,6 +4642,6 @@
  "tg_offset": 511048185,
  "x_copy": {
   "day": "2026-11-28",
-  "n": 12
+  "n": 13
  }
 }

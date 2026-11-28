@@ -1411,6 +1411,13 @@
    "v": 3,
    "via": "ean"
   },
+  "4711081875369": {
+   "a": "B0BRB3TWKC",
+   "t": "2026-11-28T13:01:13.368766+00:00",
+   "title": "ASUS ROG Azoth - Teclado Gaming mecánico inalámbrico de 75%",
+   "v": 3,
+   "via": "ean"
+  },
   "4711081907503": {
    "a": "B0BSXBCS3C",
    "t": "2026-11-14T09:55:29.061293+00:00",
@@ -8353,6 +8360,26 @@
    "t": "2026-11-17T02:20:36.394189+00:00",
    "veredicto": "amazon_mas_barato"
   },
+  "46146890964": {
+   "ahorro_vs_amazon": 13,
+   "amz_low30": 272.99,
+   "amz_median": 219.99,
+   "amz_price": 192.99,
+   "amz_title": "ASUS ROG Azoth - Teclado Gaming mecánico inalámbrico de 75%",
+   "asin": "B0BRB3TWKC",
+   "disponible": true,
+   "ean": "4711081875369",
+   "encontrado_por": "ean",
+   "lista": "candidates",
+   "motivo": "Amazon 192.99 frente a 191.95",
+   "name": "ASUS ROG Azoth 75% RGB QWERTY Inglés Negro Teclado gaming inalámbrico mecánico",
+   "pp_drop": 39,
+   "pp_median": 312.95,
+   "pp_price": 191.95,
+   "t": "2026-11-28T13:01:13.368766+00:00",
+   "v": 3,
+   "veredicto": "amazon_mas_barato"
+  },
   "46146891071": {
    "ahorro_vs_amazon": 35,
    "amz_low30": null,
@@ -12096,7 +12123,7 @@
    "pp_drop": 46,
    "pp_median": 619.96,
    "pp_price": 335.94,
-   "t": "2026-11-26T12:01:05.059758+00:00",
+   "t": "2026-11-28T13:01:13.368766+00:00",
    "v": 3,
    "veredicto": "no_esta",
    "vistos": {
@@ -12479,32 +12506,6 @@
    "v": 3,
    "veredicto": "amazon_mas_barato"
   },
-  "46693747642": {
-   "ean": "8004399021167",
-   "lista": "candidates",
-   "motivo": "no se encuentra en Amazon por EAN, modelo ni nombre",
-   "name": "Termoventilador De'Longhi Gris/Blanco Termostato 2000W 2 Niveles HVA3220",
-   "pp_drop": 40,
-   "pp_median": 51.95,
-   "pp_price": 30.95,
-   "t": "2026-11-14T12:50:38.841046+00:00",
-   "v": 2,
-   "veredicto": "no_esta",
-   "vistos": {
-    "ean": [
-     "De 'Longhi calefactor rápido, hva 3220"
-    ],
-    "modelo": [
-     "DeLonghi HSX 2320 - Calefactor (Radiador / ventilador, Interior, Color blanco, 2000 W, 60 m³)",
-     "DeLonghi HX65L22 - Convector con 3 niveles de potencia, para hasta 65 m³, función ECO, 2200 W, Schwa"
-    ],
-    "nombre": [
-     "De'Longhi Termoventilador Cerámico de Torre, Calentamiento Rápido con 2 Niveles, Mando a Distancia, ",
-     "De'longhi HFX65v20 - Calefactor cerámico, 2000 w, temporizador digital, 2 niveles de calefacción, ma",
-     "De'Longhi HFX30c18.IW - Calefactor cerámico vertical, 2 ajustes de potencia de 900 y 1800 w, auto re"
-    ]
-   }
-  },
   "46693747965": {
    "ean": "4260499852771",
    "lista": "candidates",
@@ -12649,12 +12650,12 @@
  },
  "night_at": "2026-11-28T05:35:28.330938+00:00",
  "resumen": {
-  "amazon_mas_barato": 22,
+  "amazon_mas_barato": 23,
   "dudoso": 1,
   "no_esta": 22,
   "oferta_real": 22,
   "pvpr_inflado": 4,
   "sin_precio": 5
  },
- "updated": "2026-11-28T12:31:03.056564+00:00"
+ "updated": "2026-11-28T13:01:13.368766+00:00"
 }
