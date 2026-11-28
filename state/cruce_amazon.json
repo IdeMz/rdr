@@ -4412,11 +4412,11 @@
    "lista": "candidates",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Apple TV 4K 3ª Gen 128GB WiFi 6 Bluetooth 5.0 A15 Gigabit",
-   "pista": "1880861 bytes; 10 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "1870968 bytes; 10 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 47,
    "pp_median": 637.95,
    "pp_price": 339.95,
-   "t": "2026-11-27T23:20:33.888400+00:00",
+   "t": "2026-11-28T05:35:28.330938+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -7006,11 +7006,11 @@
    "lista": "to_verify",
    "motivo": "en Amazon pero sin precio o no disponible",
    "name": "Endgame Gear XM2 8k 30000 DPI 51,5g 6 botones Ratón gaming",
-   "pista": "1948327 bytes; 9 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
+   "pista": "2178524 bytes; 22 a-price; caja de precio; disponibilidad: ; sin vendedor destacado",
    "pp_drop": 54,
    "pp_median": 69.95,
    "pp_price": 31.94,
-   "t": "2026-11-27T23:20:33.888400+00:00",
+   "t": "2026-11-28T05:35:28.330938+00:00",
    "v": 3,
    "veredicto": "sin_precio"
   },
@@ -7883,25 +7883,6 @@
      "XIAOMI Monitor 24 Pulgadas, FHD 144Hz, Free Sync, IPS, P2FDA\nRAGL"
     ]
    }
-  },
-  "45992963335": {
-   "ahorro_vs_amazon": 40,
-   "amz_low30": null,
-   "amz_median": null,
-   "amz_price": 49.97,
-   "amz_title": "Oral-B Pro Series 1 Cepillo de Dientes Eléctrico con Mango Recargable y Cabezal, Diseñado por Braun, Regalos Originales para Mujer y Hombre - Negro",
-   "asin": "B097JWGZ67",
-   "disponible": true,
-   "ean": "8001090914415",
-   "encontrado_por": "nombre",
-   "lista": "candidates",
-   "motivo": "40 % por debajo del habitual en Amazon (49.97)",
-   "name": "Oral-B Pro Series 1 Cross Action Cepillo de dientes eléctrico",
-   "pp_drop": 25,
-   "pp_median": 39.95,
-   "pp_price": 29.85,
-   "t": "2026-11-14T05:35:19.499764+00:00",
-   "veredicto": "oferta_real"
   },
   "45992963498": {
    "ahorro_vs_amazon": -6,
@@ -12749,7 +12730,7 @@
    "veredicto": "pvpr_inflado"
   }
  },
- "night_at": "2026-11-28T05:09:49.668173+00:00",
+ "night_at": "2026-11-28T05:35:28.330938+00:00",
  "resumen": {
   "amazon_mas_barato": 27,
   "dudoso": 1,
@@ -12758,5 +12739,5 @@
   "pvpr_inflado": 7,
   "sin_precio": 8
  },
- "updated": "2026-11-28T05:09:49.668173+00:00"
+ "updated": "2026-11-28T05:35:28.330938+00:00"
 }
